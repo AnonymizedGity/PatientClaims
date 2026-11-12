@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-040",
+  "source_row": 40,
+  "demographics_text": "53-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with fatigue, difficulty to concentrate, and abnormal blood findings.",
+  "chief_complaint": "Fatigue and difficulty to concentrate",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-040-p001",
+      "field": "History",
+      "text": "The patient has a 3-week history of fatigue, difficulty to concentrate, and dyspnea on exertion. He also experiences dizziness and digital pain that improves with cold. He has a long history of smoking."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-040-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Dyspnea on exertion"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-040-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Dizziness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-040-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Digital pain that improves with cold"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-040-p005",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, currently managed with enalapril."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-040-p006",
+      "field": "Social_History",
+      "text": "Smokes half a pack of cigarettes a day since he was 20."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-040-p007",
+      "field": "Review_of_Systems",
+      "text": "The patient denies any recent infections, bleeding disorders, or significant weight loss."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-040-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "131/82 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "95/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.9°C (98.4°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-e004",
+      "path": "Physical_Examination_Findings.General_Examination.Observation",
+      "text": "No acute distress, appears mildly fatigued"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Splenomegaly noted without evident hepatomegaly."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-e006",
+      "path": "Physical_Examination_Findings.Cardiovascular_System.Observation",
+      "text": "No murmurs, rubs, or gallops. Peripheral pulses are intact."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-e007",
+      "path": "Physical_Examination_Findings.Respiratory_System.Auscultation",
+      "text": "Clear bilateral breath sounds without wheezes, crackles, or rhonchi."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i001",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "700,000 cells/m3 (thrombocytosis)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i002",
+      "path": "Test_Results.Complete_Blood_Count.Other_Findings",
+      "text": "Blood smear shows increased abnormal platelets."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i003",
+      "path": "Test_Results.Iron_Studies.Serum_Iron",
+      "text": "Decreased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i004",
+      "path": "Test_Results.Iron_Studies.Iron_Saturation",
+      "text": "Decreased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i005",
+      "path": "Test_Results.Iron_Studies.Serum_Ferritin",
+      "text": "Decreased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i006",
+      "path": "Test_Results.Iron_Studies.Total_Iron_Binding_Capacity",
+      "text": "Increased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i007",
+      "path": "Test_Results.Bone_Marrow_Aspirate.Findings",
+      "text": "Presence of dysplastic megakaryocytes"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-040-i008",
+      "path": "Test_Results.Genetic_Testing.Findings",
+      "text": "Mutation on chromosome 9"
+    }
+  ],
+  "correct_diagnosis": "Essential thrombocythemia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

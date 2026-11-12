@@ -1,0 +1,98 @@
+{
+  "case_id": "agentclinic-medqa-ext-013",
+  "source_row": 13,
+  "demographics_text": "25-year-old female",
+  "objective_for_doctor": "Conduct a thorough assessment of a patient presenting with right groin pain and abnormal leg positioning following a rear-end collision, and diagnose appropriately.",
+  "chief_complaint": "Severe right groin pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-013-p001",
+      "field": "History",
+      "text": "The patient was involved in a rear-end collision where she was the restrained driver of the back car. She reports immediate onset of pain in both knees and severe pain over the right groin area following the accident."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-013-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain in both knees"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-013-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Right leg is slightly shortened, flexed, adducted, and internally rotated"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-013-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-013-p005",
+      "field": "Social_History",
+      "text": "Works as an elementary school teacher. Non-smoker and drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-013-p006",
+      "field": "Review_of_Systems",
+      "text": "Alert and active. No head injury, abdominal pain, or chest pain reported."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "132/79 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "116 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "19 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e005",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection",
+      "text": "The right leg is slightly shortened, flexed, adducted, and internally rotated. No visible wounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e006",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation.Right_Groin",
+      "text": "Tender to palpation"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e007",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation.Both_Knee_Caps",
+      "text": "Tenderness over both knee caps"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e008",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion.Right_Leg",
+      "text": "Limited due to pain and abnormal positioning"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-013-e009",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion.Left_Leg",
+      "text": "Normal range of motion"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-013-i001",
+      "path": "Test_Results.Imaging.Pelvic_X-ray.Findings",
+      "text": "No fractures identified in the pelvic ring or femoral neck, but alignment suggests posterior dislocation of the right hip."
+    }
+  ],
+  "correct_diagnosis": "Posterior hip dislocation",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

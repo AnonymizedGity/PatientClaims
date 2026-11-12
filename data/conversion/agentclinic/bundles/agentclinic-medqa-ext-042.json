@@ -1,0 +1,105 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-042", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 30, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "discomfort during sex", "aliases": ["painful sex", "dyspareunia", "discomfort with penetration"], "text": "I feel discomfort when we try to have vaginal intercourse.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "pelvic floor muscles tensing during sex", "aliases": ["muscle tightness during penetration", "pelvic floor muscle tension"], "text": "My pelvic floor muscles tense up when we attempt penetration.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f003", "item": "difficulty getting pregnant", "aliases": ["trying to conceive", "infertility"], "text": "My husband and I have been trying to get pregnant without success.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f004", "item": "difficulty getting pregnant: duration", "parent": "f003", "attribute": "duration", "text": "We've been trying for 15 months.", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f005", "item": "sexual activity", "aliases": ["how often we have sex"], "text": "We have sex at least twice a week.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f006", "item": "husband's erection problems", "aliases": ["partner's erectile dysfunction"], "text": "My husband occasionally has trouble keeping an erection.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "marital status", "aliases": ["married", "husband"], "text": "I'm married.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f008", "item": "body dysmorphic disorder", "aliases": ["mental health history", "psychiatric history"], "text": "I was diagnosed with body dysmorphic disorder three years ago.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "serious illness in the family", "aliases": ["family history"], "text": "No one in my family has had a serious illness.", "polarity": "absent", "category": "family_history"},
+      {"id": "f010", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "current medications", "aliases": ["medicines"], "text": "I don't take any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "other symptoms", "aliases": ["any other problems"], "text": "I haven't noticed any other problems.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-042",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "75/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "external genitalia", "vaginal examination", "speculum examination"], "result": "External genitalia: normal-appearing vulva without redness. Vaginal examination: no discharge; the initial attempt at speculum examination was aborted because the patient's pelvic floor muscles tensed up and she felt discomfort."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelet count"], "result": "WBC 6,000/μL; hemoglobin 13.8 g/dL; platelets 280,000/μL."},
+      {"id": "x007", "kind": "test", "name": "follicle-stimulating hormone", "aliases": ["FSH", "hormonal profile"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "luteinizing hormone", "aliases": ["LH", "hormonal profile"], "result": "Normal."},
+      {"id": "x009", "kind": "test", "name": "estradiol", "aliases": ["estrogen", "hormonal profile"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "progesterone", "aliases": ["hormonal profile"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "testosterone", "aliases": ["hormonal profile"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "pelvic ultrasound", "aliases": ["transvaginal ultrasound", "ultrasound of the uterus and ovaries"], "result": "Normal uterus and adnexa; no fibroids or ovarian cysts."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-042",
+    "diagnosis": "Genitopelvic pain disorder",
+    "aliases": ["genito-pelvic pain/penetration disorder", "genitopelvic pain/penetration disorder", "GPPPD", "vaginismus"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-042",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-042-p001"],
+      "f002": ["agentclinic-medqa-ext-042-p001", "agentclinic-medqa-ext-042-p003"],
+      "f003": ["agentclinic-medqa-ext-042-p001", "agentclinic-medqa-ext-042-p002"],
+      "f004": ["agentclinic-medqa-ext-042-p001", "agentclinic-medqa-ext-042-p002"],
+      "f005": ["agentclinic-medqa-ext-042-p001"],
+      "f006": ["agentclinic-medqa-ext-042-p001", "agentclinic-medqa-ext-042-p004"],
+      "f007": ["agentclinic-medqa-ext-042-p001"],
+      "f008": ["agentclinic-medqa-ext-042-p001", "agentclinic-medqa-ext-042-p005"],
+      "f009": ["agentclinic-medqa-ext-042-p001"],
+      "f010": ["agentclinic-medqa-ext-042-p001", "agentclinic-medqa-ext-042-p006"],
+      "f011": ["agentclinic-medqa-ext-042-p001", "agentclinic-medqa-ext-042-p006"],
+      "f012": ["agentclinic-medqa-ext-042-p001"],
+      "f013": ["agentclinic-medqa-ext-042-p007"]
+    },
+    "quotes": {
+      "f001": "discomfort and pelvic floor muscle tension during attempted vaginal penetration",
+      "f003": "trying to conceive for 15 months without success",
+      "f004": "trying to conceive for 15 months / Difficulty conceiving for over 15 months",
+      "f005": "sexually active at least twice a week",
+      "f006": "occasionally has difficulties maintaining an erection",
+      "f008": "Diagnosed with body dysmorphic disorder three years ago",
+      "f009": "No family history of serious illness",
+      "f012": "No medications.",
+      "f013": "All other systems reviewed are within normal limits."
+    },
+    "flags": {
+      "f004": ["History says 15 months; the secondary symptom says 'over 15 months'. The text uses the History's 15 months."],
+      "f006": ["The husband's erectile difficulty is partner information; categorised as habit_exposure (sexual activity), since it is answered in a sexual history."],
+      "f013": ["'All other systems reviewed are within normal limits' is turned into a general denial of other problems; it carries the meaning of a negative review of systems."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-042-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-042-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "75 bpm", "exam_ids": ["agentclinic-medqa-ext-042-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-042-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Pelvic_Examination.External_Genitalia + Physical_Examination_Findings.Pelvic_Examination.Vaginal_Examination", "source_text": "Normal appearing vulva without redness | No discharge. The initial attempt at speculum examination was aborted due to patient's pelvic floor muscles tensing up and discomfort.", "exam_ids": ["agentclinic-medqa-ext-042-e005", "agentclinic-medqa-ext-042-e006"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "6,000 /μL | 13.8 g/dL | 280,000 /μL", "exam_ids": ["agentclinic-medqa-ext-042-i001", "agentclinic-medqa-ext-042-i002", "agentclinic-medqa-ext-042-i003"]},
+      "x007": {"source": "Test_Results.Hormonal_Profile.FSH", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-042-i004"]},
+      "x008": {"source": "Test_Results.Hormonal_Profile.LH", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-042-i005"]},
+      "x009": {"source": "Test_Results.Hormonal_Profile.Estradiol", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-042-i006"]},
+      "x010": {"source": "Test_Results.Hormonal_Profile.Progesterone", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-042-i007"]},
+      "x011": {"source": "Test_Results.Hormonal_Profile.Testosterone", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-042-i008"]},
+      "x012": {"source": "Test_Results.Pelvic_Ultrasound.Findings", "source_text": "Normal uterus and adnexa with no evidence of fibroids or ovarian cysts.", "exam_ids": ["agentclinic-medqa-ext-042-i009"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Duration of trying to conceive: '15 months' (History) vs 'over 15 months' (Secondary_Symptoms)."
+    ],
+    "notes": [
+      "The gold word 'pain' is kept out of patient texts and items: the source itself says 'discomfort', which the patient text keeps. 'painful sex' and 'dyspareunia' are controller-facing aliases only.",
+      "The hormonal profile is not in CONVERSION.md's panel list, so each hormone is its own record; each carries the alias 'hormonal profile' so a request for the profile reaches all five.",
+      "Marital status (f007) is taken from 'The patient and her husband'.",
+      "Gold aliases: GPPPD is the DSM-5 name; vaginismus falls entirely within it. Dyspareunia is not added because it is broader (any painful intercourse, including organic causes)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with difficulties conceiving and experiencing discomfort during sexual activity."
+    }
+  }
+}

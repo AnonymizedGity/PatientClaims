@@ -1,0 +1,1183 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-005",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 28,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "pregnancy test",
+        "aliases": [
+          "home pregnancy test"
+        ],
+        "text": "My pregnancy test came out positive.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "historical"
+      },
+      {
+        "id": "f002",
+        "item": "pregnancy test: when it was done",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "I took it two days ago, because I skipped my period this month.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "historical"
+      },
+      {
+        "id": "f003",
+        "item": "missed period",
+        "aliases": [
+          "skipped period",
+          "late period"
+        ],
+        "text": "This month, I skipped my period.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "last menstrual period",
+        "aliases": [
+          "last period",
+          "LMP"
+        ],
+        "text": "My last period was six weeks ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "historical"
+      },
+      {
+        "id": "f005",
+        "item": "last menstrual period: what it was like",
+        "parent": "f004",
+        "attribute": "character",
+        "text": "It was only light spotting, for only 1 or 2 days.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "historical"
+      },
+      {
+        "id": "f006",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I've been feeling nauseous recently.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't vomited.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "change in appetite",
+        "aliases": [
+          "appetite",
+          "eating"
+        ],
+        "text": "I don't feel like eating anything because of the nausea, especially with some smells of food.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "weighing yourself lately",
+        "aliases": [
+          "checking your weight"
+        ],
+        "text": "I haven't weighed myself lately.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "bloating",
+        "aliases": [
+          "feeling bloated"
+        ],
+        "text": "I've been experiencing constant bloating.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "tiredness",
+        "aliases": [
+          "fatigue",
+          "feeling tired"
+        ],
+        "text": "I'm easily tired out by doing my daily activities.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "tiredness: effect on exercise",
+        "parent": "f011",
+        "attribute": "other",
+        "text": "Lately, I've had to cut back on my running because I feel so tired all the time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "breast changes",
+        "aliases": [
+          "breast fullness",
+          "breast swelling"
+        ],
+        "text": "My breasts are a little fuller than before.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "breast discharge",
+        "aliases": [
+          "nipple discharge"
+        ],
+        "text": "I don't have any discharge from my breasts.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "frequent urination",
+        "aliases": [
+          "urinating often",
+          "going to the bathroom often"
+        ],
+        "text": "I feel I have to use the bathroom frequently now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "burning when urinating",
+        "aliases": [
+          "painful urination",
+          "burning urination"
+        ],
+        "text": "I have no burning when I urinate.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "itching",
+        "text": "I have no itching.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "bleeding with intercourse",
+        "aliases": [
+          "bleeding after sex",
+          "bleeding during sex"
+        ],
+        "text": "I haven't had any bleeding before, during or after sex.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I don't have any abdominal pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "fever",
+        "text": "I haven't had any fevers.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "bowel movements",
+        "aliases": [
+          "bowel habits",
+          "stools"
+        ],
+        "text": "I have a bowel movement once a day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "change in bowel habits",
+        "aliases": [
+          "change in stools"
+        ],
+        "text": "There haven't been any changes in my stools.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "trouble breathing",
+        "aliases": [
+          "shortness of breath",
+          "difficulty breathing"
+        ],
+        "text": "I haven't had any trouble breathing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "skin rash",
+        "aliases": [
+          "rashes"
+        ],
+        "text": "I haven't noticed any skin rashes.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "other skin changes",
+        "aliases": [
+          "skin changes"
+        ],
+        "text": "I haven't noticed any other changes in my skin.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "first period",
+        "aliases": [
+          "age at first period",
+          "menarche"
+        ],
+        "text": "I was 14 years old when I had my first period.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f027",
+        "item": "menstrual periods",
+        "aliases": [
+          "periods",
+          "menstrual cycle"
+        ],
+        "text": "My periods occur at the same time every month.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f028",
+        "item": "menstrual periods: how long they last",
+        "parent": "f027",
+        "attribute": "duration",
+        "text": "They last 3 to 4 days.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f029",
+        "item": "menstrual periods: flow",
+        "parent": "f027",
+        "attribute": "quantity",
+        "text": "Usually, I have moderate flow and use four to five pads per day.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "menstrual periods: pain or cramping",
+        "parent": "f027",
+        "attribute": "other",
+        "aliases": [
+          "painful periods",
+          "period cramps"
+        ],
+        "text": "I don't have pain or cramping with my periods.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f031",
+        "item": "spotting between periods",
+        "aliases": [
+          "bleeding between periods"
+        ],
+        "text": "I don't have spotting between my periods.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "previous pregnancies",
+        "aliases": [
+          "been pregnant before",
+          "miscarriages"
+        ],
+        "text": "I've never been pregnant before.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "Pap smear",
+        "aliases": [
+          "last Pap smear",
+          "cervical screening"
+        ],
+        "text": "My last Pap smear was eight months ago, and it was normal.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "sexually transmitted infections",
+        "aliases": [
+          "STDs",
+          "STIs"
+        ],
+        "text": "I've never been diagnosed with a sexually transmitted disease.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "chronic medical problems",
+        "aliases": [
+          "health issues",
+          "medical conditions"
+        ],
+        "text": "I don't have any health issues.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "My appendix was removed when I was 20.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I don't have any medication allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "multivitamins",
+        "aliases": [
+          "vitamins"
+        ],
+        "text": "I take multivitamins.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "birth control",
+        "aliases": [
+          "contraception",
+          "protection"
+        ],
+        "text": "My boyfriend withdraws before ejaculation.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "father's health",
+        "text": "My father has diabetes.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "mother's health",
+        "text": "My mother deals with thyroid issues and obesity.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I am a graduate student.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink occasionally.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "alcohol: how much",
+        "parent": "f043",
+        "attribute": "quantity",
+        "text": "One or two beers a week.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke or use any other tobacco products.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "exercise",
+        "aliases": [
+          "running"
+        ],
+        "text": "I normally run 5 miles a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f048",
+        "item": "sexual partners",
+        "aliases": [
+          "sexual activity",
+          "number of partners"
+        ],
+        "text": "I have been sexually active only with my boyfriend.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "planned pregnancy",
+        "aliases": [
+          "planning to conceive",
+          "trying to get pregnant"
+        ],
+        "text": "We didn't plan to conceive.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "feelings about the pregnancy",
+        "aliases": [
+          "thoughts about the pregnancy",
+          "pregnancy options"
+        ],
+        "text": "I'm unsure. I don't know.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "relationship with boyfriend",
+        "aliases": [
+          "relationship"
+        ],
+        "text": "We get along fine.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "being hit or threatened",
+        "aliases": [
+          "domestic violence",
+          "abuse"
+        ],
+        "text": "He doesn't hurt me.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-005",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/70 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "14/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "76/min",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "vital",
+        "name": "heart rate on recheck",
+        "aliases": [
+          "pulse on recheck"
+        ],
+        "result": "72/min, within normal limits"
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Appears comfortable."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "general",
+        "name": "head examination",
+        "aliases": [
+          "head"
+        ],
+        "result": "Normal head shape; no signs of trauma."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "pupils",
+          "conjunctival pallor",
+          "jaundice"
+        ],
+        "result": "Pupils equal, round and reactive to light and accommodation; no icterus; no pallor."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "ent",
+        "name": "mouth and throat examination",
+        "aliases": [
+          "oral cavity",
+          "pharynx",
+          "throat"
+        ],
+        "result": "Moist oral mucosa without sores or lesions; pharynx without redness or exudates."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "endocrine",
+        "name": "neck examination",
+        "aliases": [
+          "thyroid",
+          "thyroid examination"
+        ],
+        "result": "No thyroid enlargement."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear to auscultation on both sides."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not tender, not distended; normal bowel sounds in all four quadrants; no guarding; no enlargement of the liver or spleen."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-005",
+    "diagnosis": "Normal pregnancy",
+    "aliases": [
+      "normal intrauterine pregnancy",
+      "intrauterine pregnancy",
+      "IUP",
+      "viable intrauterine pregnancy",
+      "uncomplicated pregnancy",
+      "normal early pregnancy"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Normal pregnancy",
+        "evidence": [
+          "Amenorrhea for 6 weeks",
+          "Positive pregnancy test",
+          "Bilateral breast engorgement",
+          "Nausea and weight gain"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Ectopic pregnancy",
+        "aliases": [
+          "extrauterine pregnancy",
+          "tubal pregnancy"
+        ],
+        "evidence": [
+          "Amenorrhea for 6 weeks",
+          "Positive pregnancy test"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Molar pregnancy",
+        "aliases": [
+          "hydatidiform mole",
+          "complete mole",
+          "partial mole"
+        ],
+        "evidence": [
+          "Positive pregnancy test",
+          "Exam: Nausea"
+        ]
+      }
+    ],
+    "other_considerations": []
+  },
+  "qc": {
+    "case_id": "medqa-cs-005",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-005-p001"
+      ],
+      "f003": [
+        "medqa-cs-005-p001"
+      ],
+      "f004": [
+        "medqa-cs-005-p002"
+      ],
+      "f005": [
+        "medqa-cs-005-p002",
+        "medqa-cs-005-p004"
+      ],
+      "f006": [
+        "medqa-cs-005-p011"
+      ],
+      "f007": [
+        "medqa-cs-005-p011"
+      ],
+      "f008": [
+        "medqa-cs-005-p014"
+      ],
+      "f009": [
+        "medqa-cs-005-p015"
+      ],
+      "f010": [
+        "medqa-cs-005-p015"
+      ],
+      "f011": [
+        "medqa-cs-005-p016"
+      ],
+      "f012": [
+        "medqa-cs-005-p024"
+      ],
+      "f013": [
+        "medqa-cs-005-p017"
+      ],
+      "f014": [
+        "medqa-cs-005-p017"
+      ],
+      "f015": [
+        "medqa-cs-005-p021"
+      ],
+      "f016": [
+        "medqa-cs-005-p021"
+      ],
+      "f017": [
+        "medqa-cs-005-p021"
+      ],
+      "f018": [
+        "medqa-cs-005-p012"
+      ],
+      "f019": [
+        "medqa-cs-005-p013"
+      ],
+      "f020": [
+        "medqa-cs-005-p019"
+      ],
+      "f021": [
+        "medqa-cs-005-p020"
+      ],
+      "f022": [
+        "medqa-cs-005-p020"
+      ],
+      "f023": [
+        "medqa-cs-005-p022"
+      ],
+      "f024": [
+        "medqa-cs-005-p023"
+      ],
+      "f025": [
+        "medqa-cs-005-p023"
+      ],
+      "f026": [
+        "medqa-cs-005-p003"
+      ],
+      "f027": [
+        "medqa-cs-005-p004"
+      ],
+      "f028": [
+        "medqa-cs-005-p004"
+      ],
+      "f029": [
+        "medqa-cs-005-p004"
+      ],
+      "f030": [
+        "medqa-cs-005-p004",
+        "medqa-cs-005-p005"
+      ],
+      "f031": [
+        "medqa-cs-005-p006"
+      ],
+      "f032": [
+        "medqa-cs-005-p009"
+      ],
+      "f033": [
+        "medqa-cs-005-p018"
+      ],
+      "f034": [
+        "medqa-cs-005-p010"
+      ],
+      "f035": [
+        "medqa-cs-005-p026"
+      ],
+      "f036": [
+        "medqa-cs-005-p027"
+      ],
+      "f037": [
+        "medqa-cs-005-p033"
+      ],
+      "f038": [
+        "medqa-cs-005-p025"
+      ],
+      "f039": [
+        "medqa-cs-005-p008"
+      ],
+      "f040": [
+        "medqa-cs-005-p028"
+      ],
+      "f041": [
+        "medqa-cs-005-p028"
+      ],
+      "f042": [
+        "medqa-cs-005-p029"
+      ],
+      "f043": [
+        "medqa-cs-005-p030"
+      ],
+      "f044": [
+        "medqa-cs-005-p030"
+      ],
+      "f045": [
+        "medqa-cs-005-p031"
+      ],
+      "f046": [
+        "medqa-cs-005-p032"
+      ],
+      "f047": [
+        "medqa-cs-005-p024"
+      ],
+      "f048": [
+        "medqa-cs-005-p007"
+      ],
+      "f049": [
+        "medqa-cs-005-p034"
+      ],
+      "f050": [
+        "medqa-cs-005-p035"
+      ],
+      "f051": [
+        "medqa-cs-005-p036"
+      ],
+      "f052": [
+        "medqa-cs-005-p036"
+      ]
+    },
+    "quotes": {
+      "f001": "My pregnancy test came out positive.",
+      "f002": "so I took a pregnancy test two days ago.",
+      "f003": "This month, I skipped my period",
+      "f004": "Six weeks ago",
+      "f005": "it was only light spotting. / Last month, I had some spotting for only 1 or 2 days.",
+      "f006": "I've been feeling nauseous recently",
+      "f007": "but I haven't vomited.",
+      "f008": "I don't feel like eating anything because of the nausea, especially with some smells of food.",
+      "f009": "I haven't weighed myself lately",
+      "f010": "I've been experiencing constant bloating.",
+      "f011": "Yes. I'm easily tired out by doing my daily activities.",
+      "f012": "but lately, I've had to cut back because I feel so tired all the time.",
+      "f013": "My breasts are a little fuller than before.",
+      "f014": "No discharge.",
+      "f015": "I feel I have to use the bathroom frequently now.",
+      "f016": "I have no burning or itching.",
+      "f017": "I have no burning or itching.",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "Once daily.",
+      "f022": "No changes.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "I was 14 years old.",
+      "f027": "occur at the same time every month.",
+      "f028": "My periods last 3 to 4 days",
+      "f029": "Usually, I have moderate flow and use four to five pads per day.",
+      "f030": "No pain or cramping. / No.",
+      "f031": "No.",
+      "f032": "Never.",
+      "f033": "Eight months ago, and it was normal.",
+      "f034": "No.",
+      "f035": "No.",
+      "f036": "My appendix was removed when I was 20.",
+      "f037": "No.",
+      "f038": "Multivitamins.",
+      "f039": "My boyfriend withdraws before ejaculation.",
+      "f040": "My father has diabetes",
+      "f041": "my mother deals with thyroid issues and obesity.",
+      "f042": "I am a graduate student.",
+      "f043": "Occasionally",
+      "f044": "one or two beers a week.",
+      "f045": "No.",
+      "f046": "No.",
+      "f047": "I normally run 5 miles a day",
+      "f048": "I have been sexually active solely with my boyfriend.",
+      "f049": "No.",
+      "f050": "Unsure. I don't know.",
+      "f051": "We get along fine.",
+      "f052": "No, he doesn't hurt me."
+    },
+    "flags": {
+      "f009": [
+        "Weight change is unknown, not denied: she has not weighed herself. The gold's 'weight gain' is not supported by the script."
+      ],
+      "f017": [
+        "Asked together with the urinary symptoms; the site of the itching is not specified."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/70 mmHg | VS: within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-005-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.6°F (37°C) | VS: within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-005-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 14/minute | VS: within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-005-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 76/minute | VS: within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-005-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "heart rate of 72 beats per minute, WNL",
+        "exam_ids": [
+          "medqa-cs-005-e006"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Patient appears comfortable.",
+        "exam_ids": [
+          "medqa-cs-005-e001"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "HEENT: Normocephalic/atraumatic",
+        "exam_ids": [
+          "medqa-cs-005-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "pupils equal, round, and reactive to light and accommodation (PERRLA), no icterus, no pallor",
+        "exam_ids": [
+          "medqa-cs-005-e003"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "moist oral mucosa without sores or lesions. Pharynx without erythema or exudates.",
+        "exam_ids": [
+          "medqa-cs-005-e003"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Neck: No thyroid enlargement.",
+        "exam_ids": [
+          "medqa-cs-005-e004"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear to auscultation bilaterally.",
+        "exam_ids": [
+          "medqa-cs-005-e005"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR); ... no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-005-e006"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, nontender, nondistended, normal bowel sounds x 4 quadrants, no evidence of guarding or hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-005-e007"
+        ]
+      }
+    },
+    "finding_flags": {},
+    "leakage": [
+      {
+        "fact_id": "f001",
+        "reason": "Positive pregnancy test (also the chief complaint) points to pregnancy, the common core of all three gold diagnoses; inherent to the case and does not separate normal, ectopic and molar pregnancy."
+      },
+      {
+        "fact_id": "f002",
+        "reason": "Child of the positive pregnancy test (v1 f002 covered both); same reasoning."
+      },
+      {
+        "fact_id": "f049",
+        "reason": "Refers to conceiving (unplanned pregnancy); presupposes pregnancy, inherent to the scripted counselling scenario."
+      },
+      {
+        "fact_id": "f050",
+        "reason": "Refers to 'the pregnancy'; presupposes pregnancy, inherent to the scripted counselling scenario."
+      }
+    ],
+    "source_issues": [
+      "Gold diagnosis #1 lists 'Nausea and weight gain'; the patient has not weighed herself (p015) and reports only constant bloating, so weight gain is not supported by the script.",
+      "Gold diagnosis #3 lists 'Nausea', a symptom, under Physical Exam Findings. Kept as given in the source.",
+      "gold_additional_diagnosis is 'N/A'; other_considerations is left empty.",
+      "Note OB/GYN says 'has regular periods 4-5 times per month', which garbles the script (periods last 3-4 days, monthly, 4-5 pads per day).",
+      "Heart rate: doorway 76/minute vs. 72 beats per minute in the note's heart exam (e006); kept as the doorway record x004 plus 'heart rate on recheck' x005.",
+      "p008 also asks about protection against STIs; the answer (withdrawal) does not address condoms or STI protection. The note's 'coitus interruptus as the only method' goes slightly beyond the answer.",
+      "p017 asks whether her breasts hurt; the answer ('a little fuller than before. No discharge.') does not address pain. The note calls this 'bilateral breast engorgement'.",
+      "p004 is a multi-part answer that overlaps with p002 (light spotting at the last period) and p005 (no pain with periods).",
+      "Name inconsistency: opening 'Tanya Parker' vs. sample closure 'Ms. Park'."
+    ],
+    "notes": [
+      "f008: 'I don't feel like eating anything because of the nausea' is decreased appetite, coded present (guide rule 2).",
+      "Usual menstrual pattern (f027-f031) is marked historical because her cycle is now interrupted by the missed period.",
+      "p002 and p004 both describe the last period as light spotting and are merged into f005.",
+      "'Single, with no children' from the SP-sheet patient description is placed in acting_notes because it has no valid source id.",
+      "leakage lists the facts that presuppose pregnancy; this is unavoidable in a case whose chief complaint is a positive pregnancy test.",
+      "Polarity change (p015, f009): v1 f018 coded the statement 'has not weighed herself lately' as present because its label was the statement itself. With the answer-free item 'weighing yourself lately', the same statement is absent. The clinical decision is unchanged: weight change is unknown (no fact), not denied.",
+      "Polarity change (p034, f049): v1 f046 coded 'the pregnancy is unplanned' as present. With the answer-free item 'planned pregnancy', the 'No' is absent. The clinical content (an unplanned pregnancy) is unchanged.",
+      "Conversion: the chief complaint (cc) is f001; the test date and reason (p001, v1 f002) are a timing child f002; the missed period (v1 f001) is f003. The last period (p002) is f004 with its light spotting as a child (f005).",
+      "Conversion: usual periods (p004, v1 f005-f007) are a parent f027 with duration, flow and pain children; v1 f007's 'no pain or cramping' (p004, p005) is f030.",
+      "Conversion: cutting back on running because of tiredness (v1 f034, subtype functional) is a symptom child of tiredness (f012); the running habit is exercise (f047). The SP note 'feel tired all the time' matches p024.",
+      "Conversion: withdrawal as birth control (p008) is category medication, which the schema assigns to contraception. The mother's thyroid issues and obesity (v1 f039 + f040) are one 'mother's health' fact (f041), as in the worked example.",
+      "Conversion: the note's 'VS: WNL' (e002) agrees with the doorway values and is cited on the four doorway records; the heart exam's 72/minute (e006) differs from the doorway 76/minute and becomes 'heart rate on recheck' (x005).",
+      "Harmonisation pass: f039 category habit_exposure -> habit_exposure; f035 item -> 'chronic medical problems' (blanket denial).",
+      "Fixes: f011 answer word removed; f018 answer word removed; f030 answer word removed; f031 answer word removed; f034 answer word removed; f035 answer word removed; f045 answer word removed; f046 answer word removed; f049 answer word removed; f052 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "If asked, tell the doctor that you feel tired all the time.",
+        "Background from the SP sheet's patient description: single, with no children."
+      ],
+      "patient_questions": [
+        "I’m not in a marital relationship and did not intend to have this child. What are my options, doctor?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

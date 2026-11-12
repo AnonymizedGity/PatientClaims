@@ -1,0 +1,144 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11043",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 21, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea", "trouble breathing"], "text": "I've been short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: course", "parent": "f001", "attribute": "course", "text": "At first it was only when I exerted myself, then it got worse, and now I'm short of breath even at rest.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "shortness of breath: duration", "parent": "f001", "attribute": "duration", "text": "It started about a week ago.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f004", "item": "fever", "aliases": ["temperature", "feverish"], "text": "I've had a low-grade fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "feeling unwell", "aliases": ["malaise", "feeling generally ill"], "text": "I've been feeling generally unwell.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "sweating", "aliases": ["sweats", "profuse sweating", "diaphoresis"], "text": "I've been sweating a lot.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "rash", "aliases": ["skin rash"], "text": "I haven't had a rash.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f009", "item": "allergies", "aliases": ["allergy", "allergic reactions"], "text": "I don't have any allergies.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f010", "item": "recent medication use", "aliases": ["current medications", "recent drugs", "new medicines"], "text": "I haven't taken any medicines recently.", "polarity": "absent", "category": "medication"},
+      {"id": "f011", "item": "cardiovascular risk factors", "aliases": ["heart disease risk factors"], "text": "I don't have any risk factors for heart disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "asthma", "aliases": ["wheezing illness"], "text": "I've never had asthma.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "connective tissue disease", "aliases": ["connective tissue disorder", "CTD"], "text": "I've never had a connective tissue disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I was healthy before this.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "ethnicity", "aliases": ["country of origin", "nationality", "ethnic background"], "text": "I'm Sri Lankan.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11043",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Mildly elevated."},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "120/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "100/70 mmHg"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Elevated."},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "work of breathing"], "result": "Dyspneic at rest."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "jugular venous pressure", "aliases": ["JVP", "neck veins"], "result": "5 cm above the sternal angle."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "Kussmaul sign", "aliases": ["inspiratory rise in JVP"], "result": "Absent."},
+      {"id": "x008", "kind": "exam", "system": "cardiovascular", "name": "cardiac auscultation", "aliases": ["heart sounds", "heart examination", "cardiac examination"], "result": "Slightly muffled heart sounds with a gallop rhythm."},
+      {"id": "x009", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["lung auscultation", "chest examination", "respiratory examination"], "result": "Bilateral basal fine inspiratory crackles."},
+      {"id": "x010", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver", "spleen", "abdominal palpation"], "result": "Mild, non-tender hepatomegaly and splenomegaly."},
+      {"id": "x011", "kind": "exam", "system": "cardiovascular", "name": "peripheral edema", "aliases": ["leg swelling", "ankle edema", "pedal edema"], "result": "No peripheral edema."},
+      {"id": "x012", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash"], "result": "No rash."},
+      {"id": "x013", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "lymphadenopathy"], "result": "No lymphadenopathy."},
+      {"id": "x014", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "eosinophil count", "differential count", "hemoglobin", "platelets"], "result": "Leukocytosis with absolute eosinophil count 21.6×10^3/μL (63.5%); hemoglobin normal; platelets normal."},
+      {"id": "x015", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "60 mm/hr"},
+      {"id": "x016", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "troponin I", "aliases": ["troponin", "cardiac troponin", "cardiac enzymes"], "result": "35.4 ng/dL (normal <1.0)"},
+      {"id": "x018", "kind": "test", "name": "brain natriuretic peptide", "aliases": ["BNP"], "result": "1280.5 pg/mL"},
+      {"id": "x019", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "Sinus tachycardia with widespread ST-segment depressions."},
+      {"id": "x020", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Pulmonary congestion."},
+      {"id": "x021", "kind": "test", "name": "transthoracic echocardiography", "aliases": ["echocardiogram", "echo", "TTE", "cardiac ultrasound"], "result": "Global left ventricular hypokinesia with an ejection fraction of 40%; thin pericardial effusion; no intracardiac thrombus."},
+      {"id": "x022", "kind": "test", "name": "parasite serology", "aliases": ["Filaria antibodies", "Toxoplasma antibodies", "Toxocara antibodies", "parasitic serology"], "result": "Filaria, Toxoplasma and Toxocara antibodies negative."},
+      {"id": "x023", "kind": "test", "name": "stool examination for parasites", "aliases": ["stool ova and parasites", "stool O&P", "stool microscopy"], "result": "Negative."},
+      {"id": "x024", "kind": "test", "name": "viral serology", "aliases": ["Epstein-Barr virus serology", "EBV", "cytomegalovirus serology", "CMV", "HIV test", "HIV"], "result": "Epstein-Barr virus negative; cytomegalovirus negative; HIV negative."},
+      {"id": "x025", "kind": "test", "name": "Mycoplasma serology", "aliases": ["Mycoplasma antibodies"], "result": "Negative."},
+      {"id": "x026", "kind": "test", "name": "tuberculosis screening", "aliases": ["TB test", "TB screen"], "result": "Negative."},
+      {"id": "x027", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative."},
+      {"id": "x028", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibodies", "anti-dsDNA", "dsDNA", "autoimmune markers"], "result": "ANA negative; dsDNA negative."},
+      {"id": "x029", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid function"], "result": "Normal."},
+      {"id": "x030", "kind": "test", "name": "renal function and electrolytes", "aliases": ["renal function", "kidney function", "electrolytes", "basic metabolic panel", "BMP", "creatinine"], "result": "Renal function normal; electrolytes normal."},
+      {"id": "x031", "kind": "test", "name": "lipid profile", "aliases": ["lipid panel", "cholesterol"], "result": "Normal."},
+      {"id": "x032", "kind": "test", "name": "liver transaminases", "aliases": ["transaminases", "AST", "ALT", "liver enzymes", "liver function tests", "LFTs"], "result": "Elevated threefold."},
+      {"id": "x033", "kind": "test", "name": "abdominal ultrasound", "aliases": ["ultrasound of the abdomen", "abdominal sonography"], "result": "Mild hepatosplenomegaly without lymphadenopathy."},
+      {"id": "x034", "kind": "test", "name": "bone marrow biopsy", "aliases": ["bone marrow examination", "bone marrow aspirate and biopsy"], "result": "Marked eosinophilia without lymphoproliferative infiltration."},
+      {"id": "x035", "kind": "test", "name": "FIP1L1-PDGFRA and BCR-ABL testing", "aliases": ["FIP1L1-PDGFRA", "BCR-ABL", "molecular testing", "PDGFRA fusion", "Philadelphia chromosome test"], "result": "FIP1L1–PDGFRA and BCR–ABL transcripts negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11043",
+    "diagnosis": "Eosinophilic myocarditis",
+    "aliases": ["acute eosinophilic myocarditis", "eosinophil-mediated myocarditis", "hypereosinophilic myocarditis"],
+    "reasoning": "1. Myocardial infarction was considered but excluded — “The presence of global left ventricular dysfunction was better explained with myocarditis than myocardial infarction as there should be multi territory ischaemia to explain it which was less likely in our patient given that she was young and did not had any cardiovascular risk factors.” 2. Drug-induced hypersensitivity reaction was considered but ruled out — “Drug hypersensitivity as a cause of eosinophilia was excluded from history.” 3. Parasitic infestation was considered but excluded — “Both serum IgM and IgG were negative for Filaria, Toxoplasma and toxocara infection and stool examination was negative for parasites.” 4. Common viral and other infections were considered but excluded — “Serology for Epstein-Barr virus, Cytomegalo virus and Mycoplasma were negative. Retroviral infection and tuberculosis were excluded. Her blood culture and autoimmune screen were negative.” 5. Other secondary causes including connective tissue disease were considered but excluded — “Normal thyroid function test, negative ANA, DsDNA, negative antibody tires of common viral infection were used to exclude other differential diagnosis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11043",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001", "s005"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002", "s003"], "f010": ["s002", "s003"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s001"], "f015": ["s001"]
+    },
+    "quotes": {
+      "f002": "progressive dyspnea, initially on exertion and later at rest", "f003": "a 1-week history of progressive dyspnea",
+      "f004": "low-grade fever", "f006": "profuse sweating", "f009": "no history of allergy",
+      "f010": "no recent medication use", "f011": "no cardiovascular risk factors", "f014": "previously healthy",
+      "f015": "Sri Lankan woman"
+    },
+    "flags": {
+      "f010": ["s002 'recent drug exposure' and s003 'no recent medication use' are merged into one denial of recent medicines."],
+      "f011": ["Blanket denial; answers only an open question about heart risk factors. Specific risk factors (smoking, blood pressure, cholesterol, diabetes) stay unknown."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "temperature was mildly elevated"},
+      "x002": {"sentences": ["s004"], "source_text": "heart rate 120 bpm"},
+      "x003": {"sentences": ["s004"], "source_text": "blood pressure 100/70 mmHg"},
+      "x004": {"sentences": ["s004"], "source_text": "respiratory rate elevated"},
+      "x005": {"sentences": ["s005"], "source_text": "She was dyspneic at rest"},
+      "x006": {"sentences": ["s005"], "source_text": "jugular venous pressure of 5 cm above the sternal angle"},
+      "x007": {"sentences": ["s005"], "source_text": "no Kussmaul sign"},
+      "x008": {"sentences": ["s006"], "source_text": "Cardiac auscultation revealed slightly muffled heart sounds with a gallop rhythm."},
+      "x009": {"sentences": ["s007"], "source_text": "Lung examination showed bilateral basal fine inspiratory crackles."},
+      "x010": {"sentences": ["s008"], "source_text": "She had mild, non-tender hepatomegaly and splenomegaly."},
+      "x011": {"sentences": ["s009"], "source_text": "There was no peripheral edema"},
+      "x012": {"sentences": ["s009"], "source_text": "There was no peripheral edema, rash"},
+      "x013": {"sentences": ["s009"], "source_text": "There was no peripheral edema, rash, or lymphadenopathy."},
+      "x014": {"sentences": ["s010"], "source_text": "leukocytosis with an absolute eosinophil count of 21.6×10^3/μL (63.5%), normal hemoglobin and platelets"},
+      "x015": {"sentences": ["s010"], "source_text": "erythrocyte sedimentation rate 60 mm/hr"},
+      "x016": {"sentences": ["s010"], "source_text": "C-reactive protein normal"},
+      "x017": {"sentences": ["s010"], "source_text": "Troponin I was 35.4 ng/dL (normal <1.0)"},
+      "x018": {"sentences": ["s010"], "source_text": "brain natriuretic peptide was 1280.5 pg/mL"},
+      "x019": {"sentences": ["s011"], "source_text": "Electrocardiogram demonstrated sinus tachycardia with widespread ST-segment depressions."},
+      "x020": {"sentences": ["s012"], "source_text": "Chest radiograph revealed pulmonary congestion."},
+      "x021": {"sentences": ["s013"], "source_text": "Transthoracic echocardiography showed global left ventricular hypokinesia with an ejection fraction of 40%, a thin pericardial effusion, and no intracardiac thrombus."},
+      "x022": {"sentences": ["s014"], "source_text": "Filaria, Toxoplasma, and Toxocara antibodies / were all negative"},
+      "x023": {"sentences": ["s014"], "source_text": "stool examination for parasites / were all negative"},
+      "x024": {"sentences": ["s014"], "source_text": "serologies for Epstein-Barr virus, cytomegalovirus / HIV / were all negative"},
+      "x025": {"sentences": ["s014"], "source_text": "Mycoplasma / were all negative"},
+      "x026": {"sentences": ["s014"], "source_text": "tuberculosis screening / were all negative"},
+      "x027": {"sentences": ["s014"], "source_text": "blood cultures / were all negative"},
+      "x028": {"sentences": ["s014"], "source_text": "autoimmune markers (ANA, dsDNA)—were all negative"},
+      "x029": {"sentences": ["s015"], "source_text": "Thyroid function, renal function, electrolytes, and lipid profile were normal"},
+      "x030": {"sentences": ["s015"], "source_text": "Thyroid function, renal function, electrolytes, and lipid profile were normal"},
+      "x031": {"sentences": ["s015"], "source_text": "Thyroid function, renal function, electrolytes, and lipid profile were normal"},
+      "x032": {"sentences": ["s015"], "source_text": "transaminases were elevated threefold"},
+      "x033": {"sentences": ["s016"], "source_text": "Abdominal ultrasound confirmed mild hepatosplenomegaly without lymphadenopathy."},
+      "x034": {"sentences": ["s017"], "source_text": "Bone marrow biopsy demonstrated marked eosinophilia without lymphoproliferative infiltration"},
+      "x035": {"sentences": ["s017"], "source_text": "FIP1L1–PDGFRA and BCR–ABL transcripts were negative"}
+    },
+    "finding_flags": {
+      "x014": ["The total leukocyte count is not given; only 'leukocytosis' and the eosinophil count."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s002 says she denied 'systemic symptoms', which contradicts the low-grade fever, malaise and profuse sweating in s001; that phrase is not written as a fact.",
+      "Troponin I is given in ng/dL (normal <1.0); troponin is usually reported in ng/mL. Kept as written.",
+      "The leukocyte total is not given, though the eosinophil count of 21.6×10^3/μL at 63.5% implies about 34×10^3/μL."
+    ],
+    "notes": [
+      "Index visit: the admission after one week of progressive dyspnea with low-grade fever, malaise and profuse sweating (s001-s003); the examination and all tests (s004-s017) belong to this admission workup.",
+      "s018: endomyocardial biopsy was declined and coronary angiography was not performed; no results, so no findings.",
+      "The 'dyspneic at rest' examination finding (s005) also supports the course fact f002; it stays in the general-appearance finding."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s018", "reason": "Tests that were declined or not performed; no result to report."}
+    ]
+  }
+}

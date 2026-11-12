@@ -1,0 +1,91 @@
+{
+  "patient": {
+    "case_id": "mcr-test-07488",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 56, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["head pain"], "text": "I've been having headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: location", "parent": "f001", "attribute": "location", "text": "It's on the left side, at my temple.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "headache: character", "parent": "f001", "attribute": "character", "text": "It's a throbbing pain.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "headache: frequency", "parent": "f001", "attribute": "frequency", "text": "It comes and goes.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "headache: timing", "parent": "f001", "attribute": "timing", "text": "It's worse at night.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "headache: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for a month.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f007", "item": "loss of side vision", "aliases": ["visual field defects", "bitemporal visual field loss", "peripheral vision loss", "vision problems"], "text": "I've noticed I can't see out to the sides, on the outer side of both eyes.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f008", "item": "high blood pressure", "aliases": ["hypertension", "HTN"], "text": "I've had high blood pressure for more than 20 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "other medical problems", "text": "Apart from high blood pressure, I don't have any other medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f010", "item": "autoimmune disease", "aliases": ["autoimmune conditions", "lupus", "rheumatoid arthritis"], "text": "I've never had an autoimmune disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "autoimmune disease in the family", "aliases": ["family history of autoimmune disease"], "text": "No one in my family has had an autoimmune disease.", "polarity": "absent", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-07488",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "36.5 °C"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "140/108 mmHg"},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "cranial nerves", "motor strength", "reflexes", "sensation", "coordination", "gait"], "result": "Unremarkable."},
+      {"id": "x004", "kind": "test", "name": "serum biochemistry", "aliases": ["electrolytes", "potassium", "metabolic panel", "basic metabolic panel", "comprehensive metabolic panel", "sodium", "creatinine", "kidney function", "glucose", "liver function tests"], "result": "Potassium 3.2 mmol/L; other biochemical tests within normal limits."},
+      {"id": "x005", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "urine protein", "urine specific gravity", "urine dipstick"], "result": "Microscopic proteinuria; specific gravity 1.025."},
+      {"id": "x006", "kind": "test", "name": "autoimmune antibodies", "aliases": ["autoimmune serology", "ANA", "antinuclear antibodies", "antithyroid antibodies", "thyroid antibodies", "anti-TPO"], "result": "Antinuclear antibodies negative; no antithyroid antibodies."},
+      {"id": "x007", "kind": "test", "name": "serum immunoglobulins", "aliases": ["immunoglobulin levels", "IgG", "IgM", "IgA", "IgG4"], "result": "IgG, IgM, IgA and IgG4: negative."},
+      {"id": "x008", "kind": "test", "name": "coagulation tests", "aliases": ["coagulation", "clotting tests", "PT", "INR", "aPTT"], "result": "Within normal limits."},
+      {"id": "x009", "kind": "test", "name": "pituitary hormone evaluation", "aliases": ["endocrine evaluation", "pituitary function tests", "hormone levels", "cortisol", "ACTH", "adrenal axis", "thyroid function tests", "TSH", "free T4", "thyroid axis", "gonadal hormones", "LH", "FSH", "estradiol"], "result": "Hypothalamic–pituitary–adrenal axis: deficient; thyroid axis: deficient; gonadal axis: deficient."},
+      {"id": "x010", "kind": "test", "name": "chest CT", "aliases": ["CT chest", "CT thorax"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "ECG", "aliases": ["electrocardiogram", "EKG"], "result": "Flattened T waves."},
+      {"id": "x012", "kind": "test", "name": "MRI of the pituitary gland", "aliases": ["pituitary MRI", "MRI sella", "brain MRI", "MRI head", "MRI with gadolinium"], "result": "Symmetrical enlargement of the pituitary with suprasellar “dumbbell” extension; significant homogeneous enhancement after gadolinium; low signal in the anterior pituitary on T1 and high signal on T2; preserved bright spot in the posterior lobe; thickened, undeviated pituitary stalk; bilateral cavernous sinus encirclement of the internal carotid arteries; parasellar dural tail sign."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-07488",
+    "diagnosis": "Lymphocytic hypophysitis",
+    "aliases": ["autoimmune hypophysitis", "lymphocytic adenohypophysitis", "lymphocytic panhypophysitis", "lymphocytic infundibuloneurohypophysitis"],
+    "reasoning": "1. Granulomatous hypophysitis considered because it can infiltrate the sella but excluded due to rarity and autopsy identification — “Although granulomatous hypophysitis could also present with similar sellar infiltration; however, granulomatous hypophysitis is very rare and often found by autopsy.” 2. Necrotizing hypophysitis considered but excluded by the presence of homogeneous contrast enhancement and absence of ischemic changes — “Necrotizing hypophysitis present with a lack of contrast enhancement and sudden-onset hypopituitarism… Our patient presented with marked homogeneous anterior pituitary enhancement without ischemic manifestations.” 3. Xanthomatous hypophysitis considered but excluded by the lack of cystic ring enhancement and known steroid responsiveness — “Xanthomatous hypophysitis commonly exhibits cystic enlargement and peripheral ring enhancement after contrast and is rarely known to improve in response to glucocorticoid therapies.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-07488",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s002"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"], "f011": ["s003"]
+    },
+    "quotes": {
+      "f002": "in the left temporal region", "f003": "throbbing", "f004": "intermittent", "f005": "had worsened at night",
+      "f006": "a 1-month history", "f007": "She also noted bilateral temporal visual field defects.",
+      "f008": "hypertension of more than 20 years", "f009": "Her medical history was significant only for hypertension",
+      "f010": "there was no personal or family history of autoimmune disease", "f011": "there was no personal or family history of autoimmune disease"
+    },
+    "flags": {
+      "f005": ["'had worsened at night' read as the headache being worse at night (timing), not as a night-time change in course."],
+      "f007": ["'She also noted' read as the patient noticing the field defects; no visual field examination result is given, so there is no finding."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "her temperature was 36.5 °C"},
+      "x002": {"sentences": ["s004"], "source_text": "blood pressure 140/108 mmHg"},
+      "x003": {"sentences": ["s004"], "source_text": "neurologic examination was unremarkable"},
+      "x004": {"sentences": ["s005", "s007"], "source_text": "a serum potassium of 3.2 mmol/L / Other biochemical and coagulation tests were within normal limits"},
+      "x005": {"sentences": ["s005"], "source_text": "microscopic proteinuria, and a urinary specific gravity of 1.025"},
+      "x006": {"sentences": ["s006"], "source_text": "She was negative for antinuclear antibodies / had no antithyroid antibodies"},
+      "x007": {"sentences": ["s006"], "source_text": "negative for antinuclear antibodies, immunoglobulin G (IgG), IgM, IgA, and IgG4"},
+      "x008": {"sentences": ["s007"], "source_text": "Other biochemical and coagulation tests were within normal limits."},
+      "x009": {"sentences": ["s008"], "source_text": "Endocrine evaluation revealed deficiencies of the hypothalamic–pituitary–adrenal axis, thyroid axis, and gonadal axis."},
+      "x010": {"sentences": ["s009"], "source_text": "Chest CT was normal"},
+      "x011": {"sentences": ["s009"], "source_text": "ECG showed flattened T waves"},
+      "x012": {"sentences": ["s010"], "source_text": "Magnetic resonance imaging of the pituitary gland demonstrated symmetrical enlargement with suprasellar “dumbbell” extension, significant homogeneous enhancement after gadolinium, low signal in the anterior pituitary on T1, high signal on T2, a preserved bright spot in the posterior lobe, thickening of an undeviated pituitary stalk, bilateral cavernous sinus encirclement of the internal carotid arteries, and a parasellar dural tail sign."}
+    },
+    "finding_flags": {
+      "x007": ["The source says she was 'negative for' IgG, IgM, IgA and IgG4; immunoglobulins are measured as levels, so this probably means not elevated. Kept as written."],
+      "x009": ["The source gives no hormone values, only which axes were deficient."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s002 reports bilateral temporal visual field defects, while s004 calls the neurological examination unremarkable; no formal visual field examination is reported.",
+      "s006: immunoglobulins (IgG, IgM, IgA, IgG4) are listed as 'negative', which is not a usual way to report levels."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with a 1-month intermittent left temporal headache and bitemporal field defects (s001-s004); all laboratory, endocrine and imaging results (s005-s010) are findings from the same workup.",
+      "x003: the neurological examination record has no visual-field alias, so a visual field request stays unavailable instead of returning 'unremarkable' against the patient's reported field loss.",
+      "s007 'Other biochemical and coagulation tests were within normal limits' supports both the biochemistry record (x004) and the coagulation record (x008)."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

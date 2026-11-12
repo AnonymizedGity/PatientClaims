@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-123",
+  "source_row": 123,
+  "demographics_text": "45-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with progressive pain and blurry vision in one eye.",
+  "chief_complaint": "Progressive pain and blurry vision in the right eye",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-123-p001",
+      "field": "History",
+      "text": "The patient reports a 1-day history of increasing pain and blurry vision in his right eye, finding it difficult to open the eye due to the pain. The left eye is unaffected. He uses contact lenses regularly and mentions no recent changes in his vision or eye care routine until this episode. He has a history of bronchial asthma for which he uses inhaled salbutamol. Professionally, he is engaged as a kindergarten teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-123-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty opening the affected eye"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-123-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No symptoms in the left eye"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-123-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Uses contact lenses"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-123-p005",
+      "field": "Past_Medical_History",
+      "text": "Bronchial Asthma treated with inhaled salbutamol"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-123-p006",
+      "field": "Social_History",
+      "text": "Kindergarten teacher, no reported smoking or significant alcohol use"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-123-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, nausea, or any other systemic symptoms"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.0°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/75 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "85 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e005",
+      "path": "Physical_Examination_Findings.Ophthalmic_Examination.Visual_Acuity.Right_Eye",
+      "text": "Count fingers at 3 feet"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e006",
+      "path": "Physical_Examination_Findings.Ophthalmic_Examination.Visual_Acuity.Left_Eye",
+      "text": "20/25"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e007",
+      "path": "Physical_Examination_Findings.Ophthalmic_Examination.Inspection",
+      "text": "The right eye appears red and there is evident discomfort on attempting to open the eye"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e008",
+      "path": "Physical_Examination_Findings.Ophthalmic_Examination.Palpation",
+      "text": "No abnormalities noted on palpation around the orbit or eye"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-e009",
+      "path": "Physical_Examination_Findings.Ophthalmic_Examination.Slit_Lamp_Examination",
+      "text": "Recommended but findings not provided"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-123-i001",
+      "path": "Test_Results.Slit_Lamp_Examination.Findings",
+      "text": "Corneal ulceration with infiltration, hinting at microbial keratitis"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-123-i002",
+      "path": "Test_Results.Microbiology.Corneal_Scraping_Culture.Findings",
+      "text": "Growth of Pseudomonas aeruginosa"
+    }
+  ],
+  "correct_diagnosis": "Pseudomonas keratitis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

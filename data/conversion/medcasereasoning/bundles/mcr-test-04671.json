@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "case_id": "mcr-test-04671",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 41, "sex": "male"},
+    "opening": ["f001", "f003", "f008"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["fevers", "high temperature", "feeling feverish"], "text": "I've had high fevers every day.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "night sweats", "aliases": ["sweating at night", "drenching sweats"], "text": "I've been having night sweats.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost 20 kg.", "value": "20 kg", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "loss of appetite", "aliases": ["anorexia", "poor appetite", "not hungry"], "text": "I've lost my appetite.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "feeling weak and drained", "aliases": ["asthenia", "fatigue", "tiredness", "lack of energy", "general weakness"], "text": "I feel weak and drained all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "weakness of the legs", "aliases": ["weak legs", "leg weakness"], "text": "My legs have been getting weaker and weaker.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f007", "item": "how long the fevers, sweats, weight loss and weakness have lasted", "text": "The fevers, night sweats, weight loss, poor appetite and weakness have been going on for a month.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "yellowing of the skin or eyes", "aliases": ["jaundice", "yellow skin", "yellow eyes", "icterus"], "text": "Recently I've turned yellow.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f009", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "captopril", "aliases": ["blood pressure tablets", "ACE inhibitor"], "text": "I take captopril for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "heavy drinking in the past", "aliases": ["alcohol", "drinking", "alcohol history"], "text": "I used to drink heavily, but that was a long time ago.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f012", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I smoke.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-04671",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "38.0 °C"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/75 mmHg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "106/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "18/min"},
+      {"id": "x005", "kind": "vital", "name": "body mass index", "aliases": ["BMI"], "result": "21.6"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "hydration", "jaundice", "sclerae"], "result": "Slightly dehydrated; icteric."},
+      {"id": "x007", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "lymphadenopathy"], "result": "No lymphadenopathy."},
+      {"id": "x008", "kind": "exam", "system": "cardiovascular", "name": "heart examination", "aliases": ["cardiac examination", "heart sounds", "auscultation of the heart", "murmur"], "result": "Mild systolic murmur at the mitral area."},
+      {"id": "x009", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["chest examination", "lung auscultation", "breath sounds"], "result": "Lung fields clear."},
+      {"id": "x010", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver", "spleen", "abdominal palpation"], "result": "Liver edge 1 cm below the right costal margin; tender spleen 5 cm below the left costal margin."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "white cell count", "WBC", "platelets", "differential"], "result": "Hemoglobin 14.8 g/dL; WBC 4.78×10^3/mm^3 with normal differential; platelets 91.7×10^3/mm^3."},
+      {"id": "x012", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "AST", "ALT", "alkaline phosphatase", "ALP", "GGT", "gamma-GT", "bilirubin"], "result": "AST 443 U/L; ALT 404 U/L; alkaline phosphatase 719 U/L; γ-GT 368 U/L; total bilirubin 9.6 mg/dL."},
+      {"id": "x013", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH"], "result": "1274 U/L."},
+      {"id": "x014", "kind": "test", "name": "coagulation studies", "aliases": ["INR", "prothrombin time", "fibrinogen", "clotting tests", "coagulation"], "result": "INR 1.69; fibrinogen 67 mg/dL."},
+      {"id": "x015", "kind": "test", "name": "serum triglycerides", "aliases": ["triglycerides", "lipid panel", "lipids"], "result": "617 mg/dL."},
+      {"id": "x016", "kind": "test", "name": "serum ferritin", "aliases": ["ferritin", "iron studies"], "result": ">16 500 ng/mL."},
+      {"id": "x017", "kind": "test", "name": "viral serology", "aliases": ["HIV test", "CMV serology", "hepatitis B serology", "hepatitis C serology", "EBV serology", "Epstein-Barr virus", "cytomegalovirus", "hepatitis serology"], "result": "HIV negative; CMV IgG and IgM negative; hepatitis B negative; hepatitis C negative; EBV IgG positive, IgM negative."},
+      {"id": "x018", "kind": "test", "name": "syphilis serology", "aliases": ["syphilis test", "VDRL", "RPR"], "result": "Negative."},
+      {"id": "x019", "kind": "test", "name": "Schistosoma mansoni IgM", "aliases": ["schistosomiasis serology", "Schistosoma serology"], "result": "Negative."},
+      {"id": "x020", "kind": "test", "name": "toxoplasmosis serology", "aliases": ["toxoplasma IgG", "toxoplasma IgM", "toxoplasma serology"], "result": "IgG positive, IgM negative."},
+      {"id": "x021", "kind": "test", "name": "autoimmune serology", "aliases": ["rheumatoid factor", "RF", "antinuclear antibodies", "ANA"], "result": "Rheumatoid factor negative; antinuclear antibodies negative."},
+      {"id": "x022", "kind": "test", "name": "upper endoscopy", "aliases": ["upper GI endoscopy", "gastroscopy", "EGD"], "result": "Enanthematic pangastritis."},
+      {"id": "x023", "kind": "test", "name": "transthoracic echocardiography", "aliases": ["echocardiogram", "echo", "TTE"], "result": "Normal."},
+      {"id": "x024", "kind": "test", "name": "abdominal ultrasound", "aliases": ["abdominal US", "spleen ultrasound"], "result": "Splenomegaly with multiple hypoechoic areas."},
+      {"id": "x025", "kind": "test", "name": "abdominal CT", "aliases": ["CT abdomen"], "result": "Splenomegaly with multiple hypoechoic areas."},
+      {"id": "x026", "kind": "test", "name": "bone marrow aspiration", "aliases": ["bone marrow aspirate", "marrow aspirate"], "result": "Hypercellular with granulocytic predominance."},
+      {"id": "x027", "kind": "test", "name": "bone marrow biopsy", "aliases": ["marrow biopsy", "trephine biopsy", "bone marrow histology"], "result": "Megakaryocytic hyperplasia and a microgranuloma."},
+      {"id": "x028", "kind": "test", "name": "Ziehl–Neelsen, Grocott and PAS stains of the bone marrow", "aliases": ["special stains", "AFB stain", "Ziehl-Neelsen stain", "Grocott stain", "PAS stain", "fungal stain"], "result": "Negative."},
+      {"id": "x029", "kind": "test", "name": "bone marrow immunophenotyping", "aliases": ["immunophenotyping", "flow cytometry"], "result": "No evidence of lymphoma."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-04671",
+    "diagnosis": "Hemophagocytic lymphohistiocytosis",
+    "aliases": ["HLH", "haemophagocytic lymphohistiocytosis", "hemophagocytic syndrome", "secondary hemophagocytic lymphohistiocytosis", "secondary HLH", "acquired HLH", "reactive hemophagocytic syndrome"],
+    "reasoning": "1. Storage disorders (Niemann–Pick disease, Gaucher’s disease, Tangier disease) were considered — “the differential diagnosis of non-neoplastic proliferation of histiocytes…includes…storage disorders such as Niemann-Pick disease, Gaucher’s disease, and Tangier disease.” 2. Histiocytic sarcoma was considered but excluded — “In contrast to HLH, patients with HS present tumoral skin lesions… On the other hand, HLH is characterized by diffuse, rather than localized, histiocytic infiltration.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-04671",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s002"], "f010": ["s002"], "f011": ["s002"], "f012": ["s002"]
+    },
+    "quotes": {
+      "f001": "daily high-grade fevers", "f003": "a 20-kg weight loss", "f004": "anorexia", "f005": "asthenia",
+      "f006": "progressive lower-limb weakness", "f007": "a 1-month history of daily high-grade fevers, night sweats, a 20-kg weight loss, anorexia, asthenia, progressive lower-limb weakness",
+      "f008": "recent jaundice", "f011": "remote heavy alcohol use", "f012": "active smoking"
+    },
+    "flags": {
+      "f007": ["The one-month duration is not applied to the jaundice, which the source calls 'recent'."],
+      "f011": ["Whether he drinks at all now is not stated; only the remote heavy use."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "he was febrile (38.0 °C)"},
+      "x002": {"sentences": ["s003"], "source_text": "blood pressure was 120/75 mmHg"},
+      "x003": {"sentences": ["s003"], "source_text": "pulse 106 bpm"},
+      "x004": {"sentences": ["s003"], "source_text": "respiratory rate 18 breaths/min"},
+      "x005": {"sentences": ["s003"], "source_text": "BMI was 21.6"},
+      "x006": {"sentences": ["s003"], "source_text": "slightly dehydrated, and icteric"},
+      "x007": {"sentences": ["s004"], "source_text": "No lymphadenopathy was noted."},
+      "x008": {"sentences": ["s005"], "source_text": "Cardiac exam revealed a mild systolic murmur at the mitral area"},
+      "x009": {"sentences": ["s005"], "source_text": "lung fields were clear"},
+      "x010": {"sentences": ["s006"], "source_text": "Abdominal examination showed a liver edge 1 cm below the right costal margin and a tender spleen 5 cm below the left costal margin."},
+      "x011": {"sentences": ["s007"], "source_text": "hemoglobin 14.8 g/dL, WBC count 4.78×10^3/mm^3 with normal differential, platelets 91.7×10^3/mm^3"},
+      "x012": {"sentences": ["s007"], "source_text": "AST 443 U/L, ALT 404 U/L, alkaline phosphatase 719 U/L, γ-GT 368 U/L, total bilirubin 9.6 mg/dL"},
+      "x013": {"sentences": ["s007"], "source_text": "LDH 1274 U/L"},
+      "x014": {"sentences": ["s007"], "source_text": "INR 1.69; fibrinogen 67 mg/dL"},
+      "x015": {"sentences": ["s007"], "source_text": "triglycerides 617 mg/dL"},
+      "x016": {"sentences": ["s007"], "source_text": "ferritin >16 500 ng/mL"},
+      "x017": {"sentences": ["s008"], "source_text": "Serologic tests were negative for HIV, CMV (IgG/IgM), hepatitis B and C / EBV IgG was positive, IgM negative"},
+      "x018": {"sentences": ["s008"], "source_text": "syphilis"},
+      "x019": {"sentences": ["s008"], "source_text": "Schistosoma mansoni (IgM)"},
+      "x020": {"sentences": ["s008"], "source_text": "toxoplasmosis IgG positive, IgM negative"},
+      "x021": {"sentences": ["s008"], "source_text": "rheumatoid factor and antinuclear antibodies were negative"},
+      "x022": {"sentences": ["s009"], "source_text": "Upper endoscopy showed enanthematic pangastritis."},
+      "x023": {"sentences": ["s010"], "source_text": "Transthoracic echocardiography was normal."},
+      "x024": {"sentences": ["s010"], "source_text": "Abdominal ultrasound and CT demonstrated splenomegaly with multiple hypoechoic areas."},
+      "x025": {"sentences": ["s010"], "source_text": "Abdominal ultrasound and CT demonstrated splenomegaly with multiple hypoechoic areas."},
+      "x026": {"sentences": ["s011"], "source_text": "Bone marrow aspiration was hypercellular with granulocytic predominance"},
+      "x027": {"sentences": ["s011"], "source_text": "biopsy showed megakaryocytic hyperplasia and a microgranuloma"},
+      "x028": {"sentences": ["s012"], "source_text": "Ziehl–Neelsen, Grocott, and PAS stains were negative."},
+      "x029": {"sentences": ["s013"], "source_text": "Immunophenotyping showed no evidence of lymphoma."}
+    },
+    "finding_flags": {
+      "x024": ["The source gives one combined result for abdominal ultrasound and CT ('hypoechoic' is an ultrasound term); both records carry it."],
+      "x028": ["s012 and s013 do not name the specimen; read as the bone marrow (s011)."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The bone marrow results do not mention hemophagocytosis; the diagnosis rests on the laboratory picture (selection note).",
+      "s010 holds two sentences (echocardiography; abdominal imaging)."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with a month of daily high fevers, night sweats, weight loss, anorexia, weakness and recent jaundice (s001); the examination and full workup (s003–s013) belong to this admission.",
+      "Icterus is both a fact (f008) and part of the general appearance finding (x006); the palpable spleen and liver edge are examiner findings only.",
+      "Serology in s008 is split into a viral panel (HIV, CMV, hepatitis B and C, EBV), syphilis, Schistosoma, toxoplasmosis and autoimmune serology."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s014", "reason": "Hospital course after the index visit: supportive care and transfusions, persistent fever, progressive hepatic, renal and respiratory failure with hemodialysis and mechanical ventilation."}
+    ]
+  }
+}

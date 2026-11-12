@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11154",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 88, "sex": "male"},
+    "opening": ["f001", "f003", "f004", "f005"],
+    "facts": [
+      {"id": "f001", "item": "cough", "aliases": ["dry cough", "coughing"], "text": "I have a dry cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "course of the symptoms", "text": "These have all been getting worse.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea", "trouble breathing"], "text": "I've been short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "fever", "aliases": ["temperature", "feverish"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "chills", "aliases": ["shivering", "rigors"], "text": "I've had chills.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "when the symptoms started", "aliases": ["onset of the symptoms", "how long the symptoms have been going on"], "text": "The symptoms began about two weeks after I started taking Sai-rei-to.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "Sai-rei-to", "aliases": ["saireito", "herbal medicine", "Kampo medicine", "herbal remedy"], "text": "I started a herbal medicine called Sai-rei-to 25 days ago.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "other medications", "aliases": ["regular medicines", "current medications"], "text": "I don't take any other medicines.", "polarity": "absent", "category": "medication"},
+      {"id": "f009", "item": "smoking", "aliases": ["tobacco", "cigarettes", "ex-smoker"], "text": "I used to smoke, but I've stopped.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f010", "item": "lung disease", "aliases": ["pulmonary disease", "previous lung problems", "chest disease"], "text": "I've never had any lung disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "allergies", "aliases": ["allergy", "allergic reactions"], "text": "I don't have any allergies.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "chronic kidney disease", "aliases": ["CKD", "kidney problems", "kidney disease"], "text": "I have chronic kidney disease.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "swollen legs", "aliases": ["leg swelling", "ankle swelling", "edema"], "text": "Both of my lower legs are swollen.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11154",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "38.0 °C"},
+      {"id": "x002", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "20/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "189/91 mmHg"},
+      {"id": "x004", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "99% on 12 L/min oxygen via reservoir mask"},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "chest auscultation", "aliases": ["chest examination", "respiratory examination", "breath sounds"], "result": "Bilateral late inspiratory crackles."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "peripheral edema", "aliases": ["leg swelling", "pedal edema", "ankle edema", "legs"], "result": "Bilateral pretibial edema."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "differential", "eosinophils", "platelets"], "result": "WBC 8000/mm3 (78.8% neutrophils, 7.8% eosinophils); platelets 155,000/mm3."},
+      {"id": "x009", "kind": "test", "name": "brain natriuretic peptide", "aliases": ["BNP"], "result": "406 pg/mL"},
+      {"id": "x010", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "10.51 mg/dL"},
+      {"id": "x011", "kind": "test", "name": "KL-6", "aliases": ["serum KL-6", "KL6"], "result": "374 U/mL"},
+      {"id": "x012", "kind": "test", "name": "surfactant protein D", "aliases": ["SP-D", "serum SP-D"], "result": "339 ng/mL"},
+      {"id": "x013", "kind": "test", "name": "coagulation studies", "aliases": ["coagulation", "coags", "PT", "INR", "aPTT"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "bacteriological tests", "aliases": ["bacterial tests", "microbiology", "cultures"], "result": "Negative."},
+      {"id": "x015", "kind": "test", "name": "Mycoplasma complement fixation titer", "aliases": ["Mycoplasma serology", "Mycoplasma antibodies", "Mycoplasma titer"], "result": "Rose fourfold.", "time": "paired samples"},
+      {"id": "x016", "kind": "test", "name": "Chlamydia pneumoniae antibodies", "aliases": ["Chlamydia pneumoniae serology", "Chlamydophila serology"], "result": "Single sample: non-diagnostic."},
+      {"id": "x017", "kind": "test", "name": "arterial blood gas", "aliases": ["ABG", "blood gas"], "result": "Severe hypoxemia."},
+      {"id": "x018", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "cardiac ultrasound"], "result": "Ejection fraction 60% with normal wall motion."},
+      {"id": "x019", "kind": "test", "name": "chest radiography", "aliases": ["chest X-ray", "CXR"], "result": "Bilateral ground-glass opacities."},
+      {"id": "x020", "kind": "test", "name": "high-resolution CT of the chest", "aliases": ["HRCT", "chest CT", "CT chest"], "result": "Bilateral patchy ground-glass opacities, infiltrative shadows, and pleural effusions."},
+      {"id": "x021", "kind": "test", "name": "bronchoalveolar lavage", "aliases": ["BAL", "bronchoscopy with lavage"], "result": "Diffuse alveolar hemorrhage with a neutrophil predominance: total cell count 325,000/mL (62% neutrophils, 26% lymphocytes, 12% macrophages); CD4/CD8 ratio 0.49.", "time": "after admission"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11154",
+    "diagnosis": "Drug-induced lung injury",
+    "aliases": ["drug-induced interstitial lung disease", "drug-induced ILD", "drug-induced pneumonitis", "Sai-rei-to-induced lung injury", "Saireito-induced lung injury", "herbal medicine-induced lung injury", "Kampo medicine-induced lung injury", "drug-induced alveolar hemorrhage"],
+    "reasoning": "1. Drug-induced lung injury by Sai-rei-to was most likely — “Drug-induced interstitial lung disease (ILD) caused by Sai-rei-to was the most likely diagnosis, because he had no history of interstitial pneumonia or collagen disease, and he had started taking Sai-rei-to a month earlier.” 2. Community-acquired pneumonia was considered but microbiology was unrevealing — “Bacteriological tests did not detect any bacterial or viral pathogens.” 3. Pulmonary vasculitis (Goodpasture syndrome or ANCA-associated vasculitis) was considered because of alveolar hemorrhage — “As his BAL findings suggested alveolar hemorrhage, we considered an alternative diagnosis of Goodpasture syndrome or ANCA related vasculitis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11154",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s001"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s003"],
+      "f009": ["s003"],
+      "f010": ["s003"],
+      "f011": ["s003"],
+      "f012": ["s001"],
+      "f013": ["s001"],
+      "f014": ["s005"]
+    },
+    "quotes": {
+      "f002": "progressive dry cough",
+      "f006": "symptoms began two weeks after initiation",
+      "f007": "Twenty-five days earlier, he had started a herbal medicine, Sai-rei-to",
+      "f008": "took no other medications",
+      "f009": "He was an ex-smoker",
+      "f010": "no history of pulmonary disease",
+      "f014": "bilateral pretibial edema was noted"
+    },
+    "flags": {
+      "f002": ["'Progressive' stands before the whole list of presenting symptoms, so it is one standalone fact for all of them (harmonisation)."],
+      "f007": ["Time 'current': he was taking Sai-rei-to until it was stopped in hospital (s014)."],
+      "f014": ["Taken from the examination (s005): bilateral pretibial edema is visible to the patient."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "temperature was 38.0 °C"},
+      "x002": {"sentences": ["s004"], "source_text": "respiratory rate 20 breaths/min"},
+      "x003": {"sentences": ["s004"], "source_text": "blood pressure 189/91 mmHg"},
+      "x004": {"sentences": ["s004"], "source_text": "heart rate 72 bpm"},
+      "x005": {"sentences": ["s004"], "source_text": "oxygen saturation was 99% on 12 L/min via reservoir mask"},
+      "x006": {"sentences": ["s005"], "source_text": "Chest auscultation revealed bilateral late inspiratory crackles"},
+      "x007": {"sentences": ["s005"], "source_text": "bilateral pretibial edema was noted"},
+      "x008": {"sentences": ["s006"], "source_text": "WBC count 8000/mm3 (78.8% neutrophils, 7.8% eosinophils), platelets 155,000/mm3"},
+      "x009": {"sentences": ["s006"], "source_text": "BNP 406 pg/mL"},
+      "x010": {"sentences": ["s006"], "source_text": "CRP 10.51 mg/dL"},
+      "x011": {"sentences": ["s006"], "source_text": "KL-6 374 U/mL"},
+      "x012": {"sentences": ["s006"], "source_text": "SP-D 339 ng/mL"},
+      "x013": {"sentences": ["s007"], "source_text": "Coagulation was normal."},
+      "x014": {"sentences": ["s007"], "source_text": "Bacteriological tests were negative"},
+      "x015": {"sentences": ["s007"], "source_text": "Mycoplasma complement fixation titer rose fourfold"},
+      "x016": {"sentences": ["s007"], "source_text": "single-sample Chlamydia pneumoniae antibodies were non-diagnostic"},
+      "x017": {"sentences": ["s008"], "source_text": "Arterial blood gas analysis revealed severe hypoxemia."},
+      "x018": {"sentences": ["s009"], "source_text": "Echocardiography showed an ejection fraction of 60% with normal wall motion."},
+      "x019": {"sentences": ["s010"], "source_text": "Chest radiography demonstrated bilateral ground-glass opacities."},
+      "x020": {"sentences": ["s011"], "source_text": "High-resolution CT confirmed bilateral patchy ground-glass opacities, infiltrative shadows, and pleural effusions."},
+      "x021": {"sentences": ["s013"], "source_text": "Bronchoalveolar lavage revealed diffuse alveolar hemorrhage with a neutrophil predominance (total cell count 325,000/mL: 62% neutrophils, 26% lymphocytes, 12% macrophages; CD4/CD8 ratio 0.49)."}
+    },
+    "finding_flags": {
+      "x005": ["Oxygen saturation measured on 12 L/min oxygen, not room air."],
+      "x014": ["The specimens and the organisms tested are not named."],
+      "x017": ["No blood-gas values are given, only 'severe hypoxemia'."]
+    },
+    "leakage": [
+      {"fact_id": "f010", "reason": "Explicit denial of previous pulmonary disease (s003); 'lung' is the organ word, not the diagnosis."}
+    ],
+    "source_issues": ["A fourfold rise in the Mycoplasma complement fixation titer suggests recent Mycoplasma infection, while the reasoning calls the microbiology unrevealing.", "Oxygen saturation 99% on 12 L/min sits oddly with 'severe hypoxemia' on the blood gas; the two may have been taken at different times or oxygen settings.", "s014 says 'all oral therapies including Sai-rei-to were discontinued', which sits oddly with 'took no other medications' (s003)."],
+    "notes": ["Index visit: the emergency presentation with progressive dry cough, dyspnea, fever and chills about 25 days after starting Sai-rei-to (s001-s011); bronchoalveolar lavage (s013) came after admission and oxygen therapy and is a finding with time.", "The symptom onset is kept as stated (two weeks after starting Sai-rei-to), not converted to days before presentation."],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s012", "reason": "Treatment (nasal high-flow oxygen); not part of the case."},
+      {"id": "s014", "reason": "Clinician's reasoning attributing the illness to Sai-rei-to (narrative_conclusion) and the treatment that followed; not a finding."}
+    ]
+  }
+}

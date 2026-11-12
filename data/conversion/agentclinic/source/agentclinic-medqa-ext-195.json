@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-195",
+  "source_row": 195,
+  "demographics_text": "36-year-old woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a neck mass.",
+  "chief_complaint": "Painless lump on the left side of the neck",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p001",
+      "field": "History",
+      "text": "The patient has noticed a painless lump on her neck for the past 3 months, which has progressively increased in size. She denies any changes in voice, difficulty swallowing, or respiratory symptoms. No history of radiation exposure."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Lump has increased in size over 3 months"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No voice changes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No difficulty swallowing"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No respiratory symptoms"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant medical history. No known allergies. Not on any medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p007",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol socially. Works as a high school teacher. No known exposure to ionizing radiation."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-195-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies weight loss, fever, night sweats, or any recent infections."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e005",
+      "path": "Physical_Examination_Findings.Neck_Examination.Inspection",
+      "text": "Visible swelling on the left side of the neck."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e006",
+      "path": "Physical_Examination_Findings.Neck_Examination.Palpation",
+      "text": "A 2.5-cm firm, irregular mass on the left side of the neck that moves with swallowing. Painless cervical lymphadenopathy noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e007",
+      "path": "Physical_Examination_Findings.Neck_Examination.Auscultation",
+      "text": "No bruits over the mass."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-e008",
+      "path": "Physical_Examination_Findings.Neck_Examination.Percussion",
+      "text": "Not applicable"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-195-i001",
+      "path": "Test_Results.Ultrasound_Neck.Findings",
+      "text": "Solitary left lobe thyroid mass with increased vascularity and hyperechogenic punctate regions."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-195-i002",
+      "path": "Test_Results.Fine_Needle_Aspiration_Biopsy.Scheduled",
+      "text": "Biopsy results are pending, scheduled for the following week."
+    }
+  ],
+  "correct_diagnosis": "Papillary carcinoma of the thyroid",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

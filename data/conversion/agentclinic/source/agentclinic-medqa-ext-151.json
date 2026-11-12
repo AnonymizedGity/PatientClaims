@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-151",
+  "source_row": 151,
+  "demographics_text": "45-year-old woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a breast mass.",
+  "chief_complaint": "Rapidly enlarging right breast mass",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-151-p001",
+      "field": "History",
+      "text": "The patient reports noticing a mass in her right breast 3 weeks ago, which has rapidly increased in size. She denies experiencing any pain associated with the mass."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-151-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-151-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No changes in skin or nipple appearance"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-151-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No noticeable lymphadenopathy"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-151-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. No history of breast masses or cancer in herself or her family."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-151-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, moderate alcohol use. Works as a teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-151-p007",
+      "field": "Review_of_Systems",
+      "text": "No weight loss, fever, night sweats, or changes in appetite."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "122/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "76 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e005",
+      "path": "Physical_Examination_Findings.Breast_Examination.Inspection",
+      "text": "No skin changes or nipple retraction."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e006",
+      "path": "Physical_Examination_Findings.Breast_Examination.Palpation.Right_Breast",
+      "text": "A 5-cm, nontender, multinodular mass palpated in the outer quadrant. No discharge."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e007",
+      "path": "Physical_Examination_Findings.Breast_Examination.Palpation.Left_Breast",
+      "text": "No masses or tenderness."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-e008",
+      "path": "Physical_Examination_Findings.Breast_Examination.Palpation.Lymph_Nodes",
+      "text": "No palpable cervical or axillary adenopathy."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-151-i001",
+      "path": "Test_Results.Mammography.Findings",
+      "text": "Shows a smooth polylobulated mass in the right breast."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-151-i002",
+      "path": "Test_Results.Biopsy.Histopathology",
+      "text": "Papillary projections of epithelial-lined stroma with hyperplasia and atypia."
+    }
+  ],
+  "correct_diagnosis": "Phyllodes tumor",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

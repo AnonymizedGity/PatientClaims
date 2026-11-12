@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12467",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 52, "sex": "female"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "muscle weakness", "aliases": ["weakness", "weak muscles", "weak arms and legs", "proximal weakness"], "text": "My arm and leg muscles are weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "muscle weakness: location", "parent": "f001", "attribute": "location", "text": "It's in the muscles near my shoulders and hips, the upper arms and thighs, on both sides.", "value": ["upper arms", "thighs", "both sides"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "lack of energy", "aliases": ["listlessness", "listless", "tiredness", "fatigue", "lethargy"], "text": "I feel listless, with no energy.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "weakness and listlessness: timing", "text": "After the ulcer was treated I still felt listless, and I had this weakness.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "previous episodes of weakness", "aliases": ["weakness before", "exertional weakness", "weakness after exercise", "recurrent weakness"], "text": "I've had several episodes of similar weakness before, brought on by exertion.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f006", "item": "insect bite", "aliases": ["bug bite", "bite"], "text": "Three weeks ago an insect bit me on the left thigh.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f007", "item": "ulcer on the thigh", "aliases": ["skin ulcer", "leg ulcer", "wound", "infected bite"], "text": "The bite turned into a deep ulcer.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "surgery to clean the ulcer", "aliases": ["debridement", "surgical debridement", "operation", "surgery"], "text": "I needed surgery to clean out the ulcer.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "antibiotics", "aliases": ["antibiotic treatment"], "text": "I was given antibiotics for the ulcer.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f010", "item": "diuretic use", "aliases": ["water pills", "diuretics"], "text": "I don't take any water pills.", "polarity": "absent", "category": "medication"},
+      {"id": "f011", "item": "diarrhoea", "aliases": ["diarrhea", "loose stools"], "text": "I haven't had diarrhoea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f012", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f013", "item": "recent severe breathing problem with carbon dioxide build-up", "aliases": ["hypercapnia", "high carbon dioxide", "respiratory failure", "breathing failure"], "text": "I haven't recently had any breathing failure or carbon dioxide build-up.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "family history of Bartter's syndrome", "aliases": ["Bartter syndrome in the family", "family history of kidney salt-wasting disorder"], "text": "Nobody in my family has had Bartter's syndrome.", "polarity": "absent", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12467",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/70 mmHg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "80/min"},
+      {"id": "x003", "kind": "test", "name": "metabolic panel", "aliases": ["electrolytes", "serum electrolytes", "potassium", "magnesium", "calcium", "urea", "BUN", "creatinine", "renal function", "kidney function"], "result": "Potassium 1.31 mmol/L; magnesium low (hypomagnesemia); calcium low (hypocalcemia); urea 13 mg/dL; creatinine 0.72 mg/dL (renal function normal)."},
+      {"id": "x004", "kind": "test", "name": "arterial blood gas", "aliases": ["ABG", "blood gas", "acid-base status", "pH", "bicarbonate"], "result": "Metabolic alkalosis."},
+      {"id": "x005", "kind": "test", "name": "plasma renin activity", "aliases": ["renin", "PRA"], "result": "Modestly elevated."},
+      {"id": "x006", "kind": "test", "name": "aldosterone", "aliases": ["serum aldosterone", "plasma aldosterone", "aldosterone level"], "result": "Modestly elevated."},
+      {"id": "x007", "kind": "test", "name": "spot urine electrolytes", "aliases": ["urine electrolytes", "urine chloride", "urine potassium", "urinary potassium excretion", "urinary chloride excretion"], "result": "Urine chloride excretion >20 mEq/day; urine potassium excretion >30 mEq/day."},
+      {"id": "x008", "kind": "test", "name": "urine calcium excretion", "aliases": ["urine calcium", "urinary calcium", "urine calcium/creatinine ratio"], "result": "Low."},
+      {"id": "x009", "kind": "test", "name": "abdominal ultrasonography", "aliases": ["abdominal ultrasound", "renal ultrasound", "kidney ultrasound"], "result": "No nephrocalcinosis."},
+      {"id": "x010", "kind": "test", "name": "electrocardiography", "aliases": ["ECG", "EKG", "electrocardiogram"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "stress echocardiography", "aliases": ["stress echo", "stress test", "echocardiogram"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12467",
+    "diagnosis": "Gitelman's syndrome",
+    "aliases": ["Gitelman syndrome", "familial hypokalemia-hypomagnesemia", "familial hypokalaemic hypomagnesaemia", "SLC12A3-related salt-losing tubulopathy"],
+    "reasoning": "1. Surreptitious diuretic use — “we excluded surreptitious diuretic use…” 2. Extracellular volume contraction — “we excluded…extracellular volume contraction (diarrhea or vomiting)…” 3. Post-hypercapnic state — “we excluded…a post-hypercapnic state.” 4. Liddle’s syndrome — “Patients with Gitelman’s syndrome are usually normotensive, which differentiate them from patients with Liddle’s syndrome.” 5. Bartter’s syndrome — “A family history of Bartter’s syndrome was absent and a provisional diagnosis of Gitelman’s syndrome was made.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12467",
+    "fact_sources": {
+      "f001": ["s002"], "f002": ["s002"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s001"], "f010": ["s007"], "f011": ["s007"], "f012": ["s007"],
+      "f013": ["s007"], "f014": ["s009"]
+    },
+    "quotes": {
+      "f002": "bilateral proximal muscle weakness in her upper and lower limbs", "f003": "she remained listless",
+      "f004": "Following treatment, she remained listless", "f005": "several prior exertional episodes of similar weakness",
+      "f006": "three weeks after an insect bite to her left thigh", "f007": "evolved into a deep ulcer",
+      "f008": "requiring surgical debridement", "f010": "surreptitious diuretic use", "f013": "a recent hypercapnic state"
+    },
+    "flags": {
+      "f004": ["The source says she 'remained' listless after treatment and reported the weakness then; it does not date the onset of either, so the fact only places both after the ulcer treatment."],
+      "f013": ["'Recent hypercapnic state' excluded by history; worded as no recent breathing failure or carbon dioxide build-up."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "blood pressure was 110/70 mmHg"},
+      "x002": {"sentences": ["s003"], "source_text": "heart rate 80 beats/min"},
+      "x003": {"sentences": ["s004", "s005"], "source_text": "Renal function was normal (serum urea 13 mg/dL; creatinine 0.72 mg/dL). / serum potassium 1.31 mmol/L / hypomagnesemia, and hypocalcemia"},
+      "x004": {"sentences": ["s005"], "source_text": "metabolic alkalosis on arterial blood gas analysis"},
+      "x005": {"sentences": ["s006"], "source_text": "Plasma renin activity and aldosterone levels were modestly elevated."},
+      "x006": {"sentences": ["s006"], "source_text": "Plasma renin activity and aldosterone levels were modestly elevated."},
+      "x007": {"sentences": ["s008"], "source_text": "Spot urine studies showed chloride excretion >20 mEq/day and potassium excretion >30 mEq/day."},
+      "x008": {"sentences": ["s010"], "source_text": "Urine calcium excretion was low."},
+      "x009": {"sentences": ["s011"], "source_text": "Abdominal ultrasonography showed no nephrocalcinosis."},
+      "x010": {"sentences": ["s012"], "source_text": "Electrocardiography and stress echocardiography were normal."},
+      "x011": {"sentences": ["s012"], "source_text": "Electrocardiography and stress echocardiography were normal."}
+    },
+    "finding_flags": {
+      "x003": ["Magnesium and calcium values are not given; the source states only hypomagnesemia and hypocalcemia."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s008 reports 'spot urine studies' in mEq/day, a unit for timed (24-hour) collections."
+    ],
+    "notes": [
+      "Index visit: the presentation three weeks after the insect bite, with listlessness and proximal limb weakness after the ulcer had been debrided and treated with antibiotics (s001-s012).",
+      "The insect bite, the deep ulcer, its surgical debridement and the antibiotics happened before the index visit and are history facts, not excluded treatment.",
+      "s007 lists causes excluded 'by history'; each is an absent fact (no diuretics, diarrhoea, vomiting or recent hypercapnic state).",
+      "Urea, creatinine, potassium, magnesium and calcium are grouped as one metabolic panel; renin and aldosterone are two records sharing one source sentence."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

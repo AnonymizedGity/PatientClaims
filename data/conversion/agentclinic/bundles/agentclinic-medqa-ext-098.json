@@ -1,0 +1,111 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-098", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 50, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "blisters on the skin", "aliases": ["blisters", "skin blisters"], "text": "I have blisters on my skin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "blisters on the skin: location", "parent": "f001", "attribute": "location", "text": "They're on the inner side of my forearm, the palm side.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "blisters on the skin: appearance", "parent": "f001", "attribute": "appearance", "text": "There are several of them, and they're soft and floppy rather than tight.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "blisters on the skin: onset", "parent": "f001", "attribute": "onset", "text": "They appeared 3 days ago.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "mouth sores", "aliases": ["mouth ulcers", "sores on the gums"], "text": "I have sores in my mouth, on the inside of my cheek and on my gums.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f006", "item": "pain in the cheek when eating", "aliases": ["painful eating", "cheek pain"], "text": "My left cheek hurts when I eat.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f007", "item": "genital sores", "aliases": ["sores on the vulva", "vaginal sores"], "text": "I have sores on my vulva.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f008", "item": "pain during sex", "aliases": ["painful intercourse", "dyspareunia"], "text": "Sex has been painful.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f009", "item": "how long the pain has been going on", "text": "The pain in my cheek when eating and the pain during sex have been going on for the past week.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "hiking", "aliases": ["outdoor activities", "time in the woods"], "text": "I've recently started hiking in the woods on weekends.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "contact with poison ivy", "aliases": ["poison ivy"], "text": "I haven't been in contact with poison ivy.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "osteoarthritis", "aliases": ["arthritis", "joint problems"], "text": "I have osteoarthritis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "captopril", "aliases": ["blood pressure medication", "new medication"], "text": "I recently started taking captopril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "meloxicam", "aliases": ["arthritis medication", "anti-inflammatory"], "text": "I was taking meloxicam, but I stopped it 2 weeks ago.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f016", "item": "family history of pernicious anemia", "aliases": ["anemia in the family"], "text": "There's pernicious anemia in my family.", "polarity": "present", "category": "family_history"},
+      {"id": "f017", "item": "family history of Graves' disease", "aliases": ["thyroid disease in the family"], "text": "There's Graves' disease in my family.", "polarity": "present", "category": "family_history"},
+      {"id": "f018", "item": "recent travel", "aliases": ["travel"], "text": "I haven't traveled anywhere that seems relevant.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "recent illness", "aliases": ["been sick recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f020", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f021", "item": "breathing or chest problems", "aliases": ["respiratory symptoms"], "text": "I haven't had any problems with my breathing or chest.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f022", "item": "stomach or bowel problems", "aliases": ["gastrointestinal symptoms", "digestive problems"], "text": "I haven't had any stomach or bowel problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-098",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "blister inspection", "rash"], "result": "Multiple flaccid blisters on the volar surface of the forearm, with 10% total body surface area involvement."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "Nikolsky sign", "aliases": ["skin stroking test", "lateral pressure on the skin"], "result": "Positive: the skin separates when lightly stroked."},
+      {"id": "x007", "kind": "exam", "system": "skin", "name": "mucosal examination", "aliases": ["oral examination", "mouth examination", "genital examination", "vulvar examination"], "result": "Ulcers on the buccal, gingival, and vulvar mucosa."},
+      {"id": "x008", "kind": "test", "name": "skin biopsy", "aliases": ["biopsy of a blister", "histopathology"], "result": "Acantholysis and intraepidermal blister formation."},
+      {"id": "x009", "kind": "test", "name": "direct immunofluorescence", "aliases": ["DIF", "immunofluorescence of skin biopsy"], "result": "Intercellular IgG and C3 deposition within the epidermis."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Within normal limits."},
+      {"id": "x011", "kind": "test", "name": "serum autoantibodies", "aliases": ["autoantibody testing", "anti-desmoglein antibodies", "desmoglein antibodies"], "result": "Desmoglein antibodies present."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-098",
+    "diagnosis": "Pemphigus vulgaris",
+    "aliases": ["PV", "mucocutaneous pemphigus vulgaris", "drug-induced pemphigus vulgaris"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-098",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-098-p001"], "f002": ["cc"], "f003": ["cc"], "f004": ["agentclinic-medqa-ext-098-p001"],
+      "f005": ["agentclinic-medqa-ext-098-p002"], "f006": ["agentclinic-medqa-ext-098-p001", "agentclinic-medqa-ext-098-p003"],
+      "f007": ["agentclinic-medqa-ext-098-p002"], "f008": ["agentclinic-medqa-ext-098-p001", "agentclinic-medqa-ext-098-p004"],
+      "f009": ["agentclinic-medqa-ext-098-p001"], "f010": ["agentclinic-medqa-ext-098-p001", "agentclinic-medqa-ext-098-p006"],
+      "f011": ["agentclinic-medqa-ext-098-p001"], "f012": ["agentclinic-medqa-ext-098-p001", "agentclinic-medqa-ext-098-p005"],
+      "f013": ["agentclinic-medqa-ext-098-p001", "agentclinic-medqa-ext-098-p005"], "f014": ["agentclinic-medqa-ext-098-p001", "agentclinic-medqa-ext-098-p008"],
+      "f015": ["agentclinic-medqa-ext-098-p001", "agentclinic-medqa-ext-098-p008"], "f016": ["agentclinic-medqa-ext-098-p001"],
+      "f017": ["agentclinic-medqa-ext-098-p001"], "f018": ["agentclinic-medqa-ext-098-p006"], "f019": ["agentclinic-medqa-ext-098-p007"],
+      "f020": ["agentclinic-medqa-ext-098-p007"], "f021": ["agentclinic-medqa-ext-098-p007"], "f022": ["agentclinic-medqa-ext-098-p007"]
+    },
+    "quotes": {
+      "f002": "on the volar surface of the forearm", "f003": "Multiple, flaccid blisters", "f004": "blisters on her forearm 3 days ago",
+      "f005": "Ulcers on the buccal, gingival", "f006": "pain in her left cheek when eating", "f007": "vulvar mucosa",
+      "f009": "pain in her left cheek when eating and pain during sexual intercourse for the past week",
+      "f010": "Has started hiking in the woods on weekends", "f011": "denies contact with poison ivy",
+      "f014": "recently started taking captopril / Recently started captopril", "f015": "stopped taking meloxicam 2 weeks ago",
+      "f016": "Family history includes pernicious anemia and Graves' disease", "f018": "No relevant travel history."
+    },
+    "flags": {
+      "f005": ["The source lists the mucosal ulcers as a secondary symptom; the patient can notice sores in her mouth, so they are kept as a patient fact (also in the mucosal examination)."],
+      "f007": ["Vulvar ulcers are listed as a secondary symptom; kept as something the patient has noticed, as the source presents it."],
+      "f009": ["'For the past week' is read as applying to both the cheek pain and the pain during intercourse."],
+      "f016": ["The source does not say which relative has pernicious anemia or Graves' disease."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-098-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-098-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-098-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-098-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection", "source_text": "Multiple, flaccid blisters on the volar surface of the forearm, with 10% total body surface area involvement.", "exam_ids": ["agentclinic-medqa-ext-098-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Skin separation (Nikolsky sign positive) when lightly stroked.", "exam_ids": ["agentclinic-medqa-ext-098-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Skin_Examination.Mucosal_Examination", "source_text": "Ulcers present on the buccal, gingival, and vulvar mucosa.", "exam_ids": ["agentclinic-medqa-ext-098-e007"]},
+      "x008": {"source": "Test_Results.Skin_Biopsy.Histopathology", "source_text": "Acantholysis and intraepidermal blister formation.", "exam_ids": ["agentclinic-medqa-ext-098-i001"]},
+      "x009": {"source": "Test_Results.Direct_Immunofluorescence.Findings", "source_text": "Intercellular IgG and C3 deposition within the epidermis.", "exam_ids": ["agentclinic-medqa-ext-098-i002"]},
+      "x010": {"source": "Test_Results.Blood_Tests.CBC", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-098-i003"]},
+      "x011": {"source": "Test_Results.Blood_Tests.Autoantibodies", "source_text": "Presence of desmoglein antibodies", "exam_ids": ["agentclinic-medqa-ext-098-i004"]}
+    },
+    "finding_flags": {
+      "x005": ["10% body surface area is more than the volar forearm alone (about 1-2%); kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Skin inspection places the blisters only on the volar forearm yet reports 10% total body surface area involvement.",
+      "Family history does not name the affected relatives."
+    ],
+    "notes": [
+      "The skin palpation leaf is the Nikolsky sign, a named special test, so it has its own record (x006).",
+      "'For the past week' covers both pains, so it is a standalone duration fact (f009) rather than a child of one.",
+      "Meloxicam was stopped 2 weeks ago: a present medication fact with time 'historical' (f015).",
+      "The mucosal ulcers split by site into mouth sores (f005) and genital sores (f007); the cheek pain when eating (f006) and painful intercourse (f008) are separate symptoms.",
+      "Gold alias 'drug-induced pemphigus vulgaris' is a more specific form (recent captopril start); 'pemphigus' alone is broader and not used."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with blisters on her forearm and ulcers on mucosal surfaces."
+    }
+  }
+}

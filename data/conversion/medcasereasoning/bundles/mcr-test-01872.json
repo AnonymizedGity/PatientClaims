@@ -1,0 +1,117 @@
+{
+  "patient": {
+    "case_id": "mcr-test-01872",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 57, "sex": "male"},
+    "opening": ["f001", "f009", "f011"],
+    "facts": [
+      {"id": "f001", "item": "weakness of the left hand", "aliases": ["hand weakness", "weak hand", "clumsy hand", "loss of hand function"], "text": "My left hand has become weak and I can't use it as well as before.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "weakness of the left hand: course", "parent": "f001", "attribute": "course", "text": "It has slowly got worse over 5 years.", "value": "5 years", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "numbness in the fingers", "aliases": ["numbness", "loss of feeling", "numb fingers"], "text": "My fingers are numb.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "numbness in the fingers: location", "parent": "f003", "attribute": "location", "value": ["thumb", "index finger", "middle finger"], "text": "It's in my thumb, index and middle fingers.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "numbness in the fingers: course", "parent": "f003", "attribute": "course", "text": "It started as mild numbness in my middle finger and over several years spread to my thumb and index finger.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "weak grip and pinch", "aliases": ["grip weakness", "pinch weakness", "dropping things", "can't hold things"], "text": "My grip and pinch have become weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f007", "item": "symptoms at night", "aliases": ["night-time symptoms", "waking at night with numbness", "nocturnal symptoms"], "text": "My symptoms don't bother me at night.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f008", "item": "earlier treatment for carpal tunnel syndrome", "aliases": ["carpal tunnel", "previous treatment"], "text": "At first the doctors thought it was carpal tunnel syndrome and treated it without surgery.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "forearm pain", "aliases": ["arm pain", "pain in the forearm"], "text": "I've developed pain in my forearm.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f010", "item": "forearm pain: course", "parent": "f009", "attribute": "course", "text": "It has been getting worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f011", "item": "inability to bend the thumb and index finger", "aliases": ["can't bend my thumb", "can't bend my index finger", "finger weakness", "paralysis of the thumb"], "text": "I've completely lost the strength to bend my thumb and index finger.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f012", "item": "wasting at the base of the thumb", "aliases": ["thumb muscle wasting", "muscle wasting", "thenar wasting"], "text": "The fleshy part at the base of my left thumb has shrunk.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f013", "item": "unable to work", "aliases": ["off work", "can't work"], "text": "I can't work any more because of my hand.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a chef.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "handedness", "aliases": ["left-handed", "dominant hand"], "text": "I'm left-handed.", "polarity": "present", "category": "social_background"},
+      {"id": "f016", "item": "heavy lifting", "aliases": ["lifting", "manual work", "strain"], "text": "I haven't done heavy lifting.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f017", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I have a history of smoking.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f018", "item": "breast cancer", "aliases": ["cancer", "male breast cancer", "malignancy"], "text": "I had cancer in my left breast.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f019", "item": "mastectomy and armpit lymph node removal", "aliases": ["mastectomy", "axillary clearance", "breast surgery", "operations"], "text": "My left breast was removed, along with the lymph nodes in my armpit.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f020", "item": "radiotherapy", "aliases": ["radiation therapy", "radiation"], "text": "I also had radiotherapy for the cancer.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f021", "item": "tamoxifen", "aliases": ["hormone therapy", "cancer tablets"], "text": "I still take tamoxifen.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-01872",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "neurological", "name": "inspection of the hand and forearm", "aliases": ["muscle bulk", "muscle wasting", "thenar eminence", "hand examination"], "result": "Marked wasting of the thenar eminence; subtle forearm muscle atrophy."},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation", "light touch", "hand sensation"], "result": "Reduced sensation in the thumb, index and middle fingers and in the thenar triangle."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "finger flexion", "grip strength"], "result": "0/5 strength in flexor pollicis longus, flexor digitorum profundus and flexor digitorum superficialis of the index finger."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "O-sign", "aliases": ["OK sign", "pinch test", "circle sign"], "result": "Unable to form an 'O'."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "Tinel sign", "aliases": ["Tinel's sign", "nerve percussion"], "result": "Elicited 12 cm distal to the medial epicondyle."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "carpal tunnel provocative tests", "aliases": ["Phalen test", "carpal compression test", "Durkan test", "wrist provocative tests"], "result": "All negative."},
+      {"id": "x007", "kind": "exam", "system": "musculoskeletal", "name": "palpation for a supracondylar process", "aliases": ["elbow palpation", "distal humerus palpation"], "result": "No supracondylar process palpable."},
+      {"id": "x008", "kind": "test", "name": "bilateral humeral radiographs", "aliases": ["humerus X-ray", "arm X-ray", "X-ray of the upper arms"], "result": "No supracondylar processes."},
+      {"id": "x009", "kind": "test", "name": "nerve conduction studies and EMG", "aliases": ["neurophysiology", "nerve conduction study", "NCS", "EMG", "electromyography"], "result": "No recordable median nerve motor responses on the left, with preserved sensory responses at the wrist. No evidence of widespread brachial plexus pathology or carpal tunnel syndrome; severe left median mononeuropathy with acute and chronic denervation."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-01872",
+    "diagnosis": "Pronator teres syndrome",
+    "aliases": ["pronator syndrome", "median nerve entrapment at the pronator teres", "median nerve compression by the pronator teres"],
+    "reasoning": "1. Carpal tunnel syndrome was initially considered because of radial-digit numbness but was excluded when “All provocative tests for CTS were negative.” 2. Brachial plexus pathology was considered but excluded as “No indication of widespread brachial plexus pathology and nor CTS was found.” 3. Struthers’ ligament entrapment was considered but excluded as “On bilateral humeral plain radiographs, no supracondylar processes (Struthers’ ligament origin) were identified, nor were any such palpable.” 4. Anterior interosseous nerve syndrome was considered given the motor paralysis but was unlikely since it “classically presents with pure motor weakness, as the AIN provides no cutaneous innervation.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-01872",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s002", "s003"],
+      "f004": ["s003"],
+      "f005": ["s002", "s003"],
+      "f006": ["s003"],
+      "f007": ["s005"],
+      "f008": ["s002"],
+      "f009": ["s004"],
+      "f010": ["s004"],
+      "f011": ["s004"],
+      "f012": ["s007"],
+      "f013": ["s004"],
+      "f014": ["s001"],
+      "f015": ["s001"],
+      "f016": ["s005"],
+      "f017": ["s006"],
+      "f018": ["s006"],
+      "f019": ["s006"],
+      "f020": ["s006"],
+      "f021": ["s006"]
+    },
+    "quotes": {
+      "f001": "progressive weakness and decreased function in his left hand",
+      "f002": "a 5-year history of progressive weakness",
+      "f005": "Initial symptoms were mild numbness of the middle finger / Over several years the numbness progressed to the thumb and index finger",
+      "f006": "grip and pinch weakness",
+      "f007": "He denied nocturnal symptoms",
+      "f008": "treated conservatively as suspected carpal tunnel syndrome",
+      "f010": "increasing forearm pain",
+      "f011": "complete loss of strength in thumb and index flexion",
+      "f012": "marked wasting of the thenar eminence",
+      "f013": "rendering him unable to work",
+      "f016": "had no history of heavy lifting",
+      "f019": "mastectomy, axillary node clearance",
+      "f021": "ongoing tamoxifen"
+    },
+    "flags": {
+      "f003": ["The numbness is not explicitly said to be in the left hand; the whole history concerns the left hand."],
+      "f009": ["The side of the forearm pain is not stated; left is implied by the history, but the fact does not name the side."],
+      "f012": ["From the examination (marked thenar wasting); a patient can see the thumb muscle shrink. The subtle forearm atrophy is left to the finding."],
+      "f017": ["Whether he still smokes is not stated; no time given."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "On examination, there was marked wasting of the thenar eminence and subtle forearm muscle atrophy."},
+      "x002": {"sentences": ["s008"], "source_text": "Sensation was reduced in the thumb, index, and middle fingers, and in the thenar triangle."},
+      "x003": {"sentences": ["s009"], "source_text": "Motor testing revealed 0/5 strength in flexor pollicis longus, flexor digitorum profundus, and flexor digitorum superficialis of the index finger"},
+      "x004": {"sentences": ["s009"], "source_text": "with failure to form an “O-sign.”"},
+      "x005": {"sentences": ["s009"], "source_text": "A Tinel sign was elicited 12 cm distal to the medial epicondyle."},
+      "x006": {"sentences": ["s010"], "source_text": "All provocative tests for carpal tunnel syndrome were negative."},
+      "x007": {"sentences": ["s011"], "source_text": "and none were palpable"},
+      "x008": {"sentences": ["s011"], "source_text": "Bilateral humeral radiographs showed no supracondylar processes"},
+      "x009": {"sentences": ["s012", "s013"], "source_text": "Neurophysiology studies demonstrated no recordable median nerve motor responses on the left, with preserved sensory responses at the wrist. / There was no evidence of widespread brachial plexus pathology or carpal tunnel syndrome, and findings indicated a severe left median mononeuropathy with acute and chronic denervation."}
+    },
+    "finding_flags": {
+      "x009": ["Written neurophysiology report: its conclusion (severe left median mononeuropathy, no CTS or plexus pathology) is kept."]
+    },
+    "leakage": [],
+    "source_issues": ["No vital signs are reported."],
+    "notes": ["Index visit: the referral after 5 years of progressive left-hand weakness, prompted by increasing forearm pain and complete loss of thumb and index flexion (s001-s013).", "The earlier conservative treatment for suspected carpal tunnel syndrome is something the patient was told and received, so it is a medical_history fact.", "Fixes: f013 alias 'work' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

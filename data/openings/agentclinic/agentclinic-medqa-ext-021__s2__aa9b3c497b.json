@@ -1,0 +1,45 @@
+{
+ "case_id": "agentclinic-medqa-ext-021",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "The vision in my right eye has gotten worse.",
+   "I'm seeing black spots in my right eye.",
+   "The worse vision and the black spots both started 2 days ago."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here because the vision in my right eye has gotten worse. I'm also seeing black spots in that eye. Both of these started 2 days ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3288,
+   "tokens_out": 45,
+   "seconds": 5.27,
+   "redrafts": 0
+  }
+ }
+}

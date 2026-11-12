@@ -1,0 +1,233 @@
+{
+  "case_id": "medqa-cs-013",
+  "source_case_id": 13,
+  "opening_scenario": "Sharon Smith, a 48-year-old female, came to the clinic complaining of abdominal pain.",
+  "doorway_vital_signs": [
+    "BP: 135/70 mmHg",
+    "Temperature: 98.6°F (37°C)",
+    "Respiratory Rate: 16/minute",
+    "Heart Rate: 76/minute, regular"
+  ],
+  "sp_notes": [
+    "Please sit up on the bed.",
+    "Show pain on palpation of the right upper abdomen that is exacerbated during inspiration.",
+    "Exhibit epigastric tenderness on palpation.",
+    "If ultrasound is mentioned by the examinee, ask \"What does 'ultrasound' mean?\""
+  ],
+  "challenging_questions": [
+    "My father was diagnosed with pancreatic cancer. Is it possible for me to develop it as well?"
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What is the reason for your visit today?",
+    "answer": "I have stomach pain."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-013-p001",
+      "topic": "Onset",
+      "question": "When did the pain begin?",
+      "answer": "Two weeks ago."
+    },
+    {
+      "fact_id": "medqa-cs-013-p002",
+      "topic": "Constant/Intermittent",
+      "question": "Do you have the pain all the time, or does it come and go?",
+      "answer": "I don't have the pain all the time. It comes and goes."
+    },
+    {
+      "fact_id": "medqa-cs-013-p003",
+      "topic": "Frequency",
+      "question": "How often does it hurt?",
+      "answer": "At least once every day."
+    },
+    {
+      "fact_id": "medqa-cs-013-p004",
+      "topic": "Progression",
+      "question": "Has it been getting better, staying the same, or getting worse?",
+      "answer": "It is getting worse."
+    },
+    {
+      "fact_id": "medqa-cs-013-p005",
+      "topic": "Severity on a scale",
+      "question": "On a scale of 0 to 10, with 0 being no pain and 10 being the worst pain of your life, how would you rate the pain?",
+      "answer": "When I have the pain, it is 7/10, and then it can go down to 0."
+    },
+    {
+      "fact_id": "medqa-cs-013-p006",
+      "topic": "Location",
+      "question": "Where does it hurt the most?",
+      "answer": "It is here (points to the epigastrium)."
+    },
+    {
+      "fact_id": "medqa-cs-013-p007",
+      "topic": "Radiation",
+      "question": "Does the pain radiate to any other area?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p008",
+      "topic": "Quality",
+      "question": "How would you describe the pain? Is it burning, sharp, or dull?",
+      "answer": "Burning."
+    },
+    {
+      "fact_id": "medqa-cs-013-p009",
+      "topic": "Alleviating factors",
+      "question": "Does anything make it better?",
+      "answer": "Food, antacids, and milk."
+    },
+    {
+      "fact_id": "medqa-cs-013-p010",
+      "topic": "Exacerbating factors",
+      "question": "Is there anything that exacerbates it?",
+      "answer": "Large meals and feeling hungry."
+    },
+    {
+      "fact_id": "medqa-cs-013-p011",
+      "topic": "Types of food that exacerbate pain",
+      "question": "What foods make it worse?",
+      "answer": "Heavy, fatty meals, like pizza."
+    },
+    {
+      "fact_id": "medqa-cs-013-p012",
+      "topic": "Relationship of food to pain",
+      "question": "How does eating affect the pain?",
+      "answer": "Well, usually the pain will decrease or stop completely when I eat, but it comes back after 2 to 3 hours."
+    },
+    {
+      "fact_id": "medqa-cs-013-p013",
+      "topic": "Previous episodes of similar pain",
+      "question": "Have you ever experienced anything like this in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p014",
+      "topic": "Nausea/Vomiting",
+      "question": "Have you felt nauseous? Have you vomited?",
+      "answer": "Sometimes I feel nauseated when I am in pain. Yesterday I vomited for the first time."
+    },
+    {
+      "fact_id": "medqa-cs-013-p015",
+      "topic": "Description of vomitus",
+      "question": "What was the nature of the vomit?",
+      "answer": "It was a yellowish, sour liquid."
+    },
+    {
+      "fact_id": "medqa-cs-013-p016",
+      "topic": "Blood in vomitus",
+      "question": "Was there blood in your vomit?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p017",
+      "topic": "Diarrhea/Constipation",
+      "question": "Have your bowel movements altered?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p018",
+      "topic": "Weight change",
+      "question": "Has your weight fluctuated?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p019",
+      "topic": "Appetite change",
+      "question": "Has there been a shift in your appetite?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p020",
+      "topic": "Change in stool color",
+      "question": "Have you noticed any alteration in the color of your stools?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p021",
+      "topic": "Current medications",
+      "question": "Do you take medications? If yes, which ones?",
+      "answer": "Maalox, ibuprofen (two pills two to three times a day if asked)."
+    },
+    {
+      "fact_id": "medqa-cs-013-p022",
+      "topic": "Past medical history",
+      "question": "What medical problems do you have?",
+      "answer": "I had a urinary tract infection 1 year ago, treated with amoxicillin, and arthritis in both knees, for which I take ibuprofen."
+    },
+    {
+      "fact_id": "medqa-cs-013-p023",
+      "topic": "Past surgical history",
+      "question": "Have you ever had surgery?",
+      "answer": "I had two C-sections."
+    },
+    {
+      "fact_id": "medqa-cs-013-p024",
+      "topic": "Family history",
+      "question": "Are your parents alive? Were/are they healthy? How about the rest of your immediate family?",
+      "answer": "My father died at 55 of pancreatic cancer. My mother is alive and healthy."
+    },
+    {
+      "fact_id": "medqa-cs-013-p025",
+      "topic": "Occupation",
+      "question": "What do you do for work?",
+      "answer": "Housewife."
+    },
+    {
+      "fact_id": "medqa-cs-013-p026",
+      "topic": "Alcohol use",
+      "question": "I need to ask you some standard social history questions that are essential for a comprehensive medical history. Rest assured, all your information will remain confidential. Do you consume alcohol? If yes, how much?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p027",
+      "topic": "Illicit drug use",
+      "question": "Have you ever used any illegal substances?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p028",
+      "topic": "Tobacco",
+      "question": "Do you smoke? Do you use any other tobacco products?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-013-p029",
+      "topic": "Sexual activity",
+      "question": "Are you sexually active?",
+      "answer": "With my husband (laughs)."
+    },
+    {
+      "fact_id": "medqa-cs-013-p030",
+      "topic": "Drug allergies",
+      "question": "Do you have any allergies to medications?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History:\nHPI: A 48-year-old female complains of intermittent, burning, nonradiating epigastric pain that started for the first time 2 weeks ago. The pain occurs at least once a day, usually 2-3 hours after meals. It is exacerbated by hunger and heavy, fatty foods and is alleviated by milk, antacids, and other food. It reaches a severity of 7/10 and then diminishes to 0/10. It is sometimes accompanied by nausea. The patient vomited once yesterday, with sour, yellowish, nonbloody fluid. No diarrhea or constipation. No changes in weight or appetite. No changes in the color of stool.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Maalox, ibuprofen (4-6 pills per day).\nPMH: Arthritis in the knees, treated with ibuprofen. UTI last year, treated with amoxicillin.\nPSH: 2 C-sections.\nSH: No smoking, no EtOH, no illicit drugs. Sexually active with husband only.\nFH: Father died of pancreatic cancer at age 55.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-013-e001",
+      "source_text": "The patient is in no acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-013-e002",
+      "source_text": "VS: Within normal limits (WNL)."
+    },
+    {
+      "exam_id": "medqa-cs-013-e003",
+      "source_text": "Chest: No tenderness, clear breath sounds bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-013-e004",
+      "source_text": "Heart: Regular rate and rhythm (RRR); heart sounds within normal limits (WNL); no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-013-e005",
+      "source_text": "Abdomen: Soft, non-distended, C-section scar, epigastric tenderness without rebound and guarding, positive Murphy sign, bowel sounds (BS) x 4 quadrants, no hepatosplenomegaly."
+    }
+  ],
+  "gold_target": "Diagnosis 1: Biliary colic/Cholecystitis\nHistory Finding(s): \n- Pain is exacerbated by heavy, fatty foods. \n- Associated with nausea and vomiting. \n- Female gender, age in 40s, four children.\nPhysical Exam Finding(s): \n- Epigastric tenderness. \n- Positive Murphy sign.\n\nDiagnosis 2: Peptic ulcer disease\nHistory Finding(s): \n- History of heavy NSAID use. \n- Burning epigastric pain 2 to 3 hours after meals. \n- Pain is exacerbated by hunger and fatty foods and is relieved by antacids.\n\nDiagnosis 3: Gastritis \nHistory Finding(s): \n- Physical &am Finding(s): \n- History of heavy NSAID use \n- Epigastric tenderness \n- Epigastric pain associated with food \n- Nausea and vomiting",
+  "gold_additional_diagnosis": "- Nonulcer dyspepsia: This is the most common cause of chronic dyspepsia. It is believed to be caused by disorders in peristalsis. This is a diagnosis of exclusion that can only be considered after thorough evaluation reveals no organic etiology. \n- Perforated ulcer: These patients appear toxic and have severe diffuse abdominal pain with rebound tenderness and involuntary guarding. \n- Gastric cancer: Although this patient does not have early satiety, anorexia, weight loss, or a left supraclavicular mass (Virchow node), it should be noted that signs and symptoms are minimal until late in the course of this rare disease. \n- Other etiologies: Less likely possibilities include pancreatitis, atypical GERD, choledocholithiasis, mesenteric ischemia, and extra-abdominal causes including cardiac ischemia.",
+  "raw_opening": "Opening Scenario:\n\nSharon Smith, a 48-year-old female, came to the clinic complaining of abdominal pain.\n\nVital Signs:\n\nBP: 135/70 mmHg\nTemperature: 98.6°F (37°C)\nRespiratory Rate: 16/minute\nHeart Rate: 76/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nThe patient is a 48-year-old female, married with four children.\n\nNotes for the SP:\n\n- Please sit up on the bed.\n- Show pain on palpation of the right upper abdomen that is exacerbated during inspiration.\n- Exhibit epigastric tenderness on palpation.\n- If ultrasound is mentioned by the examinee, ask \"What does 'ultrasound' mean?\"\n\nChallenging Questions to Ask:\n\n- My father was diagnosed with pancreatic cancer. Is it possible for me to develop it as well?\n\nExaminee Response:\n\nIt's highly unlikely that your symptoms are a result of pancreatic cancer. To eliminate any potential issues, we will conduct standard blood and X-ray examinations to identify the cause of your abdominal pain..\n\nExaminee Checklist:\n\nEntrance:\n\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly wrote the patient's name.\n- The examinee introduced oneself by name.\n- The examinee identified his/her role or position.\n\nReflective Listening:\n\n- The examinee asked an open-ended question and actively listened to the response.\n- The examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- The examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\n- The examinee elicited data efficiently and accurately.\n\nConnecting With the Patient:\n\n- The examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief Complaint: \nDoctor: \"What is the reason for your visit today?\" \nPatient: \"I have stomach pain.\"\n\nOnset: \nDoctor: \"When did the pain begin?\" \nPatient: \"Two weeks ago.\"\n\nConstant/Intermittent: \nDoctor: \"Do you have the pain all the time, or does it come and go?\" \nPatient: \"I don't have the pain all the time. It comes and goes.\"\n\nFrequency: \nDoctor: \"How often does it hurt?\" \nPatient: \"At least once every day.\"\n\nProgression: \nDoctor: \"Has it been getting better, staying the same, or getting worse?\" \nPatient: \"It is getting worse.\"\n\nSeverity on a scale: \nDoctor: \"On a scale of 0 to 10, with 0 being no pain and 10 being the worst pain of your life, how would you rate the pain?\" \nPatient: \"When I have the pain, it is 7/10, and then it can go down to 0.\"\n\nLocation: \nDoctor: \"Where does it hurt the most?\" \nPatient: \"It is here (points to the epigastrium).\"\n\nRadiation: \nDoctor: \"Does the pain radiate to any other area?\" \nPatient: \"No.\"\n\nQuality: \nDoctor: \"How would you describe the pain? Is it burning, sharp, or dull?\" \nPatient: \"Burning.\"\n\nAlleviating factors: \nDoctor: \"Does anything make it better?\" \nPatient: \"Food, antacids, and milk.\"\n\nExacerbating factors: \nDoctor: \"Is there anything that exacerbates it?\" \nPatient: \"Large meals and feeling hungry.\"\n\nTypes of food that exacerbate pain: \nDoctor: \"What foods make it worse?\" \nPatient: \"Heavy, fatty meals, like pizza.\"\n\nRelationship of food to pain: \nDoctor: \"How does eating affect the pain?\" \nPatient: \"Well, usually the pain will decrease or stop completely when I eat, but it comes back after 2 to 3 hours.\"\n\nPrevious episodes of similar pain: \nDoctor: \"Have you ever experienced anything like this in the past?\" \nPatient: \"No.\"\n\nNausea/Vomiting: \nDoctor: \"Have you felt nauseous? Have you vomited?\" \nPatient: \"Sometimes I feel nauseated when I am in pain. Yesterday I vomited for the first time.\"\n\nDescription of vomitus: \nDoctor: \"What was the nature of the vomit?\" \nPatient: \"It was a yellowish, sour liquid.\"\n\nBlood in vomitus: \nDoctor: \"Was there blood in your vomit?\" \nPatient: \"No.\"\n\nDiarrhea/Constipation: \nDoctor: \"Have your bowel movements altered?\" \nPatient: \"No.\"\n\nWeight change: \nDoctor: \"Has your weight fluctuated?\" \nPatient: \"No.\"\n\nAppetite change: \nDoctor: \"Has there been a shift in your appetite?\" \nPatient: \"No.\"\n\nChange in stool color: \nDoctor: \"Have you noticed any alteration in the color of your stools?\" \nPatient: \"No.\"\n\nCurrent medications: \nDoctor: \"Do you take medications? If yes, which ones?\" \nPatient: \"Maalox, ibuprofen (two pills two to three times a day if asked).\"\n\nPast medical history: \nDoctor: \"What medical problems do you have?\" \nPatient: \"I had a urinary tract infection 1 year ago, treated with amoxicillin, and arthritis in both knees, for which I take ibuprofen.\"\n\nPast surgical history: \nDoctor: \"Have you ever had surgery?\" \nPatient: \"I had two C-sections.\"\n\nFamily history: \nDoctor: \"Are your parents alive? Were/are they healthy? How about the rest of your immediate family?\" \nPatient: \"My father died at 55 of pancreatic cancer. My mother is alive and healthy.\"\n\nOccupation: \nDoctor: \"What do you do for work?\" \nPatient: \"Housewife.\"\n\nAlcohol use: \nDoctor: \"I need to ask you some standard social history questions that are essential for a comprehensive medical history. Rest assured, all your information will remain confidential. Do you consume alcohol? If yes, how much?\" \nPatient: \"No.\"\n\nIllicit drug use: \nDoctor: \"Have you ever used any illegal substances?\" \nPatient: \"No.\"\n\nTobacco: \nDoctor: \"Do you smoke? Do you use any other tobacco products?\" \nPatient: \"No.\"\n\nSexual activity: \nDoctor: \"Are you sexually active?\" \nPatient: \"With my husband (laughs).\"\n\nDrug allergies: \nDoctor: \"Do you have any allergies to medications?\" \nPatient: \"No.\"\n\nPhysical Examination:\n\n- The examinee washed his/her hands.\n- The examinee asked permission to start the exam.\n- The examinee used respectful draping.\n- The examinee did not repeat painful maneuvers and warned the patient before performing potentially uncomfortable maneuvers.\n\nExam Component Maneuver:\n\n- CV exam: Auscultation\n- Pulmonary exam: Auscultation\n- Abdominal exam: Auscultation, inspection, palpation (including Murphy's sign), and percussion.\n\nSample Closure:\n\nThe examinee was asked to fill out a questionnaire about their experiences during the job interviewing process. The inquiries covered how candidates prepared for their interviews, the types of questions posed during the interviews, and their overall impressions of the experience.. The poll was completed by 100 examinees, with a range of backgrounds and industries represented. The findings indicated that numerous participants experienced anxiety and a sense of inadequacy regarding their interview preparation, with several questions posed being unexpected.. Overall, the poll highlighted the importance of thorough preparation and practice in order to feel confident and perform well in a job interview.\n\nClosure:\n\n- The examinee discussed initial diagnostic impressions.\n- The examinee discussed initial management plans.\n- Follow-up tests: The examinee mentioned the need for a rectal exam.\n- The examinee asked if the patient had any other questions or concerns.Patient Note:\n\nHistory:\nHPI: A 48-year-old female complains of intermittent, burning, nonradiating epigastric pain that started for the first time 2 weeks ago. The pain occurs at least once a day, usually 2-3 hours after meals. It is exacerbated by hunger and heavy, fatty foods and is alleviated by milk, antacids, and other food. It reaches a severity of 7/10 and then diminishes to 0/10. It is sometimes accompanied by nausea. The patient vomited once yesterday, with sour, yellowish, nonbloody fluid. No diarrhea or constipation. No changes in weight or appetite. No changes in the color of stool.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Maalox, ibuprofen (4-6 pills per day).\nPMH: Arthritis in the knees, treated with ibuprofen. UTI last year, treated with amoxicillin.\nPSH: 2 C-sections.\nSH: No smoking, no EtOH, no illicit drugs. Sexually active with husband only.\nFH: Father died of pancreatic cancer at age 55.\n\nPhysical Examination:\nThe patient is in no acute distress.\nVS: Within normal limits (WNL).\nChest: No tenderness, clear breath sounds bilaterally.\nHeart: Regular rate and rhythm (RRR); heart sounds within normal limits (WNL); no murmurs, rubs, or gallops.\nAbdomen: Soft, non-distended, C-section scar, epigastric tenderness without rebound and guarding, positive Murphy sign, bowel sounds (BS) x 4 quadrants, no hepatosplenomegaly."
+}

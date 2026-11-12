@@ -1,0 +1,81 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12209",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 80, "sex": "male"},
+    "opening": ["f001", "f004"],
+    "facts": [
+      {"id": "f001", "item": "skin patches", "aliases": ["rash", "skin lesions", "discoloured skin", "patches on the skin"], "text": "I have patches on my skin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "skin patches: location", "parent": "f001", "attribute": "location", "text": "They're on my lower belly and my back.", "value": ["lower abdomen", "back"], "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "skin patches: appearance", "parent": "f001", "attribute": "appearance", "text": "They're a dusky red colour, and the skin there is hard and thickened.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "dark raised patch on the leg", "aliases": ["dark patch", "plaque on the calf", "leg lesion", "hyperpigmented plaque"], "text": "I have a dark, raised patch on the upper part of my right calf.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "how long the skin patches have been there", "text": "I've had the patches on my belly and back and the patch on my calf for 2 years.", "value": "2 years", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "smoldering myeloma", "aliases": ["myeloma", "blood cancer", "monoclonal gammopathy", "paraprotein", "bone marrow disorder"], "text": "I've had IgG kappa smoldering myeloma for 13 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "similar skin lesions before", "aliases": ["previous rash", "tumid lupus", "lupus", "earlier skin problem"], "text": "Six years ago I had similar skin patches, and at first I was told it was tumid lupus.", "polarity": "present", "category": "medical_history", "time": "resolved"},
+      {"id": "f008", "item": "steroid creams", "aliases": ["topical corticosteroids", "topical steroids", "skin creams"], "text": "I used steroid creams on those earlier patches.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "steroid creams: treatment response", "parent": "f008", "attribute": "treatment_response", "text": "They only got partly better with the creams.", "polarity": "present", "category": "medication"},
+      {"id": "f010", "item": "lenalidomide", "aliases": ["Revlimid", "myeloma treatment"], "text": "Back then I took lenalidomide for 9 months.", "value": "9 months", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f011", "item": "lenalidomide: treatment response", "parent": "f010", "attribute": "treatment_response", "text": "After 9 months of lenalidomide the earlier patches cleared up completely.", "polarity": "present", "category": "medication"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12209",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash", "lesions", "trunk", "calf"], "result": "Dusky, erythematous, indurated patches on the lower abdomen and back; firm hyperpigmented plaque on the right upper calf."},
+      {"id": "x002", "kind": "test", "name": "skin biopsy of the right calf", "aliases": ["calf biopsy", "skin biopsy", "biopsy of the leg lesion", "punch biopsy"], "result": "Dermal sclerosis with hyalinized collagen bundles extending into the subcutis; absence of CD34+ dermal dendrocytes in sclerotic zones."},
+      {"id": "x003", "kind": "test", "name": "skin biopsy of the back", "aliases": ["back biopsy", "biopsy of the trunk lesion", "colloidal iron stain"], "result": "Dermal sclerosis with abundant interstitial mucin confirmed by colloidal iron stain; diminished CD34+ dendrocytes in the sclerotic zone."},
+      {"id": "x004", "kind": "test", "name": "monoclonal protein studies", "aliases": ["serum protein electrophoresis", "SPEP", "immunofixation", "paraprotein", "M-protein"], "result": "Persistent IgG kappa monoclonal gammopathy."},
+      {"id": "x005", "kind": "test", "name": "other laboratory tests", "aliases": ["routine blood tests", "blood tests", "basic laboratory studies"], "result": "Normal."},
+      {"id": "x006", "kind": "test", "name": "whole-body CT", "aliases": ["CT scan", "CT chest abdomen pelvis", "body CT"], "result": "No evidence of systemic mucinosis."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12209",
+    "diagnosis": "Paraneoplastic morphea",
+    "aliases": ["paraneoplastic localized scleroderma", "morphea associated with monoclonal gammopathy", "morphea associated with smoldering myeloma", "paraneoplastic morphea associated with IgG kappa smoldering myeloma"],
+    "reasoning": "1. Morphea/lupus overlap syndrome was considered — “At that time, a morphea/lupus erythematosus overlap syndrome and mixed connective tissue disease were considered in the histopathologic differential diagnosis due to the combined histopathologic features.” 2. Mixed connective tissue disease was considered — “At that time, a morphea/lupus erythematosus overlap syndrome and mixed connective tissue disease were considered in the histopathologic differential diagnosis due to the combined histopathologic features.” 3. Paraneoplastic morphea was favored — “However, a paraneoplastic process was favored, given the immunoglobulin G gammopathy and previous response to lenalidomide.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12209",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s002"]
+    },
+    "quotes": {
+      "f002": "patches on the lower abdomen and back", "f003": "dusky, erythematous, indurated patches",
+      "f004": "a hyperpigmented plaque on the right upper calf", "f005": "a 2-year history of dusky, erythematous, indurated patches",
+      "f006": "a 13-year history of immunoglobulin G kappa smoldering myeloma", "f007": "similar lesions initially diagnosed as tumid lupus",
+      "f009": "partially improved with topical corticosteroids", "f010": "9 months of lenalidomide therapy",
+      "f011": "fully resolved after 9 months of lenalidomide therapy"
+    },
+    "flags": {
+      "f003": ["'Indurated' worded as hard and thickened skin; the patient can feel this."],
+      "f010": ["The source does not say whether lenalidomide was given for the skin lesions or for the myeloma, or whether it is still taken; only the 9-month course six years ago is a fact."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s001", "s003"], "source_text": "dusky, erythematous, indurated patches on the lower abdomen and back and a hyperpigmented plaque on the right upper calf / indurated dusky patches were noted on the trunk and a firm hyperpigmented plaque on the calf"},
+      "x002": {"sentences": ["s004"], "source_text": "A biopsy of the right calf showed dermal sclerosis with hyalinized collagen bundles extending into the subcutis and absence of CD34+ dermal dendrocytes in sclerotic zones."},
+      "x003": {"sentences": ["s005"], "source_text": "A biopsy of the back revealed dermal sclerosis with abundant interstitial mucin confirmed by colloidal iron stain and diminished CD34+ dendrocytes in the sclerotic zone."},
+      "x004": {"sentences": ["s006"], "source_text": "Laboratory studies confirmed persistent IgG kappa monoclonal gammopathy"},
+      "x005": {"sentences": ["s006"], "source_text": "all other tests were normal"},
+      "x006": {"sentences": ["s006"], "source_text": "Whole-body CT showed no evidence of systemic mucinosis."}
+    },
+    "finding_flags": {
+      "x004": ["The source does not name the assay; 'monoclonal protein studies' with electrophoresis/immunofixation aliases is the usual request."],
+      "x005": ["'All other tests were normal' does not say which tests; the record answers only a general request for other laboratory tests."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s006 holds two sentences (laboratory studies; whole-body CT)."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with a 2-year history of dusky indurated patches on the lower abdomen and back and a pigmented plaque on the right calf (s001, s003-s006).",
+      "The earlier episode six years before (s002) is medical history: similar lesions, the tumid lupus label he was given, and the response to steroid creams and to lenalidomide are facts.",
+      "The skin examination keeps the lesion descriptions of s001 and s003 (both describe the lesions seen at presentation)."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s007", "reason": "Clinicians' histopathologic differential (morphea/lupus overlap, mixed connective tissue disease); not a finding."}
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+ "case_id": "mcr-test-08789",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I have pain in my belly.",
+   "They've been going on for a week.",
+   "My urine has been dark, the colour of tea.",
+   "My stools have been pale.",
+   "The whites of my eyes have turned yellow.",
+   "Several months before I got sick, I had unprotected sex with multiple partners."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have pain in my belly, and my urine has been dark, the colour of tea. My stools have been pale, and the whites of my eyes have turned yellow. They've been going on for a week. Also, several months before I got sick, I had unprotected sex with multiple partners.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f006",
+    "f003",
+    "f004",
+    "f011",
+    "f018"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3452,
+   "tokens_out": 73,
+   "seconds": 6.62,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,101 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-019",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 32, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "vaginal bleeding", "aliases": ["bleeding from the vagina", "bleeding down below"], "text": "I'm bleeding from my vagina.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "vaginal bleeding: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for the past hour.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f003", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I have severe pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "contractions", "aliases": ["labor pains", "tightenings"], "text": "I was having contractions before the bleeding started.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "resolved"},
+      {"id": "f005", "item": "contractions: course", "parent": "f004", "attribute": "course", "text": "They stopped once the bleeding began.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "resolved"},
+      {"id": "f006", "item": "current pregnancy", "aliases": ["how far along", "weeks pregnant", "number of pregnancies"], "text": "I'm 38 weeks pregnant. This is my second pregnancy, and I've given birth once before.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "previous cesarean section", "aliases": ["C-section", "previous caesarean"], "text": "My first baby was born by C-section.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "previous cesarean section: reason", "parent": "f007", "attribute": "context", "text": "It was done because the baby's heart rate wasn't reassuring.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "baby's movements", "aliases": ["fetal movements", "feeling the baby move"], "text": "I felt the baby moving before all this started, but I'm not sure whether it has moved since.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f010", "item": "recent injury to the abdomen", "aliases": ["abdominal trauma", "blow to the belly"], "text": "I haven't had any recent injury to my belly.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "urinary symptoms", "aliases": ["problems peeing", "burning when urinating"], "text": "I haven't had any problems with peeing.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f012", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the C-section, I don't have any significant medical history.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "occupation", "aliases": ["job", "work"], "text": "I work as an elementary school teacher.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-019",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "110/min"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "90/60 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x004", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation"], "result": "Inspection: mild distension; auscultation: decreased bowel sounds; percussion: tympanic sound predominating; palpation: diffuse abdominal tenderness without rebound or guarding."},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "fetal heart rate monitoring", "aliases": ["CTG", "cardiotocography", "fetal monitoring", "fetal heart rate", "non-stress test"], "result": "Recurrent variable decelerations."},
+      {"id": "x006", "kind": "exam", "system": "reproductive", "name": "palpation of the uterus", "aliases": ["examination of the uterus", "contractions on palpation"], "result": "No contractions felt at the time of examination."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "platelets", "hematology"], "result": "Hemoglobin 10.2 g/dL (decreased); platelets 200,000/μL."},
+      {"id": "x008", "kind": "test", "name": "coagulation studies", "aliases": ["coagulation profile", "PT", "prothrombin time", "aPTT", "partial thromboplastin time"], "result": "PT 11 seconds; aPTT 30 seconds."},
+      {"id": "x009", "kind": "test", "name": "ultrasound of the abdomen and pelvis", "aliases": ["abdominal ultrasound", "pelvic ultrasound", "obstetric ultrasound"], "result": "Suggestive of a disruption in the continuity of the uterine wall adjacent to the scar from the previous cesarean section, with associated hemoperitoneum."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-019",
+    "diagnosis": "Uterine rupture",
+    "aliases": ["rupture of the uterus", "ruptured uterus", "uterine scar rupture", "rupture of the cesarean scar", "complete uterine rupture"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-019",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-019-p001"],
+      "f002": ["agentclinic-medqa-ext-019-p001"],
+      "f003": ["agentclinic-medqa-ext-019-p001", "agentclinic-medqa-ext-019-p002"],
+      "f004": ["agentclinic-medqa-ext-019-p001", "agentclinic-medqa-ext-019-p003"],
+      "f005": ["agentclinic-medqa-ext-019-p001", "agentclinic-medqa-ext-019-p003"],
+      "f006": ["demographics_text"],
+      "f007": ["agentclinic-medqa-ext-019-p001", "agentclinic-medqa-ext-019-p004", "agentclinic-medqa-ext-019-p005"],
+      "f008": ["agentclinic-medqa-ext-019-p001"],
+      "f009": ["agentclinic-medqa-ext-019-p007"],
+      "f010": ["agentclinic-medqa-ext-019-p007"],
+      "f011": ["agentclinic-medqa-ext-019-p007"],
+      "f012": ["agentclinic-medqa-ext-019-p005"],
+      "f013": ["agentclinic-medqa-ext-019-p006"],
+      "f014": ["agentclinic-medqa-ext-019-p006"],
+      "f015": ["agentclinic-medqa-ext-019-p006"]
+    },
+    "quotes": {
+      "f002": "vaginal bleeding for the past hour",
+      "f003": "severe abdominal pain",
+      "f004": "she felt contractions before the onset of the bleeding",
+      "f005": "the contractions ceased once the bleeding began",
+      "f007": "Her first childbirth was a cesarean section",
+      "f008": "due to nonreassuring fetal heart rate",
+      "f009": "Reports feeling the baby move before the onset of symptoms but is unsure about movement since the symptoms started",
+      "f010": "Denies any recent trauma to the abdomen",
+      "f011": "or any urinary symptoms",
+      "f012": "No other significant past medical history",
+      "f014": "occasional alcohol consumption",
+      "f015": "Works as an elementary school teacher"
+    },
+    "flags": {
+      "f006": ["From demographics_text ('gravida 2, para 1, at 38 weeks' gestation'), which is not a patient fragment; cited as 'demographics_text'. Added because the pregnancy and its stage are central facts the patient knows."],
+      "f009": ["Movements were felt before onset; since onset the patient is unsure. Marked present because movements were felt, with the uncertainty kept in the text; it is not a denial of fetal movement."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Pulse", "source_text": "110/min", "exam_ids": ["agentclinic-medqa-ext-019-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "90/60 mm Hg", "exam_ids": ["agentclinic-medqa-ext-019-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17/min", "exam_ids": ["agentclinic-medqa-ext-019-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Mild distension + Decreased bowel sounds + Tympanic sound predominating + Diffuse abdominal tenderness without rebound or guarding", "exam_ids": ["agentclinic-medqa-ext-019-e004", "agentclinic-medqa-ext-019-e005", "agentclinic-medqa-ext-019-e006", "agentclinic-medqa-ext-019-e007"]},
+      "x005": {"source": "Physical_Examination_Findings.Obstetric_Examination.Fetal_Heart_Rate_Monitoring", "source_text": "Shows recurrent variable decelerations", "exam_ids": ["agentclinic-medqa-ext-019-e008"]},
+      "x006": {"source": "Physical_Examination_Findings.Obstetric_Examination.Uterine_Examination", "source_text": "No contractions felt at the time of examination", "exam_ids": ["agentclinic-medqa-ext-019-e009"]},
+      "x007": {"source": "Test_Results.Hematology.Hemoglobin + Test_Results.Hematology.Platelets", "source_text": "10.2 g/dL (decreased) + 200,000 /μL", "exam_ids": ["agentclinic-medqa-ext-019-i001", "agentclinic-medqa-ext-019-i002"]},
+      "x008": {"source": "Test_Results.Coagulation_Profile.PT + Test_Results.Coagulation_Profile.aPTT", "source_text": "11 seconds + 30 seconds", "exam_ids": ["agentclinic-medqa-ext-019-i003", "agentclinic-medqa-ext-019-i004"]},
+      "x009": {"source": "Test_Results.Imaging.Ultrasound_Abdomen_and_Pelvis.Findings", "source_text": "Suggestive of a disruption in the uterine wall continuity adjacent to the scar from the previous cesarean section, with associated hemoperitoneum.", "exam_ids": ["agentclinic-medqa-ext-019-i005"]}
+    },
+    "leakage": [
+      {"id": "x009", "reason": "The ultrasound result describes the diagnosis (disruption of the uterine wall at the cesarean scar). This is the test's answer; the finding name does not reveal it."}
+    ],
+    "source_issues": ["No temperature is given among the vital signs."],
+    "notes": ["The previous cesarean appears in History, Secondary_Symptoms and Past_Medical_History; it is one fact (f007) with its reason as a child (f008).", "The contractions that stopped when the bleeding began (History, p003) are a resolved symptom with a course child.", "Fetal heart rate monitoring is filed under the obstetric examination in the source and kept as an exam record. The uterine examination is named 'palpation of the uterus' so the record name does not contain the gold word 'uterine'."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a pregnant patient presenting with vaginal bleeding and abdominal pain."
+    }
+  }
+}

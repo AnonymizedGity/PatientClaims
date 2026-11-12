@@ -1,0 +1,55 @@
+{
+ "case_id": "medqa-cs-039",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I am experiencing weight gain.",
+   "I began to notice it three months ago.",
+   "I frequently feel chilly.",
+   "My hair is falling out more than usual.",
+   "I feel that my skin has become dry.",
+   "I take lithium. I began treatment with it six months ago.",
+   "I have been diagnosed with bipolar disorder.",
+   "I typically had a 4-week cycle, but recently it has extended to 6 weeks or longer."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been gaining weight, and I started noticing it about three months ago. I also feel chilly quite often, my hair is falling out more than usual, and my skin feels dry. I have bipolar disorder and I've been taking lithium for six months. On top of that, my periods used to be every four weeks, but lately they've been stretching out to six weeks or longer.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f006",
+    "f007",
+    "f036",
+    "f032",
+    "f021"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4363,
+   "tokens_out": 91,
+   "seconds": 9.68,
+   "redrafts": 0
+  }
+ }
+}

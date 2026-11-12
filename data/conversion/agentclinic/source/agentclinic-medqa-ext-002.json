@@ -1,0 +1,100 @@
+{
+  "case_id": "agentclinic-medqa-ext-002",
+  "source_row": 2,
+  "demographics_text": "35-year-old woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with gait and limb ataxia, and a significant medical history.",
+  "chief_complaint": "Difficulty walking with a 'drunken gait'",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-002-p001",
+      "field": "History",
+      "text": "The patient presents for a follow-up regarding her Crohn disease, and reports new-onset difficulty walking, described by her peers as 'appearing drunk'. She has a significant history of Crohn disease diagnosed 2 years ago, which has escalated in severity, failing to respond to standard therapies. She has been on natalizumab for the past year."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-002-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Gait ataxia"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-002-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Limb ataxia"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-002-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Reduced strength in the right upper limb"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-002-p005",
+      "field": "Past_Medical_History",
+      "text": "Crohn disease diagnosed 2 years ago, current treatment includes natalizumab for the past year."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-002-p006",
+      "field": "Social_History",
+      "text": "Information not provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-002-p007",
+      "field": "Review_of_Systems",
+      "text": "No additional symptoms provided."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-002-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "Normothermic"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-002-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "Within normal range"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-002-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "Within normal range"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-002-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Within normal range"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-002-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Gait_Assessment",
+      "text": "Ataxic gait noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-002-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Limb_Examination.Right_Upper_Limb_Strength",
+      "text": "4/5"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-002-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Coordination_Tests",
+      "text": "Evidence of ataxia."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-002-i001",
+      "path": "Test_Results.MRI_Brain.Findings",
+      "text": "Lesions consistent with Progressive Multifocal Encephalopathy (PML)."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-002-i002",
+      "path": "Test_Results.MRI_Brain.Comments",
+      "text": "T1/T2 images showing multifocal demyelinating lesions without gadolinium enhancement, indicative of PML."
+    }
+  ],
+  "correct_diagnosis": "Progressive multifocal encephalopathy (PML)",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

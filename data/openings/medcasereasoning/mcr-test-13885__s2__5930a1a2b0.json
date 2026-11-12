@@ -1,0 +1,59 @@
+{
+ "case_id": "mcr-test-13885",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I have pain in my belly.",
+   "I feel tired all the time.",
+   "Some of the joints in my hands hurt.",
+   "The painful joints in my hands are swollen.",
+   "It's the knuckles at the base of my index and middle fingers, on both hands.",
+   "On both hands some fingers are badly pulled in towards the palm and won't straighten.",
+   "Both of my breasts have got bigger.",
+   "Two years ago I was diagnosed with gout in my knees and ankles.",
+   "I have stage III high blood pressure, but it's well controlled.",
+   "I was recently diagnosed with type 2 diabetes."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have pain in my belly and I feel tired all the time. Some of the joints in my hands hurt and are swollen, specifically the knuckles at the base of my index and middle fingers on both hands. On both hands, some fingers are badly pulled in towards the palm and won't straighten. Both of my breasts have got bigger. Two years ago I was diagnosed with gout in my knees and ankles, and I was recently diagnosed with type 2 diabetes. I have stage III high blood pressure, but it's well controlled.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f005",
+    "f006",
+    "f007",
+    "f010",
+    "f011",
+    "f013",
+    "f015",
+    "f016"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3761,
+   "tokens_out": 121,
+   "seconds": 13.49,
+   "redrafts": 0
+  }
+ }
+}

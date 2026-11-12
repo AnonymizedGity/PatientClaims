@@ -1,0 +1,121 @@
+{
+  "patient": {
+    "case_id": "mcr-test-04724",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 26, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "vertigo", "aliases": ["spinning sensation", "dizziness", "room spinning"], "text": "I've developed vertigo; everything spins.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "vertigo: onset", "parent": "f001", "attribute": "onset", "text": "It started about a month after the abnormal sensations had gone away.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "abnormal sensations on the right side of the body", "aliases": ["pins and needles", "tingling", "altered sensation", "dysesthesia", "paresthesia", "numbness"], "text": "I had abnormal sensations on the right side of my body.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f004", "item": "abnormal sensations: how they started", "parent": "f003", "attribute": "onset", "text": "They began in my right lower leg as pins and needles.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "abnormal sensations: character", "parent": "f003", "attribute": "character", "text": "Along with the pins and needles, things that should only hurt a little hurt much more (hyperalgesia).", "value": ["pins and needles", "increased sensitivity to pain"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "abnormal sensations: course", "parent": "f003", "attribute": "course", "text": "They spread up my leg; then the leg symptoms went away, and similar sensations appeared in my right arm, tongue and face.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f007", "item": "abnormal sensations: how long", "parent": "f003", "attribute": "duration", "text": "Altogether the abnormal sensations went on for about three months, and then they went away.", "value": "about 3 months", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f008", "item": "abnormal sensations on the left side", "parent": "f003", "attribute": "location", "text": "My left side was never affected.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f009", "item": "abnormal sensations: trigger", "parent": "f003", "attribute": "context", "text": "Nothing I can think of set them off.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "other whole-body symptoms", "aliases": ["systemic symptoms", "constitutional symptoms"], "text": "I haven't had any whole-body symptoms.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history", "medical conditions", "illnesses"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "regular medications", "aliases": ["medicines", "tablets", "drugs"], "text": "I don't take any medicines.", "polarity": "absent", "category": "medication"},
+      {"id": "f013", "item": "vascular risk factors", "aliases": ["stroke risk factors", "cardiovascular risk factors"], "text": "I don't have any risk factors for blood vessel disease.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-04724",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["level of consciousness", "alertness", "mood", "general appearance"], "result": "Alert and slightly anxious."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["eye chart", "vision test"], "result": "Normal."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "visual fields", "aliases": ["confrontation fields", "field testing"], "result": "Normal."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "eye movements", "aliases": ["extraocular movements", "nystagmus", "diplopia", "internuclear ophthalmoplegia", "ocular motility"], "result": "No diplopia, nystagmus, or internuclear ophthalmoplegia."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "pupils", "aliases": ["pupil examination", "pupillary reflexes", "light reflex"], "result": "Equal and reactive."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves", "facial sensation", "trigeminal nerve"], "result": "Intact except for right-sided facial sensory loss."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor examination", "aliases": ["motor strength", "muscle strength", "power", "tone"], "result": "Strength 5/5 in all limbs; normal tone."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "deep tendon reflexes", "aliases": ["reflexes", "tendon reflexes"], "result": "Normal."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "plantar responses", "aliases": ["Babinski sign", "plantar reflex", "Babinski"], "result": "Downgoing."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "proprioception", "aliases": ["joint position sense", "position sense", "sensory examination"], "result": "Normal."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "cerebellar testing", "aliases": ["coordination", "finger-nose test", "heel-shin test", "cerebellar examination"], "result": "Normal."},
+      {"id": "x012", "kind": "exam", "system": "neurological", "name": "tandem gait", "aliases": ["gait", "heel-to-toe walking", "walking"], "result": "Normal."},
+      {"id": "x013", "kind": "exam", "system": "neurological", "name": "Romberg test", "aliases": ["Romberg"], "result": "Swayed briefly."},
+      {"id": "x014", "kind": "test", "name": "MRI of the brain and cervical spine", "aliases": ["brain MRI", "MRI head", "cervical spine MRI", "spinal cord MRI"], "result": "Bilateral periventricular T2/FLAIR hyperintense lesions, some ovoid and radiating perpendicular to the corpus callosum, and additional lesions in the left medulla and upper cervical cord.", "time": "two months after the onset of vertigo"},
+      {"id": "x015", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood counts"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "electrolytes", "aliases": ["sodium", "potassium", "serum electrolytes"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "thyroid function tests", "aliases": ["TSH", "thyroid function", "thyroid hormones"], "result": "Normal."},
+      {"id": "x018", "kind": "test", "name": "Borrelia serology", "aliases": ["Lyme serology", "Lyme test"], "result": "Negative."},
+      {"id": "x019", "kind": "test", "name": "syphilis serology", "aliases": ["syphilis test", "VDRL", "RPR", "TPHA"], "result": "Negative."},
+      {"id": "x020", "kind": "test", "name": "HIV test", "aliases": ["HIV serology", "HIV antibody test"], "result": "Negative."},
+      {"id": "x021", "kind": "test", "name": "ANCA serology", "aliases": ["anti-myeloperoxidase", "anti-MPO", "anti-proteinase 3", "anti-PR3", "ANCA"], "result": "Anti-myeloperoxidase negative; anti-proteinase 3 negative."},
+      {"id": "x022", "kind": "test", "name": "CSF analysis", "aliases": ["lumbar puncture", "spinal tap", "opening pressure", "CSF protein", "CSF glucose", "cerebrospinal fluid"], "result": "Opening pressure 15 mmHg; normal protein and glucose."},
+      {"id": "x023", "kind": "test", "name": "oligoclonal bands (CSF and serum)", "aliases": ["oligoclonal bands", "OCB", "CSF electrophoresis", "isoelectric focusing"], "result": "Oligoclonal bands present in CSF, absent in serum."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-04724",
+    "diagnosis": "Multiple sclerosis",
+    "aliases": ["MS", "relapsing-remitting multiple sclerosis", "relapsing-remitting MS", "RRMS", "disseminated sclerosis"],
+    "reasoning": "1. MOG‐antibody–associated disease was excluded because it “do not present with Dawson finger findings in MRI and lack specific oligoclonal G bands (Oligo-G) in cerebrospinal fluid (CSF) analysis.” 2. Neuromyelitis optica spectrum disorders were considered unlikely since “Dawson’s fingers and jagged-border periventricular hyperintensities are a rare entity in NMO spectrum disorders but a common feature of MS.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-04724",
+    "fact_sources": {
+      "f001": ["s004"], "f002": ["s004"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001", "s002"],
+      "f007": ["s001", "s004"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"], "f011": ["s011"], "f012": ["s011"],
+      "f013": ["s011"]
+    },
+    "quotes": {
+      "f001": "she developed true vertigo", "f002": "One month after resolution of dysesthesia",
+      "f004": "beginning in the lower leg as pins and needles", "f005": "pins and needles with hyperalgesia",
+      "f006": "progressing proximally / The leg symptoms resolved before similar sensations appeared in the right arm, tongue, and face.",
+      "f007": "a 3-month history of altered sensation on the right side of her body", "f008": "There was no left-sided involvement",
+      "f009": "no identifiable trigger", "f010": "no systemic symptoms", "f011": "She had no significant past medical history",
+      "f013": "had no vascular risk factors"
+    },
+    "flags": {
+      "f007": ["s001 gives a 3-month history at presentation and s004 says the dysesthesia resolved a month before the vertigo; read as about three months of sensory symptoms that have since resolved."],
+      "f005": ["Hyperalgesia worded in lay terms as increased sensitivity to pain."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "On examination, she was alert and slightly anxious."},
+      "x002": {"sentences": ["s006"], "source_text": "Visual acuity and fields were normal"},
+      "x003": {"sentences": ["s006"], "source_text": "Visual acuity and fields were normal"},
+      "x004": {"sentences": ["s006"], "source_text": "with no diplopia, nystagmus, or internuclear ophthalmoplegia"},
+      "x005": {"sentences": ["s007"], "source_text": "Pupils were equal and reactive."},
+      "x006": {"sentences": ["s008"], "source_text": "Cranial nerves were intact except for right-sided facial sensory loss."},
+      "x007": {"sentences": ["s009"], "source_text": "Motor strength was 5/5 in all limbs, tone / were normal"},
+      "x008": {"sentences": ["s009"], "source_text": "reflexes were normal"},
+      "x009": {"sentences": ["s009"], "source_text": "plantar responses were downgoing"},
+      "x010": {"sentences": ["s010"], "source_text": "Proprioception and cerebellar testing were normal."},
+      "x011": {"sentences": ["s010"], "source_text": "Proprioception and cerebellar testing were normal."},
+      "x012": {"sentences": ["s010"], "source_text": "She had a normal tandem gait"},
+      "x013": {"sentences": ["s010"], "source_text": "swayed briefly on Romberg testing"},
+      "x014": {"sentences": ["s012"], "source_text": "Two months after the onset of vertigo, MRI of the brain and cervical spine demonstrated bilateral periventricular T2/FLAIR hyperintense lesions, some ovoid and radiating perpendicular to the corpus callosum, and additional lesions in the left medulla and upper cervical cord."},
+      "x015": {"sentences": ["s013"], "source_text": "normal blood counts"},
+      "x016": {"sentences": ["s013"], "source_text": "electrolytes"},
+      "x017": {"sentences": ["s013"], "source_text": "thyroid function"},
+      "x018": {"sentences": ["s014"], "source_text": "Tests for Borrelia / were negative"},
+      "x019": {"sentences": ["s014"], "source_text": "syphilis / were negative"},
+      "x020": {"sentences": ["s014"], "source_text": "HIV / were negative"},
+      "x021": {"sentences": ["s014"], "source_text": "anti-myeloperoxidase, and anti-proteinase 3 were negative"},
+      "x022": {"sentences": ["s015"], "source_text": "Cerebrospinal fluid analysis revealed an opening pressure of 15 mmHg, normal protein and glucose"},
+      "x023": {"sentences": ["s015"], "source_text": "oligoclonal bands detected in CSF but absent in serum"}
+    },
+    "finding_flags": {
+      "x015": ["The timing of the laboratory and CSF studies (s013–s015) is not stated; they are listed without a time."],
+      "x022": ["No CSF cell count is reported."]
+    },
+    "leakage": [
+      {"id": "x014", "reason": "Ovoid periventricular lesions perpendicular to the corpus callosum (Dawson's fingers) with medullary and cord lesions are characteristic of the diagnosis (selection leakage: test_result); the report does not name it."},
+      {"id": "x023", "reason": "CSF-specific oligoclonal bands strongly support the diagnosis; the result does not name it."}
+    ],
+    "source_issues": [
+      "The dysesthesia is said to have resolved (s004), but the examination finds right-sided facial sensory loss (s008).",
+      "s001 ('presented with a 3-month history') and s004 (referral after the later vertigo) describe the presentation at two points; the timeline is reconstructed in the facts."
+    ],
+    "notes": [
+      "Index visit: the referral neurologic evaluation after the onset of vertigo (s004–s011); the right-sided sensory episodes (s001–s003) are history that has resolved, and the MRI two months after vertigo onset (s012) is given a time.",
+      "Slight anxiety is an observer sign kept in the mental status finding; the facial sensory loss is an examination finding only because the patient's dysesthesia had resolved.",
+      "f010 is a blanket denial of systemic symptoms; f013 a blanket denial of vascular risk factors, which does not answer specific questions such as smoking or blood pressure."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

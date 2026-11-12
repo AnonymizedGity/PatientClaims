@@ -1,0 +1,78 @@
+{
+  "case_id": "agentclinic-medqa-ext-127",
+  "source_row": 127,
+  "demographics_text": "33-year-old female at 17-weeks gestation",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a breast mass.",
+  "chief_complaint": "Painless mass in the right breast",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-127-p001",
+      "field": "History",
+      "text": "The patient reports noticing a painless mass in the right breast three weeks ago, which has not changed in size. She has no additional complaints."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-127-p002",
+      "field": "Past_Medical_History",
+      "text": "No significant medical history. This is her first pregnancy."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-127-p003",
+      "field": "Social_History",
+      "text": "Non-smoker, does not consume alcohol. Works as a high school teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-127-p004",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, nipple discharge, or changes in skin over the breast."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-127-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-127-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "110/70 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-127-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-127-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-127-e005",
+      "path": "Physical_Examination_Findings.Breast_Examination.Inspection",
+      "text": "No skin changes or nipple discharge."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-127-e006",
+      "path": "Physical_Examination_Findings.Breast_Examination.Palpation",
+      "text": "Identifies a 2.5-cm rubbery, mobile, nontender mass in the upper outer quadrant of the right breast. No axillary lymphadenopathy."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-127-i001",
+      "path": "Test_Results.Breast_Ultrasound.Findings",
+      "text": "2.5-cm well-circumscribed, solid mass in the right breast without suspicious features."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-127-i002",
+      "path": "Test_Results.Biopsy.Histopathology",
+      "text": "Rounded contour with overgrowth of fibrous and glandular tissue."
+    }
+  ],
+  "correct_diagnosis": "Fibroadenoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

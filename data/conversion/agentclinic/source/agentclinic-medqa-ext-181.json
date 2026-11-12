@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-181",
+  "source_row": 181,
+  "demographics_text": "41-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with shortness of breath and a history of an unexplained loss of consciousness.",
+  "chief_complaint": "Shortness of breath worsening on left lateral decubitus position",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-181-p001",
+      "field": "History",
+      "text": "The patient reports experiencing shortness of breath that worsens when lying on her left side. Approximately 10 days ago, she had an episode of unexplained loss of consciousness. She denies any significant past medical or family history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-181-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Episode of unexplained loss of consciousness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-181-p003",
+      "field": "Past_Medical_History",
+      "text": "Negative for any notable conditions."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-181-p004",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol socially, and works as an accountant."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-181-p005",
+      "field": "Review_of_Systems",
+      "text": "Denies chest pain, palpitations, fever, cough, edema, or recent travel."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "90 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e005",
+      "path": "Physical_Examination_Findings.Cardiac_Examination.Inspection",
+      "text": "Jugular venous distention"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e006",
+      "path": "Physical_Examination_Findings.Cardiac_Examination.Auscultation",
+      "text": "Diastolic murmur best heard over the left sternal border, accentuated in the left lateral decubitus position"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e007",
+      "path": "Physical_Examination_Findings.Cardiac_Examination.Palpation",
+      "text": "No palpable thrill"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e008",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "Mild effort in breathing"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e009",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Fine crackles at the base of the lungs, not clearing with cough"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e010",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Normal resonance"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-e011",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Palpation",
+      "text": "No tactile fremitus"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-181-i001",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Evidence of pulmonary congestion"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-181-i002",
+      "path": "Test_Results.Echocardiogram.Findings",
+      "text": "Mass in the left atrium attached to the atrial septum"
+    }
+  ],
+  "correct_diagnosis": "Atrial Myxoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

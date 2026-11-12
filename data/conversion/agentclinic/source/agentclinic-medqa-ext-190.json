@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-190",
+  "source_row": 190,
+  "demographics_text": "22-year-old woman",
+  "objective_for_doctor": "Evaluate and manage a patient presenting with symptoms indicative of a spontaneous abortion and assess for any psychiatric conditions based on patient behavior.",
+  "chief_complaint": "Abdominal pain and contractions",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p001",
+      "field": "History",
+      "text": "The patient presents to the emergency department with abdominal pain and reports being 10 weeks pregnant. She has a history of constipation, anxiety, and substance abuse. The patient is not currently on any medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Bloody vaginal discharge"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Recent positive pregnancy test"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Emotional distress upon learning of a spontaneous abortion"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Anger and aggression post-news"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p006",
+      "field": "Secondary_Symptoms",
+      "text": "New lacerations over her wrists"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p007",
+      "field": "Past_Medical_History",
+      "text": "Constipation, anxiety, substance abuse"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p008",
+      "field": "Social_History",
+      "text": "Details on social history not provided, but the doctor should inquire about current life stressors, support systems, and substance use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-190-p009",
+      "field": "Review_of_Systems",
+      "text": "Negative except for symptoms presented."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "99.5°F (37.5°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "107/58 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "90/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "17/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e006",
+      "path": "Physical_Examination_Findings.Gynecological_Examination.Vaginal_Examination",
+      "text": "Presence of bloody vaginal discharge"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e007",
+      "path": "Physical_Examination_Findings.Gynecological_Examination.Cervical_Examination",
+      "text": "Open cervix"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e008",
+      "path": "Physical_Examination_Findings.Psychiatric_Evaluation.Initial_Evaluation",
+      "text": "Gratitude for care"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e009",
+      "path": "Physical_Examination_Findings.Psychiatric_Evaluation.Post_News",
+      "text": "Anger, aggression, threats of litigation"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-e010",
+      "path": "Physical_Examination_Findings.Psychiatric_Evaluation.Follow-up_Evaluation",
+      "text": "Self-harm behaviors, property damage"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-190-i001",
+      "path": "Test_Results.Ultrasound_Pelvis.Findings",
+      "text": "Absence of intrauterine pregnancy indicative of a completed spontaneous abortion"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-i002",
+      "path": "Test_Results.Beta_hCG.Level",
+      "text": "Declining levels consistent with a spontaneous abortion"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-i003",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-i004",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Slightly decreased, possibly due to blood loss"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-190-i005",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Within normal limits"
+    }
+  ],
+  "correct_diagnosis": "Borderline personality disorder",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

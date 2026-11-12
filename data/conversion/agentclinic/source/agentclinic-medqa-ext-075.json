@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-075",
+  "source_row": 75,
+  "demographics_text": "65-year-old woman",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with postmenopausal bleeding and an adnexal mass.",
+  "chief_complaint": "Intermittent bleeding from the vagina",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-075-p001",
+      "field": "History",
+      "text": "The patient presents with a 2-month history of intermittent postmenopausal bleeding. She denies any recent weight loss, fever, or changes in bladder or bowel habits. No previous history of similar symptoms. She has no history of serious illness and takes no medications regularly."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-075-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No recent weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-075-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-075-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No changes in bladder or bowel habits"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-075-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-075-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, does not consume alcohol, retired school teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-075-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies nausea, vomiting, diarrhea, dysuria, or flank pain."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-075-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-e005",
+      "path": "Physical_Examination_Findings.Pelvic_Examination.External_Genitalia",
+      "text": "Normal, no lesions or masses"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-e006",
+      "path": "Physical_Examination_Findings.Pelvic_Examination.Speculum_Exam",
+      "text": "Vaginal atrophy, no active bleeding"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-e007",
+      "path": "Physical_Examination_Findings.Pelvic_Examination.Bimanual_Exam",
+      "text": "A palpable left adnexal mass, non-tender, uterus non-enlarged"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-075-i001",
+      "path": "Test_Results.Imaging.Pelvic_Ultrasound.Findings",
+      "text": "Thickened endometrial stripe and left adnexal mass observed"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-i002",
+      "path": "Test_Results.Laboratory_Studies.Inhibin_B",
+      "text": "Increased levels"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-075-i003",
+      "path": "Test_Results.Biopsy.Endometrial_Biopsy.Findings",
+      "text": "Well-differentiated adenocarcinoma"
+    }
+  ],
+  "correct_diagnosis": "Granulosa cell tumor",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,1274 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-015",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 36,
+      "sex": "female"
+    },
+    "opening": [
+      "f001",
+      "f002"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "missed periods",
+        "aliases": [
+          "no periods",
+          "absent periods"
+        ],
+        "text": "I haven't had my menstrual period.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "missed periods: how long",
+        "parent": "f001",
+        "attribute": "duration",
+        "text": "For the past three months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "menstrual cycle",
+        "aliases": [
+          "how often periods come",
+          "how long periods last"
+        ],
+        "text": "Over the past year, I started having my periods less often: every 5 to 6 weeks, lasting 7 days.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "menstrual cycle: before the past year",
+        "parent": "f003",
+        "attribute": "course",
+        "text": "Before that, I used to have regular periods every month, lasting 4 to 5 days.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "historical"
+      },
+      {
+        "id": "f005",
+        "item": "menstrual flow",
+        "aliases": [
+          "pads per day",
+          "how heavy the periods are"
+        ],
+        "text": "The blood flow is becoming less, and I use only one pad a day now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "menstrual flow: before",
+        "parent": "f005",
+        "attribute": "course",
+        "text": "It used to be 2 to 3 pads a day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "historical"
+      },
+      {
+        "id": "f007",
+        "item": "nipple discharge",
+        "aliases": [
+          "discharge from the breast"
+        ],
+        "text": "I noticed some discharge from my breast.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "nipple discharge: what it looks like",
+        "parent": "f007",
+        "attribute": "appearance",
+        "text": "It's milky.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "nipple discharge: which side",
+        "parent": "f007",
+        "attribute": "location",
+        "value": [
+          "left breast"
+        ],
+        "text": "From my left breast.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "nipple discharge: when it started",
+        "parent": "f007",
+        "attribute": "onset",
+        "text": "I noticed it just last week.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "weight change",
+        "aliases": [
+          "weight gain",
+          "weight loss"
+        ],
+        "text": "I've put on weight.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "weight change: how much",
+        "parent": "f011",
+        "attribute": "quantity",
+        "text": "15 pounds.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "weight change: over what time",
+        "parent": "f011",
+        "attribute": "duration",
+        "text": "In the last year.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "hair changes",
+        "aliases": [
+          "facial hair",
+          "body hair"
+        ],
+        "text": "Actually, I recently noticed some hair on my chin that I've been plucking.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "dry skin",
+        "aliases": [
+          "skin changes"
+        ],
+        "text": "My skin isn't dry.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "cold intolerance",
+        "aliases": [
+          "feeling cold all the time"
+        ],
+        "text": "The cold doesn't bother me more than usual.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "endocrine",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "voice change",
+        "aliases": [
+          "hoarse voice",
+          "deeper voice"
+        ],
+        "text": "My voice hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "change in bowel habits",
+        "aliases": [
+          "constipation",
+          "diarrhea"
+        ],
+        "text": "My bowel habits haven't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "loss of appetite",
+        "aliases": [
+          "appetite change",
+          "poor appetite"
+        ],
+        "text": "I have a good appetite.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "fatigue",
+        "aliases": [
+          "tiredness",
+          "low energy"
+        ],
+        "text": "I don't feel tired.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "feeling depressed",
+        "aliases": [
+          "low mood",
+          "feeling down"
+        ],
+        "text": "I haven't been feeling depressed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "feeling anxious",
+        "aliases": [
+          "anxiety",
+          "nervousness"
+        ],
+        "text": "I haven't been feeling anxious.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "feeling stressed",
+        "aliases": [
+          "stress"
+        ],
+        "text": "I haven't been feeling stressed out.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "hot flashes",
+        "aliases": [
+          "hot flushes"
+        ],
+        "text": "I haven't had any hot flashes.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "vaginal dryness",
+        "text": "I don't have any vaginal dryness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "vaginal itching",
+        "text": "I don't have any vaginal itching.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "trouble sleeping",
+        "aliases": [
+          "insomnia",
+          "sleep problems"
+        ],
+        "text": "I don't have trouble falling or staying asleep.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "snoring",
+        "text": "I don't snore.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "frequent urination",
+        "aliases": [
+          "urinating more often"
+        ],
+        "text": "I haven't been urinating more often than usual.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "vision changes",
+        "aliases": [
+          "blurry vision",
+          "trouble seeing"
+        ],
+        "text": "My vision hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "eye",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "headache",
+        "text": "I don't have any headaches.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I don't have any abdominal pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "age at first period",
+        "aliases": [
+          "first period",
+          "menarche"
+        ],
+        "text": "I was 14.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "previous pregnancies",
+        "aliases": [
+          "pregnancy history",
+          "children"
+        ],
+        "text": "I have one child; he is 10 years old.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "problems during pregnancy or delivery",
+        "aliases": [
+          "pregnancy complications"
+        ],
+        "text": "The delivery was uncomplicated.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "miscarriage",
+        "text": "I've never had a miscarriage.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "abortion",
+        "text": "I've never had an abortion.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f038",
+        "item": "last Pap smear",
+        "aliases": [
+          "Pap test",
+          "cervical screening"
+        ],
+        "text": "My last Pap smear was ten months ago. It was normal.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "abnormal Pap smears",
+        "text": "I've never had an abnormal Pap smear.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f040",
+        "item": "other medical problems",
+        "aliases": [
+          "health problems",
+          "chronic illnesses"
+        ],
+        "text": "I don't have any other medical problems.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f042",
+        "item": "birth control pills",
+        "aliases": [
+          "oral contraceptives",
+          "the pill",
+          "contraception"
+        ],
+        "text": "I've been taking the same birth control pills for 8 years.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "birth control pills: how regularly taken",
+        "parent": "f042",
+        "attribute": "other",
+        "text": "I take them regularly as prescribed.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "other medications",
+        "aliases": [
+          "medicines"
+        ],
+        "text": "I don't take any other medications.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies"
+        ],
+        "text": "I'm not allergic to anything.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "parents' health",
+        "text": "Both my parents are in good health.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "mother's age at menopause",
+        "aliases": [
+          "mother's menopause"
+        ],
+        "text": "My mother went through menopause at 55.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f048",
+        "item": "son's health",
+        "aliases": [
+          "child's health"
+        ],
+        "text": "My son is well.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "diet pills or fad diets",
+        "aliases": [
+          "weight-loss pills"
+        ],
+        "text": "I don't follow any fad diet or take pills to lose weight.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "diet",
+        "aliases": [
+          "eating habits",
+          "special diet"
+        ],
+        "text": "I've been a vegetarian for 10 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "exercise",
+        "text": "I run 2 miles three times a week.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "I have never used them.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f054",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f055",
+        "item": "sexual activity",
+        "text": "Once a week on average, with my husband.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f056",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a nurse.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-015",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.0°F (36.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "13/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "65/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Not in acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "visual fields",
+          "extraocular movements",
+          "lid lag"
+        ],
+        "result": "Extraocular movements intact, without double vision or lid lag; visual fields full to confrontation."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "endocrine",
+        "name": "thyroid examination",
+        "aliases": [
+          "neck examination",
+          "thyroid"
+        ],
+        "result": "No thyroid enlargement."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; S1 and S2 within normal limits; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not tender, not distended; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "extremities examination",
+        "aliases": [
+          "edema",
+          "tremor"
+        ],
+        "result": "No edema; no tremor."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes normal in the lower extremities on both sides."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-015",
+    "diagnosis": "Hyperprolactinemia",
+    "aliases": [
+      "hyperprolactinaemia",
+      "high prolactin",
+      "elevated prolactin",
+      "high prolactin level",
+      "galactorrhea-amenorrhea syndrome",
+      "hyperprolactinemic amenorrhea",
+      "prolactinoma",
+      "prolactin-secreting pituitary adenoma"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Hyperprolactinemia",
+        "evidence": [
+          "Galactorrhea",
+          "Oligomenorrhea"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Polycystic ovary syndrome",
+        "aliases": [
+          "PCOS",
+          "polycystic ovarian syndrome",
+          "polycystic ovaries",
+          "Stein-Leventhal syndrome"
+        ],
+        "evidence": [
+          "Weight gain",
+          "Hirsutism",
+          "Oligomenorrhea"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Pregnancy",
+        "aliases": [
+          "pregnant",
+          "intrauterine pregnancy",
+          "early pregnancy"
+        ],
+        "evidence": [
+          "Change in menstrual cycles",
+          "Regular sexual activity",
+          "Previous successful pregnancy"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Thyroid disease",
+        "note": "Hyper- and especially hypothyroidism can cause menstrual irregularity, but apart from galactorrhea and weight gain she has no thyroid signs or symptoms."
+      },
+      {
+        "diagnosis": "Premature ovarian failure",
+        "note": "Primary hypogonadism before age 40; unlikely because she lacks menopausal symptoms such as hot flashes, fatigue, insomnia or depression."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-015",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "cc"
+      ],
+      "f003": [
+        "medqa-cs-015-p001"
+      ],
+      "f004": [
+        "medqa-cs-015-p001"
+      ],
+      "f005": [
+        "medqa-cs-015-p002"
+      ],
+      "f006": [
+        "medqa-cs-015-p002"
+      ],
+      "f007": [
+        "medqa-cs-015-p017"
+      ],
+      "f008": [
+        "medqa-cs-015-p017"
+      ],
+      "f009": [
+        "medqa-cs-015-p017"
+      ],
+      "f010": [
+        "medqa-cs-015-p017"
+      ],
+      "f011": [
+        "medqa-cs-015-p004"
+      ],
+      "f012": [
+        "medqa-cs-015-p004"
+      ],
+      "f013": [
+        "medqa-cs-015-p004"
+      ],
+      "f014": [
+        "medqa-cs-015-p006"
+      ],
+      "f015": [
+        "medqa-cs-015-p006",
+        "note"
+      ],
+      "f016": [
+        "medqa-cs-015-p005"
+      ],
+      "f017": [
+        "medqa-cs-015-p007"
+      ],
+      "f018": [
+        "medqa-cs-015-p008"
+      ],
+      "f019": [
+        "medqa-cs-015-p009"
+      ],
+      "f020": [
+        "medqa-cs-015-p011"
+      ],
+      "f021": [
+        "medqa-cs-015-p012"
+      ],
+      "f022": [
+        "medqa-cs-015-p012"
+      ],
+      "f023": [
+        "medqa-cs-015-p012"
+      ],
+      "f024": [
+        "medqa-cs-015-p013"
+      ],
+      "f025": [
+        "medqa-cs-015-p014"
+      ],
+      "f026": [
+        "medqa-cs-015-p014"
+      ],
+      "f027": [
+        "medqa-cs-015-p015"
+      ],
+      "f028": [
+        "medqa-cs-015-p015"
+      ],
+      "f029": [
+        "medqa-cs-015-p016"
+      ],
+      "f030": [
+        "medqa-cs-015-p018"
+      ],
+      "f031": [
+        "medqa-cs-015-p019"
+      ],
+      "f032": [
+        "medqa-cs-015-p020"
+      ],
+      "f033": [
+        "medqa-cs-015-p003"
+      ],
+      "f034": [
+        "medqa-cs-015-p024"
+      ],
+      "f035": [
+        "medqa-cs-015-p025"
+      ],
+      "f036": [
+        "medqa-cs-015-p026"
+      ],
+      "f037": [
+        "medqa-cs-015-p026"
+      ],
+      "f038": [
+        "medqa-cs-015-p027"
+      ],
+      "f039": [
+        "medqa-cs-015-p028"
+      ],
+      "f040": [
+        "medqa-cs-015-p030"
+      ],
+      "f041": [
+        "medqa-cs-015-p031"
+      ],
+      "f042": [
+        "medqa-cs-015-p022",
+        "medqa-cs-015-p029"
+      ],
+      "f043": [
+        "medqa-cs-015-p023"
+      ],
+      "f044": [
+        "medqa-cs-015-p029"
+      ],
+      "f045": [
+        "medqa-cs-015-p038"
+      ],
+      "f046": [
+        "medqa-cs-015-p032"
+      ],
+      "f047": [
+        "medqa-cs-015-p032"
+      ],
+      "f048": [
+        "medqa-cs-015-p025"
+      ],
+      "f049": [
+        "medqa-cs-015-p010"
+      ],
+      "f050": [
+        "medqa-cs-015-p010"
+      ],
+      "f051": [
+        "medqa-cs-015-p037"
+      ],
+      "f052": [
+        "medqa-cs-015-p034"
+      ],
+      "f053": [
+        "medqa-cs-015-p035"
+      ],
+      "f054": [
+        "medqa-cs-015-p036"
+      ],
+      "f055": [
+        "medqa-cs-015-p021"
+      ],
+      "f056": [
+        "medqa-cs-015-p033"
+      ]
+    },
+    "quotes": {
+      "f001": "I haven't had my menstrual period for the past three months.",
+      "f002": "for the past three months.",
+      "f003": "over the past year, I started having them less frequently – every 5 to 6 weeks, lasting for 7 days.",
+      "f004": "I used to have regular periods every month lasting for 4 to 5 days",
+      "f005": "the blood flow is becoming less, and I use only one pad a day now.",
+      "f006": "It was 2 to 3 a day",
+      "f007": "Yes, I noticed some milky discharge from my left breast just last week.",
+      "f008": "milky discharge",
+      "f009": "from my left breast",
+      "f010": "just last week.",
+      "f011": "I've put on 15 pounds in the last year.",
+      "f012": "15 pounds",
+      "f013": "in the last year.",
+      "f014": "Actually, I recently noticed some hair on my chin that I have been plucking.",
+      "f015": "denies dry skin",
+      "f016": "No, I do not.",
+      "f017": "No, I do not.",
+      "f018": "No, I do not.",
+      "f019": "I have a good appetite.",
+      "f020": "No, I do not.",
+      "f021": "No, I do not.",
+      "f022": "No, I do not.",
+      "f023": "No, I do not.",
+      "f024": "No, I do not.",
+      "f025": "No, I do not.",
+      "f026": "No, I do not.",
+      "f027": "No, I do not.",
+      "f028": "No, I do not.",
+      "f029": "No, I do not.",
+      "f030": "No, I do not.",
+      "f031": "No, I do not.",
+      "f032": "No, I do not.",
+      "f033": "Age 14.",
+      "f034": "I have one child; he is 10 years old.",
+      "f035": "No, the delivery was uncomplicated",
+      "f036": "No, I do not.",
+      "f037": "No, I do not.",
+      "f038": "Ten months ago. It was normal.",
+      "f039": "No, I do not.",
+      "f040": "None.",
+      "f041": "No, I do not.",
+      "f042": "The same birth control pills for 8 years. / oral contraceptive pills for 8 years.",
+      "f043": "Yes, I take them regularly as prescribed.",
+      "f044": "None, other than oral contraceptive pills",
+      "f045": "No, I do not.",
+      "f046": "Both my parents are in good health",
+      "f047": "my mother experienced menopause at 55.",
+      "f048": "my baby is well.",
+      "f049": "No",
+      "f050": "I've been a vegetarian for 10 years.",
+      "f051": "I run 2 miles three times a week.",
+      "f052": "No, I do not.",
+      "f053": "I have never used them.",
+      "f054": "No, I do not.",
+      "f055": "Once a week on average with my husband.",
+      "f056": "Nurse."
+    },
+    "flags": {
+      "f015": [
+        "The script answer to 'changes in your skin or hair?' mentions only chin hair; the denial of dry skin comes from the note HPI."
+      ],
+      "f016": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p005) — denial confirmed."
+      ],
+      "f017": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p007) — denial confirmed."
+      ],
+      "f018": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p008) — denial confirmed."
+      ],
+      "f020": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p011) — denial confirmed."
+      ],
+      "f021": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p012) — denial confirmed."
+      ],
+      "f022": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p012) — denial confirmed."
+      ],
+      "f023": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p012) — denial confirmed."
+      ],
+      "f024": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p013) — denial confirmed."
+      ],
+      "f025": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p014) — denial confirmed."
+      ],
+      "f026": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p014) — denial confirmed."
+      ],
+      "f027": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p015) — denial confirmed."
+      ],
+      "f028": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p015) — denial confirmed."
+      ],
+      "f029": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ],
+      "f030": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p018) — denial confirmed."
+      ],
+      "f031": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p019) — denial confirmed."
+      ],
+      "f032": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ],
+      "f036": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p026) — denial confirmed."
+      ],
+      "f037": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p026) — denial confirmed."
+      ],
+      "f039": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p028) — denial confirmed."
+      ],
+      "f041": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p031) — denial confirmed."
+      ],
+      "f045": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p038) — denial confirmed."
+      ],
+      "f052": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p034) — denial confirmed."
+      ],
+      "f054": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p036) — denial confirmed."
+      ],
+      "f005": [
+        "p002 says she 'now' uses one pad a day, although the chief complaint is no period for three months; kept as the script says."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/85 mm Hg | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-015-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.0°F (36.7°C) | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-015-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 13/minute | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-015-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 65/minute, regular | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-015-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is not in acute distress.",
+        "exam_ids": [
+          "medqa-cs-015-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: EOMI without diplopia or lid lag; visual fields full to confrontation. | Neuro: See HEENT.",
+        "exam_ids": [
+          "medqa-cs-015-e003",
+          "medqa-cs-015-e009"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Neck: No thyromegaly.",
+        "exam_ids": [
+          "medqa-cs-015-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-015-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-015-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, nontender, nondistended, EF> bowel sounds x 4 quadrants, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-015-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Extremities: No edema, no tremor.",
+        "exam_ids": [
+          "medqa-cs-015-e008"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Normal DTRs in lower extremities bilaterally.",
+        "exam_ids": [
+          "medqa-cs-015-e009"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x010": [
+        "Source reads 'EF> bowel sounds x 4 quadrants' — OCR artifact, most likely '+' (bowel sounds present)."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The sp_notes field reads 'None. (The given text is already error-free.)', an artifact of an automatic text rewrite; treated as no SP notes.",
+      "Exam e007 contains the OCR artifact 'EF> bowel sounds x 4 quadrants' (probably '+ bowel sounds'); recorded as bowel sounds present, with the artifact in finding_flags (x010).",
+      "p002 says she 'now' uses one pad a day, although the chief complaint is no period for three months.",
+      "Several answers read 'No, I do not.' to past-tense or 'ever' questions (surgery p031, miscarriage/abortion p026, abnormal Pap p028, allergies p038); the meaning (denial) is clear.",
+      "The skin/hair answer (p006) mentions only chin hair; the note's denial of dry skin is not in the script (f015, from the note).",
+      "The sample closure addresses 'Mrs. Garrison' instead of Garriman; not used."
+    ],
+    "notes": [
+      "The chief complaint carries the 3-month duration; in v2 it gives the complaint (f001) and its duration child (f002), and both are in 'opening'.",
+      "Temporality: the regular monthly cycles and 2-3 pads a day before the past year are 'historical'; the past-year change (cycles every 5-6 weeks, lighter flow) is treated as part of the current problem ('current'), as the patient describes it in the present tense.",
+      "OCP use from p022 and p029 combined into f042; compliance (p023, child f043) and 'no other medications' (p029, f044) are separate facts.",
+      "p010 'No, I've been a vegetarian for 10 years' is split into no fad diet/diet pills (f049, absent) and vegetarian for 10 years (f050, present).",
+      "No acting notes: the case has no SP notes.",
+      "18 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 23 facts confirmed (flags re-keyed to the v2 ids).",
+      "Conversion: the menstrual pattern (p001) and flow (p002) are each a current parent (f003, f005) with a historical 'before' child (f004, f006). The nipple discharge (p017) is split into the symptom (f007) with appearance, side and onset children; the weight gain (p004) into the symptom (f011) with amount and time-span children.",
+      "Conversion: 'Neuro: See HEENT' (e009) is cited on the eye examination (x006) as well as on the reflexes (x012); the exam checklist lists visual fields and extraocular movements under the neurologic exam.",
+      "Conversion: gold aliases include 'prolactinoma' (the commonest specific cause, which implies hyperprolactinemia), following the reference conversion that accepts narrower forms (STEMI, NSTEMI for myocardial ischemia or infarction); broader terms such as 'pituitary adenoma' are not included.",
+      "Harmonisation pass: f019 'loss of appetite' (absent) -> 'loss of appetite' (absent); f040 item -> 'other medical problems' (blanket denial).",
+      "Fixes: f007 answer word removed; f011 answer word removed; f016 answer word removed; f017 answer word removed; f018 answer word removed; f020 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f024 answer word removed; f025 answer word removed; f026 answer word removed; f027 answer word removed; f028 answer word removed; f029 answer word removed; f030 answer word removed; f031 answer word removed; f032 answer word removed; f035 answer word removed; f036 answer word removed; f037 answer word removed; f039 answer word removed; f041 answer word removed; f043 answer word removed; f045 answer word removed; f049 answer word removed; f052 answer word removed; f054 answer word removed; f055 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [],
+      "patient_questions": [
+        "Am I experiencing menopause?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

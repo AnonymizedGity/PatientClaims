@@ -1,0 +1,47 @@
+{
+ "case_id": "ddxplus-v2-test-0010794",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "I have a cough.",
+   "I have intense coughing fits.",
+   "The pain gets worse when I breathe in deeply.",
+   "I'm being treated for osteoporosis."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've got a cough, and I'm having these intense coughing fits. Also, the pain gets worse when I breathe in deeply. I should mention that I'm currently being treated for osteoporosis.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f011",
+    "f010",
+    "f012"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8476,
+   "tokens_out": 54,
+   "seconds": 12.28,
+   "redrafts": 0
+  }
+ }
+}

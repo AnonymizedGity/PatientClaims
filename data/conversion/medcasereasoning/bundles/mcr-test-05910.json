@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "mcr-test-05910",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 29, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "xanthomas", "aliases": ["skin lumps", "fatty deposits in the skin", "cutaneous xanthomas"], "text": "I keep getting xanthomas, fatty lumps in my skin; they keep coming back.", "polarity": "present", "category": "symptom", "system": "skin", "time": "recurrent"},
+      {"id": "f002", "item": "xanthomas: onset", "parent": "f001", "attribute": "onset", "text": "They first appeared before I was 10.", "value": "before age 10", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "xanthoma removal surgery", "aliases": ["surgery", "operations", "excision of xanthomas"], "text": "They were surgically removed several times when I was a teenager.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f004", "item": "xanthomas: location", "parent": "f001", "attribute": "location", "text": "Right now I have them over my elbows and on my eyelids.", "value": ["elbows", "eyelids"], "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "thickened Achilles tendons", "aliases": ["thick heel tendons", "Achilles tendon swelling", "tendon xanthomas"], "text": "My Achilles tendons are thickened.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f006", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke 10 cigarettes a day.", "value": 10, "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "alcohol", "aliases": ["drinking"], "text": "I drink very little alcohol.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "mother's health", "aliases": ["mother", "sudden death in the family", "heart disease in the family", "coronary artery disease in the family"], "text": "My mother died suddenly at 60; it was possibly from early coronary artery disease.", "polarity": "present", "category": "family_history"},
+      {"id": "f009", "item": "sister's xanthomas", "aliases": ["sister", "xanthomas in the family", "skin lumps in the family"], "text": "My sister had xanthomas as a child.", "polarity": "present", "category": "family_history"},
+      {"id": "f010", "item": "sister's high cholesterol", "aliases": ["high cholesterol in the family", "hypercholesterolemia", "sister's statin"], "text": "My sister has high cholesterol that stays high, with an LDL of about 140 mg/dL, even on a statin.", "polarity": "present", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-05910",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "36.0 °C"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "108/68 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "60/min"},
+      {"id": "x004", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "xanthomas", "elbows", "eyelids", "palms"], "result": "Nodular xanthomas over the elbows; palpebral xanthomas; no palmar xanthomas."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "Achilles tendon examination", "aliases": ["Achilles tendons", "tendons", "tendon xanthomas"], "result": "Thickened Achilles tendons."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "corneal examination", "aliases": ["corneal arcus", "arcus", "corneal rings", "eyes"], "result": "No corneal rings."},
+      {"id": "x008", "kind": "test", "name": "lipid panel", "aliases": ["lipid profile", "cholesterol", "total cholesterol", "LDL", "LDL-C", "HDL", "HDL-C", "triglycerides"], "result": "Total cholesterol 429 mg/dL; LDL-C 357 mg/dL; HDL-C 45 mg/dL; triglycerides 136 mg/dL."},
+      {"id": "x009", "kind": "test", "name": "lipoprotein(a)", "aliases": ["Lp(a)", "lipoprotein a"], "result": "20.2 mg/dL"},
+      {"id": "x010", "kind": "test", "name": "serum sitosterol", "aliases": ["sitosterol", "plant sterols", "phytosterols"], "result": "3.9 μg/mL"},
+      {"id": "x011", "kind": "test", "name": "lysosomal acid lipase activity", "aliases": ["LAL activity", "LAL", "acid lipase"], "result": "18.1 μM/h/disk (normal ≥14.9)"},
+      {"id": "x012", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid-stimulating hormone", "free T3", "free T4"], "result": "TSH 1.53 μIU/mL; free T3 2.1 pg/mL; free T4 0.99 ng/dL."},
+      {"id": "x013", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "bilirubin", "AST", "ALT", "albumin", "liver enzymes"], "result": "Total bilirubin 0.4 mg/dL; AST 22 U/L; ALT 30 U/L; albumin 4.1 g/dL."},
+      {"id": "x014", "kind": "test", "name": "HbA1c", "aliases": ["hemoglobin A1c", "glycated hemoglobin", "A1c"], "result": "5.7%"},
+      {"id": "x015", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "UA"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "Achilles tendon radiography", "aliases": ["X-ray of the Achilles tendons", "Achilles tendon thickness", "tendon radiograph"], "result": "Achilles tendon thickness 15 mm."},
+      {"id": "x017", "kind": "test", "name": "coronary CT angiography", "aliases": ["coronary CTA", "CCTA", "cardiac CT"], "result": "No coronary artery disease; no evidence of aortic stenosis."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-05910",
+    "diagnosis": "Heterozygous familial hypercholesterolemia",
+    "aliases": ["HeFH", "heterozygous FH", "heterozygous familial hypercholesterolaemia", "familial hypercholesterolemia", "FH"],
+    "reasoning": "1. Sitosterolemia was excluded because “the patient exhibited normal sitosterol … levels.” 2. Lysosomal acid lipase deficiency was excluded because “the patient exhibited … normal … lysosomal acid lipase activities.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-05910",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s002"], "f003": ["s002"], "f004": ["s003"], "f005": ["s003"], "f006": ["s004"],
+      "f007": ["s004"], "f008": ["s005"], "f009": ["s005"], "f010": ["s005"]
+    },
+    "quotes": {
+      "f001": "recurrent cutaneous xanthomas", "f002": "She had developed xanthomas before the age of 10 years",
+      "f003": "which were resected multiple times during her teenage years", "f004": "nodular xanthomas over the elbows, palpebral xanthomas",
+      "f005": "thickened Achilles tendons", "f006": "She smokes 10 cigarettes per day", "f007": "drinks minimal alcohol",
+      "f008": "Her mother died suddenly at age 60 (possible premature coronary artery disease)",
+      "f009": "her sister had childhood xanthomas", "f010": "persistent hypercholesterolemia (LDL‐C ~140 mg/dL) despite statin therapy"
+    },
+    "flags": {
+      "f004": ["Current locations are taken from the re-presentation description (examination); a patient would notice lumps on her elbows and eyelids."],
+      "f005": ["Thickened Achilles tendons are reported from the examination; included as a fact because the patient can see and feel them."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "temperature 36.0°C"},
+      "x002": {"sentences": ["s006"], "source_text": "blood pressure 108/68 mm Hg"},
+      "x003": {"sentences": ["s006"], "source_text": "pulse 60/min"},
+      "x004": {"sentences": ["s006"], "source_text": "oxygen saturation 98% on room air"},
+      "x005": {"sentences": ["s003"], "source_text": "nodular xanthomas over the elbows, palpebral xanthomas / but no palmar xanthomas"},
+      "x006": {"sentences": ["s003"], "source_text": "thickened Achilles tendons"},
+      "x007": {"sentences": ["s003"], "source_text": "no palmar xanthomas or corneal rings"},
+      "x008": {"sentences": ["s007"], "source_text": "total cholesterol 429 mg/dL / 357 mg/dL / 45 mg/dL, triglycerides 136 mg/dL"},
+      "x009": {"sentences": ["s007"], "source_text": "lipoprotein(a) 20.2 mg/dL"},
+      "x010": {"sentences": ["s007"], "source_text": "sitosterol 3.9 μg/mL"},
+      "x011": {"sentences": ["s007"], "source_text": "lysosomal acid lipase activity 18.1 μM/h/disk (normal ≥14.9)"},
+      "x012": {"sentences": ["s007"], "source_text": "stimulating hormone 1.53 μIU/mL, free T3 2.1 pg/mL, free T4 0.99 ng/dL"},
+      "x013": {"sentences": ["s007"], "source_text": "total bilirubin 0.4 mg/dL, AST 22 U/L, ALT 30 U/L / albumin 4.1 g/dL"},
+      "x014": {"sentences": ["s007"], "source_text": "HbA1c 5.7%"},
+      "x015": {"sentences": ["s008"], "source_text": "Urinalysis was normal."},
+      "x016": {"sentences": ["s009"], "source_text": "Radiography of the Achilles tendons showed thickness of 15 mm."},
+      "x017": {"sentences": ["s010"], "source_text": "Coronary computed tomography angiography revealed no coronary artery disease, and there was no evidence of aortic stenosis."}
+    },
+    "finding_flags": {
+      "x017": ["The prompt does not name the test that excluded aortic stenosis; it is kept with the coronary CT angiography that the same sentence reports."]
+    },
+    "leakage": [
+      {"fact_id": "f010", "reason": "Alias 'hypercholesterolemia' (a gold word) names the sister's known condition, which the source states; the patient text says 'high cholesterol'. Family history is history, not the patient's diagnosis."}
+    ],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the referral re-presentation with recurrent cutaneous xanthomas (s001, s003), with vitals, laboratory studies and imaging of that evaluation (s006–s010).",
+      "Absent palmar xanthomas and corneal rings are examination negatives and stay in the findings only.",
+      "Gold aliases include 'familial hypercholesterolemia' / 'FH': strictly broader than the heterozygous form, but it is the everyday clinical name for this condition (schema exception)."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

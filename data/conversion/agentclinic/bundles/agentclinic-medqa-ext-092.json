@@ -1,0 +1,104 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-092", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 55, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "weakness in the right arm", "aliases": ["right arm weakness", "arm weakness"], "text": "My right arm has been weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "weakness in the right arm: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for a few weeks.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "weakness in the right arm: course", "parent": "f001", "attribute": "course", "text": "It has been getting progressively worse.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "dropping objects", "parent": "f001", "attribute": "severity", "aliases": ["dropping things"], "text": "It's gotten so bad that I drop things.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "numbness in the right arm", "aliases": ["decreased sensation in the right arm", "loss of feeling in the arm"], "text": "I have less feeling in my right arm.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "pain in the right arm", "aliases": ["arm pain"], "text": "I have pain in my right arm.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "pain in the right arm: character", "parent": "f006", "attribute": "character", "value": ["dull", "aching", "burning"], "text": "It's a dull, aching pain, and it burns.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost a lot of weight recently, and I don't know why.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "weight loss: amount", "parent": "f008", "attribute": "quantity", "value": "17 pounds", "text": "I've lost 17 pounds.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "diabetes", "aliases": ["high blood sugar"], "text": "I have diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "alcohol", "aliases": ["drinking"], "text": "I've been drinking regularly for a long time. I have 2 to 7 alcoholic drinks a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I'm a heavy smoker. I've smoked 2 packs of cigarettes a day since I was 25.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "anabolic steroid use", "aliases": ["steroids", "performance-enhancing drugs"], "text": "I use anabolic steroids.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "bodybuilding", "aliases": ["weight training", "exercise"], "text": "I'm a bodybuilder.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "fever", "aliases": ["fevers"], "text": "I haven't had any fevers recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "change in vision", "aliases": ["vision problems"], "text": "I haven't noticed any changes in my vision.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f017", "item": "difficulty speaking", "aliases": ["trouble speaking", "speech problems"], "text": "I haven't had any trouble speaking.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f018", "item": "change in balance", "aliases": ["balance problems", "unsteadiness"], "text": "My balance hasn't changed.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-092",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "99.5°F (37.5°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "177/108 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "strength"], "result": "2/5 strength in the right arm; 5/5 strength in the left arm."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Decreased sensation in the right arm."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["finger-to-nose test", "cerebellar examination"], "result": "Unaffected."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets", "platelet count"], "result": "WBC within normal limits; hemoglobin within normal limits; platelets within normal limits."},
+      {"id": "x011", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Mass at the apex of the right lung."},
+      {"id": "x012", "kind": "test", "name": "chest CT", "aliases": ["CT of the chest", "CT thorax", "CT scan"], "result": "Solid mass at the apex of the right lung, suggestive of a tumor."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-092",
+    "diagnosis": "Apical lung tumor",
+    "aliases": ["Pancoast tumor", "superior sulcus tumor", "superior pulmonary sulcus tumor", "apical lung cancer", "lung apex tumor", "tumor of the lung apex"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-092",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-092-p001"], "f002": ["agentclinic-medqa-ext-092-p001"], "f003": ["agentclinic-medqa-ext-092-p001"],
+      "f004": ["agentclinic-medqa-ext-092-p001"], "f005": ["agentclinic-medqa-ext-092-p002"], "f006": ["agentclinic-medqa-ext-092-p003"],
+      "f007": ["agentclinic-medqa-ext-092-p003"], "f008": ["agentclinic-medqa-ext-092-p001", "agentclinic-medqa-ext-092-p004"],
+      "f009": ["agentclinic-medqa-ext-092-p001"], "f010": ["agentclinic-medqa-ext-092-p001", "agentclinic-medqa-ext-092-p005"],
+      "f011": ["agentclinic-medqa-ext-092-p001", "agentclinic-medqa-ext-092-p006"], "f012": ["agentclinic-medqa-ext-092-p001", "agentclinic-medqa-ext-092-p006"],
+      "f013": ["agentclinic-medqa-ext-092-p001", "agentclinic-medqa-ext-092-p006"], "f014": ["demographics_text"],
+      "f015": ["agentclinic-medqa-ext-092-p007"], "f016": ["agentclinic-medqa-ext-092-p007"], "f017": ["agentclinic-medqa-ext-092-p007"],
+      "f018": ["agentclinic-medqa-ext-092-p007"]
+    },
+    "quotes": {
+      "f002": "for a few weeks", "f003": "has progressively worsened", "f004": "to the point of dropping objects",
+      "f005": "Decreased sensation in the right arm", "f007": "Dull aching and burning pain in the right arm",
+      "f008": "recent unexplained weight loss / Significant weight loss", "f009": "weight loss of 17 pounds",
+      "f011": "chronic alcohol use / Drinks 2-7 alcoholic beverages per day", "f012": "heavy smoking / Has smoked 2 packs of cigarettes per day since he was 25",
+      "f013": "Uses anabolic steroids", "f015": "Denies recent fevers"
+    },
+    "flags": {
+      "f014": ["Only in the demographics text ('55-year-old male bodybuilder'); not stated whether bodybuilding is his occupation or a pastime, so it is recorded as an exercise habit."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "99.5°F (37.5°C)", "exam_ids": ["agentclinic-medqa-ext-092-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "177/108 mmHg", "exam_ids": ["agentclinic-medqa-ext-092-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90/min", "exam_ids": ["agentclinic-medqa-ext-092-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17/min", "exam_ids": ["agentclinic-medqa-ext-092-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-092-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Strength_Assessment", "source_text": "2/5 strength in the right arm and 5/5 strength in the left arm", "exam_ids": ["agentclinic-medqa-ext-092-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination", "source_text": "Decreased sensation in the right arm", "exam_ids": ["agentclinic-medqa-ext-092-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-092-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Coordination", "source_text": "Unaffected", "exam_ids": ["agentclinic-medqa-ext-092-e009"]},
+      "x010": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "WBC: Within normal limits; Hemoglobin: Within normal limits; Platelets: Within normal limits", "exam_ids": ["agentclinic-medqa-ext-092-i001", "agentclinic-medqa-ext-092-i002", "agentclinic-medqa-ext-092-i003"]},
+      "x011": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "Mass noted at the apex of the right lung", "exam_ids": ["agentclinic-medqa-ext-092-i004"]},
+      "x012": {"source": "Test_Results.CT_Chest.Findings", "source_text": "Solid mass at the apex of the right lung, suggestive of a tumor", "exam_ids": ["agentclinic-medqa-ext-092-i005"]}
+    },
+    "finding_flags": {},
+    "leakage": [
+      {"id": "x011", "reason": "The chest X-ray result (mass at the right lung apex) describes the diagnosis; it is the test's answer."},
+      {"id": "x012", "reason": "The CT result ('solid mass at the apex of the right lung, suggestive of a tumor') names the diagnosis; it is the test's answer."}
+    ],
+    "source_issues": [
+      "Blood pressure 177/108 mmHg is markedly raised, with no hypertension in the history.",
+      "'Bodybuilder' appears only in the demographics text."
+    ],
+    "notes": [
+      "'Progressively worsened to the point of dropping objects' gives a course child (f003) and a severity child (f004, item 'dropping objects') of the arm weakness.",
+      "Non-prescribed anabolic steroids are recorded as substance use (habit_exposure) alongside alcohol and tobacco, as the source groups them ('admits to ... anabolic steroid use').",
+      "f014 cites the demographics text ('demographics_text'), which is not a fragment; see qc.flags.",
+      "Arm pain is filed under musculoskeletal; weakness and numbness under neurological."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with weakness and decreased sensation in the right arm."
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "patient": {
+    "case_id": "mcr-test-07236",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 66, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "diarrhea", "aliases": ["watery diarrhea", "loose stools", "watery stools", "runny stools"], "text": "I have watery diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "diarrhea: course", "parent": "f001", "attribute": "course", "text": "It has been getting worse; it's worse now than when it began.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "diarrhea: onset", "parent": "f001", "attribute": "onset", "text": "It began two years after I started vismodegib, about 8 years ago, as loose stools two or three times a day.", "value": "about 8 years ago", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "loperamide", "aliases": ["Imodium", "anti-diarrhea medicine"], "text": "I take loperamide, up to 5 doses a day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f005", "item": "loperamide: effect", "parent": "f004", "attribute": "treatment_response", "text": "It only partly helps.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f006", "item": "vismodegib", "aliases": ["cancer pill", "hedgehog inhibitor", "Erivedge", "cancer treatment"], "text": "I've taken vismodegib 150 mg every day for 10 years.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f007", "item": "vismodegib: breaks in treatment", "parent": "f006", "attribute": "other", "aliases": ["stopping the medicine", "interruptions"], "text": "I've taken it without any interruptions, even after the loose stools started.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "basal cell carcinoma", "aliases": ["skin cancer", "BCC", "cancer"], "text": "I have basal cell carcinoma that is locally advanced and has spread (metastatic).", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "Gorlin syndrome", "aliases": ["basal cell nevus syndrome", "nevoid basal cell carcinoma syndrome", "genetic condition"], "text": "I have Gorlin syndrome.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "previous colonoscopies", "aliases": ["colonoscopy", "camera test of the bowel", "earlier bowel tests"], "text": "I've had colonoscopies before: one after 5 years of this treatment and one after 9 years.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "hair loss", "aliases": ["alopecia", "hair falling out"], "text": "I've had hair loss.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f012", "item": "change in taste", "aliases": ["dysgeusia", "altered taste", "taste disturbance"], "text": "My sense of taste has changed.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f013", "item": "muscle spasms", "aliases": ["muscle cramps", "cramps"], "text": "I get muscle spasms.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f014", "item": "hair, taste or muscle symptoms linked to diarrhea episodes", "aliases": ["symptoms with the diarrhea"], "text": "The hair loss, taste change and muscle spasms don't come and go with my diarrhea episodes.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f015", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain", "cramping pain"], "text": "I don't have abdominal pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "other whole-body symptoms", "aliases": ["systemic symptoms", "other symptoms"], "text": "I haven't had any other general symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-07236",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "general", "name": "physical examination", "aliases": ["general examination", "abdominal examination", "examination"], "result": "Unremarkable."},
+      {"id": "x002", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count", "hemoglobin", "WBC"], "result": "Normal."},
+      {"id": "x003", "kind": "test", "name": "comprehensive metabolic panel", "aliases": ["CMP", "electrolytes", "metabolic panel", "kidney function", "liver function tests", "LFTs"], "result": "Normal, including electrolytes."},
+      {"id": "x004", "kind": "test", "name": "TSH", "aliases": ["thyroid-stimulating hormone", "thyroid function"], "result": "Normal."},
+      {"id": "x005", "kind": "test", "name": "celiac serology", "aliases": ["tissue transglutaminase antibody", "tTG", "anti-tTG", "celiac screen", "immunoglobulin A", "total IgA"], "result": "Tissue transglutaminase antibody negative; immunoglobulin A normal."},
+      {"id": "x006", "kind": "test", "name": "multiplex stool PCR panel", "aliases": ["stool PCR", "stool pathogen panel", "GI pathogen panel", "stool infection tests"], "result": "Negative for bacterial and viral pathogens."},
+      {"id": "x007", "kind": "test", "name": "previous colonoscopy, about 5 years ago", "aliases": ["first colonoscopy", "earlier colonoscopy"], "result": "Unremarkable.", "time": "after 5 years of treatment, about 5 years before presentation"},
+      {"id": "x008", "kind": "test", "name": "previous colonoscopy, about 1 year ago", "aliases": ["second colonoscopy", "last colonoscopy", "earlier colonoscopy"], "result": "Mildly granular mucosa with loss of vascular pattern in the ascending and transverse colon.", "time": "after 9 years of treatment, about 1 year before presentation"},
+      {"id": "x009", "kind": "test", "name": "previous random colon biopsies", "aliases": ["earlier colon biopsies", "random biopsies"], "result": "Chronic inactive colitis without erosions, ulcers, granulomas, metaplasia, or dysplasia.", "time": "after 9 years of treatment, about 1 year before presentation"},
+      {"id": "x010", "kind": "test", "name": "colonoscopy", "aliases": ["repeat colonoscopy", "ileocolonoscopy", "endoscopy"], "result": "Diffuse mild ileal edema and granularity with punctate erosions and exudate; colonic edema, granularity, and loss of vascular pattern."},
+      {"id": "x011", "kind": "test", "name": "ileal biopsies", "aliases": ["terminal ileum biopsy", "small bowel biopsy"], "result": "Mild villous blunting, active ileitis, chronic lamina propria inflammation, and epithelial apoptosis."},
+      {"id": "x012", "kind": "test", "name": "colon and rectal biopsies", "aliases": ["colon biopsies", "rectal biopsy", "colonic biopsies"], "result": "Right colon, left colon, and rectum: crypt architectural distortion, mixed inflammation, epithelial apoptosis, and a crypt abscess."},
+      {"id": "x013", "kind": "test", "name": "cytomegalovirus immunostains on biopsies", "aliases": ["CMV immunostain", "CMV stain", "cytomegalovirus"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-07236",
+    "diagnosis": "Vismodegib-induced diarrhea",
+    "aliases": ["vismodegib-associated diarrhea", "diarrhea due to vismodegib", "vismodegib-induced colitis", "vismodegib-induced ileocolitis", "vismodegib-related enterocolitis"],
+    "reasoning": "1. Broad differential diagnosis including infection, ischemia, graft-versus-host disease, IBD, and drug effects — “The nonspecific histologic findings in this case yield a broad differential diagnosis of infectious causes (including viral infections), ischemia, graft-versus-host disease, inflammatory bowel disease (IBD), and medication/drug effects.” 2. Epithelial apoptosis suggests a medication-related etiology (also seen in graft-versus-host disease and viral infections) — “the presence of epithelial apoptosis raises the likelihood of a medication-related etiology because epithelial apoptosis is characteristically associated with medication effects, graft-versus-host disease, and viral infections.” 3. Infectious etiologies excluded by negative molecular and immunohistochemical studies — “the result of polymerase chain reaction–based testing for infectious etiologies (including bacterial and viral entities) was negative. A cytomegalovirus stain performed on the tissue was also negative.” 4. IBD considered but less likely given absence of pronounced active inflammation and presence of epithelial apoptosis — “IBD typically presents with a more pronounced active inflammatory infiltrate and lack of epithelial apoptosis.” 5. Medication effect deemed most likely based on clinicopathologic correlation — “These findings led us to conclude that a medication/drug effect was the most likely etiology.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-07236",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001", "s004"],
+      "f003": ["s002"],
+      "f004": ["s004"],
+      "f005": ["s004"],
+      "f006": ["s001"],
+      "f007": ["s002"],
+      "f008": ["s001"],
+      "f009": ["s001"],
+      "f010": ["s003"],
+      "f011": ["s005"],
+      "f012": ["s005"],
+      "f013": ["s005"],
+      "f014": ["s005"],
+      "f015": ["s006"],
+      "f016": ["s006"],
+      "f017": ["s006"]
+    },
+    "quotes": {
+      "f001": "watery diarrhea",
+      "f002": "worsening watery diarrhea / he had grade 2 diarrhea",
+      "f003": "Two years after starting vismodegib, he developed loose stools 2–3 times daily",
+      "f004": "loperamide (up to 5 doses daily)",
+      "f005": "only partially responsive to loperamide",
+      "f006": "a 10-year history of daily vismodegib therapy (150 mg)",
+      "f007": "with no interruptions in therapy",
+      "f008": "locally advanced and metastatic basal cell carcinoma",
+      "f010": "A colonoscopy after 5 years of vismodegib / at 9 years",
+      "f014": "these did not correlate with diarrheal episodes",
+      "f015": "He denied abdominal pain",
+      "f016": "weight loss",
+      "f017": "other systemic symptoms"
+    },
+    "flags": {
+      "f002": ["The source grades the diarrhea (CTCAE grade 1 at onset, grade 2 now); the grades are clinician scoring and are rendered as 'worse now than when it began' without inventing stool counts."],
+      "f003": ["'About 8 years ago' is arithmetic: onset two years into ten years of vismodegib."],
+      "f010": ["The patient is not said to have been told the earlier colonoscopy results, so only the fact that they were done is a patient fact; the results are findings with time."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "Physical examination was unremarkable."},
+      "x002": {"sentences": ["s008"], "source_text": "complete blood count / were normal or negative"},
+      "x003": {"sentences": ["s008"], "source_text": "comprehensive metabolic panel with electrolytes / were normal or negative"},
+      "x004": {"sentences": ["s008"], "source_text": "thyroid-stimulating hormone / were normal or negative"},
+      "x005": {"sentences": ["s008"], "source_text": "tissue transglutaminase antibody, immunoglobulin A / were normal or negative"},
+      "x006": {"sentences": ["s008"], "source_text": "a multiplex stool PCR panel for bacterial and viral pathogens, were normal or negative"},
+      "x007": {"sentences": ["s003"], "source_text": "A colonoscopy after 5 years of vismodegib was unremarkable"},
+      "x008": {"sentences": ["s003"], "source_text": "at 9 years it showed mildly granular mucosa with loss of vascular pattern in the ascending and transverse colon"},
+      "x009": {"sentences": ["s003"], "source_text": "random biopsies exhibited chronic inactive colitis without erosions, ulcers, granulomas, metaplasia, or dysplasia"},
+      "x010": {"sentences": ["s009"], "source_text": "A repeat colonoscopy revealed diffuse mild ileal edema and granularity with punctate erosions and exudate, as well as colonic edema, granularity, and loss of vascular pattern."},
+      "x011": {"sentences": ["s010"], "source_text": "Ileal biopsies showed mild villous blunting, active ileitis, chronic lamina propria inflammation, and epithelial apoptosis."},
+      "x012": {"sentences": ["s011"], "source_text": "Biopsies from the right colon, left colon, and rectum demonstrated crypt architectural distortion, mixed inflammation, epithelial apoptosis, and a crypt abscess."},
+      "x013": {"sentences": ["s012"], "source_text": "Immunostains for cytomegalovirus were negative."}
+    },
+    "finding_flags": {
+      "x005": ["The source lists tissue transglutaminase antibody and immunoglobulin A together as 'normal or negative'; read as antibody negative and total IgA normal."],
+      "x007": ["Earlier colonoscopy names give the approximate time instead of 'after 5 years of vismodegib' so that the name does not carry the drug."]
+    },
+    "leakage": [
+      {"fact_id": "f001", "reason": "'Diarrhea' (gold word) is the presenting symptom itself; the gold adds the cause."},
+      {"fact_id": "f002", "reason": "Item label contains 'diarrhea', the presenting symptom."},
+      {"fact_id": "f003", "reason": "Names vismodegib as the timing anchor of the onset; the patient knows his own long-term medicine. The cause is not stated."},
+      {"fact_id": "f006", "reason": "Vismodegib is the patient's own medication history and the key clue; it cannot be removed without losing the history."},
+      {"fact_id": "f007", "reason": "Item label contains 'vismodegib' (child of the medication fact)."},
+      {"fact_id": "f014", "reason": "Item and text say 'diarrhea episodes', the presenting symptom."}
+    ],
+    "source_issues": [],
+    "notes": ["Index visit: the outpatient presentation with worsening watery diarrhea after 10 years of daily vismodegib (s001, s004–s008), with the repeat colonoscopy and biopsies of that workup (s009–s012).", "The earlier colonoscopies and random biopsies (s003) are findings with time; the repeat colonoscopy is the current one.", "Gold aliases include drug-induced colitis/ileocolitis forms: the biopsies show the drug-related ileocolitis that causes the diarrhea, so these name the same entity more specifically."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "patient": {
+    "case_id": "mcr-test-01508",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 31, "sex": "male"},
+    "opening": ["f001", "f002", "f003"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["head pain"], "text": "I have a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: severity", "parent": "f001", "attribute": "severity", "text": "It's severe.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "vomiting", "aliases": ["throwing up"], "text": "I've been vomiting.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "how long the headache and vomiting have lasted", "text": "The headache and vomiting started 6 days ago.", "value": "6 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "loss of vision in the left eye", "aliases": ["vision loss", "blindness", "can't see", "poor eyesight"], "text": "I've been losing the sight in my left eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f006", "item": "loss of vision in the left eye: course", "parent": "f005", "attribute": "course", "text": "It has got gradually worse.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f007", "item": "loss of vision in the left eye: severity", "parent": "f005", "attribute": "severity", "text": "Now I can't see anything at all with my left eye.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f008", "item": "low sex drive", "aliases": ["decreased libido", "loss of libido", "low libido", "no interest in sex"], "text": "My sex drive has gone down.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f009", "item": "how long the vision loss and low sex drive have been developing", "text": "The vision loss and the drop in my sex drive have come on over the past two years.", "value": "2 years", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "runny nose", "aliases": ["rhinorrhea", "fluid dripping from the nose", "nasal discharge"], "text": "I haven't had a runny nose or any fluid coming from my nose.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f011", "item": "injury", "aliases": ["trauma", "head injury", "accident"], "text": "I haven't had any injury.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "previous brain or skull surgery", "aliases": ["neurosurgery", "operations", "previous surgery"], "text": "I've never had brain or skull surgery.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-01508",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "38.0 °C"},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["level of consciousness", "alertness"], "result": "Alert."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves", "vision", "visual acuity", "eye examination"], "result": "Complete blindness of the left eye; no other cranial-nerve deficits."},
+      {"id": "x004", "kind": "exam", "system": "ent", "name": "nasal examination", "aliases": ["nose", "nasal discharge"], "result": "No nasal discharge."},
+      {"id": "x005", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "305 mg/L (normal <10 mg/L)."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "leukocyte count"], "result": "Leukocyte count 13,000/μL."},
+      {"id": "x007", "kind": "test", "name": "metabolic panel", "aliases": ["electrolytes", "sodium", "glucose", "blood sugar", "chemistry"], "result": "Sodium 131 mEq/L; glucose 127 mg/dL."},
+      {"id": "x008", "kind": "test", "name": "prolactin", "aliases": ["serum prolactin", "PRL"], "result": "9000 ng/mL (normal 2.5–11 ng/mL)."},
+      {"id": "x009", "kind": "test", "name": "other pituitary hormones", "aliases": ["pituitary function tests", "hormonal assays", "cortisol", "ACTH", "TSH", "free T4", "LH", "FSH", "testosterone", "growth hormone", "IGF-1"], "result": "Findings consistent with panhypopituitarism."},
+      {"id": "x010", "kind": "test", "name": "head CT", "aliases": ["CT of the head", "brain CT", "CT scan"], "result": "Large sellar mass with erosion of the sellar floor and extension into the sphenoid sinus."},
+      {"id": "x011", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the head", "pituitary MRI", "MRI of the sella"], "result": "Suprasellar and infrasellar lesion extending into the cavernous sinuses, encroaching on the third ventricle and compressing the optic chiasm, without evidence of intratumoral hemorrhage."},
+      {"id": "x012", "kind": "test", "name": "cerebrospinal fluid analysis", "aliases": ["lumbar puncture", "CSF analysis", "spinal tap", "CSF cell count", "CSF protein", "CSF glucose", "CSF lactate"], "result": "Purulent CSF: 11,900 white blood cells/μL; 2,680 red blood cells/μL; protein 6.3 g/L; glucose 39 mg/dL; lactate 81 mg/dL."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-01508",
+    "diagnosis": "Macroprolactinoma",
+    "aliases": ["invasive macroprolactinoma", "prolactin-secreting pituitary macroadenoma", "prolactin-secreting macroadenoma", "giant prolactinoma", "prolactinoma"],
+    "reasoning": "1. Bacterial meningitis from a CSF leak — “Meningitis in a patient with an invasive pituitary macroadenoma is generally due to an infection of cerebrospinal fluid (CSF) leaking through the disrupted bony skull into the sphenoid sinus, allowing the entry of nasopharyngeal organisms.” 2. Pituitary apoplexy — excluded because “No intratumoral hemorrhage was observed.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-01508",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s002"],
+      "f006": ["s002"],
+      "f007": ["s004"],
+      "f008": ["s002"],
+      "f009": ["s002"],
+      "f010": ["s003"],
+      "f011": ["s003"],
+      "f012": ["s003"]
+    },
+    "quotes": {
+      "f002": "severe headache",
+      "f004": "a 6-day history of severe headache and vomiting",
+      "f006": "a progressive loss of vision in his left eye",
+      "f007": "complete blindness of the left eye",
+      "f008": "decreased libido",
+      "f009": "progressive loss of vision in his left eye and decreased libido over the preceding two years",
+      "f010": "rhinorrhea",
+      "f011": "trauma",
+      "f012": "prior neurosurgery"
+    },
+    "flags": {
+      "f007": ["Taken from the examination (complete blindness of the left eye); the patient knows he cannot see with that eye."],
+      "f011": ["The source says only 'trauma'; the item is kept general (any injury), with head injury as an alias."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "febrile (38.0 °C)"},
+      "x002": {"sentences": ["s004"], "source_text": "he was alert"},
+      "x003": {"sentences": ["s004"], "source_text": "complete blindness of the left eye without other cranial-nerve deficits"},
+      "x004": {"sentences": ["s004"], "source_text": "no nasal discharge was noted"},
+      "x005": {"sentences": ["s005"], "source_text": "a C-reactive protein level of 305 mg/L (normal <10 mg/L)"},
+      "x006": {"sentences": ["s005"], "source_text": "a leukocyte count of 13,000/μL"},
+      "x007": {"sentences": ["s005"], "source_text": "serum sodium 131 mEq/L, and blood glucose 127 mg/dL"},
+      "x008": {"sentences": ["s006"], "source_text": "a prolactin level of 9000 ng/mL (normal 2.5–11 ng/mL)"},
+      "x009": {"sentences": ["s006"], "source_text": "additional findings consistent with panhypopituitarism"},
+      "x010": {"sentences": ["s007"], "source_text": "Computed tomography of the head demonstrated a large sellar mass with erosion of the sellar floor and extension into the sphenoid sinus."},
+      "x011": {"sentences": ["s008"], "source_text": "Magnetic resonance imaging confirmed a suprasellar and infrasellar lesion extending into the cavernous sinuses, encroaching on the third ventricle, and compressing the optic chiasm, without evidence of intratumoral hemorrhage."},
+      "x012": {"sentences": ["s009"], "source_text": "A lumbar puncture yielded purulent cerebrospinal fluid containing 11,900 white blood cells/μL, 2,680 red blood cells/μL, protein 6.3 g/L, glucose 39 mg/dL, and lactate 81 mg/dL."}
+    },
+    "finding_flags": {
+      "x009": ["The source gives only the summary 'consistent with panhypopituitarism', with no individual hormone values; every pituitary hormone request returns this summary."]
+    },
+    "leakage": [],
+    "source_issues": ["No CSF Gram stain or culture result is given, although the CSF is purulent.", "The individual pituitary hormone results behind 'panhypopituitarism' are not reported."],
+    "notes": ["Index visit: the emergency presentation with 6 days of severe headache and vomiting (s001-s009); the two-year history of left-eye vision loss and low libido is part of the history.", "'Prolactinoma' (the screening dx_key) is not a gold alias: it is broader than macroprolactinoma; the judge can give partial credit.", "The prolactin of 9000 ng/mL points directly at the diagnosis (selection leakage: test_result) but does not name it, so nothing is listed in qc.leakage.", "Gold aliases added in harmonisation (prolactinoma): 'Prolactinoma' is the everyday clinical name; the imaging shows the size."],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s010", "reason": "Question to the reader ('What is your differential diagnosis?'); no content."}
+    ]
+  }
+}

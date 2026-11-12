@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12132",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 27, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath on exertion", "aliases": ["exertional dyspnoea", "exertional dyspnea", "breathlessness on exertion", "short of breath"], "text": "I get short of breath when I exert myself.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath on exertion: course", "parent": "f001", "attribute": "course", "text": "It has been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "leg swelling", "aliases": ["lower extremity oedema", "leg edema", "swollen legs", "swollen ankles"], "text": "My legs are swollen.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f004", "item": "breathlessness and leg swelling: onset", "text": "Both have been going on for several months; they began after a car accident 5 months ago.", "value": "several months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "recent accident or injury", "aliases": ["motor vehicle accident", "car crash", "car accident", "trauma"], "text": "I was in a car accident 5 months ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "blow to the chest in the accident", "aliases": ["chest trauma", "chest injury", "hit my chest on the steering wheel"], "text": "In that accident I hit my chest on the steering wheel.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "chest pain after the accident", "aliases": ["chest soreness", "chest wall pain", "musculoskeletal chest discomfort"], "text": "Afterwards my chest was sore, like a muscle ache in the chest.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "resolved"},
+      {"id": "f008", "item": "chest pain after the accident: course", "parent": "f007", "attribute": "course", "text": "It went away on its own, and I never had it checked by a doctor.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f009", "item": "breathlessness lying flat", "aliases": ["orthopnoea", "orthopnea", "short of breath lying down", "need extra pillows"], "text": "I get short of breath when I lie flat.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f010", "item": "chest tightness", "aliases": ["tight chest", "chest pressure", "chest pain"], "text": "I get chest tightness on and off.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "recurrent"},
+      {"id": "f011", "item": "waking up at night short of breath", "aliases": ["paroxysmal nocturnal dyspnoea", "paroxysmal nocturnal dyspnea", "PND", "night-time breathlessness"], "text": "I wake up at night short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "lying-flat and night breathlessness, chest tightness: onset", "text": "Those came on over the months since the accident.", "value": "in the months after the accident", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f013", "item": "recent viral illness", "aliases": ["cold", "flu", "viral infection", "recent infection"], "text": "I didn't have a viral illness before this started.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "sick contacts", "aliases": ["contact with sick people", "anyone around me sick"], "text": "I haven't been around anyone who was sick.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f015", "item": "recent travel", "aliases": ["travel", "trips"], "text": "I haven't travelled recently.", "polarity": "absent", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12132",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "109/min", "time": "on transfer to the referral centre"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "98/60 mmHg", "time": "on transfer to the referral centre"},
+      {"id": "x003", "kind": "exam", "system": "cardiovascular", "name": "neck vein examination", "aliases": ["jugular venous pressure", "JVP", "jugular veins", "neck veins"], "result": "Jugular venous distension.", "time": "on transfer to the referral centre"},
+      {"id": "x004", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "ascites", "fluid in the abdomen"], "result": "Ascites.", "time": "on transfer to the referral centre"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "lower extremity examination", "aliases": ["leg examination", "legs", "oedema", "edema", "pitting oedema"], "result": "Bilateral lower extremity pitting oedema.", "time": "on transfer to the referral centre"},
+      {"id": "x006", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "transaminases", "AST", "aspartate aminotransferase", "ALT", "alanine aminotransferase"], "result": "Aspartate aminotransferase (AST) 632 IU/L; alanine aminotransferase (ALT) 248 IU/L."},
+      {"id": "x007", "kind": "test", "name": "troponin I", "aliases": ["troponin", "cardiac troponin", "cardiac enzymes"], "result": "0.04 ng/mL (normal)."},
+      {"id": "x008", "kind": "test", "name": "B-type natriuretic peptide", "aliases": ["BNP", "brain natriuretic peptide", "natriuretic peptide"], "result": "1787 pg/mL (elevated)."},
+      {"id": "x009", "kind": "test", "name": "transthoracic echocardiogram", "aliases": ["echocardiogram", "echo", "TTE", "cardiac ultrasound"], "result": "Normal left ventricular chamber size (end-diastolic diameter 5.6 cm); severely reduced systolic function (ejection fraction <20%); apical thrombus.", "time": "at initial presentation"},
+      {"id": "x010", "kind": "test", "name": "12-lead electrocardiogram", "aliases": ["ECG", "EKG", "electrocardiogram"], "result": "Sinus tachycardia with low voltage; premature ventricular contractions; anterolateral infarct pattern.", "time": "on transfer to the referral centre"},
+      {"id": "x011", "kind": "test", "name": "repeat transthoracic echocardiogram", "aliases": ["repeat echocardiogram", "repeat echo", "repeat TTE"], "result": "Severe biventricular systolic dysfunction; suggested an apical aneurysm or pseudo-aneurysm with thrombus.", "time": "after transfer to the referral centre"},
+      {"id": "x012", "kind": "test", "name": "cardiac magnetic resonance imaging", "aliases": ["cardiac MRI", "CMR", "heart MRI"], "result": "Severe biventricular systolic dysfunction; full-thickness late-gadolinium enhancement of all apical left ventricular segments; apical aneurysm formation with an associated layering thrombus.", "time": "after transfer to the referral centre"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12132",
+    "diagnosis": "Traumatic coronary artery injury",
+    "aliases": ["blunt traumatic coronary artery injury", "coronary artery injury from blunt chest trauma", "post-traumatic coronary artery injury", "traumatic coronary artery dissection", "traumatic coronary artery occlusion"],
+    "reasoning": "1. Viral or autoimmune myocarditis was considered but made less likely by the absence of infectious symptoms — “He denied any preceding viral illness, sick contacts, or travel.” 2. Inherited or idiopathic cardiomyopathy was included in the differential of new-onset systolic dysfunction — “The differential diagnosis included autoimmune or viral myocarditis, inherited or idiopathic cardiomyopathy, and stress cardiomyopathy amongst other diagnoses.” 3. Stress (takotsubo) cardiomyopathy was considered as a non-ischaemic cause — “The differential diagnosis included autoimmune or viral myocarditis, inherited or idiopathic cardiomyopathy, and stress cardiomyopathy amongst other diagnoses.” 4. Ischaemic cardiomyopathy was initially felt unlikely due to the patient’s youth but suspicion increased with supportive ECG and thrombus findings — “Ischaemic cardiomyopathy was initially felt to be less likely based on the patient’s age, though the presence of an anterolateral infarct pattern on ECG and an LV apical thrombus increased suspicion for a prior ischaemic insult.” 5. Transmural enhancement and aneurysm formation on cardiac MRI pointed to infarction rather than myocarditis or stress cardiomyopathy — “a subsequent cardiac magnetic resonance imaging scan confirmed … full-thickness late-gadolinium enhancement involving all apical LV segments, with apical aneurysm formation in addition to an associated layering thrombus.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12132",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s006"],
+      "f007": ["s006"], "f008": ["s006"], "f009": ["s007"], "f010": ["s007"], "f011": ["s007"], "f012": ["s007"],
+      "f013": ["s002"], "f014": ["s002"], "f015": ["s002"]
+    },
+    "quotes": {
+      "f002": "progressive exertional dyspnoea", "f004": "several months of progressive exertional dyspnoea and lower extremity oedema that began after a motor vehicle accident 5 months earlier",
+      "f005": "a motor vehicle accident 5 months earlier", "f006": "struck his chest on the steering wheel",
+      "f007": "experienced musculoskeletal chest discomfort", "f008": "resolved without evaluation",
+      "f010": "intermittent chest tightness", "f012": "Over the ensuing months he developed",
+      "f013": "denied any preceding viral illness"
+    },
+    "flags": {
+      "f002": ["'progressive' may also qualify the leg oedema; it is kept on the breathlessness only, so whether the swelling is worsening stays unknown."],
+      "f007": ["'Musculoskeletal' is the clinician's description of the chest discomfort; worded as a sore, muscle-type ache."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s008"], "source_text": "a heart rate of 109 b.p.m."},
+      "x002": {"sentences": ["s008"], "source_text": "blood pressure of 98/60 mm Hg"},
+      "x003": {"sentences": ["s009"], "source_text": "jugular venous distension"},
+      "x004": {"sentences": ["s009"], "source_text": "abdominal ascites"},
+      "x005": {"sentences": ["s009"], "source_text": "bilateral lower extremity pitting oedema"},
+      "x006": {"sentences": ["s003"], "source_text": "aspartate aminotransferase 632 IU/L, alanine transferase 248 IU/L"},
+      "x007": {"sentences": ["s003"], "source_text": "a normal troponin I level of 0.04 ng/mL"},
+      "x008": {"sentences": ["s003"], "source_text": "an elevated B-type natriuretic peptide at 1787 pg/mL"},
+      "x009": {"sentences": ["s004"], "source_text": "A transthoracic echocardiogram demonstrated a normal left ventricular chamber size (end-diastolic diameter 5.6 cm), severely reduced systolic function (ejection fraction <20%), and an apical thrombus."},
+      "x010": {"sentences": ["s010"], "source_text": "A 12-lead electrocardiogram showed sinus tachycardia with low voltage, premature ventricular contractions, and an anterolateral infarct pattern."},
+      "x011": {"sentences": ["s011"], "source_text": "A repeat transthoracic echocardiogram confirmed severe biventricular systolic dysfunction and suggested an apical aneurysm or pseudo-aneurysm with thrombus."},
+      "x012": {"sentences": ["s012"], "source_text": "Cardiac magnetic resonance imaging demonstrated severe biventricular systolic dysfunction, full-thickness late-gadolinium enhancement of all apical left ventricular segments, apical aneurysm formation, and an associated layering thrombus."}
+    },
+    "finding_flags": {
+      "x006": ["The narrative's summary label 'hepatic injury' is dropped; the result gives the two enzyme values."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s003 writes 'alanine transferase' for alanine aminotransferase (ALT)."
+    ],
+    "notes": [
+      "Index visit: the first presentation with several months of exertional breathlessness and leg swelling (s001-s004); the history he gave on transfer to the referral centre (s006, s007) describes events and symptoms before that presentation and is part of the patient's facts.",
+      "Vital signs, examination, ECG, repeat echocardiogram and cardiac MRI were obtained on or after transfer (s008-s012) and carry a time; the vital signs and examination were taken after the intravenous diuretics of s005.",
+      "Ascites (s009) is kept as an examination finding only: the source does not say the patient noticed abdominal swelling.",
+      "The motor vehicle accident and the steering-wheel chest blow are medical-history facts; the chest discomfort afterwards is a resolved symptom with its course as a child."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s005", "reason": "Treatment with intravenous diuretics and the symptomatic response: treatment during the workup."}
+    ]
+  }
+}

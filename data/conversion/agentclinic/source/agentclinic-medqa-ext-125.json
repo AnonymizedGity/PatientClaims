@@ -1,0 +1,133 @@
+{
+  "case_id": "agentclinic-medqa-ext-125",
+  "source_row": 125,
+  "demographics_text": "67-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with knee swelling and pain, who has a history of arthritis and additional musculoskeletal complaints.",
+  "chief_complaint": "Right knee swelling and pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p001",
+      "field": "History",
+      "text": "The patient presents with a complaint of right knee swelling and pain that has recently exacerbated. He notes that his left knee was similarly swollen a few weeks ago, but has since improved. He has been experiencing difficulties walking and performing daily activities due to the pain, which he describes as significantly improving with rest. Additionally, he mentions having persistent back pain that contributes to his restricted mobility. The patient also suffers from dandruff and has been using special shampoos to manage it."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Improvement with rest"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Previously swollen left knee"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Back pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty walking and performing daily activities"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p006",
+      "field": "Secondary_Symptoms",
+      "text": "Dandruff"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p007",
+      "field": "Past_Medical_History",
+      "text": "Diagnosed with arthritis 16 years ago. No other significant medical history provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p008",
+      "field": "Social_History",
+      "text": "Does not provide specific details on lifestyle, smoking, or alcohol use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-125-p009",
+      "field": "Review_of_Systems",
+      "text": "Mentions general frustration over the limitations imposed by his symptoms but does not report any other systemic complaints."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e005",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection",
+      "text": "Visible swelling of the right knee. Pitting of the nails noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e006",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation",
+      "text": "Warmth and tenderness over the right knee joint. No similar findings in the left knee."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e007",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion",
+      "text": "Reduced range of motion in the right knee due to pain and swelling."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-e008",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Additional_Findings",
+      "text": "Back examination shows limited spine mobility but without acute tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-125-i001",
+      "path": "Test_Results.Rheumatoid_Factor",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-i002",
+      "path": "Test_Results.Anti-CCP_Antibody",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-i003",
+      "path": "Test_Results.ESR",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-i004",
+      "path": "Test_Results.CRP",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-i005",
+      "path": "Test_Results.X-Ray_Right_Knee.Findings",
+      "text": "Joint space narrowing, subchondral sclerosis, and no evidence of erosive disease."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-125-i006",
+      "path": "Test_Results.X-Ray_Spine.Findings",
+      "text": "Slight degenerative changes but no evidence of sacroiliitis"
+    }
+  ],
+  "correct_diagnosis": "Psoriatic arthritis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

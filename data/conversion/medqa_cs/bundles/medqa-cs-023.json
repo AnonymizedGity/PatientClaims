@@ -1,0 +1,1460 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-023",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 33,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "knee pain",
+        "text": "I have pain in my left knee.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "knee pain: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started two days ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "knee pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "value": [
+          "rest",
+          "Tylenol"
+        ],
+        "complete": true,
+        "text": "Rest and Tylenol help a little bit.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "knee pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "moving the knee",
+          "walking"
+        ],
+        "complete": true,
+        "text": "Moving my knee and walking make it worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "moving the knee",
+        "aliases": [
+          "using the knee",
+          "knee movement"
+        ],
+        "text": "I can't move my knee.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "walking",
+        "aliases": [
+          "walking aid",
+          "cane"
+        ],
+        "text": "I use a cane to walk.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "redness around the knee",
+        "aliases": [
+          "red knee"
+        ],
+        "text": "There's redness around my knee.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "swelling of the knee",
+        "aliases": [
+          "swollen knee"
+        ],
+        "text": "My knee is swollen.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "knee injury",
+        "aliases": [
+          "trauma to the knee"
+        ],
+        "text": "I haven't had any knee injuries before.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f010",
+        "item": "wrist and finger pain",
+        "aliases": [
+          "hand pain",
+          "other joint pain"
+        ],
+        "text": "My wrists and fingers are always painful.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "wrist and finger pain: how long",
+        "parent": "f010",
+        "attribute": "duration",
+        "text": "The pain has been there for six months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "wrist and finger stiffness",
+        "aliases": [
+          "stiff hands",
+          "joint stiffness"
+        ],
+        "text": "My wrists and fingers are always stiff.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "wrist and finger stiffness: how long",
+        "parent": "f012",
+        "attribute": "duration",
+        "text": "The stiffness has been there for six months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "morning stiffness",
+        "aliases": [
+          "stiffness on waking"
+        ],
+        "text": "My fingers are stiff when I wake up.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "morning stiffness: how long it lasts",
+        "parent": "f014",
+        "attribute": "duration",
+        "text": "It lasts for about an hour.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "tiredness",
+        "aliases": [
+          "fatigue",
+          "low energy"
+        ],
+        "text": "I've felt tired all the time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "tiredness: how long",
+        "parent": "f016",
+        "attribute": "duration",
+        "text": "For the past 6 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "tiredness: effect on work",
+        "parent": "f016",
+        "attribute": "other",
+        "text": "I've had no energy to work.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "fever",
+        "aliases": [
+          "feeling hot",
+          "temperature"
+        ],
+        "text": "I feel hot now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "chills",
+        "text": "I don't have any chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "weight change",
+        "aliases": [
+          "weight loss"
+        ],
+        "text": "I've lost roughly 10 pounds in the last 6 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite",
+          "loss of appetite"
+        ],
+        "text": "My appetite hasn't been good.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "mouth sores",
+        "aliases": [
+          "mouth ulcers",
+          "sores in the mouth"
+        ],
+        "text": "I had many sores in my mouth last month, but they've gone away now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "resolved"
+      },
+      {
+        "id": "f024",
+        "item": "mouth sores: pattern over time",
+        "parent": "f023",
+        "attribute": "course",
+        "text": "They seem to come and go.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "recurrent"
+      },
+      {
+        "id": "f025",
+        "item": "rash",
+        "aliases": [
+          "skin rash"
+        ],
+        "text": "I haven't had any rashes.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "sensitivity to light",
+        "aliases": [
+          "pain or discomfort from light",
+          "sun sensitivity"
+        ],
+        "text": "Light doesn't cause me any pain or discomfort.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "hair loss",
+        "aliases": [
+          "hair shedding"
+        ],
+        "text": "I haven't noticed any hair shedding lately.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "fingers or toes changing color in the cold",
+        "aliases": [
+          "cold sensitivity",
+          "Raynaud's"
+        ],
+        "text": "Sometimes my fingers turn pale and then blue when they're exposed to cold weather or cold water.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f029",
+        "item": "chest pain",
+        "text": "I haven't had any chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "palpitations",
+        "aliases": [
+          "heart racing",
+          "pounding heart"
+        ],
+        "text": "I haven't had any palpitations.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I haven't been short of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "cough",
+        "text": "I don't have a cough.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "seizures",
+        "aliases": [
+          "fits"
+        ],
+        "text": "I've never had a seizure.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "weakness",
+        "text": "I don't have any weakness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "numbness",
+        "text": "I don't have any numbness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "changes in urine",
+        "text": "I haven't noticed any changes in my urine.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "blood in urine",
+        "text": "I haven't seen any blood in my urine.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "stomach pain",
+        "aliases": [
+          "abdominal pain",
+          "belly pain"
+        ],
+        "text": "I haven't had any stomach pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "vaginal discharge",
+        "text": "I haven't had any vaginal discharge.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "earlier big toe pain and swelling",
+        "aliases": [
+          "other joint pain in the past",
+          "swollen toe"
+        ],
+        "text": "Five years ago I had a painful, swollen big toe on my left foot.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f041",
+        "item": "earlier big toe pain and swelling: treatment",
+        "parent": "f040",
+        "attribute": "treatment_response",
+        "text": "The swelling went away after the doctor at the urgent clinic gave me some medicine.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f042",
+        "item": "other medical problems",
+        "aliases": [
+          "medical conditions",
+          "chronic illnesses"
+        ],
+        "text": "I don't have any other medical problems.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "sexually transmitted infections",
+        "aliases": [
+          "STIs",
+          "STDs"
+        ],
+        "text": "I was diagnosed with gonorrhea a year ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f044",
+        "item": "sexually transmitted infections: treatment",
+        "parent": "f043",
+        "attribute": "treatment_response",
+        "text": "I received antibiotic treatment and recovered well.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f045",
+        "item": "past surgery",
+        "aliases": [
+          "operations",
+          "C-sections",
+          "how the children were delivered"
+        ],
+        "text": "I had two C-sections, at 23 and 25 years old. Both of my daughters were born by C-section.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f046",
+        "item": "pregnancies",
+        "aliases": [
+          "children",
+          "births"
+        ],
+        "text": "I have two daughters.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "miscarriages or abortions",
+        "aliases": [
+          "miscarriages",
+          "pregnancy losses"
+        ],
+        "text": "I had two spontaneous abortions a long time ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f048",
+        "item": "last menstrual period",
+        "aliases": [
+          "last period",
+          "LMP"
+        ],
+        "text": "My last period was two weeks ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f049",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies"
+        ],
+        "text": "I don't have any allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "Tylenol",
+        "aliases": [
+          "acetaminophen",
+          "pain medicine"
+        ],
+        "text": "I use Tylenol to relieve my pain.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "Tylenol: how well it works",
+        "parent": "f050",
+        "attribute": "treatment_response",
+        "text": "It's not working anymore.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "mother's health",
+        "text": "My mother has rheumatoid arthritis.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "mother's living situation",
+        "text": "My mother is in a nursing home now.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f054",
+        "item": "father's health",
+        "text": "I don't have any information about my father.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f055",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink, but I don't drink a lot.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f056",
+        "item": "alcohol: how much",
+        "parent": "f055",
+        "attribute": "quantity",
+        "text": "Usually two to four beers a week, except for weekends.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f057",
+        "item": "alcohol: how much on weekends",
+        "parent": "f055",
+        "attribute": "quantity",
+        "text": "On weekends I don't count.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f058",
+        "item": "alcohol: last drink",
+        "parent": "f055",
+        "attribute": "timing",
+        "text": "My last drink was four days ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f059",
+        "item": "feeling the need to cut down on drinking",
+        "text": "I've never felt I needed to cut down on my drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f060",
+        "item": "people criticizing my drinking",
+        "text": "People haven't annoyed me by criticizing my drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f061",
+        "item": "feeling guilty about drinking",
+        "text": "I've never felt guilty about drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f062",
+        "item": "morning drink to steady nerves or a hangover",
+        "aliases": [
+          "eye-opener"
+        ],
+        "text": "I've never needed a drink in the morning to steady my nerves or get rid of a hangover.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f063",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f064",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f065",
+        "item": "smoking: how much",
+        "parent": "f064",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f066",
+        "item": "smoking: for how long",
+        "parent": "f064",
+        "attribute": "duration",
+        "text": "For the past 10 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f067",
+        "item": "tick bites",
+        "text": "I haven't had any tick bites recently.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f068",
+        "item": "sexual activity",
+        "text": "I'm sexually active with my new boyfriend. I met him 2 months ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f069",
+        "item": "condom use",
+        "aliases": [
+          "condoms",
+          "protection"
+        ],
+        "text": "I use condoms occasionally.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f070",
+        "item": "number of sexual partners in the past year",
+        "text": "I've had four partners in the last year.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f071",
+        "item": "sex of sexual partners",
+        "aliases": [
+          "men, women or both"
+        ],
+        "text": "My partners have been men only.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f072",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a waitress.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-023",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "130/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "aliases": [
+          "fever"
+        ],
+        "result": "99.9°F (37.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "16/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "76/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "aliases": [
+          "gait"
+        ],
+        "result": "No acute distress; favors the left knee."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "ent",
+        "name": "mouth examination",
+        "aliases": [
+          "oral cavity",
+          "HEENT examination"
+        ],
+        "result": "No oral lesions."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not distended; active bowel sounds; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "left knee examination",
+        "aliases": [
+          "knee exam",
+          "knee range of motion"
+        ],
+        "result": "Red and swollen; tender; pain when the knee is moved in any direction; restricted range of motion on flexion and extension compared with the right knee, cannot be fully flexed or extended."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "hand examination",
+        "aliases": [
+          "fingers",
+          "hands"
+        ],
+        "result": "Stiffness of the fingers and hands on both sides."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "examination of the other joints",
+        "aliases": [
+          "wrists",
+          "shoulders",
+          "elbows",
+          "hips",
+          "ankles"
+        ],
+        "result": "Shoulders, elbows, wrists, hips and ankles within normal limits on both sides."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-023",
+    "diagnosis": "Gout",
+    "aliases": [
+      "gouty arthritis",
+      "acute gouty arthritis",
+      "acute gout",
+      "gout flare",
+      "gout attack",
+      "urate crystal arthritis",
+      "monosodium urate arthritis"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Gout",
+        "evidence": [
+          "Monoarticular joint pain and tenderness",
+          "History of swollen toe",
+          "Occasional alcohol use",
+          "Exam: Erythema, tenderness, pain, and restricted range of motion on flexion and extension of left knee compared to the right knee",
+          "Exam: Swelling at the left knee"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Rheumatoid arthritis",
+        "aliases": [
+          "RA",
+          "rheumatoid disease"
+        ],
+        "evidence": [
+          "Morning joint stiffness",
+          "Family history of rheumatoid arthritis",
+          "Systemic symptoms (anorexia, weight loss, fatigue, fever)",
+          "Multiple joint involvement",
+          "Duration > 6 weeks",
+          "Exam: Joint tenderness and stiffness",
+          "Exam: Temperature 99.9°F"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Systemic lupus erythematosus",
+        "aliases": [
+          "SLE",
+          "lupus",
+          "systemic lupus"
+        ],
+        "evidence": [
+          "Systemic symptoms (anorexia, weight loss, fatigue)",
+          "History of multiple oral ulcers",
+          "History of 2 spontaneous abortions",
+          "Raynaud phenomenon",
+          "Exam: Joint tenderness and stiffness"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Pseudogout",
+        "note": "Another crystal arthritis that often involves the knees and wrists, but it is usually seen in patients older than 60."
+      },
+      {
+        "diagnosis": "Gonococcal septic arthritis",
+        "note": "Typical in young women and often affects the knee, but it is usually preceded by migratory polyarthralgias, and the characteristic pustular rash is absent."
+      },
+      {
+        "diagnosis": "Nongonococcal septic arthritis",
+        "note": "Sudden onset, usually knee or wrist, mostly S aureus; key risk factors (previous joint damage, IV drug use) are absent."
+      },
+      {
+        "diagnosis": "Osteoarthritis",
+        "note": "Insidious onset, brief stiffness and minimal inflammation do not fit; it spares the wrist and MCP joints and has no constitutional symptoms."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-023",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-023-p001"
+      ],
+      "f003": [
+        "medqa-cs-023-p005"
+      ],
+      "f004": [
+        "medqa-cs-023-p006"
+      ],
+      "f005": [
+        "medqa-cs-023-p002"
+      ],
+      "f006": [
+        "medqa-cs-023-p002"
+      ],
+      "f007": [
+        "medqa-cs-023-p003"
+      ],
+      "f008": [
+        "medqa-cs-023-p004"
+      ],
+      "f009": [
+        "medqa-cs-023-p007"
+      ],
+      "f010": [
+        "medqa-cs-023-p008"
+      ],
+      "f011": [
+        "medqa-cs-023-p009"
+      ],
+      "f012": [
+        "medqa-cs-023-p008"
+      ],
+      "f013": [
+        "medqa-cs-023-p009"
+      ],
+      "f014": [
+        "medqa-cs-023-p010"
+      ],
+      "f015": [
+        "medqa-cs-023-p010"
+      ],
+      "f016": [
+        "medqa-cs-023-p014"
+      ],
+      "f017": [
+        "medqa-cs-023-p014"
+      ],
+      "f018": [
+        "medqa-cs-023-p014"
+      ],
+      "f019": [
+        "medqa-cs-023-p015"
+      ],
+      "f020": [
+        "medqa-cs-023-p015"
+      ],
+      "f021": [
+        "medqa-cs-023-p027"
+      ],
+      "f022": [
+        "medqa-cs-023-p028"
+      ],
+      "f023": [
+        "medqa-cs-023-p013"
+      ],
+      "f024": [
+        "medqa-cs-023-p013"
+      ],
+      "f025": [
+        "medqa-cs-023-p012"
+      ],
+      "f026": [
+        "medqa-cs-023-p011"
+      ],
+      "f027": [
+        "medqa-cs-023-p016"
+      ],
+      "f028": [
+        "medqa-cs-023-p017"
+      ],
+      "f029": [
+        "medqa-cs-023-p018"
+      ],
+      "f030": [
+        "medqa-cs-023-p018"
+      ],
+      "f031": [
+        "medqa-cs-023-p019"
+      ],
+      "f032": [
+        "medqa-cs-023-p019"
+      ],
+      "f033": [
+        "medqa-cs-023-p020"
+      ],
+      "f034": [
+        "medqa-cs-023-p020"
+      ],
+      "f035": [
+        "medqa-cs-023-p020"
+      ],
+      "f036": [
+        "medqa-cs-023-p021"
+      ],
+      "f037": [
+        "medqa-cs-023-p021"
+      ],
+      "f038": [
+        "medqa-cs-023-p022"
+      ],
+      "f039": [
+        "medqa-cs-023-p043"
+      ],
+      "f040": [
+        "medqa-cs-023-p008"
+      ],
+      "f041": [
+        "medqa-cs-023-p008"
+      ],
+      "f042": [
+        "medqa-cs-023-p030"
+      ],
+      "f043": [
+        "medqa-cs-023-p044"
+      ],
+      "f044": [
+        "medqa-cs-023-p044"
+      ],
+      "f045": [
+        "medqa-cs-023-p024",
+        "medqa-cs-023-p031"
+      ],
+      "f046": [
+        "medqa-cs-023-p024"
+      ],
+      "f047": [
+        "medqa-cs-023-p025"
+      ],
+      "f048": [
+        "medqa-cs-023-p026"
+      ],
+      "f049": [
+        "medqa-cs-023-p045"
+      ],
+      "f050": [
+        "medqa-cs-023-p029"
+      ],
+      "f051": [
+        "medqa-cs-023-p029"
+      ],
+      "f052": [
+        "medqa-cs-023-p032"
+      ],
+      "f053": [
+        "medqa-cs-023-p032"
+      ],
+      "f054": [
+        "medqa-cs-023-p032"
+      ],
+      "f055": [
+        "medqa-cs-023-p034"
+      ],
+      "f056": [
+        "medqa-cs-023-p034"
+      ],
+      "f057": [
+        "medqa-cs-023-p034"
+      ],
+      "f058": [
+        "medqa-cs-023-p036"
+      ],
+      "f059": [
+        "medqa-cs-023-p035"
+      ],
+      "f060": [
+        "medqa-cs-023-p035"
+      ],
+      "f061": [
+        "medqa-cs-023-p035"
+      ],
+      "f062": [
+        "medqa-cs-023-p035"
+      ],
+      "f063": [
+        "medqa-cs-023-p037"
+      ],
+      "f064": [
+        "medqa-cs-023-p038"
+      ],
+      "f065": [
+        "medqa-cs-023-p038"
+      ],
+      "f066": [
+        "medqa-cs-023-p038"
+      ],
+      "f067": [
+        "medqa-cs-023-p023"
+      ],
+      "f068": [
+        "medqa-cs-023-p039"
+      ],
+      "f069": [
+        "medqa-cs-023-p040"
+      ],
+      "f070": [
+        "medqa-cs-023-p041"
+      ],
+      "f071": [
+        "medqa-cs-023-p042"
+      ],
+      "f072": [
+        "medqa-cs-023-p033"
+      ]
+    },
+    "quotes": {
+      "f001": "Left knee pain.",
+      "f002": "Two days ago.",
+      "f003": "Rest and Tylenol help a little bit.",
+      "f004": "Moving my knee and walking.",
+      "f005": "I can't move it.",
+      "f006": "I use a cane to walk.",
+      "f007": "Yes.",
+      "f008": "Yes.",
+      "f009": "No.",
+      "f010": "my wrist and fingers are always painful and stiff",
+      "f011": "Six months.",
+      "f012": "my wrist and fingers are always painful and stiff",
+      "f013": "Six months.",
+      "f014": "Yes",
+      "f015": "it lasts for about an hour.",
+      "f016": "have felt tired all the time",
+      "f017": "for the past 6 months.",
+      "f018": "I've had no energy to work",
+      "f019": "I feel hot now",
+      "f020": "I have no chills.",
+      "f021": "I've lost roughly 10 pounds in the last 6 months.",
+      "f022": "My appetite hasn't been good.",
+      "f023": "I had many in my mouth last month, but they've resolved now.",
+      "f024": "They seem to come and go.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "Sometimes my fingers become pale and then blue when they are exposed to cold weather or cold water.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "No.",
+      "f033": "No.",
+      "f034": "No.",
+      "f035": "No.",
+      "f036": "No.",
+      "f037": "No.",
+      "f038": "No.",
+      "f039": "No.",
+      "f040": "Five years ago I had a painful, swollen big toe on my left foot",
+      "f041": "the swelling went away after the doctor at the urgent clinic gave me some medicine.",
+      "f042": "None.",
+      "f043": "I was diagnosed with gonorrhea a year ago.",
+      "f044": "I received antibiotic treatment and recovered well.",
+      "f045": "both of whom were born via C-Section. / I had two C-Sections at 23 and 25 years old.",
+      "f046": "I have two daughters",
+      "f047": "I had two spontaneous abortions a long time ago.",
+      "f048": "It was two weeks ago.",
+      "f049": "No.",
+      "f050": "I use Tylenol to relieve my pain",
+      "f051": "but it is not working anymore.",
+      "f052": "My mother suffers from rheumatoid arthritis",
+      "f053": "is currently in a nursing home.",
+      "f054": "I do not have information about my father.",
+      "f055": "I don't drink a lot",
+      "f056": "usually two to four beers a week except for weekends",
+      "f057": "except for weekends, when I don't count.",
+      "f058": "Four days ago.",
+      "f059": "No (to all four).",
+      "f060": "No (to all four).",
+      "f061": "No (to all four).",
+      "f062": "No (to all four).",
+      "f063": "No.",
+      "f064": "Yes, a pack a day for the past 10 years.",
+      "f065": "a pack a day",
+      "f066": "for the past 10 years.",
+      "f067": "No.",
+      "f068": "I am sexually active with my new boyfriend whom I met 2 months ago.",
+      "f069": "Occasionally.",
+      "f070": "Four.",
+      "f071": "Men only.",
+      "f072": "Waitress."
+    },
+    "flags": {
+      "f003": [
+        "Conflicts with p029, where she says Tylenol is not working anymore (f051)."
+      ],
+      "f051": [
+        "Conflicts with p005, where she says Tylenol helps a little (f003)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 130/80 mmHg | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-023-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 99.9°F (37.7°C) | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-023-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 16/minute | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-023-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 76/minute, regular | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-023-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient is in no acute distress but favors the left knee.",
+        "exam_ids": [
+          "medqa-cs-023-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: No oral lesions.",
+        "exam_ids": [
+          "medqa-cs-023-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-023-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm; S1/S2 within normal limits; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-023-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, nondistended, active bowel sounds four times per minute; no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-023-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Extremities: The patient exhibits erythema, tenderness, pain, and restricted range of motion on flexion and extension of left knee compared to the right knee. There is swelling noted at the left knee. | Pretend to have pain when the examinee moves your left knee in all directions. | Do not allow the examinee to fully flex or extend your left knee. | Paint your left knee red to make it look inflamed.",
+        "exam_ids": [
+          "medqa-cs-023-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Fingers and hands show stiffness bilaterally.",
+        "exam_ids": [
+          "medqa-cs-023-e007"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Shoulder, elbow, wrist, hip, and ankle joints are within normal limits bilaterally.",
+        "exam_ids": [
+          "medqa-cs-023-e007"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x009": [
+        "Source reads 'active bowel sounds four times per minute', probably a garbled 'x4 quadrants'; the result keeps only 'active bowel sounds' (v1 decision)."
+      ],
+      "x012": [
+        "Wrists are normal on exam although the patient reports constant wrist pain and stiffness (p008); history vs exam, kept as stated (v1)."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Internal inconsistency in the script: p005 says rest and Tylenol 'help a little bit', p029 says Tylenol 'is not working anymore'. Both are kept as stated (f003, f051, flagged).",
+      "Exam line e006 records 'active bowel sounds four times per minute'; this may be a garbled 'x4 quadrants'. Kept neutral in x009.",
+      "The raw sheet's Patient Description ('divorced with two daughters') is not in the parsed source fields; marital status was added to extras.acting_notes, not as a patient fact.",
+      "The note's SH says 'on weekends drinks more'; the patient only says she does not count on weekends (p034). Patient facts keep her wording.",
+      "Gold rank-1 history finding 'Occasional alcohol use' understates the script (2-4 beers a week plus uncounted weekend drinking). Gold 'Monoarticular joint pain' sits beside a history of chronic wrist and finger pain.",
+      "The note exam reports wrists within normal limits bilaterally, while the patient reports constant wrist pain and stiffness (p008); this is history vs exam, not changed.",
+      "The SP-simulated knee findings (pain on movement in all directions, no full flexion or extension, knee painted red) agree with the note's left-knee exam (e007); no conflict."
+    ],
+    "notes": [
+      "Opening fact is the chief-complaint answer 'Left knee pain.'",
+      "p024 and p031 overlap on the C-sections: f046 keeps the two daughters (pregnancies) and f045 combines delivery mode and the ages at the C-sections (past surgery), to avoid a paraphrase duplicate.",
+      "p014 is split into tiredness (f016) with a 6-month duration child (f017) and lack of energy to work (f018, v1 functional, now a child of tiredness so the duration applies to both, as in v1).",
+      "p020 'Have you ever had seizures?' gives 'never had seizures' (historical); weakness and numbness are current denials.",
+      "p030 'None' (no other medical problems) is not treated as contradicting the toe episode (p008) or gonorrhea (p044), which the patient reports elsewhere.",
+      "f052 (mother has rheumatoid arthritis) names the rank-2 gold diagnosis; it is legitimate family history and not the rank-1 diagnosis, so leakage stays empty.",
+      "Doorway vitals and the note ('WNL except for low-grade fever') agree: temperature 99.9°F. One record per parameter, citing both sources, marked initial.",
+      "Conversion: rest and Tylenol (p005, v1 f006 + f007) are one relieving list fact (f003); the v1 Tylenol conflict flag moves to f003.",
+      "Conversion: v1 f010/f011 (wrist and finger pain / stiffness, 6 months) become parents f010/f012 (p008) with duration children f011/f013 (p009). v1 f014 (morning stiffness lasting about an hour) becomes f014 + duration child f015.",
+      "Conversion: v1 f043 ('Tylenol is not working anymore', subtype hpi) is a treatment_response child (f051) of the Tylenol medication fact (f050). p029 does not say which pain Tylenol is for, so it is attached to the medication rather than to the knee pain. Its category follows the v1 subtype as CONVERSION.md says (hpi -> symptom, system musculoskeletal), although the parent is a medication fact; the rules do not say which category a child takes when it differs from its parent's.",
+      "Conversion: v1 subtype 'sexual' for the gonorrhea history (v1 f063/f064) maps to medical_history (sexual-health history); sexual activity, condoms and partners map to habit_exposure. v1 'functional' facts (cane, no energy to work) map to symptom.",
+      "Conversion: alcohol (p034) is a parent (f055) with weekly (f056) and weekend (f057) quantity children and last drink (f058, p036); smoking (p038) is a parent with quantity and duration children; the toe episode (p008) and gonorrhea (p044) have treatment_response children.",
+      "Conversion: the left-knee exam lines and the three SP-simulated findings form one left-knee record (x010); the general-appearance record carries 'favors the left knee' (v1 x001 + x002).",
+      "Harmonisation pass: f051 category medication -> medication (parent f050).",
+      "Fixes: f007 answer word removed; f008 answer word removed; f010 answer word removed; f014 answer word removed; f016 answer word removed; f043 answer word removed; f064 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Patient description: divorced, with two daughters.",
+        "Pretend to have pain when the examinee moves your left knee in all directions.",
+        "Do not allow the examinee to fully flex or extend your left knee.",
+        "Paint your left knee red to make it look inflamed."
+      ],
+      "patient_questions": [
+        "Do you believe I will regain the ability to walk on my knee as I did previously?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

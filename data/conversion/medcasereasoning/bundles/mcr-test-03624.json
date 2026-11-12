@@ -1,0 +1,79 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03624",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 59, "sex": "female"},
+    "opening": ["f001", "f006"],
+    "facts": [
+      {"id": "f001", "item": "upper abdominal pain", "aliases": ["stomach pain", "belly pain", "upper belly pain", "epigastric pain"], "text": "I have pain in my upper abdomen.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "upper abdominal pain: course", "parent": "f001", "attribute": "course", "text": "It has been getting worse.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "upper abdominal pain: timing", "parent": "f001", "attribute": "timing", "text": "It has become constant.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "upper abdominal pain: what makes it worse", "parent": "f001", "attribute": "aggravating", "text": "It gets worse after meals.", "value": ["meals"], "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f005", "item": "upper abdominal pain: what makes it better", "parent": "f001", "attribute": "relieving", "text": "Only vomiting relieves it.", "value": ["vomiting"], "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f006", "item": "vomiting after meals", "aliases": ["vomiting", "throwing up", "being sick after eating"], "text": "I vomit after eating.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "how long the pain and vomiting have lasted", "text": "The pain and the vomiting after meals have been going on for two months.", "value": "2 months", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f008", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost 5 kg.", "value": "5 kg", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "alcohol abuse", "aliases": ["heavy drinking", "alcohol misuse", "drinking problem"], "text": "I've never drunk alcohol heavily.", "polarity": "absent", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03624",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "tenderness"], "result": "Severe epigastric tenderness; no abdominal distension."},
+      {"id": "x002", "kind": "test", "name": "serum amylase", "aliases": ["amylase"], "result": "156 U/l (reference ≤100)."},
+      {"id": "x003", "kind": "test", "name": "CA 19-9", "aliases": ["carbohydrate antigen 19-9", "tumor marker", "CA19-9"], "result": "52 U/ml (reference ≤37)."},
+      {"id": "x004", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Normal."},
+      {"id": "x005", "kind": "test", "name": "abdominal ultrasound", "aliases": ["abdominal ultrasonography", "abdominal US", "gallbladder ultrasound"], "result": "Normal abdominal parenchyma, a normal gallbladder, and no common bile duct dilation."},
+      {"id": "x006", "kind": "test", "name": "upper gastrointestinal endoscopy", "aliases": ["upper endoscopy", "gastroscopy", "EGD", "OGD"], "result": "Unremarkable."},
+      {"id": "x007", "kind": "test", "name": "multidetector CT of the abdomen (portal phase)", "aliases": ["CT abdomen", "abdominal CT", "contrast CT"], "result": "Cystic lesions encircling the second portion of the duodenum with circumferential duodenal wall thickening, and a soft-tissue component in the pancreaticoduodenal groove abutting the pancreatic head; the pancreatic head and pancreatic duct appear normal. Signs of inflammatory change, including fat stranding and fluid, surround the groove area."},
+      {"id": "x008", "kind": "test", "name": "contrast-enhanced MRI of the abdomen", "aliases": ["abdominal MRI", "MRI abdomen", "MRI pancreas"], "result": "Intramural fluid-signal lesions within the thickened duodenal wall and sheet-like tissue in the groove with enhancement patterns similar to the pancreas."},
+      {"id": "x009", "kind": "test", "name": "MR cholangiopancreatography", "aliases": ["MRCP"], "result": "Normal gallbladder; no dilation of the common bile duct or pancreatic duct."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03624",
+    "diagnosis": "Paraduodenal pancreatitis",
+    "aliases": ["groove pancreatitis", "cystic dystrophy of the duodenal wall", "cystic dystrophy of heterotopic pancreas", "paraduodenal wall cyst", "pancreatic hamartoma of the duodenal wall"],
+    "reasoning": "1. Groove pancreatic carcinoma was considered; it was deemed less likely because “both duodenal wall thickening and cystic changes are findings extremely uncommon in pancreatic adenocarcinoma.” 2. Adenocarcinoma of the groove was further excluded as it “is homogeneously hypoenhancing compared with the pancreas,” unlike the heterogeneous, pancreas-like enhancement observed here. 3. Duodenal duplication cyst was considered but ruled out based on the intramural location within a thickened duodenal wall: “differentiating the duodenal cysts from duplication cysts is crucial to assess their location in the duodenal wall, which is also thickened.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-03624",
+    "fact_sources": {
+      "f001": ["s001", "s002"], "f002": ["s001"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s003"], "f009": ["s004"]
+    },
+    "quotes": {
+      "f001": "upper‐quadrant pain", "f002": "progressive", "f003": "The pain became continuous", "f004": "worsened after meals",
+      "f005": "relieved only by vomiting", "f006": "postprandial vomiting", "f007": "a 2-month history of progressive upper‐quadrant pain and postprandial vomiting",
+      "f008": "a 5-kg weight loss", "f009": "There was no history of alcohol abuse."
+    },
+    "flags": {
+      "f001": ["'Upper-quadrant' does not say which side; the fact says upper abdomen."],
+      "f009": ["Only alcohol abuse is denied; whether she drinks at all is unknown."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "she had severe epigastric tenderness without abdominal distension"},
+      "x002": {"sentences": ["s006"], "source_text": "an amylase level of 156 U/l (reference ≤100)"},
+      "x003": {"sentences": ["s006"], "source_text": "a CA 19-9 level of 52 U/ml (reference ≤37)"},
+      "x004": {"sentences": ["s006"], "source_text": "complete blood counts were normal"},
+      "x005": {"sentences": ["s007"], "source_text": "Abdominal ultrasonography revealed normal abdominal parenchyma, a normal gallbladder, and no common bile duct dilation."},
+      "x006": {"sentences": ["s008"], "source_text": "Upper gastrointestinal endoscopy was unremarkable."},
+      "x007": {"sentences": ["s009"], "source_text": "Multidetector CT (portal phase) demonstrated cystic lesions encircling the second portion of the duodenum with circumferential duodenal wall thickening, and a soft‐tissue component in the pancreaticoduodenal groove abutting the pancreatic head; the pancreatic head and pancreatic duct appeared normal. Signs of inflammatory change, including fat stranding and fluid, surrounded the groove area."},
+      "x008": {"sentences": ["s010"], "source_text": "Contrast‐enhanced MRI confirmed intramural fluid‐signal lesions within the thickened duodenal wall and sheet‐like tissue in the groove with enhancement patterns similar to the pancreas."},
+      "x009": {"sentences": ["s011"], "source_text": "MR cholangiopancreatography showed a normal gallbladder and no dilation of the common bile duct or pancreatic duct."}
+    },
+    "finding_flags": {},
+    "leakage": [
+      {"id": "x007", "reason": "The CT report describes the classic picture (cystic duodenal wall thickening with inflammatory soft tissue in the pancreaticoduodenal groove; selection leakage: test_result) without naming the diagnosis."}
+    ],
+    "source_issues": [
+      "No vital signs are reported."
+    ],
+    "notes": [
+      "Index visit: the presentation with two months of progressive upper abdominal pain and vomiting after meals (s001); the examination, laboratory tests and imaging (s005–s011) belong to this workup.",
+      "f007 is a standalone duration fact because the two-month history applies to both the pain and the vomiting."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

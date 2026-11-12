@@ -1,0 +1,1438 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-027",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 61,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "tiredness and weakness",
+        "aliases": [
+          "fatigue",
+          "low energy",
+          "weakness"
+        ],
+        "text": "I'm feeling tired, weak and low on energy.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "tiredness and weakness: how long",
+        "parent": "f001",
+        "attribute": "duration",
+        "text": "For six months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "tiredness and weakness: what triggered it",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "I can't recall anything that triggered it.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f004",
+        "item": "tiredness and weakness: change during the day",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "My energy level remains constant throughout the day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "tiredness and weakness: effect on daily activities",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "I don't have energy for my daily 30-minute walk with my dog.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "tiredness and weakness: effect on work",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "Even at work, I'm not as energetic as I was before.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite",
+          "loss of appetite"
+        ],
+        "text": "I have a poor appetite.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "weight loss",
+        "aliases": [
+          "weight change"
+        ],
+        "text": "I have lost 8 pounds during the past 6 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "bowel habits",
+        "aliases": [
+          "bowel movements",
+          "stool frequency"
+        ],
+        "text": "I have a bowel movement two or three times a week. It has been like this for the past 10 years.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "stool appearance and smell",
+        "aliases": [
+          "what the stools look like",
+          "change in stools"
+        ],
+        "text": "Recently I've noticed more foul-smelling and greasy-looking stools.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "blood in stool",
+        "aliases": [
+          "bloody stools"
+        ],
+        "text": "I haven't noticed any blood in my stools.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "stomach pain",
+        "aliases": [
+          "stomach discomfort",
+          "abdominal pain",
+          "belly pain"
+        ],
+        "text": "I do feel some discomfort in my stomach.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "stomach pain: location",
+        "parent": "f012",
+        "attribute": "location",
+        "value": [
+          "upper middle abdomen"
+        ],
+        "text": "It's here, in the upper middle part of my belly.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "stomach pain: onset",
+        "parent": "f012",
+        "attribute": "onset",
+        "text": "It began four months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "stomach pain: change since it started",
+        "parent": "f012",
+        "attribute": "course",
+        "text": "It has increased gradually.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "stomach pain: what it feels like",
+        "parent": "f012",
+        "attribute": "character",
+        "text": "It's a vague, deep discomfort.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "stomach pain: severity",
+        "parent": "f012",
+        "attribute": "severity",
+        "value": 4,
+        "text": "It's 4 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f018",
+        "item": "stomach pain: what makes it worse",
+        "parent": "f012",
+        "attribute": "aggravating",
+        "text": "Nothing makes it worse.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "stomach pain: what makes it better",
+        "parent": "f012",
+        "attribute": "relieving",
+        "value": [
+          "leaning forward"
+        ],
+        "text": "I feel better when I lean forward.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "stomach pain: effect of lying on the back",
+        "parent": "f012",
+        "attribute": "aggravating",
+        "text": "It gets worse when I lie on my back.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "stomach pain: relation to food",
+        "parent": "f012",
+        "attribute": "aggravating",
+        "aliases": [
+          "pain with meals"
+        ],
+        "text": "It isn't related to what I eat.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "stomach pain: spread",
+        "parent": "f012",
+        "attribute": "radiation",
+        "value": [
+          "back"
+        ],
+        "text": "I feel the discomfort reaching my back.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "Occasionally, I feel nauseated.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f024",
+        "item": "mood changes",
+        "aliases": [
+          "sadness",
+          "feeling down",
+          "depression"
+        ],
+        "text": "I feel sad.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "mood changes: reason",
+        "parent": "f024",
+        "attribute": "context",
+        "text": "I don't know, really.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "thoughts of hurting myself",
+        "aliases": [
+          "suicidal thoughts",
+          "self-harm"
+        ],
+        "text": "I haven't had thoughts of hurting myself.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "blaming myself",
+        "aliases": [
+          "self-blame"
+        ],
+        "text": "I don't blame myself for anything.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "feeling guilty",
+        "aliases": [
+          "guilt"
+        ],
+        "text": "I don't feel guilty.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "feeling worthless",
+        "aliases": [
+          "worthlessness"
+        ],
+        "text": "I don't feel worthless.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "sleep problems",
+        "aliases": [
+          "trouble sleeping",
+          "insomnia",
+          "sleep"
+        ],
+        "text": "I wake up unusually early in the morning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "sleep problems: how long",
+        "parent": "f030",
+        "attribute": "duration",
+        "text": "It has been like this for the past 2 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "concentration",
+        "aliases": [
+          "trouble concentrating",
+          "focus"
+        ],
+        "text": "I can't concentrate anymore while watching the news or playing cards with my friends.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "loss of interest in activities",
+        "aliases": [
+          "enjoyment",
+          "pleasure in activities"
+        ],
+        "text": "I don't enjoy playing cards with my friends anymore.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "feelings about life",
+        "text": "I feel that life is boring.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "fever",
+        "text": "I haven't had a fever.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "chest pain",
+        "text": "I don't have chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "cough",
+        "text": "I don't have a cough.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I'm not short of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "sensitivity to cold",
+        "aliases": [
+          "feeling cold",
+          "cold intolerance"
+        ],
+        "text": "I'm not sensitive to cold weather.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "endocrine",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "hair loss",
+        "text": "I haven't noticed any recent hair loss.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "dry skin",
+        "aliases": [
+          "skin dryness"
+        ],
+        "text": "My skin isn't unusually dry.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "past mental illness",
+        "aliases": [
+          "psychiatric history",
+          "mental health problems"
+        ],
+        "text": "I haven't had a mental illness.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f043",
+        "item": "past medical conditions",
+        "aliases": [
+          "medical problems",
+          "chronic illnesses"
+        ],
+        "text": "I haven't had any medical conditions.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f044",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I had an appendectomy at 16 years old.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f045",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines",
+          "allergies"
+        ],
+        "text": "I don't have any drug allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "Tylenol",
+        "aliases": [
+          "acetaminophen",
+          "painkillers"
+        ],
+        "text": "I take Tylenol.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "Tylenol: how well it works",
+        "parent": "f046",
+        "attribute": "treatment_response",
+        "text": "It's not helping.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "father's health",
+        "text": "My father had diabetes.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f049",
+        "item": "father's cause of death",
+        "text": "My father died in a car accident.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f050",
+        "item": "mother's health",
+        "text": "My mother died of breast cancer.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f051",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink beer.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "alcohol: how much",
+        "parent": "f051",
+        "attribute": "quantity",
+        "text": "I typically have two beers each day and increase that to three or four on weekends.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "alcohol: for how long",
+        "parent": "f051",
+        "attribute": "duration",
+        "text": "This routine has been consistent for many years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f054",
+        "item": "alcohol: reason for drinking",
+        "parent": "f051",
+        "attribute": "context",
+        "text": "It helps me unwind.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f055",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "Not at all. I don't use any recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f056",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I used to smoke, but I quit six months ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "resolved"
+      },
+      {
+        "id": "f057",
+        "item": "smoking: how much",
+        "parent": "f056",
+        "attribute": "quantity",
+        "text": "A pack of cigarettes a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f058",
+        "item": "smoking: for how long",
+        "parent": "f056",
+        "attribute": "duration",
+        "text": "For 30 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f059",
+        "item": "smoking: why I quit",
+        "parent": "f056",
+        "attribute": "other",
+        "aliases": [
+          "reason for quitting"
+        ],
+        "text": "I felt repulsed by it, and it made me feel unwell.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f060",
+        "item": "exercise",
+        "aliases": [
+          "physical activity"
+        ],
+        "text": "I walk 30 minutes every day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f061",
+        "item": "diet",
+        "aliases": [
+          "eating habits"
+        ],
+        "text": "My eating habits are consistent.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f062",
+        "item": "diet: kind of food",
+        "parent": "f061",
+        "attribute": "other",
+        "text": "I enjoy fast food.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f063",
+        "item": "sexual activity",
+        "text": "I have sexual relations with my wife.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f064",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I was a police officer. I retired 1 year ago.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-027",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "135/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "13/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "70/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress; looks sad."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "conjunctivae",
+          "pallor"
+        ],
+        "result": "No conjunctival pallor."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "ent",
+        "name": "mouth and throat examination",
+        "aliases": [
+          "pharynx",
+          "oral cavity"
+        ],
+        "result": "Mouth and pharynx normal."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "neck lymph nodes",
+          "jugular veins"
+        ],
+        "result": "Supple; no jugular venous distension; no enlarged lymph nodes."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "endocrine",
+        "name": "thyroid examination",
+        "aliases": [
+          "thyroid"
+        ],
+        "result": "Thyroid within normal limits."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen",
+          "abdominal palpation"
+        ],
+        "result": "Soft, not distended; abdominal discomfort increases when lying on the back; mild epigastric tenderness, with pain on palpation of the epigastric area; no rebound tenderness; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "Murphy's sign",
+        "result": "Positive."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "edema",
+          "leg swelling"
+        ],
+        "result": "No edema."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-027",
+    "diagnosis": "Pancreatic cancer",
+    "aliases": [
+      "pancreatic carcinoma",
+      "pancreatic adenocarcinoma",
+      "pancreatic ductal adenocarcinoma",
+      "cancer of the pancreas",
+      "pancreatic malignancy"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Pancreatic cancer",
+        "evidence": [
+          "History of smoking and eating foods that are high in fat content",
+          "Unintentional weight loss of 8 lbs over the past 6 months",
+          "Foul-smelling, greasy-looking stools",
+          "Exam: Mild epigastric tenderness"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Major depressive disorder",
+        "aliases": [
+          "major depression",
+          "MDD",
+          "depression",
+          "clinical depression",
+          "unipolar depression"
+        ],
+        "evidence": [
+          "Feelings of sadness",
+          "Loss of interest in activities; early awakening",
+          "impaired concentration; low energy",
+          "Decreased appetite and unintentional weight loss"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Chronic pancreatitis",
+        "aliases": [
+          "chronic alcoholic pancreatitis",
+          "alcohol-induced chronic pancreatitis"
+        ],
+        "evidence": [
+          "History of alcohol use",
+          "Worsening epigastric discomfort that radiates to the back",
+          "Foul-smelling, greasy-looking stools",
+          "Exam: Mild epigastric tenderness"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Peptic ulcer disease",
+        "note": "Should be suspected with any epigastric pain, and many patients deny a relation to meals, but weight loss is unusual in uncomplicated ulcer disease."
+      },
+      {
+        "diagnosis": "Hypothyroidism",
+        "note": "Nonspecific fatigue and weakness suggest it, but abdominal pain is unusual."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-027",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-027-p001"
+      ],
+      "f003": [
+        "medqa-cs-027-p002"
+      ],
+      "f004": [
+        "medqa-cs-027-p003"
+      ],
+      "f005": [
+        "medqa-cs-027-p004"
+      ],
+      "f006": [
+        "medqa-cs-027-p004"
+      ],
+      "f007": [
+        "medqa-cs-027-p005"
+      ],
+      "f008": [
+        "medqa-cs-027-p006"
+      ],
+      "f009": [
+        "medqa-cs-027-p007"
+      ],
+      "f010": [
+        "medqa-cs-027-p007"
+      ],
+      "f011": [
+        "medqa-cs-027-p008"
+      ],
+      "f012": [
+        "medqa-cs-027-p009"
+      ],
+      "f013": [
+        "medqa-cs-027-p009"
+      ],
+      "f014": [
+        "medqa-cs-027-p010"
+      ],
+      "f015": [
+        "medqa-cs-027-p010"
+      ],
+      "f016": [
+        "medqa-cs-027-p011",
+        "note"
+      ],
+      "f017": [
+        "medqa-cs-027-p012"
+      ],
+      "f018": [
+        "medqa-cs-027-p013"
+      ],
+      "f019": [
+        "medqa-cs-027-p013"
+      ],
+      "f020": [
+        "note"
+      ],
+      "f021": [
+        "medqa-cs-027-p014"
+      ],
+      "f022": [
+        "medqa-cs-027-p015"
+      ],
+      "f023": [
+        "medqa-cs-027-p016"
+      ],
+      "f024": [
+        "medqa-cs-027-p017"
+      ],
+      "f025": [
+        "medqa-cs-027-p018"
+      ],
+      "f026": [
+        "medqa-cs-027-p019"
+      ],
+      "f027": [
+        "medqa-cs-027-p020"
+      ],
+      "f028": [
+        "medqa-cs-027-p020"
+      ],
+      "f029": [
+        "medqa-cs-027-p020"
+      ],
+      "f030": [
+        "medqa-cs-027-p021"
+      ],
+      "f031": [
+        "medqa-cs-027-p021"
+      ],
+      "f032": [
+        "medqa-cs-027-p022"
+      ],
+      "f033": [
+        "medqa-cs-027-p023"
+      ],
+      "f034": [
+        "medqa-cs-027-p023"
+      ],
+      "f035": [
+        "medqa-cs-027-p024"
+      ],
+      "f036": [
+        "medqa-cs-027-p025"
+      ],
+      "f037": [
+        "medqa-cs-027-p026"
+      ],
+      "f038": [
+        "medqa-cs-027-p027"
+      ],
+      "f039": [
+        "medqa-cs-027-p028"
+      ],
+      "f040": [
+        "medqa-cs-027-p029"
+      ],
+      "f041": [
+        "medqa-cs-027-p030"
+      ],
+      "f042": [
+        "medqa-cs-027-p032"
+      ],
+      "f043": [
+        "medqa-cs-027-p033"
+      ],
+      "f044": [
+        "medqa-cs-027-p034"
+      ],
+      "f045": [
+        "medqa-cs-027-p043"
+      ],
+      "f046": [
+        "medqa-cs-027-p031"
+      ],
+      "f047": [
+        "medqa-cs-027-p031"
+      ],
+      "f048": [
+        "medqa-cs-027-p035"
+      ],
+      "f049": [
+        "medqa-cs-027-p035"
+      ],
+      "f050": [
+        "medqa-cs-027-p035"
+      ],
+      "f051": [
+        "medqa-cs-027-p037"
+      ],
+      "f052": [
+        "medqa-cs-027-p037"
+      ],
+      "f053": [
+        "medqa-cs-027-p037"
+      ],
+      "f054": [
+        "medqa-cs-027-p037"
+      ],
+      "f055": [
+        "medqa-cs-027-p038"
+      ],
+      "f056": [
+        "medqa-cs-027-p039"
+      ],
+      "f057": [
+        "medqa-cs-027-p039"
+      ],
+      "f058": [
+        "medqa-cs-027-p039"
+      ],
+      "f059": [
+        "medqa-cs-027-p039"
+      ],
+      "f060": [
+        "medqa-cs-027-p040"
+      ],
+      "f061": [
+        "medqa-cs-027-p041"
+      ],
+      "f062": [
+        "medqa-cs-027-p041"
+      ],
+      "f063": [
+        "medqa-cs-027-p042"
+      ],
+      "f064": [
+        "medqa-cs-027-p036"
+      ]
+    },
+    "quotes": {
+      "f001": "Feeling tired, weak, low energy.",
+      "f002": "Six months.",
+      "f003": "None.",
+      "f004": "My energy level remains constant throughout the day.",
+      "f005": "I don't have energy for my daily 30-minute walk with my dog",
+      "f006": "even at work, I am not as energetic as I was before.",
+      "f007": "I have a poor appetite.",
+      "f008": "I have lost 8 pounds during the past 6 months.",
+      "f009": "I have a bowel movement two or three times a week. It has been like this for the past 10 years.",
+      "f010": "Recently I've noticed more foul-smelling and greasy-looking stools.",
+      "f011": "No, I do not.",
+      "f012": "Yes, I do feel some discomfort here",
+      "f013": "Yes, I do feel some discomfort here",
+      "f014": "Four months ago",
+      "f015": "it increased gradually.",
+      "f016": "vague, deep epigastric discomfort that radiates to the back",
+      "f017": "4 out of 10.",
+      "f018": "Nothing makes it worse",
+      "f019": "but I feel better when I lean forward.",
+      "f020": "increases when he lies on his back.",
+      "f021": "No, I do not.",
+      "f022": "I feel the discomfort reaching my back.",
+      "f023": "Occasionally, I experience nausea.",
+      "f024": "Yes, I feel sad.",
+      "f025": "I don't know, really.",
+      "f026": "No, I do not.",
+      "f027": "No, I do not.",
+      "f028": "No, I do not.",
+      "f029": "No, I do not.",
+      "f030": "I wake up unusually early in the morning.",
+      "f031": "It has been like this for the past 2 months.",
+      "f032": "Yes, I can't concentrate anymore while watching the news or playing cards with my friends.",
+      "f033": "I don't enjoy playing cards with my friends anymore.",
+      "f034": "I feel that life is boring.",
+      "f035": "No, I do not.",
+      "f036": "No, I do not.",
+      "f037": "No, I do not.",
+      "f038": "No, I do not.",
+      "f039": "No, I do not.",
+      "f040": "No, I do not.",
+      "f041": "No, I do not.",
+      "f042": "No, I do not.",
+      "f043": "No, I do not.",
+      "f044": "Appendectomy at 16 years old.",
+      "f045": "No, I do not.",
+      "f046": "Tylenol",
+      "f047": "but it is not helping.",
+      "f048": "and had diabetes",
+      "f049": "My father died in a car accident",
+      "f050": "my mother died of breast cancer.",
+      "f051": "I typically have two beers each day",
+      "f052": "I typically have two beers each day and increase that to three or four on weekends.",
+      "f053": "This routine has been consistent for many years",
+      "f054": "and helps me unwind.",
+      "f055": "Not at all.",
+      "f056": "I quit six months ago",
+      "f057": "smoking a pack of cigarettes daily",
+      "f058": "after 30 years of smoking",
+      "f059": "as I felt repulsed and it made me feel unwell.",
+      "f060": "I walk 30 minutes every day.",
+      "f061": "Consistent",
+      "f062": "I enjoy fast food.",
+      "f063": "I have sexual relations with my wife.",
+      "f064": "Police officer; retired 1 year ago."
+    },
+    "flags": {
+      "f005": [
+        "Conflicts with p040 ('I walk 30 minutes every day', f060)."
+      ],
+      "f006": [
+        "Conflicts with p036 (retired 1 year ago, f064)."
+      ],
+      "f011": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p008) — denial confirmed."
+      ],
+      "f016": [
+        "The scripted answer to the quality question only repeats the question ('Sharp, vague, deep, or dull?'); quality taken from the student note HPI."
+      ],
+      "f018": [
+        "Conflicts with the SP notes and the note HPI, where the discomfort increases when lying on the back (f020)."
+      ],
+      "f020": [
+        "Only in the student note HPI and the SP notes; contradicts p013 'Nothing makes it worse' (f018)."
+      ],
+      "f021": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p014) — denial confirmed."
+      ],
+      "f026": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p019) — denial confirmed."
+      ],
+      "f027": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ],
+      "f028": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ],
+      "f029": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ],
+      "f035": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p024) — denial confirmed."
+      ],
+      "f036": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p025) — denial confirmed."
+      ],
+      "f037": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p026) — denial confirmed."
+      ],
+      "f038": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p027) — denial confirmed."
+      ],
+      "f039": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p028) — denial confirmed."
+      ],
+      "f040": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p029) — denial confirmed."
+      ],
+      "f041": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p030) — denial confirmed."
+      ],
+      "f042": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p032) — denial confirmed."
+      ],
+      "f043": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p033) — denial confirmed."
+      ],
+      "f045": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p043) — denial confirmed."
+      ],
+      "f060": [
+        "Conflicts with p004, where he lacks the energy for his daily walk (f005)."
+      ],
+      "f064": [
+        "Conflicts with p004 ('even at work, I am not as energetic', f006)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 135/85 mm Hg | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-027-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.6°F (37°C) | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-027-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 13/minute | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-027-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 70/minute, regular | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-027-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress, looks sad.",
+        "exam_ids": [
+          "medqa-cs-027-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: No conjunctival pallor, mouth and pharynx are normal.",
+        "exam_ids": [
+          "medqa-cs-027-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "HEENT: No conjunctival pallor, mouth and pharynx are normal.",
+        "exam_ids": [
+          "medqa-cs-027-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Neck: Supple, no JVD, no lymphadenopathy, thyroid within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-027-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Neck: Supple, no JVD, no lymphadenopathy, thyroid within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-027-e004"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-027-e005"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-027-e006"
+        ]
+      },
+      "x012": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly. | Exhibit abdominal discomfort that increases when you lie on your back. | Show pain on palpation of the epigastric area.",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Extremities: No edema.",
+        "exam_ids": [
+          "medqa-cs-027-e008"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x013": [
+        "Positive Murphy's sign is recorded only in the note exam; neither the SP notes nor the gold mention it, and it fits poorly with the gold differential. Kept as written (v1)."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "p011: the scripted answer only repeats the question ('Sharp, vague, deep, or dull?'). The quality 'vague, deep' was taken from the note HPI (f016, source ids p011 + note, flagged).",
+      "p004 says 'even at work, I am not as energetic as I was before', but p036 says he retired 1 year ago.",
+      "p004 says he has no energy for his daily 30-minute walk, but p040 says 'I walk 30 minutes every day'.",
+      "p013 says nothing makes the discomfort worse, but the SP notes and the note HPI say it increases when he lies on his back (note fact f020, flagged; the SP-simulated finding is also in the abdominal exam record x012).",
+      "Exam line e007 records a positive Murphy's sign; neither the SP notes nor the gold mention it, and it fits poorly with the gold differential. Kept as written (x013).",
+      "p016 asks about nausea or vomiting; the answer mentions only occasional nausea, so vomiting is not recorded either way.",
+      "p021 asks about falling asleep, staying asleep, and snoring; the answer addresses only early waking.",
+      "The raw sheet's Patient Description ('married with three children') is not in the parsed source fields; added to extras.acting_notes.",
+      "Gold rank 1 is headed 'Diagnosis:' without '#1'; the rank-2 history bullets are split oddly ('Loss of interest in activities; early awakening;' / 'impaired concentration; low energy'); kept as two bullets with the trailing semicolon removed."
+    ],
+    "notes": [
+      "The stage direction '(points to the epigastric area)' in p009 moved to extras.acting_notes; the location is the child fact f013, in lay words.",
+      "Mood items (sadness, early waking, poor concentration, loss of enjoyment, no guilt or suicidal thoughts) are filed as symptoms (v1 hpi) with system psychiatric, because the note places them in the HPI.",
+      "'Look weak and sad and lean forward while seated' is kept as an acting note only (general demeanor, not an examination maneuver); the note's own 'looks sad' is in general appearance (x005). The two SP-simulated findings elicited on examination (epigastric pain on palpation, discomfort lying supine) are in the abdominal exam record (x012).",
+      "p018 'I don't know, really' is recorded as a present fact (he does not know why he feels sad), not as a denial.",
+      "Smoking: resolved current status (f056) with historical amount (f057), duration (f058) and reason for quitting (f059) children.",
+      "14 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 16 facts confirmed (flags re-keyed to the v2 ids).",
+      "Conversion: the chief complaint 'Feeling tired, weak, low energy' is one parent fact (f001, aliases fatigue / low energy / weakness); duration, trigger, daily pattern and the walk and work effects (v1 f001-f005) are its children. v1 f011 (discomfort, epigastric) becomes parent f012 + location child f013; v1 f012 (onset four months ago, increased gradually) becomes onset f014 + course f015; v1 f027 (early waking for 2 months) becomes f030 + duration f031.",
+      "Conversion: v1 f039 ('Tylenol is not helping', subtype hpi) is a treatment_response child (f047) of the Tylenol medication fact (f046), because p031 does not say which complaint Tylenol is for. Its category follows the v1 subtype as CONVERSION.md says (hpi -> symptom; system general, as no complaint is named), although the parent is a medication fact; the rules do not say which category a child takes when it differs from its parent's.",
+      "Conversion: father's diabetes (f048) and cause of death (f049) stay separate facts as in v1. Alcohol (p037) is a parent (f051) with quantity, duration and reason children; diet (p041) is a parent (f061) with a 'kind of food' child (f062).",
+      "Vitals: doorway values agree with the note's 'VS: within normal limits' (e002); one record per parameter citing both, marked initial.",
+      "Harmonisation pass: f047 category medication -> medication (parent f046); scale [0, 10] added to f017; system general (sleep) for f030, f031.",
+      "Fixes: f011 answer word removed; f012 answer word removed; f021 answer word removed; f024 answer word removed; f026 answer word removed; f027 answer word removed; f028 answer word removed; f029 answer word removed; f032 answer word removed; f035 answer word removed; f036 answer word removed; f037 answer word removed; f038 answer word removed; f039 answer word removed; f040 answer word removed; f041 answer word removed; f042 answer word removed; f043 answer word removed; f045 answer word removed; f051 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Patient description: married, with three children.",
+        "Look weak and sad and lean forward while seated.",
+        "Exhibit abdominal discomfort that increases when you lie on your back.",
+        "Show pain on palpation of the epigastric area.",
+        "When asked where the stomach hurts, point to the epigastric area."
+      ],
+      "patient_questions": [
+        "I will be on vacation with my wife. Can we arrange to conduct the tests upon my return?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "patient": {
+    "case_id": "mcr-test-10805",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 84, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain", "tummy pain"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "back pain", "aliases": ["backache"], "text": "I have pain in my back.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "how the pain started", "aliases": ["onset of the pain", "when the pain started"], "text": "The pain came on suddenly during the night.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "vomiting", "aliases": ["throwing up", "being sick"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f005", "item": "other stomach or bowel symptoms", "aliases": ["stomach upset", "bowel problems", "gastrointestinal disturbance"], "text": "I haven't had any other stomach or bowel upset.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f006", "item": "clindamycin", "aliases": ["antibiotics", "recent antibiotics"], "text": "I finished a 10-day course of clindamycin yesterday.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f007", "item": "cellulitis of the calf", "aliases": ["cellulitis", "skin infection", "leg infection"], "text": "I had cellulitis in my left calf.", "polarity": "present", "category": "medical_history"},
+      {"id": "f008", "item": "atrial fibrillation", "aliases": ["AF", "AFib", "irregular heartbeat"], "text": "I have atrial fibrillation.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "heart failure", "aliases": ["congestive cardiac failure", "congestive heart failure", "CHF", "CCF"], "text": "I have congestive cardiac failure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "ulcerative colitis", "aliases": ["UC", "colitis", "inflammatory bowel disease"], "text": "I have ulcerative colitis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar", "T2DM"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "antiphospholipid syndrome", "aliases": ["APS", "antiphospholipid antibody syndrome", "sticky blood", "clotting disorder"], "text": "I have antiphospholipid syndrome.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "deep vein thrombosis", "aliases": ["DVT", "blood clots", "clots in the veins"], "text": "I've had deep vein thromboses (blood clots) several times.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f014", "item": "warfarin", "aliases": ["blood thinner", "anticoagulant", "Coumadin"], "text": "I take warfarin long-term.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "diabetes medication", "aliases": ["diabetes medicine", "diabetic medications"], "text": "I take medication for my diabetes.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-10805",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "200/132 mmHg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "68/min"},
+      {"id": "x004", "kind": "test", "name": "capillary blood glucose", "aliases": ["fingerstick glucose", "blood sugar", "point-of-care glucose"], "result": "9.1 mmol/L"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "chest auscultation", "aliases": ["lung auscultation", "lung examination", "respiratory examination"], "result": "Clear."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "bowel sounds"], "result": "Mild to moderate epigastric tenderness; normal bowel sounds."},
+      {"id": "x007", "kind": "exam", "system": "skin", "name": "skin examination of the legs", "aliases": ["legs", "calves", "skin", "leg examination"], "result": "Mild resolving cellulitis of the right calf."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "white blood cell count", "WBC", "platelets"], "result": "Hemoglobin 10.3 g/dL; white blood cell count 12.9×10^9/L; platelets 303×10^9/L."},
+      {"id": "x009", "kind": "test", "name": "INR", "aliases": ["international normalized ratio", "prothrombin time", "PT", "coagulation"], "result": "6.8"},
+      {"id": "x010", "kind": "test", "name": "urea and electrolytes", "aliases": ["U&E", "renal function", "electrolytes", "basic metabolic panel", "BMP", "urea", "creatinine", "sodium", "potassium", "calcium"], "result": "Urea 8.7 mmol/L; creatinine 111 μmol/L; sodium 144 mmol/L; potassium 4.1 mmol/L; calcium 2.02 mmol/L."},
+      {"id": "x011", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "75 mg/L"},
+      {"id": "x012", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "Paced rhythm."},
+      {"id": "x013", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Slight fluid overload, cardiomegaly, and interstitial shadowing."},
+      {"id": "x014", "kind": "test", "name": "CT of the chest, abdomen and pelvis", "aliases": ["CT scan", "CT abdomen", "CT chest abdomen pelvis", "CT abdomen and pelvis"], "result": "Subtle, non-specific bilateral adrenal enhancing lesions.", "time": "after admission"},
+      {"id": "x015", "kind": "test", "name": "short synacthen test", "aliases": ["ACTH stimulation test", "cosyntropin test", "synacthen test", "SST"], "result": "No appreciable rise in cortisol: baseline 95 nmol/L; 60 min 113 nmol/L; 90 min 132 nmol/L.", "time": "after admission"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-10805",
+    "diagnosis": "Bilateral adrenal haemorrhage",
+    "aliases": ["bilateral adrenal hemorrhage", "BAH", "bilateral adrenal bleeding", "bilateral adrenal haemorrhagic infarction"],
+    "reasoning": "1. Gastro-oesophageal reflux disease was initially considered because of epigastric pain — “The initial impression was possible gastro-oesophageal reflux disease.” 2. Sepsis was considered given elevated inflammatory markers and co-morbidities — “…it was important to rule out sepsis or malignancy.” 3. Malignancy was considered due to age, presentation, and risk factors — “…it was important to rule out sepsis or malignancy.” 4. Adrenal metastases were considered based on CT findings of bilateral adrenal lesions — “the differential diagnosis for which included metastases, infection, granulomatous disease or haemorrhage.” 5. Adrenal infection was considered on imaging grounds — “the differential diagnosis for which included metastases, infection, granulomatous disease or haemorrhage.” 6. Granulomatous adrenal disease was considered among imaging differentials — “the differential diagnosis for which included metastases, infection, granulomatous disease or haemorrhage.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-10805",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s001"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s003"],
+      "f009": ["s003"],
+      "f010": ["s003"],
+      "f011": ["s003"],
+      "f012": ["s003"],
+      "f013": ["s003"],
+      "f014": ["s003"],
+      "f015": ["s011"]
+    },
+    "quotes": {
+      "f003": "acute onset abdominal and back pain that began during the night",
+      "f005": "without vomiting or gastrointestinal disturbance",
+      "f006": "One day earlier he had completed a 10-day course of clindamycin",
+      "f007": "left calf cellulitis",
+      "f013": "recurrent deep vein thromboses",
+      "f014": "he was on maintenance warfarin",
+      "f015": "despite withholding diabetic medications"
+    },
+    "flags": {
+      "f005": ["'Gastrointestinal disturbance' is vague; written as a blanket denial of other gastrointestinal symptoms, which answers only the open question."],
+      "f007": ["The history says left calf (s002); the examination says right calf (s005). The fact keeps the history's side."],
+      "f015": ["Only implied by the hospital course ('withholding diabetic medications', s011); the drug names are not given."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "he was afebrile"},
+      "x002": {"sentences": ["s004"], "source_text": "blood pressure 200/132 mm Hg"},
+      "x003": {"sentences": ["s004"], "source_text": "heart rate 68 beats/min"},
+      "x004": {"sentences": ["s004"], "source_text": "capillary blood glucose 9.1 mmol/L"},
+      "x005": {"sentences": ["s005"], "source_text": "Chest auscultation was clear"},
+      "x006": {"sentences": ["s005"], "source_text": "abdominal examination showed mild to moderate epigastric tenderness with normal bowel sounds"},
+      "x007": {"sentences": ["s005"], "source_text": "mild resolving cellulitis of the right calf was noted"},
+      "x008": {"sentences": ["s006"], "source_text": "hemoglobin 10.3 g/dL, white blood cell count 12.9×10^9/L, platelets 303×10^9/L"},
+      "x009": {"sentences": ["s006"], "source_text": "INR 6.8"},
+      "x010": {"sentences": ["s006"], "source_text": "urea 8.7 mmol/L, creatinine 111 μmol/L, sodium 144 mmol/L, potassium 4.1 mmol/L / calcium 2.02 mmol/L"},
+      "x011": {"sentences": ["s006"], "source_text": "CRP 75 mg/L"},
+      "x012": {"sentences": ["s007"], "source_text": "ECG showed a paced rhythm"},
+      "x013": {"sentences": ["s007"], "source_text": "chest radiograph demonstrated slight fluid overload, cardiomegaly, and interstitial shadowing"},
+      "x014": {"sentences": ["s010"], "source_text": "A CT scan of the chest, abdomen, and pelvis revealed subtle, non-specific bilateral adrenal enhancing lesions."},
+      "x015": {"sentences": ["s012"], "source_text": "A short synacthen test showed no appreciable rise in cortisol (baseline 95 nmol/L; 60 min 113 nmol/L; 90 min 132 nmol/L)."}
+    },
+    "finding_flags": {
+      "x007": ["'Cellulitis' is the source's label for the calf finding; no descriptive sign is given. The side (right) contradicts the history (left)."]
+    },
+    "leakage": [
+      {"id": "x014", "reason": "Radiology report names bilateral adrenal lesions (the organ of the gold), not the haemorrhage; a written report keeps its conclusion."}
+    ],
+    "source_issues": ["Cellulitis side: left calf in the history (s002), right calf on examination (s005).", "s011 says he 'remained hypotensive', but the presentation blood pressure was 200/132 mmHg (s004).", "The ECG shows a paced rhythm, but no pacemaker is mentioned in the history."],
+    "notes": ["Index visit: the emergency presentation with acute abdominal and back pain that began during the night (s001-s007); the CT and the short synacthen test (s010, s012) are later findings of the same admission and carry time 'after admission'.", "s011 is cited only for the fact that he takes diabetes medication; the rest of s011 (INR normalising after vitamin K, persistent hypotension, ongoing pain with new nausea, lethargy and abdominal distension, normal glucose after diabetic medications were withheld) is hospital course after treatment and is not part of the case.", "No pacemaker fact is written: the source only reports a paced rhythm on the ECG.", "Calcium is grouped with urea and electrolytes because it was reported with the same admission chemistry."],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s008", "reason": "Clinician's initial impression (possible gastro-oesophageal reflux disease); interpretation, not a finding."},
+      {"id": "s009", "reason": "Treatment (warfarin withheld, vitamin K, intravenous fluids); not part of the case."}
+    ]
+  }
+}

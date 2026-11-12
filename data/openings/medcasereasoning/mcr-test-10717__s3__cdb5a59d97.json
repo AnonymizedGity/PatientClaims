@@ -1,0 +1,55 @@
+{
+ "case_id": "mcr-test-10717",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I became unconscious at home and was brought to the emergency department.",
+   "These spells have been happening over the past 2 months.",
+   "I've been having spells of palpitations.",
+   "I get dizzy during my spells of palpitations.",
+   "I feel lightheaded during my spells of palpitations.",
+   "For the past 2 months I've been injecting anabolic steroids for bodybuilding.",
+   "For the past 2 months I've been using growth hormone for bodybuilding.",
+   "For the past 2 months I've been taking fat-burner supplements for bodybuilding."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I became unconscious at home and was brought to the emergency department. These spells have been happening over the past 2 months, where I've been having spells of palpitations. I get dizzy and feel lightheaded during these episodes. For the past 2 months, I've been injecting anabolic steroids, using growth hormone, and taking fat-burner supplements for bodybuilding.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f006",
+    "f002",
+    "f003",
+    "f004",
+    "f018",
+    "f019",
+    "f021"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3796,
+   "tokens_out": 90,
+   "seconds": 6.4,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "case_id": "mcr-test-11394",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "My right eye has been red.",
+   "Bright light bothers my right eye.",
+   "My right eye hurts.",
+   "The vision in my right eye is slightly blurry.",
+   "It's been red for 5 days.",
+   "The light sensitivity, the pain and the blurriness started 3 days ago."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "My right eye has been red for 5 days. The light sensitivity, the pain and the blurriness started 3 days ago. Bright light bothers my right eye, it hurts, and the vision in it is slightly blurry.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f004",
+    "f005",
+    "f002",
+    "f006"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3339,
+   "tokens_out": 59,
+   "seconds": 5.73,
+   "redrafts": 0
+  }
+ }
+}

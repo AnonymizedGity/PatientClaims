@@ -1,0 +1,93 @@
+{
+  "case_id": "agentclinic-medqa-ext-109",
+  "source_row": 109,
+  "demographics_text": "60-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with progressive shortness of breath exacerbated by physical activity.",
+  "chief_complaint": "Shortness of breath",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-109-p001",
+      "field": "History",
+      "text": "The patient reports that the shortness of breath started a year ago and worsens with physical activity. He has a 20-year history of working in the glass manufacturing industry."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-109-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Exacerbation by physical activity"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-109-p003",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history noted."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-109-p004",
+      "field": "Social_History",
+      "text": "Works in glass manufacturing industry for 20 years. Non-smoker."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-109-p005",
+      "field": "Review_of_Systems",
+      "text": "Denies recent fever, chest pain, wheezing, or cough."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-109-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "30/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/80 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-e004",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "No visible cyanosis or use of accessory muscles for breathing."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-e005",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Palpation",
+      "text": "Symmetrical chest expansion."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-e006",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Resonant note on both sides."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-e007",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Diminished respiratory sounds bilaterally."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-109-i001",
+      "path": "Test_Results.Chest_Radiograph.Findings",
+      "text": "Interstitial fibrosis with reticulonodular infiltrate on both sides, eggshell calcification of multiple adenopathies."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-i002",
+      "path": "Test_Results.Pulmonary_Function_Tests.Findings",
+      "text": "Reduced FEV1/FVC ratio with reduced diffusing capacity for carbon monoxide."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-109-i003",
+      "path": "Test_Results.Occupational_History.Findings",
+      "text": "Long-term exposure to silica dust."
+    }
+  ],
+  "correct_diagnosis": "Silicosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

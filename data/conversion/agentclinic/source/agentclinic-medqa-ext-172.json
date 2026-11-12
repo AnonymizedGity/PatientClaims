@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-172",
+  "source_row": 172,
+  "demographics_text": "34-year-old female",
+  "objective_for_doctor": "Assess and manage a patient presenting with symptoms suggestive of early pregnancy.",
+  "chief_complaint": "Increasing breast tenderness",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-172-p001",
+      "field": "History",
+      "text": "The patient presents requesting prenatal care, reporting 2 months of increasing breast tenderness, nausea, a 6.6 lb weight gain, increased urinary frequency, and uncertainty about the date of her last menstrual period. She stopped taking oral contraceptives 6 months ago and has been trying to conceive with her husband since then. She believes she is pregnant and was happy to share this news with her husband last week."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-172-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-172-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Weight gain of 6.6 lbs"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-172-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Increased urinary frequency"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-172-p005",
+      "field": "Past_Medical_History",
+      "text": "Stopped oral contraceptives 6 months prior in an attempt to conceive."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-172-p006",
+      "field": "Social_History",
+      "text": "Reports being in a stable relationship and actively trying to conceive with her husband."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-172-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, vomiting, diarrhea, dysuria, or flank pain."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.2°C (99°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "110/60 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "100 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e004",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Mild, nontender abdominal enlargement."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Normal findings, no abnormalities detected."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "No tenderness, masses, or abnormalities noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e008",
+      "path": "Physical_Examination_Findings.Pelvic_Examination.Visual_Inspection",
+      "text": "No lesions or discharge."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e009",
+      "path": "Physical_Examination_Findings.Pelvic_Examination.Speculum_Examination",
+      "text": "Closed cervical os, no abnormalities detected."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-e010",
+      "path": "Physical_Examination_Findings.Pelvic_Examination.Bimanual_Examination",
+      "text": "Normal adnexa and uterus, no tenderness or masses palpated."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-172-i001",
+      "path": "Test_Results.Urine_Beta_hCG.Result",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-172-i002",
+      "path": "Test_Results.Transvaginal_Ultrasound.Findings",
+      "text": "No abnormalities detected, absence of gestational sac."
+    }
+  ],
+  "correct_diagnosis": "Pseudocyesis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

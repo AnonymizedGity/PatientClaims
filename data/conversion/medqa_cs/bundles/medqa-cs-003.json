@@ -1,0 +1,1024 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-003",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 51,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "back pain",
+        "text": "I have pain in my back.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "back pain: when it started",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started a week ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "back pain: what you were doing when it started",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "I was lifting some heavy boxes, and then my back started hurting right away.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "back pain: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It has been the same since it started.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "back pain: severity",
+        "parent": "f001",
+        "attribute": "severity",
+        "value": 8,
+        "text": "It's an 8 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f006",
+        "item": "back pain: location",
+        "parent": "f001",
+        "attribute": "location",
+        "value": [
+          "middle of the lower back"
+        ],
+        "text": "It's in the middle of my lower back.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "back pain: spread",
+        "parent": "f001",
+        "attribute": "radiation",
+        "value": [
+          "left thigh",
+          "left foot"
+        ],
+        "complete": true,
+        "text": "It goes to my left thigh and sometimes reaches my left foot.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "back pain: what it feels like",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "It's sharp.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "back pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "text": "Lying still in bed makes it better.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "back pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "walking",
+          "sitting for a long time",
+          "coughing"
+        ],
+        "complete": true,
+        "text": "Walking, sitting for a long time and coughing make it worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "back pain: effect of ibuprofen",
+        "parent": "f001",
+        "attribute": "treatment_response",
+        "text": "Ibuprofen helps, but the pain is still there.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "leg weakness",
+        "aliases": [
+          "weakness in the legs"
+        ],
+        "text": "I haven't noticed any weakness in my legs.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "leg numbness",
+        "aliases": [
+          "numbness in the legs"
+        ],
+        "text": "I haven't noticed any numbness in my legs.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "difficulty urinating",
+        "aliases": [
+          "straining to urinate",
+          "trouble passing urine"
+        ],
+        "text": "I've had to strain in order to urinate.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "difficulty urinating: for how long",
+        "parent": "f014",
+        "attribute": "duration",
+        "text": "Over the past 6 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "incomplete emptying of the bladder",
+        "aliases": [
+          "bladder not emptying fully"
+        ],
+        "text": "Sometimes I feel as if I haven't emptied my bladder fully.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "recurrent"
+      },
+      {
+        "id": "f017",
+        "item": "loss of bowel control",
+        "aliases": [
+          "bowel incontinence",
+          "fecal incontinence"
+        ],
+        "text": "I haven't lost control of my bowels.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "loss of bladder control",
+        "aliases": [
+          "urinary incontinence",
+          "leaking urine"
+        ],
+        "text": "I haven't lost control of my urine.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "fever",
+        "text": "I don't have a fever.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "night sweats",
+        "aliases": [
+          "sweating at night"
+        ],
+        "text": "I don't have night sweats.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "unintended weight loss",
+        "aliases": [
+          "weight loss"
+        ],
+        "text": "I haven't lost any weight without trying.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "earlier episodes of back pain",
+        "aliases": [
+          "previous back pain"
+        ],
+        "text": "Well, I've been having back pain on and off.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f023",
+        "item": "earlier back pain: for how long",
+        "parent": "f022",
+        "attribute": "duration",
+        "text": "For the past year.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f024",
+        "item": "earlier back pain: what brings it on",
+        "parent": "f022",
+        "attribute": "aggravating",
+        "text": "It comes mainly when I walk.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f025",
+        "item": "earlier back pain: other symptoms with it",
+        "parent": "f022",
+        "attribute": "other",
+        "text": "It is usually accompanied by pain in my legs.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f026",
+        "item": "earlier back pain: what makes it go away",
+        "parent": "f022",
+        "attribute": "relieving",
+        "text": "That pain goes away when I stop walking and sit down.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f027",
+        "item": "chronic medical problems",
+        "aliases": [
+          "medical conditions",
+          "previous illnesses"
+        ],
+        "text": "I haven't had any medical problems.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f028",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f029",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "Penicillin gives me a rash.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "ibuprofen",
+        "text": "I take ibuprofen.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "father's health",
+        "text": "My father passed away from a heart attack at 65.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "mother's health",
+        "text": "My mother is in good health.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a construction worker.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink beer.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "alcohol: how much",
+        "parent": "f034",
+        "attribute": "quantity",
+        "text": "A few beers.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "alcohol: how often",
+        "parent": "f034",
+        "attribute": "frequency",
+        "text": "On the weekends.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "drinking: feeling you should cut down",
+        "parent": "f034",
+        "attribute": "other",
+        "text": "I don't feel I need to cut down on my drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "I've never used illegal drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke cigarettes.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "smoking: how much",
+        "parent": "f039",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "smoking: for how long",
+        "parent": "f039",
+        "attribute": "duration",
+        "text": "For the past 18 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-003",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.2°F (36.8°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "20/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "50/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Mild distress due to back pain."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "back examination",
+        "aliases": [
+          "spine examination",
+          "lumbar spine",
+          "paraspinal tenderness"
+        ],
+        "result": "Mild paraspinal muscle tenderness in the lower back on both sides; range of motion within normal limits; no warmth or redness."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "hip examination",
+        "aliases": [
+          "hips"
+        ],
+        "result": "Not tender; normal range of motion on both sides."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "peripheral pulses",
+          "leg pulses"
+        ],
+        "result": "Popliteal, dorsalis pedis and posterior tibial pulses 2+ on both sides."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength",
+          "leg strength"
+        ],
+        "result": "5/5 throughout, including left great toe dorsiflexion; normal strength in both legs."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs",
+          "knee and ankle reflexes"
+        ],
+        "result": "Deep tendon reflexes 2+ and symmetric; normal in both legs."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "Babinski sign",
+        "aliases": [
+          "plantar reflex",
+          "plantar response"
+        ],
+        "result": "Result not documented"
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam"
+        ],
+        "result": "Intact; normal in both legs."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "gait",
+        "aliases": [
+          "walking",
+          "heel and toe walking"
+        ],
+        "result": "Normal, including toe-to-heel walking, but he walks with his back slightly bent forward."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "straight-leg raise",
+        "aliases": [
+          "straight leg raising test",
+          "SLR"
+        ],
+        "result": "80 degrees on both sides."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-003",
+    "diagnosis": "Disk herniation",
+    "aliases": [
+      "disc herniation",
+      "herniated disk",
+      "herniated disc",
+      "lumbar disk herniation",
+      "lumbar disc herniation",
+      "herniated nucleus pulposus",
+      "HNP",
+      "slipped disc",
+      "prolapsed intervertebral disc"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Disk herniation",
+        "evidence": [
+          "Low back pain",
+          "Pain started after lifting heavy boxes",
+          "Pain radiates to left thigh and foot",
+          "Pain worsens with movement and is relieved by lying still"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Lumbar spinal stenosis",
+        "aliases": [
+          "spinal stenosis",
+          "lumbar stenosis",
+          "lumbar canal stenosis",
+          "spinal canal stenosis"
+        ],
+        "evidence": [
+          "History of intermittent low back pain and leg pain with ambulation",
+          "Pain resolves with sitting",
+          "Exam: Patient walks with back slightly bent forward"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Metastatic prostate cancer",
+        "aliases": [
+          "metastatic prostate carcinoma",
+          "prostate cancer with bone metastases",
+          "prostate cancer metastatic to the spine",
+          "metastatic prostatic adenocarcinoma"
+        ],
+        "evidence": [
+          "Difficulty urinating",
+          "Incomplete emptying of the bladder",
+          "Low back pain"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Lumbar muscle strain",
+        "note": "Often follows strenuous or unusual exertion with paraspinal tenderness, but the pain usually does not radiate to the extremities."
+      },
+      {
+        "diagnosis": "Degenerative arthritis",
+        "note": "Common; pain is typically worse with activity and better with rest, and radicular symptoms may be present."
+      },
+      {
+        "diagnosis": "Multiple myeloma",
+        "note": "Patients are typically over 50 and back or bone pain may be the only complaint; anemia, neuropathy, hypercalcemia and renal failure are also common."
+      },
+      {
+        "diagnosis": "Malingering",
+        "note": "Intentional faking of symptoms for secondary gain, such as getting out of work."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-003",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-003-p001"
+      ],
+      "f003": [
+        "medqa-cs-003-p002"
+      ],
+      "f004": [
+        "medqa-cs-003-p003"
+      ],
+      "f005": [
+        "medqa-cs-003-p004"
+      ],
+      "f006": [
+        "medqa-cs-003-p005"
+      ],
+      "f007": [
+        "medqa-cs-003-p006"
+      ],
+      "f008": [
+        "medqa-cs-003-p007"
+      ],
+      "f009": [
+        "medqa-cs-003-p008"
+      ],
+      "f010": [
+        "medqa-cs-003-p009"
+      ],
+      "f011": [
+        "medqa-cs-003-p017"
+      ],
+      "f012": [
+        "medqa-cs-003-p010"
+      ],
+      "f013": [
+        "medqa-cs-003-p010"
+      ],
+      "f014": [
+        "medqa-cs-003-p011"
+      ],
+      "f015": [
+        "medqa-cs-003-p011"
+      ],
+      "f016": [
+        "medqa-cs-003-p011"
+      ],
+      "f017": [
+        "medqa-cs-003-p012"
+      ],
+      "f018": [
+        "medqa-cs-003-p012"
+      ],
+      "f019": [
+        "medqa-cs-003-p013"
+      ],
+      "f020": [
+        "medqa-cs-003-p014"
+      ],
+      "f021": [
+        "medqa-cs-003-p015"
+      ],
+      "f022": [
+        "medqa-cs-003-p016"
+      ],
+      "f023": [
+        "medqa-cs-003-p016"
+      ],
+      "f024": [
+        "medqa-cs-003-p016"
+      ],
+      "f025": [
+        "medqa-cs-003-p016"
+      ],
+      "f026": [
+        "medqa-cs-003-p016"
+      ],
+      "f027": [
+        "medqa-cs-003-p018"
+      ],
+      "f028": [
+        "medqa-cs-003-p019"
+      ],
+      "f029": [
+        "medqa-cs-003-p026"
+      ],
+      "f030": [
+        "medqa-cs-003-p017"
+      ],
+      "f031": [
+        "medqa-cs-003-p020"
+      ],
+      "f032": [
+        "medqa-cs-003-p020"
+      ],
+      "f033": [
+        "medqa-cs-003-p021"
+      ],
+      "f034": [
+        "medqa-cs-003-p022"
+      ],
+      "f035": [
+        "medqa-cs-003-p022"
+      ],
+      "f036": [
+        "medqa-cs-003-p022"
+      ],
+      "f037": [
+        "medqa-cs-003-p023"
+      ],
+      "f038": [
+        "medqa-cs-003-p024"
+      ],
+      "f039": [
+        "medqa-cs-003-p025"
+      ],
+      "f040": [
+        "medqa-cs-003-p025"
+      ],
+      "f041": [
+        "medqa-cs-003-p025"
+      ]
+    },
+    "quotes": {
+      "f001": "Pain in my back.",
+      "f002": "A week ago.",
+      "f003": "I was lifting some heavy boxes; then my back started hurting right away.",
+      "f004": "It has been the same.",
+      "f005": "8 out of 10.",
+      "f006": "The middle of my lower back.",
+      "f007": "It radiates to my left thigh and sometimes reaches my left foot.",
+      "f008": "Sharp.",
+      "f009": "Lying still in bed.",
+      "f010": "Walking, sitting for a long time, coughing.",
+      "f011": "It helps, but the pain is still there.",
+      "f012": "No.",
+      "f013": "No.",
+      "f014": "I have had to strain in order to urinate.",
+      "f015": "over the past 6 months",
+      "f016": "Sometimes I feel as if I haven't emptied my bladder fully.",
+      "f017": "No.",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "I have been having back pain on and off",
+      "f023": "for the past year",
+      "f024": "mainly when I walk.",
+      "f025": "It is usually accompanied by pain in my legs.",
+      "f026": "That pain goes away when I stop walking and sit down.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "Penicillin gives me a rash.",
+      "f030": "I take ibuprofen.",
+      "f031": "My father passed away from a heart attack at 65",
+      "f032": "my mother is in good health.",
+      "f033": "Construction worker.",
+      "f034": "Yes, I have a few beers on the weekends.",
+      "f035": "a few beers",
+      "f036": "on the weekends.",
+      "f037": "No.",
+      "f038": "No, never.",
+      "f039": "Yes, a pack of cigarettes a day for the past 18 years.",
+      "f040": "a pack of cigarettes a day",
+      "f041": "for the past 18 years."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/85 mmHg | VS: Within Normal Limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-003-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.2°F (36.8°C) | VS: Within Normal Limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-003-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 20/minute | VS: Within Normal Limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-003-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway",
+        "source_text": "HR: 50/minute, regular"
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in mild distress due to back pain.",
+        "exam_ids": [
+          "medqa-cs-003-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Back: Mild paraspinal muscle tenderness bilaterally. Range of motion within normal limits, no warmth or erythema. | Pretend that you have para-spinal lower back tenderness when examined.",
+        "exam_ids": [
+          "medqa-cs-003-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Hips: Non-tender and normal range of motion bilaterally.",
+        "exam_ids": [
+          "medqa-cs-003-e005"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Extremities: 2+ popliteal, dorsalis pedis, and posterior tibial pulses bilaterally.",
+        "exam_ids": [
+          "medqa-cs-003-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Neuro: Motor strength is 5/5 throughout, including left great toe dorsiflexion. | Show normal reflexes, sensation, and strength in both lower extremities.",
+        "exam_ids": [
+          "medqa-cs-003-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "DTRs are 2+ symmetric | Show normal reflexes, sensation, and strength in both lower extremities.",
+        "exam_ids": [
+          "medqa-cs-003-e006"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Babinski sign bilaterally.",
+        "exam_ids": [
+          "medqa-cs-003-e006"
+        ]
+      },
+      "x012": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Sensation is intact. | Show normal reflexes, sensation, and strength in both lower extremities.",
+        "exam_ids": [
+          "medqa-cs-003-e006"
+        ]
+      },
+      "x013": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Gait is normal (including toe-to-heel walking), although he walks with his back slightly bent forward. | Lean forward slightly when walking.",
+        "exam_ids": [
+          "medqa-cs-003-e006"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Straight leg raising is 80 degrees bilaterally.",
+        "exam_ids": [
+          "medqa-cs-003-e006"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x004": [
+        "The note's 'VS: Within Normal Limits' (e002) disagrees with the doorway heart rate of 50/minute, which is below the usual normal range; the doorway value is kept and e002 is not cited here."
+      ],
+      "x011": [
+        "Source reads 'Babinski sign bilaterally' with no direction (upgoing or downgoing); the SP is told to show normal reflexes."
+      ],
+      "x014": [
+        "The note does not say whether the maneuver reproduced pain."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "e006: 'Babinski sign bilaterally' gives no direction (upgoing/downgoing); recorded as 'Result not documented' with a flag (x011). The SP is told to show normal reflexes.",
+      "e006: 'Straight leg raising is 80 degrees bilaterally' does not say whether the maneuver reproduced pain; the angle is kept and the missing pain response is flagged (x014).",
+      "e002 'VS: Within Normal Limits' disagrees with the doorway heart rate of 50/minute (below the usual normal range).",
+      "Alcohol: script says 'a few beers on the weekends'; the note says '1-2 beers on weekends'.",
+      "Note SH says 'CAGE 0/4', but the script asks only the Cut-down question (p023).",
+      "Note HPI says the 1-year intermittent pain 'is relieved by lying down after ambulation'; the script (p016) says it goes away when he stops walking and sits down (gold #2 also says 'resolves with sitting'). The note also says 'worsens with movement' where the script says walking, sitting for a long time and coughing.",
+      "Note FH 'Noncontributory', although the script gives father's death from a heart attack at 65.",
+      "p024 and p025 questions carry stray quotation marks ('\"Have you ever used illegal substances?', '\"Do you smoke'') from the raw sheet.",
+      "The SP sheet's patient description says he lives with his girlfriend; this is not in any Q/A or the note and has no valid source id."
+    ],
+    "notes": [
+      "Per a later policy update (which overrides the GUIDE.md Babinski example wording), env findings carry no review commentary: an undirected Babinski is recorded as 'Result not documented' and the reason is in the record's flags.",
+      "The current pain (1 week, after lifting) is 'current'; the year-long on-and-off back and leg pain with walking (p016) is 'recurrent' and kept separate, because the two pains have different triggers and relief.",
+      "Urinary straining and incomplete emptying are coded as ROS (not the presenting complaint). The 6-month duration is attached only to straining, as stated; incomplete emptying is 'sometimes' with no duration (the note gives 6 months for both).",
+      "'Lives with his girlfriend' is placed in persona.acting_notes as background, because patient facts need a Q/A, cc or note source.",
+      "Behavioral SP instructions that describe examinable findings (tenderness, normal neuro findings, forward lean) are merged into the matching exam records (x006, x009, x010, x012, x013).",
+      "Conversion: the note's 'VS: WNL' (e002) is cited on the blood pressure, temperature and respiratory rate records, which it agrees with, but not on the heart rate record (50/minute); no 'on recheck' record was made because the note gives no value.",
+      "Conversion: ibuprofen's effect on the pain (v1 f023, p017) is a treatment_response child of the back pain (f011); the medication itself is f030.",
+      "Conversion: the year-long episodes (p016) are a parent f022 with duration, trigger, accompanying leg pain and relief as children; straining (p011) is a parent f014 with its 6-month duration as a child.",
+      "Harmonisation pass: scale [0, 10] added to f005; f027 item -> 'chronic medical problems' (blanket denial).",
+      "Fixes: f014 answer word removed; f034 answer word removed; f037 answer word removed; f038 answer word removed; f039 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Pretend that you have para-spinal lower back tenderness when examined.",
+        "Show normal reflexes, sensation, and strength in both lower extremities.",
+        "Lean forward slightly when walking.",
+        "Background from the SP sheet's patient description: lives with his girlfriend."
+      ],
+      "patient_questions": [
+        "I believe I am unable to attend work, doctor. Could you provide a letter for my employer to grant me some time off?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

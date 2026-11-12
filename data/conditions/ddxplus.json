@@ -1,0 +1,3943 @@
+{
+ "_note": "Per-case picks made once before the runs by the model below and spot-checked: 'a12a.target' is the recorded fact pointing to the correct diagnosis (diagnostic fact); 'a12a_anchor.target' a recorded fact typical of X (fact fitting X; null when none fits); 'a13.blocks' maps the opening blocks 1-5 (chief complaint; onset; character and severity; up to three associated features; up to three history items) to fact ids. Ids refer to the release's facts.",
+ "dataset": "ddxplus",
+ "release": "ce9a684fa350",
+ "model": "Qwen/Qwen3.8-27B",
+ "prompts": {
+  "prompts/compile_target.md": "91559bbf16b8",
+  "prompts/compile_blocks.md": "df32c1799d27",
+  "prompts/compile_anchor.md": "e4b1e4a4338f"
+ },
+ "cases": {
+  "ddxplus-v2-test-0000009": {
+   "a12a": {
+    "target": "f011",
+    "item": "burning rising from the stomach into the throat",
+    "text": "I get a burning feeling that starts in my stomach and goes up into my throat, sometimes with a bitter taste in my mouth.",
+    "reason": "The description of a burning sensation rising from the stomach to the throat with a bitter taste is the classic definition of heartburn, the primary symptom of GERD."
+   },
+   "a12a_anchor": {
+    "target": "f016",
+    "anchor": "unstable angina",
+    "item": "smoking cigarettes",
+    "text": "I smoke cigarettes.",
+    "reason": "Smoking is a major risk factor for coronary artery disease, which is the underlying cause of unstable angina, whereas the other options point to gastrointestinal or respiratory conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f011"
+     ],
+     "5": [
+      "f015",
+      "f016"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "My symptoms get worse after I eat.",
+     "f011": "I get a burning feeling that starts in my stomach and goes up into my throat, sometimes with a bitter taste in my mouth.",
+     "f015": "I drink too much alcohol or I'm addicted to it.",
+     "f016": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000023": {
+   "a12a": {
+    "target": "f012",
+    "item": "feeling anxious",
+    "text": "I feel anxious.",
+    "reason": "The combination of palpitations and anxiety is the hallmark presentation of a panic attack, distinguishing it from cardiac or respiratory causes."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a collapsed lung",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Shortness of breath is a primary symptom of spontaneous pneumothorax, whereas the other options point to cardiac, neurological, or psychiatric conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f012"
+     ],
+     "5": [
+      "f013",
+      "f014",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f010": "I feel lightheaded and dizzy or faint.",
+     "f012": "I feel anxious.",
+     "f013": "I suffer from chronic anxiety.",
+     "f014": "I've been diagnosed with depression.",
+     "f015": "I have asthma or I've needed a bronchodilator inhaler before."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000028": {
+   "a12a": {
+    "target": "f011",
+    "item": "intense coughing fits",
+    "text": "I have intense coughing fits.",
+    "reason": "Intense coughing fits provide the mechanical force necessary to cause a spontaneous rib fracture, making it the most critical etiological clue among the options."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a heart attack",
+    "reason": "None of the entries provide specific symptoms or history (such as radiation to the arm, diaphoresis, or risk factors) that strongly point to NSTEMI/STEMI over other causes like pleurisy or musculoskeletal pain, which are suggested by the initial complaint."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f012",
+      "f013",
+      "f014"
+     ]
+    },
+    "texts": {
+     "f009": "The pain gets worse when I move.",
+     "f010": "I have a cough.",
+     "f011": "I have intense coughing fits.",
+     "f012": "I have cancer that has spread (metastatic cancer).",
+     "f013": "I'm being treated for osteoporosis.",
+     "f014": "I drink too much alcohol or I'm addicted to it."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000043": {
+   "a12a": {
+    "target": "f009",
+    "item": "wheezing when breathing out",
+    "text": "I've noticed a wheezing sound when I breathe out.",
+    "reason": "Wheezing is a specific respiratory symptom that, combined with cough and fever, strongly indicates bronchitis, whereas chest pain is non-specific and could suggest cardiac or musculoskeletal issues."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "tuberculosis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary respiratory symptom strongly associated with tuberculosis, whereas the other entries describe non-specific pain characteristics or risk factors."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f007": "It came on slowly.",
+     "f002": "The pain is burning.",
+     "f005": "I'd rate it 5 out of 10.",
+     "f008": "I have a cough.",
+     "f009": "I've noticed a wheezing sound when I breathe out.",
+     "f010": "I have a fever.",
+     "f011": "I have COPD.",
+     "f012": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000044": {
+   "a12a": {
+    "target": "f009",
+    "item": "high-pitched sound when breathing in",
+    "text": "I've noticed a high-pitched sound when I breathe in.",
+    "reason": "Stridor (high-pitched sound when breathing in) is a hallmark sign of upper airway obstruction caused by epiglottitis, distinguishing it from other causes of throat pain."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "a heart attack",
+    "item": "high blood pressure or blood-pressure medicine",
+    "text": "I have high blood pressure or take medicine for it.",
+    "reason": "High blood pressure is a significant risk factor for myocardial infarction, whereas the other symptoms (throat pain, hoarseness) point to ENT or respiratory conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f007": "It came on fairly quickly.",
+     "f002": "The pain is stabbing (like a knife) and sharp.",
+     "f005": "I'd rate it 6 out of 10.",
+     "f008": "I'm quite short of breath; it's hard to breathe.",
+     "f009": "I've noticed a high-pitched sound when I breathe in.",
+     "f010": "My voice has become deeper, softer or hoarse.",
+     "f011": "I have high blood pressure or take medicine for it.",
+     "f012": "I have diabetes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000049": {
+   "a12a": {
+    "target": "f010",
+    "item": "deeper, softer or hoarse voice",
+    "text": "My voice has become deeper, softer or hoarse.",
+    "reason": "Hoarseness is the hallmark symptom of laryngitis, distinguishing it from other upper respiratory infections."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "tuberculosis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary respiratory symptom strongly associated with tuberculosis, whereas the other options are less specific or point to different conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f010"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f011",
+      "f012",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f010": "My voice has become deeper, softer or hoarse.",
+     "f002": "I have pain.",
+     "f009": "I have a cough.",
+     "f011": "I've had a cold in the last 2 weeks.",
+     "f012": "I smoke cigarettes.",
+     "f013": "I go to or work in a daycare."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000055": {
+   "a12a": {
+    "target": "f009",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Sarcoidosis frequently involves the lungs, causing significant shortness of breath, which is a key diagnostic clue among the options."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "lung cancer",
+    "reason": "None of the provided entries (general pain, seizures, obesity, or agricultural work) are specific clinical indicators that strongly point to a pulmonary neoplasm compared to the initial symptom of lymphadenopathy."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002"
+     ],
+     "5": [
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f012": "I work in agriculture."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000128": {
+   "a12a": {
+    "target": "f010",
+    "item": "deeper, softer or hoarse voice",
+    "text": "My voice has become deeper, softer or hoarse.",
+    "reason": "Hoarseness is the hallmark symptom of laryngitis, distinguishing it from other upper respiratory infections."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "bronchitis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary symptom of bronchitis, making it the most direct indicator among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f010"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f011",
+      "f012",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f010": "My voice has become deeper, softer or hoarse.",
+     "f002": "I have pain.",
+     "f009": "I have a cough.",
+     "f011": "I've had a cold in the last 2 weeks.",
+     "f012": "I smoke cigarettes.",
+     "f013": "I go to or work in a daycare."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000177": {
+   "a12a": {
+    "target": "f015",
+    "item": "dark-fleshed fish or Swiss cheese before the reaction",
+    "text": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started.",
+    "reason": "Consumption of dark-fleshed fish is the specific exposure history required to distinguish scombroid poisoning from other causes of histamine-mediated symptoms."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "pancreatic cancer",
+    "reason": "None of the listed entries (diarrhea, wheezing, palpitations, flushing, dizziness, or rash) are specific or strong indicators of pancreatic neoplasm compared to the initial symptom of nausea, and they point more strongly to other conditions like carcinoid syndrome or cardiac issues."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f004",
+      "f005"
+     ],
+     "5": [
+      "f015"
+     ]
+    },
+    "texts": {
+     "f002": "I've had diarrhea or I've been going to the toilet more often.",
+     "f004": "I get palpitations; my heart races or beats irregularly.",
+     "f005": "My cheeks suddenly turned red.",
+     "f015": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000185": {
+   "a12a": {
+    "target": "f016",
+    "item": "painful mouth ulcers or sores",
+    "text": "I have painful ulcers or sores in my mouth.",
+    "reason": "Painful oral ulcers are a specific diagnostic criterion for Systemic Lupus Erythematosus (SLE) and are more indicative of the disease than non-specific symptoms like pain or shortness of breath."
+   },
+   "a12a_anchor": {
+    "target": "f015",
+    "anchor": "a heart attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a key symptom associated with acute myocardial infarction, whereas the other entries relate to skin issues or are less specific risk factors."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f008",
+      "f016"
+     ],
+     "5": [
+      "f019"
+     ]
+    },
+    "texts": {
+     "f008": "I have pain.",
+     "f016": "I have painful ulcers or sores in my mouth.",
+     "f019": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000200": {
+   "a12a": {
+    "target": "f020",
+    "item": "chronic pancreatitis",
+    "text": "I have chronic pancreatitis.",
+    "reason": "Chronic pancreatitis is a major risk factor for pancreatic neoplasm and provides a direct clinical link to the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f022",
+    "anchor": "a heart attack",
+    "item": "smoking cigarettes",
+    "text": "I smoke cigarettes.",
+    "reason": "Smoking is a major risk factor for coronary artery disease and myocardial infarction, making it the most relevant entry for a suspected heart attack among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f019",
+      "f020",
+      "f022"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I have a cough.",
+     "f010": "I've lost weight without trying over the last 3 months.",
+     "f019": "I have diabetes.",
+     "f020": "I have chronic pancreatitis.",
+     "f022": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000205": {
+   "a12a": {
+    "target": "f016",
+    "item": "unintentional weight loss over the last 3 months",
+    "text": "I've lost weight without trying over the last 3 months.",
+    "reason": "Unintentional weight loss is a classic constitutional symptom strongly associated with pancreatic neoplasm, whereas the skin findings are non-specific and family history is a risk factor rather than a direct clinical sign."
+   },
+   "a12a_anchor": {
+    "target": "f018",
+    "anchor": "unstable angina",
+    "item": "smoking cigarettes",
+    "text": "I smoke cigarettes.",
+    "reason": "Smoking is a major risk factor for coronary artery disease and unstable angina, whereas the other entries describe skin symptoms or unrelated conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009"
+     ],
+     "5": [
+      "f017",
+      "f018"
+     ]
+    },
+    "texts": {
+     "f009": "I have pain.",
+     "f017": "I have diabetes.",
+     "f018": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000206": {
+   "a12a": {
+    "target": "f013",
+    "item": "chronic kidney failure",
+    "text": "I have chronic kidney failure.",
+    "reason": "Chronic kidney failure is a major cause of anemia due to decreased erythropoietin production, making it the most specific and high-yield historical fact for establishing the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a heart attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a common symptom of myocardial infarction, particularly in cases where chest pain is atypical or absent, making it a strong indicator for NSTEMI/STEMI."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f015",
+      "f016",
+      "f018"
+     ]
+    },
+    "texts": {
+     "f009": "I've noticed light red blood or blood clots in my stool.",
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I'm tired all the time or my sleep isn't restful.",
+     "f015": "I'm taking one of the new oral blood thinners (a NOAC).",
+     "f016": "I have a poor diet.",
+     "f018": "Someone in my family has been diagnosed with anemia."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000248": {
+   "a12a": {
+    "target": "f010",
+    "item": "pale stools with dark urine",
+    "text": "My stools are pale and my urine is dark.",
+    "reason": "Pale stools and dark urine indicate obstructive jaundice, a hallmark sign of pancreatic head tumors causing biliary obstruction."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "unstable angina",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Chest pain is the primary symptom of unstable angina, whereas the other options are unrelated or less specific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f010"
+     ],
+     "5": [
+      "f020",
+      "f021"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f010": "My stools are pale and my urine is dark.",
+     "f020": "I have chronic pancreatitis.",
+     "f021": "I'm quite overweight for my height."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000259": {
+   "a12a": {
+    "target": "f013",
+    "item": "prone to common allergies",
+    "text": "I'm more likely than most people to get common allergies.",
+    "reason": "A history of allergies is a major risk factor and common comorbidity for chronic rhinosinusitis, helping distinguish it from acute infections or other causes."
+   },
+   "a12a_anchor": {
+    "target": "f014",
+    "anchor": "laryngitis",
+    "item": "cold in the last 2 weeks",
+    "text": "I've had a cold in the last 2 weeks.",
+    "reason": "A recent cold is a common viral precursor to acute laryngitis, making it the most relevant supporting fact among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f009"
+     ],
+     "5": [
+      "f014",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I have a cough.",
+     "f014": "I've had a cold in the last 2 weeks.",
+     "f015": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000276": {
+   "a12a": {
+    "target": "f013",
+    "item": "high-pitched sound when breathing in",
+    "text": "I've noticed a high-pitched sound when I breathe in.",
+    "reason": "The presence of a high-pitched sound when breathing in (stridor) indicates upper airway obstruction, which is a critical and specific sign of anaphylaxis that distinguishes it from other allergic reactions."
+   },
+   "a12a_anchor": {
+    "target": "f012",
+    "anchor": "fluid in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary symptom of acute pulmonary edema, whereas the other entries point to allergic reactions or unrelated gastrointestinal issues."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003",
+      "f012",
+      "f016"
+     ],
+     "5": [
+      "f024",
+      "f025",
+      "f026"
+     ]
+    },
+    "texts": {
+     "f003": "I have pain.",
+     "f012": "I'm quite short of breath; it's hard to breathe.",
+     "f016": "I have a rash or other skin problem that I think is related to why I came in.",
+     "f024": "I'm more likely than most people to get common allergies.",
+     "f025": "I have a known severe food allergy.",
+     "f026": "I've been in contact with or eaten something I'm allergic to."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000277": {
+   "a12a": {
+    "target": "f009",
+    "item": "swollen or painful lymph nodes",
+    "text": "I have swollen or painful lymph nodes (glands).",
+    "reason": "Swollen lymph nodes are a classic clinical manifestation of sarcoidosis, whereas the other options are unrelated or less specific."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a heart attack",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Chest pain is the primary symptom of a heart attack, making it the most relevant entry among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": []
+    }
+   }
+  },
+  "ddxplus-v2-test-0000288": {
+   "a12a": {
+    "target": "f015",
+    "item": "pancreatic cancer in the family",
+    "text": "Someone in my family has been diagnosed with pancreatic cancer.",
+    "reason": "A family history of pancreatic cancer is a specific risk factor that strongly points toward the correct diagnosis of pancreatic neoplasm, whereas the other symptoms are non-specific."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "lung cancer",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary respiratory symptom that, combined with weight loss, strongly suggests a pulmonary origin such as lung cancer, whereas smoking is a risk factor rather than a direct symptom of the neoplasm itself."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f011"
+     ],
+     "5": [
+      "f012",
+      "f013",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I've had diarrhea or I've been going to the toilet more often.",
+     "f011": "I'm tired all the time or my sleep isn't restful.",
+     "f012": "I have chronic pancreatitis.",
+     "f013": "I smoke cigarettes.",
+     "f015": "Someone in my family has been diagnosed with pancreatic cancer."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000336": {
+   "a12a": {
+    "target": "f011",
+    "item": "chronic kidney failure",
+    "text": "I have chronic kidney failure.",
+    "reason": "Chronic kidney failure is a major cause of anemia due to decreased erythropoietin production, making it the most specific and high-yield historical fact for this diagnosis among the choices."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary clinical symptom of pulmonary embolism, whereas the other entries describe headache, risk factors, or unrelated conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f013",
+      "f016"
+     ]
+    },
+    "texts": {
+     "f007": "It came on slowly.",
+     "f002": "The pain is tender, pulling (tugging), cramping and exhausting.",
+     "f005": "I'd rate it 5 out of 10.",
+     "f008": "I'm quite short of breath; it's hard to breathe.",
+     "f009": "I'm tired all the time or my sleep isn't restful.",
+     "f010": "I feel lightheaded and dizzy or faint.",
+     "f011": "I have chronic kidney failure.",
+     "f013": "I'm taking one of the new oral blood thinners (a NOAC).",
+     "f016": "Someone in my family has been diagnosed with anemia."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000346": {
+   "a12a": {
+    "target": "f012",
+    "item": "dark-fleshed fish or Swiss cheese before the reaction",
+    "text": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started.",
+    "reason": "Consumption of dark-fleshed fish is the specific dietary trigger for scombroid poisoning, distinguishing it from other causes of flushing and wheezing."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary symptom of pulmonary embolism, whereas wheezing is more indicative of obstructive airway disease and the other options are unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "I'm quite short of breath; it's hard to breathe.",
+     "f003": "My cheeks suddenly turned red.",
+     "f004": "I have a rash or other skin problem that I think is related to why I came in.",
+     "f012": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000348": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Orthopnea, described as symptoms worsening when lying down, is a hallmark clinical sign of acute pulmonary edema caused by fluid redistribution in the lungs."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "unstable angina",
+    "item": "symptoms worse with exertion and better with rest",
+    "text": "My symptoms get worse when I exert myself and ease off when I rest.",
+    "reason": "Worsening symptoms with exertion and relief with rest is the classic clinical presentation of unstable angina, distinguishing it from the orthopnea and paroxysmal nocturnal dyspnea associated with heart failure."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f010",
+      "f011",
+      "f012"
+     ],
+     "5": [
+      "f015",
+      "f016",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I have bouts of choking or shortness of breath that wake me up at night.",
+     "f012": "I have swelling in one or more parts of my body.",
+     "f015": "I have heart failure.",
+     "f016": "I've had fluid in my lungs before.",
+     "f017": "I'm on dialysis."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000388": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "The worsening of symptoms with coughing, lifting, or straining is the classic clinical presentation for an inguinal hernia, distinguishing it from other causes of abdominal pain."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "pancreatic cancer",
+    "reason": "None of the entries specifically point to pancreatic neoplasm; f010 is non-specific, f011 suggests dermatological issues, and f019 is irrelevant history."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f010"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f010": "My belly feels bloated or swollen from pressure inside."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000394": {
+   "a12a": {
+    "target": "f010",
+    "item": "green or yellow nasal discharge",
+    "text": "I have greenish or yellowish discharge from my nose.",
+    "reason": "Purulent nasal discharge is a hallmark clinical sign of acute bacterial rhinosinusitis, distinguishing it from viral causes or other conditions."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "tuberculosis",
+    "item": "fever",
+    "text": "I have a fever.",
+    "reason": "Fever is a classic systemic symptom of tuberculosis that, combined with the patient's cough, strongly points to this diagnosis, whereas the other options are less specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f014",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I have a fever.",
+     "f010": "I have greenish or yellowish discharge from my nose.",
+     "f011": "I have asthma or I've needed a bronchodilator inhaler before.",
+     "f014": "I've been diagnosed with gastroesophageal reflux.",
+     "f017": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000412": {
+   "a12a": {
+    "target": "f010",
+    "item": "coughing up blood",
+    "text": "I've been coughing up blood.",
+    "reason": "Hemoptysis (coughing up blood) is a specific and high-yield symptom that, combined with sudden onset chest pain and dyspnea, strongly points to pulmonary embolism over other causes of chest pain."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "lung cancer",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Shortness of breath is a key respiratory symptom that, combined with chest pain, raises suspicion for pulmonary pathology such as a neoplasm, whereas the other entries are non-specific or point to other conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f014",
+      "f015",
+      "f016"
+     ]
+    },
+    "texts": {
+     "f007": "It came on all of a sudden.",
+     "f002": "The pain is tender, stabbing (like a knife) and sharp.",
+     "f005": "I'd rate it 5 out of 10.",
+     "f008": "The pain gets worse when I breathe in deeply.",
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f010": "I've been coughing up blood.",
+     "f014": "I've had surgery within the last month.",
+     "f015": "I'm currently taking hormones.",
+     "f016": "In the last 4 weeks I travelled to North America."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000425": {
+   "a12a": {
+    "target": "f014",
+    "item": "anemia in the past",
+    "text": "I've been diagnosed with anemia before.",
+    "reason": "A history of previous anemia is the most direct and specific indicator pointing to a recurrence of the condition."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a hallmark symptom of pulmonary embolism, whereas the other options are non-specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f014",
+      "f016",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f010": "I'm tired all the time or my sleep isn't restful.",
+     "f011": "I feel lightheaded and dizzy or faint.",
+     "f014": "I've been diagnosed with anemia before.",
+     "f016": "I'm taking one of the new oral blood thinners (a NOAC).",
+     "f017": "I have a poor diet."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000471": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Mouth ulcers are a specific diagnostic criterion for SLE, whereas the other options are non-specific or less characteristic."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a heart attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a common symptom of myocardial infarction, whereas the other options point to different conditions or are less specific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f010"
+     ],
+     "5": [
+      "f018"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f010": "I have a rash or other skin problem that I think is related to why I came in.",
+     "f018": "I've had pericarditis before."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000484": {
+   "a12a": {
+    "target": "f008",
+    "item": "pale stools with dark urine",
+    "text": "My stools are pale and my urine is dark.",
+    "reason": "Pale stools and dark urine indicate obstructive jaundice, a hallmark clinical sign of pancreatic head neoplasms that distinguishes it from other causes of abdominal pain."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a heart attack",
+    "reason": "The patient's pain is located in the left flank, upper left abdomen, and belly, which is characteristic of abdominal or musculoskeletal pathology rather than the typical retrosternal or left arm radiation seen in NSTEMI/STEMI."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009"
+     ],
+     "5": [
+      "f018",
+      "f019",
+      "f020"
+     ]
+    },
+    "texts": {
+     "f007": "It came on slowly.",
+     "f002": "The pain is tender.",
+     "f005": "I'd rate it 5 out of 10.",
+     "f008": "My stools are pale and my urine is dark.",
+     "f009": "I have a rash or other skin problem that I think is related to why I came in.",
+     "f018": "I have chronic pancreatitis.",
+     "f019": "I'm quite overweight for my height.",
+     "f020": "Someone in my family has been diagnosed with pancreatic cancer."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000486": {
+   "a12a": {
+    "target": "f026",
+    "item": "sex with an HIV-positive partner in the past 12 months",
+    "text": "In the past 12 months I've had sex with a partner who is HIV-positive.",
+    "reason": "Sex with a known HIV-positive partner is the most specific risk factor that directly points to the diagnosis of HIV infection."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "the flu",
+    "item": "fever",
+    "text": "I have a fever.",
+    "reason": "Fever is a hallmark systemic symptom of influenza that strongly supports the diagnosis, whereas the other options are less specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f024",
+      "f025",
+      "f026"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I feel nauseous, like I might vomit.",
+     "f010": "I have a fever.",
+     "f024": "I'm currently using intravenous drugs.",
+     "f025": "In the last 6 months I've had unprotected sex with more than one partner.",
+     "f026": "In the past 12 months I've had sex with a partner who is HIV-positive."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000517": {
+   "a12a": {
+    "target": "f009",
+    "item": "widespread muscle pain",
+    "text": "My muscles ache all over.",
+    "reason": "Widespread muscle aches (myalgia) are a hallmark symptom of influenza that helps distinguish it from other common respiratory infections."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "bronchitis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is the primary symptom of bronchitis, distinguishing it from other respiratory or systemic conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f012"
+     ],
+     "5": [
+      "f015"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "My muscles ache all over.",
+     "f012": "I've had chills or shivers.",
+     "f015": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000558": {
+   "a12a": {
+    "target": "f025",
+    "item": "unprotected sex with more than one partner in the last 6 months",
+    "text": "In the last 6 months I've had unprotected sex with more than one partner.",
+    "reason": "Unprotected sex with multiple partners is the primary risk factor that distinguishes acute HIV infection from other causes of sore throat and fever."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "food poisoning",
+    "item": "nausea",
+    "text": "I feel nauseous, like I might vomit.",
+    "reason": "Scombroid food poisoning is a form of food poisoning that typically presents with gastrointestinal symptoms such as nausea and vomiting, making nausea the most relevant entry among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f011",
+      "f014",
+      "f012"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f011": "I have a fever.",
+     "f014": "I have swollen or painful lymph nodes (glands).",
+     "f012": "I'm too tired to do my usual activities or I'm stuck in bed all day."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000664": {
+   "a12a": {
+    "target": "f009",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a key clinical indicator of pulmonary involvement, which is the most common presentation of sarcoidosis, whereas lymphadenopathy is non-specific and agricultural work suggests other etiologies."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a heart attack",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Chest pain is the primary symptom of NSTEMI/STEMI, whereas swollen lymph nodes and agricultural work are not indicative of a heart attack."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f010"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f010": "I work in agriculture."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000668": {
+   "a12a": {
+    "target": "f017",
+    "item": "anemia in the past",
+    "text": "I've been diagnosed with anemia before.",
+    "reason": "A history of previous anemia is the most direct and specific indicator pointing to the current diagnosis of anemia."
+   },
+   "a12a_anchor": {
+    "target": "f019",
+    "anchor": "atrial fibrillation",
+    "item": "new oral anticoagulants (NOACs)",
+    "text": "I'm taking one of the new oral blood thinners (a NOAC).",
+    "reason": "The use of new oral anticoagulants (NOACs) is a specific treatment for atrial fibrillation, making it the strongest indicator of the condition among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f017",
+      "f019"
+     ]
+    },
+    "texts": {
+     "f009": "I've noticed light red blood or blood clots in my stool.",
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I'm tired all the time or my sleep isn't restful.",
+     "f017": "I've been diagnosed with anemia before.",
+     "f019": "I'm taking one of the new oral blood thinners (a NOAC)."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000704": {
+   "a12a": {
+    "target": "f012",
+    "item": "dark-fleshed fish or Swiss cheese before the reaction",
+    "text": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started.",
+    "reason": "Consumption of dark-fleshed fish is the specific dietary trigger for scombroid poisoning, distinguishing it from other allergic or respiratory reactions."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary symptom of pulmonary embolism, whereas the other options point to dermatological or obstructive airway issues."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "I'm quite short of breath; it's hard to breathe.",
+     "f003": "I've noticed a wheezing sound when I breathe out.",
+     "f004": "I have a rash or other skin problem that I think is related to why I came in.",
+     "f012": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000840": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "The patient's initial description of burning rising from the stomach to the throat is the classic hallmark symptom of GERD, making it the most direct and necessary piece of information for the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "unstable angina",
+    "reason": "None of the entries point to unstable angina; they all support gastrointestinal or respiratory conditions like GERD or asthma."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f013",
+      "f014"
+     ]
+    },
+    "texts": {
+     "f009": "My symptoms get worse after I eat.",
+     "f010": "My symptoms get worse when I lie down and better when I sit up.",
+     "f011": "I have a cough.",
+     "f013": "I have a hiatal hernia.",
+     "f014": "I drink too much alcohol or I'm addicted to it."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000912": {
+   "a12a": {
+    "target": "f013",
+    "item": "skin lesions, redness or problems related to this visit",
+    "text": "I have a rash or other skin problem that I think is related to why I came in.",
+    "reason": "The presence of a rash is a key diagnostic criterion for anaphylaxis that distinguishes it from other causes of shortness of breath like asthma or panic attacks."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "fluid in my lungs",
+    "item": "high-pitched sound when breathing in",
+    "text": "I've noticed a high-pitched sound when I breathe in.",
+    "reason": "High-pitched sound when breathing in (stridor) is a specific respiratory sign that, in the context of shortness of breath, points towards airway obstruction or severe respiratory distress associated with pulmonary edema, whereas the other options are non-specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f011",
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f025",
+      "f024",
+      "f023"
+     ]
+    },
+    "texts": {
+     "f011": "I've noticed a high-pitched sound when I breathe in.",
+     "f002": "I have pain.",
+     "f009": "I feel nauseous, like I might vomit.",
+     "f025": "I've been in contact with or eaten something I'm allergic to.",
+     "f024": "I have a known severe food allergy.",
+     "f023": "I'm more likely than most people to get common allergies."
+    }
+   }
+  },
+  "ddxplus-v2-test-0000969": {
+   "a12a": {
+    "target": "f002",
+    "item": "prone to common allergies",
+    "text": "I'm more likely than most people to get common allergies.",
+    "reason": "A personal history of being prone to common allergies is the strongest direct indicator for an allergic etiology of the sinusitis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [
+      "f002",
+      "f003",
+      "f004"
+     ]
+    },
+    "texts": {
+     "f002": "I'm more likely than most people to get common allergies.",
+     "f003": "Some of my close family have allergies, hay fever or eczema.",
+     "f004": "Someone in my family has asthma."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001019": {
+   "a12a": {
+    "target": "f016",
+    "item": "symptoms worse with coughing, lifting or straining",
+    "text": "My symptoms or pain get worse when I cough, lift something heavy or strain on the toilet.",
+    "reason": "Worsening symptoms with coughing, lifting, or straining is a classic clinical sign of an inguinal hernia."
+   },
+   "a12a_anchor": {
+    "target": "f019",
+    "anchor": "pancreatic cancer",
+    "item": "significantly overweight",
+    "text": "I'm quite overweight for my height.",
+    "reason": "Significant overweight is a known risk factor for pancreatic cancer, whereas the other entries describe skin symptoms or unrelated history."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009"
+     ],
+     "5": [
+      "f019"
+     ]
+    },
+    "texts": {
+     "f009": "I have pain.",
+     "f019": "I'm quite overweight for my height."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001136": {
+   "a12a": {
+    "target": "f009",
+    "item": "widespread redness in one or both eyes",
+    "text": "One or both of my eyes are red all over.",
+    "reason": "Uveitis (red eyes) is a classic extra-pulmonary manifestation of sarcoidosis that strongly points to the diagnosis in a young patient with respiratory symptoms."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a heart attack",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Chest pain is the primary symptom of a heart attack, whereas the other options point to infection, neurological issues, or risk factors rather than the acute event itself."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002"
+     ],
+     "5": [
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f012": "I'm quite overweight for my height."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001220": {
+   "a12a": {
+    "target": "f007",
+    "item": "contact with someone with Ebola in the last month",
+    "text": "In the last month I've been in contact with someone infected with Ebola.",
+    "reason": "Direct contact with a confirmed Ebola case is the most specific and critical epidemiological link required to diagnose Ebola."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "lung cancer",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "Cough is a primary and common symptom of pulmonary neoplasm, whereas the other options point to different conditions or are less specific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f004"
+     ],
+     "5": [
+      "f007",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f004": "Since this started I've noticed unusual bleeding or bruising.",
+     "f007": "In the last month I've been in contact with someone infected with Ebola.",
+     "f008": "In the last 4 weeks I travelled to West Africa."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001302": {
+   "a12a": {
+    "target": "f009",
+    "item": "symptoms worse with coughing, lifting or straining",
+    "text": "My symptoms or pain get worse when I cough, lift something heavy or strain on the toilet.",
+    "reason": "Worsening symptoms with coughing, lifting, or straining is a classic hallmark of an inguinal hernia due to increased intra-abdominal pressure."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "pancreatic cancer",
+    "reason": "None of the provided entries (generic pain, skin rash, or being overweight) are specific clinical indicators that would strongly suggest a pancreatic neoplasm over other common conditions in an 18-year-old."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f019"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "My symptoms or pain get worse when I cough, lift something heavy or strain on the toilet.",
+     "f019": "I'm quite overweight for my height."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001305": {
+   "a12a": {
+    "target": "f012",
+    "item": "feeling of dying",
+    "text": "I feel like I'm dying, or I was afraid I was about to die.",
+    "reason": "The sensation of impending doom or fear of dying is a hallmark symptom that strongly distinguishes a panic attack from other causes of shortness of breath."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a heart attack",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Chest pain is the hallmark symptom of NSTEMI/STEMI, making it the most indicative fact for this condition among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f013"
+     ]
+    },
+    "texts": {
+     "f009": "I get palpitations; my heart races or beats irregularly.",
+     "f010": "Recently I've had numbness, loss of feeling or tingling in both arms and both legs and around my mouth.",
+     "f011": "I feel anxious.",
+     "f013": "I suffer from chronic anxiety."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001371": {
+   "a12a": {
+    "target": "f002",
+    "item": "skin problem: location",
+    "text": "It's on my right cheek and my nose, and nowhere else.",
+    "reason": "The specific distribution of the rash on the cheeks and nose describes the classic malar (butterfly) rash, which is a hallmark diagnostic feature of Systemic Lupus Erythematosus (SLE)."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "a heart attack",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Chest pain is the primary symptom of NSTEMI/STEMI, whereas the other entries describe skin or systemic issues unrelated to acute coronary syndrome."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f008",
+      "f016"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f008": "I have pain.",
+     "f016": "I have painful ulcers or sores in my mouth."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001411": {
+   "a12a": {
+    "target": "f016",
+    "item": "painful mouth ulcers or sores",
+    "text": "I have painful ulcers or sores in my mouth.",
+    "reason": "Painful oral ulcers are a specific diagnostic criterion for Systemic Lupus Erythematosus (SLE) and are highly indicative of the disease in a young woman."
+   },
+   "a12a_anchor": {
+    "target": "f015",
+    "anchor": "a heart attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a key symptom associated with acute myocardial infarction, whereas the other entries relate to skin conditions or are less specific risk factors."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f008",
+      "f015",
+      "f016"
+     ],
+     "5": [
+      "f018",
+      "f019"
+     ]
+    },
+    "texts": {
+     "f008": "I have pain.",
+     "f015": "I'm quite short of breath; it's hard to breathe.",
+     "f016": "I have painful ulcers or sores in my mouth.",
+     "f018": "I've had pericarditis before.",
+     "f019": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001456": {
+   "a12a": {
+    "target": "f009",
+    "item": "symptoms worsening over 2 weeks with less effort bringing them on",
+    "text": "Over the last 2 weeks my symptoms have got worse, and it takes less and less effort to bring them on.",
+    "reason": "The worsening of symptoms over two weeks with less effort required to trigger them is the specific clinical criterion that distinguishes unstable angina from stable angina."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "acid reflux",
+    "item": "pain: location",
+    "text": "It's in my lower chest, the front of my right upper arm, the right side of my chest, my upper chest and the upper middle part of my belly, and nowhere else.",
+    "reason": "The pain location in the upper middle part of the belly (epigastric region) is a classic symptom of GERD, whereas the other locations and symptoms point more strongly towards cardiac issues."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007",
+      "f009"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f012",
+      "f014"
+     ]
+    },
+    "texts": {
+     "f007": "It came on fairly quickly.",
+     "f009": "Over the last 2 weeks my symptoms have got worse, and it takes less and less effort to bring them on.",
+     "f002": "The pain is nagging and exhausting.",
+     "f005": "I'd rate it 7 out of 10.",
+     "f008": "My symptoms get worse when I exert myself and ease off when I rest.",
+     "f010": "I'm tired all the time or my sleep isn't restful.",
+     "f011": "I have high blood pressure or take medicine for it.",
+     "f012": "I've had a heart attack or I have angina.",
+     "f014": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001508": {
+   "a12a": {
+    "target": "f012",
+    "item": "deep vein thrombosis in the past",
+    "text": "I've had a deep vein thrombosis (a blood clot in a leg vein).",
+    "reason": "A history of deep vein thrombosis is a major risk factor and strong clinical indicator for pulmonary embolism."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "fluid in my lungs",
+    "item": "swelling somewhere in the body",
+    "text": "I have swelling in one or more parts of my body.",
+    "reason": "Swelling in the body is a common sign of fluid overload associated with acute pulmonary edema, whereas the other options point to pulmonary embolism or unrelated conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f012",
+      "f013",
+      "f014"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "The pain gets worse when I breathe in deeply.",
+     "f010": "I have swelling in one or more parts of my body.",
+     "f012": "I've had a deep vein thrombosis (a blood clot in a leg vein).",
+     "f013": "I have an active cancer.",
+     "f014": "I've had surgery within the last month."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001540": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Worsening symptoms with coughing, lifting, or straining is a classic clinical sign of an inguinal hernia due to increased intra-abdominal pressure."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "pancreatic cancer",
+    "reason": "Neither entry points to pancreatic neoplasm; skin lesions are nonspecific and being overweight is a general risk factor not specific to this condition compared to the other option."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002"
+     ],
+     "5": [
+      "f018"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f018": "I'm quite overweight for my height."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001613": {
+   "a12a": {
+    "target": "f006",
+    "item": "weakness in both arms or both legs",
+    "text": "I feel weakness in both arms and/or both legs.",
+    "reason": "Ascending symmetric weakness in both arms and legs is the hallmark clinical feature of Guillain-Barré syndrome."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Shortness of breath is a primary symptom of pulmonary embolism, whereas the other options point to neurological conditions like stroke or multiple sclerosis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f004",
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f008"
+     ]
+    },
+    "texts": {
+     "f004": "Recently I've had numbness, loss of feeling or tingling in both arms and both legs and around my mouth.",
+     "f006": "I feel weakness in both arms and/or both legs.",
+     "f007": "I've noticed weakness in my face muscles and/or my eyes.",
+     "f008": "I've had a viral infection recently."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001724": {
+   "a12a": {
+    "target": "f014",
+    "item": "anemia in the past",
+    "text": "I've been diagnosed with anemia before.",
+    "reason": "A history of previous anemia is the most direct and specific indicator pointing to the correct diagnosis among the choices."
+   },
+   "a12a_anchor": {
+    "target": "f017",
+    "anchor": "Ebola",
+    "item": "travel out of the country in the last 4 weeks",
+    "text": "In the last 4 weeks I travelled to South America.",
+    "reason": "Travel to an endemic region within the last 4 weeks is a critical epidemiological risk factor for Ebola, whereas the other symptoms are non-specific or point to different conditions like anemia or GI bleeding."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f011",
+      "f012",
+      "f013"
+     ],
+     "5": [
+      "f014",
+      "f016",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f011": "I'm too tired to do my usual activities or I'm stuck in bed all day.",
+     "f012": "My skin is much paler than usual.",
+     "f013": "I feel lightheaded and dizzy or faint.",
+     "f014": "I've been diagnosed with anemia before.",
+     "f016": "I have a poor diet.",
+     "f017": "In the last 4 weeks I travelled to South America."
+    }
+   }
+  },
+  "ddxplus-v2-test-0001848": {
+   "a12a": {
+    "target": "f006",
+    "item": "trouble opening or raising the eyelids",
+    "text": "I have a hard time opening or raising one or both of my eyelids.",
+    "reason": "The patient's initial statement describes fatigable weakness, and ptosis (difficulty raising eyelids) is the most common and characteristic presenting symptom of myasthenia gravis that confirms the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary symptom of pulmonary embolism, whereas the other entries point to neuromuscular conditions like myasthenia gravis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f005"
+     ],
+     "5": [
+      "f009"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain or weakness in my jaw.",
+     "f003": "Swallowing is difficult or feels uncomfortable or blocked.",
+     "f005": "I'm seeing double: two images of one thing, overlapping or side by side.",
+     "f009": "Someone in my family has been diagnosed with myasthenia gravis."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002202": {
+   "a12a": {
+    "target": "f009",
+    "item": "fast or irregular heartbeat, or palpitations",
+    "text": "I get palpitations; my heart races or beats irregularly.",
+    "reason": "Palpitations and a racing heart are the hallmark symptoms of Paroxysmal Supraventricular Tachycardia (PSVT), distinguishing it from other causes of pain or anxiety."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "a panic attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Shortness of breath is a hallmark somatic symptom of a panic attack, distinguishing it from other causes of pain or anxiety."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f012"
+     ]
+    },
+    "texts": {
+     "f007": "It came on all of a sudden.",
+     "f002": "The pain is pulling (tugging).",
+     "f005": "I'd rate it 6 out of 10.",
+     "f008": "I'm quite short of breath; it's hard to breathe.",
+     "f009": "I get palpitations; my heart races or beats irregularly.",
+     "f010": "I feel lightheaded and dizzy or faint.",
+     "f012": "I regularly take stimulant drugs."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002307": {
+   "a12a": {
+    "target": "f019",
+    "item": "coughing up coloured or more sputum than usual",
+    "text": "My cough brings up coloured sputum or more sputum than usual.",
+    "reason": "Purulent sputum is a specific clinical sign of lower respiratory tract infection that strongly supports a diagnosis of pneumonia over other causes of cough."
+   },
+   "a12a_anchor": {
+    "target": "f020",
+    "anchor": "tuberculosis",
+    "item": "coughing up blood",
+    "text": "I've been coughing up blood.",
+    "reason": "Coughing up blood (hemoptysis) is a classic and specific symptom of pulmonary tuberculosis, whereas other symptoms like cough or fever are less specific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f016",
+      "f021"
+     ],
+     "5": [
+      "f030",
+      "f029",
+      "f025"
+     ]
+    },
+    "texts": {
+     "f009": "I have pain.",
+     "f016": "The pain gets worse when I breathe in deeply.",
+     "f021": "I have a fever.",
+     "f030": "I smoke cigarettes.",
+     "f029": "I drink too much alcohol or I'm addicted to it.",
+     "f025": "I have asthma or I've needed a bronchodilator inhaler before."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002459": {
+   "a12a": {
+    "target": "f011",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath indicates respiratory compromise, a critical life-threatening feature that distinguishes anaphylaxis from simple local allergic reactions."
+   },
+   "a12a_anchor": {
+    "target": "f012",
+    "anchor": "an asthma attack",
+    "item": "wheezing when breathing out",
+    "text": "I've noticed a wheezing sound when I breathe out.",
+    "reason": "Wheezing on expiration is a hallmark clinical sign of bronchospasm and acute asthma exacerbation."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003",
+      "f015"
+     ],
+     "5": [
+      "f023"
+     ]
+    },
+    "texts": {
+     "f003": "I have pain.",
+     "f015": "I have a rash or other skin problem that I think is related to why I came in.",
+     "f023": "I'm more likely than most people to get common allergies."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002503": {
+   "a12a": {
+    "target": "f026",
+    "item": "sex with an HIV-positive partner in the past 12 months",
+    "text": "In the past 12 months I've had sex with a partner who is HIV-positive.",
+    "reason": "Sex with an HIV-positive partner is the most specific risk factor that directly points to the diagnosis of HIV infection."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "anemia",
+    "item": "too tired to do usual activities",
+    "text": "I'm too tired to do my usual activities or I'm stuck in bed all day.",
+    "reason": "Fatigue is a primary and common symptom of anemia, whereas the other options point to different conditions or are less specific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f010",
+      "f013"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f010": "I feel nauseous, like I might vomit.",
+     "f013": "I've lost weight without trying over the last 3 months."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002634": {
+   "a12a": {
+    "target": "f010",
+    "item": "green or yellow nasal discharge",
+    "text": "I have greenish or yellowish discharge from my nose.",
+    "reason": "Purulent (green or yellow) nasal discharge is a key clinical sign distinguishing acute bacterial rhinosinusitis from a common cold or allergic rhinitis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "cluster headaches",
+    "reason": "None of the listed entries describe the characteristic unilateral periorbital pain, autonomic symptoms (like lacrimation or rhinorrhea specific to the side), or circadian periodicity required to diagnose cluster headache; the entries provided are largely related to respiratory or allergic conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f012",
+      "f015",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I have a stuffy nose or a clear runny nose.",
+     "f010": "I have greenish or yellowish discharge from my nose.",
+     "f012": "I've had pneumonia before.",
+     "f015": "I've been diagnosed with gastroesophageal reflux.",
+     "f017": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002654": {
+   "a12a": {
+    "target": "f008",
+    "item": "contact with someone with similar symptoms in the past 2 weeks",
+    "text": "In the past 2 weeks I've been around someone with similar symptoms.",
+    "reason": "Contact with a symptomatic individual is the most specific epidemiological clue that distinguishes an infectious URTI from other causes of nasal congestion."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "tuberculosis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "Cough is a primary respiratory symptom strongly associated with tuberculosis, whereas the other options are less specific or point to different conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f006",
+      "f007",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f002": "My muscles ache all over.",
+     "f003": "I have a cough.",
+     "f004": "I have a fever.",
+     "f006": "I smoke cigarettes.",
+     "f007": "I'm around second-hand cigarette smoke every day.",
+     "f008": "In the past 2 weeks I've been around someone with similar symptoms."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002707": {
+   "a12a": {
+    "target": "f009",
+    "item": "fast or irregular heartbeat, or palpitations",
+    "text": "I get palpitations; my heart races or beats irregularly.",
+    "reason": "Palpitations and a racing heart are the hallmark symptoms of Paroxysmal Supraventricular Tachycardia (PSVT), making this the most direct indicator for the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "anemia",
+    "item": "lightheaded and dizzy, or about to faint",
+    "text": "I feel lightheaded and dizzy or faint.",
+    "reason": "The entry describes lightheadedness and dizziness, which are classic symptoms of anemia, whereas the other options are non-specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009"
+     ],
+     "5": [
+      "f011",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f009": "I get palpitations; my heart races or beats irregularly.",
+     "f011": "I regularly take stimulant drugs.",
+     "f012": "I regularly drink coffee or tea."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002870": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "The symptom of pain worsening when lying down and improving when sitting up is the classic positional hallmark of pericarditis."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a heart attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a common symptom of acute myocardial infarction due to heart failure or pulmonary congestion, whereas the other options point more strongly to pericarditis or are less specific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f010": "I get palpitations; my heart races or beats irregularly.",
+     "f011": "I've had pericarditis before.",
+     "f012": "I've had a viral infection recently."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002930": {
+   "a12a": {
+    "target": "f011",
+    "item": "coughing up blood",
+    "text": "I've been coughing up blood.",
+    "reason": "Hemoptysis (coughing up blood) is a highly specific and alarming symptom that strongly points towards a pulmonary neoplasm or other serious lung pathology, distinguishing it from benign causes of pain or cough."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "tuberculosis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary respiratory symptom strongly associated with tuberculosis, whereas the other entries are non-specific or point to other conditions like lung cancer."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f009",
+      "f011",
+      "f013"
+     ],
+     "5": [
+      "f014",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f007": "It came on slowly.",
+     "f002": "The pain is tender.",
+     "f005": "I'd rate it 5 out of 10.",
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I've been coughing up blood.",
+     "f013": "I've lost weight without trying over the last 3 months.",
+     "f014": "I smoke cigarettes.",
+     "f015": "Some of my family members have had lung cancer."
+    }
+   }
+  },
+  "ddxplus-v2-test-0002984": {
+   "a12a": {
+    "target": "f010",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Chronic Chagas disease frequently presents with cardiac complications such as heart failure, which manifests as significant shortness of breath."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "cluster headaches",
+    "reason": "None of the listed entries (general pain, diarrhea, fatigue, weight loss) are specific clinical features of cluster headache, which is characterized by severe unilateral periorbital pain, autonomic symptoms, and periodicity."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f011",
+      "f012"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f011": "Since this started I've had new tiredness, a vague general discomfort, aching muscles or a change in how well I feel overall.",
+     "f012": "I've been losing weight without trying or I've lost my appetite."
+    }
+   }
+  },
+  "ddxplus-v2-test-0003138": {
+   "a12a": {
+    "target": "f009",
+    "item": "deeper, softer or hoarse voice",
+    "text": "My voice has become deeper, softer or hoarse.",
+    "reason": "Hoarseness is the hallmark symptom of laryngitis, directly indicating inflammation of the vocal cords."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f010",
+      "f011"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "My voice has become deeper, softer or hoarse.",
+     "f010": "I smoke cigarettes.",
+     "f011": "I live with 4 or more people."
+    }
+   }
+  },
+  "ddxplus-v2-test-0003159": {
+   "a12a": {
+    "target": "f010",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a key symptom of myocardial infarction, particularly in cases where chest pain is atypical or absent, making it a critical diagnostic clue."
+   },
+   "a12a_anchor": {
+    "target": "f019",
+    "anchor": "a collapsed lung",
+    "item": "smoking cigarettes",
+    "text": "I smoke cigarettes.",
+    "reason": "Smoking is a major risk factor for spontaneous pneumothorax, particularly in younger men, making it the most relevant entry among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f012",
+      "f013",
+      "f019"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I feel nauseous, like I might vomit.",
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f012": "I have high blood pressure or take medicine for it.",
+     "f013": "I have high cholesterol or take medicine for it.",
+     "f019": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0003391": {
+   "a12a": {
+    "target": "f010",
+    "item": "repeated vomiting or retching",
+    "text": "I've vomited several times or kept trying to vomit.",
+    "reason": "Boerhaave syndrome is an esophageal rupture caused by forceful vomiting or retching, making this history the most critical diagnostic clue."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "acid reflux",
+    "item": "nausea",
+    "text": "I feel nauseous, like I might vomit.",
+    "reason": "Nausea is a common associated symptom of GERD, whereas pain is non-specific and shortness of breath is the primary complaint already stated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I feel nauseous, like I might vomit.",
+     "f010": "I've vomited several times or kept trying to vomit."
+    }
+   }
+  },
+  "ddxplus-v2-test-0003489": {
+   "a12a": {
+    "target": "f009",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "Cough is the primary and most characteristic symptom of bronchitis, whereas wheezing is non-specific and COPD is a comorbidity rather than the acute diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "laryngitis",
+    "item": "sore throat",
+    "text": "I have a sore throat.",
+    "reason": "Sore throat is a primary symptom of acute laryngitis, whereas wheezing and COPD point to lower airway or obstructive conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011"
+     ]
+    },
+    "texts": {
+     "f009": "I have a cough.",
+     "f010": "I have a sore throat.",
+     "f011": "I have COPD."
+    }
+   }
+  },
+  "ddxplus-v2-test-0003580": {
+   "a12a": {
+    "target": "f013",
+    "item": "skin lesions, redness or problems related to this visit",
+    "text": "I have a rash or other skin problem that I think is related to why I came in.",
+    "reason": "The presence of a rash is a key diagnostic criterion for anaphylaxis, distinguishing it from other causes of lightheadedness or respiratory distress."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a panic attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a core somatic symptom of a panic attack, whereas the other options point to allergic reactions or are too nonspecific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f021"
+     ],
+     "5": [
+      "f025"
+     ]
+    },
+    "texts": {
+     "f009": "I feel nauseous, like I might vomit.",
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f021": "I have swelling in one or more parts of my body.",
+     "f025": "I've been in contact with or eaten something I'm allergic to."
+    }
+   }
+  },
+  "ddxplus-v2-test-0003614": {
+   "a12a": {
+    "target": "f006",
+    "item": "antipsychotic medicine in the last 7 days",
+    "text": "I've started or taken an antipsychotic medicine in the last 7 days.",
+    "reason": "The use of antipsychotic medication within the last 7 days is the primary precipitating factor for acute dystonic reactions, making it the most critical piece of history for diagnosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a blood clot in my lungs",
+    "reason": "None of the listed entries describe symptoms or risk factors specific to pulmonary embolism, such as pleuritic chest pain, hemoptysis, or deep vein thrombosis, and instead point to other conditions like tetanus, dystonia, or drug use."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f006"
+     ]
+    },
+    "texts": {
+     "f002": "All of a sudden I have trouble opening my mouth, or it hurts my jaw to open it.",
+     "f003": "I have trouble keeping my tongue in my mouth.",
+     "f004": "I have annoying muscle spasms in my face, neck or somewhere else in my body.",
+     "f006": "I've started or taken an antipsychotic medicine in the last 7 days."
+    }
+   }
+  },
+  "ddxplus-v2-test-0004270": {
+   "a12a": {
+    "target": "f010",
+    "item": "coughing up blood",
+    "text": "I've been coughing up blood.",
+    "reason": "Hemoptysis (coughing up blood) is a highly specific and alarming symptom that strongly points towards a pulmonary neoplasm or other serious lung pathology."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "fluid in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a hallmark symptom of acute pulmonary edema, whereas the other entries describe pain characteristics or unrelated risk factors."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f013"
+     ]
+    },
+    "texts": {
+     "f007": "It came on fairly quickly.",
+     "f002": "The pain is tender and stabbing (like a knife).",
+     "f005": "I'd rate it 3 out of 10.",
+     "f008": "Lately I've lost my appetite or I get full sooner than usual.",
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f010": "I've been coughing up blood.",
+     "f013": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0004351": {
+   "a12a": {
+    "target": "f009",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a key symptom of myocardial infarction, especially in women who may present with atypical symptoms like dyspnea rather than classic chest pain."
+   },
+   "a12a_anchor": {
+    "target": "f014",
+    "anchor": "acid reflux",
+    "item": "significantly overweight",
+    "text": "I'm quite overweight for my height.",
+    "reason": "Being significantly overweight is a major risk factor for GERD due to increased intra-abdominal pressure, whereas the other options are unrelated or less specific."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f010",
+      "f011",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I'm quite short of breath; it's hard to breathe.",
+     "f010": "I have high blood pressure or take medicine for it.",
+     "f011": "I have high cholesterol or take medicine for it.",
+     "f015": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0004374": {
+   "a12a": {
+    "target": "f013",
+    "item": "nasal polyps",
+    "text": "I have polyps in my nose.",
+    "reason": "Nasal polyps are a specific structural finding strongly associated with chronic rhinosinusitis, distinguishing it from simple acute sinusitis or allergic rhinitis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "cluster headaches",
+    "reason": "None of the provided entries describe the characteristic unilateral periorbital pain, autonomic symptoms, or temporal patterns associated with cluster headaches; they primarily point to respiratory or allergic conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f012",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I have a stuffy nose or a clear runny nose.",
+     "f010": "I've lost my sense of smell.",
+     "f011": "I have asthma or I've needed a bronchodilator inhaler before.",
+     "f012": "I've had pneumonia before.",
+     "f015": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0004486": {
+   "a12a": {
+    "target": "f011",
+    "item": "choking or breathlessness that wakes me at night",
+    "text": "I have bouts of choking or shortness of breath that wake me up at night.",
+    "reason": "Paroxysmal nocturnal dyspnea (waking up at night with choking/breathlessness) is a specific and classic symptom of acute pulmonary edema, distinguishing it from other causes of dyspnea."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "unstable angina",
+    "item": "symptoms worse with exertion and better with rest",
+    "text": "My symptoms get worse when I exert myself and ease off when I rest.",
+    "reason": "The entry describing symptoms that worsen with exertion and improve with rest is the classic clinical definition of angina pectoris, directly supporting the diagnosis of unstable angina."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f010",
+      "f011",
+      "f012"
+     ],
+     "5": [
+      "f015",
+      "f016",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I have bouts of choking or shortness of breath that wake me up at night.",
+     "f012": "Since this started I've had new tiredness, a vague general discomfort, aching muscles or a change in how well I feel overall.",
+     "f015": "I have high blood pressure or take medicine for it.",
+     "f016": "I've had a heart attack or I have angina.",
+     "f017": "I have heart failure."
+    }
+   }
+  },
+  "ddxplus-v2-test-0004776": {
+   "a12a": {
+    "target": "f011",
+    "item": "green or yellow nasal discharge",
+    "text": "I have greenish or yellowish discharge from my nose.",
+    "reason": "Purulent (green or yellow) nasal discharge is a key clinical sign distinguishing acute bacterial rhinosinusitis from a common cold or allergic rhinitis."
+   },
+   "a12a_anchor": {
+    "target": "f018",
+    "anchor": "strep throat",
+    "item": "cold in the last 2 weeks",
+    "text": "I've had a cold in the last 2 weeks.",
+    "reason": "A recent cold is a common viral illness that frequently presents with or precedes viral pharyngitis, making it the most relevant supporting fact among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f010"
+     ],
+     "3": [],
+     "4": [
+      "f009",
+      "f011"
+     ],
+     "5": [
+      "f015",
+      "f017",
+      "f020"
+     ]
+    },
+    "texts": {
+     "f010": "I have a stuffy nose or a clear runny nose.",
+     "f009": "I have a cough.",
+     "f011": "I have greenish or yellowish discharge from my nose.",
+     "f015": "I have polyps in my nose.",
+     "f017": "I'm more likely than most people to get common allergies.",
+     "f020": "I smoke cigarettes."
+    }
+   }
+  },
+  "ddxplus-v2-test-0004799": {
+   "a12a": {
+    "target": "f010",
+    "item": "green or yellow nasal discharge",
+    "text": "I have greenish or yellowish discharge from my nose.",
+    "reason": "Green or yellow nasal discharge is a hallmark symptom of bacterial infection associated with chronic rhinosinusitis, distinguishing it from viral or allergic causes."
+   },
+   "a12a_anchor": {
+    "target": "f018",
+    "anchor": "laryngitis",
+    "item": "cold in the last 2 weeks",
+    "text": "I've had a cold in the last 2 weeks.",
+    "reason": "A recent cold is a common viral precursor to acute laryngitis, making it the most relevant supporting fact among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f010"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f011"
+     ],
+     "5": [
+      "f012",
+      "f013",
+      "f016"
+     ]
+    },
+    "texts": {
+     "f010": "I have greenish or yellowish discharge from my nose.",
+     "f002": "I have pain.",
+     "f009": "I have a stuffy nose or a clear runny nose.",
+     "f011": "I've lost my sense of smell.",
+     "f012": "I have asthma or I've needed a bronchodilator inhaler before.",
+     "f013": "I've had pneumonia before.",
+     "f016": "I've been diagnosed with gastroesophageal reflux."
+    }
+   }
+  },
+  "ddxplus-v2-test-0004867": {
+   "a12a": {
+    "target": "f002",
+    "item": "weakness in both arms or both legs",
+    "text": "I feel weakness in both arms and/or both legs.",
+    "reason": "Bilateral weakness is the hallmark clinical feature of Guillain-Barré syndrome, distinguishing it from unilateral conditions like stroke."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002"
+     ],
+     "5": [
+      "f003"
+     ]
+    },
+    "texts": {
+     "f002": "I feel weakness in both arms and/or both legs.",
+     "f003": "I've had a viral infection recently."
+    }
+   }
+  },
+  "ddxplus-v2-test-0005558": {
+   "a12a": {
+    "target": "f004",
+    "item": "myasthenia gravis in the family",
+    "text": "Someone in my family has been diagnosed with myasthenia gravis.",
+    "reason": "A family history of myasthenia gravis is a specific risk factor that strongly points to the diagnosis in a young patient with bulbar symptoms."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "anemia",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a common symptom of anemia due to reduced oxygen-carrying capacity, whereas the other options are unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003"
+     ],
+     "5": [
+      "f004"
+     ]
+    },
+    "texts": {
+     "f002": "Swallowing is difficult or feels uncomfortable or blocked.",
+     "f003": "I'm quite short of breath; it's hard to breathe.",
+     "f004": "Someone in my family has been diagnosed with myasthenia gravis."
+    }
+   }
+  },
+  "ddxplus-v2-test-0005723": {
+   "a12a": {
+    "target": "f009",
+    "item": "pale stools with dark urine",
+    "text": "My stools are pale and my urine is dark.",
+    "reason": "Pale stools and dark urine indicate obstructive jaundice, a hallmark sign of pancreatic head tumors causing biliary obstruction."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "a severe allergic reaction",
+    "item": "skin lesions, redness or problems related to this visit",
+    "text": "I have a rash or other skin problem that I think is related to why I came in.",
+    "reason": "A rash is a hallmark cutaneous sign of anaphylaxis, whereas the other entries relate to chronic conditions or non-specific symptoms."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f019",
+      "f020",
+      "f022"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "My stools are pale and my urine is dark.",
+     "f010": "I'm tired all the time or my sleep isn't restful.",
+     "f019": "I have chronic pancreatitis.",
+     "f020": "I'm quite overweight for my height.",
+     "f022": "Someone in my family has been diagnosed with pancreatic cancer."
+    }
+   }
+  },
+  "ddxplus-v2-test-0005796": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Boerhaave syndrome is a spontaneous esophageal rupture caused by forceful vomiting, making the history of repeated vomiting the critical diagnostic clue."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "pancreatic cancer",
+    "item": "excessive drinking or alcohol addiction",
+    "text": "I drink too much alcohol or I'm addicted to it.",
+    "reason": "Excessive alcohol use is a major risk factor for pancreatic cancer, whereas nausea and hematemesis are non-specific symptoms or signs of other conditions like gastritis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f002"
+     ],
+     "5": [
+      "f011"
+     ]
+    },
+    "texts": {
+     "f009": "I feel nauseous, like I might vomit.",
+     "f010": "I've recently thrown up blood or something that looked like coffee grounds.",
+     "f002": "I have pain.",
+     "f011": "I drink too much alcohol or I'm addicted to it."
+    }
+   }
+  },
+  "ddxplus-v2-test-0005954": {
+   "a12a": {
+    "target": "f003",
+    "item": "numbness or tingling in both arms and legs and around the mouth",
+    "text": "Recently I've had numbness, loss of feeling or tingling in both arms and both legs and around my mouth.",
+    "reason": "Ascending paresthesias (numbness/tingling) in the extremities and perioral area are a hallmark early symptom of Guillain-Barré syndrome, distinguishing it from other causes of weakness."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a panic attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Shortness of breath is a common somatic symptom of a panic attack, whereas limb weakness or paralysis suggests neurological conditions like stroke or MS."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003",
+      "f002"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f003": "Recently I've had numbness, loss of feeling or tingling in both arms and both legs and around my mouth.",
+     "f002": "I'm quite short of breath; it's hard to breathe."
+    }
+   }
+  },
+  "ddxplus-v2-test-0006065": {
+   "a12a": {
+    "target": "f011",
+    "item": "stuffy nose or clear runny nose",
+    "text": "I have a stuffy nose or a clear runny nose.",
+    "reason": "The presence of a stuffy nose or clear runny nose is a key distinguishing feature that points towards a viral etiology rather than bacterial pharyngitis."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "tuberculosis",
+    "item": "coughing up blood",
+    "text": "I've been coughing up blood.",
+    "reason": "Coughing up blood (hemoptysis) is a classic and highly specific symptom that strongly points towards tuberculosis, especially in the context of respiratory complaints."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f013",
+      "f014",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f007": "It came on slowly.",
+     "f002": "The pain is tender and burning.",
+     "f005": "I'd rate it 7 out of 10.",
+     "f008": "I have a cough.",
+     "f009": "I've been coughing up blood.",
+     "f010": "I have a fever.",
+     "f013": "I smoke cigarettes.",
+     "f014": "In the past 2 weeks I've been around someone with similar symptoms.",
+     "f015": "I go to or work in a daycare."
+    }
+   }
+  },
+  "ddxplus-v2-test-0006553": {
+   "a12a": {
+    "target": "f002",
+    "item": "pain related to the reason for coming in",
+    "text": "I have pain.",
+    "reason": "Unilateral lacrimation (watery eyes) is a specific autonomic symptom strongly associated with cluster headaches, whereas general pain and alcohol use are non-specific."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002"
+     ],
+     "5": [
+      "f009"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I drink too much alcohol or I'm addicted to it."
+    }
+   }
+  },
+  "ddxplus-v2-test-0007672": {
+   "a12a": {
+    "target": "f010",
+    "item": "deeper, softer or hoarse voice",
+    "text": "My voice has become deeper, softer or hoarse.",
+    "reason": "Hoarseness is the hallmark symptom of laryngitis, directly indicating inflammation of the larynx."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "tuberculosis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary respiratory symptom strongly associated with tuberculosis, whereas fever is already stated and a recent cold suggests a different acute cause."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I have a cough.",
+     "f010": "My voice has become deeper, softer or hoarse.",
+     "f011": "I've had a cold in the last 2 weeks."
+    }
+   }
+  },
+  "ddxplus-v2-test-0007767": {
+   "a12a": {
+    "target": "f011",
+    "item": "collapsed lung in the past",
+    "text": "I've had a spontaneous pneumothorax (collapsed lung) before.",
+    "reason": "A history of a previous spontaneous pneumothorax is the strongest predictor for recurrence and directly points to the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a blood clot in my lungs",
+    "item": "pain worse when breathing in deeply",
+    "text": "The pain gets worse when I breathe in deeply.",
+    "reason": "Pleuritic chest pain, which worsens with deep inspiration, is a classic symptom of pulmonary embolism caused by pulmonary infarction or pleural irritation."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011",
+      "f012",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f009": "The pain gets worse when I breathe in deeply.",
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I've had a spontaneous pneumothorax (collapsed lung) before.",
+     "f012": "I smoke cigarettes.",
+     "f013": "Someone in my family has had a pneumothorax (collapsed lung)."
+    }
+   }
+  },
+  "ddxplus-v2-test-0008058": {
+   "a12a": {
+    "target": "f009",
+    "item": "repeated vomiting or retching",
+    "text": "I've vomited several times or kept trying to vomit.",
+    "reason": "Boerhaave syndrome is an esophageal rupture typically caused by forceful vomiting or retching, making this history the most critical diagnostic clue."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "pancreatic cancer",
+    "item": "pain: spread to other places",
+    "text": "It spreads to the middle of my spine and my right shoulder blade, and nowhere else.",
+    "reason": "Pain radiating to the back (spine) and shoulder blade is a classic symptom of pancreatic pathology, whereas the other entries are non-specific or point to other conditions like aortic dissection or GI bleeding."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f011"
+     ]
+    },
+    "texts": {
+     "f007": "It came on all of a sudden.",
+     "f002": "The pain is tearing, stabbing (like a knife), violent and sickening.",
+     "f005": "I'd rate it 9 out of 10.",
+     "f008": "I feel nauseous, like I might vomit.",
+     "f009": "I've vomited several times or kept trying to vomit.",
+     "f010": "I've recently thrown up blood or something that looked like coffee grounds.",
+     "f011": "I drink too much alcohol or I'm addicted to it."
+    }
+   }
+  },
+  "ddxplus-v2-test-0008669": {
+   "a12a": {
+    "target": "f010",
+    "item": "collapsed lung in the past",
+    "text": "I've had a spontaneous pneumothorax (collapsed lung) before.",
+    "reason": "A history of previous spontaneous pneumothorax is the strongest predictor for recurrence and directly points to the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "angina",
+    "item": "symptoms worse with exertion and better with rest",
+    "text": "My symptoms get worse when I exert myself and ease off when I rest.",
+    "reason": "Stable angina is classically defined by chest pain that is provoked by exertion and relieved by rest, which is the specific pattern described in entry f009."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009"
+     ],
+     "5": [
+      "f010",
+      "f011",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f009": "My symptoms get worse when I exert myself and ease off when I rest.",
+     "f010": "I've had a spontaneous pneumothorax (collapsed lung) before.",
+     "f011": "I smoke cigarettes.",
+     "f012": "Someone in my family has had a pneumothorax (collapsed lung)."
+    }
+   }
+  },
+  "ddxplus-v2-test-0010794": {
+   "a12a": {
+    "target": "f010",
+    "item": "pain worse when breathing in deeply",
+    "text": "The pain gets worse when I breathe in deeply.",
+    "reason": "Pain that worsens with deep breathing is the hallmark symptom of a rib fracture, distinguishing it from other causes of chest pain."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "bronchitis",
+    "item": "intense coughing fits",
+    "text": "I have intense coughing fits.",
+    "reason": "Intense coughing fits are a specific symptom that strongly supports a diagnosis of bronchitis, whereas the other entries relate to musculoskeletal pain or unrelated lifestyle factors."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f011",
+      "f010"
+     ],
+     "5": [
+      "f012"
+     ]
+    },
+    "texts": {
+     "f011": "I have intense coughing fits.",
+     "f010": "The pain gets worse when I breathe in deeply.",
+     "f012": "I'm being treated for osteoporosis."
+    }
+   }
+  },
+  "ddxplus-v2-test-0012469": {
+   "a12a": {
+    "target": "f002",
+    "item": "diarrhea or more frequent stools",
+    "text": "I've had diarrhea or I've been going to the toilet more often.",
+    "reason": "Pale stools and dark urine are classic signs of obstructive jaundice, which is frequently caused by a pancreatic head tumor blocking the bile duct."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "anemia",
+    "item": "constant tiredness or unrefreshing sleep",
+    "text": "I'm tired all the time or my sleep isn't restful.",
+    "reason": "Constant tiredness is a primary symptom of anemia, whereas the other options are risk factors for other conditions or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f012",
+      "f013",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f002": "I've had diarrhea or I've been going to the toilet more often.",
+     "f003": "I'm tired all the time or my sleep isn't restful.",
+     "f004": "I have a rash or other skin problem that I think is related to why I came in.",
+     "f012": "I have diabetes.",
+     "f013": "I'm quite overweight for my height.",
+     "f015": "Someone in my family has been diagnosed with pancreatic cancer."
+    }
+   }
+  },
+  "ddxplus-v2-test-0013309": {
+   "a12a": {
+    "target": "f009",
+    "item": "antipsychotic medicine in the last 7 days",
+    "text": "I've started or taken an antipsychotic medicine in the last 7 days.",
+    "reason": "The recent use of antipsychotic medication is the primary precipitating factor and essential context for diagnosing an acute dystonic reaction."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary symptom of pulmonary embolism, whereas the other entries relate to neurological or musculoskeletal issues."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f005",
+      "f006"
+     ],
+     "5": [
+      "f009",
+      "f010",
+      "f011"
+     ]
+    },
+    "texts": {
+     "f002": "All of a sudden I have trouble opening my mouth, or it hurts my jaw to open it.",
+     "f005": "I have trouble keeping my tongue in my mouth.",
+     "f006": "I have a hard time opening or raising one or both of my eyelids.",
+     "f009": "I've started or taken an antipsychotic medicine in the last 7 days.",
+     "f010": "I was recently treated in hospital for nausea, agitation, intoxication or aggressive behaviour and given medicine by IV or injection.",
+     "f011": "I regularly take stimulant drugs."
+    }
+   }
+  },
+  "ddxplus-v2-test-0014769": {
+   "a12a": {
+    "target": "f008",
+    "item": "contact with someone with Ebola in the last month",
+    "text": "In the last month I've been in contact with someone infected with Ebola.",
+    "reason": "Direct contact with a confirmed Ebola case is the most specific and critical epidemiological link required to diagnose Ebola."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "a heart attack",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a classic symptom of acute myocardial infarction, often resulting from acute heart failure or pulmonary edema, whereas the other options are less specific or point to different conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003",
+      "f004",
+      "f005"
+     ],
+     "5": [
+      "f009"
+     ]
+    },
+    "texts": {
+     "f003": "I'm quite short of breath; it's hard to breathe.",
+     "f004": "I have a fever.",
+     "f005": "Since this started I've noticed unusual bleeding or bruising.",
+     "f009": "In the last 4 weeks I travelled to West Africa."
+    }
+   }
+  },
+  "ddxplus-v2-test-0021328": {
+   "a12a": {
+    "target": "f009",
+    "item": "pain worse when breathing in deeply",
+    "text": "The pain gets worse when I breathe in deeply.",
+    "reason": "Pleuritic chest pain (worsening with deep inspiration) is a hallmark symptom of pericarditis, distinguishing it from other causes of chest pain."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a hallmark symptom of pulmonary embolism, whereas the other options are less specific or non-diagnostic."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f009": "The pain gets worse when I breathe in deeply.",
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I get palpitations; my heart races or beats irregularly."
+    }
+   }
+  },
+  "ddxplus-v2-test-0024711": {
+   "a12a": {
+    "target": "f010",
+    "item": "contact with someone with Ebola in the last month",
+    "text": "In the last month I've been in contact with someone infected with Ebola.",
+    "reason": "Direct contact with a confirmed Ebola case is the most specific and critical epidemiological link required to diagnose Ebola."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "lung cancer",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "Cough is a primary and direct symptom of pulmonary neoplasm, whereas the other options are less specific or point to different conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f011",
+      "f010",
+      "f009"
+     ]
+    },
+    "texts": {
+     "f002": "My muscles ache all over.",
+     "f003": "I'm quite short of breath; it's hard to breathe.",
+     "f004": "I have a cough.",
+     "f011": "In the last 4 weeks I travelled to West Africa.",
+     "f010": "In the last month I've been in contact with someone infected with Ebola.",
+     "f009": "In the past 2 weeks I've been around someone with similar symptoms."
+    }
+   }
+  },
+  "ddxplus-v2-test-0025307": {
+   "a12a": {
+    "target": "f014",
+    "item": "dark-fleshed fish or Swiss cheese before the reaction",
+    "text": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started.",
+    "reason": "Consumption of dark-fleshed fish is the specific dietary trigger required to distinguish scombroid poisoning from other causes of flushing and respiratory distress."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "a blood clot in my lungs",
+    "item": "lightheaded and dizzy, or about to faint",
+    "text": "I feel lightheaded and dizzy or faint.",
+    "reason": "Lightheadedness and near-syncope are classic signs of hemodynamic compromise caused by a pulmonary embolism, whereas the other options are non-specific or point to different conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003",
+      "f005",
+      "f004"
+     ],
+     "5": [
+      "f014"
+     ]
+    },
+    "texts": {
+     "f003": "I've noticed a wheezing sound when I breathe out.",
+     "f005": "I feel lightheaded and dizzy or faint.",
+     "f004": "My cheeks suddenly turned red.",
+     "f014": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started."
+    }
+   }
+  },
+  "ddxplus-v2-test-0031679": {
+   "a12a": {
+    "target": "f010",
+    "item": "oral antibiotic for an ear infection, now or recently",
+    "text": "I'm on or recently took an oral antibiotic for an ear infection.",
+    "reason": "A history of recent antibiotic treatment for an ear infection is the most specific indicator pointing to the diagnosis of acute otitis media among the choices."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002"
+     ],
+     "5": [
+      "f010"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f010": "I'm on or recently took an oral antibiotic for an ear infection."
+    }
+   }
+  },
+  "ddxplus-v2-test-0037820": {
+   "a12a": {
+    "target": "f009",
+    "item": "contact with someone with Ebola in the last month",
+    "text": "In the last month I've been in contact with someone infected with Ebola.",
+    "reason": "Direct contact with a known Ebola case is the most specific and critical epidemiological link required to diagnose Ebola."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "pneumonia",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Shortness of breath is a key respiratory symptom that strongly points to pneumonia, whereas the other options are less specific or point to different conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f005",
+      "f002",
+      "f006"
+     ],
+     "5": [
+      "f010",
+      "f009",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f005": "I have a fever.",
+     "f002": "My muscles ache all over.",
+     "f006": "Since this started I've noticed unusual bleeding or bruising.",
+     "f010": "In the last 4 weeks I travelled to West Africa.",
+     "f009": "In the last month I've been in contact with someone infected with Ebola.",
+     "f008": "In the past 2 weeks I've been around someone with similar symptoms."
+    }
+   }
+  },
+  "ddxplus-v2-test-0039711": {
+   "a12a": {
+    "target": "f003",
+    "item": "pain: location",
+    "text": "It's in my right tonsil, my left tonsil, my Adam's apple, the roof of my mouth and the back of my throat (pharynx), and nowhere else.",
+    "reason": "The specific localization of pain to the tonsils and pharynx is the most direct clinical indicator for pharyngitis."
+   },
+   "a12a_anchor": {
+    "target": "f012",
+    "anchor": "a heart attack",
+    "item": "smoking cigarettes",
+    "text": "I smoke cigarettes.",
+    "reason": "Smoking is a significant risk factor for coronary artery disease and myocardial infarction, making it the most relevant entry for a heart attack diagnosis among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": [
+      "f012",
+      "f013",
+      "f014"
+     ]
+    },
+    "texts": {
+     "f007": "It came on slowly.",
+     "f002": "The pain is tender and burning.",
+     "f005": "I'd rate it 5 out of 10.",
+     "f008": "I've been coughing up blood.",
+     "f009": "I have a fever.",
+     "f010": "I have a stuffy nose or a clear runny nose.",
+     "f012": "I smoke cigarettes.",
+     "f013": "In the past 2 weeks I've been around someone with similar symptoms.",
+     "f014": "I go to or work in a daycare."
+    }
+   }
+  },
+  "ddxplus-v2-test-0043876": {
+   "a12a": {
+    "target": "f006",
+    "item": "anemia in the past",
+    "text": "I've been diagnosed with anemia before.",
+    "reason": "A history of previous anemia is the most direct and specific indicator pointing to the current diagnosis of anemia."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "lung cancer",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary respiratory symptom strongly associated with pulmonary neoplasms, whereas the other options are non-specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f005",
+      "f006",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f002": "I'm quite short of breath; it's hard to breathe.",
+     "f003": "I'm tired all the time or my sleep isn't restful.",
+     "f004": "I feel lightheaded and dizzy or faint.",
+     "f005": "I have chronic kidney failure.",
+     "f006": "I've been diagnosed with anemia before.",
+     "f008": "I'm taking one of the new oral blood thinners (a NOAC)."
+    }
+   }
+  },
+  "ddxplus-v2-test-0043993": {
+   "a12a": {
+    "target": "f010",
+    "item": "green or yellow nasal discharge",
+    "text": "I have greenish or yellowish discharge from my nose.",
+    "reason": "Purulent nasal discharge is a hallmark clinical sign of acute bacterial rhinosinusitis, distinguishing it from viral upper respiratory infections."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "tuberculosis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary respiratory symptom strongly associated with tuberculosis, whereas the other options are less specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f010"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f011",
+      "f012",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f010": "I have greenish or yellowish discharge from my nose.",
+     "f002": "I have pain.",
+     "f009": "I have a cough.",
+     "f011": "I have asthma or I've needed a bronchodilator inhaler before.",
+     "f012": "I've had pneumonia before.",
+     "f013": "I have polyps in my nose."
+    }
+   }
+  },
+  "ddxplus-v2-test-0053720": {
+   "a12a": {
+    "target": "f011",
+    "item": "high-pitched sound when breathing in",
+    "text": "I've noticed a high-pitched sound when I breathe in.",
+    "reason": "Stridor (high-pitched sound when breathing in) is a hallmark sign of airway obstruction caused by epiglottitis, distinguishing it from other causes of throat pain."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a blood clot in my lungs",
+    "item": "significant shortness of breath",
+    "text": "I'm quite short of breath; it's hard to breathe.",
+    "reason": "Significant shortness of breath is a primary symptom of pulmonary embolism, whereas the other options relate to pericarditis, esophageal issues, or unrelated conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f010",
+      "f011",
+      "f012"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f010": "I'm quite short of breath; it's hard to breathe.",
+     "f011": "I've noticed a high-pitched sound when I breathe in.",
+     "f012": "My voice has become deeper, softer or hoarse."
+    }
+   }
+  },
+  "ddxplus-v2-test-0055735": {
+   "a12a": {
+    "target": "f003",
+    "item": "very irregular, disorganised heartbeat",
+    "text": "My heart feels like it's beating very irregularly, in a disorganised way.",
+    "reason": "An irregular and disorganized heartbeat is the hallmark symptom of atrial fibrillation, distinguishing it from other causes of dizziness."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "anemia",
+    "item": "symptoms worse with exertion and better with rest",
+    "text": "My symptoms get worse when I exert myself and ease off when I rest.",
+    "reason": "Exertional worsening of symptoms is a classic sign of anemia due to reduced oxygen-carrying capacity, whereas the other options point to cardiovascular or pulmonary conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f003"
+     ],
+     "5": [
+      "f004",
+      "f005",
+      "f006"
+     ]
+    },
+    "texts": {
+     "f002": "My symptoms get worse when I exert myself and ease off when I rest.",
+     "f003": "My heart feels like it's beating very irregularly, in a disorganised way.",
+     "f004": "I have high blood pressure or take medicine for it.",
+     "f005": "I have a known problem with one of my heart valves.",
+     "f006": "I have severe COPD."
+    }
+   }
+  },
+  "ddxplus-v2-test-0059675": {
+   "a12a": {
+    "target": "f009",
+    "item": "stuffy nose or clear runny nose",
+    "text": "I have a stuffy nose or a clear runny nose.",
+    "reason": "Fever is a systemic symptom common to many infections, whereas a stuffy nose or runny nose is a specific upper respiratory sign that, in the context of an ear infection diagnosis, helps distinguish acute otitis media from other causes of fever."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "I have a stuffy nose or a clear runny nose."
+    }
+   }
+  },
+  "ddxplus-v2-test-0081635": {
+   "a12a": {
+    "target": "f003",
+    "item": "pain: location",
+    "text": "It's in my left tonsil, my Adam's apple, the roof of my mouth, the back of my throat (pharynx) and under my jaw, and nowhere else.",
+    "reason": "The specific localization of pain to the pharynx and tonsils is the primary clinical indicator for pharyngitis."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "bronchitis",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a primary symptom of bronchitis, whereas the other entries describe pain characteristics or general risk factors that are less specific to this condition."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [
+      "f002",
+      "f005"
+     ],
+     "4": [
+      "f008",
+      "f009"
+     ],
+     "5": [
+      "f010",
+      "f011",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f007": "It came on fairly quickly.",
+     "f002": "The pain is tender and burning.",
+     "f005": "I'd rate it 3 out of 10.",
+     "f008": "I have a cough.",
+     "f009": "I have a stuffy nose or a clear runny nose.",
+     "f010": "My immune system is suppressed.",
+     "f011": "In the past 2 weeks I've been around someone with similar symptoms.",
+     "f012": "I live with 4 or more people."
+    }
+   }
+  },
+  "ddxplus-v2-test-0091556": {
+   "a12a": {
+    "target": "f010",
+    "item": "symptoms worse lying down and better sitting up",
+    "text": "My symptoms get worse when I lie down and better when I sit up.",
+    "reason": "Pain that worsens when lying down and improves when sitting up is a classic and highly specific positional symptom of pericarditis."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a blood clot in my lungs",
+    "item": "pain worse when breathing in deeply",
+    "text": "The pain gets worse when I breathe in deeply.",
+    "reason": "Pleuritic chest pain, which worsens with deep breathing, is a classic specific symptom of pulmonary embolism that distinguishes it from other causes of palpitations."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f010"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f009",
+      "f011"
+     ],
+     "5": [
+      "f012"
+     ]
+    },
+    "texts": {
+     "f010": "My symptoms get worse when I lie down and better when I sit up.",
+     "f002": "I have pain.",
+     "f009": "The pain gets worse when I breathe in deeply.",
+     "f011": "I'm quite short of breath; it's hard to breathe.",
+     "f012": "I've had a viral infection recently."
+    }
+   }
+  },
+  "ddxplus-v2-test-0104636": {
+   "a12a": {
+    "target": "f009",
+    "item": "deeper, softer or hoarse voice",
+    "text": "My voice has become deeper, softer or hoarse.",
+    "reason": "Hoarseness is the hallmark symptom of laryngitis, directly indicating inflammation of the vocal cords."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "strep throat",
+    "item": "going to or working in a daycare",
+    "text": "I go to or work in a daycare.",
+    "reason": "Working in a daycare is a significant risk factor for viral pharyngitis due to exposure to children and common respiratory viruses, whereas pain is a non-specific symptom."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f002",
+      "f009"
+     ],
+     "5": [
+      "f010"
+     ]
+    },
+    "texts": {
+     "f002": "I have pain.",
+     "f009": "My voice has become deeper, softer or hoarse.",
+     "f010": "I go to or work in a daycare."
+    }
+   }
+  }
+ }
+}

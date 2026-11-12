@@ -1,0 +1,88 @@
+{
+  "case_id": "agentclinic-medqa-ext-214",
+  "source_row": 214,
+  "demographics_text": "77-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with skin lesions on the forehead.",
+  "chief_complaint": "Brown, greasy-appearing lesions on forehead",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-214-p001",
+      "field": "History",
+      "text": "The patient reports the recent appearance of several brown, greasy, seemingly superficial lesions on his forehead. He mentions they appeared a few weeks ago and has not noticed any recent changes in size or color. He attempted to scrape them off, assuming they were dirt or a smear, but they persisted. No itching or pain is associated with the lesions."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-214-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Attempts to remove lesions unsuccessful"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-214-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No associated pain or itching"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-214-p004",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, controlled with medication. No history of skin cancer or chronic skin diseases."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-214-p005",
+      "field": "Social_History",
+      "text": "Retired school teacher. Non-smoker. Enjoys gardening and spends time outdoors."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-214-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies weight loss, fever, night sweats, or any recent illnesses."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-214-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-214-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-214-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-214-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-214-e005",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Inspection",
+      "text": "Multiple well-defined, round to oval, brown, greasy plaques ranging from 0.5 to 1.5 cm in diameter located predominantly on the forehead."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-214-e006",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Palpation",
+      "text": "Lesions are slightly raised, with a waxy texture. No tenderness or warmth on palpation."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-214-e007",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Dermoscopy",
+      "text": "Not available but typically shows cerebriform pattern and milia-like cysts in seborrheic keratoses."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-214-i001",
+      "path": "Test_Results.Skin_Biopsy.Histopathology",
+      "text": "Not performed but would show proliferation of benign keratinocytes, horn cysts, and a papillomatous surface if done."
+    }
+  ],
+  "correct_diagnosis": "Seborrheic keratosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

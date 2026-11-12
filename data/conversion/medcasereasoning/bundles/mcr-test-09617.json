@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "case_id": "mcr-test-09617",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 38, "sex": "male"},
+    "opening": ["f001", "f003", "f004"],
+    "facts": [
+      {"id": "f001", "item": "enlarging hands and feet", "aliases": ["big hands and feet", "hands getting bigger", "feet getting bigger", "acral enlargement"], "text": "Both my hands and both my feet have been getting bigger.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "enlarging hands and feet: course", "parent": "f001", "attribute": "course", "text": "They've kept on getting bigger over time.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "excessive sweating", "aliases": ["sweating a lot", "hyperhidrosis", "sweaty"], "text": "I sweat too much.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "skin folds on the forehead and scalp", "aliases": ["thick folds of skin", "furrowed forehead", "scalp folds", "wrinkled forehead"], "text": "I have prominent folds of skin on my forehead and scalp.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "how long the enlargement, sweating and skin folds have been there", "text": "All of this has been developing over 10 years.", "value": "10 years", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "knee pain", "aliases": ["sore knees", "painful knees"], "text": "Both my knees hurt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "knee pain: severity", "parent": "f006", "attribute": "severity", "text": "It's mild.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f008", "item": "knee pain: onset", "parent": "f006", "attribute": "onset", "text": "It crept up on me gradually.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f009", "item": "knee pain: relieving", "parent": "f006", "attribute": "relieving", "aliases": ["over-the-counter medicines", "painkillers"], "text": "Over-the-counter medicines relieve it.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f010", "item": "swollen knees and ankles", "aliases": ["joint swelling", "swollen joints", "ankle swelling", "knee swelling"], "text": "My knees and ankles are swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "clubbed fingers and toes", "aliases": ["clubbing", "rounded fingertips", "swollen fingertips"], "text": "The tips of my fingers and toes are swollen and rounded.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f012", "item": "fever", "aliases": ["high temperature", "feeling feverish"], "text": "I haven't had any fevers.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f013", "item": "chest pain", "aliases": ["chest discomfort"], "text": "I haven't had chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f014", "item": "rashes", "aliases": ["rash", "skin rash"], "text": "I haven't had any rashes.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f015", "item": "voice changes", "aliases": ["hoarseness", "deeper voice", "change in voice"], "text": "My voice hasn't changed.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f016", "item": "headache", "aliases": ["headaches", "head pain"], "text": "I haven't had headaches.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f017", "item": "vision problems", "aliases": ["visual symptoms", "blurred vision", "vision changes"], "text": "I haven't had any problems with my vision.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f018", "item": "lung disease", "aliases": ["lung problems", "pulmonary disease", "asthma", "COPD"], "text": "I don't have any known lung disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f019", "item": "heart disease", "aliases": ["heart problems", "cardiac disease"], "text": "I don't have any known heart disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f020", "item": "hormone or gland disease", "aliases": ["endocrine disease", "thyroid disease", "hormonal problems", "diabetes"], "text": "I don't have any known hormone or gland disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f021", "item": "rheumatic disease", "aliases": ["rheumatologic disease", "arthritis", "autoimmune disease"], "text": "I don't have any known rheumatic disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f022", "item": "smoking", "aliases": ["cigarettes", "tobacco", "smoker"], "text": "I smoke three to four cigarettes a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f023", "item": "alcohol", "aliases": ["drinking", "alcohol use"], "text": "I drink alcohol twice a week.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f024", "item": "similar illness in the family", "aliases": ["family history", "relatives with the same problem"], "text": "No one in my family has had anything like this.", "polarity": "absent", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-09617",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Hemodynamically stable."},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Hemodynamically stable."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["level of consciousness", "alertness"], "result": "Alert."},
+      {"id": "x004", "kind": "exam", "system": "skin", "name": "face and scalp inspection", "aliases": ["face", "scalp", "facial features", "skin of the forehead", "skin examination"], "result": "Coarse facial features; multiple skin folds on the forehead; cutis verticis gyrata of the scalp."},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "inspection of the limbs", "aliases": ["hands", "feet", "forearms", "extremities"], "result": "Marked enlargement of both hands, feet and distal forearms."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "joint examination", "aliases": ["joints", "knees", "ankles", "musculoskeletal examination"], "result": "Swelling of both knees and ankles."},
+      {"id": "x007", "kind": "exam", "system": "skin", "name": "fingers, toes and nails", "aliases": ["clubbing", "nails", "fingertips", "digital clubbing"], "result": "Grade IV clubbing of all fingers and toes."},
+      {"id": "x008", "kind": "exam", "system": "musculoskeletal", "name": "muscle bulk", "aliases": ["muscle wasting", "muscle mass"], "result": "Symmetrically reduced in the upper arms and thighs."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "renal function tests", "aliases": ["kidney function", "creatinine", "urea", "BUN"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "free T4"], "result": "Normal."},
+      {"id": "x013", "kind": "test", "name": "uric acid", "aliases": ["serum urate"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "serum calcium", "aliases": ["calcium"], "result": "Normal."},
+      {"id": "x015", "kind": "test", "name": "lipid profile", "aliases": ["cholesterol", "lipids", "triglycerides"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "urine microscopy", "aliases": ["urinalysis", "urine test"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibody", "rheumatoid factor", "RF", "anti-CCP", "anti-cyclic citrullinated peptide antibody"], "result": "Antinuclear antibody, rheumatoid factor and anti-cyclic citrullinated peptide antibody: normal."},
+      {"id": "x018", "kind": "test", "name": "knee radiographs", "aliases": ["knee X-ray", "X-ray of the knees"], "result": "Diffuse cortical thickening of the distal femoral diaphyses and metaphyses with periosteal reaction; similar but milder changes in the tibiae and fibulae."},
+      {"id": "x019", "kind": "test", "name": "ankle and foot radiographs", "aliases": ["ankle X-ray", "foot X-ray", "X-ray of the feet"], "result": "Cortical thickening with a fluffy periosteal reaction in the tibiae and fibulae; milder involvement of the talus and navicular."},
+      {"id": "x020", "kind": "test", "name": "hand radiographs", "aliases": ["hand X-ray", "X-ray of the hands"], "result": "Cortical thickening and periosteal reaction of the radius, ulna, and the middle and proximal phalanges of all fingers."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-09617",
+    "diagnosis": "Pachydermoperiostosis",
+    "aliases": ["primary hypertrophic osteoarthropathy", "idiopathic hypertrophic osteoarthropathy", "Touraine–Solente–Golé syndrome", "PDP"],
+    "reasoning": "1. Considered thyroid acropachy — “Less common entities like thyroid acropachy ... are the differentials that should be kept in mind during workup ... But due to lack of clinical, laboratory, and radiological findings these differentials are less likely in our case.” 2. Considered psoriatic onycho‐pachydermo periostitis — “Less common entities like ... Psoriatic onycho‐pachydermo periostitis ... are the differentials that should be kept in mind ... But due to lack of clinical, laboratory, and radiological findings these differentials are less likely in our case.” 3. Considered hypervitaminosis A — “Less common entities like ... hypervitaminosis A ... are the differentials that should be kept in mind ... But due to lack of clinical, laboratory, and radiological findings these differentials are less likely in our case.” 4. Considered Caffey disease — “Less common entities like ... Caffey disease are the differentials that should be kept in mind ... But due to lack of clinical, laboratory, and radiological findings these differentials are less likely in our case.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-09617",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s008"], "f011": ["s009"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s003"], "f016": ["s003"], "f017": ["s003"], "f018": ["s003"],
+      "f019": ["s003"], "f020": ["s003"], "f021": ["s003"], "f022": ["s004"], "f023": ["s004"], "f024": ["s005"]
+    },
+    "quotes": {
+      "f001": "progressive enlargement of both hands and feet", "f002": "progressive enlargement", "f003": "excessive sweating",
+      "f004": "prominent folds of skin on the forehead and scalp", "f005": "a 10‐year history", "f006": "bilateral knee pain",
+      "f007": "mild", "f008": "insidious", "f009": "relieved by over‐the‐counter medications", "f010": "swelling of both knees and ankles",
+      "f011": "Grade IV clubbing was present in all fingers and toes.", "f018": "known pulmonary, cardiac, endocrine, or rheumatologic disease",
+      "f022": "three to four cigarettes daily", "f023": "drank alcohol twice weekly", "f024": "no family history of similar illness"
+    },
+    "flags": {
+      "f010": ["Patient-noticeable sign taken from the examination (swelling of both knees and ankles)."],
+      "f011": ["Patient-noticeable sign taken from the examination (grade IV clubbing of all fingers and toes)."],
+      "f018": ["s003 'no ... known pulmonary, cardiac, endocrine, or rheumatologic disease': four specific denials, worded as 'known' disease."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "hemodynamically stable"},
+      "x002": {"sentences": ["s006"], "source_text": "hemodynamically stable"},
+      "x003": {"sentences": ["s006"], "source_text": "he was alert"},
+      "x004": {"sentences": ["s007"], "source_text": "Coarse facial features included multiple skin folds on the forehead and “cutis verticis gyrata” of the scalp."},
+      "x005": {"sentences": ["s008"], "source_text": "There was marked enlargement of the bilateral hands, feet, distal forearms"},
+      "x006": {"sentences": ["s008"], "source_text": "swelling of both knees and ankles"},
+      "x007": {"sentences": ["s009"], "source_text": "Grade IV clubbing was present in all fingers and toes."},
+      "x008": {"sentences": ["s010"], "source_text": "Muscle bulk was symmetrically reduced in the upper arms and thighs."},
+      "x009": {"sentences": ["s011"], "source_text": "Laboratory studies showed normal results for complete blood count"},
+      "x010": {"sentences": ["s011"], "source_text": "normal results for / renal and liver function"},
+      "x011": {"sentences": ["s011"], "source_text": "normal results for / renal and liver function"},
+      "x012": {"sentences": ["s011"], "source_text": "normal results for / thyroid function"},
+      "x013": {"sentences": ["s011"], "source_text": "normal results for / uric acid"},
+      "x014": {"sentences": ["s011"], "source_text": "normal results for / calcium"},
+      "x015": {"sentences": ["s011"], "source_text": "normal results for / lipid profile"},
+      "x016": {"sentences": ["s011"], "source_text": "normal results for / urine microscopy"},
+      "x017": {"sentences": ["s011"], "source_text": "normal results for / antinuclear antibody, rheumatoid factor, and anti–cyclic citrullinated peptide antibody"},
+      "x018": {"sentences": ["s013"], "source_text": "Radiographs of the knees demonstrated diffuse cortical thickening of the distal femoral diaphyses and metaphyses with periosteal reaction; similar but milder changes were seen in the tibiae and fibulae."},
+      "x019": {"sentences": ["s014"], "source_text": "Ankle and foot radiographs showed cortical thickening with a fluffy periosteal reaction in the tibiae and fibulae, with milder involvement of the talus and navicular."},
+      "x020": {"sentences": ["s015"], "source_text": "Hand radiographs revealed cortical thickening and periosteal reaction of the radius, ulna, and the middle and proximal phalanges of all fingers."}
+    },
+    "finding_flags": {
+      "x001": ["Only 'hemodynamically stable' is given; no values."],
+      "x002": ["Only 'hemodynamically stable' is given; no values."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s012: a chest radiograph was obtained 'to evaluate for underlying lung disease' but its result is not given.",
+      "No growth hormone or IGF-1 testing is reported, although acral enlargement and coarse features would prompt it."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation after 10 years of progressive enlargement of the hands and feet, excessive sweating and forehead/scalp skin folds (s001-s010); the laboratory results and radiographs (s011, s013-s015) are findings from the same workup.",
+      "s001: the 10-year history applies to all three complaints, so it is a standalone fact (f005).",
+      "Signs the patient can notice (swollen knees and ankles, clubbed fingertips) are facts and also stay in the examination; coarse facial features, forearm enlargement and reduced muscle bulk are examiner findings only.",
+      "s012: chest radiograph obtained without a result; requests for it, and for growth hormone or IGF-1, are unavailable."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s012", "reason": "Chest radiography was obtained but no result is given."}
+    ]
+  }
+}

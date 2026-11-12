@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-113", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 60, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "itching in the genital area", "aliases": ["vulvar itching", "itchy vulva", "itching down below"], "text": "I have itching around my vulva.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "itching in the genital area: severity", "parent": "f001", "attribute": "severity", "text": "The itching is severe.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f003", "item": "pain during sex", "aliases": ["painful intercourse", "dyspareunia"], "text": "Sex has become painful.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f004", "item": "pain during sex: severity", "parent": "f003", "attribute": "severity", "text": "The pain is severe.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f005", "item": "how long the symptoms have been going on", "text": "The itching and the pain during sex have been going on for a year.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "symptoms getting worse", "text": "Both have gradually gotten worse.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "over-the-counter lubricants", "aliases": ["lubricants", "treatments tried"], "text": "I've tried over-the-counter lubricants.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "over-the-counter lubricants: effect", "parent": "f007", "attribute": "treatment_response", "text": "They haven't given me any significant relief.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "menopause", "aliases": ["periods", "last period"], "text": "I went through menopause 8 years ago, when I was 52.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "diabetes: treatment", "parent": "f010", "attribute": "treatment_response", "text": "It's controlled with diet alone.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "hydrochlorothiazide", "aliases": ["blood pressure medication", "water pill", "medications"], "text": "I take hydrochlorothiazide for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "marital status", "aliases": ["married", "husband", "relationship"], "text": "I'm married.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "sexual activity", "aliases": ["sexually active"], "text": "I was sexually active with my husband until recently; we stopped because of the pain.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f016", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "leaking urine", "aliases": ["urinary incontinence", "bladder control"], "text": "I don't leak urine.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f019", "item": "bleeding after sex", "aliases": ["postcoital bleeding"], "text": "I haven't had any bleeding after sex.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f020", "item": "skin changes elsewhere on the body", "aliases": ["other skin problems", "rash elsewhere"], "text": "I haven't noticed any recent changes in my skin anywhere else on my body.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-113",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "vulvar examination", "external genitalia", "speculum examination", "bimanual examination", "perianal skin"], "result": "External genitalia: dry, thin, white plaque-like lesions on the vulva; atrophy of the labia minora and retraction of the clitoris; pale and wrinkled perianal skin. Speculum: no vaginal discharge or bleeding; vaginal mucosa appears atrophic. Bimanual: nontender uterus and adnexa; no masses palpated."},
+      {"id": "x006", "kind": "test", "name": "Pap smear", "aliases": ["Pap test", "cervical cytology"], "result": "Negative for intraepithelial lesion or malignancy."},
+      {"id": "x007", "kind": "test", "name": "vulvar biopsy", "aliases": ["biopsy of the vulvar lesions", "skin biopsy", "histopathology"], "result": "Hyperkeratosis with thinning of the epidermis and loss of rete ridges; sclerotic changes in the dermis."},
+      {"id": "x008", "kind": "test", "name": "fasting blood glucose", "aliases": ["blood sugar", "glucose", "fasting glucose"], "result": "6.5 mmol/L (117 mg/dL), indicative of controlled diabetes."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-113",
+    "diagnosis": "Lichen sclerosus",
+    "aliases": ["lichen sclerosus et atrophicus", "vulvar lichen sclerosus", "LS", "kraurosis vulvae"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-113",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-113-p001"], "f002": ["cc", "agentclinic-medqa-ext-113-p001"],
+      "f003": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p002"], "f004": ["agentclinic-medqa-ext-113-p005"],
+      "f005": ["agentclinic-medqa-ext-113-p001"], "f006": ["agentclinic-medqa-ext-113-p001"],
+      "f007": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p003"], "f008": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p003"],
+      "f009": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p004"], "f010": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p004"],
+      "f011": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p004"], "f012": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p004"],
+      "f013": ["agentclinic-medqa-ext-113-p001", "agentclinic-medqa-ext-113-p004"], "f014": ["agentclinic-medqa-ext-113-p005"],
+      "f015": ["agentclinic-medqa-ext-113-p005"], "f016": ["agentclinic-medqa-ext-113-p005"], "f017": ["agentclinic-medqa-ext-113-p005"],
+      "f018": ["agentclinic-medqa-ext-113-p006"], "f019": ["agentclinic-medqa-ext-113-p006"], "f020": ["agentclinic-medqa-ext-113-p006"]
+    },
+    "quotes": {
+      "f002": "Severe vulvar itching", "f004": "due to severe pain", "f005": "a year-long history of severe vulvar itching and pain during sexual intercourse",
+      "f006": "that has gradually worsened", "f008": "without significant relief / Ineffectiveness of over-the-counter lubricants",
+      "f009": "Menopause occurred 8 years ago / menopause at 52 years of age", "f011": "diet-controlled type 2 diabetes mellitus",
+      "f013": "hypertension treated with hydrochlorothiazide", "f015": "sexually active with her husband until recently due to severe pain",
+      "f017": "drinks alcohol socially", "f020": "recent changes in skin elsewhere on the body"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-113-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-113-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-113-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-113-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Gynecologic_Examination.External_Genitalia + Physical_Examination_Findings.Gynecologic_Examination.Speculum_Examination + Physical_Examination_Findings.Gynecologic_Examination.Bimanual_Examination", "source_text": "External_Genitalia: Dry, thin, white plaque-like lesions on the vulva. Atrophy of the labia minora and retraction of the clitoris. Pale and wrinkled perianal skin.; Speculum_Examination: No vaginal discharge or bleeding. Vaginal mucosa appears atrophic.; Bimanual_Examination: Nontender uterus and adnexa. No masses palpated.", "exam_ids": ["agentclinic-medqa-ext-113-e005", "agentclinic-medqa-ext-113-e006", "agentclinic-medqa-ext-113-e007"]},
+      "x006": {"source": "Test_Results.Pap_Smear.Findings", "source_text": "Negative for intraepithelial lesion or malignancy", "exam_ids": ["agentclinic-medqa-ext-113-i001"]},
+      "x007": {"source": "Test_Results.Biopsy_of_Vulvar_Lesions.Histopathology", "source_text": "Hyperkeratosis with a thinning of the epidermis and loss of rete ridges, sclerotic changes in the dermis.", "exam_ids": ["agentclinic-medqa-ext-113-i002"]},
+      "x008": {"source": "Test_Results.Blood_Glucose.Fasting_Glucose_Level", "source_text": "6.5 mmol/L (117 mg/dL) - Indicative of controlled diabetes.", "exam_ids": ["agentclinic-medqa-ext-113-i003"]}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "The one-year duration and gradual worsening apply to both the itching and the painful intercourse, so they are standalone facts (f005, f006).",
+      "The pain's severity (f004) comes from the social history ('until recently due to severe pain'); the stop in sexual activity is a separate habit fact (f015).",
+      "Lubricants are recorded as a tried over-the-counter product (medication) with a treatment-response child (f007, f008).",
+      "Menopause timing is stated twice consistently (8 years ago; at 52) and merged (f009).",
+      "External genitalia, speculum and bimanual findings form one pelvic examination record (x005)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient presenting with vulvar itching and discomfort."
+    }
+  }
+}

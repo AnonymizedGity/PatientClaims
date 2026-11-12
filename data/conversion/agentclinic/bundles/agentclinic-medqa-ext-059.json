@@ -1,0 +1,114 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-059",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 24, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "aggressive behavior", "aliases": ["aggression", "violent behavior"], "text": "My roommates say I've been getting more and more aggressive.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "unusual behavior", "aliases": ["acting strangely", "odd behavior"], "text": "My roommates say I've been acting more and more strangely.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "irritability", "aliases": ["being irritable", "short temper"], "text": "Earlier this evening I got extremely irritable.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f004", "item": "yelling", "aliases": ["shouting", "outbursts"], "text": "This evening I yelled at my computer.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "breaking things", "aliases": ["destroying objects", "smashing things"], "text": "I broke my computer this evening.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f006", "item": "prolonged exercise", "aliases": ["working out for hours", "gym"], "text": "After I broke my computer, I spent several hours at the gym.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "withdrawing from others", "aliases": ["social withdrawal", "isolating", "being reclusive"], "text": "My roommates say I've been keeping to myself more.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f008", "item": "stress", "aliases": ["exam stress", "pressure at school"], "text": "I've been under a lot of stress with my final exams coming up.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "fever", "text": "I didn't have any fever before tonight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "vomiting", "aliases": ["throwing up"], "text": "I didn't throw up before tonight.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f012", "item": "diarrhea", "text": "I didn't have diarrhea before tonight.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "burning when urinating", "aliases": ["painful urination", "dysuria"], "text": "I didn't have any burning when I peed before tonight.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f014", "item": "flank pain", "aliases": ["pain in the side", "side pain"], "text": "I didn't have any pain in my sides before tonight.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f015", "item": "living situation", "text": "I live with roommates.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-059",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "101°F (38.3°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "137/98 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "120/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "23/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "99% on room air"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["appearance", "general inspection"], "result": "Irritable young man."},
+      {"id": "x007", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "sweating"], "result": "Notable diaphoresis."},
+      {"id": "x008", "kind": "exam", "system": "cardiovascular", "name": "heart examination", "aliases": ["heart auscultation", "cardiac examination"], "result": "Tachycardia."},
+      {"id": "x009", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["lung auscultation", "chest auscultation", "breath sounds"], "result": "Clear breath sounds bilaterally."},
+      {"id": "x010", "kind": "exam", "system": "eye", "name": "pupil examination", "aliases": ["pupils", "pupil size"], "result": "Notably dilated."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["mental status examination", "speech", "behavior"], "result": "Rapid speech; aggressive."},
+      {"id": "x012", "kind": "test", "name": "toxicology screen", "aliases": ["drug screen", "tox screen", "urine drug screen", "amphetamines", "cocaine", "opiates", "benzodiazepines", "cannabinoids"], "result": "Amphetamines positive; cocaine negative; opiates negative; benzodiazepines negative; cannabinoids negative."},
+      {"id": "x013", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x014", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "chemistry panel", "electrolytes", "sodium", "potassium", "creatinine", "glucose", "blood glucose"], "result": "Sodium normal; potassium normal; creatinine normal; glucose normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-059",
+    "diagnosis": "Lisdexamfetamine intoxication",
+    "aliases": ["lisdexamfetamine overdose", "lisdexamfetamine toxicity", "Vyvanse intoxication", "Vyvanse overdose", "Vyvanse toxicity"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-059",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-059-p001"],
+      "f002": ["agentclinic-medqa-ext-059-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-059-p001"],
+      "f004": ["agentclinic-medqa-ext-059-p001", "agentclinic-medqa-ext-059-p002"],
+      "f005": ["agentclinic-medqa-ext-059-p001", "agentclinic-medqa-ext-059-p003"],
+      "f006": ["agentclinic-medqa-ext-059-p001", "agentclinic-medqa-ext-059-p004"],
+      "f007": ["agentclinic-medqa-ext-059-p001"],
+      "f008": ["agentclinic-medqa-ext-059-p001", "agentclinic-medqa-ext-059-p008"],
+      "f009": ["agentclinic-medqa-ext-059-p007"],
+      "f010": ["agentclinic-medqa-ext-059-p009"],
+      "f011": ["agentclinic-medqa-ext-059-p009"],
+      "f012": ["agentclinic-medqa-ext-059-p009"],
+      "f013": ["agentclinic-medqa-ext-059-p009"],
+      "f014": ["agentclinic-medqa-ext-059-p009"],
+      "f015": ["cc", "agentclinic-medqa-ext-059-p001"]
+    },
+    "quotes": {
+      "f001": "increasingly aggressive",
+      "f002": "increasingly aggressive and unusual behavior",
+      "f003": "Earlier this evening, he exhibited extreme irritability",
+      "f004": "yelled at his computer",
+      "f005": "broke it",
+      "f006": "spent several hours at the gym",
+      "f007": "has become more reclusive",
+      "f008": "significant stress due to final exams",
+      "f009": "No significant past medical history reported by the roommates.",
+      "f010": "Roommates did not report any fever",
+      "f013": "dysuria",
+      "f014": "flank pain prior to the event"
+    },
+    "flags": {
+      "f009": ["The source attributes the negative past history to the roommates, not the patient."],
+      "f010": ["ROS negatives f010-f014 are the roommates' report ('did not report ... prior to the event'), worded as denials limited to the time before tonight; the measured temperature is 38.3°C now."],
+      "f015": ["Split off from f001, whose text was the only record of it (fix)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "101°F (38.3°C)", "exam_ids": ["agentclinic-medqa-ext-059-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "137/98 mmHg", "exam_ids": ["agentclinic-medqa-ext-059-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "120/min", "exam_ids": ["agentclinic-medqa-ext-059-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "23/min", "exam_ids": ["agentclinic-medqa-ext-059-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "99% on room air", "exam_ids": ["agentclinic-medqa-ext-059-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Appearance", "source_text": "Irritable young man", "exam_ids": ["agentclinic-medqa-ext-059-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Skin", "source_text": "Notable diaphoresis", "exam_ids": ["agentclinic-medqa-ext-059-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Cardiopulmonary_Examination.Heart", "source_text": "Tachycardia", "exam_ids": ["agentclinic-medqa-ext-059-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Cardiopulmonary_Examination.Lungs", "source_text": "Bilateral clear breath sounds", "exam_ids": ["agentclinic-medqa-ext-059-e009"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination.Pupils", "source_text": "Notably dilated", "exam_ids": ["agentclinic-medqa-ext-059-e010"]},
+      "x011": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Rapid speech, aggressive", "exam_ids": ["agentclinic-medqa-ext-059-e011"]},
+      "x012": {"source": "Test_Results.Toxicology_Screen.Amphetamines + Test_Results.Toxicology_Screen.Cocaine + Test_Results.Toxicology_Screen.Opiates + Test_Results.Toxicology_Screen.Benzodiazepines + Test_Results.Toxicology_Screen.Cannabinoids", "source_text": "Positive | Negative | Negative | Negative | Negative", "exam_ids": ["agentclinic-medqa-ext-059-i001", "agentclinic-medqa-ext-059-i002", "agentclinic-medqa-ext-059-i003", "agentclinic-medqa-ext-059-i004", "agentclinic-medqa-ext-059-i005"]},
+      "x013": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal | Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-059-i006", "agentclinic-medqa-ext-059-i007", "agentclinic-medqa-ext-059-i008"]},
+      "x014": {"source": "Test_Results.Chemistry_Panel.Sodium + Test_Results.Chemistry_Panel.Potassium + Test_Results.Chemistry_Panel.Creatinine + Test_Results.Chemistry_Panel.Blood_Glucose", "source_text": "Normal | Normal | Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-059-i009", "agentclinic-medqa-ext-059-i010", "agentclinic-medqa-ext-059-i011", "agentclinic-medqa-ext-059-i012"]}
+    },
+    "leakage": [],
+    "source_issues": ["Nothing in the record points to lisdexamfetamine specifically: no medication or stimulant history is recorded and the toxicology screen shows only amphetamines, so the exact drug in the gold label cannot be reached from the case.", "The history is collateral from the roommates; the patient's own account is not given."],
+    "notes": ["Behaviour judged over time by the roommates (more aggressive, acting strangely, more reclusive) is worded as what the patient was told ('My roommates say...'). The evening's events (irritability, yelling at and breaking the computer, hours at the gym) are not explicitly attributed and are written as the patient's own account.", "p005 'Rapid speech during exam' and p006 'Aggressiveness during exam' are observer-only signs already in the mental status exam (x011); the diaphoresis noted in p009 is already in the skin exam (x007). They are not patient facts.", "Hours at the gym (p004) is kept as a symptom of the episode (psychiatric), as the source lists it among the secondary symptoms, not as an exercise habit.", "p008 'No other social history provided.' carries no information; only the exam stress is used.", "Gold aliases exclude 'amphetamine intoxication', 'stimulant intoxication' and 'sympathomimetic toxidrome' as broader terms; partial credit is left to the judge.", "Fixes: f015 new fact 'living situation' from f001."],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a young adult male presenting with aggressive behavior, altered mental status, and autonomic dysregulation."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-059-p005", "reason": "Observer-only sign during the exam (rapid speech); already in the mental status exam x011."},
+      {"id": "agentclinic-medqa-ext-059-p006", "reason": "Observer-only sign during the exam (aggressiveness); already in the mental status exam x011."}
+    ]
+  }
+}

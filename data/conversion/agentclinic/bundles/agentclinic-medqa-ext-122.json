@@ -1,0 +1,95 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-122",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 19, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "lighter patches of skin", "aliases": ["pale patches", "white patches", "loss of skin color", "hypopigmented skin lesions", "depigmentation"], "text": "I've noticed several areas of my skin that have become lighter.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "lighter patches of skin: duration", "parent": "f001", "attribute": "duration", "text": "They've appeared over the past several months.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "lighter patches of skin: course", "parent": "f001", "attribute": "course", "text": "The patches have slowly gotten bigger.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "itching", "aliases": ["itchiness", "itchy skin"], "text": "The patches don't itch.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "pain or discomfort in the patches", "aliases": ["sore patches", "painful skin"], "text": "The patches don't hurt or feel uncomfortable.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "previous similar episodes", "aliases": ["had this before"], "text": "I've never had anything like this before.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "recent illnesses", "aliases": ["recent infections", "been sick"], "text": "I haven't been sick recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "other symptoms", "aliases": ["systemic symptoms", "other symptoms"], "text": "I don't have any other symptoms in the rest of my body.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "worry about how the patches look", "aliases": ["cosmetic concern", "main concern"], "text": "I'm worried about how the patches look.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "father's health", "aliases": ["family history", "similar condition in the family"], "text": "My father has a similar skin condition.", "polarity": "present", "category": "family_history", "time": "current"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "current medications", "aliases": ["medicines", "drugs"], "text": "I'm not taking any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "occupation", "aliases": ["job", "work", "school"], "text": "I'm a full-time college student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-122",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "118/76 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "skin palpation", "dermatological examination", "lesion examination", "hair and nails"], "result": "Inspection: multiple well-demarcated hypopigmented macules and patches over the face, hands and arms; no erythema or scale; hair and nails normal. Palpation: normal skin texture within and around the lesions; no warmth or induration."},
+      {"id": "x006", "kind": "test", "name": "skin biopsy", "aliases": ["biopsy of a pale patch", "skin histology", "punch biopsy"], "result": "Absence of melanocytes in the epidermis; normal keratinocyte structure; no fungal elements."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-122",
+    "diagnosis": "Vitiligo",
+    "aliases": ["vitiligo vulgaris", "nonsegmental vitiligo", "generalized vitiligo", "acrofacial vitiligo"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-122",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-122-p001"],
+      "f002": ["agentclinic-medqa-ext-122-p001"],
+      "f003": ["agentclinic-medqa-ext-122-p001", "agentclinic-medqa-ext-122-p003"],
+      "f004": ["agentclinic-medqa-ext-122-p002"],
+      "f005": ["agentclinic-medqa-ext-122-p002"],
+      "f006": ["agentclinic-medqa-ext-122-p001"],
+      "f007": ["agentclinic-medqa-ext-122-p001", "agentclinic-medqa-ext-122-p004", "agentclinic-medqa-ext-122-p007"],
+      "f008": ["agentclinic-medqa-ext-122-p001", "agentclinic-medqa-ext-122-p007"],
+      "f009": ["agentclinic-medqa-ext-122-p007"],
+      "f010": ["agentclinic-medqa-ext-122-p007"],
+      "f011": ["agentclinic-medqa-ext-122-p001"],
+      "f012": ["agentclinic-medqa-ext-122-p001"],
+      "f013": ["agentclinic-medqa-ext-122-p005"],
+      "f014": ["agentclinic-medqa-ext-122-p005"],
+      "f015": ["agentclinic-medqa-ext-122-p006"],
+      "f016": ["agentclinic-medqa-ext-122-p006"],
+      "f017": ["agentclinic-medqa-ext-122-p006"]
+    },
+    "quotes": {
+      "f001": "several areas of skin that have become lighter",
+      "f002": "over the past several months",
+      "f003": "These patches have slowly increased in size.",
+      "f004": "No associated itchiness",
+      "f005": "or discomfort",
+      "f006": "previous similar episodes",
+      "f010": "or other systemic symptoms",
+      "f011": "concerned about the cosmetic appearance of these lesions",
+      "f012": "his father has a similar condition",
+      "f013": "No significant past medical history.",
+      "f014": "Not on any medications.",
+      "f015": "Full-time college student.",
+      "f017": "Occasional alcohol use."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-122-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "118/76 mmHg", "exam_ids": ["agentclinic-medqa-ext-122-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-122-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-122-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Multiple well-demarcated, hypopigmented macules and patches over the face, hands, and arms. No erythema or scale. Hair and nails are normal. | Skin texture is normal within and around the lesions. No warmth or induration.", "exam_ids": ["agentclinic-medqa-ext-122-e005", "agentclinic-medqa-ext-122-e006"]},
+      "x006": {"source": "Test_Results.Skin_Biopsy.Microscopic_Examination", "source_text": "Absence of melanocytes in the epidermis. Normal keratinocyte structure. No evidence of fungal elements.", "exam_ids": ["agentclinic-medqa-ext-122-i001"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": ["'Hypopigmented skin lesions' (chief complaint) is worded as the patient's 'areas of skin that have become lighter'; the clinical term is an alias.", "'No associated itchiness or discomfort' (p002) is split into two denials (itching, pain or discomfort). 'No recent illnesses' appears in History, Secondary_Symptoms and Review_of_Systems and is one fact (f007).", "The concern about appearance is a social_background fact (the patient's own worry)."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with hypopigmented skin lesions."
+    }
+  }
+}

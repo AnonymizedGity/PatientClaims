@@ -1,0 +1,76 @@
+{
+ "case_id": "mcr-test-04221",
+ "pmcid": "PMC5731179",
+ "test_row": 284,
+ "test_index": 4221,
+ "case_prompt": "A 64-year-old woman was referred for evaluation of chronic progressive gait disturbances that began approximately 1 month after completing four cycles of docetaxel-based chemotherapy for breast cancer 2 years earlier. Before chemotherapy, she had walked normally. At the time of chemotherapy, she developed mild, distal extremity numbness that remained stable over 2 years. She denied headache, dizziness, speech changes, cognitive difficulties, visual loss, abnormal movements, or bladder or bowel symptoms, and there was no evidence of cancer relapse.\n\nElectrophysiological studies were inconclusive but indicated polyneuropathy. Despite stable sensory deficits, her gait disturbance continued to worsen, prompting neurologic evaluation. On examination, she walked with short steps, rotational instability, and an increased base of support; the Romberg test was negative. There was mild impairment of superficial and deep sensation in both feet and hands. Cranial nerves, strength, deep tendon reflexes, cerebellar testing, and sphincter function were normal. Cognitive testing, including the Mini-Mental State Examination and verbal fluency, was within normal limits.\n\nBrain MRI showed marked enlargement of the supratentorial and infratentorial ventricles without cortical atrophy and no evidence of metastatic or meningeal disease. A lumbar puncture was performed, and 30 mL of CSF was drained. Gait was assessed before and 24 hours after the tap: a 10-m walking test demonstrated a clear reduction in the number of steps and time to completion, and the number of steps needed for a 360° rotation decreased. CSF cytology was unremarkable.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 64-year-old woman was referred for evaluation of chronic progressive gait disturbances that began approximately 1 month after completing four cycles of docetaxel-based chemotherapy for breast cancer 2 years earlier."
+  },
+  {
+   "id": "s002",
+   "text": "Before chemotherapy, she had walked normally."
+  },
+  {
+   "id": "s003",
+   "text": "At the time of chemotherapy, she developed mild, distal extremity numbness that remained stable over 2 years."
+  },
+  {
+   "id": "s004",
+   "text": "She denied headache, dizziness, speech changes, cognitive difficulties, visual loss, abnormal movements, or bladder or bowel symptoms, and there was no evidence of cancer relapse."
+  },
+  {
+   "id": "s005",
+   "text": "Electrophysiological studies were inconclusive but indicated polyneuropathy."
+  },
+  {
+   "id": "s006",
+   "text": "Despite stable sensory deficits, her gait disturbance continued to worsen, prompting neurologic evaluation."
+  },
+  {
+   "id": "s007",
+   "text": "On examination, she walked with short steps, rotational instability, and an increased base of support; the Romberg test was negative."
+  },
+  {
+   "id": "s008",
+   "text": "There was mild impairment of superficial and deep sensation in both feet and hands."
+  },
+  {
+   "id": "s009",
+   "text": "Cranial nerves, strength, deep tendon reflexes, cerebellar testing, and sphincter function were normal. Cognitive testing, including the Mini-Mental State Examination and verbal fluency, was within normal limits."
+  },
+  {
+   "id": "s010",
+   "text": "Brain MRI showed marked enlargement of the supratentorial and infratentorial ventricles without cortical atrophy and no evidence of metastatic or meningeal disease."
+  },
+  {
+   "id": "s011",
+   "text": "A lumbar puncture was performed, and 30 mL of CSF was drained."
+  },
+  {
+   "id": "s012",
+   "text": "Gait was assessed before and 24 hours after the tap: a 10-m walking test demonstrated a clear reduction in the number of steps and time to completion, and the number of steps needed for a 360° rotation decreased."
+  },
+  {
+   "id": "s013",
+   "text": "CSF cytology was unremarkable."
+  }
+ ],
+ "final_diagnosis": "hydrocephalus",
+ "diagnostic_reasoning": "1. Polyneuropathy was initially suspected given docetaxel exposure and electrophysiological findings, but was deemed unlikely as “the gait disorder observed did not resemble a typical steppage polyneuropathic gait, but it was rather characterized by small steps and enlarged sustentation base and rotational difficulties, all features observed classically in patients with normal pressure hydrocephalus.” 2. Brain metastases were excluded because “there was no evidence of malignant brain or meningeal seed.” 3. Carcinomatous meningitis was ruled out as “Cytology of CSF was otherwise inconspicuous.” 4. Paraneoplastic cerebellar degeneration was considered but deemed unlikely since MRI and examination lacked cerebellar findings and “MRI is mandatory to confirm the diagnosis and rule out other causes of gait disturbances, such as brain metastasis or paraneoplastic cerebellar degeneration.” 5. The ventricular enlargement represented true hydrocephalus rather than ex vacuo change, supported by the finding that “Brain MRI revealed a marked hydrocephalus with a dramatic enlargement of the supra- and infratentorial ventricular system and no cortical atrophy.”",
+ "selection": {
+  "age": 64,
+  "sex": "female",
+  "specialty": "neurology",
+  "dx_key": "hydrocephalus",
+  "setting": "referral",
+  "time_structure": "single_episode",
+  "leakage": "test_result",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "A progressive magnetic-type gait with ventriculomegaly without atrophy and improvement after a tap test leads to hydrocephalus, with chemotherapy neuropathy as the decoy.",
+  "second_look_note": "A worsening short-stepped gait out of proportion to a stable chemotherapy neuropathy frames ventriculomegaly without atrophy and a positive CSF tap test."
+ }
+}

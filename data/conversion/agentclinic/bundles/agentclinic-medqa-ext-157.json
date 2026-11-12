@@ -1,0 +1,110 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-157",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 27, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "chest pain", "text": "My chest hurts.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f002", "item": "chest pain: onset", "parent": "f001", "attribute": "onset", "text": "It started after the car crash.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f003", "item": "recent car crash", "aliases": ["motor vehicle collision", "car accident", "trauma", "injury"], "text": "I was in a head-on car crash. I was the driver, in the front seat.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "car crash: seatbelt", "parent": "f003", "attribute": "context", "aliases": ["seat belt", "restrained"], "text": "I wasn't wearing a seatbelt.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "bruising on the chest", "aliases": ["chest bruises"], "text": "I have bruises on my chest.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "IV fluids given", "aliases": ["Ringer's lactate", "drip", "intravenous fluids"], "text": "I've been given 2 liters of Ringer's lactate through a drip.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f007", "item": "morphine", "aliases": ["pain medication given", "painkillers"], "text": "I've been given morphine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical conditions.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "previous surgeries", "aliases": ["operations"], "text": "I haven't had any surgeries.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "drug allergies", "aliases": ["allergies"], "text": "I don't have any drug allergies.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "tobacco", "aliases": ["smoking"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "illicit drug use", "aliases": ["recreational drugs", "street drugs"], "text": "I don't use illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a computer programmer.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "headache", "text": "I don't have a headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f016", "item": "dizziness", "text": "I'm not dizzy.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f017", "item": "shortness of breath", "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f018", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I don't have any belly pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-157",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "99.5°F (37.5°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "107/58 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "120/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "chest examination", "aliases": ["chest exam", "chest wall examination", "heart auscultation", "heart sounds", "lung auscultation", "breath sounds", "chest palpation", "chest percussion"], "result": "Inspection: visible bruising on the chest wall. Palpation: tenderness over the bruised area; no crepitus. Auscultation: normal heart sounds, no murmurs, rubs or gallops; breath sounds clear bilaterally. Percussion: resonant throughout, no dullness."},
+      {"id": "x007", "kind": "test", "name": "echocardiogram", "aliases": ["echo", "transthoracic echocardiogram"], "result": "Normal chamber sizes; no valvular abnormalities; sinus tachycardia."},
+      {"id": "x008", "kind": "test", "name": "troponin", "aliases": ["troponins", "troponin I", "troponin T", "cardiac troponin", "cardiac enzymes"], "result": "Elevated."},
+      {"id": "x009", "kind": "test", "name": "pulmonary capillary wedge pressure", "aliases": ["PCWP", "wedge pressure", "pulmonary artery catheterization", "Swan-Ganz catheter"], "result": "Elevated."},
+      {"id": "x010", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "No rib fractures or pneumothorax."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-157",
+    "diagnosis": "Cardiac contusion",
+    "aliases": ["myocardial contusion", "heart contusion", "bruised heart", "cardiac bruise", "blunt cardiac injury"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-157",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-157-p001", "agentclinic-medqa-ext-157-p005"],
+      "f002": ["agentclinic-medqa-ext-157-p001"],
+      "f003": ["agentclinic-medqa-ext-157-p001"],
+      "f004": ["agentclinic-medqa-ext-157-p001"],
+      "f005": ["agentclinic-medqa-ext-157-p002"],
+      "f006": ["agentclinic-medqa-ext-157-p001"],
+      "f007": ["agentclinic-medqa-ext-157-p001"],
+      "f008": ["agentclinic-medqa-ext-157-p001", "agentclinic-medqa-ext-157-p003"],
+      "f009": ["agentclinic-medqa-ext-157-p003"],
+      "f010": ["agentclinic-medqa-ext-157-p003"],
+      "f011": ["agentclinic-medqa-ext-157-p004"],
+      "f012": ["agentclinic-medqa-ext-157-p004"],
+      "f013": ["agentclinic-medqa-ext-157-p004"],
+      "f014": ["agentclinic-medqa-ext-157-p004"],
+      "f015": ["agentclinic-medqa-ext-157-p005"],
+      "f016": ["agentclinic-medqa-ext-157-p005"],
+      "f017": ["agentclinic-medqa-ext-157-p005"],
+      "f018": ["agentclinic-medqa-ext-157-p005"]
+    },
+    "quotes": {
+      "f002": "Following the event, the patient complains of chest pain.",
+      "f003": "head-on collision as the front seat, unrestrained driver",
+      "f004": "unrestrained driver",
+      "f005": "Bruising over the chest wall",
+      "f006": "2 liters of Ringer lactate solution",
+      "f007": "and morphine",
+      "f008": "No previous surgeries or significant medical conditions.",
+      "f010": "No known drug allergies.",
+      "f011": "Occasional alcohol use",
+      "f013": "denies tobacco or illicit drug use"
+    },
+    "flags": {
+      "f006": ["The history says the patient 'was given' fluids and morphine 'for management'; where (ambulance or emergency department) is not stated."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "99.5°F (37.5°C)", "exam_ids": ["agentclinic-medqa-ext-157-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "107/58 mmHg", "exam_ids": ["agentclinic-medqa-ext-157-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "120 bpm", "exam_ids": ["agentclinic-medqa-ext-157-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17 breaths/min", "exam_ids": ["agentclinic-medqa-ext-157-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-157-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Chest_Examination.Inspection + Physical_Examination_Findings.Chest_Examination.Palpation + Physical_Examination_Findings.Chest_Examination.Auscultation + Physical_Examination_Findings.Chest_Examination.Percussion", "source_text": "Visible bruising on the chest wall. | Tenderness over the bruised area, no crepitus felt. | Heart sounds are normal, no murmurs, rubs, or gallops detected. Breath sounds are clear bilaterally. | Resonant throughout, no areas of dullness.", "exam_ids": ["agentclinic-medqa-ext-157-e006", "agentclinic-medqa-ext-157-e007", "agentclinic-medqa-ext-157-e008", "agentclinic-medqa-ext-157-e009"]},
+      "x007": {"source": "Test_Results.Echocardiogram.Findings", "source_text": "Normal chamber sizes, no valvular abnormalities, evidence of sinus tachycardia", "exam_ids": ["agentclinic-medqa-ext-157-i001"]},
+      "x008": {"source": "Test_Results.Blood_Tests.Troponins", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-157-i002"]},
+      "x009": {"source": "Test_Results.Blood_Tests.Pulmonary_Capillary_Wedge_Pressure", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-157-i003"]},
+      "x010": {"source": "Test_Results.Imaging.Chest_X-ray.Findings", "source_text": "No rib fractures or pneumothorax detected", "exam_ids": ["agentclinic-medqa-ext-157-i004"]}
+    },
+    "finding_flags": {
+      "x007": ["'Evidence of sinus tachycardia' is a rhythm finding reported on an echocardiogram (normally from the ECG); kept as given."],
+      "x009": ["Pulmonary capillary wedge pressure is listed under blood tests in the source; it is an invasive haemodynamic measurement (pulmonary artery catheter)."]
+    },
+    "leakage": [],
+    "source_issues": ["Pulmonary capillary wedge pressure is listed as a blood test.", "The echocardiogram reports sinus tachycardia (a rhythm finding)."],
+    "notes": ["The chest pain appears in the chief complaint, history and ROS; one fact (f001) with onset after the crash as a child.", "The crash is a standalone history fact (f003); 'unrestrained' is its child (seatbelt, absent). 'Front seat, unrestrained driver' becomes 'I was the driver, in the front seat' plus the seatbelt child.", "Chest-wall bruising is something the patient can see, so it is a patient fact (f005) as well as an examination finding.", "The fluids and morphine already given are medication facts (f006, f007).", "The chest examination combines inspection, palpation, auscultation (heart and lungs) and percussion of one region, per the grouping rule; heart and lung auscultation are aliases.", "check_coverage warns that x008 aliases contain the gold word 'cardiac' ('cardiac troponin', 'cardiac enzymes'). Kept: these are the standard clinical names of the test and name the organ, not the diagnosis; the alias only routes a doctor's request.", "Gold aliases added in harmonisation (blunt cardiac injury): 'Blunt cardiac injury' is the current name for cardiac contusion."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient who presents with chest pain following a motor vehicle collision."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

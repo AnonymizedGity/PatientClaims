@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-053",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 72, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "yellow skin", "aliases": ["jaundice", "yellowing of the skin"], "text": "My skin has turned yellow.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "yellow skin: course", "parent": "f001", "attribute": "course", "text": "It came on gradually.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "itching", "aliases": ["pruritus", "itchy skin"], "text": "I've been itching all over.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "how long the symptoms have been going on", "text": "The yellowing and the itching have been going on for the past 2 weeks.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "loss of appetite", "aliases": ["decreased appetite", "not hungry"], "text": "My appetite has gone down.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "weight loss: amount", "parent": "f006", "attribute": "quantity", "text": "I've lost 6.3 kg, that's 14 pounds.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "pale stools", "aliases": ["light-colored stool", "clay-colored stool"], "text": "My stools have been pale.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f009", "item": "dark urine", "aliases": ["urine color change"], "text": "My urine is very dark.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f010", "item": "other symptoms", "aliases": ["any other problems"], "text": "I haven't noticed any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "previous episode of upper abdominal pain", "aliases": ["past belly pain", "previous abdominal problem"], "text": "Three years ago I had a sudden episode of pain in my upper belly.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "previous episode of upper abdominal pain: treatment", "parent": "f011", "attribute": "other", "text": "It was treated with IV fluids, NSAIDs and changes to my diet.", "polarity": "present", "category": "medical_history"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I haven't had any alcohol for the past three years.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "past alcohol use", "aliases": ["former drinking", "beer"], "text": "Before I stopped three years ago, I drank 1 to 2 beers a day for 40 years.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f015", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I've smoked a pack of cigarettes a day for 50 years.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-053",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "Normal"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normal"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Normal"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "inspection for jaundice", "aliases": ["skin examination", "eye examination", "conjunctivae", "sclerae", "jaundice"], "result": "Jaundice of the conjunctivae and skin."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "gallbladder palpation", "liver and spleen palpation"], "result": "Auscultation: normal bowel sounds. Abdomen soft and non-distended. Palpation: no tenderness; soft, cystic mass in the right upper quadrant."},
+      {"id": "x007", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver panel", "bilirubin", "total bilirubin", "direct bilirubin", "alkaline phosphatase", "ALP", "AST", "ALT"], "result": "Total bilirubin 5.6 mg/dL; direct bilirubin 4.8 mg/dL; alkaline phosphatase 192 U/L; AST 32 U/L; ALT 34 U/L."},
+      {"id": "x008", "kind": "test", "name": "abdominal ultrasound", "aliases": ["ultrasound of the abdomen", "right upper quadrant ultrasound", "abdominal ultrasonography"], "result": "Anechoic cystic mass in the subhepatic region; dilation of the intrahepatic and extrahepatic bile ducts."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-053",
+    "diagnosis": "Pancreatic adenocarcinoma",
+    "aliases": ["pancreatic ductal adenocarcinoma", "PDAC", "adenocarcinoma of the pancreas", "adenocarcinoma of the head of the pancreas", "pancreatic head adenocarcinoma", "pancreatic cancer", "pancreatic carcinoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-053",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-053-p001"],
+      "f002": ["agentclinic-medqa-ext-053-p001"],
+      "f003": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p002"],
+      "f004": ["agentclinic-medqa-ext-053-p001"],
+      "f005": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p003"],
+      "f006": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p004"],
+      "f007": ["agentclinic-medqa-ext-053-p001"],
+      "f008": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p005"],
+      "f009": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p006"],
+      "f010": ["agentclinic-medqa-ext-053-p009"],
+      "f011": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p007"],
+      "f012": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p007"],
+      "f013": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p008"],
+      "f014": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p007"],
+      "f015": ["agentclinic-medqa-ext-053-p001", "agentclinic-medqa-ext-053-p007", "agentclinic-medqa-ext-053-p008"]
+    },
+    "quotes": {
+      "f002": "gradual yellow discoloration of the skin",
+      "f003": "generalized pruritus",
+      "f004": "over the past 2 weeks",
+      "f007": "a weight loss of 6.3 kg (14 lb)",
+      "f009": "his urine is very dark",
+      "f010": "No additional symptoms were reported.",
+      "f011": "Three years ago, he had an episode of acute upper abdominal pain",
+      "f012": "managed with IV fluids, NSAIDs, and dietary modification",
+      "f013": "abstained from alcohol for these three years",
+      "f014": "consumed 1–2 beers daily for 40 years",
+      "f015": "50-year history of smoking a pack of cigarettes daily"
+    },
+    "flags": {
+      "f010": ["'No additional symptoms were reported' (ROS) is turned into a general denial of other symptoms, as CONVERSION.md does with 'No notable ... provided'."],
+      "f011": ["The episode three years ago is not named in the source (it reads like acute pancreatitis); it stays a described experience, not a diagnosis."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-053-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-053-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-053-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-053-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection", "source_text": "Jaundice noted in the conjunctivae and skin.", "exam_ids": ["agentclinic-medqa-ext-053-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Bowel sounds normal. | Abdomen is soft, non-distended. | No tenderness, but a soft, cystic mass palpated in the right upper quadrant.", "exam_ids": ["agentclinic-medqa-ext-053-e006", "agentclinic-medqa-ext-053-e007", "agentclinic-medqa-ext-053-e008"]},
+      "x007": {"source": "Test_Results.Serum_Studies.Bilirubin_Total + Test_Results.Serum_Studies.Direct_Bilirubin + Test_Results.Serum_Studies.Alkaline_Phosphatase + Test_Results.Serum_Studies.AST + Test_Results.Serum_Studies.ALT", "source_text": "5.6 mg/dL | 4.8 mg/dL | 192 U/L | 32 U/L | 34 U/L", "exam_ids": ["agentclinic-medqa-ext-053-i001", "agentclinic-medqa-ext-053-i002", "agentclinic-medqa-ext-053-i003", "agentclinic-medqa-ext-053-i004", "agentclinic-medqa-ext-053-i005"]},
+      "x008": {"source": "Test_Results.Imaging.Abdominal_Ultrasonography.Findings", "source_text": "Anechoic cystic mass in the subhepatic region. Dilation of the intrahepatic and extrahepatic bile ducts.", "exam_ids": ["agentclinic-medqa-ext-053-i006"]}
+    },
+    "leakage": [],
+    "source_issues": ["The 'Percussion' leaf reports palpation-type findings ('Abdomen is soft, non-distended'); the result drops the percussion label.", "Jaundice of the conjunctivae and skin is recorded under Abdominal_Examination.Inspection.", "No test images or samples the pancreas (no CT, CA 19-9 or biopsy); the diagnosis rests on painless obstructive jaundice with a palpable gallbladder (Courvoisier sign) and duct dilation.", "All four vital signs are given only as 'Normal'."],
+    "notes": ["The 2-week duration covers both jaundice and itching, so it is a standalone fact (f004); 'gradual' is kept on the yellowing (f002).", "The conjunctival and skin jaundice leaf (e005) is its own record (x005), because a doctor requests inspection for jaundice separately from the abdominal exam.", "Alcohol is split into current abstinence (f013, absent) and past use (f014, historical); 'History of long-term alcohol consumption and smoking' (PMH) merges with these and with smoking (f015).", "Gold aliases leave out 'pancreatic cancer' and 'pancreatic carcinoma', which also cover non-adenocarcinoma tumours (broader); the judge can give credit.", "Gold aliases added in harmonisation (pancreatic cancer, pancreatic carcinoma): 'Pancreatic cancer' is the everyday name of pancreatic adenocarcinoma (about 90% of pancreatic cancers)."],
+    "extras": {
+      "objective_for_doctor": "Assess the patient and determine the cause of jaundice, pruritus, weight loss, pale stool, and dark urine."
+    }
+  }
+}

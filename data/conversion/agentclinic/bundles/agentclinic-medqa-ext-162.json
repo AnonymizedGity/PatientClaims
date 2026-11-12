@@ -1,0 +1,105 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-162", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 61, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "difficulty swallowing", "aliases": ["trouble swallowing", "dysphagia"], "text": "I've been having trouble swallowing.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "difficulty swallowing: liquids", "parent": "f001", "attribute": "character", "aliases": ["trouble swallowing drinks"], "text": "I don't have any trouble swallowing liquids.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "fatigue", "aliases": ["tiredness"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "neck pain", "text": "I've had some mild pain in my neck.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "neck pain: duration", "parent": "f004", "attribute": "duration", "text": "It's been there for around a month.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "weight loss", "text": "I've lost 5 to 10 pounds over the past few months without trying.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "trouble breathing", "aliases": ["breathing difficulties", "shortness of breath"], "text": "I haven't had any trouble breathing.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f008", "item": "past medical problems", "aliases": ["past medical history", "chronic medical problems"], "text": "I've generally been healthy, and I can't recall any significant medical problems in the past.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "similar symptoms in the past", "aliases": ["previous episodes"], "text": "I've never had symptoms like this before.", "polarity": "absent", "category": "symptom", "system": "general", "time": "historical"},
+      {"id": "f010", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "alcohol", "aliases": ["drinking"], "text": "I rarely drink alcohol.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "occupation", "aliases": ["job", "work", "retirement"], "text": "I recently retired. I was a librarian.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f015", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "diarrhea", "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "recent infections", "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-162",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "78/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general examination"], "result": "Appears mildly fatigued."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "conjunctivae", "aliases": ["eyes", "pallor", "conjunctival pallor"], "result": "Mildly pale conjunctivae."},
+      {"id": "x007", "kind": "exam", "system": "ent", "name": "mouth and tongue examination", "aliases": ["oral examination", "oral cavity", "tongue", "mouth"], "result": "Mild glossitis."},
+      {"id": "x008", "kind": "exam", "system": "ent", "name": "neck examination", "aliases": ["neck", "neck palpation", "neck masses", "cervical lymph nodes", "lymph nodes", "thyroid", "musculoskeletal examination"], "result": "No palpable masses; no lymphadenopathy. Musculoskeletal: no obvious deformity; mild tenderness over the anterior aspect of the neck."},
+      {"id": "x009", "kind": "exam", "system": "skin", "name": "skin and nail examination", "aliases": ["nails", "hands", "skin examination"], "result": "Nails appear flat (koilonychia)."},
+      {"id": "x010", "kind": "test", "name": "barium esophagram", "aliases": ["barium swallow", "esophagram", "contrast swallow study"], "result": "Upper esophageal web."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "Hb", "white blood cell count", "WBC", "differential", "neutrophils", "lymphocytes", "monocytes"], "result": "Hemoglobin 10 g/dL (low); white blood cell count 11,000/mm³; differential: neutrophils 70%, lymphocytes 25%, monocytes 5%."},
+      {"id": "x012", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "10 mm/h"}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-162",
+    "diagnosis": "Plummer-Vinson syndrome",
+    "aliases": ["Paterson-Brown-Kelly syndrome", "Paterson-Kelly syndrome", "sideropenic dysphagia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-162",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-162-p001"], "f002": ["agentclinic-medqa-ext-162-p008"],
+      "f003": ["agentclinic-medqa-ext-162-p001", "agentclinic-medqa-ext-162-p002"],
+      "f004": ["agentclinic-medqa-ext-162-p001", "agentclinic-medqa-ext-162-p003"], "f005": ["agentclinic-medqa-ext-162-p001"],
+      "f006": ["agentclinic-medqa-ext-162-p001", "agentclinic-medqa-ext-162-p004"],
+      "f007": ["agentclinic-medqa-ext-162-p001", "agentclinic-medqa-ext-162-p005"],
+      "f008": ["agentclinic-medqa-ext-162-p001", "agentclinic-medqa-ext-162-p006"], "f009": ["agentclinic-medqa-ext-162-p006"],
+      "f010": ["agentclinic-medqa-ext-162-p007"], "f011": ["agentclinic-medqa-ext-162-p007"], "f012": ["agentclinic-medqa-ext-162-p007"],
+      "f013": ["agentclinic-medqa-ext-162-p008"], "f014": ["agentclinic-medqa-ext-162-p008"], "f015": ["agentclinic-medqa-ext-162-p008"],
+      "f016": ["agentclinic-medqa-ext-162-p008"], "f017": ["agentclinic-medqa-ext-162-p008"]
+    },
+    "quotes": {
+      "f002": "dysphagia to liquids", "f004": "Mild neck pain", "f005": "mild neck pain for around a month",
+      "f006": "unintentional weight loss of 5-10 pounds over the past few months",
+      "f008": "being generally healthy / cannot recall any significant past medical events", "f009": "No history of similar symptoms in the past.",
+      "f011": "rarely consumes alcohol", "f012": "Recently retired librarian."
+    },
+    "flags": {
+      "f005": ["'experiencing fatigue, mild neck pain for around a month, and difficulty swallowing': 'for around a month' is attached to the neck pain, the nearest reading; it may apply to all three symptoms."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-162-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-162-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "78 bpm", "exam_ids": ["agentclinic-medqa-ext-162-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-162-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Appearance", "source_text": "Appears mildly fatigued", "exam_ids": ["agentclinic-medqa-ext-162-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.ENT", "source_text": "Mildly pale conjunctivae; oral cavity examination reveals mild glossitis", "exam_ids": ["agentclinic-medqa-ext-162-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.ENT", "source_text": "Mildly pale conjunctivae; oral cavity examination reveals mild glossitis", "exam_ids": ["agentclinic-medqa-ext-162-e006"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Examination.Neck + Physical_Examination_Findings.General_Examination.Musculoskeletal", "source_text": "No palpable masses, no lymphadenopathy | No obvious deformity; mild tenderness over the anterior aspect of the neck", "exam_ids": ["agentclinic-medqa-ext-162-e007", "agentclinic-medqa-ext-162-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.General_Examination.Skin", "source_text": "Nails appear flat (koilonychia)", "exam_ids": ["agentclinic-medqa-ext-162-e009"]},
+      "x010": {"source": "Test_Results.Barium_Esophagram.Findings", "source_text": "Presence of an upper esophageal web", "exam_ids": ["agentclinic-medqa-ext-162-i001"]},
+      "x011": {"source": "Test_Results.Complete_Blood_Count.Hb + Test_Results.Complete_Blood_Count.Total_count_WBC + Test_Results.Complete_Blood_Count.Differential_count.Neutrophiles + Test_Results.Complete_Blood_Count.Differential_count.Lymphocytes + Test_Results.Complete_Blood_Count.Differential_count.Monocytes", "source_text": "10 g/dL (low) | 11,000 /mm3 | 70% | 25% | 5%", "exam_ids": ["agentclinic-medqa-ext-162-i002", "agentclinic-medqa-ext-162-i003", "agentclinic-medqa-ext-162-i004", "agentclinic-medqa-ext-162-i005", "agentclinic-medqa-ext-162-i006"]},
+      "x012": {"source": "Test_Results.Complete_Blood_Count.ESR", "source_text": "10 mm/hr", "exam_ids": ["agentclinic-medqa-ext-162-i007"]}
+    },
+    "finding_flags": {
+      "x008": ["The source's 'Musculoskeletal' leaf ('No obvious deformity; mild tenderness over the anterior aspect of the neck') is merged into the neck examination because its only localised finding is in the neck; 'no obvious deformity' may refer to the whole musculoskeletal system, so it keeps its 'Musculoskeletal:' label."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The duration 'for around a month' is ambiguous in scope (neck pain only, or all symptoms).",
+      "ESR is listed under the complete blood count; 'Neutrophiles' is misspelled.",
+      "No iron studies or MCV are given, although the case hinges on iron deficiency."
+    ],
+    "notes": [
+      "The ENT leaf covers two separately requested examinations, so it is split into conjunctivae (x006) and mouth/tongue (x007); both cite the same leaf.",
+      "The denial of 'dysphagia to liquids' (ROS) is a child of the swallowing difficulty (f002, absent), so a question about liquids gets its own answer.",
+      "'Generally healthy' (p001) and 'cannot recall any significant past medical events' (p006) are one fact keeping the hedge (f008); 'no similar symptoms in the past' is separate (f009).",
+      "ESR is a separate record because it is not a complete-blood-count member."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, mild neck pain, difficulty swallowing, and unintentional weight loss."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

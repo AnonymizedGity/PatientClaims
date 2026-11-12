@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-168",
+  "source_row": 168,
+  "demographics_text": "55-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with long-term bilateral wrist and knee pain.",
+  "chief_complaint": "Bilateral wrist and knee pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p001",
+      "field": "History",
+      "text": "The patient is a retired professional athlete who has been experiencing bilateral wrist and knee pain for the last 10 years. He reports morning stiffness in his joints lasting about 50 minutes but denies any joint swelling, color changes in digits, or dryness of mucous membranes. He also denies any constitutional symptoms such as fever or chills."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Morning stiffness lasting about 50 minutes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No joint swelling"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No color changes in digits"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No dryness of mucous membranes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p006",
+      "field": "Secondary_Symptoms",
+      "text": "No fever or chills"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p007",
+      "field": "Past_Medical_History",
+      "text": "History of being a professional athlete. No significant past medical history reported."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p008",
+      "field": "Social_History",
+      "text": "Retired, does not smoke or drink alcohol excessively."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-168-p009",
+      "field": "Review_of_Systems",
+      "text": "Systemic review is otherwise unremarkable."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e005",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection",
+      "text": "Several non-tender nodules on the left 1st, 3rd, and 4th distal interphalangeal joints."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e006",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation",
+      "text": "Tenderness at the base of both thumbs. Enlarged knees with pain on passive range of motion."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e007",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion",
+      "text": "Crepitus noticed in knees during passive movement. No significant limitation of movement due to pain."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-e008",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Special_Tests",
+      "text": "No specific tests performed."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-168-i001",
+      "path": "Test_Results.X-rays.Wrist.Findings",
+      "text": "Joint space narrowing, osteophytes, and subchondral sclerosis."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-i002",
+      "path": "Test_Results.X-rays.Knee.Findings",
+      "text": "Joint space narrowing, osteophytes, subchondral sclerosis, and subchondral cyst formation."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-i003",
+      "path": "Test_Results.Blood_Tests.Rheumatoid_Factor",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-i004",
+      "path": "Test_Results.Blood_Tests.C-Reactive_Protein",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-168-i005",
+      "path": "Test_Results.Blood_Tests.ESR",
+      "text": "Slightly elevated but non-specific"
+    }
+  ],
+  "correct_diagnosis": "Osteoarthritis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

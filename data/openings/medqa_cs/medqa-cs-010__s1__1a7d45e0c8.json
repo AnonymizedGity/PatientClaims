@@ -1,0 +1,49 @@
+{
+ "case_id": "medqa-cs-010",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have pain in my right calf muscle.",
+   "The pain started a few days ago.",
+   "I fell down and scratched my right leg.",
+   "It's 8 out of 10.",
+   "It feels like pressure and spasms."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having pain in my right calf muscle for a few days now. It's really bad, about an 8 out of 10, and it feels like pressure and spasms. I also fell down and scratched my right leg recently.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f011",
+    "f005",
+    "f007"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4033,
+   "tokens_out": 63,
+   "seconds": 6.59,
+   "redrafts": 0
+  }
+ }
+}

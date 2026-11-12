@@ -1,0 +1,330 @@
+{
+  "case_id": "medqa-cs-023",
+  "source_case_id": 23,
+  "opening_scenario": "Kathleen Moore, a 33-year-old female, comes to the clinic complaining of knee pain.",
+  "doorway_vital_signs": [
+    "BP: 130/80 mmHg",
+    "Temp: 99.9°F (37.7°C)",
+    "RR: 16/minute",
+    "HR: 76/minute, regular"
+  ],
+  "sp_notes": [
+    "Pretend to have pain when the examinee moves your left knee in all directions.",
+    "Do not allow the examinee to fully flex or extend your left knee.",
+    "Paint your left knee red to make it look inflamed."
+  ],
+  "challenging_questions": [
+    "\"Do you believe I will regain the ability to walk on my knee as I did previously?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What brings you in today?",
+    "answer": "Left knee pain."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-023-p001",
+      "topic": "Onset",
+      "question": "When did you first notice the pain?",
+      "answer": "Two days ago."
+    },
+    {
+      "fact_id": "medqa-cs-023-p002",
+      "topic": "Function",
+      "question": "How well are you able to use your knee?",
+      "answer": "I can't move it. I use a cane to walk."
+    },
+    {
+      "fact_id": "medqa-cs-023-p003",
+      "topic": "Erythema",
+      "question": "Have you noticed any redness around the knee?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-023-p004",
+      "topic": "Swelling of the joint",
+      "question": "Has there been any swelling in your knee?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-023-p005",
+      "topic": "Alleviating factors",
+      "question": "Does anything make the pain better?",
+      "answer": "Rest and Tylenol help a little bit."
+    },
+    {
+      "fact_id": "medqa-cs-023-p006",
+      "topic": "Exacerbating factors",
+      "question": "Does anything make the pain worse?",
+      "answer": "Moving my knee and walking."
+    },
+    {
+      "fact_id": "medqa-cs-023-p007",
+      "topic": "History of trauma to the knee",
+      "question": "Have you sustained any knee injuries previously?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p008",
+      "topic": "Pain in other joints",
+      "question": "Have you ever had any other joint pain in the past? If so, \"Would you please describe those episodes?",
+      "answer": "Yes, my wrist and fingers are always painful and stiff. Five years ago I had a painful, swollen big toe on my left foot, but the swelling went away after the doctor at the urgent clinic gave me some medicine."
+    },
+    {
+      "fact_id": "medqa-cs-023-p009",
+      "topic": "Duration of the pain in the fingers",
+      "question": "How long have your fingers and wrists remained painful and stiff?",
+      "answer": "Six months."
+    },
+    {
+      "fact_id": "medqa-cs-023-p010",
+      "topic": "Stiffness in the morning/ duration",
+      "question": "Do you experience stiffness in your fingers upon waking? If yes, \"For how long?",
+      "answer": "Yes, it lasts for about an hour."
+    },
+    {
+      "fact_id": "medqa-cs-023-p011",
+      "topic": "Photosensitivity",
+      "question": "Do you develop any pain or discomfort with exposure to light?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p012",
+      "topic": "Rashes",
+      "question": "Have you seen any rashes?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p013",
+      "topic": "Oral Ulcers",
+      "question": "Have you noticed any sores in your mouth?",
+      "answer": "I had many in my mouth last month, but they've resolved now. They seem to come and go."
+    },
+    {
+      "fact_id": "medqa-cs-023-p014",
+      "topic": "Fatigue",
+      "question": "Have you felt tired recently?",
+      "answer": "Yes, I've had no energy to work and have felt tired all the time for the past 6 months."
+    },
+    {
+      "fact_id": "medqa-cs-023-p015",
+      "topic": "Fever/ chills",
+      "question": "Have you had any fevers recently? Any chills?",
+      "answer": "I feel hot now, but I have no chills."
+    },
+    {
+      "fact_id": "medqa-cs-023-p016",
+      "topic": "Hair loss",
+      "question": "Have you experienced any recent shedding of hair?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p017",
+      "topic": "Sensitivity to cold temperatures",
+      "question": "Do your fingers or toes change color or become painful when it is cold outside?",
+      "answer": "Sometimes my fingers become pale and then blue when they are exposed to cold weather or cold water."
+    },
+    {
+      "fact_id": "medqa-cs-023-p018",
+      "topic": "Heart symptoms (chest pain, palpitations)",
+      "question": "Have you had any chest pain recently? Any palpitations?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p019",
+      "topic": "Pulmonary complaints (shortness of breath, cough)",
+      "question": "Have you had any shortness of breath recently? Cough?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p020",
+      "topic": "Neurologic complaints (seizures, weakness, numbness)",
+      "question": "Have you ever had seizures? Any weakness? Any numbness?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p021",
+      "topic": "Urinary problems (hematuria)",
+      "question": "Have you observed any alterations or blood in your urine?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p022",
+      "topic": "Abdominal pain",
+      "question": "Have you had any pain in your stomach?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p023",
+      "topic": "History of recent tick bite",
+      "question": "Have you had recent tick bites?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p024",
+      "topic": "Pregnancies",
+      "question": "Have you been pregnant at any time? If so, \"How many times? How were your children delivered?",
+      "answer": "I have two daughters, both of whom were born via C-Section."
+    },
+    {
+      "fact_id": "medqa-cs-023-p025",
+      "topic": "Miscarriages/ abortions",
+      "question": "Have you ever experienced a miscarriage or had an abortion?",
+      "answer": "I had two spontaneous abortions a long time ago."
+    },
+    {
+      "fact_id": "medqa-cs-023-p026",
+      "topic": "Last menstrual period",
+      "question": "When did you have your last menstrual period?",
+      "answer": "It was two weeks ago."
+    },
+    {
+      "fact_id": "medqa-cs-023-p027",
+      "topic": "Weight changes",
+      "question": "Have you experienced any fluctuations in your weight lately?",
+      "answer": "I've lost roughly 10 pounds in the last 6 months."
+    },
+    {
+      "fact_id": "medqa-cs-023-p028",
+      "topic": "Appetite changes",
+      "question": "Have you experienced any shifts in your appetite lately?",
+      "answer": "My appetite hasn't been good."
+    },
+    {
+      "fact_id": "medqa-cs-023-p029",
+      "topic": "Current medications",
+      "question": "Are you taking any medications? If so, \"Which ones?",
+      "answer": "I use Tylenol to relieve my pain, but it is not working anymore."
+    },
+    {
+      "fact_id": "medqa-cs-023-p030",
+      "topic": "Past medical history",
+      "question": "Do you have any other medical problems that you are aware of?",
+      "answer": "None."
+    },
+    {
+      "fact_id": "medqa-cs-023-p031",
+      "topic": "Past surgical history",
+      "question": "Have you undergone any surgical procedures?",
+      "answer": "I had two C-Sections at 23 and 25 years old."
+    },
+    {
+      "fact_id": "medqa-cs-023-p032",
+      "topic": "Family history",
+      "question": "Do you have any medical conditions that run in your family? If so, \"What kind?",
+      "answer": "My mother suffers from rheumatoid arthritis and is currently in a nursing home. I do not have information about my father."
+    },
+    {
+      "fact_id": "medqa-cs-023-p033",
+      "topic": "Occupation",
+      "question": "What is your occupation?",
+      "answer": "Waitress."
+    },
+    {
+      "fact_id": "medqa-cs-023-p034",
+      "topic": "Alcohol use",
+      "question": "Some of the following questions may seem a bit uncomfortable, but I assure you that everything you share with me is kept confidential.\" \"Do you drink alcohol? If so, \"How much?",
+      "answer": "I don't drink a lot - usually two to four beers a week except for weekends, when I don't count."
+    },
+    {
+      "fact_id": "medqa-cs-023-p035",
+      "topic": "CAGE questions",
+      "question": "Have you ever felt the need to cut down on your drinking?\" \"Have people annoyed you by criticizing your drinking?\" \"Have you ever felt guilty about drinking?\" \"Have you felt as though you needed a drink in the morning as an eye-opener to steady your nerves or to get rid of a hangover?",
+      "answer": "No (to all four)."
+    },
+    {
+      "fact_id": "medqa-cs-023-p036",
+      "topic": "Last alcohol intake",
+      "question": "When was the last time that you consumed alcohol?",
+      "answer": "Four days ago."
+    },
+    {
+      "fact_id": "medqa-cs-023-p037",
+      "topic": "Illicit drug use",
+      "question": "Do you use any illicit drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p038",
+      "topic": "Tobacco",
+      "question": "Do you smoke?\" \"If so, \"How much?",
+      "answer": "Yes, a pack a day for the past 10 years."
+    },
+    {
+      "fact_id": "medqa-cs-023-p039",
+      "topic": "Sexual activity",
+      "question": "Are you sexually active?",
+      "answer": "I am sexually active with my new boyfriend whom I met 2 months ago."
+    },
+    {
+      "fact_id": "medqa-cs-023-p040",
+      "topic": "Use of condoms",
+      "question": "Do you use condoms?",
+      "answer": "Occasionally."
+    },
+    {
+      "fact_id": "medqa-cs-023-p041",
+      "topic": "Number of sexual partners during the past year",
+      "question": "In the last year, how many sexual partners have you engaged with?",
+      "answer": "Four."
+    },
+    {
+      "fact_id": "medqa-cs-023-p042",
+      "topic": "Active with men, women, or both",
+      "question": "Have your partners been male, female, or both?",
+      "answer": "Men only."
+    },
+    {
+      "fact_id": "medqa-cs-023-p043",
+      "topic": "Vaginal discharge",
+      "question": "Have you experienced any vaginal discharge?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-023-p044",
+      "topic": "History of STDs",
+      "question": "Have you ever had any sexually transmitted infections?",
+      "answer": "Yes, I was diagnosed with gonorrhea a year ago. I received antibiotic treatment and recovered well."
+    },
+    {
+      "fact_id": "medqa-cs-023-p045",
+      "topic": "Drug allergies",
+      "question": "Do you have any allergies?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History \nHPI: A 33-year-old female complains of left knee pain that started two days ago and is causing difficulty in walking. She has swelling and redness in her left knee and a mild fever but no chills. She denies any trauma. She has a history of fatigue and painful wrists and fingers and has experienced one-hour morning stiffness over the past six months. She also recalls multiple oral ulcers that resolved last month. She describes Raynaud’s phenomenon but denies rash, photosensitivity, hair loss, or recent tick bites. She recalls a 10-lb weight loss over the past six months and has no appetite. \nROS: Negative except as above. \nAllergies: NKDA. \nMedications: Tylenol. \nPMH: Episode of acute left big toe arthritis five years ago; gonorrhea one year ago. \nPSH: Two C-sections, two spontaneous abortions. \nSH: One pack per day for ten years. Usually drinks 2-4 beers/week; on weekends drinks more; last ingestion was four days ago; CAGE 0/4. No illicit drugs. She is sexually active with multiple male partners and inconsistent condom use. \nFH: Her mother has rheumatoid arthritis and lives in a nursing home.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-023-e001",
+      "source_text": "The patient is in no acute distress but favors the left knee."
+    },
+    {
+      "exam_id": "medqa-cs-023-e002",
+      "source_text": "VS: WNL except for low-grade fever."
+    },
+    {
+      "exam_id": "medqa-cs-023-e003",
+      "source_text": "HEENT: No oral lesions."
+    },
+    {
+      "exam_id": "medqa-cs-023-e004",
+      "source_text": "Chest: Clear breath sounds bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-023-e005",
+      "source_text": "Heart: Regular rate and rhythm; S1/S2 within normal limits; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-023-e006",
+      "source_text": "Abdomen: Soft, nondistended, active bowel sounds four times per minute; no hepatosplenomegaly."
+    },
+    {
+      "exam_id": "medqa-cs-023-e007",
+      "source_text": "Extremities: The patient exhibits erythema, tenderness, pain, and restricted range of motion on flexion and extension of left knee compared to the right knee. There is swelling noted at the left knee. Fingers and hands show stiffness bilaterally. Shoulder, elbow, wrist, hip, and ankle joints are within normal limits bilaterally."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Gout \nHistory Findings: \n- Monoarticular joint pain and tenderness \n- History of swollen toe \n- Occasional alcohol use\nPhysical Exam Findings: \n- Erythema, tenderness, pain, and restricted range of motion on flexion and extension of left knee compared to the right knee \n- Swelling at the left knee \n\nDiagnosis #2: Rheumatoid arthritis \nHistory Findings: \n- Morning joint stiffness \n- Family history of rheumatoid arthritis \n- Systemic symptoms (anorexia, weight loss, fatigue, fever) \n- Multiple joint involvement \n- Duration > 6 weeks \nPhysical Exam Findings: \n- Joint tenderness and stiffness \n- Temperature 99.9°F\n\nDiagnosis #3: Systemic lupus erythematosus \nHistory Findings: \n- Systemic symptoms (anorexia, weight loss, fatigue) \n- History of multiple oral ulcers \n- History of 2 spontaneous abortions \n- Raynaud phenomenon \nPhysical Exam Findings: \n- Joint tenderness and stiffness",
+  "gold_additional_diagnosis": "• Pseudogout: Another crystal-induced arthritis, pseudogout frequently involves the knees and wrists but is usually seen in patients older than 60 years of age. \n\n• Gonococcal septic arthritis: This occurs in healthy hosts, most commonly young women (women are much more likely than men to have asymptomatic genitourinary gonococcal infection, which allows the bacteria to mutate and disseminate). The knee is the most frequently involved joint, but the monoarthritis (or tenosynovitis) is usually preceded by a few days of migratory polyarthralgias. Also, this patient does not have the characteristic rash, which consists of small necrotic pustules on the extremities (including the palms and soles). \n\n• Nongonococcal septic arthritis: This occurs suddenly, usually affects the knee or wrist, and is most commonly caused by S aureus. However, it is a disease of an abnormal host; previous joint damage and IV drug use are key risk factors not present in this case. \n\n• Osteoarthritis: Onset is insidious, joint stiffness brief, and joint inflammation minimal, all of which are incongruent with this patient's presentation. Also, osteoarthritis spares the wrist and MCP joints and is not associated with constitutional symptoms.",
+  "raw_opening": "Opening Scenario:\n\nKathleen Moore, a 33-year-old female, comes to the clinic complaining of knee pain.\n\nVital Signs:\n\nBP: 130/80 mmHg\nTemp: 99.9°F (37.7°C)\nRR: 16/minute\nHR: 76/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room. (Add this entry if it is not already there.)\n\nChecklist/SP Sheet:\n\nPatient Description:\nPatient - A 33-year-old female, divorced with two daughters.\n\nNotes for the SP:\n- Pretend to have pain when the examinee moves your left knee in all directions.\n- Do not allow the examinee to fully flex or extend your left knee.\n- Paint your left knee red to make it look inflamed.\n\nChallenging Questions to Ask:\n\"Do you believe I will regain the ability to walk on my knee as I did previously?\"\n\nExaminee Response:\nIt's probable, but this hinges on the root issue and your reaction to the therapy.. I need to perform an examination.\n\nExaminee Checklist:\n\nEntrance:\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified their role or position.\n\nReflective Listening:\n- The examinee asked an open-ended question and actively listened to the response.\n- The examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- The examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n- Examinee dictated data efficiently and accurately.\n\nConnecting With the Patient:\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief Complaint: \nDoctor: \"What brings you in today?\" \nPatient: \"Left knee pain.\"\n\nOnset: \nDoctor: \"When did you first notice the pain?\" \nPatient: \"Two days ago.\"\n\nFunction: \nDoctor: \"How well are you able to use your knee?\" \nPatient: \"I can't move it. I use a cane to walk.\"\n\nErythema: \nDoctor: \"Have you noticed any redness around the knee?\" \nPatient: \"Yes.\"\n\nSwelling of the joint: \nDoctor: \"Has there been any swelling in your knee?\" \nPatient: \"Yes.\"\n\nAlleviating factors: \nDoctor: \"Does anything make the pain better?\" \nPatient: \"Rest and Tylenol help a little bit.\"\n\nExacerbating factors: \nDoctor: \"Does anything make the pain worse?\" \nPatient: \"Moving my knee and walking.\"\n\nHistory of trauma to the knee: \nDoctor: \"Have you sustained any knee injuries previously?\" \nPatient: \"No.\"\n\nPain in other joints: \nDoctor: \"Have you ever had any other joint pain in the past? \nIf so, \"Would you please describe those episodes?\" \nPatient: \"Yes, my wrist and fingers are always painful and stiff. Five years ago I had a painful, swollen big toe on my left foot, but the swelling went away after the doctor at the urgent clinic gave me some medicine.\"\n\nDuration of the pain in the fingers: \nDoctor: \"How long have your fingers and wrists remained painful and stiff?\" \nPatient: \"Six months.\"\n\nStiffness in the morning/ duration: \nDoctor: \"Do you experience stiffness in your fingers upon waking? \nIf yes, \"For how long?\" \nPatient: \"Yes, it lasts for about an hour.\"\n\nPhotosensitivity: \nDoctor: \"Do you develop any pain or discomfort with exposure to light?\" \nPatient: \"No.\"\n\nRashes: \nDoctor: \"Have you seen any rashes?\" \nPatient: \"No.\"\n\nOral Ulcers: \nDoctor: \"Have you noticed any sores in your mouth?\" \nPatient: \"I had many in my mouth last month, but they've resolved now. They seem to come and go.\"\n\nFatigue: \nDoctor: \"Have you felt tired recently?\" \nPatient: \"Yes, I've had no energy to work and have felt tired all the time for the past 6 months.\"\n\nFever/ chills: \nDoctor: \"Have you had any fevers recently? Any chills?\" \nPatient: \"I feel hot now, but I have no chills.\"\n\nHair loss: \nDoctor: \"Have you experienced any recent shedding of hair?\" \nPatient: \"No.\"\n\nSensitivity to cold temperatures: \nDoctor: \"Do your fingers or toes change color or become painful when it is cold outside?\" \nPatient: \"Sometimes my fingers become pale and then blue when they are exposed to cold weather or cold water.\"\n\nHeart symptoms (chest pain, palpitations): \nDoctor: \"Have you had any chest pain recently? Any palpitations?\" \nPatient: \"No.\"\n\nPulmonary complaints (shortness of breath, cough): \nDoctor: \"Have you had any shortness of breath recently? Cough?\" \nPatient: \"No.\"\n\nNeurologic complaints (seizures, weakness, numbness): \nDoctor: \"Have you ever had seizures? Any weakness? Any numbness?\" \nPatient: \"No.\"\n\nUrinary problems (hematuria): \nDoctor: \"Have you observed any alterations or blood in your urine?\" \nPatient: \"No.\"\n\nAbdominal pain: \nDoctor: \"Have you had any pain in your stomach?\" \nPatient: \"No.\"\n\nHistory of recent tick bite: \nDoctor: \"Have you had recent tick bites?\" \nPatient: \"No.\"\n\nPregnancies: \nDoctor: \"Have you been pregnant at any time? \nIf so, \"How many times? How were your children delivered?\" \nPatient: \"I have two daughters, both of whom were born via C-Section.\"\n\nMiscarriages/ abortions: \nDoctor: \"Have you ever experienced a miscarriage or had an abortion?\" \nPatient: \"I had two spontaneous abortions a long time ago.\"\n\nLast menstrual period: \nDoctor: \"When did you have your last menstrual period?\" \nPatient: \"It was two weeks ago.\"\n\nWeight changes: \nDoctor: \"Have you experienced any fluctuations in your weight lately?\" \nPatient: \"I've lost roughly 10 pounds in the last 6 months.\"\n\nAppetite changes: \nDoctor: \"Have you experienced any shifts in your appetite lately?\" \nPatient: \"My appetite hasn't been good.\"\n\nCurrent medications: \nDoctor: \"Are you taking any medications? \nIf so, \"Which ones?\" \nPatient: \"I use Tylenol to relieve my pain, but it is not working anymore.\"\n\nPast medical history: \nDoctor: \"Do you have any other medical problems that you are aware of?\" \nPatient: \"None.\"\n\nPast surgical history: \nDoctor: \"Have you undergone any surgical procedures?\" \nPatient: \"I had two C-Sections at 23 and 25 years old.\"\n\nFamily history: \nDoctor: \"Do you have any medical conditions that run in your family? \nIf so, \"What kind?\" \nPatient: \"My mother suffers from rheumatoid arthritis and is currently in a nursing home. I do not have information about my father.\"\n\nOccupation: \nDoctor: \"What is your occupation?\" \nPatient: \"Waitress.\"\n\nAlcohol use: \nDoctor: \"Some of the following questions may seem a bit uncomfortable, but I assure you that everything you share with me is kept confidential.\" \n\"Do you drink alcohol? If so, \"How much?\" \nPatient: \"I don't drink a lot - usually two to four beers a week except for weekends, when I don't count.\"\n\nCAGE questions: \nDoctor: \"Have you ever felt the need to cut down on your drinking?\" \"Have people annoyed you by criticizing your drinking?\" \"Have you ever felt guilty about drinking?\" \"Have you felt as though you needed a drink in the morning as an eye-opener to steady your nerves or to get rid of a hangover?\" \nPatient: \"No (to all four).\"\n\nLast alcohol intake: \nDoctor: \"When was the last time that you consumed alcohol?\" \nPatient: \"Four days ago.\"\n\nIllicit drug use: \nDoctor: \"Do you use any illicit drugs?\" \nPatient: \"No.\"\n\nTobacco: \nDoctor: \"Do you smoke?\" \n\"If so, \"How much?\" \nPatient: \"Yes, a pack a day for the past 10 years.\"\n\nSexual activity: \nDoctor: \"Are you sexually active?\" \nPatient: \"I am sexually active with my new boyfriend whom I met 2 months ago.\"\n\nUse of condoms: \nDoctor: \"Do you use condoms?\" \nPatient: \"Occasionally.\"\n\nNumber of sexual partners during the past year: \nDoctor: \"In the last year, how many sexual partners have you engaged with?\" \nPatient: \"Four.\"\n\nActive with men, women, or both: \nDoctor: \"Have your partners been male, female, or both?\" \nPatient: \"Men only.\"\n\nVaginal discharge: \nDoctor: \"Have you experienced any vaginal discharge?\" \nPatient: \"No.\"\n\nHistory of STDs: \nDoctor: \"Have you ever had any sexually transmitted infections?\" \nPatient: \"Yes, I was diagnosed with gonorrhea a year ago. I received antibiotic treatment and recovered well.\"\n\nDrug allergies: \nDoctor: \"Do you have any allergies?\" \nPatient: \"No.\"\n\nPhysical Examination:\n\nBuilding the Doctor-Patient Relationship \n- The examinee washed his/her hands. \n- The examinee asked permission to start the exam. \n- The examinee used respectful draping. \n- The examinee did not repeat painful maneuvers. \n\nExam Component Maneuver:\n\nMusculoskeletal exam:\n- Inspection and palpation (compared both knees, including range of motion)\n- Examined other joints (shoulders, elbows, wrists, hands, fingers, hips, ankles)\n\nHair and skin exam:\n- Inspection \n\nCV exam:\n- Auscultation \n\nPulmonary exam:\n- Auscultation \n\nAbdominal exam:\n- Auscultation, palpation, percussion\n\n\nSample Closure:\n\n\"Ms. Moore, there are a few things that could be causing your knee pain, such as gout, an infection, or rheumatoid arthritis. To determine the cause, I will need to extract fluid from your knee and collect a blood sample.. Sometimes infections from the pelvis can spread to other parts of your body, such as your knee, and for that reason, I would also like to do a pelvic exam. These assessments will probably identify the origin of your discomfort.. You mentioned earlier that you don't always use condoms. I understand that using condoms consistently can be challenging, but they play a vital role in reducing the transmission of STDs.. Do you have any questions for me?\" (369 372)\n\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans.\n- Follow-up tests: Examinee mentioned the need for a pelvic exam.\n- Examinee discussed safe sex practices.\n- Examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory \nHPI: A 33-year-old female complains of left knee pain that started two days ago and is causing difficulty in walking. She has swelling and redness in her left knee and a mild fever but no chills. She denies any trauma. She has a history of fatigue and painful wrists and fingers and has experienced one-hour morning stiffness over the past six months. She also recalls multiple oral ulcers that resolved last month. She describes Raynaud’s phenomenon but denies rash, photosensitivity, hair loss, or recent tick bites. She recalls a 10-lb weight loss over the past six months and has no appetite. \nROS: Negative except as above. \nAllergies: NKDA. \nMedications: Tylenol. \nPMH: Episode of acute left big toe arthritis five years ago; gonorrhea one year ago. \nPSH: Two C-sections, two spontaneous abortions. \nSH: One pack per day for ten years. Usually drinks 2-4 beers/week; on weekends drinks more; last ingestion was four days ago; CAGE 0/4. No illicit drugs. She is sexually active with multiple male partners and inconsistent condom use. \nFH: Her mother has rheumatoid arthritis and lives in a nursing home. \n\nPhysical Examination:\n\nThe patient is in no acute distress but favors the left knee.\n\nVS: WNL except for low-grade fever.\nHEENT: No oral lesions. \nChest: Clear breath sounds bilaterally. \nHeart: Regular rate and rhythm; S1/S2 within normal limits; no murmurs, rubs, or gallops. \nAbdomen: Soft, nondistended, active bowel sounds four times per minute; no hepatosplenomegaly. \nExtremities: The patient exhibits erythema, tenderness, pain, and restricted range of motion on flexion and extension of left knee compared to the right knee. There is swelling noted at the left knee. Fingers and hands show stiffness bilaterally. Shoulder, elbow, wrist, hip, and ankle joints are within normal limits bilaterally."
+}

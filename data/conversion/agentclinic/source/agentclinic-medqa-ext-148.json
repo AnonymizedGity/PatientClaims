@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-148",
+  "source_row": 148,
+  "demographics_text": "31-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with intermittent flank pain and a history of multiple urinary tract infections.",
+  "chief_complaint": "Intermittent flank pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p001",
+      "field": "History",
+      "text": "The patient reports a 5-month history of intermittent flank pain. She mentions having had five urinary tract infections over the past 2 years. She has not experienced any recent fever, weight loss, or significant changes in urinary or bowel habits."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p002",
+      "field": "Secondary_Symptoms",
+      "text": "History of urinary tract infections"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No significant weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No noticeable changes in urinary or bowel habits"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history apart from recurrent urinary tract infections."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p007",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol socially. Works as a middle school teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-148-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies any recent fever, trauma to the back or abdomen, cough, shortness of breath, rash, or joint pain."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "150/88 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "78 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible scars or lesions."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Bowel sounds are normal."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "No ascites. Bilateral flank dullness could be elicited."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Bilateral, nontender upper abdominal masses palpable. No palpable liver or spleen."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-148-i001",
+      "path": "Test_Results.Blood_Works.Urea_Nitrogen",
+      "text": "29 mg/dL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-i002",
+      "path": "Test_Results.Blood_Works.Creatinine",
+      "text": "1.4 mg/dL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-148-i003",
+      "path": "Test_Results.Imaging.Renal_Ultrasonography.Findings",
+      "text": "Bilaterally enlarged kidneys with multiple parenchymal anechoic masses."
+    }
+  ],
+  "correct_diagnosis": "Autosomal dominant polycystic kidney disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

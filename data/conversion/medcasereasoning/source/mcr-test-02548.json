@@ -1,0 +1,92 @@
+{
+ "case_id": "mcr-test-02548",
+ "pmcid": "PMC3543206",
+ "test_row": 170,
+ "test_index": 2548,
+ "case_prompt": "A 65-year-old Namibian man was referred for evaluation of anemia, thrombocytopenia, and back pain. Seven months earlier, he developed insidious low back pain that gradually worsened, radiated to the lower limbs, and was aggravated by walking and relieved by rest. Four months before admission, he noted exertional dyspnea, fatigue, and palpitations. He also reported weight loss, fevers, malaise, and urinary symptoms including straining, frequency, and dysuria. He had no history of trauma, cough, gastrointestinal symptoms, smoking, or alcohol use.\n\nOn examination, he appeared pale and mildly wasted. The right shoulder joint was swollen, tender, and had a limited range of motion. There was percussion tenderness over the thoracic and lumbar spine without deformity. Digital rectal examination revealed an asymmetrically enlarged, nodular, and hard prostate with diffuse firm areas. Other findings were unremarkable.\n\nLaboratory tests showed a normocytic, normochromic anemia (hemoglobin 5.4 g/dL), thrombocytopenia (42×10^9/L), a reticulocyte count of 101 500 cells/µL (index 1.1), hypercalcemia (2.9 mmol/L), elevated alkaline phosphatase (509 IU/L), and lactate dehydrogenase (547 IU/L). Renal and liver function tests were normal. Serum protein electrophoresis revealed no M-protein, and urine was negative for Bence Jones proteins. Urinalysis showed mild proteinuria and microscopic hematuria; urine culture grew Escherichia coli sensitive to cefuroxime. The prostate-specific antigen level was >100 ng/mL.\n\nRadiographs of the right humerus demonstrated osteolytic lesions. Computed tomography of the spine, pelvis, and femur showed multiple osteolytic lesions. A lateral skull radiograph was normal.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 65-year-old Namibian man was referred for evaluation of anemia, thrombocytopenia, and back pain."
+  },
+  {
+   "id": "s002",
+   "text": "Seven months earlier, he developed insidious low back pain that gradually worsened, radiated to the lower limbs, and was aggravated by walking and relieved by rest."
+  },
+  {
+   "id": "s003",
+   "text": "Four months before admission, he noted exertional dyspnea, fatigue, and palpitations."
+  },
+  {
+   "id": "s004",
+   "text": "He also reported weight loss, fevers, malaise, and urinary symptoms including straining, frequency, and dysuria."
+  },
+  {
+   "id": "s005",
+   "text": "He had no history of trauma, cough, gastrointestinal symptoms, smoking, or alcohol use."
+  },
+  {
+   "id": "s006",
+   "text": "On examination, he appeared pale and mildly wasted."
+  },
+  {
+   "id": "s007",
+   "text": "The right shoulder joint was swollen, tender, and had a limited range of motion."
+  },
+  {
+   "id": "s008",
+   "text": "There was percussion tenderness over the thoracic and lumbar spine without deformity."
+  },
+  {
+   "id": "s009",
+   "text": "Digital rectal examination revealed an asymmetrically enlarged, nodular, and hard prostate with diffuse firm areas."
+  },
+  {
+   "id": "s010",
+   "text": "Other findings were unremarkable."
+  },
+  {
+   "id": "s011",
+   "text": "Laboratory tests showed a normocytic, normochromic anemia (hemoglobin 5.4 g/dL), thrombocytopenia (42×10^9/L), a reticulocyte count of 101 500 cells/µL (index 1.1), hypercalcemia (2.9 mmol/L), elevated alkaline phosphatase (509 IU/L), and lactate dehydrogenase (547 IU/L)."
+  },
+  {
+   "id": "s012",
+   "text": "Renal and liver function tests were normal. Serum protein electrophoresis revealed no M-protein, and urine was negative for Bence Jones proteins."
+  },
+  {
+   "id": "s013",
+   "text": "Urinalysis showed mild proteinuria and microscopic hematuria; urine culture grew Escherichia coli sensitive to cefuroxime."
+  },
+  {
+   "id": "s014",
+   "text": "The prostate-specific antigen level was >100 ng/mL."
+  },
+  {
+   "id": "s015",
+   "text": "Radiographs of the right humerus demonstrated osteolytic lesions."
+  },
+  {
+   "id": "s016",
+   "text": "Computed tomography of the spine, pelvis, and femur showed multiple osteolytic lesions."
+  },
+  {
+   "id": "s017",
+   "text": "A lateral skull radiograph was normal."
+  }
+ ],
+ "final_diagnosis": "Prostate adenocarcinoma",
+ "diagnostic_reasoning": "1. The absence of skull or jaw lesions argued against multiple myeloma—“he had no lytic lesions in the skull bones or mandible.” 2. Negative serum protein electrophoresis and absence of Bence Jones proteins further excluded multiple myeloma—“serum electrophoresis was negative for M-protein and there were no Bence Jones proteins in the urine.”",
+ "selection": {
+  "age": 65,
+  "sex": "male",
+  "specialty": "nephrology_urology",
+  "dx_key": "prostate adenocarcinoma",
+  "setting": "referral",
+  "time_structure": "single_episode",
+  "leakage": "test_result",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Bone pain, urinary symptoms, a hard nodular prostate, multiple bone lesions and PSA >100 with myeloma excluded clinch metastatic prostate adenocarcinoma; rich history.",
+  "second_look_note": "Back pain, weight loss and obstructive urinary symptoms with a hard nodular prostate, lytic bone lesions and PSA above 100 lead to metastatic prostate cancer."
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "case_id": "mcr-test-13248",
+ "pmcid": "PMC7901359",
+ "test_row": 832,
+ "test_index": 13248,
+ "case_prompt": "A 75-year-old man from a nursing home was brought to the emergency department after a fall with a head laceration. Three weeks earlier, he had been hospitalized for a traumatic right-sided parietal skull impression fracture after a fall with transient loss of consciousness; hyponatremia was noted then but untreated. On the current presentation, he reported dizziness without syncope, chest pain, dyspnea, gastrointestinal symptoms, or fever. His history included hypertension (on candesartan) and type 2 diabetes (on metformin); he denied diuretic use and had no known chronic kidney disease.\n\nOn examination, blood pressure was 98/50 mmHg, heart rate 82/min, Glasgow Coma Scale 15, and there were no focal neurologic deficits. He had a fresh right-temple laceration requiring sutures. Mucous membranes were dry, skin turgor reduced, and there was no peripheral edema or jugular venous distention; lungs were clear and the remainder of the exam was unremarkable.\n\nLaboratory studies on admission showed serum sodium 118 meq/L, potassium 3.6 meq/L, creatinine 0.9 mg/dL, blood urea nitrogen 7 mg/dL, glucose 101 mg/dL, and measured osmolality 226 mosm/kg; thyroid-stimulating hormone was normal. Ten hours after admission, urine sodium was 83 meq/L and urine osmolality 518 mosm/kg. One day later, serum uric acid was 2.6 mg/dL.\n\nNoncontrast CT of the head revealed no acute hemorrhage or edema, but a new right frontal hygroma and a stable posterior fossa Dandy-Walker cyst; the known parietal impression fracture was unchanged. On hospital day 6, with serum sodium at 129 meq/L, an orthostatic test showed supine blood pressure 123/71 mmHg with pulse 83/min, dropping to 75/52 mmHg with pulse 100/min after 2 minutes of standing; the patient became dizzy and the test was stopped. Immediately on returning to supine, vitals returned to 115/75 mmHg and 90/min.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 75-year-old man from a nursing home was brought to the emergency department after a fall with a head laceration."
+  },
+  {
+   "id": "s002",
+   "text": "Three weeks earlier, he had been hospitalized for a traumatic right-sided parietal skull impression fracture after a fall with transient loss of consciousness; hyponatremia was noted then but untreated."
+  },
+  {
+   "id": "s003",
+   "text": "On the current presentation, he reported dizziness without syncope, chest pain, dyspnea, gastrointestinal symptoms, or fever."
+  },
+  {
+   "id": "s004",
+   "text": "His history included hypertension (on candesartan) and type 2 diabetes (on metformin); he denied diuretic use and had no known chronic kidney disease."
+  },
+  {
+   "id": "s005",
+   "text": "On examination, blood pressure was 98/50 mmHg, heart rate 82/min, Glasgow Coma Scale 15, and there were no focal neurologic deficits."
+  },
+  {
+   "id": "s006",
+   "text": "He had a fresh right-temple laceration requiring sutures."
+  },
+  {
+   "id": "s007",
+   "text": "Mucous membranes were dry, skin turgor reduced, and there was no peripheral edema or jugular venous distention; lungs were clear and the remainder of the exam was unremarkable."
+  },
+  {
+   "id": "s008",
+   "text": "Laboratory studies on admission showed serum sodium 118 meq/L, potassium 3.6 meq/L, creatinine 0.9 mg/dL, blood urea nitrogen 7 mg/dL, glucose 101 mg/dL, and measured osmolality 226 mosm/kg; thyroid-stimulating hormone was normal. Ten hours after admission, urine sodium was 83 meq/L and urine osmolality 518 mosm/kg."
+  },
+  {
+   "id": "s009",
+   "text": "One day later, serum uric acid was 2.6 mg/dL."
+  },
+  {
+   "id": "s010",
+   "text": "Noncontrast CT of the head revealed no acute hemorrhage or edema, but a new right frontal hygroma and a stable posterior fossa Dandy-Walker cyst; the known parietal impression fracture was unchanged."
+  },
+  {
+   "id": "s011",
+   "text": "On hospital day 6, with serum sodium at 129 meq/L, an orthostatic test showed supine blood pressure 123/71 mmHg with pulse 83/min, dropping to 75/52 mmHg with pulse 100/min after 2 minutes of standing; the patient became dizzy and the test was stopped."
+  },
+  {
+   "id": "s012",
+   "text": "Immediately on returning to supine, vitals returned to 115/75 mmHg and 90/min."
+  }
+ ],
+ "final_diagnosis": "CerebralSaltWasting",
+ "diagnostic_reasoning": "1. Rule out iso- or hyperosmolar hyponatremia — “measurement of serum osmolality ... shows no significant osmolar gap. These findings identify the case as a hypoosmolar hyponatremia and rule out the presence of an osmolar gap.” 2. Identify hypovolemia — “The low blood pressure, orthostatic hypotension ... decreased skin turgor, and absence of peripheral edema identify the volume status as hypovolemic.” 3. Exclude chronic renal disease — “in the absence of ... chronic renal disease ... cerebral salt wasting emerges as the most plausible cause.” 4. Exclude SIADH — “The clear establishment of the presence of hypovolemia ... leaves no doubt that his hyponatremia was not caused by SIADH.” 5. Support CSW in CNS disease — “in a patient with cerebral pathology, hypovolemia, and renal salt wasting ... cerebral salt wasting emerges as the most plausible cause of the prevailing hyponatremia.”",
+ "selection": {
+  "age": 75,
+  "sex": "male",
+  "specialty": "nephrology_urology",
+  "dx_key": "cerebral salt wasting",
+  "setting": "emergency",
+  "time_structure": "staged_workup",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Hypovolaemic hypo-osmolar hyponatraemia with renal salt wasting and low uric acid after head injury, with orthostatic hypotension, fits cerebral salt wasting.",
+  "second_look_note": "Recent skull fracture, dizziness and no diuretic use frame hypovolemic hyponatremia that urine sodium, low uric acid and orthostatic testing decide."
+ }
+}

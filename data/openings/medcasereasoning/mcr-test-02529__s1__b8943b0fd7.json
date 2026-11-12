@@ -1,0 +1,49 @@
+{
+ "case_id": "mcr-test-02529",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I keep getting a rash.",
+   "The patches are mildly itchy.",
+   "When the rash flares up, my joints ache.",
+   "I take a proton pump inhibitor.",
+   "I've been treated for the rash with steroid creams and with steroids for the whole body."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I keep getting a rash. The patches are mildly itchy, and when the rash flares up, my joints ache. I take a proton pump inhibitor. I've been treated for the rash with steroid creams and with steroids for the whole body.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f006",
+    "f007",
+    "f008",
+    "f010"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3241,
+   "tokens_out": 62,
+   "seconds": 14.73,
+   "redrafts": 0
+  }
+ }
+}

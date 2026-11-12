@@ -1,0 +1,49 @@
+{
+ "case_id": "agentclinic-medqa-ext-001",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've been seeing double.",
+   "All of this started about a month ago.",
+   "I have trouble climbing stairs.",
+   "My arms feel weak. It's hard to keep them up when I brush my hair.",
+   "It all gets worse after I've been physically active."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been seeing double, and I have trouble climbing stairs. My arms feel weak, too; it's hard to keep them up when I brush my hair. It all gets worse after I've been physically active. All of this started about a month ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f002",
+    "f003",
+    "f005"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3294,
+   "tokens_out": 65,
+   "seconds": 6.32,
+   "redrafts": 0
+  }
+ }
+}

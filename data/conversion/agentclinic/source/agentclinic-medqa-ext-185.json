@@ -1,0 +1,95 @@
+{
+  "case_id": "agentclinic-medqa-ext-185",
+  "source_row": 185,
+  "demographics_text": "60-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with chronic vulvar itching and discomfort.",
+  "chief_complaint": "Severe vulvar itching",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-185-p001",
+      "field": "History",
+      "text": "The patient presents with a complaint of severe vulvar itching that has been gradually worsening over the course of the past year. She has attempted to use over-the-counter lubricants for relief with no substantial improvement. She reports severe pain during vaginal intercourse that has recently led to cessation of sexual activity."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-185-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Painful sexual intercourse"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-185-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Use of over-the-counter lubricants with no relief"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-185-p004",
+      "field": "Past_Medical_History",
+      "text": "Diet-controlled type 2 diabetes mellitus, hypertension treated with hydrochlorothiazide, menopause occurred at 52 years of age."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-185-p005",
+      "field": "Social_History",
+      "text": "Sexually active with her husband until recently due to discomfort."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-185-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies urinary symptoms, abnormal vaginal discharge, or rectal symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-185-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-185-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-185-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-185-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-185-e005",
+      "path": "Physical_Examination_Findings.Genitourinary_Examination.Inspection",
+      "text": "Dry, thin, white plaque-like lesions in the vulvar area, with atrophy of the labia minora. The clitoris appears retracted. The perianal skin is pale and wrinkled."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-185-e006",
+      "path": "Physical_Examination_Findings.Genitourinary_Examination.Palpation",
+      "text": "The lesions are palpable and the vulvar area is tender to touch."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-185-i001",
+      "path": "Test_Results.Vulvar_Biopsy.Findings",
+      "text": "Hyperkeratosis with thinning of the epidermis and sclerosis of the dermis, confirming lichen sclerosus."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-185-i002",
+      "path": "Test_Results.Blood_Glucose_Level.Fasting_Blood_Glucose",
+      "text": "6.8 mmol/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-185-i003",
+      "path": "Test_Results.Blood_Pressure_Monitoring.Recordings",
+      "text": "135/85 mmHg; 130/80 mmHg"
+    }
+  ],
+  "correct_diagnosis": "Lichen Sclerosus",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

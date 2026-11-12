@@ -1,0 +1,59 @@
+{
+ "case_id": "medqa-cs-031",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have stomach pain.",
+   "It began this morning.",
+   "It's 7 out of 10.",
+   "It's cramping.",
+   "I am feeling nauseated.",
+   "I vomited once, two hours ago.",
+   "I had diarrhea this morning.",
+   "I take ibuprofen.",
+   "I use oral contraceptive pills.",
+   "I'm sexually active."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have stomach pain that began this morning. It's cramping and about a 7 out of 10. I'm also feeling nauseated and I vomited once two hours ago. I had diarrhea this morning, too. I take ibuprofen and use oral contraceptive pills, and I'm sexually active.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f008",
+    "f015",
+    "f016",
+    "f019",
+    "f040",
+    "f041",
+    "f049"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4352,
+   "tokens_out": 76,
+   "seconds": 8.59,
+   "redrafts": 0
+  }
+ }
+}

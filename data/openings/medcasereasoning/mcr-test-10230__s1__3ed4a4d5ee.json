@@ -1,0 +1,57 @@
+{
+ "case_id": "mcr-test-10230",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "My hands and feet look bluish.",
+   "I get Raynaud's: my fingers change colour.",
+   "Both have been getting worse over the past month.",
+   "I get short of breath when I exert myself.",
+   "I have burning, tingling sensations in my legs.",
+   "The skin on my thighs and legs looks mottled, like a net pattern.",
+   "Two years ago I was diagnosed with 'triple-negative' essential thrombocythemia, where the body makes too many platelets.",
+   "I take aspirin for the platelet condition.",
+   "I take anagrelide for the platelet condition."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "My hands and feet look bluish, and I get Raynaud's where my fingers change colour. Both of those have been getting worse over the past month. I also get short of breath when I exert myself, and I have burning, tingling sensations in my legs. The skin on my thighs and legs looks mottled, like a net pattern. Two years ago I was diagnosed with 'triple-negative' essential thrombocythemia, where the body makes too many platelets. I take aspirin and anagrelide for the platelet condition.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f004",
+    "f006",
+    "f014",
+    "f017",
+    "f018",
+    "f019"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3849,
+   "tokens_out": 127,
+   "seconds": 11.48,
+   "redrafts": 0
+  }
+ }
+}

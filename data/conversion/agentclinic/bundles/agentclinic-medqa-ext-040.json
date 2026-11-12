@@ -1,0 +1,106 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-040", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 53, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "difficulty concentrating", "aliases": ["poor concentration", "trouble focusing"], "text": "I've had trouble concentrating.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "shortness of breath on exertion", "aliases": ["breathlessness with activity", "dyspnea on exertion"], "text": "I get short of breath when I exert myself.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "how long the symptoms have been going on", "text": "The tiredness, the trouble concentrating and the breathlessness started about 3 weeks ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "dizziness", "aliases": ["feeling dizzy", "lightheadedness"], "text": "I've been feeling dizzy.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "pain in the fingers or toes", "aliases": ["digital pain", "finger pain", "toe pain"], "text": "I've been getting pain in my fingers or toes.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "pain in the fingers or toes: relieving", "parent": "f006", "attribute": "relieving", "text": "It gets better with cold.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f008", "item": "recent infections", "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "weight loss", "text": "I haven't lost any significant weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "bleeding disorder", "aliases": ["bleeding problems"], "text": "I don't have any bleeding disorder.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "enalapril", "aliases": ["blood pressure medicine"], "text": "I take enalapril for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke half a pack of cigarettes a day, and have since I was 20.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-040",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "131/82 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "95/min"},
+      {"id": "x003", "kind": "vital", "name": "temperature", "result": "36.9°C (98.4°F)"},
+      {"id": "x004", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection"], "result": "No acute distress; appears mildly fatigued."},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver and spleen palpation", "spleen palpation"], "result": "Palpation: splenomegaly without evident hepatomegaly."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "cardiovascular examination", "aliases": ["heart auscultation", "heart sounds", "peripheral pulses"], "result": "No murmurs, rubs or gallops; peripheral pulses intact."},
+      {"id": "x007", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["chest auscultation", "breath sounds", "lung examination"], "result": "Clear breath sounds bilaterally without wheezes, crackles or rhonchi."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "platelet count", "platelets"], "result": "Platelets 700,000/mm3 (thrombocytosis)."},
+      {"id": "x009", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood smear", "blood film"], "result": "Increased abnormal platelets."},
+      {"id": "x010", "kind": "test", "name": "serum iron", "aliases": ["iron level", "iron studies"], "result": "Decreased."},
+      {"id": "x011", "kind": "test", "name": "iron saturation", "aliases": ["transferrin saturation", "iron studies"], "result": "Decreased."},
+      {"id": "x012", "kind": "test", "name": "serum ferritin", "aliases": ["ferritin", "iron studies"], "result": "Decreased."},
+      {"id": "x013", "kind": "test", "name": "total iron binding capacity", "aliases": ["TIBC", "iron studies"], "result": "Increased."},
+      {"id": "x014", "kind": "test", "name": "bone marrow aspirate", "aliases": ["bone marrow aspiration", "bone marrow examination"], "result": "Dysplastic megakaryocytes present."},
+      {"id": "x015", "kind": "test", "name": "genetic testing", "aliases": ["mutation analysis", "JAK2 mutation testing", "molecular testing"], "result": "Mutation on chromosome 9."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-040",
+    "diagnosis": "Essential thrombocythemia",
+    "aliases": ["ET", "essential thrombocytosis", "primary thrombocythemia", "idiopathic thrombocythemia", "JAK2-positive essential thrombocythemia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-040",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-040-p001"], "f002": ["cc", "agentclinic-medqa-ext-040-p001"],
+      "f003": ["agentclinic-medqa-ext-040-p001", "agentclinic-medqa-ext-040-p002"], "f004": ["agentclinic-medqa-ext-040-p001"],
+      "f005": ["agentclinic-medqa-ext-040-p001", "agentclinic-medqa-ext-040-p003"],
+      "f006": ["agentclinic-medqa-ext-040-p001", "agentclinic-medqa-ext-040-p004"],
+      "f007": ["agentclinic-medqa-ext-040-p001", "agentclinic-medqa-ext-040-p004"],
+      "f008": ["agentclinic-medqa-ext-040-p007"], "f009": ["agentclinic-medqa-ext-040-p007"], "f010": ["agentclinic-medqa-ext-040-p007"],
+      "f011": ["agentclinic-medqa-ext-040-p005"], "f012": ["agentclinic-medqa-ext-040-p005"],
+      "f013": ["agentclinic-medqa-ext-040-p001", "agentclinic-medqa-ext-040-p006"]
+    },
+    "quotes": {
+      "f002": "difficulty to concentrate", "f004": "a 3-week history of fatigue, difficulty to concentrate, and dyspnea on exertion",
+      "f006": "digital pain", "f007": "improves with cold", "f009": "significant weight loss", "f010": "bleeding disorders",
+      "f012": "currently managed with enalapril", "f013": "Smokes half a pack of cigarettes a day since he was 20"
+    },
+    "flags": {
+      "f006": ["'Digital pain' does not say fingers or toes; the patient text keeps both possibilities rather than choosing one."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "131/82 mm Hg", "exam_ids": ["agentclinic-medqa-ext-040-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "95/min", "exam_ids": ["agentclinic-medqa-ext-040-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.9°C (98.4°F)", "exam_ids": ["agentclinic-medqa-ext-040-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.General_Examination.Observation", "source_text": "No acute distress, appears mildly fatigued", "exam_ids": ["agentclinic-medqa-ext-040-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Splenomegaly noted without evident hepatomegaly.", "exam_ids": ["agentclinic-medqa-ext-040-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Cardiovascular_System.Observation", "source_text": "No murmurs, rubs, or gallops. Peripheral pulses are intact.", "exam_ids": ["agentclinic-medqa-ext-040-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Respiratory_System.Auscultation", "source_text": "Clear bilateral breath sounds without wheezes, crackles, or rhonchi.", "exam_ids": ["agentclinic-medqa-ext-040-e007"]},
+      "x008": {"source": "Test_Results.Complete_Blood_Count.Platelets", "source_text": "700,000 cells/m3 (thrombocytosis)", "exam_ids": ["agentclinic-medqa-ext-040-i001"]},
+      "x009": {"source": "Test_Results.Complete_Blood_Count.Other_Findings", "source_text": "Blood smear shows increased abnormal platelets.", "exam_ids": ["agentclinic-medqa-ext-040-i002"]},
+      "x010": {"source": "Test_Results.Iron_Studies.Serum_Iron", "source_text": "Decreased", "exam_ids": ["agentclinic-medqa-ext-040-i003"]},
+      "x011": {"source": "Test_Results.Iron_Studies.Iron_Saturation", "source_text": "Decreased", "exam_ids": ["agentclinic-medqa-ext-040-i004"]},
+      "x012": {"source": "Test_Results.Iron_Studies.Serum_Ferritin", "source_text": "Decreased", "exam_ids": ["agentclinic-medqa-ext-040-i005"]},
+      "x013": {"source": "Test_Results.Iron_Studies.Total_Iron_Binding_Capacity", "source_text": "Increased", "exam_ids": ["agentclinic-medqa-ext-040-i006"]},
+      "x014": {"source": "Test_Results.Bone_Marrow_Aspirate.Findings", "source_text": "Presence of dysplastic megakaryocytes", "exam_ids": ["agentclinic-medqa-ext-040-i007"]},
+      "x015": {"source": "Test_Results.Genetic_Testing.Findings", "source_text": "Mutation on chromosome 9", "exam_ids": ["agentclinic-medqa-ext-040-i008"]}
+    },
+    "finding_flags": {
+      "x008": ["Source unit 'cells/m3' is read as /mm3 (typo)."],
+      "x014": ["'Dysplastic' megakaryocytes suggest myelodysplasia; essential thrombocythemia typically shows enlarged, hyperlobulated megakaryocytes. Kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Platelet unit 'cells/m3' is a typo for /mm3.",
+      "Iron studies show iron deficiency, which can itself cause reactive thrombocytosis; the case points to the diagnosis only through the vague 'mutation on chromosome 9' (JAK2 lies on 9p).",
+      "Bone marrow 'dysplastic megakaryocytes' fits myelodysplasia better than essential thrombocythemia.",
+      "No respiratory rate is given."
+    ],
+    "notes": [
+      "The 3-week duration covers fatigue, poor concentration and exertional breathlessness, so it is a standalone fact (f004); dizziness and digital pain have no stated duration.",
+      "The blood smear (Complete_Blood_Count.Other_Findings) is its own record, because a doctor requests a smear separately; the CBC record therefore has only the platelet count.",
+      "Iron studies are not in CONVERSION.md's panel list, so each member is its own record (x010-x013), following the rule as written; each carries the alias 'iron studies' so a request for the panel reaches all four.",
+      "'Long history of smoking' (History) merges with the Social_History pack-years statement (f013).",
+      "'Appears mildly fatigued' is an observer sign and stays in the exam (x004)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with fatigue, difficulty to concentrate, and abnormal blood findings."
+    }
+  }
+}

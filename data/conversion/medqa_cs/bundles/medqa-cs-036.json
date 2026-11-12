@@ -1,0 +1,1236 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-036",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 32,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "reason for the visit",
+        "aliases": [
+          "what brings you in"
+        ],
+        "text": "I'm here for the pre-employment medical checkup that my prospective employer requires.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "current health problems",
+        "aliases": [
+          "health concerns",
+          "medical complaints"
+        ],
+        "text": "I don't have any health problems right now.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "cough",
+        "aliases": [
+          "coughing"
+        ],
+        "text": "I have a cough.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "cough: when it started",
+        "parent": "f003",
+        "attribute": "onset",
+        "aliases": [
+          "how long you've had the cough"
+        ],
+        "text": "I've been dealing with this cough for several years.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "cough: change during the day",
+        "parent": "f003",
+        "attribute": "timing",
+        "text": "It doesn't change during the day. It stays the same.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "cough: recent change in how often or how bad",
+        "parent": "f003",
+        "attribute": "course",
+        "text": "There's been no recent change in how often I cough or how bad it is.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "cough: at night",
+        "parent": "f003",
+        "attribute": "timing",
+        "aliases": [
+          "coughing during the night"
+        ],
+        "text": "I don't cough during the night.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "sputum",
+        "aliases": [
+          "phlegm",
+          "coughing up mucus"
+        ],
+        "text": "I bring up sputum when I cough.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "sputum: how much",
+        "parent": "f008",
+        "attribute": "quantity",
+        "text": "I'm not sure. Around half a teaspoonful.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "sputum: color",
+        "parent": "f008",
+        "attribute": "appearance",
+        "text": "It's clear mucus.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "sputum: smell",
+        "parent": "f008",
+        "attribute": "other",
+        "aliases": [
+          "sputum odor"
+        ],
+        "text": "It doesn't have any particular smell.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "blood in sputum",
+        "aliases": [
+          "coughing up blood"
+        ],
+        "text": "I haven't noticed any blood in my sputum.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "wheezing",
+        "text": "I haven't had any wheezing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I've never felt short of breath, recently or in the past.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "chest pain",
+        "aliases": [
+          "chest discomfort"
+        ],
+        "text": "I haven't had any chest discomfort, recently or in the past.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "heart racing",
+        "aliases": [
+          "palpitations",
+          "fast heartbeat"
+        ],
+        "text": "I've never felt my heart racing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "heart slowing down or skipping beats",
+        "aliases": [
+          "skipped beats",
+          "slow heartbeat"
+        ],
+        "text": "I've never felt it slow down or skip a beat.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "leg swelling",
+        "aliases": [
+          "swollen legs"
+        ],
+        "text": "I haven't noticed any swelling in my legs.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "fever",
+        "text": "I don't have a fever.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "chills",
+        "text": "I haven't had any chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "night sweats",
+        "aliases": [
+          "sweating at night"
+        ],
+        "text": "I don't wake up in the night with sweats.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "weight changes",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "My appetite hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "seizures",
+        "aliases": [
+          "fits"
+        ],
+        "text": "I've never had a seizure.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f025",
+        "item": "loss of consciousness",
+        "aliases": [
+          "fainting",
+          "passing out",
+          "blackouts"
+        ],
+        "text": "I've never lost consciousness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f026",
+        "item": "headache",
+        "aliases": [
+          "headaches"
+        ],
+        "text": "I haven't had any headaches.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "weakness",
+        "aliases": [
+          "muscle weakness"
+        ],
+        "text": "I haven't had weakness anywhere in my body.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "numbness",
+        "aliases": [
+          "tingling",
+          "loss of feeling"
+        ],
+        "text": "I haven't had numbness anywhere in my body.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "joint pain",
+        "aliases": [
+          "painful joints"
+        ],
+        "text": "I don't have any pain in my joints.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "joint swelling",
+        "aliases": [
+          "swollen joints"
+        ],
+        "text": "I don't have any swelling in my joints.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I don't feel nauseous.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I don't feel like vomiting.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I don't have any stomach pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "change in bowel habits",
+        "aliases": [
+          "bowel movements"
+        ],
+        "text": "My bowel habits haven't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "diarrhea",
+        "aliases": [
+          "loose stools"
+        ],
+        "text": "I haven't had diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "constipation",
+        "text": "I haven't been constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "change in stool color",
+        "aliases": [
+          "black stools",
+          "pale stools"
+        ],
+        "text": "The color of my stool hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "past medical conditions",
+        "aliases": [
+          "medical history",
+          "illnesses"
+        ],
+        "text": "I don't have any significant medical history.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f040",
+        "item": "tuberculosis skin test (PPD)",
+        "aliases": [
+          "PPD test",
+          "TB test"
+        ],
+        "text": "I've never had that test.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f041",
+        "item": "vaccinations",
+        "aliases": [
+          "immunizations",
+          "shots"
+        ],
+        "text": "My immunizations are up to date.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "vaccinations: records",
+        "parent": "f041",
+        "attribute": "other",
+        "aliases": [
+          "vaccination papers"
+        ],
+        "text": "I have my papers at home; I can fax them to you.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I'm not allergic to any drugs.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "current medications",
+        "aliases": [
+          "medicines",
+          "pills"
+        ],
+        "text": "I'm not taking any medications.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "medical problems in the family",
+        "aliases": [
+          "family history"
+        ],
+        "text": "There are no medical problems in my family.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f046",
+        "item": "exposure to tuberculosis",
+        "aliases": [
+          "TB contacts",
+          "contact with TB"
+        ],
+        "text": "I haven't been exposed to tuberculosis in any way.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f047",
+        "item": "recent travel",
+        "aliases": [
+          "where you have been living",
+          "immigration"
+        ],
+        "text": "I immigrated from Africa a month ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f048",
+        "item": "past work",
+        "aliases": [
+          "previous job",
+          "work exposures"
+        ],
+        "text": "I used to work in a coal mine back home.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f049",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "recreational drugs",
+        "aliases": [
+          "street drugs"
+        ],
+        "text": "I don't use any recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke cigarettes.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "smoking: how much",
+        "parent": "f051",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "smoking: for how long",
+        "parent": "f051",
+        "attribute": "duration",
+        "text": "For 10 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f054",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm applying for a new job.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-036",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "130/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.3°F (36.8°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "15/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "70/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "ent",
+        "name": "mouth and throat examination",
+        "aliases": [
+          "throat",
+          "pharynx",
+          "HEENT"
+        ],
+        "result": "Mouth and pharynx within normal limits."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "jugular veins",
+          "lymph nodes"
+        ],
+        "result": "No jugular venous distension; no lymphadenopathy."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung examination",
+        "aliases": [
+          "lung auscultation",
+          "listen to the lungs",
+          "tactile fremitus"
+        ],
+        "result": "Clear breath sounds on both sides; no rhonchi, rales or wheezing; tactile fremitus normal."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not tender, not distended; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "clubbing",
+          "edema",
+          "leg swelling"
+        ],
+        "result": "No clubbing, cyanosis or edema."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "cranial nerves",
+        "aliases": [
+          "cranial nerve exam"
+        ],
+        "result": "Cranial nerves II–XII intact."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength",
+          "power"
+        ],
+        "result": "Strength 5/5 in all muscle groups."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes symmetric."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "gait",
+        "aliases": [
+          "walking"
+        ],
+        "result": "Normal gait."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-036",
+    "diagnosis": "COPD/chronic bronchitis",
+    "aliases": [
+      "COPD",
+      "chronic obstructive pulmonary disease",
+      "chronic bronchitis",
+      "chronic obstructive lung disease"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "COPD/chronic bronchitis",
+        "evidence": [
+          "Chronic cough",
+          "Sputum production",
+          "Smoking history in addition to occupational exposure"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Pneumoconiosis",
+        "aliases": [
+          "coal workers' pneumoconiosis",
+          "CWP",
+          "black lung disease",
+          "black lung"
+        ],
+        "evidence": [
+          "Worked as a coal miner",
+          "Chronic cough"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Pulmonary tuberculosis",
+        "aliases": [
+          "tuberculosis",
+          "TB",
+          "pulmonary TB"
+        ],
+        "evidence": [
+          "Recent emigration from Africa",
+          "Chronic cough"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "GERD",
+        "note": "Another possible, potentially benign cause of chronic cough."
+      },
+      {
+        "diagnosis": "Asthma",
+        "note": "Another possible, potentially benign cause of chronic cough."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-036",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "cc"
+      ],
+      "f003": [
+        "medqa-cs-036-p008"
+      ],
+      "f004": [
+        "medqa-cs-036-p009"
+      ],
+      "f005": [
+        "medqa-cs-036-p010",
+        "medqa-cs-036-p011"
+      ],
+      "f006": [
+        "note"
+      ],
+      "f007": [
+        "medqa-cs-036-p013"
+      ],
+      "f008": [
+        "medqa-cs-036-p014"
+      ],
+      "f009": [
+        "medqa-cs-036-p015"
+      ],
+      "f010": [
+        "medqa-cs-036-p016"
+      ],
+      "f011": [
+        "medqa-cs-036-p017"
+      ],
+      "f012": [
+        "medqa-cs-036-p018"
+      ],
+      "f013": [
+        "medqa-cs-036-p012"
+      ],
+      "f014": [
+        "medqa-cs-036-p002"
+      ],
+      "f015": [
+        "medqa-cs-036-p001"
+      ],
+      "f016": [
+        "medqa-cs-036-p003"
+      ],
+      "f017": [
+        "medqa-cs-036-p003"
+      ],
+      "f018": [
+        "medqa-cs-036-p004"
+      ],
+      "f019": [
+        "medqa-cs-036-p019"
+      ],
+      "f020": [
+        "medqa-cs-036-p019"
+      ],
+      "f021": [
+        "medqa-cs-036-p020"
+      ],
+      "f022": [
+        "medqa-cs-036-p028"
+      ],
+      "f023": [
+        "medqa-cs-036-p029"
+      ],
+      "f024": [
+        "medqa-cs-036-p005"
+      ],
+      "f025": [
+        "medqa-cs-036-p005"
+      ],
+      "f026": [
+        "medqa-cs-036-p006"
+      ],
+      "f027": [
+        "medqa-cs-036-p007"
+      ],
+      "f028": [
+        "medqa-cs-036-p007"
+      ],
+      "f029": [
+        "medqa-cs-036-p024"
+      ],
+      "f030": [
+        "medqa-cs-036-p024"
+      ],
+      "f031": [
+        "medqa-cs-036-p025"
+      ],
+      "f032": [
+        "medqa-cs-036-p025"
+      ],
+      "f033": [
+        "medqa-cs-036-p026"
+      ],
+      "f034": [
+        "medqa-cs-036-p027"
+      ],
+      "f035": [
+        "medqa-cs-036-p027"
+      ],
+      "f036": [
+        "medqa-cs-036-p027"
+      ],
+      "f037": [
+        "medqa-cs-036-p030"
+      ],
+      "f038": [
+        "medqa-cs-036-p032"
+      ],
+      "f039": [
+        "medqa-cs-036-p033"
+      ],
+      "f040": [
+        "medqa-cs-036-p023"
+      ],
+      "f041": [
+        "medqa-cs-036-p035"
+      ],
+      "f042": [
+        "medqa-cs-036-p035"
+      ],
+      "f043": [
+        "medqa-cs-036-p040"
+      ],
+      "f044": [
+        "medqa-cs-036-p031"
+      ],
+      "f045": [
+        "medqa-cs-036-p034"
+      ],
+      "f046": [
+        "medqa-cs-036-p021"
+      ],
+      "f047": [
+        "medqa-cs-036-p022"
+      ],
+      "f048": [
+        "medqa-cs-036-p036"
+      ],
+      "f049": [
+        "medqa-cs-036-p037"
+      ],
+      "f050": [
+        "medqa-cs-036-p038"
+      ],
+      "f051": [
+        "medqa-cs-036-p039"
+      ],
+      "f052": [
+        "medqa-cs-036-p039"
+      ],
+      "f053": [
+        "medqa-cs-036-p039"
+      ],
+      "f054": [
+        "medqa-cs-036-p036"
+      ]
+    },
+    "quotes": {
+      "f002": "No.",
+      "f003": "Yes, I am.",
+      "f004": "I've been dealing with this cough for several years.",
+      "f005": "No. / It remains unchanged.",
+      "f006": "no recent change in frequency or severity",
+      "f007": "No.",
+      "f008": "Yes, I am.",
+      "f009": "I am not sure. Around half a teaspoonful.",
+      "f010": "Clear mucus.",
+      "f011": "No.",
+      "f012": "No.",
+      "f013": "No.",
+      "f014": "No.",
+      "f015": "No.",
+      "f016": "No.",
+      "f017": "No.",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "No.",
+      "f033": "No.",
+      "f034": "No.",
+      "f035": "No.",
+      "f036": "No.",
+      "f037": "No.",
+      "f038": "No.",
+      "f039": "No.",
+      "f040": "I have never had this test.",
+      "f041": "My immunizations are up to date.",
+      "f042": "I have my papers at home; I can fax them to you.",
+      "f043": "No.",
+      "f044": "No.",
+      "f045": "No.",
+      "f046": "No.",
+      "f047": "I immigrated from Africa a month ago.",
+      "f048": "I used to work in a coal mine back home.",
+      "f049": "No.",
+      "f050": "No.",
+      "f051": "Yes, a pack a day for 10 years.",
+      "f052": "a pack a day",
+      "f053": "for 10 years.",
+      "f054": "I am applying for a new job."
+    },
+    "flags": {
+      "f006": [
+        "Only in the patient note HPI; the script asks only about change during the day (p010, p011)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 130/85 mm Hg | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-036-e001"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.3°F (36.8°C) | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-036-e001"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 15/minute | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-036-e001"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 70/minute, regular | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-036-e001"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "HEENT: Mouth and pharynx WNL.",
+        "exam_ids": [
+          "medqa-cs-036-e002"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Neck: No JVD, no lymphadenopathy.",
+        "exam_ids": [
+          "medqa-cs-036-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally; no rhonchi, rales, or wheezing; tactile fremitus normal.",
+        "exam_ids": [
+          "medqa-cs-036-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-036-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, nontender, nondistended, ~BS x 4, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-036-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Extremities: No clubbing, cyanosis, or edema.",
+        "exam_ids": [
+          "medqa-cs-036-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Neuro: Cranial nerves: 2-12 intact.",
+        "exam_ids": [
+          "medqa-cs-036-e008"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Neuro: ... Motor: Strength 5/5 in all muscle groups.",
+        "exam_ids": [
+          "medqa-cs-036-e008"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Neuro: ... DTRs: Symmetric.",
+        "exam_ids": [
+          "medqa-cs-036-e008"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Neuro: ... Gait: Normal.",
+        "exam_ids": [
+          "medqa-cs-036-e008"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x009": [
+        "Bowel sounds written '~BS x 4' in the note; read as '+BS x 4' (present in all four quadrants), a near-certain correction kept from v1."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The chief-complaint answer is 'No.' (pre-employment checkup with no complaint); the opening fact uses the visit reason from opening_scenario.",
+      "p016 sputum is 'Clear mucus.'; the note HPI says 'white mucus'.",
+      "p014 answer 'Yes, I am.' does not fit the sputum question grammatically (repeats the p008 answer form); read as yes.",
+      "p023 topic 'LutPPD' is an OCR artifact for 'Last PPD'.",
+      "The note HPI says the cough has had 'no recent change in frequency or severity'; the script only asks about change during the day (p010, p011). Added as from-note fact f006.",
+      "SP note 'Hold the physical burn request form in your hand' is garbled (probably 'physical exam request form').",
+      "e006 writes bowel sounds as '~BS x 4', an OCR artifact for '+BS x 4'.",
+      "The duration of coal-mine work is not given in the script or the note.",
+      "The raw exam checklist lists 'Cardiovascular evaluation: pulmonary auscultation, palpation, and percussion'; checklist items are not used as findings.",
+      "Challenging question has a doubled opening quotation mark in the source; cleaned in extras."
+    ],
+    "notes": [
+      "Opening fact (f001) is the visit reason from opening_scenario (pre-employment checkup) because the chief-complaint answer is 'No.'; that 'No' is kept as an absent fact (f002), even though he goes on to report a chronic cough.",
+      "Polarity warning on 'cc' (v1 absent, v2 absent + present) is expected: v1 keeps the visit reason as opening_fact with source 'cc' outside patient_facts, while v2 needs it as a present fact (f001) for the opening; f001 cites 'cc' as v1's opening_fact does, and has no quote because its wording comes from opening_scenario.",
+      "Questions that ask about 'recently or in the past' (p001, p002) are kept as one absent fact each, with the time span in the text and time current.",
+      "p010 and p011 say the same thing and are merged (f005).",
+      "Mixed-item denials (p003, p005, p007, p019, p024, p025, p027) are split into one absent fact per item.",
+      "Coal-mine work is recorded as a past occupational exposure (f048, habit_exposure); its duration is unknown. Applying for a new job is the current occupation fact (f054).",
+      "GERD and asthma come from a single sentence in gold_additional_diagnosis and get one record each with the same note.",
+      "Conversion: v1 merged p008 and p009 into one cough fact; in v2 the several-year history is the onset child f004 of cough f003, so the duration still stays with the cough.",
+      "Conversion: sputum (f008) is its own parent with amount, color and smell children; blood in sputum (f012) is a separate fact so 'coughing up blood' questions match it directly. The note-only 'no recent change' is the course child f006.",
+      "Conversion: v1 f049 (a pack a day for 10 years) becomes smoking f051 with quantity (f052) and duration (f053) children; the vaccination papers (v1 f044) are a child of vaccinations (f042).",
+      "Conversion: the note's 'VS: WNL' (e001) agrees with the doorway values, so it is cited in each doorway vital record rather than kept as a separate 'vital signs' record.",
+      "Fixes: f012 text rewritten; f002 answer word removed; f003 answer word removed; f005 answer word removed; f007 answer word removed; f008 answer word removed; f011 answer word removed; f013 answer word removed; f014 answer word removed; f015 answer word removed; f016 answer word removed; f017 answer word removed; f018 answer word removed; f019 answer word removed; f020 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f024 answer word removed; f025 answer word removed; f026 answer word removed; f027 answer word removed; f028 answer word removed; f029 answer word removed; f030 answer word removed; f031 answer word removed; f032 answer word removed; f033 answer word removed; f034 answer word removed; f035 answer word removed; f036 answer word removed; f037 answer word removed; f038 answer word removed; f039 answer word removed; f043 answer word removed; f044 answer word removed; f045 answer word removed; f046 answer word removed; f049 answer word removed; f050 answer word removed; f051 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Sit up on the bed.",
+        "Hold the physical burn request form in your hand (wording as in the source; probably the physical exam request form)."
+      ],
+      "patient_questions": [
+        "Do you believe I will be offered the position?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

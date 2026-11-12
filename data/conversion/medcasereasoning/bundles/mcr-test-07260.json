@@ -1,0 +1,89 @@
+{
+  "patient": {
+    "case_id": "mcr-test-07260",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 30, "sex": "male"},
+    "opening": ["f001", "f004"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["head pain", "pain behind the eye"], "text": "I have a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: location", "parent": "f001", "attribute": "location", "text": "It's on the right side, behind my right eye.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "headache: onset", "parent": "f001", "attribute": "onset", "text": "It came on quickly.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "bumping into things on the left side", "aliases": ["difficulty navigating on the left", "trouble getting around on the left side", "walking into objects"], "text": "I've started having trouble getting around on my left side; I keep bumping into things.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "how long the headache and the left-side trouble have lasted", "text": "Both started 2 days ago.", "value": "2 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "brain tumour", "aliases": ["anaplastic astrocytoma", "astrocytoma", "brain cancer", "brain surgery", "previous surgery"], "text": "When I was 5, I had an operation to remove a brain tumour from the right back part of my brain; it was an anaplastic astrocytoma.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "radiation therapy to the brain", "aliases": ["radiotherapy", "cranial irradiation", "radiation treatment", "brain radiation"], "text": "After that operation I had radiation therapy to my brain: 3D conformal external-beam radiotherapy, 6000 cGy in 30 sessions.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "previous brain scans", "aliases": ["previous MRI", "earlier brain imaging"], "text": "My last brain MRI was when I was 15.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "previous headaches", "aliases": ["history of headaches", "history of migraine"], "text": "I've never had problems with headaches before.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f010", "item": "seizures", "aliases": ["fits", "convulsions", "epilepsy"], "text": "I've never had a seizure.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "previous neurological deficits", "aliases": ["previous neurological problems", "earlier weakness or loss of function"], "text": "Before this I never had any neurological problems.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-07260",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normotensive."},
+      {"id": "x002", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["level of consciousness", "orientation", "alertness"], "result": "Alert and oriented."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "meningeal signs", "aliases": ["meningism", "neck stiffness", "nuchal rigidity"], "result": "No meningism."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "visual field testing", "aliases": ["visual fields", "confrontation visual fields", "visual testing", "vision"], "result": "Dense left homonymous hemianopia."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "cranial nerves", "motor strength", "power", "reflexes", "sensation", "coordination", "gait"], "result": "Visual testing: dense left homonymous hemianopia; the remainder of the neurological examination was normal."},
+      {"id": "x007", "kind": "exam", "system": "general", "name": "general physical examination", "aliases": ["systemic examination", "physical examination", "cardiovascular examination", "respiratory examination", "abdominal examination", "heart", "lungs", "abdomen"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "CT head without contrast", "aliases": ["noncontrast CT head", "head CT", "CT brain"], "result": "Multiple cystic lesions, consistent with previous imaging."},
+      {"id": "x009", "kind": "test", "name": "MRI brain with contrast", "aliases": ["brain MRI", "MRI head", "MRI"], "result": "Multiple periventricular and posterior subcortical cystic lesions with surrounding nonspecific T2 hyperintensity; T1-weighted post-contrast images show no enhancement.", "time": "hospital day 3"},
+      {"id": "x010", "kind": "test", "name": "previous brain MRI", "aliases": ["old MRI", "prior brain imaging", "MRI at age 15"], "result": "Post-surgical changes and giant Virchow–Robin spaces, attributed to prior radiotherapy.", "time": "at age 15 (15 years before presentation)"},
+      {"id": "x011", "kind": "test", "name": "vasculitis screen", "aliases": ["autoimmune serology", "ANA", "antinuclear antibody", "ENA", "extractable nuclear antigen", "anti-dsDNA", "double-stranded DNA antibody", "ANCA", "p-ANCA", "c-ANCA"], "result": "Antinuclear antibody positive at 1:160; extractable nuclear antigen negative; double-stranded DNA negative; p-ANCA negative; c-ANCA negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-07260",
+    "diagnosis": "SMART syndrome",
+    "aliases": ["stroke-like migraine attacks after radiation therapy", "stroke-like migraine attacks after radiation therapy syndrome", "SMART"],
+    "reasoning": "1. SMART syndrome was considered given the triad of remote cranial irradiation, transient migraine-like headache, and focal neurologic deficit — “At this time, a provisional diagnosis of stroke-like migraine attacks after radiation therapy (SMART) syndrome was made, despite not having the classic radiological evidence to support it.” 2. Posterior reversible encephalopathy syndrome was unlikely in the absence of hypertension — “he had remained normotensive during the entirety of his admission.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-07260",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s003"], "f009": ["s004"], "f010": ["s004"], "f011": ["s004"]
+    },
+    "quotes": {
+      "f002": "right-sided retro-orbital headache", "f003": "rapid-onset", "f004": "new difficulty navigating on his left side, bumping into objects",
+      "f005": "a 2-day history", "f006": "At age 5, he underwent resection of a right parieto-occipital anaplastic astrocytoma",
+      "f007": "3D conformal external beam radiotherapy (6000 cGy in 30 fractions)", "f008": "His last MRI at age 15",
+      "f011": "no prior history of headache, seizures, or neurologic deficits"
+    },
+    "flags": {
+      "f004": ["The patient's experience of the left homonymous hemianopia found on examination; worded as what he noticed (bumping into things on the left), not as a visual field loss."],
+      "f008": ["The source does not say whether the patient was told the age-15 MRI result, so the result is only in finding x010."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "he was normotensive"},
+      "x002": {"sentences": ["s005"], "source_text": "afebrile"},
+      "x003": {"sentences": ["s005"], "source_text": "alert and oriented"},
+      "x004": {"sentences": ["s005"], "source_text": "with no meningism"},
+      "x005": {"sentences": ["s006"], "source_text": "Visual testing revealed a dense left homonymous hemianopia"},
+      "x006": {"sentences": ["s006"], "source_text": "Visual testing revealed a dense left homonymous hemianopia / the remainder of the neurologic and systemic examination was normal"},
+      "x007": {"sentences": ["s006"], "source_text": "the remainder of the neurologic and systemic examination was normal"},
+      "x008": {"sentences": ["s007"], "source_text": "Noncontrast CT of the head showed multiple cystic lesions consistent with previous imaging."},
+      "x009": {"sentences": ["s008"], "source_text": "On day 3, brain MRI revealed multiple periventricular and posterior subcortical cystic lesions with surrounding nonspecific T2 hyperintensity; T1-weighted post-contrast images demonstrated no enhancement."},
+      "x010": {"sentences": ["s003"], "source_text": "His last MRI at age 15 showed post-surgical changes and giant Virchow–Robin spaces, attributed to prior radiotherapy."},
+      "x011": {"sentences": ["s009"], "source_text": "A vasculitis screen was positive for antinuclear antibody at 1:160 but negative for extractable nuclear antigen, double-stranded DNA, p-ANCA, and c-ANCA."}
+    },
+    "finding_flags": {
+      "x001": ["No blood pressure value in the source, only 'normotensive'."],
+      "x002": ["No temperature value in the source, only 'afebrile'."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The gold reasoning calls the headache transient, but the prompt gives only a 2-day history with no resolution."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with 2 days of rapid-onset right retro-orbital headache and new difficulty navigating on the left (s001-s007); the day-3 MRI (s008) and the vasculitis screen (s009) are later findings from the same admission.",
+      "s001: the 2-day history covers both complaints, so it is one standalone duration fact (f005) rather than a child of either.",
+      "s006: 'the remainder of the neurologic and systemic examination was normal' is kept as a neurological examination record (with the hemianopia, so a full neurological examination request returns it) and a general examination record; the visual field record repeats the hemianopia for a targeted request.",
+      "s003: the age-15 MRI is a finding with time; the patient fact f008 only says he had it."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

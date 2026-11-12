@@ -1,0 +1,61 @@
+{
+ "case_id": "mcr-test-12090",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I have persistent \"sea legs\", a feeling as if I'm on a boat.",
+   "I get attacks of vertigo.",
+   "Since I came back I've had mood swings; I get angry and irritable.",
+   "Each one lasts 20 to 30 minutes.",
+   "It started about two weeks after I began taking mefloquine, with anxiety and vivid dreams.",
+   "On top of the attacks, I feel a constant spinning dizziness.",
+   "I've been falling.",
+   "I have trouble concentrating.",
+   "Years ago I was deployed to East Africa.",
+   "For malaria prevention I took mefloquine 250 mg once a week, and I kept taking it for six months.",
+   "Four months into the deployment I came under enemy gunfire."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here because I've been having a rough time since I got back. Years ago I was deployed to East Africa, and four months in, I came under enemy gunfire. I was taking mefloquine 250 mg once a week for malaria prevention, and I kept it up for six months. About two weeks after I started that medication, I began having anxiety and vivid dreams. Since then, I've had mood swings, getting angry and irritable, and I have real trouble concentrating. Physically, I have persistent 'sea legs,' like I'm on a boat, plus a constant spinning dizziness. I also get distinct attacks of vertigo that last 20 to 30 minutes, and I've actually been falling.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f016",
+    "f017",
+    "f011",
+    "f019",
+    "f004",
+    "f022",
+    "f023",
+    "f012",
+    "f002",
+    "f003",
+    "f009"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4346,
+   "tokens_out": 164,
+   "seconds": 18.35,
+   "redrafts": 0
+  }
+ }
+}

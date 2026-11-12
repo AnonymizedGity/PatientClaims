@@ -1,0 +1,89 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-163", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 38, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "spot on the skin", "aliases": ["skin lesion", "bump on the thigh", "skin growth"], "text": "I have a spot on the skin of my right thigh.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "spot on the skin: duration", "parent": "f001", "attribute": "duration", "text": "It's been there for a month.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "spot on the skin: growth", "parent": "f001", "attribute": "course", "text": "It has slowly gotten bigger over the past few weeks.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "spot on the skin: pain", "parent": "f001", "attribute": "character", "aliases": ["painful spot"], "text": "It doesn't hurt.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "spot on the skin: itching", "parent": "f001", "attribute": "character", "aliases": ["itchy spot"], "text": "It doesn't itch.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "spot on the skin: what I first thought it was", "parent": "f001", "attribute": "context", "aliases": ["insect bite", "bug bite"], "text": "At first I thought it was an insect bite.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f007", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "previous skin problems", "aliases": ["dermatologic history", "skin conditions"], "text": "I've never had any significant skin problems.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "alcohol", "aliases": ["drinking"], "text": "I drink socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "weight loss", "text": "I haven't lost any weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "recent travel", "aliases": ["trips"], "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-163",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.7°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "128/76 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "75/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin exam", "inspection of the thigh lesion", "lesion examination"], "result": "A 0.8-cm hyperpigmented papule on the right thigh. No discharge, erythema or warmth surrounding the lesion."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "pinch test of the lesion", "aliases": ["dimple sign", "Fitzpatrick sign", "lesion palpation", "squeezing the lesion", "lateral compression"], "result": "The lesion retracts inward when squeezed (dimple sign)."},
+      {"id": "x007", "kind": "test", "name": "dermoscopy", "aliases": ["dermatoscopy", "dermoscopic examination"], "result": "Central white patch and peripheral pigment network, indicative of a benign process."},
+      {"id": "x008", "kind": "test", "name": "skin biopsy of the thigh lesion", "aliases": ["skin biopsy", "lesion biopsy", "histopathology"], "result": "Positive for dermatofibroma, showing a benign proliferation of fibroblasts."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-163",
+    "diagnosis": "Dermatofibroma",
+    "aliases": ["benign fibrous histiocytoma", "cutaneous fibrous histiocytoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-163",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-163-p001"], "f002": ["agentclinic-medqa-ext-163-p001"],
+      "f003": ["agentclinic-medqa-ext-163-p001", "agentclinic-medqa-ext-163-p002"],
+      "f004": ["cc", "agentclinic-medqa-ext-163-p001"], "f005": ["cc", "agentclinic-medqa-ext-163-p001"],
+      "f006": ["agentclinic-medqa-ext-163-p001"],
+      "f007": ["agentclinic-medqa-ext-163-p003"], "f008": ["agentclinic-medqa-ext-163-p003"],
+      "f009": ["agentclinic-medqa-ext-163-p004"], "f010": ["agentclinic-medqa-ext-163-p004"], "f011": ["agentclinic-medqa-ext-163-p004"],
+      "f012": ["agentclinic-medqa-ext-163-p005"], "f013": ["agentclinic-medqa-ext-163-p005"], "f014": ["agentclinic-medqa-ext-163-p005"],
+      "f015": ["agentclinic-medqa-ext-163-p005"]
+    },
+    "quotes": {
+      "f002": "a 1-month history", "f003": "slowly increased in size over the past weeks", "f004": "painless", "f005": "nonpruritic",
+      "f006": "initially thought it was an insect bite", "f008": "No significant past medical or dermatologic history.",
+      "f010": "drinks socially", "f015": "or recent travel"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-163-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "128/76 mmHg", "exam_ids": ["agentclinic-medqa-ext-163-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "75 bpm", "exam_ids": ["agentclinic-medqa-ext-163-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-163-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Additional_Features", "source_text": "A 0.8-cm hyperpigmented papule on the right thigh. | No discharge, erythema, or warmth surrounding the lesion.", "exam_ids": ["agentclinic-medqa-ext-163-e005", "agentclinic-medqa-ext-163-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "The lesion retracts inward when squeezed (dimple sign).", "exam_ids": ["agentclinic-medqa-ext-163-e006"]},
+      "x007": {"source": "Test_Results.Dermoscopic_Examination.Findings", "source_text": "Central white patch and peripheral pigment network, indicative of a benign process.", "exam_ids": ["agentclinic-medqa-ext-163-i001"]},
+      "x008": {"source": "Test_Results.Biopsy.Histopathology", "source_text": "Positive for dermatofibroma, showing a benign proliferation of fibroblasts.", "exam_ids": ["agentclinic-medqa-ext-163-i002"]}
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The biopsy result names the diagnosis ('Positive for dermatofibroma'); kept because that is the pathology answer, seen only when the doctor orders the biopsy."}
+    ],
+    "source_issues": [
+      "The gold diagnosis is visible in the biopsy result (pool flag visible_gold_alias_partitions: test_results).",
+      "Respiratory rate is given only as 'Normal'."
+    ],
+    "notes": [
+      "The 'slow increase in size' appears in p001 and p002; one child fact (f003). 'Painless' and 'nonpruritic' (chief complaint and history) are absent children of the lesion.",
+      "Her first impression that it was an insect bite is a context child (f006); the source does not say she was bitten.",
+      "'No significant past medical or dermatologic history' is split into general (f007) and skin (f008) denials.",
+      "The dimple sign is a named test, so the palpation leaf is its own record (x006); inspection and the surrounding-skin findings form the skin examination (x005)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a painless, nonpruritic skin lesion on her right thigh."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

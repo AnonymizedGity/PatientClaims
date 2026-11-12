@@ -1,0 +1,55 @@
+{
+ "case_id": "ddxplus-v2-test-0004270",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "I have pain.",
+   "It came on fairly quickly.",
+   "The pain is tender and stabbing (like a knife).",
+   "I'd rate it 3 out of 10.",
+   "Lately I've lost my appetite or I get full sooner than usual.",
+   "I'm quite short of breath; it's hard to breathe.",
+   "I've been coughing up blood.",
+   "I smoke cigarettes."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have pain that came on fairly quickly. It feels tender and stabbing, like a knife, and I'd rate it a 3 out of 10. Lately I've lost my appetite or I get full sooner than usual. I'm quite short of breath; it's hard to breathe, and I've been coughing up blood. I smoke cigarettes.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f007",
+    "f002",
+    "f005",
+    "f008",
+    "f009",
+    "f010",
+    "f013"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8731,
+   "tokens_out": 86,
+   "seconds": 22.38,
+   "redrafts": 0
+  }
+ }
+}

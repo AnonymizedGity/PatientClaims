@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-004", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 55, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "tiredness", "aliases": ["fatigue", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "abdominal pain: course", "parent": "f002", "attribute": "course", "text": "It's been getting worse.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "how long the tiredness and belly pain have been going on", "text": "The tiredness and the belly pain have been going on for the past 4 weeks.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "night sweats", "aliases": ["sweating at night"], "text": "I've been having excessive night sweats.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "weight loss", "aliases": ["losing weight"], "text": "I've noticeably lost weight, about 5.4 kg (12 lb).", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "neck swelling", "aliases": ["lump in the neck", "swollen gland"], "text": "I noticed a swelling in my neck.", "polarity": "present", "category": "symptom", "system": "hematologic", "time": "current"},
+      {"id": "f008", "item": "neck swelling: duration", "parent": "f007", "attribute": "duration", "text": "It came up over the last 4 days.", "polarity": "present", "category": "symptom", "system": "hematologic", "time": "current"},
+      {"id": "f009", "item": "feeling of fullness in the belly", "aliases": ["abdominal fullness", "bloating", "belly getting bigger"], "text": "My belly feels unusually full, and I have trouble wearing my usual clothes because of it.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "recent travel", "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history", "previous major illnesses"], "text": "I don't have any significant medical problems, and I haven't had any major illnesses before.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "previous surgeries", "aliases": ["operations"], "text": "I haven't had any major surgeries.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f015", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I smoke 1 pack a day, and I have for the past 30 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work"], "text": "I work for a construction company.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-004",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "hematologic", "name": "neck examination", "aliases": ["lymph node examination", "supraclavicular lymph nodes", "cervical lymph nodes", "neck palpation"], "result": "Nontender, enlarged, fixed supraclavicular lymph node."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "spleen", "liver and spleen palpation"], "result": "Inspection: slight abdominal distension; auscultation: normal bowel sounds; percussion: dullness over the left lower quadrant; palpation: splenomegaly, without rebound tenderness."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "hemoglobin", "platelets"], "result": "WBC elevated; hemoglobin slightly decreased; platelets normal."},
+      {"id": "x008", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH", "lactic dehydrogenase"], "result": "Elevated."},
+      {"id": "x009", "kind": "test", "name": "CT of the chest and abdomen", "aliases": ["CT thorax and abdomen", "CT scan", "CT chest", "CT abdomen"], "result": "Massively enlarged axillary, mediastinal and cervical lymph nodes."},
+      {"id": "x010", "kind": "test", "name": "cervical lymph node biopsy", "aliases": ["lymph node biopsy", "neck lymph node biopsy", "histology"], "result": "Lymphocytes with a high proliferative index that stain positive for CD20."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-004",
+    "diagnosis": "Diffuse large B-cell lymphoma",
+    "aliases": ["DLBCL", "diffuse large B cell lymphoma", "diffuse large B-cell non-Hodgkin lymphoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-004",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-004-p001"], "f002": ["cc", "agentclinic-medqa-ext-004-p001"], "f003": ["agentclinic-medqa-ext-004-p001"],
+      "f004": ["agentclinic-medqa-ext-004-p001"], "f005": ["agentclinic-medqa-ext-004-p001", "agentclinic-medqa-ext-004-p002"],
+      "f006": ["agentclinic-medqa-ext-004-p001", "agentclinic-medqa-ext-004-p003"], "f007": ["agentclinic-medqa-ext-004-p001", "agentclinic-medqa-ext-004-p004"],
+      "f008": ["agentclinic-medqa-ext-004-p001", "agentclinic-medqa-ext-004-p004"], "f009": ["agentclinic-medqa-ext-004-p007"],
+      "f010": ["agentclinic-medqa-ext-004-p007"], "f011": ["agentclinic-medqa-ext-004-p007"], "f012": ["agentclinic-medqa-ext-004-p007"],
+      "f013": ["agentclinic-medqa-ext-004-p005"], "f014": ["agentclinic-medqa-ext-004-p005"], "f015": ["agentclinic-medqa-ext-004-p006"],
+      "f016": ["agentclinic-medqa-ext-004-p006"], "f017": ["agentclinic-medqa-ext-004-p006"]
+    },
+    "quotes": {
+      "f003": "worsening abdominal pain", "f004": "fatigue, worsening abdominal pain for the past 4 weeks",
+      "f005": "excessive night sweats", "f006": "a noticeable weight loss of approximately 5.4 kg (12 lb)",
+      "f008": "neck swelling developing over the last 4 days", "f009": "unusual fullness in the belly area and has difficulty wearing his usual clothing due to this",
+      "f012": "Denies fever, cough, or recent travel", "f013": "does not report any significant past medical history. No previous major illnesses",
+      "f014": "No previous major illnesses or surgeries", "f015": "1 pack per day for the past 30 years",
+      "f016": "Drinks alcohol socially", "f017": "Works in a construction company"
+    },
+    "flags": {
+      "f004": ["The History reads 'fatigue, worsening abdominal pain for the past 4 weeks, excessive night sweats, ...': the 4 weeks follows the abdominal pain and most naturally covers fatigue and pain together. Night sweats and weight loss are given no time frame and are left without one."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-004-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-004-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-004-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-004-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neck_Examination.Inspection_and_Palpation", "source_text": "Nontender, enlarged, and fixed supraclavicular lymph node observed.", "exam_ids": ["agentclinic-medqa-ext-004-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Slight abdominal distension. + Normal bowel sounds. + Dullness noted over the left lower quadrant. + Splenomegaly detected, without rebound tenderness.", "exam_ids": ["agentclinic-medqa-ext-004-e006", "agentclinic-medqa-ext-004-e007", "agentclinic-medqa-ext-004-e008", "agentclinic-medqa-ext-004-e009"]},
+      "x007": {"source": "Test_Results.Blood_Work.Complete_Blood_Count.WBC + Test_Results.Blood_Work.Complete_Blood_Count.Hemoglobin + Test_Results.Blood_Work.Complete_Blood_Count.Platelets", "source_text": "Elevated + Slightly Decreased + Normal", "exam_ids": ["agentclinic-medqa-ext-004-i001", "agentclinic-medqa-ext-004-i002", "agentclinic-medqa-ext-004-i003"]},
+      "x008": {"source": "Test_Results.Blood_Work.Lactate_Dehydrogenase", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-004-i004"]},
+      "x009": {"source": "Test_Results.Imaging.CT_Scan_Thorax_and_Abdomen.Findings", "source_text": "Massively enlarged axillary, mediastinal, and cervical lymph nodes.", "exam_ids": ["agentclinic-medqa-ext-004-i005"]},
+      "x010": {"source": "Test_Results.Biopsy.Cervical_Lymph_Node.Findings", "source_text": "Lymphocytes with a high proliferative index that stain positive for CD20.", "exam_ids": ["agentclinic-medqa-ext-004-i006"]}
+    },
+    "finding_flags": {
+      "x006": ["Percussion dullness is placed over the left lower quadrant while palpation finds splenomegaly (the spleen lies in the left upper quadrant); kept as written."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Abdominal percussion reports dullness over the left lower quadrant alongside splenomegaly; plausible for a massively enlarged spleen but unusual wording.",
+      "Temperature 36.8°C is given as 98°F (98.2°F by conversion); rounding only."
+    ],
+    "notes": [
+      "The chief complaint names two complaints (fatigue, abdominal pain), so both facts open the case.",
+      "The 4-week duration applies to two symptoms, so it is a standalone fact (f004) rather than a child.",
+      "The belly fullness with difficulty wearing usual clothing (ROS) is one statement (f009); it is kept separate from abdominal pain.",
+      "'No previous major illnesses or surgeries' gives two denials: major illnesses joins the past-medical-history denial (f013), surgeries is f014.",
+      "check_coverage warns that x007's alias 'white blood cell count' contains the gold word 'cell'. Kept: it is the standard clinical name of the test and reveals nothing about B-cell lymphoma."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with fatigue, abdominal pain, night sweats, weight loss, and enlarged supraclavicular lymph node."
+    }
+  }
+}

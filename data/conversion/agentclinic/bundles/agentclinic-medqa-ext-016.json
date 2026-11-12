@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-016", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 50, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "neck swelling", "aliases": ["swelling on the back of the neck", "neck lump", "lump on the nape of the neck"], "text": "I have a swelling on the back of my neck.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "neck swelling: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for 2 months.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "neck swelling: course", "parent": "f001", "attribute": "course", "text": "It has been getting steadily bigger.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "neck swelling: pain", "parent": "f001", "attribute": "other", "text": "It isn't painful.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "neck swelling: discharge", "parent": "f001", "attribute": "other", "text": "Nothing has come out of it.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "colon cancer", "aliases": ["bowel cancer"], "text": "I had colon cancer.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "previous surgeries", "aliases": ["colectomy", "operations"], "text": "I had a colectomy for the colon cancer when I was 43.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "osteoarthritis", "aliases": ["arthritis", "knee arthritis"], "text": "I have osteoarthritis in my left knee.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "insulin glargine", "aliases": ["insulin", "Lantus"], "text": "I take insulin glargine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "metformin", "text": "I take metformin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "enalapril", "text": "I take enalapril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "naproxen", "aliases": ["painkillers", "anti-inflammatory"], "text": "I take naproxen.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a traffic warden.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f017", "item": "golf", "aliases": ["sports", "exercise", "hobbies"], "text": "I play golf frequently.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "other symptoms", "aliases": ["other complaints"], "text": "I don't have any other complaints or symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-016",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.3°C (99.1°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/86 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "88/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "neck examination", "aliases": ["examination of the neck lump", "palpation of the swelling", "lymph nodes", "thyroid examination"], "result": "Inspection and palpation: 2.5-cm (1-in) firm, mobile, painless nodule on the nape of the neck; the skin over the nodule cannot be pinched. No lymphadenopathy or thyromegaly."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["chest auscultation", "lung auscultation", "respiratory examination"], "result": "Clear lungs bilaterally; no rales, rhonchi or wheezes."},
+      {"id": "x007", "kind": "exam", "system": "general", "name": "rest of the physical examination", "aliases": ["general examination", "full physical examination", "remainder of the examination"], "result": "No abnormalities."},
+      {"id": "x008", "kind": "test", "name": "ultrasound of the neck", "aliases": ["neck ultrasound", "ultrasound of the lump", "soft tissue ultrasound"], "result": "Well-circumscribed lesion in the subcutaneous tissue, suggestive of a cystic nature."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "hemoglobin", "platelets"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x010", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "serum chemistry", "glucose", "blood glucose", "blood sugar", "creatinine", "kidney function"], "result": "Glucose elevated; creatinine normal."},
+      {"id": "x011", "kind": "test", "name": "liver enzymes", "aliases": ["liver function tests", "LFTs", "AST", "ALT", "transaminases"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-016",
+    "diagnosis": "Epidermoid cyst",
+    "aliases": ["epidermal cyst", "epidermal inclusion cyst", "epidermoid inclusion cyst", "infundibular cyst"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-016",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-016-p001"], "f002": ["cc", "agentclinic-medqa-ext-016-p001"], "f003": ["cc", "agentclinic-medqa-ext-016-p001"],
+      "f004": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p004"], "f005": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p003"],
+      "f006": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p002"], "f007": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p005"],
+      "f008": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p005"], "f009": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p005"],
+      "f010": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p005"], "f011": ["agentclinic-medqa-ext-016-p001", "agentclinic-medqa-ext-016-p005"],
+      "f012": ["agentclinic-medqa-ext-016-p001"], "f013": ["agentclinic-medqa-ext-016-p001"], "f014": ["agentclinic-medqa-ext-016-p001"],
+      "f015": ["agentclinic-medqa-ext-016-p001"], "f016": ["agentclinic-medqa-ext-016-p006"], "f017": ["agentclinic-medqa-ext-016-p006"],
+      "f018": ["agentclinic-medqa-ext-016-p007"]
+    },
+    "quotes": {
+      "f001": "swelling on the nape of his neck", "f002": "for 2 months", "f003": "progressively increasing swelling",
+      "f004": "No pain associated with the swelling", "f005": "any discharge from the swelling", "f008": "underwent colectomy at the age of 43",
+      "f011": "osteoarthritis of the left knee", "f016": "traffic warden", "f017": "frequently plays golf",
+      "f018": "no other complaints or symptoms noted"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.3°C (99.1°F)", "exam_ids": ["agentclinic-medqa-ext-016-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/86 mm Hg", "exam_ids": ["agentclinic-medqa-ext-016-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "88/min", "exam_ids": ["agentclinic-medqa-ext-016-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-016-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neck_Examination.Inspection_and_Palpation + Physical_Examination_Findings.Neck_Examination.Other_Findings", "source_text": "A 2.5-cm (1-in) firm, mobile, painless nodule on the nape of the neck. The skin over the nodule cannot be pinched. + No lymphadenopathy or thyromegaly.", "exam_ids": ["agentclinic-medqa-ext-016-e005", "agentclinic-medqa-ext-016-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Lung_Examination.Auscultation", "source_text": "Clear lungs bilaterally, no rales, rhonchi, or wheezes.", "exam_ids": ["agentclinic-medqa-ext-016-e007"]},
+      "x007": {"source": "Physical_Examination_Findings.Remainder_of_the_Examination.Findings", "source_text": "No abnormalities", "exam_ids": ["agentclinic-medqa-ext-016-e008"]},
+      "x008": {"source": "Test_Results.Imaging.Ultrasound_of_the_Neck.Findings", "source_text": "Well-circumscribed lesion in the subcutaneous tissue suggestive of a cystic nature.", "exam_ids": ["agentclinic-medqa-ext-016-i001"]},
+      "x009": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal + Normal + Normal", "exam_ids": ["agentclinic-medqa-ext-016-i002", "agentclinic-medqa-ext-016-i003", "agentclinic-medqa-ext-016-i004"]},
+      "x010": {"source": "Test_Results.Serum_Chemistry.Glucose + Test_Results.Serum_Chemistry.Creatinine", "source_text": "Elevated + Normal", "exam_ids": ["agentclinic-medqa-ext-016-i005", "agentclinic-medqa-ext-016-i006"]},
+      "x011": {"source": "Test_Results.Serum_Chemistry.Liver_Enzymes", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-016-i007"]}
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The ultrasound result says the lesion is 'suggestive of a cystic nature', which points toward the gold term 'cyst' without naming the epidermoid type. This is the test's answer."}
+    ],
+    "source_issues": [
+      "The Review_of_Systems starts with 'Overall healthy appearance', an observer description rather than a patient-reported item."
+    ],
+    "notes": [
+      "The swelling's duration (2 months) and growth come from both the chief complaint and the History; the denials of pain and discharge (History and p003/p004) are children of the swelling; the denial of fever (History, p002) is a standalone symptom.",
+      "Colon cancer and the colectomy at age 43 are two medical-history facts (illness; surgery).",
+      "'Overall healthy appearance' is observer-only and has no matching exam leaf, so it goes to qc.extras.acting_notes; 'no other complaints or symptoms noted' is kept as a denial (f018).",
+      "Serum chemistry is split by panel: glucose and creatinine form a basic metabolic panel; liver enzymes is its own record.",
+      "'Sebaceous cyst' is left out of the gold aliases: in lay use it also covers pilar cysts and steatocystoma, so it is broader than epidermoid cyst."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a neck swelling.",
+      "acting_notes": ["Overall healthy appearance (Review_of_Systems)."]
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-162",
+  "source_row": 162,
+  "demographics_text": "61-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, mild neck pain, difficulty swallowing, and unintentional weight loss.",
+  "chief_complaint": "Difficulty swallowing",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p001",
+      "field": "History",
+      "text": "The patient reports being generally healthy but has recently been experiencing fatigue, mild neck pain for around a month, and difficulty swallowing. She also mentions unintentional weight loss of 5-10 pounds over the past few months. She denies any breathing difficulties."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Fatigue"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Mild neck pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Unintentional weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No breathing difficulties"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p006",
+      "field": "Past_Medical_History",
+      "text": "The patient cannot recall any significant past medical events. No history of similar symptoms in the past."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p007",
+      "field": "Social_History",
+      "text": "Non-smoker, rarely consumes alcohol. Recently retired librarian."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-162-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, chest pain, vomiting, diarrhea, dysphagia to liquids, or any recent infections."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "78 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e005",
+      "path": "Physical_Examination_Findings.General_Examination.Appearance",
+      "text": "Appears mildly fatigued"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e006",
+      "path": "Physical_Examination_Findings.General_Examination.ENT",
+      "text": "Mildly pale conjunctivae; oral cavity examination reveals mild glossitis"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e007",
+      "path": "Physical_Examination_Findings.General_Examination.Neck",
+      "text": "No palpable masses, no lymphadenopathy"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e008",
+      "path": "Physical_Examination_Findings.General_Examination.Musculoskeletal",
+      "text": "No obvious deformity; mild tenderness over the anterior aspect of the neck"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-e009",
+      "path": "Physical_Examination_Findings.General_Examination.Skin",
+      "text": "Nails appear flat (koilonychia)"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-162-i001",
+      "path": "Test_Results.Barium_Esophagram.Findings",
+      "text": "Presence of an upper esophageal web"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hb",
+      "text": "10 g/dL (low)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-i003",
+      "path": "Test_Results.Complete_Blood_Count.Total_count_WBC",
+      "text": "11,000 /mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-i004",
+      "path": "Test_Results.Complete_Blood_Count.Differential_count.Neutrophiles",
+      "text": "70%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-i005",
+      "path": "Test_Results.Complete_Blood_Count.Differential_count.Lymphocytes",
+      "text": "25%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-i006",
+      "path": "Test_Results.Complete_Blood_Count.Differential_count.Monocytes",
+      "text": "5%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-162-i007",
+      "path": "Test_Results.Complete_Blood_Count.ESR",
+      "text": "10 mm/hr"
+    }
+  ],
+  "correct_diagnosis": "Plummer-Vinson syndrome",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

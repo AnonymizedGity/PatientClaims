@@ -1,0 +1,83 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-200",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 81, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "blisters in the armpit", "aliases": ["blisters", "armpit rash", "bullae"], "text": "I've got blisters in my armpit.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "itching", "aliases": ["itchy", "itchiness", "pruritus"], "text": "The blisters are itchy.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "recent illness", "aliases": ["been unwell recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "other symptoms", "aliases": ["systemic symptoms", "anything else"], "text": "Apart from my skin, I haven't had any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "new medications", "aliases": ["recent medication changes", "new medicines"], "text": "Since I arrived at the facility, a nurse practitioner has started me on four new medications.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f007", "item": "regular prescription medicines", "aliases": ["medications", "prescriptions", "medicines"], "text": "I was already taking several prescription medicines before the new ones were added.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "living situation", "aliases": ["where I live", "home", "assisted living"], "text": "I recently moved into an assisted living facility.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f009", "item": "own idea of the cause", "aliases": ["what I think caused it", "diet"], "text": "I think these blisters are due to my poor diet.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f010", "item": "worries about the new medications", "aliases": ["concerns", "worries"], "text": "I'm concerned about these new medications.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-200",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["dermatological examination", "examination of the blisters", "axilla examination", "Nikolsky sign"], "result": "Inspection: tense bullae in the axilla; palpation: the bullae do not rupture with light, gloved touch; surrounding skin is warm and appears inflamed."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "No significant abnormalities."},
+      {"id": "x007", "kind": "test", "name": "skin biopsy with direct immunofluorescence", "aliases": ["direct immunofluorescence", "DIF", "skin biopsy", "perilesional biopsy", "immunofluorescence"], "result": "Linear C3 and IgG deposits along the basement membrane."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-200",
+    "diagnosis": "Bullous pemphigoid",
+    "aliases": ["drug-induced bullous pemphigoid", "localized bullous pemphigoid"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-200",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-200-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-200-p001"],
+      "f003": ["agentclinic-medqa-ext-200-p006"],
+      "f004": ["agentclinic-medqa-ext-200-p006"],
+      "f005": ["agentclinic-medqa-ext-200-p006"],
+      "f006": ["agentclinic-medqa-ext-200-p001"],
+      "f007": ["agentclinic-medqa-ext-200-p001", "agentclinic-medqa-ext-200-p004"],
+      "f008": ["agentclinic-medqa-ext-200-p001", "agentclinic-medqa-ext-200-p005"],
+      "f009": ["agentclinic-medqa-ext-200-p001", "agentclinic-medqa-ext-200-p002"],
+      "f010": ["agentclinic-medqa-ext-200-p003"]
+    },
+    "quotes": {
+      "f001": "itchy blisters that have developed in his axilla",
+      "f005": "or other systemic symptoms",
+      "f006": "a nurse practitioner has started him on four new medications",
+      "f007": "patient has been on multiple medications prior to the new additions",
+      "f008": "recently moved to an assisted living facility",
+      "f009": "He believes these blisters are due to a poor diet",
+      "f010": "Concerns about new medications"
+    },
+    "flags": {
+      "f001": ["The source says 'axilla' (singular); which side is not stated."],
+      "f006": ["The four new drugs are not named; 'what are they?' stays unknown."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-200-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-200-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-200-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-200-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Dermatological_Examination.Inspection + Physical_Examination_Findings.Dermatological_Examination.Palpation", "source_text": "Tense axillary bullae noted on the affected area. + The bullae do not rupture with light, gloved touch. Surrounding skin is warm and appears inflamed.", "exam_ids": ["agentclinic-medqa-ext-200-e005", "agentclinic-medqa-ext-200-e006"]},
+      "x006": {"source": "Test_Results.Blood_Work.CBC_Normal_Range", "source_text": "No significant abnormalities noted", "exam_ids": ["agentclinic-medqa-ext-200-i001"]},
+      "x007": {"source": "Test_Results.Direct_Immunofluorescence.Findings", "source_text": "Linear C3 and IgG deposits along the basement membrane.", "exam_ids": ["agentclinic-medqa-ext-200-i002"]}
+    },
+    "finding_flags": {
+      "x005": ["'Nikolsky sign' is an alias because the palpation step (bullae do not rupture with light touch) is that manoeuvre; the source does not name it."]
+    },
+    "leakage": [],
+    "source_issues": ["Past_Medical_History and Social_History are mostly authoring notes ('Details on specific past medical history are not provided', 'No details provided. Focus on...'); only their content (prior medications, assisted living) is used.", "Secondary_Symptoms holds the patient's belief and concerns, not symptoms.", "The CBC path name 'CBC_Normal_Range' is a label artefact; the result is 'No significant abnormalities'."],
+    "notes": ["Itching is a separate fact (f002) so 'is it itchy?' has its own answer; both blisters and itching open the case, as the chief complaint is 'itchy blisters'.", "The location stays in the blister item ('blisters in the armpit'), as 'weakness in the arms' does in the reference case.", "Gold aliases: 'pemphigoid' alone is broader (mucous membrane pemphigoid, pemphigoid gestationis) and 'BP' collides with blood pressure, so neither is listed."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient presenting with itchy blisters in the axilla."
+    }
+  }
+}

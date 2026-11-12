@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-077",
+  "source_row": 77,
+  "demographics_text": "58-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with neck and arm pain, paresthesias, and muscle weakness.",
+  "chief_complaint": "Burning pain in neck and arms, and weakness in both hands",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p001",
+      "field": "History",
+      "text": "The patient reports a year-long history of burning pain in his neck and arms, accompanying paresthesias in his hands. Over the past 3 months, he has experienced increasing weakness in both hands. He has a history of type 2 diabetes mellitus, hypercholesterolemia, and hypertension. He was involved in a motor vehicle accident 3 years ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Paresthesias in hands"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Absent reflexes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Decreased hand grip with fasciculations"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p005",
+      "field": "Past_Medical_History",
+      "text": "Type 2 diabetes mellitus, hypercholesterolemia, hypertension, history of a motor vehicle accident 3 years prior."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p006",
+      "field": "Social_History",
+      "text": "7 sexual partners, uses condoms inconsistently."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p007",
+      "field": "Review_of_Systems",
+      "text": "Oriented to time, place, and person. Vital signs within normal limits."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-077-p008",
+      "field": "Current_Medications",
+      "text": "[\"Metformin\", \"Sitagliptin\", \"Enalapril\", \"Atorvastatin\", \"Aspirin\"]"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Within_Normal_Limits",
+      "text": "True"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e002",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves",
+      "text": "No focal findings"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e003",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Muscle_Strength",
+      "text": "Decreased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e004",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Reflexes",
+      "text": "Absent"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Sensation.Temperature_and_Pain",
+      "text": "Absent over chest and bilateral upper arms"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Sensation.Vibration",
+      "text": "Present"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Sensation.Joint_Position",
+      "text": "Present"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Fasciculations",
+      "text": "Present"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Lower_Extremities.Abnormalities",
+      "text": "No abnormalities noted"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-077-i001",
+      "path": "Test_Results.Imaging.MRI_Spine.Findings",
+      "text": "A syrinx (cavity) within the spinal cord extending from the cervical to the upper thoracic region."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-077-i002",
+      "path": "Test_Results.Laboratory_Tests.Blood_Glucose.Level",
+      "text": "Slightly elevated"
+    }
+  ],
+  "correct_diagnosis": "Syringomyelia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

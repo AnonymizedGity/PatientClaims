@@ -1,0 +1,90 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-015", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 22, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "finger pain", "aliases": ["sore finger"], "text": "My right ring finger hurts.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "finger swelling", "aliases": ["swollen finger"], "text": "My right ring finger is swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "worsening of the finger pain and swelling", "text": "The swelling and the pain have been getting worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "when the finger symptoms started", "text": "The pain and swelling started 2 days ago, while I was playing football.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "how the finger was injured", "aliases": ["mechanism of injury", "finger caught in a jersey"], "text": "My finger got caught in another player's jersey, and he pulled away forcefully.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f006", "item": "finger pain: location", "parent": "f001", "attribute": "location", "text": "The pain is at the last joint of the finger, the one nearest the fingertip.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "difficulty bending the tip of the finger", "aliases": ["can't bend the fingertip", "unable to flex the finger"], "text": "When I make a fist, I can't bend my right ring finger at the last joint.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "finger held straight at rest", "aliases": ["finger sticks out straight"], "text": "When my hand is resting, my right ring finger stays straight.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "occupation", "aliases": ["job", "work", "school"], "text": "I'm a student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "sports", "aliases": ["exercise", "physical activity", "football"], "text": "I'm active in sports, especially football.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "numbness in the finger", "aliases": ["loss of feeling"], "text": "My finger isn't numb.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f016", "item": "tingling in the finger", "aliases": ["pins and needles"], "text": "I don't have any tingling in the finger.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-015",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "hand examination", "aliases": ["finger examination", "right ring finger", "finger range of motion", "finger flexion", "making a fist"], "result": "Inspection: right ring finger extended, with visible swelling at the distal interphalangeal (DIP) joint; palpation: tenderness localized to the DIP joint of the right ring finger; range of motion: unable to flex the right ring finger at the DIP joint when attempting to make a fist; no joint laxity."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "neurovascular examination of the hand", "aliases": ["capillary refill", "finger sensation", "circulation of the finger", "neurovascular status"], "result": "Normal capillary refill; no sensory deficits."},
+      {"id": "x007", "kind": "test", "name": "X-ray of the right hand", "aliases": ["hand X-ray", "finger X-ray", "hand radiograph"], "result": "No fractures or dislocations. Soft tissue swelling around the DIP joint of the right ring finger."},
+      {"id": "x008", "kind": "test", "name": "MRI of the right hand", "aliases": ["hand MRI", "finger MRI"], "result": "Result not documented"}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-015",
+    "diagnosis": "Rupture of the flexor digitorum profundus tendon at its point of insertion",
+    "aliases": ["jersey finger", "rugger jersey finger", "FDP avulsion", "flexor digitorum profundus avulsion", "avulsion of the flexor digitorum profundus tendon", "FDP tendon avulsion from the distal phalanx", "FDP tendon rupture at its insertion"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-015",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-015-p001"], "f002": ["cc", "agentclinic-medqa-ext-015-p001"], "f003": ["cc"],
+      "f004": ["agentclinic-medqa-ext-015-p001"], "f005": ["agentclinic-medqa-ext-015-p001"], "f006": ["agentclinic-medqa-ext-015-p003"],
+      "f007": ["agentclinic-medqa-ext-015-p002"], "f008": ["agentclinic-medqa-ext-015-p004"], "f009": ["agentclinic-medqa-ext-015-p005"],
+      "f010": ["agentclinic-medqa-ext-015-p006"], "f011": ["agentclinic-medqa-ext-015-p006"], "f012": ["agentclinic-medqa-ext-015-p006"],
+      "f013": ["agentclinic-medqa-ext-015-p006"], "f014": ["agentclinic-medqa-ext-015-p007"], "f015": ["agentclinic-medqa-ext-015-p007"],
+      "f016": ["agentclinic-medqa-ext-015-p007"]
+    },
+    "quotes": {
+      "f003": "Progressive swelling and pain", "f004": "began 2 days ago while playing football",
+      "f005": "his finger got caught in the jersey of another player, who then pulled away forcefully",
+      "f006": "Pain at the distal interphalangeal joint", "f007": "Inability to flex the right ring finger at the distal interphalangeal joint when making a fist",
+      "f008": "Extended right ring finger in resting position", "f010": "Student", "f011": "active in sports, particularly football",
+      "f013": "drinks alcohol socially", "f015": "numbness, or tingling in the affected finger", "f016": "numbness, or tingling in the affected finger"
+    },
+    "flags": {
+      "f008": ["'Extended right ring finger in resting position' is also an inspection finding (x005); kept as a patient fact because the patient can see how his finger rests."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-015-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-015-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-015-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-015-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Hand_Examination.Inspection + Physical_Examination_Findings.Hand_Examination.Palpation + Physical_Examination_Findings.Hand_Examination.Range_of_Motion", "source_text": "Right ring finger is extended, with visible swelling at the distal interphalangeal joint. + Tenderness localized at the distal interphalangeal joint of the right ring finger. + Patient unable to flex the right ring finger at the distal interphalangeal joint while attempting to make a fist. No joint laxity.", "exam_ids": ["agentclinic-medqa-ext-015-e005", "agentclinic-medqa-ext-015-e006", "agentclinic-medqa-ext-015-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Hand_Examination.Neurovascular_Assessment", "source_text": "Normal capillary refill, no sensory deficits.", "exam_ids": ["agentclinic-medqa-ext-015-e008"]},
+      "x007": {"source": "Test_Results.X-ray_of_the_Right_Hand.Findings", "source_text": "No bone fractures or dislocations visible. Soft tissue swelling noted around the distal interphalangeal joint of the right ring finger.", "exam_ids": ["agentclinic-medqa-ext-015-i001"]},
+      "x008": {"source": "Test_Results.MRI_of_the_Right_Hand.Preliminary_Findings", "source_text": "Expected to show details regarding the integrity of tendons.", "exam_ids": ["agentclinic-medqa-ext-015-i002"]}
+    },
+    "finding_flags": {
+      "x008": ["The source's 'Preliminary_Findings' only says what the MRI is expected to show; it gives no result. The MRI is listed as obtained, so the record exists with 'Result not documented'."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The MRI leaf contains an expectation ('Expected to show details regarding the integrity of tendons') rather than a finding."
+    ],
+    "notes": [
+      "The chief complaint names two complaints (swelling, pain), so both open the case; 'progressive' applies to both and is a standalone fact (f003), as are the onset during football (f004) and the jersey mechanism (f005).",
+      "'Pain at the distal interphalangeal joint' (p003) is the location child of the finger pain, in lay words (last joint, nearest the fingertip).",
+      "The hand inspection, palpation and range of motion form one hand-examination record; the neurovascular assessment is a separate request.",
+      "No finding name or alias uses a gold term (flexor, profundus, tendon)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with progressive swelling and pain in the right ring finger."
+    }
+  }
+}

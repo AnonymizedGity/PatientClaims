@@ -1,0 +1,129 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-179",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 52, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "headache", "text": "I've had a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: timing", "parent": "f001", "attribute": "timing", "text": "It's there continuously; it doesn't go away.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "headache: character", "parent": "f001", "attribute": "character", "text": "It's a nagging kind of headache.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "headache: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for the past month.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "headache: what he first thought it was", "parent": "f001", "attribute": "context", "text": "At first I thought it was related to a cold.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "headache: relief from ibuprofen", "parent": "f001", "attribute": "relieving", "aliases": ["ibuprofen", "painkillers"], "text": "Over-the-counter ibuprofen only gave me mild, temporary relief.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f007", "item": "dizziness", "aliases": ["lightheadedness"], "text": "Recently I've been getting dizzy.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "nausea", "aliases": ["feeling sick to my stomach"], "text": "Recently I've been feeling nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f009", "item": "symptoms better outside in cold air", "aliases": ["fresh air", "going outside"], "text": "The dizziness and nausea get noticeably better when I'm outside in the cold air, but the relief is only temporary.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "where he has been staying", "aliases": ["cabin", "home", "living situation"], "text": "I've been staying in a cabin for the past 5 weeks.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "recent travel", "aliases": ["trips"], "text": "I haven't done any significant travel.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "asthma", "text": "I have asthma.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "amlodipine", "aliases": ["blood pressure medication"], "text": "I take amlodipine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "metformin", "text": "I take metformin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "glimepiride", "text": "I take glimepiride.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f018", "item": "fluticasone/salmeterol inhaler", "aliases": ["asthma inhaler", "inhaler"], "text": "I use a fluticasone/salmeterol inhaler.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f019", "item": "smoking", "aliases": ["tobacco"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f020", "item": "recreational drug use", "aliases": ["illicit drugs", "street drugs"], "text": "I don't use illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f021", "item": "symptoms right now", "aliases": ["current symptoms"], "text": "Right now, here in the office, I don't have any symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f022", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f023", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f024", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f025", "item": "vision changes", "aliases": ["blurry vision", "trouble seeing"], "text": "My vision hasn't changed recently.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f026", "item": "hearing changes", "aliases": ["hearing loss", "trouble hearing"], "text": "My hearing hasn't changed recently.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-179",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "99°F (37.2°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/78 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["mental status examination", "orientation", "level of consciousness"], "result": "Alert and oriented x3."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Intact."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["motor examination", "muscle strength", "power"], "result": "Strength 5/5 in all extremities."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact to light touch."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["cerebellar examination", "finger-to-nose test"], "result": "No ataxia or dysmetria."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "2+ and symmetric."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count", "hemoglobin", "hematocrit", "leukocyte count", "WBC", "platelet count"], "result": "Hemoglobin 20 g/dL (elevated); hematocrit 60% (elevated); leukocyte count 10,050/mm3 with normal differential; platelet count 350,000/mm3."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-179",
+    "diagnosis": "Toxic exposure",
+    "aliases": ["toxin exposure", "poisoning", "carbon monoxide poisoning", "CO poisoning", "carbon monoxide toxicity", "chronic carbon monoxide poisoning"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-179",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-179-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-179-p001"],
+      "f003": ["agentclinic-medqa-ext-179-p001"],
+      "f004": ["agentclinic-medqa-ext-179-p001"],
+      "f005": ["agentclinic-medqa-ext-179-p001"],
+      "f006": ["agentclinic-medqa-ext-179-p001"],
+      "f007": ["agentclinic-medqa-ext-179-p001", "agentclinic-medqa-ext-179-p002"],
+      "f008": ["agentclinic-medqa-ext-179-p001", "agentclinic-medqa-ext-179-p003"],
+      "f009": ["agentclinic-medqa-ext-179-p001", "agentclinic-medqa-ext-179-p004"],
+      "f010": ["agentclinic-medqa-ext-179-p001"],
+      "f011": ["agentclinic-medqa-ext-179-p001"],
+      "f012": ["agentclinic-medqa-ext-179-p005"],
+      "f013": ["agentclinic-medqa-ext-179-p005"],
+      "f014": ["agentclinic-medqa-ext-179-p005"],
+      "f015": ["agentclinic-medqa-ext-179-p008"],
+      "f016": ["agentclinic-medqa-ext-179-p008"],
+      "f017": ["agentclinic-medqa-ext-179-p008"],
+      "f018": ["agentclinic-medqa-ext-179-p008"],
+      "f019": ["agentclinic-medqa-ext-179-p006"],
+      "f020": ["agentclinic-medqa-ext-179-p006"],
+      "f021": ["agentclinic-medqa-ext-179-p007"],
+      "f022": ["agentclinic-medqa-ext-179-p007"],
+      "f023": ["agentclinic-medqa-ext-179-p007"],
+      "f024": ["agentclinic-medqa-ext-179-p007"],
+      "f025": ["agentclinic-medqa-ext-179-p007"],
+      "f026": ["agentclinic-medqa-ext-179-p007"]
+    },
+    "quotes": {
+      "f001": "Persistent headache",
+      "f002": "continuous",
+      "f003": "'nagging' headache",
+      "f004": "for the past month",
+      "f005": "initially thought to be related to a cold",
+      "f006": "ibuprofen provided only mild and temporary relief",
+      "f007": "Recently, has experienced dizziness",
+      "f009": "notably improving when outside in cold air / Temporary relief upon exposure to cold air",
+      "f010": "staying in a cabin for 5 weeks",
+      "f011": "reports no significant travel",
+      "f013": "type II diabetes mellitus",
+      "f021": "Currently asymptomatic in the office",
+      "f025": "recent changes in vision",
+      "f026": "or hearing"
+    },
+    "flags": {
+      "f002": ["The History calls the headache 'continuous', but the ROS says he is 'currently asymptomatic in the office' (f021). Both kept; the contrast fits symptoms that ease away from the cabin."],
+      "f009": ["The History ties the improvement in cold air to the dizziness and nausea; p004 ('Temporary relief upon exposure to cold air') names no symptom. Written as in the History, with 'temporary' from p004."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "99°F (37.2°C)", "exam_ids": ["agentclinic-medqa-ext-179-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/78 mmHg", "exam_ids": ["agentclinic-medqa-ext-179-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-179-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-179-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-179-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Alert and oriented x3", "exam_ids": ["agentclinic-medqa-ext-179-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Intact", "exam_ids": ["agentclinic-medqa-ext-179-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor", "source_text": "Strength 5/5 in all extremities", "exam_ids": ["agentclinic-medqa-ext-179-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory", "source_text": "Intact to light touch", "exam_ids": ["agentclinic-medqa-ext-179-e009"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination.Coordination", "source_text": "No ataxia or dysmetria", "exam_ids": ["agentclinic-medqa-ext-179-e010"]},
+      "x011": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "2+ and symmetric", "exam_ids": ["agentclinic-medqa-ext-179-e011"]},
+      "x012": {"source": "Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Hematocrit + Test_Results.Complete_Blood_Count.Leukocyte_Count + Test_Results.Complete_Blood_Count.Platelet_Count", "source_text": "20 g/dL (elevated) + 60% (elevated) + 10,050 cells/mm^3 with normal differential + 350,000/mm^3", "exam_ids": ["agentclinic-medqa-ext-179-i001", "agentclinic-medqa-ext-179-i002", "agentclinic-medqa-ext-179-i003", "agentclinic-medqa-ext-179-i004"]}
+    },
+    "leakage": [],
+    "source_issues": ["'Continuous' headache (History) vs 'currently asymptomatic in the office' (ROS).", "The gold label 'Toxic exposure' is generic; the case (cabin stay, relief in cold outdoor air, headache, dizziness, nausea, polycythemia with normal SpO2) points to carbon monoxide."],
+    "notes": ["The ibuprofen response is a relieving child of the headache (f006) rather than a separate medication fact, per the schema's 'symptom it fails to relieve' option.", "Gold aliases add carbon monoxide poisoning forms as more specific forms that fall entirely within 'toxic exposure'; no broader term added.", "The cabin stay is recorded as an environmental exposure (habit_exposure, f010).", "Fixes: f016 alias 'diabetes medication' removed; f017 alias 'diabetes medication' removed."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient presenting with headache and dizziness."
+    }
+  }
+}

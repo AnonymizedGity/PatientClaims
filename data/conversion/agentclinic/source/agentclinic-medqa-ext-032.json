@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-032",
+  "source_row": 32,
+  "demographics_text": "71-year-old male",
+  "objective_for_doctor": "Evaluate the patient presenting with fatigue, malaise, and unintentional weight loss, and assess the need for further diagnostic workup.",
+  "chief_complaint": "Fatigue and malaise",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-032-p001",
+      "field": "History",
+      "text": "The patient complains of fatigue and malaise over the last few months. He also reports an unintentional weight loss of 18.1 kg over the past 6 months. He does not recall any changes in diet or exercise routines that could explain the weight loss."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-032-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Significant unintentional weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-032-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No change in diet or exercise"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-032-p004",
+      "field": "Past_Medical_History",
+      "text": "Has a history of diabetes mellitus type II, hypertension, non-seminomatous testicular cancer treated in the past, and hypercholesterolemia."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-032-p005",
+      "field": "Social_History",
+      "text": "Currently smokes 1 pack of cigarettes per day and drinks a glass of wine daily. Denies any illicit drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-032-p006",
+      "field": "Review_of_Systems",
+      "text": "No fever, night sweats, or significant changes in bowel habits."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-032-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98.0°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "126/74 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "87 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "17 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-e005",
+      "path": "Physical_Examination_Findings.Examination.General",
+      "text": "Patient appears chronically ill."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-e006",
+      "path": "Physical_Examination_Findings.Examination.Lymph_Nodes",
+      "text": "Bilateral cervical and inguinal lymphadenopathy palpable."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-e007",
+      "path": "Physical_Examination_Findings.Examination.Abdominal_Examination",
+      "text": "Evidence of splenomegaly upon palpation."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-032-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Elevated with lymphocytosis"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Normal to slightly decreased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Normal to decreased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-032-i004",
+      "path": "Test_Results.Flow_Cytometry.Findings",
+      "text": "Presence of monoclonal B lymphocytes with a phenotype consistent with CLL/SLL."
+    }
+  ],
+  "correct_diagnosis": "Chronic lymphocytic leukemia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

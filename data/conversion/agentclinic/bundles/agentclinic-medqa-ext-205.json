@@ -1,0 +1,105 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-205",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 38, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "upper abdominal pain", "aliases": ["epigastric pain", "stomach pain", "upper belly pain", "epigastric discomfort"], "text": "I have discomfort and pain in the upper middle part of my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "upper abdominal pain: character", "parent": "f001", "attribute": "character", "value": "cramping", "text": "It's a cramping pain.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "upper abdominal pain: duration", "parent": "f001", "attribute": "duration", "text": "This has been going on for the past 2 hours.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "upper abdominal pain: earlier episodes", "parent": "f001", "attribute": "frequency", "aliases": ["happened before", "previous episodes"], "text": "I've had similar episodes of pain before.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "recurrent"},
+      {"id": "f005", "item": "upper abdominal pain: relation to meals", "parent": "f001", "attribute": "timing", "aliases": ["pain after eating", "pain with food"], "text": "Those episodes mostly came after meals.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f006", "item": "upper abdominal pain: how it settles", "parent": "f001", "attribute": "course", "text": "The pain often goes away several hours after eating.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f007", "item": "avoiding eating", "aliases": ["not eating", "food avoidance", "fear of eating"], "text": "Because of the pain I've been avoiding eating.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f008", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "weight loss: duration", "parent": "f008", "attribute": "duration", "text": "It's been over the past couple of months.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "change in bowel habits", "aliases": ["diarrhea", "constipation"], "text": "My bowel habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f011", "item": "change in urinary habits", "aliases": ["urinary symptoms"], "text": "My peeing hasn't changed.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f012", "item": "nausea", "aliases": ["feeling sick"], "text": "I haven't had any nausea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "chronic knee pain", "aliases": ["knee pain", "bad knees"], "text": "I have chronic knee pain.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "over-the-counter painkillers", "aliases": ["painkillers", "pain medication", "pain relievers"], "text": "I take over-the-counter painkillers for my knee pain.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from my knee pain, I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f017", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-205",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/89 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "77/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "bowel sounds", "epigastric tenderness"], "result": "Inspection: unremarkable; auscultation: normal bowel sounds; percussion: tympanic throughout, no signs of fluid; palpation: no tenderness or guarding, examination unremarkable."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "hemoglobin", "platelets"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x007", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver panel", "AST", "ALT", "alkaline phosphatase", "ALP", "bilirubin"], "result": "AST normal; ALT normal; ALP normal; bilirubin normal."},
+      {"id": "x008", "kind": "test", "name": "upper endoscopy", "aliases": ["EGD", "esophagogastroduodenoscopy", "gastroscopy", "upper GI endoscopy", "OGD"], "result": "Gastric ulcer on the lesser curvature of the stomach."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-205",
+    "diagnosis": "Gastric peptic ulcer",
+    "aliases": ["gastric ulcer", "stomach ulcer", "peptic ulcer of the stomach", "gastric peptic ulcer disease", "benign gastric ulcer", "NSAID-induced gastric ulcer"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-205",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-205-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-205-p001"],
+      "f003": ["agentclinic-medqa-ext-205-p001"],
+      "f004": ["agentclinic-medqa-ext-205-p001"],
+      "f005": ["agentclinic-medqa-ext-205-p001"],
+      "f006": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p002"],
+      "f007": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p004"],
+      "f008": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p003"],
+      "f009": ["agentclinic-medqa-ext-205-p001"],
+      "f010": ["agentclinic-medqa-ext-205-p009"],
+      "f011": ["agentclinic-medqa-ext-205-p009"],
+      "f012": ["agentclinic-medqa-ext-205-p009"],
+      "f013": ["agentclinic-medqa-ext-205-p009"],
+      "f014": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p007"],
+      "f015": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p007"],
+      "f016": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p007"],
+      "f017": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p005", "agentclinic-medqa-ext-205-p008"],
+      "f018": ["agentclinic-medqa-ext-205-p001", "agentclinic-medqa-ext-205-p006", "agentclinic-medqa-ext-205-p008"]
+    },
+    "quotes": {
+      "f001": "Epigastric discomfort and cramping pain",
+      "f002": "cramping pain",
+      "f003": "for the past 2 hours",
+      "f004": "similar pain episodes in the past",
+      "f005": "mostly post-meals",
+      "f006": "often subside several hours after eating",
+      "f007": "This has led her to avoid eating",
+      "f009": "weight loss over the past couple of months",
+      "f014": "chronic knee pain",
+      "f015": "over-the-counter painkillers",
+      "f016": "No other significant medical history.",
+      "f018": "drinks alcohol occasionally"
+    },
+    "flags": {
+      "f015": ["The painkiller is not named (NSAID or acetaminophen unknown); dose and frequency are not given."],
+      "f017": ["Amount and duration of smoking are not given."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-205-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/89 mmHg", "exam_ids": ["agentclinic-medqa-ext-205-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "77 bpm", "exam_ids": ["agentclinic-medqa-ext-205-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-205-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Unremarkable + Normal bowel sounds + Tympanic throughout, no signs of fluid + No tenderness or guarding, examination unremarkable", "exam_ids": ["agentclinic-medqa-ext-205-e005", "agentclinic-medqa-ext-205-e006", "agentclinic-medqa-ext-205-e007", "agentclinic-medqa-ext-205-e008"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal + Normal + Normal", "exam_ids": ["agentclinic-medqa-ext-205-i001", "agentclinic-medqa-ext-205-i002", "agentclinic-medqa-ext-205-i003"]},
+      "x007": {"source": "Test_Results.Liver_Function_Tests.AST + Test_Results.Liver_Function_Tests.ALT + Test_Results.Liver_Function_Tests.ALP + Test_Results.Liver_Function_Tests.Bilirubin", "source_text": "Normal + Normal + Normal + Normal", "exam_ids": ["agentclinic-medqa-ext-205-i004", "agentclinic-medqa-ext-205-i005", "agentclinic-medqa-ext-205-i006", "agentclinic-medqa-ext-205-i007"]},
+      "x008": {"source": "Test_Results.Upper_Endoscopy.Findings", "source_text": "Presence of a gastric ulcer on the lesser curvature of the stomach", "exam_ids": ["agentclinic-medqa-ext-205-i008"]}
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The endoscopy result names the gold diagnosis (gastric ulcer); kept because it is what the endoscopy shows."}
+    ],
+    "source_issues": ["Secondary_Symptoms lists habits ('Smoking', 'Occasional alcohol consumption') as symptoms; they are merged with the same statements in the History and Social_History.", "Abdominal examination is entirely normal (no epigastric tenderness) despite active epigastric pain."],
+    "notes": ["The past episodes, their relation to meals and their settling hours after eating are children of the epigastric pain (frequency, timing, course); p002 'Pain subsides hours after eating' merges into f006.", "Avoiding food is a separate symptom fact; the weight loss over the past couple of months has its own duration child.", "Gold aliases: 'peptic ulcer disease'/'PUD' are broader (they include duodenal ulcers), so they are not listed."],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with epigastric discomfort and cramping pain."
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+ "case_id": "mcr-test-00910",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I feel nauseated.",
+   "I've been vomiting.",
+   "I have pain in my belly.",
+   "The nausea, vomiting and belly pain have been going on for a week.",
+   "I haven't been passing any urine.",
+   "The whites of my eyes have turned yellow.",
+   "I feel tired and worn out.",
+   "Six days ago I came to the hospital with the same symptoms, but I left against medical advice.",
+   "I use cocaine regularly.",
+   "I'm homeless."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I feel nauseated and I've been vomiting. I have pain in my belly, and all of this has been going on for a week. I haven't been passing any urine, and the whites of my eyes have turned yellow. I feel tired and worn out. Six days ago I came to the hospital with the same symptoms, but I left against medical advice. I use cocaine regularly, and I'm homeless.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f004",
+    "f009",
+    "f011",
+    "f006",
+    "f017",
+    "f019",
+    "f024"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3676,
+   "tokens_out": 96,
+   "seconds": 7.2,
+   "redrafts": 0
+  }
+ }
+}

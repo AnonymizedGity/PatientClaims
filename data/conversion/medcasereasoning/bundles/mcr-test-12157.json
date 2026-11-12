@@ -1,0 +1,86 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12157",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 70, "sex": "female"},
+    "opening": ["f001", "f004"],
+    "facts": [
+      {"id": "f001", "item": "neck lump", "aliases": ["neck mass", "lump in the neck", "swelling in the neck"], "text": "I have a lump in my neck.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "neck lump: location", "parent": "f001", "attribute": "location", "text": "It's on the right side of my neck.", "value": "right side of the neck", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f003", "item": "how long the neck lump and cough have lasted", "text": "Both started about 4 weeks ago.", "value": "4 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "cough", "aliases": ["coughing", "dry cough"], "text": "I have a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f005", "item": "cough: character", "parent": "f004", "attribute": "character", "text": "It's a dry cough; nothing comes up.", "value": "dry", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f006", "item": "cough: frequency", "parent": "f004", "attribute": "frequency", "text": "It comes on now and then, not all the time.", "value": "sporadic", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f007", "item": "cough: severity", "parent": "f004", "attribute": "severity", "text": "It comes in severe coughing fits.", "value": "severe fits", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f008", "item": "cough: triggered by pressing on the neck lump", "parent": "f004", "attribute": "aggravating", "text": "Pressing on the lump in my neck sets off the cough every time.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f009", "item": "cough: brought on by eating, talking or moving", "parent": "f004", "attribute": "aggravating", "text": "Eating, talking or moving doesn't bring it on.", "value": ["eating", "talking", "movement"], "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f010", "item": "vomiting with coughing fits", "aliases": ["vomiting", "throwing up", "post-tussive vomiting"], "text": "The coughing fits sometimes make me throw up.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "recurrent"},
+      {"id": "f011", "item": "hoarse voice", "aliases": ["hoarseness", "raspy voice", "voice change"], "text": "My voice goes hoarse on and off.", "polarity": "present", "category": "symptom", "system": "ent", "time": "recurrent"},
+      {"id": "f012", "item": "difficulty swallowing", "aliases": ["dysphagia", "trouble swallowing"], "text": "I don't have trouble swallowing.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f013", "item": "food or drink coming back through the nose, or a nasal voice", "aliases": ["velopharyngeal insufficiency", "nasal regurgitation", "nasal-sounding speech"], "text": "Food and drink don't come back up through my nose, and my voice doesn't sound nasal.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["medical history", "past illnesses"], "text": "I don't have any medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "family history of neuroendocrine tumours", "aliases": ["family history of tumours", "tumours in the family", "family history of hormone-producing tumours"], "text": "Nobody in my family has had a neuroendocrine tumour.", "polarity": "absent", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12157",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "ent", "name": "neck examination", "aliases": ["neck mass", "neck palpation", "palpation of the neck lump", "lymph nodes"], "result": "2.5-cm right-sided level II neck mass deep to the sternocleidomastoid muscle; discrete, mobile and nonpulsatile; palpation immediately triggers coughing."},
+      {"id": "x002", "kind": "exam", "system": "general", "name": "general physical examination", "aliases": ["rest of the examination", "voice", "hoarseness", "head and neck examination"], "result": "Unremarkable except for a mildly hoarse voice."},
+      {"id": "x003", "kind": "test", "name": "flexible fiberoptic laryngoscopy", "aliases": ["laryngoscopy", "nasendoscopy", "vocal cord examination", "vocal fold movement"], "result": "Normal true vocal-fold appearance and movement bilaterally; only prominent retropharyngeal carotid arteries noted."},
+      {"id": "x004", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count", "complete blood panel"], "result": "Within normal limits."},
+      {"id": "x005", "kind": "test", "name": "24-hour urinary catecholamines", "aliases": ["urine catecholamines", "24-hour urine catecholamines", "urinary catecholamines"], "result": "Within normal limits."},
+      {"id": "x006", "kind": "test", "name": "CT angiography of the neck", "aliases": ["CT angiogram of the neck", "CTA neck", "CT neck", "neck CT"], "result": "2.4 × 2.2 × 2.2-cm heterogeneously enhancing, irregular mass in the right carotid sheath lateral to the proximal internal and external carotid arteries, with minimal arterial splaying and a central area of lower attenuation suggestive of necrosis."},
+      {"id": "x007", "kind": "test", "name": "MRI of the neck", "aliases": ["neck MRI", "MRI", "magnetic resonance imaging of the neck"], "result": "2.5 × 1.9 × 3.0-cm mass within the carotid sheath, extending from the inferior margin of the right carotid to the level of the piriform sinuses, enhancing intensely after contrast administration."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12157",
+    "diagnosis": "Vagal paraganglioma",
+    "aliases": ["glomus vagale", "glomus vagale tumor", "vagal glomus tumor", "paraganglioma of the vagus nerve", "cervical vagal paraganglioma"],
+    "reasoning": "1. Vagal paraganglioma remained in the differential given the mass’s location and enhancement — “Differential diagnoses included vagal paraganglioma, schwannoma, neurofibroma, or a necrotic lymph node.” 2. Neurofibroma was considered among neurogenic tumors of the carotid sheath — “Differential diagnoses included … neurofibroma …” 3. A necrotic lymph node was included due to central low attenuation on CT — “Differential diagnoses included … a necrotic lymph node.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12157",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001", "s002"], "f006": ["s001"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s004"], "f015": ["s004"]
+    },
+    "quotes": {
+      "f002": "a right-sided neck mass", "f003": "a 4-week history of a right-sided neck mass and a sporadic dry cough",
+      "f005": "dry cough", "f006": "a sporadic dry cough", "f007": "occurred in severe fits",
+      "f008": "was reproducibly triggered by palpation of the neck mass", "f009": "unrelated to eating, talking, or movement",
+      "f010": "sometimes induced vomiting", "f011": "intermittent hoarseness", "f013": "denied dysphagia or velopharyngeal insufficiency",
+      "f014": "Her medical history was unremarkable", "f015": "no family history of neuroendocrine tumors"
+    },
+    "flags": {
+      "f008": ["The source says palpation of the mass triggers the cough; worded as what the patient would notice when the lump is pressed."],
+      "f013": ["'Denied velopharyngeal insufficiency' rendered in lay terms as no nasal regurgitation and no nasal voice, the two complaints the term covers."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005", "s006"], "source_text": "a 2.5-cm right-sided level II neck mass deep to the sternocleidomastoid muscle / The mass was discrete, mobile, nonpulsatile, and palpation immediately triggered coughing."},
+      "x002": {"sentences": ["s008"], "source_text": "The remainder of the examination was unremarkable except for a mildly hoarse voice."},
+      "x003": {"sentences": ["s007"], "source_text": "Flexible fiberoptic laryngoscopy showed normal true vocal–fold appearance and movement bilaterally, with only prominent retropharyngeal carotid arteries noted."},
+      "x004": {"sentences": ["s009"], "source_text": "Laboratory studies, including a complete blood panel / were within normal limits"},
+      "x005": {"sentences": ["s009"], "source_text": "24-hour urinary catecholamines, were within normal limits"},
+      "x006": {"sentences": ["s010"], "source_text": "CT angiography of the neck demonstrated a 2.4 × 2.2 × 2.2-cm heterogeneously enhancing, irregular mass in the right carotid sheath lateral to the proximal internal and external carotid arteries, with minimal arterial splaying and a central area of lower attenuation suggestive of necrosis."},
+      "x007": {"sentences": ["s011"], "source_text": "MRI of the neck revealed a 2.5 × 1.9 × 3.0-cm mass extending from the inferior margin of the right carotid to the level of the piriform sinuses within the carotid sheath that enhanced intensely after contrast administration."}
+    },
+    "finding_flags": {
+      "x004": ["'Complete blood panel' is read as a complete blood count; no individual values are given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s009 says 'laboratory studies, including' a blood panel and urinary catecholamines were normal; any other laboratory tests are not named, so only these two are findings."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with a 4-week right-sided neck mass and dry cough (s001-s011; all examinations and tests belong to that workup).",
+      "The cough's attributes (dry, sporadic, severe fits, triggered by pressing the lump, not triggered by eating, talking or movement) are child facts; post-tussive vomiting is its own symptom so that 'any vomiting?' finds it.",
+      "The intermittent hoarseness is a patient fact; the examiner's 'mildly hoarse voice' stays in the general examination finding.",
+      "'Medical history was unremarkable' is one 'chronic medical problems' absent fact."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

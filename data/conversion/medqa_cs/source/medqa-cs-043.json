@@ -1,0 +1,286 @@
+{
+  "case_id": "medqa-cs-043",
+  "source_case_id": 43,
+  "opening_scenario": "Brian Davia, a 21-year-old male, presents to the office complaining of a sore throat.",
+  "doorway_vital_signs": [
+    "Blood Pressure (BP): 120/80 mm Hg",
+    "Temperature: 99°F (37°C)",
+    "Respiratory Rate (RR): 15/minute",
+    "Heart Rate (HR): 75/minute, regular"
+  ],
+  "sp_notes": [
+    "Be rude and defensive.",
+    "Respond curtly with \"yes\" or \"no\".",
+    "Pretend to have left upper quadrant (LUQ) tenderness on abdominal palpation."
+  ],
+  "challenging_questions": [
+    "Do you believe I might have AIDS?"
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What brings you in today?",
+    "answer": "I have a sore throat."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-043-p001",
+      "topic": "Onset",
+      "question": "When did it start?",
+      "answer": "Two weeks ago."
+    },
+    {
+      "fact_id": "medqa-cs-043-p002",
+      "topic": "Rhinorrhea",
+      "question": "Have you had a runny nose?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p003",
+      "topic": "Fever/Chills",
+      "question": "Do you have any fever/chills?",
+      "answer": "Mild fever over the past 2 weeks, but I didn't take my temperature. No chills."
+    },
+    {
+      "fact_id": "medqa-cs-043-p004",
+      "topic": "Night Sweats",
+      "question": "Do you have night sweats?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p005",
+      "topic": "Cough",
+      "question": "Do you have any cough lately?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p006",
+      "topic": "Swollen Glands and Lymph Nodes",
+      "question": "Do you have any swelling or lumps anywhere?\" If yes, Doctor: \"Is it painful?",
+      "answer": "Yes, in my neck (if asked); a little painful (if asked)."
+    },
+    {
+      "fact_id": "medqa-cs-043-p007",
+      "topic": "Rash before or after onset of symptoms",
+      "question": "Do you have any rash?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p008",
+      "topic": "Jaundice",
+      "question": "Have you noticed any yellow discoloration in your skin or eyes?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p009",
+      "topic": "Chest Pain",
+      "question": "Do you have any chest pain?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p010",
+      "topic": "Shortness of Breath",
+      "question": "Have you felt shortness of breath or difficulty breathing lately?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p011",
+      "topic": "Abdominal Pain",
+      "question": "Do you have any pain in your stomach?",
+      "answer": "I've had some discomfort here (points to the LUQ) constantly since yesterday."
+    },
+    {
+      "fact_id": "medqa-cs-043-p012",
+      "topic": "Radiation",
+      "question": "Does the pain go anywhere?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p013",
+      "topic": "Severity on a scale",
+      "question": "On a scale from 0 to 10, where 10 represents the most severe pain possible, how would you evaluate your pain level?",
+      "answer": "4 out of 10."
+    },
+    {
+      "fact_id": "medqa-cs-043-p014",
+      "topic": "Relationship of food to pain",
+      "question": "Does the pain get better or worse after eating?",
+      "answer": "No change."
+    },
+    {
+      "fact_id": "medqa-cs-043-p015",
+      "topic": "Alleviating/Exacerbating Factors",
+      "question": "What alleviates or exacerbates the pain?",
+      "answer": "Nothing helps."
+    },
+    {
+      "fact_id": "medqa-cs-043-p016",
+      "topic": "Nausea/Vomiting",
+      "question": "Do you have any nausea?\" Doctor: \"Any vomiting?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p017",
+      "topic": "Change in bowel habits",
+      "question": "Do you have any changes in your bowel habits lately?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p018",
+      "topic": "Change in urinary habits",
+      "question": "Do you have any changes in your urinary habits lately?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p019",
+      "topic": "Headache",
+      "question": "Have you experienced any headaches?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p020",
+      "topic": "Fatigue",
+      "question": "How has your energy level been?",
+      "answer": "I have been feeling tired for the past 2 weeks."
+    },
+    {
+      "fact_id": "medqa-cs-043-p021",
+      "topic": "ID contacts",
+      "question": "Have you been in contact with anyone experiencing comparable symptoms?",
+      "answer": "My ex-girlfriend had similar symptoms two months ago. I’m not aware of her current condition since we ended our relationship around that time."
+    },
+    {
+      "fact_id": "medqa-cs-043-p022",
+      "topic": "Weight Changes",
+      "question": "Have you experienced any fluctuations in your weight recently?",
+      "answer": "Yes, I believe I'm losing weight, although I'm unsure of the amount."
+    },
+    {
+      "fact_id": "medqa-cs-043-p023",
+      "topic": "Appetite Changes",
+      "question": "How has your appetite been lately?",
+      "answer": "I have no desire to eat anything."
+    },
+    {
+      "fact_id": "medqa-cs-043-p024",
+      "topic": "Current Medications",
+      "question": "Are you currently on any medications?",
+      "answer": "Acetaminophen."
+    },
+    {
+      "fact_id": "medqa-cs-043-p025",
+      "topic": "Past Medical History",
+      "question": "Have you been diagnosed with any illness in the past?",
+      "answer": "I had gonorrhea 4 months ago. I took some antibiotics."
+    },
+    {
+      "fact_id": "medqa-cs-043-p026",
+      "topic": "Past Surgical History",
+      "question": "Have you had any surgeries?",
+      "answer": "None."
+    },
+    {
+      "fact_id": "medqa-cs-043-p027",
+      "topic": "Family History",
+      "question": "How are your parents? Any illnesses in your family?",
+      "answer": "My father and mother are alive and in good health. Everyone else is healthy as well."
+    },
+    {
+      "fact_id": "medqa-cs-043-p028",
+      "topic": "Occupation",
+      "question": "What is your occupation?",
+      "answer": "I’m currently in my final year of college. I haven't started working yet."
+    },
+    {
+      "fact_id": "medqa-cs-043-p029",
+      "topic": "Alcohol Use",
+      "question": "Do you consume alcohol? If so, what quantity?",
+      "answer": "Yes, I do on weekends."
+    },
+    {
+      "fact_id": "medqa-cs-043-p030",
+      "topic": "Illicit Drug Use",
+      "question": "Any recreational drug use?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-043-p031",
+      "topic": "Tobacco",
+      "question": "Do you use any tobacco products? If so, how frequently?",
+      "answer": "Yes, I smoke a pack daily. I began at 15 years old."
+    },
+    {
+      "fact_id": "medqa-cs-043-p032",
+      "topic": "Sexual Activity",
+      "question": "Are you sexually active?",
+      "answer": "Yes, with my new girlfriend."
+    },
+    {
+      "fact_id": "medqa-cs-043-p033",
+      "topic": "Use of Condoms",
+      "question": "Do you use condoms?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-043-p034",
+      "topic": "Active with Men, Women, or Both",
+      "question": "Do you engage in sexual activity with men, women, or both?",
+      "answer": "Both men and women."
+    },
+    {
+      "fact_id": "medqa-cs-043-p035",
+      "topic": "Number of Sexual Partners during the past year",
+      "question": "How many sexual partners have you had in the past year?",
+      "answer": "Three."
+    },
+    {
+      "fact_id": "medqa-cs-043-p036",
+      "topic": "History of STDs",
+      "question": "Do you have any history of sexually transmitted diseases?",
+      "answer": "I told you, I had gonorrhea 4 months ago, and I was cured after a course of antibiotics."
+    },
+    {
+      "fact_id": "medqa-cs-043-p037",
+      "topic": "Drug Allergies",
+      "question": "Do you have any allergies to medications?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History \nHPI: A 21-year-old male complains of a sore throat for the past 2 weeks. Two weeks ago, he had a mild fever and fatigue, but he denies any chills, runny nose, cough, night sweats, shortness of breath, or wheezing. The patient also notes left upper quadrant (LUQ) abdominal pain since yesterday. The pain is 4/10 and constant with no radiation, no relation to food, and no alleviating or exacerbating factors. He has a poor appetite and subjective weight loss. His ex-girlfriend had the same symptoms 2 months ago. \nROS: Negative except as above. \nAllergies: NKDA. \nMedications: Acetaminophen. \nPMH: Gonorrhea 4 months ago, treated with antibiotics. \nPSH: None. \nSH: 1 pack per day (PPD) since age 15; drinks heavily on weekends. Sexually active with girlfriend. Multiple partners in the past, sexually active with both female and male partners; uses condoms. \nFH: Noncontributory.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-043-e001",
+      "source_text": "Patient is in no acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-043-e002",
+      "source_text": "VS: WNL"
+    },
+    {
+      "exam_id": "medqa-cs-043-e003",
+      "source_text": "HEENT: Nose, mouth, and pharynx within normal limits (WNL)."
+    },
+    {
+      "exam_id": "medqa-cs-043-e004",
+      "source_text": "Neck: Supple, bilateral cervical lymphadenopathy."
+    },
+    {
+      "exam_id": "medqa-cs-043-e005",
+      "source_text": "Chest: Clear breath sounds bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-043-e006",
+      "source_text": "Heart: Regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-043-e007",
+      "source_text": "Abdomen: Soft, nondistended, with bowel sounds present (BS x 4 quadrants); no hepatosplenomegaly. LUQ abdominal pain without tenderness on palpation (WO tenderness)."
+    },
+    {
+      "exam_id": "medqa-cs-043-e008",
+      "source_text": "Skin: No rash."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Infectious mononucleosis\nHistory Findings:\nSore throat for 2 weeks\nRecent history of ill contact\nLUQ pain\nPhysical Exam Findings:\nLeft upper quadrant (LUQ) tenderness\nLymphadenopathy\n\nDiagnosis #2: Acute HIV infection \nHistory Findings:\nSore throat for 2 weeks \nTwo sexual partners over the past year, active with men and women \nTreated for gonorrhea 4 months ago\nPhysical Exam Findings: \nNo specific findings mentioned\n\nDiagnosis #3: Streptococcal pharyngitis \nHistory Findings:\nSore throat for 2 weeks \nLow-grade fever \nHistory of cigarette smoking\nPhysical Exam Findings: \nLymphadenopathy",
+  "gold_additional_diagnosis": "• CMV infection: CMV can mimic infectious mononucleosis or acute HIV infection. Patients can present with mild flu-like symptoms, including fever, lymphadenopathy, and fatigue. However, patients may also be asymptomatic, requiring a high index of suspicion for clinical testing.\n\n• Other infectious etiologies: Other infections that can present with nonspecific symptoms include Neisseria gonorrhoeae, Mycoplasma (although lower respiratory symptoms usually predominate), rubella, and Chlamydia trachomatis.",
+  "raw_opening": "Opening Scenario:\n\nPatient Presentation:\n\nBrian Davia, a 21-year-old male, presents to the office complaining of a sore throat.\n\nVital Signs:\n\n- Blood Pressure (BP): 120/80 mm Hg\n- Temperature: 99°F (37°C)\n- Respiratory Rate (RR): 15/minute\n- Heart Rate (HR): 75/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exams).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\n- The patient is a 21-year-old male.\n\nNotes for the SP:\n\n- Be rude and defensive.\n- Respond curtly with \"yes\" or \"no\".\n- Pretend to have left upper quadrant (LUQ) tenderness on abdominal palpation.\n\nChallenging Questions to Ask:\n\n- Do you believe I might have AIDS?\n\nExaminee Response:\n\nExaminee Checklist:\n\nEntrance:\n\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified their role or position.\n\nReflective Listening:\n\n- Examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- Examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\n- Examinee dictated data efficiently and accurately.\n\nConnecting With the Patient:\n\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief Complaint:\nDoctor: \"What brings you in today?\" \nPatient: \"I have a sore throat.\" \n\nOnset:\nDoctor: \"When did it start?\" \nPatient: \"Two weeks ago.\" \n\nRhinorrhea:\nDoctor: \"Have you had a runny nose?\" \nPatient: \"No.\" \n\nFever/Chills:\nDoctor: \"Do you have any fever/chills?\" \nPatient: \"Mild fever over the past 2 weeks, but I didn't take my temperature. \nNo chills.\" \n\nNight Sweats:\nDoctor: \"Do you have night sweats?\" \nPatient: \"No.\" \n\nCough:\nDoctor: \"Do you have any cough lately?\" \nPatient: \"No.\" \n\nSwollen Glands and Lymph Nodes:\nDoctor: \"Do you have any swelling or lumps anywhere?\" \nIf yes, Doctor: \"Is it painful?\" \nPatient: \"Yes, in my neck (if asked); a little painful (if asked).\" \n\nRash before or after onset of symptoms:\nDoctor: \"Do you have any rash?\" \nPatient: \"No.\" \n\nJaundice:\nDoctor: \"Have you noticed any yellow discoloration in your skin or eyes?\" \nPatient: \"No.\" \n\nChest Pain:\nDoctor: \"Do you have any chest pain?\" \nPatient: \"No.\" \n\nShortness of Breath:\nDoctor: \"Have you felt shortness of breath or difficulty breathing lately?\" \nPatient: \"No.\" \n\nAbdominal Pain:\nDoctor: \"Do you have any pain in your stomach?\" \nPatient: \"I've had some discomfort here (points to the LUQ) constantly since yesterday.\" \n\nRadiation:\nDoctor: \"Does the pain go anywhere?\" \nPatient: \"No.\" \n\nSeverity on a scale:\nDoctor: \"On a scale from 0 to 10, where 10 represents the most severe pain possible, how would you evaluate your pain level?\" \nPatient: \"4 out of 10.\" \n\nRelationship of food to pain:\nDoctor: \"Does the pain get better or worse after eating?\" \nPatient: \"No change.\" \n\nAlleviating/Exacerbating Factors:\nDoctor: \"What alleviates or exacerbates the pain?\" \nPatient: \"Nothing helps.\" \n\nNausea/Vomiting:\nDoctor: \"Do you have any nausea?\" \nDoctor: \"Any vomiting?\" \nPatient: \"No.\" \n\nChange in bowel habits:\nDoctor: \"Do you have any changes in your bowel habits lately?\" \nPatient: \"No.\" \n\nChange in urinary habits:\nDoctor: \"Do you have any changes in your urinary habits lately?\" \nPatient: \"No.\" \n\nHeadache:\nDoctor: \"Have you experienced any headaches?\" \nPatient: \"No.\" \n\nFatigue:\nDoctor: \"How has your energy level been?\" \nPatient: \"I have been feeling tired for the past 2 weeks.\" \n\nID contacts:\nDoctor: \"Have you been in contact with anyone experiencing comparable symptoms?\" \nPatient: \"My ex-girlfriend had similar symptoms two months ago. I’m not aware of her current condition since we ended our relationship around that time.\" \n\nWeight Changes:\nDoctor: \"Have you experienced any fluctuations in your weight recently?\" \nPatient: \"Yes, I believe I'm losing weight, although I'm unsure of the amount.\" \n\nAppetite Changes:\nDoctor: \"How has your appetite been lately?\" \nPatient: \"I have no desire to eat anything.\" \n\nCurrent Medications:\nDoctor: \"Are you currently on any medications?\" \nPatient: \"Acetaminophen.\" \n\nPast Medical History:\nDoctor: \"Have you been diagnosed with any illness in the past?\" \nPatient: \"I had gonorrhea 4 months ago. I took some antibiotics.\" \n\nPast Surgical History:\nDoctor: \"Have you had any surgeries?\" \nPatient: \"None.\" \n\nFamily History:\nDoctor: \"How are your parents? Any illnesses in your family?\" \nPatient: \"My father and mother are alive and in good health. Everyone else is healthy as well.\" \n\nOccupation:\nDoctor: \"What is your occupation?\" \nPatient: \"I’m currently in my final year of college. I haven't started working yet.\" \n\nAlcohol Use:\nDoctor: \"Do you consume alcohol? If so, what quantity?\" \nPatient: \"Yes, I do on weekends.\" \n\nIllicit Drug Use:\nDoctor: \"Any recreational drug use?\" \nPatient: \"No.\" \n\nTobacco:\nDoctor: \"Do you use any tobacco products? If so, how frequently?\" \nPatient: \"Yes, I smoke a pack daily. I began at 15 years old.\" \n\nSexual Activity:\nDoctor: \"Are you sexually active?\" \nPatient: \"Yes, with my new girlfriend.\" \n\nUse of Condoms:\nDoctor: \"Do you use condoms?\" \nPatient: \"Yes.\" \n\nActive with Men, Women, or Both:\nDoctor: \"Do you engage in sexual activity with men, women, or both?\" \nPatient: \"Both men and women.\" \n\nNumber of Sexual Partners during the past year:\nDoctor: \"How many sexual partners have you had in the past year?\" \nPatient: \"Three.\" \n\nHistory of STDs:\nDoctor: \"Do you have any history of sexually transmitted diseases?\" \nPatient: \"I told you, I had gonorrhea 4 months ago, and I was cured after a course of antibiotics.\" \n\nDrug Allergies:\nDoctor: \"Do you have any allergies to medications?\" \nPatient: \"No.\"\n\nPhysical Examination:\n- Examinee washed his/her hands.\n- Examinee asked permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- Head and neck exam: Examined nose, mouth, throat, and lymph nodes; checked for sinus tenderness. \n- Cardiovascular exam: Auscultation.\n- Pulmonary exam: Auscultation.\n- Abdominal exam: Auscultation, palpation, percussion.\n- Skin/lymph node exam: Inspected for rashes, lesions, and lymphadenopathy.\n\nSample Closure:\n\n\"Mr. Davis, it is likely that you have acquired the same infection your girlfriend had. This could be simply a temporary viral infection, or it might indicate a more severe condition like HIV.. We will need to run a few tests to help us make the diagnosis. I recommend that we obtain an HIV test, and we will also need to obtain a throat swab and an ultrasound of your abdomen. In the meantime, I strongly recommend using condoms to avoid an unwanted pregnancy and to prevent STDs. Since infectious mononucleosis is one of the diseases that might account for your symptoms, I also recommend that you avoid contact sports for at least 3 weeks because of the possible risk of traumatic rupture of your spleen, which could be fatal. Also, since cigarette smoking is associated with a variety of diseases, I advise you to quit smoking; we have many ways to help you if you are interested. \"Are there any questions you would like to ask me?\"\n\nClosure:\n\n- The examinee discussed initial diagnostic impressions.\n- The examinee discussed initial management plans.\n- Follow-up tests (including consent for HIV testing).\n- Safe sex practices.\n- Help with smoking cessation.\n- Recommendation to avoid contact sports because of the possible increased risk of traumatic splenic rupture.\n- The examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory \nHPI: A 21-year-old male complains of a sore throat for the past 2 weeks. Two weeks ago, he had a mild fever and fatigue, but he denies any chills, runny nose, cough, night sweats, shortness of breath, or wheezing. The patient also notes left upper quadrant (LUQ) abdominal pain since yesterday. The pain is 4/10 and constant with no radiation, no relation to food, and no alleviating or exacerbating factors. He has a poor appetite and subjective weight loss. His ex-girlfriend had the same symptoms 2 months ago. \nROS: Negative except as above. \nAllergies: NKDA. \nMedications: Acetaminophen. \nPMH: Gonorrhea 4 months ago, treated with antibiotics. \nPSH: None. \nSH: 1 pack per day (PPD) since age 15; drinks heavily on weekends. Sexually active with girlfriend. Multiple partners in the past, sexually active with both female and male partners; uses condoms. \nFH: Noncontributory. \n\nPhysical Examination:\n\nPatient is in no acute distress.\nVS: WNL\nHEENT: Nose, mouth, and pharynx within normal limits (WNL).\nNeck: Supple, bilateral cervical lymphadenopathy.\nChest: Clear breath sounds bilaterally.\nHeart: Regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops.\nAbdomen: Soft, nondistended, with bowel sounds present (BS x 4 quadrants); no hepatosplenomegaly. LUQ abdominal pain without tenderness on palpation (WO tenderness).\nSkin: No rash."
+}

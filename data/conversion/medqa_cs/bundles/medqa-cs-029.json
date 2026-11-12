@@ -1,0 +1,1431 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-029",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 20,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "trouble falling asleep",
+        "aliases": [
+          "insomnia",
+          "sleep problems",
+          "trouble sleeping"
+        ],
+        "text": "I have difficulty falling asleep.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "trouble falling asleep: how long",
+        "parent": "f001",
+        "attribute": "duration",
+        "text": "It has been going on for more than 6 months now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "trouble falling asleep: change over time",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It has gotten worse over the past month.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "trouble falling asleep: bedtime and when sleep comes",
+        "parent": "f001",
+        "attribute": "timing",
+        "aliases": [
+          "what time you go to bed"
+        ],
+        "text": "I usually get in bed around midnight, but I don't fall asleep until around 2 AM.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "trouble falling asleep: routine before bed",
+        "parent": "f001",
+        "attribute": "context",
+        "aliases": [
+          "bedtime routine"
+        ],
+        "text": "I watch TV until I'm tired.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "hours of sleep",
+        "aliases": [
+          "how much sleep"
+        ],
+        "text": "I sleep around 4 hours each night.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "hours of sleep: amount needed to feel refreshed",
+        "parent": "f006",
+        "attribute": "other",
+        "text": "Usually, I need 8 hours of sleep to feel refreshed.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "waking up during the night",
+        "aliases": [
+          "staying asleep",
+          "night waking"
+        ],
+        "text": "I wake up a couple of times during the night.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "waking up during the night: getting back to sleep",
+        "parent": "f008",
+        "attribute": "other",
+        "text": "When I wake up in the middle of the night, I have trouble falling back asleep.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "waking up before the alarm",
+        "aliases": [
+          "early morning waking"
+        ],
+        "text": "I don't wake up before my alarm.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "wake-up time",
+        "aliases": [
+          "when you get up"
+        ],
+        "text": "The alarm goes off and wakes me up at 6 AM.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "snoring",
+        "text": "I do snore.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "snoring: who noticed it",
+        "parent": "f012",
+        "attribute": "other",
+        "text": "My boyfriend told me about my snoring a few months ago, but he said that he is fine with it.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "daytime sleepiness",
+        "aliases": [
+          "sleepy during the day",
+          "effect on daily life"
+        ],
+        "text": "I feel very sleepy during class and while driving to school at 7 AM.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "concentration",
+        "aliases": [
+          "trouble concentrating",
+          "focus"
+        ],
+        "text": "I can't concentrate during classes or while driving.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "daytime naps",
+        "aliases": [
+          "napping"
+        ],
+        "text": "I feel the need to take naps, but I have no time for them.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "waking up in the morning",
+        "aliases": [
+          "getting up for class"
+        ],
+        "text": "My boyfriend has a hard time waking me up in the mornings for class.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "stress",
+        "aliases": [
+          "recent stressors",
+          "pressure"
+        ],
+        "text": "I'm feeling stressed about achieving high grades in college.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "sadness",
+        "aliases": [
+          "feeling sad"
+        ],
+        "text": "I haven't been sad.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "loss of interest in activities",
+        "aliases": [
+          "enjoyment"
+        ],
+        "text": "I haven't lost interest in the things I usually enjoy.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "feeling depressed",
+        "aliases": [
+          "depression",
+          "low mood"
+        ],
+        "text": "I don't feel depressed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "irritability",
+        "aliases": [
+          "getting annoyed easily"
+        ],
+        "text": "I get annoyed or irritated at things more easily.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "shaking or tremor",
+        "aliases": [
+          "tremor",
+          "shaking"
+        ],
+        "text": "I haven't noticed any shaking or rhythmic movements.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "heart racing",
+        "aliases": [
+          "palpitations",
+          "pounding heart"
+        ],
+        "text": "I often notice my heart racing.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f025",
+        "item": "heart racing: what brings it on",
+        "parent": "f024",
+        "attribute": "aggravating",
+        "value": [
+          "coffee"
+        ],
+        "text": "It happens particularly after I drink coffee.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f026",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing",
+          "breathing difficulties"
+        ],
+        "text": "I don't have any trouble breathing or shortness of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "sweating",
+        "text": "Not really, I'm not sweating more than usual.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "sweaty palms",
+        "aliases": [
+          "wet hands"
+        ],
+        "text": "Lately I have noticed that my palms are wet most of the time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "sensitivity to heat or cold",
+        "aliases": [
+          "heat intolerance",
+          "cold intolerance"
+        ],
+        "text": "I'm not more sensitive to heat or cold.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "endocrine",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "weight change",
+        "aliases": [
+          "weight loss"
+        ],
+        "text": "I have lost 6 pounds over the past month.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "I have a good appetite, and I'm eating more than usual.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "fever",
+        "text": "I haven't had a fever.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "bowel habits",
+        "aliases": [
+          "bowel movements",
+          "change in bowel habits"
+        ],
+        "text": "I used to have one bowel movement a day, but recently I've been going two to three times a day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "loose stools",
+        "aliases": [
+          "diarrhea",
+          "stool consistency"
+        ],
+        "text": "I haven't noticed any loose stools.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "blood in stool",
+        "aliases": [
+          "bloody stools"
+        ],
+        "text": "I haven't noticed any blood in my stool.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "urinary changes",
+        "aliases": [
+          "urinary frequency",
+          "urgency",
+          "urinary habits"
+        ],
+        "text": "My urinary habits are normal.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "neck pain",
+        "text": "I don't have any neck pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "skin changes",
+        "text": "I haven't noticed any changes in my skin.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "rash",
+        "aliases": [
+          "skin rash"
+        ],
+        "text": "I haven't had any rashes.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "joint or muscle pain",
+        "aliases": [
+          "joint pain",
+          "muscle aches"
+        ],
+        "text": "I don't have any discomfort in my joints or muscles.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "hair loss or thinning",
+        "aliases": [
+          "hair loss",
+          "thinning hair"
+        ],
+        "text": "I haven't noticed any hair loss or thinning.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "menstrual cycle",
+        "aliases": [
+          "periods",
+          "regular periods"
+        ],
+        "text": "My periods are regular.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "other medical problems",
+        "aliases": [
+          "medical conditions",
+          "chronic illnesses"
+        ],
+        "text": "I don't have any other medical issues.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "recent infection",
+        "aliases": [
+          "recent illness"
+        ],
+        "text": "I haven't had any recent infection.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f045",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I had a tonsillectomy when I was 12.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f046",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines",
+          "allergies"
+        ],
+        "text": "I don't have any drug allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "oral contraceptive pills",
+        "aliases": [
+          "birth control pills",
+          "the pill",
+          "contraception"
+        ],
+        "text": "I've been on oral contraceptive pills for the past 2 years.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "multivitamins",
+        "aliases": [
+          "vitamins"
+        ],
+        "text": "I take multivitamins.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "family medical history",
+        "aliases": [
+          "parents' health",
+          "grandparents' health"
+        ],
+        "text": "My parents and grandparents haven't had any medical conditions.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f050",
+        "item": "caffeine",
+        "aliases": [
+          "coffee",
+          "energy drinks"
+        ],
+        "text": "I drink coffee or energy drinks.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "caffeine: how much",
+        "parent": "f050",
+        "attribute": "quantity",
+        "text": "I typically have 5 to 6 cups of coffee or energy drinks daily, to keep myself alert.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink occasionally.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "alcohol: how much",
+        "parent": "f052",
+        "attribute": "quantity",
+        "text": "One or two beers a week, mainly on weekend evenings.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f054",
+        "item": "alcohol: drinking before bed",
+        "parent": "f052",
+        "attribute": "timing",
+        "text": "I never drink right before bedtime.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f055",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't take any recreational drugs and I haven't in the past.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f056",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f057",
+        "item": "exercise",
+        "aliases": [
+          "working out",
+          "gym"
+        ],
+        "text": "Before I started college, I worked out for an hour a day every evening.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f058",
+        "item": "exercise: lately",
+        "parent": "f057",
+        "attribute": "course",
+        "text": "Lately it has become harder and harder for me to find the time to hit the gym.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f059",
+        "item": "sexual activity",
+        "text": "I'm sexually active.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f060",
+        "item": "condom use",
+        "aliases": [
+          "condoms",
+          "protection"
+        ],
+        "text": "We also use condoms.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f061",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work",
+          "school"
+        ],
+        "text": "I'm a university student.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f062",
+        "item": "exams",
+        "aliases": [
+          "studying"
+        ],
+        "text": "My final exams are coming up soon, and I need to study.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f063",
+        "item": "worries",
+        "aliases": [
+          "concerns"
+        ],
+        "text": "I'm worried about how I'll do on my final exams.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f064",
+        "item": "grades",
+        "aliases": [
+          "school performance"
+        ],
+        "text": "I've been diligently working towards getting A's in all my courses.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f065",
+        "item": "course load",
+        "aliases": [
+          "changes at school",
+          "recent changes in life"
+        ],
+        "text": "This semester, I've taken on a heavier course load to graduate on schedule.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f066",
+        "item": "relationship",
+        "aliases": [
+          "boyfriend",
+          "partner"
+        ],
+        "text": "My boyfriend is very understanding. We have a good relationship.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f067",
+        "item": "living situation",
+        "aliases": [
+          "who you live with"
+        ],
+        "text": "I live with my boyfriend.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f068",
+        "item": "sexual abuse",
+        "aliases": [
+          "abuse"
+        ],
+        "text": "I've never been sexually abused.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "historical"
+      },
+      {
+        "id": "f069",
+        "item": "recent tragic events",
+        "aliases": [
+          "recent losses",
+          "traumatic events"
+        ],
+        "text": "Nothing tragic has happened in my life recently.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "historical"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-029",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "18/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "102/min",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Appears anxious and restless."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Tachycardic; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not tender, not distended; bowel sounds audible in all four quadrants; no guarding; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "skin",
+        "name": "skin examination",
+        "aliases": [
+          "skin",
+          "palms"
+        ],
+        "result": "Normal; no rashes; palms are moist."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Brisk deep tendon reflexes."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "tremor of the outstretched hands",
+        "aliases": [
+          "tremor",
+          "outstretched fingers"
+        ],
+        "result": "Fine tremor of the outstretched fingertips."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-029",
+    "diagnosis": "Generalized Anxiety Disorder",
+    "aliases": [
+      "GAD",
+      "generalised anxiety disorder",
+      "generalized anxiety"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Generalized Anxiety Disorder",
+        "evidence": [
+          "Impaired concentration, irritability, difficulty sleeping, muscle tension, sweating, and palpitations",
+          "Exam: Tachycardia (heart rate of 102/minute)",
+          "Exam: Anxiety over academic achievement",
+          "Exam: No history of substance use"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Caffeine-induced insomnia",
+        "aliases": [
+          "insomnia due to caffeine",
+          "caffeine-related insomnia",
+          "caffeine-induced sleep disorder"
+        ],
+        "evidence": [
+          "Drinks 4-5 cups of caffeine per day",
+          "Spends 2 hours awake before falling asleep",
+          "History of palpitations that are more pronounced after drinking caffeine",
+          "Exam: Tachycardia (HR 102/minute)"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Hyperthyroidism",
+        "aliases": [
+          "overactive thyroid",
+          "thyrotoxicosis"
+        ],
+        "evidence": [
+          "Anxiety",
+          "History of unintentional weight loss, fatigue, sweating, palpitations, and increased bowel movements",
+          "Exam: Tachycardia (HR 102/minute)",
+          "Exam: Brisk DTRs"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Insomnia due to major depressive disorder",
+        "note": "Depression can cause sleep-onset or sleep-maintenance insomnia or early-morning waking; she denies depressive symptoms."
+      },
+      {
+        "diagnosis": "Insomnia secondary to adjustment disorder",
+        "note": "A significant life stressor can disturb sleep, with changes starting within 3 months of the event and resolving within about 6 months."
+      },
+      {
+        "diagnosis": "Illicit drug use",
+        "note": "Stimulants such as cocaine and amphetamines raise sympathetic activity and can cause insomnia."
+      },
+      {
+        "diagnosis": "Obstructive sleep apnea (OSA)",
+        "note": "OSA often presents with insomnia symptoms, but she has had a tonsillectomy and is of normal weight, so it is unlikely."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-029",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-029-p001"
+      ],
+      "f003": [
+        "medqa-cs-029-p001"
+      ],
+      "f004": [
+        "medqa-cs-029-p003"
+      ],
+      "f005": [
+        "medqa-cs-029-p004"
+      ],
+      "f006": [
+        "medqa-cs-029-p002"
+      ],
+      "f007": [
+        "medqa-cs-029-p002"
+      ],
+      "f008": [
+        "medqa-cs-029-p005"
+      ],
+      "f009": [
+        "medqa-cs-029-p002"
+      ],
+      "f010": [
+        "medqa-cs-029-p006"
+      ],
+      "f011": [
+        "medqa-cs-029-p006"
+      ],
+      "f012": [
+        "medqa-cs-029-p007"
+      ],
+      "f013": [
+        "medqa-cs-029-p007"
+      ],
+      "f014": [
+        "medqa-cs-029-p008"
+      ],
+      "f015": [
+        "note"
+      ],
+      "f016": [
+        "medqa-cs-029-p009"
+      ],
+      "f017": [
+        "medqa-cs-029-p011"
+      ],
+      "f018": [
+        "medqa-cs-029-p010"
+      ],
+      "f019": [
+        "medqa-cs-029-p012"
+      ],
+      "f020": [
+        "medqa-cs-029-p012"
+      ],
+      "f021": [
+        "medqa-cs-029-p012"
+      ],
+      "f022": [
+        "medqa-cs-029-p019"
+      ],
+      "f023": [
+        "medqa-cs-029-p015"
+      ],
+      "f024": [
+        "medqa-cs-029-p017"
+      ],
+      "f025": [
+        "medqa-cs-029-p017"
+      ],
+      "f026": [
+        "medqa-cs-029-p016"
+      ],
+      "f027": [
+        "medqa-cs-029-p018"
+      ],
+      "f028": [
+        "medqa-cs-029-p018"
+      ],
+      "f029": [
+        "medqa-cs-029-p020"
+      ],
+      "f030": [
+        "medqa-cs-029-p021"
+      ],
+      "f031": [
+        "medqa-cs-029-p021"
+      ],
+      "f032": [
+        "medqa-cs-029-p024"
+      ],
+      "f033": [
+        "medqa-cs-029-p025"
+      ],
+      "f034": [
+        "medqa-cs-029-p025"
+      ],
+      "f035": [
+        "medqa-cs-029-p025"
+      ],
+      "f036": [
+        "medqa-cs-029-p026"
+      ],
+      "f037": [
+        "medqa-cs-029-p027"
+      ],
+      "f038": [
+        "medqa-cs-029-p028"
+      ],
+      "f039": [
+        "medqa-cs-029-p028"
+      ],
+      "f040": [
+        "medqa-cs-029-p029"
+      ],
+      "f041": [
+        "medqa-cs-029-p030"
+      ],
+      "f042": [
+        "medqa-cs-029-p022"
+      ],
+      "f043": [
+        "medqa-cs-029-p032"
+      ],
+      "f044": [
+        "note"
+      ],
+      "f045": [
+        "medqa-cs-029-p033"
+      ],
+      "f046": [
+        "medqa-cs-029-p039"
+      ],
+      "f047": [
+        "medqa-cs-029-p022",
+        "medqa-cs-029-p023",
+        "medqa-cs-029-p031"
+      ],
+      "f048": [
+        "medqa-cs-029-p031"
+      ],
+      "f049": [
+        "medqa-cs-029-p034"
+      ],
+      "f050": [
+        "medqa-cs-029-p014"
+      ],
+      "f051": [
+        "medqa-cs-029-p014"
+      ],
+      "f052": [
+        "medqa-cs-029-p036"
+      ],
+      "f053": [
+        "medqa-cs-029-p036"
+      ],
+      "f054": [
+        "medqa-cs-029-p036"
+      ],
+      "f055": [
+        "medqa-cs-029-p037"
+      ],
+      "f056": [
+        "medqa-cs-029-p038"
+      ],
+      "f057": [
+        "medqa-cs-029-p013"
+      ],
+      "f058": [
+        "medqa-cs-029-p013"
+      ],
+      "f059": [
+        "medqa-cs-029-p023"
+      ],
+      "f060": [
+        "medqa-cs-029-p023"
+      ],
+      "f061": [
+        "medqa-cs-029-p035"
+      ],
+      "f062": [
+        "medqa-cs-029-p009"
+      ],
+      "f063": [
+        "medqa-cs-029-p009"
+      ],
+      "f064": [
+        "medqa-cs-029-p010"
+      ],
+      "f065": [
+        "medqa-cs-029-p010"
+      ],
+      "f066": [
+        "medqa-cs-029-p011"
+      ],
+      "f067": [
+        "note"
+      ],
+      "f068": [
+        "note"
+      ],
+      "f069": [
+        "note"
+      ]
+    },
+    "quotes": {
+      "f001": "Difficulty falling asleep.",
+      "f002": "It has been going on for more than 6 months now",
+      "f003": "but has worsened over the past month.",
+      "f004": "I usually get in bed around midnight, but I don't fall asleep until around 2 AM.",
+      "f005": "I watch TV until I'm tired.",
+      "f006": "I sleep around 4 hours each night.",
+      "f007": "Usually, I need 8 hours of sleep to feel refreshed.",
+      "f008": "Yes, I wake up a couple of times during the night.",
+      "f009": "When I wake up in the middle of the night, I have trouble falling back asleep.",
+      "f010": "No",
+      "f011": "the alarm goes off and wakes me up at 6 AM.",
+      "f012": "I do snore.",
+      "f013": "My boyfriend told me about my snoring a few months ago, but he said that he is fine with it.",
+      "f014": "I feel very sleepy during class and while driving to school at 7 AM.",
+      "f015": "She notes an inability to concentrate during classes and while driving.",
+      "f016": "I feel the need to take naps but have no time for them.",
+      "f017": "but has a hard time waking me up in the mornings for class.",
+      "f018": "I'm feeling stressed about achieving high grades in college.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "Yes.",
+      "f023": "No.",
+      "f024": "Yes, I often notice my heart racing",
+      "f025": "particularly after consuming coffee.",
+      "f026": "No.",
+      "f027": "Not really",
+      "f028": "but lately I have noticed that my palms are wet most of the time.",
+      "f029": "No.",
+      "f030": "I have lost 6 pounds over the past month",
+      "f031": "despite having a good appetite and eating more than usual.",
+      "f032": "No.",
+      "f033": "I used to have one bowel movement daily, but recently I've been going two to three times a day.",
+      "f034": "I haven’t noticed any loose stools or blood.",
+      "f035": "I haven’t noticed any loose stools or blood.",
+      "f036": "Normal.",
+      "f037": "No.",
+      "f038": "No.",
+      "f039": "No.",
+      "f040": "No.",
+      "f041": "No.",
+      "f042": "Regular.",
+      "f043": "No.",
+      "f044": "There is no history of sexual abuse, recent infection, or recent tragic events in her life.",
+      "f045": "I had a tonsillectomy when I was 12.",
+      "f046": "No.",
+      "f047": "I have been on oral contraceptive pills for the past 2 years.",
+      "f048": "All I take are multivitamins and oral contraceptive pills.",
+      "f049": "No.",
+      "f050": "I typically have 5 to 6 cups of coffee or energy drinks daily to keep myself alert.",
+      "f051": "I typically have 5 to 6 cups of coffee or energy drinks daily to keep myself alert.",
+      "f052": "I occasionally have one or two beers weekly",
+      "f053": "one or two beers weekly, mainly on weekend evenings",
+      "f054": "and I never drink right before bedtime.",
+      "f055": "No.",
+      "f056": "No.",
+      "f057": "Before I started college, I worked out for an hour a day every evening",
+      "f058": "but lately it has become harder and harder for me to find the time to hit the gym.",
+      "f059": "Yes",
+      "f060": "and we also use condoms.",
+      "f061": "University student.",
+      "f062": "My final exams are coming up soon, and I need to study.",
+      "f063": "I'm worried about how I'll do on them.",
+      "f064": "I've been diligently working towards getting A's in all my courses.",
+      "f065": "This semester, I’ve taken on a heavier course load to graduate on schedule.",
+      "f066": "My boyfriend is very understanding / We have a good relationship.",
+      "f067": "She lives with her boyfriend",
+      "f068": "There is no history of sexual abuse, recent infection, or recent tragic events in her life.",
+      "f069": "There is no history of sexual abuse, recent infection, or recent tragic events in her life."
+    },
+    "flags": {
+      "f015": [
+        "Only in the student note HPI; the script (p008) says she feels very sleepy during class and while driving."
+      ],
+      "f044": [
+        "Only in the student note HPI."
+      ],
+      "f067": [
+        "Only in the student note HPI; implied by p011."
+      ],
+      "f068": [
+        "Only in the student note HPI."
+      ],
+      "f069": [
+        "Only in the student note HPI."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/80 mmHg | VS: HR: 102/minute, otherwise WNL.",
+        "exam_ids": [
+          "medqa-cs-029-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.6°F (37°C) | VS: HR: 102/minute, otherwise WNL.",
+        "exam_ids": [
+          "medqa-cs-029-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 18/minute | VS: HR: 102/minute, otherwise WNL.",
+        "exam_ids": [
+          "medqa-cs-029-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 102/minute | VS: HR: 102/minute, otherwise WNL.",
+        "exam_ids": [
+          "medqa-cs-029-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient appears anxious and restless.",
+        "exam_ids": [
+          "medqa-cs-029-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-029-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Heart: Tachycardic; S1/S2 within normal limits; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-029-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, non-tender, non-distended, bowel sounds audible in all four quadrants, no guarding, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-029-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Skin: Normal, no rashes, palms are moist.",
+        "exam_ids": [
+          "medqa-cs-029-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Neuro: Deep tendon reflexes are 2+ and intact, and symmetric. | Exhibit a fine tremor on outstretched fingertips and brisk reflexes.",
+        "exam_ids": [
+          "medqa-cs-029-e007"
+        ]
+      },
+      "x011": {
+        "source": "sp_notes",
+        "source_text": "Exhibit a fine tremor on outstretched fingertips and brisk reflexes."
+      }
+    },
+    "finding_flags": {
+      "x010": [
+        "The note exam records DTRs '2+ and intact, and symmetric'; the SP is told to exhibit brisk reflexes and gold rank 3 cites 'Brisk DTRs'. The SP-simulated finding is the result (CONVERSION rule)."
+      ],
+      "x011": [
+        "SP-simulated only; the note exam does not mention a tremor."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Caffeine amount differs: script p014 says 5 to 6 cups of coffee or energy drinks daily; the note says 4-5 cups of coffee per day; gold rank 2 says '4-5 cups of caffeine per day'. Patient fact f051 keeps the script.",
+      "Reflexes conflict: the SP is told to exhibit brisk reflexes and gold rank 3 cites 'Brisk DTRs', but the note exam records DTRs '2+ and intact, and symmetric' (e007). In v2 the simulated finding wins: the reflexes record (x010) reads 'Brisk deep tendon reflexes.'",
+      "The SP is told to show a fine tremor of the outstretched fingertips (x011), but the note exam does not mention it; the patient denies noticing any shaking (p015, f023), which is not necessarily a contradiction.",
+      "Gold rank 1 lists history items under exam findings ('Anxiety over academic achievement', 'No history of substance use'), and cites 'muscle tension', which the script does not support (she denies joint or muscle discomfort, p029).",
+      "Gold rank 1 'Impaired concentration' rests on the note HPI ('inability to concentrate'); the script (p008) only says she feels very sleepy in class and while driving. Added as note fact f015.",
+      "p022 asks about the last menstrual period, but the answer does not give it.",
+      "The challenging question has a doubled opening quotation mark in the source; cleaned."
+    ],
+    "notes": [
+      "Oral contraceptive pills are one fact (f047) with sources p022, p023, and p031, to avoid paraphrase duplicates.",
+      "p018 is split: no general increase in sweating ('Not really', absent, f027) and wet palms most of the time (present, f028).",
+      "Note-only facts (v1 from_note): poor concentration (f015), lives with boyfriend (f067), no recent infection (f044), no sexual abuse (f068), no recent tragic events (f069). v1 'other' facts (sexual abuse, tragic events) map to social_background (safety/abuse, stressors).",
+      "'Look anxious and irritable' and the college worry are kept as acting notes; the note's own 'appears anxious and restless' is the general-appearance result (x005). The tremor and brisk reflexes the SP must show on examination are exam results (x011, x010).",
+      "The patient description 'average height and weight' is put in acting notes; the gold OSA rationale relies on it.",
+      "Conversion (v1 change): v1 kept both the note's normal reflexes (x011) and the SP's brisk reflexes (x013); per CONVERSION.md the simulated finding wins, so the single reflexes record says brisk and the conflict is in source_issues.",
+      "Conversion: sleep facts are split into the complaint f001 with duration, course, bedtime and routine children, hours of sleep (f006, with 'need 8 hours' child), night waking (f008, with 'trouble falling back asleep' child from p002), no waking before the alarm (f010) and alarm at 6 AM (f011). Palpitations (p017) are parent f024 with a coffee trigger child f025. Snoring (p007), caffeine (p014), alcohol (p036) and exercise (p013) have children.",
+      "Vitals: doorway values agree with the note ('HR: 102/minute, otherwise WNL', e002); one record per parameter citing both, marked initial.",
+      "Harmonisation pass: system general (sleep) for f001, f002, f003, f004, f005, f006, f007, f008, f009, f014.",
+      "Fixes: f008 answer word removed; f010 answer word removed; f019 answer word removed; f020 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f024 answer word removed; f026 answer word removed; f029 answer word removed; f032 answer word removed; f037 answer word removed; f038 answer word removed; f039 answer word removed; f040 answer word removed; f041 answer word removed; f043 answer word removed; f046 answer word removed; f049 answer word removed; f050 answer word removed; f055 answer word removed; f056 answer word removed; f059 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Patient description: average height and weight.",
+        "Look anxious and irritable.",
+        "Pretend that you are worried about performing well in college.",
+        "Exhibit a fine tremor on outstretched fingertips and brisk reflexes."
+      ],
+      "patient_questions": [
+        "Doctor, will I regain the ability to sleep soundly?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

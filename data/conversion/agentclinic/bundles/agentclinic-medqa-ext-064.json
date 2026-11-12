@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-064", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 23, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "sadness", "aliases": ["feeling down", "low mood", "depressed mood"], "text": "I've been feeling sad all the time.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "sadness: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 4 months.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "trouble sleeping", "aliases": ["insomnia", "poor sleep"], "text": "I've had a lot of trouble sleeping over these 4 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "loss of appetite", "aliases": ["poor appetite", "trouble eating"], "text": "I've had a lot of trouble eating over these 4 months; my appetite is down.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "difficulty concentrating", "aliases": ["poor concentration", "trouble focusing"], "text": "My ability to concentrate at work has gotten worse.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f006", "item": "feeling empty", "aliases": ["emptiness"], "text": "I feel empty inside.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "hearing voices", "aliases": ["voices", "hearing things", "auditory hallucinations"], "text": "I've been hearing voices.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f008", "item": "hearing voices: what they say", "parent": "f007", "attribute": "character", "text": "The voices tell me I'm worthless.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f009", "item": "hearing voices: onset", "parent": "f007", "attribute": "onset", "text": "The voices started 7 months ago.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f010", "item": "hearing voices: course", "parent": "f007", "attribute": "course", "text": "At first, the voices were mocking me.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f011", "item": "feeling worthless", "aliases": ["worthlessness", "low self-worth"], "text": "I feel worthless.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f012", "item": "other physical symptoms", "aliases": ["other symptoms"], "text": "I don't have any other physical symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "illicit drug use", "aliases": ["drugs", "recreational drugs", "substance use"], "text": "I don't use any illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "partner", "aliases": ["boyfriend", "relationship"], "text": "My boyfriend brought me in.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-064",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "115/75 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "psychiatric", "name": "mental status examination", "aliases": ["MSE", "mental status", "appearance", "behavior", "speech", "mood", "affect", "thought process", "thought content", "perception", "cognition", "orientation", "insight", "judgment"], "result": "Appearance: dressed appropriately but minimal self-care; behavior: no overt agitation, appears withdrawn; speech: slow, monotonous, occasionally stops mid-sentence without completing it; mood: described as 'empty inside'; affect: constricted; thought process: linear but impaired by auditory hallucinations; thought content: auditory hallucinations with derogatory content, feelings of worthlessness; perception: occasionally directs attention towards the ceiling as if listening to someone; cognition: no formal testing, appears oriented; insight and judgment: not fully assessed, likely impaired."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count"], "result": "Within normal limits."},
+      {"id": "x007", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid panel"], "result": "Within normal limits."},
+      {"id": "x008", "kind": "test", "name": "blood alcohol level", "aliases": ["blood alcohol", "ethanol level", "BAC"], "result": "Not detected."},
+      {"id": "x009", "kind": "test", "name": "urine toxicology screen", "aliases": ["urine drug screen", "tox screen", "drug screen"], "result": "Negative."},
+      {"id": "x010", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "MRI head"], "result": "No acute abnormalities."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-064",
+    "diagnosis": "Schizoaffective disorder",
+    "aliases": ["schizoaffective disorder, depressive type", "depressive-type schizoaffective disorder", "schizoaffective psychosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-064",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-064-p001"], "f002": ["agentclinic-medqa-ext-064-p001"],
+      "f003": ["agentclinic-medqa-ext-064-p001", "agentclinic-medqa-ext-064-p002"], "f004": ["agentclinic-medqa-ext-064-p001", "agentclinic-medqa-ext-064-p003"],
+      "f005": ["agentclinic-medqa-ext-064-p001", "agentclinic-medqa-ext-064-p004"], "f006": ["agentclinic-medqa-ext-064-p001"],
+      "f007": ["agentclinic-medqa-ext-064-p001", "agentclinic-medqa-ext-064-p005"], "f008": ["agentclinic-medqa-ext-064-p001"],
+      "f009": ["agentclinic-medqa-ext-064-p001"], "f010": ["agentclinic-medqa-ext-064-p001"], "f011": ["agentclinic-medqa-ext-064-p006"],
+      "f012": ["agentclinic-medqa-ext-064-p010"], "f013": ["agentclinic-medqa-ext-064-p008"],
+      "f014": ["agentclinic-medqa-ext-064-p001", "agentclinic-medqa-ext-064-p009"], "f015": ["agentclinic-medqa-ext-064-p001", "agentclinic-medqa-ext-064-p009"],
+      "f016": ["agentclinic-medqa-ext-064-p001"]
+    },
+    "quotes": {
+      "f001": "feeling persistently sad", "f002": "4-month history", "f003": "significant trouble sleeping", "f004": "trouble sleeping and eating during this period",
+      "f005": "her ability to concentrate at work has deteriorated", "f006": "a feeling of emptiness", "f008": "voices telling her she is worthless",
+      "f009": "These hallucinations began 7 months ago", "f010": "initially with the voices mocking her", "f011": "Feelings of worthlessness",
+      "f012": "She denies any other systemic symptoms.", "f015": "Denies alcohol or illicit drug use", "f016": "brought in by her boyfriend"
+    },
+    "flags": {
+      "f012": ["Blanket ROS denial ('denies any other systemic symptoms') kept as one fact; it does not deny any specific item."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-064-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "115/75 mmHg", "exam_ids": ["agentclinic-medqa-ext-064-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-064-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-064-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Mental_Status_Examination.Appearance + Physical_Examination_Findings.Mental_Status_Examination.Behavior + Physical_Examination_Findings.Mental_Status_Examination.Speech + Physical_Examination_Findings.Mental_Status_Examination.Mood + Physical_Examination_Findings.Mental_Status_Examination.Affect + Physical_Examination_Findings.Mental_Status_Examination.Thought_Process + Physical_Examination_Findings.Mental_Status_Examination.Thought_Content + Physical_Examination_Findings.Mental_Status_Examination.Perception + Physical_Examination_Findings.Mental_Status_Examination.Cognition + Physical_Examination_Findings.Mental_Status_Examination.Insight/Judgment", "source_text": "Dressed appropriately but displays minimal self-care. | No overt agitation, but appears withdrawn. | Slow, monotonous, with occasional stopping mid-sentence without completion. | Described as 'empty inside'. | Constricted. | Linear but impaired due to auditory hallucinations. | Auditory hallucinations with derogatory content, feelings of worthlessness. | Occasionally directs attention towards ceiling as if listening to someone. | No formal testing, but patient appears oriented. | Not fully assessed but likely impaired due to symptoms.", "exam_ids": ["agentclinic-medqa-ext-064-e005", "agentclinic-medqa-ext-064-e006", "agentclinic-medqa-ext-064-e007", "agentclinic-medqa-ext-064-e008", "agentclinic-medqa-ext-064-e009", "agentclinic-medqa-ext-064-e010", "agentclinic-medqa-ext-064-e011", "agentclinic-medqa-ext-064-e012", "agentclinic-medqa-ext-064-e013", "agentclinic-medqa-ext-064-e014"]},
+      "x006": {"source": "Test_Results.Basic_Laboratory_Tests.Complete_Blood_Count", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-064-i001"]},
+      "x007": {"source": "Test_Results.Basic_Laboratory_Tests.Thyroid_Function_Tests", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-064-i002"]},
+      "x008": {"source": "Test_Results.Basic_Laboratory_Tests.Blood_Alcohol_Level", "source_text": "Not detected", "exam_ids": ["agentclinic-medqa-ext-064-i003"]},
+      "x009": {"source": "Test_Results.Basic_Laboratory_Tests.Urine_Toxicology_Screen", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-064-i004"]},
+      "x010": {"source": "Test_Results.Imaging.Brain_MRI.Findings", "source_text": "No acute abnormalities.", "exam_ids": ["agentclinic-medqa-ext-064-i005"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The mental status 'Insight/Judgment' entry is a guess ('Not fully assessed but likely impaired'); kept as the exam's answer."
+    ],
+    "notes": [
+      "Psychiatric content is written as experience: 'hearing voices' with children for what they say, onset (7 months) and course (mocking at first), not the label 'auditory hallucinations' (kept as an alias).",
+      "'Feelings of worthlessness' (p006) is a separate fact from the voices calling her worthless (f008): the exam's thought content lists both.",
+      "p007 'Perceptual disturbances (attention directed towards non-apparent stimuli)' is an observer-only sign already in the mental status exam (x005, perception); excluded from the patient facts.",
+      "The mental status examination components are one record (one examination a doctor requests), with each component name as an alias; system psychiatric because the source gives a full psychiatric MSE.",
+      "p009 'No other relevant social history provided.' carries no information; only the alcohol and drug denials are used."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with sadness, auditory hallucinations, and difficulties in concentrating and functioning at work."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-064-p007", "reason": "Observer-only sign (attending to non-apparent stimuli); already in the mental status exam perception entry (x005)."}
+    ]
+  }
+}

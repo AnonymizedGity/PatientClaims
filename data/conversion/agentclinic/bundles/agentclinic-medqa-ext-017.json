@@ -1,0 +1,104 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-017",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 58, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "diarrhea", "aliases": ["loose stools", "watery stools", "runny stools"], "text": "I have watery diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "diarrhea: onset", "parent": "f001", "attribute": "onset", "text": "It started within the last two days.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "diarrhea: how often", "parent": "f001", "attribute": "frequency", "text": "I've had at least 9 episodes in the last two days.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "lower abdominal discomfort", "aliases": ["lower belly discomfort", "abdominal pain"], "text": "I have discomfort in my lower belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "abdominal cramps", "aliases": ["cramping", "stomach cramps"], "text": "I've been having cramps in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "pneumonia", "aliases": ["chest infection", "community-acquired pneumonia", "current hospital stay"], "text": "I'm in the hospital on the medical ward, being treated for community-acquired pneumonia.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "levofloxacin", "aliases": ["antibiotics", "Levaquin"], "text": "I'm being given levofloxacin for the pneumonia.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "other recent antibiotics", "text": "Apart from levofloxacin, I haven't had any antibiotics recently.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the pneumonia, I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "recent travel", "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "recent change in diet", "aliases": ["new foods", "dietary changes"], "text": "I haven't changed my diet recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "blood in stool", "aliases": ["bloody diarrhea", "rectal bleeding"], "text": "There's no blood in my stool.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-017",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "122/98 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "67/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "15/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "abdominal percussion"], "result": "Inspection: no distension or visible masses; auscultation: normal bowel sounds; percussion: tympanic throughout; palpation: diffuse mild lower abdominal tenderness, no guarding or rebound tenderness."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "shifting dullness", "aliases": ["test for ascites"], "result": "No shifting dullness."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "hemoglobin", "differential count", "neutrophils", "lymphocytes", "monocytes"], "result": "Hemoglobin 13 g/dL; WBC 13,400/mm3; neutrophils 80%; lymphocytes 15%; monocytes 5%."},
+      {"id": "x008", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "33 mm/h"},
+      {"id": "x009", "kind": "test", "name": "stool examination", "aliases": ["stool test", "stool microscopy", "fecal leukocytes", "WBC in stool"], "result": "Appearance watery; WBC in stool: result not documented."},
+      {"id": "x010", "kind": "test", "name": "stool culture", "aliases": ["stool bacterial culture"], "result": "Pending"},
+      {"id": "x011", "kind": "test", "name": "C. difficile toxin test", "aliases": ["C. diff toxin", "Clostridioides difficile toxin assay", "stool toxin test"], "result": "Result not documented"}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-017",
+    "diagnosis": "C. difficile colitis",
+    "aliases": ["Clostridioides difficile colitis", "Clostridium difficile colitis", "C. diff colitis", "Clostridioides difficile infection", "Clostridium difficile infection", "C. difficile infection", "CDI"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-017",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-017-p001"],
+      "f002": ["agentclinic-medqa-ext-017-p001"],
+      "f003": ["agentclinic-medqa-ext-017-p001"],
+      "f004": ["agentclinic-medqa-ext-017-p001", "agentclinic-medqa-ext-017-p002"],
+      "f005": ["agentclinic-medqa-ext-017-p001", "agentclinic-medqa-ext-017-p003"],
+      "f006": ["agentclinic-medqa-ext-017-p001", "agentclinic-medqa-ext-017-p004"],
+      "f007": ["agentclinic-medqa-ext-017-p001", "agentclinic-medqa-ext-017-p006"],
+      "f008": ["agentclinic-medqa-ext-017-p006"],
+      "f009": ["agentclinic-medqa-ext-017-p004"],
+      "f010": ["agentclinic-medqa-ext-017-p005"],
+      "f011": ["agentclinic-medqa-ext-017-p005"],
+      "f012": ["agentclinic-medqa-ext-017-p005"],
+      "f013": ["agentclinic-medqa-ext-017-p005"],
+      "f014": ["agentclinic-medqa-ext-017-p006"],
+      "f015": ["agentclinic-medqa-ext-017-p006"],
+      "f016": ["agentclinic-medqa-ext-017-p006"]
+    },
+    "quotes": {
+      "f002": "developing watery diarrhea with at least 9 episodes within the last two days",
+      "f003": "at least 9 episodes within the last two days",
+      "f004": "lower abdominal discomfort",
+      "f005": "Abdominal cramping",
+      "f006": "treated for community-acquired pneumonia with levofloxacin on the medical floor",
+      "f008": "no recent antibiotics usage apart from levofloxacin",
+      "f009": "No other significant past medical history",
+      "f011": "does not consume alcohol",
+      "f013": "dietary changes",
+      "f016": "no blood in stool"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-017-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "122/98 mmHg", "exam_ids": ["agentclinic-medqa-ext-017-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "67 bpm", "exam_ids": ["agentclinic-medqa-ext-017-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "15 breaths/min", "exam_ids": ["agentclinic-medqa-ext-017-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No distension or visible masses. + Normal bowel sounds. + Tympanic throughout, no shifting dullness. + Diffuse mild tenderness in the lower abdomen, no guarding or rebound tenderness.", "exam_ids": ["agentclinic-medqa-ext-017-e005", "agentclinic-medqa-ext-017-e006", "agentclinic-medqa-ext-017-e007", "agentclinic-medqa-ext-017-e008"]},
+      "x006": {"source": "Physical_Examination_Findings.Abdominal_Examination.Percussion", "source_text": "Tympanic throughout, no shifting dullness.", "exam_ids": ["agentclinic-medqa-ext-017-e007"]},
+      "x007": {"source": "Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Total_Count_WBC + Test_Results.Complete_Blood_Count.Differential_Count.Neutrophils + Test_Results.Complete_Blood_Count.Differential_Count.Lymphocytes + Test_Results.Complete_Blood_Count.Differential_Count.Monocytes", "source_text": "13 g/dL + 13,400/mm3 + 80% + 15% + 5%", "exam_ids": ["agentclinic-medqa-ext-017-i001", "agentclinic-medqa-ext-017-i002", "agentclinic-medqa-ext-017-i003", "agentclinic-medqa-ext-017-i004", "agentclinic-medqa-ext-017-i005"]},
+      "x008": {"source": "Test_Results.ESR", "source_text": "33 mm/hr", "exam_ids": ["agentclinic-medqa-ext-017-i006"]},
+      "x009": {"source": "Test_Results.Stool_Test.Appearance + Test_Results.Stool_Test.WBC_in_Stool", "source_text": "Watery + Not specified", "exam_ids": ["agentclinic-medqa-ext-017-i007", "agentclinic-medqa-ext-017-i008"]},
+      "x010": {"source": "Test_Results.Stool_Test.Culture", "source_text": "Pending", "exam_ids": ["agentclinic-medqa-ext-017-i009"]},
+      "x011": {"source": "Test_Results.Stool_Test.Clostridium_difficile_Toxin", "source_text": "Not specified", "exam_ids": ["agentclinic-medqa-ext-017-i010"]}
+    },
+    "finding_flags": {
+      "x009": ["Fecal WBC is 'Not specified' in the source; reported as result not documented within the stool examination."],
+      "x011": ["The source's C. difficile toxin result is 'Not specified'. The test is listed, so it is kept with 'Result not documented' rather than excluded."]
+    },
+    "leakage": [],
+    "source_issues": ["The C. difficile toxin result and the stool WBC are 'Not specified', and the stool culture is 'Pending': the source gives no confirmatory test for the gold diagnosis."],
+    "notes": ["The diarrhea's onset and frequency (at least 9 episodes in two days) are children of f001. Lower abdominal discomfort and cramping are listed as two secondary symptoms and kept as two facts.", "The pneumonia, the hospital stay on the medical floor and levofloxacin come from History, Past_Medical_History and ROS and are merged into f006 and f007; 'no recent antibiotics apart from levofloxacin' is a separate medication denial (f008).", "The percussion leaf is split: 'tympanic throughout' stays in the abdominal examination, and 'no shifting dullness' gets its own record (x006) because CONVERSION.md gives named special tests their own record.", "Gold aliases include 'C. difficile infection'/'CDI': in clinical usage these name the same toxin-mediated colitis, so they are treated as synonyms, not broader terms.", "check_coverage warns that x011's name/aliases contain the gold term 'difficile'. Kept: the test is named for the organism it detects ('C. difficile toxin'), so a doctor can only order it under that name. Its result is not documented, so it reveals nothing."],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient for the cause of acute diarrhea and manage appropriately."
+    }
+  }
+}

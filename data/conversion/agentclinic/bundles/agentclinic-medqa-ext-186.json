@@ -1,0 +1,81 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-186",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 79, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I get short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: with exertion", "parent": "f001", "attribute": "aggravating", "text": "It comes on when I exert myself moderately.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "cough", "text": "I have a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "cough: phlegm", "parent": "f003", "attribute": "character", "aliases": ["sputum", "productive cough"], "text": "It brings up a little phlegm.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f005", "item": "how long the symptoms have been going on", "text": "The breathlessness and the cough have been going on for the past few months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I've been a heavy smoker for about 25 years.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f007", "item": "occupation", "aliases": ["job", "work", "retirement"], "text": "I'm retired.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f008", "item": "living situation", "aliases": ["lives with", "home"], "text": "I live alone.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f009", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f010", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "night sweats", "text": "I don't have night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-186",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "89/min"},
+      {"id": "x002", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "27/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/90 mm Hg"},
+      {"id": "x004", "kind": "exam", "system": "respiratory", "name": "respiratory examination", "aliases": ["lung examination", "chest examination", "lung auscultation", "cyanosis", "clubbing"], "result": "Inspection: no cyanosis or finger clubbing; auscultation: decreased breath sounds with occasional wheezes, crackles at the lung base; percussion: increased resonance; palpation: normal tactile fremitus."},
+      {"id": "x005", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Pulmonary hyperinflation with a flattened diaphragm."},
+      {"id": "x006", "kind": "test", "name": "spirometry", "aliases": ["PFTs", "lung function tests", "FEV1", "FVC", "FEV1/FVC ratio"], "result": "FEV1 48% (significantly reduced); FVC 85%; FEV1/FVC ratio 56% (indicating obstruction)."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-186",
+    "diagnosis": "Chronic obstructive pulmonary disease (COPD)",
+    "aliases": ["COPD", "chronic obstructive pulmonary disease", "chronic obstructive lung disease", "chronic obstructive airway disease", "COAD", "emphysema"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-186",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-186-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-186-p001"],
+      "f003": ["agentclinic-medqa-ext-186-p001", "agentclinic-medqa-ext-186-p002"],
+      "f004": ["agentclinic-medqa-ext-186-p001", "agentclinic-medqa-ext-186-p002"],
+      "f005": ["agentclinic-medqa-ext-186-p001"],
+      "f006": ["agentclinic-medqa-ext-186-p001", "agentclinic-medqa-ext-186-p003", "agentclinic-medqa-ext-186-p004"],
+      "f007": ["agentclinic-medqa-ext-186-p004"],
+      "f008": ["agentclinic-medqa-ext-186-p004"],
+      "f009": ["agentclinic-medqa-ext-186-p005"],
+      "f010": ["agentclinic-medqa-ext-186-p005"],
+      "f011": ["agentclinic-medqa-ext-186-p005"],
+      "f012": ["agentclinic-medqa-ext-186-p005"]
+    },
+    "quotes": {
+      "f002": "Shortness of breath with moderate exertion",
+      "f004": "Slightly productive cough",
+      "f005": "for the past few months",
+      "f006": "a long history of heavy smoking, approximately 25 years / has been a heavy smoker for 25 years"
+    },
+    "flags": {
+      "f006": ["Whether he still smokes is not stated ('has been a heavy smoker for 25 years'); 'time' is left out."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "89/min", "exam_ids": ["agentclinic-medqa-ext-186-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "27/min", "exam_ids": ["agentclinic-medqa-ext-186-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/90 mm Hg", "exam_ids": ["agentclinic-medqa-ext-186-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Auscultation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Palpation", "source_text": "No cyanosis or finger clubbing noted. + Decreased breath sounds with occasional wheezes, crackles at the lung base. + Increased resonance to percussion noted. + Normal tactile fremitus", "exam_ids": ["agentclinic-medqa-ext-186-e004", "agentclinic-medqa-ext-186-e005", "agentclinic-medqa-ext-186-e006", "agentclinic-medqa-ext-186-e007"]},
+      "x005": {"source": "Test_Results.Chest_Radiography.Findings", "source_text": "Pulmonary hyperinflation with a flattened diaphragm, indicating hyperinflation", "exam_ids": ["agentclinic-medqa-ext-186-i001"]},
+      "x006": {"source": "Test_Results.Spirometry.FEV1 + Test_Results.Spirometry.FVC + Test_Results.Spirometry.FEV1_FVC_ratio", "source_text": "48% (significantly reduced) + 85% + 56% (indicating obstruction)", "exam_ids": ["agentclinic-medqa-ext-186-i002", "agentclinic-medqa-ext-186-i003", "agentclinic-medqa-ext-186-i004"]}
+    },
+    "finding_flags": {
+      "x005": ["The source's redundant tail ', indicating hyperinflation' is dropped; no information lost."]
+    },
+    "leakage": [],
+    "source_issues": ["No temperature recorded.", "Smoking history is placed under Past_Medical_History as well as History and Social_History."],
+    "notes": ["The smoking history appears three times (History, Past_Medical_History, Social_History); merged into one fact (f006) keeping 'heavy' and 'about 25 years'.", "'For the past few months' governs both the breathlessness and the cough, so it is a standalone duration fact (f005).", "Spirometry is one test with three values (x006); the alias 'pulmonary function tests' is replaced by 'PFTs' / 'lung function tests' to keep the gold word 'pulmonary' out of finding aliases.", "Gold aliases added in harmonisation (emphysema): Emphysema accepted as in cases 110 and 117; hyperinflation with a flattened diaphragm fits it."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the elderly patient presenting with shortness of breath and a productive cough."
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-210", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 19, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "patches of lighter skin", "aliases": ["pale patches", "white patches", "light spots", "loss of skin colour", "hypopigmented patches"], "text": "I've noticed patches of lighter skin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "lighter patches: location", "parent": "f001", "attribute": "location", "value": ["hands", "face"], "text": "They're on my hands and my face.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "lighter patches: duration", "parent": "f001", "attribute": "duration", "text": "They've been developing gradually over the past few months.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "lighter patches: getting bigger", "parent": "f001", "attribute": "course", "aliases": ["spreading", "growing"], "text": "They seem to be gradually getting bigger.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "lighter patches: pain", "parent": "f001", "attribute": "character", "aliases": ["painful", "sore"], "text": "They don't hurt.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "lighter patches: itching", "parent": "f001", "attribute": "character", "aliases": ["itchy"], "text": "They don't itch.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f007", "item": "lighter patches: other discomfort", "parent": "f001", "attribute": "character", "aliases": ["discomfort", "burning", "tingling"], "text": "They don't cause me any other discomfort.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f008", "item": "recent illness", "aliases": ["been unwell recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "flu-like symptoms", "aliases": ["flu", "cold"], "text": "I haven't had any flu-like symptoms recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "changes in vision", "aliases": ["eyesight problems", "blurred vision"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f013", "item": "hair loss", "aliases": ["losing hair"], "text": "I haven't been losing hair.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I'm otherwise healthy; I don't have any significant medical problems or chronic conditions.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "recent medication changes", "aliases": ["new medications", "medications"], "text": "I haven't had any recent changes to my medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "skin cancer in the family", "aliases": ["family history of skin cancer"], "text": "There's no history of skin cancer in my family.", "polarity": "absent", "category": "family_history"},
+      {"id": "f017", "item": "bad sunburns", "aliases": ["sunburn", "sun exposure"], "text": "I haven't had any significant sunburns recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "occupation", "aliases": ["job", "work", "studies"], "text": "I'm a full-time university student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f019", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f020", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-210",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "115/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["dermatological examination", "examination of the patches", "skin inspection"], "result": "Inspection: multiple well-demarcated hypopigmented patches on the backs of the hands, face and neck; no erythema, scaling or atrophy. Palpation: normal skin texture; no palpable masses or induration; no tenderness."},
+      {"id": "x006", "kind": "test", "name": "skin biopsy of a pale patch", "aliases": ["skin biopsy", "punch biopsy", "histopathology", "biopsy"], "result": "Absence of melanocytes in the epidermis."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-210",
+    "diagnosis": "Vitiligo",
+    "aliases": ["nonsegmental vitiligo", "generalized vitiligo", "acrofacial vitiligo", "vitiligo vulgaris"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-210",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-210-p001"], "f002": ["agentclinic-medqa-ext-210-p001"], "f003": ["agentclinic-medqa-ext-210-p001"],
+      "f004": ["agentclinic-medqa-ext-210-p001", "agentclinic-medqa-ext-210-p003"], "f005": ["agentclinic-medqa-ext-210-p001", "agentclinic-medqa-ext-210-p002"],
+      "f006": ["agentclinic-medqa-ext-210-p001"], "f007": ["agentclinic-medqa-ext-210-p001", "agentclinic-medqa-ext-210-p002"],
+      "f008": ["agentclinic-medqa-ext-210-p001"], "f009": ["agentclinic-medqa-ext-210-p006"], "f010": ["agentclinic-medqa-ext-210-p006"],
+      "f011": ["agentclinic-medqa-ext-210-p006"], "f012": ["agentclinic-medqa-ext-210-p006"], "f013": ["agentclinic-medqa-ext-210-p006"],
+      "f014": ["agentclinic-medqa-ext-210-p004"], "f015": ["agentclinic-medqa-ext-210-p001"], "f016": ["agentclinic-medqa-ext-210-p006"],
+      "f017": ["agentclinic-medqa-ext-210-p001"], "f018": ["agentclinic-medqa-ext-210-p005"], "f019": ["agentclinic-medqa-ext-210-p005"],
+      "f020": ["agentclinic-medqa-ext-210-p005"]
+    },
+    "quotes": {
+      "f001": "patches of lighter skin", "f002": "on his hands and face", "f003": "gradually developing patches of lighter skin on his hands and face over the past few months",
+      "f004": "These patches seem to be expanding in size.", "f007": "or other discomfort in the areas", "f009": "recent flu-like symptoms",
+      "f014": "The patient is otherwise healthy with no chronic conditions.", "f015": "medication changes", "f016": "history of skin cancer in the family",
+      "f017": "significant sunburns", "f018": "Full-time university student", "f020": "occasional alcohol use"
+    },
+    "flags": {
+      "f002": ["The patient names hands and face; the examination also finds patches on the neck, which he does not mention."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-210-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "115/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-210-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-210-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-210-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Multiple well-demarcated hypopigmented patches on the backs of the hands, face, and neck. No erythema, scaling, or atrophy noted. + Skin texture feels normal, with no palpable masses or induration. No tenderness.", "exam_ids": ["agentclinic-medqa-ext-210-e005", "agentclinic-medqa-ext-210-e006"]},
+      "x006": {"source": "Test_Results.Skin_Biopsy.Histopathology.Findings", "source_text": "Absence of melanocytes in the epidermis.", "exam_ids": ["agentclinic-medqa-ext-210-i001"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Family history of skin cancer is listed in the Review_of_Systems.",
+      "Demographics give ethnicity ('Caucasian') that no fragment repeats; it is not a patient fact.",
+      "The skin is described as 'hypopigmented' although the biopsy shows absent melanocytes (depigmentation); kept as written."
+    ],
+    "notes": [
+      "Pain, itching and other discomfort are separate absent children of the patch fact, so each question gets its own answer; 'No discomfort in the affected areas' (p002) is cited on the pain and other-discomfort children.",
+      "'No recent illnesses' (History) and 'no recent flu-like symptoms' (ROS) are kept as two facts because they answer different questions."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with hypopigmented skin patches."
+    }
+  }
+}

@@ -1,0 +1,4148 @@
+{
+ "_note": "Per-case picks made once before the runs by the model below and spot-checked: 'a12a.target' is the recorded fact pointing to the correct diagnosis (diagnostic fact); 'a12a_anchor.target' a recorded fact typical of X (fact fitting X; null when none fits); 'a13.blocks' maps the opening blocks 1-5 (chief complaint; onset; character and severity; up to three associated features; up to three history items) to fact ids. Ids refer to the release's facts.",
+ "dataset": "medcasereasoning",
+ "release": "3172e8076188",
+ "model": "Qwen/Qwen3.8-27B",
+ "prompts": {
+  "prompts/compile_target.md": "91559bbf16b8",
+  "prompts/compile_blocks.md": "df32c1799d27",
+  "prompts/compile_anchor.md": "e4b1e4a4338f"
+ },
+ "cases": {
+  "mcr-test-00215": {
+   "a12a": {
+    "target": "f013",
+    "item": "when the rash and yellowing started",
+    "text": "The rash and the yellowing began about 20 days after I started nevirapine.",
+    "reason": "The onset of symptoms 20 days after starting nevirapine is the critical temporal link to the drug, which is the primary cause of DRESS syndrome."
+   },
+   "a12a_anchor": {
+    "target": "f012",
+    "anchor": "hepatitis",
+    "item": "yellow skin and eyes",
+    "text": "My skin and the whites of my eyes have turned yellow.",
+    "reason": "Jaundice (yellow skin and eyes) is the most specific clinical sign pointing to acute hepatitis among the choices, distinguishing it from the non-specific viral prodrome symptoms like rash, fever, and arthralgia."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f004"
+     ],
+     "2": [
+      "f011",
+      "f013"
+     ],
+     "3": [],
+     "4": [
+      "f008",
+      "f012",
+      "f007"
+     ],
+     "5": [
+      "f018",
+      "f023",
+      "f020"
+     ]
+    },
+    "texts": {
+     "f011": "The rash, fever, muscle and joint aches, dark urine, itching and belly pain have been going on for 10 days.",
+     "f013": "The rash and the yellowing began about 20 days after I started nevirapine.",
+     "f008": "My skin itches.",
+     "f012": "My skin and the whites of my eyes have turned yellow.",
+     "f007": "My urine has been dark.",
+     "f018": "I have HIV.",
+     "f023": "Forty-five days ago my HIV medicines were changed and I started nevirapine, together with zidovudine and lamivudine.",
+     "f020": "I take zidovudine for my HIV; I've been on it for the past three years."
+    }
+   }
+  },
+  "mcr-test-00302": {
+   "a12a": {
+    "target": "f010",
+    "item": "COVID-19 vaccination",
+    "text": "A month ago I had my first dose of an inactivated COVID-19 vaccine.",
+    "reason": "The history of recent vaccination is the critical antecedent event that distinguishes Acute Disseminated Encephalomyelitis (ADEM) from other causes of acute neurological deficits like Guillain-Barre syndrome."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "multiple sclerosis",
+    "item": "facial weakness",
+    "text": "I can't move the muscles of my face properly, on both sides.",
+    "reason": "Bilateral facial weakness is a specific neurological sign that, combined with limb weakness and bulbar symptoms, strongly suggests a central nervous system demyelinating process like multiple sclerosis, whereas the other entries are non-specific or point to other conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f008",
+      "f005"
+     ],
+     "5": [
+      "f010"
+     ]
+    },
+    "texts": {
+     "f007": "The weakness, swallowing trouble, drooling, nausea and vomiting have been going on for four days.",
+     "f004": "I've been drooling.",
+     "f008": "I can't move the muscles of my face properly, on both sides.",
+     "f005": "I've been feeling nauseated.",
+     "f010": "A month ago I had my first dose of an inactivated COVID-19 vaccine."
+    }
+   }
+  },
+  "mcr-test-00403": {
+   "a12a": {
+    "target": "f012",
+    "item": "shortness of breath on exertion",
+    "text": "I get short of breath when I exert myself.",
+    "reason": "Shortness of breath on exertion suggests pulmonary involvement (e.g., alveolar hemorrhage or interstitial lung disease), which is a key feature of Microscopic Polyangiitis, distinguishing it from other causes of abdominal pain."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "lupus",
+    "item": "discomfort in the legs",
+    "text": "I've had some discomfort in my legs.",
+    "reason": "Leg discomfort is a common manifestation of systemic lupus erythematosus (e.g., arthralgia or myositis), whereas the other entries point to gastrointestinal, respiratory, or cardiovascular conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f006"
+     ],
+     "5": [
+      "f010",
+      "f016",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f005": "The belly pain and the nausea started 6 days ago.",
+     "f004": "I feel nauseated.",
+     "f006": "I've been constipated for a long time.",
+     "f010": "For the past week I've been taking anti-inflammatory painkillers (NSAIDs) for the discomfort in my legs.",
+     "f016": "I've had my appendix taken out.",
+     "f017": "I've had a hysterectomy."
+    }
+   }
+  },
+  "mcr-test-00426": {
+   "a12a": {
+    "target": "f013",
+    "item": "how long the belly pain, vomiting and diarrhea have lasted",
+    "text": "The belly pain, vomiting and diarrhea have been going on for several weeks.",
+    "reason": "The chronicity of symptoms lasting several weeks is the key differentiator from acute infectious gastroenteritis, pointing towards an inflammatory or eosinophilic etiology."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a parasite in my gut",
+    "item": "diarrhea: character",
+    "text": "It's watery.",
+    "reason": "Watery diarrhea is a classic and specific symptom of intestinal parasitic infections, whereas the other entries describe non-specific pain or unrelated comorbidities."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f008",
+      "f009"
+     ],
+     "2": [
+      "f013"
+     ],
+     "3": [
+      "f002",
+      "f010"
+     ],
+     "4": [
+      "f029"
+     ],
+     "5": [
+      "f014",
+      "f015",
+      "f016"
+     ]
+    },
+    "texts": {
+     "f013": "The belly pain, vomiting and diarrhea have been going on for several weeks.",
+     "f002": "It's a cramping pain.",
+     "f010": "It's watery.",
+     "f029": "I have some yellowish patches on my eyelids.",
+     "f014": "I have type 2 diabetes.",
+     "f015": "I've been told my cholesterol levels are abnormal.",
+     "f016": "I have high blood pressure."
+    }
+   }
+  },
+  "mcr-test-00451": {
+   "a12a": {
+    "target": "f009",
+    "item": "when the face weakness and the worsening started",
+    "text": "The face weakness, the loss of taste, the worse headache and the constant fever began about a month after I came back from Mexico.",
+    "reason": "The combination of facial weakness, loss of taste, and fever is the classic presentation of Heerfordt syndrome, a specific form of sarcoidosis."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "meningitis",
+    "item": "how long the fevers and headaches have lasted",
+    "text": "The fevers and headaches started two weeks ago.",
+    "reason": "The 2-week duration of symptoms is the key temporal feature that distinguishes subacute fungal or mycobacterial meningitis from acute bacterial meningitis, which typically presents over hours to days."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f007"
+     ],
+     "2": [
+      "f005",
+      "f009"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f008"
+     ],
+     "5": [
+      "f011",
+      "f015"
+     ]
+    },
+    "texts": {
+     "f005": "The fevers and headaches started two weeks ago.",
+     "f009": "The face weakness, the loss of taste, the worse headache and the constant fever began about a month after I came back from Mexico.",
+     "f006": "I've lost about 10 pounds over the past 9 months.",
+     "f008": "I've lost my sense of taste.",
+     "f011": "I've been on adalimumab for my psoriatic arthritis for 6 years.",
+     "f015": "I recently travelled to Mexico."
+    }
+   }
+  },
+  "mcr-test-00480": {
+   "a12a": {
+    "target": "f004",
+    "item": "rash: location",
+    "text": "It's on my hands and feet: the palms and the soles.",
+    "reason": "The presence of a rash on the palms and soles is a hallmark clinical sign of secondary syphilis, distinguishing it from other causes of rash."
+   },
+   "a12a_anchor": {
+    "target": "f020",
+    "anchor": "lung cancer",
+    "item": "earlier chest CT scans",
+    "text": "Three weeks ago a CT scan at a local hospital showed several spots in my left lung, and a contrast CT a week later showed them again.",
+    "reason": "The entry describing multiple spots in the left lung on CT scans is the most direct objective evidence pointing to a lung mass or metastatic disease, which aligns with the condition of lung cancer."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f007",
+      "f008"
+     ],
+     "5": [
+      "f017",
+      "f020",
+      "f021"
+     ]
+    },
+    "texts": {
+     "f006": "The chest pain and the rash started three weeks ago.",
+     "f007": "I have a few small sores in my mouth.",
+     "f008": "I have lots of soft lumps on both sides of my neck.",
+     "f017": "Three months ago I had sex with a commercial sex worker.",
+     "f020": "Three weeks ago a CT scan at a local hospital showed several spots in my left lung, and a contrast CT a week later showed them again.",
+     "f021": "I also had upper and lower endoscopies there, and they were normal."
+    }
+   }
+  },
+  "mcr-test-00635": {
+   "a12a": {
+    "target": "f007",
+    "item": "cancer of the parotid gland",
+    "text": "I have a myoepithelial carcinoma of my left parotid (salivary) gland, and it has spread.",
+    "reason": "The presence of a known non-islet cell tumor (myoepithelial carcinoma) is the specific etiology required to distinguish this condition from other causes of hypoglycemia."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "a growth in my pancreas making too much insulin",
+    "item": "finger-stick sugar readings during the episodes",
+    "text": "When the sugar was checked with a finger-stick meter during the episodes, the readings were in the 30s.",
+    "reason": "The entry describes documented hypoglycemia (finger-stick in the 30s) during symptomatic episodes, which is the defining clinical feature of an insulinoma."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f005"
+     ],
+     "5": [
+      "f009",
+      "f010",
+      "f007"
+     ]
+    },
+    "texts": {
+     "f003": "I've had several of these episodes over the past week.",
+     "f004": "They come in the morning and in the evening, after I've gone several hours without eating.",
+     "f005": "They go away when I eat something with sugar in it.",
+     "f009": "I have type 2 diabetes.",
+     "f010": "I took metformin for my diabetes until recently; it was stopped after the low sugars began.",
+     "f007": "I have a myoepithelial carcinoma of my left parotid (salivary) gland, and it has spread."
+    }
+   }
+  },
+  "mcr-test-00910": {
+   "a12a": {
+    "target": "f009",
+    "item": "not passing urine",
+    "text": "I haven't been passing any urine.",
+    "reason": "Anuria (not passing urine) indicates severe renal failure, a critical complication of leptospirosis (Weil's disease) that distinguishes it from other causes of nausea and vomiting."
+   },
+   "a12a_anchor": {
+    "target": "f024",
+    "anchor": "HIV",
+    "item": "homelessness",
+    "text": "I'm homeless.",
+    "reason": "Homelessness is a significant social risk factor associated with a higher prevalence of HIV infection and potential barriers to care, making it the most relevant entry for this condition among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f009",
+      "f011",
+      "f006"
+     ],
+     "5": [
+      "f017",
+      "f019",
+      "f024"
+     ]
+    },
+    "texts": {
+     "f004": "The nausea, vomiting and belly pain have been going on for a week.",
+     "f009": "I haven't been passing any urine.",
+     "f011": "The whites of my eyes have turned yellow.",
+     "f006": "I feel tired and worn out.",
+     "f017": "Six days ago I came to the hospital with the same symptoms, but I left against medical advice.",
+     "f019": "I use cocaine regularly.",
+     "f024": "I'm homeless."
+    }
+   }
+  },
+  "mcr-test-01508": {
+   "a12a": {
+    "target": "f005",
+    "item": "loss of vision in the left eye",
+    "text": "I've been losing the sight in my left eye.",
+    "reason": "Bitemporal hemianopsia (vision loss) is the hallmark sign of a pituitary macroadenoma compressing the optic chiasm, distinguishing it from other causes of headache."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "glaucoma",
+    "reason": "None of the entries describe visual symptoms (like blurred vision, halos, or field loss) or elevated intraocular pressure, which are necessary to support a diagnosis of glaucoma; the entries focus on headache duration, sexual dysfunction, or chronic vision loss which is less specific to acute glaucoma than the initial symptoms."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f005",
+      "f008"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f004": "The headache and vomiting started 6 days ago.",
+     "f005": "I've been losing the sight in my left eye.",
+     "f008": "My sex drive has gone down."
+    }
+   }
+  },
+  "mcr-test-01556": {
+   "a12a": {
+    "target": "f004",
+    "item": "thigh pain: course",
+    "text": "It has been getting worse over the past 8 years.",
+    "reason": "Melorheostosis is a rare, progressive skeletal disorder characterized by cortical hyperostosis that typically presents in childhood or adolescence and worsens over time, making the 8-year progressive course the most specific diagnostic clue among the options."
+   },
+   "a12a_anchor": {
+    "target": "f007",
+    "anchor": "a bone infection",
+    "item": "thigh pain: context",
+    "text": "It got worse after I was hit by a car six months ago.",
+    "reason": "The entry describing a car accident six months ago provides the traumatic etiology and chronic timeline necessary to suspect chronic osteomyelitis (post-traumatic bone infection) in the context of persistent thigh pain."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [
+      "f017",
+      "f018",
+      "f019"
+     ]
+    },
+    "texts": {
+     "f017": "When I was 11 I had pain in my hip joint; it went away.",
+     "f018": "At that time they drew fluid from my hip joint with a needle under ultrasound, and the fluid showed no infection.",
+     "f019": "Six months ago I was hit by a car at the level of my knee; no fracture was found."
+    }
+   }
+  },
+  "mcr-test-01598": {
+   "a12a": {
+    "target": "f010",
+    "item": "headache: timing",
+    "text": "There's a background ache all the time that gets better and worse.",
+    "reason": "The presence of continuous unilateral headache with autonomic symptoms (tearing, rhinorrhea) during flare-ups is the defining clinical feature of Hemicrania continua."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a bad tooth",
+    "reason": "None of the entries describe dental pain, tooth abscess, or specific dental pathology; they describe facial trauma, jaw reconstruction, or symptoms consistent with cluster headache or cranial nerve palsy."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f007"
+     ],
+     "2": [
+      "f012",
+      "f013"
+     ],
+     "3": [
+      "f009"
+     ],
+     "4": [
+      "f015",
+      "f016",
+      "f017"
+     ],
+     "5": [
+      "f002",
+      "f004",
+      "f005"
+     ]
+    },
+    "texts": {
+     "f012": "During the flare-ups my left eye waters.",
+     "f013": "During the flare-ups my nose keeps running.",
+     "f009": "It's an aching pain.",
+     "f015": "I have a burning, tingling feeling over my left cheekbone.",
+     "f016": "My left eyelid droops.",
+     "f017": "My left eye looks red.",
+     "f002": "I was shot in the face and needed life-saving surgery and reconstruction.",
+     "f004": "My jaw was shattered near the joint, and the broken pieces were set in an operation.",
+     "f005": "After that, my left jaw joint was replaced with an artificial joint."
+    }
+   }
+  },
+  "mcr-test-01759": {
+   "a12a": {
+    "target": "f006",
+    "item": "type 1 diabetes",
+    "text": "I've had type 1 diabetes since I was 14.",
+    "reason": "Diabetic myonecrosis is a rare complication of long-standing diabetes, so the history of Type 1 diabetes is the essential prerequisite for this diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "a cancer growing in my thigh",
+    "item": "how long the thigh swelling and pain have lasted",
+    "text": "The swelling and pain in my left thigh and the trouble moving my leg have been going on for 3 months.",
+    "reason": "The entry specifies a 3-month duration of the thigh symptoms, which is a key clinical feature distinguishing a slow-growing mass like a sarcoma from acute inflammatory or infectious causes."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f003"
+     ],
+     "5": [
+      "f006",
+      "f010",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f004": "The swelling and pain in my left thigh and the trouble moving my leg have been going on for 3 months.",
+     "f003": "I can't move my left leg as well as normal.",
+     "f006": "I've had type 1 diabetes since I was 14.",
+     "f010": "I have nerve damage from my diabetes (peripheral neuropathy).",
+     "f017": "I inject premixed insulin (degludec and aspart), 14 units twice a day."
+    }
+   }
+  },
+  "mcr-test-01847": {
+   "a12a": {
+    "target": "f007",
+    "item": "bucillamine",
+    "text": "Three months ago I started bucillamine, 200 mg a day, for my arthritis.",
+    "reason": "The diagnosis is specifically drug-induced pneumonitis, so identifying the causative agent (bucillamine) is the critical piece of information required to link the respiratory symptoms to the medication."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "a chest infection",
+    "item": "prednisolone",
+    "text": "At the same time I started prednisolone, 4 mg a day.",
+    "reason": "Prednisolone use is a key risk factor for infectious pneumonia due to immunosuppression, making it the most specific entry pointing to this condition among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f004",
+      "f007",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f003": "It started about a month ago.",
+     "f004": "I have a 30 pack-year smoking history.",
+     "f007": "Three months ago I started bucillamine, 200 mg a day, for my arthritis.",
+     "f010": "I had my mitral valve replaced a year ago."
+    }
+   }
+  },
+  "mcr-test-01872": {
+   "a12a": {
+    "target": "f008",
+    "item": "earlier treatment for carpal tunnel syndrome",
+    "text": "At first the doctors thought it was carpal tunnel syndrome and treated it without surgery.",
+    "reason": "The history of misdiagnosis and failed treatment for carpal tunnel syndrome is the key differentiator that points to pronator teres syndrome, as both conditions involve median nerve compression but at different anatomical sites."
+   },
+   "a12a_anchor": {
+    "target": "f018",
+    "anchor": "my breast cancer coming back",
+    "item": "breast cancer",
+    "text": "I had cancer in my left breast.",
+    "reason": "The entry explicitly states a history of left breast cancer, which is the prerequisite condition for the suspected recurrence."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f009",
+      "f011"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003",
+      "f006",
+      "f012"
+     ],
+     "5": [
+      "f019",
+      "f020",
+      "f021"
+     ]
+    },
+    "texts": {
+     "f003": "My fingers are numb.",
+     "f006": "My grip and pinch have become weak.",
+     "f012": "The fleshy part at the base of my left thumb has shrunk.",
+     "f019": "My left breast was removed, along with the lymph nodes in my armpit.",
+     "f020": "I also had radiotherapy for the cancer.",
+     "f021": "I still take tamoxifen."
+    }
+   }
+  },
+  "mcr-test-01919": {
+   "a12a": {
+    "target": "f005",
+    "item": "breathless when lying flat",
+    "text": "Recently I've become breathless when I lie flat.",
+    "reason": "Orthopnea is a specific sign of left-sided heart failure, which in a 54-year-old man is a key clinical indicator for restrictive cardiomyopathies like cardiac amyloidosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a thickened heart muscle",
+    "reason": "None of the entries provide a specific sign or history (such as a family history of sudden death, syncope, or a specific murmur) that points to hypertrophic cardiomyopathy over other causes of heart failure; the listed symptoms are non-specific for heart failure in general."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003",
+      "f004",
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f008",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f003": "Before that, I'd been getting breathless on exertion for about a year.",
+     "f004": "I've been getting more and more tired.",
+     "f005": "Recently I've become breathless when I lie flat.",
+     "f006": "Recently I've been waking up at night short of breath.",
+     "f007": "Recently both my legs have been swelling, more and more.",
+     "f008": "I've been treated with furosemide, 40 mg twice a day.",
+     "f010": "I was also given enalapril, 5 mg twice a day."
+    }
+   }
+  },
+  "mcr-test-02016": {
+   "a12a": {
+    "target": "f005",
+    "item": "how long the swelling, poor appetite and weight loss have lasted",
+    "text": "The swelling, the poor appetite and the weight loss have been going on for four months.",
+    "reason": "The chronicity of four months is the critical discriminator that distinguishes tuberculous peritonitis from acute conditions like bacterial peritonitis or ovarian cancer, which typically present with shorter or different timelines."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "heart failure",
+    "reason": "Neither loss of appetite nor weight loss is a specific or primary indicator of congestive heart failure compared to the already stated edema, and weight loss is more indicative of malignancy or chronic wasting."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f003",
+      "f004"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f005": "The swelling, the poor appetite and the weight loss have been going on for four months.",
+     "f003": "I've lost my appetite.",
+     "f004": "I've lost weight."
+    }
+   }
+  },
+  "mcr-test-02529": {
+   "a12a": {
+    "target": "f005",
+    "item": "rash: how the patches change",
+    "text": "Over several months each patch slowly spreads outward in rings, with scaling.",
+    "reason": "The description of red, ring-shaped patches that slowly spread outward with scaling is the classic clinical presentation of the annular stage of mycosis fungoides."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "ringworm",
+    "item": "rash: appearance",
+    "text": "It's red, ring-shaped patches.",
+    "reason": "The description of 'red, ring-shaped patches' is the classic morphological hallmark of Tinea corporis (ringworm), distinguishing it from other rashes."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f008",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f006": "The patches are mildly itchy.",
+     "f007": "When the rash flares up, my joints ache.",
+     "f008": "I take a proton pump inhibitor.",
+     "f010": "I've been treated for the rash with steroid creams and with steroids for the whole body."
+    }
+   }
+  },
+  "mcr-test-02548": {
+   "a12a": {
+    "target": "f014",
+    "item": "straining to pass urine",
+    "text": "I have to strain to pass urine.",
+    "reason": "Straining to pass urine is a classic lower urinary tract symptom indicative of prostate enlargement or obstruction, which is the primary clinical presentation leading to the diagnosis of prostate adenocarcinoma in a 65-year-old man."
+   },
+   "a12a_anchor": {
+    "target": "f025",
+    "anchor": "multiple myeloma",
+    "item": "swollen right shoulder",
+    "text": "My right shoulder is swollen.",
+    "reason": "The combination of anemia, low platelets, and bone pain (low back pain) is a classic presentation of multiple myeloma, and the entry confirming the presence of anemia is the key differentiator from simple mechanical back pain."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f023",
+      "f024"
+     ],
+     "2": [
+      "f002",
+      "f010"
+     ],
+     "3": [],
+     "4": [
+      "f007",
+      "f008",
+      "f009"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "It came on gradually, about seven months ago.",
+     "f010": "The breathlessness, tiredness and palpitations started about four months ago.",
+     "f007": "I get short of breath when I exert myself.",
+     "f008": "I've been feeling tired.",
+     "f009": "I've been having palpitations; I can feel my heart beating."
+    }
+   }
+  },
+  "mcr-test-02593": {
+   "a12a": {
+    "target": "f007",
+    "item": "brimonidine eye drops",
+    "text": "For the last seven years my glaucoma has been treated with brimonidine 0.1% drops, twice a day in both eyes.",
+    "reason": "Lipid keratopathy is a known complication of long-term brimonidine use, making the specific medication history the critical diagnostic clue."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "an infection in my eye",
+    "item": "sensitivity to light",
+    "text": "Light bothers both of my eyes.",
+    "reason": "Photophobia (sensitivity to light) is a hallmark symptom of corneal inflammation and infection, distinguishing it from the chronic, painless vision loss associated with cataracts or glaucoma."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f004"
+     ],
+     "5": [
+      "f005",
+      "f006",
+      "f007"
+     ]
+    },
+    "texts": {
+     "f002": "It has been slowly declining ever since my cataract surgery two years ago.",
+     "f004": "Light bothers both of my eyes.",
+     "f005": "I had cataract surgery two years ago.",
+     "f006": "I've had open-angle glaucoma for 25 years.",
+     "f007": "For the last seven years my glaucoma has been treated with brimonidine 0.1% drops, twice a day in both eyes."
+    }
+   }
+  },
+  "mcr-test-02741": {
+   "a12a": {
+    "target": "f010",
+    "item": "enlarged gums",
+    "text": "After the fever with chills, I noticed my gums had become enlarged.",
+    "reason": "The combination of upper airway involvement (ear fullness, hearing loss, gum enlargement) and systemic symptoms is the classic presentation of Granulomatosis with polyangiitis, distinguishing it from other vasculitides."
+   },
+   "a12a_anchor": {
+    "target": "f015",
+    "anchor": "tuberculosis",
+    "item": "contact with sick animals",
+    "text": "I've been caring for pets that were sick.",
+    "reason": "The entry describing contact with sick animals is a specific risk factor for zoonotic infections that can present with fever and skin lesions, making it the most relevant clue for an infectious etiology like tuberculosis among the choices, whereas the other entries point to unrelated conditions like vestibular issues or thyroid disease."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f010"
+     ],
+     "5": [
+      "f015"
+     ]
+    },
+    "texts": {
+     "f003": "The fevers and the leg sores have been going on for two months.",
+     "f004": "I have red, tender lumps on both of my legs.",
+     "f010": "After the fever with chills, I noticed my gums had become enlarged.",
+     "f015": "I've been caring for pets that were sick."
+    }
+   }
+  },
+  "mcr-test-02749": {
+   "a12a": {
+    "target": "f002",
+    "item": "numbness in the right leg: onset",
+    "text": "It came on suddenly, about three months after I started my HIV medicines.",
+    "reason": "The temporal relationship between starting antiretroviral therapy and the onset of new neurological symptoms is the defining clinical feature of Immune Reconstitution Inflammatory Syndrome (IRIS)."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a brain tumor",
+    "item": "HIV infection",
+    "text": "I have HIV; it was diagnosed when I first fell ill, about four months before this numbness began.",
+    "reason": "HIV infection is the strongest risk factor for Primary CNS Lymphoma, making it the most indicative fact for this specific diagnosis among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f007"
+     ],
+     "5": [
+      "f009",
+      "f010",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "It came on suddenly, about three months after I started my HIV medicines.",
+     "f007": "I've had weakness on my left side since I first fell ill a few months ago.",
+     "f009": "I have HIV; it was diagnosed when I first fell ill, about four months before this numbness began.",
+     "f010": "At the same time I was diagnosed with toxoplasmosis with lesions in my brain.",
+     "f012": "I've stayed on my toxoplasmosis medicine; it was later switched to a lower, suppressive dose."
+    }
+   }
+  },
+  "mcr-test-03106": {
+   "a12a": {
+    "target": "f004",
+    "item": "jaw pain: what brings it on",
+    "text": "It's set off by the first bite of each meal.",
+    "reason": "The specific trigger of pain occurring only with the first bite of a meal is the defining clinical feature of First Bite Syndrome."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a tumor in my salivary gland",
+    "item": "jaw pain: location",
+    "text": "It's over my lower jaw and the glands under my jaw, worse on the right side.",
+    "reason": "The specific localization of the pain to the glands under the jaw (submandibular region) directly points to the anatomical site of the suspected salivary gland tumor, whereas the other entries describe the nature of the pain which is more consistent with sialolithiasis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f002",
+      "f006"
+     ],
+     "3": [
+      "f007",
+      "f008"
+     ],
+     "4": [],
+     "5": [
+      "f022"
+     ]
+    },
+    "texts": {
+     "f002": "It started three months ago.",
+     "f006": "Each episode lasts less than two minutes.",
+     "f007": "It's a sudden, sharp, stabbing pain.",
+     "f008": "It's about 8 out of 10.",
+     "f022": "I wear dentures."
+    }
+   }
+  },
+  "mcr-test-03402": {
+   "a12a": {
+    "target": "f011",
+    "item": "country of origin",
+    "text": "I'm originally from Afghanistan.",
+    "reason": "Origin from Afghanistan is a major risk factor for tuberculosis, distinguishing it from common mechanical wrist injuries."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "rheumatoid arthritis",
+    "item": "right wrist pain: duration",
+    "text": "It has been going on for more than three months.",
+    "reason": "The duration of symptoms being more than three months is a key diagnostic criterion for Rheumatoid Arthritis, distinguishing it from acute injuries or other conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f012"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f013"
+     ],
+     "5": [
+      "f007",
+      "f008",
+      "f009"
+     ]
+    },
+    "texts": {
+     "f002": "It has been going on for more than three months.",
+     "f013": "The skin over it is red and peeling.",
+     "f007": "At first I was told it was a wrist sprain.",
+     "f008": "I was given anti-inflammatory painkillers (NSAIDs) for it.",
+     "f009": "Later I was told it was osteoarthritis."
+    }
+   }
+  },
+  "mcr-test-03450": {
+   "a12a": {
+    "target": "f004",
+    "item": "how the blurred vision and eye pain started",
+    "text": "Both the blurred vision and the eye pain came on suddenly a week ago.",
+    "reason": "The sudden onset of symptoms is a critical distinguishing feature for ischemic optic neuropathy compared to other causes of vision loss."
+   },
+   "a12a_anchor": {
+    "target": "f012",
+    "anchor": "multiple sclerosis",
+    "item": "blurred vision: severity",
+    "text": "I can barely see out of my left eye.",
+    "reason": "Severe unilateral visual loss is a hallmark presentation of optic neuritis, which is frequently the initial symptom of multiple sclerosis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [
+      "f012"
+     ],
+     "4": [],
+     "5": [
+      "f005",
+      "f007",
+      "f011"
+     ]
+    },
+    "texts": {
+     "f004": "Both the blurred vision and the eye pain came on suddenly a week ago.",
+     "f012": "I can barely see out of my left eye.",
+     "f005": "I have chronic kidney failure.",
+     "f007": "I have high blood pressure.",
+     "f011": "I'm very short-sighted, about minus 8.5 in both eyes."
+    }
+   }
+  },
+  "mcr-test-03594": {
+   "a12a": {
+    "target": "f010",
+    "item": "hearing loss",
+    "text": "Since I was 4 I've had moderate hearing loss in both ears (sensorineural), and I wear hearing aids.",
+    "reason": "Hypoparathyroidism, Deafness, and Renal anomaly (HDR) syndrome is defined by the triad of hypoparathyroidism (causing low calcium), sensorineural hearing loss, and renal anomalies; the presence of congenital sensorineural hearing loss is the specific distinguishing feature that points to HDR syndrome over other causes of hypoparathyroidism."
+   },
+   "a12a_anchor": {
+    "target": "f007",
+    "anchor": "a vitamin D deficiency",
+    "item": "vitamin D",
+    "text": "I take vitamin D by mouth.",
+    "reason": "The entry explicitly states the patient is taking vitamin D, which directly links to the condition of Vitamin D deficiency (likely indicating treatment for it or a history of it)."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f007",
+      "f008",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f005": "The face spasms, muscle spasms and leg cramps started when I was about 10.",
+     "f002": "I've had spasms in my face.",
+     "f003": "I've had attacks where my muscles go into spasm (tetany).",
+     "f004": "I've had leg cramps.",
+     "f007": "I take vitamin D by mouth.",
+     "f008": "I take calcium tablets.",
+     "f010": "Since I was 4 I've had moderate hearing loss in both ears (sensorineural), and I wear hearing aids."
+    }
+   }
+  },
+  "mcr-test-03624": {
+   "a12a": {
+    "target": "f005",
+    "item": "upper abdominal pain: what makes it better",
+    "text": "Only vomiting relieves it.",
+    "reason": "The combination of postprandial pain and vomiting that is relieved only by vomiting is the classic clinical presentation of gastric outlet obstruction, which is the primary complication of paraduodenal pancreatitis."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "pancreatic cancer",
+    "item": "weight loss",
+    "text": "I've lost 5 kg.",
+    "reason": "Unintentional weight loss is a key constitutional symptom that strongly suggests a malignant process like pancreatic cancer, distinguishing it from benign causes of pain and vomiting."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f006"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [],
+     "4": [
+      "f008"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f007": "The pain and the vomiting after meals have been going on for two months.",
+     "f008": "I've lost 5 kg."
+    }
+   }
+  },
+  "mcr-test-03752": {
+   "a12a": {
+    "target": "f015",
+    "item": "rheumatoid arthritis",
+    "text": "I have rheumatoid arthritis; I was told it's the seropositive type.",
+    "reason": "The presence of seropositive rheumatoid arthritis is the essential underlying condition required to diagnose rheumatoid meningitis, distinguishing it from other causes of seizures and focal neurological deficits."
+   },
+   "a12a_anchor": {
+    "target": "f024",
+    "anchor": "a brain tumor",
+    "item": "weakness of the left leg",
+    "text": "My left leg is weak.",
+    "reason": "The combination of new-onset focal seizures (left arm/leg jerking) and contralateral weakness (left leg) indicates a structural lesion in the right motor cortex, which is a classic presentation for a brain tumor."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f004",
+      "f006"
+     ],
+     "3": [
+      "f003"
+     ],
+     "4": [
+      "f007",
+      "f011",
+      "f024"
+     ],
+     "5": [
+      "f019",
+      "f020",
+      "f022"
+     ]
+    },
+    "texts": {
+     "f004": "Each one lasts less than a minute.",
+     "f006": "It began when I woke up with a headache, and then the seizures started.",
+     "f003": "I stay aware the whole time; I don't black out.",
+     "f007": "I woke up with a headache.",
+     "f011": "I have tingling and numbness on my left side.",
+     "f024": "My left leg is weak.",
+     "f019": "I had a stroke before, in the right thalamus of the brain, and was treated with clot-busting medicine.",
+     "f020": "I had a single seizure during a previous hospital admission.",
+     "f022": "I've been taking levetiracetam since that seizure."
+    }
+   }
+  },
+  "mcr-test-03768": {
+   "a12a": {
+    "target": "f012",
+    "item": "heroin use",
+    "text": "I use heroin every day; I inject it under the skin (skin popping).",
+    "reason": "The history of skin popping heroin use is the specific risk factor that distinguishes wound botulism from other causes of descending paralysis like Guillain-Barre or myasthenia gravis."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "Guillain-Barré syndrome",
+    "item": "weakness: course",
+    "text": "It has been getting steadily worse.",
+    "reason": "The progressive course of weakness is a hallmark feature of Guillain-Barre syndrome, distinguishing it from static or relapsing conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f007",
+      "f008"
+     ],
+     "5": [
+      "f012",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f004": "Both started about a week ago.",
+     "f006": "My eyelids droop so much I can barely open my eyes.",
+     "f007": "I'm seeing double.",
+     "f008": "My speech is slurred.",
+     "f012": "I use heroin every day; I inject it under the skin (skin popping).",
+     "f013": "I have hepatitis C, and it has never been treated."
+    }
+   }
+  },
+  "mcr-test-03884": {
+   "a12a": {
+    "target": "f021",
+    "item": "nose injury",
+    "text": "I injured my nose when I was 12.",
+    "reason": "The history of a nose injury is a key risk factor for the skull base defect that leads to cerebrospinal fluid rhinorrhea."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a sinus infection",
+    "item": "headaches: what makes them worse",
+    "text": "They get worse when I lean forward or strain.",
+    "reason": "Headaches that worsen when leaning forward or straining are a classic sign of increased pressure in the sinuses, strongly pointing to sinusitis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f007"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [
+      "f008"
+     ],
+     "4": [],
+     "5": [
+      "f017",
+      "f018",
+      "f020"
+     ]
+    },
+    "texts": {
+     "f006": "The discharge and the headaches have been going on for three months.",
+     "f008": "They're dull and throbbing.",
+     "f017": "Another doctor diagnosed me with allergic rhinitis.",
+     "f018": "I was given anti-allergy medicine for it.",
+     "f020": "I had an episode of sinusitis five years ago."
+    }
+   }
+  },
+  "mcr-test-04208": {
+   "a12a": {
+    "target": "f006",
+    "item": "occupation",
+    "text": "I'm a sheep farmer.",
+    "reason": "Occupation as a sheep farmer provides the specific occupational exposure to livestock (sheep/goats) that is the primary risk factor for Brucellosis, distinguishing it from other febrile illnesses."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "tuberculosis",
+    "reason": "Neither entry points to tuberculosis; f005 is a generic duration and f007 suggests brucellosis or listeria."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f006",
+      "f007"
+     ]
+    },
+    "texts": {
+     "f005": "All of this has been going on for two weeks.",
+     "f006": "I'm a sheep farmer.",
+     "f007": "I eat cheese made from unpasteurized milk."
+    }
+   }
+  },
+  "mcr-test-04221": {
+   "a12a": {
+    "target": "f005",
+    "item": "breast cancer",
+    "text": "I've had breast cancer.",
+    "reason": "The history of breast cancer is the critical risk factor that links the patient's symptoms to the specific etiology of hydrocephalus (leptomeningeal carcinomatosis), distinguishing it from other causes of gait disturbance."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "nerve damage",
+    "item": "numbness in the hands and feet",
+    "text": "I have mild numbness in my hands and feet.",
+    "reason": "Numbness in the hands and feet is a classic sensory symptom of peripheral neuropathy, whereas the other entries describe the gait disturbance or the causative agent rather than the neuropathic condition itself."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f008"
+     ],
+     "5": [
+      "f005",
+      "f006"
+     ]
+    },
+    "texts": {
+     "f002": "It began about a month after I finished my chemotherapy two years ago.",
+     "f008": "I have mild numbness in my hands and feet.",
+     "f005": "I've had breast cancer.",
+     "f006": "I had four cycles of docetaxel-based chemotherapy, which I finished about two years ago."
+    }
+   }
+  },
+  "mcr-test-04493": {
+   "a12a": {
+    "target": "f014",
+    "item": "pentazocine injections",
+    "text": "Six years ago I started injecting myself with pentazocine, 60 mg a day into my muscles.",
+    "reason": "The history of intramuscular pentazocine use is the specific etiological factor required to distinguish this condition from other causes of myofibrosis."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "ankylosing spondylitis",
+    "item": "difficulty bending",
+    "text": "It's getting harder to bend in any direction.",
+    "reason": "The progressive restriction of spinal and hip mobility, specifically the inability to bend or move thighs apart, is the hallmark clinical feature of ankylosing spondylitis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f007",
+      "f008"
+     ],
+     "5": [
+      "f014",
+      "f019",
+      "f020"
+     ]
+    },
+    "texts": {
+     "f003": "The stiffness and wasting started about six years ago.",
+     "f006": "Walking is getting harder; I can only take short steps.",
+     "f007": "It's getting harder to get up from lying on my back.",
+     "f008": "It's getting harder to bend in any direction.",
+     "f014": "Six years ago I started injecting myself with pentazocine, 60 mg a day into my muscles.",
+     "f019": "I injected promethazine together with it.",
+     "f020": "I was dependent on alcohol for 13 years."
+    }
+   }
+  },
+  "mcr-test-04671": {
+   "a12a": {
+    "target": "f007",
+    "item": "how long the fevers, sweats, weight loss and weakness have lasted",
+    "text": "The fevers, night sweats, weight loss, poor appetite and weakness have been going on for a month.",
+    "reason": "The combination of persistent fever, significant weight loss, and jaundice is highly suggestive of Hemophagocytic Lymphohistiocytosis (HLH), and the duration confirms the acute/subacute nature required for diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "hepatitis",
+    "item": "heavy drinking in the past",
+    "text": "I used to drink heavily, but that was a long time ago.",
+    "reason": "Heavy drinking is a major risk factor for alcoholic hepatitis, making it the most specific entry pointing to the condition among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f008"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f004",
+      "f005"
+     ],
+     "5": [
+      "f011"
+     ]
+    },
+    "texts": {
+     "f007": "The fevers, night sweats, weight loss, poor appetite and weakness have been going on for a month.",
+     "f002": "I've been having night sweats.",
+     "f004": "I've lost my appetite.",
+     "f005": "I feel weak and drained all over.",
+     "f011": "I used to drink heavily, but that was a long time ago."
+    }
+   }
+  },
+  "mcr-test-04724": {
+   "a12a": {
+    "target": "f003",
+    "item": "abnormal sensations on the right side of the body",
+    "text": "I had abnormal sensations on the right side of my body.",
+    "reason": "The history of prior neurological symptoms (abnormal sensations) that resolved before the current onset of vertigo indicates a relapsing-remitting course, which is the hallmark clinical pattern of Multiple Sclerosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "an inner ear infection",
+    "reason": "The entry describes the onset of vertigo, which is the primary symptom of labyrinthitis, but it does not add specific diagnostic features (like hearing loss or infection signs) beyond what is already stated in the patient's initial complaint of vertigo."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f003"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "It started about a month after the abnormal sensations had gone away.",
+     "f003": "I had abnormal sensations on the right side of my body."
+    }
+   }
+  },
+  "mcr-test-04970": {
+   "a12a": {
+    "target": "f007",
+    "item": "vaginal discharge",
+    "text": "Around the time of the birth I had a vaginal discharge that kept going and wouldn't clear up.",
+    "reason": "The history of persistent vaginal discharge around childbirth indicates a source of fungal infection that likely led to hematogenous spread and endogenous endophthalmitis."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "toxoplasmosis",
+    "item": "recent childbirth",
+    "text": "I gave birth four weeks ago; it was a normal vaginal delivery without complications.",
+    "reason": "Recent childbirth is a key risk factor for ocular toxoplasmosis due to the potential for congenital transmission or reactivation, whereas the other entries are non-specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f006",
+      "f004",
+      "f005"
+     ]
+    },
+    "texts": {
+     "f002": "It started a week ago.",
+     "f006": "I gave birth four weeks ago; it was a normal vaginal delivery without complications.",
+     "f004": "I have diabetes.",
+     "f005": "I use insulin for my diabetes."
+    }
+   }
+  },
+  "mcr-test-05119": {
+   "a12a": {
+    "target": "f002",
+    "item": "fever: onset",
+    "text": "It started the night after my last filgrastim dose.",
+    "reason": "The temporal link between the fever onset and the last filgrastim dose is the critical clue connecting the patient's history to the specific diagnosis of G-CSF aortitis."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "tuberculosis",
+    "item": "fever: relief from acetaminophen and levofloxacin",
+    "text": "The acetaminophen and levofloxacin I was prescribed as an outpatient didn't get rid of it; I still have the fever.",
+    "reason": "The failure of levofloxacin, a fluoroquinolone antibiotic often used for community-acquired pneumonia or as part of TB regimens, to resolve the fever suggests a resistant organism or a specific etiology like tuberculosis, whereas the other entries focus on the cancer history or general fever management."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f003"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f005",
+      "f006",
+      "f007"
+     ]
+    },
+    "texts": {
+     "f002": "It started the night after my last filgrastim dose.",
+     "f003": "Today is the fourth day of the fever.",
+     "f005": "I've had ovarian cancer.",
+     "f006": "After my operation I had chemotherapy with paclitaxel and carboplatin, and I've completed all six cycles.",
+     "f007": "After my fifth and sixth cycles my blood counts dropped (myelosuppression)."
+    }
+   }
+  },
+  "mcr-test-05137": {
+   "a12a": {
+    "target": "f012",
+    "item": "country of birth",
+    "text": "I was born in Mexico.",
+    "reason": "Neurocysticercosis is caused by the pork tapeworm, and being born in an endemic region like Mexico is the strongest epidemiological risk factor among the choices."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "meningitis",
+    "reason": "The chronic duration of two months makes acute bacterial meningitis highly unlikely, as it typically presents with acute onset over hours to days."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f005"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f010"
+     ]
+    },
+    "texts": {
+     "f006": "All of this has been going on for two months.",
+     "f010": "I have diabetes."
+    }
+   }
+  },
+  "mcr-test-05660": {
+   "a12a": {
+    "target": "f008",
+    "item": "cataract surgery",
+    "text": "At 69 I had cataract surgery on both eyes.",
+    "reason": "A history of cataract surgery is the most critical entry because it rules out cataracts as the cause of the patient's vision loss, thereby pointing towards a retinal pathology like macular atrophy."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "retinitis pigmentosa",
+    "item": "night blindness",
+    "text": "I have trouble seeing in the dark.",
+    "reason": "Night blindness is a hallmark early symptom of retinitis pigmentosa, whereas the other entries are unrelated to this specific condition."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003"
+     ],
+     "5": [
+      "f008"
+     ]
+    },
+    "texts": {
+     "f003": "I have trouble seeing in the dark.",
+     "f008": "At 69 I had cataract surgery on both eyes."
+    }
+   }
+  },
+  "mcr-test-05730": {
+   "a12a": {
+    "target": "f013",
+    "item": "contact with soil",
+    "text": "Recently I did farm work in my home region along the Yangtze River, so I was in contact with soil.",
+    "reason": "Exposure to soil in the Yangtze River region is the specific epidemiological risk factor for Histoplasmosis, distinguishing it from other causes of fever and weight loss."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "lymphoma",
+    "item": "weight loss",
+    "text": "I've lost 7 kg over the past two months.",
+    "reason": "Unintentional weight loss is a classic B-symptom of lymphoma, whereas fever and night sweats are less specific and already partially covered by the initial complaint."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f006"
+     ],
+     "3": [
+      "f003"
+     ],
+     "4": [
+      "f004",
+      "f005"
+     ],
+     "5": [
+      "f013",
+      "f012",
+      "f011"
+     ]
+    },
+    "texts": {
+     "f002": "They've been going on for about a month.",
+     "f006": "I've lost 7 kg over the past two months.",
+     "f003": "At the highest it reached 39.6 °C.",
+     "f004": "I've been having night sweats.",
+     "f005": "I have a mild cough.",
+     "f013": "Recently I did farm work in my home region along the Yangtze River, so I was in contact with soil.",
+     "f012": "I donate plasma frequently.",
+     "f011": "I work in a blood bank."
+    }
+   }
+  },
+  "mcr-test-05910": {
+   "a12a": {
+    "target": "f005",
+    "item": "thickened Achilles tendons",
+    "text": "My Achilles tendons are thickened.",
+    "reason": "The presence of tendon xanthomas (thickened Achilles tendons) is a pathognomonic physical sign for familial hypercholesterolemia, distinguishing it from other causes of hyperlipidemia."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "an underactive thyroid",
+    "reason": "None of the entries point to hypothyroidism; they all support a diagnosis of familial hypercholesterolemia (e.g., early onset, family history, specific xanthoma locations)."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f005"
+     ],
+     "5": [
+      "f003",
+      "f008",
+      "f009"
+     ]
+    },
+    "texts": {
+     "f002": "They first appeared before I was 10.",
+     "f005": "My Achilles tendons are thickened.",
+     "f003": "They were surgically removed several times when I was a teenager.",
+     "f008": "My mother died suddenly at 60; it was possibly from early coronary artery disease.",
+     "f009": "My sister had xanthomas as a child."
+    }
+   }
+  },
+  "mcr-test-06043": {
+   "a12a": {
+    "target": "f003",
+    "item": "previous similar swellings",
+    "text": "Over the past 3 to 4 years I've had similar, smaller swellings that went away on their own.",
+    "reason": "The history of recurrent, self-resolving swellings is the key clinical feature distinguishing Mucous extravasation phenomenon from other causes of facial swelling."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "no entry to choose from"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": []
+    }
+   }
+  },
+  "mcr-test-06134": {
+   "a12a": {
+    "target": "f006",
+    "item": "excessive thirst",
+    "text": "I'm very thirsty and drink about 15 litres a day.",
+    "reason": "Polydipsia and polyuria are the hallmark clinical features of diabetes insipidus, distinguishing it from other conditions."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a tumour on my pituitary gland",
+    "item": "missed periods",
+    "text": "My periods stopped 18 months ago.",
+    "reason": "Amenorrhea (missed periods) is a classic symptom of a prolactinoma due to hyperprolactinemia suppressing the hypothalamic-pituitary-gonadal axis, whereas the other symptoms point more strongly to diabetes insipidus or general mass effect."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f004",
+      "f009"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f007",
+      "f010"
+     ],
+     "5": [
+      "f019"
+     ]
+    },
+    "texts": {
+     "f004": "I've had them for 4 years.",
+     "f009": "The thirst and the heavy urination started 18 months ago.",
+     "f006": "I'm very thirsty and drink about 15 litres a day.",
+     "f007": "I pass about as much urine as I drink.",
+     "f010": "My periods stopped 18 months ago.",
+     "f019": "My first period came at 13."
+    }
+   }
+  },
+  "mcr-test-06156": {
+   "a12a": {
+    "target": "f013",
+    "item": "streaks on the skin over the lump",
+    "text": "Now there are stretch-mark-like streaks on the skin over it.",
+    "reason": "The presence of stretch-mark-like streaks (striae) on the skin over the lump is a specific physical sign indicating rapid expansion of a subcutaneous mass, which is characteristic of a growing lymphangioma."
+   },
+   "a12a_anchor": {
+    "target": "f022",
+    "anchor": "a hydatid cyst from a tapeworm",
+    "item": "country of origin",
+    "text": "I'm African; I immigrated to the United States from East Africa.",
+    "reason": "The patient's origin from East Africa, a region endemic for Echinococcus, is the strongest epidemiological risk factor pointing to a hydatid cyst."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f011",
+      "f013"
+     ],
+     "5": [
+      "f019"
+     ]
+    },
+    "texts": {
+     "f003": "I first noticed it 3 years ago, as a small lump that wasn't tender.",
+     "f011": "It stops me from bringing my left arm all the way in against my side.",
+     "f013": "Now there are stretch-mark-like streaks on the skin over it.",
+     "f019": "My only medication is a contraceptive implant, etonogestrel, in my left arm."
+    }
+   }
+  },
+  "mcr-test-06180": {
+   "a12a": {
+    "target": "f004",
+    "item": "kidney transplant",
+    "text": "I had a kidney transplant from a living donor 20 years ago.",
+    "reason": "The patient's history of a kidney transplant is the essential prerequisite for the diagnosis of allograft rejection."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "a urine infection",
+    "item": "kidney failure",
+    "text": "My own kidneys failed completely because of a congenital kidney condition called oligomeganephronia.",
+    "reason": "The patient's history of kidney failure and subsequent transplant (implied by the mention of a transplanted kidney in f005 and immunosuppressants in f006/f007) establishes the context of a renal graft, which is the specific site for graft pyelonephritis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f004",
+      "f005",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f002": "It started a day ago.",
+     "f004": "I had a kidney transplant from a living donor 20 years ago.",
+     "f005": "An 8-cm clear cell carcinoma, a kidney cancer, was recently found in my transplanted kidney.",
+     "f008": "Six days ago I had my first dose of nivolumab."
+    }
+   }
+  },
+  "mcr-test-06416": {
+   "a12a": {
+    "target": "f002",
+    "item": "headache: duration",
+    "text": "They've been going on for 4 months.",
+    "reason": "A 4-month duration of headaches in a young adult is a key clinical indicator for a slow-growing, diffuse infiltrative process like gliomatosis cerebri, distinguishing it from acute causes."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a brain infection like encephalitis",
+    "reason": "Neither vision loss nor living in a drug rehabilitation center is a specific clinical indicator for Herpes simplex encephalitis, whereas the provided symptoms of headache and seizure are already stated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f004"
+     ],
+     "5": [
+      "f008"
+     ]
+    },
+    "texts": {
+     "f002": "They've been going on for 4 months.",
+     "f004": "I've been losing my vision.",
+     "f008": "I'm in a drug rehabilitation center."
+    }
+   }
+  },
+  "mcr-test-06632": {
+   "a12a": {
+    "target": "f005",
+    "item": "accidental ingestion of a veterinary drug",
+    "text": "Three years ago I accidentally swallowed four 1250 mg boluses of a veterinary niclosamide product.",
+    "reason": "The accidental ingestion of the specific drug (niclosamide) is the direct cause and the critical link required to diagnose the condition as niclosamide-induced maculopathy."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "multiple sclerosis",
+    "item": "optic neuritis diagnosis",
+    "text": "At that time the doctors thought I had optic neuritis in both eyes.",
+    "reason": "A past diagnosis of optic neuritis is a classic initial presentation and strong risk factor for developing multiple sclerosis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f004"
+     ],
+     "5": [
+      "f005",
+      "f006",
+      "f007"
+     ]
+    },
+    "texts": {
+     "f003": "It all started 3 years ago, a few days after I accidentally swallowed the niclosamide.",
+     "f004": "Over these 3 years my vision problems have stayed the same.",
+     "f005": "Three years ago I accidentally swallowed four 1250 mg boluses of a veterinary niclosamide product.",
+     "f006": "At that time the doctors thought I had optic neuritis in both eyes.",
+     "f007": "I was treated with a short course of high-dose steroid tablets for it."
+    }
+   }
+  },
+  "mcr-test-06792": {
+   "a12a": {
+    "target": "f011",
+    "item": "shin bone pain",
+    "text": "I also have pain in my right shin bone.",
+    "reason": "Bone pain is a specific and distinguishing clinical feature of Schnitzler syndrome that helps differentiate it from other causes of chronic urticaria and fever."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "lupus",
+    "item": "joint pain",
+    "text": "I've been having joint pains.",
+    "reason": "Joint pain is a classic clinical feature of Systemic Lupus Erythematosus, whereas the other entries (hives, fever, weight loss, lymphadenopathy) are more indicative of lymphoma or other conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f007"
+     ],
+     "2": [
+      "f002",
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f008",
+      "f013"
+     ],
+     "5": [
+      "f003"
+     ]
+    },
+    "texts": {
+     "f002": "It's been about a year; it had already been going on for 6 months when I first came to the clinic.",
+     "f005": "The fevers, tiredness and other general symptoms came on within the last 6 months; when I first came to the clinic about the hives, I had no general symptoms.",
+     "f006": "I feel tired all over.",
+     "f008": "I've been having night sweats.",
+     "f013": "I have swollen glands in both armpits and both sides of my groin.",
+     "f003": "I've been treated with high doses of non-drowsy antihistamines for the rash."
+    }
+   }
+  },
+  "mcr-test-06812": {
+   "a12a": {
+    "target": "f014",
+    "item": "morning stiffness",
+    "text": "In the mornings I'm stiff for about 2 hours.",
+    "reason": "Prolonged morning stiffness (over 1 hour) is a hallmark clinical feature of rheumatoid arthritis that distinguishes it from other arthritides."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "the bone in my hip dying off",
+    "item": "right hip and groin pain: course",
+    "text": "It has been getting steadily worse.",
+    "reason": "A steadily worsening course of hip pain over 6 months is a classic presentation for avascular necrosis, whereas the other entries point to rheumatoid arthritis (toe issues), septic arthritis (warm/swollen knee), or malignancy (weight loss)."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f014",
+      "f010",
+      "f013"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "It's been going on for 6 months.",
+     "f014": "In the mornings I'm stiff for about 2 hours.",
+     "f010": "My right knee hurts.",
+     "f013": "My right knee is swollen."
+    }
+   }
+  },
+  "mcr-test-06856": {
+   "a12a": {
+    "target": "f010",
+    "item": "cause of the kidney failure",
+    "text": "My kidneys failed because of chronic glomerulonephritis.",
+    "reason": "Kimura's disease is strongly associated with chronic glomerulonephritis and renal failure, making the history of kidney failure due to this condition the most specific diagnostic clue among the choices."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "lymphoma",
+    "item": "lumps in the neck: duration",
+    "text": "I've had them for 4 months.",
+    "reason": "Chronic lymphadenopathy lasting 4 months is a key clinical feature that raises suspicion for lymphoma, distinguishing it from acute infectious causes."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f009",
+      "f010",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "I've had them for 4 months.",
+     "f009": "I've been on maintenance hemodialysis for 3 years.",
+     "f010": "My kidneys failed because of chronic glomerulonephritis.",
+     "f012": "I'm a hepatitis B carrier."
+    }
+   }
+  },
+  "mcr-test-06913": {
+   "a12a": {
+    "target": "f015",
+    "item": "repeated pneumonia",
+    "text": "Since childhood I've been admitted to hospital many times for pneumonia that keeps coming back.",
+    "reason": "Recurrent pneumonia since childhood is the hallmark clinical feature of Williams-Campbell syndrome, distinguishing it from other causes of bronchiectasis."
+   },
+   "a12a_anchor": {
+    "target": "f017",
+    "anchor": "tuberculosis",
+    "item": "Mycobacterium avium-intracellulare infection",
+    "text": "In the past five years I also had one episode of Mycobacterium avium-intracellulare infection.",
+    "reason": "A history of Mycobacterium avium-intracellulare infection is a specific mycobacterial disease that strongly points towards a susceptibility or history relevant to tuberculosis, unlike the other entries which are non-specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f005",
+      "f007"
+     ],
+     "5": [
+      "f015",
+      "f017",
+      "f020"
+     ]
+    },
+    "texts": {
+     "f003": "The breathlessness and cough came on suddenly 2 days ago, together with the fever, chills, aches and chest pain.",
+     "f004": "I've had a fever.",
+     "f005": "I've had chills.",
+     "f007": "I have chest pain that gets worse when I breathe in.",
+     "f015": "Since childhood I've been admitted to hospital many times for pneumonia that keeps coming back.",
+     "f017": "In the past five years I also had one episode of Mycobacterium avium-intracellulare infection.",
+     "f020": "My father had emphysema."
+    }
+   }
+  },
+  "mcr-test-07087": {
+   "a12a": {
+    "target": "f004",
+    "item": "fainting: sitting or standing",
+    "text": "I can't sit or stand without briefly losing consciousness.",
+    "reason": "The specific trigger of moving from lying down to sitting up is the hallmark clinical feature distinguishing cardioinhibitory reflex syncope (orthostatic) from other causes."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "an inherited heart rhythm problem",
+    "reason": "None of the entries provide evidence of an inherited channelopathy or paroxysmal AV block; the symptoms described (orthostatic trigger, fever, asthma) point to other causes like orthostatic hypotension or infection."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f005",
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f011",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "It's been happening for 10 days.",
+     "f005": "When I sat up here in the emergency department, I felt dizzy just before I passed out.",
+     "f006": "My vision went blurry just before I passed out.",
+     "f007": "I yawned just before I passed out.",
+     "f011": "I have asthma.",
+     "f012": "I use salbutamol for my asthma."
+    }
+   }
+  },
+  "mcr-test-07236": {
+   "a12a": {
+    "target": "f006",
+    "item": "vismodegib",
+    "text": "I've taken vismodegib 150 mg every day for 10 years.",
+    "reason": "The diagnosis is specifically 'Vismodegib-induced' diarrhea, so establishing that the patient is currently taking the drug vismodegib is the essential link between the symptom and the cause."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "Crohn's disease",
+    "reason": "The entry describes the onset of diarrhea as a side effect of vismodegib, a drug used for basal cell carcinoma, which is a known cause of drug-induced diarrhea rather than inflammatory bowel disease."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003",
+      "f011"
+     ],
+     "3": [],
+     "4": [
+      "f012",
+      "f013"
+     ],
+     "5": [
+      "f006",
+      "f008",
+      "f009"
+     ]
+    },
+    "texts": {
+     "f003": "It began two years after I started vismodegib, about 8 years ago, as loose stools two or three times a day.",
+     "f011": "I've had hair loss.",
+     "f012": "My sense of taste has changed.",
+     "f013": "I get muscle spasms.",
+     "f006": "I've taken vismodegib 150 mg every day for 10 years.",
+     "f008": "I have basal cell carcinoma that is locally advanced and has spread (metastatic).",
+     "f009": "I have Gorlin syndrome."
+    }
+   }
+  },
+  "mcr-test-07260": {
+   "a12a": {
+    "target": "f007",
+    "item": "radiation therapy to the brain",
+    "text": "After that operation I had radiation therapy to my brain: 3D conformal external-beam radiotherapy, 6000 cGy in 30 sessions.",
+    "reason": "SMART syndrome is a specific late complication of radiation therapy for childhood brain tumors, making the history of radiation the defining diagnostic criterion."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "a bleed on the brain",
+    "item": "headache: onset",
+    "text": "It came on quickly.",
+    "reason": "The sudden onset of the headache is a classic hallmark of intracranial haemorrhage, distinguishing it from other causes like tumors or migraines."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f004"
+     ],
+     "2": [
+      "f003",
+      "f005"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f006",
+      "f007",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f003": "It came on quickly.",
+     "f005": "Both started 2 days ago.",
+     "f006": "When I was 5, I had an operation to remove a brain tumour from the right back part of my brain; it was an anaplastic astrocytoma.",
+     "f007": "After that operation I had radiation therapy to my brain: 3D conformal external-beam radiotherapy, 6000 cGy in 30 sessions.",
+     "f008": "My last brain MRI was when I was 15."
+    }
+   }
+  },
+  "mcr-test-07488": {
+   "a12a": {
+    "target": "f007",
+    "item": "loss of side vision",
+    "text": "I've noticed I can't see out to the sides, on the outer side of both eyes.",
+    "reason": "Bitemporal hemianopsia is the classic visual field defect caused by compression of the optic chiasm by a pituitary mass or inflammation, which is the key clinical sign pointing to a pituitary pathology like lymphocytic hypophysitis."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "a brain aneurysm",
+    "item": "high blood pressure",
+    "text": "I've had high blood pressure for more than 20 years.",
+    "reason": "Long-standing hypertension is a major risk factor for the development of intracranial aneurysms, making it the most relevant supporting fact among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [
+      "f003"
+     ],
+     "4": [
+      "f007"
+     ],
+     "5": [
+      "f008"
+     ]
+    },
+    "texts": {
+     "f006": "I've had it for a month.",
+     "f003": "It's a throbbing pain.",
+     "f007": "I've noticed I can't see out to the sides, on the outer side of both eyes.",
+     "f008": "I've had high blood pressure for more than 20 years."
+    }
+   }
+  },
+  "mcr-test-07631": {
+   "a12a": {
+    "target": "f013",
+    "item": "response to the medicines taken so far",
+    "text": "Even with those medicines, I went on to get the fever, the nausea and the tiredness.",
+    "reason": "The lack of response to multiple courses of antibiotics is a key clinical feature that helps distinguish Kikuchi-Fujimoto disease from bacterial lymphadenitis."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "tuberculosis",
+    "item": "how long the fever and neck swelling have lasted",
+    "text": "This has been going on for 3 weeks.",
+    "reason": "The duration of 3 weeks for the neck swelling and fever is a key feature distinguishing tuberculous lymphadenitis from acute bacterial causes, which typically present more acutely or resolve with antibiotics."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f004"
+     ],
+     "2": [
+      "f002",
+      "f005",
+      "f003"
+     ],
+     "3": [
+      "f006"
+     ],
+     "4": [
+      "f007",
+      "f008"
+     ],
+     "5": [
+      "f009",
+      "f010",
+      "f011"
+     ]
+    },
+    "texts": {
+     "f002": "It began as a painful lump on the right side of my neck.",
+     "f005": "The fever came on after the lump in my neck.",
+     "f003": "This has been going on for 3 weeks.",
+     "f006": "It has gone up to 40 °C.",
+     "f007": "I've been feeling nauseous.",
+     "f008": "I've been feeling tired.",
+     "f009": "I've had a course of amoxicillin–clavulanate.",
+     "f010": "I've had a course of metronidazole.",
+     "f011": "I've had a course of clindamycin."
+    }
+   }
+  },
+  "mcr-test-07845": {
+   "a12a": {
+    "target": "f006",
+    "item": "rash on the face",
+    "text": "I have a rash on my cheeks.",
+    "reason": "The presence of a malar rash (butterfly rash) is a hallmark clinical feature of Systemic Lupus Erythematosus that, combined with the blisters, strongly points to the specific diagnosis of Bullous SLE."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "a skin rash from coeliac disease",
+    "item": "blisters: location",
+    "text": "They're on my hands, my face, the back of my neck and my body.",
+    "reason": "Dermatitis herpetiformis is characterized by an intensely pruritic, vesicular rash that typically affects extensor surfaces such as the elbows, knees, buttocks, and back of the neck, which matches the distribution described in f003."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f008",
+      "f009"
+     ],
+     "5": [
+      "f022"
+     ]
+    },
+    "texts": {
+     "f005": "I've had them for 2 months.",
+     "f006": "I have a rash on my cheeks.",
+     "f008": "I have raw sores inside my cheeks, on the roof of my mouth and on my lips.",
+     "f009": "I've been losing hair.",
+     "f022": "I'm Southeast Asian."
+    }
+   }
+  },
+  "mcr-test-07881": {
+   "a12a": {
+    "target": "f005",
+    "item": "fever",
+    "text": "I've been having fevers.",
+    "reason": "The presence of fever is a core diagnostic criterion for Adult-onset Still's disease, distinguishing it from other causes of joint pain and muscle aches."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "lupus",
+    "item": "rash",
+    "text": "I have a rash.",
+    "reason": "A rash is a hallmark clinical feature of Systemic Lupus Erythematosus, whereas the other entries point more strongly toward infectious causes like Lyme disease (tick bite, hiking) or viral illness."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f005",
+      "f008",
+      "f012"
+     ],
+     "5": [
+      "f016",
+      "f017",
+      "f023"
+     ]
+    },
+    "texts": {
+     "f004": "They've been going on for 2 weeks.",
+     "f005": "I've been having fevers.",
+     "f008": "I have a rash.",
+     "f012": "I have a sore throat.",
+     "f016": "I went hiking in North Georgia in March.",
+     "f017": "I removed a tick from my leg and from my pubic area, three days before my joint pains started.",
+     "f023": "I'm allergic to penicillin; it gives me a bad rash."
+    }
+   }
+  },
+  "mcr-test-08068": {
+   "a12a": {
+    "target": "f002",
+    "item": "neck pain: location",
+    "text": "It's on the right side of my neck, in the spot where you can feel the neck pulse.",
+    "reason": "The specific localization of the pain to the carotid pulse point is the key clinical sign distinguishing TIPIC syndrome (inflammation of the carotid artery) from general musculoskeletal neck pain."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "a torn blood vessel in my neck",
+    "item": "neck pain: radiation",
+    "text": "It spreads to my right ear.",
+    "reason": "Radiation of neck pain to the ear is a specific clinical feature often associated with carotid artery dissection due to involvement of the glossopharyngeal or vagus nerves, distinguishing it from general musculoskeletal neck pain."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f007",
+      "f011"
+     ],
+     "3": [
+      "f003",
+      "f004"
+     ],
+     "4": [
+      "f008",
+      "f009",
+      "f010"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f007": "It started a week ago.",
+     "f011": "They came at the start, when the neck pain began.",
+     "f003": "It's severe.",
+     "f004": "It's a dull ache.",
+     "f008": "I had a mild fever.",
+     "f009": "I felt tired.",
+     "f010": "My muscles ached."
+    }
+   }
+  },
+  "mcr-test-08087": {
+   "a12a": {
+    "target": "f016",
+    "item": "ethnic background",
+    "text": "I'm of Turkish ancestry.",
+    "reason": "The diagnosis of Bilateral Acute Iris Transillumination (BAIT) syndrome is strongly associated with specific ethnic backgrounds, particularly Turkish and Middle Eastern descent, making this a key demographic clue for the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "a herpes infection in my eye",
+    "item": "when the current eye symptoms began",
+    "text": "They started three weeks after I finished the week of eye drops for the infection.",
+    "reason": "Entry f005 explicitly mentions the symptoms started after treating an 'infection', which in the context of the patient's worry about a herpes infection, points to the viral etiology (herpetic iridocyclitis) rather than the bacterial or autoimmune causes suggested by other entries."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f004"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f003"
+     ],
+     "5": [
+      "f006",
+      "f007",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f005": "They started three weeks after I finished the week of eye drops for the infection.",
+     "f003": "My left eye is a little red.",
+     "f006": "A month ago my left eye suddenly became red and uncomfortable with pus coming out, and four days later my right eye did the same. I was told it was bacterial conjunctivitis in both eyes.",
+     "f007": "For that infection I used moxifloxacin 0.5%/dexamethasone 0.1% eye drops every 2 hours for one week.",
+     "f008": "When the pain and vision problems started, I was told my eye pressure was high and that I probably had autoimmune uveitis with high pressure in both eyes."
+    }
+   }
+  },
+  "mcr-test-08789": {
+   "a12a": {
+    "target": "f018",
+    "item": "unprotected sex with multiple partners",
+    "text": "Several months before I got sick, I had unprotected sex with multiple partners.",
+    "reason": "Unprotected sex with multiple partners is the primary risk factor for acquiring syphilis, distinguishing it from the hepatic symptoms which are likely secondary complications."
+   },
+   "a12a_anchor": {
+    "target": "f017",
+    "anchor": "HIV",
+    "item": "sex with men",
+    "text": "I'm a man who has sex with men.",
+    "reason": "Being a man who has sex with men is a significant risk factor for HIV infection, making it the most relevant entry for this condition among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f003",
+      "f004",
+      "f011"
+     ],
+     "5": [
+      "f018"
+     ]
+    },
+    "texts": {
+     "f006": "They've been going on for a week.",
+     "f003": "My urine has been dark, the colour of tea.",
+     "f004": "My stools have been pale.",
+     "f011": "The whites of my eyes have turned yellow.",
+     "f018": "Several months before I got sick, I had unprotected sex with multiple partners."
+    }
+   }
+  },
+  "mcr-test-08927": {
+   "a12a": {
+    "target": "f003",
+    "item": "weakness: location",
+    "text": "It's mostly in my legs, both of them the same.",
+    "reason": "The bilateral, symmetric weakness in the legs is the hallmark clinical feature of Guillain-Barre syndrome, distinguishing it from other causes of weakness."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "something pressing on my spinal cord",
+    "item": "lung transplant",
+    "text": "Four months ago I had a transplant of both lungs, and it went without complications.",
+    "reason": "The patient's history of a recent lung transplant and current use of immunosuppressants (prednisone, mycophenolate, tacrolimus) significantly increases the risk for opportunistic infections or malignancies that can cause spinal cord compression, making this the most relevant factor among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f004"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f005"
+     ],
+     "5": [
+      "f008",
+      "f009",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f006": "All of this has been going on for two weeks.",
+     "f005": "I've been feeling tired.",
+     "f008": "Four months ago I had a transplant of both lungs, and it went without complications.",
+     "f009": "I take prednisone 20 mg every day.",
+     "f010": "I take mycophenolate mofetil 1000 mg twice a day."
+    }
+   }
+  },
+  "mcr-test-09048": {
+   "a12a": {
+    "target": "f010",
+    "item": "response to the asthma and allergy treatment",
+    "text": "I was treated with inhalers to open my airways, steroid tablets and antihistamines, and none of it helped.",
+    "reason": "The failure of standard asthma and allergy treatments is the key differentiator that rules out the initial misdiagnosis and points toward Pertussis."
+   },
+   "a12a_anchor": {
+    "target": "f013",
+    "anchor": "a severe allergic reaction",
+    "item": "allergies",
+    "text": "I'm allergic to dust mites, pollen, hay, straw, cats and dogs.",
+    "reason": "The entry explicitly lists multiple specific allergens (dust mites, pollen, cats, dogs), which provides the necessary etiological link to support a diagnosis of allergic angioedema or anaphylaxis, whereas other entries point to chronic respiratory issues or unrelated conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f007"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f003",
+      "f008",
+      "f005"
+     ],
+     "5": [
+      "f009",
+      "f010",
+      "f011"
+     ]
+    },
+    "texts": {
+     "f004": "Both started six weeks ago.",
+     "f003": "I've been coughing.",
+     "f008": "There's blood in the whites of both my eyes.",
+     "f005": "I passed out once, during a coughing attack.",
+     "f009": "At first I was told I probably had allergic asthma.",
+     "f010": "I was treated with inhalers to open my airways, steroid tablets and antihistamines, and none of it helped.",
+     "f011": "I spent 14 days in a local hospital before I was sent here."
+    }
+   }
+  },
+  "mcr-test-09301": {
+   "a12a": {
+    "target": "f010",
+    "item": "sunitinib",
+    "text": "Two weeks ago I started sunitinib, 50 mg every night.",
+    "reason": "The patient's recent initiation of sunitinib, a known cause of drug-induced acute interstitial nephritis, provides the specific etiological link required to distinguish this diagnosis from other causes of renal failure."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "kidney stones",
+    "item": "blood in the urine: treatment response",
+    "text": "It has carried on even after the aspirin/dipyridamole was stopped and I took the amoxicillin.",
+    "reason": "The entry confirms the persistence of hematuria despite stopping anticoagulants and treating for infection, which is a key diagnostic feature for kidney stones in this context."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f008"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f009",
+      "f010",
+      "f011"
+     ]
+    },
+    "texts": {
+     "f008": "All of this started 4 days ago.",
+     "f004": "I've had a fever.",
+     "f006": "I've been feeling tired.",
+     "f007": "My appetite has gone down.",
+     "f009": "I have stage IV clear-cell kidney cancer that has spread to my spine and brain.",
+     "f010": "Two weeks ago I started sunitinib, 50 mg every night.",
+     "f011": "I had been taking aspirin/dipyridamole for five years to prevent strokes; it has been stopped since the bleeding."
+    }
+   }
+  },
+  "mcr-test-09617": {
+   "a12a": {
+    "target": "f011",
+    "item": "clubbed fingers and toes",
+    "text": "The tips of my fingers and toes are swollen and rounded.",
+    "reason": "Clubbing of the fingers and toes is a hallmark clinical sign of pachydermoperiostosis that, combined with the other symptoms, strongly points to the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "an overactive thyroid",
+    "item": "how long the enlargement, sweating and skin folds have been there",
+    "text": "All of this has been developing over 10 years.",
+    "reason": "The 10-year duration of symptoms is a key discriminator that makes Graves' disease with thyroid acropachy (which typically presents acutely or subacutely) highly unlikely, whereas it strongly supports a chronic condition like acromegaly, thus fitting the condition best by ruling it out or highlighting the mismatch."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f004"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f010",
+      "f011"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f005": "All of this has been developing over 10 years.",
+     "f006": "Both my knees hurt.",
+     "f010": "My knees and ankles are swollen.",
+     "f011": "The tips of my fingers and toes are swollen and rounded."
+    }
+   }
+  },
+  "mcr-test-09645": {
+   "a12a": {
+    "target": "f014",
+    "item": "missed gynaecology follow-up",
+    "text": "I was supposed to have follow-up at a menstrual disorders clinic, but I didn't go.",
+    "reason": "The history of heavy periods requiring transfusion five years ago, combined with a missed gynecological follow-up, strongly suggests an undiagnosed or untreated cervical pathology that has now progressed to metastasis (neck lump)."
+   },
+   "a12a_anchor": {
+    "target": "f020",
+    "anchor": "a tumour in my throat",
+    "item": "smoking",
+    "text": "I smoke 20 to 30 cigarettes a day.",
+    "reason": "Heavy smoking is a major risk factor for head and neck squamous cell carcinoma, making it the most relevant entry for this condition."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f020"
+     ]
+    },
+    "texts": {
+     "f003": "I've had it for 2 weeks.",
+     "f006": "I've been getting more and more tired.",
+     "f007": "I have back pain.",
+     "f020": "I smoke 20 to 30 cigarettes a day."
+    }
+   }
+  },
+  "mcr-test-09698": {
+   "a12a": {
+    "target": "f013",
+    "item": "thinning eyebrows",
+    "text": "The outer parts of my eyebrows have thinned out.",
+    "reason": "Thyrotrophic pituitary hyperplasia causes TSH-secreting adenomas or hyperplasia leading to hyperthyroidism, but the listed symptoms (cold intolerance, weight gain, dry skin, constipation) are classic for hypothyroidism, suggesting the 'correct diagnosis' label in the prompt might be a distractor or referring to a specific context where these are the key differentiators from other pituitary issues, or more likely, the prompt implies a scenario where the doctor must distinguish between primary hypothyroidism (high TSH) and secondary causes, but given the options, the constellation of hypothyroid symptoms is the key. However, looking closely at the diagnosis 'Thyrotrophic pituitary hyperplasia', this is a rare cause of hyperthyroidism. The symptoms listed are hypothyroid. This is a contradiction. Let's re-read. If the diagnosis is correct, the patient has hyperthyroidism. None of the options fit hyperthyroidism (weight loss, heat intolerance, etc.). Wait, is it possible the diagnosis is actually *Hypothyroidism* and the label is wrong? Or is it *TSH-secreting pituitary adenoma*? No, that's hyper. Let's look at the options again. All options are hypothyroid. If I must choose the one that points to the diagnosis, and the diagnosis is fixed, there is a mismatch. However, in medical case studies, sometimes 'Thyrotrophic pituitary hyperplasia' is a misnomer for *TSH-secreting* issues, but the symptoms are clearly hypothyroid. Let's assume the question implies the patient has *Hypothyroidism* and the diagnosis label is the target to justify. Or, perhaps the 'correct diagnosis' is actually *Primary Hypothyroidism* and the prompt has a typo? No, I must trust the prompt. Let's look for a symptom that is most specific or 'most needed'. If the patient has hypothyroidism, the most specific physical sign often cited in these vignettes to confirm the diagnosis over other causes of fatigue is the physical exam finding. Thinning of the outer eyebrows (Queen Anne's sign) is a specific sign of hypothyroidism. Puffy face is also specific. But let's look at the diagnosis again. 'Thyrotrophic pituitary hyperplasia'. This is extremely rare. Is it possible the diagnosis is *Pituitary Hyperplasia* due to *Hypothyroidism*? Yes, in primary hypothyroidism, the pituitary thyrotrophs can undergo hyperplasia due to lack of negative feedback. So the diagnosis is the *pituitary* finding resulting from the *thyroid* condition. The key to diagnosing the underlying cause (and thus the pituitary hyperplasia) is confirming the hypothyroid state. Among the symptoms, which is the most distinct indicator? Thinning eyebrows is a classic, specific sign. However, 'puffy face' and 'dry skin' are also common. Let's look at the 'most need to hear'. A doctor needs to know the patient is hypothyroid. The combination of symptoms points to it. If I have to pick one, [f013] thinning eyebrows is a very specific clinical sign for hypothyroidism that helps distinguish it from other causes of fatigue or weight gain. Alternatively, [f012] puffy face (myxedema) is also very specific. Let's compare. Thinning eyebrows is often considered a later, more specific sign. Puffy face is common in many conditions. Let's go with the most specific physical sign of hypothyroidism which drives the TSH elevation and subsequent pituitary hyperplasia. Thinning of the lateral third of the eyebrows is highly specific. "
+   },
+   "a12a_anchor": {
+    "target": "f012",
+    "anchor": "a brain tumour",
+    "item": "puffy face",
+    "text": "My face looks puffy, including around my eyes.",
+    "reason": "Puffy face, particularly periorbital edema, is a specific clinical sign of hypopituitarism (secondary hypothyroidism) caused by a pituitary adenoma, whereas the other symptoms are non-specific or point to other conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f005",
+      "f007",
+      "f010"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "I've had them for a long time; they're chronic.",
+     "f005": "I've been tired.",
+     "f007": "I can't tolerate the cold.",
+     "f010": "I've gained weight."
+    }
+   }
+  },
+  "mcr-test-10230": {
+   "a12a": {
+    "target": "f006",
+    "item": "burning sensations in the legs",
+    "text": "I have burning, tingling sensations in my legs.",
+    "reason": "POEMS syndrome is characterized by Polyneuropathy, Organomegaly, Endocrinopathy, M-protein, and Skin changes; the burning and tingling sensations in the legs represent the polyneuropathy, which is a core diagnostic criterion and a key differentiator from the other symptoms listed."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "lupus",
+    "item": "how the bluish colour and Raynaud's have changed",
+    "text": "Both have been getting worse over the past month.",
+    "reason": "The patient's initial complaint of Raynaud's phenomenon (f002) is a classic early symptom of Systemic Lupus Erythematosus (SLE), and the entry describing the worsening of this symptom (f003) reinforces the active nature of the autoimmune condition, whereas other entries point more strongly to systemic sclerosis (skin thickening, mottling) or unrelated conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f006",
+      "f014"
+     ],
+     "5": [
+      "f017",
+      "f018",
+      "f019"
+     ]
+    },
+    "texts": {
+     "f003": "Both have been getting worse over the past month.",
+     "f004": "I get short of breath when I exert myself.",
+     "f006": "I have burning, tingling sensations in my legs.",
+     "f014": "The skin on my thighs and legs looks mottled, like a net pattern.",
+     "f017": "Two years ago I was diagnosed with 'triple-negative' essential thrombocythemia, where the body makes too many platelets.",
+     "f018": "I take aspirin for the platelet condition.",
+     "f019": "I take anagrelide for the platelet condition."
+    }
+   }
+  },
+  "mcr-test-10347": {
+   "a12a": {
+    "target": "f003",
+    "item": "loss of vision in the right eye",
+    "text": "I've suddenly lost the vision in my right eye.",
+    "reason": "Sudden loss of vision in the context of head and throat swelling is a hallmark sign of rhinocerebral mucormycosis, indicating the fungal infection has invaded the orbit and compromised the optic nerve."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a tooth abscess that has spread",
+    "reason": "None of the entries describe dental symptoms, facial swelling, or a history of dental issues that would point to an odontogenic infection."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003"
+     ],
+     "5": [
+      "f004",
+      "f005",
+      "f007"
+     ]
+    },
+    "texts": {
+     "f003": "I've suddenly lost the vision in my right eye.",
+     "f004": "Two days ago I went to an urgent care center, and they thought I had conjunctivitis.",
+     "f005": "They prescribed me polymyxin.",
+     "f007": "I've been taking prednisone long-term."
+    }
+   }
+  },
+  "mcr-test-10565": {
+   "a12a": {
+    "target": "f005",
+    "item": "how long each flare lasts",
+    "text": "Each flare lasts 3 to 7 days.",
+    "reason": "The specific duration of 3 to 7 days for the febrile episodes is a hallmark diagnostic criterion for Yao syndrome, distinguishing it from other periodic fever syndromes."
+   },
+   "a12a_anchor": {
+    "target": "f012",
+    "anchor": "Crohn's",
+    "item": "diarrhea",
+    "text": "During the flares I get diarrhea on and off.",
+    "reason": "Recurrent diarrhea is a hallmark gastrointestinal symptom of Crohn's disease, whereas the other entries describe extra-intestinal manifestations or treatments for allergic conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f008",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f019"
+     ]
+    },
+    "texts": {
+     "f004": "This has been happening for about 2 years.",
+     "f008": "Before a flare starts, I feel like I'm coming down with the flu.",
+     "f010": "Before a flare I get a sore throat.",
+     "f011": "Before a flare my joints ache.",
+     "f019": "I've taken prednisone tablets."
+    }
+   }
+  },
+  "mcr-test-10584": {
+   "a12a": {
+    "target": "f026",
+    "item": "mother's health",
+    "text": "My mother has autoimmune hemolytic anemia.",
+    "reason": "A family history of autoimmune hemolytic anemia in a first-degree relative is a strong specific risk factor that points directly to the correct diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f027",
+    "anchor": "an inherited blood disorder",
+    "item": "maternal grandmother's health",
+    "text": "My grandmother on my mother's side has had anemia, and no cause was ever found.",
+    "reason": "The entry describes a family history of unexplained anemia in a maternal relative, which is the key clinical clue for an inherited condition like hereditary spherocytosis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f004",
+      "f005"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f007",
+      "f008",
+      "f002"
+     ],
+     "5": [
+      "f021",
+      "f026",
+      "f027"
+     ]
+    },
+    "texts": {
+     "f006": "All of this started about a month ago.",
+     "f007": "My urine has been dark.",
+     "f008": "My stools have been dark brown to black.",
+     "f002": "These have all been getting worse.",
+     "f021": "I take methimazole.",
+     "f026": "My mother has autoimmune hemolytic anemia.",
+     "f027": "My grandmother on my mother's side has had anemia, and no cause was ever found."
+    }
+   }
+  },
+  "mcr-test-10717": {
+   "a12a": {
+    "target": "f018",
+    "item": "anabolic steroids",
+    "text": "For the past 2 months I've been injecting anabolic steroids for bodybuilding.",
+    "reason": "The use of anabolic steroids is a known precipitating factor for insulin autoimmune syndrome, distinguishing it from other causes of hypoglycemia."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "Addison's disease",
+    "item": "dexamethasone",
+    "text": "I took high-dose dexamethasone tablets every day for a while.",
+    "reason": "The history of taking high-dose dexamethasone is a direct cause of secondary adrenal insufficiency due to suppression of the hypothalamic-pituitary-adrenal axis, making it the most specific entry pointing to this condition."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "5": [
+      "f018",
+      "f019",
+      "f021"
+     ]
+    },
+    "texts": {
+     "f006": "These spells have been happening over the past 2 months.",
+     "f002": "I've been having spells of palpitations.",
+     "f003": "I get dizzy during my spells of palpitations.",
+     "f004": "I feel lightheaded during my spells of palpitations.",
+     "f018": "For the past 2 months I've been injecting anabolic steroids for bodybuilding.",
+     "f019": "For the past 2 months I've been using growth hormone for bodybuilding.",
+     "f021": "For the past 2 months I've been taking fat-burner supplements for bodybuilding."
+    }
+   }
+  },
+  "mcr-test-10805": {
+   "a12a": {
+    "target": "f014",
+    "item": "warfarin",
+    "text": "I take warfarin long-term.",
+    "reason": "Long-term warfarin use is the primary risk factor for spontaneous adrenal hemorrhage, making it the most critical piece of information to link the patient's symptoms to the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "acid reflux",
+    "reason": "None of the listed entries (sudden onset, clindamycin use, cellulitis, atrial fibrillation, heart failure, ulcerative colitis, diabetes, antiphospholipid syndrome, DVT, or diabetes medication) are characteristic clinical features or risk factors that would lead a doctor to suspect gastro-oesophageal reflux disease."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f006",
+      "f007",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f003": "The pain came on suddenly during the night.",
+     "f006": "I finished a 10-day course of clindamycin yesterday.",
+     "f007": "I had cellulitis in my left calf.",
+     "f010": "I have ulcerative colitis."
+    }
+   }
+  },
+  "mcr-test-10995": {
+   "a12a": {
+    "target": "f002",
+    "item": "enoxaparin",
+    "text": "When I went home after the knee operation I was put on enoxaparin injections, 40 mg under the skin once a day, to prevent blood clots.",
+    "reason": "Heparin-induced thrombocytopenia is a specific adverse reaction to heparin products, so the history of enoxaparin use is the critical link to the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "a blocked artery in my neck",
+    "reason": "None of the entries describe carotid artery symptoms (such as TIA, stroke, or bruits) or risk factors specific to carotid atherosclerosis; f008 describes myoclonus or tremor, f009 describes abdominal pain, and f001 is a surgical history unrelated to the neck vessels."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f004",
+      "f005",
+      "f006",
+      "f007"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f008"
+     ],
+     "5": [
+      "f001",
+      "f002"
+     ]
+    },
+    "texts": {
+     "f008": "During that episode my right leg and my belly were shaking.",
+     "f001": "I had my left knee replaced and went home from hospital about 15 days ago.",
+     "f002": "When I went home after the knee operation I was put on enoxaparin injections, 40 mg under the skin once a day, to prevent blood clots."
+    }
+   }
+  },
+  "mcr-test-11043": {
+   "a12a": {
+    "target": "f002",
+    "item": "shortness of breath: course",
+    "text": "At first it was only when I exerted myself, then it got worse, and now I'm short of breath even at rest.",
+    "reason": "The progressive nature of the shortness of breath, advancing from exertional to resting dyspnea, is the most critical clinical indicator of significant myocardial compromise in eosinophilic myocarditis."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "a heart attack",
+    "item": "sweating",
+    "text": "I've been sweating a lot.",
+    "reason": "Sweating is a classic associated symptom of myocardial infarction, whereas the other options are non-specific or unrelated."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f005",
+      "f006"
+     ],
+     "5": [
+      "f015"
+     ]
+    },
+    "texts": {
+     "f003": "It started about a week ago.",
+     "f004": "I've had a low-grade fever.",
+     "f005": "I've been feeling generally unwell.",
+     "f006": "I've been sweating a lot.",
+     "f015": "I'm Sri Lankan."
+    }
+   }
+  },
+  "mcr-test-11121": {
+   "a12a": {
+    "target": "f004",
+    "item": "dark discoloration of the fingernails",
+    "text": "Several of my fingernails have brownish-black discoloration.",
+    "reason": "Laugier-Hunziker syndrome is characterized by the triad of oral, cutaneous, and nail melanosis; the nail discoloration is the key extra-oral feature that distinguishes it from isolated oral pigmentation."
+   },
+   "a12a_anchor": {
+    "target": "f007",
+    "anchor": "melanoma",
+    "item": "dark discoloration of the toenails",
+    "text": "My toenails have dark streaks running along them too.",
+    "reason": "The entry describes dark streaks in the toenails, which is a classic clinical sign of subungual melanoma, directly supporting the condition of nail melanoma."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f004",
+      "f007"
+     ],
+     "5": [
+      "f008",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f004": "Several of my fingernails have brownish-black discoloration.",
+     "f007": "My toenails have dark streaks running along them too.",
+     "f008": "I have bullous pemphigoid; it's in remission, and I'm here for my routine follow-up.",
+     "f012": "I'm White (Caucasian)."
+    }
+   }
+  },
+  "mcr-test-11154": {
+   "a12a": {
+    "target": "f006",
+    "item": "when the symptoms started",
+    "text": "The symptoms began about two weeks after I started taking Sai-rei-to.",
+    "reason": "The temporal relationship between starting the herbal medicine and the onset of symptoms is the key clue for a drug-induced etiology."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a cancer in my chest",
+    "item": "smoking",
+    "text": "I used to smoke, but I've stopped.",
+    "reason": "A history of smoking is the most significant risk factor for lung cancer among the listed options."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f004",
+      "f005"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f014"
+     ],
+     "5": [
+      "f007",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f006": "The symptoms began about two weeks after I started taking Sai-rei-to.",
+     "f014": "Both of my lower legs are swollen.",
+     "f007": "I started a herbal medicine called Sai-rei-to 25 days ago.",
+     "f013": "I have chronic kidney disease."
+    }
+   }
+  },
+  "mcr-test-11265": {
+   "a12a": {
+    "target": "f009",
+    "item": "darkening of the skin",
+    "text": "My skin has recently become more tanned.",
+    "reason": "Hyperpigmentation is a specific clinical sign of primary adrenal insufficiency caused by elevated ACTH, distinguishing it from secondary causes."
+   },
+   "a12a_anchor": {
+    "target": "f007",
+    "anchor": "pancreatic cancer",
+    "item": "weight loss",
+    "text": "I've lost 6 kg over the past month without trying.",
+    "reason": "Unintentional weight loss is a classic red flag symptom strongly associated with pancreatic cancer, whereas the other entries point to benign causes like thyroid issues or acute infections."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f003"
+     ],
+     "2": [
+      "f004",
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f007",
+      "f008"
+     ],
+     "5": [
+      "f010",
+      "f012",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f004": "It's been going on for about a month.",
+     "f005": "The nausea and vomiting started 5 days ago.",
+     "f006": "For about a month I haven't had much appetite.",
+     "f007": "I've lost 6 kg over the past month without trying.",
+     "f008": "Over the past month I've had occasional vague belly pain.",
+     "f010": "I've had an underactive thyroid for 17 years.",
+     "f012": "Several months ago I switched from levothyroxine to animal thyroid extract.",
+     "f013": "A week ago I started trimethoprim-sulfamethoxazole, 160 mg twice a day."
+    }
+   }
+  },
+  "mcr-test-11394": {
+   "a12a": {
+    "target": "f013",
+    "item": "dry eye",
+    "text": "Since I started CPAP, my right eye has felt drier than usual when I wake up.",
+    "reason": "The history of recent CPAP use causing air leakage and subsequent dry eye is the specific precipitating factor for marginal keratitis in this context."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a herpes infection in my eye",
+    "item": "laser eye surgery",
+    "text": "Six months ago I had SMILE laser vision correction on both eyes, with no complications.",
+    "reason": "The history of laser eye surgery is a significant risk factor for herpetic keratitis due to potential reactivation of latent HSV in the cornea."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f004",
+      "f005"
+     ],
+     "2": [
+      "f002",
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f013"
+     ],
+     "5": [
+      "f010",
+      "f012"
+     ]
+    },
+    "texts": {
+     "f002": "It's been red for 5 days.",
+     "f006": "The light sensitivity, the pain and the blurriness started 3 days ago.",
+     "f013": "Since I started CPAP, my right eye has felt drier than usual when I wake up.",
+     "f010": "Six months ago I had SMILE laser vision correction on both eyes, with no complications.",
+     "f012": "Two weeks ago I started using a CPAP machine at night."
+    }
+   }
+  },
+  "mcr-test-11647": {
+   "a12a": {
+    "target": "f020",
+    "item": "methotrexate",
+    "text": "I've taken methotrexate tablets, 2.5 mg a day, for my rheumatoid arthritis for more than 30 years.",
+    "reason": "The patient's long-term use of methotrexate is the specific exposure required to diagnose methotrexate pneumonitis, linking the respiratory symptoms to the medication."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a chest infection",
+    "item": "shortness of breath: course",
+    "text": "It has been getting steadily worse.",
+    "reason": "The progressive worsening of shortness of breath is a key clinical feature that supports the diagnosis of bacterial pneumonia over other causes."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f020",
+      "f018",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f004": "Both started about a month ago.",
+     "f020": "I've taken methotrexate tablets, 2.5 mg a day, for my rheumatoid arthritis for more than 30 years.",
+     "f018": "I have rheumatoid arthritis, and it has been well controlled.",
+     "f017": "I have high blood pressure."
+    }
+   }
+  },
+  "mcr-test-11820": {
+   "a12a": {
+    "target": "f010",
+    "item": "neck pain: aggravating",
+    "text": "It gets worse when I move my neck or press on the spot.",
+    "reason": "The presence of tenderness to palpation over the carotid artery is the hallmark clinical sign of idiopathic carotidynia."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "an aneurysm",
+    "item": "neck pain: location",
+    "text": "It's centered on one spot on the left side of my neck.",
+    "reason": "A focal, constant, and intense pain centered on one spot in the neck is a classic presentation of a carotid or vertebral artery dissection, which is a type of aneurysm or vascular pathology often mistaken for or associated with aneurysmal disease in this context, whereas the other options are non-specific or point to other conditions like tension headache or general musculoskeletal pain."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f003",
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f004"
+     ],
+     "3": [
+      "f005",
+      "f006"
+     ],
+     "4": [],
+     "5": []
+    },
+    "texts": {
+     "f002": "It started 5 days ago.",
+     "f004": "It started 24 hours ago.",
+     "f005": "It's a throbbing pain.",
+     "f006": "It's intense."
+    }
+   }
+  },
+  "mcr-test-11842": {
+   "a12a": {
+    "target": "f007",
+    "item": "what came before the symptoms",
+    "text": "It started about 2 weeks after my first dose of the Sinopharm COVID-19 vaccine.",
+    "reason": "The temporal association with the recent Sinopharm vaccine is the specific etiological clue that distinguishes acute cerebellitis from other causes of ataxia."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "multiple sclerosis",
+    "item": "course of the symptoms",
+    "text": "These have all been getting worse.",
+    "reason": "The relapsing-remitting nature of symptoms (getting worse) is a hallmark clinical feature of Multiple Sclerosis, distinguishing it from acute single-episode conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f004"
+     ],
+     "2": [
+      "f006"
+     ],
+     "3": [
+      "f005"
+     ],
+     "4": [
+      "f002"
+     ],
+     "5": [
+      "f008"
+     ]
+    },
+    "texts": {
+     "f006": "All of this started 10 days ago.",
+     "f005": "It's so bad that I can't stand up without help.",
+     "f002": "These have all been getting worse.",
+     "f008": "I've had my first dose of the Sinopharm COVID-19 vaccine."
+    }
+   }
+  },
+  "mcr-test-11855": {
+   "a12a": {
+    "target": "f008",
+    "item": "heart bypass surgery",
+    "text": "Four weeks ago I had heart bypass surgery, with grafts to two arteries (the LAD and the posterior descending artery).",
+    "reason": "Recent cardiac surgery is the most common cause of constrictive pericarditis, making this history the key differentiator from other causes of heart failure."
+   },
+   "a12a_anchor": {
+    "target": "f009",
+    "anchor": "a problem with my new heart valve",
+    "item": "heart valve replacement",
+    "text": "In the same operation my aortic valve was replaced with a tissue (bioprosthetic) valve.",
+    "reason": "The entry explicitly states the patient has a prosthetic aortic valve, which is the anatomical prerequisite for the condition of prosthetic valve dysfunction."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f003",
+      "f004"
+     ],
+     "2": [
+      "f007"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f008",
+      "f009",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f007": "All of this started about a week ago.",
+     "f008": "Four weeks ago I had heart bypass surgery, with grafts to two arteries (the LAD and the posterior descending artery).",
+     "f009": "In the same operation my aortic valve was replaced with a tissue (bioprosthetic) valve.",
+     "f010": "I have coronary artery disease in several arteries."
+    }
+   }
+  },
+  "mcr-test-12081": {
+   "a12a": {
+    "target": "f003",
+    "item": "diabetes",
+    "text": "I've had type 1 diabetes for eight years, and it's well controlled.",
+    "reason": "Type 1 diabetes is an autoimmune disease that is strongly associated with other autoimmune conditions, such as autoimmune thyroiditis (Hashimoto's or Graves' disease), making this history the most critical clue for the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "Graves' disease",
+    "reason": "None of the entries provide specific symptoms or signs (such as goiter, exophthalmos, or tachycardia) that point to Graves' disease; the listed entries relate to diabetes management or demographics."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f003",
+      "f004",
+      "f006"
+     ]
+    },
+    "texts": {
+     "f002": "It happened over the past three months.",
+     "f003": "I've had type 1 diabetes for eight years, and it's well controlled.",
+     "f004": "My blood sugar averages about 150 mg/dL, and my A1c is 7.5%.",
+     "f006": "I use an insulin pump."
+    }
+   }
+  },
+  "mcr-test-12090": {
+   "a12a": {
+    "target": "f003",
+    "item": "mefloquine",
+    "text": "For malaria prevention I took mefloquine 250 mg once a week, and I kept taking it for six months.",
+    "reason": "The entry explicitly identifies the ingestion of mefloquine, which is the direct cause of the toxicity diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "multiple sclerosis",
+    "item": "when the symptoms started",
+    "text": "It started about two weeks after I began taking mefloquine, with anxiety and vivid dreams.",
+    "reason": "The patient's history of mefloquine use and the specific progression of symptoms (anxiety, vivid dreams, then balance and confusion) are characteristic of mefloquine-induced neurotoxicity, which can mimic or be misdiagnosed as multiple sclerosis, making this the most relevant fact for considering that condition in the differential."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f016",
+      "f017",
+      "f011"
+     ],
+     "2": [
+      "f019",
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f022",
+      "f023",
+      "f012"
+     ],
+     "5": [
+      "f002",
+      "f003",
+      "f009"
+     ]
+    },
+    "texts": {
+     "f019": "Each one lasts 20 to 30 minutes.",
+     "f004": "It started about two weeks after I began taking mefloquine, with anxiety and vivid dreams.",
+     "f022": "On top of the attacks, I feel a constant spinning dizziness.",
+     "f023": "I've been falling.",
+     "f012": "I have trouble concentrating.",
+     "f002": "Years ago I was deployed to East Africa.",
+     "f003": "For malaria prevention I took mefloquine 250 mg once a week, and I kept taking it for six months.",
+     "f009": "Four months into the deployment I came under enemy gunfire."
+    }
+   }
+  },
+  "mcr-test-12132": {
+   "a12a": {
+    "target": "f006",
+    "item": "blow to the chest in the accident",
+    "text": "In that accident I hit my chest on the steering wheel.",
+    "reason": "The specific mechanism of injury (blow to the chest) is the critical historical detail that links the trauma to the coronary artery injury."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "myocarditis",
+    "reason": "None of the entries provide a specific clinical feature (such as a preceding viral prodrome, specific ECG changes, or biomarker elevation) that points to viral myocarditis; the entries describe general heart failure symptoms or trauma history which are non-specific or point to other etiologies."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f009",
+      "f011",
+      "f010"
+     ],
+     "5": [
+      "f005",
+      "f006"
+     ]
+    },
+    "texts": {
+     "f004": "Both have been going on for several months; they began after a car accident 5 months ago.",
+     "f009": "I get short of breath when I lie flat.",
+     "f011": "I wake up at night short of breath.",
+     "f010": "I get chest tightness on and off.",
+     "f005": "I was in a car accident 5 months ago.",
+     "f006": "In that accident I hit my chest on the steering wheel."
+    }
+   }
+  },
+  "mcr-test-12157": {
+   "a12a": {
+    "target": "f008",
+    "item": "cough: triggered by pressing on the neck lump",
+    "text": "Pressing on the lump in my neck sets off the cough every time.",
+    "reason": "The symptom of coughing triggered by pressing on the neck lump (Tillaux's sign) is a specific clinical indicator for a vagal paraganglioma located in the carotid sheath."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "throat cancer",
+    "item": "hoarse voice",
+    "text": "My voice goes hoarse on and off.",
+    "reason": "Hoarseness suggests laryngeal or hypopharyngeal involvement, which is characteristic of head and neck cancer, whereas the other entries are non-specific or point to respiratory issues."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f004"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [
+      "f005",
+      "f007"
+     ],
+     "4": [
+      "f010",
+      "f011"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f003": "Both started about 4 weeks ago.",
+     "f005": "It's a dry cough; nothing comes up.",
+     "f007": "It comes in severe coughing fits.",
+     "f010": "The coughing fits sometimes make me throw up.",
+     "f011": "My voice goes hoarse on and off."
+    }
+   }
+  },
+  "mcr-test-12205": {
+   "a12a": {
+    "target": "f004",
+    "item": "elbow pain: context",
+    "text": "It started when I was sitting on the ground and leaned back onto my hand on something hard, so my weight pushed through the arm with the elbow straight and bent backwards.",
+    "reason": "The mechanism of injury involving hyperextension with the elbow straight is the specific traumatic event that causes posterior elbow impingement."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "a broken bone that never healed properly",
+    "item": "elbow pain: course",
+    "text": "It has never gone away; it's been going on for a year now.",
+    "reason": "The entry describing the pain as never going away and persisting for a year directly supports the diagnosis of a non-united fracture (malunion or non-union) by indicating a chronic, unresolved injury state."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f008"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [
+      "f005"
+     ],
+     "4": [],
+     "5": []
+    },
+    "texts": {
+     "f003": "It came on suddenly about a year ago.",
+     "f005": "It was severe when it happened."
+    }
+   }
+  },
+  "mcr-test-12209": {
+   "a12a": {
+    "target": "f006",
+    "item": "smoldering myeloma",
+    "text": "I've had IgG kappa smoldering myeloma for 13 years.",
+    "reason": "The presence of smoldering myeloma provides the necessary underlying malignancy context to link the skin findings to a paraneoplastic etiology."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "melanoma",
+    "item": "how long the skin patches have been there",
+    "text": "I've had the patches on my belly and back and the patch on my calf for 2 years.",
+    "reason": "The description of a dark, raised patch on the calf in f004 is the primary symptom, and f005 adds the critical detail of a 2-year duration, which is a key risk factor and clinical feature for melanoma (slow-growing, persistent lesion), whereas the other entries point to inflammatory or autoimmune conditions like lupus."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f004"
+     ],
+     "2": [
+      "f005"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f006",
+      "f007",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f005": "I've had the patches on my belly and back and the patch on my calf for 2 years.",
+     "f006": "I've had IgG kappa smoldering myeloma for 13 years.",
+     "f007": "Six years ago I had similar skin patches, and at first I was told it was tumid lupus.",
+     "f008": "I used steroid creams on those earlier patches."
+    }
+   }
+  },
+  "mcr-test-12365": {
+   "a12a": {
+    "target": "f008",
+    "item": "Simbrinza eye drops",
+    "text": "Three weeks ago I was started on Simbrinza drops (brimonidine 0.1%/brinzolamide 0.1%) for my glaucoma, twice a day in both eyes.",
+    "reason": "The recent initiation of Simbrinza, which contains brimonidine (an alpha-agonist that can cause mydriasis and pupillary block), is the specific precipitating factor for drug-induced acute angle closure."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "a stroke",
+    "item": "loss of vision: onset",
+    "text": "It came on suddenly.",
+    "reason": "Sudden onset of vision loss is a hallmark symptom of a posterior circulation stroke (e.g., PCA infarct), distinguishing it from chronic conditions like macular degeneration or glaucoma."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f004",
+      "f006",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f002": "It came on suddenly.",
+     "f004": "I've had cataract surgery with artificial lenses put in both eyes.",
+     "f006": "I have open-angle glaucoma.",
+     "f008": "Three weeks ago I was started on Simbrinza drops (brimonidine 0.1%/brinzolamide 0.1%) for my glaucoma, twice a day in both eyes."
+    }
+   }
+  },
+  "mcr-test-12467": {
+   "a12a": {
+    "target": "f005",
+    "item": "previous episodes of weakness",
+    "text": "I've had several episodes of similar weakness before, brought on by exertion.",
+    "reason": "Recurrent episodes of weakness are a hallmark of Gitelman's syndrome, distinguishing it from acute causes like the recent infection or surgery."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "myasthenia gravis",
+    "item": "muscle weakness: location",
+    "text": "It's in the muscles near my shoulders and hips, the upper arms and thighs, on both sides.",
+    "reason": "Proximal muscle weakness (shoulders and hips) is a hallmark clinical feature of myasthenia gravis, whereas the other entries describe unrelated past events or general symptoms."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f005"
+     ],
+     "5": [
+      "f006",
+      "f007",
+      "f008"
+     ]
+    },
+    "texts": {
+     "f004": "After the ulcer was treated I still felt listless, and I had this weakness.",
+     "f005": "I've had several episodes of similar weakness before, brought on by exertion.",
+     "f006": "Three weeks ago an insect bit me on the left thigh.",
+     "f007": "The bite turned into a deep ulcer.",
+     "f008": "I needed surgery to clean out the ulcer."
+    }
+   }
+  },
+  "mcr-test-12512": {
+   "a12a": {
+    "target": "f008",
+    "item": "chest pain",
+    "text": "I have some chest pain.",
+    "reason": "Chest pain is a key symptom of cardiac involvement, which is a major cause of morbidity and a critical diagnostic clue for Idiopathic Hypereosinophilic Syndrome."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "lung cancer",
+    "item": "cough",
+    "text": "I have a cough.",
+    "reason": "A cough is a direct respiratory symptom that raises suspicion for lung pathology, whereas a thigh lump is unrelated to lung cancer."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": []
+    }
+   }
+  },
+  "mcr-test-12811": {
+   "a12a": {
+    "target": "f009",
+    "item": "diarrhoea",
+    "text": "I had watery diarrhoea.",
+    "reason": "A history of recent gastrointestinal infection (diarrhea) is the key antecedent event that distinguishes reactive arthritis from other causes of polyarthritis in a young adult."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "an infection in my joints",
+    "item": "red skin over the right ankle",
+    "text": "The skin over my right ankle is red.",
+    "reason": "Redness over the joint is a classic sign of inflammation and infection, strongly supporting a diagnosis of septic arthritis over other causes of joint pain."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f005"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f003",
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f008"
+     ]
+    },
+    "texts": {
+     "f004": "It's been going on for a week.",
+     "f003": "It's both knees, both ankles, my right shoulder and my right wrist.",
+     "f006": "The skin over my right ankle is red.",
+     "f007": "There's a bruise-like swelling under the skin over my right ankle.",
+     "f008": "I had a cold before this started."
+    }
+   }
+  },
+  "mcr-test-13031": {
+   "a12a": {
+    "target": "f012",
+    "item": "poor diet",
+    "text": "I admit my diet is poor.",
+    "reason": "Folate deficiency is primarily caused by nutritional insufficiency, making a poor diet the most direct and necessary clue to identify the underlying etiology of the optic neuropathy."
+   },
+   "a12a_anchor": {
+    "target": "f002",
+    "anchor": "multiple sclerosis",
+    "item": "worsening vision: location",
+    "text": "It's both eyes.",
+    "reason": "Bilateral visual involvement is a key feature distinguishing demyelinating optic neuritis (associated with MS) from other causes of vision loss."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f006",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f003": "It's been going on for 2 weeks.",
+     "f006": "A month ago I was prescribed reading glasses.",
+     "f010": "I smoke 20 cigarettes a day."
+    }
+   }
+  },
+  "mcr-test-13161": {
+   "a12a": {
+    "target": "f019",
+    "item": "response to the earlier treatments",
+    "text": "None of those treatments improved my symptoms.",
+    "reason": "The failure of multiple broad-spectrum antimicrobial and antiviral agents to resolve the symptoms is a critical clue that the etiology is inflammatory (GCA) rather than infectious, which is the primary differential for tongue ulcers."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "tongue cancer",
+    "item": "tongue pain, ulcer and painful swallowing: course",
+    "text": "They've been getting steadily worse.",
+    "reason": "A tongue ulcer that has been present for 2 weeks and is steadily worsening is a classic red flag for tongue cancer, whereas acute infections typically resolve or respond to the antibiotics and antivirals listed in the other entries."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f003"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f015",
+      "f016",
+      "f017"
+     ]
+    },
+    "texts": {
+     "f004": "They started 2 weeks ago.",
+     "f006": "Because of it I've become dehydrated.",
+     "f007": "Before the ulcer formed, my tongue turned blue.",
+     "f015": "Before coming here I was first treated with trimethoprim-sulfamethoxazole.",
+     "f016": "Then I was given amoxicillin-clavulanate.",
+     "f017": "After that I was given acyclovir."
+    }
+   }
+  },
+  "mcr-test-13248": {
+   "a12a": {
+    "target": "f010",
+    "item": "skull fracture three weeks ago",
+    "text": "Three weeks ago I was in hospital with a fracture on the right side of my skull after a fall.",
+    "reason": "A history of skull fracture is the primary predisposing factor for cerebral salt wasting, distinguishing it from other causes of hyponatremia."
+   },
+   "a12a_anchor": {
+    "target": "f004",
+    "anchor": "a stroke",
+    "item": "dizziness",
+    "text": "I feel dizzy.",
+    "reason": "Dizziness is a common neurological symptom associated with stroke or TIA, whereas the other entries are either risk factors, unrelated injuries, or social history."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f004"
+     ],
+     "5": [
+      "f010",
+      "f012",
+      "f013"
+     ]
+    },
+    "texts": {
+     "f004": "I feel dizzy.",
+     "f010": "Three weeks ago I was in hospital with a fracture on the right side of my skull after a fall.",
+     "f012": "I have high blood pressure.",
+     "f013": "I take candesartan for my blood pressure."
+    }
+   }
+  },
+  "mcr-test-13753": {
+   "a12a": {
+    "target": "f007",
+    "item": "gallstones",
+    "text": "I had gallstones.",
+    "reason": "A history of gallstones and cholecystectomy in a young adult is a classic clinical indicator of chronic hemolysis, which strongly points toward hereditary spherocytosis."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "malaria",
+    "item": "fever and chills: duration",
+    "text": "The fever and chills started 5 days ago.",
+    "reason": "The entry specifies the duration of the fever and chills, which are the hallmark symptoms of malaria, helping to establish the acute timeline necessary for the diagnosis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002",
+      "f004"
+     ],
+     "2": [
+      "f005",
+      "f003"
+     ],
+     "3": [],
+     "4": [],
+     "5": [
+      "f006",
+      "f008",
+      "f010"
+     ]
+    },
+    "texts": {
+     "f005": "That started 2 days ago.",
+     "f003": "The fever and chills started 5 days ago.",
+     "f006": "Three months ago I had my gallbladder removed by keyhole surgery.",
+     "f008": "The gallstones caused an infection of the bile ducts, cholangitis, and that's why my gallbladder was taken out.",
+     "f010": "I'm Asian."
+    }
+   }
+  },
+  "mcr-test-13885": {
+   "a12a": {
+    "target": "f007",
+    "item": "hand joint pain and swelling: which joints",
+    "text": "It's the knuckles at the base of my index and middle fingers, on both hands.",
+    "reason": "The specific involvement of the second and third metacarpophalangeal joints is a classic and highly specific clinical sign of hereditary hemochromatosis, distinguishing it from other causes of joint pain."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "rheumatoid arthritis",
+    "item": "fingers pulled into the palm",
+    "text": "On both hands some fingers are badly pulled in towards the palm and won't straighten.",
+    "reason": "Fingers pulled into the palm (ulnar deviation) is a classic deformity associated with advanced rheumatoid arthritis, distinguishing it from other joint conditions like gout."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003",
+      "f005",
+      "f006"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f007",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f013",
+      "f015",
+      "f016"
+     ]
+    },
+    "texts": {
+     "f007": "It's the knuckles at the base of my index and middle fingers, on both hands.",
+     "f010": "On both hands some fingers are badly pulled in towards the palm and won't straighten.",
+     "f011": "Both of my breasts have got bigger.",
+     "f013": "Two years ago I was diagnosed with gout in my knees and ankles.",
+     "f015": "I have stage III high blood pressure, but it's well controlled.",
+     "f016": "I was recently diagnosed with type 2 diabetes."
+    }
+   }
+  },
+  "mcr-test-13891": {
+   "a12a": {
+    "target": "f011",
+    "item": "course of the symptoms",
+    "text": "Everything got worse over the first 3 years, but it has stayed the same since then.",
+    "reason": "The combination of a young male patient with unilateral hand muscle wasting and a self-limiting course (worsening for 3 years then plateauing) is the classic clinical presentation of Hirayama disease."
+   },
+   "a12a_anchor": {
+    "target": "f006",
+    "anchor": "ALS",
+    "item": "hand muscle wasting",
+    "text": "Over the same years the muscles of my right hand have been getting thinner.",
+    "reason": "Hand muscle wasting is a hallmark sign of ALS (lower motor neuron involvement) that distinguishes it from other causes of weakness like tremor or simple fatigue."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003",
+      "f011"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f005",
+      "f006"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f003": "It came on gradually, more than 5 years ago.",
+     "f011": "Everything got worse over the first 3 years, but it has stayed the same since then.",
+     "f004": "The first thing I noticed was that I couldn't keep a grip on things I was holding.",
+     "f005": "Gradually it became hard to do fine things like buttoning my clothes, writing, combing my hair and using cutlery.",
+     "f006": "Over the same years the muscles of my right hand have been getting thinner."
+    }
+   }
+  },
+  "mcr-test-13993": {
+   "a12a": {
+    "target": "f004",
+    "item": "skin rash: context",
+    "text": "It appeared 24 hours after I ate raw shiitake mushrooms.",
+    "reason": "The specific history of consuming raw shiitake mushrooms is the defining etiological factor for this condition."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "scabies",
+    "item": "skin rash: appearance",
+    "text": "It's red to purplish streaks in lines, like whip marks.",
+    "reason": "The description of red to purplish streaks in lines resembling whip marks is a classic clinical sign of scabies (burrows)."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f007"
+     ],
+     "5": [
+      "f008",
+      "f009"
+     ]
+    },
+    "texts": {
+     "f003": "It came on suddenly.",
+     "f007": "I also have separate little pus spots on my body and in my skin folds.",
+     "f008": "Ten days ago I ate partially cooked shiitake mushrooms.",
+     "f009": "Six days after that, I ate raw shiitake mushrooms."
+    }
+   }
+  },
+  "mcr-test-14153": {
+   "a12a": {
+    "target": "f017",
+    "item": "going into my daughter's room",
+    "text": "One week before the tics started I went into my daughter's room, the first time since the separation.",
+    "reason": "The sudden onset of symptoms following a specific, emotionally charged event (entering the daughter's room after separation) is the strongest indicator of a psychogenic (functional) etiology rather than a neurological one."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "anchor": "multiple sclerosis",
+    "reason": "None of the entries describe neurological symptoms typical of multiple sclerosis (such as optic neuritis, sensory loss, or motor weakness); the listed entries describe tics, sounds, and psychiatric stressors which point towards Tourette's syndrome or anxiety rather than MS."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f007",
+      "f003"
+     ],
+     "3": [
+      "f006"
+     ],
+     "4": [
+      "f009",
+      "f010",
+      "f011"
+     ],
+     "5": [
+      "f015",
+      "f017",
+      "f019"
+     ]
+    },
+    "texts": {
+     "f007": "The whistling came after the face twitches started.",
+     "f003": "It all started suddenly, 3 days ago.",
+     "f006": "They're whistling sounds.",
+     "f009": "I've been more jumpy than usual.",
+     "f010": "I've been sleeping less.",
+     "f011": "I keep going over things in my head and can't stop.",
+     "f015": "My wife and I separated four months ago.",
+     "f017": "One week before the tics started I went into my daughter's room, the first time since the separation.",
+     "f019": "A former coworker of mine has Tourette's syndrome."
+    }
+   }
+  }
+ }
+}

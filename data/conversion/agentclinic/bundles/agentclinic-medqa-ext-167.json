@@ -1,0 +1,109 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-167", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 40, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "muscle weakness", "aliases": ["weakness", "weak muscles"], "text": "My muscles have become weak, and it's affecting my daily activities.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "muscle weakness: course", "parent": "f001", "attribute": "course", "text": "It's been getting progressively worse over the past few months.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "difficulty climbing stairs", "aliases": ["trouble with stairs"], "text": "It's hard for me to climb stairs.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "difficulty brushing my hair", "aliases": ["trouble lifting my arms"], "text": "It's hard for me to brush my hair.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "headache", "text": "I haven't had any headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "changes in vision", "aliases": ["vision problems", "blurred vision"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f007", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "medications", "aliases": ["medicines"], "text": "I'm not taking any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "rash", "aliases": ["skin rash"], "text": "I haven't had any rash.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f014", "item": "joint pain", "text": "I don't have any joint pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f015", "item": "difficulty swallowing", "aliases": ["dysphagia", "trouble swallowing"], "text": "I don't have any trouble swallowing.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "trouble breathing", "aliases": ["breathing difficulties", "shortness of breath"], "text": "I haven't had any trouble breathing.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-167",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "cranial nerves", "result": "Normal."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power"], "result": "Reduced strength in the proximal muscle groups of both upper and lower limbs."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["cerebellar examination", "finger-nose test"], "result": "Normal."},
+      {"id": "x010", "kind": "exam", "system": "musculoskeletal", "name": "musculoskeletal examination", "aliases": ["muscle examination", "muscle tenderness", "range of motion", "joint examination"], "result": "Inspection: no obvious muscle wasting or deformities. Palpation: muscles tender in the shoulders and thighs. Range of motion: limited due to pain and weakness."},
+      {"id": "x011", "kind": "test", "name": "creatine kinase", "aliases": ["CK", "CPK", "creatine phosphokinase", "muscle enzymes"], "result": "Elevated."},
+      {"id": "x012", "kind": "test", "name": "aldolase", "result": "Elevated."},
+      {"id": "x013", "kind": "test", "name": "liver enzymes", "aliases": ["liver function tests", "LFTs", "transaminases", "AST", "ALT"], "result": "Slightly elevated."},
+      {"id": "x014", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Normal."},
+      {"id": "x015", "kind": "test", "name": "muscle biopsy", "aliases": ["biopsy", "muscle histopathology"], "result": "CD8+ lymphocyte infiltration in the endomysium."},
+      {"id": "x016", "kind": "test", "name": "electromyography", "aliases": ["EMG", "nerve conduction study"], "result": "Abnormalities consistent with inflammatory myopathy."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-167",
+    "diagnosis": "Polymyositis",
+    "aliases": ["PM", "idiopathic polymyositis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-167",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-167-p001"], "f002": ["agentclinic-medqa-ext-167-p001"],
+      "f003": ["agentclinic-medqa-ext-167-p001", "agentclinic-medqa-ext-167-p002"],
+      "f004": ["agentclinic-medqa-ext-167-p001", "agentclinic-medqa-ext-167-p003"],
+      "f005": ["agentclinic-medqa-ext-167-p001", "agentclinic-medqa-ext-167-p004"],
+      "f006": ["agentclinic-medqa-ext-167-p001", "agentclinic-medqa-ext-167-p005"],
+      "f007": ["agentclinic-medqa-ext-167-p006"], "f008": ["agentclinic-medqa-ext-167-p006"],
+      "f009": ["agentclinic-medqa-ext-167-p007"], "f010": ["agentclinic-medqa-ext-167-p007"], "f011": ["agentclinic-medqa-ext-167-p007"],
+      "f012": ["agentclinic-medqa-ext-167-p008"], "f013": ["agentclinic-medqa-ext-167-p008"], "f014": ["agentclinic-medqa-ext-167-p008"],
+      "f015": ["agentclinic-medqa-ext-167-p008"], "f016": ["agentclinic-medqa-ext-167-p008"]
+    },
+    "quotes": {
+      "f001": "Muscle weakness affecting daily activities", "f002": "progressively getting worse over the past few months",
+      "f008": "Not currently on any medications.", "f010": "occasional alcohol use", "f011": "Employed as a school teacher.",
+      "f015": "dysphagia", "f016": "respiratory difficulties"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-167-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-167-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-167-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-167-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-167-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Muscle_Strength", "source_text": "Reduced strength in proximal muscle groups of both upper and lower limbs", "exam_ids": ["agentclinic-medqa-ext-167-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-167-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensation", "source_text": "Intact", "exam_ids": ["agentclinic-medqa-ext-167-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Coordination", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-167-e009"]},
+      "x010": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection + Physical_Examination_Findings.Musculoskeletal_Examination.Palpation + Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion", "source_text": "No obvious muscle wasting or deformities | Muscles are tender to palpation in the shoulders and thighs | Limited due to pain and weakness", "exam_ids": ["agentclinic-medqa-ext-167-e010", "agentclinic-medqa-ext-167-e011", "agentclinic-medqa-ext-167-e012"]},
+      "x011": {"source": "Test_Results.Blood_Tests.Creatine_Kinase", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-167-i001"]},
+      "x012": {"source": "Test_Results.Blood_Tests.Aldolase", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-167-i002"]},
+      "x013": {"source": "Test_Results.Blood_Tests.Liver_Enzymes", "source_text": "Slightly elevated", "exam_ids": ["agentclinic-medqa-ext-167-i003"]},
+      "x014": {"source": "Test_Results.Blood_Tests.Erythrocyte_Sedimentation_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-167-i004"]},
+      "x015": {"source": "Test_Results.Muscle_Biopsy.Findings", "source_text": "CD8+ lymphocyte infiltration in the endomysium", "exam_ids": ["agentclinic-medqa-ext-167-i005"]},
+      "x016": {"source": "Test_Results.Electromyography.Findings", "source_text": "Abnormalities consistent with inflammatory myopathy", "exam_ids": ["agentclinic-medqa-ext-167-i006"]}
+    },
+    "finding_flags": {
+      "x013": ["Liver enzymes are reported as a single 'Slightly elevated' value without naming AST/ALT; kept as one record."],
+      "x016": ["The EMG result names a broader category ('inflammatory myopathy'), not the gold diagnosis; not listed as leakage."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The muscles are tender on palpation and the range of motion is limited by pain, although the patient denies joint pain and no muscle pain is in the history.",
+      "Liver enzymes are given without individual values."
+    ],
+    "notes": [
+      "The progressive course over the past few months is a child of the muscle weakness (f002); stair-climbing and hair-brushing difficulty are its functional consequences and are separate facts, each citing the history and its Secondary_Symptoms line.",
+      "The headache and vision denials appear in both the history and the Secondary_Symptoms; one fact each.",
+      "Weakness facts use system 'neurological', as in the worked example.",
+      "Creatine kinase and aldolase are not a standard panel, so each is its own record."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with weakness in climbing stairs or brushing hair."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

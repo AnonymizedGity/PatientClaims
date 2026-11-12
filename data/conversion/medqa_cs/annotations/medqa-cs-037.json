@@ -1,0 +1,788 @@
+{
+  "case_id": "medqa-cs-037",
+  "demographics": {
+    "name": "Kenneth Klein",
+    "age": 55,
+    "sex": "male",
+    "setting": "clinic"
+  },
+  "opening_fact": {
+    "text": "Blood in my stool.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-037-f001",
+      "source_ids": [
+        "cc",
+        "medqa-cs-037-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Blood in the stool began 1 month ago.",
+      "quote": "Blood in my stool. / One month ago."
+    },
+    {
+      "id": "medqa-cs-037-f002",
+      "source_ids": [
+        "medqa-cs-037-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Notices blood every time he has a bowel movement.",
+      "quote": "I notice blood mixed in every time I have a bowel movement."
+    },
+    {
+      "id": "medqa-cs-037-f003",
+      "source_ids": [
+        "medqa-cs-037-p002",
+        "medqa-cs-037-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The blood is mixed in with the brown stool.",
+      "quote": "The blood is mixed in with the brown stool."
+    },
+    {
+      "id": "medqa-cs-037-f004",
+      "source_ids": [
+        "medqa-cs-037-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The blood is bright red.",
+      "quote": "Bright red."
+    },
+    {
+      "id": "medqa-cs-037-f005",
+      "source_ids": [
+        "medqa-cs-037-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No pain with bowel movements.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p005) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f006",
+      "source_ids": [
+        "medqa-cs-037-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has had constipation for a long time.",
+      "quote": "Well, I have had constipation for a long time"
+    },
+    {
+      "id": "medqa-cs-037-f007",
+      "source_ids": [
+        "medqa-cs-037-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Laxatives relieved the constipation somewhat at first, but later gave no relief at all.",
+      "quote": "At first, I got some relief from them, but now they are of no help to me at all."
+    },
+    {
+      "id": "medqa-cs-037-f008",
+      "source_ids": [
+        "medqa-cs-037-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has had two bowel movements a week for the past 6 months.",
+      "quote": "I have had two bowel movements a week for the past 6 months."
+    },
+    {
+      "id": "medqa-cs-037-f009",
+      "source_ids": [
+        "medqa-cs-037-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Diarrhea for the past 2 days.",
+      "quote": "I have had diarrhea for the past 2 days."
+    },
+    {
+      "id": "medqa-cs-037-f010",
+      "source_ids": [
+        "medqa-cs-037-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not feel that he has to go to the bathroom but can't.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Topic is 'Urgency' but the question describes an urge without being able to pass stool; the denial sits next to p010, where he reports 'a little' rectal spasm with urge.",
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p009) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f011",
+      "source_ids": [
+        "medqa-cs-037-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has a little spasm of the anal canal followed by an urge to use the bathroom.",
+      "quote": "A little."
+    },
+    {
+      "id": "medqa-cs-037-f012",
+      "source_ids": [
+        "medqa-cs-037-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Diarrhea three times a day.",
+      "quote": "Three times daily."
+    },
+    {
+      "id": "medqa-cs-037-f013",
+      "source_ids": [
+        "medqa-cs-037-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The diarrhea is watery and brown and contains blood.",
+      "quote": "It is watery, brown, and contains blood."
+    },
+    {
+      "id": "medqa-cs-037-f014",
+      "source_ids": [
+        "medqa-cs-037-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No mucus in the stool.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p013) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f015",
+      "source_ids": [
+        "medqa-cs-037-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No black stools.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p014) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f016",
+      "source_ids": [
+        "medqa-cs-037-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No fever.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p015) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f017",
+      "source_ids": [
+        "medqa-cs-037-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No chills.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p015) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f018",
+      "source_ids": [
+        "medqa-cs-037-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No abdominal pain.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f019",
+      "source_ids": [
+        "medqa-cs-037-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No nausea.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f020",
+      "source_ids": [
+        "medqa-cs-037-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vomiting.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f021",
+      "source_ids": [
+        "medqa-cs-037-p018"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Eats a lot of junk food.",
+      "quote": "I eat a lot of junk food."
+    },
+    {
+      "id": "medqa-cs-037-f022",
+      "source_ids": [
+        "medqa-cs-037-p018"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Eats a diet with no vegetables at all.",
+      "quote": "I don't eat vegetables at all."
+    },
+    {
+      "id": "medqa-cs-037-f023",
+      "source_ids": [
+        "medqa-cs-037-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has lost roughly 10 pounds in the last 6 months.",
+      "quote": "I've dropped roughly 10 pounds in the last 6 months."
+    },
+    {
+      "id": "medqa-cs-037-f024",
+      "source_ids": [
+        "medqa-cs-037-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in appetite; it has been the same.",
+      "quote": "My appetite has been the same."
+    },
+    {
+      "id": "medqa-cs-037-f025",
+      "source_ids": [
+        "medqa-cs-037-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "exposures",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has not traveled recently.",
+      "quote": "I haven't"
+    },
+    {
+      "id": "medqa-cs-037-f026",
+      "source_ids": [
+        "medqa-cs-037-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "concerns",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Is considering a family trip next week and wonders whether he should stay at home.",
+      "quote": "but I'm considering a family trip next week. Should I remain at home?"
+    },
+    {
+      "id": "medqa-cs-037-f027",
+      "source_ids": [
+        "medqa-cs-037-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "exposures",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No one around him has had diarrhea.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p022) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f028",
+      "source_ids": [
+        "medqa-cs-037-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Walks for half an hour every day.",
+      "quote": "I walk for half an hour every day."
+    },
+    {
+      "id": "medqa-cs-037-f029",
+      "source_ids": [
+        "medqa-cs-037-p024"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No problems urinating.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p024) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f030",
+      "source_ids": [
+        "medqa-cs-037-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Currently takes no medications.",
+      "quote": "No, I am not."
+    },
+    {
+      "id": "medqa-cs-037-f031",
+      "source_ids": [
+        "medqa-cs-037-p006",
+        "medqa-cs-037-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Used to take many laxatives for the constipation, such as bisacodyl; stopped all of them when the diarrhea started.",
+      "quote": "I keep taking laxatives. / I used to take many laxatives, such as bisacodyl, but I stopped all of them when the diarrhea started.",
+      "flags": [
+        "p006 says 'I keep taking laxatives' (present tense); p025 and the note say he stopped them when the diarrhea started 2 days ago. Recorded as resolved."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f032",
+      "source_ids": [
+        "medqa-cs-037-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Had bronchitis 3 weeks ago.",
+      "quote": "I experienced bronchitis 3 weeks ago"
+    },
+    {
+      "id": "medqa-cs-037-f033",
+      "source_ids": [
+        "medqa-cs-037-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Was treated with amoxicillin for the bronchitis 3 weeks ago.",
+      "quote": "which was treated with amoxicillin."
+    },
+    {
+      "id": "medqa-cs-037-f034",
+      "source_ids": [
+        "medqa-cs-037-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Had hemorrhoids removed 4 years ago.",
+      "quote": "I had hemorrhoids removed 4 years ago."
+    },
+    {
+      "id": "medqa-cs-037-f035",
+      "source_ids": [
+        "medqa-cs-037-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father died of colon cancer at age 55.",
+      "quote": "My father died at 55 of colon cancer."
+    },
+    {
+      "id": "medqa-cs-037-f036",
+      "source_ids": [
+        "medqa-cs-037-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Mother is alive and healthy.",
+      "quote": "My mother is alive and healthy."
+    },
+    {
+      "id": "medqa-cs-037-f037",
+      "source_ids": [
+        "medqa-cs-037-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as a lawyer.",
+      "quote": "Lawyer."
+    },
+    {
+      "id": "medqa-cs-037-f038",
+      "source_ids": [
+        "medqa-cs-037-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not drink alcohol.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p030) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f039",
+      "source_ids": [
+        "medqa-cs-037-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not use drugs.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p031) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f040",
+      "source_ids": [
+        "medqa-cs-037-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not smoke.",
+      "quote": "No, I am not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p032) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-037-f041",
+      "source_ids": [
+        "medqa-cs-037-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sexually active with his spouse.",
+      "quote": "With my spouse."
+    },
+    {
+      "id": "medqa-cs-037-f042",
+      "source_ids": [
+        "medqa-cs-037-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No known drug allergies.",
+      "quote": "None."
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Patient description: married with two children."
+    ],
+    "patient_questions": [
+      "My father was diagnosed with colon cancer. Is it possible that I could also develop it?",
+      "If the examinee mentions colonoscopy, ask: \"What does that word mean?\"",
+      "When asked about travel: \"I'm considering a family trip next week. Should I remain at home?\""
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "130/80 mm Hg",
+        "source_text": "BP: 130/80 mm Hg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98°F (36.9°C)",
+        "source_text": "Temp: 98°F (36.9°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "16/minute",
+        "source_text": "RR: 16/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "76/minute, regular",
+        "source_text": "HR: 76/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits",
+        "source_text": "VS: within normal limits (WNL)."
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "In no acute distress",
+        "source_text": "The patient is in no acute distress."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e003"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: Clear breath sounds bilaterally."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e004"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Regular rate and rhythm (RRR); normal S1S2; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e004"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "Normal S1 and S2",
+        "source_text": "Heart: Regular rate and rhythm (RRR); normal S1S2; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e004"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Regular rate and rhythm (RRR); normal S1S2; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Palpation",
+        "finding": "Soft, nondistended, nontender",
+        "source_text": "Abdomen: Soft, nondistended, nontender, (+) bowel sounds, no hepatosplenomegaly."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Bowel sounds",
+        "finding": "Present",
+        "source_text": "Abdomen: Soft, nondistended, nontender, (+) bowel sounds, no hepatosplenomegaly."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-037-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Liver and spleen",
+        "finding": "No hepatosplenomegaly",
+        "source_text": "Abdomen: Soft, nondistended, nontender, (+) bowel sounds, no hepatosplenomegaly."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Colorectal cancer",
+        "history_findings": [
+          "Blood mixed with stool for 1 month",
+          "Family history of colon cancer",
+          "Unintentional weight loss of 10 lbs."
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Hemorrhoids",
+        "history_findings": [
+          "History of hemorrhoids",
+          "Hematochezia"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Clostridium difficile colitis",
+        "history_findings": [
+          "Acute diarrhea",
+          "Recent antibiotic exposure"
+        ],
+        "exam_findings": []
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Diverticulosis",
+        "rationale": "Most common cause of major lower GI bleeding, but usually larger-volume, discrete, self-limited bleeds."
+      },
+      {
+        "diagnosis": "Angiodysplasia",
+        "rationale": "Common cause of lower GI bleeding, but cannot explain the other features of this presentation."
+      },
+      {
+        "diagnosis": "Ulcerative colitis",
+        "rationale": "Less likely given no abdominal pain and only recent onset of diarrhea and tenesmus in a month-long hematochezia."
+      }
+    ],
+    "leakage_check": [
+      {
+        "fact_id": "medqa-cs-037-f035",
+        "reason": "Legitimate family history, but it names the rank-1 diagnosis (colon cancer)."
+      }
+    ]
+  },
+  "qc": {
+    "source_issues": [
+      "Many negative answers use the template 'No, I am not.', which does not fit the questions grammatically (p005, p009, p013-p017, p022, p024, p025, p030-p032); read as 'No'.",
+      "p006 'I keep taking laxatives' (present tense) conflicts with p025 'I stopped all of them when the diarrhea started' and the note ('stopped after the onset of diarrhea 2 days ago'); laxative use recorded as resolved.",
+      "p009 topic is 'Urgency' but the question describes an urge without being able to pass stool (tenesmus-like); the denial sits next to p010 ('A little' anal spasm with urge) and the note's 'tenesmus'.",
+      "Doorway temperature '98°F (36.9°C)': 98°F is 36.7°C.",
+      "Note HPI 'History of constipation 6 months ago' differs from the script ('constipation for a long time'; two bowel movements a week for the past 6 months).",
+      "Note says '10-lb weight loss in 6 months despite a good appetite'; the script says the appetite 'has been the same'. Gold says 'Unintentional weight loss'; the script does not say whether the weight loss was intended.",
+      "Note PSH is in the first person ('I had hemorrhoids removed 4 years ago') and the SH says 'Sexually active with wife only'; the script says only 'With my spouse'.",
+      "The rectal exam is excluded from the examinee tasks; there are no rectal findings."
+    ],
+    "annotator_notes": [
+      "Constipation is kept current (f006, f008: 'for a long time', two bowel movements a week for the past 6 months) alongside the 2-day diarrhea; the script does not say the constipation has ended.",
+      "Laxatives: f031 is the medication fact (resolved, stopped when the diarrhea started); f007 keeps the lost effect of laxatives as a present, historical symptom attribute.",
+      "p002 and p003 both describe blood mixed with the stool; f002 keeps the frequency, f003 the mixing (with both sources), to avoid a duplicate.",
+      "p021 travel: no recent travel (absent) plus the planned family trip and his question, which is also listed in patient_questions.",
+      "'Married with two children' from the raw Patient Description is kept as an acting note.",
+      "leakage_check lists the father's colon cancer (f035) because it names the rank-1 diagnosis; the hemorrhoidectomy (f034) names the rank-2 diagnosis but is legitimate history and is not listed.",
+      "12 template answers (No, I am not.) checked against the June-2024 release: all are plain denials there; 14 facts confirmed."
+    ]
+  }
+}

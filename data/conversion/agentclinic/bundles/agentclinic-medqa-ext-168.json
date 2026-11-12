@@ -1,0 +1,109 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-168", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 55, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "wrist pain", "text": "Both of my wrists hurt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "knee pain", "text": "Both of my knees hurt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "how long the joint pain has been going on", "text": "I've had the wrist and knee pain for the last 10 years.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "morning stiffness", "aliases": ["stiff joints in the morning"], "text": "My joints are stiff in the morning.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "morning stiffness: duration", "parent": "f004", "attribute": "duration", "text": "The stiffness lasts about 50 minutes.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "joint swelling", "aliases": ["swollen joints"], "text": "My joints haven't been swollen.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "color changes in the fingers or toes", "aliases": ["Raynaud's", "fingers turning white or blue"], "text": "My fingers and toes don't change color.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "dry mouth or dry eyes", "aliases": ["dryness of mucous membranes", "dry mouth", "dry eyes"], "text": "I haven't had any dryness in my mouth or eyes.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "chills", "text": "I haven't had chills.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "other symptoms", "aliases": ["constitutional symptoms", "general symptoms"], "text": "Apart from my joints, I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "occupation", "aliases": ["job", "work", "sports"], "text": "I'm a retired professional athlete.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "heavy drinking", "aliases": ["alcohol", "drinking"], "text": "I don't drink alcohol excessively.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-168",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "musculoskeletal examination", "aliases": ["joint examination", "hand examination", "wrist examination", "knee examination", "range of motion"], "result": "Inspection: several non-tender nodules on the left 1st, 3rd and 4th distal interphalangeal joints. Palpation: tenderness at the base of both thumbs; enlarged knees with pain on passive range of motion. Range of motion: crepitus in the knees during passive movement; no significant limitation of movement due to pain."},
+      {"id": "x006", "kind": "test", "name": "wrist X-ray", "aliases": ["X-ray of the wrists", "wrist radiograph", "hand X-ray"], "result": "Joint space narrowing, osteophytes and subchondral sclerosis."},
+      {"id": "x007", "kind": "test", "name": "knee X-ray", "aliases": ["X-ray of the knees", "knee radiograph"], "result": "Joint space narrowing, osteophytes, subchondral sclerosis and subchondral cyst formation."},
+      {"id": "x008", "kind": "test", "name": "rheumatoid factor", "aliases": ["RF"], "result": "Negative."},
+      {"id": "x009", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Within normal limits."},
+      {"id": "x010", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Slightly elevated but non-specific."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-168",
+    "diagnosis": "Osteoarthritis",
+    "aliases": ["OA", "degenerative joint disease", "DJD", "osteoarthrosis", "degenerative arthritis", "wear-and-tear arthritis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-168",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-168-p001"], "f002": ["cc", "agentclinic-medqa-ext-168-p001"],
+      "f003": ["agentclinic-medqa-ext-168-p001"],
+      "f004": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p002"],
+      "f005": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p002"],
+      "f006": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p003"],
+      "f007": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p004"],
+      "f008": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p005"],
+      "f009": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p006"],
+      "f010": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p006"],
+      "f011": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p009"],
+      "f012": ["agentclinic-medqa-ext-168-p001", "agentclinic-medqa-ext-168-p007", "agentclinic-medqa-ext-168-p008"],
+      "f013": ["agentclinic-medqa-ext-168-p007"],
+      "f014": ["agentclinic-medqa-ext-168-p008"], "f015": ["agentclinic-medqa-ext-168-p008"]
+    },
+    "quotes": {
+      "f001": "Bilateral wrist and knee pain", "f002": "Bilateral wrist and knee pain", "f003": "for the last 10 years",
+      "f005": "lasting about 50 minutes", "f007": "No color changes in digits", "f008": "No dryness of mucous membranes",
+      "f011": "denies any constitutional symptoms / Systemic review is otherwise unremarkable.",
+      "f012": "retired professional athlete", "f013": "No significant past medical history reported.",
+      "f014": "does not smoke or drink alcohol excessively", "f015": "does not smoke or drink alcohol excessively"
+    },
+    "flags": {
+      "f008": ["'Dryness of mucous membranes' is rendered as dry mouth or dry eyes (the usual sicca question); other mucous membranes are not mentioned."],
+      "f014": ["'Does not smoke or drink alcohol excessively' is read as 'does not smoke' and 'does not drink excessively'; 'excessively' could also qualify smoking."],
+      "f015": ["Whether he drinks moderately is not stated; only excessive drinking is denied."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-168-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-168-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-168-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-168-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection + Physical_Examination_Findings.Musculoskeletal_Examination.Palpation + Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion", "source_text": "Several non-tender nodules on the left 1st, 3rd, and 4th distal interphalangeal joints. | Tenderness at the base of both thumbs. Enlarged knees with pain on passive range of motion. | Crepitus noticed in knees during passive movement. No significant limitation of movement due to pain.", "exam_ids": ["agentclinic-medqa-ext-168-e005", "agentclinic-medqa-ext-168-e006", "agentclinic-medqa-ext-168-e007"]},
+      "x006": {"source": "Test_Results.X-rays.Wrist.Findings", "source_text": "Joint space narrowing, osteophytes, and subchondral sclerosis.", "exam_ids": ["agentclinic-medqa-ext-168-i001"]},
+      "x007": {"source": "Test_Results.X-rays.Knee.Findings", "source_text": "Joint space narrowing, osteophytes, subchondral sclerosis, and subchondral cyst formation.", "exam_ids": ["agentclinic-medqa-ext-168-i002"]},
+      "x008": {"source": "Test_Results.Blood_Tests.Rheumatoid_Factor", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-168-i003"]},
+      "x009": {"source": "Test_Results.Blood_Tests.C-Reactive_Protein", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-168-i004"]},
+      "x010": {"source": "Test_Results.Blood_Tests.ESR", "source_text": "Slightly elevated but non-specific", "exam_ids": ["agentclinic-medqa-ext-168-i005"]}
+    },
+    "finding_flags": {
+      "x005": ["Nodules on the 'left 1st distal interphalangeal joint': the thumb has only one interphalangeal joint; kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Nodules are placed on the left '1st' distal interphalangeal joint, which does not exist (the thumb has a single interphalangeal joint).",
+      "'Does not smoke or drink alcohol excessively' is ambiguous in scope.",
+      "Special tests: 'No specific tests performed.'"
+    ],
+    "notes": [
+      "The chief complaint names two complaints (wrist pain, knee pain), so both are opening facts; the 10-year duration applies to both and is a standalone fact (f003).",
+      "Each Secondary_Symptoms denial (swelling, digit colour change, mucous-membrane dryness, fever/chills) repeats the history; one fact each citing both. Fever and chills are split.",
+      "'Denies any constitutional symptoms such as fever or chills' and 'Systemic review is otherwise unremarkable' form one 'other symptoms' denial (f011) besides the explicit fever and chills facts.",
+      "The professional-athlete history (History, Past_Medical_History) and 'Retired' (Social_History) are one occupation fact.",
+      "The musculoskeletal examination is one record because the source organises it by technique (inspection, palpation, range of motion) across hands, wrists and knees; splitting by joint would need guessing which leaf sentence belongs to which joint."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with long-term bilateral wrist and knee pain."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-168-e008", "reason": "Special tests: 'No specific tests performed.' (no information)."}
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-127",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 33, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "breast lump", "aliases": ["breast mass", "lump in the breast"], "text": "I found a lump in my right breast.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "breast lump: onset", "parent": "f001", "attribute": "onset", "text": "I noticed it three weeks ago.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f003", "item": "breast lump: change in size", "parent": "f001", "attribute": "course", "aliases": ["growing", "getting bigger"], "text": "It hasn't changed in size.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f004", "item": "breast pain", "aliases": ["painful lump", "tender breast"], "text": "The lump isn't painful.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f005", "item": "other symptoms", "aliases": ["other symptoms"], "text": "I don't have any other complaints.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "nipple discharge", "aliases": ["discharge from the nipple"], "text": "I haven't had any discharge from my nipples.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f007", "item": "skin changes over the breast", "aliases": ["dimpling", "redness of the breast"], "text": "I haven't noticed any changes in the skin over my breast.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "pregnancy", "aliases": ["pregnant", "how far along"], "text": "I'm 17 weeks pregnant.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "previous pregnancies", "aliases": ["first pregnancy", "obstetric history"], "text": "This is my first pregnancy.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a high school teacher.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-127",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "breast examination", "aliases": ["clinical breast examination", "breast palpation", "breast inspection", "axillary lymph nodes"], "result": "Inspection: no skin changes or nipple discharge. Palpation: 2.5-cm rubbery, mobile, non-tender mass in the upper outer quadrant of the right breast; no axillary lymphadenopathy."},
+      {"id": "x006", "kind": "test", "name": "breast ultrasound", "aliases": ["ultrasound of the breast", "breast sonogram"], "result": "2.5-cm well-circumscribed solid mass in the right breast without suspicious features."},
+      {"id": "x007", "kind": "test", "name": "breast biopsy", "aliases": ["biopsy of the breast mass", "core needle biopsy", "histopathology"], "result": "Rounded contour with overgrowth of fibrous and glandular tissue."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-127",
+    "diagnosis": "Fibroadenoma",
+    "aliases": ["breast fibroadenoma", "fibroadenoma of the breast", "mammary fibroadenoma", "simple fibroadenoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-127",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-127-p001"],
+      "f002": ["agentclinic-medqa-ext-127-p001"],
+      "f003": ["agentclinic-medqa-ext-127-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-127-p001"],
+      "f005": ["agentclinic-medqa-ext-127-p001"],
+      "f006": ["agentclinic-medqa-ext-127-p004"],
+      "f007": ["agentclinic-medqa-ext-127-p004"],
+      "f008": ["agentclinic-medqa-ext-127-p004"],
+      "f009": ["agentclinic-medqa-ext-127-p004"],
+      "f010": ["agentclinic-medqa-ext-127-p002"],
+      "f011": ["agentclinic-medqa-ext-127-p002"],
+      "f012": ["agentclinic-medqa-ext-127-p002"],
+      "f013": ["agentclinic-medqa-ext-127-p003"],
+      "f014": ["agentclinic-medqa-ext-127-p003"],
+      "f015": ["agentclinic-medqa-ext-127-p003"]
+    },
+    "quotes": {
+      "f002": "three weeks ago",
+      "f003": "which has not changed in size",
+      "f004": "Painless mass in the right breast",
+      "f005": "She has no additional complaints.",
+      "f006": "nipple discharge",
+      "f007": "changes in skin over the breast",
+      "f010": "No significant medical history.",
+      "f011": "This is her first pregnancy.",
+      "f012": "This is her first pregnancy.",
+      "f015": "Works as a high school teacher."
+    },
+    "flags": {
+      "f011": ["The gestational age (17 weeks) comes from demographics_text ('33-year-old female at 17-weeks gestation'), which has no fragment id; p002 ('This is her first pregnancy.') confirms the current pregnancy."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-127-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-127-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-127-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-127-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Breast_Examination.Inspection + Physical_Examination_Findings.Breast_Examination.Palpation", "source_text": "No skin changes or nipple discharge. | Identifies a 2.5-cm rubbery, mobile, nontender mass in the upper outer quadrant of the right breast. No axillary lymphadenopathy.", "exam_ids": ["agentclinic-medqa-ext-127-e005", "agentclinic-medqa-ext-127-e006"]},
+      "x006": {"source": "Test_Results.Breast_Ultrasound.Findings", "source_text": "2.5-cm well-circumscribed, solid mass in the right breast without suspicious features.", "exam_ids": ["agentclinic-medqa-ext-127-i001"]},
+      "x007": {"source": "Test_Results.Biopsy.Histopathology", "source_text": "Rounded contour with overgrowth of fibrous and glandular tissue.", "exam_ids": ["agentclinic-medqa-ext-127-i002"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": ["'Painless' in the chief complaint is a denial (f004), so only the lump itself (f001) is in the opening.", "Breast facts and the breast examination use system 'reproductive' (the schema has no breast system).", "The biopsy source does not name the specimen; it is taken to be the right breast mass."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a breast mass."
+    }
+  }
+}

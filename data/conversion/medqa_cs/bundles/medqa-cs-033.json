@@ -1,0 +1,1243 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-033",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 50,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "tiredness",
+        "aliases": [
+          "fatigue",
+          "low energy"
+        ],
+        "text": "I'm feeling tired, with no energy.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "tiredness: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started three months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "tiredness: time of day",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "I feel tired throughout the day. It's consistent all day long.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "tiredness: effect on work",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "I don't have the energy to work.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "car accident",
+        "aliases": [
+          "recent life events",
+          "what happened before the symptoms started"
+        ],
+        "text": "I was in a car accident 3 months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "historical"
+      },
+      {
+        "id": "f006",
+        "item": "car accident: what happened",
+        "parent": "f005",
+        "attribute": "context",
+        "text": "I tried to save my friend's life from the car before it blew up, but I couldn't.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "historical"
+      },
+      {
+        "id": "f007",
+        "item": "car accident: injuries",
+        "parent": "f005",
+        "attribute": "other",
+        "text": "I wasn't injured in the accident.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "historical"
+      },
+      {
+        "id": "f008",
+        "item": "trouble falling asleep",
+        "aliases": [
+          "insomnia"
+        ],
+        "text": "I have no trouble falling asleep.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "waking up during the night",
+        "aliases": [
+          "staying asleep",
+          "sleep problems"
+        ],
+        "text": "I wake up several times during the night.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "nightmares",
+        "aliases": [
+          "bad dreams"
+        ],
+        "text": "I do wake up because of nightmares.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "recurrent"
+      },
+      {
+        "id": "f011",
+        "item": "nightmares: what they are about",
+        "parent": "f010",
+        "attribute": "other",
+        "aliases": [
+          "reliving the accident",
+          "flashbacks"
+        ],
+        "text": "I keep reliving the accident, hearing my friend call for help, and seeing the car explode.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "recurrent"
+      },
+      {
+        "id": "f012",
+        "item": "nightmares: how they leave me feeling",
+        "parent": "f010",
+        "attribute": "other",
+        "text": "It leaves me feeling terrified and helpless.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "recurrent"
+      },
+      {
+        "id": "f013",
+        "item": "loss of interest in activities",
+        "aliases": [
+          "enjoyment",
+          "doing things for fun"
+        ],
+        "text": "I no longer want to do things for fun.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "hopelessness",
+        "aliases": [
+          "pointlessness"
+        ],
+        "text": "Everything seems pointless.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "guilt or self-blame",
+        "aliases": [
+          "guilt",
+          "blaming myself"
+        ],
+        "text": "I don't know. It was an accident.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "concentration",
+        "aliases": [
+          "trouble concentrating",
+          "focus"
+        ],
+        "text": "I can't concentrate on my work anymore.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "feeling down or depressed",
+        "aliases": [
+          "sadness",
+          "depression",
+          "mood"
+        ],
+        "text": "I feel sad all the time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "thoughts of suicide",
+        "aliases": [
+          "suicidal thoughts",
+          "life not worth living"
+        ],
+        "text": "I think of suicide sometimes.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "recurrent"
+      },
+      {
+        "id": "f019",
+        "item": "suicide attempts",
+        "text": "I haven't tried to kill myself.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "historical"
+      },
+      {
+        "id": "f020",
+        "item": "suicide plans",
+        "text": "I haven't made any plans.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "avoiding reminders of the accident",
+        "aliases": [
+          "avoidance"
+        ],
+        "text": "I don't steer clear of reminders of the accident.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "restlessness",
+        "aliases": [
+          "pacing",
+          "agitation"
+        ],
+        "text": "I do pace sometimes, but only when I'm nervous.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "recurrent"
+      },
+      {
+        "id": "f023",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite",
+          "loss of appetite"
+        ],
+        "text": "My appetite has decreased. I rarely feel hungry.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "weight change",
+        "aliases": [
+          "weight gain"
+        ],
+        "text": "I have increased my weight by 6 pounds in the last 3 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "fever",
+        "text": "I haven't had a fever.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "chills",
+        "text": "I haven't had chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I haven't been short of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "stomach pain",
+        "aliases": [
+          "abdominal pain",
+          "belly pain"
+        ],
+        "text": "I haven't had any stomach pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "diarrhea",
+        "aliases": [
+          "loose stools"
+        ],
+        "text": "I haven't had diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "constipation",
+        "text": "I haven't been constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "sensitivity to cold",
+        "aliases": [
+          "cold intolerance",
+          "feeling cold"
+        ],
+        "text": "I have trouble handling cold temperatures.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "endocrine",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "hair loss",
+        "aliases": [
+          "hair changes",
+          "hair falling out"
+        ],
+        "text": "My hair is falling out more than usual.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "interest in sex",
+        "aliases": [
+          "sex drive",
+          "libido"
+        ],
+        "text": "I am not really interested in having sex anymore.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "earlier burning on urination",
+        "aliases": [
+          "urinary infection",
+          "other medical conditions"
+        ],
+        "text": "Well, I had some burning during urination. This was 5 months ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "earlier burning on urination: diagnosis",
+        "parent": "f034",
+        "attribute": "other",
+        "text": "I don't really remember the diagnosis that the doctor reached, but it started with the letter C.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "earlier burning on urination: treatment",
+        "parent": "f034",
+        "attribute": "treatment_response",
+        "text": "I took antibiotics for a week.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f038",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines",
+          "allergies"
+        ],
+        "text": "I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "current medications",
+        "aliases": [
+          "medicines",
+          "pills"
+        ],
+        "text": "I'm not on any medications.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "parents' health",
+        "aliases": [
+          "family history"
+        ],
+        "text": "My parents are alive and in good health.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink beer.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "alcohol: how much",
+        "parent": "f041",
+        "attribute": "quantity",
+        "text": "I have two or three beers a month.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I've never used recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f044",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke cigarettes.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "smoking: how much",
+        "parent": "f044",
+        "attribute": "quantity",
+        "text": "One pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "smoking: for how long",
+        "parent": "f044",
+        "attribute": "duration",
+        "text": "For 25 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "exercise",
+        "aliases": [
+          "physical activity"
+        ],
+        "text": "I don't exercise regularly.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "diet changes",
+        "aliases": [
+          "diet",
+          "eating habits"
+        ],
+        "text": "The usual. I haven't changed anything in my diet in more than 10 years.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "condom use",
+        "aliases": [
+          "condoms",
+          "protection"
+        ],
+        "text": "We avoid using condoms because they cause me discomfort.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "number of sexual partners",
+        "aliases": [
+          "sexual partners"
+        ],
+        "text": "I have had several sexual partners in the past.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f051",
+        "item": "relationship",
+        "aliases": [
+          "girlfriend",
+          "partner"
+        ],
+        "text": "I have a girlfriend, and we have been together for the past 6 months.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "support from friends and family",
+        "aliases": [
+          "support system",
+          "who you can talk to"
+        ],
+        "text": "My girlfriend and my parents are very supportive. They know I've been having a hard time.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "support from friends and family: who suggested the visit",
+        "parent": "f052",
+        "attribute": "other",
+        "aliases": [
+          "reason for coming today"
+        ],
+        "text": "They suggested I come see you to sort it out.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f054",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm an accountant.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-033",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.2°F (36.2°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "12/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "65/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Not in acute distress; appears tired."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "psychiatric",
+        "name": "mental status",
+        "aliases": [
+          "affect",
+          "speech and movement"
+        ],
+        "result": "Flat affect; speaks and moves slowly."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "conjunctivae",
+          "pallor"
+        ],
+        "result": "No conjunctival pallor."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "ent",
+        "name": "mouth and throat examination",
+        "aliases": [
+          "pharynx",
+          "oral cavity"
+        ],
+        "result": "Mouth and pharynx within normal limits."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "hematologic",
+        "name": "neck lymph nodes",
+        "aliases": [
+          "neck examination",
+          "lymph nodes"
+        ],
+        "result": "No enlarged lymph nodes."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "endocrine",
+        "name": "thyroid examination",
+        "aliases": [
+          "thyroid"
+        ],
+        "result": "Normal thyroid."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not distended, not tender; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "edema",
+          "leg swelling"
+        ],
+        "result": "No edema."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Normal deep tendon reflexes in the legs."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-033",
+    "diagnosis": "Major depressive disorder",
+    "aliases": [
+      "major depression",
+      "MDD",
+      "depression",
+      "clinical depression",
+      "unipolar depression",
+      "major depressive episode"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Major depressive disorder",
+        "evidence": [
+          "Dysphoria, anhedonia",
+          "Loss of appetite",
+          "Passive suicidal ideation",
+          "Decreased energy/fatigue",
+          "Impaired concentration",
+          "Early awakening"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Hypothyroidism",
+        "aliases": [
+          "underactive thyroid",
+          "low thyroid"
+        ],
+        "evidence": [
+          "Fatigue for 3 months",
+          "Cold intolerance",
+          "Hair loss",
+          "Weight gain"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Posttraumatic stress disorder",
+        "aliases": [
+          "PTSD",
+          "post-traumatic stress disorder"
+        ],
+        "evidence": [
+          "Nightmares about the trauma",
+          "Negative mood/anhedonia",
+          "Decreased concentration",
+          "Difficulty staying asleep"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "HIV infection",
+        "note": "Testing is indicated given his STD history and unprotected sex with multiple partners, but HIV is very unlikely to explain his depression."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-033",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-033-p001"
+      ],
+      "f003": [
+        "medqa-cs-033-p004",
+        "medqa-cs-033-p007"
+      ],
+      "f004": [
+        "medqa-cs-033-p011"
+      ],
+      "f005": [
+        "medqa-cs-033-p002"
+      ],
+      "f006": [
+        "medqa-cs-033-p002",
+        "medqa-cs-033-p006"
+      ],
+      "f007": [
+        "medqa-cs-033-p003"
+      ],
+      "f008": [
+        "medqa-cs-033-p004"
+      ],
+      "f009": [
+        "medqa-cs-033-p004"
+      ],
+      "f010": [
+        "medqa-cs-033-p004"
+      ],
+      "f011": [
+        "medqa-cs-033-p004"
+      ],
+      "f012": [
+        "medqa-cs-033-p004"
+      ],
+      "f013": [
+        "medqa-cs-033-p005"
+      ],
+      "f014": [
+        "medqa-cs-033-p005"
+      ],
+      "f015": [
+        "medqa-cs-033-p006"
+      ],
+      "f016": [
+        "medqa-cs-033-p008",
+        "medqa-cs-033-p011"
+      ],
+      "f017": [
+        "medqa-cs-033-p013"
+      ],
+      "f018": [
+        "medqa-cs-033-p014"
+      ],
+      "f019": [
+        "medqa-cs-033-p014"
+      ],
+      "f020": [
+        "medqa-cs-033-p014"
+      ],
+      "f021": [
+        "medqa-cs-033-p015"
+      ],
+      "f022": [
+        "medqa-cs-033-p010"
+      ],
+      "f023": [
+        "medqa-cs-033-p009"
+      ],
+      "f024": [
+        "medqa-cs-033-p012"
+      ],
+      "f025": [
+        "medqa-cs-033-p017"
+      ],
+      "f026": [
+        "medqa-cs-033-p017"
+      ],
+      "f027": [
+        "medqa-cs-033-p017"
+      ],
+      "f028": [
+        "medqa-cs-033-p017"
+      ],
+      "f029": [
+        "medqa-cs-033-p017"
+      ],
+      "f030": [
+        "medqa-cs-033-p017"
+      ],
+      "f031": [
+        "medqa-cs-033-p018"
+      ],
+      "f032": [
+        "medqa-cs-033-p019"
+      ],
+      "f033": [
+        "medqa-cs-033-p031"
+      ],
+      "f034": [
+        "medqa-cs-033-p021"
+      ],
+      "f035": [
+        "medqa-cs-033-p021"
+      ],
+      "f036": [
+        "medqa-cs-033-p021"
+      ],
+      "f037": [
+        "medqa-cs-033-p022"
+      ],
+      "f038": [
+        "medqa-cs-033-p034"
+      ],
+      "f039": [
+        "medqa-cs-033-p020"
+      ],
+      "f040": [
+        "medqa-cs-033-p023"
+      ],
+      "f041": [
+        "medqa-cs-033-p025"
+      ],
+      "f042": [
+        "medqa-cs-033-p025"
+      ],
+      "f043": [
+        "medqa-cs-033-p026"
+      ],
+      "f044": [
+        "medqa-cs-033-p027"
+      ],
+      "f045": [
+        "medqa-cs-033-p027"
+      ],
+      "f046": [
+        "medqa-cs-033-p027"
+      ],
+      "f047": [
+        "medqa-cs-033-p028"
+      ],
+      "f048": [
+        "medqa-cs-033-p029"
+      ],
+      "f049": [
+        "medqa-cs-033-p032"
+      ],
+      "f050": [
+        "medqa-cs-033-p033"
+      ],
+      "f051": [
+        "medqa-cs-033-p030"
+      ],
+      "f052": [
+        "medqa-cs-033-p016"
+      ],
+      "f053": [
+        "medqa-cs-033-p016"
+      ],
+      "f054": [
+        "medqa-cs-033-p024"
+      ]
+    },
+    "quotes": {
+      "f001": "Feeling tired, no energy.",
+      "f002": "It started three months ago.",
+      "f003": "and feel tired throughout the day. / It's consistent throughout the day.",
+      "f004": "I don't have the energy to work.",
+      "f005": "I was in a car accident 3 months ago",
+      "f006": "I failed to save my friend's life from the car before it blew up. / I tried to help my friend, but I couldn't.",
+      "f007": "No.",
+      "f008": "I have no trouble falling asleep",
+      "f009": "I wake up several times during the night",
+      "f010": "but I do wake up due to nightmares.",
+      "f011": "I keep reliving the accident, hearing my friend call for help, and seeing the car explode.",
+      "f012": "It leaves me feeling terrified and helpless.",
+      "f013": "Yes, I no longer want to do things for fun.",
+      "f014": "Everything seems pointless.",
+      "f015": "I don't know. It was an accident.",
+      "f016": "Yes, I can't concentrate on my work. / I can't concentrate on my work anymore.",
+      "f017": "Yes, I feel sad all the time.",
+      "f018": "I think of suicide sometimes",
+      "f019": "but have not tried",
+      "f020": "or made any plans.",
+      "f021": "No.",
+      "f022": "I do pace sometimes, but only when I'm nervous.",
+      "f023": "Decreased appetite. I rarely feel hungry.",
+      "f024": "I have increased my weight by 6 pounds in the last 3 months.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "Yes.",
+      "f032": "My hair is falling out more than usual.",
+      "f033": "I am not really interested in having sex anymore.",
+      "f034": "Well, I had some burning during urination. / This was 5 months ago.",
+      "f035": "I don't really remember the diagnosis that the doctor reached, but it started with the letter C.",
+      "f036": "I took antibiotics for a week.",
+      "f037": "No.",
+      "f038": "No.",
+      "f039": "No.",
+      "f040": "My parents are alive and in good health.",
+      "f041": "I have two or three beers a month.",
+      "f042": "I have two or three beers a month.",
+      "f043": "Never.",
+      "f044": "One pack a day for 25 years.",
+      "f045": "One pack a day",
+      "f046": "for 25 years.",
+      "f047": "No.",
+      "f048": "The usual. I haven't changed anything in my diet in more than 10 years.",
+      "f049": "We avoid using condoms because they cause me discomfort.",
+      "f050": "I have had several sexual partners in the past.",
+      "f051": "I have a girlfriend, and we have been together for the past 6 months.",
+      "f052": "My girlfriend and my parents are very supportive. They know I've been having a hard time",
+      "f053": "and suggested I come see you to sort it out.",
+      "f054": "Accountant."
+    },
+    "flags": {
+      "f015": [
+        "Guilt is neither affirmed nor denied."
+      ],
+      "f038": [
+        "Parser merged the unanswered STD-history question with the drug-allergy question in p034; the raw sheet shows 'No.' answers the drug-allergy question."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/85 mm Hg | Vital Signs (VS): Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-033-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.2°F (36.2°C) | Vital Signs (VS): Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-033-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 12/minute | Vital Signs (VS): Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-033-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 65/minute, regular | Vital Signs (VS): Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-033-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient is not in acute distress, but he appears tired with a flat affect.",
+        "exam_ids": [
+          "medqa-cs-033-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "he appears tired with a flat affect. He speaks and moves slowly.",
+        "exam_ids": [
+          "medqa-cs-033-e001"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "HEENT: No conjunctival pallor, mouth and pharynx are WNL.",
+        "exam_ids": [
+          "medqa-cs-033-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "HEENT: No conjunctival pallor, mouth and pharynx are WNL.",
+        "exam_ids": [
+          "medqa-cs-033-e003"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Neck: No lymphadenopathy, normal thyroid.",
+        "exam_ids": [
+          "medqa-cs-033-e004"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Neck: No lymphadenopathy, normal thyroid.",
+        "exam_ids": [
+          "medqa-cs-033-e004"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-033-e005"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rhythm with normal S1/S2; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-033-e006"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, with bowel sounds x 4, and no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-033-e007"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Extremities: No edema, normal deep-tendon reflexes (DTRs) in lower extremities.",
+        "exam_ids": [
+          "medqa-cs-033-e008"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "Extremities: No edema, normal deep-tendon reflexes (DTRs) in lower extremities.",
+        "exam_ids": [
+          "medqa-cs-033-e008"
+        ]
+      }
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [
+      "Parser merge in p034: the STD-history question ('Do you have any history of sexually transmitted diseases?') has no answer in the raw sheet and was merged with the drug-allergy question; the 'No.' answers drug allergies. Annotated as no drug allergies (f038); the STD question is left unanswered, and p021 describes a treated urinary infection 5 months ago.",
+      "Parser merge in p030: three doctor utterances (confidentiality preamble, 'Are you currently sexually active?', 'Are you in a relationship at the moment?') share one answer about the girlfriend. Sexual activity is not stated directly; only the relationship (f051) and avoiding condoms with the girlfriend (f049) are recorded.",
+      "Age conflict: the opening scenario says 50 years old; the raw Patient Description and the note HPI say 46. demographics.age uses the opening scenario (50).",
+      "Name conflict: the opening scenario says 'Gary Mibshell', the sample closure says 'Mr. Mitchell'. The opening-scenario name is the reference.",
+      "Gold rank 1 cites 'Early awakening', but the script describes awakenings during the night from nightmares (p004), not early-morning waking.",
+      "Alcohol: script p025 says two or three beers a month; the note says two beers per month.",
+      "The note says 'unprotected sex with multiple female partners'; the script does not give the partners' sex or their number in the past 6 months (p033).",
+      "The note PMH says 'urethritis (possibly chlamydia)'; the patient remembers only that the diagnosis started with C (p021). Patient facts keep his wording."
+    ],
+    "notes": [
+      "p004 is split into no trouble falling asleep (f008), several awakenings (f009), nightmare awakenings (f010) with what he relives (f011) and how it leaves him feeling (f012); daytime tiredness is merged with p007 into the timing child f003.",
+      "p008 and p011 both say he cannot concentrate on his work; merged into f016. Lack of energy for work is a separate functional fact (f004, v1 functional, now a child of the tiredness).",
+      "p006 'I don't know. It was an accident.' is recorded as uncertainty about guilt (f015, flagged), not as a denial; 'I tried to help my friend, but I couldn't' is added to the accident fact f006.",
+      "p010 only reports pacing when nervous; he does not answer the slowing question. The slow speech and movement are observable signs (note exam, mental status record x006; SP acting note).",
+      "Sad look and yawning are SP demeanor instructions kept as acting notes only; slow speech and movement are also recorded by the note's exam, so they are in the mental status record (x006).",
+      "p027 'One pack a day for 25 years' answers 'Do you smoke cigarettes?' in the present tense, so smoking is marked current.",
+      "Conversion: the car accident (p002, v1 hpi) is a symptom-category parent (f005, system psychiatric) with what happened (f006) and no injuries (f007) as children, following the v1 subtype mapping. The relationship (p030, v1 'sexual') maps to social_background by content; condoms and partners map to habit_exposure. The burning on urination (p021) is a medical_history parent with diagnosis and treatment children.",
+      "Conversion: e001 is split into general appearance (x005) and mental status (x006); e004 into neck lymph nodes (x009) and thyroid (x010); e008 into extremities (x014) and reflexes (x015).",
+      "Vitals: doorway values agree with the note's 'VS: within normal limits' (e002); one record per parameter citing both, marked initial.",
+      "Harmonisation pass: system general (sleep) for f008, f009.",
+      "Fixes: f007 answer word removed; f013 answer word removed; f016 answer word removed; f017 answer word removed; f021 answer word removed; f025 answer word removed; f026 answer word removed; f027 answer word removed; f028 answer word removed; f029 answer word removed; f030 answer word removed; f031 answer word removed; f037 answer word removed; f038 answer word removed; f039 answer word removed; f041 answer word removed; f044 answer word removed; f047 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Look sad and don't smile.",
+        "Speak and move slowly.",
+        "Start yawning as the examinee enters the room."
+      ],
+      "patient_questions": [
+        "Life feels quite challenging, and I'm uncertain about my next steps.",
+        "I am concerned that I may have AIDS."
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

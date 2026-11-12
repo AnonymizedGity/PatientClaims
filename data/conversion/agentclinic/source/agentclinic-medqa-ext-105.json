@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-105",
+  "source_row": 105,
+  "demographics_text": "51-year-old woman",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with chronic cough and recurrent bouts of bronchitis.",
+  "chief_complaint": "Aggressive cough with thick, yellow-green sputum",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-105-p001",
+      "field": "History",
+      "text": "The patient has been experiencing an aggressive cough producing copious amounts of thick, foamy, yellow-green sputum for about 11 years, with exacerbations similar to the current presentation today. Reports that the cough is worse in the morning and has had multiple evaluations in the past due to recurrent bouts of bronchitis requiring antibiotics treatment. The patient is a non-smoker."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-105-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Cough worse in the morning"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-105-p003",
+      "field": "Secondary_Symptoms",
+      "text": "History of recurrent bronchitis"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-105-p004",
+      "field": "Past_Medical_History",
+      "text": "No other significant past medical history aside from the recurrent bronchitis."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-105-p005",
+      "field": "Social_History",
+      "text": "Non-smoker, no history of alcohol or drug abuse."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-105-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies any fever, weight loss, night sweats, or shortness of breath."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98.0°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/78 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "80 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e005",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "No cyanosis or use of accessory muscles for breathing."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e006",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Crackles and wheezing over the right middle lobe."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e007",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Normal thoracic percussion note."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-e008",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Palpation",
+      "text": "No thoracic tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-105-i001",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Irregular opacities in the right middle lobe and diffuse airway thickening."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-i002",
+      "path": "Test_Results.Pulmonary_Function_Tests.FVC",
+      "text": "Reduced"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-i003",
+      "path": "Test_Results.Pulmonary_Function_Tests.FEV1",
+      "text": "Reduced"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-i004",
+      "path": "Test_Results.Pulmonary_Function_Tests.FEV1/FVC_Ratio",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-105-i005",
+      "path": "Test_Results.Sputum_Culture.Findings",
+      "text": "Heavy growth of non-specific bacteria, no TB or fungal growth."
+    }
+  ],
+  "correct_diagnosis": "Bronchiectasis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

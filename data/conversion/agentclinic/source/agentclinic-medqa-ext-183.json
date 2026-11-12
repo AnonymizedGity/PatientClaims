@@ -1,0 +1,143 @@
+{
+  "case_id": "agentclinic-medqa-ext-183",
+  "source_row": 183,
+  "demographics_text": "65-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with back pain, numbness, and weakness in the legs.",
+  "chief_complaint": "Gradually worsening back pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p001",
+      "field": "History",
+      "text": "The patient reports a gradual worsening in back pain, which intensified after moving furniture recently. He experiences numbness and weakness in his legs while walking, but notes improvement in symptoms when riding a bike or pushing a cart."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Numbness in legs"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Weakness in legs"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Pain alleviation while leaning forward"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No immediate relief from rest or medication"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p006",
+      "field": "Past_Medical_History",
+      "text": "Osteoporosis, Dyslipidemia, Diabetes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p007",
+      "field": "Social_History",
+      "text": "Drinks 3 alcoholic drinks daily; 44 pack-year smoking history"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-183-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies recent fever, unexplained weight loss, or changes in bowel or bladder function."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.5°C (99.5°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "157/108 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "90 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "17 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Motor_Function",
+      "text": "Mild weakness noted in the bilateral lower extremities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination",
+      "text": "Decreased sensation in a stocking-glove distribution."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "Normal reflexes with no pathological reflexes noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e009",
+      "path": "Physical_Examination_Findings.Spinal_Examination.Inspection",
+      "text": "Normal curvature with no visible deformities"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e010",
+      "path": "Physical_Examination_Findings.Spinal_Examination.Palpation",
+      "text": "Non-tender spine, normal mobility in all 4 directions"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-e011",
+      "path": "Physical_Examination_Findings.Spinal_Examination.Range_of_Motion",
+      "text": "Full range of motion with discomfort only on extreme flexion"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-183-i001",
+      "path": "Test_Results.Radiography_of_Spine.Findings",
+      "text": "Evidence of lumbar spinal canal narrowing without acute fracture"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-i002",
+      "path": "Test_Results.Basic_Labs.Complete_Blood_Count",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-i003",
+      "path": "Test_Results.Basic_Labs.Blood_Glucose_Level",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-i004",
+      "path": "Test_Results.Basic_Labs.Lipid_Profile.Cholesterol",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-i005",
+      "path": "Test_Results.Basic_Labs.Lipid_Profile.LDL",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-183-i006",
+      "path": "Test_Results.Basic_Labs.Lipid_Profile.HDL",
+      "text": "Normal"
+    }
+  ],
+  "correct_diagnosis": "Spinal Stenosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

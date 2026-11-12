@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-056",
+  "source_row": 56,
+  "demographics_text": "62-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the dermatological condition presented by the patient, focusing on lesions with potential oncologic implications.",
+  "chief_complaint": "Non-healing, crusty, red lesions on the penile shaft and left middle finger",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-056-p001",
+      "field": "History",
+      "text": "The patient has recently immigrated to the US from Africa and seeks evaluation for a non-healing, red, crusty lesion on the shaft of his penis and a similar lesion on his left middle finger. Previous treatments in his home country for syphilis and eczema have been unsuccessful. The patient is a smoker, with a history of two packs per day for the last 30 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-056-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Lesions are painless"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-056-p003",
+      "field": "Secondary_Symptoms",
+      "text": "History of unsuccessful treatment for syphilis and eczema"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-056-p004",
+      "field": "Past_Medical_History",
+      "text": "No known malignancies or hereditary diseases in the family. Previous treatments for syphilis and eczema."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-056-p005",
+      "field": "Social_History",
+      "text": "Lives with his 4th wife, smokes 2 packs of cigarettes per day for the last 30 years, has recently immigrated from Africa."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-056-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies any systemic symptoms such as fever, weight loss, night sweats, or malaise. No other similar lesions elsewhere on the body."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-056-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-e005",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Inspection",
+      "text": "An erythematous plaque with areas of crusting, oozing, and irregular borders observed on the dorsal surface of the penile shaft and on the left middle finger."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-e006",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Palpation",
+      "text": "Lesions are firm to touch, non-tender, with no warmth."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-e007",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Regional_Lymph_Nodes",
+      "text": "No palpable cervical, axillary, or inguinal lymphadenopathy."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-056-i001",
+      "path": "Test_Results.Biopsy.Findings",
+      "text": "Cells with nuclear hyperchromasia, multinucleation, and increased mitotic figures within the follicle-bearing epithelium."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-i002",
+      "path": "Test_Results.STD_Panel.Syphilis",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-i003",
+      "path": "Test_Results.STD_Panel.HIV",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-i004",
+      "path": "Test_Results.STD_Panel.HBV",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-056-i005",
+      "path": "Test_Results.STD_Panel.HCV",
+      "text": "Negative"
+    }
+  ],
+  "correct_diagnosis": "Bowen's Disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

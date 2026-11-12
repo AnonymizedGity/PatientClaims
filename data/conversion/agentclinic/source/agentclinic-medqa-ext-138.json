@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-138",
+  "source_row": 138,
+  "demographics_text": "28-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with dizziness and palpitations.",
+  "chief_complaint": "Dizziness",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-138-p001",
+      "field": "History",
+      "text": "The patient reports experiencing dizziness and palpitations for the last 2 days. He mentions attending a bachelor party before the onset of symptoms where he engaged in excessive alcohol consumption."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-138-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Palpitations"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-138-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Fatigue"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-138-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Shortness of breath with exertion"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-138-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant medical or surgical history. The patient does not take any regular medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-138-p006",
+      "field": "Social_History",
+      "text": "Social drinker, reports heavy drinking at a recent party. Non-smoker. Works as a financial analyst."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-138-p007",
+      "field": "Review_of_Systems",
+      "text": "No chest pain, syncope, fever, cough, or gastrointestinal symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "Irregularly irregular rate varying from 88 to 110 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e005",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Inspection",
+      "text": "No jugular venous distention, no edema."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e006",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Palpation",
+      "text": "No heaves or thrills."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e007",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Auscultation",
+      "text": "Irregularly irregular rhythm without murmurs."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e008",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "Chest wall symmetrical."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e009",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Palpation",
+      "text": "Equal tactile fremitus bilaterally."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e010",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Resonant throughout."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e011",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Clear breath sounds in all lung fields without wheeze or crackles."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-e012",
+      "path": "Physical_Examination_Findings.Neurological_Examination",
+      "text": "No focal deficits; cranial nerves II-XII intact; normal gait and coordination."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-138-i001",
+      "path": "Test_Results.ECG.Findings",
+      "text": "Irregularly irregular rhythm, absent P waves, and variable R-R intervals consistent with atrial fibrillation."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-i002",
+      "path": "Test_Results.Blood_Tests.CBC",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-i003",
+      "path": "Test_Results.Blood_Tests.Electrolytes",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-i004",
+      "path": "Test_Results.Blood_Tests.Thyroid_Function_Tests",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-138-i005",
+      "path": "Test_Results.Blood_Tests.Alcohol_Level",
+      "text": "Elevated from the night of the party, currently normal"
+    }
+  ],
+  "correct_diagnosis": "Paroxysmal Atrial Fibrillation",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

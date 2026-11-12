@@ -1,0 +1,124 @@
+{
+  "patient": {
+    "case_id": "mcr-test-10565",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 27, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["fevers", "temperature", "episodic fevers"], "text": "I keep getting bouts of fever that come and go.", "polarity": "present", "category": "symptom", "system": "general", "time": "recurrent"},
+      {"id": "f002", "item": "rash", "aliases": ["skin rash", "red rash", "erythematous rash"], "text": "I get a red rash that is tender to the touch.", "polarity": "present", "category": "symptom", "system": "skin", "time": "recurrent"},
+      {"id": "f003", "item": "rash: location", "parent": "f002", "attribute": "location", "text": "It's mostly on my trunk.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "how long the flares have been going on", "aliases": ["how long the symptoms have been going on"], "text": "This has been happening for about 2 years.", "value": "2 years", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "how long each flare lasts", "aliases": ["length of the episodes"], "text": "Each flare lasts 3 to 7 days.", "value": "3-7 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "how often the flares come", "aliases": ["frequency of the episodes"], "text": "They come back about every 3 weeks.", "value": "every 3 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "being bedbound during flares", "aliases": ["bedbound", "bedridden", "how bad the flares get"], "text": "Some flares are bad enough that I'm stuck in bed.", "polarity": "present", "category": "symptom", "system": "general", "time": "recurrent"},
+      {"id": "f008", "item": "flu-like symptoms", "aliases": ["feeling like I have the flu", "prodrome", "warning symptoms before a flare"], "text": "Before a flare starts, I feel like I'm coming down with the flu.", "polarity": "present", "category": "symptom", "system": "general", "time": "recurrent"},
+      {"id": "f009", "item": "fever: timing", "parent": "f001", "attribute": "timing", "text": "Before a flare I already run a low-grade fever.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "sore throat", "aliases": ["throat pain"], "text": "Before a flare I get a sore throat.", "polarity": "present", "category": "symptom", "system": "ent", "time": "recurrent"},
+      {"id": "f011", "item": "joint pain", "aliases": ["arthralgia", "aching joints", "joint aches"], "text": "Before a flare my joints ache.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "recurrent"},
+      {"id": "f012", "item": "diarrhea", "aliases": ["loose stools"], "text": "During the flares I get diarrhea on and off.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "recurrent"},
+      {"id": "f013", "item": "headache", "aliases": ["headaches"], "text": "During the flares I get severe headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f014", "item": "seasonal allergies", "aliases": ["allergic rhinitis", "hay fever"], "text": "I get seasonal hay fever.", "polarity": "present", "category": "medical_history"},
+      {"id": "f015", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from my seasonal hay fever, I don't have any medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "autoimmune disease in the family", "aliases": ["family history of autoimmune disease"], "text": "No one in my family has an autoimmune disease.", "polarity": "absent", "category": "family_history"},
+      {"id": "f017", "item": "antihistamines", "aliases": ["antihistamine tablets", "allergy pills"], "text": "I've tried several different antihistamines.", "polarity": "present", "category": "medication"},
+      {"id": "f018", "item": "antihistamines: effect", "parent": "f017", "attribute": "treatment_response", "text": "They didn't help.", "polarity": "present", "category": "medication"},
+      {"id": "f019", "item": "prednisone", "aliases": ["steroids", "oral steroids", "corticosteroids"], "text": "I've taken prednisone tablets.", "polarity": "present", "category": "medication"},
+      {"id": "f020", "item": "prednisone: effect", "parent": "f019", "attribute": "treatment_response", "text": "It didn't help.", "polarity": "present", "category": "medication"},
+      {"id": "f021", "item": "omalizumab", "aliases": ["Xolair", "monthly injections"], "text": "I've had monthly omalizumab injections.", "polarity": "present", "category": "medication"},
+      {"id": "f022", "item": "omalizumab: effect", "parent": "f021", "attribute": "treatment_response", "text": "They didn't help.", "polarity": "present", "category": "medication"},
+      {"id": "f023", "item": "ethnicity", "aliases": ["race", "ethnic background"], "text": "I'm White.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-10565",
+    "findings": [
+      {"id": "x001", "kind": "test", "name": "skin biopsy of the rash", "aliases": ["rash biopsy", "skin biopsy", "skin histology"], "result": "Perivascular neutrophilic infiltrate without evidence of leukocytoclastic vasculitis."},
+      {"id": "x002", "kind": "test", "name": "complement levels", "aliases": ["C3", "C4", "complement", "serum complement"], "result": "C4 mildly decreased (12.8 mg/mL); C3 normal."},
+      {"id": "x003", "kind": "test", "name": "autoimmune serology", "aliases": ["antinuclear antibodies", "ANA", "antineutrophil cytoplasmic antibodies", "ANCA", "rheumatoid factor", "RF"], "result": "Antinuclear antibodies negative; antineutrophil cytoplasmic antibodies negative; rheumatoid factor negative."},
+      {"id": "x004", "kind": "test", "name": "thyroid function tests", "aliases": ["thyroid hormones", "TFTs", "TSH", "free T4"], "result": "Normal thyroid hormones."},
+      {"id": "x005", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Normal."},
+      {"id": "x006", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Normal."},
+      {"id": "x007", "kind": "test", "name": "celiac serology", "aliases": ["celiac serologies", "celiac screen", "tissue transglutaminase antibody", "tTG"], "result": "Negative."},
+      {"id": "x008", "kind": "test", "name": "serum IgA", "aliases": ["IgA level", "immunoglobulin A"], "result": "Normal."},
+      {"id": "x009", "kind": "test", "name": "serum serotonin", "aliases": ["serotonin level"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "chromogranin A", "aliases": ["serum chromogranin A", "CgA"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "serum tryptase", "aliases": ["tryptase", "mast cell tryptase"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "viral serology", "aliases": ["hepatitis serology", "hepatitis screen", "HIV test", "HIV"], "result": "Hepatitis screening negative; HIV screening negative."},
+      {"id": "x013", "kind": "test", "name": "Toxocara serology", "aliases": ["toxocara screen", "toxocariasis antibody"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "tuberculosis screening", "aliases": ["TB test", "TB screen", "QuantiFERON", "interferon-gamma release assay", "tuberculin skin test", "PPD"], "result": "Negative."},
+      {"id": "x015", "kind": "test", "name": "urine catecholamines and metanephrines", "aliases": ["urinary catecholamines", "urinary metanephrines", "urine metanephrines"], "result": "Urinary catecholamines normal; metanephrines normal."},
+      {"id": "x016", "kind": "test", "name": "urine 5-hydroxyindoleacetic acid", "aliases": ["5-HIAA", "urinary 5-HIAA"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "chronic urticaria index", "aliases": ["CU index", "chronic urticaria index test"], "result": "Normal (measured while receiving omalizumab)."},
+      {"id": "x018", "kind": "test", "name": "colonoscopy", "aliases": ["lower endoscopy"], "result": "No evidence of inflammatory bowel disease."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-10565",
+    "diagnosis": "Yao syndrome",
+    "aliases": ["NOD2-associated autoinflammatory disease", "NAID", "NOD2-associated autoinflammatory disorder"],
+    "reasoning": "1. Urticarial vasculitis considered and excluded — “demonstrated perivascular neutrophilic infiltrate with no evidence of leukocytoclastic vasculitis.” 2. Chronic spontaneous urticaria considered and excluded — “The chronic urticaria index was within normal limits.” and “patient trialed multiple antihistamines … and monthly omalizumab … with no relief.” 3. Crohn’s disease considered and excluded — “A colonoscopy was performed with no evidence of inflammatory bowel disease.” 4. Blau syndrome considered and excluded — “BS is primarily a pediatric disease characterized by a triad of granulomatous dermatitis, uveitis, and inflammatory arthritis. Development of disease in adults and the presence of fever, abdominal pain, and diarrhea are rarely seen.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-10565",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s003"], "f006": ["s003"],
+      "f007": ["s003"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s002"], "f012": ["s002"],
+      "f013": ["s002"], "f014": ["s004"], "f015": ["s004"], "f016": ["s004"], "f017": ["s006"], "f018": ["s006"],
+      "f019": ["s006"], "f020": ["s006"], "f021": ["s006"], "f022": ["s006"], "f023": ["s001"]
+    },
+    "quotes": {
+      "f001": "episodic fevers", "f002": "tender erythematous rash", "f003": "predominantly on his trunk",
+      "f004": "a 2-year history of episodic fevers and tender erythematous rash", "f005": "Each flare lasted 3 to 7 days",
+      "f006": "recurred approximately every 3 weeks", "f007": "at times rendering him bedbound",
+      "f008": "Flares were preceded by prodromal flu-like symptoms", "f009": "low-grade fever",
+      "f012": "during these episodes he also reported intermittent diarrhea", "f013": "severe headache",
+      "f015": "He had a history only of seasonal allergic rhinitis", "f016": "no family history of autoimmune disease",
+      "f017": "multiple antihistamines", "f018": "without improvement", "f019": "oral prednisone",
+      "f021": "monthly omalizumab injections", "f023": "White man"
+    },
+    "flags": {
+      "f009": ["The prodromal low-grade fever is attached to the episodic fevers as their timing; the source lists it among the symptoms that precede each flare."],
+      "f012": ["'During these episodes' is read as during the flares; it could also mean during the prodrome."],
+      "f013": ["'During these episodes' is read as during the flares; it could also mean during the prodrome."],
+      "f021": ["Omalizumab was apparently still being given when the chronic urticaria index was measured (s007); the text does not say whether it is current."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "Biopsies of the rash demonstrated a perivascular neutrophilic infiltrate without evidence of leukocytoclastic vasculitis."},
+      "x002": {"sentences": ["s007"], "source_text": "mildly decreased C4 (12.8 mg/mL), normal C3"},
+      "x003": {"sentences": ["s007"], "source_text": "negative antinuclear antibodies, negative antineutrophil cytoplasmic antibodies, negative rheumatoid factor"},
+      "x004": {"sentences": ["s007"], "source_text": "normal thyroid hormones"},
+      "x005": {"sentences": ["s007"], "source_text": "normal thyroid hormones, C-reactive protein"},
+      "x006": {"sentences": ["s007"], "source_text": "normal thyroid hormones, C-reactive protein, erythrocyte sedimentation rate"},
+      "x007": {"sentences": ["s007"], "source_text": "negative celiac serologies"},
+      "x008": {"sentences": ["s007"], "source_text": "normal serum IgA"},
+      "x009": {"sentences": ["s007"], "source_text": "normal serum IgA, serotonin"},
+      "x010": {"sentences": ["s007"], "source_text": "normal serum IgA, serotonin, chromogranin A"},
+      "x011": {"sentences": ["s007"], "source_text": "normal serum IgA, serotonin, chromogranin A, and tryptase levels"},
+      "x012": {"sentences": ["s007"], "source_text": "negative hepatitis, HIV"},
+      "x013": {"sentences": ["s007"], "source_text": "negative hepatitis, HIV, toxocara, and tuberculosis screening"},
+      "x014": {"sentences": ["s007"], "source_text": "negative hepatitis, HIV, toxocara, and tuberculosis screening"},
+      "x015": {"sentences": ["s007"], "source_text": "normal urinary catecholamines, metanephrines"},
+      "x016": {"sentences": ["s007"], "source_text": "normal urinary catecholamines, metanephrines, 5-hydroxyindoleacetic acid"},
+      "x017": {"sentences": ["s007"], "source_text": "a normal chronic urticaria index (while receiving omalizumab)"},
+      "x018": {"sentences": ["s008"], "source_text": "a colonoscopy was performed and showed no evidence of inflammatory bowel disease"}
+    },
+    "finding_flags": {
+      "x014": ["The source says only 'tuberculosis screening'; the test type (skin test or interferon-gamma release assay) is not given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "C4 is given as 12.8 mg/mL; serum C4 is normally reported in mg/dL, so the unit is probably a typo. Kept as written.",
+      "s007 runs several tests into one list ('normal thyroid hormones, C-reactive protein, erythrocyte sedimentation rate'); CRP and ESR are read as normal."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation after 2 years of recurrent flares of fever and tender rash (s001-s004, s006); the rash biopsy, laboratory tests and colonoscopy (s005, s007, s008) are findings of the same staged workup.",
+      "The source does not say when the rash biopsy, the laboratory tests and the colonoscopy were done relative to the index visit, so these findings carry no time.",
+      "Flare-wide attributes (2-year duration, 3-7 days per flare, every 3 weeks, sometimes bedbound) are standalone facts with general items because they describe the whole episode, not one symptom.",
+      "Earlier treatments (antihistamines, prednisone, omalizumab) are medication facts with a treatment_response child each, because the patient took them before the index visit.",
+      "s008: the clause 'Because of his gastrointestinal symptoms' is the clinician's reason for the colonoscopy, not a finding; the colonoscopy result is kept."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

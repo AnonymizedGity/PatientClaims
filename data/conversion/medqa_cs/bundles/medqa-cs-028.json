@@ -1,0 +1,1306 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-028",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 50,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "high blood pressure",
+        "aliases": [
+          "hypertension",
+          "blood pressure check"
+        ],
+        "text": "I'm here to check on my blood pressure, because I've been diagnosed with hypertension.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "high blood pressure: when it was found",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "I discovered I had high blood pressure last year.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "high blood pressure: control on treatment",
+        "parent": "f001",
+        "attribute": "treatment_response",
+        "text": "Even with the hydrochlorothiazide, my blood pressure is still elevated.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular"
+      },
+      {
+        "id": "f004",
+        "item": "high blood pressure: checking it at home",
+        "parent": "f001",
+        "attribute": "other",
+        "aliases": [
+          "home blood pressure monitoring"
+        ],
+        "text": "I don't check my blood pressure at home.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "high blood pressure: last check",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "It was last checked six months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "historical"
+      },
+      {
+        "id": "f006",
+        "item": "feeling unwell today",
+        "aliases": [
+          "general well-being",
+          "how you feel today"
+        ],
+        "text": "I feel fine.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "problems with sexual performance",
+        "aliases": [
+          "erectile dysfunction",
+          "impotence",
+          "sexual problems"
+        ],
+        "text": "I've started to have problems with my sexual performance.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "problems with sexual performance: onset",
+        "parent": "f007",
+        "attribute": "onset",
+        "text": "It started over the past 4 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "problems with sexual performance: erections",
+        "parent": "f007",
+        "attribute": "character",
+        "text": "I have a weak erection.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "problems with sexual performance: unable to get an erection",
+        "parent": "f007",
+        "attribute": "frequency",
+        "text": "Sometimes I can't get an erection at all.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "recurrent"
+      },
+      {
+        "id": "f011",
+        "item": "problems with sexual performance: erection strength score",
+        "parent": "f007",
+        "attribute": "severity",
+        "value": 4,
+        "text": "About a 4, where 0 is flaccid and 6 is enough for penetration.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f012",
+        "item": "problems with sexual performance: own explanation",
+        "parent": "f007",
+        "attribute": "other",
+        "aliases": [
+          "what is causing it"
+        ],
+        "text": "A friend told me it's the propranolol, but I think it's my age.",
+        "polarity": "present",
+        "category": "symptom",
+        "time": "current",
+        "system": "reproductive"
+      },
+      {
+        "id": "f013",
+        "item": "morning or night-time erections",
+        "aliases": [
+          "nocturnal erections",
+          "early morning erections"
+        ],
+        "text": "I don't have early morning or night-time erections.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "decreased sex drive",
+        "aliases": [
+          "libido",
+          "sexual desire",
+          "interest in sex"
+        ],
+        "text": "My sex drive has diminished, Doc. I'm not as interested in sex as I used to be.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "hair loss",
+        "aliases": [
+          "losing hair"
+        ],
+        "text": "I've been losing more hair than usual from my head.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "hair loss: own explanation",
+        "parent": "f015",
+        "attribute": "other",
+        "text": "I think I'm starting to go bald.",
+        "polarity": "present",
+        "category": "symptom",
+        "time": "current",
+        "system": "skin"
+      },
+      {
+        "id": "f017",
+        "item": "mood changes",
+        "aliases": [
+          "mood",
+          "feeling down",
+          "depression"
+        ],
+        "text": "There haven't been any changes in my mood.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "worries",
+        "aliases": [
+          "concerns"
+        ],
+        "text": "I've been happy, other than my concern about not being able to perform.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "anxiety",
+        "aliases": [
+          "feeling anxious",
+          "nervousness"
+        ],
+        "text": "I'm not anxious.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "stress",
+        "text": "I'm not stressed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "pain when walking or resting",
+        "aliases": [
+          "leg pain when walking",
+          "claudication"
+        ],
+        "text": "I don't have any pain when walking or resting.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "My appetite hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "high cholesterol",
+        "aliases": [
+          "cholesterol",
+          "hypercholesterolemia"
+        ],
+        "text": "I was diagnosed with high cholesterol last year.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "diabetes",
+        "aliases": [
+          "high blood sugar"
+        ],
+        "text": "I've never been diagnosed with diabetes.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f026",
+        "item": "last blood sugar test",
+        "aliases": [
+          "sugar test",
+          "glucose test"
+        ],
+        "text": "My sugar levels were tested six months ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f027",
+        "item": "heart problems",
+        "aliases": [
+          "heart disease"
+        ],
+        "text": "I haven't had any heart problems.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f028",
+        "item": "stroke",
+        "text": "I haven't had a stroke.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f029",
+        "item": "mini-stroke",
+        "aliases": [
+          "TIA",
+          "transient ischemic attack"
+        ],
+        "text": "I've never had a mini-stroke.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "other medical problems",
+        "aliases": [
+          "medical problems",
+          "chronic illnesses"
+        ],
+        "text": "I haven't had any other diagnoses besides the blood pressure and the cholesterol.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f031",
+        "item": "past injuries or trauma",
+        "aliases": [
+          "trauma"
+        ],
+        "text": "I haven't had any trauma.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I haven't had any surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines",
+          "allergies"
+        ],
+        "text": "I don't have any drug allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "hydrochlorothiazide",
+        "aliases": [
+          "HCTZ",
+          "water pill"
+        ],
+        "text": "I was prescribed hydrochlorothiazide for my blood pressure.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "propranolol",
+        "aliases": [
+          "beta blocker"
+        ],
+        "text": "Six months ago, propranolol was added for my blood pressure.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "taking the medications as prescribed",
+        "aliases": [
+          "medication compliance",
+          "missed pills"
+        ],
+        "text": "In general, I take my medications regularly.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "taking the medications as prescribed: missed doses",
+        "parent": "f036",
+        "attribute": "frequency",
+        "text": "Well, sometimes I forget to take the pills.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "recurrent"
+      },
+      {
+        "id": "f038",
+        "item": "lovastatin",
+        "aliases": [
+          "statin",
+          "cholesterol medicine"
+        ],
+        "text": "I take lovastatin for my cholesterol.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "father's health",
+        "text": "My father died of a heart attack at the age of 50.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f040",
+        "item": "mother's health",
+        "text": "My mother is healthy, but she has Alzheimer's disease.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "mother's living situation",
+        "text": "My mother is in a nursing home now.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "diet",
+        "aliases": [
+          "eating habits",
+          "food"
+        ],
+        "text": "I eat a lot of junk food.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "exercise",
+        "aliases": [
+          "physical activity"
+        ],
+        "text": "I don't exercise.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink beer.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "alcohol: how much",
+        "parent": "f044",
+        "attribute": "quantity",
+        "text": "Three to four beers a week.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "alcohol: for how long",
+        "parent": "f044",
+        "attribute": "duration",
+        "text": "I've been drinking like that for the last decade.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any illegal drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "sexual activity before the problems",
+        "aliases": [
+          "how often you had sex",
+          "sexual partners"
+        ],
+        "text": "Before these problems, I was intimate a few times each week with my wife.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f050",
+        "item": "problems at home",
+        "aliases": [
+          "problems with my wife",
+          "family life",
+          "marital problems"
+        ],
+        "text": "My family life is the same as it has always been.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "work life",
+        "aliases": [
+          "problems at work",
+          "job satisfaction"
+        ],
+        "text": "I am very happy in my job.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a schoolteacher.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "living situation",
+        "aliases": [
+          "who you live with",
+          "home"
+        ],
+        "text": "My wife and I live together in our home.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-028",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "135/88 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.0°F (36.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "16/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "70/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "eye",
+        "name": "funduscopic examination",
+        "aliases": [
+          "fundoscopy",
+          "eye examination",
+          "retina"
+        ],
+        "result": "No funduscopic abnormalities."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "carotid auscultation",
+          "jugular veins"
+        ],
+        "result": "No carotid bruits; no jugular venous distension."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "endocrine",
+        "name": "breast examination",
+        "aliases": [
+          "gynecomastia",
+          "chest inspection"
+        ],
+        "result": "No gynecomastia."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Apical impulse not displaced; regular rate and rhythm; normal heart sounds; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen",
+          "abdominal bruits"
+        ],
+        "result": "Soft, not distended, not tender; normal bowel sounds in all four quadrants; no bruits; no enlarged organs."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "peripheral pulses",
+          "edema",
+          "leg skin and hair"
+        ],
+        "result": "No edema; no hair loss or skin changes; radial, brachial, femoral, dorsalis pedis and posterior tibial pulses 2+ and symmetric."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength"
+        ],
+        "result": "5/5 in both legs."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam"
+        ],
+        "result": "Intact to pinprick and light touch in the legs."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "knee jerk",
+          "ankle jerk"
+        ],
+        "result": "Symmetric, 2+ in the legs."
+      },
+      {
+        "id": "x016",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "Babinski sign",
+        "aliases": [
+          "plantar reflex"
+        ],
+        "result": "Babinski sign present on both sides."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-028",
+    "diagnosis": "Medication-induced erectile dysfunction",
+    "aliases": [
+      "drug-induced erectile dysfunction",
+      "medication-induced ED",
+      "drug-induced ED",
+      "propranolol-induced erectile dysfunction",
+      "beta-blocker-induced erectile dysfunction",
+      "medication-induced impotence",
+      "drug-induced impotence"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Medication-induced erectile dysfunction",
+        "evidence": [
+          "Taking propranolol",
+          "Onset of erectile dysfunction coincides with propranolol use",
+          "No early-morning or nocturnal tumescence"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Erectile dysfunction secondary to vascular disease",
+        "aliases": [
+          "vasculogenic erectile dysfunction",
+          "vascular erectile dysfunction",
+          "arteriogenic erectile dysfunction"
+        ],
+        "evidence": [
+          "History of hypertension",
+          "History of hyperlipidemia",
+          "No early-morning or nocturnal tumescence"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Hypogonadism",
+        "aliases": [
+          "male hypogonadism",
+          "low testosterone",
+          "testosterone deficiency",
+          "androgen deficiency"
+        ],
+        "evidence": [
+          "Loss of libido and ED",
+          "Hair loss",
+          "No early-morning or nocturnal tumescence"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Depression",
+        "note": "Psychogenic causes reduce libido and erections but usually spare nocturnal or morning erections, which are absent here; he denies other depressive symptoms, though his feelings about his mother in a nursing home may deserve exploration."
+      },
+      {
+        "diagnosis": "Peyronie's disease",
+        "note": "Fibrous plaque of the tunica albuginea can cause penile scarring and erectile dysfunction."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-028",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-028-p001"
+      ],
+      "f003": [
+        "medqa-cs-028-p002"
+      ],
+      "f004": [
+        "medqa-cs-028-p004"
+      ],
+      "f005": [
+        "medqa-cs-028-p005"
+      ],
+      "f006": [
+        "medqa-cs-028-p006"
+      ],
+      "f007": [
+        "medqa-cs-028-p008"
+      ],
+      "f008": [
+        "medqa-cs-028-p008"
+      ],
+      "f009": [
+        "medqa-cs-028-p009"
+      ],
+      "f010": [
+        "medqa-cs-028-p009"
+      ],
+      "f011": [
+        "medqa-cs-028-p010"
+      ],
+      "f012": [
+        "medqa-cs-028-p008"
+      ],
+      "f013": [
+        "medqa-cs-028-p011"
+      ],
+      "f014": [
+        "medqa-cs-028-p012"
+      ],
+      "f015": [
+        "medqa-cs-028-p007"
+      ],
+      "f016": [
+        "medqa-cs-028-p007"
+      ],
+      "f017": [
+        "medqa-cs-028-p015"
+      ],
+      "f018": [
+        "medqa-cs-028-p015"
+      ],
+      "f019": [
+        "medqa-cs-028-p016"
+      ],
+      "f020": [
+        "medqa-cs-028-p016"
+      ],
+      "f021": [
+        "medqa-cs-028-p017"
+      ],
+      "f022": [
+        "medqa-cs-028-p018"
+      ],
+      "f023": [
+        "medqa-cs-028-p019"
+      ],
+      "f024": [
+        "medqa-cs-028-p021"
+      ],
+      "f025": [
+        "medqa-cs-028-p020"
+      ],
+      "f026": [
+        "medqa-cs-028-p020"
+      ],
+      "f027": [
+        "medqa-cs-028-p022"
+      ],
+      "f028": [
+        "medqa-cs-028-p023"
+      ],
+      "f029": [
+        "note"
+      ],
+      "f030": [
+        "medqa-cs-028-p025"
+      ],
+      "f031": [
+        "note"
+      ],
+      "f032": [
+        "medqa-cs-028-p026"
+      ],
+      "f033": [
+        "medqa-cs-028-p035"
+      ],
+      "f034": [
+        "medqa-cs-028-p002"
+      ],
+      "f035": [
+        "medqa-cs-028-p002"
+      ],
+      "f036": [
+        "medqa-cs-028-p003"
+      ],
+      "f037": [
+        "medqa-cs-028-p003"
+      ],
+      "f038": [
+        "medqa-cs-028-p024"
+      ],
+      "f039": [
+        "medqa-cs-028-p027"
+      ],
+      "f040": [
+        "medqa-cs-028-p027"
+      ],
+      "f041": [
+        "medqa-cs-028-p027"
+      ],
+      "f042": [
+        "medqa-cs-028-p029"
+      ],
+      "f043": [
+        "medqa-cs-028-p030"
+      ],
+      "f044": [
+        "medqa-cs-028-p031"
+      ],
+      "f045": [
+        "medqa-cs-028-p031"
+      ],
+      "f046": [
+        "medqa-cs-028-p031"
+      ],
+      "f047": [
+        "medqa-cs-028-p032"
+      ],
+      "f048": [
+        "medqa-cs-028-p033"
+      ],
+      "f049": [
+        "medqa-cs-028-p013"
+      ],
+      "f050": [
+        "medqa-cs-028-p014"
+      ],
+      "f051": [
+        "medqa-cs-028-p014"
+      ],
+      "f052": [
+        "medqa-cs-028-p028"
+      ],
+      "f053": [
+        "medqa-cs-028-p034"
+      ]
+    },
+    "quotes": {
+      "f001": "I am here to check on my blood pressure as I have been diagnosed with hypertension.",
+      "f002": "I discovered I had high blood pressure last year.",
+      "f003": "but my blood pressure is still elevated.",
+      "f004": "No, I do not.",
+      "f005": "Six months ago.",
+      "f006": "I feel fine.",
+      "f007": "I have started to experience problems with my sexual performance.",
+      "f008": "Over the past 4 months",
+      "f009": "I have a weak erection.",
+      "f010": "Sometimes I can't get an erection at all.",
+      "f011": "About a 4.",
+      "f012": "A friend told me it is the propranolol, but I think it is my age.",
+      "f013": "No, I do not.",
+      "f014": "It's diminished as well, Doc. I'm not as interested in sex like I used to be.",
+      "f015": "I've been losing more hair than usual from my head.",
+      "f016": "I think I'm starting to go bald.",
+      "f017": "No changes.",
+      "f018": "I've been happy other than my concern with not being able to perform.",
+      "f019": "No, I do not.",
+      "f020": "No, I do not.",
+      "f021": "No, I do not.",
+      "f022": "No, I do not.",
+      "f023": "No, I do not.",
+      "f024": "Yes, it was diagnosed last year.",
+      "f025": "No, I do not.",
+      "f026": "Six months ago.",
+      "f027": "No, I do not.",
+      "f028": "No, I do not.",
+      "f029": "No leg claudication or any previous history of heart problems, stroke, TIA, or diabetes.",
+      "f030": "No, I do not.",
+      "f031": "No depression, anxiety, appetite or weight changes, or history of trauma.",
+      "f032": "No, I do not.",
+      "f033": "No, I do not.",
+      "f034": "I was prescribed hydrochlorothiazide",
+      "f035": "Six months ago, propranolol was added.",
+      "f036": "but in general, I take them regularly.",
+      "f037": "Well, sometimes I forget to take the pills",
+      "f038": "Yes, lovastatin.",
+      "f039": "My father died at the age of 50 of a heart attack.",
+      "f040": "My mother is healthy, but she has Alzheimer's disease.",
+      "f041": "She is in a nursing home now.",
+      "f042": "I eat a lot of junk food.",
+      "f043": "No, I do not.",
+      "f044": "Yes, I have been drinking three to four beers weekly for the last decade.",
+      "f045": "three to four beers weekly",
+      "f046": "for the last decade.",
+      "f047": "No, I do not.",
+      "f048": "No, I do not.",
+      "f049": "A few times each week with my wife.",
+      "f050": "My family life is the same as it has always been",
+      "f051": "and I am very happy in my job.",
+      "f052": "Schoolteacher.",
+      "f053": "My wife and I reside together in our home."
+    },
+    "flags": {
+      "f003": [
+        "Present tense in the script, but it is followed by 'Six months ago, propranolol was added'; unclear whether it describes the time before or after propranolol was added (v1 temporality 'unclear', so no time)."
+      ],
+      "f004": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p004) — denial confirmed."
+      ],
+      "f013": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p011) — denial confirmed."
+      ],
+      "f019": [
+        "The raw Patient Description says he 'appears anxious'.",
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ],
+      "f020": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ],
+      "f021": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p017) — denial confirmed."
+      ],
+      "f022": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p018) — denial confirmed."
+      ],
+      "f023": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p019) — denial confirmed."
+      ],
+      "f027": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p022) — denial confirmed."
+      ],
+      "f028": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p023) — denial confirmed."
+      ],
+      "f029": [
+        "Only in the student note HPI."
+      ],
+      "f030": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p025) — denial confirmed."
+      ],
+      "f031": [
+        "Only in the student note HPI; the type of trauma is not specified."
+      ],
+      "f032": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p026) — denial confirmed."
+      ],
+      "f033": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p035) — denial confirmed."
+      ],
+      "f043": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p030) — denial confirmed."
+      ],
+      "f047": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p032) — denial confirmed."
+      ],
+      "f048": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p033) — denial confirmed."
+      ],
+      "f038": [
+        "Purpose added from the case (the only matching diagnosis); the source answer lists the medicine only."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 135/88 mmHg | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-028-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.0°F (36.7°C) | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-028-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 16/minute | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-028-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 70/minute, regular | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-028-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-028-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: No funduscopic abnormalities.",
+        "exam_ids": [
+          "medqa-cs-028-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Neck: No carotid bruits, no jugular venous distention.",
+        "exam_ids": [
+          "medqa-cs-028-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally. No gynecomastia.",
+        "exam_ids": [
+          "medqa-cs-028-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally. No gynecomastia.",
+        "exam_ids": [
+          "medqa-cs-028-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-028-e006"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, normal bowel sounds x 4 quadrants, no bruits, no organomegaly.",
+        "exam_ids": [
+          "medqa-cs-028-e007"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Extremities: No edema, no hair loss or skin changes. Radial, brachial, femoral, dorsalis pedis, and posterior tibialis 2+ and symmetric.",
+        "exam_ids": [
+          "medqa-cs-028-e008"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Neuro: Motor strength grade 5/5 in bilateral lower extremities.",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Sensation: Intact to pinprick and soft touch in lower extremities.",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "Deep tendon reflexes: Symmetric grade 2+ in lower extremities",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ]
+      },
+      "x016": {
+        "source": "patient_note",
+        "source_text": "bilateral Babinski sign present.",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x001": [
+        "The note says 'VS: within normal limits', but the doorway BP of 135/88 mm Hg is above the 130/80 target named in the sample closure."
+      ],
+      "x016": [
+        "Faithful to the source, but clinically implausible next to an otherwise normal neurological exam; likely a source error. Direction of the plantar response is not stated. Review before use."
+      ]
+    },
+    "leakage": [
+      {
+        "fact_id": "f012",
+        "reason": "A friend's attribution of the sexual problems to propranolol points directly at the rank-1 diagnosis (medication-induced erectile dysfunction); it is scripted history the SP gives, so it is kept."
+      }
+    ],
+    "source_issues": [
+      "Age conflict: the opening scenario says 50 years old; the raw Patient Description and the note HPI say 54. demographics.age uses the opening scenario (50).",
+      "Exam line e009 says 'bilateral Babinski sign present'. Read literally this is an abnormal (upgoing) plantar response, which fits poorly with an otherwise normal lower-extremity neuro exam and is not mentioned in the gold; it is kept neutral in x016 (direction not stated).",
+      "The note says 'VS: within normal limits' (e002), but the doorway BP is 135/88 mm Hg, above the 130/80 target named in the sample closure.",
+      "The raw Patient Description says the patient 'appears anxious', but he denies anxiety and stress (p016).",
+      "p002 'my blood pressure is still elevated' is ambiguous in time (before or after propranolol was added); temporality unclear, so f003 has no time.",
+      "Note PSH reads 'No, I do not.' (script wording copied into the note).",
+      "Gold rank 1 'Onset of erectile dysfunction coincides with propranolol use': propranolol was added 6 months ago and the problems began 4 months ago; roughly consistent.",
+      "The challenging question has a doubled opening quotation mark in the source; cleaned."
+    ],
+    "notes": [
+      "The visit is a hypertension follow-up, so hypertension course facts (diagnosis, persistent elevation, home monitoring, last check) are symptom facts (v1 hpi), as children of the visit-reason fact f001; the drugs are medication facts.",
+      "p020 is split into never diagnosed with diabetes (f025) and last blood-sugar test six months ago with no result given (f026).",
+      "Note-only facts (v1 from_note): no TIA (f029) and no history of trauma (f031).",
+      "The scripted 'Isn't that right, doctor?' in p008 is in extras.patient_questions next to the challenging question.",
+      "leakage lists f012 because it names propranolol as the cause, which is the rank-1 diagnosis.",
+      "14 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 15 facts confirmed (flags re-keyed to the v2 ids).",
+      "Conversion: p008/p009/p010 become parent f007 (problems with sexual performance) with onset, character, frequency, severity (value 4 on the examiner's 0-6-adequate scale) and own-explanation children. The own explanations of the sexual problems (f012) and the hair loss (f016) are v1 'concerns', so they keep category social_background although their parents are symptoms; their system is omitted because they are not symptom facts.",
+      "Conversion: medication compliance (p003) is parent f036 with a missed-doses child f037 (recurrent). Alcohol (p031) is a parent with quantity and duration children. Peripheral pulses stay inside the extremities record (x012), as in the worked example.",
+      "Harmonisation pass: f006 'feeling unwell today' (absent) -> 'feeling unwell today' (absent); f012 category symptom -> symptom (parent f007); f016 category symptom -> symptom (parent f015); scale [0, 10] added to f011; f030 item -> 'other medical problems' (blanket denial).",
+      "Fixes: f014 text rewritten; f036 text rewritten; f035 text rewritten; f038 text rewritten; f004 answer word removed; f013 answer word removed; f017 answer word removed; f019 answer word removed; f020 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f024 answer word removed; f025 answer word removed; f027 answer word removed; f028 answer word removed; f030 answer word removed; f032 answer word removed; f033 answer word removed; f043 answer word removed; f044 answer word removed; f047 answer word removed; f048 answer word removed; f014 item -> decreased sex drive."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Patient description: appears anxious.",
+        "Don't mention impotence unless the examinee asks whether you are having any side effects from your medications or whether you have any other concerns."
+      ],
+      "patient_questions": [
+        "I've begun to encounter issues with my sexual performance, which I believe are related to my age. Is that correct, doctor?",
+        "A friend told me it is the propranolol, but I think it is my age. Isn't that right, doctor?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

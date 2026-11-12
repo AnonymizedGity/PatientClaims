@@ -1,0 +1,55 @@
+{
+ "case_id": "medqa-cs-043",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have a sore throat.",
+   "It started two weeks ago.",
+   "I've had a mild fever, but I didn't take my temperature.",
+   "I've been feeling tired.",
+   "I have some swelling.",
+   "I had gonorrhea 4 months ago, and I was cured after a course of antibiotics.",
+   "I'm sexually active with my new girlfriend.",
+   "My ex-girlfriend had similar symptoms two months ago."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have a sore throat that started two weeks ago. I've had a mild fever, but I didn't take my temperature, and I've been feeling tired. I also have some swelling. By the way, I had gonorrhea four months ago and was cured after a course of antibiotics. I'm sexually active with my new girlfriend, and my ex-girlfriend had similar symptoms two months ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f005",
+    "f007",
+    "f034",
+    "f046",
+    "f050"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4340,
+   "tokens_out": 93,
+   "seconds": 10.76,
+   "redrafts": 0
+  }
+ }
+}

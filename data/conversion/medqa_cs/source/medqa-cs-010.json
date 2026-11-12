@@ -1,0 +1,279 @@
+{
+  "case_id": "medqa-cs-010",
+  "source_case_id": 10,
+  "opening_scenario": "Riva George, a 35-year-old female, comes to the hospital complaining of pain in her right calf.",
+  "doorway_vital_signs": [
+    "Blood Pressure (BP): 130/70 mmHg",
+    "Temperature (Temp): 99.9°F (37.7°C)",
+    "Respiratory Rate (RR): 13 per minute",
+    "Heart Rate (HR): 88 per minute"
+  ],
+  "sp_notes": [
+    "Exhibit pain in your calf when the doctor dorsiflexes your right ankle.",
+    "Place a bandage on your right leg to cover the cuts that you got after a fall."
+  ],
+  "challenging_questions": [
+    "\"My father experienced a clot in his leg. What measures do you recommend to prevent me from developing a clot as well?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief complaint",
+    "question": "What brings you in today?",
+    "answer": "Pain in my right calf muscle."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-010-p001",
+      "topic": "Onset",
+      "question": "When did the pain begin?",
+      "answer": "The pain started a few days ago and has gotten worse."
+    },
+    {
+      "fact_id": "medqa-cs-010-p002",
+      "topic": "Frequency",
+      "question": "Is the pain constant or does it come and go?",
+      "answer": "It is present all the time."
+    },
+    {
+      "fact_id": "medqa-cs-010-p003",
+      "topic": "Progression",
+      "question": "Has the level of pain remained unchanged throughout?",
+      "answer": "Initially, the pain was mild, but now it occurs with even the slightest movement."
+    },
+    {
+      "fact_id": "medqa-cs-010-p004",
+      "topic": "Severity on a scale",
+      "question": "On a scale of 0 to 10, with 10 being the absolute worst pain of your life, and 0 being no pain, how would you rate your pain now?",
+      "answer": "8/10."
+    },
+    {
+      "fact_id": "medqa-cs-010-p005",
+      "topic": "Radiation",
+      "question": "Does the pain radiate or move anywhere?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-010-p006",
+      "topic": "Quality",
+      "question": "What does the pain feel like?",
+      "answer": "Pressure, spasms."
+    },
+    {
+      "fact_id": "medqa-cs-010-p007",
+      "topic": "Alleviating factors",
+      "question": "Does anything help to ease the pain?",
+      "answer": "Pain medication (ibuprofen). It also helps if I prop up my leg with a pillow."
+    },
+    {
+      "fact_id": "medqa-cs-010-p008",
+      "topic": "Exacerbating factors",
+      "question": "Does anything make the pain worse?",
+      "answer": "Walking and extending my knee."
+    },
+    {
+      "fact_id": "medqa-cs-010-p009",
+      "topic": "Swelling",
+      "question": "Have you observed any swelling?",
+      "answer": "By the end of the day, my legs feel heavy and experience pressure."
+    },
+    {
+      "fact_id": "medqa-cs-010-p010",
+      "topic": "Injury",
+      "question": "Have you experienced any recent injuries to the area?",
+      "answer": "Yes, I fell down and scratched my right leg (points to bandage)."
+    },
+    {
+      "fact_id": "medqa-cs-010-p011",
+      "topic": "Redness",
+      "question": "Is there any sign of redness?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-010-p012",
+      "topic": "Warmth",
+      "question": "Is that area feeling warm?",
+      "answer": "My right leg seems to be warmer compared to my left."
+    },
+    {
+      "fact_id": "medqa-cs-010-p013",
+      "topic": "Varicose veins",
+      "question": "Do you have any veins that are bulging and are visible through the skin on your legs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-010-p014",
+      "topic": "Shortness of breath",
+      "question": "Have you had any shortness of breath?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-010-p015",
+      "topic": "Chest pain",
+      "question": "Have you had any chest pain?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-010-p016",
+      "topic": "Recent immobilization",
+      "question": "Have you experienced prolonged immobility recently, such as during long trips or while on bed rest?",
+      "answer": "I often travel for my consulting work, and a week ago, I had a 15-hour flight to see a crucial client."
+    },
+    {
+      "fact_id": "medqa-cs-010-p017",
+      "topic": "Fever",
+      "question": "Have you had a fever recently?",
+      "answer": "I have felt warm recently but haven't measured my temperature."
+    },
+    {
+      "fact_id": "medqa-cs-010-p018",
+      "topic": "Last menstrual period",
+      "question": "When was your last menstrual period?",
+      "answer": "Two weeks ago."
+    },
+    {
+      "fact_id": "medqa-cs-010-p019",
+      "topic": "Contraceptives",
+      "question": "Are you currently using contraceptive medication?",
+      "answer": "I have been using oral contraceptives for the past 2 years."
+    },
+    {
+      "fact_id": "medqa-cs-010-p020",
+      "topic": "Frequency of menstrual periods",
+      "question": "What are your menstrual periods like? Are they regular? How long do they last? How heavy are they? Are they particularly painful?",
+      "answer": "Regular. My periods last 3 days, and I use three to four pads. They are not accompanied by pain."
+    },
+    {
+      "fact_id": "medqa-cs-010-p021",
+      "topic": "Obstetric history",
+      "question": "How many pregnancies have you had? Have you had any miscarriages? How many children do you have? Any complications with any of your deliveries?",
+      "answer": "I have been pregnant twice and have two kids. I haven't had any miscarriages. Both times I had a normal vaginal delivery without complications."
+    },
+    {
+      "fact_id": "medqa-cs-010-p022",
+      "topic": "Last Pap smear",
+      "question": "When was your last Pap smear? What were the results?",
+      "answer": "One year ago; it was normal."
+    },
+    {
+      "fact_id": "medqa-cs-010-p023",
+      "topic": "Weight changes",
+      "question": "Have you experienced any fluctuations in your weight?",
+      "answer": "I increased my weight by 50 pounds following the birth of my last child three years ago."
+    },
+    {
+      "fact_id": "medqa-cs-010-p024",
+      "topic": "Past medical history",
+      "question": "Do you have any medical conditions or health problems?",
+      "answer": "None."
+    },
+    {
+      "fact_id": "medqa-cs-010-p025",
+      "topic": "Past surgical history",
+      "question": "Have you had any surgeries?",
+      "answer": "None."
+    },
+    {
+      "fact_id": "medqa-cs-010-p026",
+      "topic": "Family history",
+      "question": "Any similar symptoms in your family? Any other diseases?",
+      "answer": "My dad had a clot in his leg."
+    },
+    {
+      "fact_id": "medqa-cs-010-p027",
+      "topic": "Occupation",
+      "question": "What is your profession?",
+      "answer": "Consultant in an executive capacity."
+    },
+    {
+      "fact_id": "medqa-cs-010-p028",
+      "topic": "Alcohol use",
+      "question": "Do you consume alcoholic beverages?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-010-p029",
+      "topic": "Illicit drug use",
+      "question": "Do you ever use recreational drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-010-p030",
+      "topic": "Tobacco",
+      "question": "Do you use tobacco?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-010-p031",
+      "topic": "Sexual activity",
+      "question": "Are you currently engaging in sexual activity? With whom?",
+      "answer": "With my spouse."
+    },
+    {
+      "fact_id": "medqa-cs-010-p032",
+      "topic": "Drug allergies/herbal medication",
+      "question": "Do you have any allergies?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History:\nHPI: A 35-year-old female complains of right calf pain of a few days' duration. The pain is constant, 8/10 in intensity, nonradiating, aggravated on walking, extending the knee, and dorsiflexion of the foot. The pain is associated with swelling, redness, and warmth. It is alleviated on elevation of the foot and with ibuprofen. The patient took a 15-hour flight 1 week ago. She has a history of weight gain postpartum and cuts to the right leg, secondary to a fall. She has two children, both normal deliveries. No history of miscarriages. LMP was 2 weeks ago. The patient says she has gained 50 lbs in the past 3 years. She has been on OCPs for 2 years. No history of chest pain or shortness of breath.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: OCPs, ibuprofen.\nPMH: None.\nPSH: None.\nSH: No smoking, no EtOH, no illicit drugs.\nFH: Father had DVT. No history of sudden deaths in the family.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-010-e001",
+      "source_text": "Patient is in severe pain."
+    },
+    {
+      "exam_id": "medqa-cs-010-e002",
+      "source_text": "VS: WNL except for low-grade fever."
+    },
+    {
+      "exam_id": "medqa-cs-010-e003",
+      "source_text": "Chest: Clear breath sounds bilaterally; no rales or rhonchi."
+    },
+    {
+      "exam_id": "medqa-cs-010-e004",
+      "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-010-e005",
+      "source_text": "Abdomen: Soft, non-tender, non-distended, ~ BS x 4 quadrants."
+    },
+    {
+      "exam_id": "medqa-cs-010-e006",
+      "source_text": "Extremities:"
+    },
+    {
+      "exam_id": "medqa-cs-010-e007",
+      "source_text": "Inspection: Right calf appears red and swollen compared to the left; contours of the muscles appear normal; no ulcers or pigmentation."
+    },
+    {
+      "exam_id": "medqa-cs-010-e008",
+      "source_text": "Palpation: Right leg is warmer compared to the left; pitting pedal edema present on the right side; multiple healing cuts covered with a bandage on the right leg; dorsalis pedis pulse felt and equal on both sides; mobility normal at ankle joint, knee, and hip joint; no Homans sign on the right side."
+    },
+    {
+      "exam_id": "medqa-cs-010-e009",
+      "source_text": "Neuro:"
+    },
+    {
+      "exam_id": "medqa-cs-010-e010",
+      "source_text": "Mental status: Alert and oriented."
+    },
+    {
+      "exam_id": "medqa-cs-010-e011",
+      "source_text": "DTRs: Symmetric 2+."
+    },
+    {
+      "exam_id": "medqa-cs-010-e012",
+      "source_text": "Motor/sensation: Normal."
+    },
+    {
+      "exam_id": "medqa-cs-010-e013",
+      "source_text": "Cranial nerves: 2-12 intact."
+    },
+    {
+      "exam_id": "medqa-cs-010-e014",
+      "source_text": "Gait: Normal."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Deep venous thrombosis\nHistory Findings: \n- Recent 15-hour airplane flight\n- Weight gain of 50 lbs over the past 3 years\n- Taking OCPs for 2 years\n- Father with DVT (possible familial thrombophilia)\n\nPhysical Exam Findings:\n- Homans sign\n- Pitting edema\n- Swollen, tender, red, warm right calf\n\nDiagnosis #2: Cellulitis\nHistory Findings: \n- Cuts to right leg secondary to fall\n- Low-grade fever\n\nPhysical Exam Findings:\n- Temperature 99.9°F\n- Swollen, tender, red, warm right calf\n\nDiagnosis #3: Rupture of Baker cyst\nHistory Findings:\n- Spasmodic pain in right calf\n\nPhysical Exam Findings:\n- Swollen, tender, warm right calf",
+  "gold_additional_diagnosis": "- Hematoma: Injuries can cause bleeding intramuscularly (in which no bruising occurs) or intermuscularly (in which bruising is usually present). Patients present with pain, swelling, and restricted movement. The condition may lead to posterior compartment syndrome.\n- Rupture of the gastrocnemius muscle: This presents with sudden pain associated with rupture at the musculotendinous junction of the gastrocnemius muscle, halfway between the knee and the heel. There may be bruising and pain when standing on the tips of the toes. Patients also present with pain on dorsiflexion of the ankle against resistance.\n- Spasm/sprain: Undue strain may cause physical tearing of muscles or tendons, inducing spasm and pain. Ligaments can be ruptured or torn as a result of overstretching or injuries.",
+  "raw_opening": "Opening Scenario:\n\nRiva George, a 35-year-old female, comes to the hospital complaining of pain in her right calf.\n\nVital Signs:\n\n- Blood Pressure (BP): 130/70 mmHg\n- Temperature (Temp): 99.9°F (37.7°C)\n- Respiratory Rate (RR): 13 per minute\n- Heart Rate (HR): 88 per minute\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genital, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nPatient is a 35-year-old female, married with two children.\n\nNotes for the SP:\n\n- Exhibit pain in your calf when the doctor dorsiflexes your right ankle.\n- Place a bandage on your right leg to cover the cuts that you got after a fall.\n\nChallenging Questions to Ask:\n\n\"My father experienced a clot in his leg. What measures do you recommend to prevent me from developing a clot as well?\"\n\nExaminee Response:\n\n\"There are several measures you can take that may prevent you from having a DVT. Above all, you should avoid immobilization for long periods of time - for example, while sitting at your computer desk or on long-distance plane trips. Aim to engage in stationary movement and consider taking a brief walk.. If you are using oral contraceptive pills, I highly advise discontinuing them, as they are known to increase the risk of clot formation.. Studies have also shown that obesity increases your risk of having a DVT, so I suggest that you exercise regularly and manage your diet.\"\n\nExaminee Checklist:\n\nEntrance:\n\n- Examinee knocked on the door before entering.\n- Examinee made eye contact with the SP.\n- Examinee correctly wrote the patient's name.\n- Examinee introduced self by name.\n- Examinee identified their role or position.\n\nReflective Listening:\n\n- Examinee asked an open-ended question and actively listened to the response.\n- Examinee asked the SP to list their concerns and listened to the response without interrupting.\n- Examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\n- The examinee elicited data efficiently and accurately.\n\nConnecting With the Patient:\n\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief complaint:\nDoctor: \"What brings you in today?\"\nPatient: \"Pain in my right calf muscle.\"\n\nOnset:\nDoctor: \"When did the pain begin?\"\nPatient: \"The pain started a few days ago and has gotten worse.\"\n\nFrequency:\nDoctor: \"Is the pain constant or does it come and go?\"\nPatient: \"It is present all the time.\"\n\nProgression:\nDoctor: \"Has the level of pain remained unchanged throughout?\"\nPatient: \"Initially, the pain was mild, but now it occurs with even the slightest movement.\"\n\nSeverity on a scale:\nDoctor: \"On a scale of 0 to 10, with 10 being the absolute worst pain of your life, and 0 being no pain, how would you rate your pain now?\"\nPatient: \"8/10.\"\n\nRadiation:\nDoctor: \"Does the pain radiate or move anywhere?\"\nPatient: \"No.\"\n\nQuality:\nDoctor: \"What does the pain feel like?\"\nPatient: \"Pressure, spasms.\"\n\nAlleviating factors:\nDoctor: \"Does anything help to ease the pain?\"\nPatient: \"Pain medication (ibuprofen). It also helps if I prop up my leg with a pillow.\"\n\nExacerbating factors:\nDoctor: \"Does anything make the pain worse?\"\nPatient: \"Walking and extending my knee.\"\n\nSwelling:\nDoctor: \"Have you observed any swelling?\"\nPatient: \"By the end of the day, my legs feel heavy and experience pressure.\"\n\nInjury:\nDoctor: \"Have you experienced any recent injuries to the area?\"\nPatient: \"Yes, I fell down and scratched my right leg (points to bandage).\"\n\nRedness:\nDoctor: \"Is there any sign of redness?\"\nPatient: \"Yes.\"\n\nWarmth:\nDoctor: \"Is that area feeling warm?\"\nPatient: \"My right leg seems to be warmer compared to my left.\"\n\nVaricose veins:\nDoctor: \"Do you have any veins that are bulging and are visible through the skin on your legs?\"\nPatient: \"No.\"\n\nShortness of breath:\nDoctor: \"Have you had any shortness of breath?\"\nPatient: \"No.\"\n\nChest pain:\nDoctor: \"Have you had any chest pain?\"\nPatient: \"No.\"\n\nRecent immobilization:\nDoctor: \"Have you experienced prolonged immobility recently, such as during long trips or while on bed rest?\"\nPatient: \"I often travel for my consulting work, and a week ago, I had a 15-hour flight to see a crucial client.\"\n\nFever:\nDoctor: \"Have you had a fever recently?\"\nPatient: \"I have felt warm recently but haven't measured my temperature.\"\n\nLast menstrual period:\nDoctor: \"When was your last menstrual period?\"\nPatient: \"Two weeks ago.\"\n\nContraceptives:\nDoctor: \"Are you currently using contraceptive medication?\"\nPatient: \"I have been using oral contraceptives for the past 2 years.\"\n\nFrequency of menstrual periods:\nDoctor: \"What are your menstrual periods like? Are they regular? How long do they last? How heavy are they? Are they particularly painful?\"\nPatient: \"Regular. My periods last 3 days, and I use three to four pads. They are not accompanied by pain.\"\n\nObstetric history:\nDoctor: \"How many pregnancies have you had? Have you had any miscarriages? How many children do you have? Any complications with any of your deliveries?\"\nPatient: \"I have been pregnant twice and have two kids. I haven't had any miscarriages. Both times I had a normal vaginal delivery without complications.\"\n\nLast Pap smear:\nDoctor: \"When was your last Pap smear? What were the results?\"\nPatient: \"One year ago; it was normal.\"\n\nWeight changes:\nDoctor: \"Have you experienced any fluctuations in your weight?\"\nPatient: \"I increased my weight by 50 pounds following the birth of my last child three years ago.\"\n\nPast medical history:\nDoctor: \"Do you have any medical conditions or health problems?\"\nPatient: \"None.\"\n\nPast surgical history:\nDoctor: \"Have you had any surgeries?\"\nPatient: \"None.\"\n\nFamily history:\nDoctor: \"Any similar symptoms in your family? Any other diseases?\"\nPatient: \"My dad had a clot in his leg.\"\n\nOccupation:\nDoctor: \"What is your profession?\"\nPatient: \"Consultant in an executive capacity.\"\n\nAlcohol use:\nDoctor: \"Do you consume alcoholic beverages?\"\nPatient: \"No.\"\n\nIllicit drug use:\nDoctor: \"Do you ever use recreational drugs?\"\nPatient: \"No.\"\n\nTobacco:\nDoctor: \"Do you use tobacco?\"\nPatient: \"No.\"\n\nSexual activity:\nDoctor: \"Are you currently engaging in sexual activity? With whom?\"\nPatient: \"With my spouse.\"\n\nDrug allergies/herbal medication:\nDoctor: \"Do you have any allergies?\"\nPatient: \"No.\"\n\nPhysical Examination:\n\n- Examinee washed his/her hands. \n- Examinee asked permission to start the exam. \n- Examinee used respectful draping. \n- Examinee did not repeat painful maneuvers. \n\nExam Component Maneuver:\n\n- CV/pulmonary exam: Inspection, auscultation, palpation; compared pulses (femoral, popliteal, dorsalis pedis) on both sides.\n- Musculoskeletal exam: Inspection, palpation, range of motion (knee, shoulder, hip joint on both sides).\n- Extremities: Inspection, palpation; checked for Homan's sign.\n- Neurologic exam: Sensory and motor reflexes (knee, ankle).\n\nSample Closure:\n\n\"Mrs. George, based on your history and my physical examination, I believe it is possible that you had a blood clot. However, we will also look for other possible causes of your symptoms, such as an infection or a ruptured cyst. We will perform several blood tests and imaging studies to assist us in reaching a definitive diagnosis.. If your test results show a clot, we will start you on blood thinners to prevent further complications, such as the possibility of a clot traveling to your lungs. Do you have any questions for me?\"\n\nClosure:\n\nThe examinee should arrive at the testing center at least 30 minutes before the exam starts. They have to bring a valid ID, such as a driver's license or passport. The examinee will be provided with scratch paper and pencils to use during the exam. It's important for the examinee to read the instructions carefully before beginning the exam. If the examinee has any questions or concerns, they should raise their hand and wait for the proctor to assist them. Once the exam is complete, the examinee should check to make sure they have answered all of the questions before submitting their answer sheet.Patient Note:\n\nHistory:\nHPI: A 35-year-old female complains of right calf pain of a few days' duration. The pain is constant, 8/10 in intensity, nonradiating, aggravated on walking, extending the knee, and dorsiflexion of the foot. The pain is associated with swelling, redness, and warmth. It is alleviated on elevation of the foot and with ibuprofen. The patient took a 15-hour flight 1 week ago. She has a history of weight gain postpartum and cuts to the right leg, secondary to a fall. She has two children, both normal deliveries. No history of miscarriages. LMP was 2 weeks ago. The patient says she has gained 50 lbs in the past 3 years. She has been on OCPs for 2 years. No history of chest pain or shortness of breath.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: OCPs, ibuprofen.\nPMH: None.\nPSH: None.\nSH: No smoking, no EtOH, no illicit drugs.\nFH: Father had DVT. No history of sudden deaths in the family.\n\nPhysical Examination:\n\nPatient is in severe pain.\nVS: WNL except for low-grade fever.\nChest: Clear breath sounds bilaterally; no rales or rhonchi.\nHeart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops.\nAbdomen: Soft, non-tender, non-distended, ~ BS x 4 quadrants.\nExtremities:\nInspection: Right calf appears red and swollen compared to the left; contours of the muscles appear normal; no ulcers or pigmentation.\nPalpation: Right leg is warmer compared to the left; pitting pedal edema present on the right side; multiple healing cuts covered with a bandage on the right leg; dorsalis pedis pulse felt and equal on both sides; mobility normal at ankle joint, knee, and hip joint; no Homans sign on the right side.\nNeuro: \nMental status: Alert and oriented.\nDTRs: Symmetric 2+.\nMotor/sensation: Normal.\nCranial nerves: 2-12 intact.\nGait: Normal."
+}

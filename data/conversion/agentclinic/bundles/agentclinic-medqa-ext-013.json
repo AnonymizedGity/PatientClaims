@@ -1,0 +1,82 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-013", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 25, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "groin pain", "aliases": ["pain in the groin"], "text": "I have severe pain in my right groin.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "knee pain", "aliases": ["sore knees"], "text": "Both of my knees hurt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "when the pain started", "text": "The pain in my knees and my groin started immediately after the accident.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "recent car accident", "aliases": ["car crash", "motor vehicle collision", "how the injury happened"], "text": "I was in a car crash: a rear-end collision, and I was driving the car at the back.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "recent car accident: seatbelt", "parent": "f004", "attribute": "context", "aliases": ["restrained", "seat belt"], "text": "I was wearing my seatbelt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f006", "item": "abnormal position of the leg", "aliases": ["leg looks shorter", "leg turned inward", "leg deformity"], "text": "My right leg looks slightly shorter than the other one, and it's bent, pulled in toward the other leg and turned inward.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "head injury", "aliases": ["hit my head"], "text": "I didn't injure my head.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I don't have any belly pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f009", "item": "chest pain", "text": "I don't have any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f010", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "occupation", "aliases": ["job", "work"], "text": "I work as an elementary school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-013",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "132/79 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "116/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "19/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "hip examination", "aliases": ["groin examination", "leg examination", "lower limb examination", "leg position", "range of motion of the legs"], "result": "Inspection: right leg slightly shortened, flexed, adducted and internally rotated; no visible wounds. Palpation: right groin tender. Range of motion: right leg limited by pain and abnormal positioning; left leg normal."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "knee examination", "aliases": ["knee palpation", "kneecaps", "patella"], "result": "Tenderness over both kneecaps."},
+      {"id": "x007", "kind": "test", "name": "pelvic X-ray", "aliases": ["X-ray of the pelvis", "hip X-ray", "pelvis radiograph"], "result": "No fracture of the pelvic ring or femoral neck; alignment suggests posterior dislocation of the right hip."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-013",
+    "diagnosis": "Posterior hip dislocation",
+    "aliases": ["posterior dislocation of the hip", "posterior dislocation of the right hip", "right posterior hip dislocation", "traumatic posterior hip dislocation"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-013",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-013-p001"], "f002": ["agentclinic-medqa-ext-013-p001", "agentclinic-medqa-ext-013-p002"],
+      "f003": ["agentclinic-medqa-ext-013-p001"], "f004": ["agentclinic-medqa-ext-013-p001"], "f005": ["agentclinic-medqa-ext-013-p001"],
+      "f006": ["agentclinic-medqa-ext-013-p003"], "f007": ["agentclinic-medqa-ext-013-p006"], "f008": ["agentclinic-medqa-ext-013-p006"],
+      "f009": ["agentclinic-medqa-ext-013-p006"], "f010": ["agentclinic-medqa-ext-013-p004"], "f011": ["agentclinic-medqa-ext-013-p005"],
+      "f012": ["agentclinic-medqa-ext-013-p005"], "f013": ["agentclinic-medqa-ext-013-p005"]
+    },
+    "quotes": {
+      "f001": "Severe right groin pain", "f002": "Pain in both knees", "f003": "immediate onset of pain in both knees and severe pain over the right groin area following the accident",
+      "f004": "involved in a rear-end collision where she was the restrained driver of the back car", "f005": "the restrained driver",
+      "f006": "Right leg is slightly shortened, flexed, adducted, and internally rotated", "f007": "No head injury",
+      "f011": "Works as an elementary school teacher", "f013": "drinks alcohol socially"
+    },
+    "flags": {
+      "f006": ["The leg posture is listed as a secondary symptom and repeated in the exam inspection (x005). Kept as a patient fact because a patient can see and feel how her own leg lies; worded in lay terms."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-013-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "132/79 mm Hg", "exam_ids": ["agentclinic-medqa-ext-013-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "116 bpm", "exam_ids": ["agentclinic-medqa-ext-013-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "19 breaths/min", "exam_ids": ["agentclinic-medqa-ext-013-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection + Physical_Examination_Findings.Musculoskeletal_Examination.Palpation.Right_Groin + Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion.Right_Leg + Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion.Left_Leg", "source_text": "The right leg is slightly shortened, flexed, adducted, and internally rotated. No visible wounds. + Tender to palpation + Limited due to pain and abnormal positioning + Normal range of motion", "exam_ids": ["agentclinic-medqa-ext-013-e005", "agentclinic-medqa-ext-013-e006", "agentclinic-medqa-ext-013-e008", "agentclinic-medqa-ext-013-e009"]},
+      "x006": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation.Both_Knee_Caps", "source_text": "Tenderness over both knee caps", "exam_ids": ["agentclinic-medqa-ext-013-e007"]},
+      "x007": {"source": "Test_Results.Imaging.Pelvic_X-ray.Findings", "source_text": "No fractures identified in the pelvic ring or femoral neck, but alignment suggests posterior dislocation of the right hip.", "exam_ids": ["agentclinic-medqa-ext-013-i001"]}
+    },
+    "leakage": [
+      {"id": "x007", "reason": "The pelvic X-ray result names the diagnosis (posterior dislocation of the right hip). This is the test's answer; the finding name does not reveal it."}
+    ],
+    "source_issues": [
+      "The Review_of_Systems starts with 'Alert and active.', an observer description rather than a patient-reported symptom."
+    ],
+    "notes": [
+      "The immediate onset after the crash applies to both the groin and the knee pain, so it is a standalone fact (f003). The crash is a symptom-context fact (f004) with the seatbelt as its child.",
+      "The musculoskeletal leaves are split by region as a doctor would request them: hip/leg (inspection, right-groin palpation, range of motion of both legs) and knees (tenderness over both kneecaps).",
+      "'Alert and active.' (ROS) is observer-only and the exam has no mental-status leaf, so it goes to qc.extras.acting_notes."
+    ],
+    "extras": {
+      "objective_for_doctor": "Conduct a thorough assessment of a patient presenting with right groin pain and abnormal leg positioning following a rear-end collision, and diagnose appropriately.",
+      "acting_notes": ["Alert and active (Review_of_Systems)."]
+    }
+  }
+}

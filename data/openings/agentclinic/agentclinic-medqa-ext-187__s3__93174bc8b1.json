@@ -1,0 +1,59 @@
+{
+ "case_id": "agentclinic-medqa-ext-187",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've been hearing voices when there's no one there.",
+   "They started after my father died a week ago.",
+   "They talk about me in a negative way.",
+   "They urge me to harm myself.",
+   "I keep having unwanted thoughts that push their way into my mind.",
+   "I'm finding it hard to focus at work and in my studies.",
+   "I've been feeling anxious.",
+   "My father died of lung cancer a week ago.",
+   "Losing my father has been very stressful for the whole family.",
+   "I'm a student."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm a student, and I've been hearing voices when there's no one there. They started after my father died of lung cancer a week ago, which has been very stressful for the whole family. The voices talk about me in a negative way and urge me to harm myself. I also keep having unwanted thoughts that push their way into my mind, I've been feeling anxious, and I'm finding it hard to focus at work and in my studies.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f002",
+    "f003",
+    "f008",
+    "f009",
+    "f010",
+    "f006",
+    "f007",
+    "f014"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3598,
+   "tokens_out": 104,
+   "seconds": 11.45,
+   "redrafts": 0
+  }
+ }
+}

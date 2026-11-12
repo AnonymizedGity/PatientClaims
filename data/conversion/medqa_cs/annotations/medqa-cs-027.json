@@ -1,0 +1,1128 @@
+{
+  "case_id": "medqa-cs-027",
+  "demographics": {
+    "name": "William Jordan",
+    "age": 61,
+    "sex": "male",
+    "setting": "office"
+  },
+  "opening_fact": {
+    "text": "Feeling tired, weak, low energy.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-027-f001",
+      "source_ids": [
+        "medqa-cs-027-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has felt tired, weak, and low in energy for six months.",
+      "quote": "Six months."
+    },
+    {
+      "id": "medqa-cs-027-f002",
+      "source_ids": [
+        "medqa-cs-027-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No triggering event he can recall.",
+      "quote": "None."
+    },
+    {
+      "id": "medqa-cs-027-f003",
+      "source_ids": [
+        "medqa-cs-027-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Energy level stays constant throughout the day rather than worsening as the day goes on.",
+      "quote": "My energy level remains constant throughout the day."
+    },
+    {
+      "id": "medqa-cs-027-f004",
+      "source_ids": [
+        "medqa-cs-027-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "functional",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Lacks the energy for his daily 30-minute walk with his dog.",
+      "quote": "I don't have energy for my daily 30-minute walk with my dog",
+      "flags": [
+        "Conflicts with p040 ('I walk 30 minutes every day', f053)."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f005",
+      "source_ids": [
+        "medqa-cs-027-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "functional",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Even at work he is not as energetic as he was before.",
+      "quote": "even at work, I am not as energetic as I was before.",
+      "flags": [
+        "Conflicts with p036 (retired 1 year ago, f046)."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f006",
+      "source_ids": [
+        "medqa-cs-027-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Poor appetite.",
+      "quote": "I have a poor appetite."
+    },
+    {
+      "id": "medqa-cs-027-f007",
+      "source_ids": [
+        "medqa-cs-027-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Unintentionally lost 8 pounds over the past 6 months.",
+      "quote": "I have lost 8 pounds during the past 6 months."
+    },
+    {
+      "id": "medqa-cs-027-f008",
+      "source_ids": [
+        "medqa-cs-027-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has a bowel movement two or three times a week, a pattern unchanged for the past 10 years.",
+      "quote": "I have a bowel movement two or three times a week. It has been like this for the past 10 years."
+    },
+    {
+      "id": "medqa-cs-027-f009",
+      "source_ids": [
+        "medqa-cs-027-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Recently has noticed more foul-smelling, greasy-looking stools.",
+      "quote": "Recently I've noticed more foul-smelling and greasy-looking stools."
+    },
+    {
+      "id": "medqa-cs-027-f010",
+      "source_ids": [
+        "medqa-cs-027-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No blood in the stools.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p008) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f011",
+      "source_ids": [
+        "medqa-cs-027-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Some stomach discomfort in the upper middle abdomen (he points to the epigastric area).",
+      "quote": "Yes, I do feel some discomfort here"
+    },
+    {
+      "id": "medqa-cs-027-f012",
+      "source_ids": [
+        "medqa-cs-027-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The stomach discomfort began four months ago and has increased gradually.",
+      "quote": "Four months ago; it increased gradually."
+    },
+    {
+      "id": "medqa-cs-027-f013",
+      "source_ids": [
+        "medqa-cs-027-p011",
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The discomfort is vague and deep.",
+      "quote": "vague, deep epigastric discomfort that radiates to the back",
+      "flags": [
+        "The scripted answer to the quality question only repeats the question ('Sharp, vague, deep, or dull?'); quality taken from the patient note HPI."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f014",
+      "source_ids": [
+        "medqa-cs-027-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The discomfort is 4/10 in severity.",
+      "quote": "4 out of 10."
+    },
+    {
+      "id": "medqa-cs-027-f015",
+      "source_ids": [
+        "medqa-cs-027-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Nothing makes the discomfort worse.",
+      "quote": "Nothing makes it worse",
+      "flags": [
+        "Conflicts with the SP notes and the note HPI, where the discomfort increases when lying on the back (f017)."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f016",
+      "source_ids": [
+        "medqa-cs-027-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Feels better when he leans forward.",
+      "quote": "but I feel better when I lean forward."
+    },
+    {
+      "id": "medqa-cs-027-f017",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The discomfort increases when he lies on his back.",
+      "quote": "increases when he lies on his back.",
+      "flags": [
+        "Only in the patient note HPI and the SP notes; contradicts p013 'Nothing makes it worse' (f015)."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f018",
+      "source_ids": [
+        "medqa-cs-027-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "The discomfort is not related to food intake.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p014) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f019",
+      "source_ids": [
+        "medqa-cs-027-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The discomfort reaches his back.",
+      "quote": "I feel the discomfort reaching my back."
+    },
+    {
+      "id": "medqa-cs-027-f020",
+      "source_ids": [
+        "medqa-cs-027-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Occasional nausea.",
+      "quote": "Occasionally, I experience nausea."
+    },
+    {
+      "id": "medqa-cs-027-f021",
+      "source_ids": [
+        "medqa-cs-027-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Feels sad.",
+      "quote": "Yes, I feel sad."
+    },
+    {
+      "id": "medqa-cs-027-f022",
+      "source_ids": [
+        "medqa-cs-027-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Does not really know why he feels sad.",
+      "quote": "I don't know, really."
+    },
+    {
+      "id": "medqa-cs-027-f023",
+      "source_ids": [
+        "medqa-cs-027-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No thoughts of hurting himself.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p019) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f024",
+      "source_ids": [
+        "medqa-cs-027-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not blame himself for anything.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f025",
+      "source_ids": [
+        "medqa-cs-027-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No feelings of guilt.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f026",
+      "source_ids": [
+        "medqa-cs-027-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No feelings of worthlessness.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f027",
+      "source_ids": [
+        "medqa-cs-027-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Wakes up unusually early in the morning, for the past 2 months.",
+      "quote": "I wake up unusually early in the morning. It has been like this for the past 2 months."
+    },
+    {
+      "id": "medqa-cs-027-f028",
+      "source_ids": [
+        "medqa-cs-027-p022"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Can no longer concentrate while watching the news or playing cards with friends.",
+      "quote": "Yes, I can't concentrate anymore while watching the news or playing cards with my friends."
+    },
+    {
+      "id": "medqa-cs-027-f029",
+      "source_ids": [
+        "medqa-cs-027-p023"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has stopped enjoying playing cards with his friends.",
+      "quote": "I don't enjoy playing cards with my friends anymore."
+    },
+    {
+      "id": "medqa-cs-027-f030",
+      "source_ids": [
+        "medqa-cs-027-p023"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Feels that life is boring.",
+      "quote": "I feel that life is boring."
+    },
+    {
+      "id": "medqa-cs-027-f031",
+      "source_ids": [
+        "medqa-cs-027-p024"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No fever.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p024) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f032",
+      "source_ids": [
+        "medqa-cs-027-p025"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No chest pain.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p025) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f033",
+      "source_ids": [
+        "medqa-cs-027-p026"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No cough.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p026) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f034",
+      "source_ids": [
+        "medqa-cs-027-p027"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No shortness of breath.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p027) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f035",
+      "source_ids": [
+        "medqa-cs-027-p028"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No sensitivity to cold.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p028) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f036",
+      "source_ids": [
+        "medqa-cs-027-p029"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No recent hair loss.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p029) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f037",
+      "source_ids": [
+        "medqa-cs-027-p030"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No abnormal dryness of the skin.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p030) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f038",
+      "source_ids": [
+        "medqa-cs-027-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes Tylenol.",
+      "quote": "Tylenol"
+    },
+    {
+      "id": "medqa-cs-027-f039",
+      "source_ids": [
+        "medqa-cs-027-p031"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Tylenol is not helping.",
+      "quote": "but it is not helping."
+    },
+    {
+      "id": "medqa-cs-027-f040",
+      "source_ids": [
+        "medqa-cs-027-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No past mental illness.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p032) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f041",
+      "source_ids": [
+        "medqa-cs-027-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous medical conditions.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p033) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f042",
+      "source_ids": [
+        "medqa-cs-027-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Appendectomy at age 16.",
+      "quote": "Appendectomy at 16 years old."
+    },
+    {
+      "id": "medqa-cs-027-f043",
+      "source_ids": [
+        "medqa-cs-027-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father died in a car accident.",
+      "quote": "My father died in a car accident"
+    },
+    {
+      "id": "medqa-cs-027-f044",
+      "source_ids": [
+        "medqa-cs-027-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father had diabetes.",
+      "quote": "and had diabetes"
+    },
+    {
+      "id": "medqa-cs-027-f045",
+      "source_ids": [
+        "medqa-cs-027-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Mother died of breast cancer.",
+      "quote": "my mother died of breast cancer."
+    },
+    {
+      "id": "medqa-cs-027-f046",
+      "source_ids": [
+        "medqa-cs-027-p036"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Retired police officer; retired 1 year ago.",
+      "quote": "Police officer; retired 1 year ago.",
+      "flags": [
+        "Conflicts with p004 ('even at work, I am not as energetic', f005)."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f047",
+      "source_ids": [
+        "medqa-cs-027-p037"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinks two beers a day, increasing to three or four on weekends; this pattern has been consistent for many years.",
+      "quote": "I typically have two beers each day and increase that to three or four on weekends. This routine has been consistent for many years"
+    },
+    {
+      "id": "medqa-cs-027-f048",
+      "source_ids": [
+        "medqa-cs-027-p037"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinking helps him unwind.",
+      "quote": "and helps me unwind."
+    },
+    {
+      "id": "medqa-cs-027-f049",
+      "source_ids": [
+        "medqa-cs-027-p038"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No recreational drug use.",
+      "quote": "Not at all."
+    },
+    {
+      "id": "medqa-cs-027-f050",
+      "source_ids": [
+        "medqa-cs-027-p039"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Former smoker; quit six months ago.",
+      "quote": "I quit six months ago"
+    },
+    {
+      "id": "medqa-cs-027-f051",
+      "source_ids": [
+        "medqa-cs-027-p039"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Smoked a pack of cigarettes a day for 30 years.",
+      "quote": "after 30 years of smoking a pack of cigarettes daily"
+    },
+    {
+      "id": "medqa-cs-027-f052",
+      "source_ids": [
+        "medqa-cs-027-p039"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Quit smoking because he felt repulsed by it and it made him feel unwell.",
+      "quote": "as I felt repulsed and it made me feel unwell."
+    },
+    {
+      "id": "medqa-cs-027-f053",
+      "source_ids": [
+        "medqa-cs-027-p040"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Walks 30 minutes every day for exercise.",
+      "quote": "I walk 30 minutes every day.",
+      "flags": [
+        "Conflicts with p004, where he lacks the energy for his daily walk (f004)."
+      ]
+    },
+    {
+      "id": "medqa-cs-027-f054",
+      "source_ids": [
+        "medqa-cs-027-p041"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Eating habits are consistent.",
+      "quote": "Consistent"
+    },
+    {
+      "id": "medqa-cs-027-f055",
+      "source_ids": [
+        "medqa-cs-027-p041"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Enjoys fast food.",
+      "quote": "I enjoy fast food."
+    },
+    {
+      "id": "medqa-cs-027-f056",
+      "source_ids": [
+        "medqa-cs-027-p042"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sexually active with his wife.",
+      "quote": "I have sexual relations with my wife."
+    },
+    {
+      "id": "medqa-cs-027-f057",
+      "source_ids": [
+        "medqa-cs-027-p043"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No drug allergies.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p043) — denial confirmed."
+      ]
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Patient description: married, with three children.",
+      "Look weak and sad and lean forward while seated.",
+      "Exhibit abdominal discomfort that increases when you lie on your back.",
+      "Show pain on palpation of the epigastric area.",
+      "When asked where the stomach hurts, point to the epigastric area."
+    ],
+    "patient_questions": [
+      "I will be on vacation with my wife. Can we arrange to conduct the tests upon my return?"
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "135/85 mm Hg",
+        "source_text": "BP: 135/85 mm Hg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.6°F (37°C)",
+        "source_text": "Temp: 98.6°F (37°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "13/minute",
+        "source_text": "RR: 13/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "70/minute, regular",
+        "source_text": "HR: 70/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits",
+        "source_text": "VS: within normal limits (WNL)"
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "No acute distress",
+        "source_text": "Patient is in no acute distress, looks sad."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e001"
+        ],
+        "system": "General",
+        "name": "Affect",
+        "finding": "Looks sad",
+        "source_text": "Patient is in no acute distress, looks sad."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e003"
+        ],
+        "system": "HEENT",
+        "name": "Conjunctivae",
+        "finding": "No conjunctival pallor",
+        "source_text": "HEENT: No conjunctival pallor, mouth and pharynx are normal."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e003"
+        ],
+        "system": "HEENT",
+        "name": "Mouth and pharynx",
+        "finding": "Normal",
+        "source_text": "HEENT: No conjunctival pallor, mouth and pharynx are normal."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e004"
+        ],
+        "system": "Neck",
+        "name": "Neck suppleness",
+        "finding": "Supple",
+        "source_text": "Neck: Supple, no JVD, no lymphadenopathy, thyroid within normal limits (WNL)."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e004"
+        ],
+        "system": "Neck",
+        "name": "Jugular veins",
+        "finding": "No jugular venous distension",
+        "source_text": "Neck: Supple, no JVD, no lymphadenopathy, thyroid within normal limits (WNL)."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e004"
+        ],
+        "system": "Neck",
+        "name": "Lymph nodes",
+        "finding": "No lymphadenopathy",
+        "source_text": "Neck: Supple, no JVD, no lymphadenopathy, thyroid within normal limits (WNL)."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e004"
+        ],
+        "system": "Neck",
+        "name": "Thyroid",
+        "finding": "Within normal limits",
+        "source_text": "Neck: Supple, no JVD, no lymphadenopathy, thyroid within normal limits (WNL)."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e005"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: Clear breath sounds bilaterally."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e006"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e006"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "S1 and S2 within normal limits",
+        "source_text": "Heart: Regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e006"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Inspection and palpation",
+        "finding": "Soft, nondistended",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Epigastric palpation",
+        "finding": "Mild epigastric tenderness",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly."
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Rebound tenderness",
+        "finding": "No rebound tenderness",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly."
+      },
+      {
+        "id": "x016",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Murphy's sign",
+        "finding": "Positive Murphy's sign",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly."
+      },
+      {
+        "id": "x017",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Bowel sounds",
+        "finding": "Present in all four quadrants",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly."
+      },
+      {
+        "id": "x018",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Liver and spleen",
+        "finding": "No hepatosplenomegaly",
+        "source_text": "Abdomen: Soft, nondistended, mild epigastric tenderness, no rebound tenderness, positive Murphy's sign, bowel sounds x 4, no hepatosplenomegaly."
+      },
+      {
+        "id": "x019",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-027-e008"
+        ],
+        "system": "Extremities",
+        "name": "Edema",
+        "finding": "No edema",
+        "source_text": "Extremities: No edema."
+      },
+      {
+        "id": "x020",
+        "source": "sp_notes",
+        "system": "Abdomen",
+        "name": "Epigastric palpation",
+        "finding": "Pain on palpation of the epigastric area",
+        "source_text": "Show pain on palpation of the epigastric area."
+      },
+      {
+        "id": "x021",
+        "source": "sp_notes",
+        "system": "Abdomen",
+        "name": "Supine positioning",
+        "finding": "Abdominal discomfort increases when lying on the back",
+        "source_text": "Exhibit abdominal discomfort that increases when you lie on your back."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Pancreatic cancer",
+        "history_findings": [
+          "History of smoking and eating foods that are high in fat content",
+          "Unintentional weight loss of 8 lbs over the past 6 months",
+          "Foul-smelling, greasy-looking stools"
+        ],
+        "exam_findings": [
+          "Mild epigastric tenderness"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Major depressive disorder",
+        "history_findings": [
+          "Feelings of sadness",
+          "Loss of interest in activities; early awakening",
+          "impaired concentration; low energy",
+          "Decreased appetite and unintentional weight loss"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Chronic pancreatitis",
+        "history_findings": [
+          "History of alcohol use",
+          "Worsening epigastric discomfort that radiates to the back",
+          "Foul-smelling, greasy-looking stools"
+        ],
+        "exam_findings": [
+          "Mild epigastric tenderness"
+        ]
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Peptic ulcer disease",
+        "rationale": "Should be suspected with any epigastric pain, and many patients deny a relation to meals, but weight loss is unusual in uncomplicated ulcer disease."
+      },
+      {
+        "diagnosis": "Hypothyroidism",
+        "rationale": "Nonspecific fatigue and weakness suggest it, but abdominal pain is unusual."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "p011: the scripted answer only repeats the question ('Sharp, vague, deep, or dull?'). The quality 'vague, deep' was taken from the note HPI (f013, source ids p011 + note, flagged).",
+      "p004 says 'even at work, I am not as energetic as I was before', but p036 says he retired 1 year ago.",
+      "p004 says he has no energy for his daily 30-minute walk, but p040 says 'I walk 30 minutes every day'.",
+      "p013 says nothing makes the discomfort worse, but the SP notes and the note HPI say it increases when he lies on his back (added from the note as f017, flagged).",
+      "Exam line e007 records a positive Murphy's sign; neither the SP notes nor the gold mention it, and it fits poorly with the gold differential. Kept as written (x016).",
+      "p016 asks about nausea or vomiting; the answer mentions only occasional nausea, so vomiting is not recorded either way.",
+      "p021 asks about falling asleep, staying asleep, and snoring; the answer addresses only early waking.",
+      "The raw sheet's Patient Description ('married with three children') is not in the parsed source fields; added to persona.acting_notes.",
+      "Gold rank 1 is headed 'Diagnosis:' without '#1'; the rank-2 history bullets are split oddly ('Loss of interest in activities; early awakening;' / 'impaired concentration; low energy'); kept as two bullets with the trailing semicolon removed."
+    ],
+    "annotator_notes": [
+      "The stage direction '(points to the epigastric area)' in p009 moved to persona.acting_notes; f011 keeps the location.",
+      "Mood items (sadness, early waking, poor concentration, loss of enjoyment, no guilt or suicidal thoughts) are filed as symptoms/hpi because the note places them in the HPI.",
+      "'Look weak and sad and lean forward while seated' is kept as an acting note only (general demeanor, not an examination maneuver); the two sp_notes findings elicited on examination (epigastric pain on palpation, discomfort lying supine) are added as x020-x021.",
+      "p018 'I don't know, really' is recorded as a present fact (he does not know why he feels sad), not as a denial.",
+      "Smoking: resolved current status (f050), historical exposure (f051), and the reason for quitting (f052).",
+      "14 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 16 facts confirmed."
+    ]
+  }
+}

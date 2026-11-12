@@ -1,0 +1,51 @@
+{
+ "case_id": "mcr-test-11121",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "The insides of both my cheeks have turned blackish.",
+   "It has been gradually increasing.",
+   "Several of my fingernails have brownish-black discoloration.",
+   "My toenails have dark streaks running along them too.",
+   "I have bullous pemphigoid; it's in remission, and I'm here for my routine follow-up.",
+   "I'm White (Caucasian)."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here for my routine follow-up for bullous pemphigoid, which is in remission. I'm a 63-year-old White woman. I've noticed the insides of both my cheeks have turned blackish, and it has been gradually increasing. Also, several of my fingernails have brownish-black discoloration, and my toenails have dark streaks running along them too.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f007",
+    "f008",
+    "f012"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3450,
+   "tokens_out": 96,
+   "seconds": 8.4,
+   "redrafts": 0
+  }
+ }
+}

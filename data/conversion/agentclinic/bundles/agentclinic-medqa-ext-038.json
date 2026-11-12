@@ -1,0 +1,134 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-038", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 54, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "difficulty walking", "aliases": ["trouble walking", "walking problems"], "text": "I've been having difficulty walking.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "difficulty walking: duration", "parent": "f001", "attribute": "duration", "text": "It started about 3 months ago.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "difficulty walking: course", "parent": "f001", "attribute": "course", "text": "It has come on gradually and keeps getting worse.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "difficulty walking: needing a wheelchair", "parent": "f001", "attribute": "severity", "aliases": ["wheelchair use"], "text": "For the last month I've needed a wheelchair.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "leaking urine", "aliases": ["urinary incontinence", "loss of bladder control"], "text": "I've been leaking urine; I can't control my bladder.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f006", "item": "leaking urine: duration", "parent": "f005", "attribute": "duration", "text": "That's been going on for 1 year.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f007", "item": "slurred speech", "aliases": ["speech difficulty", "trouble speaking"], "text": "My speech has become slurred.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "slurred speech: onset", "parent": "f007", "attribute": "onset", "text": "That started recently.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f009", "item": "slurred speech: severity", "parent": "f007", "attribute": "severity", "text": "It makes it hard for me to communicate.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "stiffness in the arms and legs", "aliases": ["stiff limbs", "rigidity"], "text": "My arms and legs feel stiff.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f011", "item": "hand tremor", "aliases": ["shaking hand", "tremor"], "text": "I have a tremor in my hand.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f012", "item": "hand tremor: severity", "parent": "f011", "attribute": "severity", "text": "It's mild.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f013", "item": "recent infections", "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "vision changes", "aliases": ["blurred vision", "eyesight problems"], "text": "I haven't had any changes in my vision.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f017", "item": "seizures", "aliases": ["fits"], "text": "I haven't had any seizures.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f018", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any known chronic diseases.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f019", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f020", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f021", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a bank clerk.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-038",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.0°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP", "orthostatic blood pressure", "postural blood pressure", "standing blood pressure", "sitting blood pressure"], "result": "Sitting 130/80 mm Hg; standing 110/65 mm Hg."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "70/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["orientation", "cognition", "mental status examination"], "result": "Oriented to person and place, not to time."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["speech"], "result": "Speech slurred; cranial nerves grossly intact."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "muscle tone", "rigidity"], "result": "Normal strength; rigidity in the upper and lower extremities."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["rapid alternating movements", "cerebellar testing"], "result": "Unable to perform repetitive forearm movements."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "tremor", "aliases": ["observation for tremor"], "result": "Mild tremor in the right hand."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "No deficits noted."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal."},
+      {"id": "x012", "kind": "exam", "system": "neurological", "name": "gait", "aliases": ["walking"], "result": "Unable to assess; the patient cannot walk unassisted."},
+      {"id": "x013", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelet count"], "result": "WBC 7,000/μL; hemoglobin 14 g/dL; platelets 300,000/μL."},
+      {"id": "x014", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine white cells", "urine red cells", "nitrites", "leukocyte esterase"], "result": "Appearance clear; WBC 0-5/HPF; RBC 0-2/HPF; nitrites negative; leukocyte esterase negative."},
+      {"id": "x015", "kind": "test", "name": "MRI of the brain and spinal cord", "aliases": ["brain MRI", "spine MRI", "MRI"], "result": "Multiple areas of atrophy and signal changes in the brainstem, cerebellum and basal ganglia, consistent with neurodegenerative processes."},
+      {"id": "x016", "kind": "test", "name": "autonomic function testing", "aliases": ["autonomic testing", "tilt-table test"], "result": "Marked orthostatic hypotension without compensatory tachycardia, indicating autonomic dysfunction."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-038",
+    "diagnosis": "Multiple system atrophy",
+    "aliases": ["MSA", "multiple systems atrophy", "Shy-Drager syndrome", "MSA-P", "MSA-C", "parkinsonian-type multiple system atrophy", "cerebellar-type multiple system atrophy", "striatonigral degeneration"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-038",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-038-p001"],
+      "f002": ["agentclinic-medqa-ext-038-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-038-p001"],
+      "f004": ["agentclinic-medqa-ext-038-p001"],
+      "f005": ["agentclinic-medqa-ext-038-p001", "agentclinic-medqa-ext-038-p002"],
+      "f006": ["agentclinic-medqa-ext-038-p001"],
+      "f007": ["agentclinic-medqa-ext-038-p001", "agentclinic-medqa-ext-038-p003"],
+      "f008": ["agentclinic-medqa-ext-038-p001"],
+      "f009": ["agentclinic-medqa-ext-038-p001"],
+      "f010": ["agentclinic-medqa-ext-038-p004"],
+      "f011": ["agentclinic-medqa-ext-038-p005"],
+      "f012": ["agentclinic-medqa-ext-038-p005"],
+      "f013": ["agentclinic-medqa-ext-038-p009"],
+      "f014": ["agentclinic-medqa-ext-038-p009"],
+      "f015": ["agentclinic-medqa-ext-038-p009"],
+      "f016": ["agentclinic-medqa-ext-038-p009"],
+      "f017": ["agentclinic-medqa-ext-038-p009"],
+      "f018": ["agentclinic-medqa-ext-038-p007"],
+      "f019": ["agentclinic-medqa-ext-038-p008"],
+      "f020": ["agentclinic-medqa-ext-038-p008"],
+      "f021": ["agentclinic-medqa-ext-038-p008"]
+    },
+    "quotes": {
+      "f002": "over the past 3 months",
+      "f003": "Progressive / gradual difficulty in walking",
+      "f004": "requiring wheelchair assistance for the last month",
+      "f006": "urinary incontinence for 1 year",
+      "f008": "recent onset of speech slurring",
+      "f009": "making communication challenging",
+      "f010": "Rigidity in limbs",
+      "f012": "Mild hand tremor",
+      "f013": "recent infections",
+      "f018": "No known chronic diseases.",
+      "f019": "Occasionally consumes alcohol"
+    },
+    "flags": {
+      "f010": ["'Rigidity in limbs' is an exam sign listed as a secondary symptom; kept as the patient's felt stiffness. The exam record (x007) carries the sign."],
+      "f011": ["The exam places the tremor in the right hand (x009); the symptom list says only 'hand', so the patient fact does not name a side."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.0°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-038-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure.Sitting + Physical_Examination_Findings.Vital_Signs.Blood_Pressure.Standing", "source_text": "130/80 mmHg | 110/65 mmHg", "exam_ids": ["agentclinic-medqa-ext-038-e002", "agentclinic-medqa-ext-038-e003"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "70 bpm", "exam_ids": ["agentclinic-medqa-ext-038-e004"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-038-e005"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Oriented to person and place, not time", "exam_ids": ["agentclinic-medqa-ext-038-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Speech slurred but cranial nerves grossly intact", "exam_ids": ["agentclinic-medqa-ext-038-e007"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor.Strength", "source_text": "Normal strength but with rigidity in upper and lower extremities", "exam_ids": ["agentclinic-medqa-ext-038-e008"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor.Coordination", "source_text": "Unable to perform repetitive forearm movements", "exam_ids": ["agentclinic-medqa-ext-038-e009"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor.Tremor", "source_text": "Mild tremor in right hand", "exam_ids": ["agentclinic-medqa-ext-038-e010"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory", "source_text": "No noted deficits", "exam_ids": ["agentclinic-medqa-ext-038-e011"]},
+      "x011": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-038-e012"]},
+      "x012": {"source": "Physical_Examination_Findings.Neurological_Examination.Gait", "source_text": "Unable to assess due to inability to walk unassisted", "exam_ids": ["agentclinic-medqa-ext-038-e013"]},
+      "x013": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "7,000 /μL | 14 g/dL | 300,000 /μL", "exam_ids": ["agentclinic-medqa-ext-038-i001", "agentclinic-medqa-ext-038-i002", "agentclinic-medqa-ext-038-i003"]},
+      "x014": {"source": "Test_Results.Urinalysis.Appearance + Test_Results.Urinalysis.WBC + Test_Results.Urinalysis.RBC + Test_Results.Urinalysis.Nitrites + Test_Results.Urinalysis.Leukocyte_Esterase", "source_text": "Clear | 0-5 /HPF | 0-2 /HPF | Negative | Negative", "exam_ids": ["agentclinic-medqa-ext-038-i004", "agentclinic-medqa-ext-038-i005", "agentclinic-medqa-ext-038-i006", "agentclinic-medqa-ext-038-i007", "agentclinic-medqa-ext-038-i008"]},
+      "x015": {"source": "Test_Results.MRI_Brain_and_Spinal_Cord.Findings", "source_text": "Multiple areas of atrophy and signal changes in the brainstem, cerebellum, and basal ganglia, consistent with neurodegenerative processes.", "exam_ids": ["agentclinic-medqa-ext-038-i009"]},
+      "x016": {"source": "Test_Results.Autonomic_Testing.Findings", "source_text": "Marked orthostatic hypotension without compensatory tachycardia, indicating autonomic dysfunction.", "exam_ids": ["agentclinic-medqa-ext-038-i010"]}
+    },
+    "leakage": [
+      {"id": "x015", "reason": "The MRI result uses the words 'multiple' and 'atrophy' in a description ('multiple areas of atrophy'); it does not name the diagnosis. Kept as the test's answer."}
+    ],
+    "source_issues": [
+      "The sitting-to-standing drop (130/80 to 110/65 mm Hg) meets the usual orthostatic threshold, while autonomic testing calls the hypotension 'marked'; kept as given."
+    ],
+    "notes": [
+      "'Orthostatic hypotension' (p006) is a measured sign the patient cannot report; it is carried by the blood pressure record (x002) and autonomic testing (x016), and the fragment is excluded rather than turned into an invented symptom such as dizziness.",
+      "Disorientation to time is an observer finding and stays in the mental status exam (x005).",
+      "Sitting and standing blood pressure are one vital record (x002)."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-038-p006", "reason": "'Orthostatic hypotension' is an observer-only measured sign; already in the exam leaves e002/e003 and test leaf i010. The source gives no symptom (such as dizziness on standing) the patient could report."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with progressive difficulty walking, urinary incontinence, and speech difficulties."
+    }
+  }
+}

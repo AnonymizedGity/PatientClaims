@@ -1,0 +1,53 @@
+{
+ "case_id": "agentclinic-medqa-ext-028",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I have pain in my left shoulder.",
+   "It's been going on for about 2 months.",
+   "It came on gradually.",
+   "I have trouble with everyday things like brushing my hair and getting dressed.",
+   "I have type 2 diabetes.",
+   "I take metformin for my diabetes.",
+   "I take glipizide for my diabetes."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having pain in my left shoulder for about two months now, and it came on gradually. It's making it hard to do everyday things like brushing my hair or getting dressed. By the way, I have type 2 diabetes, and I take metformin and glipizide for it.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f007",
+    "f013",
+    "f014",
+    "f015"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3406,
+   "tokens_out": 75,
+   "seconds": 7.73,
+   "redrafts": 0
+  }
+ }
+}

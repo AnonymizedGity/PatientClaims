@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11820",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 34, "sex": "male"},
+    "opening": ["f003", "f001"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["head pain"], "text": "I've had a headache on both sides, at my temples.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: duration", "parent": "f001", "attribute": "duration", "text": "It started 5 days ago.", "value": "5 days", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "neck pain", "aliases": ["pain in the neck", "sore neck"], "text": "I have pain on the left side of my neck.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "neck pain: duration", "parent": "f003", "attribute": "duration", "text": "It started 24 hours ago.", "value": "24 hours", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "neck pain: character", "parent": "f003", "attribute": "character", "text": "It's a throbbing pain.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "neck pain: severity", "parent": "f003", "attribute": "severity", "text": "It's intense.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "neck pain: timing", "parent": "f003", "attribute": "timing", "text": "It's constant; it doesn't let up.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f008", "item": "neck pain: radiation", "parent": "f003", "attribute": "radiation", "text": "It spreads up to my left jaw and the area around my left ear.", "value": ["left jaw", "left ear region"], "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f009", "item": "neck pain: location", "parent": "f003", "attribute": "location", "text": "It's centered on one spot on the left side of my neck.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f010", "item": "neck pain: aggravating", "parent": "f003", "attribute": "aggravating", "text": "It gets worse when I move my neck or press on the spot.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f011", "item": "injury", "aliases": ["trauma", "neck injury", "accident"], "text": "I haven't had any injury.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "recent infection", "aliases": ["recent illness", "been sick recently", "cold or flu"], "text": "I haven't had any recent infection.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "chiropractic manipulation", "aliases": ["chiropractor", "neck manipulation", "spinal adjustment"], "text": "I haven't had any chiropractic manipulation.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "Otherwise I don't have any medical problems.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11820",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "cardiovascular", "name": "neck examination", "aliases": ["neck", "neck palpation", "carotid palpation"], "result": "Pain localized over the left carotid bifurcation, worse with neck movement and palpation."},
+      {"id": "x002", "kind": "exam", "system": "general", "name": "physical examination", "aliases": ["general examination", "full physical examination"], "result": "Normal."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "neurologic examination", "cranial nerves"], "result": "Normal."},
+      {"id": "x004", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC"], "result": "Within normal limits; white-cell count 7 g/L (reference 4–10 g/L)."},
+      {"id": "x005", "kind": "test", "name": "coagulation tests", "aliases": ["coagulation", "coags", "PT", "INR", "aPTT"], "result": "Within normal limits."},
+      {"id": "x006", "kind": "test", "name": "metabolic panel", "aliases": ["electrolytes", "glucose", "renal function", "kidney function", "basic metabolic panel", "BMP", "creatinine"], "result": "Electrolytes, glucose and renal function within normal limits."},
+      {"id": "x007", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes"], "result": "Within normal limits."},
+      {"id": "x008", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "6.3 mg/L (reference 0–10 mg/L)"},
+      {"id": "x009", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Mildly elevated at 11 mm/h (reference 0–10 mm/h)."},
+      {"id": "x010", "kind": "test", "name": "contrast-enhanced CT of the neck", "aliases": ["CT neck", "neck CT", "CT angiography of the neck"], "result": "Soft-tissue thickening around the distal common carotid artery, the carotid bulb and the proximal internal carotid artery on the left; no abnormalities of the other supra-aortic vessels or the aortic arch."},
+      {"id": "x011", "kind": "test", "name": "carotid Doppler ultrasonography", "aliases": ["carotid ultrasound", "carotid Doppler", "carotid duplex", "neck ultrasound"], "result": "Isoechoic thickened arterial wall at the left carotid bifurcation; peak systolic velocity 90 cm/s; normal intraluminal flow; no intimal dissection or aneurysm."},
+      {"id": "x012", "kind": "test", "name": "MRI of the neck", "aliases": ["neck MRI", "MRI neck", "MR angiography of the neck"], "result": "Eccentric soft-tissue thickening at the left carotid bifurcation with hypointense T1 signal and hyperintense T2 signal; no T1 wall hematoma on fat-saturated sequences; intense perivascular enhancement after contrast administration."},
+      {"id": "x013", "kind": "test", "name": "autoimmune serology", "aliases": ["ANCA", "anti-neutrophil cytoplasmic antibodies", "ANA", "antinuclear antibodies", "immunological tests"], "result": "Negative, including anti-neutrophil cytoplasmic antibodies (ANCA) and antinuclear antibodies (ANA)."},
+      {"id": "x014", "kind": "test", "name": "abdominal MRI", "aliases": ["MRI abdomen", "abdominal MR angiography"], "result": "No vascular abnormality (no fibromuscular dysplasia, no vasculitis, and no stenosis)."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11820",
+    "diagnosis": "Idiopathic carotidynia",
+    "aliases": ["carotidynia", "carotodynia", "TIPIC syndrome", "transient perivascular inflammation of the carotid artery", "Fay syndrome"],
+    "reasoning": "1. Large‐vessel arteritis was considered but deemed unlikely — “In large vessel arteritis (giant cell arteritis and Takayasu arteritis), the thickened arterial wall enhances intensively on MRI; however, this enhancement is generally associated with significant luminal stenosis and it is not limited to the carotid bifurcation.” 2. Fibromuscular dysplasia was ruled out — abdominal MRI showed “no vascular abnormality (no fibromuscular dysplasia, no vasculitis, and no stenosis).” 3. Arteriosclerosis was unlikely — “No pathology of the other supra‐aortic arteries or of the aortic cross was found.” 4. Aneurysm was excluded — “No intimal dissection or aneurysm was seen.” 5. Systemic vasculitis was ruled out — “negative immunological laboratory tests including anti‐neutrophil cytoplasmic antibodies (ANCA) and antinuclear antibodies (ANA).”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11820",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s002"], "f010": ["s002"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s003"]
+    },
+    "quotes": {
+      "f001": "bitemporal headache", "f002": "a 5-day history of bitemporal headache", "f004": "24 hours of intense, throbbing, continuous left neck pain",
+      "f005": "throbbing", "f006": "intense", "f007": "continuous", "f008": "radiating to the ipsilateral mandibular and auricular region",
+      "f009": "The pain was localized over the left carotid bifurcation", "f010": "worsened with neck movement and palpation",
+      "f014": "his medical history was otherwise unremarkable"
+    },
+    "flags": {
+      "f009": ["The source places the pain over the left carotid bifurcation, an anatomical term the patient would not use; written as one spot on the left side of the neck."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s002"], "source_text": "The pain was localized over the left carotid bifurcation and worsened with neck movement and palpation."},
+      "x002": {"sentences": ["s003"], "source_text": "Physical and neurologic examinations were normal."},
+      "x003": {"sentences": ["s003"], "source_text": "Physical and neurologic examinations were normal."},
+      "x004": {"sentences": ["s004", "s005"], "source_text": "complete blood count / were within normal limits / The white-cell count was 7 g/L (reference, 4–10 g/L)"},
+      "x005": {"sentences": ["s004"], "source_text": "coagulation tests / were within normal limits"},
+      "x006": {"sentences": ["s004"], "source_text": "electrolytes, glucose, renal and liver function tests—were within normal limits"},
+      "x007": {"sentences": ["s004"], "source_text": "renal and liver function tests—were within normal limits"},
+      "x008": {"sentences": ["s005"], "source_text": "C-reactive protein was 6.3 mg/L (reference, 0–10 mg/L)"},
+      "x009": {"sentences": ["s005"], "source_text": "erythrocyte sedimentation rate was mildly elevated at 11 mm/h (reference, 0–10 mm/h)"},
+      "x010": {"sentences": ["s006"], "source_text": "Contrast-enhanced CT of the neck revealed soft-tissue thickening around the distal common carotid artery, the carotid bulb, and the proximal internal carotid artery on the left, with no abnormalities of other supra-aortic vessels or the aortic arch."},
+      "x011": {"sentences": ["s007"], "source_text": "Doppler ultrasonography showed an isoechoic thickened arterial wall at the left carotid bifurcation, a peak systolic velocity of 90 cm/s, normal intraluminal flow, and “No intimal dissection or aneurysm was seen.”"},
+      "x012": {"sentences": ["s007"], "source_text": "MRI of the neck demonstrated eccentric soft-tissue thickening at the left carotid bifurcation with a hypointense T1 signal, hyperintense T2 signal, no T1 wall hematoma on fat-saturated sequences, and intense perivascular enhancement after contrast administration."},
+      "x013": {"sentences": ["s008"], "source_text": "Serologic testing was negative, with “negative immunological laboratory tests including anti-neutrophil cytoplasmic antibodies (ANCA) and antinuclear antibodies (ANA).”"},
+      "x014": {"sentences": ["s008"], "source_text": "An abdominal MRI showed “no vascular abnormality (no fibromuscular dysplasia, no vasculitis, and no stenosis).”"}
+    },
+    "finding_flags": {
+      "x001": ["s002 mixes history and examination: the localisation over the carotid bifurcation and the pain on palpation are examiner findings, while s003 calls the physical examination normal."],
+      "x002": ["'Normal' apart from the focal neck pain recorded in x001."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "White-cell count given as '7 g/L (reference, 4–10 g/L)'; the unit is presumably G/L (10^9/L). Kept as written.",
+      "s003 calls the physical examination normal although s002 reports pain on palpation over the left carotid bifurcation."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with 5 days of bitemporal headache and 24 hours of left neck pain (s001-s008 are this presentation and its workup).",
+      "s002 supports both patient facts (location, aggravation by movement and pressure) and the neck examination finding.",
+      "'Medical history was otherwise unremarkable' is written as 'chronic medical problems' absent: the trauma, infection and chiropractic denials are not history items."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-101", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 26, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "strange or agitated behavior", "aliases": ["acting strangely", "agitation", "behavior change"], "text": "My wife says I've been acting strangely and that I've been agitated.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "strange or agitated behavior: duration", "parent": "f001", "attribute": "duration", "text": "This has been going on for the past 6 weeks.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "being spied on", "aliases": ["being watched", "surveillance", "being followed"], "text": "The NSA is spying on me.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f004", "item": "someone controlling your mind", "aliases": ["mind control", "thoughts being controlled"], "text": "The NSA is also controlling my mind.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "preoccupation with a project", "aliases": ["what you spend your time on", "daily activities"], "text": "Since I lost my job, I've been focused on building a device to stop people from controlling my mind.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f006", "item": "withdrawing from people", "aliases": ["social withdrawal", "isolating yourself"], "text": "My wife says I've become more and more withdrawn.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "low mood", "aliases": ["feeling depressed", "feeling down", "sadness"], "text": "I've felt depressed at times, on and off.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "recurrent"},
+      {"id": "f008", "item": "how long the withdrawal and low mood have been going on", "text": "My wife says the withdrawal and the low moods have been going on for the last 3 months.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f009", "item": "job loss", "aliases": ["occupation", "job", "work", "employment"], "text": "I was fired from my job 4 weeks ago, after I stopped going to work.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f010", "item": "marital status", "aliases": ["married", "spouse", "relationship"], "text": "I'm married.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "previous psychiatric problems", "aliases": ["psychiatric history", "mental health history"], "text": "I've never had any psychiatric problems before.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "drug use", "aliases": ["drugs", "recreational drugs"], "text": "I don't use any drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "substance abuse", "aliases": ["alcohol or drug problems", "addiction"], "text": "I've never had a problem with alcohol or other substances.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f015", "item": "recent travel", "aliases": ["travel"], "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "physical health problems", "aliases": ["physical symptoms", "bodily complaints"], "text": "I don't have any physical health problems.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-101",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "122/78 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "psychiatric", "name": "mental status examination", "aliases": ["MSE", "general appearance", "behavior", "speech", "psychiatric examination"], "result": "Appearance: agitated, poorly groomed. Behavior: suspicious, avoids eye contact. Speech: rapid, disorganized."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Normal."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "muscle tone", "power"], "result": "Normal strength and tone."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["finger-to-nose test", "cerebellar examination", "ataxia"], "result": "No ataxia observed."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets", "platelet count"], "result": "WBC 7,500/μL; hemoglobin 14 g/dL; platelets 230,000/μL."},
+      {"id": "x012", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "chemistry panel", "electrolytes", "sodium", "potassium", "creatinine", "glucose"], "result": "Sodium 138 mmol/L; potassium 4.2 mmol/L; creatinine 1.0 mg/dL; glucose 95 mg/dL."},
+      {"id": "x013", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine leukocyte esterase", "urine nitrites"], "result": "Appearance clear; WBC 0-5/HPF; RBC 0-2/HPF; nitrites negative; leukocyte esterase negative."},
+      {"id": "x014", "kind": "test", "name": "toxicology screen", "aliases": ["drug screen", "tox screen", "urine drug screen", "blood alcohol", "amphetamines", "cannabinoids", "cocaine", "opiates"], "result": "Alcohol negative; amphetamines negative; cannabinoids negative; cocaine negative; opiates negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-101",
+    "diagnosis": "Schizophreniform disorder",
+    "aliases": ["schizophreniform psychosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-101",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-101-p001"], "f002": ["agentclinic-medqa-ext-101-p001"],
+      "f003": ["agentclinic-medqa-ext-101-p001", "agentclinic-medqa-ext-101-p002"], "f004": ["agentclinic-medqa-ext-101-p001", "agentclinic-medqa-ext-101-p002"],
+      "f005": ["agentclinic-medqa-ext-101-p001"], "f006": ["agentclinic-medqa-ext-101-p001", "agentclinic-medqa-ext-101-p003"],
+      "f007": ["agentclinic-medqa-ext-101-p001", "agentclinic-medqa-ext-101-p004"], "f008": ["agentclinic-medqa-ext-101-p001"],
+      "f009": ["agentclinic-medqa-ext-101-p001", "agentclinic-medqa-ext-101-p008"], "f010": ["agentclinic-medqa-ext-101-p008"],
+      "f011": ["agentclinic-medqa-ext-101-p007"], "f012": ["agentclinic-medqa-ext-101-p007"], "f013": ["agentclinic-medqa-ext-101-p009"],
+      "f014": ["agentclinic-medqa-ext-101-p008"], "f015": ["agentclinic-medqa-ext-101-p009"], "f016": ["agentclinic-medqa-ext-101-p009"]
+    },
+    "quotes": {
+      "f001": "Bizarre and agitated behavior", "f002": "for the past 6 weeks", "f003": "He believes that he is being spied on by the NSA",
+      "f004": "which is also controlling his mind", "f005": "he has been focused on creating a device to prevent people from controlling his mind",
+      "f006": "His wife adds that he has been increasingly withdrawn", "f007": "intermittently depressed / Depressed mood at times",
+      "f008": "over the last 3 months", "f009": "He was terminated from his job 4 weeks ago after he ceased attending work",
+      "f011": "No significant medical or psychiatric history reported.", "f012": "No significant medical or psychiatric history reported.",
+      "f014": "No history of substance abuse reported.", "f016": "physical health issues"
+    },
+    "flags": {
+      "f001": ["The source narrates 'bizarre and agitated behavior' without saying who reports it; it is worded as what his wife says, since she gives collateral history and the patient would not call his own behavior bizarre."],
+      "f007": ["The source gives low mood both as the wife's report (history) and as a secondary symptom; worded as the patient's own experience, with the 3-month span attributed to the wife (f008)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-101-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "122/78 mmHg", "exam_ids": ["agentclinic-medqa-ext-101-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-101-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-101-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Appearance + Physical_Examination_Findings.General_Examination.Behavior + Physical_Examination_Findings.General_Examination.Speech", "source_text": "Appearance: Agitated, poorly groomed; Behavior: Suspicious, avoids eye contact; Speech: Rapid, disorganized", "exam_ids": ["agentclinic-medqa-ext-101-e005", "agentclinic-medqa-ext-101-e006", "agentclinic-medqa-ext-101-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurologic_Examination.Cranial_Nerves", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-101-e008"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurologic_Examination.Motor", "source_text": "Normal strength and tone", "exam_ids": ["agentclinic-medqa-ext-101-e009"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurologic_Examination.Sensory", "source_text": "Intact", "exam_ids": ["agentclinic-medqa-ext-101-e010"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurologic_Examination.Reflexes", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-101-e011"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurologic_Examination.Coordination", "source_text": "No ataxia observed", "exam_ids": ["agentclinic-medqa-ext-101-e012"]},
+      "x011": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "WBC: 7,500 /μL; Hemoglobin: 14 g/dL; Platelets: 230,000 /μL", "exam_ids": ["agentclinic-medqa-ext-101-i001", "agentclinic-medqa-ext-101-i002", "agentclinic-medqa-ext-101-i003"]},
+      "x012": {"source": "Test_Results.Chemistry_Panel.Sodium + Test_Results.Chemistry_Panel.Potassium + Test_Results.Chemistry_Panel.Creatinine + Test_Results.Chemistry_Panel.Glucose", "source_text": "Sodium: 138 mmol/L; Potassium: 4.2 mmol/L; Creatinine: 1.0 mg/dL; Glucose: 95 mg/dL", "exam_ids": ["agentclinic-medqa-ext-101-i004", "agentclinic-medqa-ext-101-i005", "agentclinic-medqa-ext-101-i006", "agentclinic-medqa-ext-101-i007"]},
+      "x013": {"source": "Test_Results.Urinalysis.Appearance + Test_Results.Urinalysis.WBC + Test_Results.Urinalysis.RBC + Test_Results.Urinalysis.Nitrites + Test_Results.Urinalysis.Leukocyte_Esterase", "source_text": "Appearance: Clear; WBC: 0-5 /HPF; RBC: 0-2 /HPF; Nitrites: Negative; Leukocyte_Esterase: Negative", "exam_ids": ["agentclinic-medqa-ext-101-i008", "agentclinic-medqa-ext-101-i009", "agentclinic-medqa-ext-101-i010", "agentclinic-medqa-ext-101-i011", "agentclinic-medqa-ext-101-i012"]},
+      "x014": {"source": "Test_Results.Toxicology_Screen.Alcohol + Test_Results.Toxicology_Screen.Amphetamines + Test_Results.Toxicology_Screen.Cannabinoids + Test_Results.Toxicology_Screen.Cocaine + Test_Results.Toxicology_Screen.Opiates", "source_text": "Alcohol: Negative; Amphetamines: Negative; Cannabinoids: Negative; Cocaine: Negative; Opiates: Negative", "exam_ids": ["agentclinic-medqa-ext-101-i013", "agentclinic-medqa-ext-101-i014", "agentclinic-medqa-ext-101-i015", "agentclinic-medqa-ext-101-i016", "agentclinic-medqa-ext-101-i017"]}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [
+      "Secondary symptoms include observer-only signs ('Disorganized speech', 'Psychomotor agitation') and a diagnostic label ('Delusions of persecution')."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-101-p005", "reason": "'Disorganized speech' is an observer-only sign; already in the mental status examination (x005, speech: rapid, disorganized)."},
+      {"id": "agentclinic-medqa-ext-101-p006", "reason": "'Psychomotor agitation' is an observer-only sign; already in the mental status examination (x005, appearance: agitated)."}
+    ],
+    "notes": [
+      "Psychiatric content is written as what the patient believes (the NSA spies on him and controls his mind; he is building a device against it), not as the label 'delusions of persecution' (p002 cited for f003 and f004).",
+      "Collateral history from the wife (withdrawal, intermittent low mood over 3 months) is worded as what he was told.",
+      "The 3-month span covers both the withdrawal and the low mood, so it is a standalone fact (f008).",
+      "Appearance, behavior and speech are grouped as one mental status examination record (x005); the neurological components stay separate. The toxicology screen is one ordered panel (x014).",
+      "'No significant medical or psychiatric history' gives two denials (f011, f012). 'No history of substance abuse' (f014) and 'denies any drug use' (f013) are kept as two statements: abuse covers alcohol, use covers current drugs.",
+      "'No significant findings' in the review of systems carries no meaning beyond the listed denials."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a young man brought in by his wife for bizarre and agitated behavior, suspecting a possible psychiatric disorder."
+    }
+  }
+}

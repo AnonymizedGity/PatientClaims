@@ -1,0 +1,57 @@
+{
+ "case_id": "medqa-cs-033",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I'm feeling tired, with no energy.",
+   "It started three months ago.",
+   "I was in a car accident 3 months ago.",
+   "I wake up several times during the night.",
+   "I no longer want to do things for fun.",
+   "I feel sad all the time.",
+   "I drink beer.",
+   "I smoke cigarettes.",
+   "My girlfriend and my parents are very supportive. They know I've been having a hard time."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been feeling really tired with no energy for the past three months, which started around the time I was in a car accident. I wake up several times during the night and feel sad all the time. I've lost interest in doing things for fun, though my girlfriend and parents are very supportive and know I've been having a hard time. I also smoke cigarettes and drink beer.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f009",
+    "f013",
+    "f017",
+    "f041",
+    "f044",
+    "f052"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4456,
+   "tokens_out": 90,
+   "seconds": 9.94,
+   "redrafts": 0
+  }
+ }
+}

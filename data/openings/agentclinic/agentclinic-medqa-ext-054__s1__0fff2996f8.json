@@ -1,0 +1,49 @@
+{
+ "case_id": "agentclinic-medqa-ext-054",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've been having episodes of dizziness.",
+   "I get a false feeling of motion, and occasionally a spinning sensation.",
+   "The episodes come on suddenly.",
+   "The dizziness and the spinning depend on my position.",
+   "I have age-related hearing loss."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having episodes of dizziness that come on suddenly. I get a false feeling of motion, and occasionally a spinning sensation, and the dizziness and the spinning depend on my position. I also have age-related hearing loss.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f002",
+    "f004",
+    "f014"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3509,
+   "tokens_out": 59,
+   "seconds": 11.0,
+   "redrafts": 0
+  }
+ }
+}

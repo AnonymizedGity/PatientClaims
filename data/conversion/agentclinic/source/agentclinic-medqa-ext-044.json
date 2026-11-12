@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-044",
+  "source_row": 44,
+  "demographics_text": "74-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with sudden onset of abdominal pain, focusing on the relevance of the patient's medical history and current symptoms.",
+  "chief_complaint": "Severe abdominal pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-044-p001",
+      "field": "History",
+      "text": "The patient presents with sudden onset of abdominal pain around the umbilicus 16 hours ago, with recent history of hospitalization for an acute myocardial infarction a week ago. Reports several episodes of bloody loose bowel movements. Denies vomiting."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-044-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Bloody loose bowel movements"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-044-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No vomiting"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-044-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Sudden onset"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-044-p005",
+      "field": "Past_Medical_History",
+      "text": "Known diabetes mellitus for 35 years and hypertension for 20 years. History of acute myocardial infarction."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-044-p006",
+      "field": "Social_History",
+      "text": "Smokes 15–20 cigarettes per day for the past 40 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-044-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, vomiting. Reports bloody loose bowel movements."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.9°C (98.4°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "95/65 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "95 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Normal external appearance"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Bruit heard over the epigastric area"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Mild periumbilical tenderness"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-044-i001",
+      "path": "Test_Results.CBC_with_Differentiation.WBC",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-i002",
+      "path": "Test_Results.CBC_with_Differentiation.Hemoglobin",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-i003",
+      "path": "Test_Results.CBC_with_Differentiation.Platelets",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-i004",
+      "path": "Test_Results.Metabolic_Panel.Creatinine",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-i005",
+      "path": "Test_Results.Metabolic_Panel.BUN",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-i006",
+      "path": "Test_Results.Metabolic_Panel.Glucose",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-044-i007",
+      "path": "Test_Results.Imaging.CT_Angiography_Abdomen.Findings",
+      "text": "Evidence suggestive of reduced blood flow to the mesenteric arteries."
+    }
+  ],
+  "correct_diagnosis": "Acute Mesenteric Ischemia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "case_id": "agentclinic-medqa-ext-203",
+  "source_row": 203,
+  "demographics_text": "19-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the skin condition in a young adult male presenting with inguinal pruritis and an erythematous rash.",
+  "chief_complaint": "Increased inguinal pruritis",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-203-p001",
+      "field": "History",
+      "text": "The patient presents with increased inguinal pruritus. He reports participation in school wrestling. No significant medical or family history. Review of systems is negative apart from the pruritic rash."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-203-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Erythematous rash on left thigh"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-203-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Rash over pubic region and throughout the perineum"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-203-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Scrotum spared"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-203-p005",
+      "field": "Past_Medical_History",
+      "text": "Facial acne"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-203-p006",
+      "field": "Social_History",
+      "text": "Active in school wrestling"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-203-p007",
+      "field": "Review_of_Systems",
+      "text": "Negative for fever, weight loss, joint pains, or other systemic symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-203-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-203-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-203-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-203-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-203-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "Well-demarcated, erythematous patch on left thigh, over pubic region, and throughout the perineum. Scrotum is spared."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-203-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "The rash is slightly elevated and rough to the touch."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-203-e007",
+      "path": "Physical_Examination_Findings.Skin_Examination.Distribution",
+      "text": "Localized to the inguinal region, sparing the scrotum."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-203-i001",
+      "path": "Test_Results.Skin_Scraping.Microscopy.Findings",
+      "text": "Hyphae observed"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-203-i002",
+      "path": "Test_Results.Skin_Scraping.Culture.Result",
+      "text": "Growth consistent with dermatophyte"
+    }
+  ],
+  "correct_diagnosis": "Tinea cruris",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

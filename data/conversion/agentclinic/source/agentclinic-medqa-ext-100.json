@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-100",
+  "source_row": 100,
+  "demographics_text": "67-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with generalized fatigue, pallor, and abnormal blood findings.",
+  "chief_complaint": "Generalized fatigue",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-100-p001",
+      "field": "History",
+      "text": "The patient complains of a 2-month history of generalized fatigue. He mentions no specific triggers but notes that the fatigue has been progressively worsening. He denies any recent infections, significant weight loss, or night sweats."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-100-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Appearance of pale skin"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-100-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Presence of multiple pinpoint, red, nonblanching spots on extremities"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-100-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. No known blood disorders or cancer history in the family."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-100-p005",
+      "field": "Social_History",
+      "text": "Retired teacher, lives with his wife. Non-smoker and drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-100-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, significant weight loss, night sweats, or recent infections. Mentions occasional mild shortness of breath during exertion."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e005",
+      "path": "Physical_Examination_Findings.General_Examination.Inspection",
+      "text": "The patient appears pale."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e006",
+      "path": "Physical_Examination_Findings.General_Examination.Skin_Examination",
+      "text": "Multiple pinpoint, red, nonblanching spots (petechiae) noted on the extremities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Significant splenomegaly."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-100-i001",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "8.3 g/dL (low)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-i002",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "81,000 /mm3 (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "35,600 /mm3 (low)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-100-i004",
+      "path": "Test_Results.Peripheral_Blood_Smear.Findings",
+      "text": "Presence of immature cells with large, prominent nucleoli and pink, elongated, needle-shaped cytoplasmic inclusions."
+    }
+  ],
+  "correct_diagnosis": "Acute myelogenous leukemia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

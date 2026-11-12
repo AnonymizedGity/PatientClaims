@@ -1,0 +1,84 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-001", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 35, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "double vision", "aliases": ["seeing double"], "text": "I've been seeing double.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "difficulty climbing stairs", "text": "I have trouble climbing stairs.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "weakness in the arms", "aliases": ["arm weakness"], "text": "My arms feel weak. It's hard to keep them up when I brush my hair.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "how long the symptoms have been going on", "text": "All of this started about a month ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "symptoms worse after physical activity", "text": "It all gets worse after I've been physically active.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "symptoms better with rest", "text": "It gets much better after a few hours of rest.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f008", "item": "palpitations", "aliases": ["racing heart"], "text": "I haven't noticed any palpitations.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f009", "item": "shortness of breath", "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f010", "item": "recent infections", "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink wine occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a graphic designer.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-001",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.6°C (97.9°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["eye movements", "eyelids", "extraocular movements"], "result": "Ptosis of the right upper eyelid that worsens with sustained upward gaze."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power"], "result": "Reduced strength in the upper extremities; normal tone; no obvious atrophy."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal reflexes throughout."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Normal sensation throughout."},
+      {"id": "x009", "kind": "test", "name": "acetylcholine receptor antibodies", "aliases": ["AChR antibodies", "anti-AChR"], "result": "Present (elevated)."},
+      {"id": "x010", "kind": "test", "name": "electromyography", "aliases": ["EMG", "repetitive nerve stimulation", "nerve conduction study"], "result": "Decreased muscle response with repetitive stimulation."},
+      {"id": "x011", "kind": "test", "name": "chest CT", "aliases": ["CT of the chest", "CT thorax"], "result": "Normal; no thymoma or other mass."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-001",
+    "diagnosis": "Myasthenia gravis",
+    "aliases": ["MG", "myasthenia", "generalized myasthenia gravis", "acetylcholine receptor antibody-positive myasthenia gravis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-001",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-001-p001"], "f002": ["agentclinic-medqa-ext-001-p001", "agentclinic-medqa-ext-001-p002"],
+      "f003": ["agentclinic-medqa-ext-001-p001", "agentclinic-medqa-ext-001-p003"], "f004": ["agentclinic-medqa-ext-001-p001"],
+      "f005": ["agentclinic-medqa-ext-001-p001"], "f006": ["agentclinic-medqa-ext-001-p001", "agentclinic-medqa-ext-001-p004"],
+      "f007": ["agentclinic-medqa-ext-001-p007"], "f008": ["agentclinic-medqa-ext-001-p007"], "f009": ["agentclinic-medqa-ext-001-p007"],
+      "f010": ["agentclinic-medqa-ext-001-p007"], "f011": ["agentclinic-medqa-ext-001-p005"], "f012": ["agentclinic-medqa-ext-001-p006"],
+      "f013": ["agentclinic-medqa-ext-001-p006"], "f014": ["agentclinic-medqa-ext-001-p006"]
+    },
+    "quotes": {
+      "f001": "Double vision", "f002": "Difficulty climbing stairs", "f003": "weakness when trying to brush her hair",
+      "f004": "a 1-month history", "f005": "these symptoms tend to worsen after physical activity",
+      "f006": "improve significantly after a few hours of rest", "f007": "denies experiencing any chest pain",
+      "f010": "or recent infections", "f011": "No significant past medical history.", "f013": "drinks wine occasionally"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.6°C (97.9°F)", "exam_ids": ["agentclinic-medqa-ext-001-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-001-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-001-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-001-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Presence of ptosis (drooping of the right upper eyelid) that worsens with sustained upward gaze.", "exam_ids": ["agentclinic-medqa-ext-001-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor_Strength", "source_text": "Diminished motor strength observed in the upper extremities, with normal tone and no obvious atrophy.", "exam_ids": ["agentclinic-medqa-ext-001-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal reflexes throughout.", "exam_ids": ["agentclinic-medqa-ext-001-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensation", "source_text": "Normal sensation throughout.", "exam_ids": ["agentclinic-medqa-ext-001-e008"]},
+      "x009": {"source": "Test_Results.Blood_Tests.Acetylcholine_Receptor_Antibodies", "source_text": "Present (elevated)", "exam_ids": ["agentclinic-medqa-ext-001-i001"]},
+      "x010": {"source": "Test_Results.Electromyography.Findings", "source_text": "Decreased muscle response with repetitive stimulation", "exam_ids": ["agentclinic-medqa-ext-001-i002"]},
+      "x011": {"source": "Test_Results.Imaging.Chest_CT.Findings", "source_text": "Normal, no thymoma or other masses detected.", "exam_ids": ["agentclinic-medqa-ext-001-i003"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Reference conversion. Duration and the activity/rest pattern apply to all three symptoms, so they are standalone symptom facts rather than children of one symptom.",
+      "The source's clinical term 'diplopia' is replaced by the patient's words ('seeing double'); 'Improvement of symptoms after rest' (p004) merges with the same statement in the history (f006)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with double vision, difficulty climbing stairs, and upper limb weakness."
+    }
+  }
+}

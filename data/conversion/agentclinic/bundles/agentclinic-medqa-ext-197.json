@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-197", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 23, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "loss of consciousness", "aliases": ["passing out", "blacking out", "fainting", "collapse", "syncope"], "text": "I suddenly lost consciousness.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f002", "item": "loss of consciousness: what I was doing", "parent": "f001", "attribute": "context", "text": "It happened while I was pitching in a baseball game.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "loss of consciousness: injury or blow", "parent": "f001", "attribute": "context", "aliases": ["trauma", "head injury", "hit by the ball"], "text": "There wasn't any injury or blow involved.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "loss of consciousness: CPR", "parent": "f001", "attribute": "treatment_response", "aliases": ["resuscitation", "how I came round"], "text": "I was told I came round after I was given CPR.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "headache", "aliases": ["headaches"], "text": "I didn't have any headaches before I passed out.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "seizures", "aliases": ["fits", "convulsions"], "text": "I hadn't had any seizures before this happened.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f007", "item": "chest pain", "text": "I didn't have any chest pain before I passed out.", "polarity": "absent", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f008", "item": "palpitations", "aliases": ["racing heart", "pounding heart"], "text": "I didn't notice any palpitations before I passed out.", "polarity": "absent", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f009", "item": "shortness of breath", "aliases": ["breathlessness"], "text": "I wasn't short of breath before I passed out.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f010", "item": "dizziness", "aliases": ["lightheadedness", "feeling faint"], "text": "I didn't feel dizzy before I passed out.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f011", "item": "neurological problems", "aliases": ["brain or nerve problems"], "text": "I've never had any neurological problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "heart problems", "aliases": ["cardiovascular problems", "heart disease"], "text": "I've never had any heart or circulation problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "regular exercise", "aliases": ["sports", "physical activity"], "text": "I'm active and play sports regularly.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "tobacco use", "aliases": ["smoking"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "recreational drugs", "aliases": ["drug use", "street drugs"], "text": "I don't use recreational drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-197",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/80 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x004", "kind": "vital", "name": "temperature", "result": "36.7°C (98°F)"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "jugular venous pulse", "aliases": ["JVP", "neck veins", "jugular venous pressure"], "result": "Prominent a waves."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "heart examination", "aliases": ["cardiac examination", "heart auscultation", "heart sounds", "apical impulse", "precordial palpation", "murmurs"], "result": "Palpation: double apical impulse; auscultation: S4 present; no audible murmurs."},
+      {"id": "x007", "kind": "test", "name": "ECG", "aliases": ["electrocardiogram", "EKG", "12-lead ECG"], "result": "Signs of left ventricular hypertrophy."},
+      {"id": "x008", "kind": "test", "name": "echocardiogram", "aliases": ["echo", "cardiac ultrasound", "transthoracic echocardiogram", "TTE"], "result": "Left ventricular hypertrophy with septal thickening; reduced ventricular cavity size."},
+      {"id": "x009", "kind": "test", "name": "cardiac MRI", "aliases": ["heart MRI", "cardiac magnetic resonance", "CMR"], "result": "Marked left ventricular hypertrophy, especially of the interventricular septum."},
+      {"id": "x010", "kind": "test", "name": "genetic testing", "aliases": ["genetic panel", "gene testing", "cardiac genetic testing"], "result": "Positive for mutations associated with hypertrophic cardiomyopathy."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-197",
+    "diagnosis": "Hypertrophic cardiomyopathy",
+    "aliases": ["HCM", "hypertrophic obstructive cardiomyopathy", "HOCM", "familial hypertrophic cardiomyopathy", "idiopathic hypertrophic subaortic stenosis", "IHSS"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-197",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-197-p001"], "f002": ["agentclinic-medqa-ext-197-p001"], "f003": ["agentclinic-medqa-ext-197-p001"],
+      "f004": ["agentclinic-medqa-ext-197-p001"], "f005": ["agentclinic-medqa-ext-197-p006"], "f006": ["agentclinic-medqa-ext-197-p006"],
+      "f007": ["agentclinic-medqa-ext-197-p006"], "f008": ["agentclinic-medqa-ext-197-p006"], "f009": ["agentclinic-medqa-ext-197-p006"],
+      "f010": ["agentclinic-medqa-ext-197-p006"], "f011": ["agentclinic-medqa-ext-197-p002"], "f012": ["agentclinic-medqa-ext-197-p003"],
+      "f013": ["agentclinic-medqa-ext-197-p004"], "f014": ["agentclinic-medqa-ext-197-p005"], "f015": ["agentclinic-medqa-ext-197-p005"],
+      "f016": ["agentclinic-medqa-ext-197-p005"], "f017": ["agentclinic-medqa-ext-197-p005"]
+    },
+    "quotes": {
+      "f001": "Sudden loss of consciousness", "f002": "while pitching in a baseball game", "f003": "No history of trauma associated with the event",
+      "f004": "regained consciousness after receiving cardiopulmonary resuscitation", "f005": "Negative for headaches", "f007": "chest pain",
+      "f010": "or dizziness prior to the event", "f011": "No history of neurological problems", "f012": "No history of cardiovascular problems",
+      "f013": "No significant past medical history.", "f014": "Active, with regular participation in sports."
+    },
+    "flags": {
+      "f005": ["'prior to the event' closes the ROS list; it is applied to every item, so each denial is limited to the time before the collapse."],
+      "f006": ["For seizures 'prior to the event' reads as no earlier seizures; whether he had convulsive movements during the collapse is unknown."],
+      "f004": ["He was unconscious, so the CPR is worded as what he was told."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-197-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-197-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-197-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-197-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.Jugular_Venous_Pulse", "source_text": "Prominent A waves observed", "exam_ids": ["agentclinic-medqa-ext-197-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.Apical_Impulse + Physical_Examination_Findings.Cardiovascular_Examination.Auscultation.S4 + Physical_Examination_Findings.Cardiovascular_Examination.Auscultation.Murmurs", "source_text": "Double apical impulse palpable + Present + No audible murmurs", "exam_ids": ["agentclinic-medqa-ext-197-e006", "agentclinic-medqa-ext-197-e008", "agentclinic-medqa-ext-197-e007"]},
+      "x007": {"source": "Test_Results.Electrocardiogram.Findings", "source_text": "Signs of left ventricular hypertrophy", "exam_ids": ["agentclinic-medqa-ext-197-i001"]},
+      "x008": {"source": "Test_Results.Echocardiogram.Findings", "source_text": "Left ventricular hypertrophy with septal thickening; reduced ventricular cavity size", "exam_ids": ["agentclinic-medqa-ext-197-i002"]},
+      "x009": {"source": "Test_Results.Cardiac_MRI.Findings", "source_text": "Confirmatory findings of marked left ventricular hypertrophy, especially of the interventricular septum", "exam_ids": ["agentclinic-medqa-ext-197-i003"]},
+      "x010": {"source": "Test_Results.Genetic_Testing.Findings", "source_text": "Positive for mutations associated with hypertrophic cardiomyopathy", "exam_ids": ["agentclinic-medqa-ext-197-i004"]}
+    },
+    "finding_flags": {
+      "x009": ["Source prefix 'Confirmatory findings of' dropped from the result: it is review commentary pointing at an already-made diagnosis."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The genetic test result names the gold diagnosis (hypertrophic cardiomyopathy); kept because it is what the test reports."}
+    ],
+    "source_issues": [
+      "Gold diagnosis text appears in Test_Results (genetic testing; pool flag visible_gold_alias_partitions = test_results).",
+      "Secondary_Symptoms holds two history denials ('No history of neurological problems', 'No history of cardiovascular problems'), not symptoms; converted to medical_history facts.",
+      "The cardiac MRI entry begins with 'Confirmatory findings of', which presupposes the diagnosis."
+    ],
+    "notes": [
+      "Collapse while pitching, CPR and no trauma are children of the loss-of-consciousness fact (context, treatment_response). The event is over, so f001 has time 'resolved'.",
+      "The JVP is a separate request from the heart examination; apical impulse palpation and auscultation (S4, no murmurs) are combined in one heart examination record.",
+      "ECG and echocardiogram results name left ventricular hypertrophy, a finding, not the gold diagnosis; they are not listed as leakage."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with sudden loss of consciousness and no prior history of neurological or cardiovascular problems."
+    }
+  }
+}

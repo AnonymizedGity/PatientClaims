@@ -1,0 +1,88 @@
+{
+  "case_id": "agentclinic-medqa-ext-122",
+  "source_row": 122,
+  "demographics_text": "19-year-old Caucasian male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with hypopigmented skin lesions.",
+  "chief_complaint": "Hypopigmented skin lesions",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-122-p001",
+      "field": "History",
+      "text": "The patient reports noticing several areas of skin that have become lighter over the past several months. These patches have slowly increased in size. He also mentions that his father has a similar condition. The patient denies any recent illnesses, fever, or previous similar episodes. He is concerned about the cosmetic appearance of these lesions."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-122-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No associated itchiness or discomfort"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-122-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Gradual increase in lesion size"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-122-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No recent illnesses"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-122-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. Not on any medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-122-p006",
+      "field": "Social_History",
+      "text": "Full-time college student. Non-smoker. Occasional alcohol use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-122-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies recent illnesses, fever, weight loss, or other systemic symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-122-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-122-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "118/76 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-122-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-122-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-122-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "Multiple well-demarcated, hypopigmented macules and patches over the face, hands, and arms. No erythema or scale. Hair and nails are normal."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-122-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "Skin texture is normal within and around the lesions. No warmth or induration."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-122-i001",
+      "path": "Test_Results.Skin_Biopsy.Microscopic_Examination",
+      "text": "Absence of melanocytes in the epidermis. Normal keratinocyte structure. No evidence of fungal elements."
+    }
+  ],
+  "correct_diagnosis": "Vitiligo",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

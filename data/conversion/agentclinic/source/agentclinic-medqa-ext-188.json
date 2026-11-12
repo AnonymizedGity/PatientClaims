@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-188",
+  "source_row": 188,
+  "demographics_text": "43-year-old woman",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with severe chest pain.",
+  "chief_complaint": "Severe chest pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-188-p001",
+      "field": "History",
+      "text": "The patient has been brought to the emergency department by her brother due to severe chest pain. She is grieving the recent loss of her husband in a car accident and is still in a state of shock over the event."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-188-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Shortness of breath"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-188-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Emotional distress"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-188-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-188-p005",
+      "field": "Social_History",
+      "text": "Non-smoker. No history of alcohol or drug abuse. Recently widowed."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-188-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies recent illness, fever, or cough."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-188-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "105/67 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "96 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "23 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-e005",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Heart_Sounds",
+      "text": "Presence of S3 heart sound"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-e006",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Other",
+      "text": "No murmurs, rubs, or gallops detected"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-e007",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Rales in the lower right and left lung lobes"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-188-i001",
+      "path": "Test_Results.Electrocardiogram.Findings",
+      "text": "No significant findings"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-i002",
+      "path": "Test_Results.Echocardiography.Findings",
+      "text": "Enlarged left ventricle and left atrium"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-i003",
+      "path": "Test_Results.Laboratory_Tests.Troponin",
+      "text": "Levels not mentioned, but the context suggests possible normal or slightly elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-188-i004",
+      "path": "Test_Results.Laboratory_Tests.BNP",
+      "text": "Not mentioned, but can be useful in context"
+    }
+  ],
+  "correct_diagnosis": "Takotsubo cardiomyopathy",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-144",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 69, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "trouble staying awake in the evening", "aliases": ["sleepy in the evening", "falling asleep early", "early evening sleepiness"], "text": "I can't stay awake past 6 in the evening.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "trouble staying awake in the evening: relief with caffeine", "parent": "f001", "attribute": "relieving", "aliases": ["caffeine", "coffee"], "text": "I've tried using caffeine to fix my sleep pattern, but it hasn't worked.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "trouble sleeping at my preferred time", "aliases": ["sleep schedule", "sleep timing", "trouble sleeping"], "text": "I have trouble sleeping at the times I'd prefer.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "unrefreshing sleep", "aliases": ["tired on waking", "not rested after sleep"], "text": "I feel rested when I wake up.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "other symptoms", "aliases": ["other symptoms"], "text": "I don't have any other complaints apart from the sleep problem.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "irritable bowel syndrome", "aliases": ["IBS", "bowel problems"], "text": "I have irritable bowel syndrome.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "fiber supplements", "aliases": ["fibre", "supplements"], "text": "I take fiber supplements for my irritable bowel syndrome.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "heavy alcohol use", "aliases": ["alcohol", "drinking"], "text": "I don't drink much alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "tobacco use", "aliases": ["smoking", "cigarettes"], "text": "I don't really use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "occupation", "aliases": ["job", "work", "retirement"], "text": "I recently retired from a day-shift job at a cemetery.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "unable to do evening activities with my wife", "aliases": ["evening activities", "social life"], "text": "Since I retired, I haven't been able to do evening activities with my wife.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "strain in my marriage", "aliases": ["marital problems", "relationship strain"], "text": "My sleep problem is putting a strain on my marriage.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "marital status", "text": "I'm married.", "polarity": "present", "category": "social_background"},
+      {"id": "f014", "item": "caffeine use", "text": "I've tried using caffeine to fix my sleep pattern.", "polarity": "present", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-144",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status examination", "aliases": ["mental status", "orientation", "MSE"], "result": "Alert and oriented to person, place and time."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Normal."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor examination", "aliases": ["motor strength", "muscle strength", "power"], "result": "Strength 5/5 in all extremities."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact to light touch, vibration and proprioception."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "2+ and symmetric in the upper and lower extremities."},
+      {"id": "x010", "kind": "test", "name": "polysomnography", "aliases": ["sleep study", "PSG", "overnight sleep study"], "result": "Normal sleep efficiency with an advanced sleep phase."},
+      {"id": "x011", "kind": "test", "name": "melatonin level", "aliases": ["melatonin", "dim light melatonin onset", "DLMO"], "result": "Melatonin levels increased in the early evening, consistent with advanced sleep phase disorder."},
+      {"id": "x012", "kind": "test", "name": "actigraphy", "aliases": ["activity monitoring", "wrist actigraphy"], "result": "Early sleep onset and wake-up times over a 2-week period."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-144",
+    "diagnosis": "Advanced sleep phase disorder",
+    "aliases": ["ASPD", "advanced sleep phase syndrome", "ASPS", "advanced sleep-wake phase disorder", "ASWPD", "circadian rhythm sleep-wake disorder, advanced sleep phase type"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-144",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-144-p001"],
+      "f002": ["agentclinic-medqa-ext-144-p001", "agentclinic-medqa-ext-144-p004"],
+      "f003": ["agentclinic-medqa-ext-144-p001"],
+      "f004": ["agentclinic-medqa-ext-144-p001", "agentclinic-medqa-ext-144-p002"],
+      "f005": ["agentclinic-medqa-ext-144-p007"],
+      "f006": ["agentclinic-medqa-ext-144-p005"],
+      "f007": ["agentclinic-medqa-ext-144-p005"],
+      "f008": ["agentclinic-medqa-ext-144-p006"],
+      "f009": ["agentclinic-medqa-ext-144-p006"],
+      "f010": ["agentclinic-medqa-ext-144-p001", "agentclinic-medqa-ext-144-p006"],
+      "f011": ["agentclinic-medqa-ext-144-p001"],
+      "f012": ["agentclinic-medqa-ext-144-p001", "agentclinic-medqa-ext-144-p003"],
+      "f013": ["agentclinic-medqa-ext-144-p001", "agentclinic-medqa-ext-144-p003"],
+      "f014": ["agentclinic-medqa-ext-144-p001", "agentclinic-medqa-ext-144-p004"]
+    },
+    "quotes": {
+      "f001": "difficulty staying awake past 6 pm",
+      "f002": "Attempts to correct his sleep pattern with caffeine have been unsuccessful.",
+      "f003": "trouble sleeping at his preferred time",
+      "f004": "He feels rested upon waking.",
+      "f005": "no additional complaints outside of the sleep issue",
+      "f006": "Irritable bowel syndrome managed with fiber supplements.",
+      "f008": "No significant alcohol",
+      "f009": "or tobacco use.",
+      "f010": "retiring from his day shift job at a cemetery",
+      "f011": "unable to engage in evening activities with his wife",
+      "f012": "which is causing marital strain"
+    },
+    "flags": {
+      "f008": ["Source says 'No significant alcohol ... use': only heavy drinking is denied."],
+      "f009": ["Source says 'No significant ... tobacco use': worded as 'I don't really use tobacco' to keep the qualifier."],
+      "f003": ["'Trouble sleeping at his preferred time' is not specified further (e.g. early morning waking is not stated)."],
+      "f013": ["Split off from f012, whose text was the only record of it (fix)."],
+      "f014": ["Split off from f002, whose text was the only record of it (fix)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-144-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-144-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-144-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-144-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Alert and oriented to person, place, and time.", "exam_ids": ["agentclinic-medqa-ext-144-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-144-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor_Examination", "source_text": "Strength 5/5 in all extremities", "exam_ids": ["agentclinic-medqa-ext-144-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination", "source_text": "Intact to light touch, vibration, and proprioception", "exam_ids": ["agentclinic-medqa-ext-144-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "2+ and symmetric in upper and lower extremities", "exam_ids": ["agentclinic-medqa-ext-144-e009"]},
+      "x010": {"source": "Test_Results.Polysomnography.Findings", "source_text": "Normal sleep efficiency with advanced sleep phase. The patient's melatonin levels are increased in the early evening, consistent with a diagnosis of advanced sleep phase disorder.", "exam_ids": ["agentclinic-medqa-ext-144-i001"]},
+      "x011": {"source": "Test_Results.Polysomnography.Findings", "source_text": "Normal sleep efficiency with advanced sleep phase. The patient's melatonin levels are increased in the early evening, consistent with a diagnosis of advanced sleep phase disorder.", "exam_ids": ["agentclinic-medqa-ext-144-i001"]},
+      "x012": {"source": "Test_Results.Actigraphy.Findings", "source_text": "Shows early sleep onset and wakeup times over a 2-week period.", "exam_ids": ["agentclinic-medqa-ext-144-i002"]}
+    },
+    "leakage": [
+      {"fact_id": "f002", "reason": "Generic word 'sleep' ('my sleep pattern'): the patient's own complaint is about sleep; no diagnostic term ('advanced', 'phase') is used."},
+      {"fact_id": "f003", "reason": "Generic word 'sleep' ('trouble sleeping'): the patient's own complaint; not the diagnosis."},
+      {"fact_id": "f004", "reason": "Generic word 'sleep' in the item 'unrefreshing sleep': a standard symptom label; not the diagnosis."},
+      {"fact_id": "f005", "reason": "Generic word 'sleep' ('the sleep problem'): the patient's own complaint; not the diagnosis."},
+      {"fact_id": "f012", "reason": "Generic word 'sleep' ('my sleep problem'): the patient's own complaint; not the diagnosis."},
+      {"id": "x010", "reason": "Polysomnography result says 'advanced sleep phase' (the core of the gold diagnosis); it is the test's answer."},
+      {"id": "x011", "reason": "Melatonin result says 'consistent with advanced sleep phase disorder' (gold diagnosis verbatim); it is the test's answer (pool flag: test_results)."}
+    ],
+    "source_issues": ["The polysomnography leaf names the diagnosis verbatim (pool_flags.visible_gold_alias_partitions = test_results) and also contains a melatonin result, which is not part of polysomnography.", "objective_for_doctor names the diagnostic category ('with a focus on identifying circadian rhythm sleep disorders')."],
+    "notes": ["The polysomnography leaf (i001) is split into two ordered tests: polysomnography and melatonin level, both citing i001.", "Sleep-timing complaints use system 'neurological' (the schema has no sleep system).", "The failed caffeine attempt is a child of the evening sleepiness (attribute relieving, polarity absent = caffeine does not relieve it), not a separate caffeine-use habit.", "'Feeling rested upon waking' is written as the finding 'unrefreshing sleep' absent.", "Retirement from the day-shift cemetery job is the occupation fact; the inability to share evening activities with his wife and the marital strain are separate social facts.", "check_coverage warns that the polysomnography aliases ('sleep study', 'overnight sleep study') contain the gold word 'sleep'. These are the standard clinical names of the test and do not reveal the diagnosis, so they are kept.", "Fixes: f013 new fact 'marital status' from f012; f014 new fact 'caffeine use' from f002."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with trouble sleeping, with a focus on identifying circadian rhythm sleep disorders."
+    }
+  }
+}

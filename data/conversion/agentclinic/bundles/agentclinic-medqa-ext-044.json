@@ -1,0 +1,97 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-044", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 74, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "abdominal pain: severity", "parent": "f001", "attribute": "severity", "text": "The pain is severe.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "abdominal pain: location", "parent": "f001", "attribute": "location", "text": "It's around my belly button.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "abdominal pain: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly, 16 hours ago.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f005", "item": "bloody diarrhea", "aliases": ["blood in the stool", "loose stools", "diarrhea"], "text": "I've had loose bowel movements with blood in them.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "bloody diarrhea: how often", "parent": "f005", "attribute": "frequency", "text": "There have been several episodes.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f007", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "heart attack", "aliases": ["myocardial infarction", "MI", "recent hospitalization"], "text": "A week ago I was in the hospital for a heart attack.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "diabetes", "aliases": ["high blood sugar", "diabetes mellitus"], "text": "I've had diabetes for 35 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I've had high blood pressure for 20 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke 15 to 20 cigarettes a day, and have for the past 40 years.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-044",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.9°C (98.4°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "95/65 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "95/min"},
+      {"id": "x004", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal auscultation", "abdominal palpation", "abdominal bruit"], "result": "Inspection: normal external appearance; auscultation: bruit over the epigastric area; percussion: normal; palpation: mild periumbilical tenderness."},
+      {"id": "x005", "kind": "test", "name": "CT angiography of the abdomen", "aliases": ["CTA abdomen", "abdominal CT angiogram", "CT angiogram"], "result": "Findings suggestive of reduced blood flow to the mesenteric arteries."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-044",
+    "diagnosis": "Acute mesenteric ischemia",
+    "aliases": ["acute mesenteric ischaemia", "acute mesenteric arterial occlusion", "acute mesenteric arterial thrombosis", "acute mesenteric arterial embolism", "acute superior mesenteric artery occlusion"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-044",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-044-p001"],
+      "f002": ["cc"],
+      "f003": ["agentclinic-medqa-ext-044-p001"],
+      "f004": ["agentclinic-medqa-ext-044-p001", "agentclinic-medqa-ext-044-p004"],
+      "f005": ["agentclinic-medqa-ext-044-p001", "agentclinic-medqa-ext-044-p002", "agentclinic-medqa-ext-044-p007"],
+      "f006": ["agentclinic-medqa-ext-044-p001"],
+      "f007": ["agentclinic-medqa-ext-044-p001", "agentclinic-medqa-ext-044-p003", "agentclinic-medqa-ext-044-p007"],
+      "f008": ["agentclinic-medqa-ext-044-p007"],
+      "f009": ["agentclinic-medqa-ext-044-p001", "agentclinic-medqa-ext-044-p005"],
+      "f010": ["agentclinic-medqa-ext-044-p005"],
+      "f011": ["agentclinic-medqa-ext-044-p005"],
+      "f012": ["agentclinic-medqa-ext-044-p006"]
+    },
+    "quotes": {
+      "f002": "Severe abdominal pain",
+      "f003": "around the umbilicus",
+      "f004": "sudden onset of abdominal pain around the umbilicus 16 hours ago",
+      "f005": "bloody loose bowel movements",
+      "f006": "several episodes of bloody loose bowel movements",
+      "f009": "hospitalization for an acute myocardial infarction a week ago",
+      "f010": "diabetes mellitus for 35 years",
+      "f011": "hypertension for 20 years",
+      "f012": "Smokes 15–20 cigarettes per day for the past 40 years"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.9°C (98.4°F)", "exam_ids": ["agentclinic-medqa-ext-044-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "95/65 mm Hg", "exam_ids": ["agentclinic-medqa-ext-044-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "95 bpm", "exam_ids": ["agentclinic-medqa-ext-044-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Normal external appearance | Bruit heard over the epigastric area | Normal | Mild periumbilical tenderness", "exam_ids": ["agentclinic-medqa-ext-044-e005", "agentclinic-medqa-ext-044-e006", "agentclinic-medqa-ext-044-e007", "agentclinic-medqa-ext-044-e008"]},
+      "x005": {"source": "Test_Results.Imaging.CT_Angiography_Abdomen.Findings", "source_text": "Evidence suggestive of reduced blood flow to the mesenteric arteries.", "exam_ids": ["agentclinic-medqa-ext-044-i007"]}
+    },
+    "leakage": [
+      {"id": "x005", "reason": "The CT angiography result describes reduced mesenteric arterial flow, which nearly names the diagnosis; kept because it is the test's answer."}
+    ],
+    "source_issues": [
+      "Respiratory rate and every CBC and metabolic-panel value are 'Not provided' in the source.",
+      "The diabetes type is not stated."
+    ],
+    "notes": [
+      "The 'Not provided' leaves carry no information and are excluded; the environment will report those requests as unavailable.",
+      "Bloody loose stools (History, p002, ROS) and the vomiting denial (History, p003, ROS) are one fact each; 'Sudden onset' (p004) merges into the onset child (f004).",
+      "The recent myocardial infarction appears in History and Past_Medical_History; one fact (f009), worded as the hospital stay a week ago.",
+      "Gold aliases leave out 'AMI' (also the usual abbreviation of acute myocardial infarction, which this patient had) and 'mesenteric ischemia' / 'intestinal ischemia' (broader: chronic or colonic forms)."
+    ],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-044-e004", "reason": "Respiratory rate: 'Not provided'."},
+      {"id": "agentclinic-medqa-ext-044-i001", "reason": "CBC WBC: 'Not provided'."},
+      {"id": "agentclinic-medqa-ext-044-i002", "reason": "CBC hemoglobin: 'Not provided'."},
+      {"id": "agentclinic-medqa-ext-044-i003", "reason": "CBC platelets: 'Not provided'."},
+      {"id": "agentclinic-medqa-ext-044-i004", "reason": "Creatinine: 'Not provided'."},
+      {"id": "agentclinic-medqa-ext-044-i005", "reason": "BUN: 'Not provided'."},
+      {"id": "agentclinic-medqa-ext-044-i006", "reason": "Glucose: 'Not provided'."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with sudden onset of abdominal pain, focusing on the relevance of the patient's medical history and current symptoms."
+    }
+  }
+}

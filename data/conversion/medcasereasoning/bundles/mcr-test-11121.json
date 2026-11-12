@@ -1,0 +1,109 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11121",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 63, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "dark patches inside the mouth", "aliases": ["mouth discoloration", "oral pigmentation", "dark spots inside the cheeks", "buccal pigmentation"], "text": "The insides of both my cheeks have turned blackish.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "dark patches inside the mouth: course", "parent": "f001", "attribute": "course", "text": "It has been gradually increasing.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f003", "item": "dark patches inside the mouth: pain or discomfort", "parent": "f001", "attribute": "character", "text": "They don't hurt or bother me at all.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f004", "item": "dark discoloration of the fingernails", "aliases": ["dark nails", "nail discoloration", "nail streaks", "melanonychia"], "text": "Several of my fingernails have brownish-black discoloration.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "dark discoloration of the fingernails: duration", "parent": "f004", "attribute": "duration", "text": "It's been there for about 7 years.", "value": "7 years", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "dark discoloration of the fingernails: appearance", "parent": "f004", "attribute": "appearance", "text": "The color runs in lengthwise streaks along the nails.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f007", "item": "dark discoloration of the toenails", "aliases": ["dark toenails", "toenail streaks"], "text": "My toenails have dark streaks running along them too.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "bullous pemphigoid", "aliases": ["pemphigoid", "blistering skin disease"], "text": "I have bullous pemphigoid; it's in remission, and I'm here for my routine follow-up.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "medication history", "aliases": ["medications", "drug history", "regular medicines"], "text": "I haven't taken any medicines that could be relevant to this.", "polarity": "absent", "category": "medication"},
+      {"id": "f010", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f011", "item": "similar discoloration in the family", "aliases": ["family history", "relatives with pigmentation"], "text": "No one in my family has anything like this.", "polarity": "absent", "category": "family_history"},
+      {"id": "f012", "item": "ethnicity", "aliases": ["race", "ethnic background"], "text": "I'm White (Caucasian).", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11121",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "ent", "name": "oral examination", "aliases": ["mouth", "buccal mucosa", "inside of the cheeks", "oral mucosa"], "result": "Regular, brownish, reticular pattern on both sides of the buccal mucosa."},
+      {"id": "x002", "kind": "exam", "system": "skin", "name": "nail examination", "aliases": ["nails", "fingernails", "toenails"], "result": "Multiple longitudinal pigmented bands on the fingernails and toenails."},
+      {"id": "x003", "kind": "test", "name": "potassium hydroxide preparation", "aliases": ["KOH prep", "KOH test", "fungal microscopy"], "result": "Negative."},
+      {"id": "x004", "kind": "test", "name": "fungal cultures", "aliases": ["fungal culture", "mycology culture"], "result": "Negative."},
+      {"id": "x005", "kind": "test", "name": "nail dermoscopy", "aliases": ["dermoscopy", "digital dermoscopy", "onychoscopy", "dermatoscopy of the nails"], "result": "Pseudo-Hutchinson's sign, with homogeneous brownish and grayish longitudinal bands and lines with ill-defined margins on the nail plate."},
+      {"id": "x006", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Within normal limits."},
+      {"id": "x007", "kind": "test", "name": "complete blood count with differential", "aliases": ["CBC", "full blood count", "blood count", "differential"], "result": "Within normal limits."},
+      {"id": "x008", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "UA"], "result": "Within normal limits."},
+      {"id": "x009", "kind": "test", "name": "lipid profile", "aliases": ["lipid panel", "cholesterol"], "result": "Within normal limits."},
+      {"id": "x010", "kind": "test", "name": "renal function tests", "aliases": ["kidney function", "creatinine", "urea"], "result": "Within normal limits."},
+      {"id": "x011", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes"], "result": "Within normal limits."},
+      {"id": "x012", "kind": "test", "name": "serum amylase", "aliases": ["amylase"], "result": "Within normal limits."},
+      {"id": "x013", "kind": "test", "name": "serum lipase", "aliases": ["lipase"], "result": "Within normal limits."},
+      {"id": "x014", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH"], "result": "Within normal limits."},
+      {"id": "x015", "kind": "test", "name": "tumor markers", "aliases": ["CEA", "AFP", "CA 19-9", "carcinoembryonic antigen", "alpha-fetoprotein"], "result": "CEA, AFP and CA 19-9 within normal limits."},
+      {"id": "x016", "kind": "test", "name": "immunology tests", "aliases": ["antinuclear antibodies", "ANA", "cold agglutinins", "cryoglobulins", "immunology parameters"], "result": "Antinuclear antibodies, cold agglutinins and cryoglobulins within normal limits."},
+      {"id": "x017", "kind": "test", "name": "chest radiography", "aliases": ["chest X-ray", "CXR"], "result": "No abnormalities."},
+      {"id": "x018", "kind": "test", "name": "abdominal ultrasonography", "aliases": ["abdominal ultrasound", "ultrasound of the abdomen"], "result": "No abnormalities."},
+      {"id": "x019", "kind": "test", "name": "colonoscopy", "aliases": ["lower endoscopy"], "result": "No tumorous formations."},
+      {"id": "x020", "kind": "test", "name": "cortisol levels", "aliases": ["cortisol", "serum cortisol"], "result": "Normal."},
+      {"id": "x021", "kind": "test", "name": "antipituitary antibodies", "aliases": ["anti-pituitary antibodies", "pituitary antibodies"], "result": "Normal."},
+      {"id": "x022", "kind": "test", "name": "ACTH stimulation test", "aliases": ["synacthen test", "cosyntropin test", "short synacthen test"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11121",
+    "diagnosis": "Laugier-Hunziker syndrome",
+    "aliases": ["LHS", "Laugier-Hunziker-Baran syndrome", "Laugier disease", "idiopathic lenticular mucocutaneous pigmentation"],
+    "reasoning": "1. Nail melanoma — “Dermoscopy is a useful, non-invasive, diagnostic procedure that allows us to differentiate LHS pigmented lesions from nail melanoma.” 2. Medication-induced melanonychia — “Medication-induced melanonychia ... may have similar dermoscopic patterns.” 3. Ethnic-type melanonychia — “Medication-induced melanonychia or ethnic-type melanonychia may have similar dermoscopic patterns.” 4. Drug-induced mucosal pigmentation — “Drug-induced pigmentation usually occurs after months or years of chronic drug use, and tends to resolve once drugs are discontinued.” 5. Smoker’s melanosis — “Smoking can result in oral, mucosal pigmentation called smoker's melanosis ... and it is not associated with pigmentation of the nails.” 6. Physiologic (racial) pigmentation — “Physiologic (racial) pigmentation of the oral mucosa appears in Asians, Blacks, and other dark-skinned persons, resembling LHS.” 7. Addison’s disease — “Patients with Addison's disease also have low blood pressure, hyponatremia, hyperkalemia, hypoglycemia, and elevated blood urea nitrogen, due to their adrenocortical insufficiency.” 8. Peutz-Jeghers syndrome — “PJS is an autosomal dominant inherited condition featuring a combination of mucocutaneous pigmentation, intestinal polyposis and, importantly, predisposition to various types of cancer.” 9. Bandler syndrome — “BS lesions present at birth ... characterized by intestinal, vascular malformation that can cause significant gastrointestinal bleeding.” 10. McCune-Albright syndrome — “MCAS includes labial and genital pigmentation but is often unilateral and does not involve the nails. The disease is also accompanied by precocious puberty in females and fibrous dysplasia.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11121",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s002"], "f005": ["s002"], "f006": ["s005"],
+      "f007": ["s005"], "f008": ["s001"], "f009": ["s001"], "f010": ["s001"], "f011": ["s003"], "f012": ["s001"]
+    },
+    "quotes": {
+      "f001": "blackish pigmentation of both buccal mucosa", "f002": "progressive", "f003": "asymptomatic",
+      "f004": "brownish-black pigmentation of several fingernails", "f005": "a 7-year history",
+      "f006": "Multiple longitudinal pigmented bands", "f007": "pigmented bands were present on her fingernails and toenails",
+      "f008": "routine follow-up for bullous pemphigoid (in remission)", "f009": "no relevant drug history",
+      "f010": "a non-smoker", "f011": "No family members were affected.", "f012": "Caucasian woman"
+    },
+    "flags": {
+      "f006": ["Taken from the examination (s005): lengthwise streaks on the nails are visible to the patient."],
+      "f007": ["Taken from the examination (s005): the history mentions only fingernails, but toenail streaks are visible to the patient."],
+      "f009": ["The source's 'no relevant drug history' is the authors' judgement; written as one broad denial that answers only an open question about medicines. Specific drugs stay unknown."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "On examination, there was a regular, brownish, reticular pattern on both sides of the buccal mucosa."},
+      "x002": {"sentences": ["s005"], "source_text": "Multiple longitudinal pigmented bands were present on her fingernails and toenails."},
+      "x003": {"sentences": ["s006"], "source_text": "Potassium hydroxide preparation and fungal cultures were negative."},
+      "x004": {"sentences": ["s006"], "source_text": "Potassium hydroxide preparation and fungal cultures were negative."},
+      "x005": {"sentences": ["s007"], "source_text": "Digital dermoscopy of the nails showed a pseudo-Hutchinson’s sign, with homogeneous brownish and grayish longitudinal bands and lines with ill-defined margins on the nail plate."},
+      "x006": {"sentences": ["s008"], "source_text": "erythrocyte sedimentation rate / were all within normal limits"},
+      "x007": {"sentences": ["s008"], "source_text": "complete blood count with differential / were all within normal limits"},
+      "x008": {"sentences": ["s008"], "source_text": "urinalysis / were all within normal limits"},
+      "x009": {"sentences": ["s008"], "source_text": "lipid profile / were all within normal limits"},
+      "x010": {"sentences": ["s008"], "source_text": "renal and liver function tests / were all within normal limits"},
+      "x011": {"sentences": ["s008"], "source_text": "renal and liver function tests / were all within normal limits"},
+      "x012": {"sentences": ["s008"], "source_text": "serum amylase, lipase, and lactate dehydrogenase / were all within normal limits"},
+      "x013": {"sentences": ["s008"], "source_text": "serum amylase, lipase, and lactate dehydrogenase / were all within normal limits"},
+      "x014": {"sentences": ["s008"], "source_text": "serum amylase, lipase, and lactate dehydrogenase / were all within normal limits"},
+      "x015": {"sentences": ["s008"], "source_text": "tumor markers (CEA, AFP, CA 19-9) / were all within normal limits"},
+      "x016": {"sentences": ["s008"], "source_text": "immunology parameters (antinuclear antibodies, cold agglutinins, cryoglobulins)—were all within normal limits"},
+      "x017": {"sentences": ["s009"], "source_text": "Chest radiography and abdominal ultrasonography showed no abnormalities."},
+      "x018": {"sentences": ["s009"], "source_text": "Chest radiography and abdominal ultrasonography showed no abnormalities."},
+      "x019": {"sentences": ["s010"], "source_text": "Colonoscopy revealed no tumorous formations."},
+      "x020": {"sentences": ["s011"], "source_text": "Endocrinologic evaluation, including cortisol levels / was normal"},
+      "x021": {"sentences": ["s011"], "source_text": "antipituitary antibodies / was normal"},
+      "x022": {"sentences": ["s011"], "source_text": "an ACTH stimulation test, was normal"}
+    },
+    "finding_flags": {
+      "x003": ["The specimen for the KOH preparation and fungal cultures is not named; presumably the nails."]
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the routine dermatology follow-up for bullous pemphigoid in remission at which she reported the progressive oral pigmentation and the 7-year nail pigmentation (s001-s005); the nail tests, laboratory tests, imaging, colonoscopy and endocrine tests (s006-s011) are the workup of this complaint.",
+      "s011: the patient declined biopsy of the oral lesions, so there is no oral biopsy finding."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

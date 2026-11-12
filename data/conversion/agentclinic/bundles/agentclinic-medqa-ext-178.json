@@ -1,0 +1,122 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-178", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 65, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "change in behavior", "aliases": ["personality change", "inappropriate behavior", "acting inappropriately"], "text": "My family says my behavior has changed and I've been acting inappropriately in social situations.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "change in behavior: onset", "parent": "f001", "attribute": "onset", "text": "They say it started a few months ago.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f003", "item": "change in behavior: course", "parent": "f001", "attribute": "course", "text": "They say it came on gradually.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f004", "item": "laughing at inappropriate times", "aliases": ["inappropriate laughter"], "text": "My family says I laugh at inappropriate times.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "using foul language", "aliases": ["swearing", "cursing"], "text": "My family says I've been using foul language.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f006", "item": "grabbing people", "aliases": ["touching people inappropriately"], "text": "My family says that every now and then I grab people without warning.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "memory problems", "aliases": ["forgetfulness", "memory loss"], "text": "My family says my memory has gotten noticeably worse recently.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "difficulty taking care of himself", "aliases": ["self-care", "personal care", "managing daily needs"], "text": "My family says it's become hard for me to take care of my personal needs because of my memory.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f009", "item": "trouble finding words", "aliases": ["word-finding difficulty", "trouble getting words out"], "text": "I have trouble finding the right words.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f010", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "psychiatric history", "aliases": ["mental health problems", "psychiatric illness"], "text": "I've never had any significant psychiatric problems.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "alcohol or drug abuse", "aliases": ["substance abuse", "alcohol abuse", "drug problem"], "text": "I've never had a problem with alcohol or drugs.", "polarity": "absent", "category": "habit_exposure", "time": "historical"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "occupation", "aliases": ["job", "work", "retirement"], "text": "I recently retired.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "living situation", "aliases": ["lives with", "home"], "text": "I live with my spouse.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f017", "item": "legal or financial problems", "aliases": ["trouble with the law", "money problems"], "text": "I've never had any legal or financial problems.", "polarity": "absent", "category": "social_background", "time": "historical"},
+      {"id": "f018", "item": "headache", "text": "I haven't had headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f019", "item": "vision changes", "aliases": ["trouble seeing", "blurry vision"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f020", "item": "seizures", "aliases": ["fits", "convulsions"], "text": "I haven't had any seizures.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f021", "item": "muscle weakness", "aliases": ["weakness"], "text": "I don't have any muscle weakness.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f022", "item": "other neurological symptoms", "aliases": ["nerve problems"], "text": "I haven't noticed any other problems with my nerves or brain.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-178",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "98.1°F (36.7°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "162/103 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "83/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "13/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["mental status examination", "MSE", "cognitive examination", "speech"], "result": "Appears inattentive, with inappropriate laughter; word-finding difficulty."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Grossly intact."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["motor examination", "muscle strength", "power", "tone"], "result": "Normal tone and strength in all four extremities."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact to light touch and proprioception."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal and symmetrical."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["cerebellar examination", "finger-to-nose test", "ataxia"], "result": "No ataxia observed."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Within normal limits."},
+      {"id": "x013", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes"], "result": "Within normal limits."},
+      {"id": "x014", "kind": "test", "name": "liver function tests", "aliases": ["LFTs"], "result": "Within normal limits."},
+      {"id": "x015", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid panel"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "head CT", "aliases": ["CT of the head", "CT brain"], "result": "No acute intracranial abnormalities. Mild atrophy, more pronounced in the frontal and temporal lobes."},
+      {"id": "x017", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "MRI head"], "result": "Increased frontal and temporal lobe atrophy; no evidence of stroke or tumor."},
+      {"id": "x018", "kind": "test", "name": "neuropsychological testing", "aliases": ["cognitive testing", "neuropsychological assessment"], "result": "Deficits in executive functioning and language, sparing memory and visuospatial skills to a lesser extent."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-178",
+    "diagnosis": "Frontotemporal dementia",
+    "aliases": ["FTD", "behavioral variant frontotemporal dementia", "bvFTD", "Pick's disease", "Pick disease"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-178",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-178-p001", "agentclinic-medqa-ext-178-p005"], "f002": ["agentclinic-medqa-ext-178-p001"],
+      "f003": ["agentclinic-medqa-ext-178-p001"], "f004": ["agentclinic-medqa-ext-178-p001"], "f005": ["agentclinic-medqa-ext-178-p001"],
+      "f006": ["agentclinic-medqa-ext-178-p001"], "f007": ["agentclinic-medqa-ext-178-p001", "agentclinic-medqa-ext-178-p002"],
+      "f008": ["agentclinic-medqa-ext-178-p001", "agentclinic-medqa-ext-178-p003"], "f009": ["agentclinic-medqa-ext-178-p004"],
+      "f010": ["agentclinic-medqa-ext-178-p006"], "f011": ["agentclinic-medqa-ext-178-p006"], "f012": ["agentclinic-medqa-ext-178-p006"],
+      "f013": ["agentclinic-medqa-ext-178-p007"], "f014": ["agentclinic-medqa-ext-178-p007"], "f015": ["agentclinic-medqa-ext-178-p007"],
+      "f016": ["agentclinic-medqa-ext-178-p007"], "f017": ["agentclinic-medqa-ext-178-p007"], "f018": ["agentclinic-medqa-ext-178-p008"],
+      "f019": ["agentclinic-medqa-ext-178-p008"], "f020": ["agentclinic-medqa-ext-178-p008"], "f021": ["agentclinic-medqa-ext-178-p008"],
+      "f022": ["agentclinic-medqa-ext-178-p008"]
+    },
+    "quotes": {
+      "f001": "The patient's family reports a gradual change in behavior / Inappropriateness in social situations", "f002": "starting a few months ago",
+      "f003": "gradual change in behavior", "f004": "inappropriate laughing", "f005": "using foul language",
+      "f006": "occasionally grabbing people without warning", "f007": "memory has also notably deteriorated",
+      "f008": "leading to difficulty in caring for himself", "f011": "No significant past medical or psychiatric history.",
+      "f012": "No history of alcohol or substance abuse.", "f013": "drinks alcohol socially", "f015": "Recently retired",
+      "f017": "No history of legal or financial issues.", "f022": "or other neurological symptoms"
+    },
+    "flags": {
+      "f007": ["Only the first History sentence is explicitly the family's report; the memory sentence is also written as collateral for consistency."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "98.1°F (36.7°C)", "exam_ids": ["agentclinic-medqa-ext-178-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "162/103 mmHg", "exam_ids": ["agentclinic-medqa-ext-178-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "83 bpm", "exam_ids": ["agentclinic-medqa-ext-178-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "13 breaths/min", "exam_ids": ["agentclinic-medqa-ext-178-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-178-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Appears inattentive with inappropriate laughter; Exhibits word finding difficulty", "exam_ids": ["agentclinic-medqa-ext-178-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Grossly intact", "exam_ids": ["agentclinic-medqa-ext-178-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor", "source_text": "Normal tone and strength in all four extremities", "exam_ids": ["agentclinic-medqa-ext-178-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory", "source_text": "Intact to light touch and proprioception", "exam_ids": ["agentclinic-medqa-ext-178-e009"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal and symmetrical", "exam_ids": ["agentclinic-medqa-ext-178-e010"]},
+      "x011": {"source": "Physical_Examination_Findings.Neurological_Examination.Coordination", "source_text": "No ataxia observed", "exam_ids": ["agentclinic-medqa-ext-178-e011"]},
+      "x012": {"source": "Test_Results.Blood_Tests.CBC", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-178-i001"]},
+      "x013": {"source": "Test_Results.Blood_Tests.Electrolytes", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-178-i002"]},
+      "x014": {"source": "Test_Results.Blood_Tests.Liver_Function_Tests", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-178-i003"]},
+      "x015": {"source": "Test_Results.Blood_Tests.Thyroid_Function_Tests", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-178-i004"]},
+      "x016": {"source": "Test_Results.Brain_Imaging.CT_Head.Findings", "source_text": "No acute intracranial abnormalities. Mild atrophy, more pronounced in the frontal and temporal lobes.", "exam_ids": ["agentclinic-medqa-ext-178-i005"]},
+      "x017": {"source": "Test_Results.Brain_Imaging.MRI_Brain.Findings", "source_text": "Increased frontal and temporal lobe atrophy with no evidence of stroke or tumor.", "exam_ids": ["agentclinic-medqa-ext-178-i006"]},
+      "x018": {"source": "Test_Results.Neuropsychological_Testing.Results", "source_text": "Deficits in executive functioning and language, sparing memory and visuospatial skills to a lesser extent.", "exam_ids": ["agentclinic-medqa-ext-178-i007"]}
+    },
+    "finding_flags": {
+      "x018": ["Source wording 'sparing memory and visuospatial skills to a lesser extent' is ambiguous (relatively spared vs affected to a lesser degree); kept verbatim."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Neuropsychological testing reports memory as relatively spared, while the History says memory has 'notably deteriorated'.",
+      "BP 162/103 mmHg, but no hypertension in the history.",
+      "Neuropsychological result sentence is ambiguous ('sparing ... to a lesser extent')."
+    ],
+    "notes": [
+      "Collateral history (the family's report) is written as what the patient was told: 'My family says ...' (f001-f008).",
+      "'Inappropriateness in social situations' (p005) is the same complaint as the chief complaint; merged into f001. The specific behaviors (laughing, foul language, grabbing people) are separate facts.",
+      "Inattention and inappropriate laughter observed by the examiner stay in the exam (x006); word-finding difficulty is also a Secondary_Symptom, so the patient reports it too (f009).",
+      "'No significant past medical or psychiatric history' is split into medical (f010) and psychiatric (f011) denials; 'No history of alcohol or substance abuse' (f012) is kept apart from social drinking (f013)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with changes in behavior and memory over the past few months."
+    }
+  }
+}

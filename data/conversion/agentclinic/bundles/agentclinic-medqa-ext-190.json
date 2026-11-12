@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-190", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 22, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "contractions", "aliases": ["cramping", "uterine contractions", "cramps"], "text": "I'm having contractions.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f003", "item": "pregnancy", "aliases": ["pregnant", "how far along"], "text": "I'm 10 weeks pregnant.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f004", "item": "positive pregnancy test", "aliases": ["pregnancy test", "home pregnancy test"], "text": "I had a positive pregnancy test recently.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f005", "item": "vaginal bleeding", "aliases": ["bloody vaginal discharge", "spotting"], "text": "I've had bloody discharge from my vagina.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f006", "item": "cuts on the wrists", "aliases": ["self-harm", "cutting", "wrist lacerations"], "text": "I have new cuts on my wrists.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "constipation", "text": "I have a history of constipation.", "polarity": "present", "category": "medical_history"},
+      {"id": "f008", "item": "anxiety", "aliases": ["anxiety disorder", "nerves"], "text": "I have a history of anxiety.", "polarity": "present", "category": "medical_history"},
+      {"id": "f009", "item": "substance abuse", "aliases": ["drug use", "alcohol or drug abuse", "recreational drugs"], "text": "I have a history of substance abuse.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f010", "item": "current medications", "aliases": ["medicines", "pills"], "text": "I'm not taking any medications at the moment.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "other symptoms", "aliases": ["other complaints"], "text": "Apart from what I've told you, I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-190",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "99.5°F (37.5°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "107/58 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "vaginal examination", "cervical examination", "speculum examination"], "result": "Vaginal examination: bloody vaginal discharge; cervical examination: open cervix."},
+      {"id": "x007", "kind": "exam", "system": "psychiatric", "name": "psychiatric evaluation", "aliases": ["mental status examination", "behavior", "mood"], "result": "Initial evaluation: gratitude for care; after the news: anger, aggression, threats of litigation; follow-up evaluation: self-harm behaviors, property damage."},
+      {"id": "x008", "kind": "test", "name": "pelvic ultrasound", "aliases": ["ultrasound", "obstetric ultrasound", "transvaginal ultrasound"], "result": "Absence of intrauterine pregnancy, indicative of a completed spontaneous abortion."},
+      {"id": "x009", "kind": "test", "name": "beta-hCG", "aliases": ["serum hCG", "quantitative hCG", "pregnancy hormone level"], "result": "Declining levels, consistent with a spontaneous abortion."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count", "WBC", "hemoglobin", "platelets"], "result": "WBC within normal limits; hemoglobin slightly decreased, possibly due to blood loss; platelets within normal limits."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-190",
+    "diagnosis": "Borderline personality disorder",
+    "aliases": ["BPD", "borderline personality", "emotionally unstable personality disorder, borderline type"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-190",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-190-p001"], "f002": ["cc"], "f003": ["agentclinic-medqa-ext-190-p001"],
+      "f004": ["agentclinic-medqa-ext-190-p003"], "f005": ["agentclinic-medqa-ext-190-p002"], "f006": ["agentclinic-medqa-ext-190-p006"],
+      "f007": ["agentclinic-medqa-ext-190-p001", "agentclinic-medqa-ext-190-p007"], "f008": ["agentclinic-medqa-ext-190-p001", "agentclinic-medqa-ext-190-p007"],
+      "f009": ["agentclinic-medqa-ext-190-p001", "agentclinic-medqa-ext-190-p007"], "f010": ["agentclinic-medqa-ext-190-p001"],
+      "f011": ["agentclinic-medqa-ext-190-p009"]
+    },
+    "quotes": {
+      "f002": "contractions", "f003": "reports being 10 weeks pregnant", "f004": "Recent positive pregnancy test",
+      "f005": "Bloody vaginal discharge", "f006": "New lacerations over her wrists", "f010": "not currently on any medications",
+      "f011": "Negative except for symptoms presented."
+    },
+    "flags": {
+      "f006": ["Timeline: the exam places self-harm at the follow-up evaluation, after the news of the pregnancy loss (x007). Kept as a patient fact because the source lists it as a Secondary_Symptom, the patient can report her own cuts, and it is the key history for the gold diagnosis; the cause of the cuts is not stated."],
+      "f007": ["'History of' constipation, anxiety and substance abuse does not say whether they are current; 'time' is left out of f007-f009."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "99.5°F (37.5°C)", "exam_ids": ["agentclinic-medqa-ext-190-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "107/58 mmHg", "exam_ids": ["agentclinic-medqa-ext-190-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90/min", "exam_ids": ["agentclinic-medqa-ext-190-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17/min", "exam_ids": ["agentclinic-medqa-ext-190-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-190-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Gynecological_Examination.Vaginal_Examination + Physical_Examination_Findings.Gynecological_Examination.Cervical_Examination", "source_text": "Presence of bloody vaginal discharge + Open cervix", "exam_ids": ["agentclinic-medqa-ext-190-e006", "agentclinic-medqa-ext-190-e007"]},
+      "x007": {"source": "Physical_Examination_Findings.Psychiatric_Evaluation.Initial_Evaluation + Physical_Examination_Findings.Psychiatric_Evaluation.Post_News + Physical_Examination_Findings.Psychiatric_Evaluation.Follow-up_Evaluation", "source_text": "Gratitude for care + Anger, aggression, threats of litigation + Self-harm behaviors, property damage", "exam_ids": ["agentclinic-medqa-ext-190-e008", "agentclinic-medqa-ext-190-e009", "agentclinic-medqa-ext-190-e010"]},
+      "x008": {"source": "Test_Results.Ultrasound_Pelvis.Findings", "source_text": "Absence of intrauterine pregnancy indicative of a completed spontaneous abortion", "exam_ids": ["agentclinic-medqa-ext-190-i001"]},
+      "x009": {"source": "Test_Results.Beta_hCG.Level", "source_text": "Declining levels consistent with a spontaneous abortion", "exam_ids": ["agentclinic-medqa-ext-190-i002"]},
+      "x010": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Within normal limits + Slightly decreased, possibly due to blood loss + Within normal limits", "exam_ids": ["agentclinic-medqa-ext-190-i003", "agentclinic-medqa-ext-190-i004", "agentclinic-medqa-ext-190-i005"]}
+    },
+    "finding_flags": {
+      "x007": ["Three time points in one source block (initial, post-news, follow-up); kept as one psychiatric evaluation record with the source's own labels. 'After the news' does not say what the news was."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Secondary_Symptoms mix the presenting complaint with reactions that happen after she is told of the pregnancy loss (p004 emotional distress, p005 anger and aggression, p006 new wrist lacerations).",
+      "Social_History is an instruction to the doctor ('the doctor should inquire about ...'), not patient information.",
+      "Review_of_Systems is a meta phrase ('Negative except for symptoms presented').",
+      "objective_for_doctor names spontaneous abortion and says to assess psychiatric conditions from behavior; it stays in qc.extras only."
+    ],
+    "notes": [
+      "The chief complaint names two complaints (abdominal pain, contractions); both are in the opening.",
+      "Post-news distress and anger (p004, p005) are behavior the patient cannot show before she is told of the loss; moved to qc.extras.acting_notes (p005 is also in the exam, x007).",
+      "The ROS meta phrase carries the meaning 'no other symptoms', so it becomes a plain catch-all denial (f011).",
+      "The diagnosis of spontaneous abortion appears only in the test results (x008, x009), not in patient facts."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-190-p004", "reason": "'Emotional distress upon learning of a spontaneous abortion' is a reaction to news given during the encounter; moved to qc.extras.acting_notes."},
+      {"id": "agentclinic-medqa-ext-190-p005", "reason": "'Anger and aggression post-news' is observer-reported behavior after the news; already in the exam (x007, e009) and noted in qc.extras.acting_notes."},
+      {"id": "agentclinic-medqa-ext-190-p008", "reason": "Meta instruction to the doctor ('Details on social history not provided, but the doctor should inquire ...'); no patient information."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient presenting with symptoms indicative of a spontaneous abortion and assess for any psychiatric conditions based on patient behavior.",
+      "acting_notes": [
+        "If told she has lost the pregnancy, she becomes very emotionally distressed, then angry and aggressive (source p004, p005; the exam's psychiatric evaluation records anger, aggression and threats of litigation after the news, and self-harm and property damage at follow-up)."
+      ]
+    }
+  }
+}

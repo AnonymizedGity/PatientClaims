@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-045",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 59, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "cough", "text": "I've been coughing.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I've been getting short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f003", "item": "symptoms coming in episodes", "aliases": ["episodic symptoms"], "text": "The cough and the shortness of breath come and go in episodes.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "how long the symptoms have been going on", "text": "The cough and the shortness of breath started about a month ago.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f005", "item": "cough: character", "parent": "f001", "attribute": "character", "aliases": ["dry cough", "productive cough", "phlegm"], "text": "It's a dry cough; I don't bring anything up.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f006", "item": "cough: worse with exertion", "parent": "f001", "attribute": "aggravating", "text": "It gets worse when I climb stairs.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f007", "item": "cough: worse at night", "parent": "f001", "attribute": "timing", "text": "It's worse at night.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f008", "item": "fever", "text": "I had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "resolved"},
+      {"id": "f009", "item": "sore throat", "text": "I had a sore throat.", "polarity": "present", "category": "symptom", "system": "ent", "time": "resolved"},
+      {"id": "f010", "item": "nasal congestion", "aliases": ["stuffy nose"], "text": "I had a stuffy nose.", "polarity": "present", "category": "symptom", "system": "ent", "time": "resolved"},
+      {"id": "f011", "item": "when the cold symptoms happened", "aliases": ["recent cold", "upper respiratory infection"], "text": "The fever, sore throat and stuffy nose were about 8 weeks ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "resolved"},
+      {"id": "f012", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f013", "item": "palpitations", "aliases": ["racing heart"], "text": "I haven't noticed any palpitations.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f014", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I've had high blood pressure for 10 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "enalapril", "aliases": ["blood pressure medicine"], "text": "I take enalapril for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke half a pack of cigarettes a day, and have for 16 years.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-045",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "78/min"},
+      {"id": "x002", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "respirations"], "result": "18/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "145/95 mm Hg"},
+      {"id": "x004", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "96% on room air"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "respiratory examination", "aliases": ["lung examination", "chest examination", "lung auscultation", "breath sounds"], "result": "Inspection: no visible abnormalities; palpation: no tactile fremitus; percussion: resonant; auscultation: diffuse end-expiratory wheezes."},
+      {"id": "x006", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "No abnormalities."},
+      {"id": "x007", "kind": "test", "name": "spirometry", "aliases": ["pulmonary function tests", "PFTs", "FEV1", "FEV1/FVC ratio", "lung function test"], "result": "FEV1/FVC ratio 65%; FEV1 60%."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-045",
+    "diagnosis": "Asthma",
+    "aliases": ["bronchial asthma", "adult-onset asthma", "late-onset asthma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-045",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-045-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-045-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-045-p001"],
+      "f004": ["agentclinic-medqa-ext-045-p001"],
+      "f005": ["agentclinic-medqa-ext-045-p001"],
+      "f006": ["agentclinic-medqa-ext-045-p001", "agentclinic-medqa-ext-045-p002"],
+      "f007": ["agentclinic-medqa-ext-045-p001", "agentclinic-medqa-ext-045-p002"],
+      "f008": ["agentclinic-medqa-ext-045-p001", "agentclinic-medqa-ext-045-p003"],
+      "f009": ["agentclinic-medqa-ext-045-p001", "agentclinic-medqa-ext-045-p003"],
+      "f010": ["agentclinic-medqa-ext-045-p001", "agentclinic-medqa-ext-045-p003"],
+      "f011": ["agentclinic-medqa-ext-045-p001", "agentclinic-medqa-ext-045-p003"],
+      "f012": ["agentclinic-medqa-ext-045-p006"],
+      "f013": ["agentclinic-medqa-ext-045-p006"],
+      "f014": ["agentclinic-medqa-ext-045-p004"],
+      "f015": ["agentclinic-medqa-ext-045-p004"],
+      "f016": ["agentclinic-medqa-ext-045-p004", "agentclinic-medqa-ext-045-p005"]
+    },
+    "quotes": {
+      "f003": "Episodic cough and shortness of breath",
+      "f004": "a 1-month history",
+      "f005": "The cough is nonproductive",
+      "f006": "worsens when climbing stairs / Cough worsens with exertion",
+      "f007": "and at night",
+      "f008": "experienced fever, sore throat, and nasal congestion",
+      "f009": "experienced fever, sore throat, and nasal congestion",
+      "f010": "experienced fever, sore throat, and nasal congestion",
+      "f011": "nasal congestion 8 weeks ago",
+      "f014": "10-year history of hypertension",
+      "f015": "currently managed with enalapril",
+      "f016": "half a pack of cigarettes daily for 16 years"
+    },
+    "flags": {
+      "f006": ["The History names climbing stairs; p002 generalises to 'exertion'. The text keeps the specific example."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Pulse", "source_text": "78/min", "exam_ids": ["agentclinic-medqa-ext-045-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Respirations", "source_text": "18/min", "exam_ids": ["agentclinic-medqa-ext-045-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "145/95 mm Hg", "exam_ids": ["agentclinic-medqa-ext-045-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "96% on room air", "exam_ids": ["agentclinic-medqa-ext-045-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Palpation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "No visible abnormalities | No tactile fremitus | Resonant | Diffuse end-expiratory wheezes", "exam_ids": ["agentclinic-medqa-ext-045-e005", "agentclinic-medqa-ext-045-e006", "agentclinic-medqa-ext-045-e007", "agentclinic-medqa-ext-045-e008"]},
+      "x006": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "No abnormalities", "exam_ids": ["agentclinic-medqa-ext-045-i001"]},
+      "x007": {"source": "Test_Results.Spirometry.FEV1_FVC_Ratio + Test_Results.Spirometry.FEV1", "source_text": "65% | 60%", "exam_ids": ["agentclinic-medqa-ext-045-i002", "agentclinic-medqa-ext-045-i003"]}
+    },
+    "finding_flags": {
+      "x005": ["'No tactile fremitus' is unusual wording (normal lung transmits fremitus); probably meant no abnormal fremitus. Kept as given."],
+      "x007": ["FEV1 60% presumably means percent of predicted; no post-bronchodilator values are given."]
+    },
+    "leakage": [],
+    "source_issues": ["Spirometry gives no bronchodilator response, so reversibility (which separates asthma from COPD in a 16-year smoker) is not shown.", "Past_Medical_History repeats the smoking history from Social_History; PMH says 'History of smoking' while Social_History says current smoker.", "'No tactile fremitus' on palpation is unusual wording for a normal finding."],
+    "notes": ["'Episodic' and the 1-month duration apply to both cough and shortness of breath, so they are standalone facts (f003, f004).", "The cold symptoms of 8 weeks ago are split into fever, sore throat and nasal congestion, each 'resolved', with their shared timing as a standalone fact (f011); p003 ('History of recent upper respiratory tract infection symptoms') merges with them.", "Smoking is current (Social_History 'Smoker'); the PMH repetition is merged (f016).", "Enalapril (an ACE inhibitor) is kept as stated; the source does not link it to the cough.", "Fixes: f008 alias 'recent cold' removed; f009 alias 'recent cold' removed; f010 alias 'recent cold' removed; f010 alias 'upper respiratory infection' removed."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with episodic cough and shortness of breath."
+    }
+  }
+}

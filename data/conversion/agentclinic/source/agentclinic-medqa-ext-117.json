@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-117",
+  "source_row": 117,
+  "demographics_text": "56-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with a 1-year history of worsening shortness of breath and weight loss.",
+  "chief_complaint": "Worsening shortness of breath",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-117-p001",
+      "field": "History",
+      "text": "The patient is a former construction worker and worked in a steel mill during high school. He is an active smoker with a 36-pack-year history. He presents a 1-year history of progressive shortness of breath and weight loss."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-117-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-117-p003",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history noted."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-117-p004",
+      "field": "Social_History",
+      "text": "Active smoker. Former construction worker and steel mill worker. No other hazardous exposures mentioned."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-117-p005",
+      "field": "Review_of_Systems",
+      "text": "Denies recent fevers, cough, or chest pain. No history of asthma or allergic diseases mentioned."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/78 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "90/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "17/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.BMI",
+      "text": "31 kg/m2"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "95% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e006",
+      "path": "Physical_Examination_Findings.Pulmonary_Examination.Inspection",
+      "text": "No visible chest deformities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e007",
+      "path": "Physical_Examination_Findings.Pulmonary_Examination.Palpation",
+      "text": "No tenderness or chest wall abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e008",
+      "path": "Physical_Examination_Findings.Pulmonary_Examination.Percussion",
+      "text": "Resonant lung fields."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-e009",
+      "path": "Physical_Examination_Findings.Pulmonary_Examination.Auscultation",
+      "text": "Mildly prolonged expiratory phase with no wheezing or crackles."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-117-i001",
+      "path": "Test_Results.Pulmonary_Function_Test.FEV1_FVC_Ratio",
+      "text": "60%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-i002",
+      "path": "Test_Results.Pulmonary_Function_Test.FEV1",
+      "text": "50% of predicted value"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-i003",
+      "path": "Test_Results.Pulmonary_Function_Test.Total_Lung_Capacity",
+      "text": "110% of predicted value"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-i004",
+      "path": "Test_Results.Pulmonary_Function_Test.Residual_Volume",
+      "text": "115% of predicted value"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-117-i005",
+      "path": "Test_Results.Pulmonary_Function_Test.DLCO",
+      "text": "60% of predicted value"
+    }
+  ],
+  "correct_diagnosis": "Chronic obstructive pulmonary disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

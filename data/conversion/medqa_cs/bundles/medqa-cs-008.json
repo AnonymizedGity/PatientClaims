@@ -1,0 +1,1471 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-008",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 56,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "reason for visit",
+        "aliases": [
+          "diabetes checkup"
+        ],
+        "text": "I am here for a diabetes checkup.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "last doctor visit",
+        "aliases": [
+          "last checkup"
+        ],
+        "text": "The last time I saw the doctor was 6 months ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f003",
+        "item": "diabetes",
+        "aliases": [
+          "diabetes mellitus",
+          "sugar"
+        ],
+        "text": "I have diabetes.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "diabetes: for how long",
+        "parent": "f003",
+        "attribute": "duration",
+        "text": "I have had diabetes for the past 25 years.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "checking blood sugar at home",
+        "aliases": [
+          "glucose monitoring",
+          "blood sugar monitor"
+        ],
+        "text": "I have a blood sugar monitor at home.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "checking blood sugar at home: how often",
+        "parent": "f005",
+        "attribute": "frequency",
+        "text": "I check my blood sugar twice a week.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "checking blood sugar at home: usual readings",
+        "parent": "f005",
+        "attribute": "other",
+        "text": "It usually ranges between 120 and 145.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "checking blood sugar at home: most recent reading",
+        "parent": "f005",
+        "attribute": "other",
+        "text": "I checked 3 days ago, and it was 135.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f009",
+        "item": "hemoglobin A1c",
+        "aliases": [
+          "HbA1c",
+          "A1c",
+          "sugar test over three months"
+        ],
+        "text": "It was last tested 6 months ago, and the result was about 7 percent.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f010",
+        "item": "eye doctor visits",
+        "aliases": [
+          "eye exam",
+          "eye doctor"
+        ],
+        "text": "I saw one about 1 year ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f011",
+        "item": "eye doctor visits: what was found",
+        "parent": "f010",
+        "attribute": "other",
+        "aliases": [
+          "diabetic eye disease"
+        ],
+        "text": "He said there were no signs of diabetic eye disease.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f012",
+        "item": "change in eyesight",
+        "aliases": [
+          "vision changes",
+          "blurred vision"
+        ],
+        "text": "My eyesight hasn't changed recently.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "eye",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "foot specialist visits",
+        "aliases": [
+          "podiatrist",
+          "foot doctor"
+        ],
+        "text": "I used to, but I haven't seen one in the last couple of years.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f014",
+        "item": "foot infections",
+        "text": "I haven't had any infections in my feet.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f015",
+        "item": "spells of sweating and racing heart",
+        "aliases": [
+          "palpitations",
+          "heart racing",
+          "sweating"
+        ],
+        "text": "I tend to sweat and notice my heart racing occasionally.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f016",
+        "item": "spells of sweating and racing heart: what brings them on",
+        "parent": "f015",
+        "attribute": "aggravating",
+        "text": "It happens infrequently, if I skip a meal.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f017",
+        "item": "spells of sweating and racing heart: what makes them better",
+        "parent": "f015",
+        "attribute": "relieving",
+        "text": "I feel better after having orange juice.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f018",
+        "item": "chest pain",
+        "text": "I don't have chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "trouble breathing",
+        "aliases": [
+          "shortness of breath",
+          "difficulty breathing"
+        ],
+        "text": "I don't have any trouble breathing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "cough",
+        "text": "I don't have a cough.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "numbness and tingling in the feet",
+        "aliases": [
+          "foot numbness",
+          "foot tingling",
+          "pins and needles"
+        ],
+        "text": "I have tingling and numbness in my feet all the time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "numbness and tingling in the feet: time of day",
+        "parent": "f021",
+        "attribute": "timing",
+        "text": "It's there especially at night.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "numbness and tingling in the feet: change over time",
+        "parent": "f021",
+        "attribute": "course",
+        "text": "It's gotten worse over the past 2 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "frequent urination",
+        "aliases": [
+          "urinating often"
+        ],
+        "text": "I don't urinate more often than usual.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "pain when urinating",
+        "aliases": [
+          "painful urination",
+          "burning urination"
+        ],
+        "text": "I don't have any pain when I urinate.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "blood in urine",
+        "aliases": [
+          "bloody urine"
+        ],
+        "text": "I haven't seen any blood in my urine.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "abdominal discomfort",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I don't have any abdominal discomfort.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "indigestion",
+        "aliases": [
+          "heartburn",
+          "upset stomach"
+        ],
+        "text": "I don't have indigestion.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I don't have any nausea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't been vomiting.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "constipation",
+        "text": "I'm not constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "diarrhea",
+        "text": "I don't have diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "change in bowel habits",
+        "aliases": [
+          "irregular stools",
+          "inconsistent stools"
+        ],
+        "text": "My bowel habits haven't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "I haven't gained or lost any weight recently.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "change in appetite",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "My appetite hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "anxiety or stress",
+        "aliases": [
+          "feeling anxious",
+          "feeling stressed"
+        ],
+        "text": "I don't feel anxious or stressed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "sadness or depression",
+        "aliases": [
+          "feeling down",
+          "depression"
+        ],
+        "text": "I do not feel depressed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "erection problems",
+        "aliases": [
+          "sexual function",
+          "erectile problems",
+          "sexual problems"
+        ],
+        "text": "Well, I am not doing my job the way I used to. I can't get it up, doc.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "erection problems: for how long",
+        "parent": "f038",
+        "attribute": "duration",
+        "text": "For one or 2 years.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "erection problems: on waking",
+        "parent": "f038",
+        "attribute": "other",
+        "aliases": [
+          "morning erections"
+        ],
+        "text": "I don't even wake up with erections anymore.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "decrease in sex drive",
+        "aliases": [
+          "libido",
+          "sex drive"
+        ],
+        "text": "I think it's about the same.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "high blood pressure",
+        "aliases": [
+          "hypertension"
+        ],
+        "text": "I've never been diagnosed with high blood pressure.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f043",
+        "item": "high cholesterol",
+        "aliases": [
+          "cholesterol"
+        ],
+        "text": "I have high cholesterol. It was diagnosed 2 years ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "heart problems",
+        "aliases": [
+          "heart attack",
+          "heart disease"
+        ],
+        "text": "I suffered a heart attack last year.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f045",
+        "item": "stroke",
+        "text": "I've never had a stroke.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f046",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "None. I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f047",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "None. I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "NPH insulin",
+        "aliases": [
+          "insulin"
+        ],
+        "text": "I am on NPH insulin.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "NPH insulin: dose",
+        "parent": "f048",
+        "attribute": "quantity",
+        "text": "I take 20 units every morning and 15 units in the evening.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "side effects of medications",
+        "aliases": [
+          "problems with the medicines"
+        ],
+        "text": "My treatment has been consistent, and I haven't had any problems with it.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "taking medications every day",
+        "aliases": [
+          "medication adherence",
+          "compliance"
+        ],
+        "text": "I never miss any doses.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "lovastatin",
+        "text": "I take lovastatin.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "aspirin",
+        "text": "I take aspirin.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f054",
+        "item": "atenolol",
+        "text": "I take atenolol.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f055",
+        "item": "father's health",
+        "text": "My father passed away from a stroke at 60.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f056",
+        "item": "mother's health",
+        "text": "My mother is in good health.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f057",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a clerk.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f058",
+        "item": "diet",
+        "aliases": [
+          "what you eat"
+        ],
+        "text": "I eat everything that my wife cooks - meat, vegetables, etc.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f059",
+        "item": "special diet",
+        "aliases": [
+          "diabetic diet"
+        ],
+        "text": "I don't follow any special diet.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f060",
+        "item": "exercise",
+        "aliases": [
+          "physical activity"
+        ],
+        "text": "I don't exercise regularly.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f061",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink whiskey.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f062",
+        "item": "alcohol: how often",
+        "parent": "f061",
+        "attribute": "frequency",
+        "text": "Only on the weekend.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f063",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke, and I never did.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f064",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f065",
+        "item": "living situation",
+        "aliases": [
+          "who you live with",
+          "home"
+        ],
+        "text": "I live in my own home with my wife.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f066",
+        "item": "wife's reaction to the erection problem",
+        "aliases": [
+          "partner's support"
+        ],
+        "text": "My wife understands and is supportive.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f067",
+        "item": "what others have said about the cause",
+        "text": "They told me it is the diabetes.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-008",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "139/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.0°F (36.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "15/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "75/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Well-nourished and well-developed; sitting comfortably, in no distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "pupils"
+        ],
+        "result": "Pupils equal, round and reactive to light and accommodation."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "eye",
+        "name": "fundoscopic examination",
+        "aliases": [
+          "fundoscopy",
+          "ophthalmoscopy",
+          "retina"
+        ],
+        "result": "Normal; no arteriovenous nicking, hemorrhages or exudates."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "carotid auscultation",
+          "jugular veins"
+        ],
+        "result": "No carotid bruits; no jugular venous distension."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Breath sounds clear on both sides."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Apical impulse not displaced; regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not distended, not tender; bowel sounds present in all four quadrants; no bruits; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "foot examination",
+          "pedal pulses",
+          "leg swelling"
+        ],
+        "result": "No edema; no skin breakdown; dorsalis pedis pulses 2+ and symmetric."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength",
+          "leg strength"
+        ],
+        "result": "5/5 in both legs."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs",
+          "knee and ankle reflexes"
+        ],
+        "result": "Knee reflexes present, 2+ and symmetric; ankle reflexes absent on both sides."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "Babinski sign",
+        "aliases": [
+          "plantar reflex",
+          "plantar response"
+        ],
+        "result": "Result not documented"
+      },
+      {
+        "id": "x016",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam",
+          "pinprick",
+          "vibration sense",
+          "position sense"
+        ],
+        "result": "Both feet, in a stocking distribution: loss of sharp and dull sensation (pinprick), vibration sense and position sense. Soft touch intact in both legs."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-008",
+    "diagnosis": "Insulin-induced hypoglycemia",
+    "aliases": [
+      "insulin-induced hypoglycaemia",
+      "insulin-related hypoglycemia",
+      "hypoglycemia due to insulin",
+      "iatrogenic hypoglycemia",
+      "insulin reaction",
+      "low blood sugar from insulin"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Insulin-induced hypoglycemia",
+        "evidence": [
+          "Episodes of palpitations and diaphoresis that resolve with drinking orange juice",
+          "Tight glycemic control"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Diabetic peripheral neuropathy",
+        "aliases": [
+          "diabetic neuropathy",
+          "diabetic polyneuropathy",
+          "diabetic sensory neuropathy",
+          "peripheral neuropathy due to diabetes",
+          "DPN"
+        ],
+        "evidence": [
+          "History of diabetes mellitus",
+          "Constant numbness and tingling in feet bilaterally",
+          "Exam: Diminished pinprick sensation on plantar surfaces"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Organic erectile dysfunction",
+        "aliases": [
+          "organic ED",
+          "diabetic erectile dysfunction",
+          "vasculogenic erectile dysfunction",
+          "neurogenic erectile dysfunction",
+          "medication-induced erectile dysfunction"
+        ],
+        "evidence": [
+          "Loss of erection for 2 years with absence of early-morning erection",
+          "History of diabetes mellitus",
+          "History of alcohol use",
+          "Taking lovastatin and atenolol"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Alcoholic peripheral neuropathy",
+        "note": "A distal sensorimotor polyneuropathy with painful leg paresthesias, caused by alcohol or associated nutritional deficiencies (e.g., thiamine, B vitamins); he drinks whiskey on weekends."
+      },
+      {
+        "diagnosis": "Multiple myeloma",
+        "note": "Myeloma or other paraproteinemias must be ruled out in a patient with peripheral neuropathy."
+      },
+      {
+        "diagnosis": "Renal failure",
+        "note": "Uremia can cause a sensory peripheral neuropathy, including in diabetic patients."
+      },
+      {
+        "diagnosis": "Hypothyroidism",
+        "note": "Can be associated with peripheral neuropathy and other neurologic symptoms."
+      },
+      {
+        "diagnosis": "Vasculitides",
+        "note": "Polyarteritis nodosa, rheumatoid arthritis and other vasculitides can cause peripheral neuropathy and are detected with ESR, ANCA, RF and anti-CCP antibodies."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-008",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "cc"
+      ],
+      "f003": [
+        "medqa-cs-008-p001"
+      ],
+      "f004": [
+        "medqa-cs-008-p001"
+      ],
+      "f005": [
+        "medqa-cs-008-p005"
+      ],
+      "f006": [
+        "medqa-cs-008-p005"
+      ],
+      "f007": [
+        "medqa-cs-008-p005"
+      ],
+      "f008": [
+        "medqa-cs-008-p006"
+      ],
+      "f009": [
+        "medqa-cs-008-p007",
+        "note"
+      ],
+      "f010": [
+        "medqa-cs-008-p008"
+      ],
+      "f011": [
+        "medqa-cs-008-p008"
+      ],
+      "f012": [
+        "medqa-cs-008-p009"
+      ],
+      "f013": [
+        "medqa-cs-008-p010"
+      ],
+      "f014": [
+        "medqa-cs-008-p011"
+      ],
+      "f015": [
+        "medqa-cs-008-p012",
+        "medqa-cs-008-p013"
+      ],
+      "f016": [
+        "medqa-cs-008-p012"
+      ],
+      "f017": [
+        "medqa-cs-008-p012"
+      ],
+      "f018": [
+        "medqa-cs-008-p013"
+      ],
+      "f019": [
+        "medqa-cs-008-p014"
+      ],
+      "f020": [
+        "medqa-cs-008-p014"
+      ],
+      "f021": [
+        "medqa-cs-008-p015"
+      ],
+      "f022": [
+        "medqa-cs-008-p015"
+      ],
+      "f023": [
+        "medqa-cs-008-p015"
+      ],
+      "f024": [
+        "medqa-cs-008-p016"
+      ],
+      "f025": [
+        "medqa-cs-008-p016"
+      ],
+      "f026": [
+        "medqa-cs-008-p016"
+      ],
+      "f027": [
+        "medqa-cs-008-p017"
+      ],
+      "f028": [
+        "medqa-cs-008-p017"
+      ],
+      "f029": [
+        "medqa-cs-008-p017"
+      ],
+      "f030": [
+        "medqa-cs-008-p017"
+      ],
+      "f031": [
+        "medqa-cs-008-p018"
+      ],
+      "f032": [
+        "medqa-cs-008-p018"
+      ],
+      "f033": [
+        "medqa-cs-008-p018"
+      ],
+      "f034": [
+        "medqa-cs-008-p020"
+      ],
+      "f035": [
+        "medqa-cs-008-p021"
+      ],
+      "f036": [
+        "medqa-cs-008-p019"
+      ],
+      "f037": [
+        "medqa-cs-008-p042"
+      ],
+      "f038": [
+        "medqa-cs-008-p038",
+        "medqa-cs-008-p039"
+      ],
+      "f039": [
+        "medqa-cs-008-p040"
+      ],
+      "f040": [
+        "medqa-cs-008-p039"
+      ],
+      "f041": [
+        "medqa-cs-008-p041"
+      ],
+      "f042": [
+        "medqa-cs-008-p022"
+      ],
+      "f043": [
+        "medqa-cs-008-p023",
+        "medqa-cs-008-p028"
+      ],
+      "f044": [
+        "medqa-cs-008-p024",
+        "medqa-cs-008-p028"
+      ],
+      "f045": [
+        "medqa-cs-008-p025"
+      ],
+      "f046": [
+        "medqa-cs-008-p029"
+      ],
+      "f047": [
+        "medqa-cs-008-p027"
+      ],
+      "f048": [
+        "medqa-cs-008-p002",
+        "medqa-cs-008-p026"
+      ],
+      "f049": [
+        "medqa-cs-008-p002"
+      ],
+      "f050": [
+        "medqa-cs-008-p003"
+      ],
+      "f051": [
+        "medqa-cs-008-p004"
+      ],
+      "f052": [
+        "medqa-cs-008-p026"
+      ],
+      "f053": [
+        "medqa-cs-008-p026"
+      ],
+      "f054": [
+        "medqa-cs-008-p026"
+      ],
+      "f055": [
+        "medqa-cs-008-p030"
+      ],
+      "f056": [
+        "medqa-cs-008-p030"
+      ],
+      "f057": [
+        "medqa-cs-008-p031"
+      ],
+      "f058": [
+        "medqa-cs-008-p032"
+      ],
+      "f059": [
+        "medqa-cs-008-p032"
+      ],
+      "f060": [
+        "medqa-cs-008-p033"
+      ],
+      "f061": [
+        "medqa-cs-008-p034"
+      ],
+      "f062": [
+        "medqa-cs-008-p034"
+      ],
+      "f063": [
+        "medqa-cs-008-p035"
+      ],
+      "f064": [
+        "medqa-cs-008-p036"
+      ],
+      "f065": [
+        "medqa-cs-008-p037"
+      ],
+      "f066": [
+        "medqa-cs-008-p038"
+      ],
+      "f067": [
+        "medqa-cs-008-p038"
+      ]
+    },
+    "quotes": {
+      "f001": "I am here for a diabetes checkup.",
+      "f002": "The last time I saw the doctor was 6 months ago.",
+      "f003": "I have had diabetes for the past 25 years.",
+      "f004": "I have had diabetes for the past 25 years.",
+      "f005": "Yes, I have a blood sugar monitor at home",
+      "f006": "I check my blood sugar twice a week.",
+      "f007": "It usually ranges between 120 and 145.",
+      "f008": "I checked 3 days ago and it was 135.",
+      "f009": "It was last tested 6 months ago, and the result was 7.210. / Last HbA1c 6 months ago was 7%",
+      "f010": "I saw one about 1 year ago",
+      "f011": "he said there were no signs of diabetic eye disease.",
+      "f012": "No.",
+      "f013": "I used to, but I haven't seen one in the last couple of years.",
+      "f014": "No.",
+      "f015": "Yes, I tend to sweat and notice my heart racing occasionally. / Just the palpitations I mentioned.",
+      "f016": "This occurs infrequently if I skip a meal.",
+      "f017": "I feel better after having orange juice.",
+      "f018": "No chest pain.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "I have tingling and numbness in my feet all the time",
+      "f022": "especially at night",
+      "f023": "it's gotten worse over the past 2 months.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "No.",
+      "f033": "No.",
+      "f034": "No.",
+      "f035": "No.",
+      "f036": "No.",
+      "f037": "No, I do not feel depressed.",
+      "f038": "I am not doing my job the way I used to / I can't get it up, doc.",
+      "f039": "One or 2 years.",
+      "f040": "I don't even wake up with erections anymore.",
+      "f041": "I think it's about the same.",
+      "f042": "No.",
+      "f043": "Yes, it was diagnosed 2 years ago. / the high cholesterol, which I have had for 2 years.",
+      "f044": "I suffered a heart attack last year. / I mentioned the heart attack last year",
+      "f045": "No.",
+      "f046": "None.",
+      "f047": "None.",
+      "f048": "I am on NPH insulin. / Insulin",
+      "f049": "I take 20 units every morning and 15 units in the evening.",
+      "f050": "No, it's been a consistent treatment, and I haven't encountered any issues.",
+      "f051": "Yes, I never miss any doses.",
+      "f052": "lovastatin",
+      "f053": "aspirin",
+      "f054": "atenolol.",
+      "f055": "My father passed away from a stroke at 60",
+      "f056": "my mother is in good health.",
+      "f057": "I'm a clerk.",
+      "f058": "I eat everything that my wife cooks - meat, vegetables, etc.",
+      "f059": "I don't follow any special diet.",
+      "f060": "No.",
+      "f061": "Yes, whiskey",
+      "f062": "but only on the weekend",
+      "f063": "No.",
+      "f064": "No.",
+      "f065": "I live in my own home with my wife.",
+      "f066": "my wife understands and is supportive.",
+      "f067": "They told me it is the diabetes."
+    },
+    "flags": {
+      "f009": [
+        "The script gives '7.210', a garbled value (probably an OCR artifact, like '7110' for 7/10 in case 001); the patient note gives 7%. Whether the patient's figure is 7% or 7.2% cannot be decided."
+      ],
+      "f061": [
+        "Amount not stated; the answer trails off ('...')."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 139/85 mmHg | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-008-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.0°F (36.7°C) | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-008-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 15/minute | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-008-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 75/minute, regular | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-008-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is well-nourished and well-developed. Sitting comfortably and in no distress.",
+        "exam_ids": [
+          "medqa-cs-008-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Pupils equal, round, and reactive to light and accommodation.",
+        "exam_ids": [
+          "medqa-cs-008-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Fundoscopic exam normal with no arteriovenous nicking, hemorrhages, or exudates.",
+        "exam_ids": [
+          "medqa-cs-008-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Neck: No carotid bruits, no jugular venous distention.",
+        "exam_ids": [
+          "medqa-cs-008-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Chest: Breath sounds clear to auscultation bilaterally.",
+        "exam_ids": [
+          "medqa-cs-008-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; first heart sound/second heart sound within normal limits; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-008-e006"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, bowel sounds present in all four quadrants, no bruits, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-008-e007"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Extremities: No edema, no skin breakdown, 2+ dorsalis pedis pulses symmetric.",
+        "exam_ids": [
+          "medqa-cs-008-e008"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Neuro: Motor strength 5/5 in bilateral lower extremities.",
+        "exam_ids": [
+          "medqa-cs-008-e009"
+        ]
+      },
+      "x014": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Deep tendon reflexes symmetrically present and 2+ at the knee, absent at the ankle | Pretend to have a normal knee-jerk reflex and an absent ankle reflex.",
+        "exam_ids": [
+          "medqa-cs-008-e009"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "and 6 Babinski bilaterally.",
+        "exam_ids": [
+          "medqa-cs-008-e009"
+        ]
+      },
+      "x016": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Sensation: Diminished pinprick sensation on plantar surfaces bilaterally. Sensation to soft touch, vibratory, and position is intact in bilateral lower extremities. | Pretend that you have a loss of sharp and dull sensations, vibration sense, and position sense in both feet (stocking distribution).",
+        "exam_ids": [
+          "medqa-cs-008-e009"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x015": [
+        "Source reads '6 Babinski bilaterally'; the symbol before 'Babinski' is garbled, so the direction (upgoing or downgoing) is unknown."
+      ],
+      "x016": [
+        "The SP simulates loss of sharp/dull, vibration and position sense in both feet; the note exam records only diminished plantar pinprick with intact vibration and position sense. The simulated finding is the result (CONVERSION.md); soft touch, which the SP notes do not mention, is from the note."
+      ]
+    },
+    "leakage": [
+      {
+        "fact_id": "f067",
+        "reason": "The patient was told his erection problem is caused by diabetes, which points to organic (diabetic) erectile dysfunction, gold diagnosis #3. It is scripted patient content and is kept."
+      }
+    ],
+    "source_issues": [
+      "patient_note_history is empty in the source file: the raw sheet's note heading is 'Patient Note' without a colon, so the parser missed it. The full note (HPI, ROS, meds, PMH, SH, FH) is present in raw_opening and was used for checking; f009 cites it as 'note'.",
+      "p007: HbA1c result '7.210' is garbled (probably OCR); the note gives 'Last HbA1c 6 months ago was 7%'. Recorded as about 7% with a flag.",
+      "e009: '6 Babinski bilaterally' - the '6' is a garbled symbol (probably a circled minus or plus); direction not stated; recorded as 'Result not documented' with a flag (x015).",
+      "Contradiction between SP notes and the note exam: the SP is told to show loss of sharp/dull, vibration and position sense in both feet (stocking distribution), but the note exam records only diminished pinprick on the plantar surfaces and intact soft touch, vibration and position sense. The simulated loss is the sensation result (x016).",
+      "p034: alcohol amount is not given; the answer trails off ('only on the weekend...').",
+      "Erectile problem duration: script 'One or 2 years' (p040); the note and gold say 2 years.",
+      "p012 asks about dizziness and confusion among hypoglycemic symptoms, and p015 about headaches, dizziness and weakness; the answers address only sweating/racing heart and foot tingling/numbness, so these items are neither confirmed nor denied by the script (the note's 'ROS: Negative except as above' is generic and was not used to create denials).",
+      "p038 ('Are you currently sexually active?') is not answered directly; the patient describes a performance problem instead.",
+      "gold_additional_diagnosis starts with a general sentence about non-diabetic neuropathy causes (not a diagnosis); 'thiamine and vitamin B' is probably truncated (e.g., B12).",
+      "Gold #3 'History of alcohol use' rests on weekend whiskey with no stated amount."
+    ],
+    "notes": [
+      "Per a later policy update (which overrides the GUIDE.md Babinski example wording), env findings carry no review commentary: an undirected Babinski is recorded as 'Result not documented' and the reason is in the record's flags.",
+      "The chief complaint is a visit reason (diabetes checkup), used as the opening fact (f001); the last visit 6 months ago (v1 f001) is f002.",
+      "Diabetes and its management (insulin, monitoring, HbA1c, eye and foot care) are medical_history or medication; the symptoms elicited (sweating/racing-heart spells, foot numbness/tingling, erectile problem) are symptoms.",
+      "The sweating/racing-heart spells are described in the patient's words without the label 'hypoglycemia' to avoid naming the rank-1 diagnosis.",
+      "'I don't even wake up with erections anymore' is coded as a present symptom (the erection problem extends to waking, f040), per guide rule 2.",
+      "p003 (no medication side effects) is recorded literally even though the sweating spells may be insulin-related.",
+      "f063 combines 'Do you smoke? Did you ever smoke in the past?' - 'No' as a never-smoker.",
+      "Conversion: the first v1 source issue is outdated for the current source inventory, whose patient_note_history now holds the note (it contains the 7% HbA1c); the quote check for f009 uses it.",
+      "Conversion: sensation follows CONVERSION.md (simulated finding wins), replacing v1's separate note and SP records (x023-x029) with one record x016; reflexes merge the matching note and SP findings (x014).",
+      "Conversion: home glucose monitoring (p005, p006) is a parent f005 with frequency, usual and latest readings as children; NPH insulin (p002, p026) is f048 with its dose as a child; the eye-doctor finding is a child of the visit (f011); the erection problem (v1 f056, p038-p040) is a parent f038 with duration (f039) and waking erections (f040) as children.",
+      "Conversion: gold aliases leave out plain 'hypoglycemia', 'erectile dysfunction' and 'peripheral neuropathy' because they are broader than the reference diagnoses (CONVERSION.md); a scorer may want to treat them as partial matches.",
+      "Fixes: f018 text rewritten; f050 text rewritten; f003 answer word removed; f005 answer word removed; f012 answer word removed; f014 answer word removed; f015 answer word removed; f036 answer word removed; f037 answer word removed; f042 answer word removed; f043 answer word removed; f045 answer word removed; f051 answer word removed; f060 answer word removed; f061 answer word removed; f063 answer word removed; f064 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Pretend that you have a loss of sharp and dull sensations, vibration sense, and position sense in both feet (stocking distribution).",
+        "Pretend to have a normal knee-jerk reflex and an absent ankle reflex."
+      ],
+      "patient_questions": [
+        "Doctor, am I at risk of losing my feet?",
+        "They told me it is the diabetes. Is it? (scripted, when asked about sexual activity)"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

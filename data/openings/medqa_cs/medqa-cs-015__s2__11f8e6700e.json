@@ -1,0 +1,45 @@
+{
+ "case_id": "medqa-cs-015",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I haven't had my menstrual period.",
+   "For the past three months.",
+   "Over the past year, I started having my periods less often: every 5 to 6 weeks, lasting 7 days."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I haven't had my menstrual period for the past three months. Over the past year, I started having my periods less often: every 5 to 6 weeks, lasting 7 days.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4215,
+   "tokens_out": 51,
+   "seconds": 9.97,
+   "redrafts": 0
+  }
+ }
+}

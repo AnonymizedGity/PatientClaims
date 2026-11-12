@@ -1,0 +1,101 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-048",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 69, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "joint pain", "aliases": ["toe pain", "hip pain", "knee pain", "arthralgia"], "text": "I have pain in my joints.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "joint pain: location", "parent": "f001", "attribute": "location", "value": ["left big toe", "hips", "knees"], "text": "It's in my left big toe, my hips and my knees.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "joint pain: worse with activity", "parent": "f001", "attribute": "aggravating", "text": "It gets worse with activity.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "joint pain: better with rest", "parent": "f001", "attribute": "relieving", "text": "It gets better with rest.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "joint pain: course", "parent": "f001", "attribute": "course", "text": "It has gradually gotten worse over the past several years.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "other symptoms", "aliases": ["systemic symptoms", "other symptoms"], "text": "I haven't noticed any other symptoms affecting the rest of my body.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "obesity", "aliases": ["overweight", "weight problem"], "text": "I've been told I'm obese.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "type 2 diabetes", "aliases": ["diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I have a history of smoking.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f011", "item": "alcohol", "aliases": ["drinking", "beer"], "text": "I drink roughly ten beers a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "recent travel", "aliases": ["travel abroad", "Bangkok"], "text": "I recently traveled to Bangkok.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f013", "item": "unprotected sex", "aliases": ["condom use", "sexual activity", "new sexual partner"], "text": "I had unprotected sex on that trip to Bangkok.", "polarity": "present", "category": "habit_exposure", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-048",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "78/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "joint examination", "aliases": ["lower extremity examination", "toe examination", "hip examination", "knee examination", "joint palpation"], "result": "Inspection and palpation: pain on palpation of the left great toe, hips and knees; no swelling or redness."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "joint range of motion", "aliases": ["range of motion", "ROM", "hip range of motion"], "result": "Crepitus in the hip during flexion and extension."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelet count"], "result": "WBC 7,000/μL; hemoglobin 14 g/dL; platelets 300,000/μL."},
+      {"id": "x008", "kind": "test", "name": "hip and knee X-rays", "aliases": ["hip X-ray", "knee X-ray", "radiographs of the hips and knees", "joint X-rays"], "result": "Joint space narrowing with osteophyte formation, suggestive of osteoarthritis."},
+      {"id": "x009", "kind": "test", "name": "serum uric acid", "aliases": ["uric acid", "urate level"], "result": "6 mg/dL"},
+      {"id": "x010", "kind": "test", "name": "HIV test", "aliases": ["HIV screening", "STI screening"], "result": "Negative."},
+      {"id": "x011", "kind": "test", "name": "syphilis test", "aliases": ["syphilis serology", "RPR", "VDRL", "STI screening"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-048",
+    "diagnosis": "Osteoarthritis",
+    "aliases": ["OA", "degenerative joint disease", "DJD", "degenerative arthritis", "osteoarthrosis", "primary osteoarthritis", "generalized osteoarthritis", "polyarticular osteoarthritis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-048",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-048-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-048-p001"],
+      "f003": ["agentclinic-medqa-ext-048-p001", "agentclinic-medqa-ext-048-p002"],
+      "f004": ["agentclinic-medqa-ext-048-p001", "agentclinic-medqa-ext-048-p003"],
+      "f005": ["agentclinic-medqa-ext-048-p001"],
+      "f006": ["agentclinic-medqa-ext-048-p006"],
+      "f007": ["agentclinic-medqa-ext-048-p004"],
+      "f008": ["agentclinic-medqa-ext-048-p004"],
+      "f009": ["agentclinic-medqa-ext-048-p004"],
+      "f010": ["agentclinic-medqa-ext-048-p004"],
+      "f011": ["agentclinic-medqa-ext-048-p005"],
+      "f012": ["agentclinic-medqa-ext-048-p005"],
+      "f013": ["agentclinic-medqa-ext-048-p005"]
+    },
+    "quotes": {
+      "f002": "Pain in the left great toe, hips, and knees",
+      "f003": "worsens with activity",
+      "f004": "improves with rest",
+      "f005": "progressively gotten worse over the past several years",
+      "f006": "did not report any other systemic symptoms",
+      "f010": "smoking history",
+      "f011": "Drinks roughly ten beers per day",
+      "f012": "Recent travel history to Bangkok",
+      "f013": "Bangkok with unprotected sex"
+    },
+    "flags": {
+      "f006": ["'Patient did not report any other systemic symptoms' is read as a negative review of systems and kept as a general denial; it lists no specific symptom."],
+      "f010": ["'Smoking history' does not say whether he still smokes; no time is set."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-048-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-048-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "78 bpm", "exam_ids": ["agentclinic-medqa-ext-048-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-048-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Lower_Extremity_Examination.Inspection_and_Palpation", "source_text": "Pain on palpation of the left great toe, hips, and knees. No swelling or redness noted.", "exam_ids": ["agentclinic-medqa-ext-048-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Lower_Extremity_Examination.Range_of_Motion", "source_text": "Crepitus noted in patient's hip during flexion and extension.", "exam_ids": ["agentclinic-medqa-ext-048-e006"]},
+      "x007": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "7,000 /μL | 14 g/dL | 300,000 /μL", "exam_ids": ["agentclinic-medqa-ext-048-i001", "agentclinic-medqa-ext-048-i002", "agentclinic-medqa-ext-048-i003"]},
+      "x008": {"source": "Test_Results.X_Rays.Hip_and_Knee_X_Rays.Findings", "source_text": "Joint space narrowing with osteophyte formation, suggestive of osteoarthritis.", "exam_ids": ["agentclinic-medqa-ext-048-i004"]},
+      "x009": {"source": "Test_Results.Uric_Acid_Level.Level", "source_text": "6 mg/dL", "exam_ids": ["agentclinic-medqa-ext-048-i005"]},
+      "x010": {"source": "Test_Results.STI_Screening.HIV", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-048-i006"]},
+      "x011": {"source": "Test_Results.STI_Screening.Syphilis", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-048-i007"]}
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The hip and knee X-ray result names the diagnosis ('suggestive of osteoarthritis'); kept because it is the test's answer (pool flag visible_gold_alias_partitions: test_results)."}
+    ],
+    "source_issues": ["The X-ray result names the gold diagnosis (flagged by the source pool as requiring diagnosis-text cleanup); kept per CONVERSION.md, which lets a result state what the test shows, and listed in qc.leakage.", "Smoking appears only in Past_Medical_History ('smoking history'), with no amount or current status."],
+    "notes": ["One joint-pain fact with a location child (value list, not marked complete) carries the shared activity/rest pattern and the course, rather than three separate pain facts.", "Hip and knee radiographs are reported as one result in the source, so they stay one record (x008).", "HIV and syphilis screening are separate tests (STI screening is not a CONVERSION.md panel); both carry the alias 'STI screening'."],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-048-e007", "reason": "Special tests: 'No other specific tests conducted.' carries no finding."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient who presents with chronic joint pain."
+    }
+  }
+}

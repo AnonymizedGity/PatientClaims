@@ -1,0 +1,980 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-038",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 66,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "tremor",
+        "aliases": [
+          "shaking",
+          "trembling hand"
+        ],
+        "text": "I have a tremor in my hand.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "tremor: which hand",
+        "parent": "f001",
+        "attribute": "location",
+        "value": [
+          "right hand"
+        ],
+        "complete": true,
+        "text": "Only in the right hand.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "tremor: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "I noticed it about 6 months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "tremor: change over time",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "Lately it seems to be getting worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "tremor: what you are doing when it shakes",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "It shakes when I'm just sitting around doing nothing.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "tremor: when it stops",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "It usually stops when I hold out the remote control to change the channel.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "tremor: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "text": "Nothing makes it better.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "tremor: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "text": "It seems more severe when I'm really tired.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "other symptoms",
+        "aliases": [
+          "associated symptoms"
+        ],
+        "text": "I don't think I have any other symptoms.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "slowing down",
+        "aliases": [
+          "slowness",
+          "moving slowly"
+        ],
+        "text": "My wife says I've slowed down because I can't keep up with her when we go grocery shopping, but I think that's just because I retired last year.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "walking speed",
+        "aliases": [
+          "walking",
+          "walking more slowly"
+        ],
+        "text": "I've noticed myself walking more slowly recently.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "earlier episodes of tremor",
+        "aliases": [
+          "previous tremor",
+          "tremor before"
+        ],
+        "text": "When I was in college, I occasionally had a hand tremor.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f013",
+        "item": "earlier tremor: what brought it on",
+        "parent": "f012",
+        "attribute": "context",
+        "text": "It came after I pulled an all-nighter and drank lots of coffee.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f014",
+        "item": "earlier tremor: which hands",
+        "parent": "f012",
+        "attribute": "location",
+        "text": "It was in both hands, but it was worse in the right.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f015",
+        "item": "earlier tremor: compared with the tremor now",
+        "parent": "f012",
+        "attribute": "other",
+        "text": "It seemed faster than the one I have now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f016",
+        "item": "high cholesterol",
+        "aliases": [
+          "cholesterol"
+        ],
+        "text": "I have high cholesterol, which I manage through diet.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "asthma",
+        "text": "I have asthma.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "head injuries",
+        "aliases": [
+          "head trauma"
+        ],
+        "text": "I've never injured my head.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f019",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medication"
+        ],
+        "text": "I don't have any medication allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "albuterol inhaler",
+        "aliases": [
+          "inhaler",
+          "asthma medicine"
+        ],
+        "text": "I use an albuterol inhaler for my asthma as needed.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "albuterol inhaler: recent use",
+        "parent": "f020",
+        "attribute": "timing",
+        "text": "I haven't used it in more than a year.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "parents' drinking",
+        "aliases": [
+          "alcoholism in the family"
+        ],
+        "text": "Both of my parents were alcoholics.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f023",
+        "item": "parents' death",
+        "aliases": [
+          "how your parents died"
+        ],
+        "text": "My parents died in a car accident in their 40s.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f024",
+        "item": "sister's health",
+        "text": "My sister is healthy.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "tremor in the family",
+        "aliases": [
+          "family history of tremor"
+        ],
+        "text": "I think my father may have had a tremor, but I'm not sure.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f026",
+        "item": "coffee",
+        "aliases": [
+          "caffeine"
+        ],
+        "text": "I have one cup of coffee each morning.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "coffee: change in amount",
+        "parent": "f026",
+        "attribute": "course",
+        "text": "I used to have three cups a day, but I've cut down in recent months.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "resolved"
+      },
+      {
+        "id": "f028",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink. Since both of my parents were alcoholics, I avoid it.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "recreational drugs",
+        "aliases": [
+          "street drugs"
+        ],
+        "text": "I don't use any drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "change in physical activity",
+        "aliases": [
+          "exercise",
+          "physical activity"
+        ],
+        "text": "I've become quite inactive lately.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "marital status",
+        "aliases": [
+          "married",
+          "relationship"
+        ],
+        "text": "I'm married.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "living situation",
+        "aliases": [
+          "who you live with"
+        ],
+        "text": "I live with my wife.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a former professor of chemistry.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "retirement",
+        "aliases": [
+          "when you stopped working"
+        ],
+        "text": "I retired last year.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-038",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "135/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "16/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "70/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "In no acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "mental status examination",
+        "aliases": [
+          "orientation",
+          "mental status"
+        ],
+        "result": "Alert and oriented to person, place and time."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "cranial nerves",
+        "aliases": [
+          "cranial nerve exam"
+        ],
+        "result": "Cranial nerves II–XII grossly intact."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "tremor examination",
+        "aliases": [
+          "observe the hands",
+          "resting tremor",
+          "inspection of the hands"
+        ],
+        "result": "Resting pill-rolling tremor of the right hand that improves or disappears with purposeful action or posture."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "muscle tone",
+        "aliases": [
+          "rigidity",
+          "passive movement of the wrists and arms",
+          "cogwheeling"
+        ],
+        "result": "Mild rigidity in both wrists and arms, which are stiff and move slowly on passive movement; no frank cogwheeling."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength",
+          "power"
+        ],
+        "result": "Strength 5/5 throughout."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes symmetric and 2+ in all extremities."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "coordination",
+        "aliases": [
+          "cerebellar exam",
+          "rapid alternating movements",
+          "heel-to-shin test"
+        ],
+        "result": "Rapid alternating movements and heel-to-shin test normal and symmetric."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "Romberg test",
+        "aliases": [
+          "Romberg"
+        ],
+        "result": "Normal."
+      },
+      {
+        "id": "x016",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "gait",
+        "aliases": [
+          "walking",
+          "posture"
+        ],
+        "result": "Bradykinetic gait with small shuffling steps and a slightly bent-forward posture."
+      },
+      {
+        "id": "x017",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam",
+          "light touch",
+          "pinprick"
+        ],
+        "result": "Intact to light touch and pinprick."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-038",
+    "diagnosis": "Parkinson's disease",
+    "aliases": [
+      "Parkinson disease",
+      "Parkinson's",
+      "PD",
+      "idiopathic Parkinson's disease",
+      "paralysis agitans"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Parkinson's disease",
+        "evidence": [
+          "Resting tremor",
+          "Exam: Low-frequency tremor in the upper extremity",
+          "Exam: Bradykinetic gait",
+          "Exam: Upper extremity rigidity"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Essential tremor",
+        "aliases": [
+          "benign essential tremor",
+          "familial essential tremor",
+          "ET"
+        ],
+        "evidence": [
+          "Possible family history of tremor",
+          "Exam: Tremor in the distal upper extremity"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Physiologic tremor",
+        "aliases": [
+          "physiological tremor",
+          "enhanced physiologic tremor"
+        ],
+        "evidence": [
+          "Resting tremor",
+          "Exam: Tremor in the distal upper extremity"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Midbrain lesion",
+        "note": "Midbrain injury from stroke, trauma or demyelination can rarely cause a solitary asymmetric resting tremor."
+      },
+      {
+        "diagnosis": "Drug-induced tremor",
+        "note": "Many drugs enhance physiologic tremor, including beta-agonists such as albuterol; neuroleptics and metoclopramide cause parkinsonism, often without tremor."
+      },
+      {
+        "diagnosis": "Psychogenic tremor",
+        "note": "Frequency varies and the tremor becomes irregular or stops during a complex repetitive task with the other limb."
+      },
+      {
+        "diagnosis": "Wilson disease",
+        "note": "Can cause resting tremor but is not typically considered after age 40."
+      },
+      {
+        "diagnosis": "Hyperthyroidism",
+        "note": "Causes a fine tremor together with other classic signs and symptoms."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-038",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-038-p001"
+      ],
+      "f003": [
+        "medqa-cs-038-p002"
+      ],
+      "f004": [
+        "medqa-cs-038-p002"
+      ],
+      "f005": [
+        "medqa-cs-038-p003"
+      ],
+      "f006": [
+        "medqa-cs-038-p003"
+      ],
+      "f007": [
+        "medqa-cs-038-p004"
+      ],
+      "f008": [
+        "medqa-cs-038-p005"
+      ],
+      "f009": [
+        "medqa-cs-038-p006"
+      ],
+      "f010": [
+        "medqa-cs-038-p006"
+      ],
+      "f011": [
+        "note"
+      ],
+      "f012": [
+        "medqa-cs-038-p007"
+      ],
+      "f013": [
+        "medqa-cs-038-p007"
+      ],
+      "f014": [
+        "medqa-cs-038-p007"
+      ],
+      "f015": [
+        "medqa-cs-038-p007"
+      ],
+      "f016": [
+        "medqa-cs-038-p010"
+      ],
+      "f017": [
+        "medqa-cs-038-p010"
+      ],
+      "f018": [
+        "medqa-cs-038-p011"
+      ],
+      "f019": [
+        "medqa-cs-038-p019"
+      ],
+      "f020": [
+        "medqa-cs-038-p010",
+        "medqa-cs-038-p018"
+      ],
+      "f021": [
+        "medqa-cs-038-p018"
+      ],
+      "f022": [
+        "medqa-cs-038-p009"
+      ],
+      "f023": [
+        "medqa-cs-038-p012"
+      ],
+      "f024": [
+        "medqa-cs-038-p012"
+      ],
+      "f025": [
+        "medqa-cs-038-p012"
+      ],
+      "f026": [
+        "medqa-cs-038-p008"
+      ],
+      "f027": [
+        "medqa-cs-038-p008"
+      ],
+      "f028": [
+        "medqa-cs-038-p009"
+      ],
+      "f029": [
+        "medqa-cs-038-p016"
+      ],
+      "f030": [
+        "medqa-cs-038-p017"
+      ],
+      "f031": [
+        "medqa-cs-038-p015"
+      ],
+      "f032": [
+        "medqa-cs-038-p013"
+      ],
+      "f033": [
+        "medqa-cs-038-p013"
+      ],
+      "f034": [
+        "medqa-cs-038-p014"
+      ],
+      "f035": [
+        "medqa-cs-038-p006"
+      ]
+    },
+    "quotes": {
+      "f002": "Only in the right hand.",
+      "f003": "I noticed it about 6 months ago",
+      "f004": "but lately it seems to be getting worse.",
+      "f005": "It shakes when I'm just sitting around doing nothing.",
+      "f006": "It usually stops when I hold out the remote control to change the channel.",
+      "f007": "No.",
+      "f008": "It seems more severe when I am really tired.",
+      "f009": "No, I don't think so.",
+      "f010": "My wife says I've slowed down because I can't keep up with her when we go grocery shopping, but I think that's just because I retired last year.",
+      "f011": "He has noticed walking more slowly recently.",
+      "f012": "When I was in college, I occasionally had a hand tremor",
+      "f013": "after pulling an all-nighter and drinking lots of coffee.",
+      "f014": "The tremor was in both hands, but it was worse in the right.",
+      "f015": "It seemed faster than the one I have now.",
+      "f016": "Managed high cholesterol through diet.",
+      "f017": "for asthma",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "Use an albuterol inhaler for asthma as necessary. / Albuterol inhaler as needed.",
+      "f021": "I have not used it in more than a year.",
+      "f022": "both of my parents were alcoholics",
+      "f023": "My parents died in a car accident in their 40s",
+      "f024": "my sister is healthy.",
+      "f025": "I think my father may have had a tremor, but I'm not sure.",
+      "f026": "I have one cup of coffee each morning.",
+      "f027": "I previously had three cups daily, but I've reduced that amount in recent months.",
+      "f028": "No, I don’t drink. Since both of my parents were alcoholics, I avoid it.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No, I have become quite inactive lately.",
+      "f032": "I am in a marriage",
+      "f033": "reside with my spouse.",
+      "f034": "Former professor of chemistry.",
+      "f035": "I retired last year."
+    },
+    "flags": {
+      "f011": [
+        "Only in the patient note HPI; in the script he denies other symptoms and only reports that his wife says he has slowed down (p006)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 135/85 mm Hg | - Vital Signs: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-038-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.6°F (37°C) | - Vital Signs: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-038-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 16/minute | - Vital Signs: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-038-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 70/minute, regular | - Vital Signs: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-038-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "- The patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-038-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "- Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-038-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "- Heart: Regular rate and rhythm (RRR), normal S1S2; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-038-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "- Neurological: Mental status is alert and oriented x3.",
+        "exam_ids": [
+          "medqa-cs-038-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "- Neurological: ... Cranial nerves 2-12 are grossly intact.",
+        "exam_ids": [
+          "medqa-cs-038-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "- Motor examination reveals a resting tremor in the right hand with \"pill-rolling\" movement that improves or disappears during purposeful action or posture. | Exhibit a resting hand tremor (pill rolling) that disappears with movement.",
+        "exam_ids": [
+          "medqa-cs-038-e006"
+        ]
+      },
+      "x011": {
+        "source": "patient_note + sp_notes",
+        "source_text": "There is mild muscle rigidity in both wrists and arms but no frank cogwheeling. | Exhibit mild muscle rigidity in your wrists and arms - when the examinee tries to move your wrists and arms, stiffen them and move them slowly.",
+        "exam_ids": [
+          "medqa-cs-038-e006"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Strength is 5/5 throughout.",
+        "exam_ids": [
+          "medqa-cs-038-e006"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "- Deep tendon reflexes (DTRs) are symmetric and 2+ in all extremities.",
+        "exam_ids": [
+          "medqa-cs-038-e007"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "- Cerebellar examination shows normal and symmetric Romberg, rapid alternating movements, and heel-to-shin test.",
+        "exam_ids": [
+          "medqa-cs-038-e008"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "- Cerebellar examination shows normal and symmetric Romberg, rapid alternating movements, and heel-to-shin test.",
+        "exam_ids": [
+          "medqa-cs-038-e008"
+        ]
+      },
+      "x016": {
+        "source": "patient_note + sp_notes",
+        "source_text": "- Gait is bradykinetic, with small steps and a slightly bent forward posture. | Lean your back forward slightly and walk in small shuffling steps.",
+        "exam_ids": [
+          "medqa-cs-038-e009"
+        ]
+      },
+      "x017": {
+        "source": "patient_note",
+        "source_text": "- Sensation is intact to soft touch and pinprick.",
+        "exam_ids": [
+          "medqa-cs-038-e010"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x015": [
+        "The note says 'normal and symmetric Romberg', unusual wording for a Romberg test; recorded as normal (v1)."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Chief complaint is malformed in the raw sheet: the patient's complaint 'I have a tremor in this hand (points to right hand).' is printed inside the doctor's line, and the answer field 'Only in the right hand.' repeats the p001 answer. The opening fact uses the complaint; the stage direction is an acting note.",
+      "The note HPI says 'He has noticed walking more slowly recently'; in the script he denies other symptoms and attributes his wife's comment about slowing down to retirement (p006). Added as from-note fact f011 with a flag.",
+      "The note says the college tremor occurred 'when very fatigued'; the script says after all-nighters and drinking lots of coffee.",
+      "The note says 'reducing caffeine intake to 1 cup of coffee daily did not provide relief'; the script never asks this directly (only p004 'Does anything make it better? No.').",
+      "The note PMH says 'Mild asthma'; the patient does not grade his asthma.",
+      "Gold rank-3 (physiologic tremor) lists 'Resting tremor' as its history finding, which does not fit physiologic tremor and looks copied from rank 1.",
+      "Gold rank-1 exam finding 'Low-frequency tremor' has no frequency in the note exam; only the patient's comparison (the college tremor 'seemed faster', p007) supports it.",
+      "e008 says 'normal and symmetric Romberg', which is unusual wording for a Romberg test; recorded as normal."
+    ],
+    "notes": [
+      "Coffee: current one cup each morning (f026) and the former three cups a day, cut down in recent months (f027, resolved).",
+      "Albuterol: as-needed prescription (f020, present) and no use in more than a year (f021, absent recent use), relevant to the gold's drug-induced tremor consideration.",
+      "p006 is split into the denial of other symptoms (f009), the wife's observation with his explanation (f010) and retirement last year (f035).",
+      "The father's possible tremor is kept as present with the patient's uncertainty in the text (f025).",
+      "SP-simulated rigidity, posture, gait and resting tremor (v1 x019-x022) agree with the note exam and are merged into the matching records: tremor (x010), muscle tone (x011) and gait with posture (x016). The SP notes do not name the hand; the script and the note say right.",
+      "Note exam wording 'soft touch' is rendered as light touch.",
+      "Conversion: the opening text says 'my hand' rather than 'this hand' because the patient model cannot point; the side is the location child f002 ('Only in the right hand.', complete list). f001 has no quote because the complaint sits in the cc question line, which the coverage check does not search.",
+      "Conversion: the college tremor (v1 f011-f013) is a parent 'earlier episodes of tremor' (f012) with context, location and comparison children.",
+      "Conversion: v1 f029 ('has become quite physically inactive lately', present) keeps its polarity under the neutral label 'change in physical activity' (f031); the text drops the leading 'No' so the wording matches the present polarity.",
+      "Conversion: p013 is split into marital status (f032) and living situation (f033); v1 had one fact.",
+      "Conversion: the note's 'Vital Signs: Within normal limits' (e002) agrees with the doorway values, so it is cited in each doorway vital record. The Romberg test has its own record (x015); rapid alternating movements and heel-to-shin form the coordination record (x014).",
+      "Fixes: f007 answer word removed; f009 answer word removed; f018 answer word removed; f019 answer word removed; f028 answer word removed; f029 answer word removed; f030 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Point to the right hand when describing the tremor.",
+        "Exhibit mild muscle rigidity in your wrists and arms - when the examinee tries to move your wrists and arms, stiffen them and move them slowly.",
+        "Lean your back forward slightly and walk in small shuffling steps.",
+        "Exhibit a resting hand tremor (pill rolling) that disappears with movement."
+      ],
+      "patient_questions": [
+        "Do you believe I will recover?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

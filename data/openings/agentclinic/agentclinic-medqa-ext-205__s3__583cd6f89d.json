@@ -1,0 +1,66 @@
+{
+ "case_id": "agentclinic-medqa-ext-205",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I have discomfort and pain in the upper middle part of my belly.",
+   "This has been going on for the past 2 hours.",
+   "It's a cramping pain.",
+   "Because of the pain I've been avoiding eating.",
+   "I've lost weight.",
+   "I smoke.",
+   "I drink alcohol occasionally."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have discomfort and pain in the upper middle part of my belly. It's a cramping pain that has been going on for the past 2 hours. Because of the pain I've been avoiding eating. I've lost weight. I smoke and I drink alcohol occasionally.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f002",
+    "f007",
+    "f008",
+    "f017",
+    "f018"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "unsupported",
+      "quote": "It's been so painful that",
+      "fix": "Because of the pain"
+     },
+     {
+      "kind": "changed",
+      "quote": "lost some weight",
+      "fix": "lost weight"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I've been having cramping discomfort and pain in the upper middle part of my belly for the past two hours. It's been so painful that I've been avoiding eating, and I've noticed I've lost some weight. I should mention that I smoke and drink alcohol occasionally.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 5872,
+   "tokens_out": 175,
+   "seconds": 14.14,
+   "redrafts": 0
+  }
+ }
+}

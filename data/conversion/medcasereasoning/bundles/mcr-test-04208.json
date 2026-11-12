@@ -1,0 +1,117 @@
+{
+  "patient": {
+    "case_id": "mcr-test-04208",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 27, "sex": "female"},
+    "opening": ["f001", "f002", "f003", "f004"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["fevers", "night fevers", "temperatures", "nocturnal fever"], "text": "I've been getting fevers at night.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "joint pain", "aliases": ["arthralgia", "aching joints", "sore joints"], "text": "My joints ache.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain", "right upper quadrant pain", "pain under the right ribs"], "text": "I have pain in the upper right part of my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "yellowing of the skin or eyes", "aliases": ["jaundice", "icterus", "yellow eyes", "yellow skin"], "text": "I've turned yellow.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "how long the fevers, joint pain, belly pain and yellowing have lasted", "text": "All of this has been going on for two weeks.", "value": "2 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "occupation", "aliases": ["job", "work", "farming", "livestock", "animal contact"], "text": "I'm a sheep farmer.", "polarity": "present", "category": "social_background"},
+      {"id": "f007", "item": "unpasteurized cheese", "aliases": ["raw milk cheese", "unpasteurised dairy", "raw dairy products"], "text": "I eat cheese made from unpasteurized milk.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "drug use", "aliases": ["drugs", "recreational drugs", "illicit drugs"], "text": "I don't use any drugs.", "polarity": "absent", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-04208",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "38.5 °C"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "70/45 mmHg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "70/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "18/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "96% on room air"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "volume status", "aliases": ["hydration", "fluid status"], "result": "Euvolemic."},
+      {"id": "x007", "kind": "exam", "system": "skin", "name": "inspection of the skin and eyes", "aliases": ["sclerae", "jaundice", "skin examination", "eye inspection"], "result": "Icterus."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver", "spleen", "abdominal palpation"], "result": "Palpable liver edge 5 cm below the costal margin; diffuse right upper-quadrant tenderness; marginal splenomegaly."},
+      {"id": "x009", "kind": "exam", "system": "general", "name": "rest of the physical examination", "aliases": ["heart examination", "lung examination", "chest examination", "joint examination", "lymph nodes", "neurological examination"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white cell count", "WBC", "hemoglobin", "platelets"], "result": "WBC 5400 cells/mm³; hemoglobin 10.6 g/dL; platelets 216 000/mm³."},
+      {"id": "x011", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "AST", "ALT", "alkaline phosphatase", "ALP", "GGT", "gamma-GT", "bilirubin", "direct bilirubin", "albumin", "globulin"], "result": "AST 224 U/L; ALT 159 U/L; alkaline phosphatase 2340 U/L; γ-GGT 597 U/L; direct bilirubin 3.1 mg/dL; albumin 3.3 g/dL; globulin 4.3 g/dL."},
+      {"id": "x012", "kind": "test", "name": "serum uric acid", "aliases": ["uric acid", "urate"], "result": "1.4 mg/dL."},
+      {"id": "x013", "kind": "test", "name": "electrolytes", "aliases": ["sodium", "potassium", "chloride", "serum electrolytes"], "result": "Sodium 124 mmol/L; potassium 4.4 mmol/L; chloride 95 mmol/L."},
+      {"id": "x014", "kind": "test", "name": "plasma osmolality", "aliases": ["serum osmolality"], "result": "262 mmol/kg."},
+      {"id": "x015", "kind": "test", "name": "urine osmolality and urine sodium", "aliases": ["urine osmolality", "urine sodium", "urine electrolytes"], "result": "Urine osmolality 274 mmol/kg; urine sodium 64 mmol/L."},
+      {"id": "x016", "kind": "test", "name": "pituitary function tests", "aliases": ["pituitary hormones"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "thyroid function tests", "aliases": ["TSH", "thyroid hormones", "T4"], "result": "Normal."},
+      {"id": "x018", "kind": "test", "name": "adrenal function tests", "aliases": ["cortisol", "adrenal hormones"], "result": "Normal."},
+      {"id": "x019", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "47 mm/hr."},
+      {"id": "x020", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "26 U/L."},
+      {"id": "x021", "kind": "test", "name": "viral serology", "aliases": ["EBV serology", "Epstein-Barr virus", "CMV serology", "cytomegalovirus", "hepatitis serology", "viral hepatitis panel"], "result": "Epstein–Barr virus, cytomegalovirus and hepatitis virus serologies negative."},
+      {"id": "x022", "kind": "test", "name": "abdominal ultrasound", "aliases": ["abdominal ultrasonography", "abdominal US", "liver ultrasound"], "result": "Hepatomegaly, mild splenomegaly, and small pericardial effusion without biliary dilatation."},
+      {"id": "x023", "kind": "test", "name": "abdominal CT", "aliases": ["CT abdomen"], "result": "Hepatomegaly, mild splenomegaly, and small pericardial effusion without biliary dilatation."},
+      {"id": "x024", "kind": "test", "name": "CT of the thorax", "aliases": ["chest CT", "CT chest"], "result": "Normal."},
+      {"id": "x025", "kind": "test", "name": "CT of the brain", "aliases": ["head CT", "CT head", "brain CT"], "result": "Normal."},
+      {"id": "x026", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "cardiac ultrasound"], "result": "Mild pericardial effusion without cardiac dysfunction."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-04208",
+    "diagnosis": "Brucellosis",
+    "aliases": ["Brucella infection", "Malta fever", "undulant fever", "brucellar hepatitis", "Brucella melitensis infection"],
+    "reasoning": "1. Central nervous system disorders — “CT scan of thorax and brain revealed no abnormality.” 2. Pulmonary tuberculosis — “CT scan of thorax and brain revealed no abnormality.” 3. Endocrine diseases — “Serum pituitary, thyroid, and adrenal function tests were in normal ranges.” 4. Epstein–Barr virus infection — “Serologic tests for Epstein-Barr virus … were negative.” 5. Cytomegalovirus infection — “Serologic tests for … cytomegalovirus … were negative.” 6. Hepatitis virus infection — “Serologic tests for … hepatitis viruses were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-04208",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"]
+    },
+    "quotes": {
+      "f001": "nocturnal fever", "f003": "right upper–quadrant abdominal pain", "f004": "icterus",
+      "f005": "two weeks of nocturnal fever, arthralgia, right upper–quadrant abdominal pain, and icterus",
+      "f007": "consumes nonpasteurized cheese", "f008": "has no history of drug use"
+    },
+    "flags": {
+      "f004": ["Icterus is visible to the patient; the source does not say whether skin or eyes, so the fact says 'turned yellow'."],
+      "f008": ["'No history of drug use' may mean recreational drugs or medicines (relevant to drug-induced liver injury); kept as a habit with the source's wording."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "temperature was 38.5°C"},
+      "x002": {"sentences": ["s003"], "source_text": "blood pressure 70/45 mm Hg"},
+      "x003": {"sentences": ["s003"], "source_text": "pulse 70 beats/min"},
+      "x004": {"sentences": ["s003"], "source_text": "respirations 18 breaths/min"},
+      "x005": {"sentences": ["s003"], "source_text": "oxygen saturation 96% on room air"},
+      "x006": {"sentences": ["s004"], "source_text": "She was euvolemic"},
+      "x007": {"sentences": ["s001"], "source_text": "icterus"},
+      "x008": {"sentences": ["s004"], "source_text": "had a palpable liver edge 5 cm below the costal margin, diffuse right upper–quadrant tenderness, and marginal splenomegaly"},
+      "x009": {"sentences": ["s005"], "source_text": "The remainder of the examination was normal."},
+      "x010": {"sentences": ["s006"], "source_text": "WBC 5400 cells/mm³, hemoglobin 10.6 g/dL, platelets 216 000/mm³"},
+      "x011": {"sentences": ["s006"], "source_text": "AST 224 U/L, ALT 159 U/L, alkaline phosphatase 2340 U/L, γ-GGT 597 U/L, direct bilirubin 3.1 mg/dL, albumin 3.3 g/dL, globulin 4.3 g/dL"},
+      "x012": {"sentences": ["s006"], "source_text": "uric acid 1.4 mg/dL"},
+      "x013": {"sentences": ["s007"], "source_text": "Serum sodium was 124 mmol/L, potassium 4.4 mmol/L, chloride 95 mmol/L"},
+      "x014": {"sentences": ["s007"], "source_text": "plasma osmolality 262 mmol/kg"},
+      "x015": {"sentences": ["s007"], "source_text": "urine osmolality 274 mmol/kg, and urine sodium 64 mmol/L"},
+      "x016": {"sentences": ["s008"], "source_text": "Serum pituitary, thyroid, and adrenal function tests were normal."},
+      "x017": {"sentences": ["s008"], "source_text": "Serum pituitary, thyroid, and adrenal function tests were normal."},
+      "x018": {"sentences": ["s008"], "source_text": "Serum pituitary, thyroid, and adrenal function tests were normal."},
+      "x019": {"sentences": ["s008"], "source_text": "ESR was 47 mm/hr"},
+      "x020": {"sentences": ["s008"], "source_text": "CRP 26 U/L"},
+      "x021": {"sentences": ["s009"], "source_text": "Serologic tests for Epstein–Barr virus, cytomegalovirus, and hepatitis viruses were negative."},
+      "x022": {"sentences": ["s010"], "source_text": "Abdominal ultrasonography and CT showed hepatomegaly, mild splenomegaly, and small pericardial effusion without biliary dilatation."},
+      "x023": {"sentences": ["s010"], "source_text": "Abdominal ultrasonography and CT showed hepatomegaly, mild splenomegaly, and small pericardial effusion without biliary dilatation."},
+      "x024": {"sentences": ["s011"], "source_text": "CT of the thorax and brain was normal."},
+      "x025": {"sentences": ["s011"], "source_text": "CT of the thorax and brain was normal."},
+      "x026": {"sentences": ["s011"], "source_text": "Echocardiography confirmed mild pericardial effusion without cardiac dysfunction."}
+    },
+    "finding_flags": {
+      "x007": ["Icterus is reported as a presenting feature (s001), not in the examination sentences; kept as an inspection finding because it is a visible sign."],
+      "x022": ["The source gives one combined result for abdominal ultrasound and CT; both records carry it."],
+      "x020": ["CRP is given in U/L, an unusual unit; kept as stated."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Blood pressure 70/45 mmHg with a pulse of 70/min in a euvolemic patient is implausible or unexplained.",
+      "CT of the thorax is reported normal although abdominal imaging and echocardiography show a pericardial effusion.",
+      "CRP is reported in U/L.",
+      "s008 and s011 each hold two sentences."
+    ],
+    "notes": [
+      "Index visit: the presentation with two weeks of nocturnal fever, joint pain, right upper abdominal pain and jaundice (s001); the examination and the full workup (s003–s011) belong to this visit.",
+      "Occupation (sheep farmer) is a social fact whose aliases cover animal contact; the unpasteurized cheese is a separate exposure fact."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+ "case_id": "medqa-cs-004",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I'm having trouble breathing.",
+   "I have this excruciating pain in my chest.",
+   "It started last night, along with the pain.",
+   "It started last night.",
+   "I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree.",
+   "It's some of the worst pain I've ever had. At least 8 out of 10.",
+   "I have a few scratches on my arms from the car accident.",
+   "I have pain in my belly."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm having trouble breathing and I have this excruciating pain in my chest. It started last night, along with the pain. It's some of the worst pain I've ever had, at least 8 out of 10. I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree. I have a few scratches on my arms from the car accident. I also have pain in my belly.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f002",
+    "f005",
+    "f009",
+    "f006",
+    "f016",
+    "f023"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "missing",
+      "quote": "It started last night",
+      "fix": "It started last night, along with the pain."
+     }
+    ],
+    "check_problems": [],
+    "draft": "I'm having trouble breathing and I have this excruciating pain in my chest. It started last night. It's some of the worst pain I've ever had, at least 8 out of 10. I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree. I have a few scratches on my arms from the car accident. I also have pain in my belly.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 8152,
+   "tokens_out": 264,
+   "seconds": 19.64,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,120 @@
+{
+  "case_id": "agentclinic-medqa-ext-048",
+  "source_row": 48,
+  "demographics_text": "69-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient who presents with chronic joint pain.",
+  "chief_complaint": "Pain in the left great toe, hips, and knees",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-048-p001",
+      "field": "History",
+      "text": "The patient presents with pain in his left great toe, hips, and knees that worsens with activity and improves with rest. He reports that the symptoms have progressively gotten worse over the past several years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-048-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Symptoms worsen with activity"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-048-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Symptoms improve with rest"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-048-p004",
+      "field": "Past_Medical_History",
+      "text": "Obesity, type II diabetes mellitus, smoking history, hypertension."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-048-p005",
+      "field": "Social_History",
+      "text": "Drinks roughly ten beers per day. Recent travel history to Bangkok with unprotected sex."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-048-p006",
+      "field": "Review_of_Systems",
+      "text": "Patient did not report any other systemic symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-048-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "78 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-e005",
+      "path": "Physical_Examination_Findings.Lower_Extremity_Examination.Inspection_and_Palpation",
+      "text": "Pain on palpation of the left great toe, hips, and knees. No swelling or redness noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-e006",
+      "path": "Physical_Examination_Findings.Lower_Extremity_Examination.Range_of_Motion",
+      "text": "Crepitus noted in patient's hip during flexion and extension."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-e007",
+      "path": "Physical_Examination_Findings.Lower_Extremity_Examination.Special_Tests",
+      "text": "No other specific tests conducted."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-048-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "7,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "14 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "300,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-i004",
+      "path": "Test_Results.X_Rays.Hip_and_Knee_X_Rays.Findings",
+      "text": "Joint space narrowing with osteophyte formation, suggestive of osteoarthritis."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-i005",
+      "path": "Test_Results.Uric_Acid_Level.Level",
+      "text": "6 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-i006",
+      "path": "Test_Results.STI_Screening.HIV",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-048-i007",
+      "path": "Test_Results.STI_Screening.Syphilis",
+      "text": "Negative"
+    }
+  ],
+  "correct_diagnosis": "Osteoarthritis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

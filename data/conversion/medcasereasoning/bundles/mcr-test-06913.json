@@ -1,0 +1,121 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06913",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 62, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea", "trouble breathing"], "text": "I've been short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "cough with phlegm", "aliases": ["productive cough", "cough", "sputum", "phlegm"], "text": "I have a cough bringing up phlegm.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f003", "item": "when these symptoms started", "aliases": ["how long", "onset"], "text": "The breathlessness and cough came on suddenly 2 days ago, together with the fever, chills, aches and chest pain.", "value": "2 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "fever", "aliases": ["temperature"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "chills", "aliases": ["shivering", "rigors"], "text": "I've had chills.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "body aches", "aliases": ["aching all over", "myalgia", "muscle aches"], "text": "I ache all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "chest pain on breathing", "aliases": ["pleuritic chest pain", "chest pain", "pain when breathing in"], "text": "I have chest pain that gets worse when I breathe in.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f008", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I've never smoked.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f009", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "high blood pressure", "aliases": ["hypertension", "HTN"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "acid reflux", "aliases": ["GERD", "gastroesophageal reflux disease", "heartburn", "reflux"], "text": "I have gastroesophageal reflux disease.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "positional vertigo", "aliases": ["BPPV", "benign paroxysmal positional vertigo", "vertigo", "dizziness"], "text": "I have benign paroxysmal positional vertigo.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "asthma", "aliases": ["wheezing illness"], "text": "I have asthma.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "osteoporosis", "aliases": ["thin bones", "weak bones"], "text": "I have osteoporosis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "repeated pneumonia", "aliases": ["recurrent pneumonia", "pneumonia", "chest infections", "lung infections", "hospital admissions"], "text": "Since childhood I've been admitted to hospital many times for pneumonia that keeps coming back.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f016", "item": "repeated pneumonia: germs found", "parent": "f015", "attribute": "other", "aliases": ["Nocardia", "Moraxella", "organisms"], "text": "Some of those infections were with Nocardia and Moraxella.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f017", "item": "Mycobacterium avium-intracellulare infection", "aliases": ["MAI", "MAC", "atypical mycobacteria", "nontuberculous mycobacteria", "NTM"], "text": "In the past five years I also had one episode of Mycobacterium avium-intracellulare infection.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f018", "item": "tuberculosis", "aliases": ["TB", "pulmonary tuberculosis"], "text": "I've never had pulmonary tuberculosis.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f019", "item": "contact with tuberculosis", "aliases": ["TB contacts", "TB exposure"], "text": "I don't know of any contact with people who had tuberculosis.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f020", "item": "father's health", "aliases": ["father", "emphysema in the family", "lung disease in the family", "COPD in the family"], "text": "My father had emphysema.", "polarity": "present", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06913",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "38.1 °C"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "112/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "112/56 mm Hg"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "18/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "91% on room air"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "respiratory distress", "work of breathing"], "result": "Mild respiratory distress."},
+      {"id": "x007", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["chest auscultation", "lung examination", "breath sounds", "wheezes"], "result": "Expiratory wheezes."},
+      {"id": "x008", "kind": "exam", "system": "general", "name": "rest of the physical examination", "aliases": ["physical examination", "heart examination", "abdominal examination", "general examination"], "result": "Unremarkable."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "differential", "eosinophils"], "result": "White-cell count 13,500/µl with immature granulocytosis; no eosinophilia."},
+      {"id": "x010", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "electrolytes", "renal function", "kidney function", "glucose"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "respiratory viral PCR panel", "aliases": ["viral PCR", "respiratory virus panel", "viral swab"], "result": "Negative."},
+      {"id": "x012", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative."},
+      {"id": "x013", "kind": "test", "name": "urine culture", "aliases": ["urine cultures"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Hyperexpansion of the lungs, bronchiectasis in the right suprahilar region and left lung base, and a right-sided aortic arch."},
+      {"id": "x015", "kind": "test", "name": "noncontrast CT of the chest (inspiratory and expiratory)", "aliases": ["CT chest", "chest CT", "HRCT", "expiratory CT", "inspiratory-expiratory CT"], "result": "Inspiratory images: hyperinflation of both lungs and multiple ballooning cystic bronchiectasis distal to the third-generation bronchi bilaterally; coronal minimal-intensity-projection images confirm cystic bronchiectasis in the fourth- to sixth-order bronchi in the right upper and left lower lobes, with calcified hilar lymph nodes and a right-sided aortic arch. End-expiratory images: collapse of these bronchiectatic airways, also on expiratory coronal images. Oblique volume-rendered reconstruction: cystic bronchiectasis in the left lower lobe."},
+      {"id": "x016", "kind": "test", "name": "pulmonary function tests", "aliases": ["PFTs", "spirometry", "lung function tests", "bronchodilator reversibility"], "result": "Obstructive pattern with progression to fixed airway obstruction; no reversibility after bronchodilator administration."},
+      {"id": "x017", "kind": "test", "name": "quantitative immunoglobulins", "aliases": ["immunoglobulins", "IgG", "IgA", "IgM", "IgE", "immunoglobulin levels"], "result": "IgG, IgA, IgM and IgE within normal limits."},
+      {"id": "x018", "kind": "test", "name": "serum alpha-1 antitrypsin", "aliases": ["alpha-1 antitrypsin", "A1AT", "AAT level"], "result": "Within normal limits."},
+      {"id": "x019", "kind": "test", "name": "sweat chloride test", "aliases": ["sweat test", "sweat chloride"], "result": "Within normal limits."},
+      {"id": "x020", "kind": "test", "name": "sputum acid-fast bacilli smear", "aliases": ["sputum AFB", "AFB smear", "TB smear"], "result": "Negative."},
+      {"id": "x021", "kind": "test", "name": "sputum fungal cultures", "aliases": ["sputum fungal culture", "fungal culture"], "result": "Negative."},
+      {"id": "x022", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibody", "rheumatoid factor", "RF"], "result": "Antinuclear antibody negative; rheumatoid factor negative."},
+      {"id": "x023", "kind": "test", "name": "Aspergillus-specific immunoglobulins", "aliases": ["Aspergillus IgE", "Aspergillus IgG", "Aspergillus serology", "Aspergillus antibodies"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06913",
+    "diagnosis": "Williams-Campbell syndrome",
+    "aliases": ["Williams–Campbell syndrome", "Williams Campbell syndrome", "congenital bronchial cartilage deficiency", "congenital deficiency of bronchial cartilage"],
+    "reasoning": "1. Cystic fibrosis was excluded by a normal sweat chloride test — “The sweat chloride test was negative.” 2. Hypogammaglobulinemia and other immunodeficiencies were excluded by normal quantitative immunoglobulin levels — “quantification of serum IgG, IgA, IgE and IgM levels, which were normal.” 3. Allergic bronchopulmonary aspergillosis was excluded by normal Aspergillus‐specific immunoglobulins — “Anti Aspergillus immunoglobulins were within the normal range.” 4. Tuberculosis and nontuberculous mycobacterial infection were excluded by negative sputum acid-fast bacilli smear and culture and absence of risk factors — “the sputum sample for acid-fast bacilli was negative.” 5. Fungal pulmonary infection was excluded by negative sputum fungal cultures — “sputum sample sent for fungal cultures did not report any growth.” 6. Rheumatic causes of bronchiectasis were excluded by negative serologies — “Anti-nuclear antibody and serum rheumatoid factors were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06913",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s002"], "f009": ["s002"], "f010": ["s003"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s003"], "f016": ["s003"], "f017": ["s003"], "f018": ["s004"],
+      "f019": ["s004"], "f020": ["s004"]
+    },
+    "quotes": {
+      "f002": "productive cough", "f003": "a two-day history of acute onset shortness of breath and productive cough",
+      "f006": "generalized body aches", "f007": "pleuritic chest pain", "f008": "She is a lifetime non-smoker", "f009": "no alcohol use",
+      "f015": "multiple hospital admissions for recurrent pneumonia since childhood", "f016": "including infections with Nocardia and Moraxella",
+      "f017": "one episode of Mycobacterium avium‐intracellulare in the past five years", "f018": "no history of pulmonary tuberculosis",
+      "f019": "known tuberculosis contacts", "f020": "her father had emphysema"
+    },
+    "flags": {
+      "f003": ["The 2-day history and 'acute onset' are stated for the breathlessness and cough; the associated symptoms are attached to the same 2-day history."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "her temperature was 38.1 °C"},
+      "x002": {"sentences": ["s005"], "source_text": "pulse 112 beats/min"},
+      "x003": {"sentences": ["s005"], "source_text": "blood pressure 112/56 mm Hg"},
+      "x004": {"sentences": ["s005"], "source_text": "respiratory rate 18 breaths/min"},
+      "x005": {"sentences": ["s005"], "source_text": "oxygen saturation 91% on room air"},
+      "x006": {"sentences": ["s006"], "source_text": "She was in mild respiratory distress"},
+      "x007": {"sentences": ["s006"], "source_text": "with expiratory wheezes"},
+      "x008": {"sentences": ["s006"], "source_text": "examination of other systems was unremarkable"},
+      "x009": {"sentences": ["s007"], "source_text": "a white-cell count of 13,500/µl with immature granulocytosis and no eosinophilia"},
+      "x010": {"sentences": ["s007"], "source_text": "the basic metabolic panel was normal"},
+      "x011": {"sentences": ["s007"], "source_text": "A respiratory viral PCR panel and blood and urine cultures were negative."},
+      "x012": {"sentences": ["s007"], "source_text": "A respiratory viral PCR panel and blood and urine cultures were negative."},
+      "x013": {"sentences": ["s007"], "source_text": "A respiratory viral PCR panel and blood and urine cultures were negative."},
+      "x014": {"sentences": ["s008"], "source_text": "Chest radiographs demonstrated hyperexpansion of the lungs, bronchiectasis in the right suprahilar region and left lung base, and a right-sided aortic arch."},
+      "x015": {"sentences": ["s009", "s010", "s011", "s012"], "source_text": "An inspiratory noncontrast CT scan of the chest showed hyperinflation of both lungs and multiple ballooning cystic bronchiectasis distal to the third-generation bronchi bilaterally. / End-expiratory CT images revealed collapse of these bronchiectatic airways. / Coronal minimal-intensity-projection images in inspiration confirmed cystic bronchiectasis in the fourth- to sixth-order bronchi in the right upper and left lower lobes, with calcified hilar lymph nodes and a right-sided aortic arch; expiratory coronal images again demonstrated airway collapse. / An oblique volume-rendered reconstruction showed cystic bronchiectasis in the left lower lobe."},
+      "x016": {"sentences": ["s013"], "source_text": "Pulmonary-function testing revealed an obstructive pattern with progression to fixed airway obstruction and no reversibility after bronchodilator administration."},
+      "x017": {"sentences": ["s014"], "source_text": "Quantitative immunoglobulins (IgG, IgA, IgM, IgE) / were all within normal limits"},
+      "x018": {"sentences": ["s014"], "source_text": "serum α-1 antitrypsin levels / were all within normal limits"},
+      "x019": {"sentences": ["s014"], "source_text": "sweat chloride were all within normal limits"},
+      "x020": {"sentences": ["s015"], "source_text": "Sputum acid-fast bacilli smear and fungal cultures were negative."},
+      "x021": {"sentences": ["s015"], "source_text": "Sputum acid-fast bacilli smear and fungal cultures were negative."},
+      "x022": {"sentences": ["s016"], "source_text": "Anti–nuclear antibody, rheumatoid factor / were negative"},
+      "x023": {"sentences": ["s016"], "source_text": "specific immunoglobulins were negative"}
+    },
+    "finding_flags": {
+      "x015": ["One CT study (inspiratory and end-expiratory acquisitions with reconstructions) reported over four sentences; kept as one record."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The pulmonary function result says 'progression to fixed airway obstruction', implying earlier tests that the prompt does not give."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with 2 days of acute shortness of breath and productive cough with fever (s001–s007), with the imaging and the bronchiectasis workup (s008–s016).",
+      "Mild respiratory distress and wheezes are examination findings only; the prompt does not report the patient noticing wheeze."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

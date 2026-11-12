@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-114", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 20, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "abdominal cramps", "aliases": ["stomach cramps", "belly pain", "abdominal pain"], "text": "I have cramps in my stomach.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "nausea", "aliases": ["feeling sick"], "text": "I feel nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "vomiting", "aliases": ["throwing up"], "text": "I've been throwing up.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "diarrhea", "aliases": ["loose stools"], "text": "I've had diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "when the symptoms started", "aliases": ["onset"], "text": "The cramps, nausea, vomiting and diarrhea all started 2 hours ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "recent food eaten", "aliases": ["what you ate", "leftovers", "suspicious food"], "text": "About an hour before it started, I ate some reheated food from the afternoon.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "recent travel", "aliases": ["travel"], "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "sick contacts", "aliases": ["contact with sick people"], "text": "I haven't been around anyone who's sick.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "similar symptoms in people around you", "aliases": ["others with the same symptoms"], "text": "Nobody around me has had symptoms like this.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "previous surgery", "aliases": ["operations", "surgical history"], "text": "I haven't had any significant surgery.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "occupation", "aliases": ["job", "school", "studies"], "text": "I'm a college student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "late nights studying", "aliases": ["sleep", "studying"], "text": "I've been studying for exams late at night.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol abuse", "aliases": ["drinking problem"], "text": "I've never had a problem with alcohol.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f015", "item": "drug abuse", "aliases": ["drug problem", "drugs"], "text": "I've never had a problem with drugs.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f016", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "headache", "aliases": ["headaches"], "text": "I don't have a headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f018", "item": "rash", "aliases": ["skin rash", "spots"], "text": "I haven't had a rash.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f019", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f020", "item": "pain when urinating", "aliases": ["burning when peeing", "dysuria"], "text": "It doesn't burn or hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f021", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-114",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "90/78 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "106/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "15/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "bowel sounds", "abdominal palpation"], "result": "Inspection: no distension or visible rashes. Auscultation: hyperactive bowel sounds. Percussion: tympanic throughout; no dullness. Palpation: diffuse abdominal tenderness without guarding or rebound; no hepatosplenomegaly."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets", "platelet count"], "result": "WBC 9,000/μL; hemoglobin 14 g/dL; platelets 300,000/μL."},
+      {"id": "x007", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes", "basic metabolic panel", "BMP", "sodium", "potassium", "chloride", "bicarbonate"], "result": "Sodium 138 mEq/L; potassium 3.9 mEq/L; chloride 100 mEq/L; bicarbonate 24 mEq/L."},
+      {"id": "x008", "kind": "test", "name": "stool culture", "aliases": ["stool test", "stool microbiology"], "result": "Pending"},
+      {"id": "x009", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "No growth at 24 hours."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-114",
+    "diagnosis": "Bacillus cereus infection",
+    "aliases": ["B. cereus infection", "Bacillus cereus food poisoning", "B. cereus food poisoning", "Bacillus cereus gastroenteritis", "emetic Bacillus cereus food poisoning", "fried rice syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-114",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-114-p001"], "f002": ["agentclinic-medqa-ext-114-p001", "agentclinic-medqa-ext-114-p002"],
+      "f003": ["agentclinic-medqa-ext-114-p001", "agentclinic-medqa-ext-114-p003"], "f004": ["agentclinic-medqa-ext-114-p001", "agentclinic-medqa-ext-114-p004"],
+      "f005": ["agentclinic-medqa-ext-114-p001"], "f006": ["agentclinic-medqa-ext-114-p001"],
+      "f007": ["agentclinic-medqa-ext-114-p001", "agentclinic-medqa-ext-114-p006"], "f008": ["agentclinic-medqa-ext-114-p001"],
+      "f009": ["agentclinic-medqa-ext-114-p001"], "f010": ["agentclinic-medqa-ext-114-p005"], "f011": ["agentclinic-medqa-ext-114-p005"],
+      "f012": ["agentclinic-medqa-ext-114-p006"], "f013": ["agentclinic-medqa-ext-114-p006"], "f014": ["agentclinic-medqa-ext-114-p006"],
+      "f015": ["agentclinic-medqa-ext-114-p006"], "f016": ["agentclinic-medqa-ext-114-p007"], "f017": ["agentclinic-medqa-ext-114-p007"],
+      "f018": ["agentclinic-medqa-ext-114-p007"], "f019": ["agentclinic-medqa-ext-114-p007"], "f020": ["agentclinic-medqa-ext-114-p007"],
+      "f021": ["agentclinic-medqa-ext-114-p007"]
+    },
+    "quotes": {
+      "f005": "abdominal cramps, nausea, vomiting, and diarrhea which started 2 hours ago",
+      "f006": "Reports eating reheated food from the afternoon about an hour before symptoms started",
+      "f009": "similar symptoms in people around him", "f010": "No significant medical or surgical history.", "f011": "No significant medical or surgical history.",
+      "f013": "reports studying for exams late at night", "f014": "No history of alcohol or drug abuse.", "f015": "No history of alcohol or drug abuse.",
+      "f020": "dysuria"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-114-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "90/78 mm Hg", "exam_ids": ["agentclinic-medqa-ext-114-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "106 bpm", "exam_ids": ["agentclinic-medqa-ext-114-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "15 breaths/min", "exam_ids": ["agentclinic-medqa-ext-114-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Inspection: No distension or visible rashes.; Auscultation: Hyperactive bowel sounds.; Percussion: Tympanic throughout, no dullness.; Palpation: Diffuse abdominal tenderness without guarding or rebound. No hepatosplenomegaly.", "exam_ids": ["agentclinic-medqa-ext-114-e005", "agentclinic-medqa-ext-114-e006", "agentclinic-medqa-ext-114-e007", "agentclinic-medqa-ext-114-e008"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "WBC: 9,000 /μL; Hemoglobin: 14 g/dL; Platelets: 300,000 /μL", "exam_ids": ["agentclinic-medqa-ext-114-i001", "agentclinic-medqa-ext-114-i002", "agentclinic-medqa-ext-114-i003"]},
+      "x007": {"source": "Test_Results.Electrolytes.Sodium + Test_Results.Electrolytes.Potassium + Test_Results.Electrolytes.Chloride + Test_Results.Electrolytes.Bicarbonate", "source_text": "Sodium: 138 mEq/L; Potassium: 3.9 mEq/L; Chloride: 100 mEq/L; Bicarbonate: 24 mEq/L", "exam_ids": ["agentclinic-medqa-ext-114-i004", "agentclinic-medqa-ext-114-i005", "agentclinic-medqa-ext-114-i006", "agentclinic-medqa-ext-114-i007"]},
+      "x008": {"source": "Test_Results.Stool_Culture", "source_text": "Pending", "exam_ids": ["agentclinic-medqa-ext-114-i008"]},
+      "x009": {"source": "Test_Results.Blood_Cultures", "source_text": "No growth in 24 hours", "exam_ids": ["agentclinic-medqa-ext-114-i009"]}
+    },
+    "finding_flags": {
+      "x002": ["Blood pressure 90/78 mm Hg gives a narrow pulse pressure; with heart rate 106/min it fits volume loss. Kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The doctor's objective line names 'food poisoning', which narrows the diagnosis (kept only in qc.extras)."
+    ],
+    "notes": [
+      "The 2-hour onset covers all four complaints, so it is a standalone fact (f005); the food eaten an hour earlier is an exposure (f006).",
+      "'No significant medical or surgical history' gives two denials (f010, f011); 'No history of alcohol or drug abuse' gives two (f014, f015); neither says whether he drinks at all.",
+      "'No recent travel' appears in the history and the social history (merged, f007).",
+      "Stool culture stays 'Pending', as in the source."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with symptoms of food poisoning, taking into account the history of presentation and clinical findings."
+    }
+  }
+}

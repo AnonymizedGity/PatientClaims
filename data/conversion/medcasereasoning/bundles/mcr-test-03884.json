@@ -1,0 +1,107 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03884",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 40, "sex": "female"},
+    "opening": ["f001", "f007"],
+    "facts": [
+      {"id": "f001", "item": "watery discharge from the nose", "aliases": ["runny nose", "rhinorrhea", "nasal discharge", "dripping nose"], "text": "I have a watery discharge running from my left nostril.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "watery discharge from the nose: appearance", "parent": "f001", "attribute": "appearance", "text": "It's clear.", "value": "clear", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f003", "item": "watery discharge from the nose: blood in it", "parent": "f001", "attribute": "appearance", "text": "There's no blood in it.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f004", "item": "watery discharge from the nose: bad smell", "parent": "f001", "attribute": "other", "text": "It doesn't smell bad.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f005", "item": "watery discharge from the nose: amount", "parent": "f001", "attribute": "quantity", "text": "It's a moderate amount.", "value": "moderate", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f006", "item": "how long the nose discharge and headaches have lasted", "text": "The discharge and the headaches have been going on for three months.", "value": "3 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "headaches", "aliases": ["headache", "head pain"], "text": "I've been having headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "headaches: character", "parent": "f007", "attribute": "character", "text": "They're dull and throbbing.", "value": ["dull", "throbbing"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f009", "item": "headaches: location", "parent": "f007", "attribute": "location", "text": "They're on the left side.", "value": ["left side"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "headaches: what makes them worse", "parent": "f007", "attribute": "aggravating", "text": "They get worse when I lean forward or strain.", "value": ["leaning forward", "straining"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f011", "item": "fever", "aliases": ["temperature", "feeling feverish"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f012", "item": "blocked nose", "aliases": ["nasal obstruction", "stuffy nose", "congestion"], "text": "My nose isn't blocked.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f013", "item": "sneezing", "aliases": ["sneezes"], "text": "I haven't been sneezing.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f014", "item": "itchy nose", "aliases": ["nasal itching", "itching"], "text": "My nose doesn't itch.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f015", "item": "fullness in the face", "aliases": ["facial fullness", "facial pressure", "sinus pressure"], "text": "My face doesn't feel full or pressured.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f016", "item": "other nose or sinus symptoms", "aliases": ["sinonasal symptoms", "sinus symptoms"], "text": "I don't have any other nose or sinus symptoms.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f017", "item": "allergic rhinitis", "aliases": ["hay fever", "nasal allergy", "allergies"], "text": "Another doctor diagnosed me with allergic rhinitis.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f018", "item": "anti-allergy medicine", "aliases": ["antihistamines", "allergy tablets", "antiallergic medication"], "text": "I was given anti-allergy medicine for it.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f019", "item": "anti-allergy medicine: response", "parent": "f018", "attribute": "treatment_response", "text": "It didn't help.", "polarity": "present", "category": "medication"},
+      {"id": "f020", "item": "sinusitis", "aliases": ["sinus infection"], "text": "I had an episode of sinusitis five years ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f021", "item": "nose injury", "aliases": ["nasal injury", "nasal trauma", "facial injury", "head injury"], "text": "I injured my nose when I was 12.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f022", "item": "cesarean section", "aliases": ["C-section", "caesarean"], "text": "I've had a cesarean section.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f023", "item": "appendectomy", "aliases": ["appendix removed", "appendix operation"], "text": "I've had my appendix removed.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f024", "item": "sterilization", "aliases": ["tubes tied", "tubal ligation"], "text": "I've had a sterilization operation.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f025", "item": "other medical problems", "aliases": ["comorbidities", "other illnesses"], "text": "I don't have any other medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f026", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f027", "item": "alcohol use", "aliases": ["drinking", "alcohol"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f028", "item": "ethnicity", "aliases": ["ancestry", "where I'm from"], "text": "I'm Asian.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03884",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Stable"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Stable"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Stable"},
+      {"id": "x005", "kind": "exam", "system": "ent", "name": "nasal examination", "aliases": ["nose", "anterior rhinoscopy", "nasal septum", "nasal mucosa", "nasal vestibule"], "result": "Normal external contour; reddish vestibule with clear left-sided discharge; no septal deviation, polyps, or mucosal abnormalities. The discharge cannot be sniffed back."},
+      {"id": "x006", "kind": "exam", "system": "ent", "name": "handkerchief test", "aliases": ["handkerchief stiffening test"], "result": "Positive: the discharge does not stiffen a handkerchief."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "cranial nerves", "neurologic examination"], "result": "Unremarkable."},
+      {"id": "x008", "kind": "exam", "system": "general", "name": "other system examinations", "aliases": ["general physical examination", "heart examination", "lung examination", "abdominal examination"], "result": "Unremarkable."},
+      {"id": "x009", "kind": "test", "name": "routine laboratory studies", "aliases": ["blood tests", "complete blood count", "CBC", "hemoglobin", "laboratory tests"], "result": "Mild anemia (hemoglobin 10 g/dL); otherwise normal."},
+      {"id": "x010", "kind": "test", "name": "glucose in the nasal discharge", "aliases": ["nasal discharge glucose", "glucose test of the discharge", "analysis of the discharge"], "result": "Glucose concentration above 30 mg/dL."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03884",
+    "diagnosis": "Cerebrospinal fluid rhinorrhea",
+    "aliases": ["CSF rhinorrhea", "CSF rhinorrhoea", "cerebrospinal fluid rhinorrhoea", "nasal CSF leak", "CSF leak from the nose", "traumatic CSF rhinorrhea", "post-traumatic CSF rhinorrhea"],
+    "reasoning": "1. Allergic rhinitis was ruled out because “Allergic and vasomotor rhinitis were ruled out owing to the absence of characteristic symptoms.” 2. Vasomotor rhinitis was ruled out because “Allergic and vasomotor rhinitis were ruled out owing to the absence of characteristic symptoms.” 3. The finding of a “thin, watery, clear discharge that could not be sniffed back and did not stiffen a handkerchief” supported CSF rhinorrhea."
+  },
+  "qc": {
+    "case_id": "mcr-test-03884",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s002"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s001"], "f010": ["s001"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s003"], "f016": ["s003"], "f017": ["s004"], "f018": ["s004"],
+      "f019": ["s004"], "f020": ["s005"], "f021": ["s005"], "f022": ["s006"], "f023": ["s006"], "f024": ["s006"],
+      "f025": ["s007"], "f026": ["s007"], "f027": ["s007"], "f028": ["s001"]
+    },
+    "quotes": {
+      "f001": "watery discharge from her left nostril", "f004": "nonfoul", "f005": "moderate in amount",
+      "f006": "a 3-month history of watery discharge from her left nostril and dull, throbbing headaches",
+      "f008": "dull, throbbing headaches", "f009": "localized to the left side", "f010": "worsened when leaning forward or straining",
+      "f016": "or other sinonasal symptoms", "f017": "diagnosed elsewhere with allergic rhinitis", "f019": "without improvement",
+      "f020": "an episode of sinusitis 5 years earlier", "f021": "a childhood nasal injury at age 12", "f025": "She had no other comorbidities"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"sentences": ["s008"], "source_text": "she was afebrile"},
+      "x002": {"sentences": ["s008"], "source_text": "stable vital signs"},
+      "x003": {"sentences": ["s008"], "source_text": "stable vital signs"},
+      "x004": {"sentences": ["s008"], "source_text": "stable vital signs"},
+      "x005": {"sentences": ["s009", "s010", "s011"], "source_text": "Nasal inspection revealed a normal external contour and a reddish vestibule with clear left-sided discharge. / The discharge could not be sniffed back / There was no septal deviation, polyps, or mucosal abnormalities."},
+      "x006": {"sentences": ["s010", "s013"], "source_text": "did not stiffen a handkerchief / The handkerchief test was positive."},
+      "x007": {"sentences": ["s012"], "source_text": "Neurologic and other system examinations were unremarkable."},
+      "x008": {"sentences": ["s012"], "source_text": "Neurologic and other system examinations were unremarkable."},
+      "x009": {"sentences": ["s013"], "source_text": "Laboratory studies showed mild anemia (hemoglobin 10 g/dL) but were otherwise normal."},
+      "x010": {"sentences": ["s014"], "source_text": "Analysis of the nasal fluid demonstrated a glucose concentration exceeding 30 mg/dL."}
+    },
+    "finding_flags": {
+      "x009": ["The other laboratory studies are not named."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "A glucose above 30 mg/dL in the nasal discharge all but confirms cerebrospinal fluid (selection leakage: test_result); it does not name the diagnosis. The test is named without 'fluid' to keep the gold words out of the request."}
+    ],
+    "source_issues": [
+      "The handkerchief test is reported twice: as an observation (s010, 'did not stiffen a handkerchief') and as 'positive' among the laboratory results (s013).",
+      "s013 holds two sentences (laboratory studies; handkerchief test)."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with three months of watery left nasal discharge and left-sided headaches (s001); the examination and tests (s008–s014) belong to this visit.",
+      "The earlier diagnosis of allergic rhinitis and the failed anti-allergy treatment (s004) are the patient's history (f017–f019).",
+      "f016 is the blanket denial for 'other sinonasal symptoms'; the specific denials of s003 are separate absent facts.",
+      "Fact texts say 'discharge' rather than 'fluid' to avoid the gold words; 'rhinorrhea' appears only as an alias."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

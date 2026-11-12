@@ -1,0 +1,53 @@
+{
+ "case_id": "medqa-cs-008",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I am here for a diabetes checkup.",
+   "I have tingling and numbness in my feet all the time.",
+   "Well, I am not doing my job the way I used to. I can't get it up, doc.",
+   "I tend to sweat and notice my heart racing occasionally.",
+   "I suffered a heart attack last year.",
+   "I have high cholesterol. It was diagnosed 2 years ago.",
+   "My father passed away from a stroke at 60."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here for a diabetes checkup. I've been having tingling and numbness in my feet all the time, and I tend to sweat and notice my heart racing occasionally. Well, I am not doing my job the way I used to. I can't get it up, doc. I suffered a heart attack last year, and I have high cholesterol, which was diagnosed two years ago. My father passed away from a stroke at 60.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f021",
+    "f038",
+    "f015",
+    "f044",
+    "f043",
+    "f055"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4810,
+   "tokens_out": 105,
+   "seconds": 7.3,
+   "redrafts": 0
+  }
+ }
+}

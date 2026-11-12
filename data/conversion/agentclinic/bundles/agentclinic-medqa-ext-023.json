@@ -1,0 +1,79 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-023", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 63, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "skin lesion on the chest", "aliases": ["spot on the skin", "mole", "skin growth"], "text": "I have a spot on the skin of my chest.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "skin lesion: onset", "parent": "f001", "attribute": "onset", "text": "I first noticed it 2 months ago.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "skin lesion: change in size", "parent": "f001", "attribute": "course", "text": "I think it has gotten bigger.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "skin lesion: pain", "parent": "f001", "attribute": "other", "text": "It isn't painful.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "skin lesion: itching", "parent": "f001", "attribute": "other", "text": "It doesn't itch.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "high cholesterol", "aliases": ["hypercholesterolemia"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "glaucoma", "text": "I have glaucoma.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I smoke 1 pack of cigarettes a day, and I have for the last 40 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "alcohol", "aliases": ["drinking", "beer"], "text": "I drink two to three beers on weekends.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "tiredness", "aliases": ["fatigue", "low energy"], "text": "I haven't been feeling tired.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "change in appetite", "aliases": ["loss of appetite"], "text": "My appetite hasn't changed.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-023",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "75/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["examination of the chest lesion", "skin lesion examination", "inspection of the lesion", "palpation of the lesion"], "result": "Inspection: single, partly elevated lesion on the chest with asymmetry, border irregularity and varied color, diameter larger than 6 mm. Palpation: firm, partly elevated; does not change form on pinching."},
+      {"id": "x006", "kind": "test", "name": "skin biopsy of the chest lesion", "aliases": ["skin biopsy", "excisional biopsy", "histopathology"], "result": "Atypical melanocytes infiltrating the epidermis and dermis, confirming malignant melanoma."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-023",
+    "diagnosis": "Malignant melanoma",
+    "aliases": ["melanoma", "cutaneous melanoma", "cutaneous malignant melanoma", "invasive melanoma", "superficial spreading melanoma", "nodular melanoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-023",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-023-p001"], "f002": ["agentclinic-medqa-ext-023-p001"],
+      "f003": ["agentclinic-medqa-ext-023-p001", "agentclinic-medqa-ext-023-p002"], "f004": ["agentclinic-medqa-ext-023-p001", "agentclinic-medqa-ext-023-p003"],
+      "f005": ["agentclinic-medqa-ext-023-p001", "agentclinic-medqa-ext-023-p004"], "f006": ["agentclinic-medqa-ext-023-p001", "agentclinic-medqa-ext-023-p005"],
+      "f007": ["agentclinic-medqa-ext-023-p001", "agentclinic-medqa-ext-023-p005"], "f008": ["agentclinic-medqa-ext-023-p001", "agentclinic-medqa-ext-023-p005"],
+      "f009": ["agentclinic-medqa-ext-023-p006"], "f010": ["agentclinic-medqa-ext-023-p006"], "f011": ["agentclinic-medqa-ext-023-p007"],
+      "f012": ["agentclinic-medqa-ext-023-p007"], "f013": ["agentclinic-medqa-ext-023-p007"], "f014": ["agentclinic-medqa-ext-023-p007"]
+    },
+    "quotes": {
+      "f002": "noticing a skin lesion on his chest 2 months ago", "f003": "which he believes has increased in size",
+      "f004": "denies any associated pain", "f005": "or itching", "f009": "Smokes 1 pack of cigarettes daily for the last 40 years",
+      "f010": "drinks two to three beers on weekends", "f011": "Denies recent weight loss", "f014": "changes in appetite"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-023-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-023-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "75 bpm", "exam_ids": ["agentclinic-medqa-ext-023-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-023-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "A single, partly elevated lesion located on the chest. The lesion exhibits asymmetry, border irregularity, and varied color with diameter larger than 6mm. + The lesion is firm on palpation with a partly elevated nature, and it does not change form on pinching.", "exam_ids": ["agentclinic-medqa-ext-023-e005", "agentclinic-medqa-ext-023-e006"]},
+      "x006": {"source": "Test_Results.Skin_Biopsy.Histopathology_Findings", "source_text": "Atypical melanocytes that infiltrate the epidermis and dermis, confirming the diagnosis of malignant melanoma.", "exam_ids": ["agentclinic-medqa-ext-023-i001"]}
+    },
+    "leakage": [
+      {"id": "x006", "reason": "The skin biopsy result names the diagnosis (malignant melanoma). This is the test's answer; the finding name does not reveal it."}
+    ],
+    "source_issues": [
+      "Diagnosis text is visible in Test_Results (pool flag visible_gold_alias_partitions = test_results): the biopsy names malignant melanoma.",
+      "Temperature 36.8°C is given as 98°F (98.2°F by conversion); rounding only."
+    ],
+    "notes": [
+      "Growth, no pain and no itching appear in both the History and the Secondary_Symptoms; each is one child fact of the chest lesion citing both. The patient's uncertainty about the growth ('he believes') is kept ('I think').",
+      "The three past conditions appear in both the History and the Past_Medical_History and are one fact each.",
+      "The skin inspection and palpation form one skin-examination record."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a chest skin lesion."
+    }
+  }
+}

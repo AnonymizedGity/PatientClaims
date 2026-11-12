@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-018", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 54, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "leg sore", "aliases": ["sore on the leg", "leg ulcer", "skin lesion", "skin sore", "wound on the leg"], "text": "I have a painful open sore on my right leg.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "leg sore: duration", "parent": "f001", "attribute": "duration", "text": "It's been there for 1 month.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "leg sore: how it started", "parent": "f001", "attribute": "onset", "text": "It started as a small red spot.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "leg sore: change in size", "parent": "f001", "attribute": "course", "text": "It has gotten bigger since then.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "leg sore: appearance", "parent": "f001", "attribute": "appearance", "text": "The middle of it looks like dead tissue, and the edges are purplish and irregular.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "leg sore: insect bite at the site", "parent": "f001", "attribute": "context", "aliases": ["ant bite"], "text": "An ant bit me at that spot before the sore appeared.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f007", "item": "swelling of the feet", "aliases": ["ankle swelling", "leg swelling", "pedal edema"], "text": "My feet are swollen, and pressing on the swelling leaves a dent.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f008", "item": "bulging veins in the legs", "aliases": ["varicose veins", "swollen veins"], "text": "I have swollen, twisted veins in both of my lower legs.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f009", "item": "Crohn disease", "aliases": ["Crohn's disease", "Crohn's"], "text": "I have Crohn's disease.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "anterior uveitis", "aliases": ["uveitis", "eye inflammation"], "text": "I had anterior uveitis, an inflammation in my eye.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "corticosteroids", "aliases": ["steroids"], "text": "I was treated with corticosteroids for the uveitis 8 months ago.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f014", "item": "insulin", "text": "I take insulin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "mesalamine", "aliases": ["mesalazine"], "text": "I take mesalamine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "enalapril", "text": "I take enalapril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "aspirin", "text": "I take aspirin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f018", "item": "recent travel", "aliases": ["trips"], "text": "I got back from a visit to Wisconsin 2 months ago.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f019", "item": "other symptoms", "aliases": ["general symptoms"], "text": "I don't have any other symptoms elsewhere in my body.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-018",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.6°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "98/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "126/88 mm Hg"},
+      {"id": "x004", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["examination of the leg ulcer", "examination of the lesion", "wound examination", "inspection of the lesion"], "result": "4-cm tender ulcerative lesion on the anterior right leg with a central necrotic base and purplish irregular borders; tender to palpation."},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "lower limb examination", "aliases": ["leg examination", "leg swelling", "pedal edema", "varicose veins", "leg veins"], "result": "Pitting pedal edema; dilated tortuous veins in both lower legs."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "peripheral pulses", "aliases": ["femoral pulses", "pedal pulses", "dorsalis pedis pulse", "leg pulses"], "result": "Femoral and pedal pulses palpable bilaterally."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "hemoglobin", "platelets"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x008", "kind": "test", "name": "random blood glucose", "aliases": ["blood glucose", "blood sugar", "glucose"], "result": "Elevated."},
+      {"id": "x009", "kind": "test", "name": "skin biopsy of the leg lesion", "aliases": ["skin biopsy", "biopsy of the ulcer", "histopathology"], "result": "Neutrophilic infiltration without infection, consistent with pyoderma gangrenosum."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-018",
+    "diagnosis": "Pyoderma gangrenosum",
+    "aliases": ["PG", "ulcerative pyoderma gangrenosum", "classic pyoderma gangrenosum"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-018",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-018-p001"], "f002": ["agentclinic-medqa-ext-018-p001"], "f003": ["agentclinic-medqa-ext-018-p001"],
+      "f004": ["agentclinic-medqa-ext-018-p001"], "f005": ["agentclinic-medqa-ext-018-p002"],
+      "f006": ["agentclinic-medqa-ext-018-p001", "agentclinic-medqa-ext-018-p003"], "f007": ["agentclinic-medqa-ext-018-p004"],
+      "f008": ["agentclinic-medqa-ext-018-p005"], "f009": ["agentclinic-medqa-ext-018-p001", "agentclinic-medqa-ext-018-p006"],
+      "f010": ["agentclinic-medqa-ext-018-p001", "agentclinic-medqa-ext-018-p006"], "f011": ["agentclinic-medqa-ext-018-p001", "agentclinic-medqa-ext-018-p006"],
+      "f012": ["agentclinic-medqa-ext-018-p001", "agentclinic-medqa-ext-018-p006"], "f013": ["agentclinic-medqa-ext-018-p001", "agentclinic-medqa-ext-018-p006"],
+      "f014": ["agentclinic-medqa-ext-018-p009"], "f015": ["agentclinic-medqa-ext-018-p009"], "f016": ["agentclinic-medqa-ext-018-p009"],
+      "f017": ["agentclinic-medqa-ext-018-p009"], "f018": ["agentclinic-medqa-ext-018-p007"], "f019": ["agentclinic-medqa-ext-018-p008"]
+    },
+    "quotes": {
+      "f001": "Painful ulcerative lesion on the right leg", "f002": "present for 1 month", "f003": "began as a small red spot",
+      "f004": "has increased in size", "f005": "central necrotic base and purplish irregular borders",
+      "f006": "She recalls an ant bite at the site before the lesion developed", "f007": "Pitting pedal edema of the lower extremities",
+      "f008": "Dilated tortuous veins in both lower legs", "f013": "treated with corticosteroids 8 months ago",
+      "f018": "Recently returned from a visit to Wisconsin 2 months ago", "f019": "No additional systemic symptoms mentioned."
+    },
+    "flags": {
+      "f005": ["'Central necrotic base and purplish irregular borders' is listed as a secondary symptom; kept because the patient can see her own lesion, worded in lay terms. The same description is in the skin exam (x004)."],
+      "f007": ["'Pitting' edema is worded as what the patient notices (pressing leaves a dent). The source says 'pedal edema of the lower extremities' without a side; the exam does not give one either."],
+      "f019": ["From the ROS line 'No additional systemic symptoms mentioned.', read as a negative review of systems (CONVERSION.md treats 'No ... provided' meta phrases as denials when they carry that meaning)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.6°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-018-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Pulse", "source_text": "98/min", "exam_ids": ["agentclinic-medqa-ext-018-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "126/88 mm Hg", "exam_ids": ["agentclinic-medqa-ext-018-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "A 4-cm tender ulcerative lesion on the anterior right leg with a central necrotic base and purplish irregular borders. Pitting pedal edema is noted along with dilated tortuous veins in both lower legs. + Tenderness over the lesion. Femoral and pedal pulses palpable bilaterally.", "exam_ids": ["agentclinic-medqa-ext-018-e004", "agentclinic-medqa-ext-018-e005"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection", "source_text": "A 4-cm tender ulcerative lesion on the anterior right leg with a central necrotic base and purplish irregular borders. Pitting pedal edema is noted along with dilated tortuous veins in both lower legs.", "exam_ids": ["agentclinic-medqa-ext-018-e004"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Tenderness over the lesion. Femoral and pedal pulses palpable bilaterally.", "exam_ids": ["agentclinic-medqa-ext-018-e005"]},
+      "x007": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal + Normal + Normal", "exam_ids": ["agentclinic-medqa-ext-018-i001", "agentclinic-medqa-ext-018-i002", "agentclinic-medqa-ext-018-i003"]},
+      "x008": {"source": "Test_Results.Blood_Glucose_Level.Random", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-018-i004"]},
+      "x009": {"source": "Test_Results.Skin_Biopsy.Histopathology.Findings", "source_text": "Neutrophilic infiltration without infection, consistent with pyoderma gangrenosum.", "exam_ids": ["agentclinic-medqa-ext-018-i005"]}
+    },
+    "finding_flags": {
+      "x001": ["37.6°C is 99.7°F, not 98°F; the source's two units disagree. Kept as written (see source_issues)."],
+      "x004": ["The two skin-exam leaves are split by what a doctor requests: the lesion itself (x004), leg edema and veins (x005), and peripheral pulses (x006)."]
+    },
+    "leakage": [
+      {"id": "x009", "reason": "The skin biopsy result names the diagnosis (pyoderma gangrenosum). This is the test's answer; the finding name does not reveal it."}
+    ],
+    "source_issues": [
+      "Temperature '37.6°C (98°F)': the Celsius and Fahrenheit values disagree (37.6°C = 99.7°F).",
+      "Diagnosis text is visible in Test_Results (pool flag visible_gold_alias_partitions = test_results): the skin biopsy names pyoderma gangrenosum."
+    ],
+    "notes": [
+      "The ant bite (History and p003) is one context child of the leg sore. The lesion's appearance, its start as a small red spot, its growth and its 1-month duration are children of f001.",
+      "The past medical history appears in both History and Past_Medical_History; each condition is one fact citing both. The uveitis episode and its corticosteroid treatment 8 months ago are a medical-history fact and a past-medication fact.",
+      "The ROS line 'No additional systemic symptoms mentioned.' is kept as a denial of other symptoms (f019)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a painful, ulcerative skin lesion on her leg."
+    }
+  }
+}

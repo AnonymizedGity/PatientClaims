@@ -1,0 +1,123 @@
+{
+  "case_id": "agentclinic-medqa-ext-124",
+  "source_row": 124,
+  "demographics_text": "26-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with persistent epigastric pain.",
+  "chief_complaint": "Persistent epigastric pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p001",
+      "field": "History",
+      "text": "The patient presents with complaints of persistent epigastric pain for the past 2 months, worsening a few hours after eating. He mentions that his father had similar symptoms. He denies any significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain worsens a few hours after eating"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No significant past medical history"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Non-smoker"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Does not drink alcohol"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p006",
+      "field": "Past_Medical_History",
+      "text": "Insignificant"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p007",
+      "field": "Social_History",
+      "text": "Non-smoker, does not consume alcohol."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-124-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies nausea, vomiting, diarrhea, constipation, or blood in stool."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.0°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "120/90 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "83/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Mild epigastric tenderness, no guarding or rebound."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-124-i001",
+      "path": "Test_Results.Metabolic_Panel.Serum_Sodium",
+      "text": "136 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-i002",
+      "path": "Test_Results.Metabolic_Panel.Serum_Potassium",
+      "text": "4.2 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-i003",
+      "path": "Test_Results.Metabolic_Panel.Calcium",
+      "text": "13.2 mg/dL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-i004",
+      "path": "Test_Results.Metabolic_Panel.Bicarbonate",
+      "text": "26 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-124-i005",
+      "path": "Test_Results.Upper_Gastrointestinal_Endoscopy.Findings",
+      "text": "Multiple duodenal ulcers"
+    }
+  ],
+  "correct_diagnosis": "MEN1",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

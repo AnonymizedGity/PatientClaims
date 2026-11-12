@@ -1,0 +1,53 @@
+{
+ "case_id": "agentclinic-medqa-ext-019",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I'm bleeding from my vagina.",
+   "It's been going on for the past hour.",
+   "I was having contractions before the bleeding started.",
+   "I have severe pain in my belly.",
+   "I felt the baby moving before all this started, but I'm not sure whether it has moved since.",
+   "I'm 38 weeks pregnant. This is my second pregnancy, and I've given birth once before.",
+   "My first baby was born by C-section."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm 38 weeks pregnant, and this is my second pregnancy, though my first baby was born by C-section. I'm bleeding from my vagina, and it's been going on for the past hour. I have severe pain in my belly. I was having contractions before the bleeding started. I felt the baby moving before all this started, but I'm not sure whether it has moved since.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f003",
+    "f009",
+    "f006",
+    "f007"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3478,
+   "tokens_out": 94,
+   "seconds": 9.24,
+   "redrafts": 0
+  }
+ }
+}

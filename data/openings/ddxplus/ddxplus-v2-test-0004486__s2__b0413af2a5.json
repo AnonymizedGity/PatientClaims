@@ -1,0 +1,53 @@
+{
+ "case_id": "ddxplus-v2-test-0004486",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "I've been sweating a lot more than usual.",
+   "I'm quite short of breath; it's hard to breathe.",
+   "I have bouts of choking or shortness of breath that wake me up at night.",
+   "Since this started I've had new tiredness, a vague general discomfort, aching muscles or a change in how well I feel overall.",
+   "I have high blood pressure or take medicine for it.",
+   "I've had a heart attack or I have angina.",
+   "I have heart failure."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been sweating a lot more than usual. I'm quite short of breath; it's hard to breathe, and I have bouts of choking or shortness of breath that wake me up at night. Since this started I've had new tiredness, a vague general discomfort, aching muscles or a change in how well I feel overall. I have high blood pressure or take medicine for it, and I've had a heart attack or I have angina. I have heart failure.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f010",
+    "f011",
+    "f012",
+    "f015",
+    "f016",
+    "f017"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8820,
+   "tokens_out": 110,
+   "seconds": 22.14,
+   "redrafts": 0
+  }
+ }
+}

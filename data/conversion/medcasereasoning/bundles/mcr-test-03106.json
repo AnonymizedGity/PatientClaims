@@ -1,0 +1,120 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03106",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 65, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "jaw pain", "aliases": ["pain in the lower jaw", "pain under the jaw", "submandibular pain", "jaw ache"], "text": "I get pain in my lower jaw and under my jaw.", "polarity": "present", "category": "symptom", "system": "ent", "time": "recurrent"},
+      {"id": "f002", "item": "jaw pain: onset", "parent": "f001", "attribute": "onset", "text": "It started three months ago.", "value": "3 months ago", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f003", "item": "jaw pain: when it happens", "parent": "f001", "attribute": "timing", "text": "It only happens when I eat.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f004", "item": "jaw pain: what brings it on", "parent": "f001", "attribute": "aggravating", "text": "It's set off by the first bite of each meal.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f005", "item": "jaw pain: what makes it better", "parent": "f001", "attribute": "relieving", "text": "It eases off as I keep eating, and it's gone within minutes after the meal.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f006", "item": "jaw pain: how long each episode lasts", "parent": "f001", "attribute": "duration", "text": "Each episode lasts less than two minutes.", "value": "less than 2 minutes", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f007", "item": "jaw pain: character", "parent": "f001", "attribute": "character", "text": "It's a sudden, sharp, stabbing pain.", "value": ["sudden", "sharp", "stabbing"], "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f008", "item": "jaw pain: severity", "parent": "f001", "attribute": "severity", "text": "It's about 8 out of 10.", "value": 8, "scale": [0, 10], "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f009", "item": "jaw pain: location", "parent": "f001", "attribute": "location", "text": "It's over my lower jaw and the glands under my jaw, worse on the right side.", "value": ["lower jaw", "submandibular glands", "worse on the right"], "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f010", "item": "jaw pain: depends on the time of day", "parent": "f001", "attribute": "timing", "text": "It doesn't depend on the time of day.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f011", "item": "jaw pain: changes with body position", "parent": "f001", "attribute": "aggravating", "text": "My position makes no difference to it.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f012", "item": "hoarseness", "aliases": ["hoarse voice", "voice changes"], "text": "My voice hasn't been hoarse.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f013", "item": "sweating on the face", "aliases": ["facial sweating", "gustatory sweating", "sweating when eating"], "text": "My face doesn't sweat when the pain comes.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f014", "item": "runny nose", "aliases": ["rhinorrhea", "nasal discharge"], "text": "My nose doesn't run with it.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f015", "item": "pain on swallowing", "aliases": ["odynophagia", "painful swallowing"], "text": "It doesn't hurt to swallow.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f016", "item": "trouble swallowing", "aliases": ["dysphagia", "difficulty swallowing"], "text": "I have no trouble swallowing.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f017", "item": "previous surgery", "aliases": ["operations", "surgery"], "text": "I've never had surgery.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f018", "item": "injury or trauma", "aliases": ["trauma", "injury", "accident"], "text": "I haven't had any injury.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f019", "item": "chronic medical problems", "aliases": ["medical conditions", "underlying disease", "past medical history"], "text": "I don't have any medical conditions.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f020", "item": "regular medications", "aliases": ["medicines", "tablets", "drugs"], "text": "I don't take any medicines.", "polarity": "absent", "category": "medication"},
+      {"id": "f021", "item": "similar symptoms in the family", "aliases": ["family history", "relatives with the same problem"], "text": "Nobody in my family has had symptoms like this.", "polarity": "absent", "category": "family_history"},
+      {"id": "f022", "item": "dentures", "aliases": ["false teeth", "dental plate"], "text": "I wear dentures.", "polarity": "present", "category": "medical_history", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03106",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Normal"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normal"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Normal"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "ent", "name": "head and neck examination", "aliases": ["face", "lymph nodes", "lymphadenopathy", "head examination"], "result": "Dentures in place; no ulcers, deformities, masses, or lymphadenopathy."},
+      {"id": "x006", "kind": "exam", "system": "ent", "name": "mouth and throat examination", "aliases": ["oral examination", "pharynx", "tonsils", "soft palate", "tongue", "oral cavity"], "result": "Pharynx, tonsils, soft palate and tongue normal on inspection and palpation."},
+      {"id": "x007", "kind": "exam", "system": "ent", "name": "parotid gland examination", "aliases": ["parotid glands", "parotid palpation"], "result": "Normal on inspection and palpation."},
+      {"id": "x008", "kind": "exam", "system": "ent", "name": "nasal examination", "aliases": ["nose", "anterior rhinoscopy"], "result": "Normal on inspection and palpation."},
+      {"id": "x009", "kind": "exam", "system": "musculoskeletal", "name": "temporomandibular joint examination", "aliases": ["TMJ", "jaw joint"], "result": "Normal on inspection and palpation."},
+      {"id": "x010", "kind": "exam", "system": "ent", "name": "neck examination", "aliases": ["neck palpation", "neck masses"], "result": "Normal on inspection and palpation."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Within normal limits."},
+      {"id": "x012", "kind": "test", "name": "viral serologies", "aliases": ["viral serology", "viral antibodies"], "result": "Within normal limits."},
+      {"id": "x013", "kind": "test", "name": "fasting blood sugar", "aliases": ["fasting glucose", "blood sugar", "blood glucose"], "result": "Within normal limits."},
+      {"id": "x014", "kind": "test", "name": "thyroid-stimulating hormone", "aliases": ["TSH", "thyroid function"], "result": "Within normal limits."},
+      {"id": "x015", "kind": "test", "name": "inflammatory markers", "aliases": ["inflammation markers", "acute phase reactants"], "result": "Within normal limits."},
+      {"id": "x016", "kind": "test", "name": "rheumatologic markers", "aliases": ["rheumatology screen", "autoimmune markers"], "result": "Within normal limits."},
+      {"id": "x017", "kind": "test", "name": "electrolytes and renal function", "aliases": ["electrolytes", "renal function", "kidney function", "metabolic panel", "creatinine", "urea", "sodium", "potassium"], "result": "Electrolytes and renal function within normal limits."},
+      {"id": "x018", "kind": "test", "name": "CT from the skull base to the neck, with and without contrast", "aliases": ["CT neck", "CT head and neck", "contrast CT", "noncontrast CT"], "result": "No space-occupying lesions, masses, or other pathologic findings."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03106",
+    "diagnosis": "First bite syndrome",
+    "aliases": ["first-bite syndrome", "FBS"],
+    "reasoning": "1. Glossopharyngeal neuralgia was excluded—“Regional tenderness was absent, ruling out glossopharyngeal neuralgia.” 2. Laryngeal and hypopharyngeal disease and Frey syndrome were considered unlikely—“In the absence of hoarseness, dysphagia, and odynophagia, laryngeal and hypopharynx diseases and Frey syndrome were considered unlikely diagnoses.” 3. Salivary-gland tumors and other space-occupying lesions were excluded—“the CT scan…did not reveal any findings suggestive of head and neck space occupying lesion, mass…or any other pathologic findings.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-03106",
+    "fact_sources": {
+      "f001": ["s001", "s002"], "f002": ["s001"], "f003": ["s001"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s003"], "f011": ["s003"], "f012": ["s002"],
+      "f013": ["s002"], "f014": ["s002"], "f015": ["s002"], "f016": ["s002"], "f017": ["s004"], "f018": ["s004"],
+      "f019": ["s004"], "f020": ["s004"], "f021": ["s004"], "f022": ["s006"]
+    },
+    "quotes": {
+      "f002": "3 months of lower-jaw and submandibular pain", "f003": "occurring only with eating",
+      "f004": "triggered by the first bite of each meal", "f005": "subsiding over subsequent bites and resolving minutes after the meal",
+      "f006": "Episodes lasted less than 2 minutes", "f007": "acute, sharp, stabbing pain (8/10)", "f008": "(8/10)",
+      "f009": "over the lower jaw and submandibular glands, more pronounced on the right",
+      "f010": "Symptoms were independent of time of day or position", "f011": "Symptoms were independent of time of day or position",
+      "f013": "facial sweating", "f019": "underlying disease", "f021": "family history of similar symptoms", "f022": "dentures in place"
+    },
+    "flags": {
+      "f007": ["'Acute' in s002 is read as sudden onset of each pain episode."],
+      "f022": ["Taken from the examination (dentures in place); the patient knows he wears dentures."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "Vital signs were normal."},
+      "x002": {"sentences": ["s005"], "source_text": "Vital signs were normal."},
+      "x003": {"sentences": ["s005"], "source_text": "Vital signs were normal."},
+      "x004": {"sentences": ["s005"], "source_text": "Vital signs were normal."},
+      "x005": {"sentences": ["s006"], "source_text": "Head and neck examination revealed dentures in place, no ulcers, deformities, masses, or lymphadenopathy."},
+      "x006": {"sentences": ["s007"], "source_text": "The pharynx, tonsils, soft palate, tongue / were all normal on inspection and palpation"},
+      "x007": {"sentences": ["s007"], "source_text": "parotid glands / were all normal on inspection and palpation"},
+      "x008": {"sentences": ["s007"], "source_text": "nose / were all normal on inspection and palpation"},
+      "x009": {"sentences": ["s007"], "source_text": "temporomandibular joint / were all normal on inspection and palpation"},
+      "x010": {"sentences": ["s007"], "source_text": "and neck were all normal on inspection and palpation"},
+      "x011": {"sentences": ["s008"], "source_text": "complete blood count / were all within normal limits"},
+      "x012": {"sentences": ["s008"], "source_text": "viral serologies / were all within normal limits"},
+      "x013": {"sentences": ["s008"], "source_text": "fasting blood sugar / were all within normal limits"},
+      "x014": {"sentences": ["s008"], "source_text": "thyroid-stimulating hormone / were all within normal limits"},
+      "x015": {"sentences": ["s008"], "source_text": "inflammatory and rheumatologic markers / were all within normal limits"},
+      "x016": {"sentences": ["s008"], "source_text": "inflammatory and rheumatologic markers / were all within normal limits"},
+      "x017": {"sentences": ["s008"], "source_text": "electrolytes, and renal function / were all within normal limits"},
+      "x018": {"sentences": ["s009"], "source_text": "Contrast and noncontrast CT scans from the skull base to the neck showed no space-occupying lesions, masses, or other pathologic findings."}
+    },
+    "finding_flags": {
+      "x001": ["s005 says only 'Vital signs were normal'; each standard parameter is given 'Normal'. Oxygen saturation is not given a record."],
+      "x007": ["The submandibular glands, where the pain is, are not reported on examination; only the parotid glands are."],
+      "x015": ["The individual inflammatory markers are not named."]
+    },
+    "leakage": [
+      {"fact_id": "f004", "reason": "The trigger is described as 'the first bite of each meal', the defining history in the source; it uses the words of the syndrome's name but does not name it."}
+    ],
+    "source_issues": [
+      "Episodes are said to last less than 2 minutes but also to resolve 'minutes after the meal' (s002); both are kept in the patient's words."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with three months of jaw and submandibular pain on eating (s001); all examination, laboratory and CT results belong to this evaluation.",
+      "The associated-symptom denials of s002 (hoarseness, facial sweating, runny nose, painful or difficult swallowing) are separate absent facts.",
+      "f019 is 'chronic medical problems' for 'no underlying disease'; f020 is the denial of medications."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-118",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 23, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "withdrawal from family and friends", "aliases": ["social withdrawal", "isolation", "keeping to myself"], "text": "I've been keeping to myself. I've stopped contacting my family and friends.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "withdrawal from family and friends: course", "parent": "f001", "attribute": "course", "text": "I've become more and more isolated.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "withdrawal from family and friends: duration", "parent": "f001", "attribute": "duration", "text": "It's been happening over the past several months. Before that I was socially active.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f004", "item": "change in personality", "aliases": ["personality change", "acting differently"], "text": "My mother brought me in because she says my personality has changed a lot.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "change in personality: duration", "parent": "f004", "attribute": "duration", "text": "My mother says it's been happening over the past 7 months.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f006", "item": "feeling of being watched", "aliases": ["being watched", "being spied on", "paranoia"], "text": "I'm worried that aliens are watching me.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "thoughts being stolen", "aliases": ["thoughts taken away", "thought withdrawal", "someone taking my thoughts"], "text": "I'm worried that aliens are stealing my thoughts.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f008", "item": "inability to leave the house", "aliases": ["staying at home", "can't go out"], "text": "I haven't been able to leave the house.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f009", "item": "anxiety", "aliases": ["feeling anxious", "nervousness", "worry"], "text": "I've been feeling anxious.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f010", "item": "marijuana use", "aliases": ["cannabis", "weed", "drug use", "recreational drugs"], "text": "I used to smoke marijuana occasionally, but I quit a year ago.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-118",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status examination", "aliases": ["mental status", "MSE", "orientation", "thought process"], "result": "Alert and oriented to person, place and time. Disorganized thinking and paranoia."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Cranial nerves II-XII grossly intact."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor examination", "aliases": ["muscle strength", "muscle tone", "power"], "result": "Normal muscle tone and strength in all extremities."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact to light touch, vibration and proprioception."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Deep tendon reflexes 2+ bilaterally."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Within normal limits."},
+      {"id": "x011", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test"], "result": "Within normal limits."},
+      {"id": "x012", "kind": "test", "name": "toxicology screen", "aliases": ["drug screen", "urine drug screen", "tox screen", "cannabinoids", "blood alcohol"], "result": "Cannabinoids negative; alcohol negative; other substances negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-118",
+    "diagnosis": "Schizophrenia",
+    "aliases": ["paranoid schizophrenia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-118",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-118-p001", "agentclinic-medqa-ext-118-p007"],
+      "f002": ["agentclinic-medqa-ext-118-p001"],
+      "f003": ["agentclinic-medqa-ext-118-p007"],
+      "f004": ["agentclinic-medqa-ext-118-p001", "agentclinic-medqa-ext-118-p004"],
+      "f005": ["agentclinic-medqa-ext-118-p001"],
+      "f006": ["agentclinic-medqa-ext-118-p001", "agentclinic-medqa-ext-118-p002"],
+      "f007": ["agentclinic-medqa-ext-118-p001", "agentclinic-medqa-ext-118-p002"],
+      "f008": ["agentclinic-medqa-ext-118-p003"],
+      "f009": ["agentclinic-medqa-ext-118-p005", "agentclinic-medqa-ext-118-p008"],
+      "f010": ["agentclinic-medqa-ext-118-p006"],
+      "f011": ["agentclinic-medqa-ext-118-p006"],
+      "f012": ["agentclinic-medqa-ext-118-p007"]
+    },
+    "quotes": {
+      "f001": "ceasing contact with family and friends",
+      "f002": "He has become increasingly isolated",
+      "f003": "Previously socially active but has become reclusive over the past several months",
+      "f004": "brought in by his mother due to a significant change in his personality",
+      "f005": "over the past 7 months",
+      "f006": "aliens are watching him",
+      "f007": "stealing his thoughts",
+      "f008": "Inability to leave the house",
+      "f009": "reports anxiety",
+      "f010": "used to smoke marijuana occasionally but quit 1 year ago",
+      "f011": "No significant medical history.",
+      "f012": "Does not drink alcohol."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-118-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-118-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-118-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-118-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "The patient is alert and oriented to person, place, and time. Exhibits disorganized thinking and paranoia.", "exam_ids": ["agentclinic-medqa-ext-118-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Cranial nerves II-XII are grossly intact.", "exam_ids": ["agentclinic-medqa-ext-118-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor", "source_text": "Normal muscle tone and strength in all extremities.", "exam_ids": ["agentclinic-medqa-ext-118-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory", "source_text": "Intact to light touch, vibration, and proprioception.", "exam_ids": ["agentclinic-medqa-ext-118-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Deep tendon reflexes are 2+ bilaterally.", "exam_ids": ["agentclinic-medqa-ext-118-e009"]},
+      "x010": {"source": "Test_Results.Complete_Blood_Count", "source_text": "Within normal limits.", "exam_ids": ["agentclinic-medqa-ext-118-i001"]},
+      "x011": {"source": "Test_Results.Urinalysis", "source_text": "Within normal limits.", "exam_ids": ["agentclinic-medqa-ext-118-i002"]},
+      "x012": {"source": "Test_Results.Toxicology_Screen.Cannabinoids + Test_Results.Toxicology_Screen.Alcohol + Test_Results.Toxicology_Screen.Other_Substances", "source_text": "Negative | Negative | Negative", "exam_ids": ["agentclinic-medqa-ext-118-i003", "agentclinic-medqa-ext-118-i004", "agentclinic-medqa-ext-118-i005"]}
+    },
+    "leakage": [],
+    "source_issues": ["Past_Medical_History carries the substance history (former marijuana use), which is converted as habit_exposure."],
+    "notes": ["Psychotic experiences are written as what the patient believes and is worried about ('aliens are watching me', 'aliens are stealing my thoughts'), split into two facts so each can be asked separately; the labels 'paranoia' and 'thought withdrawal' are only aliases.", "The personality change is collateral history from the mother (brought in by his mother), so it is worded as what the mother says; its 7-month duration is a child fact. The withdrawal's own timeframe ('over the past several months', p007) is kept separately on the withdrawal fact.", "Observer-only signs: 'thought processes are hard to follow' (p008) is already in the mental status exam (disorganized thinking, x005); 'flat affect' (p005, p008) is not in the exam leaves and is moved to qc.extras.acting_notes. Only the reported anxiety becomes a patient fact.", "The three toxicology screen leaves are grouped into one ordered test (toxicology screen).", "Fixes: f005 text rewritten."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with changes in personality and unusual behavior.",
+      "acting_notes": ["Flat affect (source Secondary_Symptoms p005 and Review_of_Systems p008)."]
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "patient": {
+    "case_id": "mcr-test-09048",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 41, "sex": "female"},
+    "opening": ["f001", "f007"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea", "trouble breathing"], "text": "I've been short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: course", "parent": "f001", "attribute": "course", "text": "It has been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "cough", "aliases": ["coughing"], "text": "I've been coughing.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "when the breathlessness and cough started", "text": "Both started six weeks ago.", "value": "6 weeks", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f005", "item": "fainting", "aliases": ["syncope", "passing out", "blacking out", "loss of consciousness"], "text": "I passed out once, during a coughing attack.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "historical"},
+      {"id": "f006", "item": "cough: course", "parent": "f003", "attribute": "course", "aliases": ["coughing attacks", "coughing fits", "paroxysmal cough"], "text": "It kept building up until I had a severe coughing attack.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f007", "item": "swelling of the face and neck", "aliases": ["angioedema", "facial swelling", "puffy face", "neck swelling", "swelling"], "text": "My face and neck are very swollen.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "blood in the whites of the eyes", "aliases": ["red eyes", "bloodshot eyes", "subconjunctival hemorrhage", "bleeding in the eyes"], "text": "There's blood in the whites of both my eyes.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f009", "item": "previous diagnosis of allergic asthma", "aliases": ["asthma", "allergic asthma", "previous diagnosis"], "text": "At first I was told I probably had allergic asthma.", "polarity": "present", "category": "medical_history"},
+      {"id": "f010", "item": "response to the asthma and allergy treatment", "aliases": ["did the treatment help", "treatment response", "previous treatment"], "text": "I was treated with inhalers to open my airways, steroid tablets and antihistamines, and none of it helped.", "polarity": "present", "category": "medication"},
+      {"id": "f011", "item": "recent hospital stay", "aliases": ["hospitalization", "admitted to hospital", "local hospital"], "text": "I spent 14 days in a local hospital before I was sent here.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "smoking", "aliases": ["tobacco", "cigarettes", "smoker"], "text": "I smoked, about 5 pack-years, and I quit when these symptoms started.", "polarity": "present", "category": "habit_exposure", "time": "resolved"},
+      {"id": "f013", "item": "allergies", "aliases": ["allergy", "hay fever", "pet allergy", "dust mite allergy"], "text": "I'm allergic to dust mites, pollen, hay, straw, cats and dogs.", "value": ["dust mites", "pollen", "hay", "straw", "cats", "dogs"], "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "prednisolone", "aliases": ["steroid tablets", "oral steroids", "glucocorticoids"], "text": "I take prednisolone 25 mg a day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "levocetirizine", "aliases": ["antihistamine", "Xyzal"], "text": "I take levocetirizine when I need it.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "budesonide inhaler", "aliases": ["inhaled steroid", "budesonide", "inhaler"], "text": "I use a budesonide inhaler.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "fenoterol/ipratropium inhaler", "aliases": ["fenoterol", "ipratropium bromide", "Berodual", "reliever inhaler", "bronchodilator"], "text": "I use a fenoterol/ipratropium bromide inhaler when I need it.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f018", "item": "dihydrocodeine", "aliases": ["cough medicine", "codeine"], "text": "I take dihydrocodeine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f019", "item": "nicotine patch", "aliases": ["transdermal nicotine", "nicotine replacement"], "text": "I use a nicotine patch.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f020", "item": "thrush in the voice box", "aliases": ["laryngeal thrush", "throat thrush", "yeast infection in the throat", "candida"], "text": "I've been told I have thrush in my voice box.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f021", "item": "antifungal treatment", "aliases": ["antifungal", "thrush treatment"], "text": "I'm using a local antifungal treatment for the thrush.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-09048",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "height", "result": "160 cm"},
+      {"id": "x002", "kind": "vital", "name": "weight", "aliases": ["body weight"], "result": "85 kg"},
+      {"id": "x003", "kind": "exam", "system": "general", "name": "general inspection", "aliases": ["general appearance", "face", "neck", "swelling", "body habitus"], "result": "Obese; significant swelling of the face and neck."},
+      {"id": "x004", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "hives", "urticaria", "rash"], "result": "No urticarial hives."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["eyes", "conjunctivae", "sclera"], "result": "Bilateral subconjunctival hemorrhages."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["chest examination", "lungs", "breath sounds", "respiratory examination"], "result": "Basal rhonchi."},
+      {"id": "x007", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "0.71 mg/dL (normal <0.5)"},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "leukocytes", "lymphocytes", "differential"], "result": "Leukocytosis of 30–40 × 10^9 cells/L with 44% lymphocytes."},
+      {"id": "x009", "kind": "test", "name": "chest X-ray", "aliases": ["chest radiograph", "CXR"], "result": "Unremarkable."},
+      {"id": "x010", "kind": "test", "name": "CT of the head, neck and chest", "aliases": ["CT chest", "CT neck", "CT head", "chest CT"], "result": "Unremarkable except for an enlarged thyroid gland."},
+      {"id": "x011", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "free T4", "thyroid antibodies"], "result": "Euthyroid multinodular goitre; no thyroid antibodies."},
+      {"id": "x012", "kind": "test", "name": "morning cortisol and ACTH", "aliases": ["cortisol", "ACTH", "adrenal function"], "result": "Normal."},
+      {"id": "x013", "kind": "test", "name": "RAST panel", "aliases": ["specific IgE", "allergen-specific IgE", "allergy blood test", "allergy panel"], "result": "Negative for common inhalant and food allergens."},
+      {"id": "x014", "kind": "test", "name": "total IgE", "aliases": ["IgE", "serum IgE"], "result": "310 kU/L (normal <100)"},
+      {"id": "x015", "kind": "test", "name": "lung function tests", "aliases": ["pulmonary function tests", "PFTs", "spirometry"], "result": "Multiple tests: no obstructive ventilatory disease."},
+      {"id": "x016", "kind": "test", "name": "complement C4 and C1 inhibitor", "aliases": ["C4", "C1-INH", "C1 esterase inhibitor", "complement levels"], "result": "C4 normal; C1-INH normal."},
+      {"id": "x017", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "heart ultrasound"], "result": "Unremarkable."},
+      {"id": "x018", "kind": "test", "name": "lymphocyte immunophenotyping", "aliases": ["flow cytometry", "immunophenotyping", "lymphocyte subsets"], "result": "Increased T cells; no clonal population."},
+      {"id": "x019", "kind": "test", "name": "serum protein electrophoresis", "aliases": ["SPEP", "serum electrophoresis"], "result": "No malignancy."},
+      {"id": "x020", "kind": "test", "name": "abdominal ultrasound", "aliases": ["abdominal sonography", "ultrasound abdomen"], "result": "No malignancy."},
+      {"id": "x021", "kind": "test", "name": "CT of the head, neck, chest and abdomen", "aliases": ["CT abdomen", "whole-body CT", "CT chest and abdomen"], "result": "No malignancy."},
+      {"id": "x022", "kind": "test", "name": "repeat chest CT", "aliases": ["follow-up chest CT", "repeat CT chest"], "result": "Peribronchovascular ground-glass opacities in the mediobasal segment of the left lower lobe; minimal tree-in-bud opacities in the left upper lobe.", "time": "13 days later"},
+      {"id": "x023", "kind": "test", "name": "interferon-γ release assay", "aliases": ["IGRA", "QuantiFERON", "TB test", "tuberculosis test"], "result": "Negative for Mycobacterium tuberculosis."},
+      {"id": "x024", "kind": "test", "name": "autoantibody testing", "aliases": ["autoimmune serology", "ANA", "autoantibodies", "ANCA"], "result": "Extensive testing negative."},
+      {"id": "x025", "kind": "test", "name": "oropharyngeal swab cultures", "aliases": ["throat swab", "throat culture", "oropharyngeal swab"], "result": "No new findings."},
+      {"id": "x026", "kind": "test", "name": "pneumococcal urine antigen", "aliases": ["urinary pneumococcal antigen", "Streptococcus pneumoniae urine antigen"], "result": "No new findings."},
+      {"id": "x027", "kind": "test", "name": "respiratory pathogen serology", "aliases": ["respiratory serology", "RSV serology", "coxsackievirus serology", "echovirus serology", "adenovirus serology", "Chlamydia pneumoniae serology", "Legionella serology", "Mycoplasma serology", "atypical pneumonia serology"], "result": "Respiratory syncytial virus, coxsackievirus, echovirus, adenovirus, Chlamydia pneumoniae, Legionella pneumophila and Mycoplasma pneumoniae: negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-09048",
+    "diagnosis": "Pertussis",
+    "aliases": ["whooping cough", "Bordetella pertussis infection", "Bordetella pertussis"],
+    "reasoning": "1. Allergic histamine-mediated angioedema was considered but excluded because “the clinical symptoms as well as the treatment resistance to antihistamines and steroids made allergic, histamine-mediated angioedema unlikely.” 2. ACE-inhibitor–induced angioedema was ruled out since “the patient had never taken ACE-inhibitors, which ruled out ACE-inhibitor induced angioedema.” 3. Hypothyroid myxedema was excluded because “normal thyroid function was not suggestive of myxoedema.” 4. Cushing’s disease was excluded as “cortisol and ACTH levels were within the normal range and thus did not support Cushing’s disease.” 5. Superior vena cava syndrome and right heart failure were ruled out based on imaging and echocardiography: “Superior vena cava syndrome and right heart failure were also ruled out.” 6. Lymphoproliferative disorders were investigated but “no evidence of lymphoma or other malignancies were found.” 7. Autoimmune conditions were considered, but “the combination of the clinical presentation and complement factor and autoantibody testing were not suggestive of an underlying autoimmune disease.” 8. Common respiratory infections were excluded since “serologies for respiratory syncytial virus, coxsackievirus, echovirus, adenovirus, Chlamydia pneumoniae, Legionella pneumophila and Mycoplasma pneumoniae were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-09048",
+    "fact_sources": {
+      "f001": ["s001", "s002"], "f002": ["s002"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s001", "s004"], "f008": ["s004"], "f009": ["s003"], "f010": ["s001", "s003"], "f011": ["s003"], "f012": ["s005"],
+      "f013": ["s005"], "f014": ["s006"], "f015": ["s006"], "f016": ["s006"], "f017": ["s006"], "f018": ["s006"],
+      "f019": ["s006"], "f020": ["s006"], "f021": ["s006"]
+    },
+    "quotes": {
+      "f002": "progressive dyspnea", "f004": "Six weeks earlier", "f005": "a severe coughing attack with syncope",
+      "f006": "culminating in a severe coughing attack", "f007": "significant swelling of the face and neck", "f008": "bilateral subconjunctival hemorrhages",
+      "f009": "presumed allergic asthma", "f010": "inhaled bronchodilators, oral glucocorticoids, and antihistamines without improvement",
+      "f011": "spent 14 days in a local hospital before referral", "f012": "a five pack-year smoking history (quit at symptom onset)",
+      "f013": "allergies to dust mites, pollen, hay, straw, cats, and dogs", "f014": "prednisolone 25 mg daily", "f015": "levocetirizine as needed",
+      "f017": "fenoterol/ipratropium bromide as needed", "f020": "laryngeal thrush"
+    },
+    "flags": {
+      "f002": ["'progressive dyspnea and coughing': 'progressive' is read with the breathlessness; the cough's course is that it culminated in a severe attack (f006)."],
+      "f007": ["The swelling is the 'angioedema' of the referral reason (s001) and the examination (s004); worded as what the patient sees."],
+      "f008": ["Patient-noticeable sign taken from the examination (subconjunctival hemorrhages)."],
+      "f018": ["The reason for dihydrocodeine is not given (probably cough suppression)."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "160 cm"},
+      "x002": {"sentences": ["s004"], "source_text": "85 kg"},
+      "x003": {"sentences": ["s004"], "source_text": "she was obese / with significant swelling of the face and neck"},
+      "x004": {"sentences": ["s004"], "source_text": "there were no urticarial hives"},
+      "x005": {"sentences": ["s004"], "source_text": "bilateral subconjunctival hemorrhages"},
+      "x006": {"sentences": ["s004"], "source_text": "basal rhonchi"},
+      "x007": {"sentences": ["s007"], "source_text": "CRP 0.71 mg/dL (normal <0.5)"},
+      "x008": {"sentences": ["s007"], "source_text": "a leukocytosis of 30–40 ×10^9 cells/L with 44% lymphocytes"},
+      "x009": {"sentences": ["s008"], "source_text": "Chest radiography / were unremarkable"},
+      "x010": {"sentences": ["s008"], "source_text": "CT of the head, neck, and chest were unremarkable except for an enlarged thyroid gland"},
+      "x011": {"sentences": ["s008"], "source_text": "thyroid function tests confirmed a euthyroid multinodular goitre without antibodies"},
+      "x012": {"sentences": ["s009"], "source_text": "Morning cortisol and ACTH levels were normal."},
+      "x013": {"sentences": ["s009"], "source_text": "A RAST panel was negative for common inhalant and food allergens"},
+      "x014": {"sentences": ["s009"], "source_text": "total IgE was elevated at 310 kU/L (normal <100)"},
+      "x015": {"sentences": ["s010"], "source_text": "Multiple lung function tests excluded obstructive ventilatory disease."},
+      "x016": {"sentences": ["s011"], "source_text": "Complement C4 and C1-INH levels were normal."},
+      "x017": {"sentences": ["s011"], "source_text": "Echocardiography was unremarkable."},
+      "x018": {"sentences": ["s012"], "source_text": "immunophenotyping showed increased T cells but no clonal population"},
+      "x019": {"sentences": ["s012"], "source_text": "serum electrophoresis / revealed no malignancy"},
+      "x020": {"sentences": ["s012"], "source_text": "abdominal sonography / revealed no malignancy"},
+      "x021": {"sentences": ["s012"], "source_text": "CT of the head, neck, chest, and abdomen revealed no malignancy"},
+      "x022": {"sentences": ["s013"], "source_text": "Repeat chest CT 13 days later showed peribronchovascular ground-glass opacities in the mediobasal segment of the left lower lobe and minimal tree-in-bud opacities in the left upper lobe."},
+      "x023": {"sentences": ["s014"], "source_text": "An interferon-γ release assay for Mycobacterium tuberculosis was negative."},
+      "x024": {"sentences": ["s015"], "source_text": "Extensive autoantibody testing was negative."},
+      "x025": {"sentences": ["s016"], "source_text": "Oropharyngeal swab cultures / yielded no new findings"},
+      "x026": {"sentences": ["s016"], "source_text": "pneumococcal urine antigen testing yielded no new findings"},
+      "x027": {"sentences": ["s017"], "source_text": "Serologies for respiratory syncytial virus, coxsackievirus, echovirus, adenovirus, Chlamydia pneumoniae, Legionella pneumophila, and Mycoplasma pneumoniae were negative."}
+    },
+    "finding_flags": {
+      "x003": ["The examiner's obesity is from 160 cm and 85 kg; no BMI is given."],
+      "x010": ["s008 and s012 both describe CT of the head, neck and chest; whether s012 is a separate study is unclear, so x021 is kept as the hematology CT that adds the abdomen."],
+      "x022": ["'13 days later' has no stated reference point (probably the first CT)."],
+      "x024": ["The individual autoantibodies tested are not listed."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s013: 'Repeat chest CT 13 days later' does not say what it is later than.",
+      "s008 and s012 may describe the same CT of the head, neck and chest.",
+      "No Bordetella pertussis test (PCR, culture or serology) is reported in the prompt."
+    ],
+    "notes": [
+      "Index visit: the referral visit for therapy-resistant breathlessness and facial swelling after six weeks of illness and 14 days in a local hospital (s001, s004-s006); the earlier illness and treatment (s002, s003) are history, and all tests (s007-s017) are findings from the referral workup.",
+      "s003: the earlier asthma/allergy treatment is one response fact (f010); the drugs she is still taking are listed one per fact from s006.",
+      "s012: 'Because of the marked lymphocytosis, hematology evaluated for lymphoproliferative disease' is clinician reasoning and is not used; the test results in that sentence are findings.",
+      "A doctor requesting a pertussis test gets no result: none is reported."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

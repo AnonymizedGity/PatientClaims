@@ -1,0 +1,109 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-152", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 50, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "cough", "aliases": ["chronic cough"], "text": "I've had a cough that won't go away.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "aching joints", "aliases": ["joint pain", "arthralgia"], "text": "My joints ache.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "aching joints: location", "parent": "f002", "attribute": "location", "value": ["hips", "lower back"], "text": "Mostly in my hips and lower back.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "feeling generally unwell", "aliases": ["malaise"], "text": "I've been feeling generally unwell.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "how long the symptoms have been going on", "text": "All of this has been going on for the past 2 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "health problems before the cough", "aliases": ["previous health"], "text": "Before the cough started, I considered myself in good general health.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "clopamide", "aliases": ["blood pressure medication", "water pill", "diuretic"], "text": "I take clopamide every day for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "multivitamin", "aliases": ["vitamins", "supplements"], "text": "I also take a multivitamin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "recent travel", "aliases": ["trips", "hiking", "travel within the country"], "text": "Four months ago I went on a hiking trip near Phoenix, Arizona.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f013", "item": "travel abroad", "aliases": ["international travel"], "text": "I haven't traveled abroad recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "weight loss", "text": "I haven't lost any significant weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-152",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "38.6°C (101.4°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/82 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "102/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "20/min"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["respiratory examination", "chest examination", "lung auscultation", "breath sounds", "chest percussion", "tactile fremitus"], "result": "Inspection: no obvious distress or cyanosis. Auscultation: mildly reduced breath sounds on the right lower side. Percussion: dullness over the right middle lobe. Palpation: mildly increased fremitus over the right lower chest."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "musculoskeletal examination", "aliases": ["joint examination", "back examination", "hip examination", "spine examination"], "result": "Inspection: no visible joint deformities. Palpation: tenderness in the lower back and hips."},
+      {"id": "x007", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Right-sided consolidation in the lower right lung."},
+      {"id": "x008", "kind": "test", "name": "chest CT", "aliases": ["CT of the chest", "CT thorax"], "result": "Irregular opacity in the right middle lobe measuring 3.8 cm x 3.0 cm; small right-sided pleural effusion; mild hilar adenopathy."},
+      {"id": "x009", "kind": "test", "name": "lung biopsy", "aliases": ["biopsy of the lung lesion", "lung histopathology"], "result": "Necrotic granulomatous inflammation with multinucleated giant cells and spherules with endospores."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "white blood cell count", "WBC", "leukocyte count", "platelet count", "platelets"], "result": "Hemoglobin 12.9 g/dL; leukocyte count 9,300/mm³; platelet count 167,000/mm³."},
+      {"id": "x011", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "43 mm/h"},
+      {"id": "x012", "kind": "test", "name": "periodic acid-Schiff and silver methenamine stains", "aliases": ["PAS stain", "silver stain", "GMS stain", "Gomori methenamine silver stain", "fungal stain"], "result": "Positive."},
+      {"id": "x013", "kind": "test", "name": "acid-fast stain", "aliases": ["AFB stain", "Ziehl-Neelsen stain", "acid-fast bacilli smear"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-152",
+    "diagnosis": "Valley fever",
+    "aliases": ["coccidioidomycosis", "San Joaquin Valley fever", "pulmonary coccidioidomycosis", "Coccidioides infection", "coccidioidal pneumonia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-152",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-152-p001"],
+      "f002": ["agentclinic-medqa-ext-152-p001", "agentclinic-medqa-ext-152-p002"],
+      "f003": ["agentclinic-medqa-ext-152-p001", "agentclinic-medqa-ext-152-p002"],
+      "f004": ["agentclinic-medqa-ext-152-p001", "agentclinic-medqa-ext-152-p003"],
+      "f005": ["agentclinic-medqa-ext-152-p001"], "f006": ["agentclinic-medqa-ext-152-p001"],
+      "f007": ["agentclinic-medqa-ext-152-p001", "agentclinic-medqa-ext-152-p004"],
+      "f008": ["agentclinic-medqa-ext-152-p001", "agentclinic-medqa-ext-152-p004"],
+      "f009": ["agentclinic-medqa-ext-152-p001"],
+      "f010": ["agentclinic-medqa-ext-152-p005"], "f011": ["agentclinic-medqa-ext-152-p005"], "f012": ["agentclinic-medqa-ext-152-p005"],
+      "f013": ["agentclinic-medqa-ext-152-p006"], "f014": ["agentclinic-medqa-ext-152-p006"], "f015": ["agentclinic-medqa-ext-152-p006"]
+    },
+    "quotes": {
+      "f003": "particularly in the hips and lower back", "f005": "for the past 2 months",
+      "f006": "considered himself in general good health prior to the onset of the cough",
+      "f008": "takes clopamide daily", "f009": "along with a multivitamin", "f011": "occasional alcohol consumer",
+      "f012": "hiking trip near Phoenix, Arizona, 4 months ago", "f013": "no recent international travel",
+      "f014": "no significant weight loss"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "38.6°C (101.4°F)", "exam_ids": ["agentclinic-medqa-ext-152-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/82 mmHg", "exam_ids": ["agentclinic-medqa-ext-152-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "102 bpm", "exam_ids": ["agentclinic-medqa-ext-152-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "20 breaths/min", "exam_ids": ["agentclinic-medqa-ext-152-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Auscultation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Palpation", "source_text": "No obvious distress or cyanosis. | Mild reduction in breath sounds on the right lower side. | Dullness over the right middle lobe. | Mild increased fremitus over the right lower chest.", "exam_ids": ["agentclinic-medqa-ext-152-e005", "agentclinic-medqa-ext-152-e006", "agentclinic-medqa-ext-152-e007", "agentclinic-medqa-ext-152-e008"]},
+      "x006": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection + Physical_Examination_Findings.Musculoskeletal_Examination.Palpation", "source_text": "No visible joint deformities. | Tenderness in the lower back and hips.", "exam_ids": ["agentclinic-medqa-ext-152-e009", "agentclinic-medqa-ext-152-e010"]},
+      "x007": {"source": "Test_Results.Imaging.Chest_X-ray", "source_text": "Right-sided consolidation in the lower right lung.", "exam_ids": ["agentclinic-medqa-ext-152-i001"]},
+      "x008": {"source": "Test_Results.Imaging.Chest_CT.Findings", "source_text": "Irregular opacity in the right middle lobe measuring 3.8 cm x 3.0 cm, small right-sided pleural effusion, and mild hilar adenopathy.", "exam_ids": ["agentclinic-medqa-ext-152-i002"]},
+      "x009": {"source": "Test_Results.Biopsy.Lung_Biopsy.Findings", "source_text": "Necrotic granulomatous inflammation with multinucleated giant cells and spherules with endospores.", "exam_ids": ["agentclinic-medqa-ext-152-i003"]},
+      "x010": {"source": "Test_Results.Laboratory_Tests.Hemoglobin + Test_Results.Laboratory_Tests.Leukocyte_count + Test_Results.Laboratory_Tests.Platelet_count", "source_text": "12.9 mg/dL | 9,300/mm3 | 167,000/mm3", "exam_ids": ["agentclinic-medqa-ext-152-i004", "agentclinic-medqa-ext-152-i005", "agentclinic-medqa-ext-152-i006"]},
+      "x011": {"source": "Test_Results.Laboratory_Tests.Erythrocyte_sedimentation_rate", "source_text": "43 mm/hr", "exam_ids": ["agentclinic-medqa-ext-152-i007"]},
+      "x012": {"source": "Test_Results.Laboratory_Tests.Periodic_acid-Schiff_and_silver_methenamine", "source_text": "Positive", "exam_ids": ["agentclinic-medqa-ext-152-i008"]},
+      "x013": {"source": "Test_Results.Laboratory_Tests.Acid-fast_stain", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-152-i009"]}
+    },
+    "finding_flags": {
+      "x010": ["Source hemoglobin unit is mg/dL (12.9 mg/dL is impossible); corrected to g/dL as an obvious unit typo."],
+      "x012": ["The specimen for the PAS and silver methenamine stains is not stated (listed under laboratory tests, probably the lung biopsy)."],
+      "x013": ["The specimen for the acid-fast stain is not stated."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Hemoglobin is given as '12.9 mg/dL' (unit typo for g/dL).",
+      "Lesion location differs slightly between studies: chest X-ray 'lower right lung', CT and percussion 'right middle lobe', auscultation 'right lower side'.",
+      "The patient is febrile (38.6°C) and tachycardic, but the history and ROS do not mention fever; left unknown in the patient record.",
+      "The PAS/silver methenamine and acid-fast stains are listed as laboratory tests without a specimen."
+    ],
+    "notes": [
+      "The 2-month duration applies to the cough, joint aches and malaise, so it is a standalone fact (f005). The joint locations are a child (f003), not complete ('particularly').",
+      "'Considered himself in general good health prior to the onset of the cough' is f006 (health problems before the cough, absent); his hypertension is recorded separately (f007), as in the source.",
+      "The multivitamin is not explicitly daily in the source ('takes clopamide daily along with a multivitamin'), so f009 has no frequency.",
+      "Hemoglobin, leukocyte and platelet counts are grouped as a complete blood count; the ESR and the stains are separate records.",
+      "The gold word 'fever' is kept out of the patient facts; no fever fact exists in the patient fragments."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with chronic cough, aching joints, and malaise."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

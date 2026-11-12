@@ -1,0 +1,110 @@
+{
+  "case_id": "agentclinic-medqa-ext-197",
+  "source_row": 197,
+  "demographics_text": "23-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with sudden loss of consciousness and no prior history of neurological or cardiovascular problems.",
+  "chief_complaint": "Sudden loss of consciousness",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-197-p001",
+      "field": "History",
+      "text": "The patient experienced sudden loss of consciousness while pitching in a baseball game. No history of trauma associated with the event. The patient regained consciousness after receiving cardiopulmonary resuscitation."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-197-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No history of neurological problems"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-197-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No history of cardiovascular problems"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-197-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-197-p005",
+      "field": "Social_History",
+      "text": "Active, with regular participation in sports. No use of tobacco, alcohol, or recreational drugs reported."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-197-p006",
+      "field": "Review_of_Systems",
+      "text": "Negative for headaches, seizures, chest pain, palpitations, shortness of breath, or dizziness prior to the event."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e005",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Jugular_Venous_Pulse",
+      "text": "Prominent A waves observed"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e006",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Apical_Impulse",
+      "text": "Double apical impulse palpable"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e007",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Auscultation.Murmurs",
+      "text": "No audible murmurs"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-e008",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Auscultation.S4",
+      "text": "Present"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-197-i001",
+      "path": "Test_Results.Electrocardiogram.Findings",
+      "text": "Signs of left ventricular hypertrophy"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-i002",
+      "path": "Test_Results.Echocardiogram.Findings",
+      "text": "Left ventricular hypertrophy with septal thickening; reduced ventricular cavity size"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-i003",
+      "path": "Test_Results.Cardiac_MRI.Findings",
+      "text": "Confirmatory findings of marked left ventricular hypertrophy, especially of the interventricular septum"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-197-i004",
+      "path": "Test_Results.Genetic_Testing.Findings",
+      "text": "Positive for mutations associated with hypertrophic cardiomyopathy"
+    }
+  ],
+  "correct_diagnosis": "Hypertrophic cardiomyopathy",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

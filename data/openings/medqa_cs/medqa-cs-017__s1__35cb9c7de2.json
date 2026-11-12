@@ -1,0 +1,55 @@
+{
+ "case_id": "medqa-cs-017",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I can't hear as well as I used to.",
+   "This has been happening for a year.",
+   "All sounds.",
+   "Jumbled and distorted, especially in crowded places or when I watch television.",
+   "I occasionally have ringing in both ears.",
+   "I was in the army, and it was always loud.",
+   "For the past 25 years, I have also taken aspirin daily to protect my heart.",
+   "I take hydrochlorothiazide."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I can't hear as well as I used to, and this has been happening for a year. It affects all sounds, which often sound jumbled and distorted, especially in crowded places or when I watch television. I also occasionally have ringing in both ears. I was in the army, and it was always loud. For the past 25 years, I have also taken aspirin daily to protect my heart, and I take hydrochlorothiazide.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f007",
+    "f008",
+    "f013",
+    "f035",
+    "f032",
+    "f031"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4182,
+   "tokens_out": 105,
+   "seconds": 11.48,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-093", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 68, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "cough", "text": "I've had a cough that won't go away.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "fever", "aliases": ["fevers", "high temperature"], "text": "I've been having fevers.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "weakness", "aliases": ["generalized weakness", "feeling weak"], "text": "I've been feeling weak all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "night sweats", "text": "I've been having night sweats.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "loss of appetite", "aliases": ["poor appetite"], "text": "My appetite has been poor.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "how long the symptoms have been going on", "text": "The fever, cough, weakness, night sweats and poor appetite have all been going on for 6 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "weight loss", "aliases": ["losing weight"], "text": "I've been losing weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "weight loss: amount", "parent": "f007", "attribute": "quantity", "value": "7.5 kg (16.5 lb)", "text": "I've lost 7.5 kilos, about 16.5 pounds, over these 6 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "shortness of breath", "aliases": ["breathlessness"], "text": "I haven't been short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f010", "item": "runny nose", "aliases": ["nasal discharge"], "text": "I haven't had a runny nose.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f011", "item": "blocked nose", "aliases": ["stuffy nose", "nasal congestion", "nasal obstruction"], "text": "My nose hasn't been blocked.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f012", "item": "palpitations", "aliases": ["racing heart"], "text": "I haven't had palpitations.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f013", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f014", "item": "digestive problems", "aliases": ["stomach problems", "digestive symptoms"], "text": "I haven't had any problems with my digestion.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f015", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f016", "item": "prison", "aliases": ["incarceration", "jail"], "text": "I was in prison for 2 years. I got out 9 months ago.", "polarity": "present", "category": "social_background", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-093",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "38.1°C (100.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "122/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "84/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver palpation", "liver size"], "result": "Hepatomegaly."},
+      {"id": "x006", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "lymphadenopathy"], "result": "Generalized lymphadenopathy."},
+      {"id": "x007", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["chest examination", "lung auscultation", "chest auscultation"], "result": "Auscultation: diffuse crackles throughout both lung fields."},
+      {"id": "x008", "kind": "exam", "system": "eye", "name": "ophthalmoscopy", "aliases": ["fundoscopy", "fundoscopic examination", "retinal examination"], "result": "Three discrete, yellow lesions, 0.5 mm to 1.0 mm, with indistinct borders in the posterior pole."},
+      {"id": "x009", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Diffuse infiltrates."},
+      {"id": "x010", "kind": "test", "name": "tuberculin skin test", "aliases": ["TST", "PPD", "Mantoux test"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-093",
+    "diagnosis": "Tuberculosis",
+    "aliases": ["TB", "Mycobacterium tuberculosis infection", "miliary tuberculosis", "disseminated tuberculosis", "pulmonary tuberculosis", "miliary TB"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-093",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-093-p001"], "f002": ["cc", "agentclinic-medqa-ext-093-p001"],
+      "f003": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p004"], "f004": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p003"],
+      "f005": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p005"], "f006": ["agentclinic-medqa-ext-093-p001"],
+      "f007": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p002"], "f008": ["agentclinic-medqa-ext-093-p001"],
+      "f009": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p008"], "f010": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p008"],
+      "f011": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p008"], "f012": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p008"],
+      "f013": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p008"], "f014": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p008"],
+      "f015": ["agentclinic-medqa-ext-093-p006"], "f016": ["agentclinic-medqa-ext-093-p001", "agentclinic-medqa-ext-093-p007"]
+    },
+    "quotes": {
+      "f001": "Chronic cough", "f003": "Generalized weakness", "f005": "poor appetite",
+      "f006": "fever, cough, weakness, night sweats, and poor appetite persisting for 6 months",
+      "f008": "He has lost 7.5 kg (16.5 lb) over this period", "f014": "digestive symptoms",
+      "f015": "No significant past medical history reported.", "f016": "Released from prison 9 months ago after a 2-year sentence"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "38.1°C (100.6°F)", "exam_ids": ["agentclinic-medqa-ext-093-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "122/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-093-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "84 bpm", "exam_ids": ["agentclinic-medqa-ext-093-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-093-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Hepatomegaly", "source_text": "Present", "exam_ids": ["agentclinic-medqa-ext-093-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Generalized_Lymphadenopathy", "source_text": "Present", "exam_ids": ["agentclinic-medqa-ext-093-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Chest_Examination.Auscultation", "source_text": "Diffuse crackles throughout the lung fields bilaterally", "exam_ids": ["agentclinic-medqa-ext-093-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Ophthalmoscopy.Findings", "source_text": "Three discrete, yellow-colored, 0.5 mm to 1.0 mm lesions with indistinct borders in the posterior pole", "exam_ids": ["agentclinic-medqa-ext-093-e008"]},
+      "x009": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "Image shows diffuse infiltrates", "exam_ids": ["agentclinic-medqa-ext-093-i001"]},
+      "x010": {"source": "Test_Results.Tuberculin_Skin_Test.Result", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-093-i002"]}
+    },
+    "finding_flags": {
+      "x005": ["Source gives only the label 'Hepatomegaly: Present' under General_Examination; filed as the abdominal examination, where a doctor would find it."],
+      "x006": ["Source gives only the label 'Generalized_Lymphadenopathy: Present'."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The objective lists 'chronic cough, weight loss, and generalized weakness' while the chief complaint is 'Chronic cough and fever'; both are consistent with the history.",
+      "A negative tuberculin skin test with a TB gold label is plausible (anergy in disseminated disease) but worth knowing."
+    ],
+    "notes": [
+      "The chief complaint names two complaints (chronic cough, fever), so both facts open (f001, f002).",
+      "The 6-month duration covers the fever, cough, weakness, night sweats and poor appetite, so it is a standalone fact (f006); the weight loss has its own amount over 'this period' (f008).",
+      "History denials (p001) and the review of systems (p008) list the same six negatives; each becomes one fact citing both.",
+      "'No other relevant social history provided' (p007) carries no meaning; p007 is cited for the incarceration fact only.",
+      "The test is named 'tuberculin skin test' because that is its clinical name; the check does not flag it."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with chronic cough, weight loss, and generalized weakness."
+    }
+  }
+}

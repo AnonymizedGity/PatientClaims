@@ -1,0 +1,51 @@
+{
+ "case_id": "agentclinic-medqa-ext-146",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "My fingers are badly swollen.",
+   "My fingers are red.",
+   "My right knee is stiff.",
+   "My right knee is slightly swollen.",
+   "The swelling, redness and pain in my fingers have been going on for the past few weeks.",
+   "The stiffness and swelling in my right knee have been going on for the past 6 weeks."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here because my fingers are badly swollen and red, and I've been dealing with that swelling, redness and pain for the past few weeks. On top of that, my right knee has been stiff and slightly swollen for the past 6 weeks.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f006",
+    "f004",
+    "f007"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3548,
+   "tokens_out": 64,
+   "seconds": 8.63,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,1024 @@
+{
+  "case_id": "medqa-cs-035",
+  "demographics": {
+    "name": "Jade Edwards",
+    "age": 21,
+    "sex": "male",
+    "setting": "emergency department"
+  },
+  "opening_fact": {
+    "text": "I have been noticing unusual writing on the wall.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-035-f001",
+      "source_ids": [
+        "cc",
+        "medqa-cs-035-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Started seeing unusual writing on the wall yesterday.",
+      "quote": "I have been noticing unusual writing on the wall. / It started yesterday."
+    },
+    {
+      "id": "medqa-cs-035-f002",
+      "source_ids": [
+        "medqa-cs-035-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The writing is not clear, and most of the time he cannot read it.",
+      "quote": "It is not clear, and I can't read it most of the time."
+    },
+    {
+      "id": "medqa-cs-035-f003",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Thinks he might be getting instructions from the writing.",
+      "quote": "he thinks he might be getting instructions from them",
+      "flags": [
+        "Only in the patient note HPI; the script's Q/A never asks this, but the SP's challenging question ('Do you believe someone is trying to communicate directions to me...') expresses the same idea."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f004",
+      "source_ids": [
+        "medqa-cs-035-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Each episode of seeing the writing lasts less than a minute.",
+      "quote": "It lasts less than a minute."
+    },
+    {
+      "id": "medqa-cs-035-f005",
+      "source_ids": [
+        "medqa-cs-035-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "The writing comes and goes.",
+      "quote": "It comes and goes."
+    },
+    {
+      "id": "medqa-cs-035-f006",
+      "source_ids": [
+        "medqa-cs-035-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Has seen the writing 3–4 times since yesterday.",
+      "quote": "It has happened three to four times since yesterday."
+    },
+    {
+      "id": "medqa-cs-035-f007",
+      "source_ids": [
+        "medqa-cs-035-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Occasionally sees the writing even with his eyes shut.",
+      "quote": "Occasionally."
+    },
+    {
+      "id": "medqa-cs-035-f008",
+      "source_ids": [
+        "medqa-cs-035-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Nothing makes the writing go away.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p007) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f009",
+      "source_ids": [
+        "medqa-cs-035-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Nothing makes the writing appear more often.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p008) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f010",
+      "source_ids": [
+        "medqa-cs-035-p009"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No major life changes recently ('not really').",
+      "quote": "Not really.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'Not really.' (p009) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f011",
+      "source_ids": [
+        "medqa-cs-035-p009"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Nothing in particular is causing him stress ('not really').",
+      "quote": "Not really.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'Not really.' (p009) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f012",
+      "source_ids": [
+        "medqa-cs-035-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No headaches.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p010) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f013",
+      "source_ids": [
+        "medqa-cs-035-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in vision and no loss of vision.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p011) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f014",
+      "source_ids": [
+        "medqa-cs-035-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Feels as though he hears strange voices when he sees the writing.",
+      "quote": "I feel as though I hear strange voices when I see the writing."
+    },
+    {
+      "id": "medqa-cs-035-f015",
+      "source_ids": [
+        "medqa-cs-035-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No decrease in hearing.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p013) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f016",
+      "source_ids": [
+        "medqa-cs-035-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Cannot understand what the voices say; the voices seem distant.",
+      "quote": "I can't understand them; the voices seem distant."
+    },
+    {
+      "id": "medqa-cs-035-f017",
+      "source_ids": [
+        "medqa-cs-035-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not feel controlled by someone or something.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p015) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f018",
+      "source_ids": [
+        "medqa-cs-035-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "The voices and the writing do not tell him to harm himself or others.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f019",
+      "source_ids": [
+        "medqa-cs-035-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never had thoughts of harming himself.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f020",
+      "source_ids": [
+        "medqa-cs-035-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never had thoughts of harming others.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f021",
+      "source_ids": [
+        "medqa-cs-035-p018"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Enjoys spending time with his friends.",
+      "quote": "I like spending time with my friends."
+    },
+    {
+      "id": "medqa-cs-035-f022",
+      "source_ids": [
+        "medqa-cs-035-p019"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No family history of mental health disorders.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p019) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f023",
+      "source_ids": [
+        "medqa-cs-035-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in sleep habits.",
+      "quote": "No"
+    },
+    {
+      "id": "medqa-cs-035-f024",
+      "source_ids": [
+        "medqa-cs-035-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Sometimes finds it difficult to wake up in the morning.",
+      "quote": "but sometimes I find it difficult to wake up in the morning."
+    },
+    {
+      "id": "medqa-cs-035-f025",
+      "source_ids": [
+        "medqa-cs-035-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Has not noticed falling asleep suddenly during the day.",
+      "quote": "No"
+    },
+    {
+      "id": "medqa-cs-035-f026",
+      "source_ids": [
+        "medqa-cs-035-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Sometimes feels very sleepy during the day.",
+      "quote": "but sometimes I feel very sleepy during the day."
+    },
+    {
+      "id": "medqa-cs-035-f027",
+      "source_ids": [
+        "medqa-cs-035-p022"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No fever.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p022) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f028",
+      "source_ids": [
+        "medqa-cs-035-p023"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in weight.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p023) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f029",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in appetite.",
+      "quote": "No appetite or weight changes",
+      "flags": [
+        "Only in the patient note HPI; appetite is not asked in the script."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f030",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous similar episodes.",
+      "quote": "He denies any headache, seizures, head trauma, or previous similar episodes.",
+      "flags": [
+        "Only in the patient note HPI; the script asks only whether the symptoms occur without drug use (p032)."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f031",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No history of seizures.",
+      "quote": "He denies any headache, seizures, head trauma, or previous similar episodes.",
+      "flags": [
+        "Only in the patient note HPI; seizures are not asked in the script but are used in the gold additional considerations."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f032",
+      "source_ids": [
+        "medqa-cs-035-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Takes no medications.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p024) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f033",
+      "source_ids": [
+        "medqa-cs-035-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No notable past medical history.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p025) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f034",
+      "source_ids": [
+        "medqa-cs-035-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No head injuries ever.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p026) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f035",
+      "source_ids": [
+        "medqa-cs-035-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "No changes.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p027) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f036",
+      "source_ids": [
+        "medqa-cs-035-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father had high blood pressure.",
+      "quote": "My father had high blood pressure."
+    },
+    {
+      "id": "medqa-cs-035-f037",
+      "source_ids": [
+        "medqa-cs-035-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as a bartender.",
+      "quote": "I work as a bartender."
+    },
+    {
+      "id": "medqa-cs-035-f038",
+      "source_ids": [
+        "medqa-cs-035-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not drink alcohol.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p030) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f039",
+      "source_ids": [
+        "medqa-cs-035-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Uses recreational drugs occasionally.",
+      "quote": "Occasionally."
+    },
+    {
+      "id": "medqa-cs-035-f040",
+      "source_ids": [
+        "medqa-cs-035-p032"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has not had these symptoms at times when he was not using drugs.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p032) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f041",
+      "source_ids": [
+        "medqa-cs-035-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Uses angel dust.",
+      "quote": "Angel dust"
+    },
+    {
+      "id": "medqa-cs-035-f042",
+      "source_ids": [
+        "medqa-cs-035-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sometimes uses Ecstasy.",
+      "quote": "sometimes Ecstasy."
+    },
+    {
+      "id": "medqa-cs-035-f043",
+      "source_ids": [
+        "medqa-cs-035-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Last used drugs yesterday, at a party at a friend's house.",
+      "quote": "Yesterday at a party at my friend's house."
+    },
+    {
+      "id": "medqa-cs-035-f044",
+      "source_ids": [
+        "medqa-cs-035-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Smokes one pack a day; has smoked for 6 years.",
+      "quote": "Yes, I have been smoking one pack daily for six years."
+    },
+    {
+      "id": "medqa-cs-035-f045",
+      "source_ids": [
+        "medqa-cs-035-p036"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Is not physically active.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p036) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-035-f046",
+      "source_ids": [
+        "medqa-cs-035-p037"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sexually active with his girlfriend.",
+      "quote": "Yes, with my girlfriend."
+    },
+    {
+      "id": "medqa-cs-035-f047",
+      "source_ids": [
+        "medqa-cs-035-p038"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Uses condoms.",
+      "quote": "Yes, I use condoms."
+    },
+    {
+      "id": "medqa-cs-035-f048",
+      "source_ids": [
+        "medqa-cs-035-p039"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No known drug allergies.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p039) — denial confirmed."
+      ]
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Sit up in the bed.",
+      "Give the impression that you are staring at the wall."
+    ],
+    "patient_questions": [
+      "Do you believe someone is trying to communicate directions to me through the text I observe on the wall?"
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "140/80 mm Hg",
+        "source_text": "BP: 140/80 mm Hg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.3°F (36.5°C)",
+        "source_text": "Temp: 98.3°F (36.5°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "15/minute",
+        "source_text": "RR: 15/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "110/minute, regular",
+        "source_text": "HR: 110/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e002"
+        ],
+        "name": "Heart rate",
+        "finding": "110/minute",
+        "source_text": "VS: HR 110, BP 140/180."
+      },
+      {
+        "id": "v006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e002"
+        ],
+        "name": "Blood pressure",
+        "finding": "140/180 as written (diastolic higher than systolic; the doorway BP is 140/80 mm Hg)",
+        "source_text": "VS: HR 110, BP 140/180."
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e001"
+        ],
+        "system": "General",
+        "name": "Affect",
+        "finding": "Seems anxious",
+        "source_text": "Patient seems anxious and in mild distress."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "In mild distress",
+        "source_text": "Patient seems anxious and in mild distress."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e003"
+        ],
+        "system": "HEENT",
+        "name": "Eyes",
+        "finding": "Within normal limits",
+        "source_text": "HEENT: Eyes, nose, mouth, pharynx all within normal limits (WNL)."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e003"
+        ],
+        "system": "HEENT",
+        "name": "Nose",
+        "finding": "Within normal limits",
+        "source_text": "HEENT: Eyes, nose, mouth, pharynx all within normal limits (WNL)."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e003"
+        ],
+        "system": "HEENT",
+        "name": "Mouth",
+        "finding": "Within normal limits",
+        "source_text": "HEENT: Eyes, nose, mouth, pharynx all within normal limits (WNL)."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e003"
+        ],
+        "system": "HEENT",
+        "name": "Pharynx",
+        "finding": "Within normal limits",
+        "source_text": "HEENT: Eyes, nose, mouth, pharynx all within normal limits (WNL)."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e004"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: Clear breath sounds bilaterally."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e005"
+        ],
+        "system": "Heart",
+        "name": "Rate",
+        "finding": "Tachycardic",
+        "source_text": "Heart: Tachycardic; normal S1S2; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e005"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "Normal S1 and S2",
+        "source_text": "Heart: Tachycardic; normal S1S2; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e005"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Tachycardic; normal S1S2; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e006"
+        ],
+        "system": "Abdomen",
+        "name": "Palpation",
+        "finding": "Soft, nontender, nondistended",
+        "source_text": "Abdomen: Soft, nontender, nondistended, no hepatosplenomegaly."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e006"
+        ],
+        "system": "Abdomen",
+        "name": "Liver and spleen",
+        "finding": "No hepatosplenomegaly",
+        "source_text": "Abdomen: Soft, nontender, nondistended, no hepatosplenomegaly."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e007"
+        ],
+        "system": "Neuro",
+        "name": "Orientation",
+        "finding": "Alert and oriented to person, place and time",
+        "source_text": "Neuro: Mental status - Alert and oriented x 3, able to spell backward and recall 3 objects. Cranial nerves: 2-12 intact. Motor strength 5/5 in all muscle groups. DTRs symmetric. Gait is normal."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e007"
+        ],
+        "system": "Neuro",
+        "name": "Attention (spelling backward)",
+        "finding": "Able to spell backward",
+        "source_text": "Neuro: Mental status - Alert and oriented x 3, able to spell backward and recall 3 objects. Cranial nerves: 2-12 intact. Motor strength 5/5 in all muscle groups. DTRs symmetric. Gait is normal."
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e007"
+        ],
+        "system": "Neuro",
+        "name": "Recall",
+        "finding": "Recalls 3 objects",
+        "source_text": "Neuro: Mental status - Alert and oriented x 3, able to spell backward and recall 3 objects. Cranial nerves: 2-12 intact. Motor strength 5/5 in all muscle groups. DTRs symmetric. Gait is normal."
+      },
+      {
+        "id": "x016",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e007"
+        ],
+        "system": "Neuro",
+        "name": "Cranial nerves",
+        "finding": "Cranial nerves II–XII intact",
+        "source_text": "Neuro: Mental status - Alert and oriented x 3, able to spell backward and recall 3 objects. Cranial nerves: 2-12 intact. Motor strength 5/5 in all muscle groups. DTRs symmetric. Gait is normal."
+      },
+      {
+        "id": "x017",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e007"
+        ],
+        "system": "Neuro",
+        "name": "Motor strength",
+        "finding": "5/5 in all muscle groups",
+        "source_text": "Neuro: Mental status - Alert and oriented x 3, able to spell backward and recall 3 objects. Cranial nerves: 2-12 intact. Motor strength 5/5 in all muscle groups. DTRs symmetric. Gait is normal."
+      },
+      {
+        "id": "x018",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e007"
+        ],
+        "system": "Neuro",
+        "name": "Deep tendon reflexes",
+        "finding": "Symmetric",
+        "source_text": "Neuro: Mental status - Alert and oriented x 3, able to spell backward and recall 3 objects. Cranial nerves: 2-12 intact. Motor strength 5/5 in all muscle groups. DTRs symmetric. Gait is normal."
+      },
+      {
+        "id": "x019",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-035-e007"
+        ],
+        "system": "Neuro",
+        "name": "Gait",
+        "finding": "Normal",
+        "source_text": "Neuro: Mental status - Alert and oriented x 3, able to spell backward and recall 3 objects. Cranial nerves: 2-12 intact. Motor strength 5/5 in all muscle groups. DTRs symmetric. Gait is normal."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "PCP intoxication",
+        "history_findings": [
+          "Drug use 1 day before presentation",
+          "Visual hallucinations",
+          "Noncommand auditory hallucinations",
+          "Delusions"
+        ],
+        "exam_findings": [
+          "Tachycardia (HR 110/minute)",
+          "Hypertension (BP 140/180)"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Substance-induced psychosis",
+        "history_findings": [
+          "Drug use 1 day before presentation",
+          "Visual hallucinations",
+          "Noncommand auditory hallucinations",
+          "Delusions",
+          "No history of non-drug-related psychosis",
+          "Does not associate drug use with presentation"
+        ],
+        "exam_findings": []
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Brief psychotic disorder",
+        "rationale": "Visual and auditory hallucinations fit, but DSM-5 excludes this diagnosis after recent ingestion of a substance known to cause psychosis."
+      },
+      {
+        "diagnosis": "Psychosis secondary to a medical condition",
+        "rationale": "Neurologic, endocrine, hepatic or renal disease can cause hallucinations, but nothing in the history suggests one."
+      },
+      {
+        "diagnosis": "Narcolepsy",
+        "rationale": "Its hallucinations are hypnagogic or hypnopompic; he has some daytime sleepiness, but not enough to support the diagnosis."
+      },
+      {
+        "diagnosis": "Seizure",
+        "rationale": "Epileptic visual hallucinations usually last seconds; unlikely with no known seizure history."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "Age conflict: the opening scenario says 21 years old; the raw Patient Description and the note HPI say 27. Demographics use the opening-scenario age (21), the age the examinee sees at the door; the patient may give 27 if asked.",
+      "Blood pressure conflict: doorway BP 140/80 mm Hg; the note exam (e002) and the gold exam finding give 'BP 140/180', which is implausible (diastolic above systolic) and probably a typo. Both kept as written.",
+      "Many answers are generic templates ('No changes.', 'No, there isn't.') that do not fit their questions grammatically (p007, p008, p010, p011, p013, p015-p017, p019, p022-p027, p030, p032, p036, p039). For p024 (medications), p025 (past medical history) and p027 (surgery) 'No changes.' does not actually answer the question; read as none and flagged. The note copies the artifact ('Medications: No changes.', 'PMH: No changes.').",
+      "Gold lists 'Delusions' for both diagnoses; the script never elicits a delusion (p015 denies feeling controlled). Only the note ('he thinks he might be getting instructions from them') and the SP's challenging question support it.",
+      "Gold 'Does not associate drug use with presentation' is not stated anywhere in the script.",
+      "The note says he used drugs '1 day before these events', but the script dates both the last drug use and the onset of the writing to yesterday.",
+      "Note-only items not asked in the script: no appetite change, no seizures, no previous similar episodes (added as from_note facts f029-f031).",
+      "The raw Entrance/Reflective Listening checklist contains stray text ('495.', a sentence about capitalizing 'SP'); not patient content.",
+      "Challenging question has a doubled opening quotation mark in the source; cleaned in persona."
+    ],
+    "annotator_notes": [
+      "Template negatives were read as plain 'No' answers; each one where the wording does not fit is flagged on the fact.",
+      "p017 is split into thoughts of harming himself and thoughts of harming others; p009 into recent life changes and stress.",
+      "p020 and p021 are mixed answers: the denial (no change in sleep habits; no sudden falling asleep) is absent, the added complaint (hard to wake up; daytime sleepiness) is present.",
+      "Drugs are recorded in the patient's words ('angel dust', 'Ecstasy'); the note's PCP/MDMA labels are not copied.",
+      "leakage_check: angel dust use (f041) is the key clue for the rank-1 diagnosis but is legitimate history and does not name the diagnosis, so it is not listed.",
+      "'Sit up in the bed' and 'staring at the wall' are kept as acting notes only (demeanor, not an examination finding), following the worked example, which keeps 'exhibit pain' and 'exhibit difficulty breathing' as acting notes.",
+      "Reviewer edit: age set to the opening-scenario value (21) for consistency with the other cases with age conflicts (028, 033).",
+      "20 template answers (No changes., No, there isn't., Not really.) checked against the June-2024 release: all are plain denials there; 22 facts confirmed."
+    ]
+  }
+}

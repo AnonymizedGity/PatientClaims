@@ -1,0 +1,4130 @@
+{
+ "dataset": "ddxplus",
+ "source": "DDXPlus v2 release_evidences.json (English fields), CC-BY 4.0",
+ "note": "Questions, groups and value glosses from catalogue.json; item labels, aliases, first-person present_text (a template for list, scale and categorical items) and absent_text written for the common schema. Resolution order: case_schema.md, Catalogue.",
+ "items": [
+  {
+   "key": "E_53",
+   "question": "Do you have pain somewhere, related to your reason for consulting?",
+   "item": "pain related to the reason for coming in",
+   "aliases": [
+    "pain",
+    "hurt",
+    "ache",
+    "sore",
+    "discomfort"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have pain.",
+   "absent_text": "I don't have pain related to why I came in."
+  },
+  {
+   "key": "E_54",
+   "question": "What does the pain feel like?",
+   "item": "pain: what it feels like",
+   "aliases": [
+    "character of the pain",
+    "type of pain",
+    "describe the pain",
+    "sharp or dull"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "parent": "E_53",
+   "attribute": "character",
+   "value_type": "list",
+   "options": {
+    "V_71": "tearing",
+    "V_112": "shooting (lancinating)",
+    "V_154": "nagging",
+    "V_161": "tender",
+    "V_179": "stabbing (like a knife)",
+    "V_180": "pulling (tugging)",
+    "V_181": "burning",
+    "V_182": "cramping",
+    "V_183": "heavy",
+    "V_184": "pulsating",
+    "V_191": "violent",
+    "V_192": "sharp",
+    "V_193": "sickening",
+    "V_196": "frightening",
+    "V_198": "exhausting"
+   },
+   "default": "V_11",
+   "present_text": "The pain is {values}.",
+   "absent_text": "I can't really describe what the pain feels like."
+  },
+  {
+   "key": "E_55",
+   "question": "Where is the pain located?",
+   "item": "pain: location",
+   "aliases": [
+    "where it hurts",
+    "where the pain is"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "parent": "E_53",
+   "attribute": "location",
+   "value_type": "list",
+   "options": {
+    "V_14": "my right pelvic bone",
+    "V_15": "my left pelvic bone",
+    "V_16": "my right groin",
+    "V_17": "my left groin",
+    "V_18": "my right axilla",
+    "V_19": "my left axilla",
+    "V_20": "my right tonsil",
+    "V_21": "my left tonsil",
+    "V_22": "my anus",
+    "V_23": "the back of my right ankle",
+    "V_24": "the back of my left ankle",
+    "V_25": "the back of my head",
+    "V_26": "the back of my neck",
+    "V_27": "my right forearm",
+    "V_28": "my left forearm",
+    "V_29": "my lower chest",
+    "V_30": "the front of my right upper arm",
+    "V_31": "the front of my left upper arm",
+    "V_32": "my mouth",
+    "V_33": "my Adam's apple",
+    "V_34": "my right ankle",
+    "V_35": "my left ankle",
+    "V_36": "my clitoris",
+    "V_37": "my coccyx",
+    "V_38": "the spine in my neck",
+    "V_39": "the middle of my spine",
+    "V_40": "my lower back",
+    "V_41": "the right corner of my mouth",
+    "V_42": "the left corner of my mouth",
+    "V_43": "the outer side of my right foot",
+    "V_44": "the outer side of my left foot",
+    "V_45": "my right elbow",
+    "V_46": "my left elbow",
+    "V_47": "the back of my right knee",
+    "V_48": "the back of my left knee",
+    "V_49": "the top of my right hip bone",
+    "V_50": "the top of my left hip bone",
+    "V_51": "my right thigh",
+    "V_52": "my left thigh",
+    "V_53": "the right side of my neck",
+    "V_54": "the left side of my neck",
+    "V_55": "the right side of my chest",
+    "V_56": "the left side of my chest",
+    "V_57": "my right lower teeth",
+    "V_58": "my left lower teeth",
+    "V_59": "my right upper teeth",
+    "V_60": "my left upper teeth",
+    "V_61": "my above the tongue",
+    "V_62": "the top of my head",
+    "V_63": "my right ring finger",
+    "V_64": "my left ring finger",
+    "V_65": "my right little finger",
+    "V_66": "my left little finger",
+    "V_67": "my right index finger",
+    "V_68": "my left index finger",
+    "V_69": "my right middle finger",
+    "V_70": "my left middle finger",
+    "V_72": "the top of my right foot",
+    "V_73": "the top of my left foot",
+    "V_74": "the back of my right wrist",
+    "V_75": "the back of my left wrist",
+    "V_76": "the back of my right hand",
+    "V_77": "the back of my left hand",
+    "V_78": "the palm side of my right forearm",
+    "V_79": "the palm side of my left forearm",
+    "V_80": "the palm side of my right wrist",
+    "V_81": "the palm side of my left wrist",
+    "V_82": "my right buttock",
+    "V_83": "my left buttock",
+    "V_84": "my right side (flank)",
+    "V_85": "my left side (flank)",
+    "V_87": "my lower right abdomen",
+    "V_88": "my lower left abdomen",
+    "V_89": "my forehead",
+    "V_90": "my lower gum",
+    "V_91": "my upper gum",
+    "V_92": "my right knee",
+    "V_93": "my left knee",
+    "V_94": "my glans",
+    "V_95": "the right side of my labia majora",
+    "V_96": "the left side of my labia majora",
+    "V_97": "my right big toe",
+    "V_98": "my left big toe",
+    "V_99": "my right hip",
+    "V_100": "my left hip",
+    "V_101": "my upper chest",
+    "V_102": "my hymen",
+    "V_103": "my upper right abdomen (under the ribs)",
+    "V_104": "my upper left abdomen (under the ribs)",
+    "V_105": "my right hamstring",
+    "V_106": "my left hamstring",
+    "V_108": "my right cheek",
+    "V_109": "my left cheek",
+    "V_110": "the inside of my right cheek",
+    "V_111": "the inside of my left cheek",
+    "V_113": "my right kidney area of the back",
+    "V_114": "my left kidney area of the back",
+    "V_115": "my uvula",
+    "V_116": "the right side of my lower lip",
+    "V_117": "the right side of my upper lip",
+    "V_118": "my chin",
+    "V_119": "my right calf",
+    "V_120": "my left calf",
+    "V_121": "my jaw",
+    "V_122": "my nose",
+    "V_124": "the back of my head",
+    "V_125": "my right eye",
+    "V_126": "my left eye",
+    "V_127": "my right shoulder blade",
+    "V_128": "my left shoulder blade",
+    "V_129": "my right ear",
+    "V_130": "my left ear",
+    "V_131": "my right big toe",
+    "V_132": "my left big toe",
+    "V_133": "my right second toe",
+    "V_134": "my left toe",
+    "V_135": "my right toe",
+    "V_136": "my left toe",
+    "V_137": "the roof of my mouth",
+    "V_139": "my vaginal wall",
+    "V_140": "my right vaginal wall",
+    "V_141": "my left vaginal wall",
+    "V_142": "my right palm",
+    "V_143": "my left palm",
+    "V_144": "my right little toe",
+    "V_145": "my left little toe",
+    "V_146": "the right side of my labia minora",
+    "V_147": "the left side of my labia minora",
+    "V_148": "the back of my throat (pharynx)",
+    "V_149": "the sole of my right foot",
+    "V_150": "the sole of my left foot",
+    "V_151": "my right thumb",
+    "V_152": "my left thumb",
+    "V_153": "my pubic area",
+    "V_155": "my penis",
+    "V_158": "my scrotum",
+    "V_159": "my right breast",
+    "V_160": "my left breast",
+    "V_162": "under my tongue",
+    "V_163": "under my jaw",
+    "V_164": "my right heel",
+    "V_165": "my left heel",
+    "V_166": "my right temple",
+    "V_167": "my left temple",
+    "V_168": "my right testicle",
+    "V_169": "my left testicle",
+    "V_170": "the right side of my upper back",
+    "V_171": "the left side of my upper back",
+    "V_172": "my right shin",
+    "V_173": "my left shin",
+    "V_174": "my windpipe (trachea)",
+    "V_175": "my right trapezius",
+    "V_176": "my left trapezius",
+    "V_177": "the back of my right upper arm",
+    "V_178": "the back of my left upper arm",
+    "V_185": "my urethra",
+    "V_186": "my vagina",
+    "V_187": "my belly",
+    "V_188": "my right lip",
+    "V_189": "my left lip",
+    "V_190": "my vulval vestibule",
+    "V_194": "my right shoulder",
+    "V_195": "my left shoulder",
+    "V_197": "the upper middle part of my belly"
+   },
+   "default": "V_123",
+   "present_text": "It's in {values}.",
+   "absent_text": "I can't say exactly where it is."
+  },
+  {
+   "key": "E_57",
+   "question": "Does the pain spread (radiate) to another location?",
+   "item": "pain: spread to other places",
+   "aliases": [
+    "radiation",
+    "does the pain spread",
+    "does it go anywhere else"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "parent": "E_53",
+   "attribute": "radiation",
+   "value_type": "list",
+   "options": {
+    "V_14": "my right pelvic bone",
+    "V_15": "my left pelvic bone",
+    "V_16": "my right groin",
+    "V_17": "my left groin",
+    "V_18": "my right axilla",
+    "V_19": "my left axilla",
+    "V_20": "my right tonsil",
+    "V_21": "my left tonsil",
+    "V_22": "my anus",
+    "V_23": "the back of my right ankle",
+    "V_24": "the back of my left ankle",
+    "V_25": "the back of my head",
+    "V_26": "the back of my neck",
+    "V_27": "my right forearm",
+    "V_28": "my left forearm",
+    "V_29": "my lower chest",
+    "V_30": "the front of my right upper arm",
+    "V_31": "the front of my left upper arm",
+    "V_32": "my mouth",
+    "V_33": "my Adam's apple",
+    "V_34": "my right ankle",
+    "V_35": "my left ankle",
+    "V_36": "my clitoris",
+    "V_37": "my coccyx",
+    "V_38": "the spine in my neck",
+    "V_39": "the middle of my spine",
+    "V_40": "my lower back",
+    "V_41": "the right corner of my mouth",
+    "V_42": "the left corner of my mouth",
+    "V_43": "the outer side of my right foot",
+    "V_44": "the outer side of my left foot",
+    "V_45": "my right elbow",
+    "V_46": "my left elbow",
+    "V_47": "the back of my right knee",
+    "V_48": "the back of my left knee",
+    "V_49": "the top of my right hip bone",
+    "V_50": "the top of my left hip bone",
+    "V_51": "my right thigh",
+    "V_52": "my left thigh",
+    "V_53": "the right side of my neck",
+    "V_54": "the left side of my neck",
+    "V_55": "the right side of my chest",
+    "V_56": "the left side of my chest",
+    "V_57": "my right lower teeth",
+    "V_58": "my left lower teeth",
+    "V_59": "my right upper teeth",
+    "V_60": "my left upper teeth",
+    "V_61": "my above the tongue",
+    "V_62": "the top of my head",
+    "V_63": "my right ring finger",
+    "V_64": "my left ring finger",
+    "V_65": "my right little finger",
+    "V_66": "my left little finger",
+    "V_67": "my right index finger",
+    "V_68": "my left index finger",
+    "V_69": "my right middle finger",
+    "V_70": "my left middle finger",
+    "V_72": "the top of my right foot",
+    "V_73": "the top of my left foot",
+    "V_74": "the back of my right wrist",
+    "V_75": "the back of my left wrist",
+    "V_76": "the back of my right hand",
+    "V_77": "the back of my left hand",
+    "V_78": "the palm side of my right forearm",
+    "V_79": "the palm side of my left forearm",
+    "V_80": "the palm side of my right wrist",
+    "V_81": "the palm side of my left wrist",
+    "V_82": "my right buttock",
+    "V_83": "my left buttock",
+    "V_84": "my right side (flank)",
+    "V_85": "my left side (flank)",
+    "V_87": "my lower right abdomen",
+    "V_88": "my lower left abdomen",
+    "V_89": "my forehead",
+    "V_90": "my lower gum",
+    "V_91": "my upper gum",
+    "V_92": "my right knee",
+    "V_93": "my left knee",
+    "V_94": "my glans",
+    "V_95": "the right side of my labia majora",
+    "V_96": "the left side of my labia majora",
+    "V_97": "my right big toe",
+    "V_98": "my left big toe",
+    "V_99": "my right hip",
+    "V_100": "my left hip",
+    "V_101": "my upper chest",
+    "V_102": "my hymen",
+    "V_103": "my upper right abdomen (under the ribs)",
+    "V_104": "my upper left abdomen (under the ribs)",
+    "V_105": "my right hamstring",
+    "V_106": "my left hamstring",
+    "V_108": "my right cheek",
+    "V_109": "my left cheek",
+    "V_110": "the inside of my right cheek",
+    "V_111": "the inside of my left cheek",
+    "V_113": "my right kidney area of the back",
+    "V_114": "my left kidney area of the back",
+    "V_115": "my uvula",
+    "V_116": "the right side of my lower lip",
+    "V_117": "the right side of my upper lip",
+    "V_118": "my chin",
+    "V_119": "my right calf",
+    "V_120": "my left calf",
+    "V_121": "my jaw",
+    "V_122": "my nose",
+    "V_124": "the back of my head",
+    "V_125": "my right eye",
+    "V_126": "my left eye",
+    "V_127": "my right shoulder blade",
+    "V_128": "my left shoulder blade",
+    "V_129": "my right ear",
+    "V_130": "my left ear",
+    "V_131": "my right big toe",
+    "V_132": "my left big toe",
+    "V_133": "my right second toe",
+    "V_134": "my left toe",
+    "V_135": "my right toe",
+    "V_136": "my left toe",
+    "V_137": "the roof of my mouth",
+    "V_139": "my vaginal wall",
+    "V_140": "my right vaginal wall",
+    "V_141": "my left vaginal wall",
+    "V_142": "my right palm",
+    "V_143": "my left palm",
+    "V_144": "my right little toe",
+    "V_145": "my left little toe",
+    "V_146": "the right side of my labia minora",
+    "V_147": "the left side of my labia minora",
+    "V_148": "the back of my throat (pharynx)",
+    "V_149": "the sole of my right foot",
+    "V_150": "the sole of my left foot",
+    "V_151": "my right thumb",
+    "V_152": "my left thumb",
+    "V_153": "my pubic area",
+    "V_155": "my penis",
+    "V_158": "my scrotum",
+    "V_159": "my right breast",
+    "V_160": "my left breast",
+    "V_162": "under my tongue",
+    "V_163": "under my jaw",
+    "V_164": "my right heel",
+    "V_165": "my left heel",
+    "V_166": "my right temple",
+    "V_167": "my left temple",
+    "V_168": "my right testicle",
+    "V_169": "my left testicle",
+    "V_170": "the right side of my upper back",
+    "V_171": "the left side of my upper back",
+    "V_172": "my right shin",
+    "V_173": "my left shin",
+    "V_174": "my windpipe (trachea)",
+    "V_175": "my right trapezius",
+    "V_176": "my left trapezius",
+    "V_177": "the back of my right upper arm",
+    "V_178": "the back of my left upper arm",
+    "V_185": "my urethra",
+    "V_186": "my vagina",
+    "V_187": "my belly",
+    "V_188": "my right lip",
+    "V_189": "my left lip",
+    "V_190": "my vulval vestibule",
+    "V_194": "my right shoulder",
+    "V_195": "my left shoulder",
+    "V_197": "the upper middle part of my belly"
+   },
+   "default": "V_123",
+   "present_text": "It spreads to {values}.",
+   "absent_text": "It doesn't spread anywhere else."
+  },
+  {
+   "key": "E_56",
+   "question": "How intense is the pain on a scale from 0 (none) to 10 (worst)?",
+   "item": "pain: intensity",
+   "aliases": [
+    "how bad the pain is",
+    "pain score",
+    "pain severity",
+    "pain out of 10"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "parent": "E_53",
+   "attribute": "severity",
+   "value_type": "scale",
+   "scale": [
+    0,
+    10
+   ],
+   "default": 0,
+   "present_text": "I'd rate it {n} out of 10.",
+   "absent_text": "I'd rate it 0 out of 10."
+  },
+  {
+   "key": "E_58",
+   "question": "How precisely can you locate the pain, on a scale from 0 (not at all) to 10 (exactly)?",
+   "item": "pain: how precisely it can be located",
+   "aliases": [
+    "can you point to it",
+    "localized or diffuse",
+    "one spot or all over"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "parent": "E_53",
+   "attribute": "other",
+   "value_type": "scale",
+   "scale": [
+    0,
+    10
+   ],
+   "default": 0,
+   "present_text": "{band}",
+   "bands": [
+    {
+     "min": 0,
+     "max": 3,
+     "text": "It's hard to pinpoint where it is."
+    },
+    {
+     "min": 4,
+     "max": 6,
+     "text": "I can point to roughly where it is."
+    },
+    {
+     "min": 7,
+     "max": 10,
+     "text": "I can point right to where it is."
+    }
+   ],
+   "absent_text": "It's hard to pinpoint where it is."
+  },
+  {
+   "key": "E_59",
+   "question": "How fast did the pain appear, rated on a 0-10 scale?",
+   "item": "pain: how fast it came on",
+   "aliases": [
+    "sudden or gradual",
+    "onset of the pain",
+    "did it come on suddenly"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "parent": "E_53",
+   "attribute": "onset",
+   "value_type": "scale",
+   "scale": [
+    0,
+    10
+   ],
+   "default": 0,
+   "present_text": "{band}",
+   "bands": [
+    {
+     "min": 0,
+     "max": 3,
+     "text": "It came on slowly."
+    },
+    {
+     "min": 4,
+     "max": 6,
+     "text": "It came on fairly quickly."
+    },
+    {
+     "min": 7,
+     "max": 10,
+     "text": "It came on all of a sudden."
+    }
+   ],
+   "absent_text": "It came on slowly."
+  },
+  {
+   "key": "E_14",
+   "question": "Do you have chest pain even at rest?",
+   "item": "chest pain at rest",
+   "aliases": [
+    "chest pain while resting",
+    "chest pain when not doing anything"
+   ],
+   "category": "symptom",
+   "system": "cardiovascular",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have chest pain even when I'm resting.",
+   "absent_text": "I don't have chest pain when I'm resting."
+  },
+  {
+   "key": "E_33",
+   "question": "Do you have pain that improves when you lean forward?",
+   "item": "pain better when leaning forward",
+   "aliases": [
+    "leaning forward helps the pain"
+   ],
+   "category": "symptom",
+   "system": "cardiovascular",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "The pain gets better when I lean forward.",
+   "absent_text": "Leaning forward doesn't make the pain better."
+  },
+  {
+   "key": "E_216",
+   "question": "Do you have pain that is increased with movement?",
+   "item": "pain worse with movement",
+   "aliases": [
+    "hurts more when moving",
+    "movement makes the pain worse"
+   ],
+   "category": "symptom",
+   "system": "musculoskeletal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "The pain gets worse when I move.",
+   "absent_text": "Moving doesn't make the pain worse."
+  },
+  {
+   "key": "E_220",
+   "question": "Do you have pain that is increased when you breathe in deeply?",
+   "item": "pain worse when breathing in deeply",
+   "aliases": [
+    "hurts to take a deep breath",
+    "pain on deep breathing",
+    "pleuritic pain"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "The pain gets worse when I breathe in deeply.",
+   "absent_text": "Breathing in deeply doesn't make the pain worse."
+  },
+  {
+   "key": "E_144",
+   "question": "Do you have diffuse (widespread) muscle pain?",
+   "item": "widespread muscle pain",
+   "aliases": [
+    "muscle aches all over",
+    "body aches",
+    "myalgia",
+    "aching muscles"
+   ],
+   "category": "symptom",
+   "system": "musculoskeletal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My muscles ache all over.",
+   "absent_text": "I don't have aching muscles all over my body."
+  },
+  {
+   "key": "E_38",
+   "question": "Do you have pain or weakness in your jaw?",
+   "item": "jaw pain or weakness",
+   "aliases": [
+    "jaw hurts",
+    "weak jaw",
+    "trouble chewing"
+   ],
+   "category": "symptom",
+   "system": "musculoskeletal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have pain or weakness in my jaw.",
+   "absent_text": "I don't have pain or weakness in my jaw."
+  },
+  {
+   "key": "E_205",
+   "question": "Do you suddenly have difficulty or an inability to open your mouth or have jaw pain when opening it?",
+   "item": "sudden trouble opening the mouth",
+   "aliases": [
+    "can't open my mouth",
+    "lockjaw",
+    "jaw pain when opening the mouth"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "All of a sudden I have trouble opening my mouth, or it hurts my jaw to open it.",
+   "absent_text": "I haven't suddenly had trouble opening my mouth, and it doesn't hurt my jaw to open it."
+  },
+  {
+   "key": "E_215",
+   "question": "Do you have symptoms that get worse after eating?",
+   "item": "symptoms worse after eating",
+   "aliases": [
+    "worse after meals",
+    "eating makes it worse",
+    "food makes it worse"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My symptoms get worse after I eat.",
+   "absent_text": "My symptoms don't get worse after eating."
+  },
+  {
+   "key": "E_217",
+   "question": "Are your symptoms worse when lying down and alleviated while sitting up?",
+   "item": "symptoms worse lying down and better sitting up",
+   "aliases": [
+    "worse lying flat",
+    "better sitting up",
+    "position"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "pattern": true,
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My symptoms get worse when I lie down and better when I sit up.",
+   "absent_text": "Lying down doesn't make my symptoms worse, and sitting up doesn't make them better."
+  },
+  {
+   "key": "E_218",
+   "question": "Do you have symptoms that are increased with physical exertion but alleviated with rest?",
+   "item": "symptoms worse with exertion and better with rest",
+   "aliases": [
+    "worse with effort",
+    "better with rest",
+    "exercise makes it worse"
+   ],
+   "category": "symptom",
+   "system": "cardiovascular",
+   "pattern": true,
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My symptoms get worse when I exert myself and ease off when I rest.",
+   "absent_text": "I don't get symptoms that come on with exertion and go away with rest."
+  },
+  {
+   "key": "E_219",
+   "question": "Are your symptoms more prominent at night?",
+   "item": "symptoms worse at night",
+   "aliases": [
+    "worse at night",
+    "night-time symptoms"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My symptoms are worse at night.",
+   "absent_text": "My symptoms aren't worse at night."
+  },
+  {
+   "key": "E_221",
+   "question": "Are the symptoms or pain increased with coughing, with an effort like lifting a weight or from forcing a bowel movement?",
+   "item": "symptoms worse with coughing, lifting or straining",
+   "aliases": [
+    "worse when coughing",
+    "worse when lifting",
+    "worse when straining",
+    "bearing down"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My symptoms or pain get worse when I cough, lift something heavy or strain on the toilet.",
+   "absent_text": "Coughing, lifting something heavy or straining on the toilet doesn't make my symptoms or pain worse."
+  },
+  {
+   "key": "E_13",
+   "question": "Do you find that your symptoms have worsened over the last 2 weeks and that progressively less effort is required to cause the symptoms?",
+   "item": "symptoms worsening over 2 weeks with less effort bringing them on",
+   "aliases": [
+    "getting worse",
+    "less effort brings it on",
+    "worsening chest pain"
+   ],
+   "category": "symptom",
+   "system": "cardiovascular",
+   "pattern": true,
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Over the last 2 weeks my symptoms have got worse, and it takes less and less effort to bring them on.",
+   "absent_text": "My symptoms haven't been getting worse over the last 2 weeks, and it doesn't take less effort than before to bring them on."
+  },
+  {
+   "key": "E_90",
+   "question": "Do your symptoms of muscle weakness increase with fatigue and/or stress?",
+   "item": "muscle weakness worse with tiredness or stress",
+   "aliases": [
+    "weakness worse when tired",
+    "weakness worse with stress"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My muscle weakness gets worse when I'm tired or stressed.",
+   "absent_text": "My muscles don't get weaker when I'm tired or stressed."
+  },
+  {
+   "key": "E_173",
+   "question": "Do you have a burning sensation that starts in your stomach then goes up into your throat, and can be associated with a bitter taste in your mouth?",
+   "item": "burning rising from the stomach into the throat",
+   "aliases": [
+    "heartburn",
+    "acid reflux",
+    "bitter taste",
+    "acid coming up"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I get a burning feeling that starts in my stomach and goes up into my throat, sometimes with a bitter taste in my mouth.",
+   "absent_text": "I don't get a burning feeling rising from my stomach into my throat."
+  },
+  {
+   "key": "E_148",
+   "question": "Are you feeling nauseous or do you feel like vomiting?",
+   "item": "nausea",
+   "aliases": [
+    "feeling sick",
+    "queasy",
+    "feel like vomiting"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel nauseous, like I might vomit.",
+   "absent_text": "I don't feel nauseous."
+  },
+  {
+   "key": "E_211",
+   "question": "Have you vomited several times or have you made several efforts to vomit?",
+   "item": "repeated vomiting or retching",
+   "aliases": [
+    "vomiting",
+    "throwing up",
+    "retching",
+    "dry heaving"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've vomited several times or kept trying to vomit.",
+   "absent_text": "I haven't vomited several times or kept retching."
+  },
+  {
+   "key": "E_210",
+   "question": "Have you recently thrown up blood or something resembling coffee beans?",
+   "item": "vomiting blood",
+   "aliases": [
+    "throwing up blood",
+    "coffee-ground vomit",
+    "hematemesis"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've recently thrown up blood or something that looked like coffee grounds.",
+   "absent_text": "I haven't thrown up blood or anything that looked like coffee grounds."
+  },
+  {
+   "key": "E_140",
+   "question": "Have you recently had stools that were black (like coal)?",
+   "item": "black stools",
+   "aliases": [
+    "black poop",
+    "tarry stools",
+    "melena",
+    "dark stool"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My stools have recently been black, like coal.",
+   "absent_text": "My stools haven't been black."
+  },
+  {
+   "key": "E_179",
+   "question": "Have you noticed light red blood or blood clots in your stool?",
+   "item": "red blood in the stool",
+   "aliases": [
+    "blood in the poop",
+    "rectal bleeding",
+    "bloody stool"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've noticed light red blood or blood clots in my stool.",
+   "absent_text": "I haven't seen red blood or clots in my stool."
+  },
+  {
+   "key": "E_51",
+   "question": "Have you had diarrhea or an increase in stool frequency?",
+   "item": "diarrhea or more frequent stools",
+   "aliases": [
+    "loose stools",
+    "the runs",
+    "going to the toilet more often"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had diarrhea or I've been going to the toilet more often.",
+   "absent_text": "I haven't had diarrhea or more frequent stools."
+  },
+  {
+   "key": "E_150",
+   "question": "Have you been able to pass stools or gas since your symptoms increased?",
+   "item": "unable to pass stools or gas since the symptoms got worse",
+   "aliases": [
+    "passing gas",
+    "bowel movements",
+    "constipation",
+    "blocked bowels"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I haven't been able to pass stools or gas since my symptoms got worse.",
+   "absent_text": "I've been able to pass stools or gas since my symptoms got worse."
+  },
+  {
+   "key": "E_30",
+   "question": "Do you feel your abdomen is bloated or distended (swollen due to pressure from inside)?",
+   "item": "bloated or swollen belly",
+   "aliases": [
+    "bloating",
+    "distended abdomen",
+    "belly full of air"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My belly feels bloated or swollen from pressure inside.",
+   "absent_text": "My belly doesn't feel bloated or swollen."
+  },
+  {
+   "key": "E_188",
+   "question": "Do you have pale stools and dark urine?",
+   "item": "pale stools with dark urine",
+   "aliases": [
+    "light-coloured stools",
+    "dark pee",
+    "clay-coloured stool"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "pattern": true,
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My stools are pale and my urine is dark.",
+   "absent_text": "I haven't had pale stools and dark urine at the same time."
+  },
+  {
+   "key": "E_32",
+   "question": "Do you have a decrease in appetite?",
+   "item": "decreased appetite",
+   "aliases": [
+    "not hungry",
+    "loss of appetite",
+    "eating less"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My appetite has gone down.",
+   "absent_text": "My appetite hasn't gone down."
+  },
+  {
+   "key": "E_161",
+   "question": "Have you recently had a loss of appetite or do you get full more quickly then usually?",
+   "item": "recent loss of appetite or getting full quickly",
+   "aliases": [
+    "early satiety",
+    "full quickly",
+    "not hungry"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Lately I've lost my appetite or I get full sooner than usual.",
+   "absent_text": "I haven't lost my appetite recently, and I don't get full more quickly than usual."
+  },
+  {
+   "key": "E_65",
+   "question": "Do you have difficulty swallowing, or have a feeling of discomfort/blockage when swallowing?",
+   "item": "difficulty or discomfort swallowing",
+   "aliases": [
+    "trouble swallowing",
+    "food gets stuck",
+    "dysphagia",
+    "painful swallowing"
+   ],
+   "category": "symptom",
+   "system": "gastrointestinal",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Swallowing is difficult or feels uncomfortable or blocked.",
+   "absent_text": "I don't have trouble swallowing, and nothing feels blocked when I swallow."
+  },
+  {
+   "key": "E_66",
+   "question": "Are you experiencing shortness of breath or difficulty breathing in a significant way?",
+   "item": "significant shortness of breath",
+   "aliases": [
+    "short of breath",
+    "difficulty breathing",
+    "breathless",
+    "can't catch my breath"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm quite short of breath; it's hard to breathe.",
+   "absent_text": "I'm not significantly short of breath."
+  },
+  {
+   "key": "E_64",
+   "question": "Do you feel out of breath with minimal physical effort?",
+   "item": "breathless with minimal effort",
+   "aliases": [
+    "out of breath easily",
+    "winded walking"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I get out of breath with very little effort.",
+   "absent_text": "I don't get out of breath with minimal effort."
+  },
+  {
+   "key": "E_67",
+   "question": "Do you have bouts of choking or shortness of breath that wake you up at night?",
+   "item": "choking or breathlessness that wakes me at night",
+   "aliases": [
+    "wake up short of breath",
+    "night-time breathlessness"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have bouts of choking or shortness of breath that wake me up at night.",
+   "absent_text": "Choking or shortness of breath doesn't wake me up at night."
+  },
+  {
+   "key": "E_75",
+   "question": "Do you feel like you are (or were) choking or suffocating?",
+   "item": "feeling of choking or suffocating",
+   "aliases": [
+    "choking",
+    "suffocating",
+    "can't get air"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel like I'm choking or suffocating.",
+   "absent_text": "I don't feel like I'm choking or suffocating."
+  },
+  {
+   "key": "E_128",
+   "question": "Have you ever felt like you were suffocating for a very short time associated with inability to breathe or speak?",
+   "item": "brief suffocating spell, unable to breathe or speak",
+   "aliases": [
+    "couldn't breathe or talk",
+    "throat closing"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "For a very short time I felt like I was suffocating and couldn't breathe or speak.",
+   "absent_text": "I've never had a short spell of suffocating where I couldn't breathe or speak."
+  },
+  {
+   "key": "E_201",
+   "question": "Do you have a cough?",
+   "item": "cough",
+   "aliases": [
+    "coughing"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a cough.",
+   "absent_text": "I don't have a cough."
+  },
+  {
+   "key": "E_77",
+   "question": "Do you have a cough that produces colored or more abundant sputum than usual?",
+   "item": "coughing up coloured or more sputum than usual",
+   "aliases": [
+    "phlegm",
+    "mucus",
+    "productive cough",
+    "sputum"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My cough brings up coloured sputum or more sputum than usual.",
+   "absent_text": "I don't cough up coloured sputum, or more sputum than usual."
+  },
+  {
+   "key": "E_203",
+   "question": "Do you have intense coughing fits?",
+   "item": "intense coughing fits",
+   "aliases": [
+    "coughing fits",
+    "bad coughing spells"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have intense coughing fits.",
+   "absent_text": "I don't have intense coughing fits."
+  },
+  {
+   "key": "E_166",
+   "question": "Did you vomit after coughing?",
+   "item": "vomiting after coughing",
+   "aliases": [
+    "throwing up after coughing"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've vomited after coughing.",
+   "absent_text": "I haven't vomited after coughing."
+  },
+  {
+   "key": "E_202",
+   "question": "Do you have whooping cough?",
+   "item": "whooping cough",
+   "aliases": [
+    "whoop",
+    "whooping sound"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a whooping cough.",
+   "absent_text": "I don't have a whooping cough."
+  },
+  {
+   "key": "E_45",
+   "question": "Have you been coughing up blood?",
+   "item": "coughing up blood",
+   "aliases": [
+    "blood in the sputum",
+    "hemoptysis",
+    "spitting blood"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been coughing up blood.",
+   "absent_text": "I haven't coughed up any blood."
+  },
+  {
+   "key": "E_112",
+   "question": "Do you wheeze while inhaling or is your breathing noisy after coughing spells?",
+   "item": "wheeze breathing in, or noisy breathing after coughing fits",
+   "aliases": [
+    "noisy breathing",
+    "wheeze on breathing in"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I wheeze when I breathe in, or my breathing is noisy after coughing fits.",
+   "absent_text": "I don't wheeze when I breathe in, and my breathing isn't noisy after coughing fits."
+  },
+  {
+   "key": "E_214",
+   "question": "Have you noticed a wheezing sound when you exhale?",
+   "item": "wheezing when breathing out",
+   "aliases": [
+    "wheeze",
+    "whistling breath"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've noticed a wheezing sound when I breathe out.",
+   "absent_text": "I haven't noticed wheezing when I breathe out."
+  },
+  {
+   "key": "E_194",
+   "question": "Have you noticed a high pitched sound when breathing in?",
+   "item": "high-pitched sound when breathing in",
+   "aliases": [
+    "stridor",
+    "squeaky breathing in"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've noticed a high-pitched sound when I breathe in.",
+   "absent_text": "I haven't noticed a high-pitched sound when I breathe in."
+  },
+  {
+   "key": "E_23",
+   "question": "Do you ever temporarily stop breathing while you’re asleep?",
+   "item": "stopping breathing during sleep",
+   "aliases": [
+    "sleep apnea",
+    "pauses in breathing at night"
+   ],
+   "category": "symptom",
+   "system": "respiratory",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I sometimes stop breathing for a while when I'm asleep.",
+   "absent_text": "I don't stop breathing when I'm asleep."
+  },
+  {
+   "key": "E_155",
+   "question": "Do you feel your heart is beating fast (racing), irregularly (missing a beat) or do you feel palpitations?",
+   "item": "fast or irregular heartbeat, or palpitations",
+   "aliases": [
+    "palpitations",
+    "racing heart",
+    "heart skipping",
+    "pounding heart"
+   ],
+   "category": "symptom",
+   "system": "cardiovascular",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I get palpitations; my heart races or beats irregularly.",
+   "absent_text": "My heart doesn't race or beat irregularly, and I don't have palpitations."
+  },
+  {
+   "key": "E_164",
+   "question": "Do you feel your heart is beating very irregularly or in a disorganized pattern?",
+   "item": "very irregular, disorganised heartbeat",
+   "aliases": [
+    "chaotic heartbeat",
+    "irregular heartbeat"
+   ],
+   "category": "symptom",
+   "system": "cardiovascular",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My heart feels like it's beating very irregularly, in a disorganised way.",
+   "absent_text": "My heart doesn't feel like it's beating very irregularly."
+  },
+  {
+   "key": "E_91",
+   "question": "Do you have a fever (either felt or measured with a thermometer)?",
+   "item": "fever",
+   "aliases": [
+    "temperature",
+    "feverish",
+    "running hot"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a fever.",
+   "absent_text": "I don't have a fever."
+  },
+  {
+   "key": "E_94",
+   "question": "Have you had chills or shivers?",
+   "item": "chills or shivers",
+   "aliases": [
+    "shivering",
+    "rigors",
+    "chills"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had chills or shivers.",
+   "absent_text": "I haven't had chills or shivers."
+  },
+  {
+   "key": "E_89",
+   "question": "Do you constantly feel fatigued or do you have non-restful sleep?",
+   "item": "constant tiredness or unrefreshing sleep",
+   "aliases": [
+    "tired",
+    "fatigue",
+    "unrefreshing sleep"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm tired all the time or my sleep isn't restful.",
+   "absent_text": "I don't constantly feel tired, and my sleep is restful."
+  },
+  {
+   "key": "E_88",
+   "question": "Do you feel so tired that you are unable to do your usual activities or are you stuck in your bed all day long?",
+   "item": "too tired to do usual activities",
+   "aliases": [
+    "exhausted",
+    "stuck in bed",
+    "can't do my usual things"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm too tired to do my usual activities or I'm stuck in bed all day.",
+   "absent_text": "I'm not so tired that I can't do my usual activities."
+  },
+  {
+   "key": "E_175",
+   "question": "Have you noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in your general well-being related to your consultation today?",
+   "item": "new fatigue, malaise or muscle aches with this illness",
+   "aliases": [
+    "malaise",
+    "feeling unwell",
+    "general discomfort",
+    "achy"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Since this started I've had new tiredness, a vague general discomfort, aching muscles or a change in how well I feel overall.",
+   "absent_text": "I haven't had new tiredness, vague discomfort, muscle aches or any change in how I feel overall with this."
+  },
+  {
+   "key": "E_50",
+   "question": "Have you had significantly increased sweating?",
+   "item": "much more sweating than usual",
+   "aliases": [
+    "sweating",
+    "sweaty",
+    "night sweats"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been sweating a lot more than usual.",
+   "absent_text": "I haven't been sweating a lot more than usual."
+  },
+  {
+   "key": "E_162",
+   "question": "Have you had an involuntary weight loss over the last 3 months?",
+   "item": "unintentional weight loss over the last 3 months",
+   "aliases": [
+    "losing weight",
+    "weight loss"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've lost weight without trying over the last 3 months.",
+   "absent_text": "I haven't lost weight without trying over the last 3 months."
+  },
+  {
+   "key": "E_174",
+   "question": "Have you been unintentionally losing weight or have you lost your appetite?",
+   "item": "unintentional weight loss or loss of appetite",
+   "aliases": [
+    "weight loss",
+    "losing weight",
+    "poor appetite"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been losing weight without trying or I've lost my appetite.",
+   "absent_text": "I haven't been losing weight without trying, and I haven't lost my appetite."
+  },
+  {
+   "key": "E_96",
+   "question": "Have you gained weight recently?",
+   "item": "recent weight gain",
+   "aliases": [
+    "putting on weight",
+    "gaining weight"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've gained weight recently.",
+   "absent_text": "I haven't gained weight recently."
+  },
+  {
+   "key": "E_154",
+   "question": "Is your skin much paler than usual?",
+   "item": "much paler skin than usual",
+   "aliases": [
+    "pale",
+    "pallor",
+    "washed out"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My skin is much paler than usual.",
+   "absent_text": "My skin isn't paler than usual."
+  },
+  {
+   "key": "E_92",
+   "question": "Did your cheeks suddenly turn red?",
+   "item": "cheeks suddenly turning red",
+   "aliases": [
+    "flushing",
+    "red face",
+    "flushed cheeks"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My cheeks suddenly turned red.",
+   "absent_text": "My cheeks haven't suddenly turned red."
+  },
+  {
+   "key": "E_178",
+   "question": "Have you noticed any unusual bleeding or bruising related to your consultation today?",
+   "item": "unusual bleeding or bruising with this illness",
+   "aliases": [
+    "bruising easily",
+    "bleeding",
+    "bruises"
+   ],
+   "category": "symptom",
+   "system": "hematologic",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Since this started I've noticed unusual bleeding or bruising.",
+   "absent_text": "I haven't noticed any unusual bleeding or bruising."
+  },
+  {
+   "key": "E_82",
+   "question": "Do you feel lightheaded and dizzy or do you feel like you are about to faint?",
+   "item": "lightheaded and dizzy, or about to faint",
+   "aliases": [
+    "about to faint",
+    "light-headed",
+    "dizzy",
+    "near fainting"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel lightheaded and dizzy or faint.",
+   "absent_text": "I don't feel lightheaded and dizzy, or like I'm about to faint."
+  },
+  {
+   "key": "E_76",
+   "question": "Do you feel slightly dizzy or lightheaded?",
+   "item": "slight dizziness or lightheadedness",
+   "aliases": [
+    "a bit dizzy",
+    "lightheaded",
+    "woozy"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel slightly dizzy or lightheaded.",
+   "absent_text": "I don't feel even slightly dizzy or lightheaded."
+  },
+  {
+   "key": "E_159",
+   "question": "Did you lose consciousness?",
+   "item": "loss of consciousness",
+   "aliases": [
+    "passed out",
+    "fainted",
+    "blacked out"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I lost consciousness.",
+   "absent_text": "I haven't lost consciousness."
+  },
+  {
+   "key": "E_97",
+   "question": "Do you have a sore throat?",
+   "item": "sore throat",
+   "aliases": [
+    "throat hurts",
+    "scratchy throat"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a sore throat.",
+   "absent_text": "I don't have a sore throat."
+  },
+  {
+   "key": "E_181",
+   "question": "Do you have nasal congestion or a clear runny nose?",
+   "item": "stuffy nose or clear runny nose",
+   "aliases": [
+    "blocked nose",
+    "runny nose",
+    "congestion",
+    "stuffy nose"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a stuffy nose or a clear runny nose.",
+   "absent_text": "My nose isn't stuffy, and I don't have a clear runny nose."
+  },
+  {
+   "key": "E_182",
+   "question": "Do you have greenish or yellowish nasal discharge?",
+   "item": "green or yellow nasal discharge",
+   "aliases": [
+    "coloured snot",
+    "green mucus from the nose"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have greenish or yellowish discharge from my nose.",
+   "absent_text": "I don't have green or yellow discharge from my nose."
+  },
+  {
+   "key": "E_103",
+   "question": "Have you lost your sense of smell?",
+   "item": "loss of smell",
+   "aliases": [
+    "can't smell",
+    "anosmia"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've lost my sense of smell.",
+   "absent_text": "I haven't lost my sense of smell."
+  },
+  {
+   "key": "E_169",
+   "question": "Is your nose or the back of your throat itchy?",
+   "item": "itchy nose or back of the throat",
+   "aliases": [
+    "itchy nose",
+    "itchy throat"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My nose or the back of my throat is itchy.",
+   "absent_text": "My nose and the back of my throat aren't itchy."
+  },
+  {
+   "key": "E_212",
+   "question": "Have you noticed that the tone of your voice has become deeper, softer or hoarse?",
+   "item": "deeper, softer or hoarse voice",
+   "aliases": [
+    "hoarse",
+    "losing my voice",
+    "voice change"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My voice has become deeper, softer or hoarse.",
+   "absent_text": "My voice hasn't become deeper, softer or hoarse."
+  },
+  {
+   "key": "E_190",
+   "question": "Have you noticed that you produce more saliva than usual?",
+   "item": "more saliva than usual",
+   "aliases": [
+    "drooling",
+    "excess saliva"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm producing more saliva than usual.",
+   "absent_text": "I'm not producing more saliva than usual."
+  },
+  {
+   "key": "E_206",
+   "question": "Do you have painful mouth ulcers or sores?",
+   "item": "painful mouth ulcers or sores",
+   "aliases": [
+    "mouth ulcers",
+    "canker sores",
+    "sores in the mouth"
+   ],
+   "category": "symptom",
+   "system": "ent",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have painful ulcers or sores in my mouth.",
+   "absent_text": "I don't have painful ulcers or sores in my mouth."
+  },
+  {
+   "key": "E_168",
+   "question": "Do you have trouble keeping your tongue in your mouth?",
+   "item": "trouble keeping the tongue in the mouth",
+   "aliases": [
+    "tongue sticking out"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have trouble keeping my tongue in my mouth.",
+   "absent_text": "I don't have trouble keeping my tongue in my mouth."
+  },
+  {
+   "key": "E_74",
+   "question": "Have you noticed a diffuse (widespread) redness in one or both eyes?",
+   "item": "widespread redness in one or both eyes",
+   "aliases": [
+    "red eyes",
+    "bloodshot eyes",
+    "pink eye"
+   ],
+   "category": "symptom",
+   "system": "eye",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "One or both of my eyes are red all over.",
+   "absent_text": "My eyes aren't red all over."
+  },
+  {
+   "key": "E_127",
+   "question": "Do you feel that your eyes produce excessive tears?",
+   "item": "watery eyes",
+   "aliases": [
+    "teary eyes",
+    "eyes watering"
+   ],
+   "category": "symptom",
+   "system": "eye",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My eyes are producing too many tears.",
+   "absent_text": "My eyes aren't producing too many tears."
+  },
+  {
+   "key": "E_170",
+   "question": "Do you have severe itching in one or both eyes?",
+   "item": "severe itching in the eyes",
+   "aliases": [
+    "itchy eyes"
+   ],
+   "category": "symptom",
+   "system": "eye",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "One or both of my eyes are really itchy.",
+   "absent_text": "My eyes aren't badly itchy."
+  },
+  {
+   "key": "E_52",
+   "question": "Do you have the perception of seeing two images of a single object seen overlapping or adjacent to each other (double vision)?",
+   "item": "double vision",
+   "aliases": [
+    "seeing double",
+    "diplopia"
+   ],
+   "category": "symptom",
+   "system": "eye",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm seeing double: two images of one thing, overlapping or side by side.",
+   "absent_text": "I'm not seeing double."
+  },
+  {
+   "key": "E_172",
+   "question": "Do you have a hard time opening/raising one or both eyelids?",
+   "item": "trouble opening or raising the eyelids",
+   "aliases": [
+    "drooping eyelids",
+    "ptosis",
+    "heavy eyelids"
+   ],
+   "category": "symptom",
+   "system": "eye",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a hard time opening or raising one or both of my eyelids.",
+   "absent_text": "I don't have any trouble opening or raising my eyelids."
+  },
+  {
+   "key": "E_180",
+   "question": "Are you unable to control the direction of your eyes?",
+   "item": "unable to control the direction of the eyes",
+   "aliases": [
+    "eyes rolling",
+    "eyes stuck",
+    "can't move my eyes"
+   ],
+   "category": "symptom",
+   "system": "eye",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I can't control which way my eyes point.",
+   "absent_text": "I can control the direction of my eyes."
+  },
+  {
+   "key": "E_9",
+   "question": "Do you have swollen or painful lymph nodes?",
+   "item": "swollen or painful lymph nodes",
+   "aliases": [
+    "swollen glands",
+    "lumps in the neck",
+    "lumps in the armpit",
+    "lumps in the groin",
+    "lymph nodes"
+   ],
+   "category": "symptom",
+   "system": "hematologic",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have swollen or painful lymph nodes (glands).",
+   "absent_text": "I don't have swollen or painful lymph nodes."
+  },
+  {
+   "key": "E_129",
+   "question": "Do you have any lesions, redness or problems on your skin that you believe are related to the condition you are consulting for?",
+   "item": "skin lesions, redness or problems related to this visit",
+   "aliases": [
+    "rash",
+    "spots",
+    "skin problem",
+    "redness",
+    "what the skin looks like"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a rash or other skin problem that I think is related to why I came in.",
+   "absent_text": "I don't have any rash or skin problem related to why I came in."
+  },
+  {
+   "key": "E_133",
+   "question": "Where is the skin problem located?",
+   "item": "skin problem: location",
+   "aliases": [
+    "where the rash is",
+    "where the spots are"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "parent": "E_129",
+   "attribute": "location",
+   "value_type": "list",
+   "options": {
+    "V_14": "my right pelvic bone",
+    "V_15": "my left pelvic bone",
+    "V_16": "my right groin",
+    "V_17": "my left groin",
+    "V_18": "my right axilla",
+    "V_19": "my left axilla",
+    "V_20": "my right tonsil",
+    "V_21": "my left tonsil",
+    "V_22": "my anus",
+    "V_23": "the back of my right ankle",
+    "V_24": "the back of my left ankle",
+    "V_25": "the back of my head",
+    "V_26": "the back of my neck",
+    "V_27": "my right forearm",
+    "V_28": "my left forearm",
+    "V_29": "my lower chest",
+    "V_30": "the front of my right upper arm",
+    "V_31": "the front of my left upper arm",
+    "V_32": "my mouth",
+    "V_33": "my Adam's apple",
+    "V_34": "my right ankle",
+    "V_35": "my left ankle",
+    "V_36": "my clitoris",
+    "V_37": "my coccyx",
+    "V_38": "the spine in my neck",
+    "V_39": "the middle of my spine",
+    "V_40": "my lower back",
+    "V_41": "the right corner of my mouth",
+    "V_42": "the left corner of my mouth",
+    "V_43": "the outer side of my right foot",
+    "V_44": "the outer side of my left foot",
+    "V_45": "my right elbow",
+    "V_46": "my left elbow",
+    "V_47": "the back of my right knee",
+    "V_48": "the back of my left knee",
+    "V_49": "the top of my right hip bone",
+    "V_50": "the top of my left hip bone",
+    "V_51": "my right thigh",
+    "V_52": "my left thigh",
+    "V_53": "the right side of my neck",
+    "V_54": "the left side of my neck",
+    "V_55": "the right side of my chest",
+    "V_56": "the left side of my chest",
+    "V_57": "my right lower teeth",
+    "V_58": "my left lower teeth",
+    "V_59": "my right upper teeth",
+    "V_60": "my left upper teeth",
+    "V_61": "my above the tongue",
+    "V_62": "the top of my head",
+    "V_63": "my right ring finger",
+    "V_64": "my left ring finger",
+    "V_65": "my right little finger",
+    "V_66": "my left little finger",
+    "V_67": "my right index finger",
+    "V_68": "my left index finger",
+    "V_69": "my right middle finger",
+    "V_70": "my left middle finger",
+    "V_72": "the top of my right foot",
+    "V_73": "the top of my left foot",
+    "V_74": "the back of my right wrist",
+    "V_75": "the back of my left wrist",
+    "V_76": "the back of my right hand",
+    "V_77": "the back of my left hand",
+    "V_78": "the palm side of my right forearm",
+    "V_79": "the palm side of my left forearm",
+    "V_80": "the palm side of my right wrist",
+    "V_81": "the palm side of my left wrist",
+    "V_82": "my right buttock",
+    "V_83": "my left buttock",
+    "V_84": "my right side (flank)",
+    "V_85": "my left side (flank)",
+    "V_87": "my lower right abdomen",
+    "V_88": "my lower left abdomen",
+    "V_89": "my forehead",
+    "V_90": "my lower gum",
+    "V_91": "my upper gum",
+    "V_92": "my right knee",
+    "V_93": "my left knee",
+    "V_94": "my glans",
+    "V_95": "the right side of my labia majora",
+    "V_96": "the left side of my labia majora",
+    "V_97": "my right big toe",
+    "V_98": "my left big toe",
+    "V_99": "my right hip",
+    "V_100": "my left hip",
+    "V_101": "my upper chest",
+    "V_102": "my hymen",
+    "V_103": "my upper right abdomen (under the ribs)",
+    "V_104": "my upper left abdomen (under the ribs)",
+    "V_105": "my right hamstring",
+    "V_106": "my left hamstring",
+    "V_108": "my right cheek",
+    "V_109": "my left cheek",
+    "V_110": "the inside of my right cheek",
+    "V_111": "the inside of my left cheek",
+    "V_113": "my right kidney area of the back",
+    "V_114": "my left kidney area of the back",
+    "V_115": "my uvula",
+    "V_116": "the right side of my lower lip",
+    "V_117": "the right side of my upper lip",
+    "V_118": "my chin",
+    "V_119": "my right calf",
+    "V_120": "my left calf",
+    "V_121": "my jaw",
+    "V_122": "my nose",
+    "V_124": "the back of my head",
+    "V_125": "my right eye",
+    "V_126": "my left eye",
+    "V_127": "my right shoulder blade",
+    "V_128": "my left shoulder blade",
+    "V_129": "my right ear",
+    "V_130": "my left ear",
+    "V_131": "my right big toe",
+    "V_132": "my left big toe",
+    "V_133": "my right second toe",
+    "V_134": "my left toe",
+    "V_135": "my right toe",
+    "V_136": "my left toe",
+    "V_137": "the roof of my mouth",
+    "V_139": "my vaginal wall",
+    "V_140": "my right vaginal wall",
+    "V_141": "my left vaginal wall",
+    "V_142": "my right palm",
+    "V_143": "my left palm",
+    "V_144": "my right little toe",
+    "V_145": "my left little toe",
+    "V_146": "the right side of my labia minora",
+    "V_147": "the left side of my labia minora",
+    "V_148": "the back of my throat (pharynx)",
+    "V_149": "the sole of my right foot",
+    "V_150": "the sole of my left foot",
+    "V_151": "my right thumb",
+    "V_152": "my left thumb",
+    "V_153": "my pubic area",
+    "V_155": "my penis",
+    "V_158": "my scrotum",
+    "V_159": "my right breast",
+    "V_160": "my left breast",
+    "V_162": "under my tongue",
+    "V_163": "under my jaw",
+    "V_164": "my right heel",
+    "V_165": "my left heel",
+    "V_166": "my right temple",
+    "V_167": "my left temple",
+    "V_168": "my right testicle",
+    "V_169": "my left testicle",
+    "V_170": "the right side of my upper back",
+    "V_171": "the left side of my upper back",
+    "V_172": "my right shin",
+    "V_173": "my left shin",
+    "V_174": "my windpipe (trachea)",
+    "V_175": "my right trapezius",
+    "V_176": "my left trapezius",
+    "V_177": "the back of my right upper arm",
+    "V_178": "the back of my left upper arm",
+    "V_185": "my urethra",
+    "V_186": "my vagina",
+    "V_187": "my belly",
+    "V_188": "my right lip",
+    "V_189": "my left lip",
+    "V_190": "my vulval vestibule",
+    "V_194": "my right shoulder",
+    "V_195": "my left shoulder",
+    "V_197": "the upper middle part of my belly"
+   },
+   "default": "V_123",
+   "present_text": "It's on {values}.",
+   "absent_text": "I can't say exactly where it is."
+  },
+  {
+   "key": "E_130",
+   "question": "What color is the rash?",
+   "item": "skin problem: colour",
+   "aliases": [
+    "colour of the rash"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "parent": "E_129",
+   "attribute": "appearance",
+   "value_type": "categorical",
+   "options": {
+    "V_86": "dark",
+    "V_107": "yellow",
+    "V_138": "pale",
+    "V_156": "pink",
+    "V_157": "red"
+   },
+   "default": "V_11",
+   "present_text": "It's {value}.",
+   "absent_text": "I can't say what colour it is."
+  },
+  {
+   "key": "E_134",
+   "question": "How painful is the rash, 0-10?",
+   "item": "skin problem: how painful",
+   "aliases": [
+    "does the rash hurt",
+    "painful rash"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "parent": "E_129",
+   "attribute": "other",
+   "value_type": "scale",
+   "scale": [
+    0,
+    10
+   ],
+   "default": 0,
+   "present_text": "The rash hurts about {n} out of 10.",
+   "absent_text": "The rash doesn't hurt."
+  },
+  {
+   "key": "E_132",
+   "question": "How swollen is the rash, 0-10?",
+   "item": "skin problem: how swollen",
+   "aliases": [
+    "is the rash raised",
+    "swollen rash",
+    "bulge"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "parent": "E_129",
+   "attribute": "other",
+   "value_type": "scale",
+   "scale": [
+    0,
+    10
+   ],
+   "default": 0,
+   "present_text": "The rash is swollen, about {n} out of 10.",
+   "absent_text": "The rash isn't swollen."
+  },
+  {
+   "key": "E_136",
+   "question": "How severe is the itching, 0-10?",
+   "item": "skin problem: how itchy",
+   "aliases": [
+    "itchy rash",
+    "does it itch"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "parent": "E_129",
+   "attribute": "other",
+   "value_type": "scale",
+   "scale": [
+    0,
+    10
+   ],
+   "default": 0,
+   "present_text": "It itches about {n} out of 10.",
+   "absent_text": "It doesn't itch."
+  },
+  {
+   "key": "E_135",
+   "question": "Is the lesion (or are the lesions) larger than 1cm?",
+   "item": "skin problem: larger than 1 cm",
+   "aliases": [
+    "size of the spots",
+    "big spots"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "parent": "E_129",
+   "attribute": "appearance",
+   "value_type": "categorical",
+   "options": {
+    "V_12": "Y"
+   },
+   "default": "V_10",
+   "present_text": "The patches are larger than 1 cm.",
+   "absent_text": "The patches are no larger than 1 cm."
+  },
+  {
+   "key": "E_131",
+   "question": "Do your lesions peel off?",
+   "item": "skin problem: peeling",
+   "aliases": [
+    "peeling skin",
+    "flaking"
+   ],
+   "category": "symptom",
+   "system": "skin",
+   "parent": "E_129",
+   "attribute": "appearance",
+   "value_type": "categorical",
+   "options": {
+    "V_12": "Y"
+   },
+   "default": "V_10",
+   "present_text": "The patches peel off.",
+   "absent_text": "The patches don't peel off."
+  },
+  {
+   "key": "E_151",
+   "question": "Do you have swelling in one or more areas of your body?",
+   "item": "swelling somewhere in the body",
+   "aliases": [
+    "swelling",
+    "swollen",
+    "puffy",
+    "edema"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have swelling in one or more parts of my body.",
+   "absent_text": "I don't have swelling anywhere."
+  },
+  {
+   "key": "E_152",
+   "question": "Where is the swelling located?",
+   "item": "swelling: location",
+   "aliases": [
+    "where the swelling is"
+   ],
+   "category": "symptom",
+   "system": "general",
+   "parent": "E_151",
+   "attribute": "location",
+   "value_type": "list",
+   "options": {
+    "V_14": "my right pelvic bone",
+    "V_15": "my left pelvic bone",
+    "V_16": "my right groin",
+    "V_17": "my left groin",
+    "V_18": "my right axilla",
+    "V_19": "my left axilla",
+    "V_20": "my right tonsil",
+    "V_21": "my left tonsil",
+    "V_22": "my anus",
+    "V_23": "the back of my right ankle",
+    "V_24": "the back of my left ankle",
+    "V_25": "the back of my head",
+    "V_26": "the back of my neck",
+    "V_27": "my right forearm",
+    "V_28": "my left forearm",
+    "V_29": "my lower chest",
+    "V_30": "the front of my right upper arm",
+    "V_31": "the front of my left upper arm",
+    "V_32": "my mouth",
+    "V_33": "my Adam's apple",
+    "V_34": "my right ankle",
+    "V_35": "my left ankle",
+    "V_36": "my clitoris",
+    "V_37": "my coccyx",
+    "V_38": "the spine in my neck",
+    "V_39": "the middle of my spine",
+    "V_40": "my lower back",
+    "V_41": "the right corner of my mouth",
+    "V_42": "the left corner of my mouth",
+    "V_43": "the outer side of my right foot",
+    "V_44": "the outer side of my left foot",
+    "V_45": "my right elbow",
+    "V_46": "my left elbow",
+    "V_47": "the back of my right knee",
+    "V_48": "the back of my left knee",
+    "V_49": "the top of my right hip bone",
+    "V_50": "the top of my left hip bone",
+    "V_51": "my right thigh",
+    "V_52": "my left thigh",
+    "V_53": "the right side of my neck",
+    "V_54": "the left side of my neck",
+    "V_55": "the right side of my chest",
+    "V_56": "the left side of my chest",
+    "V_57": "my right lower teeth",
+    "V_58": "my left lower teeth",
+    "V_59": "my right upper teeth",
+    "V_60": "my left upper teeth",
+    "V_61": "my above the tongue",
+    "V_62": "the top of my head",
+    "V_63": "my right ring finger",
+    "V_64": "my left ring finger",
+    "V_65": "my right little finger",
+    "V_66": "my left little finger",
+    "V_67": "my right index finger",
+    "V_68": "my left index finger",
+    "V_69": "my right middle finger",
+    "V_70": "my left middle finger",
+    "V_72": "the top of my right foot",
+    "V_73": "the top of my left foot",
+    "V_74": "the back of my right wrist",
+    "V_75": "the back of my left wrist",
+    "V_76": "the back of my right hand",
+    "V_77": "the back of my left hand",
+    "V_78": "the palm side of my right forearm",
+    "V_79": "the palm side of my left forearm",
+    "V_80": "the palm side of my right wrist",
+    "V_81": "the palm side of my left wrist",
+    "V_82": "my right buttock",
+    "V_83": "my left buttock",
+    "V_84": "my right side (flank)",
+    "V_85": "my left side (flank)",
+    "V_87": "my lower right abdomen",
+    "V_88": "my lower left abdomen",
+    "V_89": "my forehead",
+    "V_90": "my lower gum",
+    "V_91": "my upper gum",
+    "V_92": "my right knee",
+    "V_93": "my left knee",
+    "V_94": "my glans",
+    "V_95": "the right side of my labia majora",
+    "V_96": "the left side of my labia majora",
+    "V_97": "my right big toe",
+    "V_98": "my left big toe",
+    "V_99": "my right hip",
+    "V_100": "my left hip",
+    "V_101": "my upper chest",
+    "V_102": "my hymen",
+    "V_103": "my upper right abdomen (under the ribs)",
+    "V_104": "my upper left abdomen (under the ribs)",
+    "V_105": "my right hamstring",
+    "V_106": "my left hamstring",
+    "V_108": "my right cheek",
+    "V_109": "my left cheek",
+    "V_110": "the inside of my right cheek",
+    "V_111": "the inside of my left cheek",
+    "V_113": "my right kidney area of the back",
+    "V_114": "my left kidney area of the back",
+    "V_115": "my uvula",
+    "V_116": "the right side of my lower lip",
+    "V_117": "the right side of my upper lip",
+    "V_118": "my chin",
+    "V_119": "my right calf",
+    "V_120": "my left calf",
+    "V_121": "my jaw",
+    "V_122": "my nose",
+    "V_124": "the back of my head",
+    "V_125": "my right eye",
+    "V_126": "my left eye",
+    "V_127": "my right shoulder blade",
+    "V_128": "my left shoulder blade",
+    "V_129": "my right ear",
+    "V_130": "my left ear",
+    "V_131": "my right big toe",
+    "V_132": "my left big toe",
+    "V_133": "my right second toe",
+    "V_134": "my left toe",
+    "V_135": "my right toe",
+    "V_136": "my left toe",
+    "V_137": "the roof of my mouth",
+    "V_139": "my vaginal wall",
+    "V_140": "my right vaginal wall",
+    "V_141": "my left vaginal wall",
+    "V_142": "my right palm",
+    "V_143": "my left palm",
+    "V_144": "my right little toe",
+    "V_145": "my left little toe",
+    "V_146": "the right side of my labia minora",
+    "V_147": "the left side of my labia minora",
+    "V_148": "the back of my throat (pharynx)",
+    "V_149": "the sole of my right foot",
+    "V_150": "the sole of my left foot",
+    "V_151": "my right thumb",
+    "V_152": "my left thumb",
+    "V_153": "my pubic area",
+    "V_155": "my penis",
+    "V_158": "my scrotum",
+    "V_159": "my right breast",
+    "V_160": "my left breast",
+    "V_162": "under my tongue",
+    "V_163": "under my jaw",
+    "V_164": "my right heel",
+    "V_165": "my left heel",
+    "V_166": "my right temple",
+    "V_167": "my left temple",
+    "V_168": "my right testicle",
+    "V_169": "my left testicle",
+    "V_170": "the right side of my upper back",
+    "V_171": "the left side of my upper back",
+    "V_172": "my right shin",
+    "V_173": "my left shin",
+    "V_174": "my windpipe (trachea)",
+    "V_175": "my right trapezius",
+    "V_176": "my left trapezius",
+    "V_177": "the back of my right upper arm",
+    "V_178": "the back of my left upper arm",
+    "V_185": "my urethra",
+    "V_186": "my vagina",
+    "V_187": "my belly",
+    "V_188": "my right lip",
+    "V_189": "my left lip",
+    "V_190": "my vulval vestibule",
+    "V_194": "my right shoulder",
+    "V_195": "my left shoulder",
+    "V_197": "the upper middle part of my belly"
+   },
+   "default": "V_123",
+   "present_text": "It's in {values}.",
+   "absent_text": "I can't say exactly where it is."
+  },
+  {
+   "key": "E_93",
+   "question": "Do you have numbness, loss of sensation or tingling in the feet?",
+   "item": "numbness or tingling in the feet",
+   "aliases": [
+    "pins and needles in my feet",
+    "can't feel my feet"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have numbness, loss of feeling or tingling in my feet.",
+   "absent_text": "I don't have numbness or tingling in my feet."
+  },
+  {
+   "key": "E_157",
+   "question": "Have you recently had numbness, loss of sensation or tingling, in both arms and legs and around your mouth?",
+   "item": "numbness or tingling in both arms and legs and around the mouth",
+   "aliases": [
+    "pins and needles",
+    "tingling around the mouth"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "pattern": true,
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Recently I've had numbness, loss of feeling or tingling in both arms and both legs and around my mouth.",
+   "absent_text": "I haven't had numbness or tingling in my arms, my legs and around my mouth all at the same time."
+  },
+  {
+   "key": "E_177",
+   "question": "Do you currently, or did you ever, have numbness, loss of sensitivity or tingling anywhere on your body?",
+   "item": "numbness or tingling anywhere, now or in the past",
+   "aliases": [
+    "pins and needles",
+    "numbness",
+    "loss of sensation"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had numbness, loss of feeling or tingling somewhere in my body.",
+   "absent_text": "I've never had numbness, loss of feeling or tingling anywhere."
+  },
+  {
+   "key": "E_176",
+   "question": "Did you previously, or do you currently, have any weakness/paralysis in one or more of your limbs or in your face?",
+   "item": "weakness or paralysis in a limb or the face, now or before",
+   "aliases": [
+    "weakness",
+    "paralysis",
+    "can't move my arm"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had weakness or paralysis in one or more limbs or in my face.",
+   "absent_text": "I've never had weakness or paralysis in my limbs or face."
+  },
+  {
+   "key": "E_156",
+   "question": "Have you had weakness or paralysis on one side of the face, which may still be present or completely resolved?",
+   "item": "weakness on one side of the face",
+   "aliases": [
+    "face drooping",
+    "facial droop",
+    "Bell's palsy"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had weakness or paralysis on one side of my face; it may still be there or have gone.",
+   "absent_text": "I haven't had weakness on one side of my face."
+  },
+  {
+   "key": "E_84",
+   "question": "Do you feel weakness in both arms and/or both legs?",
+   "item": "weakness in both arms or both legs",
+   "aliases": [
+    "weak arms",
+    "weak legs"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel weakness in both arms and/or both legs.",
+   "absent_text": "I don't feel weakness in both arms or both legs."
+  },
+  {
+   "key": "E_83",
+   "question": "Have you noticed weakness in your facial muscles and/or eyes?",
+   "item": "weakness in the face muscles or eyes",
+   "aliases": [
+    "face weakness",
+    "eye muscle weakness"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've noticed weakness in my face muscles and/or my eyes.",
+   "absent_text": "I haven't noticed weakness in my face muscles or eyes."
+  },
+  {
+   "key": "E_63",
+   "question": "Do you have difficulty articulating words/speaking?",
+   "item": "difficulty speaking",
+   "aliases": [
+    "slurred speech",
+    "trouble getting words out"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have difficulty saying words or speaking.",
+   "absent_text": "I don't have difficulty speaking."
+  },
+  {
+   "key": "E_43",
+   "question": "Have you lost consciousness associated with violent and sustained muscle contractions or had an absence episode?",
+   "item": "seizure or absence spell",
+   "aliases": [
+    "fit",
+    "convulsion",
+    "blank spells"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've lost consciousness with violent, sustained muscle jerking, or had an absence spell.",
+   "absent_text": "I haven't had a seizure or an absence spell."
+  },
+  {
+   "key": "E_39",
+   "question": "Have you felt confused or disorientated lately?",
+   "item": "recent confusion",
+   "aliases": [
+    "confused",
+    "disoriented",
+    "mixed up"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've felt confused or disoriented lately.",
+   "absent_text": "I haven't felt confused or disoriented."
+  },
+  {
+   "key": "E_193",
+   "question": "Do you have annoying muscle spasms in your face, neck or any other part of your body?",
+   "item": "annoying muscle spasms in the face, neck or elsewhere",
+   "aliases": [
+    "muscle spasms",
+    "twitching",
+    "cramps"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have annoying muscle spasms in my face, neck or somewhere else in my body.",
+   "absent_text": "I don't have muscle spasms."
+  },
+  {
+   "key": "E_192",
+   "question": "Do you feel that muscle spasms or soreness in your neck are keeping you from turning your head to one side?",
+   "item": "neck spasm stopping the head turning",
+   "aliases": [
+    "stiff neck",
+    "can't turn my head",
+    "neck spasm"
+   ],
+   "category": "symptom",
+   "system": "neurological",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Spasms or soreness in my neck are stopping me from turning my head to one side.",
+   "absent_text": "Neck spasms or soreness aren't stopping me from turning my head."
+  },
+  {
+   "key": "E_16",
+   "question": "Do you feel anxious?",
+   "item": "feeling anxious",
+   "aliases": [
+    "anxious",
+    "nervous",
+    "stressed",
+    "worried"
+   ],
+   "category": "symptom",
+   "system": "psychiatric",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel anxious.",
+   "absent_text": "I don't feel anxious."
+  },
+  {
+   "key": "E_114",
+   "question": "Are you more irritable or has your mood been very unstable recently?",
+   "item": "irritability or unstable mood",
+   "aliases": [
+    "irritable",
+    "mood swings",
+    "moody"
+   ],
+   "category": "symptom",
+   "system": "psychiatric",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Lately I've been more irritable or my mood has been very unstable.",
+   "absent_text": "I haven't been more irritable, and my mood hasn't been unstable."
+  },
+  {
+   "key": "E_171",
+   "question": "Do you feel like you are detached from your own body or your surroundings?",
+   "item": "feeling detached from the body or surroundings",
+   "aliases": [
+    "feeling unreal",
+    "detached",
+    "out of body"
+   ],
+   "category": "symptom",
+   "system": "psychiatric",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel detached from my own body or my surroundings.",
+   "absent_text": "I don't feel detached from my body or surroundings."
+  },
+  {
+   "key": "E_111",
+   "question": "Do you feel like you are dying or were you afraid that you were about do die?",
+   "item": "feeling of dying",
+   "aliases": [
+    "fear of dying",
+    "sense of doom"
+   ],
+   "category": "symptom",
+   "system": "psychiatric",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I feel like I'm dying, or I was afraid I was about to die.",
+   "absent_text": "I don't feel like I'm dying."
+  },
+  {
+   "key": "E_81",
+   "question": "Do you suffer from chronic anxiety?",
+   "item": "chronic anxiety",
+   "aliases": [
+    "anxiety disorder",
+    "long-term anxiety"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I suffer from chronic anxiety.",
+   "absent_text": "I don't have chronic anxiety."
+  },
+  {
+   "key": "E_80",
+   "question": "Have you ever been diagnosed with depression?",
+   "item": "diagnosed depression",
+   "aliases": [
+    "depression"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been diagnosed with depression.",
+   "absent_text": "I've never been diagnosed with depression."
+  },
+  {
+   "key": "E_163",
+   "question": "Have you had any vaginal discharge?",
+   "item": "vaginal discharge",
+   "aliases": [
+    "discharge"
+   ],
+   "category": "symptom",
+   "system": "reproductive",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had vaginal discharge.",
+   "applies_to": "female",
+   "absent_text": "I haven't had any vaginal discharge."
+  },
+  {
+   "key": "E_145",
+   "question": "Do you have very abundant or very long menstruation periods?",
+   "item": "very heavy or very long periods",
+   "aliases": [
+    "heavy periods",
+    "long periods"
+   ],
+   "category": "symptom",
+   "system": "reproductive",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My periods are very heavy or last very long.",
+   "applies_to": "female",
+   "absent_text": "My periods aren't very heavy or very long."
+  },
+  {
+   "key": "E_167",
+   "question": "Do you think you are pregnant or are you currently pregnant?",
+   "item": "pregnancy",
+   "aliases": [
+    "pregnant",
+    "expecting"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm pregnant or I think I might be.",
+   "applies_to": "female",
+   "absent_text": "I'm not pregnant, and I don't think I am."
+  },
+  {
+   "key": "E_141",
+   "question": "Did you have your first menstrual period before the age of 12?",
+   "item": "first period before age 12",
+   "aliases": [
+    "early first period",
+    "age at first period"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My first period came before I was 12.",
+   "applies_to": "female",
+   "absent_text": "My first period didn't come before I was 12."
+  },
+  {
+   "key": "E_11",
+   "question": "Have you breastfed one of your children for more than 9 months?",
+   "item": "breastfeeding a child for more than 9 months",
+   "aliases": [
+    "breastfeeding"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I breastfed one of my children for more than 9 months.",
+   "applies_to": "female",
+   "absent_text": "I haven't breastfed any of my children for more than 9 months."
+  },
+  {
+   "key": "E_102",
+   "question": "Are you consulting because you have high blood pressure?",
+   "item": "high blood pressure as the reason for coming in",
+   "aliases": [
+    "blood pressure"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm here because of my high blood pressure.",
+   "absent_text": "I'm not here because of high blood pressure."
+  },
+  {
+   "key": "E_104",
+   "question": "Do you have high blood pressure or do you take medications to treat high blood pressure?",
+   "item": "high blood pressure or blood-pressure medicine",
+   "aliases": [
+    "hypertension",
+    "blood pressure pills"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have high blood pressure or take medicine for it.",
+   "absent_text": "I don't have high blood pressure, and I don't take medicine for it."
+  },
+  {
+   "key": "E_71",
+   "question": "Do you have high cholesterol or do you take medications to treat high cholesterol?",
+   "item": "high cholesterol or cholesterol medicine",
+   "aliases": [
+    "cholesterol",
+    "statins"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have high cholesterol or take medicine for it.",
+   "absent_text": "I don't have high cholesterol, and I don't take medicine for it."
+  },
+  {
+   "key": "E_69",
+   "question": "Do you have diabetes?",
+   "item": "diabetes",
+   "aliases": [
+    "high blood sugar",
+    "sugar diabetes"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have diabetes.",
+   "absent_text": "I don't have diabetes."
+  },
+  {
+   "key": "E_105",
+   "question": "Have you ever had a heart attack or do you have angina (chest pain)?",
+   "item": "heart attack or angina",
+   "aliases": [
+    "heart attack",
+    "angina"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a heart attack or I have angina.",
+   "absent_text": "I've never had a heart attack, and I don't have angina."
+  },
+  {
+   "key": "E_108",
+   "question": "Do you have a problem with poor circulation?",
+   "item": "poor circulation",
+   "aliases": [
+    "circulation problems"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a problem with poor circulation.",
+   "absent_text": "I don't have poor circulation."
+  },
+  {
+   "key": "E_106",
+   "question": "Do you have heart failure?",
+   "item": "heart failure",
+   "aliases": [
+    "weak heart"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have heart failure.",
+   "absent_text": "I don't have heart failure."
+  },
+  {
+   "key": "E_139",
+   "question": "Do you have a known heart defect?",
+   "item": "known heart defect",
+   "aliases": [
+    "congenital heart disease",
+    "hole in the heart"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a known heart defect.",
+   "absent_text": "I don't have any known heart defect."
+  },
+  {
+   "key": "E_22",
+   "question": "Do you have a known issue with one of your heart valves?",
+   "item": "heart valve problem",
+   "aliases": [
+    "valve disease",
+    "heart valve"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a known problem with one of my heart valves.",
+   "absent_text": "I don't have any known heart valve problem."
+  },
+  {
+   "key": "E_3",
+   "question": "Have you ever had a pericarditis?",
+   "item": "pericarditis in the past",
+   "aliases": [
+    "pericarditis"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had pericarditis before.",
+   "absent_text": "I've never had pericarditis."
+  },
+  {
+   "key": "E_107",
+   "question": "Have you ever had a stroke?",
+   "item": "stroke in the past",
+   "aliases": [
+    "stroke"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a stroke.",
+   "absent_text": "I've never had a stroke."
+  },
+  {
+   "key": "E_109",
+   "question": "Have you ever had deep vein thrombosis (DVT)?",
+   "item": "deep vein thrombosis in the past",
+   "aliases": [
+    "DVT",
+    "blood clot in the leg"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a deep vein thrombosis (a blood clot in a leg vein).",
+   "absent_text": "I've never had a deep vein thrombosis."
+  },
+  {
+   "key": "E_124",
+   "question": "Do you have asthma or have you ever had to use a bronchodilator in the past?",
+   "item": "asthma or past bronchodilator use",
+   "aliases": [
+    "asthma",
+    "inhaler",
+    "puffer"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have asthma or I've needed a bronchodilator inhaler before.",
+   "absent_text": "I don't have asthma, and I've never needed a bronchodilator inhaler."
+  },
+  {
+   "key": "E_101",
+   "question": "Have you been hospitalized for an asthma attack in the past year?",
+   "item": "hospital stay for asthma in the past year",
+   "aliases": [
+    "admitted for asthma"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been in hospital for an asthma attack in the past year.",
+   "absent_text": "I haven't been in hospital for an asthma attack in the past year."
+  },
+  {
+   "key": "E_46",
+   "question": "Have you had 2 or more asthma attacks in the past year?",
+   "item": "2 or more asthma attacks in the past year",
+   "aliases": [
+    "asthma attacks"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had 2 or more asthma attacks in the past year.",
+   "absent_text": "I haven't had 2 or more asthma attacks in the past year."
+  },
+  {
+   "key": "E_31",
+   "question": "Do you have severe Chronic Obstructive Pulmonary Disease (COPD)?",
+   "item": "severe COPD",
+   "aliases": [
+    "severe emphysema",
+    "severe chronic bronchitis"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have severe COPD.",
+   "absent_text": "I don't have severe COPD."
+  },
+  {
+   "key": "E_123",
+   "question": "Do you have a chronic obstructive pulmonary disease (COPD)?",
+   "item": "COPD",
+   "aliases": [
+    "emphysema",
+    "chronic bronchitis",
+    "chronic obstructive pulmonary disease"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have COPD.",
+   "absent_text": "I don't have COPD."
+  },
+  {
+   "key": "E_72",
+   "question": "Have you had one or several flare ups of chronic obstructive pulmonary disease (COPD) in the past year?",
+   "item": "COPD flare-ups in the past year",
+   "aliases": [
+    "COPD exacerbations"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had one or more COPD flare-ups in the past year.",
+   "absent_text": "I haven't had any COPD flare-ups in the past year."
+  },
+  {
+   "key": "E_118",
+   "question": "Have you ever had pneumonia?",
+   "item": "pneumonia in the past",
+   "aliases": [
+    "pneumonia",
+    "lung infection"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had pneumonia before.",
+   "absent_text": "I've never had pneumonia."
+  },
+  {
+   "key": "E_5",
+   "question": "Have you ever had fluid in your lungs?",
+   "item": "fluid in the lungs in the past",
+   "aliases": [
+    "fluid on the lungs",
+    "pulmonary edema"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had fluid in my lungs before.",
+   "absent_text": "I've never had fluid in my lungs."
+  },
+  {
+   "key": "E_21",
+   "question": "Have you ever had a spontaneous pneumothorax?",
+   "item": "collapsed lung in the past",
+   "aliases": [
+    "pneumothorax",
+    "collapsed lung"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a spontaneous pneumothorax (collapsed lung) before.",
+   "absent_text": "I've never had a collapsed lung."
+  },
+  {
+   "key": "E_186",
+   "question": "Have you ever been diagnosed with obstructive sleep apnea (OSA)?",
+   "item": "obstructive sleep apnea",
+   "aliases": [
+    "sleep apnea",
+    "OSA",
+    "CPAP"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been diagnosed with obstructive sleep apnea.",
+   "absent_text": "I've never been diagnosed with sleep apnea."
+  },
+  {
+   "key": "E_18",
+   "question": "Do you have cystic fibrosis?",
+   "item": "cystic fibrosis",
+   "aliases": [
+    "CF"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have cystic fibrosis.",
+   "absent_text": "I don't have cystic fibrosis."
+  },
+  {
+   "key": "E_119",
+   "question": "Have you been diagnosed with chronic sinusitis?",
+   "item": "chronic sinusitis",
+   "aliases": [
+    "sinus problems",
+    "sinusitis"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been diagnosed with chronic sinusitis.",
+   "absent_text": "I've never been diagnosed with chronic sinusitis."
+  },
+  {
+   "key": "E_121",
+   "question": "Do you have a deviated nasal septum?",
+   "item": "deviated nasal septum",
+   "aliases": [
+    "crooked septum"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a deviated nasal septum.",
+   "absent_text": "I don't have a deviated septum."
+  },
+  {
+   "key": "E_120",
+   "question": "Do you have polyps in your nose?",
+   "item": "nasal polyps",
+   "aliases": [
+    "polyps in the nose"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have polyps in my nose.",
+   "absent_text": "I don't have polyps in my nose."
+  },
+  {
+   "key": "E_98",
+   "question": "Do you have a hiatal hernia?",
+   "item": "hiatal hernia",
+   "aliases": [
+    "hiatus hernia"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a hiatal hernia.",
+   "absent_text": "I don't have a hiatal hernia."
+  },
+  {
+   "key": "E_125",
+   "question": "Have you ever been diagnosed with gastroesophageal reflux?",
+   "item": "diagnosed acid reflux",
+   "aliases": [
+    "GERD",
+    "reflux",
+    "gastroesophageal reflux"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been diagnosed with gastroesophageal reflux.",
+   "absent_text": "I've never been diagnosed with reflux."
+  },
+  {
+   "key": "E_47",
+   "question": "Do you suffer from Crohn’s disease or ulcerative colitis (UC)?",
+   "item": "Crohn's disease or ulcerative colitis",
+   "aliases": [
+    "inflammatory bowel disease",
+    "IBD",
+    "colitis",
+    "Crohn's"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have Crohn's disease or ulcerative colitis.",
+   "absent_text": "I don't have Crohn's disease or ulcerative colitis."
+  },
+  {
+   "key": "E_126",
+   "question": "Do you have liver cirrhosis?",
+   "item": "liver cirrhosis",
+   "aliases": [
+    "cirrhosis",
+    "liver disease"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have cirrhosis of the liver.",
+   "absent_text": "I don't have cirrhosis."
+  },
+  {
+   "key": "E_6",
+   "question": "Do you have chronic pancreatitis?",
+   "item": "chronic pancreatitis",
+   "aliases": [
+    "pancreatitis"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have chronic pancreatitis.",
+   "absent_text": "I don't have chronic pancreatitis."
+  },
+  {
+   "key": "E_113",
+   "question": "Do you have chronic kidney failure?",
+   "item": "chronic kidney failure",
+   "aliases": [
+    "kidney failure",
+    "kidney disease",
+    "CKD"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have chronic kidney failure.",
+   "absent_text": "I don't have chronic kidney failure."
+  },
+  {
+   "key": "E_197",
+   "question": "Do you have a known kidney problem resulting in an inability to retain proteins?",
+   "item": "kidney problem that loses protein",
+   "aliases": [
+    "protein in the urine",
+    "nephrotic syndrome"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a known kidney problem that makes me lose protein.",
+   "absent_text": "I don't have a kidney problem that makes me lose protein."
+  },
+  {
+   "key": "E_8",
+   "question": "Do you currently undergo dialysis?",
+   "item": "dialysis",
+   "aliases": [
+    "kidney dialysis"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm on dialysis.",
+   "absent_text": "I'm not on dialysis."
+  },
+  {
+   "key": "E_2",
+   "question": "Are you infected with the human immunodeficiency virus (HIV)?",
+   "item": "HIV infection",
+   "aliases": [
+    "HIV",
+    "AIDS"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have HIV.",
+   "absent_text": "I don't have HIV."
+  },
+  {
+   "key": "E_227",
+   "question": "Are you immunosuppressed?",
+   "item": "immunosuppression",
+   "aliases": [
+    "weak immune system",
+    "immunocompromised"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My immune system is suppressed.",
+   "absent_text": "My immune system isn't suppressed."
+  },
+  {
+   "key": "E_34",
+   "question": "Do you have an active cancer?",
+   "item": "active cancer",
+   "aliases": [
+    "cancer",
+    "tumour"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have an active cancer.",
+   "absent_text": "I don't have an active cancer."
+  },
+  {
+   "key": "E_37",
+   "question": "Do you have metastatic cancer?",
+   "item": "metastatic cancer",
+   "aliases": [
+    "cancer that has spread",
+    "metastases"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have cancer that has spread (metastatic cancer).",
+   "absent_text": "I don't have metastatic cancer."
+  },
+  {
+   "key": "E_24",
+   "question": "Have you ever had a diagnosis of anemia?",
+   "item": "anemia in the past",
+   "aliases": [
+    "anemia",
+    "low blood count",
+    "low iron"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been diagnosed with anemia before.",
+   "absent_text": "I've never been diagnosed with anemia."
+  },
+  {
+   "key": "E_20",
+   "question": "Do you have Rheumatoid Arthritis?",
+   "item": "rheumatoid arthritis",
+   "aliases": [
+    "RA"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have rheumatoid arthritis.",
+   "absent_text": "I don't have rheumatoid arthritis."
+  },
+  {
+   "key": "E_138",
+   "question": "Do you suffer from fibromyalgia?",
+   "item": "fibromyalgia",
+   "aliases": [],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have fibromyalgia.",
+   "absent_text": "I don't have fibromyalgia."
+  },
+  {
+   "key": "E_19",
+   "question": "Have you been diagnosed with hyperthyroidism?",
+   "item": "diagnosed overactive thyroid",
+   "aliases": [
+    "hyperthyroidism",
+    "overactive thyroid"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been diagnosed with an overactive thyroid (hyperthyroidism).",
+   "absent_text": "I've never been diagnosed with an overactive thyroid."
+  },
+  {
+   "key": "E_158",
+   "question": "Were you diagnosed with endocrine disease or a hormone dysfunction?",
+   "item": "endocrine disease or hormone problem",
+   "aliases": [
+    "hormone problem",
+    "gland problem"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been diagnosed with an endocrine disease or a hormone problem.",
+   "absent_text": "I've never been diagnosed with a hormone problem."
+  },
+  {
+   "key": "E_95",
+   "question": "Do you have Parkinson’s disease?",
+   "item": "Parkinson's disease",
+   "aliases": [
+    "Parkinson's"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have Parkinson's disease.",
+   "absent_text": "I don't have Parkinson's disease."
+  },
+  {
+   "key": "E_99",
+   "question": "Have you ever had a migraine or is a member of your family known to have migraines?",
+   "item": "migraines in me or my family",
+   "aliases": [
+    "migraine",
+    "migraines"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had migraines, or someone in my family is known to have them.",
+   "absent_text": "I've never had migraines, and no one in my family is known to have them."
+  },
+  {
+   "key": "E_185",
+   "question": "Have you ever had a head trauma?",
+   "item": "head injury in the past",
+   "aliases": [
+    "head trauma",
+    "hit my head",
+    "concussion"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a head injury in the past.",
+   "absent_text": "I've never had a head injury."
+  },
+  {
+   "key": "E_153",
+   "question": "Are you being treated for osteoporosis?",
+   "item": "treatment for osteoporosis",
+   "aliases": [
+    "osteoporosis",
+    "brittle bones"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm being treated for osteoporosis.",
+   "absent_text": "I'm not being treated for osteoporosis."
+  },
+  {
+   "key": "E_226",
+   "question": "Are you more likely to develop common allergies than the general population?",
+   "item": "prone to common allergies",
+   "aliases": [
+    "allergies",
+    "hay fever",
+    "atopy"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm more likely than most people to get common allergies.",
+   "absent_text": "I'm not more prone to allergies than other people."
+  },
+  {
+   "key": "E_12",
+   "question": "Do you have a known severe food allergy?",
+   "item": "severe food allergy",
+   "aliases": [
+    "food allergy",
+    "allergic to food"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a known severe food allergy.",
+   "absent_text": "I don't have any known severe food allergy."
+  },
+  {
+   "key": "E_27",
+   "question": "Have you ever had a sexually transmitted infection?",
+   "item": "sexually transmitted infection in the past",
+   "aliases": [
+    "STI",
+    "STD"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a sexually transmitted infection before.",
+   "absent_text": "I've never had a sexually transmitted infection."
+  },
+  {
+   "key": "E_160",
+   "question": "Were you born prematurely or did you suffer any complication at birth?",
+   "item": "premature birth or birth complications",
+   "aliases": [
+    "born early",
+    "premature"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I was born prematurely, or there were complications when I was born.",
+   "absent_text": "I wasn't born prematurely, and there were no complications at my birth."
+  },
+  {
+   "key": "E_4",
+   "question": "Have you or any member of your family ever had croup?",
+   "item": "croup in me or my family",
+   "aliases": [
+    "croup"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had croup, or someone in my family has.",
+   "absent_text": "Neither I nor anyone in my family has had croup."
+  },
+  {
+   "key": "E_196",
+   "question": "Have you had surgery within the last month?",
+   "item": "surgery in the last month",
+   "aliases": [
+    "operation",
+    "recent surgery"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had surgery within the last month.",
+   "absent_text": "I haven't had surgery in the last month."
+  },
+  {
+   "key": "E_137",
+   "question": "Have you ever had surgery to remove lymph nodes?",
+   "item": "surgery to remove lymph nodes",
+   "aliases": [
+    "lymph nodes removed"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had surgery to remove lymph nodes.",
+   "absent_text": "I've never had lymph nodes removed."
+  },
+  {
+   "key": "E_110",
+   "question": "Have you been unable to move or get up for more than 3 consecutive days within the last 4 weeks?",
+   "item": "unable to move or get up for more than 3 days in the last 4 weeks",
+   "aliases": [
+    "bedridden",
+    "immobilised",
+    "bed rest"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "In the last 4 weeks I was unable to move or get up for more than 3 days in a row.",
+   "absent_text": "In the last 4 weeks I haven't been laid up for more than 3 days in a row."
+  },
+  {
+   "key": "E_116",
+   "question": "Have you had a cold in the last 2 weeks?",
+   "item": "cold in the last 2 weeks",
+   "aliases": [
+    "common cold"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a cold in the last 2 weeks.",
+   "absent_text": "I haven't had a cold in the last 2 weeks."
+  },
+  {
+   "key": "E_0",
+   "question": "Have you recently had a viral infection?",
+   "item": "recent viral infection",
+   "aliases": [
+    "virus",
+    "viral illness"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've had a viral infection recently.",
+   "absent_text": "I haven't had a viral infection recently."
+  },
+  {
+   "key": "E_70",
+   "question": "Are you significantly overweight compared to people of the same height as you?",
+   "item": "significantly overweight",
+   "aliases": [
+    "overweight",
+    "obese"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm quite overweight for my height.",
+   "absent_text": "I'm not significantly overweight."
+  },
+  {
+   "key": "E_208",
+   "question": "Is your BMI less than 18.5, or are you underweight?",
+   "item": "underweight or BMI below 18.5",
+   "aliases": [
+    "underweight",
+    "too thin",
+    "low BMI"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm underweight; my BMI is below 18.5.",
+   "absent_text": "I'm not underweight."
+  },
+  {
+   "key": "E_209",
+   "question": "Are your vaccinations up to date?",
+   "item": "vaccinations not up to date",
+   "aliases": [
+    "vaccines",
+    "shots",
+    "immunizations"
+   ],
+   "category": "medical_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My vaccinations aren't up to date.",
+   "absent_text": "My vaccinations are up to date."
+  },
+  {
+   "key": "E_10",
+   "question": "Are you currently taking or have you recently taken anti-inflammatory drugs (NSAIDs)?",
+   "item": "anti-inflammatory drugs (NSAIDs)",
+   "aliases": [
+    "ibuprofen",
+    "aspirin",
+    "naproxen",
+    "pain relievers",
+    "anti-inflammatories"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm taking or recently took anti-inflammatory drugs (NSAIDs).",
+   "absent_text": "I'm not taking anti-inflammatory drugs (NSAIDs), and I haven't recently."
+  },
+  {
+   "key": "E_44",
+   "question": "Do you take corticosteroids?",
+   "item": "corticosteroids",
+   "aliases": [
+    "steroids",
+    "prednisone",
+    "cortisone"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I take corticosteroids.",
+   "absent_text": "I don't take corticosteroids."
+  },
+  {
+   "key": "E_146",
+   "question": "Are you taking any new oral anticoagulants ((NOACs)?",
+   "item": "new oral anticoagulants (NOACs)",
+   "aliases": [
+    "blood thinners",
+    "apixaban",
+    "rivaroxaban",
+    "dabigatran"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm taking one of the new oral blood thinners (a NOAC).",
+   "absent_text": "I'm not taking any of the new oral blood thinners (NOACs)."
+  },
+  {
+   "key": "E_100",
+   "question": "Do you currently take hormones?",
+   "item": "hormones",
+   "aliases": [
+    "hormone therapy",
+    "birth control pill",
+    "HRT"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm currently taking hormones.",
+   "absent_text": "I'm not taking any hormones."
+  },
+  {
+   "key": "E_184",
+   "question": "Do you take medication that dilates your blood vessels?",
+   "item": "medicine that dilates blood vessels",
+   "aliases": [
+    "vasodilators",
+    "nitrates",
+    "nitroglycerin"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I take medicine that widens my blood vessels.",
+   "absent_text": "I don't take medicine that widens my blood vessels."
+  },
+  {
+   "key": "E_149",
+   "question": "Do you take a calcium channel blockers (medication)?",
+   "item": "calcium channel blockers",
+   "aliases": [
+    "amlodipine",
+    "diltiazem",
+    "verapamil"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I take a calcium channel blocker.",
+   "absent_text": "I don't take a calcium channel blocker."
+  },
+  {
+   "key": "E_15",
+   "question": "Have you started or taken any antipsychotic medication within the last 7 days?",
+   "item": "antipsychotic medicine in the last 7 days",
+   "aliases": [
+    "antipsychotics",
+    "haloperidol"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've started or taken an antipsychotic medicine in the last 7 days.",
+   "absent_text": "I haven't taken any antipsychotic medicine in the last 7 days."
+  },
+  {
+   "key": "E_147",
+   "question": "Have you been treated in hospital recently for nausea, agitation, intoxication or aggressive behavior and received medication via an intravenous or intramuscular route?",
+   "item": "recent hospital injection for nausea, agitation or intoxication",
+   "aliases": [
+    "injection in hospital",
+    "sedative injection"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I was recently treated in hospital for nausea, agitation, intoxication or aggressive behaviour and given medicine by IV or injection.",
+   "absent_text": "I haven't recently been given medicine by IV or injection in hospital for nausea, agitation, intoxication or aggressive behaviour."
+  },
+  {
+   "key": "E_1",
+   "question": "Are you currently being treated or have you recently been treated with an oral antibiotic for an ear infection?",
+   "item": "oral antibiotic for an ear infection, now or recently",
+   "aliases": [
+    "antibiotics for an ear infection"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm on or recently took an oral antibiotic for an ear infection.",
+   "absent_text": "I'm not on, and haven't recently taken, an oral antibiotic for an ear infection."
+  },
+  {
+   "key": "E_213",
+   "question": "Have you recently taken decongestants or other substances that may have stimulant effects?",
+   "item": "recent decongestants or stimulant substances",
+   "aliases": [
+    "decongestants",
+    "stimulants",
+    "cold medicine",
+    "pseudoephedrine"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've recently taken decongestants or something else that can act as a stimulant.",
+   "absent_text": "I haven't recently taken decongestants or any other stimulant."
+  },
+  {
+   "key": "E_62",
+   "question": "Do you regularly take stimulant drugs?",
+   "item": "regular stimulant drugs",
+   "aliases": [
+    "stimulants",
+    "amphetamines",
+    "cocaine",
+    "street drugs"
+   ],
+   "category": "medication",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I regularly take stimulant drugs.",
+   "absent_text": "I don't regularly take stimulant drugs."
+  },
+  {
+   "key": "E_78",
+   "question": "Do you drink alcohol excessively or do you have an addiction to alcohol?",
+   "item": "excessive drinking or alcohol addiction",
+   "aliases": [
+    "drinking",
+    "alcohol",
+    "alcoholism"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I drink too much alcohol or I'm addicted to it.",
+   "absent_text": "I don't drink excessively, and I'm not addicted to alcohol."
+  },
+  {
+   "key": "E_79",
+   "question": "Do you smoke cigarettes?",
+   "item": "smoking cigarettes",
+   "aliases": [
+    "smoke",
+    "tobacco",
+    "cigarettes"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I smoke cigarettes.",
+   "absent_text": "I don't smoke cigarettes."
+  },
+  {
+   "key": "E_191",
+   "question": "Are you a former smoker?",
+   "item": "former smoker",
+   "aliases": [
+    "used to smoke",
+    "quit smoking"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I used to smoke.",
+   "absent_text": "I'm not a former smoker."
+  },
+  {
+   "key": "E_222",
+   "question": "Are you exposed to secondhand cigarette smoke on a daily basis?",
+   "item": "daily second-hand smoke",
+   "aliases": [
+    "second-hand smoke",
+    "passive smoking"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm around second-hand cigarette smoke every day.",
+   "absent_text": "I'm not exposed to second-hand smoke every day."
+  },
+  {
+   "key": "E_61",
+   "question": "Are you currently using intravenous drugs?",
+   "item": "current intravenous drug use",
+   "aliases": [
+    "injecting drugs",
+    "IV drugs",
+    "street drugs"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm currently using intravenous drugs.",
+   "absent_text": "I'm not using intravenous drugs."
+  },
+  {
+   "key": "E_60",
+   "question": "Do you consume energy drinks regularly?",
+   "item": "regular energy drinks",
+   "aliases": [
+    "energy drinks"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I drink energy drinks regularly.",
+   "absent_text": "I don't drink energy drinks regularly."
+  },
+  {
+   "key": "E_35",
+   "question": "Do you regularly drink coffee or tea?",
+   "item": "regular coffee or tea",
+   "aliases": [
+    "coffee",
+    "tea",
+    "caffeine"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I regularly drink coffee or tea.",
+   "absent_text": "I don't regularly drink coffee or tea."
+  },
+  {
+   "key": "E_7",
+   "question": "Do you have a poor diet?",
+   "item": "poor diet",
+   "aliases": [
+    "diet",
+    "unhealthy eating",
+    "junk food"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I have a poor diet.",
+   "absent_text": "My diet isn't poor."
+  },
+  {
+   "key": "E_143",
+   "question": "Do you exercise regularly, 4 times per week or more?",
+   "item": "regular exercise, 4 or more times a week",
+   "aliases": [
+    "exercise",
+    "working out",
+    "sports"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I exercise regularly, 4 or more times a week.",
+   "absent_text": "I don't exercise 4 or more times a week."
+  },
+  {
+   "key": "E_115",
+   "question": "Have you had unprotected sex with more than one partner in the last 6 months?",
+   "item": "unprotected sex with more than one partner in the last 6 months",
+   "aliases": [
+    "unprotected sex",
+    "multiple partners"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "In the last 6 months I've had unprotected sex with more than one partner.",
+   "absent_text": "I haven't had unprotected sex with more than one partner in the last 6 months."
+  },
+  {
+   "key": "E_189",
+   "question": "Have you had sexual intercourse with an HIV-positive partner in the past 12 months?",
+   "item": "sex with an HIV-positive partner in the past 12 months",
+   "aliases": [
+    "HIV-positive partner"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "In the past 12 months I've had sex with a partner who is HIV-positive.",
+   "absent_text": "I haven't had sex with an HIV-positive partner in the past 12 months."
+  },
+  {
+   "key": "E_41",
+   "question": "Have you been in contact with a person with similar symptoms in the past 2 weeks?",
+   "item": "contact with someone with similar symptoms in the past 2 weeks",
+   "aliases": [
+    "sick contacts",
+    "anyone sick around me",
+    "someone with the same symptoms"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "In the past 2 weeks I've been around someone with similar symptoms.",
+   "absent_text": "I haven't been around anyone with similar symptoms in the past 2 weeks."
+  },
+  {
+   "key": "E_40",
+   "question": "Have you been in contact with someone who has had pertussis (whoooping cough)?",
+   "item": "contact with someone who had whooping cough",
+   "aliases": [
+    "pertussis contact"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been in contact with someone who had whooping cough.",
+   "absent_text": "I haven't been in contact with anyone who had whooping cough."
+  },
+  {
+   "key": "E_73",
+   "question": "In the last month, have you been in contact with anyone infected with the Ebola virus?",
+   "item": "contact with someone with Ebola in the last month",
+   "aliases": [
+    "Ebola contact"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "In the last month I've been in contact with someone infected with Ebola.",
+   "absent_text": "I haven't been in contact with anyone with Ebola in the last month."
+  },
+  {
+   "key": "E_49",
+   "question": "Do you attend or work in a daycare?",
+   "item": "going to or working in a daycare",
+   "aliases": [
+    "daycare",
+    "children at work"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I go to or work in a daycare.",
+   "absent_text": "I don't go to or work in a daycare."
+  },
+  {
+   "key": "E_48",
+   "question": "Do you live with 4 or more people?",
+   "item": "living with 4 or more people",
+   "aliases": [
+    "household",
+    "crowded home",
+    "who I live with"
+   ],
+   "category": "social_background",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I live with 4 or more people.",
+   "absent_text": "I don't live with 4 or more people."
+  },
+  {
+   "key": "E_198",
+   "question": "Do you work in agriculture?",
+   "item": "working in agriculture",
+   "aliases": [
+    "farm work",
+    "farming",
+    "work",
+    "job",
+    "occupation"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I work in agriculture.",
+   "absent_text": "I don't work in agriculture."
+  },
+  {
+   "key": "E_199",
+   "question": "Do you work in construction?",
+   "item": "working in construction",
+   "aliases": [
+    "construction work",
+    "work",
+    "job",
+    "occupation"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I work in construction.",
+   "absent_text": "I don't work in construction."
+  },
+  {
+   "key": "E_200",
+   "question": "Do you work in the mining sector?",
+   "item": "working in mining",
+   "aliases": [
+    "mining",
+    "mine",
+    "work",
+    "job",
+    "occupation"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I work in the mining sector.",
+   "absent_text": "I don't work in mining."
+  },
+  {
+   "key": "E_207",
+   "question": "Do you live in in a big city?",
+   "item": "living in a big city",
+   "aliases": [
+    "city",
+    "urban"
+   ],
+   "category": "social_background",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I live in a big city.",
+   "absent_text": "I don't live in a big city."
+  },
+  {
+   "key": "E_195",
+   "question": "Do you live in the suburbs?",
+   "item": "living in the suburbs",
+   "aliases": [
+    "suburbs"
+   ],
+   "category": "social_background",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I live in the suburbs.",
+   "absent_text": "I don't live in the suburbs."
+  },
+  {
+   "key": "E_183",
+   "question": "Do you live in a rural area?",
+   "item": "living in a rural area",
+   "aliases": [
+    "countryside",
+    "rural"
+   ],
+   "category": "social_background",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I live in a rural area.",
+   "absent_text": "I don't live in a rural area."
+  },
+  {
+   "key": "E_204",
+   "question": "Have you traveled out of the country in the last 4 weeks?",
+   "item": "travel out of the country in the last 4 weeks",
+   "aliases": [
+    "travel",
+    "trip abroad",
+    "been abroad"
+   ],
+   "category": "habit_exposure",
+   "value_type": "categorical",
+   "options": {
+    "V_0": "North Africa",
+    "V_1": "West Africa",
+    "V_2": "South Africa",
+    "V_3": "Central America",
+    "V_4": "North America",
+    "V_5": "South America",
+    "V_6": "Asia",
+    "V_7": "South East Asia",
+    "V_8": "the Caribbean",
+    "V_9": "Europe",
+    "V_13": "Oceania"
+   },
+   "default": "V_10",
+   "present_text": "In the last 4 weeks I travelled to {value}.",
+   "absent_text": "I haven't travelled out of the country in the last 4 weeks."
+  },
+  {
+   "key": "E_42",
+   "question": "Have you been in contact with or ate something that you have an allergy to?",
+   "item": "contact with or eating something I'm allergic to",
+   "aliases": [
+    "allergen",
+    "allergic trigger",
+    "ate something I'm allergic to"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I've been in contact with or eaten something I'm allergic to.",
+   "absent_text": "I haven't been in contact with or eaten anything I'm allergic to."
+  },
+  {
+   "key": "E_187",
+   "question": "Did you eat dark-fleshed fish (such as tuna) or Swiss cheese before the reaction occurred?",
+   "item": "dark-fleshed fish or Swiss cheese before the reaction",
+   "aliases": [
+    "tuna",
+    "fish",
+    "Swiss cheese",
+    "food before the symptoms"
+   ],
+   "category": "habit_exposure",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I ate dark-fleshed fish (like tuna) or Swiss cheese before the reaction started.",
+   "absent_text": "I didn't eat dark-fleshed fish or Swiss cheese before the reaction."
+  },
+  {
+   "key": "E_17",
+   "question": "Are you of Asian descent?",
+   "item": "Asian descent",
+   "aliases": [
+    "ethnicity",
+    "ethnic background"
+   ],
+   "category": "social_background",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "I'm of Asian descent.",
+   "absent_text": "I'm not of Asian descent."
+  },
+  {
+   "key": "E_225",
+   "question": "Do you have close family members who had a cardiovascular disease problem before the age of 50?",
+   "item": "close family with heart or blood vessel disease before 50",
+   "aliases": [
+    "family heart disease",
+    "heart attack in the family"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Some of my close family had heart or blood vessel disease before age 50.",
+   "absent_text": "None of my close family had heart or blood vessel disease before 50."
+  },
+  {
+   "key": "E_224",
+   "question": "Do you have family members who have had lung cancer?",
+   "item": "lung cancer in the family",
+   "aliases": [
+    "family lung cancer"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Some of my family members have had lung cancer.",
+   "absent_text": "No one in my family has had lung cancer."
+  },
+  {
+   "key": "E_223",
+   "question": "Are there members of your family who have been diagnosed with pancreatic cancer?",
+   "item": "pancreatic cancer in the family",
+   "aliases": [
+    "family pancreatic cancer"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Someone in my family has been diagnosed with pancreatic cancer.",
+   "absent_text": "No one in my family has had pancreatic cancer."
+  },
+  {
+   "key": "E_165",
+   "question": "Have any of your family members ever had a pneumothorax?",
+   "item": "collapsed lung in the family",
+   "aliases": [
+    "family pneumothorax"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Someone in my family has had a pneumothorax (collapsed lung).",
+   "absent_text": "No one in my family has had a collapsed lung."
+  },
+  {
+   "key": "E_25",
+   "question": "Have any of your family members been diagnosed with cluster headaches?",
+   "item": "cluster headaches in the family",
+   "aliases": [
+    "family cluster headaches"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Someone in my family has been diagnosed with cluster headaches.",
+   "absent_text": "No one in my family has had cluster headaches."
+  },
+  {
+   "key": "E_26",
+   "question": "Do you have any family members who have been diagnosed with anemia?",
+   "item": "anemia in the family",
+   "aliases": [
+    "family anemia"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Someone in my family has been diagnosed with anemia.",
+   "absent_text": "No one in my family has been diagnosed with anemia."
+  },
+  {
+   "key": "E_28",
+   "question": "Are there any members of your family who have been diagnosed myasthenia gravis?",
+   "item": "myasthenia gravis in the family",
+   "aliases": [
+    "family myasthenia"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Someone in my family has been diagnosed with myasthenia gravis.",
+   "absent_text": "No one in my family has myasthenia gravis."
+  },
+  {
+   "key": "E_29",
+   "question": "Do any members of your immediate family have a psychiatric illness?",
+   "item": "psychiatric illness in the immediate family",
+   "aliases": [
+    "mental illness in the family"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Someone in my immediate family has a psychiatric illness.",
+   "absent_text": "No one in my immediate family has a psychiatric illness."
+  },
+  {
+   "key": "E_86",
+   "question": "Do you have any close family members who suffer from allergies (any type), hay fever or eczema?",
+   "item": "allergies, hay fever or eczema in close family",
+   "aliases": [
+    "family allergies",
+    "family eczema"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Some of my close family have allergies, hay fever or eczema.",
+   "absent_text": "None of my close family have allergies, hay fever or eczema."
+  },
+  {
+   "key": "E_87",
+   "question": "Do you have any family members who have asthma?",
+   "item": "asthma in the family",
+   "aliases": [
+    "family asthma"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "Someone in my family has asthma.",
+   "absent_text": "No one in my family has asthma."
+  },
+  {
+   "key": "E_142",
+   "question": "Does your mother suffer from asthma?",
+   "item": "mother with asthma",
+   "aliases": [
+    "mother's asthma"
+   ],
+   "category": "family_history",
+   "value_type": "binary",
+   "default": 0,
+   "present_text": "My mother has asthma.",
+   "absent_text": "My mother doesn't have asthma."
+  }
+ ]
+}

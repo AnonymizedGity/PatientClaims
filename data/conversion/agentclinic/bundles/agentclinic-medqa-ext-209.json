@@ -1,0 +1,76 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-209", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 60, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "loss of vision in the right eye", "aliases": ["vision loss", "can't see out of my right eye", "blindness in one eye"], "text": "I've lost the vision in my right eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "vision loss: onset", "parent": "f001", "attribute": "onset", "aliases": ["when it started", "how it started"], "text": "It happened suddenly, 30 minutes ago.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "vision loss: what I was doing", "parent": "f001", "attribute": "context", "text": "I was watching TV when it happened.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f004", "item": "eye pain", "aliases": ["painful eye", "pain with the vision loss"], "text": "My eye doesn't hurt; losing the vision wasn't painful.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "other symptoms", "aliases": ["anything else", "systemic symptoms"], "text": "I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "coronary artery disease", "aliases": ["heart disease", "CAD", "blocked heart arteries"], "text": "I have coronary artery disease.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "type 2 diabetes", "aliases": ["diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "trouble taking medications as prescribed", "aliases": ["medication adherence", "missing doses", "taking my medicines"], "text": "I've had trouble sticking to my medication regimen.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-209",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "160/85 mm Hg"},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "eye chart", "Snellen chart"], "result": "Left eye: 20/50; right eye: no perception of light."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "pupillary examination", "aliases": ["pupils", "pupillary light reflex", "direct light reflex", "accommodation"], "result": "Direct pupillary reflex: present in the left eye, absent in the right eye; accommodation: intact bilaterally."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "Left eye: 16 mm Hg; right eye: 18 mm Hg."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["fundoscopic examination", "ophthalmoscopy", "fundus examination", "dilated eye examination"], "result": "Right eye: pale, white retina with a bright red area within the macula; the optic disc appears normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-209",
+    "diagnosis": "Central retinal artery occlusion",
+    "aliases": ["CRAO", "occlusion of the central retinal artery", "central retinal artery obstruction", "embolic central retinal artery occlusion"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-209",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-209-p001"], "f002": ["cc", "agentclinic-medqa-ext-209-p001"], "f003": ["agentclinic-medqa-ext-209-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-209-p001"], "f005": ["agentclinic-medqa-ext-209-p004"], "f006": ["agentclinic-medqa-ext-209-p001", "agentclinic-medqa-ext-209-p002"],
+      "f007": ["agentclinic-medqa-ext-209-p001", "agentclinic-medqa-ext-209-p002"], "f008": ["agentclinic-medqa-ext-209-p001", "agentclinic-medqa-ext-209-p002"],
+      "f009": ["agentclinic-medqa-ext-209-p001", "agentclinic-medqa-ext-209-p003"]
+    },
+    "quotes": {
+      "f001": "loss of vision in the right eye", "f002": "occurred 30 minutes ago", "f003": "while watching TV", "f004": "painless",
+      "f005": "No other systemic symptoms reported", "f009": "has had trouble adhering to her medication regimen"
+    },
+    "flags": {
+      "f009": ["The medicines are not named; adherence is filed under medication."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "160/85 mm Hg", "exam_ids": ["agentclinic-medqa-ext-209-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Vision.Left_Eye + Physical_Examination_Findings.Vital_Signs.Vision.Right_Eye", "source_text": "20/50 + No perception of light", "exam_ids": ["agentclinic-medqa-ext-209-e002", "agentclinic-medqa-ext-209-e003"]},
+      "x003": {"source": "Physical_Examination_Findings.Eye_Examination.Direct_Pupillary_Reflex.Left_Eye + Physical_Examination_Findings.Eye_Examination.Direct_Pupillary_Reflex.Right_Eye + Physical_Examination_Findings.Eye_Examination.Accommodation", "source_text": "Present + Absent + Intact bilaterally", "exam_ids": ["agentclinic-medqa-ext-209-e004", "agentclinic-medqa-ext-209-e005", "agentclinic-medqa-ext-209-e006"]},
+      "x004": {"source": "Physical_Examination_Findings.Eye_Examination.Intraocular_Pressure.Left_Eye + Physical_Examination_Findings.Eye_Examination.Intraocular_Pressure.Right_Eye", "source_text": "16 mm Hg + 18 mm Hg", "exam_ids": ["agentclinic-medqa-ext-209-e007", "agentclinic-medqa-ext-209-e008"]},
+      "x005": {"source": "Physical_Examination_Findings.Eye_Examination.Fundoscopic_Examination.Right_Eye", "source_text": "Pale, white retina with a bright red area within the macula. The optic disc appears normal.", "exam_ids": ["agentclinic-medqa-ext-209-e009"]}
+    },
+    "finding_flags": {
+      "x002": ["Visual acuity is filed under Vital_Signs in the source; it is an eye examination record here."],
+      "x005": ["Only the right fundus is described."]
+    },
+    "leakage": [
+      {"fact_id": "f006", "reason": "'artery' is a gold-diagnosis word; it appears only in the patient's known prior diagnosis 'coronary artery disease'."}
+    ],
+    "source_issues": [
+      "Visual acuity is listed under Vital_Signs.",
+      "Only blood pressure is given among the vital signs.",
+      "Medication adherence is in Social_History; the drugs themselves are not listed."
+    ],
+    "notes": [
+      "Sudden onset 30 minutes ago and the TV context are children of the vision-loss fact; 'painless' becomes an absent eye-pain fact so 'does it hurt?' has a direct answer.",
+      "Both eyes' acuity, pupils and pressures are combined per examination step, as a doctor requests them.",
+      "Finding aliases avoid 'retinal' (a gold word); 'fundoscopy' and 'ophthalmoscopy' are the usual requests."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with sudden loss of vision in one eye."
+    }
+  }
+}

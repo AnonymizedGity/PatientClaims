@@ -1,0 +1,110 @@
+{
+  "case_id": "agentclinic-medqa-ext-086",
+  "source_row": 86,
+  "demographics_text": "50-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with a longstanding pruritic rash, numbness, and tingling sensation on the palms.",
+  "chief_complaint": "Pruritic rash on upper body and face",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p001",
+      "field": "History",
+      "text": "The patient reports a year-long history of an itchy rash on his upper body and face. Additionally, he has been experiencing a numbness and tingling sensation on both palms. He has been working on his family's rice farm, also caring for livestock."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Numbness and tingling sensation of both palms"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Thinning of the eyebrows"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Loss of some eyelashes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Hypopigmented macules around the elbows"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p007",
+      "field": "Social_History",
+      "text": "Works as a farmer, no history of travel outside the local area."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-086-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, changes in vision, or any respiratory symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-086-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Observation",
+      "text": "Multiple erythematous macules and papules on the face, arms, chest, and back. Hypopigmented macules around the elbows."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "Insensitivity to light touch, temperature, and pinprick around the hypopigmented areas. Slight reduction in grip strength bilaterally."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-e007",
+      "path": "Physical_Examination_Findings.Skin_Examination.Special_Tests",
+      "text": "Loss of eyebrow and eyelash hairs."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-086-i001",
+      "path": "Test_Results.Skin_Biopsy.Findings",
+      "text": "Chronic inflammatory cells with features suggestive of leprosy."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-i002",
+      "path": "Test_Results.Nerve_Conduction_Studies.Findings",
+      "text": "Reduced sensory nerve action potentials in the ulnar nerves."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-086-i003",
+      "path": "Test_Results.Serology.Anti-PGL-1_antibodies",
+      "text": "Positive"
+    }
+  ],
+  "correct_diagnosis": "Leprosy",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

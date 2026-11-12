@@ -1,0 +1,90 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-203",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 19, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "itching in the groin", "aliases": ["itchy groin", "groin itch", "pruritus"], "text": "The itching in my groin has increased.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "red rash", "aliases": ["rash", "red patch", "skin rash"], "text": "I have a red rash.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "red rash: location", "parent": "f002", "attribute": "location", "value": ["left thigh", "pubic area", "perineum"], "text": "It's on my left thigh, over my pubic area and all through the area between my legs.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "red rash: on the scrotum", "parent": "f002", "attribute": "location", "aliases": ["rash on the scrotum", "scrotal rash"], "text": "It doesn't involve my scrotum.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "joint pain", "text": "I haven't had any joint pains.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "other symptoms", "aliases": ["anything else", "systemic symptoms"], "text": "Apart from the itchy rash, I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "acne", "aliases": ["spots on my face", "pimples"], "text": "I have acne on my face.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "other medical problems", "aliases": ["past medical history"], "text": "I don't have any other significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "illnesses in the family", "aliases": ["family history"], "text": "There's no significant illness in my family.", "polarity": "absent", "category": "family_history"},
+      {"id": "f012", "item": "wrestling", "aliases": ["sports", "contact sports", "school sports"], "text": "I wrestle for my school.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-203",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["dermatological examination", "groin examination", "examination of the rash"], "result": "Inspection: well-demarcated, erythematous patch on the left thigh, over the pubic region and throughout the perineum; scrotum spared. Palpation: the rash is slightly elevated and rough to the touch. Distribution: localized to the inguinal region, sparing the scrotum."},
+      {"id": "x006", "kind": "test", "name": "skin scraping microscopy", "aliases": ["KOH preparation", "KOH prep", "potassium hydroxide preparation", "skin scraping"], "result": "Hyphae observed."},
+      {"id": "x007", "kind": "test", "name": "skin scraping culture", "aliases": ["fungal culture", "culture of skin scraping"], "result": "Growth consistent with dermatophyte."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-203",
+    "diagnosis": "Tinea cruris",
+    "aliases": ["jock itch", "ringworm of the groin", "groin ringworm", "dermatophytosis of the groin", "dermatophyte infection of the groin", "eczema marginatum"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-203",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-203-p001"],
+      "f002": ["agentclinic-medqa-ext-203-p001", "agentclinic-medqa-ext-203-p002", "agentclinic-medqa-ext-203-p003"],
+      "f003": ["agentclinic-medqa-ext-203-p002", "agentclinic-medqa-ext-203-p003"],
+      "f004": ["agentclinic-medqa-ext-203-p004"],
+      "f005": ["agentclinic-medqa-ext-203-p007"],
+      "f006": ["agentclinic-medqa-ext-203-p007"],
+      "f007": ["agentclinic-medqa-ext-203-p007"],
+      "f008": ["agentclinic-medqa-ext-203-p001", "agentclinic-medqa-ext-203-p007"],
+      "f009": ["agentclinic-medqa-ext-203-p005"],
+      "f010": ["agentclinic-medqa-ext-203-p001"],
+      "f011": ["agentclinic-medqa-ext-203-p001"],
+      "f012": ["agentclinic-medqa-ext-203-p001", "agentclinic-medqa-ext-203-p006"]
+    },
+    "quotes": {
+      "f001": "increased inguinal pruritus",
+      "f002": "Erythematous rash",
+      "f003": "Rash over pubic region and throughout the perineum / on left thigh",
+      "f004": "Scrotum spared",
+      "f008": "Review of systems is negative apart from the pruritic rash. / or other systemic symptoms",
+      "f009": "Facial acne",
+      "f010": "No significant medical or family history.",
+      "f011": "No significant medical or family history.",
+      "f012": "Active in school wrestling"
+    },
+    "flags": {
+      "f001": ["'Increased' pruritus is kept literally; the source gives no onset, duration or baseline."],
+      "f004": ["'Scrotum spared' is an examination description listed among the secondary symptoms; the patient can see this himself, so it stays as a location denial."],
+      "f010": ["The History says 'No significant medical history' while Past_Medical_History lists facial acne; acne is kept as its own fact and f010 denies other problems."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-203-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-203-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-203-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-203-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Palpation + Physical_Examination_Findings.Skin_Examination.Distribution", "source_text": "Well-demarcated, erythematous patch on left thigh, over pubic region, and throughout the perineum. Scrotum is spared. + The rash is slightly elevated and rough to the touch. + Localized to the inguinal region, sparing the scrotum.", "exam_ids": ["agentclinic-medqa-ext-203-e005", "agentclinic-medqa-ext-203-e006", "agentclinic-medqa-ext-203-e007"]},
+      "x006": {"source": "Test_Results.Skin_Scraping.Microscopy.Findings", "source_text": "Hyphae observed", "exam_ids": ["agentclinic-medqa-ext-203-i001"]},
+      "x007": {"source": "Test_Results.Skin_Scraping.Culture.Result", "source_text": "Growth consistent with dermatophyte", "exam_ids": ["agentclinic-medqa-ext-203-i002"]}
+    },
+    "finding_flags": {
+      "x006": ["The source does not say the scraping was prepared with KOH; 'KOH preparation' is an alias because that is how this microscopy is requested."]
+    },
+    "leakage": [],
+    "source_issues": ["Chief complaint misspells 'pruritus' as 'pruritis'.", "Secondary_Symptoms includes 'Scrotum spared', an examination description.", "Skin distribution says 'Localized to the inguinal region' while inspection also places the patch on the left thigh.", "Wrestling appears in both the History and Social_History; merged into f012."],
+    "notes": ["The rash locations (left thigh, pubic region, perineum) are one location child; scrotal sparing is a second, absent location child.", "The review-of-systems meta phrase ('negative apart from the pruritic rash') and 'other systemic symptoms' become one catch-all denial (f008).", "The lay name 'jock itch' is kept out of patient aliases because it is a gold alias."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the skin condition in a young adult male presenting with inguinal pruritis and an erythematous rash."
+    }
+  }
+}

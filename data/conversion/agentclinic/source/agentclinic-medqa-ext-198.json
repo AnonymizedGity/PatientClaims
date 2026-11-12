@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-198",
+  "source_row": 198,
+  "demographics_text": "31-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with chronic flank pain and a history of urinary tract infections.",
+  "chief_complaint": "Intermittent flank pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-198-p001",
+      "field": "History",
+      "text": "The patient reports a 5-month history of intermittent flank pain. She mentions having experienced five urinary tract infections over the past 2 years. She does not report any recent fever, nausea, or vomiting. No changes in urinary habits, such as increased frequency or urgency, except when experiencing a UTI."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-198-p002",
+      "field": "Secondary_Symptoms",
+      "text": "History of multiple UTIs"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-198-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No nausea or vomiting"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-198-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No significant change in urinary habits"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-198-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant medical history. No history of kidney stones or familial kidney diseases as per patient's knowledge."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-198-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol socially, works in IT management. No recent travels or unusual dietary habits reported."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-198-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, rash, joint pain, or recent infections apart from the UTIs mentioned. No significant weight loss or gain."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "150/88 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "85 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible abnormalities or distension."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "No shifting dullness or flank pain elicited."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Nontender upper abdominal masses felt bilaterally."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-198-i001",
+      "path": "Test_Results.Blood_Work.Urea_Nitrogen",
+      "text": "29 mg/dL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-i002",
+      "path": "Test_Results.Blood_Work.Creatinine",
+      "text": "1.4 mg/dL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-i003",
+      "path": "Test_Results.Blood_Work.Blood_Pressure",
+      "text": "150/88 mmHg (indication of hypertension)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-198-i004",
+      "path": "Test_Results.Imaging.Renal_Ultrasonography.Findings",
+      "text": "Bilaterally enlarged kidneys with multiple parenchymal anechoic masses."
+    }
+  ],
+  "correct_diagnosis": "Autosomal dominant polycystic kidney disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

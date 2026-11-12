@@ -1,0 +1,152 @@
+{
+  "patient": {
+    "case_id": "mcr-test-10717",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 25, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "passing out", "aliases": ["loss of consciousness", "unconsciousness", "blackout", "fainting"], "text": "I became unconscious at home and was brought to the emergency department.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f002", "item": "palpitations", "aliases": ["heart pounding", "heart racing"], "text": "I've been having spells of palpitations.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "recurrent"},
+      {"id": "f003", "item": "dizziness", "aliases": ["feeling dizzy", "dizzy spells"], "text": "I get dizzy during my spells of palpitations.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f004", "item": "lightheadedness", "aliases": ["feeling lightheaded", "feeling faint"], "text": "I feel lightheaded during my spells of palpitations.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f005", "item": "sweating", "aliases": ["sweats", "diaphoresis"], "text": "I sweat during my spells of palpitations.", "polarity": "present", "category": "symptom", "system": "general", "time": "recurrent"},
+      {"id": "f006", "item": "how long the spells have been going on", "aliases": ["how long the symptoms have been going on"], "text": "These spells have been happening over the past 2 months.", "value": "2 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "when the spells happen", "aliases": ["relation to meals", "triggers of the spells", "relation to fasting"], "text": "They often come on late after a meal, or after I've gone a long time without eating.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "low blood sugar during the spells", "aliases": ["low sugar readings", "hypoglycemia", "blood sugar readings"], "text": "When my blood sugar was checked during my spells of palpitations and dizziness, it went as low as 3.5 mmol/L, and it came up with glucose.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f009", "item": "seizures", "aliases": ["fits", "convulsions"], "text": "I haven't had any seizures.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "dexamethasone", "aliases": ["steroid tablets", "oral steroids", "Decadron"], "text": "I took high-dose dexamethasone tablets every day for a while.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f011", "item": "dexamethasone: effect", "parent": "f010", "attribute": "treatment_response", "text": "The spells got better for a while, but they came back after I stopped it.", "polarity": "present", "category": "medication"},
+      {"id": "f012", "item": "weight gain", "aliases": ["putting on weight", "gaining weight"], "text": "I've put on weight, but I don't know how much.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "erectile dysfunction", "aliases": ["trouble getting erections", "impotence", "ED"], "text": "I've had trouble getting erections.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f014", "item": "erectile dysfunction: duration", "parent": "f013", "attribute": "duration", "text": "It's been going on for about a month.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f015", "item": "insulinoma in the family", "aliases": ["family history of insulinoma", "pancreatic tumors in the family"], "text": "No one in my family has had an insulinoma.", "polarity": "absent", "category": "family_history"},
+      {"id": "f016", "item": "diabetes in the family", "aliases": ["family history of diabetes"], "text": "No one in my family has diabetes.", "polarity": "absent", "category": "family_history"},
+      {"id": "f017", "item": "insulin use", "aliases": ["insulin injections", "taking insulin", "exogenous insulin"], "text": "I haven't used any insulin.", "polarity": "absent", "category": "medication"},
+      {"id": "f018", "item": "anabolic steroids", "aliases": ["steroid injections", "performance-enhancing drugs", "bodybuilding steroids"], "text": "For the past 2 months I've been injecting anabolic steroids for bodybuilding.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f019", "item": "growth hormone", "aliases": ["GH", "HGH", "human growth hormone"], "text": "For the past 2 months I've been using growth hormone for bodybuilding.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f020", "item": "amino acid supplements", "aliases": ["amino acids"], "text": "For the past 2 months I've been taking amino acids by mouth for bodybuilding.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f021", "item": "fat-burner supplements", "aliases": ["fat burners", "weight-loss supplements"], "text": "For the past 2 months I've been taking fat-burner supplements for bodybuilding.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f022", "item": "bodybuilding", "aliases": ["weight training", "exercise", "gym"], "text": "I do bodybuilding.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f023", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "Before all this I was healthy.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-10717",
+    "findings": [
+      {"id": "x001", "kind": "test", "name": "capillary blood glucose", "aliases": ["fingerstick glucose", "blood sugar", "point-of-care glucose", "glucose"], "result": "<2 mmol/L"},
+      {"id": "x002", "kind": "test", "name": "capillary blood glucose during earlier spells", "aliases": ["previous glucose readings", "glucose during episodes"], "result": "As low as 3.5 mmol/L during the episodes; improved with dextrose.", "time": "during the 2 months before presentation"},
+      {"id": "x003", "kind": "vital", "name": "weight", "aliases": ["body weight"], "result": "66 kg"},
+      {"id": "x004", "kind": "vital", "name": "height", "result": "170 cm"},
+      {"id": "x005", "kind": "vital", "name": "body mass index", "aliases": ["BMI"], "result": "22.8 kg/m2"},
+      {"id": "x006", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/75 mmHg"},
+      {"id": "x007", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "65/min"},
+      {"id": "x008", "kind": "exam", "system": "general", "name": "physical examination", "aliases": ["general examination", "full physical examination"], "result": "Unremarkable."},
+      {"id": "x009", "kind": "test", "name": "supervised 72-hour fast", "aliases": ["72-hour fast", "prolonged fast", "fasting test"], "result": "After 24 hours: neuroglycopenic symptoms with capillary glucose 2.5 mmol/L.", "time": "during admission"},
+      {"id": "x010", "kind": "test", "name": "serum insulin", "aliases": ["insulin level"], "result": ">301 µIU/mL", "time": "during hypoglycaemia"},
+      {"id": "x011", "kind": "test", "name": "C-peptide", "aliases": ["serum C-peptide"], "result": "681 pmol/L", "time": "during hypoglycaemia"},
+      {"id": "x012", "kind": "test", "name": "proinsulin", "aliases": ["serum proinsulin"], "result": "2.7 pmol/L", "time": "during hypoglycaemia"},
+      {"id": "x013", "kind": "test", "name": "beta-hydroxybutyrate", "aliases": ["BHB", "ketones", "serum ketones"], "result": "27.8 µmol/L", "time": "during hypoglycaemia"},
+      {"id": "x014", "kind": "test", "name": "anti-insulin antibodies", "aliases": ["insulin antibodies", "insulin autoantibodies", "anti-insulin antibody titer"], "result": ">100 IU/mL", "time": "during hypoglycaemia"},
+      {"id": "x015", "kind": "test", "name": "complete blood count", "aliases": ["full blood count", "CBC", "FBC", "blood count"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "renal function tests", "aliases": ["kidney function", "creatinine", "urea", "renal panel"], "result": "Normal."},
+      {"id": "x018", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid function"], "result": "Normal."},
+      {"id": "x019", "kind": "test", "name": "ACTH", "aliases": ["adrenocorticotropic hormone", "corticotropin"], "result": "Normal."},
+      {"id": "x020", "kind": "test", "name": "morning cortisol", "aliases": ["cortisol", "serum cortisol", "random cortisol"], "result": "Normal."},
+      {"id": "x021", "kind": "test", "name": "MRI of the abdomen", "aliases": ["abdominal MRI", "MRI pancreas", "pancreatic imaging"], "result": "No abnormalities, including the pancreas."},
+      {"id": "x022", "kind": "test", "name": "MRI of the sella turcica", "aliases": ["pituitary MRI", "MRI pituitary", "sella MRI"], "result": "No abnormalities."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-10717",
+    "diagnosis": "Insulin autoimmune syndrome",
+    "aliases": ["IAS", "Hirata disease", "Hirata's disease", "autoimmune insulin syndrome"],
+    "reasoning": "1. Adrenal insufficiency — “ACTH and nonstimulated morning cortisol levels were normal.” 2. Insulinoma — “MRI of the abdomen, including the pancreas, ... showed no abnormalities.” 3. Exogenous insulin administration — “the patient denied using exogenous insulin while proinsulin was below the reference range and the C-peptide level was normal.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-10717",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s003"],
+      "f003": ["s003"],
+      "f004": ["s003"],
+      "f005": ["s003"],
+      "f006": ["s003"],
+      "f007": ["s003"],
+      "f008": ["s003"],
+      "f009": ["s004"],
+      "f010": ["s005"],
+      "f011": ["s005"],
+      "f012": ["s006"],
+      "f013": ["s006"],
+      "f014": ["s006"],
+      "f015": ["s007"],
+      "f016": ["s007"],
+      "f017": ["s007"],
+      "f018": ["s008"],
+      "f019": ["s008"],
+      "f020": ["s008"],
+      "f021": ["s008"],
+      "f022": ["s008"],
+      "f023": ["s001"]
+    },
+    "quotes": {
+      "f001": "was brought to the emergency department after becoming unconscious at home",
+      "f006": "Over the preceding 2 months, he had recurrent episodes",
+      "f007": "often late after meals or after prolonged fasting",
+      "f008": "capillary glucose values had reached as low as 3.5 mmol/L and improved with dextrose",
+      "f010": "daily high-dose oral dexamethasone",
+      "f011": "Symptoms transiently improved with daily high-dose oral dexamethasone but recurred after discontinuation",
+      "f012": "unquantified weight gain",
+      "f014": "1 month of erectile dysfunction",
+      "f017": "denied exogenous insulin use",
+      "f018": "injectable anabolic steroids",
+      "f020": "oral amino acids",
+      "f021": "fat-burner supplements for bodybuilding over the previous 2 months",
+      "f023": "previously healthy"
+    },
+    "flags": {
+      "f008": ["The source gives earlier capillary glucose readings without saying who measured them; written as readings the patient knows, since they were treated with dextrose. Also kept as finding x002."],
+      "f010": ["The source does not say who prescribed the dexamethasone or why; taken as a treatment before the index visit because it sits in the history."],
+      "f019": ["'Injectable' modifies the anabolic steroids; the route of the growth hormone is not stated, so the text says 'using'."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s001"], "source_text": "a capillary glucose measurement was <2 mmol/L"},
+      "x002": {"sentences": ["s003"], "source_text": "capillary glucose values had reached as low as 3.5 mmol/L and improved with dextrose"},
+      "x003": {"sentences": ["s009"], "source_text": "weight was 66 kg"},
+      "x004": {"sentences": ["s009"], "source_text": "height 170 cm"},
+      "x005": {"sentences": ["s009"], "source_text": "BMI 22.8 kg/m2"},
+      "x006": {"sentences": ["s009"], "source_text": "blood pressure 125/75 mm Hg"},
+      "x007": {"sentences": ["s009"], "source_text": "pulse 65 beats/min"},
+      "x008": {"sentences": ["s009"], "source_text": "Examination was unremarkable."},
+      "x009": {"sentences": ["s010"], "source_text": "After 24 hours of a supervised 72-hour fast, he developed neuroglycopenic symptoms with a capillary glucose of 2.5 mmol/L."},
+      "x010": {"sentences": ["s011"], "source_text": "Laboratory evaluation during hypoglycaemia showed: serum insulin >301 µIU/mL"},
+      "x011": {"sentences": ["s011"], "source_text": "C-peptide 681 pmol/L"},
+      "x012": {"sentences": ["s011"], "source_text": "proinsulin 2.7 pmol/L"},
+      "x013": {"sentences": ["s011"], "source_text": "beta-hydroxybutyrate 27.8 µmol/L"},
+      "x014": {"sentences": ["s011"], "source_text": "anti-insulin antibody titer >100 IU/mL"},
+      "x015": {"sentences": ["s012"], "source_text": "Full blood count, liver, renal, and thyroid function tests were normal."},
+      "x016": {"sentences": ["s012"], "source_text": "Full blood count, liver, renal, and thyroid function tests were normal."},
+      "x017": {"sentences": ["s012"], "source_text": "Full blood count, liver, renal, and thyroid function tests were normal."},
+      "x018": {"sentences": ["s012"], "source_text": "Full blood count, liver, renal, and thyroid function tests were normal."},
+      "x019": {"sentences": ["s012"], "source_text": "ACTH and random morning cortisol levels were normal."},
+      "x020": {"sentences": ["s012"], "source_text": "ACTH and random morning cortisol levels were normal."},
+      "x021": {"sentences": ["s012"], "source_text": "MRI of the abdomen (including the pancreas) and the sella turcica showed no abnormalities."},
+      "x022": {"sentences": ["s012"], "source_text": "MRI of the abdomen (including the pancreas) and the sella turcica showed no abnormalities."}
+    },
+    "finding_flags": {
+      "x009": ["'Neuroglycopenic symptoms' is the source's wording for what happened during the fast; the specific symptoms are not given."],
+      "x010": ["The source says only 'during hypoglycaemia'; the sequence suggests the hypoglycaemia of the supervised fast (s010)."]
+    },
+    "leakage": [
+      {"fact_id": "f015", "reason": "Explicit family-history denial of insulinoma (a differential, not the gold); 'insulin' matches inside 'insulinoma'."},
+      {"fact_id": "f017", "reason": "Explicit denial of exogenous insulin use from the source (s007); the word 'insulin' is unavoidable and names the drug, not the diagnosis."}
+    ],
+    "source_issues": ["s012 calls the cortisol both 'random' and 'morning'; the reasoning calls it a nonstimulated morning cortisol.", "The earlier capillary glucose nadir of 3.5 mmol/L is only mildly low, while the presentation value was <2 mmol/L."],
+    "notes": ["Index visit: the emergency presentation after he became unconscious at home with a capillary glucose <2 mmol/L, and the admission that followed (s001, s003-s009); the supervised fast, the laboratory tests during hypoglycaemia and the other tests and MRI (s010-s012) are findings of the same admission workup.", "Finding names x010 'serum insulin' and x014 'anti-insulin antibodies' contain the gold word 'insulin' because these tests are named that way clinically; no neutral name exists.", "The 2-month spells of palpitations, dizziness, lightheadedness and sweating share one duration and one timing (late after meals or after prolonged fasting), so these are standalone facts with general items.", "Earlier glucose readings (s003) are a finding with time and also a medical_history fact, since the patient knows them.", "Fixes: f003 text rewritten; f004 text rewritten; f005 text rewritten; f008 text rewritten; f020 alias 'supplements' removed; f021 alias 'supplements' removed."],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s002", "reason": "Treatment and response at the index visit (recovery with intravenous dextrose) and admission; not part of the case."}
+    ]
+  }
+}

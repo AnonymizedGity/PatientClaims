@@ -1,0 +1,132 @@
+{
+  "patient": {
+    "case_id": "mcr-test-07087",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 35, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "fainting", "aliases": ["passing out", "blacking out", "losing consciousness", "syncope"], "text": "I keep passing out.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f002", "item": "fainting: duration", "parent": "f001", "attribute": "duration", "text": "It's been happening for 10 days.", "value": "10 days", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f003", "item": "fainting: trigger", "parent": "f001", "attribute": "aggravating", "aliases": ["sitting up", "change of position", "lying to sitting"], "text": "It happens every time I go from lying down to sitting up.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f004", "item": "fainting: sitting or standing", "parent": "f001", "attribute": "aggravating", "aliases": ["can't stand up", "can't sit up", "standing"], "text": "I can't sit or stand without briefly losing consciousness.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f005", "item": "dizziness before fainting", "aliases": ["dizziness", "lightheadedness"], "text": "When I sat up here in the emergency department, I felt dizzy just before I passed out.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "blurred vision before fainting", "aliases": ["blurred vision", "vision going blurry"], "text": "My vision went blurry just before I passed out.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f007", "item": "yawning before fainting", "aliases": ["yawning"], "text": "I yawned just before I passed out.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "fever", "aliases": ["temperature", "high temperature"], "text": "Yesterday I developed a fever of 39 °C.", "value": "39 °C", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f010", "item": "shortness of breath", "aliases": ["dyspnea", "breathlessness", "trouble breathing"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f011", "item": "asthma", "aliases": ["wheezing illness"], "text": "I have asthma.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "salbutamol", "aliases": ["albuterol", "inhaler", "Ventolin", "asthma medicine"], "text": "I use salbutamol for my asthma.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from asthma, I have no medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "unexplained fainting in the family", "aliases": ["family history of fainting", "family history of syncope"], "text": "No one in my family has had unexplained fainting.", "polarity": "absent", "category": "family_history"},
+      {"id": "f015", "item": "sudden cardiac death in the family", "aliases": ["sudden death in the family", "family history of sudden death"], "text": "No one in my family has died suddenly from a heart problem.", "polarity": "absent", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-07087",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "cardiovascular", "name": "heart rate and blood pressure response to sitting up", "aliases": ["orthostatic vital signs", "postural vitals", "active stand test", "orthostatic test", "cardiac monitoring", "telemetry"], "result": "On assuming an upright seated posture, heart rate initially rose to 110 bpm in sinus rhythm with maintained blood pressure; over the next 2–3 minutes it gradually declined to marked sinus bradycardia, at which point he yawned, became dizzy with blurred vision, and lost consciousness."},
+      {"id": "x002", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG", "12-lead ECG"], "result": "No PR-interval prolongation and no AV-conduction abnormality."},
+      {"id": "x003", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "39 °C"},
+      {"id": "x004", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "107 bpm"},
+      {"id": "x005", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normal."},
+      {"id": "x006", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal."},
+      {"id": "x007", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "Normal."},
+      {"id": "x008", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["chest auscultation", "lung examination", "breath sounds", "crackles"], "result": "Bilateral basal crackles."},
+      {"id": "x009", "kind": "test", "name": "arterial blood gas", "aliases": ["ABG", "blood gas", "pO2"], "result": "Mild hypoxemia (pO2 10.1 kPa)."},
+      {"id": "x010", "kind": "test", "name": "white blood cell count", "aliases": ["CBC", "complete blood count", "WBC", "leukocytes"], "result": "Leukopenia (3.7 Gpt/L)."},
+      {"id": "x011", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Elevated: 32.9 mg/L."},
+      {"id": "x012", "kind": "test", "name": "serum ferritin", "aliases": ["ferritin"], "result": "Elevated: 1874 µg/L."},
+      {"id": "x013", "kind": "test", "name": "procalcitonin", "aliases": ["PCT"], "result": "0.10 µg/L"},
+      {"id": "x014", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "transaminases", "AST", "ALT", "liver enzymes"], "result": "Mild transaminase elevation."},
+      {"id": "x015", "kind": "test", "name": "troponin T", "aliases": ["troponin", "cardiac enzymes", "hs-troponin"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "TSH", "aliases": ["thyroid-stimulating hormone", "thyroid function"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "nasopharyngeal swab for SARS-CoV-2", "aliases": ["COVID-19 test", "SARS-CoV-2 test", "coronavirus test", "nasopharyngeal swab"], "result": "Positive."},
+      {"id": "x018", "kind": "test", "name": "chest CT", "aliases": ["CT chest", "CT of the chest"], "result": "Bilateral, patchy ground-glass opacities consistent with COVID-19."},
+      {"id": "x019", "kind": "test", "name": "24-hour Holter ECG", "aliases": ["Holter monitor", "ambulatory ECG", "24-hour ECG", "rhythm monitoring"], "result": "Two sinus pauses of up to 3.4 seconds, episodes of idioventricular rhythm, and a 35-second run of slow ventricular tachycardia.", "time": "after admission to the ICU"},
+      {"id": "x020", "kind": "test", "name": "transthoracic echocardiography", "aliases": ["echocardiogram", "echo", "TTE", "cardiac ultrasound"], "result": "Normal ventricular size and function without structural abnormalities."},
+      {"id": "x021", "kind": "test", "name": "lumbar puncture", "aliases": ["LP", "CSF analysis", "spinal tap"], "result": "Unremarkable."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-07087",
+    "diagnosis": "Cardioinhibitory reflex syncope",
+    "aliases": ["cardioinhibitory vasovagal syncope", "vasovagal syncope, cardioinhibitory type", "reflex syncope, cardioinhibitory type", "cardioinhibitory neurally mediated syncope", "cardioinhibitory neurocardiogenic syncope"],
+    "reasoning": "1. Inherited channelopathies (eg, Brugada syndrome) and paroxysmal AV block were considered because of the bradyarrhythmic syncope — “Differential diagnoses in this patient include inherited channelopathies such as Brugada syndrome or paroxysmal AV block.” 2. Structural heart disease was excluded by imaging — “Transthoracic echocardiogram revealed a normal left ventricular ejection fraction without any structural abnormalities.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-07087",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s003"],
+      "f005": ["s004"],
+      "f006": ["s004"],
+      "f007": ["s004"],
+      "f008": ["s002"],
+      "f009": ["s002"],
+      "f010": ["s002"],
+      "f011": ["s006"],
+      "f012": ["s006"],
+      "f013": ["s006"],
+      "f014": ["s006"],
+      "f015": ["s006"]
+    },
+    "quotes": {
+      "f002": "a 10-day history of syncope",
+      "f003": "occurring each time he changed position from supine to sitting",
+      "f004": "He was unable to sit or stand without transient loss of consciousness.",
+      "f005": "experienced dizziness",
+      "f006": "visual blurring",
+      "f007": "he yawned",
+      "f008": "One day before presentation he developed fever to 39 °C",
+      "f009": "denied cough or dyspnea",
+      "f011": "asthma treated with salbutamol",
+      "f013": "His only past medical history was asthma",
+      "f014": "no family history of unexplained syncope or sudden cardiac death",
+      "f015": "sudden cardiac death"
+    },
+    "flags": {
+      "f005": ["Dizziness, blurred vision and yawning are reported for the episode observed in the emergency department (the index visit), so the texts describe that episode; the prompt does not say they precede every episode."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "In the emergency department, when he assumed an upright seated posture his heart rate initially rose to 110 bpm in sinus rhythm with maintained blood pressure; over the next 2–3 minutes his rate gradually declined to marked sinus bradycardia, at which point he yawned, experienced dizziness and visual blurring, and then lost consciousness."},
+      "x002": {"sentences": ["s005"], "source_text": "There was no PR-interval prolongation and no AV-conduction abnormality on ECG."},
+      "x003": {"sentences": ["s007"], "source_text": "temperature was 39 °C"},
+      "x004": {"sentences": ["s007"], "source_text": "heart rate 107 bpm"},
+      "x005": {"sentences": ["s007"], "source_text": "blood pressure, respiratory rate, and oxygen saturation were normal"},
+      "x006": {"sentences": ["s007"], "source_text": "blood pressure, respiratory rate, and oxygen saturation were normal"},
+      "x007": {"sentences": ["s007"], "source_text": "blood pressure, respiratory rate, and oxygen saturation were normal"},
+      "x008": {"sentences": ["s007"], "source_text": "bilateral basal crackles were noted"},
+      "x009": {"sentences": ["s008"], "source_text": "Arterial blood gas showed mild hypoxemia (pO2 10.1 kPa)."},
+      "x010": {"sentences": ["s009"], "source_text": "leukopenia (3.7 Gpt/L)"},
+      "x011": {"sentences": ["s009"], "source_text": "elevated C-reactive protein (32.9 mg/L)"},
+      "x012": {"sentences": ["s009"], "source_text": "elevated C-reactive protein (32.9 mg/L), ferritin (1874 µg/L)"},
+      "x013": {"sentences": ["s009"], "source_text": "procalcitonin (0.10 µg/L)"},
+      "x014": {"sentences": ["s009"], "source_text": "mild transaminase elevation"},
+      "x015": {"sentences": ["s009"], "source_text": "with normal troponin T and TSH"},
+      "x016": {"sentences": ["s009"], "source_text": "with normal troponin T and TSH"},
+      "x017": {"sentences": ["s010"], "source_text": "A nasopharyngeal swab was positive for SARS-CoV-2."},
+      "x018": {"sentences": ["s011"], "source_text": "Chest CT showed bilateral, patchy ground-glass opacities consistent with COVID-19."},
+      "x019": {"sentences": ["s013"], "source_text": "A 24-h Holter ECG demonstrated two sinus pauses up to 3.4 seconds, episodes of idioventricular rhythm, and a 35-second run of slow ventricular tachycardia."},
+      "x020": {"sentences": ["s014"], "source_text": "Transthoracic echocardiography showed normal ventricular size and function without structural abnormalities."},
+      "x021": {"sentences": ["s015"], "source_text": "A lumbar puncture / was unremarkable"}
+    },
+    "finding_flags": {
+      "x001": ["Bedside observation in the emergency department: reported as the observed sequence without the clinician's interpretation."],
+      "x013": ["The source lists procalcitonin 0.10 µg/L after 'elevated'; whether it was elevated is unclear, so only the value is given."],
+      "x021": ["'To evaluate possible COVID-19-related central dysautonomia (eg, Guillain–Barré syndrome)' is the reason for the test (clinician reasoning) and is dropped."]
+    },
+    "leakage": [
+      {"fact_id": "f001", "reason": "Alias 'syncope' (a gold word) is the clinical name of the presenting symptom itself; the patient text says 'passing out'. The gold adds the mechanism (cardioinhibitory reflex)."},
+      {"fact_id": "f014", "reason": "Alias 'family history of syncope' uses the gold word for the symptom; the text says 'fainting'."}
+    ],
+    "source_issues": [],
+    "notes": ["Index visit: the emergency department presentation after 10 days of syncope on sitting up and 1 day of fever, including the episode observed there (s001–s011).", "s013–s015 (Holter, echocardiography, lumbar puncture) were done after ICU admission; they are findings, the Holter with time.", "The ED episode (s004) gives both a finding (the monitored sequence) and patient facts (dizziness, blurred vision, yawning that he experienced). The heart rate of 110 bpm in that sequence and the examination heart rate of 107 bpm (s007) are different moments; both are kept.", "Fixes: f005 alias 'warning signs' removed; f006 alias 'warning signs' removed; f007 alias 'warning signs' removed."],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s012", "reason": "ICU admission: hospital course after the index visit."}
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12081",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 32, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "weight loss", "aliases": ["losing weight", "unintended weight loss"], "text": "I've lost 22 pounds without trying.", "value": "22 pounds", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "weight loss: duration", "parent": "f001", "attribute": "duration", "text": "It happened over the past three months.", "value": "3 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "diabetes", "aliases": ["type 1 diabetes", "T1DM", "high blood sugar"], "text": "I've had type 1 diabetes for eight years, and it's well controlled.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f004", "item": "blood sugar control", "aliases": ["glucose readings", "A1c", "hemoglobin A1c", "average blood sugar"], "text": "My blood sugar averages about 150 mg/dL, and my A1c is 7.5%.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f005", "item": "change in blood sugar control", "aliases": ["worse blood sugars", "glycemic control changes"], "text": "My blood sugar control hasn't changed.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f006", "item": "insulin pump", "aliases": ["insulin", "pump"], "text": "I use an insulin pump.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f007", "item": "pramlintide", "aliases": ["Symlin"], "text": "I also take pramlintide for my diabetes.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "change in diabetes treatment", "aliases": ["change in insulin", "new diabetes medicines"], "text": "My diabetes treatment hasn't changed.", "polarity": "absent", "category": "medication"},
+      {"id": "f009", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain"], "text": "I haven't had any belly pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f010", "item": "diarrhea", "aliases": ["loose stools"], "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f011", "item": "change in diet", "aliases": ["dieting", "eating less", "new diet"], "text": "I haven't changed my diet.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f012", "item": "change in exercise", "aliases": ["exercising more", "new exercise routine"], "text": "I haven't changed how much I exercise.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f013", "item": "palpitations", "aliases": ["heart racing", "heart pounding"], "text": "I haven't had palpitations.", "polarity": "absent", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f014", "item": "heat intolerance", "aliases": ["feeling too hot", "can't stand the heat"], "text": "Heat doesn't bother me more than usual.", "polarity": "absent", "category": "symptom", "system": "endocrine"},
+      {"id": "f015", "item": "neck soreness", "aliases": ["sore neck", "neck pain", "throat tenderness"], "text": "My neck isn't sore.", "polarity": "absent", "category": "symptom", "system": "endocrine"},
+      {"id": "f016", "item": "other thyroid-related symptoms", "aliases": ["thyroid symptoms"], "text": "I haven't had any other symptoms that might come from my thyroid.", "polarity": "absent", "category": "symptom", "system": "endocrine"},
+      {"id": "f017", "item": "ethnicity", "aliases": ["race", "ethnic background"], "text": "I'm White (Caucasian).", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12081",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "nutritional status"], "result": "Well-nourished and in no distress."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/80 mmHg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["eyes", "lid lag", "proptosis", "exophthalmos"], "result": "No lid lag or proptosis."},
+      {"id": "x005", "kind": "exam", "system": "endocrine", "name": "thyroid examination", "aliases": ["thyroid", "neck examination", "goiter"], "result": "No thyroid enlargement or tenderness."},
+      {"id": "x006", "kind": "exam", "system": "hematologic", "name": "cervical lymph node examination", "aliases": ["lymph nodes", "neck lymph nodes", "lymphadenopathy"], "result": "No cervical lymphadenopathy."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "tremor", "aliases": ["outstretched hands", "fine tremor"], "result": "No tremor."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Normal."},
+      {"id": "x009", "kind": "test", "name": "electrolytes and kidney function", "aliases": ["electrolytes", "kidney function", "renal function", "basic metabolic panel", "BMP", "creatinine"], "result": "Electrolytes normal; kidney function normal."},
+      {"id": "x010", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid-stimulating hormone", "free T4", "free thyroxine"], "result": "TSH 0.033 mIU/L, suppressed (reference 0.4–5.0 mIU/L); free thyroxine 33 pmol/L (reference 7.7–15.4 pmol/L)."},
+      {"id": "x012", "kind": "test", "name": "anti-thyroid peroxidase antibody", "aliases": ["anti-TPO", "TPO antibodies", "thyroid peroxidase antibodies", "thyroid antibodies"], "result": "Elevated at 13.2 SD (normal <2.0 SD)."},
+      {"id": "x013", "kind": "test", "name": "thyroid-stimulating immunoglobulin", "aliases": ["TSI", "thyroid-stimulating antibodies"], "result": "Undetectable."},
+      {"id": "x014", "kind": "test", "name": "serum thyroglobulin", "aliases": ["thyroglobulin", "Tg"], "result": "Within the normal range."},
+      {"id": "x015", "kind": "test", "name": "hemoglobin A1c", "aliases": ["HbA1c", "A1c", "glycated hemoglobin"], "result": "7.5%"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12081",
+    "diagnosis": "Autoimmune thyroiditis",
+    "aliases": ["Hashimoto's thyroiditis", "Hashimoto thyroiditis", "chronic lymphocytic thyroiditis", "hashitoxicosis", "painless thyroiditis", "silent thyroiditis", "thyrotoxic autoimmune thyroiditis"],
+    "reasoning": "1. Graves’ disease was unlikely given thyroid-stimulating immunoglobulin was not detected — “the results of a thyroid-stimulating immunoglobulin (TSI) assay were undetectable.” 2. Thyrotoxicosis factitia was ruled out by a normal thyroglobulin level, which would be low in exogenous hormone use — “His serum thyroglobulin was normal, arguing against thyroid hormone self-administration (thyrotoxicosis factitia).” 3. Autoimmune thyroiditis best fit the findings, given high anti-thyroid peroxidase antibodies and exclusion of other causes — “the diagnosis of autoimmune thyroiditis was made on the basis of the presence of anti-thyroid peroxidase antibodies and the absence of evidence of another etiology for hyperthyroidism, such as Graves' disease, multi-nodular goiter or toxic adenoma.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12081",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s003"], "f006": ["s003"],
+      "f007": ["s003"], "f008": ["s003"], "f009": ["s002"], "f010": ["s002"], "f011": ["s002"], "f012": ["s002"],
+      "f013": ["s002"], "f014": ["s002"], "f015": ["s002"], "f016": ["s002"], "f017": ["s001"]
+    },
+    "quotes": {
+      "f001": "an unintended 22-pound weight loss", "f002": "a three-month history",
+      "f003": "an eight-year history of well-controlled type 1 diabetes mellitus", "f004": "average blood glucose 150 mg/dL; hemoglobin A₁c 7.5%",
+      "f005": "glycemic control were unchanged", "f006": "insulin pump plus pramlintide", "f008": "His diabetes regimen (insulin pump plus pramlintide) and glycemic control were unchanged.",
+      "f011": "changes in diet or exercise", "f016": "other thyroid-related symptoms", "f017": "Caucasian man"
+    },
+    "flags": {
+      "f016": ["Blanket denial within a scope ('other thyroid-related symptoms'); answers only an open question about thyroid symptoms. Specific symptoms (tremor, sweating) stay unknown."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "On examination, he was well-nourished and in no distress."},
+      "x002": {"sentences": ["s005"], "source_text": "Blood pressure was 130/80 mmHg"},
+      "x003": {"sentences": ["s005"], "source_text": "pulse 72 beats/minute"},
+      "x004": {"sentences": ["s006"], "source_text": "There was no lid lag, proptosis"},
+      "x005": {"sentences": ["s006"], "source_text": "thyroid enlargement, tenderness"},
+      "x006": {"sentences": ["s006"], "source_text": "cervical lymphadenopathy"},
+      "x007": {"sentences": ["s006"], "source_text": "or tremor"},
+      "x008": {"sentences": ["s007"], "source_text": "Laboratory studies showed normal complete blood count"},
+      "x009": {"sentences": ["s007"], "source_text": "electrolytes, liver and kidney function"},
+      "x010": {"sentences": ["s007"], "source_text": "electrolytes, liver and kidney function"},
+      "x011": {"sentences": ["s008"], "source_text": "Thyroid studies revealed a suppressed TSH level of 0.033 mIU/L (reference 0.4–5.0 mIU/L) and a free thyroxine level of 33 pmol/L (reference 7.7–15.4 pmol/L)."},
+      "x012": {"sentences": ["s009"], "source_text": "An anti-thyroid peroxidase antibody was elevated at 13.2 SD (normal <2.0 SD)."},
+      "x013": {"sentences": ["s010"], "source_text": "A thyroid-stimulating immunoglobulin (TSI) assay was undetectable."},
+      "x014": {"sentences": ["s011"], "source_text": "Serum thyroglobulin was within the normal range."},
+      "x015": {"sentences": ["s001"], "source_text": "hemoglobin A₁c 7.5%"}
+    },
+    "finding_flags": {
+      "x005": ["The source's 'tenderness' follows 'thyroid enlargement' and is read as thyroid tenderness."],
+      "x015": ["The HbA1c is quoted in the history as part of his diabetes control; its date is not given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The anti-thyroid peroxidase antibody is reported in SD units (13.2 SD, normal <2.0 SD), an unusual unit; kept as written."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with a three-month unintended 22-pound weight loss (s001-s011 are this presentation and its workup).",
+      "The HbA1c (s001) is both a fact the patient knows about his diabetes control and an orderable finding.",
+      "The single denial list in s002 is split into one absent fact per item; 'other thyroid-related symptoms' is a scoped blanket denial."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

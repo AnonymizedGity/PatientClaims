@@ -1,0 +1,95 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-082", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 42, "sex": "female"},
+    "opening": ["f001", "f002", "f003"],
+    "facts": [
+      {"id": "f001", "item": "hearing voices", "aliases": ["voices", "hearing things", "auditory hallucinations"], "text": "I've been hearing voices.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "irritability", "aliases": ["being irritable", "short temper"], "text": "I've been irritable.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "restlessness", "aliases": ["feeling restless", "can't sit still"], "text": "I've been feeling restless.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f004", "item": "how long the voices, irritability and restlessness have been going on", "aliases": ["how long the symptoms have been going on"], "text": "The voices, the irritability and the restlessness have been going on for the past year.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "difficulty swallowing", "aliases": ["trouble swallowing", "dysphagia"], "text": "I've been having trouble swallowing.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "difficulty swallowing: duration", "parent": "f005", "attribute": "duration", "text": "That started over the past month.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "memory problems", "aliases": ["forgetfulness", "memory loss"], "text": "I've become forgetful.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "involuntary movements", "aliases": ["jerky movements", "movements I can't control", "twitching"], "text": "I've been having movements I can't control.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f009", "item": "unclear speech", "aliases": ["slurred speech", "poor articulation", "trouble speaking clearly"], "text": "I have trouble saying words clearly.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f010", "item": "depression", "text": "I've had depression for 2 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "job loss", "aliases": ["fired", "employment", "work"], "text": "I was let go from my job 6 months ago because of performance problems linked to my forgetfulness.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f012", "item": "father's health", "aliases": ["family history", "father", "suicide in the family"], "text": "My father died by suicide when he was 50.", "polarity": "present", "category": "family_history", "time": "historical"},
+      {"id": "f013", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke a pack of cigarettes a day and have for the past 20 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "cocaine use", "aliases": ["drug use", "illicit drugs", "recreational drugs"], "text": "I used cocaine for 8 years, but I quit a year ago.", "polarity": "present", "category": "habit_exposure", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-082",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["mental status examination", "orientation", "cognition"], "result": "Confused; oriented to person and place only."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Normal."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor examination", "aliases": ["motor system", "involuntary movements", "abnormal movements", "observation of movements"], "result": "Irregular, nonrepetitive, arrhythmic movements of the neck and head."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs", "plantar reflex", "ankle reflex"], "result": "Delayed return to neutral ankle position after the plantar reflex is triggered."},
+      {"id": "x009", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "MRI head", "head imaging"], "result": "Atrophy of the caudate nuclei with ex vacuo dilatation of the frontal horns of the lateral ventricles."},
+      {"id": "x010", "kind": "test", "name": "genetic testing", "aliases": ["genetic test", "gene testing", "DNA testing", "CAG repeat testing"], "result": "Positive for the huntingtin (HTT) gene mutation."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-082",
+    "diagnosis": "Huntington disease",
+    "aliases": ["Huntington's disease", "Huntington chorea", "Huntington's chorea", "HD", "adult-onset Huntington disease"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-082",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-082-p001"], "f002": ["cc", "agentclinic-medqa-ext-082-p001"], "f003": ["cc", "agentclinic-medqa-ext-082-p001"],
+      "f004": ["agentclinic-medqa-ext-082-p001"], "f005": ["agentclinic-medqa-ext-082-p001", "agentclinic-medqa-ext-082-p002"],
+      "f006": ["agentclinic-medqa-ext-082-p001"], "f007": ["agentclinic-medqa-ext-082-p001", "agentclinic-medqa-ext-082-p003"],
+      "f008": ["agentclinic-medqa-ext-082-p004"], "f009": ["agentclinic-medqa-ext-082-p005"],
+      "f010": ["agentclinic-medqa-ext-082-p001", "agentclinic-medqa-ext-082-p006"], "f011": ["agentclinic-medqa-ext-082-p001"],
+      "f012": ["agentclinic-medqa-ext-082-p001"], "f013": ["agentclinic-medqa-ext-082-p001", "agentclinic-medqa-ext-082-p007"],
+      "f014": ["agentclinic-medqa-ext-082-p001", "agentclinic-medqa-ext-082-p007"]
+    },
+    "quotes": {
+      "f001": "auditory hallucinations", "f004": "for the past year", "f006": "Over the past month", "f007": "forgetfulness",
+      "f009": "Poor articulation", "f010": "a 2-year history of depression",
+      "f011": "terminated from her job 6 months ago due to performance issues linked to forgetfulness",
+      "f012": "the patient's father committing suicide at the age of 50", "f013": "smoked one pack of cigarettes daily for the past 20 years",
+      "f014": "cocaine use for 8 years but quit 1 year ago"
+    },
+    "flags": {
+      "f008": ["'Involuntary movements' and 'Poor articulation' (f009) are listed as secondary symptoms; written as what the patient notices. The exam (x007) gives the observed movements."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-082-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-082-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-082-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-082-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurologic_Examination.Mental_Status", "source_text": "Confused, oriented to person and place only.", "exam_ids": ["agentclinic-medqa-ext-082-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurologic_Examination.Cranial_Nerves", "source_text": "Normal findings.", "exam_ids": ["agentclinic-medqa-ext-082-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurologic_Examination.Motor_System", "source_text": "Irregular, nonrepetitive, and arrhythmic movements of the neck and head observed.", "exam_ids": ["agentclinic-medqa-ext-082-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurologic_Examination.Reflexes", "source_text": "Delayed return to neutral ankle position after triggering the plantar reflex.", "exam_ids": ["agentclinic-medqa-ext-082-e008"]},
+      "x009": {"source": "Test_Results.Brain_MRI.Findings", "source_text": "Atrophy of the caudate nuclei with ex vacuo dilatation of the frontal horns of the lateral ventricles.", "exam_ids": ["agentclinic-medqa-ext-082-i001"]},
+      "x010": {"source": "Test_Results.Genetic_Testing.Findings", "source_text": "Positive for the huntingtin (HTT) gene mutation.", "exam_ids": ["agentclinic-medqa-ext-082-i002"]}
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The genetic test result names the huntingtin (HTT) gene mutation, which identifies the diagnosis; it is the test's answer, so it stays."}
+    ],
+    "source_issues": [
+      "p008 (Review_of_Systems) holds only exam observations (confusion, oriented to person and place only), no symptoms."
+    ],
+    "notes": [
+      "The chief complaint names three complaints (voices, irritability, restlessness), so all three are opening facts; the one-year duration covers all three and is a standalone fact (f004).",
+      "Hearing voices is written as experience; 'auditory hallucinations' is an alias.",
+      "The confusion and orientation in p008 are observer-only and already in the mental status exam (x005).",
+      "Gold aliases exclude 'chorea' and 'neurodegenerative disease' (broader)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with abnormal behavior, difficulty swallowing, and involuntary movements."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-082-p008", "reason": "Observer-only signs (confusion; oriented to person and place only); already in the mental status exam (x005)."}
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-087", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 65, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "scaly patch of skin", "aliases": ["skin patch", "rough spot", "skin lesion", "plaque"], "text": "I have a scaly patch of skin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "scaly patch of skin: location", "parent": "f001", "attribute": "location", "text": "It's on the back of my left hand.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "scaly patch of skin: texture", "parent": "f001", "attribute": "character", "text": "It feels rough, like sandpaper.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "scaly patch of skin: tenderness", "parent": "f001", "attribute": "other", "text": "It isn't tender.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "scaly patch of skin: pain", "parent": "f001", "attribute": "other", "text": "It doesn't hurt.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "other symptoms", "aliases": ["any other problems"], "text": "Apart from this patch of skin, I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "annual check-up", "aliases": ["reason for visit", "well-check", "routine visit"], "text": "I'm here for my annual check-up.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "diabetes", "aliases": ["sugar", "blood sugar"], "text": "I have diabetes, and it's well controlled.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "high blood pressure", "aliases": ["hypertension", "HTN"], "text": "I have high blood pressure, and it's well controlled.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "metformin", "aliases": ["diabetes medicine"], "text": "I take metformin for my diabetes.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "losartan", "aliases": ["blood pressure medicine"], "text": "I take losartan for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "unhealthy diet", "aliases": ["diet", "eating habits"], "text": "I eat a healthy diet, mostly vegetables and lean meat.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "sun exposure", "aliases": ["sunbathing", "time in the sun", "tanning"], "text": "I enjoy sunbathing.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "exercise", "aliases": ["physical activity", "walking", "outdoor activities"], "text": "I enjoy outdoor activities like walking.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-087",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["dermatological examination", "skin inspection", "lesion examination", "hand examination"], "result": "Inspection: a rough, scaly plaque on the left dorsal hand; no other visible abnormalities; palpation: no tenderness or pain on palpation of the lesion."},
+      {"id": "x006", "kind": "test", "name": "skin biopsy", "aliases": ["biopsy of the hand lesion", "skin lesion biopsy", "shave biopsy", "punch biopsy"], "result": "Hyperkeratosis with parakeratosis, solar elastosis, and atypical keratinocytes confined to the epidermis; findings consistent with actinic keratosis."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-087",
+    "diagnosis": "Actinic keratosis",
+    "aliases": ["solar keratosis", "AK", "actinic keratoses", "senile keratosis", "hyperkeratotic actinic keratosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-087",
+    "fact_sources": {
+      "f001": ["cc"], "f002": ["cc"], "f003": ["cc"], "f004": ["agentclinic-medqa-ext-087-p002"], "f005": ["agentclinic-medqa-ext-087-p003"],
+      "f006": ["agentclinic-medqa-ext-087-p006"], "f007": ["agentclinic-medqa-ext-087-p001"],
+      "f008": ["agentclinic-medqa-ext-087-p001", "agentclinic-medqa-ext-087-p004"], "f009": ["agentclinic-medqa-ext-087-p001", "agentclinic-medqa-ext-087-p004"],
+      "f010": ["agentclinic-medqa-ext-087-p001"], "f011": ["agentclinic-medqa-ext-087-p001"], "f012": ["agentclinic-medqa-ext-087-p001"],
+      "f013": ["agentclinic-medqa-ext-087-p001", "agentclinic-medqa-ext-087-p005"], "f014": ["agentclinic-medqa-ext-087-p001", "agentclinic-medqa-ext-087-p005"],
+      "f015": ["agentclinic-medqa-ext-087-p001", "agentclinic-medqa-ext-087-p005"], "f016": ["agentclinic-medqa-ext-087-p001", "agentclinic-medqa-ext-087-p005"]
+    },
+    "quotes": {
+      "f002": "on the left dorsal hand", "f003": "rough, scaly, sandpaper-like", "f006": "Unremarkable except for the skin condition described",
+      "f007": "here for an annual well-check", "f008": "well-controlled diabetes", "f010": "managed with metformin and losartan, respectively",
+      "f011": "managed with metformin and losartan, respectively", "f012": "maintaining a healthy diet primarily consisting of vegetables and lean meat",
+      "f013": "sunbathing", "f014": "enjoys outdoor activities like walking", "f015": "denies any tobacco or alcohol use"
+    },
+    "flags": {
+      "f012": ["A healthy diet is the normal state, so it is written as 'unhealthy diet' absent (schema rule), keeping the detail in the text."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-087-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-087-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-087-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-087-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Dermatological_Examination.Inspection + Physical_Examination_Findings.Dermatological_Examination.Palpation", "source_text": "A rough, scaly plaque observed on the left dorsal hand. No other visible abnormalities. | No tenderness or pain upon palpation of the lesion.", "exam_ids": ["agentclinic-medqa-ext-087-e005", "agentclinic-medqa-ext-087-e006"]},
+      "x006": {"source": "Test_Results.Skin_Biopsy.Findings", "source_text": "Hyperkeratosis with parakeratosis, solar elastosis, and atypical keratinocytes confined to the epidermis. These findings are consistent with actinic keratosis.", "exam_ids": ["agentclinic-medqa-ext-087-i001"]}
+    },
+    "leakage": [
+      {"id": "x006", "reason": "The skin biopsy result says 'consistent with actinic keratosis' (the source's visible_gold_alias_partitions flag: test_results); it is the test's answer, so it stays."}
+    ],
+    "source_issues": [
+      "The skin biopsy result names the diagnosis; pool flag requires_diagnosis_text_cleanup is set. Kept per CONVERSION.md (a result may state what the test shows) and listed in qc.leakage.",
+      "The history never mentions the lesion itself (it is only in the chief complaint), nor how long it has been there; duration stays unknown."
+    ],
+    "notes": [
+      "The chief complaint is split into the patch (f001) with children for location (back of the left hand) and texture (rough, like sandpaper); 'No tenderness' and 'No pain' are absent children of the patch.",
+      "The annual well-check is the visit context (f007, medical_history as routine screening); the opening stays the chief complaint as CONVERSION.md directs.",
+      "'Outdoor activities like walking and sunbathing' is split into sun exposure (f013) and exercise (f014).",
+      "Gold aliases exclude 'keratosis' and 'precancerous skin lesion' (broader)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the skin condition present on the patient's left dorsal hand."
+    }
+  }
+}

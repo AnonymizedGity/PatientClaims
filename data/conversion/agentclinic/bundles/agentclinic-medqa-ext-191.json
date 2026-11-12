@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-191", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 26, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "exhaustion"], "text": "I've been feeling really tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "how long the symptoms have been going on", "text": "The tiredness and the episodes of lower belly pain have been going on for 2 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I've had pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "recurrent"},
+      {"id": "f004", "item": "abdominal pain: location", "parent": "f003", "attribute": "location", "text": "It's in my lower belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f005", "item": "abdominal pain: frequency", "parent": "f003", "attribute": "frequency", "text": "I've had several episodes of it.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f006", "item": "belief that she has cancer", "aliases": ["cancer concern", "fear of cancer", "own idea of the cause"], "text": "I strongly believe I have cancer.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f007", "item": "request for a diagnostic laparoscopy", "aliases": ["laparoscopy", "wants surgery"], "text": "I want a diagnostic laparoscopy to find out.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f008", "item": "time off work", "aliases": ["sick leave"], "text": "I've been off work on sick leave for the past 2 weeks.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f009", "item": "stress at work", "aliases": ["work stress", "stress"], "text": "I've been under stress at work; that's why I'm on sick leave.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f010", "item": "wish to return to work", "aliases": ["going back to work"], "text": "I want to go back to work.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "peptic ulcer", "aliases": ["peptic ulcer disease", "stomach ulcer", "ulcer"], "text": "I was diagnosed with a peptic ulcer 6 months ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "omeprazole", "aliases": ["acid medication", "stomach medication"], "text": "I take omeprazole.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a nurse.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f014", "item": "depressed mood", "aliases": ["low mood", "feeling down", "depression", "sadness"], "text": "I've been feeling down.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-191",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.5°C (97.7°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "90/65 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "120/min"},
+      {"id": "x004", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["appearance", "general examination"], "result": "Appears pale and tired."},
+      {"id": "x005", "kind": "exam", "system": "psychiatric", "name": "mental status examination", "aliases": ["mental status", "MSE", "mood"], "result": "Depressed mood; appears fatigued."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "arm examination", "dermatological examination"], "result": "Numerous crusts along the course of the veins of her left arm."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "cardiovascular examination", "aliases": ["heart examination", "heart auscultation", "heart sounds"], "result": "Grade 2/6 systolic ejection murmur along the right upper sternal border."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen examination", "abdominal palpation"], "result": "No abnormalities detected."},
+      {"id": "x009", "kind": "exam", "system": "musculoskeletal", "name": "musculoskeletal examination", "aliases": ["muscle strength", "motor strength", "power"], "result": "Generalized weakness of the proximal muscles."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count", "hemoglobin", "mean corpuscular volume", "MCV"], "result": "Hemoglobin 7.5 g/dL; mean corpuscular volume 89 μm3."},
+      {"id": "x011", "kind": "test", "name": "reticulocyte count", "aliases": ["retic count", "reticulocytes"], "result": "13.3%."},
+      {"id": "x012", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes", "sodium", "potassium", "calcium"], "result": "Sodium 139 mEq/L; potassium 3.9 mEq/L; calcium 8.5 mg/dL."},
+      {"id": "x013", "kind": "test", "name": "stool occult blood test", "aliases": ["fecal occult blood test", "FOBT", "stool guaiac", "hemoccult"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "abdominal ultrasound", "aliases": ["ultrasound of the abdomen", "abdominal ultrasonography"], "result": "No abnormalities."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-191",
+    "diagnosis": "Factitious disorder",
+    "aliases": ["factitious disorder imposed on self", "Munchausen syndrome", "Munchausen's syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-191",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-191-p001", "agentclinic-medqa-ext-191-p007"], "f002": ["agentclinic-medqa-ext-191-p001"],
+      "f003": ["agentclinic-medqa-ext-191-p001", "agentclinic-medqa-ext-191-p002"], "f004": ["agentclinic-medqa-ext-191-p001", "agentclinic-medqa-ext-191-p002"],
+      "f005": ["agentclinic-medqa-ext-191-p001"], "f006": ["agentclinic-medqa-ext-191-p001", "agentclinic-medqa-ext-191-p004"],
+      "f007": ["agentclinic-medqa-ext-191-p001", "agentclinic-medqa-ext-191-p004"], "f008": ["agentclinic-medqa-ext-191-p001"],
+      "f009": ["agentclinic-medqa-ext-191-p001", "agentclinic-medqa-ext-191-p003"], "f010": ["agentclinic-medqa-ext-191-p001"],
+      "f011": ["agentclinic-medqa-ext-191-p001", "agentclinic-medqa-ext-191-p005"], "f012": ["agentclinic-medqa-ext-191-p008"],
+      "f013": ["agentclinic-medqa-ext-191-p006"], "f014": ["agentclinic-medqa-ext-191-p007"]
+    },
+    "quotes": {
+      "f002": "a 2-month history of fatigue and several episodes of lower abdominal pain", "f004": "Lower abdominal pain", "f005": "several episodes of lower abdominal pain",
+      "f006": "a strong belief that she has cancer", "f007": "desires a diagnostic laparoscopy", "f008": "off work for 2 weeks on sick leave",
+      "f009": "due to stress at work", "f010": "wishes to return", "f011": "diagnosed with peptic ulcer disease 6 months ago",
+      "f014": "depressed mood"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.5°C (97.7°F)", "exam_ids": ["agentclinic-medqa-ext-191-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "90/65 mmHg", "exam_ids": ["agentclinic-medqa-ext-191-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "120 bpm", "exam_ids": ["agentclinic-medqa-ext-191-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.General_Appearance", "source_text": "Appears pale and tired", "exam_ids": ["agentclinic-medqa-ext-191-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Mental_Status_Examination", "source_text": "Patient has a depressed mood and appears fatigued.", "exam_ids": ["agentclinic-medqa-ext-191-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin_Examination", "source_text": "Numerous crusts along the course of her left arm veins.", "exam_ids": ["agentclinic-medqa-ext-191-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Cardiovascular_Examination", "source_text": "Grade 2/6 systolic ejection murmur along the right-upper sternal border.", "exam_ids": ["agentclinic-medqa-ext-191-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Abdominal_Examination", "source_text": "No abnormalities detected.", "exam_ids": ["agentclinic-medqa-ext-191-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination", "source_text": "Generalized weakness of the proximal muscles.", "exam_ids": ["agentclinic-medqa-ext-191-e009"]},
+      "x010": {"source": "Test_Results.Laboratory_Studies.Hemoglobin + Test_Results.Laboratory_Studies.Mean_Corpuscular_Volume", "source_text": "7.5 g/dL + 89 μm3", "exam_ids": ["agentclinic-medqa-ext-191-i001", "agentclinic-medqa-ext-191-i002"]},
+      "x011": {"source": "Test_Results.Laboratory_Studies.Reticulocyte_Count", "source_text": "13.3%", "exam_ids": ["agentclinic-medqa-ext-191-i003"]},
+      "x012": {"source": "Test_Results.Laboratory_Studies.Sodium + Test_Results.Laboratory_Studies.Potassium + Test_Results.Laboratory_Studies.Calcium", "source_text": "139 mEq/L + 3.9 mEq/L + 8.5 mg/dL", "exam_ids": ["agentclinic-medqa-ext-191-i004", "agentclinic-medqa-ext-191-i005", "agentclinic-medqa-ext-191-i006"]},
+      "x013": {"source": "Test_Results.Stool_Occult_Blood_Test", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-191-i007"]},
+      "x014": {"source": "Test_Results.Abdominal_Ultrasonography", "source_text": "No abnormalities", "exam_ids": ["agentclinic-medqa-ext-191-i008"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Social_History 'No mention of smoking, alcohol use, or recreational drug use' and ROS 'No mention of changes in bowel or urinary habits' are absence-of-data statements, not denials.",
+      "Crusts along the left arm veins (x006) are an exam-only sign; the history gives no explanation for them."
+    ],
+    "notes": [
+      "'No mention of ...' phrases are not converted into denials (a missing answer is not 'absent'); the rest of p006 and p007 is converted (nurse, tiredness, depressed mood).",
+      "'Reports tiredness' (ROS) merges with the chief complaint (f001). 'A 2-month history of fatigue and several episodes of lower abdominal pain' is read as governing both complaints, so the duration is a standalone fact (f002), as in the reference example.",
+      "The cancer belief and the laparoscopy request (History and p004) are the patient's own understanding and wishes (social_background, f006, f007). Sick leave, work stress and the wish to return to work are separate statements (f008-f010).",
+      "Laboratory_Studies are grouped as a doctor would order them: CBC (hemoglobin, MCV), reticulocyte count on its own, electrolytes (sodium, potassium, calcium)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient presenting with fatigue, stress, and concern for cancer."
+    }
+  }
+}

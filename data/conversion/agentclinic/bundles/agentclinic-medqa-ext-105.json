@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-105", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 51, "sex": "female"},
+    "opening": ["f001", "f005"],
+    "facts": [
+      {"id": "f001", "item": "cough", "text": "I have a really aggressive cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "cough: duration", "parent": "f001", "attribute": "duration", "text": "I've had this cough for about 11 years.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f003", "item": "cough: timing", "parent": "f001", "attribute": "timing", "text": "It's worse in the morning.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "cough: flare-ups", "parent": "f001", "attribute": "course", "aliases": ["exacerbations"], "text": "Over the years it has flared up like this before, just like it is now.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "recurrent"},
+      {"id": "f005", "item": "coughing up phlegm", "aliases": ["sputum", "mucus", "productive cough"], "text": "I cough up phlegm.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f006", "item": "coughing up phlegm: appearance", "parent": "f005", "attribute": "appearance", "value": ["thick", "foamy", "yellow-green"], "text": "It's thick, foamy and yellow-green.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f007", "item": "coughing up phlegm: amount", "parent": "f005", "attribute": "quantity", "text": "I bring up a lot of it.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f008", "item": "recurrent bronchitis", "aliases": ["bronchitis", "chest infections"], "text": "I keep getting bouts of bronchitis that have needed antibiotics.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f009", "item": "previous medical evaluations", "aliases": ["previous check-ups", "previous tests"], "text": "I've been evaluated several times in the past because of the bronchitis.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the bronchitis, I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "alcohol abuse", "aliases": ["drinking problem"], "text": "I've never had a problem with alcohol.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f013", "item": "drug abuse", "aliases": ["drug problem", "drugs"], "text": "I've never had a problem with drugs.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f014", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "shortness of breath", "aliases": ["breathlessness"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-105",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.7°C (98.0°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/78 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "80/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "chest examination", "aliases": ["lung examination", "respiratory examination", "lung auscultation", "chest auscultation"], "result": "Inspection: no cyanosis or use of accessory muscles. Palpation: no chest wall tenderness. Percussion: normal percussion note. Auscultation: crackles and wheezing over the right middle lobe."},
+      {"id": "x006", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Irregular opacities in the right middle lobe and diffuse airway thickening."},
+      {"id": "x007", "kind": "test", "name": "pulmonary function tests", "aliases": ["PFTs", "spirometry", "FEV1", "FVC", "FEV1/FVC ratio"], "result": "FVC reduced; FEV1 reduced; FEV1/FVC ratio normal."},
+      {"id": "x008", "kind": "test", "name": "sputum culture", "aliases": ["sputum microbiology", "sputum test"], "result": "Heavy growth of non-specific bacteria; no TB or fungal growth."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-105",
+    "diagnosis": "Bronchiectasis",
+    "aliases": ["non-cystic fibrosis bronchiectasis", "non-CF bronchiectasis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-105",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-105-p001"], "f002": ["agentclinic-medqa-ext-105-p001"],
+      "f003": ["agentclinic-medqa-ext-105-p001", "agentclinic-medqa-ext-105-p002"], "f004": ["agentclinic-medqa-ext-105-p001"],
+      "f005": ["cc", "agentclinic-medqa-ext-105-p001"], "f006": ["cc", "agentclinic-medqa-ext-105-p001"], "f007": ["agentclinic-medqa-ext-105-p001"],
+      "f008": ["agentclinic-medqa-ext-105-p001", "agentclinic-medqa-ext-105-p003", "agentclinic-medqa-ext-105-p004"],
+      "f009": ["agentclinic-medqa-ext-105-p001"], "f010": ["agentclinic-medqa-ext-105-p004"],
+      "f011": ["agentclinic-medqa-ext-105-p001", "agentclinic-medqa-ext-105-p005"], "f012": ["agentclinic-medqa-ext-105-p005"],
+      "f013": ["agentclinic-medqa-ext-105-p005"], "f014": ["agentclinic-medqa-ext-105-p006"], "f015": ["agentclinic-medqa-ext-105-p006"],
+      "f016": ["agentclinic-medqa-ext-105-p006"], "f017": ["agentclinic-medqa-ext-105-p006"]
+    },
+    "quotes": {
+      "f001": "Aggressive cough", "f002": "for about 11 years", "f003": "the cough is worse in the morning",
+      "f004": "with exacerbations similar to the current presentation today", "f006": "thick, foamy, yellow-green sputum",
+      "f007": "copious amounts", "f008": "recurrent bouts of bronchitis requiring antibiotics treatment",
+      "f009": "has had multiple evaluations in the past due to recurrent bouts of bronchitis",
+      "f010": "No other significant past medical history aside from the recurrent bronchitis.", "f012": "no history of alcohol or drug abuse",
+      "f013": "no history of alcohol or drug abuse"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98.0°F)", "exam_ids": ["agentclinic-medqa-ext-105-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/78 mmHg", "exam_ids": ["agentclinic-medqa-ext-105-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "80 bpm", "exam_ids": ["agentclinic-medqa-ext-105-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-105-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Palpation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "Inspection: No cyanosis or use of accessory muscles for breathing.; Palpation: No thoracic tenderness.; Percussion: Normal thoracic percussion note.; Auscultation: Crackles and wheezing over the right middle lobe.", "exam_ids": ["agentclinic-medqa-ext-105-e005", "agentclinic-medqa-ext-105-e008", "agentclinic-medqa-ext-105-e007", "agentclinic-medqa-ext-105-e006"]},
+      "x006": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "Irregular opacities in the right middle lobe and diffuse airway thickening.", "exam_ids": ["agentclinic-medqa-ext-105-i001"]},
+      "x007": {"source": "Test_Results.Pulmonary_Function_Tests.FVC + Test_Results.Pulmonary_Function_Tests.FEV1 + Test_Results.Pulmonary_Function_Tests.FEV1/FVC_Ratio", "source_text": "FVC: Reduced; FEV1: Reduced; FEV1/FVC_Ratio: Normal", "exam_ids": ["agentclinic-medqa-ext-105-i002", "agentclinic-medqa-ext-105-i003", "agentclinic-medqa-ext-105-i004"]},
+      "x008": {"source": "Test_Results.Sputum_Culture.Findings", "source_text": "Heavy growth of non-specific bacteria, no TB or fungal growth.", "exam_ids": ["agentclinic-medqa-ext-105-i005"]}
+    },
+    "finding_flags": {
+      "x007": ["Reduced FEV1 and FVC with a normal ratio is a restrictive-type pattern; bronchiectasis more often shows obstruction. Kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Pulmonary function tests show a normal FEV1/FVC ratio with reduced volumes, an unusual pattern for bronchiectasis."
+    ],
+    "notes": [
+      "The chief complaint names the cough and the thick yellow-green sputum, so both facts open (f001, f005); the sputum has appearance and amount children.",
+      "The 11-year duration, morning worsening and previous flare-ups are children of the cough.",
+      "Recurrent bronchitis (history, secondary symptom and past history) is one fact (f008); the past evaluations are a separate statement (f009).",
+      "'No history of alcohol or drug abuse' gives two denials (f012, f013); neither says whether she drinks at all.",
+      "The four respiratory examination parts form one chest examination record (x005)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with chronic cough and recurrent bouts of bronchitis."
+    }
+  }
+}

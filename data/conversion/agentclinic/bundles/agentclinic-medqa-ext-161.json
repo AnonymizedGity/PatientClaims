@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-161", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 53, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "difficulty climbing stairs", "aliases": ["trouble walking up stairs"], "text": "I've been having trouble walking up stairs.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "difficulty climbing stairs: course", "parent": "f001", "attribute": "course", "text": "It's been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "muscle weakness", "aliases": ["weak muscles"], "text": "My muscles feel weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "strength better with activity", "aliases": ["weakness improves with exercise"], "text": "My muscles get stronger once I've been active for a while, and climbing stairs gets easier.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "how long the symptoms have been going on", "text": "I've had the cough and the trouble with stairs for 3 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "cough", "text": "I've had a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f007", "item": "weight loss", "text": "I've lost a significant amount of weight: 4.6 kg over the past 6 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I've smoked a pack of cigarettes a day for 35 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "occupation", "aliases": ["job", "work"], "text": "I work in construction.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f010", "item": "living situation", "aliases": ["home", "housing", "stairs at home"], "text": "I live in a two-story apartment without an elevator.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-161",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "proximal strength"], "result": "Proximal lower-extremity strength initially 3/5, increasing to 5/5 after repeated muscle tapping."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs", "ankle reflex", "Achilles reflex"], "result": "Achilles reflex 1+."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "pupillary light reflex", "aliases": ["pupils", "pupillary reflex", "pupil examination"], "result": "Pupils equal but react sluggishly to light."},
+      {"id": "x008", "kind": "exam", "system": "general", "name": "hydration status", "aliases": ["mucous membranes", "mouth", "dry mouth"], "result": "Dry mucous membranes."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelets", "platelet count"], "result": "White blood cell count 7,000/μL; hemoglobin 14.1 g/dL; platelets 230,000/μL."},
+      {"id": "x010", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "No acute findings."},
+      {"id": "x011", "kind": "test", "name": "electromyography", "aliases": ["EMG", "nerve conduction study", "repetitive nerve stimulation"], "result": "Decreased compound muscle action potentials that increase in amplitude with repetitive stimulation."},
+      {"id": "x012", "kind": "test", "name": "voltage-gated calcium channel antibodies", "aliases": ["VGCC antibodies", "anti-VGCC", "P/Q-type calcium channel antibodies"], "result": "Elevated levels, supportive of a diagnosis of Lambert-Eaton syndrome."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-161",
+    "diagnosis": "Lambert-Eaton syndrome",
+    "aliases": ["Lambert-Eaton myasthenic syndrome", "LEMS", "Eaton-Lambert syndrome", "paraneoplastic Lambert-Eaton myasthenic syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-161",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-161-p001"], "f002": ["agentclinic-medqa-ext-161-p001"],
+      "f003": ["agentclinic-medqa-ext-161-p004", "agentclinic-medqa-ext-161-p007"],
+      "f004": ["agentclinic-medqa-ext-161-p001", "agentclinic-medqa-ext-161-p004", "agentclinic-medqa-ext-161-p007"],
+      "f005": ["agentclinic-medqa-ext-161-p001"],
+      "f006": ["agentclinic-medqa-ext-161-p001", "agentclinic-medqa-ext-161-p002", "agentclinic-medqa-ext-161-p007"],
+      "f007": ["agentclinic-medqa-ext-161-p001", "agentclinic-medqa-ext-161-p003", "agentclinic-medqa-ext-161-p007"],
+      "f008": ["agentclinic-medqa-ext-161-p005"],
+      "f009": ["agentclinic-medqa-ext-161-p006"], "f010": ["agentclinic-medqa-ext-161-p006"]
+    },
+    "quotes": {
+      "f002": "progressively worsening difficulty walking up stairs",
+      "f004": "it becomes easier to climb stairs after he has been active / Muscle weakness improving with activity",
+      "f005": "a 3-month history of cough and progressively worsening difficulty walking up stairs",
+      "f007": "significant weight loss / Weight loss of 4.6 kg over the past 6 months",
+      "f008": "smoking one pack of cigarettes daily for 35 years", "f010": "lives in a two-story apartment without an elevator"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-161-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-161-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-161-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-161-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Muscle_Strength", "source_text": "Proximal lower extremity strength initially 3/5, increasing to 5/5 after repeated muscle tapping", "exam_ids": ["agentclinic-medqa-ext-161-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Achilles reflex 1+", "exam_ids": ["agentclinic-medqa-ext-161-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Pupillary_Reflex", "source_text": "Pupils equal but react sluggishly to light", "exam_ids": ["agentclinic-medqa-ext-161-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Examination.Hydration_Status", "source_text": "Dry mucous membranes", "exam_ids": ["agentclinic-medqa-ext-161-e008"]},
+      "x009": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "7,000 /μL | 14.1 g/dL | 230,000 /μL", "exam_ids": ["agentclinic-medqa-ext-161-i001", "agentclinic-medqa-ext-161-i002", "agentclinic-medqa-ext-161-i003"]},
+      "x010": {"source": "Test_Results.Chest_X-Ray.Findings", "source_text": "No acute findings", "exam_ids": ["agentclinic-medqa-ext-161-i004"]},
+      "x011": {"source": "Test_Results.Electromyography.Findings", "source_text": "Decreased compound muscle action potentials that increase in amplitude with repetitive stimulation", "exam_ids": ["agentclinic-medqa-ext-161-i005"]},
+      "x012": {"source": "Test_Results.Voltage_Gated_Calcium_Channel_Antibodies.Findings", "source_text": "Elevated levels, supportive of Lambert-Eaton syndrome diagnosis", "exam_ids": ["agentclinic-medqa-ext-161-i006"]}
+    },
+    "leakage": [
+      {"id": "x012", "reason": "The antibody result names the diagnosis ('supportive of Lambert-Eaton syndrome diagnosis'). Kept per CONVERSION.md (a result may state what the test shows); it is only seen when the doctor orders this specific antibody test."}
+    ],
+    "source_issues": [
+      "The gold diagnosis is visible in the VGCC antibody result (pool flags: visible_gold_alias_partitions test_results, requires_diagnosis_text_cleanup true).",
+      "ROS (p007) lists 'slow pupil reaction', an examination sign, under neurological symptoms.",
+      "Smoking history is recorded under Past_Medical_History.",
+      "The weight loss is over 6 months, longer than the 3-month history of cough and stair difficulty (not a contradiction)."
+    ],
+    "notes": [
+      "'Slow pupil reaction' (ROS) is observer-only and already in the pupillary-reflex exam leaf (x007), so no patient fact was created for it.",
+      "Improvement with activity appears in p001 (stairs), p004 and p007 (muscle weakness/strength); it applies to both the stair difficulty and the weakness, so it is one standalone fact (f004).",
+      "The 3-month duration covers both the cough and the stair difficulty (standalone f005); the 6-month period belongs to the weight loss (f007).",
+      "Dry mucous membranes are only an examination finding; no dry-mouth complaint is in the patient fragments, so none was created."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with cough, difficulty walking up stairs, and muscle strength changes."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

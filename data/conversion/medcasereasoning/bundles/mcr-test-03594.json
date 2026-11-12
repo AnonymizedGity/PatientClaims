@@ -1,0 +1,117 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03594",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 24, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "low blood calcium", "aliases": ["hypocalcemia", "low calcium", "calcium problem"], "text": "I was referred because my blood calcium is low.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f002", "item": "spasms of the face", "aliases": ["facial spasms", "face twitching", "facial twitching"], "text": "I've had spasms in my face.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "historical"},
+      {"id": "f003", "item": "muscle spasms", "aliases": ["tetany", "muscles locking up", "involuntary muscle contractions"], "text": "I've had attacks where my muscles go into spasm (tetany).", "polarity": "present", "category": "symptom", "system": "neurological", "time": "historical"},
+      {"id": "f004", "item": "leg cramps", "aliases": ["cramps", "muscle cramps in the legs"], "text": "I've had leg cramps.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "historical"},
+      {"id": "f005", "item": "when the spasms and cramps started", "text": "The face spasms, muscle spasms and leg cramps started when I was about 10.", "value": "about age 10", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "course of the spasms and cramps", "text": "They got better during puberty but came back when I was an adult, which is why I was first tested.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "vitamin D", "aliases": ["vitamin D tablets"], "text": "I take vitamin D by mouth.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "calcium supplements", "aliases": ["calcium tablets", "calcium"], "text": "I take calcium tablets.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "vitamin D and calcium: response", "parent": "f007", "attribute": "treatment_response", "text": "Since starting the vitamin D and calcium, my symptoms have been relieved and I was told my calcium came back to normal.", "polarity": "present", "category": "medication"},
+      {"id": "f010", "item": "hearing loss", "aliases": ["deafness", "hard of hearing", "hearing aids", "sensorineural hearing loss"], "text": "Since I was 4 I've had moderate hearing loss in both ears (sensorineural), and I wear hearing aids.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "low birth weight", "aliases": ["birth weight", "small at birth", "birth history"], "text": "I was born very small, weighing 1114 grams.", "value": "1114 g", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "drooping eyelids at birth", "aliases": ["ptosis", "droopy eyelids"], "text": "I was born with drooping eyelids.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "stiff, bent joints at birth", "aliases": ["joint contractures", "contractures", "stiff joints"], "text": "I was born with joint contractures, joints that were stiff and bent.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f014", "item": "lack of oxygen at birth", "aliases": ["birth asphyxia", "neonatal asphyxia", "breathing problems at birth"], "text": "I didn't have any lack of oxygen at birth.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "brain abnormalities from birth", "aliases": ["cerebral anomalies", "brain malformation"], "text": "I wasn't born with any brain abnormalities.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "parathyroid disease in the family", "aliases": ["family history of parathyroid problems"], "text": "No one in my family has parathyroid disease.", "polarity": "absent", "category": "family_history"},
+      {"id": "f017", "item": "muscle spasms in the family", "aliases": ["family history of tetany", "tetany in relatives"], "text": "No one in my family has had tetany.", "polarity": "absent", "category": "family_history"},
+      {"id": "f018", "item": "deafness in the family", "aliases": ["family history of hearing loss", "deaf relatives"], "text": "No one in my family is deaf.", "polarity": "absent", "category": "family_history"},
+      {"id": "f019", "item": "malformed kidneys in the family", "aliases": ["kidney dysplasia in relatives", "family history of kidney problems"], "text": "No one in my family has malformed kidneys (kidney dysplasia).", "polarity": "absent", "category": "family_history"},
+      {"id": "f020", "item": "birth defects in the family", "aliases": ["congenital anomalies in relatives", "family history of birth defects"], "text": "No one in my family has birth defects.", "polarity": "absent", "category": "family_history"},
+      {"id": "f021", "item": "ethnicity", "aliases": ["nationality", "where I'm from", "ancestry"], "text": "I'm Japanese.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03594",
+    "findings": [
+      {"id": "x001", "kind": "test", "name": "serum calcium and phosphate", "aliases": ["calcium", "serum calcium", "phosphate", "phosphorus", "bone profile"], "result": "Calcium 8.3 mg/dL; phosphate 4.9 mg/dL (on vitamin D and calcium supplementation)."},
+      {"id": "x002", "kind": "test", "name": "intact parathyroid hormone", "aliases": ["PTH", "parathyroid hormone", "intact PTH"], "result": "Low: 15 pg/mL (reference 18.5–88.0)."},
+      {"id": "x003", "kind": "test", "name": "other hormone tests", "aliases": ["hormone panel", "endocrine tests", "other hormones"], "result": "Normal."},
+      {"id": "x004", "kind": "test", "name": "renal function tests", "aliases": ["kidney function", "creatinine", "urea", "BUN"], "result": "Normal."},
+      {"id": "x005", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "proteinuria", "hematuria", "urine dipstick"], "result": "No proteinuria or hematuria."},
+      {"id": "x006", "kind": "test", "name": "neck ultrasound", "aliases": ["thyroid ultrasound", "parathyroid ultrasound", "neck US"], "result": "No thyroid or parathyroid abnormalities."},
+      {"id": "x007", "kind": "test", "name": "brain CT", "aliases": ["CT head", "head CT"], "result": "Multiple basal ganglia calcifications."},
+      {"id": "x008", "kind": "test", "name": "abdominal CT", "aliases": ["CT abdomen", "kidney imaging", "renal CT"], "result": "Morphologically normal kidneys."},
+      {"id": "x009", "kind": "test", "name": "serum calcium and phosphate at the initial evaluation", "aliases": ["earlier calcium", "initial calcium", "initial phosphate"], "result": "Adjusted serum calcium 6.1 mg/dL (normal 8.8–10.1); phosphate 5.4 mg/dL (normal 2.7–4.6).", "time": "initial evaluation in adulthood, before vitamin D and calcium were started"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03594",
+    "diagnosis": "HDR syndrome",
+    "aliases": ["hypoparathyroidism, deafness and renal dysplasia syndrome", "hypoparathyroidism-deafness-renal dysplasia syndrome", "hypoparathyroidism, sensorineural deafness and renal disease syndrome", "Barakat syndrome"],
+    "reasoning": "1. Kenny–Caffey syndrome was considered as a congenital cause of hypoparathyroidism — “Differential diagnosis of early‐onset hypoparathyroidism includes several congenital diseases, DiGeorge syndrome, Kenny‐Caffey syndrome, and a genetic abnormality in PTH or CaSR...” 2. Genetic abnormalities in PTH or the calcium‐sensing receptor were considered in the differential — “Differential diagnosis of early‐onset hypoparathyroidism includes ... a genetic abnormality in PTH or CaSR...” 3. HDR syndrome was suspected because of the combination of hypoparathyroidism and sensorineural hearing loss, “... deafness is almost always observed in HDR syndrome and more rarely in DiGeorge syndrome.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-03594",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s004"],
+      "f003": ["s004"],
+      "f004": ["s004"],
+      "f005": ["s004"],
+      "f006": ["s004"],
+      "f007": ["s005", "s007"],
+      "f008": ["s005", "s007"],
+      "f009": ["s005"],
+      "f010": ["s003"],
+      "f011": ["s002"],
+      "f012": ["s002"],
+      "f013": ["s002"],
+      "f014": ["s002"],
+      "f015": ["s002"],
+      "f016": ["s006"],
+      "f017": ["s006"],
+      "f018": ["s006"],
+      "f019": ["s006"],
+      "f020": ["s006"],
+      "f021": ["s001"]
+    },
+    "quotes": {
+      "f001": "referred for evaluation of hypocalcemia",
+      "f003": "tetany",
+      "f005": "Beginning around age 10",
+      "f006": "which improved during puberty but recurred in adulthood, prompting evaluation",
+      "f009": "which normalized his calcium and relieved symptoms",
+      "f010": "At age 4, he was noted to have moderate bilateral sensorineural hearing loss requiring hearing aids",
+      "f011": "low birth weight (1114 g)",
+      "f014": "without neonatal asphyxia",
+      "f015": "cerebral anomalies",
+      "f019": "kidney dysplasia",
+      "f020": "congenital anomalies",
+      "f021": "Japanese"
+    },
+    "flags": {
+      "f001": ["The referral reason; the patient is taken to know he was referred for low calcium."],
+      "f002": ["Time 'historical': the symptoms recurred in adulthood and were relieved by supplementation (s005); their state at the index visit is not stated."],
+      "f012": ["Current state of the eyelids is not given; only the birth history."],
+      "f013": ["Current state of the joints is not given; only the birth history."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "On admission, while on supplementation his serum calcium was 8.3 mg/dL, phosphate 4.9 mg/dL"},
+      "x002": {"sentences": ["s007"], "source_text": "intact PTH was low at 15 pg/mL (18.5–88.0)"},
+      "x003": {"sentences": ["s008"], "source_text": "Other hormones were normal."},
+      "x004": {"sentences": ["s008"], "source_text": "Renal function was normal"},
+      "x005": {"sentences": ["s008"], "source_text": "without proteinuria or hematuria"},
+      "x006": {"sentences": ["s009"], "source_text": "Neck ultrasound showed no thyroid or parathyroid abnormalities."},
+      "x007": {"sentences": ["s010"], "source_text": "Brain CT demonstrated multiple basal ganglia calcifications"},
+      "x008": {"sentences": ["s010"], "source_text": "abdominal CT showed morphologically normal kidneys"},
+      "x009": {"sentences": ["s005"], "source_text": "Initial testing showed adjusted serum calcium 6.1 mg/dL (normal 8.8–10.1) and phosphate 5.4 mg/dL (2.7–4.6)"}
+    },
+    "finding_flags": {
+      "x003": ["The other hormones are not named."],
+      "x005": ["The source says renal function was normal 'without proteinuria or hematuria'; read as a urine test."]
+    },
+    "leakage": [],
+    "source_issues": ["No vital signs or physical examination findings are reported.", "The renal component of HDR syndrome is not shown in the prompt: kidneys morphologically normal and renal function normal.", "s008 holds two sentences (other hormones; renal function)."],
+    "notes": ["Index visit: the referral admission for evaluation of hypocalcemia, on vitamin D and calcium supplementation (s001, s007–s010); s002–s006 are the history, and the initial calcium and phosphate before supplementation (s005) are a finding with a time.", "Vitamin D and calcium were started before the referral (s005), so they are current medications and their effect is the patient's history, not a workup outcome.", "The patient is not assumed to know the word hypoparathyroidism; the low PTH is a finding only.", "The three childhood-onset symptoms share an onset and course, so f005 and f006 are standalone facts with general items.", "Fixes: f007 alias 'supplements' removed; f008 alias 'supplements' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

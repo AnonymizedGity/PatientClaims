@@ -1,0 +1,91 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-184", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 32, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "abdominal pain", "aliases": ["belly pain", "lower abdominal pain", "stomach pain"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "abdominal pain: location", "parent": "f001", "attribute": "location", "text": "It's on the left side of my lower belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "abdominal pain: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly during a kickboxing class.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "fever", "text": "I haven't had a fever recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "irregular periods", "aliases": ["menstrual cycle", "irregular menstrual cycles"], "text": "My periods are regular.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "last menstrual period", "aliases": ["LMP", "last period"], "text": "My last period ended 2 days ago.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "chlamydia", "aliases": ["sexually transmitted infection", "STI"], "text": "I had chlamydia in the past.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the chlamydia, I don't have any significant medical history.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "sexual activity", "aliases": ["sexually active"], "text": "I'm sexually active.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "contraception", "aliases": ["birth control", "condoms"], "text": "I don't use any contraception.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "nausea", "text": "I don't feel nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f012", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "diarrhea", "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "pain when urinating", "aliases": ["dysuria", "burning when peeing"], "text": "It doesn't burn or hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f015", "item": "change in bowel habits", "aliases": ["bowel movements"], "text": "My bowel habits haven't changed recently.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "change in urinary habits", "aliases": ["peeing more often", "urinary frequency"], "text": "My urinary habits haven't changed recently.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-184",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.2°C (99°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/68 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "88/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen examination", "abdominal palpation", "bowel sounds"], "result": "Inspection: no visible abnormalities; auscultation: normal bowel sounds; percussion: normal; palpation: tenderness and guarding in the left lower quadrant."},
+      {"id": "x007", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "bimanual examination", "vaginal examination", "adnexal examination"], "result": "Clear mucus at the vaginal introitus; tenderness of the left adnexa."},
+      {"id": "x008", "kind": "test", "name": "pelvic ultrasound with Doppler", "aliases": ["pelvic ultrasound", "Doppler ultrasound of the pelvis", "ultrasound of the pelvis"], "result": "Large amount of fluid in the rectouterine pouch."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-184",
+    "diagnosis": "Ruptured ovarian cyst",
+    "aliases": ["ovarian cyst rupture", "rupture of an ovarian cyst", "ruptured ovarian follicular cyst", "ruptured corpus luteum cyst", "ruptured hemorrhagic ovarian cyst"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-184",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-184-p001"], "f002": ["cc", "agentclinic-medqa-ext-184-p001"],
+      "f003": ["agentclinic-medqa-ext-184-p001", "agentclinic-medqa-ext-184-p003"], "f004": ["agentclinic-medqa-ext-184-p004"],
+      "f005": ["agentclinic-medqa-ext-184-p001", "agentclinic-medqa-ext-184-p005"], "f006": ["agentclinic-medqa-ext-184-p001"],
+      "f007": ["agentclinic-medqa-ext-184-p001", "agentclinic-medqa-ext-184-p006"], "f008": ["agentclinic-medqa-ext-184-p006"],
+      "f009": ["agentclinic-medqa-ext-184-p001", "agentclinic-medqa-ext-184-p007"], "f010": ["agentclinic-medqa-ext-184-p001", "agentclinic-medqa-ext-184-p007"],
+      "f011": ["agentclinic-medqa-ext-184-p008"], "f012": ["agentclinic-medqa-ext-184-p008"], "f013": ["agentclinic-medqa-ext-184-p008"],
+      "f014": ["agentclinic-medqa-ext-184-p008"], "f015": ["agentclinic-medqa-ext-184-p008"], "f016": ["agentclinic-medqa-ext-184-p008"]
+    },
+    "quotes": {
+      "f002": "Left-sided lower abdominal pain", "f003": "sudden onset of left-sided abdominal pain during a kickboxing class",
+      "f004": "No recent fever", "f005": "her menstrual periods are regular", "f006": "the last one ending 2 days ago",
+      "f007": "Chlamydia in the past.", "f008": "No other significant medical history.", "f010": "without using contraception",
+      "f015": "recent changes in bowel or urinary habits"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.2°C (99°F)", "exam_ids": ["agentclinic-medqa-ext-184-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/68 mmHg", "exam_ids": ["agentclinic-medqa-ext-184-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "88 bpm", "exam_ids": ["agentclinic-medqa-ext-184-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-184-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-184-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible abnormalities. + Normal bowel sounds. + Normal. + Tenderness and guarding on the left lower quadrant.", "exam_ids": ["agentclinic-medqa-ext-184-e006", "agentclinic-medqa-ext-184-e007", "agentclinic-medqa-ext-184-e008", "agentclinic-medqa-ext-184-e009"]},
+      "x007": {"source": "Physical_Examination_Findings.Pelvic_Exam.Findings", "source_text": "Clear mucous in the vaginal introitus. Tenderness of the left adnexa.", "exam_ids": ["agentclinic-medqa-ext-184-e010"]},
+      "x008": {"source": "Test_Results.Pelvic_Ultrasound_with_Doppler.Findings", "source_text": "Large amount of fluid in the rectouterine pouch.", "exam_ids": ["agentclinic-medqa-ext-184-i001"]}
+    },
+    "finding_flags": {
+      "x007": ["Source 'Clear mucous' corrected to 'mucus' (noun)."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "'Guarding' is listed as a Secondary_Symptom but is an examination sign (present in the abdominal palpation leaf e009).",
+      "Typo 'mucous' for 'mucus' in the pelvic exam."
+    ],
+    "notes": [
+      "'Acute onset during physical activity' (p003) merges with the kickboxing onset in the History (f003).",
+      "Menstrual regularity is written with the abnormal finding as item ('irregular periods', absent).",
+      "'Sexually active without contraception' is split into sexual activity (f009, present) and contraception (f010, absent); both habit_exposure."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-184-p002", "reason": "'Guarding' is an observer-only sign; it is already in the exam (abdominal palpation, x006 / e009), so no patient fact."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient presenting with acute onset left-sided abdominal pain and provide a differential diagnosis."
+    }
+  }
+}

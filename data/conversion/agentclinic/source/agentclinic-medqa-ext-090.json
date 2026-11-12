@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-090",
+  "source_row": 90,
+  "demographics_text": "70-year-old man accompanied by his wife",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with hand tremors and recent memory issues.",
+  "chief_complaint": "Resting tremor worse on the left hand",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p001",
+      "field": "History",
+      "text": "The patient first noticed the tremor in his left hand 1 year ago, which has been progressively worsening. Recently, he has faced difficulty in performing tasks that require steadiness, such as reading. His wife has observed a decline in his memory, taking note of his forgetfulness in paying bills, a task she has since had to assume."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Soft speech"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Reduced facial expressions"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Memory decline"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty in managing finances"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p006",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, medicated with aspirin and amlodipine. Family history of schizophrenia in his mother. No other significant medical or psychiatric history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p007",
+      "field": "Social_History",
+      "text": "Drinks 1-2 beers nightly and is a former cigar smoker."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-090-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies any other systemic complaints. Specifically, no urinary symptoms, no significant changes in bowel habits, no reported falls or dizziness."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "140/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98.06°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Facial_Expression",
+      "text": "Reduced"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Speech",
+      "text": "Soft and monotonous"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Left_Hand",
+      "text": "Resting tremor present, worsened by emotional stress or concentration"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Rigidity",
+      "text": "Mild rigidity noted during manipulation of bilateral upper extremities"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-090-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "7,500 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "14 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "230,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-i004",
+      "path": "Test_Results.Thyroid_Function_Tests.TSH",
+      "text": "2.5 mIU/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-i005",
+      "path": "Test_Results.Thyroid_Function_Tests.Free_T4",
+      "text": "1.2 ng/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-090-i006",
+      "path": "Test_Results.Brain_MRI.Findings",
+      "text": "No acute abnormalities. Mild age-appropriate cerebral atrophy."
+    }
+  ],
+  "correct_diagnosis": "Parkinson disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

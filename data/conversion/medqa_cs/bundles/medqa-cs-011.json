@@ -1,0 +1,1114 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-011",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 62,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "hoarseness",
+        "aliases": [
+          "hoarse voice",
+          "voice change"
+        ],
+        "text": "I have a hoarse voice.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "hoarseness: when it started",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "I first noticed it three months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "hoarseness: sudden or gradual",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started gradually.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "hoarseness: constant or comes and goes",
+        "parent": "f001",
+        "attribute": "frequency",
+        "text": "It's consistently hoarse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "hoarseness: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It is deteriorating.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "hoarseness: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "text": "Nothing makes it better.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "hoarseness: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "text": "Nothing makes it worse.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "earlier episodes of hoarseness",
+        "aliases": [
+          "anything like this before"
+        ],
+        "text": "Nothing like this has happened to me before.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "historical"
+      },
+      {
+        "id": "f009",
+        "item": "pain when speaking",
+        "aliases": [
+          "painful speaking"
+        ],
+        "text": "It doesn't hurt when I speak.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "lump or swelling in the neck",
+        "aliases": [
+          "lump",
+          "neck swelling",
+          "bumps in the head or neck"
+        ],
+        "text": "I feel like there's a lump in my throat.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "recent illness",
+        "aliases": [
+          "flu",
+          "cold",
+          "sore throat or runny nose"
+        ],
+        "text": "I had the flu 4 weeks ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "historical"
+      },
+      {
+        "id": "f012",
+        "item": "heartburn",
+        "aliases": [
+          "reflux",
+          "acid reflux"
+        ],
+        "text": "I have heartburn all the time, but I don't take any medication for it.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "weight loss",
+        "aliases": [
+          "weight change",
+          "losing weight"
+        ],
+        "text": "I have dropped 10 pounds in the last 3 months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "change in appetite",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "I have a poor appetite.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "how much you eat",
+        "aliases": [
+          "amount of food"
+        ],
+        "text": "I'm just eating less.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "fever",
+        "aliases": [
+          "feeling hot",
+          "temperature"
+        ],
+        "text": "I feel hot, but I didn't measure my temperature.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "chills",
+        "text": "I don't have chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "night sweats",
+        "aliases": [
+          "sweating at night"
+        ],
+        "text": "I don't have night sweats.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "tiredness",
+        "aliases": [
+          "fatigue",
+          "energy level"
+        ],
+        "text": "I've been feeling more tired recently.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I don't have any nausea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't been vomiting.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "constipation",
+        "text": "I'm not constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "trouble swallowing",
+        "aliases": [
+          "difficulty swallowing"
+        ],
+        "text": "I don't have any trouble swallowing food or liquids.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "chest pain",
+        "text": "I don't have chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "racing or pounding heart",
+        "aliases": [
+          "palpitations",
+          "heart racing"
+        ],
+        "text": "I haven't felt my heart racing or pounding.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "trouble breathing",
+        "aliases": [
+          "shortness of breath",
+          "difficulty breathing"
+        ],
+        "text": "I don't have any trouble breathing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "cough",
+        "text": "I don't have a cough.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "high cholesterol",
+        "aliases": [
+          "cholesterol"
+        ],
+        "text": "I have high cholesterol, but I don't take any medication for it.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "stroke",
+        "text": "I've never had a stroke.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f031",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies",
+          "allergies to medicines"
+        ],
+        "text": "I'm not allergic to anything.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "current medications",
+        "aliases": [
+          "medicines"
+        ],
+        "text": "I'm not on any medications.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "mother's health",
+        "text": "My mother had thyroid disease.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "father's health",
+        "text": "My father had lung cancer.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "time in the cold or dusty areas",
+        "aliases": [
+          "dust exposure",
+          "cold exposure"
+        ],
+        "text": "I haven't spent a lot of time out in the cold or in dusty areas.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "change in diet",
+        "aliases": [
+          "diet"
+        ],
+        "text": "It's the same as before. No changes.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink wine.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "alcohol: how much",
+        "parent": "f037",
+        "attribute": "quantity",
+        "text": "I have three glasses of wine daily.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "alcohol: for how long",
+        "parent": "f037",
+        "attribute": "duration",
+        "text": "For 30 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "drinking: feeling you should cut down",
+        "parent": "f037",
+        "attribute": "other",
+        "text": "I don't feel I need to cut down on my drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "drinking: annoyed by criticism of it",
+        "parent": "f037",
+        "attribute": "other",
+        "text": "Criticism of my drinking doesn't annoy me.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "drinking: feeling guilty about it",
+        "parent": "f037",
+        "attribute": "other",
+        "text": "I don't feel guilty about drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "drinking: as an eye-opener or for a hangover",
+        "parent": "f037",
+        "attribute": "other",
+        "text": "I don't drink in the morning as an eye-opener or to get rid of a hangover.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke cigarettes.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "smoking: how much",
+        "parent": "f044",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "smoking: for how long",
+        "parent": "f044",
+        "attribute": "duration",
+        "text": "For the past 30 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any illegal drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "past occupation",
+        "aliases": [
+          "previous job",
+          "voice use"
+        ],
+        "text": "I was a teacher for 20 years.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      },
+      {
+        "id": "f049",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "Now I am retired.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-011",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "115/75 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "99.9°F (37.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "16/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "74/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "conjunctival pallor",
+          "jaundice",
+          "sclera"
+        ],
+        "result": "No conjunctival pallor or scleral icterus."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "ent",
+        "name": "nose, mouth and throat examination",
+        "aliases": [
+          "throat",
+          "pharynx",
+          "mouth",
+          "nose"
+        ],
+        "result": "Nose and mouth within normal limits; pharynx without redness or exudates."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "ent",
+        "name": "neck examination",
+        "aliases": [
+          "lymph nodes",
+          "cervical lymph nodes",
+          "neck lumps"
+        ],
+        "result": "Lymphadenopathy along the right anterior cervical chain; no lymphadenopathy on the left."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung examination",
+        "aliases": [
+          "lung auscultation",
+          "listen to the lungs",
+          "chest examination"
+        ],
+        "result": "Clear to auscultation on both sides; equal inspiratory effort and chest expansion."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Point of maximal impulse not displaced; regular rhythm; no murmurs or rubs."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Bowel sounds present in all four quadrants; not distended; no organ enlargement."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes 4+ and symmetric."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-011",
+    "diagnosis": "Laryngeal cancer",
+    "aliases": [
+      "laryngeal carcinoma",
+      "cancer of the larynx",
+      "carcinoma of the larynx",
+      "laryngeal squamous cell carcinoma",
+      "squamous cell carcinoma of the larynx",
+      "vocal cord cancer",
+      "glottic cancer"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Laryngeal cancer",
+        "evidence": [
+          "Worsening hoarseness over past 3 months",
+          "Weight loss, decreased appetite, and low-grade fever",
+          "History of cigarette smoking and alcohol use",
+          "Advanced age",
+          "Exam: Cervical lymphadenopathy",
+          "Exam: Temperature 99.9°F",
+          "Exam: Right cervical lymphadenopathy"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Laryngitis",
+        "aliases": [
+          "acute laryngitis",
+          "chronic laryngitis",
+          "viral laryngitis",
+          "reflux laryngitis"
+        ],
+        "evidence": [
+          "History of flu 4 weeks ago",
+          "Low-grade fever",
+          "GERD",
+          "History of cigarette smoking",
+          "Exam: Temperature 99.9°F"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Vocal cord polyp/nodule",
+        "aliases": [
+          "vocal cord polyp",
+          "vocal cord nodule",
+          "vocal cord nodules",
+          "vocal fold polyp",
+          "vocal fold nodules",
+          "singer's nodules"
+        ],
+        "evidence": [
+          "Vocal overuse from teaching for 20 years",
+          "3 months of hoarseness"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Hypothyroidism",
+        "note": "Can cause hoarseness, loss of appetite and fatigue, but does not fit the weight loss or lymphadenopathy."
+      },
+      {
+        "diagnosis": "Mitral valve stenosis (MVS)",
+        "note": "Left atrial enlargement can compress the recurrent laryngeal nerve; more common in women with prior rheumatic fever, with palpitations, easy fatigue, a diastolic murmur and tachycardia."
+      },
+      {
+        "diagnosis": "Gastroesophageal reflux disease (GERD)",
+        "note": "Long-standing reflux can irritate and inflame the vocal cords; symptoms are typically linked to meals and lying down."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-011",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-011-p001"
+      ],
+      "f003": [
+        "medqa-cs-011-p002"
+      ],
+      "f004": [
+        "medqa-cs-011-p003"
+      ],
+      "f005": [
+        "medqa-cs-011-p004"
+      ],
+      "f006": [
+        "medqa-cs-011-p010"
+      ],
+      "f007": [
+        "medqa-cs-011-p011"
+      ],
+      "f008": [
+        "medqa-cs-011-p005"
+      ],
+      "f009": [
+        "medqa-cs-011-p006"
+      ],
+      "f010": [
+        "medqa-cs-011-p016"
+      ],
+      "f011": [
+        "medqa-cs-011-p009"
+      ],
+      "f012": [
+        "medqa-cs-011-p012"
+      ],
+      "f013": [
+        "medqa-cs-011-p014"
+      ],
+      "f014": [
+        "medqa-cs-011-p015"
+      ],
+      "f015": [
+        "medqa-cs-011-p024"
+      ],
+      "f016": [
+        "medqa-cs-011-p017"
+      ],
+      "f017": [
+        "medqa-cs-011-p017"
+      ],
+      "f018": [
+        "medqa-cs-011-p017"
+      ],
+      "f019": [
+        "medqa-cs-011-p018"
+      ],
+      "f020": [
+        "medqa-cs-011-p019"
+      ],
+      "f021": [
+        "medqa-cs-011-p019"
+      ],
+      "f022": [
+        "medqa-cs-011-p019"
+      ],
+      "f023": [
+        "medqa-cs-011-p019"
+      ],
+      "f024": [
+        "medqa-cs-011-p020"
+      ],
+      "f025": [
+        "medqa-cs-011-p020"
+      ],
+      "f026": [
+        "medqa-cs-011-p021"
+      ],
+      "f027": [
+        "medqa-cs-011-p021"
+      ],
+      "f028": [
+        "medqa-cs-011-p022"
+      ],
+      "f029": [
+        "medqa-cs-011-p013"
+      ],
+      "f030": [
+        "medqa-cs-011-p023"
+      ],
+      "f031": [
+        "medqa-cs-011-p031"
+      ],
+      "f032": [
+        "medqa-cs-011-p025"
+      ],
+      "f033": [
+        "medqa-cs-011-p026"
+      ],
+      "f034": [
+        "medqa-cs-011-p026"
+      ],
+      "f035": [
+        "medqa-cs-011-p008"
+      ],
+      "f036": [
+        "medqa-cs-011-p024"
+      ],
+      "f037": [
+        "medqa-cs-011-p027"
+      ],
+      "f038": [
+        "medqa-cs-011-p027"
+      ],
+      "f039": [
+        "note"
+      ],
+      "f040": [
+        "medqa-cs-011-p028"
+      ],
+      "f041": [
+        "medqa-cs-011-p028"
+      ],
+      "f042": [
+        "medqa-cs-011-p028"
+      ],
+      "f043": [
+        "medqa-cs-011-p028"
+      ],
+      "f044": [
+        "medqa-cs-011-p029"
+      ],
+      "f045": [
+        "medqa-cs-011-p029"
+      ],
+      "f046": [
+        "medqa-cs-011-p029"
+      ],
+      "f047": [
+        "medqa-cs-011-p030"
+      ],
+      "f048": [
+        "medqa-cs-011-p007"
+      ],
+      "f049": [
+        "medqa-cs-011-p007"
+      ]
+    },
+    "quotes": {
+      "f001": "I have a hoarse voice.",
+      "f002": "Three months ago.",
+      "f003": "It started gradually.",
+      "f004": "It's consistently hoarse.",
+      "f005": "It is deteriorating.",
+      "f006": "Nothing.",
+      "f007": "No.",
+      "f008": "No.",
+      "f009": "No.",
+      "f010": "Yes, I feel like there's a lump in my throat.",
+      "f011": "I had the flu 4 weeks ago.",
+      "f012": "Yes, I have heartburn all the time, but I don't take any medication for it.",
+      "f013": "I have dropped 10 pounds in the last 3 months.",
+      "f014": "I have a poor appetite.",
+      "f015": "I'm just consuming less.",
+      "f016": "I feel hot, but I didn't measure my temperature",
+      "f017": "I don't have chills or night sweats.",
+      "f018": "I don't have chills or night sweats.",
+      "f019": "Yes, I've been feeling more tired recently.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "High cholesterol, but I don't take any medication for it.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "No.",
+      "f033": "My mother had thyroid disease",
+      "f034": "my father had lung cancer.",
+      "f035": "No.",
+      "f036": "It's the same as before. No changes",
+      "f037": "I have three glasses of wine daily.",
+      "f038": "I have three glasses of wine daily.",
+      "f039": "consumes three glasses of wine/day for 30 years",
+      "f040": "No (to all four).",
+      "f041": "No (to all four).",
+      "f042": "No (to all four).",
+      "f043": "No (to all four).",
+      "f044": "Yes, I have been smoking a pack a day for the past 30 years.",
+      "f045": "a pack a day",
+      "f046": "for the past 30 years.",
+      "f047": "No.",
+      "f048": "I was a teacher for 20 years",
+      "f049": "but now I am retired."
+    },
+    "flags": {
+      "f039": [
+        "The 30-year duration is only in the patient note SH (the script gives no duration); it may have been copied from the smoking duration."
+      ],
+      "f048": [
+        "Given in answer to a question about recent changes in voice use; the answer does not say directly whether his voice use changed."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 115/75 mm Hg | VS: Within Normal Limits (WNL) except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-011-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 99.9°F (37.7°C) | VS: Within Normal Limits (WNL) except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-011-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 16/minute | VS: Within Normal Limits (WNL) except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-011-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 74/minute, regular | VS: Within Normal Limits (WNL) except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-011-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-011-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: No conjunctival pallor or scleral icterus.",
+        "exam_ids": [
+          "medqa-cs-011-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Nose and mouth WNL. Pharynx without erythema or exudates.",
+        "exam_ids": [
+          "medqa-cs-011-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Neck: Right anterior cervical chain with lymphadenopathy. No lymphadenopathy on the left.",
+        "exam_ids": [
+          "medqa-cs-011-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Pulmonary: Lungs clear to auscultation bilaterally. Equal inspiratory effort and excursion.",
+        "exam_ids": [
+          "medqa-cs-011-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Heart: Point of Maximal Impulse (PMI) not displaced, regular rhythm, no murmurs or rubs.",
+        "exam_ids": [
+          "medqa-cs-011-e006"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Bowel sounds x 4 quadrants, nondistended, no organomegaly.",
+        "exam_ids": [
+          "medqa-cs-011-e007"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Extremities: Deep Tendon Reflexes (DTRs) 4+ symmetric.",
+        "exam_ids": [
+          "medqa-cs-011-e008"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x011": [
+        "Source reads 'Bowel sounds x 4 quadrants' with no sign; read as present, the usual meaning of this shorthand."
+      ],
+      "x012": [
+        "Kept as written, but 4+ (hyperreflexia with clonus) is implausible next to an otherwise unremarkable exam with no neurologic complaint; it may be an OCR error for 2+."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "e008: 'Deep Tendon Reflexes (DTRs) 4+ symmetric' is implausible (hyperreflexia with clonus) next to an otherwise unremarkable exam and may be an OCR error for 2+; kept as written with a flag (x012). The line is also filed under Extremities.",
+      "e007: 'Bowel sounds x 4 quadrants' has no sign; read as present with a flag (x011).",
+      "e002: 'low-grade fever' is given without a value; the doorway temperature is 99.9°F.",
+      "Note SH 'CAGE (014)' is an OCR artifact for 0/4.",
+      "Note SH says three glasses of wine a day 'for 30 years'; the script gives no drinking duration (added as f039 with a flag).",
+      "Note FH says the mother had 'hypothyroidism'; the patient says 'thyroid disease'. The patient's wording was kept.",
+      "Note HPI quotes the patient as saying 'I have had a mild fever'; in the script he only feels hot and did not measure his temperature.",
+      "p007 asks about recent changes in voice use; the answer (teacher for 20 years, now retired) does not address it directly. The note and gold #3 read it as voice overuse.",
+      "p009 asks about sore throat, runny nose and cough; the answer gives only 'the flu 4 weeks ago' (cough is denied later in p021).",
+      "p016 asks about swelling or bumps in the head or neck; the answer describes a sensation of a lump in the throat, not a palpable mass. The exam finds right anterior cervical lymphadenopathy.",
+      "Gold #2 lists 'GERD' as a history finding; the patient reports constant heartburn but no GERD diagnosis.",
+      "Gold #1 lists both 'Cervical lymphadenopathy' and 'Right cervical lymphadenopathy' (duplicate). Gold #2 'Temperature 99. 9°F' has a stray space (cleaned).",
+      "The challenging question has a doubled opening quotation mark ('\"\"Will I regain my voice?\"').",
+      "The raw sheet's 'Closure' section contains unrelated text (exam duration, topics 'math, science, and history'); the sample closure calls the patient 'Mr. Jefferson' instead of Oliver Jackson.",
+      "p008 topic says 'Exposure to cold water or dust' while the question asks about time in the cold.",
+      "e006 (Heart) gives the rhythm but not the rate, and mentions murmurs and rubs but not gallops."
+    ],
+    "notes": [
+      "Untreated heartburn and untreated high cholesterol are recorded as single present facts with the 'no medication' qualifier, plus one general 'no medications' fact (f032), to avoid paraphrase duplicates.",
+      "'It's the same as before. No changes; I'm just consuming less' is split into an absent diet change (f036) and present reduced intake (f015).",
+      "The flu 4 weeks ago is coded as a recent illness (symptom, historical).",
+      "'Married with four children' from the SP-sheet patient description is in acting_notes (no valid source id).",
+      "Conversion: v1 x017 (hoarse, slow speech, sp_notes) is not an exam record: speaking hoarsely is behavior, no exam request elicits it and the note's exam does not record it (CONVERSION.md); it stays in acting_notes.",
+      "Conversion: alcohol (p027) is a parent with quantity and the note-only 30-year duration as children (v1 f037), and the four CAGE answers (p028) are its children; smoking (p029) is split the same way. Teacher for 20 years (v1 f007) is 'past occupation' and retired (v1 f008) is 'occupation'.",
+      "Conversion: the note's 'VS: WNL except for low-grade fever' (e002) agrees with the doorway values (99.9°F) and is cited on all four doorway records.",
+      "Fixes: f024 text rewritten; f007 answer word removed; f008 answer word removed; f009 answer word removed; f010 answer word removed; f012 answer word removed; f019 answer word removed; f029 answer word removed; f030 answer word removed; f031 answer word removed; f032 answer word removed; f035 answer word removed; f037 answer word removed; f040 answer word removed; f041 answer word removed; f042 answer word removed; f043 answer word removed; f044 answer word removed; f047 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Please speak slowly and in a hoarse voice.",
+        "Background from the SP sheet's patient description: married with four children."
+      ],
+      "patient_questions": [
+        "Will I regain my voice?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06792",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 43, "sex": "male"},
+    "opening": ["f001", "f007"],
+    "facts": [
+      {"id": "f001", "item": "hives", "aliases": ["urticaria", "chronic urticaria", "rash", "welts"], "text": "I've had chronic hives (urticaria).", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "hives: duration", "parent": "f001", "attribute": "duration", "text": "It's been about a year; it had already been going on for 6 months when I first came to the clinic.", "value": "about 12 months", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "antihistamines", "aliases": ["allergy tablets", "non-drowsy antihistamines", "nonsedating antihistamines"], "text": "I've been treated with high doses of non-drowsy antihistamines for the rash.", "polarity": "present", "category": "medication"},
+      {"id": "f004", "item": "antihistamines: effect on the rash", "parent": "f003", "attribute": "treatment_response", "text": "They haven't controlled it.", "polarity": "present", "category": "medication"},
+      {"id": "f005", "item": "when the general symptoms started", "aliases": ["onset of fevers", "how long the fevers have lasted"], "text": "The fevers, tiredness and other general symptoms came on within the last 6 months; when I first came to the clinic about the hives, I had no general symptoms.", "value": "within the last 6 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "tiredness", "aliases": ["fatigue", "exhaustion", "lack of energy"], "text": "I feel tired all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "fever", "aliases": ["fevers", "temperature", "daily fevers"], "text": "I've been getting fevers every day.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "night sweats", "aliases": ["sweating at night"], "text": "I've been having night sweats.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "joint pain", "aliases": ["arthralgia", "aching joints", "sore joints"], "text": "I've been having joint pains.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f010", "item": "joint pain: location", "parent": "f009", "attribute": "location", "text": "Especially my right knee.", "value": "right knee", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f011", "item": "shin bone pain", "aliases": ["bone pain", "tibial pain", "leg pain", "shin pain"], "text": "I also have pain in my right shin bone.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f012", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "swollen glands in the armpits and groin", "aliases": ["swollen lymph nodes", "lymphadenopathy", "lumps in the armpits", "lumps in the groin", "swollen glands"], "text": "I have swollen glands in both armpits and both sides of my groin.", "polarity": "present", "category": "symptom", "system": "hematologic", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06792",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp", "fever chart"], "result": "Daily fevers above 38 °C while an inpatient.", "time": "during the hospital admission"},
+      {"id": "x002", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "neutrophils", "blood counts"], "result": "Persistent neutrophilia (>15 × 10^9/L). Six months earlier, at the first clinic visit: normal blood counts."},
+      {"id": "x003", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate", "inflammatory markers"], "result": "Elevated. Six months earlier, at the first clinic visit: normal."},
+      {"id": "x004", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP", "inflammatory markers"], "result": "Elevated. Six months earlier, at the first clinic visit: normal."},
+      {"id": "x005", "kind": "test", "name": "serum immunoglobulins and paraprotein", "aliases": ["immunoglobulins", "IgG", "IgA", "IgM", "paraprotein", "serum protein electrophoresis", "immunofixation", "monoclonal protein", "M-protein"], "result": "Ongoing polyclonal elevation of IgG, IgA, and IgM; IgM kappa paraprotein increased to 3.3 g/L. Six months earlier, at the first clinic visit: polyclonal increase in IgG and IgA, and a small (<1 g/L) IgM kappa paraprotein."},
+      {"id": "x006", "kind": "test", "name": "serum ferritin", "aliases": ["ferritin"], "result": "Mildly elevated: 361 μg/L (normal 18–325)."},
+      {"id": "x007", "kind": "test", "name": "electrolytes", "aliases": ["metabolic panel", "sodium", "potassium", "serum electrolytes"], "result": "Normal.", "time": "first clinic visit, 6 months before the index visit"},
+      {"id": "x008", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "AST", "ALT", "bilirubin"], "result": "Normal.", "time": "first clinic visit, 6 months before the index visit"},
+      {"id": "x009", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid function"], "result": "Normal.", "time": "first clinic visit, 6 months before the index visit"},
+      {"id": "x010", "kind": "test", "name": "isotope bone scan", "aliases": ["bone scan", "bone scintigraphy", "nuclear bone scan"], "result": "Increased uptake at the proximal right tibia."},
+      {"id": "x011", "kind": "test", "name": "MRI of the right knee", "aliases": ["knee MRI", "MRI knee"], "result": "Nonspecific marrow signal changes at the distal femur and proximal tibia."},
+      {"id": "x012", "kind": "test", "name": "CT of the chest, abdomen, and pelvis", "aliases": ["CT scan", "CT chest", "CT abdomen", "CT pelvis", "staging CT"], "result": "Florid bilateral axillary and inguinal lymphadenopathy."},
+      {"id": "x013", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "ENA", "anti-dsDNA", "anti-CCP", "ANCA", "rheumatoid factor", "RF", "complement", "C3", "C4", "autoantibodies"], "result": "ANA, ENA, dsDNA, CCP, ANCA, rheumatoid factor, and complement levels all normal or negative."},
+      {"id": "x014", "kind": "test", "name": "beta-2 microglobulin", "aliases": ["β2-microglobulin", "B2M"], "result": "Slightly elevated."},
+      {"id": "x015", "kind": "test", "name": "plasma viscosity", "aliases": ["viscosity", "blood viscosity"], "result": "Slightly elevated."},
+      {"id": "x016", "kind": "test", "name": "lymphocyte subsets", "aliases": ["flow cytometry", "lymphocyte immunophenotyping", "T and B cells"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "kappa/lambda ratio", "aliases": ["light chain ratio", "free light chains", "serum free light chains"], "result": "Normal."},
+      {"id": "x018", "kind": "test", "name": "urine Bence Jones protein", "aliases": ["Bence Jones protein", "urine light chains"], "result": "Negative."},
+      {"id": "x019", "kind": "test", "name": "infection serology", "aliases": ["infectious workup", "EBV", "CMV", "HIV", "hepatitis serology", "syphilis", "Borrelia", "Lyme serology", "Brucella", "Chlamydia", "Q fever", "Coxiella", "Mycoplasma", "HHV8"], "result": "Negative for EBV, CMV, HIV, hepatitis viruses, syphilis, Borrelia, Brucella, Chlamydia, Q fever, Mycoplasma, and HHV8."},
+      {"id": "x020", "kind": "test", "name": "mycobacterial cultures", "aliases": ["TB culture", "AFB culture", "mycobacterial culture"], "result": "Negative."},
+      {"id": "x021", "kind": "test", "name": "skin biopsy", "aliases": ["biopsy of the rash", "skin histology"], "result": "Inflammatory epidermal infiltrate suggestive of rheumatoid arthritis or Still's disease."},
+      {"id": "x022", "kind": "test", "name": "lymph node biopsy", "aliases": ["node biopsy", "lymph node histology"], "result": "Polyclonal reactive hyperplasia with abundant plasma cells; Castleman disease was considered but excluded on further expert review."},
+      {"id": "x023", "kind": "test", "name": "bone marrow biopsy", "aliases": ["bone marrow", "marrow biopsy", "bone marrow aspirate"], "result": "Reactive changes only."},
+      {"id": "x024", "kind": "test", "name": "genetic testing for periodic fever genes", "aliases": ["MVK", "TNFRSF1A", "NLRP3", "autoinflammatory gene panel", "genetic testing", "periodic fever syndrome genes"], "result": "No mutations in MVK, TNFRSF1A, or NLRP3."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06792",
+    "diagnosis": "Schnitzler syndrome",
+    "aliases": ["Schnitzler's syndrome", "Schnitzler disease"],
+    "reasoning": "1. Castleman disease — “Castleman disease was considered but excluded after a further biopsy and review by several expert histopathologists.” 2. Hyper-IgD syndrome — “Mutations were not found in the coding regions of MVK … making the diagnoses of Hyper IgD syndrome … unlikely.” 3. Schnitzler syndrome — “It was first described by L. Schnitzler, as a clinical entity consisting of chronic urticaria, fever, bone pain, arthralgia or arthritis, and a monoclonal IgM gammopathy.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06792",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001", "s006"], "f003": ["s005"], "f004": ["s005"], "f005": ["s002", "s006"], "f006": ["s006"],
+      "f007": ["s006"], "f008": ["s006"], "f009": ["s006"], "f010": ["s006"], "f011": ["s006"], "f012": ["s006"],
+      "f013": ["s006"]
+    },
+    "quotes": {
+      "f001": "chronic urticaria", "f002": "a 6-month history of chronic urticaria / Six months later",
+      "f003": "high-dose nonsedating antihistamines", "f004": "The rash was refractory to high-dose nonsedating antihistamines.",
+      "f005": "He had no systemic symptoms initially. / Six months later", "f006": "generalized fatigue", "f007": "daily fevers",
+      "f009": "arthralgias", "f010": "notably right knee", "f011": "right knee and tibial pain",
+      "f013": "bilateral axillary and inguinal lymphadenopathy"
+    },
+    "flags": {
+      "f002": ["Duration is arithmetic from the source: a 6-month history at the first clinic visit plus the six months until the index visit."],
+      "f005": ["Onset 'within the last 6 months' is inferred from s002 (no systemic symptoms at the first visit) and s006 (reported six months later); the exact onset is not given."],
+      "f011": ["'Arthralgias (notably right knee and tibial pain)': 'right' is read as applying to the tibia too, consistent with the bone scan and knee MRI."],
+      "f013": ["s006 lists the lymphadenopathy among what he reported, so it is a fact (lumps he noticed); no lymph node examination is reported."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s008"], "source_text": "While an inpatient, he had daily fevers above 38 °C."},
+      "x002": {"sentences": ["s003", "s007"], "source_text": "normal blood counts / a persistent neutrophilia (>15×10^9/L)"},
+      "x003": {"sentences": ["s003", "s007"], "source_text": "ESR, and CRP / elevated ESR and CRP"},
+      "x004": {"sentences": ["s003", "s007"], "source_text": "ESR, and CRP / elevated ESR and CRP"},
+      "x005": {"sentences": ["s004", "s007"], "source_text": "Serum immunoglobulins revealed a polyclonal increase in IgG and IgA, and a small (<1 g/L) IgM kappa paraprotein. / ongoing polyclonal IgG, IgA, and IgM elevations with the IgM kappa paraprotein increased to 3.3 g/L"},
+      "x006": {"sentences": ["s007"], "source_text": "a mildly elevated ferritin (361 μg/L; normal 18–325)"},
+      "x007": {"sentences": ["s003"], "source_text": "Laboratory studies showed normal blood counts, electrolytes"},
+      "x008": {"sentences": ["s003"], "source_text": "liver and thyroid function tests"},
+      "x009": {"sentences": ["s003"], "source_text": "liver and thyroid function tests"},
+      "x010": {"sentences": ["s009"], "source_text": "Isotope bone scan showed increased uptake at the proximal right tibia."},
+      "x011": {"sentences": ["s010"], "source_text": "MRI of the right knee demonstrated nonspecific marrow signal changes at the distal femur and proximal tibia."},
+      "x012": {"sentences": ["s011"], "source_text": "CT of the chest, abdomen, and pelvis revealed florid bilateral axillary and inguinal lymphadenopathy."},
+      "x013": {"sentences": ["s012"], "source_text": "Autoimmune serologies (ANA, ENA, dsDNA, CCP, ANCA), rheumatoid factor, and complement levels were all normal or negative."},
+      "x014": {"sentences": ["s013"], "source_text": "Beta-2 microglobulin and plasma viscosity were slightly elevated"},
+      "x015": {"sentences": ["s013"], "source_text": "Beta-2 microglobulin and plasma viscosity were slightly elevated"},
+      "x016": {"sentences": ["s013"], "source_text": "lymphocyte subsets and kappa/lambda ratios were normal"},
+      "x017": {"sentences": ["s013"], "source_text": "lymphocyte subsets and kappa/lambda ratios were normal"},
+      "x018": {"sentences": ["s013"], "source_text": "urine Bence Jones protein was negative"},
+      "x019": {"sentences": ["s014"], "source_text": "Extensive infectious workup, including serologies for EBV, CMV, HIV, hepatitis viruses, syphilis, Borrelia, Brucella, Chlamydia, Q fever, Mycoplasma, and HHV8, as well as mycobacterial cultures, was negative."},
+      "x020": {"sentences": ["s014"], "source_text": "as well as mycobacterial cultures, was negative"},
+      "x021": {"sentences": ["s015"], "source_text": "Skin biopsy showed an inflammatory epidermal infiltrate suggestive of rheumatoid arthritis or Still’s disease."},
+      "x022": {"sentences": ["s016"], "source_text": "Lymph node biopsy revealed polyclonal reactive hyperplasia with abundant plasma cells; Castleman disease was considered but further expert review excluded it."},
+      "x023": {"sentences": ["s017"], "source_text": "Bone marrow biopsy showed only reactive changes."},
+      "x024": {"sentences": ["s018"], "source_text": "Genetic testing for MVK, TNFRSF1A, and NLRP3 mutations was negative"}
+    },
+    "finding_flags": {
+      "x002": ["Results from two time points are kept in one record per test (CBC, ESR, CRP, immunoglobulins) so that a request returns the current value with the earlier one labelled."],
+      "x017": ["'Kappa/lambda ratios' could refer to lymphocyte surface light chains or serum free light chains; the source does not say."],
+      "x021": ["Written pathology report: its conclusion ('suggestive of rheumatoid arthritis or Still's disease') is kept, as the schema allows for reports. It names a distractor, not the gold."],
+      "x022": ["The Castleman clause is the pathologists' review conclusion and is kept as part of the report."],
+      "x024": ["'Making Hyper-IgD syndrome, TNF receptor-associated periodic syndrome, and Muckle Wells/familial cold urticaria unlikely' is interpretation and is dropped from the result."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s019 records a tentative diagnosis of adult-onset Still's disease, which differs from the gold label (Schnitzler syndrome); the second-look note calls it a distractor."
+    ],
+    "notes": [
+      "Index visit: the clinic presentation six months after the first visit, when he reported generalized fatigue, daily fevers, night sweats, arthralgias with right knee and tibial pain, weight loss and axillary and inguinal lymphadenopathy (s006, s007), followed by the inpatient workup (s008–s018). The first clinic visit (s001–s005) is history: its tests are findings labelled as six months earlier. This later visit is chosen because the selection notes rest the diagnosis on fevers, bone pain and arthralgia after the urticaria, which appear only at this visit; framed at the first visit the case would have only urticaria and a small paraprotein.",
+      "The selection note does not say explicitly that a later visit is the best framing; the choice follows its screen and second-look reasons.",
+      "No physical examination is reported in the prompt."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s019", "reason": "Clinician's tentative diagnosis (adult-onset Still's disease): interpretation, not a finding; a distractor per the second-look note."}
+    ]
+  }
+}

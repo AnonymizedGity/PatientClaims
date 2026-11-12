@@ -1,0 +1,45 @@
+{
+ "case_id": "medqa-cs-044",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I fainted.",
+   "I unexpectedly collapsed and lost consciousness.",
+   "My wife told me that I did not respond to her for several minutes."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I fainted. I unexpectedly collapsed and lost consciousness, and my wife told me that I did not respond to her for several minutes.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f006"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4019,
+   "tokens_out": 39,
+   "seconds": 5.23,
+   "redrafts": 0
+  }
+ }
+}

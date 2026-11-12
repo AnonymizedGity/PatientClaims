@@ -1,0 +1,84 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06856",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 45, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "lumps in the neck", "aliases": ["neck masses", "neck lumps", "swelling in the neck", "lumps"], "text": "I have lumps in my neck.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "lumps in the neck: duration", "parent": "f001", "attribute": "duration", "text": "I've had them for 4 months.", "value": "4 months", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f003", "item": "lumps in the neck: course", "parent": "f001", "attribute": "course", "text": "They keep getting bigger.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f004", "item": "pain in the neck lumps", "aliases": ["painful lumps", "tender lumps"], "text": "They don't hurt.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f005", "item": "lumps in the neck: location", "parent": "f001", "attribute": "location", "text": "They're on the right side of my neck, toward the front.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f006", "item": "fever", "aliases": ["temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "night sweats", "aliases": ["sweating at night"], "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "hemodialysis", "aliases": ["dialysis", "kidney failure"], "text": "I've been on maintenance hemodialysis for 3 years.", "value": "3 years", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "cause of the kidney failure", "aliases": ["chronic glomerulonephritis", "kidney disease", "end-stage kidney disease", "ESRD"], "text": "My kidneys failed because of chronic glomerulonephritis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "tuberculous pleurisy", "aliases": ["tuberculosis", "TB", "pleurisy", "TB of the lining of the lung"], "text": "Twenty-five years ago I had tuberculous pleurisy.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "hepatitis B carrier", "aliases": ["hepatitis B", "HBV", "HBsAg positive", "liver infection"], "text": "I'm a hepatitis B carrier.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "allergies", "aliases": ["drug allergies", "allergic reactions"], "text": "I don't have any allergies.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06856",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "ent", "name": "neck examination", "aliases": ["palpation of the neck", "neck masses", "cervical lymph nodes"], "result": "Firm, movable, non-tender masses in the right anterior cervical triangle, the largest 3 × 3 × 2 cm; no overlying skin changes."},
+      {"id": "x002", "kind": "exam", "system": "hematologic", "name": "axillary and inguinal lymph node examination", "aliases": ["lymph node examination", "lymphadenopathy", "axillary nodes", "inguinal nodes"], "result": "Palpable lymph nodes in both axillary and inguinal regions."},
+      {"id": "x003", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver", "spleen", "hepatosplenomegaly"], "result": "No hepatosplenomegaly."},
+      {"id": "x004", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "white blood cell count", "WBC", "eosinophils", "differential", "platelet count"], "result": "Hemoglobin 7.3 g/dL; WBC 6.2 × 10^9/L with 12.1% eosinophils; platelet count 200 × 10^9/L."},
+      {"id": "x005", "kind": "test", "name": "serum IgE", "aliases": ["IgE", "total IgE"], "result": "261 IU/mL"},
+      {"id": "x006", "kind": "test", "name": "kidney function tests", "aliases": ["BUN", "urea", "creatinine", "renal function"], "result": "BUN 56 mg/dL; creatinine 4.8 mg/dL."},
+      {"id": "x007", "kind": "test", "name": "stool ova and parasites", "aliases": ["stool examination", "O&P", "stool parasites", "stool test"], "result": "Negative."},
+      {"id": "x008", "kind": "test", "name": "fine-needle aspiration cytology of a cervical node", "aliases": ["FNA", "fine-needle aspiration", "node aspiration", "lymph node cytology"], "result": "Nonspecific reactive lymphadenitis."},
+      {"id": "x009", "kind": "test", "name": "contrast-enhanced CT of the neck and chest", "aliases": ["CT neck", "CT chest", "neck CT", "chest CT"], "result": "Enlarging lymph nodes adjacent to both sternocleidomastoid muscles and numerous nodes (>1 cm) in the axillary, paratracheal, subcarinal, and intrapulmonary regions."},
+      {"id": "x010", "kind": "test", "name": "CT of the abdomen and pelvis", "aliases": ["CT abdomen", "CT pelvis", "abdominal CT"], "result": "Multiple enhancing lymph nodes in the hepatic hilum, peripancreatic, celiac, and paraaortic regions (largest 4.5 cm)."},
+      {"id": "x011", "kind": "test", "name": "gallium-67 scan", "aliases": ["gallium scan", "Ga-67 scintigraphy", "nuclear scan"], "result": "Increased uptake in cervical, axillary, paraaortic, iliac, and inguinal lymph nodes."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06856",
+    "diagnosis": "Kimura's disease",
+    "aliases": ["Kimura disease", "KD", "eosinophilic hyperplastic lymphogranuloma", "eosinophilic lymphogranuloma"],
+    "reasoning": "1. Malignant lymphoma or metastatic cancer were strongly considered because of the widespread lymphadenopathy on imaging — “Clinically, KD may often be confused with malignant lymphoma or other metastatic cancers.” 2. Parasitic infection was evaluated in light of the peripheral eosinophilia — “Stool examinations, including ova and parasite evaluations, were negative.” 3. Tuberculosis was considered given his history and regional lymphadenopathy — “possibly as neoplastic disease or infection, such as tuberculosis, in Asian patients.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06856",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s004"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s001"], "f010": ["s001"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"]
+    },
+    "quotes": {
+      "f001": "neck masses", "f002": "a 4-month history", "f003": "progressively enlarging", "f004": "painless",
+      "f005": "in the right anterior cervical triangle", "f009": "on maintenance hemodialysis for 3 years",
+      "f010": "ESRD due to chronic glomerulonephritis", "f011": "tuberculous pleurisy 25 years earlier",
+      "f012": "hepatitis B surface antigen carriage", "f013": "he reported no allergies"
+    },
+    "flags": {
+      "f005": ["Location taken from the examination (right anterior cervical triangle); a patient knows where his lumps are."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "firm, movable, non-tender masses (largest 3×3×2 cm) in the right anterior cervical triangle / overlying skin changes"},
+      "x002": {"sentences": ["s004"], "source_text": "palpable lymph nodes in both axillary and inguinal regions"},
+      "x003": {"sentences": ["s004"], "source_text": "there was no hepatosplenomegaly"},
+      "x004": {"sentences": ["s005"], "source_text": "hemoglobin 7.3 g/dL, WBC count 6.2×10^9/L with 12.1% eosinophils, platelet count 200×10^9/L"},
+      "x005": {"sentences": ["s005"], "source_text": "serum IgE 261 IU/mL"},
+      "x006": {"sentences": ["s005"], "source_text": "BUN 56 mg/dL, creatinine 4.8 mg/dL"},
+      "x007": {"sentences": ["s006"], "source_text": "Stool examinations, including ova and parasite evaluations, were negative."},
+      "x008": {"sentences": ["s007"], "source_text": "Fine-needle aspiration cytology of a cervical node revealed nonspecific reactive lymphadenitis."},
+      "x009": {"sentences": ["s008"], "source_text": "Contrast-enhanced CT of the neck and chest demonstrated enlarging lymph nodes adjacent to both sternocleidomastoid muscles and numerous nodes (>1 cm) in axillary, paratracheal, subcarinal, and intrapulmonary regions."},
+      "x010": {"sentences": ["s009"], "source_text": "CT of the abdomen and pelvis showed multiple enhancing lymph nodes in the hepatic hilum, peripancreatic, celiac, and paraaortic regions (largest 4.5 cm)."},
+      "x011": {"sentences": ["s010"], "source_text": "A Gallium-67 scan revealed increased uptake in cervical, axillary, paraaortic, iliac, and inguinal lymph nodes."}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the outpatient presentation with 4 months of progressively enlarging, painless neck masses (s001–s005), with the imaging and cytology of that workup (s006–s010).",
+      "Axillary and inguinal nodes are reported only from the examination, not as complaints, so they are findings only."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

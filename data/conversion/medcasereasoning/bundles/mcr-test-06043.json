@@ -1,0 +1,81 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06043",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 25, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "swelling on the right side of the face and neck", "aliases": ["facial swelling", "neck swelling", "lump in the face", "swollen cheek"], "text": "I have a swelling spread over the right side of my face and neck.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "pain or other symptoms from the swelling", "aliases": ["painful swelling", "tender swelling"], "text": "It doesn't hurt or cause me any other symptoms.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f003", "item": "previous similar swellings", "aliases": ["swelling before", "recurrent swelling", "earlier episodes"], "text": "Over the past 3 to 4 years I've had similar, smaller swellings that went away on their own.", "polarity": "present", "category": "symptom", "system": "ent", "time": "recurrent"},
+      {"id": "f004", "item": "injury before the swellings", "aliases": ["trauma", "injury to the face"], "text": "I can't link the swellings to any injury.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f005", "item": "swelling with meals", "aliases": ["swelling when eating", "food-related swelling"], "text": "I can't link them to meals.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f006", "item": "toothache with the swellings", "aliases": ["dental pain", "tooth pain"], "text": "I can't link them to any toothache.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f007", "item": "general symptoms with the swellings", "aliases": ["systemic symptoms", "feeling unwell"], "text": "I can't link them to any general symptoms either.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "trouble opening the mouth", "aliases": ["trismus", "jaw stiffness", "lockjaw"], "text": "I have no trouble opening my mouth.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f009", "item": "difficulty swallowing", "aliases": ["dysphagia", "trouble swallowing"], "text": "I have no trouble swallowing.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "shortness of breath", "aliases": ["dyspnea", "trouble breathing"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06043",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "ent", "name": "examination of the facial swelling", "aliases": ["face examination", "palpation of the swelling", "neck swelling", "cheek"], "result": "7 × 3 cm firm, non-tender, mobile swelling extending from the midface to the right submandibular region and from the oral commissure to the anterior border of the masseter; overlying skin normal; no inflammatory signs."},
+      {"id": "x002", "kind": "exam", "system": "hematologic", "name": "cervical lymph node examination", "aliases": ["neck lymph nodes", "lymph nodes", "lymphadenopathy"], "result": "No cervical lymphadenopathy palpable."},
+      {"id": "x003", "kind": "exam", "system": "ent", "name": "oral examination", "aliases": ["intraoral examination", "mouth opening", "trismus", "salivary duct flow", "Stensen's duct", "Wharton's duct", "floor of mouth"], "result": "Normal mouth opening, no trismus; normal salivary duct flow; normal intraoral findings."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves", "facial nerve"], "result": "Normal."},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "neck movement", "aliases": ["neck range of motion"], "result": "Normal."},
+      {"id": "x006", "kind": "test", "name": "fine-needle aspiration of the swelling", "aliases": ["FNA", "aspiration", "aspirate cytology", "needle aspiration"], "result": "Yellowish mucoid fluid; microscopy shows cystic macrophages in a mucoid background."},
+      {"id": "x007", "kind": "test", "name": "culture of the aspirate", "aliases": ["aspirate culture", "fluid culture"], "result": "Negative."},
+      {"id": "x008", "kind": "test", "name": "amylase in the aspirate", "aliases": ["fluid amylase", "aspirate amylase", "amylase"], "result": "High amylase content."},
+      {"id": "x009", "kind": "test", "name": "ultrasonography of the swelling", "aliases": ["ultrasound", "neck ultrasound", "USG"], "result": "7–9 mL of slightly echogenic fluid with irregular margins anterior to the right mandibular angle, with no calcifications."},
+      {"id": "x010", "kind": "test", "name": "contrast-enhanced MRI of the face", "aliases": ["MRI", "MRI face", "MRI neck"], "result": "Well-defined, lobulated 5.5 × 4.5 × 2.5 cm cystic lesion, hypointense on T1-weighted and hyperintense on T2-weighted images, with thin peripheral enhancement and a few septations. It lies anterior to the right submandibular gland, lateral to the mylohyoid muscle, and extends over the masseter, without invasion of the parapharyngeal or sublingual spaces. Submandibular and parotid glands appear normal. No “tail sign” toward the sublingual gland."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06043",
+    "diagnosis": "Mucous extravasation phenomenon",
+    "aliases": ["mucus extravasation phenomenon", "mucous extravasation cyst", "mucus extravasation pseudocyst", "extravasation mucocele", "submandibular mucous extravasation phenomenon"],
+    "reasoning": "1. Infection was unlikely — “Absence of inflammatory signs and normal intraoral findings excluded chances of infection.” 2. Tumor of salivary origin was less likely — “The recurrent nature of the swelling … nullified the tumerous etiology.” 3. Vascular malformation was excluded by aspirate — “The clinical picture of aspirate reduced the probability of vascular anomaly … to a great extent.” 4. Salivary retention cyst (true cyst) versus extravasation was considered given high amylase, but lack of epithelial lining (not yet histologically confirmed) leaned toward extravasation — “Aspirate had high amylase content. This information was more suggestive of a salivary cause for the lesion.” 5. Plunging ranula (sublingual gland origin) was excluded by imaging — “The typical ‘tail sign’ of a plunging ranula was not seen.” 6. Localization to submandibular gland on MRI focused the diagnosis on a submandibular mucous extravasation phenomenon."
+  },
+  "qc": {
+    "case_id": "mcr-test-06043",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s002"], "f004": ["s003"], "f005": ["s003"], "f006": ["s003"],
+      "f007": ["s003"], "f008": ["s006"], "f009": ["s006"], "f010": ["s006"]
+    },
+    "quotes": {
+      "f001": "diffuse swelling on the right side of his face and neck", "f002": "asymptomatic",
+      "f003": "similar, smaller swellings over the past 3–4 years that would spontaneously regress",
+      "f004": "could not relate episodes to trauma", "f005": "meals", "f006": "dental pain", "f007": "systemic symptoms"
+    },
+    "flags": {
+      "f002": ["'Asymptomatic' swelling is written as a denial of pain or other symptoms from the swelling; no specific symptom other than pain is denied."],
+      "f004": ["'Could not relate episodes to trauma, meals, dental pain, or systemic symptoms': each is written as an absent link, not as a general denial of the symptom."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004", "s005", "s008"], "source_text": "a 7 × 3 cm firm, non-tender, mobile swelling extended from the midface to the right submandibular region and from the oral commissure to the anterior masseter border / The overlying skin was normal / The absence of inflammatory signs"},
+      "x002": {"sentences": ["s005"], "source_text": "No cervical lymphadenopathy was palpable."},
+      "x003": {"sentences": ["s006", "s008"], "source_text": "Oral opening, salivary duct flow / were normal / There was no trismus / normal intraoral findings"},
+      "x004": {"sentences": ["s006"], "source_text": "cranial nerves"},
+      "x005": {"sentences": ["s006"], "source_text": "neck movement were normal"},
+      "x006": {"sentences": ["s009", "s010"], "source_text": "Fine-needle aspiration yielded yellowish mucoid fluid. / Microscopy showed cystic macrophages in a mucoid background"},
+      "x007": {"sentences": ["s010"], "source_text": "culture was negative"},
+      "x008": {"sentences": ["s010"], "source_text": "the fluid had a high amylase content"},
+      "x009": {"sentences": ["s011"], "source_text": "Ultrasonography reported 7–9 mL of slightly echogenic fluid with irregular margins anterior to the right mandibular angle, with no calcifications."},
+      "x010": {"sentences": ["s012", "s013", "s014"], "source_text": "Contrast-enhanced MRI of the face revealed a well-defined, lobulated 5.5 × 4.5 × 2.5 cm cystic lesion that was hypointense on T1-weighted images and hyperintense on T2-weighted images, with thin peripheral enhancement and a few septations. / The lesion lay anterior to the right submandibular gland, lateral to the mylohyoid muscle, and extended over the masseter, without invasion of the parapharyngeal or sublingual spaces. / The submandibular and parotid glands appeared normal. There was no “tail sign” toward the sublingual gland."}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the outpatient presentation with the asymptomatic right facial and neck swelling (s001–s006), with the aspiration and imaging of that workup (s009–s014).",
+      "s008 mixes results and interpretation: the results (no inflammatory signs, normal intraoral findings) are kept in the swelling and oral examinations; 'argued against infection' is dropped as clinician reasoning.",
+      "'No trismus' is both an explicit negative (patient fact f008) and part of the oral examination (mouth opening normal); dysphagia and dyspnea are reported as absent symptoms."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s007", "reason": "Initial differential diagnosis list: clinician reasoning, not a finding."}
+    ]
+  }
+}

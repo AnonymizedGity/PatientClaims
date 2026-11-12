@@ -1,0 +1,128 @@
+{
+  "patient": {
+    "case_id": "mcr-test-10230",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 46, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "bluish hands and feet", "aliases": ["acrocyanosis", "blue fingers", "blue toes", "blue discoloration"], "text": "My hands and feet look bluish.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f002", "item": "Raynaud's attacks", "aliases": ["Raynaud phenomenon", "Raynaud's", "fingers changing colour", "fingers turning white"], "text": "I get Raynaud's: my fingers change colour.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f003", "item": "how the bluish colour and Raynaud's have changed", "text": "Both have been getting worse over the past month.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f004", "item": "shortness of breath on exertion", "aliases": ["breathlessness", "dyspnea", "exertional dyspnea", "short of breath"], "text": "I get short of breath when I exert myself.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f005", "item": "nausea", "aliases": ["feeling sick to my stomach", "queasiness"], "text": "I've been feeling nauseous.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "burning sensations in the legs", "aliases": ["paresthesias", "pins and needles", "tingling", "burning feet", "nerve pain"], "text": "I have burning, tingling sensations in my legs.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f007", "item": "how long the breathlessness, nausea and leg burning have lasted", "text": "They've come on over the past month.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost 7 to 8 kg.", "value": "7–8 kg", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "lower back pain", "aliases": ["back pain", "backache", "low back pain"], "text": "I keep getting lower back pain.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "recurrent"},
+      {"id": "f010", "item": "periods coming too often", "aliases": ["polymenorrhea", "frequent periods", "irregular periods", "menstrual changes"], "text": "My periods have been coming too often.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f011", "item": "how long the weight loss, back pain and period changes have lasted", "text": "These have been going on over the past 6 months.", "value": "6 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f012", "item": "darker skin", "aliases": ["hyperpigmentation", "skin darkening", "skin colour changes", "skin changes"], "text": "The skin on my upper body, arms and legs has become darker.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f013", "item": "red skin", "aliases": ["erythroderma", "skin redness", "flushed skin"], "text": "My skin is red.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f014", "item": "mottled skin on the legs", "aliases": ["livedo reticularis", "lacy rash", "blotchy skin"], "text": "The skin on my thighs and legs looks mottled, like a net pattern.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f015", "item": "skin thickening or tightening", "aliases": ["tight skin", "thick skin", "sclerodermoid changes", "hardened skin"], "text": "Parts of my skin have become thick and tight.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f016", "item": "slipped discs in the lower back", "aliases": ["lumbar disc herniation", "herniated disc", "back surgery", "spine surgery", "previous surgery"], "text": "I've had several slipped discs in my lower back that were treated with surgery.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f017", "item": "essential thrombocythemia", "aliases": ["high platelets", "thrombocythemia", "blood disorder", "ET", "bone marrow disorder"], "text": "Two years ago I was diagnosed with 'triple-negative' essential thrombocythemia, where the body makes too many platelets.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f018", "item": "aspirin", "aliases": ["blood thinner", "antiplatelet"], "text": "I take aspirin for the platelet condition.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f019", "item": "anagrelide", "aliases": ["Agrylin", "platelet-lowering medicine"], "text": "I take anagrelide for the platelet condition.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f020", "item": "regular phlebotomy", "aliases": ["phlebotomy", "venesection", "blood letting", "having blood taken off"], "text": "I have blood taken off (phlebotomy) from time to time for the platelet condition.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f021", "item": "reason for referral", "aliases": ["why I was sent here", "systemic sclerosis", "scleroderma"], "text": "I was referred to be checked for possible systemic sclerosis.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-10230",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normopneic."},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Hypertensive."},
+      {"id": "x004", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Tachycardic."},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "hands", "nails", "fingers", "clubbing", "rash"], "result": "Hyperpigmentation of the upper trunk and limbs; erythroderma; acrocyanosis; Raynaud phenomenon; leukonychia; livedo reticularis on the thighs and legs; sclerodermoid changes; digital clubbing."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "jugular venous pressure", "aliases": ["JVP", "neck veins", "jugular veins"], "result": "Jugular venous distention."},
+      {"id": "x007", "kind": "exam", "system": "general", "name": "examination for edema", "aliases": ["edema", "swelling", "anasarca", "sacral edema"], "result": "Anasarca of the lumbar region."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "straight-leg raise (Lasègue sign)", "aliases": ["Lasegue sign", "straight leg raise", "SLR"], "result": "Positive on the right."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "deep tendon reflexes", "aliases": ["reflexes", "DTRs", "tendon reflexes"], "result": "Diminished."},
+      {"id": "x010", "kind": "test", "name": "nerve conduction studies", "aliases": ["NCS", "EMG", "electromyography", "nerve conduction"], "result": "Symmetric sensorimotor demyelinating polyneuropathy of the lower extremities."},
+      {"id": "x011", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["fundus examination", "ophthalmoscopy", "optic discs"], "result": "Bilateral papilledema."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "platelets", "platelet count"], "result": "Marked thrombocythemia: platelets 847 × 10^9/L; other routine values unremarkable."},
+      {"id": "x013", "kind": "test", "name": "routine blood chemistry", "aliases": ["metabolic panel", "electrolytes", "kidney function", "liver function tests", "routine labs"], "result": "Unremarkable."},
+      {"id": "x014", "kind": "test", "name": "serum immunofixation", "aliases": ["serum protein electrophoresis", "SPEP", "serum immunofixation electrophoresis", "M protein", "monoclonal protein"], "result": "Repeatedly negative for monoclonal protein."},
+      {"id": "x015", "kind": "test", "name": "urine immunofixation", "aliases": ["urine protein electrophoresis", "UPEP", "Bence Jones protein"], "result": "Repeatedly negative for monoclonal protein."},
+      {"id": "x016", "kind": "test", "name": "nailfold capillaroscopy", "aliases": ["capillaroscopy", "nailfold capillary microscopy"], "result": "Well-conserved capillaries with some giant loops and minor hemorrhages, consistent with early scleroderma."},
+      {"id": "x017", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "heart ultrasound"], "result": "Pulmonary hypertension; moderate tricuspid regurgitation."},
+      {"id": "x018", "kind": "test", "name": "chest CT", "aliases": ["CT chest", "CT thorax"], "result": "Bilateral lower-lobe ground-glass opacities."},
+      {"id": "x019", "kind": "test", "name": "abdominal CT", "aliases": ["CT abdomen", "CT abdomen and pelvis"], "result": "Enlarged lymph nodes."},
+      {"id": "x020", "kind": "test", "name": "lumbar spine CT", "aliases": ["CT lumbar spine", "CT spine"], "result": "Degenerative changes and osteosclerotic lesions at L4–S1."},
+      {"id": "x021", "kind": "test", "name": "MRI of the lumbar spine", "aliases": ["lumbar spine MRI", "MRI spine", "MRI lower back"], "result": "Lesions in the L5–S1 vertebrae with abnormal enhancement of the paraspinal muscles and subcutaneous tissue."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-10230",
+    "diagnosis": "POEMS syndrome",
+    "aliases": ["POEMS", "polyneuropathy, organomegaly, endocrinopathy, monoclonal gammopathy and skin changes syndrome", "Crow–Fukase syndrome", "Takatsuki syndrome"],
+    "reasoning": "1. Chronic inflammatory demyelinating polyneuropathy was considered given the demyelinating neuropathy — “diagnosis is often delayed with intervening incorrect diagnoses of chronic inflammatory demyelinating polyneuropathy…” 2. A myeloproliferative disorder (essential thrombocythemia) was considered due to striking thrombocythemia — “…‘triple negative’ essential thrombocythemia (based on bone marrow findings and absence of typical genetic features)…” and “myeloproliferative disorders are included in the differential diagnosis of POEMS syndrome.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-10230",
+    "fact_sources": {
+      "f001": ["s002", "s006"], "f002": ["s002", "s006"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"], "f011": ["s003"], "f012": ["s006"],
+      "f013": ["s006"], "f014": ["s006"], "f015": ["s006"], "f016": ["s004"], "f017": ["s004"], "f018": ["s004"],
+      "f019": ["s004"], "f020": ["s004"], "f021": ["s001"]
+    },
+    "quotes": {
+      "f003": "Over the past month, she noted worsening acrocyanosis and Raynaud phenomenon", "f004": "exertional dyspnea",
+      "f006": "burning paresthesias of the lower limbs", "f007": "Over the past month", "f008": "a 7–8 kg weight loss", "f009": "recurrent lower back pain",
+      "f010": "polymenorrhea", "f011": "over 6 months", "f012": "hyperpigmentation of the upper trunk and limbs", "f014": "livedo reticularis on the thighs and legs",
+      "f015": "sclerodermoid changes", "f016": "multiple lumbar disk hernias treated surgically",
+      "f017": "a 2-year history of “triple-negative” essential thrombocythemia", "f020": "periodic phlebotomy", "f021": "referred for evaluation of possible systemic sclerosis"
+    },
+    "flags": {
+      "f003": ["s002 puts 'worsening' before acrocyanosis and Raynaud phenomenon; it is not applied to the other symptoms of that sentence (f007 gives only their timing)."],
+      "f012": ["Patient-noticeable sign taken from the examination (hyperpigmentation)."],
+      "f013": ["Patient-noticeable sign taken from the examination (erythroderma)."],
+      "f014": ["Patient-noticeable sign taken from the examination (livedo reticularis)."],
+      "f015": ["Patient-noticeable sign taken from the examination (sclerodermoid changes); worded without the examiner's term."],
+      "f021": ["The referral reason is the referring doctors' suspicion, which the patient knows; it is a red herring, not the gold."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "she was afebrile"},
+      "x002": {"sentences": ["s005"], "source_text": "normopneic"},
+      "x003": {"sentences": ["s005"], "source_text": "hypertensive"},
+      "x004": {"sentences": ["s005"], "source_text": "tachycardic"},
+      "x005": {"sentences": ["s006"], "source_text": "Skin findings included hyperpigmentation of the upper trunk and limbs, erythroderma, acrocyanosis, Raynaud phenomenon, leukonychia, livedo reticularis on the thighs and legs, sclerodermoid changes and digital clubbing."},
+      "x006": {"sentences": ["s007"], "source_text": "Other findings were jugular venous distention"},
+      "x007": {"sentences": ["s007"], "source_text": "anasarca of the lumbar region"},
+      "x008": {"sentences": ["s007"], "source_text": "a positive right Lasegue sign"},
+      "x009": {"sentences": ["s008"], "source_text": "Neurologic exam showed diminished tendon reflexes"},
+      "x010": {"sentences": ["s008"], "source_text": "nerve conduction studies revealed a symmetric sensorimotor demyelinating polyneuropathy of the lower extremities"},
+      "x011": {"sentences": ["s009"], "source_text": "Fundoscopy disclosed bilateral papilledema."},
+      "x012": {"sentences": ["s010"], "source_text": "marked thrombocythemia (platelets 847 × 10^9/L); other routine labs were unremarkable"},
+      "x013": {"sentences": ["s010"], "source_text": "other routine labs were unremarkable"},
+      "x014": {"sentences": ["s011"], "source_text": "Serum and urine immunofixation were repeatedly negative for monoclonal protein."},
+      "x015": {"sentences": ["s011"], "source_text": "Serum and urine immunofixation were repeatedly negative for monoclonal protein."},
+      "x016": {"sentences": ["s012"], "source_text": "Capillaroscopy demonstrated well-conserved capillaries with some giant loops and minor hemorrhages, consistent with early scleroderma."},
+      "x017": {"sentences": ["s013"], "source_text": "Echocardiography revealed pulmonary hypertension and moderate tricuspid regurgitation."},
+      "x018": {"sentences": ["s014"], "source_text": "Chest CT showed bilateral lower-lobe ground-glass opacities"},
+      "x019": {"sentences": ["s014"], "source_text": "abdominal CT revealed enlarged lymph nodes"},
+      "x020": {"sentences": ["s015"], "source_text": "Lumbar spine CT demonstrated degenerative changes and osteosclerotic lesions at L4–S1."},
+      "x021": {"sentences": ["s016"], "source_text": "MRI of the lumbar spine showed lesions in L5–S1 vertebrae with abnormal enhancement of paraspinal muscles and subcutaneous tissue."}
+    },
+    "finding_flags": {
+      "x001": ["Vital signs (x001-x004) are given only as words (afebrile, normopneic, hypertensive, tachycardic); no values."],
+      "x007": ["'Anasarca of the lumbar region' is self-contradictory (anasarca is generalized edema); kept as written."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s011: serum and urine immunofixation are repeatedly negative, although a monoclonal plasma cell disorder is a mandatory criterion of the gold diagnosis.",
+      "s007: 'anasarca of the lumbar region' mixes generalized and local edema.",
+      "s005: vital signs are reported without values."
+    ],
+    "notes": [
+      "Index visit: the referral visit for possible systemic sclerosis (s001-s009); the laboratory tests, capillaroscopy, echocardiography, CT and MRI (s010-s016) are findings from the same staged workup.",
+      "s002 and s003: timing shared by several symptoms is written as standalone facts (f003, f007, f011).",
+      "Skin signs the patient can see (darkening, redness, mottling, thick tight skin, blue hands and feet, Raynaud's) are facts and stay in the skin examination; leukonychia, clubbing, jugular venous distention, edema, reflexes and papilledema are examiner findings only.",
+      "No VEGF level, bone marrow, endocrine testing or free light chains are reported; requests for them are unavailable."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

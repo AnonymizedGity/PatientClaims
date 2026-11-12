@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-028",
+  "source_row": 28,
+  "demographics_text": "55-year-old woman",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with chronic left shoulder pain without a history of trauma.",
+  "chief_complaint": "Chronic left shoulder pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p001",
+      "field": "History",
+      "text": "The patient reports a 2-month history of insidious onset left shoulder pain, worsening with extreme ranges of motion and activity. Pain disrupts sleep, and there's noted difficulty with activities of daily living like brushing hair and dressing. No history of shoulder trauma, neck pain, arm/hand weakness, numbness, or paresthesias. The patient has type 2 diabetes mellitus, treated with metformin and glipizide."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain at extremes of motion"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty sleeping on the affected side"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty with brushing hair and dressing"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No numbness or weakness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p006",
+      "field": "Past_Medical_History",
+      "text": "Type 2 diabetes mellitus"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p007",
+      "field": "Social_History",
+      "text": "No relevant social history provided"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-028-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies neck pain, arm/hand weakness, numbness, or paresthesias."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e005",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Inspection",
+      "text": "No visible swelling or deformity."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e006",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Palpation",
+      "text": "Tenderness around the shoulder joint, no warmth or crepitus."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e007",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.Forward_Flexion",
+      "text": "75° with pain"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e008",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.Abduction",
+      "text": "75° with pain"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e009",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.External_Rotation",
+      "text": "45° with pain"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e010",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.Internal_Rotation",
+      "text": "15° with significant pain"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-e011",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Strength_Testing",
+      "text": "Normal rotator cuff strength"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-028-i001",
+      "path": "Test_Results.Radiographs.AP",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-i002",
+      "path": "Test_Results.Radiographs.Scapular_Y",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-028-i003",
+      "path": "Test_Results.Radiographs.Axillary",
+      "text": "Normal"
+    }
+  ],
+  "correct_diagnosis": "Adhesive capsulitis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

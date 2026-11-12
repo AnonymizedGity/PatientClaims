@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-004",
+  "source_row": 4,
+  "demographics_text": "55-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with fatigue, abdominal pain, night sweats, weight loss, and enlarged supraclavicular lymph node.",
+  "chief_complaint": "Fatigue, abdominal pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-004-p001",
+      "field": "History",
+      "text": "The patient reports experiencing fatigue, worsening abdominal pain for the past 4 weeks, excessive night sweats, and a noticeable weight loss of approximately 5.4 kg (12 lb). Additionally, the patient noticed neck swelling developing over the last 4 days."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-004-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Excessive night sweats"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-004-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Weight loss of 5.4 kg (12 lb)"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-004-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Neck swelling for 4 days"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-004-p005",
+      "field": "Past_Medical_History",
+      "text": "The patient does not report any significant past medical history. No previous major illnesses or surgeries."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-004-p006",
+      "field": "Social_History",
+      "text": "The patient has a history of smoking, 1 pack per day for the past 30 years. Drinks alcohol socially. Works in a construction company."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-004-p007",
+      "field": "Review_of_Systems",
+      "text": "Patient also reports feeling an unusual fullness in the belly area and has difficulty wearing his usual clothing due to this. Denies fever, cough, or recent travel."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e005",
+      "path": "Physical_Examination_Findings.Neck_Examination.Inspection_and_Palpation",
+      "text": "Nontender, enlarged, and fixed supraclavicular lymph node observed."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Slight abdominal distension."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Dullness noted over the left lower quadrant."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Splenomegaly detected, without rebound tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-004-i001",
+      "path": "Test_Results.Blood_Work.Complete_Blood_Count.WBC",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-i002",
+      "path": "Test_Results.Blood_Work.Complete_Blood_Count.Hemoglobin",
+      "text": "Slightly Decreased"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-i003",
+      "path": "Test_Results.Blood_Work.Complete_Blood_Count.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-i004",
+      "path": "Test_Results.Blood_Work.Lactate_Dehydrogenase",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-i005",
+      "path": "Test_Results.Imaging.CT_Scan_Thorax_and_Abdomen.Findings",
+      "text": "Massively enlarged axillary, mediastinal, and cervical lymph nodes."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-004-i006",
+      "path": "Test_Results.Biopsy.Cervical_Lymph_Node.Findings",
+      "text": "Lymphocytes with a high proliferative index that stain positive for CD20."
+    }
+  ],
+  "correct_diagnosis": "Diffuse large B-cell lymphoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

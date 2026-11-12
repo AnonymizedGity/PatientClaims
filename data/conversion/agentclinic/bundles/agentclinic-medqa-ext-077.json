@@ -1,0 +1,115 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-077",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 58, "sex": "male"},
+    "opening": ["f001", "f005"],
+    "facts": [
+      {"id": "f001", "item": "neck and arm pain", "aliases": ["neck pain", "arm pain"], "text": "I have pain in my neck and arms.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "neck and arm pain: character", "parent": "f001", "attribute": "character", "text": "It's a burning pain.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "neck and arm pain: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for a year.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "tingling in the hands", "aliases": ["pins and needles", "paresthesias"], "text": "Along with the pain, I get pins and needles in my hands.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "weakness in the hands", "aliases": ["hand weakness", "weak grip", "trouble gripping"], "text": "Both of my hands have become weak, and my grip is weaker.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "weakness in the hands: duration", "parent": "f005", "attribute": "duration", "text": "It's been over the past 3 months.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f007", "item": "weakness in the hands: course", "parent": "f005", "attribute": "course", "text": "It keeps getting worse.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "diabetes", "aliases": ["type 2 diabetes", "sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "high cholesterol", "aliases": ["hypercholesterolemia", "cholesterol"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "high blood pressure", "aliases": ["hypertension", "HTN"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "car accident", "aliases": ["motor vehicle accident", "injury", "trauma"], "text": "I was in a car accident 3 years ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "metformin", "text": "I take metformin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "sitagliptin", "aliases": ["Januvia"], "text": "I take sitagliptin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "enalapril", "aliases": ["blood pressure medicine"], "text": "I take enalapril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "atorvastatin", "aliases": ["statin", "cholesterol medicine"], "text": "I take atorvastatin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "aspirin", "text": "I take aspirin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "sexual partners", "aliases": ["sexual activity", "sexual history"], "text": "I've had 7 sexual partners.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f018", "item": "condom use", "aliases": ["condoms", "protection"], "text": "I use condoms, but not consistently.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-077",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "Within normal limits"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Within normal limits"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Within normal limits"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Within normal limits"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "No focal findings."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "motor examination of the upper extremities", "aliases": ["motor strength", "muscle strength", "power", "grip strength", "fasciculations", "arm strength"], "result": "Decreased muscle strength; fasciculations present."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "reflexes of the upper extremities", "aliases": ["reflexes", "deep tendon reflexes", "DTRs", "arm reflexes"], "result": "Absent."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation of the upper extremities", "aliases": ["sensation", "sensory examination", "pain and temperature sensation", "vibration sense", "joint position sense", "proprioception"], "result": "Pain and temperature: absent over the chest and both upper arms; vibration: present; joint position: present."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "lower extremity neurological examination", "aliases": ["legs", "lower limb neurology", "leg strength", "leg reflexes"], "result": "No abnormalities noted."},
+      {"id": "x010", "kind": "test", "name": "MRI of the spine", "aliases": ["spine MRI", "cervical spine MRI", "thoracic spine MRI", "MRI C-spine"], "result": "A syrinx (cavity) within the spinal cord extending from the cervical to the upper thoracic region."},
+      {"id": "x011", "kind": "test", "name": "blood glucose", "aliases": ["glucose", "blood sugar"], "result": "Slightly elevated."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-077",
+    "diagnosis": "Syringomyelia",
+    "aliases": ["syrinx", "spinal cord syrinx", "cervical syringomyelia", "cervicothoracic syringomyelia", "post-traumatic syringomyelia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-077",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-077-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-077-p001"],
+      "f003": ["agentclinic-medqa-ext-077-p001"],
+      "f004": ["agentclinic-medqa-ext-077-p001", "agentclinic-medqa-ext-077-p002"],
+      "f005": ["cc", "agentclinic-medqa-ext-077-p001", "agentclinic-medqa-ext-077-p004"],
+      "f006": ["agentclinic-medqa-ext-077-p001"],
+      "f007": ["agentclinic-medqa-ext-077-p001"],
+      "f008": ["agentclinic-medqa-ext-077-p001", "agentclinic-medqa-ext-077-p005"],
+      "f009": ["agentclinic-medqa-ext-077-p001", "agentclinic-medqa-ext-077-p005"],
+      "f010": ["agentclinic-medqa-ext-077-p001", "agentclinic-medqa-ext-077-p005"],
+      "f011": ["agentclinic-medqa-ext-077-p001", "agentclinic-medqa-ext-077-p005"],
+      "f012": ["agentclinic-medqa-ext-077-p008"],
+      "f013": ["agentclinic-medqa-ext-077-p008"],
+      "f014": ["agentclinic-medqa-ext-077-p008"],
+      "f015": ["agentclinic-medqa-ext-077-p008"],
+      "f016": ["agentclinic-medqa-ext-077-p008"],
+      "f017": ["agentclinic-medqa-ext-077-p006"],
+      "f018": ["agentclinic-medqa-ext-077-p006"]
+    },
+    "quotes": {
+      "f002": "Burning pain in neck and arms",
+      "f003": "a year-long history",
+      "f004": "accompanying paresthesias in his hands",
+      "f005": "weakness in both hands / Decreased hand grip",
+      "f006": "Over the past 3 months",
+      "f007": "increasing weakness in both hands",
+      "f011": "involved in a motor vehicle accident 3 years ago",
+      "f017": "7 sexual partners",
+      "f018": "uses condoms inconsistently"
+    },
+    "flags": {
+      "f005": ["p004 'Decreased hand grip with fasciculations': the weak grip merges here; the fasciculations are an exam sign (x006), not a patient fact."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Within_Normal_Limits", "source_text": "True", "exam_ids": ["agentclinic-medqa-ext-077-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Within_Normal_Limits", "source_text": "True", "exam_ids": ["agentclinic-medqa-ext-077-e001"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Within_Normal_Limits", "source_text": "True", "exam_ids": ["agentclinic-medqa-ext-077-e001"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Within_Normal_Limits", "source_text": "True", "exam_ids": ["agentclinic-medqa-ext-077-e001"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "No focal findings", "exam_ids": ["agentclinic-medqa-ext-077-e002"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Muscle_Strength + Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Fasciculations", "source_text": "Decreased | Present", "exam_ids": ["agentclinic-medqa-ext-077-e003", "agentclinic-medqa-ext-077-e008"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Reflexes", "source_text": "Absent", "exam_ids": ["agentclinic-medqa-ext-077-e004"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Sensation.Temperature_and_Pain + Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Sensation.Vibration + Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Sensation.Joint_Position", "source_text": "Absent over chest and bilateral upper arms | Present | Present", "exam_ids": ["agentclinic-medqa-ext-077-e005", "agentclinic-medqa-ext-077-e006", "agentclinic-medqa-ext-077-e007"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Lower_Extremities.Abnormalities", "source_text": "No abnormalities noted", "exam_ids": ["agentclinic-medqa-ext-077-e009"]},
+      "x010": {"source": "Test_Results.Imaging.MRI_Spine.Findings", "source_text": "A syrinx (cavity) within the spinal cord extending from the cervical to the upper thoracic region.", "exam_ids": ["agentclinic-medqa-ext-077-i001"]},
+      "x011": {"source": "Test_Results.Laboratory_Tests.Blood_Glucose.Level", "source_text": "Slightly elevated", "exam_ids": ["agentclinic-medqa-ext-077-i002"]}
+    },
+    "finding_flags": {
+      "x001": ["The source gives one leaf 'Vital_Signs.Within_Normal_Limits: True'; it is expanded to the four standard vital signs (x001-x004), each 'Within normal limits'."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The spine MRI result names a syrinx, which is the diagnosis; it is the test's answer, so it stays."}
+    ],
+    "source_issues": ["p007 (Review_of_Systems) holds only exam observations ('Oriented to time, place, and person. Vital signs within normal limits.'), no symptoms.", "p003 'Absent reflexes' is listed as a secondary symptom but is an exam finding."],
+    "notes": ["The pain and the hand weakness are both in the chief complaint, so both are opening facts. The pins and needles 'accompany' the pain, with no separate duration given.", "Fasciculations are folded into the upper-extremity motor examination (x006); the three sensory modalities are one sensation record (x008).", "Orientation (p007) is not in any exam leaf, so it is in qc.extras.acting_notes.", "Fixes: f012 alias 'diabetes medicine' removed; f013 alias 'diabetes medicine' removed."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with neck and arm pain, paresthesias, and muscle weakness.",
+      "acting_notes": ["Oriented to time, place, and person."]
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-077-p003", "reason": "Absent reflexes is an exam finding, already in x007."},
+      {"id": "agentclinic-medqa-ext-077-p007", "reason": "Observer-only: orientation (moved to acting_notes) and normal vital signs (already in x001-x004)."}
+    ]
+  }
+}

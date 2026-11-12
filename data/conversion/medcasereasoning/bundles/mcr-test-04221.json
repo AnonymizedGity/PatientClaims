@@ -1,0 +1,104 @@
+{
+  "patient": {
+    "case_id": "mcr-test-04221",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 64, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "trouble walking", "aliases": ["walking difficulty", "gait problems", "unsteady walking", "balance problems when walking"], "text": "I've been having trouble walking.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "trouble walking: onset", "parent": "f001", "attribute": "onset", "text": "It began about a month after I finished my chemotherapy two years ago.", "value": "about 1 month after chemotherapy ended, about 2 years ago", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "trouble walking: course", "parent": "f001", "attribute": "course", "text": "It has kept getting worse.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "trouble walking before the chemotherapy", "parent": "f001", "attribute": "context", "text": "Before the chemotherapy I walked normally.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "breast cancer", "aliases": ["cancer", "breast tumour"], "text": "I've had breast cancer.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "chemotherapy", "aliases": ["docetaxel", "chemo", "cancer treatment"], "text": "I had four cycles of docetaxel-based chemotherapy, which I finished about two years ago.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f007", "item": "cancer coming back", "aliases": ["cancer relapse", "recurrence", "metastases"], "text": "There's no sign that my cancer has come back.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f008", "item": "numbness in the hands and feet", "aliases": ["numbness", "tingling", "neuropathy", "pins and needles"], "text": "I have mild numbness in my hands and feet.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f009", "item": "numbness in the hands and feet: onset", "parent": "f008", "attribute": "onset", "text": "It started while I was having the chemotherapy.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "numbness in the hands and feet: course", "parent": "f008", "attribute": "course", "text": "It has stayed the same for the two years since.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f011", "item": "headache", "aliases": ["headaches", "head pain"], "text": "I haven't had headaches.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f012", "item": "dizziness", "aliases": ["vertigo", "lightheadedness", "feeling dizzy"], "text": "I haven't been dizzy.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f013", "item": "changes in speech", "aliases": ["slurred speech", "speech problems", "trouble speaking"], "text": "My speech hasn't changed.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f014", "item": "problems with thinking or memory", "aliases": ["cognitive difficulties", "memory problems", "forgetfulness", "confusion"], "text": "I haven't had any problems with my thinking or memory.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f015", "item": "loss of vision", "aliases": ["visual loss", "vision loss", "losing sight"], "text": "I haven't lost any vision.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f016", "item": "abnormal movements", "aliases": ["tremor", "jerking", "involuntary movements"], "text": "I haven't had any abnormal movements.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f017", "item": "bladder problems", "aliases": ["urinary incontinence", "urgency", "bladder control", "leaking urine"], "text": "I haven't had any bladder problems.", "polarity": "absent", "category": "symptom", "system": "genitourinary"},
+      {"id": "f018", "item": "bowel problems", "aliases": ["bowel control", "fecal incontinence", "bowel symptoms"], "text": "I haven't had any bowel problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-04221",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "neurological", "name": "gait examination", "aliases": ["gait", "walking", "observation of walking", "turning"], "result": "Walks with short steps, rotational instability, and an increased base of support."},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "Romberg test", "aliases": ["Romberg"], "result": "Negative."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation", "vibration sense", "proprioception", "pinprick", "light touch"], "result": "Mild impairment of superficial and deep sensation in both feet and hands."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves"], "result": "Normal."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power"], "result": "Normal."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "deep tendon reflexes", "aliases": ["reflexes", "tendon reflexes"], "result": "Normal."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "cerebellar testing", "aliases": ["coordination", "finger-nose test", "heel-shin test", "cerebellar examination"], "result": "Normal."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sphincter function", "aliases": ["sphincter examination", "anal tone"], "result": "Normal."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "cognitive testing", "aliases": ["Mini-Mental State Examination", "MMSE", "verbal fluency", "mental status"], "result": "Within normal limits, including the Mini-Mental State Examination and verbal fluency."},
+      {"id": "x010", "kind": "test", "name": "nerve conduction studies and EMG", "aliases": ["electrophysiological studies", "nerve conduction", "EMG", "electromyography"], "result": "Inconclusive, but indicated polyneuropathy.", "time": "before the referral"},
+      {"id": "x011", "kind": "test", "name": "brain MRI", "aliases": ["MRI head", "MRI brain"], "result": "Marked enlargement of the supratentorial and infratentorial ventricles without cortical atrophy; no evidence of metastatic or meningeal disease."},
+      {"id": "x012", "kind": "test", "name": "lumbar puncture tap test with gait assessment", "aliases": ["lumbar puncture", "spinal tap", "tap test", "large-volume CSF drainage", "CSF drainage test"], "result": "30 mL of CSF drained. Compared with before the tap, 24 hours later a 10-m walking test showed a clear reduction in the number of steps and time to completion, and fewer steps were needed for a 360° rotation."},
+      {"id": "x013", "kind": "test", "name": "CSF cytology", "aliases": ["cerebrospinal fluid cytology"], "result": "Unremarkable."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-04221",
+    "diagnosis": "Hydrocephalus",
+    "aliases": ["normal pressure hydrocephalus", "NPH", "communicating hydrocephalus", "secondary normal pressure hydrocephalus"],
+    "reasoning": "1. Polyneuropathy was initially suspected given docetaxel exposure and electrophysiological findings, but was deemed unlikely as “the gait disorder observed did not resemble a typical steppage polyneuropathic gait, but it was rather characterized by small steps and enlarged sustentation base and rotational difficulties, all features observed classically in patients with normal pressure hydrocephalus.” 2. Brain metastases were excluded because “there was no evidence of malignant brain or meningeal seed.” 3. Carcinomatous meningitis was ruled out as “Cytology of CSF was otherwise inconspicuous.” 4. Paraneoplastic cerebellar degeneration was considered but deemed unlikely since MRI and examination lacked cerebellar findings and “MRI is mandatory to confirm the diagnosis and rule out other causes of gait disturbances, such as brain metastasis or paraneoplastic cerebellar degeneration.” 5. The ventricular enlargement represented true hydrocephalus rather than ex vacuo change, supported by the finding that “Brain MRI revealed a marked hydrocephalus with a dramatic enlargement of the supra- and infratentorial ventricular system and no cortical atrophy.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-04221",
+    "fact_sources": {
+      "f001": ["s001", "s006"], "f002": ["s001"], "f003": ["s001", "s006"], "f004": ["s002"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s004"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003", "s006"], "f011": ["s004"], "f012": ["s004"],
+      "f013": ["s004"], "f014": ["s004"], "f015": ["s004"], "f016": ["s004"], "f017": ["s004"], "f018": ["s004"]
+    },
+    "quotes": {
+      "f002": "began approximately 1 month after completing four cycles of docetaxel-based chemotherapy for breast cancer 2 years earlier",
+      "f003": "her gait disturbance continued to worsen", "f004": "Before chemotherapy, she had walked normally.",
+      "f006": "four cycles of docetaxel-based chemotherapy", "f007": "there was no evidence of cancer relapse",
+      "f008": "mild, distal extremity numbness", "f009": "At the time of chemotherapy", "f010": "remained stable over 2 years",
+      "f017": "bladder or bowel symptoms", "f018": "bladder or bowel symptoms"
+    },
+    "flags": {
+      "f008": ["'Distal extremity' is worded as hands and feet, matching the examination (s008)."],
+      "f007": ["'No evidence of cancer relapse' is a clinical statement; worded as what the patient has been told."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "she walked with short steps, rotational instability, and an increased base of support"},
+      "x002": {"sentences": ["s007"], "source_text": "the Romberg test was negative"},
+      "x003": {"sentences": ["s008"], "source_text": "There was mild impairment of superficial and deep sensation in both feet and hands."},
+      "x004": {"sentences": ["s009"], "source_text": "Cranial nerves / were normal"},
+      "x005": {"sentences": ["s009"], "source_text": "strength / were normal"},
+      "x006": {"sentences": ["s009"], "source_text": "deep tendon reflexes / were normal"},
+      "x007": {"sentences": ["s009"], "source_text": "cerebellar testing / were normal"},
+      "x008": {"sentences": ["s009"], "source_text": "sphincter function were normal"},
+      "x009": {"sentences": ["s009"], "source_text": "Cognitive testing, including the Mini-Mental State Examination and verbal fluency, was within normal limits."},
+      "x010": {"sentences": ["s005"], "source_text": "Electrophysiological studies were inconclusive but indicated polyneuropathy."},
+      "x011": {"sentences": ["s010"], "source_text": "Brain MRI showed marked enlargement of the supratentorial and infratentorial ventricles without cortical atrophy and no evidence of metastatic or meningeal disease."},
+      "x012": {"sentences": ["s011", "s012"], "source_text": "A lumbar puncture was performed, and 30 mL of CSF was drained. / Gait was assessed before and 24 hours after the tap: a 10-m walking test demonstrated a clear reduction in the number of steps and time to completion, and the number of steps needed for a 360° rotation decreased."},
+      "x013": {"sentences": ["s013"], "source_text": "CSF cytology was unremarkable."}
+    },
+    "finding_flags": {
+      "x010": ["The electrophysiological studies are not named; 'nerve conduction studies and EMG' is the usual pair. Time 'before the referral' because s005 precedes the neurologic evaluation (s006)."],
+      "x012": ["The tap test is a diagnostic test (gait before and 24 hours after CSF drainage), so it is kept as a finding although CSF was removed. No CSF opening pressure, cell count, protein or glucose is reported."]
+    },
+    "leakage": [
+      {"id": "x011", "reason": "The MRI shows marked ventricular enlargement without atrophy, which points to hydrocephalus (selection leakage: test_result) without naming it."}
+    ],
+    "source_issues": [
+      "No vital signs or general examination are reported.",
+      "s009 holds two sentences (neurological examination; cognitive testing)."
+    ],
+    "notes": [
+      "Index visit: the referral neurologic evaluation for a worsening gait disturbance (s001, s006–s013); s002–s005 are the history, and the earlier electrophysiological studies (s005) are a finding with a time.",
+      "The patient is not assumed to have been told the result of the electrophysiological studies (polyneuropathy), so it is a finding only.",
+      "The bladder and bowel denial of s004 is split into two absent facts."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

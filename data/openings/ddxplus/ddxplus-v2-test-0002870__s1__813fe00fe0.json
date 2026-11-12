@@ -1,0 +1,49 @@
+{
+ "case_id": "ddxplus-v2-test-0002870",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "My symptoms get worse when I lie down and better when I sit up.",
+   "I'm quite short of breath; it's hard to breathe.",
+   "I get palpitations; my heart races or beats irregularly.",
+   "I've had pericarditis before.",
+   "I've had a viral infection recently."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm quite short of breath; it's hard to breathe. My symptoms get worse when I lie down and better when I sit up. I get palpitations; my heart races or beats irregularly. I've had a viral infection recently, and I've had pericarditis before.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f009",
+    "f010",
+    "f011",
+    "f012"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8589,
+   "tokens_out": 71,
+   "seconds": 15.22,
+   "redrafts": 0
+  }
+ }
+}

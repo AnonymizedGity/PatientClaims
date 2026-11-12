@@ -1,0 +1,878 @@
+{
+  "case_id": "medqa-cs-020",
+  "demographics": {
+    "name": "Eric Glenn",
+    "age": 26,
+    "sex": "male",
+    "setting": "office"
+  },
+  "opening_fact": {
+    "text": "Cough.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-020-f001",
+      "source_ids": [
+        "medqa-cs-020-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Cough began a week ago.",
+      "quote": "It started a week ago."
+    },
+    {
+      "id": "medqa-cs-020-f002",
+      "source_ids": [
+        "medqa-cs-020-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Had a runny nose two weeks ago, lasting a week; he feels much better now.",
+      "quote": "I had a runny nose, fever, and sore throat for a week two weeks ago, but I feel much better now."
+    },
+    {
+      "id": "medqa-cs-020-f003",
+      "source_ids": [
+        "medqa-cs-020-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Had a fever two weeks ago, lasting a week, with that illness.",
+      "quote": "I had a runny nose, fever, and sore throat for a week two weeks ago"
+    },
+    {
+      "id": "medqa-cs-020-f004",
+      "source_ids": [
+        "medqa-cs-020-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Had a sore throat two weeks ago, lasting a week, with that illness.",
+      "quote": "I had a runny nose, fever, and sore throat for a week two weeks ago"
+    },
+    {
+      "id": "medqa-cs-020-f005",
+      "source_ids": [
+        "medqa-cs-020-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Believes he has had a slight fever with the cough, but did not check his temperature.",
+      "quote": "I believe I had a slight fever, although I didn't check my temperature"
+    },
+    {
+      "id": "medqa-cs-020-f006",
+      "source_ids": [
+        "medqa-cs-020-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No chills.",
+      "quote": "no chills."
+    },
+    {
+      "id": "medqa-cs-020-f007",
+      "source_ids": [
+        "medqa-cs-020-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Coughs up small amounts of white mucus.",
+      "quote": "Small amounts of white mucus."
+    },
+    {
+      "id": "medqa-cs-020-f008",
+      "source_ids": [
+        "medqa-cs-020-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No blood in the sputum.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-020-f009",
+      "source_ids": [
+        "medqa-cs-020-p006",
+        "medqa-cs-020-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Chest pain that comes on or increases when he coughs or breathes deeply.",
+      "quote": "Yes, I experience a sharp pain when I cough or breathe deeply. / It increases when I take a deep breath and when I cough."
+    },
+    {
+      "id": "medqa-cs-020-f010",
+      "source_ids": [
+        "medqa-cs-020-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain is in the right chest.",
+      "quote": "Right chest."
+    },
+    {
+      "id": "medqa-cs-020-f011",
+      "source_ids": [
+        "medqa-cs-020-p006",
+        "medqa-cs-020-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain is sharp and feels like a knife.",
+      "quote": "a sharp pain / It feels like a knife."
+    },
+    {
+      "id": "medqa-cs-020-f012",
+      "source_ids": [
+        "medqa-cs-020-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Cannot take a deep breath because of the pain.",
+      "quote": "I can't take a deep breath."
+    },
+    {
+      "id": "medqa-cs-020-f013",
+      "source_ids": [
+        "medqa-cs-020-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Feels better when he sleeps on his right side.",
+      "quote": "I feel better when I sleep on my right side."
+    },
+    {
+      "id": "medqa-cs-020-f014",
+      "source_ids": [
+        "medqa-cs-020-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "The pain does not move elsewhere; it stays localized.",
+      "quote": "It remains localized."
+    },
+    {
+      "id": "medqa-cs-020-f015",
+      "source_ids": [
+        "medqa-cs-020-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Pain severity is 8/10.",
+      "quote": "8/10."
+    },
+    {
+      "id": "medqa-cs-020-f016",
+      "source_ids": [
+        "medqa-cs-020-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No night sweats.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-020-f017",
+      "source_ids": [
+        "medqa-cs-020-p013"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "exposures",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No known exposure to tuberculosis.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-020-f018",
+      "source_ids": [
+        "medqa-cs-020-p014"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "exposures",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has not been around pets or other animals recently.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p014) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-020-f019",
+      "source_ids": [
+        "medqa-cs-020-p015"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "exposures",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No recent travel.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-020-f020",
+      "source_ids": [
+        "medqa-cs-020-p016"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "preventive",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never had a PPD test for TB.",
+      "quote": "Never had it."
+    },
+    {
+      "id": "medqa-cs-020-f021",
+      "source_ids": [
+        "medqa-cs-020-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No shortness of breath.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-020-f022",
+      "source_ids": [
+        "medqa-cs-020-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No wheezing.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-020-f023",
+      "source_ids": [
+        "medqa-cs-020-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No stomach pain.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-020-f024",
+      "source_ids": [
+        "medqa-cs-020-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No nausea.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-020-f025",
+      "source_ids": [
+        "medqa-cs-020-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vomiting.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-020-f026",
+      "source_ids": [
+        "medqa-cs-020-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No diarrhea.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-020-f027",
+      "source_ids": [
+        "medqa-cs-020-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No recent change in appetite.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-020-f028",
+      "source_ids": [
+        "medqa-cs-020-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No recent change in weight.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-020-f029",
+      "source_ids": [
+        "medqa-cs-020-p019"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes Tylenol.",
+      "quote": "Tylenol."
+    },
+    {
+      "id": "medqa-cs-020-f030",
+      "source_ids": [
+        "medqa-cs-020-p020"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Had gonorrhea 2 years ago, treated with antibiotics.",
+      "quote": "I had gonorrhea 2 years ago and was treated with antibiotics."
+    },
+    {
+      "id": "medqa-cs-020-f031",
+      "source_ids": [
+        "medqa-cs-020-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-020-f032",
+      "source_ids": [
+        "medqa-cs-020-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Father and mother are alive and in good health.",
+      "quote": "My father and mother are alive and in good health."
+    },
+    {
+      "id": "medqa-cs-020-f033",
+      "source_ids": [
+        "medqa-cs-020-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as a pizza delivery person.",
+      "quote": "Pizza delivery person."
+    },
+    {
+      "id": "medqa-cs-020-f034",
+      "source_ids": [
+        "medqa-cs-020-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinks quite a bit of alcohol on weekends.",
+      "quote": "I drink quite a bit on weekends."
+    },
+    {
+      "id": "medqa-cs-020-f035",
+      "source_ids": [
+        "medqa-cs-020-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Does not keep track of how much he drinks.",
+      "quote": "I don't keep track."
+    },
+    {
+      "id": "medqa-cs-020-f036",
+      "source_ids": [
+        "medqa-cs-020-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never thought about cutting down on his drinking.",
+      "quote": "No (to all four)."
+    },
+    {
+      "id": "medqa-cs-020-f037",
+      "source_ids": [
+        "medqa-cs-020-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never been bothered by others commenting on his drinking.",
+      "quote": "No (to all four)."
+    },
+    {
+      "id": "medqa-cs-020-f038",
+      "source_ids": [
+        "medqa-cs-020-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never felt remorseful about his alcohol use.",
+      "quote": "No (to all four)."
+    },
+    {
+      "id": "medqa-cs-020-f039",
+      "source_ids": [
+        "medqa-cs-020-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Never needs a morning drink to calm his nerves or relieve a hangover.",
+      "quote": "No (to all four)."
+    },
+    {
+      "id": "medqa-cs-020-f040",
+      "source_ids": [
+        "medqa-cs-020-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never used recreational drugs.",
+      "quote": "Never."
+    },
+    {
+      "id": "medqa-cs-020-f041",
+      "source_ids": [
+        "medqa-cs-020-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Smokes a pack of cigarettes a day; started at age 15.",
+      "quote": "Yes, I smoke a pack a day. I started when I was 15 years old."
+    },
+    {
+      "id": "medqa-cs-020-f042",
+      "source_ids": [
+        "medqa-cs-020-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Has had many girlfriends.",
+      "quote": "Well, I've had many girlfriends."
+    },
+    {
+      "id": "medqa-cs-020-f043",
+      "source_ids": [
+        "medqa-cs-020-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Picks up a new female partner from the nightclub every Saturday night.",
+      "quote": "Every Saturday night, I pick up a new girl from the nightclub."
+    },
+    {
+      "id": "medqa-cs-020-f044",
+      "source_ids": [
+        "medqa-cs-020-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not use condoms (he doesn't like using them).",
+      "quote": "No, I don't like it when using a condom."
+    },
+    {
+      "id": "medqa-cs-020-f045",
+      "source_ids": [
+        "medqa-cs-020-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No known allergies.",
+      "quote": "No."
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Cough as the examinee enters the room.",
+      "Continue coughing every 3 to 4 minutes during the encounter.",
+      "Chest auscultation: when asked to take a breath, pretend to inhale while the examinee is listening to your right chest by moving your shoulders up, but do not actually breathe in.",
+      "Chest palpation: when the examinee palpates your right chest and asks you to say '99', turn your face to the right side and say it in a coarse, deep voice.",
+      "During the encounter, pretend to have a severe coughing attack. Note whether the examinee offers you a glass of water or a tissue."
+    ],
+    "patient_questions": [
+      "Are antibiotics necessary for my recovery?",
+      "If asked about sputum, ask the examinee: \"What does 'sputum' mean?\""
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "120/80 mm Hg",
+        "source_text": "BP: 120/80 mmHg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "99.9°F (37.7°C)",
+        "source_text": "Temp: 99.9°F (37.7°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "15/minute",
+        "source_text": "RR: 15/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "75/minute, regular",
+        "source_text": "HR: 75/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Low-grade fever (no values given)",
+        "source_text": "VS: Low-grade fever."
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "No acute distress",
+        "source_text": "Patient is in no acute distress."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e003"
+        ],
+        "system": "HEENT",
+        "name": "Nose, mouth, and pharynx",
+        "finding": "Within normal limits",
+        "source_text": "HEENT: Nose, mouth, and pharynx are within normal limits."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e004"
+        ],
+        "system": "Neck",
+        "name": "Jugular veins",
+        "finding": "No jugular venous distension",
+        "source_text": "Neck: No jugular vein distention (JVD) or lymphadenopathy."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e004"
+        ],
+        "system": "Neck",
+        "name": "Lymph nodes",
+        "finding": "No lymphadenopathy",
+        "source_text": "Neck: No jugular vein distention (JVD) or lymphadenopathy."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e005"
+        ],
+        "system": "Chest",
+        "name": "Tactile fremitus",
+        "finding": "Increased on the right side",
+        "source_text": "Chest: Increased tactile fremitus and decreased breath sounds on the right side. No rhonchi, rales, or wheezing."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e005"
+        ],
+        "system": "Chest",
+        "name": "Breath sounds",
+        "finding": "Decreased on the right side",
+        "source_text": "Chest: Increased tactile fremitus and decreased breath sounds on the right side. No rhonchi, rales, or wheezing."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e005"
+        ],
+        "system": "Chest",
+        "name": "Adventitious sounds",
+        "finding": "No rhonchi, rales, or wheezing",
+        "source_text": "Chest: Increased tactile fremitus and decreased breath sounds on the right side. No rhonchi, rales, or wheezing."
+      },
+      {
+        "id": "x008",
+        "source": "sp_notes",
+        "system": "Chest",
+        "name": "Lung auscultation (right chest)",
+        "finding": "SP moves the shoulders as if inhaling but does not actually breathe in while the right chest is auscultated (simulated decreased breath sounds on the right)",
+        "source_text": "Chest auscultation: \"When asked to take a breath, pretend to inhale while the examinee is listening to your right chest by moving your shoulders up, but do not actually breathe in.\""
+      },
+      {
+        "id": "x009",
+        "source": "sp_notes",
+        "system": "Chest",
+        "name": "Tactile fremitus (right chest)",
+        "finding": "SP turns the face to the right and says '99' in a coarse, deep voice when the right chest is palpated (simulated increased tactile fremitus on the right)",
+        "source_text": "Chest palpation: \"When the examinee palpates your right chest and asks you to say '99,' turn your face to the right side and say it in a coarse, deep voice.\""
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e006"
+        ],
+        "system": "Heart",
+        "name": "Apical impulse",
+        "finding": "Not displaced",
+        "source_text": "Heart: Apical impulse is not displaced; regular rhythm and rate; S1/S2 are within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e006"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Apical impulse is not displaced; regular rhythm and rate; S1/S2 are within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e006"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "S1 and S2 within normal limits",
+        "source_text": "Heart: Apical impulse is not displaced; regular rhythm and rate; S1/S2 are within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e006"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Apical impulse is not displaced; regular rhythm and rate; S1/S2 are within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e007"
+        ],
+        "system": "Extremities",
+        "name": "Cyanosis",
+        "finding": "No cyanosis",
+        "source_text": "Extremities: No cyanosis or edema."
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-020-e007"
+        ],
+        "system": "Extremities",
+        "name": "Edema",
+        "finding": "No edema",
+        "source_text": "Extremities: No cyanosis or edema."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Pneumonia",
+        "history_findings": [
+          "Persistent cough"
+        ],
+        "exam_findings": [
+          "Increased tactile fremitus",
+          "Decreased breath sounds on the right"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "URI-associated cough (post-infectious cough)",
+        "history_findings": [
+          "Recent upper respiratory infection (URI)",
+          "Persistent cough"
+        ],
+        "exam_findings": [
+          "Low-grade fever (temperature 99.9°F)"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Acute bronchitis",
+        "history_findings": [
+          "Low-grade fever",
+          "Persistent cough",
+          "White sputum production"
+        ],
+        "exam_findings": [
+          "Increased tactile fremitus",
+          "Temperature 99.9°F"
+        ]
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Pleurodynia",
+        "rationale": "An uncommon coxsackievirus illness with acute severe paroxysmal chest or abdominal pain worse with cough or breathing; usually resolves within 3 days to 1 week."
+      },
+      {
+        "diagnosis": "Aspiration",
+        "rationale": "Another cause of acute cough; alcoholic, elderly and neurologically impaired patients are at risk."
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "rationale": "Extremely rare in a young patient with no risk factors."
+      },
+      {
+        "diagnosis": "Pulmonary edema",
+        "rationale": "Signs and symptoms of heart failure would be present."
+      },
+      {
+        "diagnosis": "HIV infection / Pneumocystis jirovecii pneumonia",
+        "rationale": "His sexual history warrants HIV screening, but there is no sign of immunosuppression (e.g. thrush) and PJP cough is usually nonproductive with dyspnea."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "The note exam vital signs line (e002) gives only 'Low-grade fever' without values; the doorway vitals give 99.9°F (37.7°C) and normal BP, RR and HR.",
+      "Exam e005 'Increased tactile fremitus and decreased breath sounds on the right side' does not say explicitly that the fremitus is right-sided; the sp_notes simulate both findings on the right chest, so both were recorded as right-sided.",
+      "p008 'I can't take a deep breath' sits uneasily with the denial of shortness of breath in p017; both recorded literally.",
+      "p014 and p017 use the stock answer 'No, I do not.' for a recent-exposure question and a list of symptoms; the denials are clear.",
+      "The raw examinee task list repeats 'Write the patient note after leaving the room.' (task 5)."
+    ],
+    "annotator_notes": [
+      "The preceding URI (p002) is split into runny nose, fever and sore throat, each 'resolved' with the timing two weeks ago, lasting a week.",
+      "The current slight fever (p003) is 'current' because it is reported as part of the present illness, although he did not measure it.",
+      "p006/p009 (pain triggered and worsened by cough and deep breathing) are merged into f009; p006 'sharp' and p008 'like a knife' are merged into f011.",
+      "The two sp_notes chest maneuvers are recorded as sp_notes exam findings (x008, x009) describing what the SP does and the sign it simulates; the coughing directions are kept as acting notes only, as in the worked example.",
+      "'Other etiologies' in the additional diagnoses is split into aspiration, pulmonary embolism, pulmonary edema and HIV/PJP.",
+      "2 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 7 facts confirmed."
+    ]
+  }
+}

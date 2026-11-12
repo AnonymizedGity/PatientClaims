@@ -1,0 +1,145 @@
+{
+  "patient": {
+    "case_id": "mcr-test-01759",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 24, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "swelling of the left thigh", "aliases": ["thigh swelling", "swollen leg", "leg swelling"], "text": "My left thigh is swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "pain in the left thigh", "aliases": ["thigh pain", "leg pain"], "text": "My left thigh hurts.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "limited movement of the left leg", "aliases": ["limitation of movement", "can't move my leg properly", "reduced movement"], "text": "I can't move my left leg as well as normal.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "how long the thigh swelling and pain have lasted", "text": "The swelling and pain in my left thigh and the trouble moving my leg have been going on for 3 months.", "value": "3 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "poor eyesight", "aliases": ["vision loss", "can't see well", "vision problems"], "text": "My eyesight is very poor in both eyes.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f006", "item": "type 1 diabetes", "aliases": ["diabetes", "high blood sugar", "insulin-dependent diabetes"], "text": "I've had type 1 diabetes since I was 14.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "type 1 diabetes: control", "parent": "f006", "attribute": "course", "text": "My sugar control has been poor for a long time; my HbA1c has been as high as 20.9%.", "polarity": "present", "category": "medical_history"},
+      {"id": "f008", "item": "eye damage from diabetes", "aliases": ["retinopathy", "proliferative retinopathy", "eye disease"], "text": "My diabetes has damaged the backs of my eyes (proliferative retinopathy).", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "protein in the urine", "aliases": ["proteinuria", "kidney problems", "kidney damage"], "text": "My diabetes has affected my kidneys; I lose a lot of protein in my urine.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "nerve damage from diabetes", "aliases": ["peripheral neuropathy", "neuropathy", "numb feet"], "text": "I have nerve damage from my diabetes (peripheral neuropathy).", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "autonomic nerve damage", "aliases": ["autonomic neuropathy"], "text": "My diabetes has also damaged the nerves that control automatic body functions (autonomic neuropathy).", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "acute rheumatic fever", "aliases": ["rheumatic fever"], "text": "I've had acute rheumatic fever.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "syphilis", "aliases": ["sexually transmitted infection", "STI"], "text": "I've had syphilis.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f014", "item": "urinary tract infections", "aliases": ["UTIs", "bladder infections", "water infections"], "text": "I keep getting urinary tract infections.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f015", "item": "broken right hip", "aliases": ["femoral neck fracture", "hip fracture", "hip surgery", "operations"], "text": "I broke my right hip (the neck of the thigh bone) and had it fixed with surgery.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f016", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke 20 cigarettes a day.", "value": "20 cigarettes per day", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "insulin", "aliases": ["premixed insulin", "degludec", "aspart", "Ryzodeg", "diabetes medicine"], "text": "I inject premixed insulin (degludec and aspart), 14 units twice a day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f018", "item": "other medications", "aliases": ["other medicines", "tablets"], "text": "Insulin is the only medicine I take.", "polarity": "absent", "category": "medication"},
+      {"id": "f019", "item": "ethnicity", "aliases": ["background", "Aboriginal", "Indigenous"], "text": "I'm an Indigenous Australian.", "polarity": "present", "category": "social_background"},
+      {"id": "f020", "item": "where I live", "aliases": ["home", "remote community", "living situation"], "text": "I live in a remote community.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-01759",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "120/min, sinus tachycardia"},
+      {"id": "x002", "kind": "vital", "name": "weight", "aliases": ["body weight"], "result": "32.5 kg"},
+      {"id": "x003", "kind": "vital", "name": "body mass index", "aliases": ["BMI"], "result": "12.9 kg/m2"},
+      {"id": "x004", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "pallor", "nutritional status"], "result": "Pale and cachectic."},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "left thigh examination", "aliases": ["thigh", "leg examination", "swelling"], "result": "Significant tender swelling of the left thigh without erythema, warmth or skin changes."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "peripheral pulses", "aliases": ["pulses", "foot pulses", "vascular examination"], "result": "Intact."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation", "neuropathy"], "result": "Stocking-distribution sensory neuropathy (assessment limited by pain)."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "leg strength"], "result": "Reduced proximal left lower-limb strength (assessment limited by pain)."},
+      {"id": "x009", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision", "eye chart"], "result": "Counting fingers bilaterally."},
+      {"id": "x010", "kind": "exam", "system": "eye", "name": "funduscopic examination", "aliases": ["fundoscopy", "retina", "ophthalmoscopy", "eye examination"], "result": "Severe proliferative diabetic retinopathy with macular oedema."},
+      {"id": "x011", "kind": "test", "name": "HbA1c", "aliases": ["glycated hemoglobin", "hemoglobin A1c", "A1c"], "result": "12.4% on admission; historically as high as 20.9%."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "platelets", "white blood cell count", "WBC", "neutrophils"], "result": "Hemoglobin 90 g/L (normocytic anaemia); platelets 649 × 10^9/L; leukocytes 20.3 × 10^9/L; neutrophils 17.43 × 10^9/L."},
+      {"id": "x013", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "120 mm/h."},
+      {"id": "x014", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "185 mg/L."},
+      {"id": "x015", "kind": "test", "name": "ferritin", "aliases": ["serum ferritin", "iron studies"], "result": "1290 µg/L."},
+      {"id": "x016", "kind": "test", "name": "renal function", "aliases": ["kidney function", "creatinine clearance", "creatinine", "GFR"], "result": "Creatinine clearance 50 mL/min."},
+      {"id": "x017", "kind": "test", "name": "creatine kinase", "aliases": ["CK", "CPK", "muscle enzymes"], "result": "Normal."},
+      {"id": "x018", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes"], "result": "Normal."},
+      {"id": "x019", "kind": "test", "name": "thyroid function tests", "aliases": ["TSH", "thyroid function", "free T4"], "result": "Normal."},
+      {"id": "x020", "kind": "test", "name": "morning cortisol", "aliases": ["cortisol", "serum cortisol"], "result": "528 nmol/L."},
+      {"id": "x021", "kind": "test", "name": "serum albumin", "aliases": ["albumin"], "result": "<15 g/L."},
+      {"id": "x022", "kind": "test", "name": "vitamin D", "aliases": ["25-hydroxyvitamin D", "vitamin D level"], "result": "10.3 nmol/L."},
+      {"id": "x023", "kind": "test", "name": "vitamin C", "aliases": ["ascorbic acid", "vitamin C level"], "result": "12 µmol/L."},
+      {"id": "x024", "kind": "test", "name": "coeliac serology", "aliases": ["celiac serology", "tTG antibodies", "coeliac screen"], "result": "Negative."},
+      {"id": "x025", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "urine dipstick", "urine microscopy"], "result": "Indicates a urinary tract infection."},
+      {"id": "x026", "kind": "test", "name": "urine albumin/creatinine ratio", "aliases": ["ACR", "urine albumin", "proteinuria", "albuminuria"], "result": "840 g/mol."},
+      {"id": "x027", "kind": "test", "name": "renal ultrasound", "aliases": ["kidney ultrasound", "bladder ultrasound", "urinary tract ultrasound"], "result": "Cystitis."},
+      {"id": "x028", "kind": "test", "name": "renal biopsy", "aliases": ["kidney biopsy"], "result": "Class III diabetic nephropathy."},
+      {"id": "x029", "kind": "test", "name": "CT of the pelvis and left leg", "aliases": ["CT scan", "CT thigh", "CT leg"], "result": "Ill-defined diffuse low attenuation in the left mid-thigh muscle, measuring 36 × 34 × 150 mm, without masses or collections."},
+      {"id": "x030", "kind": "test", "name": "Doppler ultrasound of the left leg", "aliases": ["venous Doppler", "leg ultrasound", "DVT scan", "duplex ultrasound"], "result": "No deep vein thrombosis."},
+      {"id": "x031", "kind": "test", "name": "MRI of the left thigh", "aliases": ["MRI", "thigh MRI", "leg MRI"], "result": "Marked oedema of the left anterior thigh musculature (rectus femoris, vastus medialis, vastus lateralis and adductor muscles) with muscle atrophy, fatty and fluid replacement, and subcutaneous tissue oedema; the posterior compartment is spared."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-01759",
+    "diagnosis": "Diabetic myonecrosis",
+    "aliases": ["diabetic muscle infarction", "DMI", "spontaneous diabetic myonecrosis", "diabetic muscle necrosis"],
+    "reasoning": "1. Deep vein thrombosis was excluded — “A Doppler ultrasound excluded a deep vein thrombosis.” 2. Nutritional myopathy was considered but felt unlikely — “it was thought to be less likely in light of clinical presentation and imaging features.” 3. Vitamin D deficiency–related myopathy was excluded — “However, this is typically more widespread and bilateral rather than unilateral, as with our patient.” 4. Diabetic myonecrosis best fit the presentation and imaging — “The clinical presentation and progress, as well as imaging features of our case, were in keeping with diabetic myonecrosis…”"
+  },
+  "qc": {
+    "case_id": "mcr-test-01759",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s008"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s002"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s003"], "f016": ["s003"], "f017": ["s004"], "f018": ["s004"],
+      "f019": ["s001"], "f020": ["s001"]
+    },
+    "quotes": {
+      "f003": "limitation of movement", "f004": "a 3-month history of left thigh swelling and pain associated with limitation of movement",
+      "f005": "Visual acuity was counting fingers bilaterally", "f006": "type 1 diabetes mellitus diagnosed at age 14 years",
+      "f007": "chronically poor glycaemic control (HbA1c, 12.4% on admission; historically as high as 20.9%)", "f008": "proliferative retinopathy",
+      "f009": "nephrotic-range proteinuria", "f014": "recurrent urinary tract infections", "f015": "prior right femoral neck fracture with internal fixation",
+      "f016": "active smoking (20 cigarettes per day)", "f017": "premixed insulin (degludec and aspart 14 units twice daily)",
+      "f018": "Her only medication was premixed insulin", "f019": "Indigenous Australian", "f020": "from a remote community"
+    },
+    "flags": {
+      "f005": ["From the examination (visual acuity counting fingers bilaterally); the patient knows her sight is very poor."],
+      "f007": ["The historical HbA1c peak (20.9%) is something a patient with long-standing diabetes care would have been told; it is also in the HbA1c finding."],
+      "f013": ["The source does not say whether the syphilis was treated."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "sinus tachycardic at 120 bpm"},
+      "x002": {"sentences": ["s005"], "source_text": "weight 32.5 kg"},
+      "x003": {"sentences": ["s005"], "source_text": "BMI 12.9 kg/m2"},
+      "x004": {"sentences": ["s005"], "source_text": "On examination she was pale, cachectic"},
+      "x005": {"sentences": ["s006"], "source_text": "She had significant tender swelling of the left thigh without erythema, warmth, or skin changes"},
+      "x006": {"sentences": ["s006"], "source_text": "peripheral pulses were intact"},
+      "x007": {"sentences": ["s007"], "source_text": "Neurologic assessment was limited by pain but revealed stocking-distribution sensory neuropathy"},
+      "x008": {"sentences": ["s007"], "source_text": "Neurologic assessment was limited by pain / reduced proximal left lower-limb strength"},
+      "x009": {"sentences": ["s008"], "source_text": "Visual acuity was counting fingers bilaterally"},
+      "x010": {"sentences": ["s008"], "source_text": "funduscopic exam showed severe proliferative diabetic retinopathy with macular oedema"},
+      "x011": {"sentences": ["s002"], "source_text": "HbA1c, 12.4% on admission; historically as high as 20.9%"},
+      "x012": {"sentences": ["s009"], "source_text": "normocytic anaemia (Hb 90 g/L), thrombocytosis (649 × 10^9/L), leukocytosis (20.3 × 10^9/L), elevated neutrophils (17.43 × 10^9/L)"},
+      "x013": {"sentences": ["s009"], "source_text": "ESR 120 mm/h"},
+      "x014": {"sentences": ["s009"], "source_text": "CRP 185 mg/L"},
+      "x015": {"sentences": ["s009"], "source_text": "ferritin 1290 µg/L"},
+      "x016": {"sentences": ["s009"], "source_text": "creatinine clearance 50 mL/min"},
+      "x017": {"sentences": ["s009"], "source_text": "Creatine kinase and liver function tests were normal."},
+      "x018": {"sentences": ["s009"], "source_text": "Creatine kinase and liver function tests were normal."},
+      "x019": {"sentences": ["s009"], "source_text": "Thyroid function was normal"},
+      "x020": {"sentences": ["s009"], "source_text": "morning cortisol was 528 nmol/L"},
+      "x021": {"sentences": ["s010"], "source_text": "hypoalbuminaemia (<15 g/L)"},
+      "x022": {"sentences": ["s010"], "source_text": "vitamin D 10.3 nmol/L"},
+      "x023": {"sentences": ["s010"], "source_text": "vitamin C 12 µmol/L"},
+      "x024": {"sentences": ["s010"], "source_text": "coeliac serology was negative"},
+      "x025": {"sentences": ["s011"], "source_text": "Urinalysis indicated a urinary tract infection"},
+      "x026": {"sentences": ["s011"], "source_text": "albumin/creatinine ratio 840 g/mol"},
+      "x027": {"sentences": ["s012"], "source_text": "Renal ultrasound demonstrated cystitis"},
+      "x028": {"sentences": ["s012"], "source_text": "renal biopsy confirmed class III diabetic nephropathy"},
+      "x029": {"sentences": ["s013"], "source_text": "CT of the pelvis and left leg showed ill-defined diffuse low attenuation in the left mid-thigh muscle measuring 36 × 34 × 150 mm without masses or collections."},
+      "x030": {"sentences": ["s014"], "source_text": "A Doppler ultrasound excluded deep vein thrombosis."},
+      "x031": {"sentences": ["s015"], "source_text": "MRI revealed marked oedema of the left anterior thigh musculature (rectus femoris, vastus medialis, vastus lateralis, and adductor muscles) with muscle atrophy, fatty and fluid replacement, and subcutaneous tissue oedema; the posterior compartment was spared."}
+    },
+    "finding_flags": {
+      "x025": ["The source reports the urinalysis only as indicating a urinary tract infection, without the individual findings."],
+      "x030": ["The limb examined by Doppler is not stated; the left leg is assumed from the context."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "Contains the word 'diabetic' (proliferative diabetic retinopathy): a complication of her known diabetes, not the gold diagnosis."},
+      {"id": "x028", "reason": "Contains the word 'diabetic' (class III diabetic nephropathy): a complication of her known diabetes, not the gold diagnosis."}
+    ],
+    "source_issues": [
+      "The renal ultrasound result is given only as 'cystitis', and the renal biopsy is reported without timing."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with 3 months of left thigh swelling, pain and limited movement (s001-s015).",
+      "Known complications of her diabetes (retinopathy, nephrotic-range proteinuria, peripheral and autonomic neuropathy) are diagnoses she was told, so they are medical_history facts worded without the word 'diabetic'.",
+      "'Her only medication was premixed insulin' gives one insulin fact and a blanket 'other medications' denial."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

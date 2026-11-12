@@ -1,0 +1,112 @@
+{
+  "patient": {
+    "case_id": "mcr-test-08927",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 68, "sex": "male"},
+    "opening": ["f001", "f002", "f004"],
+    "facts": [
+      {"id": "f001", "item": "dizziness", "aliases": ["feeling dizzy", "lightheadedness", "vertigo"], "text": "I've been dizzy.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "weakness", "aliases": ["feeling weak", "loss of strength", "generalized weakness"], "text": "I feel weak all over.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "weakness: location", "parent": "f002", "attribute": "location", "text": "It's mostly in my legs, both of them the same.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "difficulty walking", "aliases": ["trouble walking", "difficulty ambulating", "can't get around"], "text": "I have trouble walking.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "tiredness", "aliases": ["fatigue", "low energy", "exhaustion"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "how long all these symptoms have lasted", "text": "All of this has been going on for two weeks.", "value": "2 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "COPD", "aliases": ["chronic obstructive pulmonary disease", "lung disease", "chronic lung disease"], "text": "I have a history of COPD (chronic obstructive pulmonary disease).", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "lung transplant", "aliases": ["transplant", "double lung transplant", "surgery", "previous operations"], "text": "Four months ago I had a transplant of both lungs, and it went without complications.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "prednisone", "aliases": ["steroids", "steroid tablets"], "text": "I take prednisone 20 mg every day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "mycophenolate mofetil", "aliases": ["mycophenolate", "CellCept", "MMF"], "text": "I take mycophenolate mofetil 1000 mg twice a day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "tacrolimus", "aliases": ["Prograf", "FK506"], "text": "I take tacrolimus 5 mg twice a day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "recent infections", "aliases": ["recent illness", "recent infection", "recent cold or flu"], "text": "I haven't had any infections recently.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "recent vaccinations", "aliases": ["immunizations", "vaccines", "recent shots"], "text": "I haven't had any vaccinations recently.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "new medications", "aliases": ["new medicines", "recently started drugs"], "text": "I haven't started any new medicines.", "polarity": "absent", "category": "medication"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-08927",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "leg strength", "arm strength"], "result": "Upper extremities: normal. Lower extremities: 3/5, symmetric."},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation", "sensory testing"], "result": "No sensory deficits."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "deep tendon reflexes", "aliases": ["reflexes", "DTRs", "knee jerk", "ankle jerk"], "result": "Normal."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "repeat motor strength", "aliases": ["follow-up strength testing"], "result": "Lower extremities: 1/5 bilaterally.", "time": "2 weeks after presentation"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "repeat deep tendon reflexes", "aliases": ["follow-up reflexes"], "result": "Hypoactive.", "time": "2 weeks after presentation"},
+      {"id": "x006", "kind": "test", "name": "serum viral PCR (CMV and EBV)", "aliases": ["CMV PCR", "cytomegalovirus PCR", "EBV PCR", "Epstein–Barr virus PCR", "viral PCR"], "result": "Cytomegalovirus negative; Epstein–Barr virus negative."},
+      {"id": "x007", "kind": "test", "name": "MRI brain with contrast", "aliases": ["brain MRI", "MRI head"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "CSF analysis", "aliases": ["lumbar puncture", "spinal tap", "CSF protein", "CSF glucose", "cerebrospinal fluid"], "result": "Protein 76 mg/dL; glucose 68 mg/dL.", "time": "about 2 weeks after presentation"},
+      {"id": "x009", "kind": "test", "name": "CSF culture", "aliases": ["cerebrospinal fluid culture"], "result": "Negative.", "time": "about 2 weeks after presentation"},
+      {"id": "x010", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative.", "time": "about 2 weeks after presentation"},
+      {"id": "x011", "kind": "test", "name": "urine culture", "aliases": ["urine cultures"], "result": "Negative.", "time": "about 2 weeks after presentation"},
+      {"id": "x012", "kind": "test", "name": "repeat serum CMV PCR", "aliases": ["repeat cytomegalovirus PCR"], "result": "Negative.", "time": "about 2 weeks after presentation"},
+      {"id": "x013", "kind": "test", "name": "spinal MRI", "aliases": ["MRI spine", "MRI cervical spine", "MRI of the spine"], "result": "Mild degenerative cervical changes without spinal cord compression.", "time": "about 2 weeks after presentation"},
+      {"id": "x014", "kind": "test", "name": "electromyography and nerve conduction studies", "aliases": ["EMG", "nerve conduction studies", "NCS", "nerve conduction"], "result": "Increased latency and decreased amplitude of the left ulnar sensory and left sural sensory potentials; decreased conduction velocity and amplitude of the left tibial and ulnar motor potentials. Consistent with an acute demyelinating polyneuropathy with axonal changes.", "time": "about 2 weeks after presentation"},
+      {"id": "x015", "kind": "test", "name": "tacrolimus trough levels", "aliases": ["tacrolimus level", "FK506 level", "drug levels"], "result": "Average 10.5 ± 4.1 ng/mL over the prior 3 months (target trough 8–12 ng/mL).", "time": "the 3 months before presentation"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-08927",
+    "diagnosis": "Guillain-Barre syndrome",
+    "aliases": ["Guillain-Barré syndrome", "GBS", "acute inflammatory demyelinating polyneuropathy", "AIDP", "acute inflammatory demyelinating polyradiculoneuropathy"],
+    "reasoning": "1. Spinal cord compression was excluded — “MRI of the spine revealed mild degenerative cervical spine disease without evidence of spine compression.” 2. Infection was considered but ruled out — “Urine, blood, and CSF cultures were negative for bacteria, fungi, and viruses, while a repeat serum CMV DNA by PCR was negative.” 3. Tacrolimus-induced polyneuropathy was considered but deemed unlikely — “Although nerve conduction studies in patients with tacrolimus polyneuropathy may also show evidence of demyelinating changes, the symmetric ascending presentation and the absence of a history of elevated tacrolimus levels favor the diagnosis of GBS over tacrolimus polyneuropathy in our patients.” 4. Chronic inflammatory demyelinating polyneuropathy was considered but is less likely given the acute progression — “Symptoms in CIDP tend to progress slowly over eight weeks or several months.” 5. Guillain–Barré syndrome was supported by neurophysiology and CSF findings — “Electromyogram (EMG) and nerve conduction studies showed increased latency and decreased amplitude of the left ulnar sensory and left sural sensory … consistent with an acute demyelinating polyneuropathy with axonal changes.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-08927",
+    "fact_sources": {
+      "f001": ["s004"],
+      "f002": ["s004"],
+      "f003": ["s005"],
+      "f004": ["s004"],
+      "f005": ["s004"],
+      "f006": ["s004"],
+      "f007": ["s001"],
+      "f008": ["s001"],
+      "f009": ["s002"],
+      "f010": ["s002"],
+      "f011": ["s002"],
+      "f012": ["s003"],
+      "f013": ["s003"],
+      "f014": ["s003"]
+    },
+    "quotes": {
+      "f002": "generalized weakness",
+      "f003": "lower-extremity strength was 3/5 symmetrically",
+      "f004": "difficulty ambulating",
+      "f006": "two weeks of dizziness, generalized weakness, fatigue, and difficulty ambulating",
+      "f008": "underwent an uncomplicated bilateral lung transplant four months earlier",
+      "f009": "prednisone 20 mg daily",
+      "f010": "mycophenolate mofetil 1000 mg twice daily",
+      "f011": "tacrolimus 5 mg twice daily",
+      "f013": "immunizations"
+    },
+    "flags": {
+      "f003": ["Location taken from the initial examination (legs 3/5, arms normal); the patient reported generalized weakness, so the arms are not denied."],
+      "f007": ["The source does not say COPD was the reason for the transplant; the facts keep them separate."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "upper-extremity strength was normal, lower-extremity strength was 3/5 symmetrically"},
+      "x002": {"sentences": ["s005"], "source_text": "there were no sensory deficits"},
+      "x003": {"sentences": ["s005"], "source_text": "deep tendon reflexes were normal"},
+      "x004": {"sentences": ["s008"], "source_text": "Over the next two weeks, his lower-extremity strength declined further to 1/5 bilaterally"},
+      "x005": {"sentences": ["s008"], "source_text": "deep tendon reflexes became hypoactive"},
+      "x006": {"sentences": ["s006"], "source_text": "Serum PCR for cytomegalovirus and Epstein–Barr virus was negative."},
+      "x007": {"sentences": ["s007"], "source_text": "Brain MRI with contrast was normal."},
+      "x008": {"sentences": ["s009"], "source_text": "Lumbar puncture showed cerebrospinal fluid protein 76 mg/dL and glucose 68 mg/dL."},
+      "x009": {"sentences": ["s010"], "source_text": "CSF, blood, and urine cultures were negative"},
+      "x010": {"sentences": ["s010"], "source_text": "CSF, blood, and urine cultures were negative"},
+      "x011": {"sentences": ["s010"], "source_text": "CSF, blood, and urine cultures were negative"},
+      "x012": {"sentences": ["s010"], "source_text": "repeat serum CMV PCR was negative"},
+      "x013": {"sentences": ["s011"], "source_text": "Spinal MRI demonstrated mild degenerative cervical changes without spinal cord compression."},
+      "x014": {"sentences": ["s012"], "source_text": "Electromyogram and nerve conduction studies revealed increased latency and decreased amplitude of the left ulnar sensory and left sural sensory potentials and decreased conduction velocity and amplitude of the left tibial and ulnar motor potentials, consistent with an acute demyelinating polyneuropathy with axonal changes."},
+      "x015": {"sentences": ["s002"], "source_text": "target trough 8–12 ng/mL; prior 3-month average 10.5 ± 4.1 ng/mL"}
+    },
+    "finding_flags": {
+      "x008": ["No CSF cell count is reported."],
+      "x009": ["The timing of s009-s012 is not stated; they follow the two-week decline in the narrative, so they are dated about 2 weeks after presentation."]
+    },
+    "leakage": [
+      {"id": "x014", "reason": "The nerve conduction report concludes 'acute demyelinating polyneuropathy', the descriptive name of the commonest form of Guillain-Barré syndrome; written reports keep their conclusions."}
+    ],
+    "source_issues": ["s009: the CSF cell count is not given, so albuminocytologic dissociation cannot be confirmed from the prompt.", "The CSF, cultures, spinal MRI and nerve conduction studies (s009-s012) have no stated dates."],
+    "notes": ["Index visit: the presentation with two weeks of dizziness, generalized weakness, fatigue and difficulty walking (s001-s007).", "s008: the further decline of leg strength (1/5) and hypoactive reflexes over the next two weeks is kept as repeat examination findings with time (x004, x005), because examination results from later in the same workup are findings; no new patient fact is made from it.", "s005: 'Tacrolimus dosing was adjusted to maintain therapeutic levels' is treatment during the workup and is not used.", "s002: the tacrolimus target and prior 3-month average are a drug-level finding (x015) dated before presentation; the patient facts give only the doses.", "Gold-diagnosis words (guillain, barre) do not occur in facts or finding names.", "Fixes: f010 alias 'immunosuppressants' removed; f011 alias 'immunosuppressants' removed; f010 alias 'anti-rejection medicine' removed; f011 alias 'anti-rejection medicine' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

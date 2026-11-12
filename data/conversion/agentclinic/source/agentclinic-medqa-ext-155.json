@@ -1,0 +1,70 @@
+{
+  "case_id": "agentclinic-medqa-ext-155",
+  "source_row": 155,
+  "demographics_text": "58-year-old white man",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with a lesion on his lower lip, taking into consideration his medical history and habits.",
+  "chief_complaint": "Painless lesion on the lower lip",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-155-p001",
+      "field": "History",
+      "text": "The patient reports a 3-month history of a painless lesion on his lower lip. He is a smoker with a one pack per day habit for the last 20 years and has worked as a fruit picker for the past 25 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-155-p002",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, Type 2 Diabetes Mellitus. Current medications include captopril and metformin."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-155-p003",
+      "field": "Social_History",
+      "text": "Smokes one pack of cigarettes daily for 20 years. Works outside as a fruit picker."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-155-p004",
+      "field": "Review_of_Systems",
+      "text": "No other complaints or symptoms reported."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-155-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-155-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-155-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-155-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-155-e005",
+      "path": "Physical_Examination_Findings.Oral_Examination.Inspection",
+      "text": "Single ulcer near the vermillion border of the lower lip, without any obvious signs of healing. The ulcer is non-tender on palpation."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-155-i001",
+      "path": "Test_Results.Biopsy_of_Lesion.Findings",
+      "text": "Dysplasia and keratin pearls, consistent with squamous cell carcinoma"
+    }
+  ],
+  "correct_diagnosis": "Squamous cell carcinoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

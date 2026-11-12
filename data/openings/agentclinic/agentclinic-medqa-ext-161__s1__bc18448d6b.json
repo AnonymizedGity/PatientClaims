@@ -1,0 +1,55 @@
+{
+ "case_id": "agentclinic-medqa-ext-161",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've been having trouble walking up stairs.",
+   "I've had the cough and the trouble with stairs for 3 months.",
+   "My muscles feel weak.",
+   "My muscles get stronger once I've been active for a while, and climbing stairs gets easier.",
+   "I've had a cough.",
+   "I've smoked a pack of cigarettes a day for 35 years.",
+   "I work in construction.",
+   "I live in a two-story apartment without an elevator."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've had a cough and trouble walking up stairs for 3 months. My muscles feel weak, but they get stronger once I've been active for a while, and climbing stairs gets easier. I work in construction, live in a two-story apartment without an elevator, and I've smoked a pack of cigarettes a day for 35 years.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f005",
+    "f003",
+    "f004",
+    "f006",
+    "f008",
+    "f009",
+    "f010"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3346,
+   "tokens_out": 82,
+   "seconds": 10.29,
+   "redrafts": 0
+  }
+ }
+}

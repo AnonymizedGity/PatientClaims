@@ -1,0 +1,104 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-032", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 71, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "feeling generally unwell", "aliases": ["malaise"], "text": "I've been feeling generally unwell.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "how long the symptoms have been going on", "text": "The tiredness and feeling unwell have been going on for the last few months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "weight loss", "aliases": ["unintentional weight loss", "losing weight"], "text": "I've been losing weight without trying.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "weight loss: amount", "parent": "f004", "attribute": "quantity", "text": "I've lost 18.1 kg over the past 6 months.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "changes in diet or exercise", "aliases": ["change in diet", "change in exercise routine"], "text": "I don't recall any changes in my diet or exercise routine that could explain the weight loss.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "changes in bowel habits", "text": "I haven't had any significant changes in my bowel habits.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "type 2 diabetes", "aliases": ["diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "testicular cancer", "aliases": ["cancer history", "non-seminomatous testicular cancer"], "text": "I had non-seminomatous testicular cancer in the past, and it was treated.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "high cholesterol", "aliases": ["hypercholesterolemia"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke 1 pack of cigarettes a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "alcohol", "aliases": ["drinking"], "text": "I drink a glass of wine every day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "illicit drugs", "aliases": ["drug use", "recreational drugs"], "text": "I don't use any illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-032",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.7°C (98.0°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "126/74 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "87/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection"], "result": "Appears chronically ill."},
+      {"id": "x006", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "cervical lymph nodes", "inguinal lymph nodes"], "result": "Palpable bilateral cervical and inguinal lymphadenopathy."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "spleen palpation", "liver and spleen palpation"], "result": "Splenomegaly on palpation."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "lymphocyte count", "hemoglobin", "platelet count", "platelets"], "result": "WBC elevated with lymphocytosis; hemoglobin normal to slightly decreased; platelets normal to decreased."},
+      {"id": "x009", "kind": "test", "name": "peripheral blood flow cytometry", "aliases": ["flow cytometry", "immunophenotyping"], "result": "Monoclonal B lymphocytes with a phenotype consistent with CLL/SLL."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-032",
+    "diagnosis": "Chronic lymphocytic leukemia",
+    "aliases": ["CLL", "B-cell chronic lymphocytic leukemia", "B-CLL", "CLL/SLL", "chronic lymphocytic leukemia/small lymphocytic lymphoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-032",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-032-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-032-p001"],
+      "f003": ["agentclinic-medqa-ext-032-p001"],
+      "f004": ["agentclinic-medqa-ext-032-p001", "agentclinic-medqa-ext-032-p002"],
+      "f005": ["agentclinic-medqa-ext-032-p001"],
+      "f006": ["agentclinic-medqa-ext-032-p001", "agentclinic-medqa-ext-032-p003"],
+      "f007": ["agentclinic-medqa-ext-032-p006"],
+      "f008": ["agentclinic-medqa-ext-032-p006"],
+      "f009": ["agentclinic-medqa-ext-032-p006"],
+      "f010": ["agentclinic-medqa-ext-032-p004"],
+      "f011": ["agentclinic-medqa-ext-032-p004"],
+      "f012": ["agentclinic-medqa-ext-032-p004"],
+      "f013": ["agentclinic-medqa-ext-032-p004"],
+      "f014": ["agentclinic-medqa-ext-032-p005"],
+      "f015": ["agentclinic-medqa-ext-032-p005"],
+      "f016": ["agentclinic-medqa-ext-032-p005"]
+    },
+    "quotes": {
+      "f003": "over the last few months",
+      "f004": "unintentional weight loss",
+      "f005": "weight loss of 18.1 kg over the past 6 months",
+      "f006": "does not recall any changes in diet or exercise routines",
+      "f009": "significant changes in bowel habits",
+      "f012": "non-seminomatous testicular cancer treated in the past",
+      "f014": "Currently smokes 1 pack of cigarettes per day",
+      "f015": "drinks a glass of wine daily"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98.0°F)", "exam_ids": ["agentclinic-medqa-ext-032-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "126/74 mmHg", "exam_ids": ["agentclinic-medqa-ext-032-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "87 bpm", "exam_ids": ["agentclinic-medqa-ext-032-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17 breaths/min", "exam_ids": ["agentclinic-medqa-ext-032-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Examination.General", "source_text": "Patient appears chronically ill.", "exam_ids": ["agentclinic-medqa-ext-032-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Examination.Lymph_Nodes", "source_text": "Bilateral cervical and inguinal lymphadenopathy palpable.", "exam_ids": ["agentclinic-medqa-ext-032-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Examination.Abdominal_Examination", "source_text": "Evidence of splenomegaly upon palpation.", "exam_ids": ["agentclinic-medqa-ext-032-e007"]},
+      "x008": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Elevated with lymphocytosis | Normal to slightly decreased | Normal to decreased", "exam_ids": ["agentclinic-medqa-ext-032-i001", "agentclinic-medqa-ext-032-i002", "agentclinic-medqa-ext-032-i003"]},
+      "x009": {"source": "Test_Results.Flow_Cytometry.Findings", "source_text": "Presence of monoclonal B lymphocytes with a phenotype consistent with CLL/SLL.", "exam_ids": ["agentclinic-medqa-ext-032-i004"]}
+    },
+    "finding_flags": {
+      "x008": ["The CBC gives only qualitative values, and two of them are ranges ('normal to slightly decreased', 'normal to decreased'); kept as given."]
+    },
+    "leakage": [
+      {"id": "x009", "reason": "The flow cytometry result names the diagnosis (CLL/SLL); kept because it is the test's answer."}
+    ],
+    "source_issues": [
+      "CBC values are qualitative ranges rather than numbers ('Normal to slightly decreased', 'Normal to decreased')."
+    ],
+    "notes": [
+      "The 'last few months' duration covers both fatigue and malaise, so it is a standalone fact (f003).",
+      "Weight loss (p002) merges with the History (f004), whose 18.1 kg over 6 months is a quantity child (f005); 'No change in diet or exercise' (p003) merges with 'does not recall any changes' and keeps the History's hedge (f006).",
+      "'Patient appears chronically ill' is an observer sign and stays in the exam (x005)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient presenting with fatigue, malaise, and unintentional weight loss, and assess the need for further diagnostic workup."
+    }
+  }
+}

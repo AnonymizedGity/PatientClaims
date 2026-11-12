@@ -1,0 +1,83 @@
+{
+  "case_id": "agentclinic-medqa-ext-212",
+  "source_row": 212,
+  "demographics_text": "75-year-old male",
+  "objective_for_doctor": "Evaluate a 75-year-old man presenting for an annual check-up, focusing on blood pressure management and interpreting laboratory test results.",
+  "chief_complaint": "Occasional knee pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-212-p001",
+      "field": "History",
+      "text": "The patient reports coming in for his annual blood pressure check-up. He has a history of hypertension and knee osteoarthritis. For his osteoarthritis, he occasionally takes acetaminophen. The patient mentions occasional knee pain but has no other complaints. He follows a diet rich in vegetables and exercises daily. Additionally, he has a family history of hematologic malignancy in a brother who died at the age of 84."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-212-p002",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, Knee osteoarthritis"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-212-p003",
+      "field": "Social_History",
+      "text": "Non-smoker, exercises daily, and follows a vegetable-rich diet."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-212-p004",
+      "field": "Review_of_Systems",
+      "text": "No additional complaints or symptoms noted."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-212-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8℃ (98.2℉)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-212-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/85 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-212-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-212-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-212-e005",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Knees",
+      "text": "Reduced range of motion and crepitus noted in both knees indicating osteoarthritis."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-212-i001",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "15 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-212-i002",
+      "path": "Test_Results.Complete_Blood_Count.Leukocyte_Count",
+      "text": "58,000/mm3 (markedly elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-212-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelet_Count",
+      "text": "250,000/mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-212-i004",
+      "path": "Test_Results.Flow_Cytometry.Absolute_Lymphocyte_Count",
+      "text": "50,000/mm3, indicating a lymphocytosis"
+    }
+  ],
+  "correct_diagnosis": "Chronic lymphocytic leukemia (CLL)",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

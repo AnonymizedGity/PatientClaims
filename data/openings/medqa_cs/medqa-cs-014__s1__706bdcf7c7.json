@@ -1,0 +1,63 @@
+{
+ "case_id": "medqa-cs-014",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have a headache. I have one right now.",
+   "It started two weeks ago.",
+   "It came on gradually.",
+   "Each one lasts one or two hours.",
+   "I get occasional aches and pains. I take ibuprofen for them.",
+   "When I have the pain, it's a 9 out of 10.",
+   "It feels sharp and throbbing.",
+   "Sometimes I feel nauseated when I'm in pain.",
+   "I vomited.",
+   "In college I had a similar headache.",
+   "My mother is alive and has migraines.",
+   "I'm working on a new project that I have to finish this month."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have a headache right now. It started two weeks ago and came on gradually. Each one lasts one or two hours, and when I have the pain, it's a 9 out of 10. It feels sharp and throbbing. Sometimes I feel nauseated when I'm in pain, and I vomited. I get occasional aches and pains and take ibuprofen for them. In college I had a similar headache. My mother is alive and has migraines. I'm working on a new project that I have to finish this month.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f010",
+    "f032",
+    "f007",
+    "f012",
+    "f019",
+    "f020",
+    "f034",
+    "f044",
+    "f049"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4668,
+   "tokens_out": 125,
+   "seconds": 12.1,
+   "redrafts": 0
+  }
+ }
+}

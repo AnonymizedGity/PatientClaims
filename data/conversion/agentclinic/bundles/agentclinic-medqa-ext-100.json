@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-100", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 67, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "feeling tired", "exhaustion"], "text": "I've been feeling tired all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fatigue: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 2 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "fatigue: course", "parent": "f001", "attribute": "course", "text": "It's been getting progressively worse.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "fatigue: triggers", "parent": "f001", "attribute": "aggravating", "text": "I can't point to anything specific that brings it on.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "pale skin", "aliases": ["looking pale", "pallor"], "text": "My skin has been looking pale.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "red spots on the skin", "aliases": ["tiny red dots", "pinpoint spots", "rash"], "text": "I've noticed lots of tiny, pinpoint red spots on my skin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f007", "item": "red spots on the skin: location", "parent": "f006", "attribute": "location", "text": "They're on my arms and legs.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "red spots on the skin: appearance", "parent": "f006", "attribute": "appearance", "text": "They don't fade when I press on them.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f009", "item": "shortness of breath", "aliases": ["breathlessness", "short of breath"], "text": "I get short of breath at times.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f010", "item": "shortness of breath: triggers", "parent": "f009", "attribute": "aggravating", "text": "It comes on when I exert myself.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f011", "item": "shortness of breath: frequency", "parent": "f009", "attribute": "frequency", "text": "It happens occasionally.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "shortness of breath: severity", "parent": "f009", "attribute": "severity", "text": "It's mild.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f013", "item": "recent infections", "aliases": ["infections"], "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost any significant weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f018", "item": "family history of blood disorders", "aliases": ["blood disease in the family"], "text": "As far as I know, nobody in my family has had a blood disorder.", "polarity": "absent", "category": "family_history"},
+      {"id": "f019", "item": "family history of cancer", "aliases": ["cancer in the family"], "text": "As far as I know, nobody in my family has had cancer.", "polarity": "absent", "category": "family_history"},
+      {"id": "f020", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a retired teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f021", "item": "living situation", "aliases": ["who you live with", "home"], "text": "I live with my wife.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f022", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f023", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-100",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "pallor", "skin color"], "result": "The patient appears pale."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "rash"], "result": "Multiple pinpoint, red, nonblanching spots (petechiae) on the extremities."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "spleen", "liver and spleen palpation"], "result": "Inspection: no visible abnormalities. Palpation: significant splenomegaly."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "WBC", "white blood cell count", "platelets", "platelet count"], "result": "Hemoglobin 8.3 g/dL (low); WBC 81,000/mm3 (elevated); platelets 35,600/mm3 (low)."},
+      {"id": "x009", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood smear", "blood film"], "result": "Immature cells with large, prominent nucleoli and pink, elongated, needle-shaped cytoplasmic inclusions."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-100",
+    "diagnosis": "Acute myelogenous leukemia",
+    "aliases": ["AML", "acute myeloid leukemia", "acute myeloid leukaemia", "acute myeloblastic leukemia", "acute nonlymphocytic leukemia", "ANLL", "acute promyelocytic leukemia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-100",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-100-p001"], "f002": ["agentclinic-medqa-ext-100-p001"], "f003": ["agentclinic-medqa-ext-100-p001"],
+      "f004": ["agentclinic-medqa-ext-100-p001"], "f005": ["agentclinic-medqa-ext-100-p002"], "f006": ["agentclinic-medqa-ext-100-p003"],
+      "f007": ["agentclinic-medqa-ext-100-p003"], "f008": ["agentclinic-medqa-ext-100-p003"], "f009": ["agentclinic-medqa-ext-100-p006"],
+      "f010": ["agentclinic-medqa-ext-100-p006"], "f011": ["agentclinic-medqa-ext-100-p006"], "f012": ["agentclinic-medqa-ext-100-p006"],
+      "f013": ["agentclinic-medqa-ext-100-p001", "agentclinic-medqa-ext-100-p006"], "f014": ["agentclinic-medqa-ext-100-p001", "agentclinic-medqa-ext-100-p006"],
+      "f015": ["agentclinic-medqa-ext-100-p001", "agentclinic-medqa-ext-100-p006"], "f016": ["agentclinic-medqa-ext-100-p006"],
+      "f017": ["agentclinic-medqa-ext-100-p004"], "f018": ["agentclinic-medqa-ext-100-p004"], "f019": ["agentclinic-medqa-ext-100-p004"],
+      "f020": ["agentclinic-medqa-ext-100-p005"], "f021": ["agentclinic-medqa-ext-100-p005"], "f022": ["agentclinic-medqa-ext-100-p005"],
+      "f023": ["agentclinic-medqa-ext-100-p005"]
+    },
+    "quotes": {
+      "f002": "a 2-month history of generalized fatigue", "f003": "the fatigue has been progressively worsening", "f004": "He mentions no specific triggers",
+      "f005": "Appearance of pale skin", "f006": "multiple pinpoint, red, nonblanching spots", "f007": "on extremities", "f008": "nonblanching",
+      "f010": "during exertion", "f011": "occasional", "f012": "mild shortness of breath",
+      "f014": "significant weight loss", "f018": "No known blood disorders or cancer history in the family", "f019": "No known blood disorders or cancer history in the family",
+      "f020": "Retired teacher", "f023": "drinks alcohol socially"
+    },
+    "flags": {
+      "f005": ["Pallor is listed as a secondary symptom ('Appearance of pale skin'); kept as something the patient has noticed about himself. It is also in the general appearance examination."],
+      "f008": ["'Nonblanching' is usually an examination finding; kept because the source gives it as part of the patient's symptom."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-100-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-100-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-100-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-100-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Inspection", "source_text": "The patient appears pale.", "exam_ids": ["agentclinic-medqa-ext-100-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Skin_Examination", "source_text": "Multiple pinpoint, red, nonblanching spots (petechiae) noted on the extremities.", "exam_ids": ["agentclinic-medqa-ext-100-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Inspection: No visible abnormalities.; Palpation: Significant splenomegaly.", "exam_ids": ["agentclinic-medqa-ext-100-e007", "agentclinic-medqa-ext-100-e008"]},
+      "x008": {"source": "Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Hemoglobin: 8.3 g/dL (low); WBC: 81,000 /mm3 (elevated); Platelets: 35,600 /mm3 (low)", "exam_ids": ["agentclinic-medqa-ext-100-i001", "agentclinic-medqa-ext-100-i002", "agentclinic-medqa-ext-100-i003"]},
+      "x009": {"source": "Test_Results.Peripheral_Blood_Smear.Findings", "source_text": "Presence of immature cells with large, prominent nucleoli and pink, elongated, needle-shaped cytoplasmic inclusions.", "exam_ids": ["agentclinic-medqa-ext-100-i004"]}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [
+      "The denials of recent infections, significant weight loss and night sweats appear in both the history and the review of systems (merged)."
+    ],
+    "notes": [
+      "'Occasional mild shortness of breath during exertion' is split into the symptom and its trigger, frequency and severity children (f009-f012).",
+      "'No known blood disorders or cancer history in the family' gives two family-history denials (f018, f019), worded with 'as far as I know' for 'no known'.",
+      "Gold aliases include acute promyelocytic leukemia as a more specific form within AML (the needle-shaped inclusions are Auer rods); broader terms such as 'leukemia' or 'myeloid neoplasm' are not used."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with generalized fatigue, pallor, and abnormal blood findings."
+    }
+  }
+}

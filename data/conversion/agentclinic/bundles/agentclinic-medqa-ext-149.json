@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-149", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 44, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "bumps on the skin", "aliases": ["skin bumps", "skin lesions", "papules", "bumps on the thigh"], "text": "I have some small bumps on my left thigh.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "bumps on the skin: duration", "parent": "f001", "attribute": "duration", "text": "I've had them for the last 3 weeks.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "bumps on the skin: itching", "parent": "f001", "attribute": "character", "aliases": ["itchy bumps"], "text": "They don't itch.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "fatigue", "aliases": ["tiredness"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "feeling generally unwell", "aliases": ["malaise"], "text": "I've had a general sense of feeling unwell.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "how long the tiredness and feeling unwell have lasted", "text": "The tiredness and feeling unwell have been going on for a few months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "weight loss", "text": "I haven't lost any weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f011", "item": "shortness of breath", "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any known medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "regular medications", "aliases": ["medicines"], "text": "I don't take any regular medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "smoking", "text": "I smoke one pack of cigarettes a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "drug use", "aliases": ["intravenous drug use", "injecting drugs", "street drugs"], "text": "I use street drugs; I inject them into my veins.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-149",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.7°C (98.1°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "126/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin exam", "examination of the thigh bumps", "inspection of the skin lesions"], "result": "Three 2-3 mm, dome-shaped, hardened papules on the left thigh with central umbilication."},
+      {"id": "x006", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "cervical lymph nodes", "neck lymph nodes"], "result": "Non-tender cervical lymphadenopathy."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "heart auscultation", "aliases": ["cardiac examination", "heart sounds"], "result": "Normal heart sounds; no murmurs."},
+      {"id": "x008", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["respiratory examination", "chest auscultation", "breath sounds"], "result": "Lungs clear bilaterally; no wheezes, crackles or rhonchi."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelets", "platelet count", "blood count"], "result": "White blood cell count normal; hemoglobin normal; platelets normal."},
+      {"id": "x010", "kind": "test", "name": "HIV test", "aliases": ["HIV antibody test", "HIV serology", "HIV screen"], "result": "Positive."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-149",
+    "diagnosis": "Molluscum contagiosum",
+    "aliases": ["molluscum", "molluscum contagiosum virus infection", "water warts"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-149",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-149-p001"], "f002": ["agentclinic-medqa-ext-149-p001"], "f003": ["cc"],
+      "f004": ["agentclinic-medqa-ext-149-p001", "agentclinic-medqa-ext-149-p002"],
+      "f005": ["agentclinic-medqa-ext-149-p001", "agentclinic-medqa-ext-149-p003"],
+      "f006": ["agentclinic-medqa-ext-149-p001"],
+      "f007": ["agentclinic-medqa-ext-149-p006"], "f008": ["agentclinic-medqa-ext-149-p006"], "f009": ["agentclinic-medqa-ext-149-p006"],
+      "f010": ["agentclinic-medqa-ext-149-p006"], "f011": ["agentclinic-medqa-ext-149-p006"],
+      "f012": ["agentclinic-medqa-ext-149-p001", "agentclinic-medqa-ext-149-p004"],
+      "f013": ["agentclinic-medqa-ext-149-p001", "agentclinic-medqa-ext-149-p004"],
+      "f014": ["agentclinic-medqa-ext-149-p001", "agentclinic-medqa-ext-149-p005"],
+      "f015": ["agentclinic-medqa-ext-149-p001", "agentclinic-medqa-ext-149-p005"]
+    },
+    "quotes": {
+      "f001": "small bumps on his left thigh", "f002": "for the last 3 weeks", "f003": "non-pruritic",
+      "f006": "fatigued and a general sense of malaise for a few months",
+      "f012": "No known medical problems.", "f013": "No regular medications.",
+      "f014": "Smokes one pack of cigarettes per day.", "f015": "Uses intravenous street drugs."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98.1°F)", "exam_ids": ["agentclinic-medqa-ext-149-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "126/80 mm Hg", "exam_ids": ["agentclinic-medqa-ext-149-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-149-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-149-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection", "source_text": "Three 2-3 mm, dome-shaped, hardened papules on the left thigh with central umbilication.", "exam_ids": ["agentclinic-medqa-ext-149-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Lymph_Nodes.Inspection_and_Palpation", "source_text": "Non-tender cervical lymphadenopathy.", "exam_ids": ["agentclinic-medqa-ext-149-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.Auscultation", "source_text": "Heart sounds are normal, without murmurs.", "exam_ids": ["agentclinic-medqa-ext-149-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "Lungs are clear bilaterally, without wheezes, crackles, or rhonchi.", "exam_ids": ["agentclinic-medqa-ext-149-e008"]},
+      "x009": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal | Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-149-i001", "agentclinic-medqa-ext-149-i002", "agentclinic-medqa-ext-149-i003"]},
+      "x010": {"source": "Test_Results.HIV_Test.Result", "source_text": "Pending (To be given to the doctor verbally during the encounter as positive if needed)", "exam_ids": ["agentclinic-medqa-ext-149-i004"]}
+    },
+    "finding_flags": {
+      "x010": ["The source result is 'Pending' with an instruction to give it to the doctor as positive if needed. Encoded as 'Positive.' because a request for the test is the 'if needed' case; a stricter reading would encode 'pending'."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "HIV test result is written as a stage direction ('Pending (To be given to the doctor verbally during the encounter as positive if needed)') rather than a result."
+    ],
+    "notes": [
+      "'Non-pruritic' from the chief complaint is an absent child (f003) of the bumps; the opening is the bumps only.",
+      "The 'few months' duration applies to both fatigue and malaise, so it is a standalone fact (f006). The 3-week duration belongs to the bumps (child f002).",
+      "'Denies any known medical problems or medication use' (p001) and p004 say the same; one fact each for problems (f012) and medications (f013).",
+      "Lymph node examination is filed under system 'hematologic' (lymphatic), the closest schema value."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with small, non-pruritic bumps on the left thigh and general malaise."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

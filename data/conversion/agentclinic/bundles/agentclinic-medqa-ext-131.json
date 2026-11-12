@@ -1,0 +1,104 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-131",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 34, "sex": "male"},
+    "opening": ["f001", "f003", "f004"],
+    "facts": [
+      {"id": "f001", "item": "difficulty concentrating", "aliases": ["trouble focusing", "poor concentration"], "text": "I've been having trouble concentrating at work.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "difficulty concentrating: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 2 months.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "fatigue", "aliases": ["tiredness", "low energy", "exhaustion"], "text": "I feel tired all the time.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "loss of interest in activities", "aliases": ["decreased interest", "no enjoyment", "anhedonia"], "text": "I've lost interest in things I used to enjoy, like my dance classes.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "waking up too early", "aliases": ["early morning waking", "trouble sleeping", "change in sleep"], "text": "I wake up early and can't fall back to sleep.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "slowed speech", "aliases": ["talking slowly", "speaking slowly"], "text": "My spouse has noticed that I'm speaking more slowly than usual.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "loss of appetite", "aliases": ["decreased appetite", "poor appetite", "eating less"], "text": "My spouse has noticed that my appetite is down.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "worry about losing my job", "aliases": ["work stress", "job worries", "work performance"], "text": "I'm afraid I'll lose my job because my work performance has slipped.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f009", "item": "other sources of stress", "aliases": ["stress", "recent stress"], "text": "Apart from worrying about my work, I haven't been under any more stress lately.", "polarity": "absent", "category": "social_background", "time": "current"},
+      {"id": "f010", "item": "fever", "text": "I haven't had a fever recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "military service", "aliases": ["veteran", "deployment", "army"], "text": "I'm a veteran. I came back from a deployment to Afghanistan 2 years ago.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f013", "item": "marital status", "aliases": ["married", "spouse", "partner"], "text": "I'm married.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-131",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "118/76 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["appearance", "general inspection"], "result": "Appears withdrawn; speaks with decreased speed."},
+      {"id": "x006", "kind": "exam", "system": "ent", "name": "HEENT examination", "aliases": ["head and neck examination", "eyes, ears, nose and throat"], "result": "No abnormalities."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "cardiovascular examination", "aliases": ["heart examination", "heart auscultation", "heart sounds"], "result": "Normal rate and rhythm; no murmurs."},
+      {"id": "x008", "kind": "exam", "system": "respiratory", "name": "respiratory examination", "aliases": ["lung examination", "lung auscultation", "chest examination"], "result": "Clear to auscultation bilaterally."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "focal deficits", "orientation"], "result": "Alert and oriented; no focal deficits."},
+      {"id": "x010", "kind": "exam", "system": "psychiatric", "name": "mental status examination", "aliases": ["psychiatric examination", "MSE", "mood", "affect"], "result": "Mood appears depressed; low affect."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelets", "platelet count"], "result": "WBC 6,000/μL; hemoglobin 14 g/dL; platelets 250,000/μL."},
+      {"id": "x012", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid-stimulating hormone", "free T4", "thyroxine"], "result": "TSH 2.5 mIU/L; free T4 1.2 ng/dL."},
+      {"id": "x013", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "routine chemistry", "electrolytes", "sodium", "potassium", "creatinine", "kidney function"], "result": "Sodium 140 mmol/L; potassium 4.2 mmol/L; creatinine 0.9 mg/dL."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-131",
+    "diagnosis": "Major depressive disorder",
+    "aliases": ["MDD", "major depression", "clinical depression", "major depressive disorder, single episode", "major depressive disorder with melancholic features"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-131",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-131-p001"],
+      "f002": ["agentclinic-medqa-ext-131-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-131-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-131-p001"],
+      "f005": ["agentclinic-medqa-ext-131-p001", "agentclinic-medqa-ext-131-p002"],
+      "f006": ["agentclinic-medqa-ext-131-p001", "agentclinic-medqa-ext-131-p004"],
+      "f007": ["agentclinic-medqa-ext-131-p001", "agentclinic-medqa-ext-131-p003"],
+      "f008": ["agentclinic-medqa-ext-131-p001"],
+      "f009": ["agentclinic-medqa-ext-131-p007"],
+      "f010": ["agentclinic-medqa-ext-131-p007"],
+      "f011": ["agentclinic-medqa-ext-131-p007"],
+      "f012": ["agentclinic-medqa-ext-131-p001", "agentclinic-medqa-ext-131-p005"],
+      "f013": ["agentclinic-medqa-ext-131-p006"]
+    },
+    "quotes": {
+      "f001": "difficulty concentrating at work",
+      "f002": "a 2-month history",
+      "f003": "feeling constantly tired",
+      "f004": "lost interest in previously enjoyed activities such as dance classes",
+      "f005": "getting up early and being unable to fall back to sleep",
+      "f006": "spouse has observed him speaking more slowly than usual",
+      "f007": "noticed a decreased appetite",
+      "f008": "fearing job loss due to poor performance",
+      "f009": "increases in stress outside of concern for work performance",
+      "f010": "Denies recent fever",
+      "f012": "returned from a deployment to Afghanistan 2 years ago",
+      "f013": "Married."
+    },
+    "flags": {
+      "f002": ["The source attaches the 2-month duration to the difficulty concentrating; the onset of the other symptoms is not stated."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-131-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "118/76 mmHg", "exam_ids": ["agentclinic-medqa-ext-131-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-131-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-131-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Appearance", "source_text": "Patient appears withdrawn and speaks with decreased speed.", "exam_ids": ["agentclinic-medqa-ext-131-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.HEENT", "source_text": "No abnormalities noted.", "exam_ids": ["agentclinic-medqa-ext-131-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Cardiovascular", "source_text": "Normal rate and rhythm, no murmurs.", "exam_ids": ["agentclinic-medqa-ext-131-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Examination.Respiratory", "source_text": "Clear to auscultation bilaterally.", "exam_ids": ["agentclinic-medqa-ext-131-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.General_Examination.Neurological", "source_text": "Alert and oriented, no focal deficits.", "exam_ids": ["agentclinic-medqa-ext-131-e009"]},
+      "x010": {"source": "Physical_Examination_Findings.General_Examination.Psychiatric", "source_text": "Mood appears depressed, exhibits low affect.", "exam_ids": ["agentclinic-medqa-ext-131-e010"]},
+      "x011": {"source": "Test_Results.CBC.WBC + Test_Results.CBC.Hemoglobin + Test_Results.CBC.Platelets", "source_text": "6,000 /μL | 14 g/dL | 250,000 /μL", "exam_ids": ["agentclinic-medqa-ext-131-i001", "agentclinic-medqa-ext-131-i002", "agentclinic-medqa-ext-131-i003"]},
+      "x012": {"source": "Test_Results.Thyroid_Function_Tests.TSH + Test_Results.Thyroid_Function_Tests.Free_T4", "source_text": "2.5 mIU/L | 1.2 ng/dL", "exam_ids": ["agentclinic-medqa-ext-131-i004", "agentclinic-medqa-ext-131-i005"]},
+      "x013": {"source": "Test_Results.Routine_Chemistry.Sodium + Test_Results.Routine_Chemistry.Potassium + Test_Results.Routine_Chemistry.Creatinine", "source_text": "140 mmol/L | 4.2 mmol/L | 0.9 mg/dL", "exam_ids": ["agentclinic-medqa-ext-131-i006", "agentclinic-medqa-ext-131-i007", "agentclinic-medqa-ext-131-i008"]}
+    },
+    "leakage": [
+      {"id": "x010", "reason": "Mental status result 'mood appears depressed' shares the stem of the gold diagnosis; it is an examination finding (the exam's answer), not the diagnosis name."}
+    ],
+    "source_issues": ["Social_History states that substance, alcohol and tobacco use are unknown ('Unknown substance use. No provided information on alcohol or tobacco use.').", "The patient never reports a low or sad mood in the history; depressed mood appears only as an examiner's observation (e010)."],
+    "notes": ["The chief complaint names three complaints (difficulty concentrating, fatigue, decreased interest), all in the opening.", "Slowed speech and decreased appetite were observed by the spouse, so they are worded as collateral ('My spouse has noticed...'). The spouse's sex is not stated, so 'spouse' is kept.", "'Changes in sleep patterns' (p002) is the early waking with inability to fall back asleep described in the history; one fact (f005).", "Withdrawn appearance and slowed speech are also in the exam (e005); no acting note needed. No low-mood fact was invented.", "Alcohol, tobacco and substance use stay unknown (p006 states them as not provided); only 'Married' from p006 is converted.", "Military deployment is a social_background fact although the source puts it under Past_Medical_History."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with changes in mood, energy, and interest in activities."
+    }
+  }
+}

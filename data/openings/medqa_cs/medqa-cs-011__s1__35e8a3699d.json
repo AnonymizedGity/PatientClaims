@@ -1,0 +1,57 @@
+{
+ "case_id": "medqa-cs-011",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have a hoarse voice.",
+   "I first noticed it three months ago.",
+   "It started gradually.",
+   "I feel like there's a lump in my throat.",
+   "I have dropped 10 pounds in the last 3 months.",
+   "I've been feeling more tired recently.",
+   "I smoke cigarettes.",
+   "My father had lung cancer.",
+   "My mother had thyroid disease."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been dealing with a hoarse voice for about three months now. It started gradually, and I feel like there's a lump in my throat. I've also dropped 10 pounds in that time and just feel more tired than usual. I do smoke cigarettes, and my father had lung cancer while my mother had thyroid disease.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f010",
+    "f013",
+    "f019",
+    "f044",
+    "f034",
+    "f033"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4301,
+   "tokens_out": 80,
+   "seconds": 9.5,
+   "redrafts": 0
+  }
+ }
+}

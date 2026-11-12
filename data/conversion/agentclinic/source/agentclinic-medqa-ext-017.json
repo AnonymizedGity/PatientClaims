@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-017",
+  "source_row": 17,
+  "demographics_text": "58-year-old female",
+  "objective_for_doctor": "Evaluate the patient for the cause of acute diarrhea and manage appropriately.",
+  "chief_complaint": "Watery diarrhea",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-017-p001",
+      "field": "History",
+      "text": "The patient has been treated for community-acquired pneumonia with levofloxacin on the medical floor. She reports developing watery diarrhea with at least 9 episodes within the last two days, accompanied by lower abdominal discomfort and cramping."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-017-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Lower abdominal discomfort"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-017-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Abdominal cramping"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-017-p004",
+      "field": "Past_Medical_History",
+      "text": "Currently being treated for community-acquired pneumonia. No other significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-017-p005",
+      "field": "Social_History",
+      "text": "Non-smoker, does not consume alcohol. No recent travel or dietary changes reported."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-017-p006",
+      "field": "Review_of_Systems",
+      "text": "No fever, no recent antibiotics usage apart from levofloxacin for pneumonia, no vomiting, no blood in stool."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "122/98 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "67 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "15 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No distension or visible masses."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic throughout, no shifting dullness."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Diffuse mild tenderness in the lower abdomen, no guarding or rebound tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i001",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "13 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i002",
+      "path": "Test_Results.Complete_Blood_Count.Total_Count_WBC",
+      "text": "13,400/mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i003",
+      "path": "Test_Results.Complete_Blood_Count.Differential_Count.Neutrophils",
+      "text": "80%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i004",
+      "path": "Test_Results.Complete_Blood_Count.Differential_Count.Lymphocytes",
+      "text": "15%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i005",
+      "path": "Test_Results.Complete_Blood_Count.Differential_Count.Monocytes",
+      "text": "5%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i006",
+      "path": "Test_Results.ESR",
+      "text": "33 mm/hr"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i007",
+      "path": "Test_Results.Stool_Test.Appearance",
+      "text": "Watery"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i008",
+      "path": "Test_Results.Stool_Test.WBC_in_Stool",
+      "text": "Not specified"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i009",
+      "path": "Test_Results.Stool_Test.Culture",
+      "text": "Pending"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-017-i010",
+      "path": "Test_Results.Stool_Test.Clostridium_difficile_Toxin",
+      "text": "Not specified"
+    }
+  ],
+  "correct_diagnosis": "C. difficile colitis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

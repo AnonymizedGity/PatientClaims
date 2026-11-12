@@ -1,0 +1,47 @@
+{
+ "case_id": "ddxplus-v2-test-0002459",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "I have swelling in one or more parts of my body.",
+   "I have pain.",
+   "I have a rash or other skin problem that I think is related to why I came in.",
+   "I'm more likely than most people to get common allergies."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've got some swelling in one or more parts of my body, and I'm in pain. I also have a rash or other skin problem that I think is related to why I'm here. I'm more likely than most people to get common allergies.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f015",
+    "f023"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8666,
+   "tokens_out": 64,
+   "seconds": 12.23,
+   "redrafts": 0
+  }
+ }
+}

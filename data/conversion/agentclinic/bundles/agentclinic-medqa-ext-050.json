@@ -1,0 +1,115 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-050", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 47, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "rash", "aliases": ["skin rash", "rash on the back", "skin changes"], "text": "I have a rash on the upper half of my back.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "rash: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly last night.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "worries about the rash", "aliases": ["concerns", "what worries me"], "text": "I find this rash very concerning, especially because it came on so suddenly.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f004", "item": "mouth sores", "aliases": ["sore mouth", "mucositis", "mucosal changes", "mouth ulcers"], "text": "The inside of my mouth has become sore and inflamed.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f005", "item": "cough", "text": "I have a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f006", "item": "cough: onset", "parent": "f005", "attribute": "onset", "text": "The cough is new; it started recently.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f007", "item": "new environmental exposures", "aliases": ["new detergents", "poison ivy", "new plants", "contact with new substances"], "text": "I don't recall being exposed to anything new, like detergents or plants such as poison ivy.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "shortness of breath", "aliases": ["breathlessness"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f010", "item": "joint pain", "text": "I don't have joint pains at the moment.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "stomach or bowel symptoms", "aliases": ["gastrointestinal symptoms", "GI symptoms", "digestive problems"], "text": "I don't have any stomach or bowel problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f012", "item": "recent illnesses", "text": "I haven't been ill with anything else recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "arthritis", "aliases": ["joint disease"], "text": "I've been diagnosed with arthritis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "recent visits to a primary care provider", "aliases": ["new doctor", "recent medical care"], "text": "I recently started seeing a primary care provider to manage my arthritis and this new cough.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the arthritis, I don't have any other significant medical history.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-050",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.5°C (99.5°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "127/68 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "125/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "rash examination", "back examination"], "result": "Coalescing erythematous macules, bullae and desquamation, localized to the upper half of the back."},
+      {"id": "x007", "kind": "exam", "system": "ent", "name": "oral examination", "aliases": ["mouth", "oropharynx", "mucous membranes", "throat examination"], "result": "Ulcers and erythema in the oropharynx."},
+      {"id": "x008", "kind": "exam", "system": "cardiovascular", "name": "heart auscultation", "aliases": ["cardiac examination", "heart sounds"], "result": "Normal rate and rhythm; no murmurs or gallops."},
+      {"id": "x009", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["chest auscultation", "breath sounds", "lung examination"], "result": "Clear to auscultation bilaterally; no wheezes, rales or rhonchi."},
+      {"id": "x010", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver and spleen palpation"], "result": "Soft, non-tender; no hepatosplenomegaly; normoactive bowel sounds throughout."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelet count"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x012", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "electrolytes", "renal function tests", "creatinine", "BUN"], "result": "Renal function tests normal; electrolytes normal."},
+      {"id": "x013", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver panel"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "skin biopsy of back lesion", "aliases": ["skin biopsy", "punch biopsy", "biopsy of the rash"], "result": "Epidermal necrosis and detachment, consistent with a severe drug reaction."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-050",
+    "diagnosis": "Stevens-Johnson syndrome",
+    "aliases": ["SJS", "Stevens Johnson syndrome", "Steven-Johnson syndrome", "drug-induced Stevens-Johnson syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-050",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-050-p001", "agentclinic-medqa-ext-050-p008"], "f002": ["agentclinic-medqa-ext-050-p001", "agentclinic-medqa-ext-050-p002"],
+      "f003": ["agentclinic-medqa-ext-050-p001", "agentclinic-medqa-ext-050-p002"],
+      "f004": ["agentclinic-medqa-ext-050-p005", "agentclinic-medqa-ext-050-p008"],
+      "f005": ["agentclinic-medqa-ext-050-p001", "agentclinic-medqa-ext-050-p003", "agentclinic-medqa-ext-050-p008"],
+      "f006": ["agentclinic-medqa-ext-050-p001", "agentclinic-medqa-ext-050-p003", "agentclinic-medqa-ext-050-p008"],
+      "f007": ["agentclinic-medqa-ext-050-p001", "agentclinic-medqa-ext-050-p004"],
+      "f008": ["agentclinic-medqa-ext-050-p008"], "f009": ["agentclinic-medqa-ext-050-p008"], "f010": ["agentclinic-medqa-ext-050-p008"],
+      "f011": ["agentclinic-medqa-ext-050-p008"], "f012": ["agentclinic-medqa-ext-050-p008"],
+      "f013": ["agentclinic-medqa-ext-050-p001", "agentclinic-medqa-ext-050-p006"], "f014": ["agentclinic-medqa-ext-050-p001"],
+      "f015": ["agentclinic-medqa-ext-050-p006"]
+    },
+    "quotes": {
+      "f001": "Rash on the upper half of the back", "f002": "a rash that started last night / Concern over sudden onset",
+      "f003": "finding it very concerning", "f004": "Mucositis / mucosal changes", "f006": "a new onset cough",
+      "f007": "does not recall being exposed to any new environmental stimuli such as detergents or plants like poison ivy",
+      "f010": "joint pains", "f011": "gastrointestinal symptoms", "f012": "or recent illnesses",
+      "f014": "recently started seeing a primary care provider for arthritis management and a new onset cough",
+      "f015": "No other significant past medical history has been mentioned."
+    },
+    "flags": {
+      "f004": ["The source says 'mucositis' / 'mucosal changes' without a site; the mouth is used because the exam finds oropharyngeal ulcers (x007)."],
+      "f010": ["The ROS denies joint pains although the patient has diagnosed arthritis under management; kept as a current denial."],
+      "f015": ["'No other significant past medical history has been mentioned' is a meta phrase; converted to a plain denial per CONVERSION.md ('No notable past medical history provided' becomes a denial)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.5°C (99.5°F)", "exam_ids": ["agentclinic-medqa-ext-050-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "127/68 mmHg", "exam_ids": ["agentclinic-medqa-ext-050-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "125 bpm", "exam_ids": ["agentclinic-medqa-ext-050-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-050-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-050-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin_Examination.General + Physical_Examination_Findings.Skin_Examination.Distribution", "source_text": "Coalescing erythematous macules, bullae, desquamation noted. | Localized to the upper half of the back.", "exam_ids": ["agentclinic-medqa-ext-050-e006", "agentclinic-medqa-ext-050-e007"]},
+      "x007": {"source": "Physical_Examination_Findings.Skin_Examination.Mucous_Membranes", "source_text": "Ulcers and erythema present in oropharynx.", "exam_ids": ["agentclinic-medqa-ext-050-e008"]},
+      "x008": {"source": "Physical_Examination_Findings.Cardiopulmonary_Exam.Cardiac", "source_text": "Normal rate and rhythm, no murmurs or gallops.", "exam_ids": ["agentclinic-medqa-ext-050-e009"]},
+      "x009": {"source": "Physical_Examination_Findings.Cardiopulmonary_Exam.Pulmonary", "source_text": "Clear to auscultation bilaterally, no wheezes, rales, or rhonchi.", "exam_ids": ["agentclinic-medqa-ext-050-e010"]},
+      "x010": {"source": "Physical_Examination_Findings.Abdominal_Exam", "source_text": "Soft, non-tender, no hepatosplenomegaly, normoactive bowel sounds throughout.", "exam_ids": ["agentclinic-medqa-ext-050-e011"]},
+      "x011": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal | Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-050-i001", "agentclinic-medqa-ext-050-i002", "agentclinic-medqa-ext-050-i003"]},
+      "x012": {"source": "Test_Results.Chemistry_Panel.Renal_Function_Tests + Test_Results.Chemistry_Panel.Electrolytes", "source_text": "Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-050-i005", "agentclinic-medqa-ext-050-i006"]},
+      "x013": {"source": "Test_Results.Chemistry_Panel.Liver_Function_Tests", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-050-i004"]},
+      "x014": {"source": "Test_Results.Skin_Biopsy.Findings", "source_text": "Epidermal necrosis and detachment, consistent with severe drug reaction.", "exam_ids": ["agentclinic-medqa-ext-050-i007"]}
+    },
+    "finding_flags": {
+      "x008": ["'Normal rate' on cardiac exam contradicts the recorded heart rate of 125/min (x003); kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Gold label misspelled 'Steven-Johnson syndrome'; corrected to 'Stevens-Johnson syndrome' (the misspelling is kept as a gold alias).",
+      "Heart rate 125/min while the cardiac exam reports 'normal rate'.",
+      "The ROS denies joint pains although the patient has diagnosed arthritis.",
+      "No culprit drug is named anywhere, although the biopsy calls the picture a severe drug reaction and the patient recently started care for arthritis and cough."
+    ],
+    "notes": [
+      "The patient's concern about the sudden rash is kept as his own worry (social_background, f003), merging the History and p002.",
+      "'Skin and mucosal changes' in the ROS merge with the rash (f001) and the mouth soreness (f004).",
+      "Renal function tests and electrolytes are grouped as a basic metabolic panel (x012); liver function tests are their own panel (x013).",
+      "The biopsy result ('severe drug reaction') does not name the diagnosis, so it is not listed as leakage.",
+      "check_coverage warns that the gold label differs from the source: this is only the spelling correction (Steven- to Stevens-Johnson)."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-050-p007", "reason": "'The patient didn't provide any specific social history details during the initial consultation' carries no patient information."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a concerning rash and recent health changes."
+    }
+  }
+}

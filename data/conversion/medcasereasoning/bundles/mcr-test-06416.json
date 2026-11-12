@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06416",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 35, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["headaches", "head pain"], "text": "I've been having headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: duration", "parent": "f001", "attribute": "duration", "text": "They've been going on for 4 months.", "value": "4 months", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "seizure", "aliases": ["fit", "convulsion", "seizures"], "text": "I had a seizure the day before I came into hospital; it was the only one.", "value": 1, "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "vision loss", "aliases": ["poor vision", "blurred vision", "can't see well", "losing my sight"], "text": "I've been losing my vision.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "vision loss: duration", "parent": "f004", "attribute": "duration", "text": "It's been going on for 2 months.", "value": "2 months", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f006", "item": "vision loss: course", "parent": "f004", "attribute": "course", "text": "It came on gradually and kept getting worse, and then it got much worse quickly in the days before I came into hospital.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f007", "item": "eye pain with the vision loss", "aliases": ["eye pain", "painful vision loss"], "text": "The vision loss hasn't been painful.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f008", "item": "living situation", "aliases": ["drug rehabilitation", "rehab", "where I live"], "text": "I'm in a drug rehabilitation center.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f009", "item": "current substance use", "aliases": ["drug use", "substance abuse", "ongoing drug use"], "text": "I'm not using drugs or other substances now.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "immune deficiency", "aliases": ["immunodeficiency", "weak immune system"], "text": "I've never had an immune deficiency.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "autoimmune disease", "aliases": ["autoimmune condition"], "text": "I don't have any autoimmune disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "cancer", "aliases": ["malignancy", "tumor"], "text": "I've never had cancer.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06416",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normotensive."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "level of consciousness", "aliases": ["mental status", "GCS", "alertness", "consciousness"], "result": "Fully conscious."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["VA", "vision test", "eyesight"], "result": "Reduced to light perception on the right and hand motion on the left."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["fundus examination", "ophthalmoscopy", "optic discs", "papilledema"], "result": "Mild to moderate bilateral optic disc swelling."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "pupil examination", "aliases": ["pupils", "pupillary reflexes", "light reflex"], "result": "Mid-size, isochoric, and reactive to light."},
+      {"id": "x007", "kind": "test", "name": "noncontrast head CT", "aliases": ["head CT", "CT brain", "CT head"], "result": "Bilateral temporal-lobe hypodensity with loss of gray–white differentiation extending into the occipital lobes and centrum semiovale, with mild left uncal herniation but no mass lesion or hemorrhage."},
+      {"id": "x008", "kind": "test", "name": "lumbar puncture with CSF analysis", "aliases": ["LP", "spinal tap", "CSF analysis", "opening pressure", "CSF cell count", "CSF glucose", "CSF protein"], "result": "Clear CSF; opening pressure 38 cm H2O; mild glucose elevation; otherwise normal cell counts and chemistry."},
+      {"id": "x009", "kind": "test", "name": "CSF HSV PCR", "aliases": ["herpes simplex PCR", "HSV PCR"], "result": "Negative."},
+      {"id": "x010", "kind": "test", "name": "blood and urine toxin assays", "aliases": ["toxicology screen", "drug screen", "urine drug screen", "tox screen"], "result": "Negative."},
+      {"id": "x011", "kind": "test", "name": "viral serology", "aliases": ["HIV test", "HIV serology", "hepatitis B serology", "hepatitis C serology", "HBV", "HCV"], "result": "HIV, hepatitis B and hepatitis C serologies negative."},
+      {"id": "x012", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "MRI head", "contrast MRI"], "result": "Bilateral T2/FLAIR hyperintensity in the temporal lobes and insular regions (worse on the left), extending into the corpus callosum, centrum semiovale, left basal ganglia, left thalamus, optic chiasm, and periventricular occipital white matter. The lesions are mildly expanded, with no diffusion restriction on DWI, no enhancement on postcontrast images, and no hemorrhagic foci on SWI."},
+      {"id": "x013", "kind": "test", "name": "optical coherence tomography", "aliases": ["OCT", "retinal nerve fiber layer"], "result": "Increased retinal nerve fiber-layer thickness consistent with disc swelling."},
+      {"id": "x014", "kind": "test", "name": "visual evoked potentials", "aliases": ["VEP", "visual evoked response"], "result": "Absent waveforms bilaterally."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06416",
+    "diagnosis": "Gliomatosis cerebri",
+    "aliases": ["gliomatosis cerebri growth pattern", "diffuse glioma with a gliomatosis cerebri pattern"],
+    "reasoning": "1. Herpes simplex encephalitis — “HSE and LE were excluded based on incompatible clinical presentation, imaging findings, and laboratory data.” 2. Limbic encephalitis — “HSE and LE were excluded based on incompatible clinical presentation, imaging findings, and laboratory data.” 3. Infiltrative low-grade glioma — “Furthermore, due to volume expansion and facilitated diffusion of involved areas, we had to consider a differential diagnosis of neoplastic lesions such as infiltrative low-grade gliomas.” 4. Progressive multifocal leukoencephalopathy — “Lack of a previous history of immunodeficiency along with negative test result of HIV, absence of a typical pattern of enhancement and restriction seen in PML as well as the presence of mass effect and cortical involvement lessens the possibility of PML in our patient.” 5. Subacute sclerosing panencephalitis — “…but grey matter involvement and mass effect were not consistent with the diagnosis of SSPE.” 6. Toxic leukoencephalopathy, lymphomatosis cerebri, HIV encephalopathy, and PACNS — “We ruled out these differential diagnoses with laboratory results and lack of their specific imaging findings.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06416",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s001"], "f009": ["s003"], "f010": ["s003"], "f011": ["s003"], "f012": ["s003"]
+    },
+    "quotes": {
+      "f002": "a 4-month history of headaches", "f003": "one seizure the day before admission", "f005": "a 2-month history",
+      "f006": "gradual, painless, progressive visual loss that acutely worsened in the days before hospitalization", "f007": "painless",
+      "f008": "in a drug rehabilitation center", "f009": "denied ongoing substance abuse",
+      "f010": "no history of immunodeficiency", "f011": "autoimmune disease", "f012": "malignancy"
+    },
+    "flags": {
+      "f004": ["The history does not say whether the vision loss is in one eye or both; the examination finds it in both."],
+      "f008": ["Being in a drug rehabilitation center implies earlier substance use, but the substances and timing are not given; no past-use fact is written."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "he was afebrile"},
+      "x002": {"sentences": ["s004"], "source_text": "normotensive"},
+      "x003": {"sentences": ["s004"], "source_text": "fully conscious"},
+      "x004": {"sentences": ["s005"], "source_text": "bilateral visual acuity reduced to light perception on the right and hand motion on the left"},
+      "x005": {"sentences": ["s005"], "source_text": "with mild to moderate bilateral optic disc swelling"},
+      "x006": {"sentences": ["s006"], "source_text": "Pupils were mid-size, isochoric, and reactive to light."},
+      "x007": {"sentences": ["s007"], "source_text": "Noncontrast head CT revealed bilateral temporal-lobe hypodensity with loss of gray–white differentiation extending into the occipital lobes and centrum semiovale, with mild left uncal herniation but no mass lesion or hemorrhage."},
+      "x008": {"sentences": ["s009"], "source_text": "Lumbar puncture showed clear cerebrospinal fluid, an opening pressure of 38 cm H₂O, mild glucose elevation, and otherwise normal cell counts and chemistry."},
+      "x009": {"sentences": ["s010"], "source_text": "CSF PCR for HSV"},
+      "x010": {"sentences": ["s010"], "source_text": "blood and urine toxin assays"},
+      "x011": {"sentences": ["s010"], "source_text": "HIV and hepatitis B and C serologies, were negative"},
+      "x012": {"sentences": ["s011", "s012"], "source_text": "Brain MRI showed bilateral T2/FLAIR hyperintensity in the temporal lobes, insular regions (worse on the left), with extension into the corpus callosum, centrum semiovale, left basal ganglia, left thalamus, optic chiasm, and periventricular occipital white matter. / The lesions were mildly expanded, with no diffusion restriction on DWI, no enhancement on postcontrast images, and no hemorrhagic foci on SWI."},
+      "x013": {"sentences": ["s013"], "source_text": "Ophthalmologic testing with optical coherence tomography revealed increased retinal nerve fiber–layer thickness consistent with disc swelling"},
+      "x014": {"sentences": ["s013"], "source_text": "visual evoked potentials showed absent bilateral waveforms"}
+    },
+    "finding_flags": {
+      "x008": ["The lumbar puncture was done after empiric aciclovir and corticosteroids with mannitol had been started (s008)."]
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the emergency admission after 4 months of headaches, 2 months of progressive visual loss and one seizure the day before (s001–s007), with the inpatient workup (s009–s013).",
+      "Fully conscious, afebrile and normotensive are examination findings; the history gives no symptoms beyond headache, seizure and visual loss."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s008", "reason": "Empiric treatment (aciclovir, corticosteroids, mannitol) for a presumed diagnosis: clinician reasoning and treatment, not a finding."}
+    ]
+  }
+}

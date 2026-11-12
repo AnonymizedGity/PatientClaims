@@ -1,0 +1,923 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-013",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 48,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "stomach pain",
+        "aliases": [
+          "abdominal pain",
+          "belly pain"
+        ],
+        "text": "I have stomach pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "stomach pain: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started two weeks ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "stomach pain: constant or comes and goes",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "I don't have the pain all the time. It comes and goes.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f004",
+        "item": "stomach pain: how often",
+        "parent": "f001",
+        "attribute": "frequency",
+        "text": "At least once every day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f005",
+        "item": "stomach pain: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It's getting worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "stomach pain: severity",
+        "parent": "f001",
+        "attribute": "severity",
+        "value": 7,
+        "text": "When I have the pain, it's a 7 out of 10, and then it can go down to 0.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f007",
+        "item": "stomach pain: location",
+        "parent": "f001",
+        "attribute": "location",
+        "text": "It's right here, in the upper middle part of my stomach.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "stomach pain: spread",
+        "parent": "f001",
+        "attribute": "radiation",
+        "text": "It doesn't spread anywhere else.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "stomach pain: what it feels like",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "It's burning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "stomach pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "value": [
+          "eating",
+          "antacids",
+          "milk"
+        ],
+        "complete": true,
+        "text": "Food, antacids and milk make it better. Usually the pain decreases or stops completely when I eat.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "stomach pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "large meals",
+          "heavy, fatty meals",
+          "feeling hungry"
+        ],
+        "complete": true,
+        "text": "Large meals and feeling hungry make it worse. The foods that make it worse are heavy, fatty meals, like pizza.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "stomach pain: timing in relation to meals",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "It comes back 2 to 3 hours after I eat.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f013",
+        "item": "earlier episodes of stomach pain",
+        "aliases": [
+          "previous stomach pain"
+        ],
+        "text": "I've never had anything like this before.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "historical"
+      },
+      {
+        "id": "f014",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "Sometimes I feel nauseated when I'm in pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f015",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I vomited.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "resolved"
+      },
+      {
+        "id": "f016",
+        "item": "vomiting: when",
+        "parent": "f015",
+        "attribute": "onset",
+        "text": "Yesterday, for the first time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "resolved"
+      },
+      {
+        "id": "f017",
+        "item": "vomiting: what it looked like",
+        "parent": "f015",
+        "attribute": "appearance",
+        "text": "It was a yellowish, sour liquid.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "resolved"
+      },
+      {
+        "id": "f018",
+        "item": "vomiting: blood in it",
+        "parent": "f015",
+        "attribute": "appearance",
+        "text": "There was no blood in it.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "resolved"
+      },
+      {
+        "id": "f019",
+        "item": "diarrhea",
+        "aliases": [
+          "loose stools"
+        ],
+        "text": "I haven't had any diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "constipation",
+        "text": "I haven't been constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "appetite change",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "My appetite hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "change in stool color",
+        "aliases": [
+          "stool color",
+          "dark stools"
+        ],
+        "text": "I haven't noticed any change in the color of my stools.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "arthritis",
+        "aliases": [
+          "joint problems",
+          "knee problems"
+        ],
+        "text": "I have arthritis in both knees. I take ibuprofen for it.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "urinary tract infection",
+        "aliases": [
+          "UTI",
+          "bladder infection"
+        ],
+        "text": "I had a urinary tract infection 1 year ago. It was treated with amoxicillin.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f026",
+        "item": "past surgery",
+        "aliases": [
+          "operations",
+          "C-section"
+        ],
+        "text": "I had two C-sections.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f027",
+        "item": "Maalox",
+        "aliases": [
+          "antacid"
+        ],
+        "text": "I take Maalox.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "ibuprofen",
+        "aliases": [
+          "painkillers",
+          "Advil"
+        ],
+        "text": "I take ibuprofen for the arthritis in my knees.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "ibuprofen: how much",
+        "parent": "f028",
+        "attribute": "quantity",
+        "text": "Two pills, two to three times a day.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "father's health",
+        "text": "My father died at 55 of pancreatic cancer.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "mother's health",
+        "text": "My mother is alive and healthy.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "I've never used any illegal substances.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke or use any other tobacco products.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "sexual activity",
+        "text": "I'm sexually active with my husband.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a housewife.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "marital status",
+        "text": "I'm married.",
+        "polarity": "present",
+        "category": "social_background"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-013",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "135/70 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "16/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "76/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "chest wall palpation",
+        "result": "No chest wall tenderness."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen",
+          "abdominal palpation"
+        ],
+        "result": "Soft, not distended; cesarean-section scar; epigastric tenderness without rebound or guarding; pain on palpation of the right upper abdomen, worse during inspiration; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "Murphy sign",
+        "aliases": [
+          "Murphy's sign"
+        ],
+        "result": "Positive: pain on palpation of the right upper abdomen, worse during inspiration."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-013",
+    "diagnosis": "Biliary colic/Cholecystitis",
+    "aliases": [
+      "biliary colic",
+      "cholecystitis",
+      "acute cholecystitis",
+      "symptomatic cholelithiasis",
+      "gallstone disease",
+      "gallbladder attack",
+      "gallbladder inflammation",
+      "calculous cholecystitis"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Biliary colic/Cholecystitis",
+        "evidence": [
+          "Pain is exacerbated by heavy, fatty foods",
+          "Associated with nausea and vomiting",
+          "Female gender, age in 40s, four children",
+          "Exam: Epigastric tenderness",
+          "Exam: Positive Murphy sign"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Peptic ulcer disease",
+        "aliases": [
+          "PUD",
+          "peptic ulcer",
+          "stomach ulcer",
+          "gastric ulcer",
+          "duodenal ulcer",
+          "NSAID-induced ulcer"
+        ],
+        "evidence": [
+          "History of heavy NSAID use",
+          "Burning epigastric pain 2 to 3 hours after meals",
+          "Pain is exacerbated by hunger and fatty foods and is relieved by antacids"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Gastritis",
+        "aliases": [
+          "acute gastritis",
+          "NSAID-induced gastritis",
+          "erosive gastritis"
+        ],
+        "evidence": [
+          "History of heavy NSAID use",
+          "Epigastric pain associated with food",
+          "Nausea and vomiting",
+          "Exam: Epigastric tenderness"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Nonulcer dyspepsia",
+        "note": "The most common cause of chronic dyspepsia, thought to reflect peristalsis disorders; a diagnosis of exclusion after no organic cause is found."
+      },
+      {
+        "diagnosis": "Perforated ulcer",
+        "note": "These patients look toxic, with severe diffuse abdominal pain, rebound tenderness and involuntary guarding."
+      },
+      {
+        "diagnosis": "Gastric cancer",
+        "note": "No early satiety, anorexia, weight loss or Virchow node, but symptoms are minimal until late in this rare disease."
+      },
+      {
+        "diagnosis": "Pancreatitis",
+        "note": "Listed among other, less likely etiologies."
+      },
+      {
+        "diagnosis": "Atypical GERD",
+        "note": "Listed among other, less likely etiologies."
+      },
+      {
+        "diagnosis": "Choledocholithiasis",
+        "note": "Listed among other, less likely etiologies."
+      },
+      {
+        "diagnosis": "Mesenteric ischemia",
+        "note": "Listed among other, less likely etiologies."
+      },
+      {
+        "diagnosis": "Extra-abdominal causes, including cardiac ischemia",
+        "note": "Listed among other, less likely etiologies."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-013",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-013-p001"
+      ],
+      "f003": [
+        "medqa-cs-013-p002"
+      ],
+      "f004": [
+        "medqa-cs-013-p003"
+      ],
+      "f005": [
+        "medqa-cs-013-p004"
+      ],
+      "f006": [
+        "medqa-cs-013-p005"
+      ],
+      "f007": [
+        "medqa-cs-013-p006"
+      ],
+      "f008": [
+        "medqa-cs-013-p007"
+      ],
+      "f009": [
+        "medqa-cs-013-p008"
+      ],
+      "f010": [
+        "medqa-cs-013-p009",
+        "medqa-cs-013-p012"
+      ],
+      "f011": [
+        "medqa-cs-013-p010",
+        "medqa-cs-013-p011"
+      ],
+      "f012": [
+        "medqa-cs-013-p012"
+      ],
+      "f013": [
+        "medqa-cs-013-p013"
+      ],
+      "f014": [
+        "medqa-cs-013-p014"
+      ],
+      "f015": [
+        "medqa-cs-013-p014"
+      ],
+      "f016": [
+        "medqa-cs-013-p014"
+      ],
+      "f017": [
+        "medqa-cs-013-p015"
+      ],
+      "f018": [
+        "medqa-cs-013-p016"
+      ],
+      "f019": [
+        "medqa-cs-013-p017"
+      ],
+      "f020": [
+        "medqa-cs-013-p017"
+      ],
+      "f021": [
+        "medqa-cs-013-p018"
+      ],
+      "f022": [
+        "medqa-cs-013-p019"
+      ],
+      "f023": [
+        "medqa-cs-013-p020"
+      ],
+      "f024": [
+        "medqa-cs-013-p022"
+      ],
+      "f025": [
+        "medqa-cs-013-p022"
+      ],
+      "f026": [
+        "medqa-cs-013-p023"
+      ],
+      "f027": [
+        "medqa-cs-013-p021"
+      ],
+      "f028": [
+        "medqa-cs-013-p021",
+        "medqa-cs-013-p022"
+      ],
+      "f029": [
+        "medqa-cs-013-p021"
+      ],
+      "f030": [
+        "medqa-cs-013-p030"
+      ],
+      "f031": [
+        "medqa-cs-013-p024"
+      ],
+      "f032": [
+        "medqa-cs-013-p024"
+      ],
+      "f033": [
+        "medqa-cs-013-p026"
+      ],
+      "f034": [
+        "medqa-cs-013-p027"
+      ],
+      "f035": [
+        "medqa-cs-013-p028"
+      ],
+      "f036": [
+        "medqa-cs-013-p029"
+      ],
+      "f037": [
+        "medqa-cs-013-p025"
+      ],
+      "f038": [
+        "medqa-cs-013-p029"
+      ]
+    },
+    "quotes": {
+      "f001": "I have stomach pain.",
+      "f002": "Two weeks ago.",
+      "f003": "I don't have the pain all the time. It comes and goes.",
+      "f004": "At least once every day.",
+      "f005": "It is getting worse.",
+      "f006": "When I have the pain, it is 7/10, and then it can go down to 0.",
+      "f007": "It is here (points to the epigastrium).",
+      "f008": "No.",
+      "f009": "Burning.",
+      "f010": "Food, antacids, and milk. / usually the pain will decrease or stop completely when I eat",
+      "f011": "Large meals and feeling hungry. / Heavy, fatty meals, like pizza.",
+      "f012": "but it comes back after 2 to 3 hours.",
+      "f013": "No.",
+      "f014": "Sometimes I feel nauseated when I am in pain.",
+      "f015": "Yesterday I vomited for the first time.",
+      "f016": "Yesterday I vomited for the first time.",
+      "f017": "It was a yellowish, sour liquid.",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "arthritis in both knees, for which I take ibuprofen.",
+      "f025": "I had a urinary tract infection 1 year ago, treated with amoxicillin",
+      "f026": "I had two C-sections.",
+      "f027": "Maalox",
+      "f028": "ibuprofen / for which I take ibuprofen.",
+      "f029": "two pills two to three times a day",
+      "f030": "No.",
+      "f031": "My father died at 55 of pancreatic cancer.",
+      "f032": "My mother is alive and healthy.",
+      "f033": "No.",
+      "f034": "No.",
+      "f035": "No.",
+      "f036": "With my husband (laughs).",
+      "f037": "Housewife."
+    },
+    "flags": {
+      "f038": [
+        "Split off from f036, whose text was the only record of it (fix)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 135/70 mmHg | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-013-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temperature: 98.6°F (37°C) | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-013-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "Respiratory Rate: 16/minute | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-013-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "Heart Rate: 76/minute, regular | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-013-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-013-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Chest: No tenderness, clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-013-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Chest: No tenderness, clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-013-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR); heart sounds within normal limits (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-013-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Abdomen: Soft, non-distended, C-section scar, epigastric tenderness without rebound and guarding, positive Murphy sign, bowel sounds (BS) x 4 quadrants, no hepatosplenomegaly. | Show pain on palpation of the right upper abdomen that is exacerbated during inspiration. | Exhibit epigastric tenderness on palpation.",
+        "exam_ids": [
+          "medqa-cs-013-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "positive Murphy sign | Show pain on palpation of the right upper abdomen that is exacerbated during inspiration.",
+        "exam_ids": [
+          "medqa-cs-013-e005"
+        ]
+      }
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [
+      "Gold diagnosis #3 (Gastritis) is garbled: an empty 'History Finding(s):' header is followed by 'Physical &am Finding(s):' and four mixed bullets. Bullets were assigned by meaning: NSAID use, pain associated with food, and nausea/vomiting to history; epigastric tenderness to exam.",
+      "Gold #1 history cites 'four children'; this appears only in the raw patient description ('married with four children'), not in the Q/A or the note (note PSH: 2 C-sections).",
+      "The raw 'Sample Closure' is unrelated text (a survey about job interviews), and the closure checklist mentions a rectal exam; neither was used.",
+      "p024 asks about the rest of the immediate family, but the answer covers only the parents."
+    ],
+    "notes": [
+      "Temporality: facts describing the episodic pattern of the current pain (comes and goes, daily frequency, per-episode severity, return 2-3 hours after eating, nausea during pain) are 'recurrent'; onset, progression, location, quality, radiation, and relieving and aggravating factors are 'current'. Vomiting yesterday (a single event) is 'historical'.",
+      "p009 (food relieves) and p012 (eating decreases or stops the pain) are merged into the relieving child f010; p010 'large meals' and p011 'heavy, fatty meals, like pizza' are merged into the aggravating child f011 to avoid paraphrase duplicates.",
+      "p017 'Have your bowel movements altered?' 'No' (topic Diarrhea/Constipation) is split into no diarrhea (f019) and no constipation (f020), as in the note HPI.",
+      "Stage directions '(points to the epigastrium)', '(laughs)' and '(... if asked)' moved to extras.acting_notes; the ibuprofen dose itself is kept as the child f029.",
+      "The patient description 'married with four children' exists only in raw_opening; kept in extras.acting_notes.",
+      "The additional-diagnosis bullet 'Other etiologies' lists five diagnoses; split into one record each.",
+      "Conversion: v1's separate relieving facts (food, antacids, milk) and aggravating facts (large/fatty meals, hunger) become one relieving and one aggravating child each, with complete value lists, following the reference conversion (medqa-cs-001 f025).",
+      "Conversion: the pointing gesture in p006 is given in words for the text-only patient ('in the upper middle part of my stomach'), without the clinical term 'epigastrium'.",
+      "Conversion: vomiting (p014) is split into the symptom (f015) and its onset child (f016, 'yesterday, for the first time'); the vomit description (p015) and the absence of blood (p016) are appearance children.",
+      "Conversion: the ibuprofen dose, given in the script only 'if asked', is a quantity child (f029) of the ibuprofen fact.",
+      "Conversion: the note's 'VS: Within normal limits' (e002) agrees with the doorway values and is cited on each doorway vital record. The SP-simulated right-upper-abdominal pain worse on inspiration is part of the abdominal examination (x009) and of the Murphy sign record (x010); the simulated epigastric tenderness matches the note's abdominal exam.",
+      "Harmonisation pass: scale [0, 10] added to f006.",
+      "Fixes: f008 answer word removed; f013 answer word removed; f015 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f015 time -> resolved; f016 time -> resolved; f017 time -> resolved; f018 time -> resolved; f038 new fact 'marital status' from f036."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Please sit up on the bed.",
+        "Show pain on palpation of the right upper abdomen that is exacerbated during inspiration.",
+        "Exhibit epigastric tenderness on palpation.",
+        "Point to the epigastrium when asked where it hurts the most.",
+        "Give the ibuprofen amount (two pills two to three times a day) only if asked.",
+        "Laugh when answering that you are sexually active with your husband.",
+        "Patient description: married with four children."
+      ],
+      "patient_questions": [
+        "My father was diagnosed with pancreatic cancer. Is it possible for me to develop it as well?",
+        "If the examinee mentions ultrasound, ask: \"What does 'ultrasound' mean?\""
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

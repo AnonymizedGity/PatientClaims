@@ -1,0 +1,55 @@
+{
+ "case_id": "agentclinic-medqa-ext-090",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "My hand shakes.",
+   "I first noticed it in my left hand a year ago.",
+   "Recently I've had trouble with tasks that need steadiness, like reading.",
+   "My wife says my memory has been getting worse.",
+   "My voice has become soft.",
+   "I take amlodipine for my blood pressure.",
+   "I drink 1 to 2 beers every night.",
+   "I used to smoke cigars."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here because my hand shakes. I first noticed it in my left hand a year ago, and recently I've had trouble with tasks that need steadiness, like reading. My wife says my memory has been getting worse, and my voice has become soft. I take amlodipine for my blood pressure, I drink 1 to 2 beers every night, and I used to smoke cigars.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f006",
+    "f007",
+    "f009",
+    "f012",
+    "f015",
+    "f016"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3638,
+   "tokens_out": 95,
+   "seconds": 8.05,
+   "redrafts": 0
+  }
+ }
+}

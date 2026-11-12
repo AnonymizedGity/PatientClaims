@@ -1,0 +1,81 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-109", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 60, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I've been getting short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: onset", "parent": "f001", "attribute": "onset", "text": "It started a year ago.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f003", "item": "shortness of breath: triggers", "parent": "f001", "attribute": "aggravating", "text": "It gets worse with physical activity.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "occupation", "aliases": ["job", "work"], "text": "I've worked in the glass manufacturing industry for 20 years.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f005", "item": "dust exposure at work", "aliases": ["occupational exposure", "workplace exposures", "dust"], "text": "Through my work I've been exposed to silica dust for a long time.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f006", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f010", "item": "wheezing", "aliases": ["whistling breath"], "text": "I haven't been wheezing.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f011", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-109",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x002", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "30/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/80 mm Hg"},
+      {"id": "x004", "kind": "exam", "system": "respiratory", "name": "chest examination", "aliases": ["lung examination", "respiratory examination", "lung auscultation", "chest auscultation"], "result": "Inspection: no visible cyanosis or use of accessory muscles. Palpation: symmetrical chest expansion. Percussion: resonant on both sides. Auscultation: diminished breath sounds bilaterally."},
+      {"id": "x005", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Interstitial fibrosis with reticulonodular infiltrates on both sides; eggshell calcification of multiple enlarged lymph nodes."},
+      {"id": "x006", "kind": "test", "name": "pulmonary function tests", "aliases": ["PFTs", "spirometry", "DLCO", "diffusing capacity", "FEV1/FVC ratio"], "result": "Reduced FEV1/FVC ratio; reduced diffusing capacity for carbon monoxide (DLCO)."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-109",
+    "diagnosis": "Silicosis",
+    "aliases": ["chronic silicosis", "pulmonary silicosis", "silica pneumoconiosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-109",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-109-p001"], "f002": ["agentclinic-medqa-ext-109-p001"],
+      "f003": ["agentclinic-medqa-ext-109-p001", "agentclinic-medqa-ext-109-p002"], "f004": ["agentclinic-medqa-ext-109-p001", "agentclinic-medqa-ext-109-p004"],
+      "f005": ["agentclinic-medqa-ext-109-i003"], "f006": ["agentclinic-medqa-ext-109-p004"], "f007": ["agentclinic-medqa-ext-109-p003"],
+      "f008": ["agentclinic-medqa-ext-109-p005"], "f009": ["agentclinic-medqa-ext-109-p005"], "f010": ["agentclinic-medqa-ext-109-p005"],
+      "f011": ["agentclinic-medqa-ext-109-p005"]
+    },
+    "quotes": {
+      "f002": "started a year ago", "f003": "worsens with physical activity", "f004": "a 20-year history of working in the glass manufacturing industry",
+      "f007": "No significant past medical history noted.", "f008": "Denies recent fever"
+    },
+    "flags": {
+      "f005": ["From the test leaf Test_Results.Occupational_History.Findings ('Long-term exposure to silica dust'), which is history rather than a test; moved to the patient, so it has no fragment id and no quote. The word 'silica' points toward the diagnosis but is the exposure, not the diagnosis name."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72/min", "exam_ids": ["agentclinic-medqa-ext-109-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "30/min", "exam_ids": ["agentclinic-medqa-ext-109-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/80 mm Hg", "exam_ids": ["agentclinic-medqa-ext-109-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Palpation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "Inspection: No visible cyanosis or use of accessory muscles for breathing.; Palpation: Symmetrical chest expansion.; Percussion: Resonant note on both sides.; Auscultation: Diminished respiratory sounds bilaterally.", "exam_ids": ["agentclinic-medqa-ext-109-e004", "agentclinic-medqa-ext-109-e005", "agentclinic-medqa-ext-109-e006", "agentclinic-medqa-ext-109-e007"]},
+      "x005": {"source": "Test_Results.Chest_Radiograph.Findings", "source_text": "Interstitial fibrosis with reticulonodular infiltrate on both sides, eggshell calcification of multiple adenopathies.", "exam_ids": ["agentclinic-medqa-ext-109-i001"]},
+      "x006": {"source": "Test_Results.Pulmonary_Function_Tests.Findings", "source_text": "Reduced FEV1/FVC ratio with reduced diffusing capacity for carbon monoxide.", "exam_ids": ["agentclinic-medqa-ext-109-i002"]}
+    },
+    "finding_flags": {
+      "x002": ["Respiratory rate 30/min is high for a patient described with no accessory muscle use; kept as given."],
+      "x006": ["A reduced FEV1/FVC ratio is an obstructive pattern; silicosis is classically restrictive or mixed. Kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Occupational history ('Long-term exposure to silica dust') is filed under Test_Results.",
+      "No temperature recorded; respiratory rate 30/min with an otherwise unremarkable inspection."
+    ],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-109-i003", "reason": "Occupational history filed under Test_Results; it is something the patient tells, not a test a doctor orders, so it became patient fact f005."}
+    ],
+    "notes": [
+      "'Progressive' shortness of breath appears only in the doctor's objective line, not in the patient fragments, so no course fact is given.",
+      "Activity-related worsening (history and secondary symptom) is one child fact (f003).",
+      "The four respiratory examination parts form one chest examination record (x004)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with progressive shortness of breath exacerbated by physical activity."
+    }
+  }
+}

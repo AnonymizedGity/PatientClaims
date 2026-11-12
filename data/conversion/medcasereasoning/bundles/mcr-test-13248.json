@@ -1,0 +1,126 @@
+{
+  "patient": {
+    "case_id": "mcr-test-13248",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 75, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "fall", "aliases": ["fell", "falling", "fell over"], "text": "I had a fall.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "cut on the head", "aliases": ["head laceration", "head wound", "head injury", "bleeding from the head"], "text": "I cut my head when I fell.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "cut on the head: location", "parent": "f002", "attribute": "location", "text": "It's on the right side, at my temple.", "value": "right temple", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "dizziness", "aliases": ["feeling dizzy", "lightheadedness", "giddiness"], "text": "I feel dizzy.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "fainting", "aliases": ["syncope", "passing out", "blacking out", "losing consciousness"], "text": "I haven't fainted.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "chest pain", "aliases": ["pain in the chest"], "text": "I don't have chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f007", "item": "shortness of breath", "aliases": ["dyspnea", "breathlessness"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f008", "item": "other stomach or bowel symptoms", "aliases": ["gastrointestinal symptoms", "GI symptoms", "tummy trouble"], "text": "I haven't had any stomach or bowel symptoms.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f009", "item": "fever", "aliases": ["temperature", "high temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "skull fracture three weeks ago", "aliases": ["skull fracture", "previous head injury", "previous fall", "recent hospital stay", "fractured skull"], "text": "Three weeks ago I was in hospital with a fracture on the right side of my skull after a fall.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "knocked out in the earlier fall", "aliases": ["loss of consciousness", "knocked unconscious", "blacked out"], "text": "In that earlier fall I was knocked out for a short time.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "high blood pressure", "aliases": ["hypertension", "blood pressure"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "candesartan", "aliases": ["blood pressure tablet", "Atacand", "blood pressure medication"], "text": "I take candesartan for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "diabetes", "aliases": ["type 2 diabetes", "sugar diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "metformin", "aliases": ["diabetes tablet", "Glucophage"], "text": "I take metformin for my diabetes.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "diuretic use", "aliases": ["water pills", "diuretics"], "text": "I don't take any water pills.", "polarity": "absent", "category": "medication"},
+      {"id": "f017", "item": "chronic kidney disease", "aliases": ["kidney disease", "kidney problems", "CKD"], "text": "As far as I know, I don't have kidney disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f018", "item": "living situation", "aliases": ["where I live", "nursing home", "care home"], "text": "I live in a nursing home.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-13248",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "98/50 mmHg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "Glasgow Coma Scale", "aliases": ["GCS", "level of consciousness", "consciousness"], "result": "15"},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "focal deficits", "focal neurologic deficits"], "result": "No focal neurologic deficits."},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "head and wound examination", "aliases": ["head examination", "scalp", "laceration", "wound"], "result": "Fresh right-temple laceration requiring sutures."},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "hydration assessment", "aliases": ["mucous membranes", "skin turgor", "volume status", "dehydration", "hydration"], "result": "Dry mucous membranes; reduced skin turgor."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "neck vein examination", "aliases": ["jugular venous pressure", "JVP", "jugular venous distention", "JVD"], "result": "No jugular venous distention."},
+      {"id": "x008", "kind": "exam", "system": "cardiovascular", "name": "lower extremity examination", "aliases": ["peripheral edema", "leg swelling", "edema", "ankles"], "result": "No peripheral edema."},
+      {"id": "x009", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["lung auscultation", "chest examination", "lungs", "breath sounds"], "result": "Lungs clear."},
+      {"id": "x010", "kind": "exam", "system": "general", "name": "general physical examination", "aliases": ["rest of the examination", "physical examination", "abdominal examination", "heart examination"], "result": "Remainder of the examination unremarkable."},
+      {"id": "x011", "kind": "test", "name": "metabolic panel", "aliases": ["electrolytes", "basic metabolic panel", "BMP", "sodium", "serum sodium", "potassium", "creatinine", "BUN", "blood urea nitrogen", "glucose", "renal function"], "result": "Sodium 118 meq/L; potassium 3.6 meq/L; creatinine 0.9 mg/dL; blood urea nitrogen 7 mg/dL; glucose 101 mg/dL.", "time": "on admission"},
+      {"id": "x012", "kind": "test", "name": "serum osmolality", "aliases": ["plasma osmolality", "measured osmolality", "osmolality"], "result": "226 mosm/kg (measured)", "time": "on admission"},
+      {"id": "x013", "kind": "test", "name": "thyroid-stimulating hormone", "aliases": ["TSH", "thyroid function", "thyroid tests"], "result": "Normal.", "time": "on admission"},
+      {"id": "x014", "kind": "test", "name": "urine sodium", "aliases": ["urinary sodium", "spot urine sodium", "urine electrolytes"], "result": "83 meq/L", "time": "10 hours after admission"},
+      {"id": "x015", "kind": "test", "name": "urine osmolality", "aliases": ["urinary osmolality", "urine osm"], "result": "518 mosm/kg", "time": "10 hours after admission"},
+      {"id": "x016", "kind": "test", "name": "serum uric acid", "aliases": ["uric acid", "urate"], "result": "2.6 mg/dL", "time": "1 day after admission"},
+      {"id": "x017", "kind": "test", "name": "noncontrast CT of the head", "aliases": ["CT head", "head CT", "CT brain", "brain imaging"], "result": "No acute hemorrhage or edema; new right frontal hygroma; stable posterior fossa Dandy-Walker cyst; known parietal impression fracture unchanged."},
+      {"id": "x018", "kind": "exam", "system": "cardiovascular", "name": "orthostatic test", "aliases": ["orthostatic vital signs", "postural blood pressure", "lying and standing blood pressure", "standing blood pressure", "orthostatic hypotension test"], "result": "Supine: blood pressure 123/71 mmHg, pulse 83/min. After 2 minutes standing: 75/52 mmHg, pulse 100/min; the patient became dizzy and the test was stopped. Immediately on returning supine: 115/75 mmHg, 90/min. (Serum sodium at the time 129 meq/L.)", "time": "hospital day 6"},
+      {"id": "x019", "kind": "test", "name": "serum sodium at the earlier admission", "aliases": ["previous sodium", "earlier sodium level", "sodium three weeks ago"], "result": "Hyponatremia (value not given); not treated.", "time": "hospitalisation 3 weeks before presentation"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-13248",
+    "diagnosis": "Cerebral salt wasting",
+    "aliases": ["CSW", "cerebral salt wasting syndrome", "cerebral salt-wasting syndrome", "cerebral salt wasting after head injury"],
+    "reasoning": "1. Rule out iso- or hyperosmolar hyponatremia — “measurement of serum osmolality ... shows no significant osmolar gap. These findings identify the case as a hypoosmolar hyponatremia and rule out the presence of an osmolar gap.” 2. Identify hypovolemia — “The low blood pressure, orthostatic hypotension ... decreased skin turgor, and absence of peripheral edema identify the volume status as hypovolemic.” 3. Exclude chronic renal disease — “in the absence of ... chronic renal disease ... cerebral salt wasting emerges as the most plausible cause.” 4. Exclude SIADH — “The clear establishment of the presence of hypovolemia ... leaves no doubt that his hyponatremia was not caused by SIADH.” 5. Support CSW in CNS disease — “in a patient with cerebral pathology, hypovolemia, and renal salt wasting ... cerebral salt wasting emerges as the most plausible cause of the prevailing hyponatremia.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-13248",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s006"],
+      "f004": ["s003"],
+      "f005": ["s003"],
+      "f006": ["s003"],
+      "f007": ["s003"],
+      "f008": ["s003"],
+      "f009": ["s003"],
+      "f010": ["s002"],
+      "f011": ["s002"],
+      "f012": ["s004"],
+      "f013": ["s004"],
+      "f014": ["s004"],
+      "f015": ["s004"],
+      "f016": ["s004"],
+      "f017": ["s004"],
+      "f018": ["s001"]
+    },
+    "quotes": {
+      "f003": "a fresh right-temple laceration",
+      "f008": "gastrointestinal symptoms",
+      "f010": "Three weeks earlier, he had been hospitalized for a traumatic right-sided parietal skull impression fracture after a fall",
+      "f011": "transient loss of consciousness",
+      "f013": "hypertension (on candesartan)",
+      "f015": "type 2 diabetes (on metformin)",
+      "f016": "he denied diuretic use",
+      "f017": "had no known chronic kidney disease",
+      "f018": "from a nursing home"
+    },
+    "flags": {
+      "f008": ["Blanket denial of gastrointestinal symptoms: answers only a general question about stomach or bowel symptoms; specific symptoms (vomiting, diarrhoea) stay unknown."],
+      "f017": ["'No known chronic kidney disease' worded with 'as far as I know'."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "blood pressure was 98/50 mmHg"},
+      "x002": {"sentences": ["s005"], "source_text": "heart rate 82/min"},
+      "x003": {"sentences": ["s005"], "source_text": "Glasgow Coma Scale 15"},
+      "x004": {"sentences": ["s005"], "source_text": "there were no focal neurologic deficits"},
+      "x005": {"sentences": ["s006"], "source_text": "He had a fresh right-temple laceration requiring sutures."},
+      "x006": {"sentences": ["s007"], "source_text": "Mucous membranes were dry, skin turgor reduced"},
+      "x007": {"sentences": ["s007"], "source_text": "no peripheral edema or jugular venous distention"},
+      "x008": {"sentences": ["s007"], "source_text": "no peripheral edema"},
+      "x009": {"sentences": ["s007"], "source_text": "lungs were clear"},
+      "x010": {"sentences": ["s007"], "source_text": "the remainder of the exam was unremarkable"},
+      "x011": {"sentences": ["s008"], "source_text": "Laboratory studies on admission showed serum sodium 118 meq/L, potassium 3.6 meq/L, creatinine 0.9 mg/dL, blood urea nitrogen 7 mg/dL, glucose 101 mg/dL"},
+      "x012": {"sentences": ["s008"], "source_text": "measured osmolality 226 mosm/kg"},
+      "x013": {"sentences": ["s008"], "source_text": "thyroid-stimulating hormone was normal"},
+      "x014": {"sentences": ["s008"], "source_text": "Ten hours after admission, urine sodium was 83 meq/L"},
+      "x015": {"sentences": ["s008"], "source_text": "urine osmolality 518 mosm/kg"},
+      "x016": {"sentences": ["s009"], "source_text": "One day later, serum uric acid was 2.6 mg/dL."},
+      "x017": {"sentences": ["s010"], "source_text": "Noncontrast CT of the head revealed no acute hemorrhage or edema, but a new right frontal hygroma and a stable posterior fossa Dandy-Walker cyst; the known parietal impression fracture was unchanged."},
+      "x018": {"sentences": ["s011", "s012"], "source_text": "On hospital day 6, with serum sodium at 129 meq/L, an orthostatic test showed supine blood pressure 123/71 mmHg with pulse 83/min, dropping to 75/52 mmHg with pulse 100/min after 2 minutes of standing; the patient became dizzy and the test was stopped. / Immediately on returning to supine, vitals returned to 115/75 mmHg and 90/min."},
+      "x019": {"sentences": ["s002"], "source_text": "hyponatremia was noted then but untreated"}
+    },
+    "finding_flags": {
+      "x018": ["Performed on hospital day 6, after some days of in-hospital care; the serum sodium of 129 meq/L at that time reflects the hospital course and is kept only as context of the test, not as its own sodium record."],
+      "x019": ["The earlier admission's hyponatremia has no value; it is a finding from before the index visit."]
+    },
+    "leakage": [],
+    "source_issues": ["s008 holds two sentences (admission laboratory studies; urine studies 10 hours later)."],
+    "notes": ["Index visit: the emergency department visit after the fall with a head laceration (s001, s003-s010); the orthostatic test on hospital day 6 (s011-s012) is a timed finding.", "The hyponatremia noted at the earlier admission (s002) is a finding with time, not a patient fact: the source does not say he was told about it.", "The earlier skull fracture and its brief loss of consciousness are medical-history facts; 'dizziness without syncope' gives dizziness present and fainting absent for the current episode.", "The examination of s007 is split by region: hydration signs, neck veins, legs, lungs and the unremarkable remainder."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

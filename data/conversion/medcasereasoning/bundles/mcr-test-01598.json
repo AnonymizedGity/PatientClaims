@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "case_id": "mcr-test-01598",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 53, "sex": "male"},
+    "opening": ["f001", "f007"],
+    "facts": [
+      {"id": "f001", "item": "difficulty opening the mouth", "aliases": ["limited mouth opening", "jaw stiffness", "trismus", "can't open my jaw"], "text": "I can hardly open my mouth since my injury and operations.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "gunshot wound to the face", "aliases": ["face injury", "shot in the face", "trauma", "injury"], "text": "I was shot in the face and needed life-saving surgery and reconstruction.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f003", "item": "palate repair", "aliases": ["roof of the mouth repaired", "tongue flap"], "text": "The hole in the roof of my mouth was repaired using a flap from my tongue.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f004", "item": "jaw fracture surgery", "aliases": ["broken jaw", "jaw fracture", "condylar fracture"], "text": "My jaw was shattered near the joint, and the broken pieces were set in an operation.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f005", "item": "artificial left jaw joint", "aliases": ["jaw joint replacement", "prosthetic TMJ", "temporomandibular joint replacement"], "text": "After that, my left jaw joint was replaced with an artificial joint.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "reason for referral", "aliases": ["why I was sent here", "rehabilitation", "physical therapy"], "text": "I was referred here for rehabilitation to help me open my mouth again.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "headache", "aliases": ["head pain", "headaches"], "text": "I also have a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "headache: location", "parent": "f007", "attribute": "location", "value": ["left periorbital", "left temporal"], "text": "It's only ever on the left side, around my eye and in my temple.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f009", "item": "headache: character", "parent": "f007", "attribute": "character", "text": "It's an aching pain.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "headache: timing", "parent": "f007", "attribute": "timing", "text": "There's a background ache all the time that gets better and worse.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f011", "item": "headache: severe flare-ups", "parent": "f007", "attribute": "other", "text": "On top of that I get severe flare-ups that come unpredictably.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f012", "item": "watery eye during the flare-ups", "aliases": ["tearing", "lacrimation", "watery eye"], "text": "During the flare-ups my left eye waters.", "polarity": "present", "category": "symptom", "system": "eye", "time": "recurrent"},
+      {"id": "f013", "item": "runny nose during the flare-ups", "aliases": ["rhinorrhea", "runny nose", "nasal discharge"], "text": "During the flare-ups my nose keeps running.", "polarity": "present", "category": "symptom", "system": "ent", "time": "recurrent"},
+      {"id": "f014", "item": "sensitivity to light during the flare-ups", "aliases": ["photophobia", "light sensitivity", "light hurts my eyes"], "text": "During the flare-ups light bothers me.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f015", "item": "burning and tingling over the left cheekbone", "aliases": ["tingling", "burning", "pins and needles", "paresthesia", "facial numbness"], "text": "I have a burning, tingling feeling over my left cheekbone.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f016", "item": "drooping left eyelid", "aliases": ["ptosis", "droopy eyelid"], "text": "My left eyelid droops.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f017", "item": "red left eye", "aliases": ["bloodshot eye", "eye redness"], "text": "My left eye looks red.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f018", "item": "lowered left eyebrow", "aliases": ["drooping eyebrow", "flat forehead", "facial weakness"], "text": "My left eyebrow sits lower and the left side of my forehead is flat.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-01598",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "musculoskeletal", "name": "maximal interincisal opening", "aliases": ["mouth opening", "jaw opening", "jaw examination", "temporomandibular joint examination"], "result": "5 mm.", "time": "at referral, before physical therapy"},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "facial inspection", "aliases": ["face", "forehead", "eyebrows", "facial nerve", "facial symmetry"], "result": "Left forehead flat, with a lowered left eyebrow."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["eyes", "eyelids", "pupils", "conjunctiva", "ptosis"], "result": "Left eyelid ptotic; anisocoria with a smaller left pupil; left conjunctiva injected."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "facial sensory examination", "aliases": ["sensation", "trigeminal nerve", "facial sensation", "sensory examination"], "result": "Allodynia and hyperalgesia in the distribution of the zygomatic branch of the left trigeminal nerve."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-01598",
+    "diagnosis": "Hemicrania continua",
+    "aliases": ["HC", "unremitting hemicrania continua"],
+    "reasoning": "1. Cluster headache — considered because of unilateral periorbital pain with autonomic features but excluded because cluster headache attacks are episodic rather than continuous: “with the exception of HC, in that they are typically episodic; HC is an uncommon, benign unilateral and continuous headache, with superimposed exacerbations of severe pain and autonomic features.” 2. Odontalgia — considered because trigeminal autonomic cephalgias often present as dental pain but excluded when ocular autonomic signs and continuous headache were identified: “Cluster headache (CH), chronic paroxysmal hemicrania (CPH) and HC often mimic anterior maxillary odontogenic pain leading to inappropriate dental procedures.” 3. Temporomandibular disorders and trigeminal neuralgia — considered due to masticatory pain and facial sensory changes but excluded because the pain was continuous with autonomic features rather than paroxysmal or movement‐related: “Differential diagnoses also considered in this, and similar cases are temporomandibular disorders and trigeminal neuralgia.” 4. Hemicrania continua — supported by the continuous unilateral headache with superimposed exacerbations and ipsilateral cranial autonomic features and the exclusion of other trigeminal autonomic cephalgias."
+  },
+  "qc": {
+    "case_id": "mcr-test-01598",
+    "fact_sources": {
+      "f001": ["s001", "s003"],
+      "f002": ["s001"],
+      "f003": ["s002"],
+      "f004": ["s002"],
+      "f005": ["s002"],
+      "f006": ["s001"],
+      "f007": ["s004"],
+      "f008": ["s005"],
+      "f009": ["s005"],
+      "f010": ["s005"],
+      "f011": ["s005"],
+      "f012": ["s006"],
+      "f013": ["s006"],
+      "f014": ["s006"],
+      "f015": ["s007"],
+      "f016": ["s009"],
+      "f017": ["s010"],
+      "f018": ["s008"]
+    },
+    "quotes": {
+      "f001": "rehabilitation of mandibular opening",
+      "f002": "life-saving surgery and reconstruction for a gunshot wound to the face",
+      "f003": "palatal defect repair with a tongue pedicle flap",
+      "f004": "open reduction of a comminuted condylar fracture",
+      "f005": "placement of a prosthetic left temporomandibular joint",
+      "f008": "strictly left‐sided, located periorbitally and in the temporal region",
+      "f009": "a constant background ache",
+      "f010": "a constant background ache that waxed and waned",
+      "f011": "with superimposed severe exacerbations occurring unpredictably",
+      "f012": "ipsilateral lacrimation",
+      "f013": "persistent rhinorrhea",
+      "f015": "a burning and tingling sensation over the left zygomatic arch",
+      "f016": "The left eyelid was ptotic",
+      "f017": "The left conjunctiva appeared injected",
+      "f018": "the left forehead was flat with a lowered eyebrow"
+    },
+    "flags": {
+      "f001": ["Limited mouth opening is inferred from the referral for rehabilitation of mandibular opening and the initial interincisal opening of 5 mm (s003)."],
+      "f016": ["From the examination (s009); a drooping eyelid is visible to the patient."],
+      "f017": ["From the examination (s010); the source does not say whether the redness is constant or only during the flare-ups."],
+      "f018": ["From the examination (s008); visible to the patient in a mirror."],
+      "f004": ["The side of the condylar fracture is not stated; the prosthetic joint that followed is on the left."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "His maximal interincisal opening improved from 5 mm"},
+      "x002": {"sentences": ["s008"], "source_text": "On examination, the left forehead was flat with a lowered eyebrow."},
+      "x003": {"sentences": ["s009", "s010"], "source_text": "The left eyelid was ptotic, and anisocoria was present with a smaller left pupil. / The left conjunctiva appeared injected."},
+      "x004": {"sentences": ["s011"], "source_text": "Allodynia and hyperalgesia were noted in the distribution of the zygomatic branch of the trigeminal nerve on the left side."}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": ["No response to indomethacin is reported, although an absolute indomethacin response is part of the diagnostic criteria for hemicrania continua.", "No vital signs, imaging or other tests are reported."],
+    "notes": ["Index visit: the initial rehabilitation evaluation after the facial gunshot surgery, at which he reported the headache as a second complaint (s001-s011). Both the mouth-opening problem and the headache are in the opening so that the headache is not hidden.", "s003: the improvement of the interincisal opening to 28 mm with physical therapy is a treatment response after the index visit and is not used; only the initial 5 mm is a finding.", "The ptosis, small pupil and flat forehead could also follow the facial gunshot injury and surgery; the source does not separate them, so they are reported as examined.", "The autonomic features of s006 occur during the exacerbations, so they are separate symptom facts tied to the flare-ups (time recurrent).", "Fixes: f003 alias 'surgery' removed; f004 alias 'surgery' removed; f005 alias 'surgery' removed; f003 alias 'operations' removed; f004 alias 'operations' removed; f005 alias 'operations' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "case_id": "agentclinic-medqa-ext-072",
+  "source_row": 72,
+  "demographics_text": "27-year-old male",
+  "objective_for_doctor": "Evaluate the patient presenting with dizziness, nausea, and imbalance.",
+  "chief_complaint": "Sustained sensation of the room spinning",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-072-p001",
+      "field": "History",
+      "text": "The patient reports a sustained sensation of the room spinning since this morning, which is low grade and constant. He occasionally feels nauseous and has taken diphenhydramine to help him sleep, which also alleviates his symptoms slightly. He mentions recent increased intake of garlic due to trying to recover from a cold a few days ago. Past medical history is unremarkable."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-072-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Occasional nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-072-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Use of diphenhydramine for symptoms and to aid sleep"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-072-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Recent cold"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-072-p005",
+      "field": "Past_Medical_History",
+      "text": "Generally healthy with no significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-072-p006",
+      "field": "Social_History",
+      "text": "Does not specify any social habits including smoking, alcohol use, or recreational drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-072-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, vomiting, significant headache, ear pain, recent foreign travel, known exposure to toxins or use of new medications."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "98.7°F (37.1°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "122/81 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "15 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "99% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e006",
+      "path": "Physical_Examination_Findings.Neurological_Exam.Cranial_Nerve_Exam",
+      "text": "Nystagmus noted, bilateral decreased hearing."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e007",
+      "path": "Physical_Examination_Findings.Neurological_Exam.Balance_and_Gait",
+      "text": "Unstable tandem gait but unremarkable baseline gait. Patient reports sensation of imbalance."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e008",
+      "path": "Physical_Examination_Findings.Head_and_Neck_Exam.Inner_Ear_Assessment",
+      "text": "No examination details provided, but consider checking for signs of infection or inflammation."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-e009",
+      "path": "Physical_Examination_Findings.Head_and_Neck_Exam.Positional_Testing",
+      "text": "Laying the patient flat rapidly with head turned to each side does not provoke symptoms."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-072-i001",
+      "path": "Test_Results.Basic_Audiometry.Findings",
+      "text": "Bilateral decreased hearing sensitivity, details not specified."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-i002",
+      "path": "Test_Results.Laboratory_Tests.Complete_Blood_Count",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-i003",
+      "path": "Test_Results.Laboratory_Tests.Electrolytes",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-i004",
+      "path": "Test_Results.Laboratory_Tests.Other",
+      "text": "No other abnormalities detected."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-072-i005",
+      "path": "Test_Results.Imaging.Head_CT_or_MRI.Findings",
+      "text": "No acute abnormalities noted, specifically no signs of stroke or significant lesions."
+    }
+  ],
+  "correct_diagnosis": "Labyrinthitis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

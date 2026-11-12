@@ -1,0 +1,90 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-211", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 20, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "abdominal cramps", "aliases": ["stomach cramps", "belly cramps", "abdominal pain", "stomach ache"], "text": "I've got cramps in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "I feel nauseous.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "vomiting", "aliases": ["throwing up"], "text": "I've been vomiting.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "diarrhea", "aliases": ["loose stools", "the runs"], "text": "I've had diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "when the symptoms started", "aliases": ["onset", "how long"], "text": "It all started suddenly 2 hours ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "reheated food before the symptoms", "aliases": ["what I ate", "leftovers", "recent meal"], "text": "About an hour before this started, I ate some reheated food from the afternoon.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "blood in stool", "aliases": ["bloody diarrhea", "bloody stool"], "text": "I haven't seen any blood in my stool.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f009", "item": "headache", "text": "I don't have a headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f010", "item": "urinary symptoms", "aliases": ["problems peeing", "burning when peeing"], "text": "I haven't had any problems with peeing.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "food allergies", "aliases": ["allergies"], "text": "I don't have any known food allergies.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "recent travel", "aliases": ["travel"], "text": "I haven't travelled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work", "studies"], "text": "I'm a college student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "living situation", "aliases": ["where I live", "home"], "text": "I live in the dorms.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "stress", "aliases": ["exams", "pressure"], "text": "I'm in the middle of exams and my stress levels are high.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-211",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "90/78 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "106/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "15/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "bowel sounds", "peritoneal signs"], "result": "Inspection: no visible abnormalities; auscultation: normal bowel sounds; percussion: tympanic throughout, without peritoneal signs; palpation: diffuse tenderness, no rebound or guarding."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "hemoglobin", "platelets"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x007", "kind": "test", "name": "stool culture", "aliases": ["stool test", "stool microbiology"], "result": "Pending (not available at the time of initial assessment)."},
+      {"id": "x008", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes", "basic metabolic panel", "BMP", "sodium", "potassium", "chloride"], "result": "Sodium slightly low; potassium normal; chloride normal."},
+      {"id": "x009", "kind": "test", "name": "abdominal X-ray", "aliases": ["AXR", "plain abdominal film", "KUB", "abdominal radiograph"], "result": "No evidence of obstruction or free air under the diaphragm."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-211",
+    "diagnosis": "Bacillus cereus infection",
+    "aliases": ["B. cereus infection", "Bacillus cereus food poisoning", "B. cereus food poisoning", "Bacillus cereus gastroenteritis", "Bacillus cereus emetic syndrome", "fried rice syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-211",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-211-p001"], "f002": ["agentclinic-medqa-ext-211-p001", "agentclinic-medqa-ext-211-p002"],
+      "f003": ["agentclinic-medqa-ext-211-p001", "agentclinic-medqa-ext-211-p003"], "f004": ["agentclinic-medqa-ext-211-p001", "agentclinic-medqa-ext-211-p004"],
+      "f005": ["agentclinic-medqa-ext-211-p001"], "f006": ["agentclinic-medqa-ext-211-p001"], "f007": ["agentclinic-medqa-ext-211-p007"],
+      "f008": ["agentclinic-medqa-ext-211-p007"], "f009": ["agentclinic-medqa-ext-211-p007"], "f010": ["agentclinic-medqa-ext-211-p007"],
+      "f011": ["agentclinic-medqa-ext-211-p005"], "f012": ["agentclinic-medqa-ext-211-p005"], "f013": ["agentclinic-medqa-ext-211-p006"],
+      "f014": ["agentclinic-medqa-ext-211-p006"], "f015": ["agentclinic-medqa-ext-211-p006"], "f016": ["agentclinic-medqa-ext-211-p006"]
+    },
+    "quotes": {
+      "f005": "began suddenly 2 hours ago", "f006": "eating reheated food from the afternoon, approximately 1 hour before symptom onset",
+      "f010": "any urinary symptoms", "f012": "No known food allergies.", "f015": "living in dormitories",
+      "f016": "in the middle of exam period and experiencing high stress levels"
+    },
+    "flags": {
+      "f006": ["The food itself (e.g. rice) is not named."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-211-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "90/78 mmHg", "exam_ids": ["agentclinic-medqa-ext-211-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "106 bpm", "exam_ids": ["agentclinic-medqa-ext-211-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "15 breaths/min", "exam_ids": ["agentclinic-medqa-ext-211-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible abnormalities. + Normal bowel sounds. + Tympanic throughout, without peritoneal signs. + Diffuse tenderness, no rebound or guarding.", "exam_ids": ["agentclinic-medqa-ext-211-e005", "agentclinic-medqa-ext-211-e006", "agentclinic-medqa-ext-211-e007", "agentclinic-medqa-ext-211-e008"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal + Normal + Normal", "exam_ids": ["agentclinic-medqa-ext-211-i001", "agentclinic-medqa-ext-211-i002", "agentclinic-medqa-ext-211-i003"]},
+      "x007": {"source": "Test_Results.Stool_Culture", "source_text": "Pending (not available at the time of initial assessment)", "exam_ids": ["agentclinic-medqa-ext-211-i004"]},
+      "x008": {"source": "Test_Results.Electrolytes.Sodium + Test_Results.Electrolytes.Potassium + Test_Results.Electrolytes.Chloride", "source_text": "Slightly low + Normal + Normal", "exam_ids": ["agentclinic-medqa-ext-211-i005", "agentclinic-medqa-ext-211-i006", "agentclinic-medqa-ext-211-i007"]},
+      "x009": {"source": "Test_Results.Imaging.Abdominal_X-Ray.Findings", "source_text": "No evidence of obstruction or free air under the diaphragm.", "exam_ids": ["agentclinic-medqa-ext-211-i008"]}
+    },
+    "finding_flags": {
+      "x002": ["90/78 mm Hg is a very narrow pulse pressure (12 mm Hg); kept as written."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Blood pressure 90/78 mmHg has an implausibly narrow pulse pressure.",
+      "The gold label says 'infection', but the 1-hour onset after reheated food fits the emetic (preformed-toxin) syndrome, an intoxication; the label is kept as given."
+    ],
+    "notes": [
+      "The sudden onset 2 hours ago covers all four GI symptoms, so it is a standalone fact (f005); the reheated food is a habit/exposure fact.",
+      "College student and dormitory living are separate social facts (occupation, living situation); exam stress is a stressor.",
+      "Gold aliases: 'food poisoning' and 'gastroenteritis' alone are broader and are not listed."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with symptoms of acute gastrointestinal illness."
+    }
+  }
+}

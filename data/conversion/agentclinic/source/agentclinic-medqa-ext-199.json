@@ -1,0 +1,135 @@
+{
+  "case_id": "agentclinic-medqa-ext-199",
+  "source_row": 199,
+  "demographics_text": "57-year-old obese female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with fever, chills, headache, right-sided chest pain, and a productive cough following an abdominal surgery.",
+  "chief_complaint": "Fever and productive cough",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-199-p001",
+      "field": "History",
+      "text": "The patient reports experiencing fever, chills, and a headache three days after undergoing an open cholecystectomy. She mentions right-sided chest pain that increases on inspiration and has had a productive cough for the last 12 hours. She also had an episode of hypotension post-operation that was resolved with IV fluids. Additionally, she had an abdominal hysterectomy 16 years ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-199-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Chills"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-199-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Headache"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-199-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Right-sided chest pain that increases on inspiration"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-199-p005",
+      "field": "Past_Medical_History",
+      "text": "Underwent abdominal hysterectomy 16 years ago for multiple fibroids of the uterus. She has a 17-year history of smoking one pack of cigarettes daily."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-199-p006",
+      "field": "Social_History",
+      "text": "History of smoking one pack of cigarettes daily for 17 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-199-p007",
+      "field": "Review_of_Systems",
+      "text": "Reports discomfort. No other abnormalities noted apart from the symptoms related to her recent surgery and current complaints."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "39°C (102.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "128/82 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "98 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e005",
+      "path": "Physical_Examination_Findings.Chest_Examination.Inspection",
+      "text": "Normal chest wall movement"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e006",
+      "path": "Physical_Examination_Findings.Chest_Examination.Palpation",
+      "text": "No tenderness or deformities"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e007",
+      "path": "Physical_Examination_Findings.Chest_Examination.Percussion",
+      "text": "Normal resonance"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e008",
+      "path": "Physical_Examination_Findings.Chest_Examination.Auscultation",
+      "text": "Inspiratory crackles at the right lung base"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Healing surgical incision below the right ribcage"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e010",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e011",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-e012",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Soft and nontender"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-199-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "15,000 /μL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "14 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "300,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-199-i004",
+      "path": "Test_Results.Chest_X-Ray.Findings",
+      "text": "Infiltrates in the right lower lobe consistent with pneumonia"
+    }
+  ],
+  "correct_diagnosis": "Pneumonia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

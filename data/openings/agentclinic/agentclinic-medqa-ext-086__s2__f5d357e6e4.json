@@ -1,0 +1,53 @@
+{
+ "case_id": "agentclinic-medqa-ext-086",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I have an itchy rash on my upper body and face.",
+   "I've had it for a year.",
+   "My eyebrows have been thinning.",
+   "I've lost some of my eyelashes.",
+   "I have some lighter patches of skin around my elbows.",
+   "I'm a farmer; I work on my family's rice farm.",
+   "I also take care of livestock."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've got an itchy rash on my upper body and face that's been bothering me for a year. I've also noticed my eyebrows thinning and losing some of my eyelashes, plus there are lighter patches of skin around my elbows. By the way, I'm a farmer who works on my family's rice farm and takes care of livestock.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f006",
+    "f007",
+    "f008",
+    "f009"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3423,
+   "tokens_out": 83,
+   "seconds": 10.19,
+   "redrafts": 0
+  }
+ }
+}

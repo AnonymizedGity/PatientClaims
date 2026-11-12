@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "mcr-test-13161",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 77, "sex": "female"},
+    "opening": ["f001", "f002", "f003"],
+    "facts": [
+      {"id": "f001", "item": "tongue pain", "aliases": ["sore tongue", "painful tongue", "mouth pain"], "text": "My tongue hurts.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "tongue ulcer", "aliases": ["ulcer on the tongue", "sore on the tongue", "mouth ulcer", "ulceration"], "text": "I have an ulcer on my tongue.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f003", "item": "painful swallowing", "aliases": ["odynophagia", "pain on swallowing", "hurts to swallow"], "text": "It hurts to swallow.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "how long the tongue pain, ulcer and painful swallowing have lasted", "text": "They started 2 weeks ago.", "value": "2 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "tongue pain, ulcer and painful swallowing: course", "text": "They've been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "dehydration", "aliases": ["dehydrated", "not drinking enough", "fluid loss"], "text": "Because of it I've become dehydrated.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "tongue turning blue", "aliases": ["blue tongue", "tongue discoloration", "tongue changed colour"], "text": "Before the ulcer formed, my tongue turned blue.", "polarity": "present", "category": "symptom", "system": "ent", "time": "resolved"},
+      {"id": "f008", "item": "fever", "aliases": ["fevers", "temperature"], "text": "I haven't had fevers.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f009", "item": "chills", "aliases": ["shivering", "rigors"], "text": "I haven't had chills.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "feeling generally unwell", "aliases": ["malaise", "unwell"], "text": "I don't feel generally unwell.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f011", "item": "scalp tenderness", "aliases": ["sore scalp", "tender scalp", "pain combing hair"], "text": "My scalp isn't tender.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f012", "item": "jaw tenderness", "aliases": ["sore jaw", "jaw pain", "tender jaw"], "text": "My jaw isn't tender.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f013", "item": "headache", "aliases": ["headaches", "head pain"], "text": "I haven't had headaches.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f014", "item": "vision changes", "aliases": ["blurred vision", "vision loss", "double vision", "eyesight problems"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f015", "item": "trimethoprim-sulfamethoxazole", "aliases": ["Bactrim", "co-trimoxazole", "septra"], "text": "Before coming here I was first treated with trimethoprim-sulfamethoxazole.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f016", "item": "amoxicillin-clavulanate", "aliases": ["Augmentin", "co-amoxiclav"], "text": "Then I was given amoxicillin-clavulanate.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f017", "item": "acyclovir", "aliases": ["aciclovir", "antiviral", "Zovirax"], "text": "After that I was given acyclovir.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f018", "item": "fluconazole", "aliases": ["Diflucan", "antifungal"], "text": "Along with the acyclovir I was given fluconazole.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f019", "item": "response to the earlier treatments", "aliases": ["did the medicines help", "treatment failure"], "text": "None of those treatments improved my symptoms.", "polarity": "present", "category": "medication"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-13161",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "ent", "name": "oral examination", "aliases": ["mouth examination", "tongue examination", "tongue", "mucous membranes", "oral cavity"], "result": "Dry mucous membranes; well-demarcated area of necrosis involving the anterior one-third to one-half of the tongue, tender to palpation."},
+      {"id": "x002", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "leukocyte count", "white count", "platelets", "platelet count"], "result": "Leukocytes 22 000/µL; platelets 716 000/µL."},
+      {"id": "x003", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate", "inflammatory markers"], "result": "65 mm/h"},
+      {"id": "x004", "kind": "test", "name": "CT angiogram of the head and neck", "aliases": ["CTA head and neck", "CT angiography", "CT angiogram", "carotid imaging", "vascular imaging"], "result": "Undulated-beaded appearance of the distal internal carotid arteries and vertebral arteries bilaterally."},
+      {"id": "x005", "kind": "test", "name": "tongue biopsy", "aliases": ["biopsy of the tongue", "biopsy", "fungal stain", "viral immunohistochemistry"], "result": "Marked acute inflammation and granulation tissue with focal loss of the squamous mucosa; no fungal elements on staining; immunohistochemistry negative for cytomegalovirus, herpes simplex virus and varicella zoster virus."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-13161",
+    "diagnosis": "Giant cell arteritis",
+    "aliases": ["GCA", "temporal arteritis", "cranial arteritis", "Horton's disease", "giant cell arteritis with lingual necrosis"],
+    "reasoning": "1. Infectious causes were excluded—“No fungal elements were identified with staining, and no viruses…were identified with immunohistochemistry markers.” 2. Diffuse atherosclerosis was less likely—“the undulated-beaded appearance of the distal internal carotid and vertebral arteries bilaterally was more consistent with skip lesions occurring secondary to a vasculitic process than diffuse atherosclerosis.” 3. Other vasculitides were considered—“differential for tongue necrosis includes…other vasculitides such as granulomatosis with polyangiitis or polyarteritis nodosa.” 4. Giant cell arteritis was favored given epidemiology and rarity of lingual necrosis—“GCA is likely the most common cause of lingual necrosis when it does present.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-13161",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s001"],
+      "f006": ["s001"],
+      "f007": ["s002"],
+      "f008": ["s003"],
+      "f009": ["s003"],
+      "f010": ["s003"],
+      "f011": ["s003"],
+      "f012": ["s003"],
+      "f013": ["s003"],
+      "f014": ["s003"],
+      "f015": ["s004"],
+      "f016": ["s004"],
+      "f017": ["s004"],
+      "f018": ["s004"],
+      "f019": ["s004"]
+    },
+    "quotes": {
+      "f004": "2 weeks of progressively worsening oral tongue pain, ulceration, and odynophagia",
+      "f005": "progressively worsening",
+      "f006": "odynophagia leading to dehydration",
+      "f007": "her tongue turned blue before ulceration",
+      "f011": "scalp or jaw tenderness",
+      "f012": "scalp or jaw tenderness",
+      "f015": "Initial outpatient treatment with trimethoprim–sulfamethoxazole",
+      "f016": "then amoxicillin–clavulanate",
+      "f017": "followed by acyclovir and fluconazole",
+      "f018": "followed by acyclovir and fluconazole",
+      "f019": "did not improve her symptoms"
+    },
+    "flags": {
+      "f006": ["Dehydration is the source's word for the consequence of the painful swallowing; kept as something the patient was told or feels, without inventing details of intake."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "she had dry mucous membranes and a well-demarcated area of necrosis involving the anterior one-third to one-half of the tongue, which was tender to palpation"},
+      "x002": {"sentences": ["s006"], "source_text": "a leukocyte count of 22 000/µL, a platelet count of 716 000/µL"},
+      "x003": {"sentences": ["s006"], "source_text": "an erythrocyte sedimentation rate of 65 mm/h"},
+      "x004": {"sentences": ["s007"], "source_text": "A CT angiogram of the head and neck revealed an undulated-beaded appearance of the distal internal carotid arteries and vertebral arteries bilaterally."},
+      "x005": {"sentences": ["s008"], "source_text": "A biopsy of the tongue demonstrated marked acute inflammation and granulation tissue with focal loss of the squamous mucosa; staining showed no fungal elements, and immunohistochemistry showed no cytomegalovirus, herpes simplex virus, or varicella zoster virus."}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [],
+    "notes": ["Index visit: the emergency presentation after 2 weeks of worsening tongue pain, ulceration and painful swallowing (s001-s008).", "The outpatient antimicrobials before the index visit (s004) are earlier treatments: one medication fact per drug, in order, plus one fact that none of them helped.", "The duration and the worsening course apply to all three presenting complaints and are standalone facts.", "Finding aliases avoid 'white blood cell', which would contain the gold word 'cell'.", "Fixes: f015 alias 'antibiotics' removed; f016 alias 'antibiotics' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

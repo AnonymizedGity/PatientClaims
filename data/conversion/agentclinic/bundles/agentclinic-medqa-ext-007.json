@@ -1,0 +1,111 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-007", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 53, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "loss of consciousness", "aliases": ["passing out", "fainting", "blackout"], "text": "I passed out.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f002", "item": "loss of consciousness: when it happened", "parent": "f001", "attribute": "onset", "text": "It happened 1 hour ago.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f003", "item": "loss of consciousness: what I was doing", "parent": "f001", "attribute": "context", "text": "It happened right after I urinated.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f004", "item": "loss of consciousness: how I was found", "parent": "f001", "attribute": "context", "text": "My wife found me unconscious on the bathroom floor.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f005", "item": "loss of consciousness: duration", "parent": "f001", "attribute": "duration", "text": "I came round quickly, after about 30 seconds.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f006", "item": "confusion after coming round", "aliases": ["confusion", "disorientation"], "text": "I wasn't confused when I came round.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f007", "item": "memory loss for the episode", "aliases": ["amnesia"], "text": "I don't have any memory loss around the episode.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f008", "item": "loss of bladder control during the episode", "aliases": ["urinary incontinence", "wetting myself"], "text": "I didn't wet myself during the episode.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "resolved"},
+      {"id": "f009", "item": "tongue biting", "aliases": ["bite marks", "bitten tongue"], "text": "I didn't bite my tongue.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f010", "item": "injury from the episode", "aliases": ["injuries from the fall"], "text": "I didn't get hurt.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "resolved"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "previous surgeries", "aliases": ["operations"], "text": "I haven't had any significant surgeries.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "regular medications", "aliases": ["medicines", "pills"], "text": "I'm not on any regular medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a high school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f017", "item": "recent travel", "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "sick contacts", "aliases": ["contact with sick people"], "text": "I haven't been around anyone who's sick.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f020", "item": "palpitations", "aliases": ["racing heart"], "text": "I haven't noticed any palpitations.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f021", "item": "fever", "text": "I haven't had any fevers.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f022", "item": "headache", "text": "I haven't had any headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f023", "item": "seizures", "aliases": ["fits", "convulsions"], "text": "I haven't had any seizures.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f024", "item": "recent illness", "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f025", "item": "other neurological symptoms", "text": "I haven't had any other problems with my nerves or brain.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-007",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "heart examination", "aliases": ["cardiac examination", "heart auscultation", "cardiovascular examination"], "result": "Normal rate, regular rhythm, no murmurs."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["chest auscultation", "lung auscultation", "respiratory examination"], "result": "Clear to auscultation bilaterally; no wheezes, rales or rhonchi."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["mental status examination", "orientation", "level of consciousness"], "result": "Alert and oriented to person, place, time and situation."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Intact."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "muscle tone", "motor examination"], "result": "Normal strength and tone in all extremities."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "No sensory deficits."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Physiologic reflexes present and symmetrical."},
+      {"id": "x012", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["finger-to-nose test", "heel-to-shin test", "cerebellar examination"], "result": "No ataxia or dysmetria."},
+      {"id": "x013", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "electrolytes", "glucose", "blood glucose", "blood sugar", "creatinine", "kidney function", "sodium", "potassium"], "result": "Glucose within normal limits; creatinine within normal limits; electrolytes within normal limits."},
+      {"id": "x014", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "No abnormalities."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-007",
+    "diagnosis": "Situational syncope",
+    "aliases": ["micturition syncope", "post-micturition syncope", "postmicturition syncope", "micturition-induced syncope"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-007",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-007-p001"], "f002": ["agentclinic-medqa-ext-007-p001"], "f003": ["agentclinic-medqa-ext-007-p001"],
+      "f004": ["agentclinic-medqa-ext-007-p001"], "f005": ["agentclinic-medqa-ext-007-p001", "agentclinic-medqa-ext-007-p002"],
+      "f006": ["agentclinic-medqa-ext-007-p001", "agentclinic-medqa-ext-007-p002"], "f007": ["agentclinic-medqa-ext-007-p001"],
+      "f008": ["agentclinic-medqa-ext-007-p001", "agentclinic-medqa-ext-007-p003"], "f009": ["agentclinic-medqa-ext-007-p004"],
+      "f010": ["agentclinic-medqa-ext-007-p004"], "f011": ["agentclinic-medqa-ext-007-p005"], "f012": ["agentclinic-medqa-ext-007-p005"],
+      "f013": ["agentclinic-medqa-ext-007-p005"], "f014": ["agentclinic-medqa-ext-007-p006"], "f015": ["agentclinic-medqa-ext-007-p006"],
+      "f016": ["agentclinic-medqa-ext-007-p006"], "f017": ["agentclinic-medqa-ext-007-p006"], "f018": ["agentclinic-medqa-ext-007-p006"],
+      "f019": ["agentclinic-medqa-ext-007-p007"], "f020": ["agentclinic-medqa-ext-007-p007"], "f021": ["agentclinic-medqa-ext-007-p007"],
+      "f022": ["agentclinic-medqa-ext-007-p007"], "f023": ["agentclinic-medqa-ext-007-p007"], "f024": ["agentclinic-medqa-ext-007-p007"],
+      "f025": ["agentclinic-medqa-ext-007-p007"]
+    },
+    "quotes": {
+      "f002": "occurred 1 hour ago", "f003": "immediately after micturating",
+      "f004": "His wife found him unconscious on the bathroom floor", "f005": "He regained consciousness after about 30 seconds / Regained consciousness quickly",
+      "f006": "without any confusion", "f007": "or amnesia for the event", "f008": "No history of urinary incontinence during the event",
+      "f009": "No bite marks", "f010": "No bite marks or injuries", "f012": "No significant past medical or surgical history",
+      "f013": "Not on any regular medications", "f017": "No recent travel", "f018": "or sick contacts",
+      "f024": "recent illnesses", "f025": "any other neurological symptoms"
+    },
+    "flags": {
+      "f009": ["'No bite marks' is partly an observer finding; worded as what the patient can report (no tongue biting). The exam has no oral inspection."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-007-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-007-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-007-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-007-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiopulmonary_Examination.Heart", "source_text": "Normal rate, regular rhythm, no murmurs.", "exam_ids": ["agentclinic-medqa-ext-007-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Cardiopulmonary_Examination.Lungs", "source_text": "Clear to auscultation bilaterally, no wheezes, rales, or rhonchi.", "exam_ids": ["agentclinic-medqa-ext-007-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurologic_Examination.Mental_Status", "source_text": "Alert and oriented to person, place, time, and situation.", "exam_ids": ["agentclinic-medqa-ext-007-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurologic_Examination.Cranial_Nerves", "source_text": "Intact.", "exam_ids": ["agentclinic-medqa-ext-007-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurologic_Examination.Motor", "source_text": "Normal strength and tone in all extremities.", "exam_ids": ["agentclinic-medqa-ext-007-e009"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurologic_Examination.Sensory", "source_text": "No sensory deficits.", "exam_ids": ["agentclinic-medqa-ext-007-e010"]},
+      "x011": {"source": "Physical_Examination_Findings.Neurologic_Examination.Reflexes", "source_text": "Physiologic reflexes present and symmetrical.", "exam_ids": ["agentclinic-medqa-ext-007-e011"]},
+      "x012": {"source": "Physical_Examination_Findings.Neurologic_Examination.Coordination", "source_text": "No ataxia or dysmetria.", "exam_ids": ["agentclinic-medqa-ext-007-e012"]},
+      "x013": {"source": "Test_Results.Blood_Tests.Glucose + Test_Results.Blood_Tests.Creatinine + Test_Results.Blood_Tests.Electrolytes", "source_text": "Within normal limits + Within normal limits + Within normal limits", "exam_ids": ["agentclinic-medqa-ext-007-i001", "agentclinic-medqa-ext-007-i002", "agentclinic-medqa-ext-007-i003"]},
+      "x014": {"source": "Test_Results.Electrocardiogram.Findings", "source_text": "No abnormalities.", "exam_ids": ["agentclinic-medqa-ext-007-i004"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "The event details (1 hour ago, right after urinating, found by his wife on the bathroom floor, about 30 seconds) are children of the loss-of-consciousness fact. The wife's account is worded as what the patient was told.",
+      "'Regained consciousness quickly without confusion' (p002) merges with the 30-second duration (f005) and the denial of confusion (f006); 'No urinary incontinence' (p003) merges with the History's denial (f008).",
+      "'No significant past medical or surgical history' gives two denials (f011 medical problems, f012 surgeries).",
+      "Glucose, creatinine and electrolytes form one basic-metabolic-panel record."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with an episode of loss of consciousness."
+    }
+  }
+}

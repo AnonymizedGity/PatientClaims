@@ -1,0 +1,1577 @@
+{
+ "_note": "Per-case picks made once before the runs by the model below and spot-checked: 'a12a.target' is the recorded fact pointing to the correct diagnosis (diagnostic fact); 'a12a_anchor.target' a recorded fact typical of X (fact fitting X; null when none fits); 'a13.blocks' maps the opening blocks 1-5 (chief complaint; onset; character and severity; up to three associated features; up to three history items) to fact ids. Ids refer to the release's facts.",
+ "dataset": "medqa_cs",
+ "release": "216669d727b9",
+ "model": "Qwen/Qwen3.8-27B",
+ "prompts": {
+  "prompts/compile_target.md": "91559bbf16b8",
+  "prompts/compile_blocks.md": "df32c1799d27",
+  "prompts/compile_anchor.md": "e4b1e4a4338f"
+ },
+ "cases": {
+  "medqa-cs-001": {
+   "a12a": {
+    "target": "f007",
+    "item": "chest pain: spread",
+    "text": "It goes to my neck, my upper back and my left arm.",
+    "reason": "The radiation of chest pain to the neck, upper back, and left arm is a classic and highly specific symptom for myocardial ischemia or infarction, distinguishing it from other causes of chest pain."
+   },
+   "a12a_anchor": {
+    "target": "f032",
+    "anchor": "my acid reflux",
+    "item": "acid reflux (GERD)",
+    "text": "I had GERD 10 years ago. It was treated with antacids.",
+    "reason": "Entry f032 explicitly states a past history of GERD, which is the specific condition in question, whereas other entries describe symptoms of the current acute episode or risk factors for other conditions."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f019"
+     ],
+     "3": [
+      "f005",
+      "f008"
+     ],
+     "4": [
+      "f012",
+      "f013",
+      "f015"
+     ],
+     "5": [
+      "f029",
+      "f030",
+      "f041"
+     ]
+    },
+    "texts": {
+     "f002": "It started about 40 minutes ago. It woke me up at 5 in the morning.",
+     "f019": "I've had chest pain like this before, but it wasn't exactly the same.",
+     "f005": "Right now it's a 7 out of 10.",
+     "f008": "It feels like pressure, like something is resting on my chest.",
+     "f012": "I'm having trouble breathing.",
+     "f013": "I feel nauseated.",
+     "f015": "I've been sweating more than usual.",
+     "f029": "I've had high blood pressure for 5 years. I take a diuretic for it.",
+     "f030": "I have high cholesterol. I'm supposed to control it with diet.",
+     "f041": "I use cocaine."
+    }
+   }
+  },
+  "medqa-cs-002": {
+   "a12a": {
+    "target": "f002",
+    "item": "blood in urine: what it looked like",
+    "text": "It was bright red, and later it had some clots.",
+    "reason": "Painless gross hematuria with clots in a 57-year-old male is the most specific and urgent indicator for bladder cancer, distinguishing it from benign prostatic hyperplasia which typically presents with obstructive symptoms."
+   },
+   "a12a_anchor": {
+    "target": "f030",
+    "anchor": "kidney stones",
+    "item": "gout",
+    "text": "I have gout.",
+    "reason": "Gout is a strong risk factor for uric acid kidney stones, making it the most relevant entry for the condition of urolithiasis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f010",
+      "f012",
+      "f014"
+     ],
+     "5": [
+      "f035",
+      "f034",
+      "f046"
+     ]
+    },
+    "texts": {
+     "f003": "I first noticed it yesterday morning.",
+     "f010": "I have to go to the bathroom every 2 to 3 hours now.",
+     "f012": "I have to strain when I pass urine.",
+     "f014": "My urine stream is weak.",
+     "f035": "My father died at age 80 because of a kidney problem.",
+     "f034": "I take allopurinol.",
+     "f046": "I smoke cigarettes."
+    }
+   }
+  },
+  "medqa-cs-003": {
+   "a12a": {
+    "target": "f007",
+    "item": "back pain: spread",
+    "text": "It goes to my left thigh and sometimes reaches my left foot.",
+    "reason": "Radiating pain to the leg (radiculopathy) is the key clinical sign distinguishing a disk herniation from simple mechanical back pain."
+   },
+   "a12a_anchor": {
+    "target": "f014",
+    "anchor": "cancer",
+    "item": "difficulty urinating",
+    "text": "I've had to strain in order to urinate.",
+    "reason": "Difficulty urinating is a classic symptom of prostate enlargement or cancer, which, combined with back pain, strongly suggests metastatic prostate cancer."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f022"
+     ],
+     "3": [
+      "f005",
+      "f008"
+     ],
+     "4": [
+      "f014",
+      "f016"
+     ],
+     "5": [
+      "f033",
+      "f030"
+     ]
+    },
+    "texts": {
+     "f002": "It started a week ago.",
+     "f022": "Well, I've been having back pain on and off.",
+     "f005": "It's an 8 out of 10.",
+     "f008": "It's sharp.",
+     "f014": "I've had to strain in order to urinate.",
+     "f016": "Sometimes I feel as if I haven't emptied my bladder fully.",
+     "f033": "I'm a construction worker.",
+     "f030": "I take ibuprofen."
+    }
+   }
+  },
+  "medqa-cs-004": {
+   "a12a": {
+    "target": "f009",
+    "item": "car accident",
+    "text": "I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree.",
+    "reason": "The history of a car accident provides the necessary traumatic mechanism to explain the pneumothorax, distinguishing it from spontaneous causes or other chest pain etiologies."
+   },
+   "a12a_anchor": {
+    "target": "f017",
+    "anchor": "pneumonia",
+    "item": "cough",
+    "text": "I've been coughing.",
+    "reason": "A cough is a primary symptom of pneumonia, whereas the other entries point more strongly to pleurisy, cardiac issues, or trauma."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f003"
+     ],
+     "2": [
+      "f002",
+      "f005",
+      "f009"
+     ],
+     "3": [
+      "f006"
+     ],
+     "4": [
+      "f016",
+      "f023"
+     ],
+     "5": []
+    },
+    "texts": {
+     "f002": "It started last night, along with the pain.",
+     "f005": "It started last night.",
+     "f009": "I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree.",
+     "f006": "It's some of the worst pain I've ever had. At least 8 out of 10.",
+     "f016": "I have a few scratches on my arms from the car accident.",
+     "f023": "I have pain in my belly."
+    }
+   }
+  },
+  "medqa-cs-005": {
+   "a12a": {
+    "target": "f002",
+    "item": "pregnancy test: when it was done",
+    "text": "I took it two days ago, because I skipped my period this month.",
+    "reason": "A positive pregnancy test is the most direct and definitive piece of evidence confirming the diagnosis of pregnancy."
+   },
+   "a12a_anchor": {
+    "target": "f036",
+    "anchor": "an ectopic pregnancy",
+    "item": "past surgery",
+    "text": "My appendix was removed when I was 20.",
+    "reason": "A history of appendectomy is a risk factor for pelvic adhesions, which can cause tubal damage and increase the likelihood of an ectopic pregnancy."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f003",
+      "f006",
+      "f015"
+     ],
+     "5": [
+      "f039",
+      "f048",
+      "f038"
+     ]
+    },
+    "texts": {
+     "f004": "My last period was six weeks ago.",
+     "f003": "This month, I skipped my period.",
+     "f006": "I've been feeling nauseous recently.",
+     "f015": "I feel I have to use the bathroom frequently now.",
+     "f039": "My boyfriend withdraws before ejaculation.",
+     "f048": "I have been sexually active only with my boyfriend.",
+     "f038": "I take multivitamins."
+    }
+   }
+  },
+  "medqa-cs-007": {
+   "a12a": {
+    "target": "f004",
+    "item": "how the fall happened",
+    "text": "I stumbled over a toy on the floor and tried to brace myself with my right arm, but I ended up landing on my hand.",
+    "reason": "The mechanism of injury involving a fall on an outstretched hand is the classic cause of a humeral fracture."
+   },
+   "a12a_anchor": {
+    "target": "f003",
+    "anchor": "a dislocated shoulder",
+    "item": "arm pain: what you were doing when it started",
+    "text": "I was playing with my grandchildren in the garden when I tripped and fell.",
+    "reason": "The mechanism of injury described in f003 (tripping and falling) is the most common cause of shoulder dislocation, making it the strongest indicator for this condition among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f008",
+      "f004"
+     ],
+     "3": [],
+     "4": [
+      "f017"
+     ],
+     "5": [
+      "f025",
+      "f027",
+      "f028"
+     ]
+    },
+    "texts": {
+     "f002": "It started three days ago.",
+     "f008": "Then the pain started gradually.",
+     "f004": "I stumbled over a toy on the floor and tried to brace myself with my right arm, but I ended up landing on my hand.",
+     "f017": "I believe I can move it in all directions, but it hurts when I do.",
+     "f025": "I am allergic to aspirin.",
+     "f027": "I take Tylenol.",
+     "f028": "I use an albuterol inhaler."
+    }
+   }
+  },
+  "medqa-cs-008": {
+   "a12a": {
+    "target": "f048",
+    "item": "NPH insulin",
+    "text": "I am on NPH insulin.",
+    "reason": "The patient is on NPH insulin, which is the specific medication required to cause insulin-induced hypoglycemia, distinguishing it from other causes of low blood sugar."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f021",
+      "f038",
+      "f015"
+     ],
+     "5": [
+      "f044",
+      "f043",
+      "f055"
+     ]
+    },
+    "texts": {
+     "f021": "I have tingling and numbness in my feet all the time.",
+     "f038": "Well, I am not doing my job the way I used to. I can't get it up, doc.",
+     "f015": "I tend to sweat and notice my heart racing occasionally.",
+     "f044": "I suffered a heart attack last year.",
+     "f043": "I have high cholesterol. It was diagnosed 2 years ago.",
+     "f055": "My father passed away from a stroke at 60."
+    }
+   }
+  },
+  "medqa-cs-009": {
+   "a12a": {
+    "target": "f015",
+    "item": "chest pain",
+    "text": "My chest is where it hurts the most.",
+    "reason": "The patient's report of chest pain being the most painful area directly localizes the injury to the thorax, making a rib fracture the most likely diagnosis among the options."
+   },
+   "a12a_anchor": {
+    "target": "f010",
+    "anchor": "a sexually transmitted infection",
+    "item": "sexual assault",
+    "text": "I was sexually assaulted.",
+    "reason": "Entry f010 explicitly states the patient was sexually assaulted, which is the primary risk factor and context for the patient's concern about a sexually transmitted infection."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f014",
+      "f015",
+      "f021"
+     ],
+     "5": [
+      "f040",
+      "f047",
+      "f053"
+     ]
+    },
+    "texts": {
+     "f014": "I feel sore all over.",
+     "f015": "My chest is where it hurts the most.",
+     "f021": "I feel that I can't get enough air.",
+     "f040": "My last period was three weeks ago.",
+     "f047": "I'm sexually active with my girlfriend of 6 months.",
+     "f053": "I have a girlfriend; we've been together for 6 months."
+    }
+   }
+  },
+  "medqa-cs-010": {
+   "a12a": {
+    "target": "f019",
+    "item": "recent long travel or immobility",
+    "text": "A week ago, I had a 15-hour flight to see a crucial client.",
+    "reason": "The 15-hour flight is a major risk factor for deep venous thrombosis due to prolonged immobility, making it the most critical piece of history to confirm the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "an infection in my leg",
+    "item": "recent injury",
+    "text": "I fell down and scratched my right leg.",
+    "reason": "Entry f011 describes a recent scratch on the leg, which provides the portal of entry for bacteria, a key risk factor and cause for cellulitis."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f011"
+     ],
+     "3": [
+      "f005",
+      "f007"
+     ],
+     "4": [
+      "f012",
+      "f013",
+      "f017"
+     ],
+     "5": [
+      "f019",
+      "f034",
+      "f036"
+     ]
+    },
+    "texts": {
+     "f002": "The pain started a few days ago.",
+     "f011": "I fell down and scratched my right leg.",
+     "f005": "It's 8 out of 10.",
+     "f007": "It feels like pressure and spasms.",
+     "f012": "There is redness.",
+     "f013": "My right leg seems to be warmer compared to my left.",
+     "f017": "I have felt warm recently, but I haven't measured my temperature.",
+     "f019": "A week ago, I had a 15-hour flight to see a crucial client.",
+     "f034": "I've been using oral contraceptives for the past 2 years.",
+     "f036": "My dad had a clot in his leg."
+    }
+   }
+  },
+  "medqa-cs-011": {
+   "a12a": {
+    "target": "f013",
+    "item": "weight loss",
+    "text": "I have dropped 10 pounds in the last 3 months.",
+    "reason": "Unintentional weight loss is a significant red flag for malignancy that distinguishes cancer from benign causes of hoarseness."
+   },
+   "a12a_anchor": {
+    "target": "f011",
+    "anchor": "laryngitis",
+    "item": "recent illness",
+    "text": "I had the flu 4 weeks ago.",
+    "reason": "A recent history of the flu is a common cause of acute laryngitis, making it the most relevant supporting fact for this diagnosis among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f010",
+      "f013",
+      "f019"
+     ],
+     "5": [
+      "f044",
+      "f034",
+      "f033"
+     ]
+    },
+    "texts": {
+     "f002": "I first noticed it three months ago.",
+     "f003": "It started gradually.",
+     "f010": "I feel like there's a lump in my throat.",
+     "f013": "I have dropped 10 pounds in the last 3 months.",
+     "f019": "I've been feeling more tired recently.",
+     "f044": "I smoke cigarettes.",
+     "f034": "My father had lung cancer.",
+     "f033": "My mother had thyroid disease."
+    }
+   }
+  },
+  "medqa-cs-012": {
+   "a12a": {
+    "target": "f007",
+    "item": "neck pain: spread",
+    "text": "It travels down my left arm.",
+    "reason": "Radiating pain down the arm (radiculopathy) is the key clinical sign distinguishing a spinal disc herniation from simple neck strain or other causes."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [
+      "f005",
+      "f008"
+     ],
+     "4": [
+      "f012",
+      "f013"
+     ],
+     "5": [
+      "f016",
+      "f030",
+      "f037"
+     ]
+    },
+    "texts": {
+     "f002": "It started two days ago.",
+     "f005": "It's a 2 out of 10 at rest and an 8 out of 10 when I move.",
+     "f008": "It's sharp.",
+     "f012": "My left arm tingles.",
+     "f013": "My left arm feels numb.",
+     "f016": "I've had a neck injury before, but it wasn't like this.",
+     "f030": "I was found to have osteopenia at my last osteoporosis screening.",
+     "f037": "My mother had osteoporosis."
+    }
+   }
+  },
+  "medqa-cs-013": {
+   "a12a": {
+    "target": "f011",
+    "item": "stomach pain: what makes it worse",
+    "text": "Large meals and feeling hungry make it worse. The foods that make it worse are heavy, fatty meals, like pizza.",
+    "reason": "Pain triggered by fatty meals is a classic hallmark of biliary colic and cholecystitis, distinguishing it from other causes of upper abdominal pain."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [
+      "f006",
+      "f009"
+     ],
+     "4": [
+      "f014",
+      "f015"
+     ],
+     "5": [
+      "f028",
+      "f027",
+      "f031"
+     ]
+    },
+    "texts": {
+     "f002": "It started two weeks ago.",
+     "f006": "When I have the pain, it's a 7 out of 10, and then it can go down to 0.",
+     "f009": "It's burning.",
+     "f014": "Sometimes I feel nauseated when I'm in pain.",
+     "f015": "I vomited.",
+     "f028": "I take ibuprofen for the arthritis in my knees.",
+     "f027": "I take Maalox.",
+     "f031": "My father died at 55 of pancreatic cancer."
+    }
+   }
+  },
+  "medqa-cs-014": {
+   "a12a": {
+    "target": "f017",
+    "item": "headache: what makes it worse",
+    "text": "Stress, light and noise make it worse.",
+    "reason": "The combination of photophobia, phonophobia, and relief in a dark, quiet room is the most specific clinical feature distinguishing migraine from other headache types."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f003",
+      "f010",
+      "f032"
+     ],
+     "3": [
+      "f007",
+      "f012"
+     ],
+     "4": [
+      "f019",
+      "f020"
+     ],
+     "5": [
+      "f034",
+      "f044",
+      "f049"
+     ]
+    },
+    "texts": {
+     "f002": "It started two weeks ago.",
+     "f003": "It came on gradually.",
+     "f010": "Each one lasts one or two hours.",
+     "f032": "I get occasional aches and pains. I take ibuprofen for them.",
+     "f007": "When I have the pain, it's a 9 out of 10.",
+     "f012": "It feels sharp and throbbing.",
+     "f019": "Sometimes I feel nauseated when I'm in pain.",
+     "f020": "I vomited.",
+     "f034": "In college I had a similar headache.",
+     "f044": "My mother is alive and has migraines.",
+     "f049": "I'm working on a new project that I have to finish this month."
+    }
+   }
+  },
+  "medqa-cs-015": {
+   "a12a": {
+    "target": "f007",
+    "item": "nipple discharge",
+    "text": "I noticed some discharge from my breast.",
+    "reason": "Galactorrhea (nipple discharge) is a specific clinical sign that, when combined with amenorrhea, strongly points to hyperprolactinemia."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001",
+      "f002"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [],
+     "4": [
+      "f005",
+      "f007",
+      "f014"
+     ],
+     "5": [
+      "f042",
+      "f034",
+      "f050"
+     ]
+    },
+    "texts": {
+     "f003": "Over the past year, I started having my periods less often: every 5 to 6 weeks, lasting 7 days.",
+     "f005": "The blood flow is becoming less, and I use only one pad a day now.",
+     "f007": "I noticed some discharge from my breast.",
+     "f014": "Actually, I recently noticed some hair on my chin that I've been plucking.",
+     "f042": "I've been taking the same birth control pills for 8 years.",
+     "f034": "I have one child; he is 10 years old.",
+     "f050": "I've been a vegetarian for 10 years."
+    }
+   }
+  },
+  "medqa-cs-016": {
+   "a12a": {
+    "target": "f007",
+    "item": "vaginal discharge",
+    "text": "I've had some vaginal discharge recently.",
+    "reason": "Vaginal discharge is a primary clinical sign of vulvovaginitis, distinguishing it from other causes of dyspareunia."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [
+      "f003"
+     ],
+     "4": [
+      "f007",
+      "f011"
+     ],
+     "5": [
+      "f029",
+      "f054",
+      "f036"
+     ]
+    },
+    "texts": {
+     "f002": "I first noticed it three months ago.",
+     "f003": "It's aching and burning.",
+     "f007": "I've had some vaginal discharge recently.",
+     "f011": "I have some vaginal itching.",
+     "f029": "I was diagnosed with gonorrhea a decade ago, following an incident of sexual assault.",
+     "f054": "I was sexually assaulted about a decade ago.",
+     "f036": "For the past year, I've been with the same boyfriend."
+    }
+   }
+  },
+  "medqa-cs-017": {
+   "a12a": {
+    "target": "f008",
+    "item": "hearing loss: how words sound",
+    "text": "Jumbled and distorted, especially in crowded places or when I watch television.",
+    "reason": "The patient's age (75) combined with the specific complaint of distorted speech in noisy environments is the hallmark clinical presentation of presbycusis, distinguishing it from other causes of hearing loss."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f004"
+     ],
+     "3": [
+      "f007",
+      "f008"
+     ],
+     "4": [
+      "f013"
+     ],
+     "5": [
+      "f035",
+      "f032",
+      "f031"
+     ]
+    },
+    "texts": {
+     "f004": "This has been happening for a year.",
+     "f007": "All sounds.",
+     "f008": "Jumbled and distorted, especially in crowded places or when I watch television.",
+     "f013": "I occasionally have ringing in both ears.",
+     "f035": "I was in the army, and it was always loud.",
+     "f032": "For the past 25 years, I have also taken aspirin daily to protect my heart.",
+     "f031": "I take hydrochlorothiazide."
+    }
+   }
+  },
+  "medqa-cs-020": {
+   "a12a": {
+    "target": "f013",
+    "item": "fever",
+    "text": "I believe I've had a slight fever, although I didn't check my temperature.",
+    "reason": "Fever is a key systemic symptom that distinguishes pneumonia from simple bronchitis or viral upper respiratory infections, making it the most critical additional fact for the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f005",
+      "f013"
+     ],
+     "5": [
+      "f043",
+      "f036",
+      "f046"
+     ]
+    },
+    "texts": {
+     "f002": "It started a week ago.",
+     "f005": "I have chest pain.",
+     "f013": "I believe I've had a slight fever, although I didn't check my temperature.",
+     "f043": "I smoke.",
+     "f036": "I drink quite a bit on weekends.",
+     "f046": "Every Saturday night, I pick up a new girl from the nightclub."
+    }
+   }
+  },
+  "medqa-cs-021": {
+   "a12a": {
+    "target": "f043",
+    "item": "father's health",
+    "text": "My father passed away at 55 from pancreatic cancer.",
+    "reason": "Painless jaundice combined with a strong family history of pancreatic cancer is the most specific indicator for extrahepatic biliary obstruction caused by malignancy."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f003",
+      "f004",
+      "f005"
+     ],
+     "5": [
+      "f034",
+      "f045",
+      "f046"
+     ]
+    },
+    "texts": {
+     "f002": "I first noticed it three weeks ago.",
+     "f003": "My stools have been light.",
+     "f004": "My urine has been darker than usual.",
+     "f005": "I've been itching.",
+     "f034": "When I had a C-section 20 years ago.",
+     "f045": "I went to Mexico for a brief vacation about 2 months ago.",
+     "f046": "I drink wine."
+    }
+   }
+  },
+  "medqa-cs-022": {
+   "a12a": {
+    "target": "f010",
+    "item": "hearing loss",
+    "text": "I have difficulty hearing you in my left ear.",
+    "reason": "The presence of unilateral hearing loss is a key diagnostic criterion for Ménière's disease, distinguishing it from other causes of vertigo like BPPV or vestibular neuritis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003",
+      "f006"
+     ],
+     "3": [
+      "f002"
+     ],
+     "4": [
+      "f010",
+      "f016",
+      "f017"
+     ],
+     "5": [
+      "f031",
+      "f033",
+      "f034"
+     ]
+    },
+    "texts": {
+     "f003": "It started two days ago.",
+     "f006": "Each episode lasts 20 to 30 minutes.",
+     "f002": "It feels like the room is spinning around me.",
+     "f010": "I have difficulty hearing you in my left ear.",
+     "f016": "Sometimes I feel unsteady, as if I were going to fall down.",
+     "f017": "I feel nauseated.",
+     "f031": "I have hypertension. It was diagnosed seven years ago.",
+     "f033": "I take furosemide for my blood pressure.",
+     "f034": "I take captopril for my blood pressure."
+    }
+   }
+  },
+  "medqa-cs-023": {
+   "a12a": {
+    "target": "f040",
+    "item": "earlier big toe pain and swelling",
+    "text": "Five years ago I had a painful, swollen big toe on my left foot.",
+    "reason": "A history of a painful, swollen big toe is a classic presentation of gout (podagra) and strongly supports the diagnosis over other causes of knee pain."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f005",
+      "f007",
+      "f008"
+     ],
+     "5": [
+      "f043",
+      "f068",
+      "f070"
+     ]
+    },
+    "texts": {
+     "f002": "It started two days ago.",
+     "f005": "I can't move my knee.",
+     "f007": "There's redness around my knee.",
+     "f008": "My knee is swollen.",
+     "f043": "I was diagnosed with gonorrhea a year ago.",
+     "f068": "I'm sexually active with my new boyfriend. I met him 2 months ago.",
+     "f070": "I've had four partners in the last year."
+    }
+   }
+  },
+  "medqa-cs-024": {
+   "a12a": {
+    "target": "f007",
+    "item": "heel pain: time of day",
+    "text": "It seems to be worse in the morning. It hurts most first thing in the morning or at the end of the day.",
+    "reason": "The symptom of pain being worst in the morning or after rest is the classic hallmark sign of plantar fasciitis."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003"
+     ],
+     "3": [
+      "f009",
+      "f012"
+     ],
+     "4": [],
+     "5": [
+      "f037",
+      "f033",
+      "f034"
+     ]
+    },
+    "texts": {
+     "f003": "It came on gradually over the past 2 weeks.",
+     "f009": "When it hurts, it can get up to a 7 out of 10.",
+     "f012": "It's a stretching, tearing pain.",
+     "f037": "I'm a runner.",
+     "f033": "Occasionally I take ibuprofen for the pain.",
+     "f034": "My father has arthritis."
+    }
+   }
+  },
+  "medqa-cs-026": {
+   "a12a": {
+    "target": "f040",
+    "item": "contact with tuberculosis",
+    "text": "I work at a nursing home where several residents are being treated for TB.",
+    "reason": "Direct exposure to active tuberculosis cases in the workplace is the strongest epidemiological risk factor pointing to the diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f017",
+    "anchor": "lung cancer",
+    "item": "coughing up blood",
+    "text": "I've been coughing up blood recently.",
+    "reason": "Coughing up blood (hemoptysis) is a specific and highly suggestive symptom of lung cancer, distinguishing it from benign causes of chronic cough."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [
+      "f005"
+     ],
+     "4": [
+      "f017",
+      "f021",
+      "f028"
+     ],
+     "5": [
+      "f040",
+      "f044",
+      "f031"
+     ]
+    },
+    "texts": {
+     "f002": "I've had a cough for years.",
+     "f005": "It's quite bothersome.",
+     "f017": "I've been coughing up blood recently.",
+     "f021": "I've been sweating, especially at night.",
+     "f028": "I've lost 6 pounds in the past 2 months without intending to.",
+     "f040": "I work at a nursing home where several residents are being treated for TB.",
+     "f044": "I quit smoking two weeks ago.",
+     "f031": "I have long-term bronchitis."
+    }
+   }
+  },
+  "medqa-cs-027": {
+   "a12a": {
+    "target": "f010",
+    "item": "stool appearance and smell",
+    "text": "Recently I've noticed more foul-smelling and greasy-looking stools.",
+    "reason": "Foul-smelling and greasy stools indicate steatorrhea, which is a specific sign of pancreatic exocrine insufficiency caused by pancreatic cancer."
+   },
+   "a12a_anchor": {
+    "target": "f033",
+    "anchor": "depression",
+    "item": "loss of interest in activities",
+    "text": "I don't enjoy playing cards with my friends anymore.",
+    "reason": "The entry describes anhedonia (loss of interest in previously enjoyed activities), which is a core diagnostic criterion for Major Depressive Disorder."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f008"
+     ],
+     "3": [],
+     "4": [
+      "f010",
+      "f012",
+      "f007"
+     ],
+     "5": [
+      "f051",
+      "f056",
+      "f046"
+     ]
+    },
+    "texts": {
+     "f002": "For six months.",
+     "f008": "I have lost 8 pounds during the past 6 months.",
+     "f010": "Recently I've noticed more foul-smelling and greasy-looking stools.",
+     "f012": "I do feel some discomfort in my stomach.",
+     "f007": "I have a poor appetite.",
+     "f051": "I drink beer.",
+     "f056": "I used to smoke, but I quit six months ago.",
+     "f046": "I take Tylenol."
+    }
+   }
+  },
+  "medqa-cs-028": {
+   "a12a": {
+    "target": "f035",
+    "item": "propranolol",
+    "text": "Six months ago, propranolol was added for my blood pressure.",
+    "reason": "The patient is taking propranolol, a beta-blocker known to cause erectile dysfunction, which directly links his medication history to the correct diagnosis."
+   },
+   "a12a_anchor": {
+    "target": "f014",
+    "anchor": "low testosterone",
+    "item": "decreased sex drive",
+    "text": "My sex drive has diminished, Doc. I'm not as interested in sex as I used to be.",
+    "reason": "Decreased sex drive is a primary clinical symptom of hypogonadism and low testosterone."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f007",
+      "f014",
+      "f015"
+     ],
+     "5": [
+      "f034",
+      "f035",
+      "f039"
+     ]
+    },
+    "texts": {
+     "f002": "I discovered I had high blood pressure last year.",
+     "f007": "I've started to have problems with my sexual performance.",
+     "f014": "My sex drive has diminished, Doc. I'm not as interested in sex as I used to be.",
+     "f015": "I've been losing more hair than usual from my head.",
+     "f034": "I was prescribed hydrochlorothiazide for my blood pressure.",
+     "f035": "Six months ago, propranolol was added for my blood pressure.",
+     "f039": "My father died of a heart attack at the age of 50."
+    }
+   }
+  },
+  "medqa-cs-029": {
+   "a12a": {
+    "target": "f002",
+    "item": "trouble falling asleep: how long",
+    "text": "It has been going on for more than 6 months now.",
+    "reason": "The duration of symptoms exceeding 6 months is the critical diagnostic criterion that distinguishes Generalized Anxiety Disorder from acute stress reactions or other transient conditions."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f014",
+      "f015",
+      "f022"
+     ],
+     "5": [
+      "f050",
+      "f062",
+      "f065"
+     ]
+    },
+    "texts": {
+     "f002": "It has been going on for more than 6 months now.",
+     "f014": "I feel very sleepy during class and while driving to school at 7 AM.",
+     "f015": "I can't concentrate during classes or while driving.",
+     "f022": "I get annoyed or irritated at things more easily.",
+     "f050": "I drink coffee or energy drinks.",
+     "f062": "My final exams are coming up soon, and I need to study.",
+     "f065": "This semester, I've taken on a heavier course load to graduate on schedule."
+    }
+   }
+  },
+  "medqa-cs-031": {
+   "a12a": {
+    "target": "f006",
+    "item": "stomach pain: location",
+    "text": "It's here, in the lower right part of my belly.",
+    "reason": "Pain localized to the lower right abdomen (McBurney's point) is the most specific clinical sign distinguishing appendicitis from other causes of abdominal pain."
+   },
+   "a12a_anchor": {
+    "target": "f033",
+    "anchor": "a pelvic infection",
+    "item": "sexually transmitted infections",
+    "text": "I had some kind of infection 6 months ago, but I can't remember the name of it.",
+    "reason": "A history of sexually transmitted infections is a major risk factor for pelvic inflammatory disease, making this entry the most specific indicator among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [
+      "f005",
+      "f008"
+     ],
+     "4": [
+      "f015",
+      "f016",
+      "f019"
+     ],
+     "5": [
+      "f040",
+      "f041",
+      "f049"
+     ]
+    },
+    "texts": {
+     "f002": "It began this morning.",
+     "f005": "It's 7 out of 10.",
+     "f008": "It's cramping.",
+     "f015": "I am feeling nauseated.",
+     "f016": "I vomited once, two hours ago.",
+     "f019": "I had diarrhea this morning.",
+     "f040": "I take ibuprofen.",
+     "f041": "I use oral contraceptive pills.",
+     "f049": "I'm sexually active."
+    }
+   }
+  },
+  "medqa-cs-033": {
+   "a12a": {
+    "target": "f013",
+    "item": "loss of interest in activities",
+    "text": "I no longer want to do things for fun.",
+    "reason": "Anhedonia (loss of interest) is a core diagnostic criterion for Major Depressive Disorder that distinguishes it from other causes of fatigue or medical conditions."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f005"
+     ],
+     "3": [],
+     "4": [
+      "f009",
+      "f013",
+      "f017"
+     ],
+     "5": [
+      "f041",
+      "f044",
+      "f052"
+     ]
+    },
+    "texts": {
+     "f002": "It started three months ago.",
+     "f005": "I was in a car accident 3 months ago.",
+     "f009": "I wake up several times during the night.",
+     "f013": "I no longer want to do things for fun.",
+     "f017": "I feel sad all the time.",
+     "f041": "I drink beer.",
+     "f044": "I smoke cigarettes.",
+     "f052": "My girlfriend and my parents are very supportive. They know I've been having a hard time."
+    }
+   }
+  },
+  "medqa-cs-034": {
+   "a12a": {
+    "target": "f056",
+    "item": "someone close hurting or threatening you",
+    "text": "Well, sometimes, when my husband gets angry with me, he hurts me.",
+    "reason": "The patient's admission that her husband hurts her when he is angry is the direct evidence of domestic violence."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f010",
+      "f012",
+      "f014"
+     ],
+     "5": [
+      "f044",
+      "f051",
+      "f052"
+     ]
+    },
+    "texts": {
+     "f002": "I first noticed it five months ago.",
+     "f010": "I constantly feel thirsty and I drink a lot of water.",
+     "f012": "I find myself needing to use the bathroom more often throughout the day.",
+     "f014": "I recently started waking up at night to urinate.",
+     "f044": "My father had diabetes.",
+     "f051": "I know that I'm overweight.",
+     "f052": "I know I should eat healthier foods. I'm trying to change because my dad had diabetes."
+    }
+   }
+  },
+  "medqa-cs-035": {
+   "a12a": {
+    "target": "f038",
+    "item": "recreational drugs",
+    "text": "I use recreational drugs occasionally.",
+    "reason": "The patient's admission to using recreational drugs is the critical risk factor that links the acute visual hallucinations to PCP intoxication rather than a primary psychotic disorder."
+   },
+   "a12a_anchor": {
+    "target": "f008",
+    "anchor": "a seizure",
+    "item": "writing on the wall: with your eyes shut",
+    "text": "Occasionally I see it even when my eyes are shut.",
+    "reason": "The entry describing the visual phenomenon occurring with eyes shut supports a neurological origin (such as a seizure or aura) rather than a purely external or hallucinatory cause, making it the most relevant fact for considering a seizure diagnosis among the options."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002",
+      "f005"
+     ],
+     "3": [
+      "f003"
+     ],
+     "4": [
+      "f011"
+     ],
+     "5": [
+      "f038",
+      "f041"
+     ]
+    },
+    "texts": {
+     "f002": "It started yesterday.",
+     "f005": "It lasts less than a minute.",
+     "f003": "It's not clear, and I can't read it most of the time.",
+     "f011": "I feel as though I hear strange voices when I see the writing.",
+     "f038": "I use recreational drugs occasionally.",
+     "f041": "I smoke."
+    }
+   }
+  },
+  "medqa-cs-036": {
+   "a12a": {
+    "target": "f048",
+    "item": "past work",
+    "text": "I used to work in a coal mine back home.",
+    "reason": "A history of working in a coal mine is a specific occupational exposure that strongly predisposes a patient to chronic bronchitis and COPD, making it the most distinct diagnostic clue among the options."
+   },
+   "a12a_anchor": {
+    "target": "f047",
+    "anchor": "tuberculosis",
+    "item": "recent travel",
+    "text": "I immigrated from Africa a month ago.",
+    "reason": "Recent immigration from Africa is a significant risk factor for pulmonary tuberculosis, making it the most specific indicator among the choices."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [],
+     "3": [],
+     "4": [
+      "f003",
+      "f008"
+     ],
+     "5": [
+      "f047",
+      "f048",
+      "f051"
+     ]
+    },
+    "texts": {
+     "f003": "I have a cough.",
+     "f008": "I bring up sputum when I cough.",
+     "f047": "I immigrated from Africa a month ago.",
+     "f048": "I used to work in a coal mine back home.",
+     "f051": "I smoke cigarettes."
+    }
+   }
+  },
+  "medqa-cs-037": {
+   "a12a": {
+    "target": "f035",
+    "item": "father's health",
+    "text": "My father died at 55 of colon cancer.",
+    "reason": "A family history of colon cancer in a first-degree relative is a major risk factor that strongly points toward colorectal cancer over benign causes like hemorrhoids."
+   },
+   "a12a_anchor": {
+    "target": "f030",
+    "anchor": "hemorrhoids",
+    "item": "past surgery",
+    "text": "I had hemorrhoids removed 4 years ago.",
+    "reason": "The history of previous hemorrhoid surgery is the most specific fact that directly points to the condition of hemorrhoids, distinguishing it from other causes of rectal bleeding."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f007",
+      "f012",
+      "f019"
+     ],
+     "5": [
+      "f035",
+      "f034",
+      "f030"
+     ]
+    },
+    "texts": {
+     "f002": "It started one month ago.",
+     "f007": "I've had diarrhea.",
+     "f012": "A little. I get some spasms down there, followed by the urge to use the bathroom.",
+     "f019": "I've lost weight.",
+     "f035": "My father died at 55 of colon cancer.",
+     "f034": "My bronchitis 3 weeks ago was treated with amoxicillin.",
+     "f030": "I had hemorrhoids removed 4 years ago."
+    }
+   }
+  },
+  "medqa-cs-038": {
+   "a12a": {
+    "target": "f006",
+    "item": "tremor: when it stops",
+    "text": "It usually stops when I hold out the remote control to change the channel.",
+    "reason": "The fact that the tremor stops with voluntary movement (holding the remote) distinguishes it as a resting tremor, which is the hallmark clinical feature of Parkinson's disease."
+   },
+   "a12a_anchor": {
+    "target": "f005",
+    "anchor": "essential tremor",
+    "item": "tremor: what you are doing when it shakes",
+    "text": "It shakes when I'm just sitting around doing nothing.",
+    "reason": "Essential tremor is characterized by a postural or action tremor, so the fact that the tremor occurs while sitting still (postural) helps distinguish it from a resting tremor seen in Parkinson's disease."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f003",
+      "f011"
+     ],
+     "3": [],
+     "4": [
+      "f010",
+      "f012"
+     ],
+     "5": [
+      "f025",
+      "f026"
+     ]
+    },
+    "texts": {
+     "f003": "I noticed it about 6 months ago.",
+     "f011": "I've noticed myself walking more slowly recently.",
+     "f010": "My wife says I've slowed down because I can't keep up with her when we go grocery shopping, but I think that's just because I retired last year.",
+     "f012": "When I was in college, I occasionally had a hand tremor.",
+     "f025": "I think my father may have had a tremor, but I'm not sure.",
+     "f026": "I have one cup of coffee each morning."
+    }
+   }
+  },
+  "medqa-cs-039": {
+   "a12a": {
+    "target": "f036",
+    "item": "lithium",
+    "text": "I take lithium. I began treatment with it six months ago.",
+    "reason": "Lithium is a well-known cause of drug-induced hypothyroidism, and the patient's history of taking it for six months aligns with the onset of symptoms."
+   },
+   "a12a_anchor": {
+    "target": null,
+    "reason": "not an anchored case"
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f004",
+      "f006",
+      "f007"
+     ],
+     "5": [
+      "f036",
+      "f032",
+      "f021"
+     ]
+    },
+    "texts": {
+     "f002": "I began to notice it three months ago.",
+     "f004": "I frequently feel chilly.",
+     "f006": "My hair is falling out more than usual.",
+     "f007": "I feel that my skin has become dry.",
+     "f036": "I take lithium. I began treatment with it six months ago.",
+     "f032": "I have been diagnosed with bipolar disorder.",
+     "f021": "I typically had a 4-week cycle, but recently it has extended to 6 weeks or longer."
+    }
+   }
+  },
+  "medqa-cs-043": {
+   "a12a": {
+    "target": "f002",
+    "item": "sore throat: onset",
+    "text": "It started two weeks ago.",
+    "reason": "The combination of a 21-year-old male with a 2-week history of sore throat, fever, and fatigue is the classic clinical presentation for infectious mononucleosis."
+   },
+   "a12a_anchor": {
+    "target": "f034",
+    "anchor": "HIV",
+    "item": "gonorrhea",
+    "text": "I had gonorrhea 4 months ago, and I was cured after a course of antibiotics.",
+    "reason": "A history of gonorrhea indicates a prior sexually transmitted infection, which is a significant risk factor for HIV acquisition."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f002"
+     ],
+     "3": [],
+     "4": [
+      "f003",
+      "f005",
+      "f007"
+     ],
+     "5": [
+      "f034",
+      "f046",
+      "f050"
+     ]
+    },
+    "texts": {
+     "f002": "It started two weeks ago.",
+     "f003": "I've had a mild fever, but I didn't take my temperature.",
+     "f005": "I've been feeling tired.",
+     "f007": "I have some swelling.",
+     "f034": "I had gonorrhea 4 months ago, and I was cured after a course of antibiotics.",
+     "f046": "I'm sexually active with my new girlfriend.",
+     "f050": "My ex-girlfriend had similar symptoms two months ago."
+    }
+   }
+  },
+  "medqa-cs-044": {
+   "a12a": {
+    "target": "f010",
+    "item": "shaking or convulsions",
+    "text": "My wife mentioned that my arms and legs began to tremble after I collapsed.",
+    "reason": "The presence of post-collapse tremors or convulsions is the specific clinical feature that distinguishes convulsive syncope from simple fainting or other causes of loss of consciousness."
+   },
+   "a12a_anchor": {
+    "target": "f007",
+    "anchor": "a heart rhythm problem",
+    "item": "heart racing",
+    "text": "Just before I fell down, my heart started racing.",
+    "reason": "The sensation of the heart racing immediately preceding the collapse is a specific symptom that strongly suggests a cardiac arrhythmia as the cause of the fainting."
+   },
+   "a13": {
+    "blocks": {
+     "1": [
+      "f001"
+     ],
+     "2": [
+      "f004",
+      "f006"
+     ],
+     "3": [],
+     "4": [
+      "f007",
+      "f008",
+      "f010"
+     ],
+     "5": [
+      "f033",
+      "f032",
+      "f040"
+     ]
+    },
+    "texts": {
+     "f004": "I unexpectedly collapsed and lost consciousness.",
+     "f006": "My wife told me that I did not respond to her for several minutes.",
+     "f007": "Just before I fell down, my heart started racing.",
+     "f008": "I felt lightheaded right before the fall.",
+     "f010": "My wife mentioned that my arms and legs began to tremble after I collapsed.",
+     "f033": "I had a heart attack 1 year ago.",
+     "f032": "I've had high blood pressure for the past 15 years.",
+     "f040": "My father died from a heart attack at age 55."
+    }
+   }
+  }
+ }
+}

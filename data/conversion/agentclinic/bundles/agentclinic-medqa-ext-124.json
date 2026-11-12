@@ -1,0 +1,82 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-124", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 26, "sex": "male"},
+    "opening": ["f001", "f002", "f003"],
+    "facts": [
+      {"id": "f001", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain", "epigastric pain", "upper abdominal pain"], "text": "I've been having pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "abdominal pain: location", "parent": "f001", "attribute": "location", "text": "It's in the upper middle part of my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "abdominal pain: course", "parent": "f001", "attribute": "course", "text": "It's persistent; it doesn't go away.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "abdominal pain: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for the past 2 months.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "abdominal pain: worse after eating", "parent": "f001", "attribute": "aggravating", "aliases": ["relation to meals", "food"], "text": "It gets worse a few hours after I eat.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "father's health", "aliases": ["family history", "similar symptoms in the family"], "text": "My father had similar symptoms.", "polarity": "present", "category": "family_history", "time": "historical"},
+      {"id": "f007", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "nausea", "text": "I don't feel nauseous.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f011", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f012", "item": "diarrhea", "aliases": ["loose stools"], "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "constipation", "text": "I'm not constipated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "blood in stool", "aliases": ["bloody stools", "rectal bleeding", "black stools"], "text": "I haven't seen any blood in my stool.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-124",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.0°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/90 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "83/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "bowel sounds", "epigastric tenderness"], "result": "Inspection: normal. Auscultation: normal bowel sounds. Percussion: normal. Palpation: mild epigastric tenderness; no guarding or rebound."},
+      {"id": "x006", "kind": "test", "name": "metabolic panel", "aliases": ["basic metabolic panel", "BMP", "electrolytes", "chemistry panel", "sodium", "potassium", "calcium", "serum calcium", "bicarbonate"], "result": "Sodium 136 mEq/L; potassium 4.2 mEq/L; calcium 13.2 mg/dL (elevated); bicarbonate 26 mEq/L."},
+      {"id": "x007", "kind": "test", "name": "upper gastrointestinal endoscopy", "aliases": ["EGD", "upper endoscopy", "esophagogastroduodenoscopy", "gastroscopy"], "result": "Multiple duodenal ulcers."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-124",
+    "diagnosis": "MEN1",
+    "aliases": ["multiple endocrine neoplasia type 1", "multiple endocrine neoplasia type I", "MEN 1", "MEN-1", "MEN type 1", "Wermer syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-124",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-124-p001"], "f002": ["cc", "agentclinic-medqa-ext-124-p001"], "f003": ["cc", "agentclinic-medqa-ext-124-p001"],
+      "f004": ["agentclinic-medqa-ext-124-p001"], "f005": ["agentclinic-medqa-ext-124-p001", "agentclinic-medqa-ext-124-p002"],
+      "f006": ["agentclinic-medqa-ext-124-p001"],
+      "f007": ["agentclinic-medqa-ext-124-p001", "agentclinic-medqa-ext-124-p003", "agentclinic-medqa-ext-124-p006"],
+      "f008": ["agentclinic-medqa-ext-124-p004", "agentclinic-medqa-ext-124-p007"], "f009": ["agentclinic-medqa-ext-124-p005", "agentclinic-medqa-ext-124-p007"],
+      "f010": ["agentclinic-medqa-ext-124-p008"], "f011": ["agentclinic-medqa-ext-124-p008"], "f012": ["agentclinic-medqa-ext-124-p008"],
+      "f013": ["agentclinic-medqa-ext-124-p008"], "f014": ["agentclinic-medqa-ext-124-p008"]
+    },
+    "quotes": {
+      "f002": "epigastric pain", "f003": "Persistent epigastric pain", "f004": "for the past 2 months",
+      "f005": "worsening a few hours after eating", "f006": "his father had similar symptoms",
+      "f007": "He denies any significant past medical history. / No significant past medical history / Insignificant",
+      "f014": "or blood in stool"
+    },
+    "flags": {
+      "f006": ["'Similar symptoms' in the father is not specified further (no diagnosis given)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.0°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-124-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/90 mmHg", "exam_ids": ["agentclinic-medqa-ext-124-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "83/min", "exam_ids": ["agentclinic-medqa-ext-124-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-124-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Normal | Normal bowel sounds. | Normal | Mild epigastric tenderness, no guarding or rebound.", "exam_ids": ["agentclinic-medqa-ext-124-e005", "agentclinic-medqa-ext-124-e006", "agentclinic-medqa-ext-124-e007", "agentclinic-medqa-ext-124-e008"]},
+      "x006": {"source": "Test_Results.Metabolic_Panel.Serum_Sodium + Test_Results.Metabolic_Panel.Serum_Potassium + Test_Results.Metabolic_Panel.Calcium + Test_Results.Metabolic_Panel.Bicarbonate", "source_text": "136 mEq/L | 4.2 mEq/L | 13.2 mg/dL (elevated) | 26 mEq/L", "exam_ids": ["agentclinic-medqa-ext-124-i001", "agentclinic-medqa-ext-124-i002", "agentclinic-medqa-ext-124-i003", "agentclinic-medqa-ext-124-i004"]},
+      "x007": {"source": "Test_Results.Upper_Gastrointestinal_Endoscopy.Findings", "source_text": "Multiple duodenal ulcers", "exam_ids": ["agentclinic-medqa-ext-124-i005"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Secondary_Symptoms repeats history items that are not symptoms (no past medical history, non-smoker, no alcohol); they are merged into the corresponding facts.",
+      "The diagnosis rests on hypercalcemia, multiple duodenal ulcers and a father with similar symptoms; no PTH, gastrin, prolactin or pituitary/pancreatic imaging is provided."
+    ],
+    "notes": [
+      "The chief complaint 'Persistent epigastric pain' gives the opening: abdominal pain with its location and persistent course as child facts.",
+      "Gold diagnosis kept as the source label 'MEN1'; the expanded name is an alias."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with persistent epigastric pain."
+    }
+  }
+}

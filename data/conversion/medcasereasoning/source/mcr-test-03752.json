@@ -1,0 +1,80 @@
+{
+ "case_id": "mcr-test-03752",
+ "pmcid": "PMC10873692",
+ "test_row": 248,
+ "test_index": 3752,
+ "case_prompt": "A 64-year-old man with a history of seropositive rheumatoid arthritis on methotrexate, hypertension, stable lung nodules, and a prior right thalamic ischemic stroke (treated with thrombolysis) presented after multiple witnessed seizures. The events began on awakening with headache and progressed to brief (<1 min) focal motor seizures of the left arm and leg, occurring every few minutes with preserved awareness; there was no incontinence, tongue biting, or postictal confusion. He reported left-sided tingling and numbness but denied visual, speech, or cognitive changes. He had been compliant with levetiracetam since a single seizure at the prior admission and had no further events until this presentation.\n\nIn the emergency department, he was hemodynamically stable. Examination revealed repeated left-sided shaking involving the neck and extremities with preserved consciousness, a left upper-extremity pronator drift, and 3/5 strength in the left lower extremity; the rest of the neurologic and general exam was normal. Lorazepam and a loading dose of levetiracetam controlled the seizures. \n\nNoncontrast head CT showed sulcal effacement with isodense material suggestive of a leptomeningeal process. EEG demonstrated cortical hyperexcitability with focal seizure activity over the right frontocentral and parasagittal regions. MRI of the brain ruled out acute infarction but revealed focal right frontal pachymeningeal and leptomeningeal enhancement.\n\nLaboratory tests, including CBC, electrolytes, liver function, hepatitis B and C panels, vitamin D, HIV, angiotensin-converting enzyme, proteinase 3, C3, C4, extractable nuclear antigens, immunoglobulin G4, myeloperoxidase, rapid plasma reagin, and anti-dsDNA, were all negative. Rheumatoid factor was mildly elevated; anti-cyclic citrullinated peptide antibody was >250 U/mL. \n\nLumbar puncture showed normal cell counts, protein, and glucose. CSF studies—including rheumatoid factor, angiotensin-converting enzyme, Lyme serology, syphilis testing, Mycobacterium tuberculosis PCR, adenosine deaminase, cytology, and flow cytometry—were negative, and bacterial, fungal, and mycobacterial cultures showed no growth. \n\nCT of the chest, abdomen, and pelvis revealed only small stable pulmonary nodules; MRI of the spine was unremarkable.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 64-year-old man with a history of seropositive rheumatoid arthritis on methotrexate, hypertension, stable lung nodules, and a prior right thalamic ischemic stroke (treated with thrombolysis) presented after multiple witnessed seizures."
+  },
+  {
+   "id": "s002",
+   "text": "The events began on awakening with headache and progressed to brief (<1 min) focal motor seizures of the left arm and leg, occurring every few minutes with preserved awareness; there was no incontinence, tongue biting, or postictal confusion."
+  },
+  {
+   "id": "s003",
+   "text": "He reported left-sided tingling and numbness but denied visual, speech, or cognitive changes."
+  },
+  {
+   "id": "s004",
+   "text": "He had been compliant with levetiracetam since a single seizure at the prior admission and had no further events until this presentation."
+  },
+  {
+   "id": "s005",
+   "text": "In the emergency department, he was hemodynamically stable."
+  },
+  {
+   "id": "s006",
+   "text": "Examination revealed repeated left-sided shaking involving the neck and extremities with preserved consciousness, a left upper-extremity pronator drift, and 3/5 strength in the left lower extremity; the rest of the neurologic and general exam was normal. Lorazepam and a loading dose of levetiracetam controlled the seizures."
+  },
+  {
+   "id": "s007",
+   "text": "Noncontrast head CT showed sulcal effacement with isodense material suggestive of a leptomeningeal process."
+  },
+  {
+   "id": "s008",
+   "text": "EEG demonstrated cortical hyperexcitability with focal seizure activity over the right frontocentral and parasagittal regions."
+  },
+  {
+   "id": "s009",
+   "text": "MRI of the brain ruled out acute infarction but revealed focal right frontal pachymeningeal and leptomeningeal enhancement."
+  },
+  {
+   "id": "s010",
+   "text": "Laboratory tests, including CBC, electrolytes, liver function, hepatitis B and C panels, vitamin D, HIV, angiotensin-converting enzyme, proteinase 3, C3, C4, extractable nuclear antigens, immunoglobulin G4, myeloperoxidase, rapid plasma reagin, and anti-dsDNA, were all negative."
+  },
+  {
+   "id": "s011",
+   "text": "Rheumatoid factor was mildly elevated; anti-cyclic citrullinated peptide antibody was >250 U/mL."
+  },
+  {
+   "id": "s012",
+   "text": "Lumbar puncture showed normal cell counts, protein, and glucose."
+  },
+  {
+   "id": "s013",
+   "text": "CSF studies—including rheumatoid factor, angiotensin-converting enzyme, Lyme serology, syphilis testing, Mycobacterium tuberculosis PCR, adenosine deaminase, cytology, and flow cytometry—were negative, and bacterial, fungal, and mycobacterial cultures showed no growth."
+  },
+  {
+   "id": "s014",
+   "text": "CT of the chest, abdomen, and pelvis revealed only small stable pulmonary nodules; MRI of the spine was unremarkable."
+  }
+ ],
+ "final_diagnosis": "rheumatoid meningitis",
+ "diagnostic_reasoning": "1. Ischemic stroke was considered but excluded because “MRI of the brain ruled out ischemic stroke but indicated focal right frontal pachymeningeal and leptomeningeal enhancement with concerns for possible malignancy.” 2. Malignancy was considered due to the MRI findings but excluded by negative CSF cytology and flow cytometry — “...cytology, and flow cytometry, yielded negative results.” 3. Infectious meningitis was excluded because “CSF bacterial, fungal, and mycobacterial cultures also showed no growth.” 4. Tuberculous meningitis was less likely since on MRI the “basal cisterns are typically unaffected, in contrast with TB meningitis.” 5. Neurosarcoidosis was excluded because “angiotensin-converting enzyme ... were all negative.” 6. Neurosyphilis was excluded because “rapid plasma reagin ... [was] negative.” 7. Carcinomatous meningitis was excluded by the negative “cytology, and flow cytometry, yielded negative results.”",
+ "selection": {
+  "age": 64,
+  "sex": "male",
+  "specialty": "rheumatology_immunology",
+  "dx_key": "rheumatoid meningitis",
+  "setting": "emergency",
+  "time_structure": "single_episode",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Focal seizures in seropositive RA with focal pachyleptomeningeal enhancement, very high anti-CCP and an extensive negative infection and malignancy workup.",
+  "second_look_note": "Focal seizures in seropositive rheumatoid arthritis with focal pachyleptomeningeal enhancement, very high anti-CCP and an extensive negative infection and malignancy workup."
+ }
+}

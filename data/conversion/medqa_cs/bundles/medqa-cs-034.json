@@ -1,0 +1,1419 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-034",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 32,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "tiredness and weakness",
+        "aliases": [
+          "fatigue",
+          "low energy",
+          "feeling weak"
+        ],
+        "text": "I've been feeling tired and weak, with no energy.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "tiredness and weakness: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "I first noticed it five months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "tiredness and weakness: events or life changes when it started",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "Nothing in particular happened five months ago, and nothing changed in my life then.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f004",
+        "item": "tiredness and weakness: change during the day",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "I feel okay in the morning, then I gradually start feeling more and more tired and weak.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "tiredness and weakness: effect on work and daily life",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "I don't have the energy to work around the house.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "trouble concentrating",
+        "aliases": [
+          "concentration",
+          "focus"
+        ],
+        "text": "I can't concentrate on my work.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "vision changes",
+        "aliases": [
+          "double vision",
+          "blurry vision"
+        ],
+        "text": "I haven't had any changes in my vision.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "eye",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "loss of appetite",
+        "aliases": [
+          "appetite changes",
+          "hunger",
+          "poor appetite"
+        ],
+        "text": "My appetite is excellent.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "weight changes",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "thirst",
+        "aliases": [
+          "increased thirst",
+          "drinking a lot of water"
+        ],
+        "text": "I constantly feel thirsty and I drink a lot of water.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "endocrine",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "thirst: for how long",
+        "parent": "f010",
+        "attribute": "duration",
+        "text": "It's been going on for the past five months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "endocrine",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "urinating more often",
+        "aliases": [
+          "frequent urination",
+          "passing more urine"
+        ],
+        "text": "I find myself needing to use the bathroom more often throughout the day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "urinating more often: for how long",
+        "parent": "f012",
+        "attribute": "duration",
+        "text": "It's been going on for the past five months.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "waking up at night to urinate",
+        "aliases": [
+          "urinating at night",
+          "nocturia"
+        ],
+        "text": "I recently started waking up at night to urinate.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "pain when urinating",
+        "aliases": [
+          "burning when urinating"
+        ],
+        "text": "It doesn't hurt when I urinate.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "change in urine color",
+        "aliases": [
+          "dark urine",
+          "blood in urine"
+        ],
+        "text": "The color of my urine hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "fever",
+        "text": "I haven't had a fever.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "chills",
+        "text": "I haven't had chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "chest pain",
+        "text": "I don't have any chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I'm not short of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I don't have any stomach pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "diarrhea",
+        "aliases": [
+          "loose stools"
+        ],
+        "text": "I haven't had diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "constipation",
+        "text": "I'm not constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "sensitivity to cold",
+        "aliases": [
+          "cold intolerance",
+          "feeling cold"
+        ],
+        "text": "Cold weather doesn't bother me.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "endocrine",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "hair changes",
+        "aliases": [
+          "hair loss"
+        ],
+        "text": "I haven't noticed any changes in my hair.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "skin changes",
+        "text": "I haven't noticed any changes in my skin.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "sleep problems",
+        "aliases": [
+          "trouble sleeping",
+          "insomnia"
+        ],
+        "text": "My sleep hasn't been affected.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "feeling sad or down",
+        "aliases": [
+          "low mood",
+          "depression"
+        ],
+        "text": "Sometimes I feel sad.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "recurrent"
+      },
+      {
+        "id": "f029",
+        "item": "guilt or blaming yourself",
+        "aliases": [
+          "self-blame",
+          "feeling guilty"
+        ],
+        "text": "I think I'm being awkward. It's my fault; I don't always stay focused.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "suicidal thoughts",
+        "aliases": [
+          "thoughts of killing yourself"
+        ],
+        "text": "I haven't had any thoughts of suicide.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "suicide plans",
+        "text": "I don't have any plans to kill myself.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "suicide attempts",
+        "text": "I've never tried to kill myself.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "psychiatric",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "how the bruises happened",
+        "aliases": [
+          "injuries",
+          "bruises on the face and arm"
+        ],
+        "text": "I took a tumble down the stairs and got injured.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "menstrual periods",
+        "aliases": [
+          "periods",
+          "menstrual cycle"
+        ],
+        "text": "My periods are regular.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "menstrual periods: flow",
+        "parent": "f034",
+        "attribute": "quantity",
+        "text": "The flow is heavy.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "menstrual periods: how long they last",
+        "parent": "f034",
+        "attribute": "duration",
+        "text": "They last 7 days.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "menstrual periods: how often they come",
+        "parent": "f034",
+        "attribute": "frequency",
+        "text": "They come every 28 days.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "last menstrual period",
+        "aliases": [
+          "last period"
+        ],
+        "text": "My last period was two weeks ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "past medical conditions",
+        "aliases": [
+          "medical history",
+          "illnesses"
+        ],
+        "text": "I don't have any notable medical conditions.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f040",
+        "item": "past injuries",
+        "aliases": [
+          "broken bones",
+          "fractures"
+        ],
+        "text": "I fractured my arm in a fall a year ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f041",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I haven't had any surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f042",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies"
+        ],
+        "text": "I don't have any allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "current medications",
+        "aliases": [
+          "medicines",
+          "pills"
+        ],
+        "text": "I'm not taking any medications.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "father's health",
+        "aliases": [
+          "diabetes in the family"
+        ],
+        "text": "My father had diabetes.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f045",
+        "item": "father's death",
+        "aliases": [
+          "heart disease in the family"
+        ],
+        "text": "My father passed away from a heart attack.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f046",
+        "item": "mother's health",
+        "text": "My mother lives in a nursing home because of Alzheimer's.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "recreational drugs",
+        "aliases": [
+          "street drugs"
+        ],
+        "text": "I've never used recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke cigarettes.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "diet",
+        "aliases": [
+          "eating habits"
+        ],
+        "text": "I don't really follow any particular diet.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "how you see your weight",
+        "aliases": [
+          "body weight"
+        ],
+        "text": "I know that I'm overweight.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "plans to change your eating",
+        "aliases": [
+          "eating healthier"
+        ],
+        "text": "I know I should eat healthier foods. I'm trying to change because my dad had diabetes.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "sexual desire",
+        "aliases": [
+          "interest in sex",
+          "libido"
+        ],
+        "text": "I have no desire for sex.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f054",
+        "item": "sexual activity",
+        "aliases": [
+          "sexually active"
+        ],
+        "text": "I participate when my husband wants to.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f055",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a stay-at-home mom.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f056",
+        "item": "someone close hurting or threatening you",
+        "aliases": [
+          "abuse",
+          "being hit",
+          "violence at home"
+        ],
+        "text": "Well, sometimes, when my husband gets angry with me, he hurts me.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "recurrent"
+      },
+      {
+        "id": "f057",
+        "item": "someone close hurting you: what happens afterwards",
+        "parent": "f056",
+        "attribute": "other",
+        "text": "He promises not to do it again.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "recurrent"
+      },
+      {
+        "id": "f058",
+        "item": "feeling afraid at home",
+        "aliases": [
+          "feeling safe at home",
+          "fear of your husband"
+        ],
+        "text": "I occasionally feel scared, particularly when my husband has been drinking.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "recurrent"
+      },
+      {
+        "id": "f059",
+        "item": "head injuries or accidents caused by your husband",
+        "text": "I haven't had any head injuries or accidents because of my husband.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "historical"
+      },
+      {
+        "id": "f060",
+        "item": "husband hurting other family members",
+        "aliases": [
+          "children's safety",
+          "husband and the children"
+        ],
+        "text": "He struck my younger son recently for accidentally breaking a glass.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      },
+      {
+        "id": "f061",
+        "item": "husband hurting other family members: what you think of it",
+        "parent": "f060",
+        "attribute": "other",
+        "text": "He needs to be more mindful.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f062",
+        "item": "guns at home",
+        "aliases": [
+          "firearms",
+          "weapons at home"
+        ],
+        "text": "There are no guns in my home.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f063",
+        "item": "telling family about what is happening at home",
+        "text": "I haven't told anyone in my family about what's been going on at home.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f064",
+        "item": "emergency safety plan",
+        "aliases": [
+          "safety plan"
+        ],
+        "text": "I don't have an emergency safety plan.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-034",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.2°F (36.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "13/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "80/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Obese; in no acute distress; appears anxious and pale."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "eye",
+        "name": "head, eyes, ears, nose and throat examination",
+        "aliases": [
+          "HEENT",
+          "conjunctivae",
+          "eye examination"
+        ],
+        "result": "Pale conjunctivae."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "endocrine",
+        "name": "neck examination",
+        "aliases": [
+          "thyroid",
+          "lymph nodes"
+        ],
+        "result": "No lymphadenopathy; normal thyroid."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not distended, not tender; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength",
+          "power"
+        ],
+        "result": "Muscle strength 5/5 throughout."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes 2+ on both sides, symmetric."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "skin",
+        "name": "skin examination",
+        "aliases": [
+          "bruises",
+          "inspection for injuries"
+        ],
+        "result": "Pale skin; bruises on the face and both arms, painful when touched."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "extremities examination",
+        "aliases": [
+          "arms",
+          "legs"
+        ],
+        "result": "Bruises on both arms, painful when touched."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-034",
+    "diagnosis": "Domestic violence",
+    "aliases": [
+      "domestic abuse",
+      "intimate partner violence",
+      "IPV",
+      "intimate partner abuse",
+      "spousal abuse",
+      "partner abuse"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Domestic violence",
+        "evidence": [
+          "Admits to physical abuse",
+          "Exhibits self-blame",
+          "Attempts to defend husband",
+          "Episode of abuse directed at child",
+          "Exam: Bruises on extremities"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Diabetes mellitus",
+        "aliases": [
+          "diabetes",
+          "DM",
+          "type 2 diabetes mellitus",
+          "type 2 diabetes",
+          "T2DM"
+        ],
+        "evidence": [
+          "Polyuria, polydipsia",
+          "Obesity",
+          "Family history of diabetes"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Anemia",
+        "aliases": [
+          "anaemia",
+          "iron deficiency anemia",
+          "iron-deficiency anaemia"
+        ],
+        "evidence": [
+          "Fatigue/weakness",
+          "Heavy menstrual flow",
+          "Exam: Conjunctival pallor"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Major depressive disorder",
+        "note": "Criteria are not currently met, but intimate partner violence raises her risk of a mental disorder in proportion to the frequency of violent episodes."
+      },
+      {
+        "diagnosis": "Hypothyroidism",
+        "note": "Fatigue and weakness are compatible, but she denies constipation, weight or appetite change and cold intolerance, and it does not explain polyuria, polydipsia or the abuse."
+      },
+      {
+        "diagnosis": "Diabetes insipidus",
+        "note": "Causes polyuria and polydipsia, but obesity, family history of diabetes mellitus and no acquired cause (head trauma, tumor, surgery) make diabetes mellitus more likely."
+      },
+      {
+        "diagnosis": "Myasthenia gravis",
+        "note": "Fatigue worsening through the day is nonspecific; myasthenia would bring fluctuating weakness with ptosis, diplopia, chewing or swallowing difficulty, or respiratory symptoms."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-034",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-034-p001"
+      ],
+      "f003": [
+        "medqa-cs-034-p002"
+      ],
+      "f004": [
+        "medqa-cs-034-p003"
+      ],
+      "f005": [
+        "medqa-cs-034-p005"
+      ],
+      "f006": [
+        "medqa-cs-034-p020"
+      ],
+      "f007": [
+        "medqa-cs-034-p004"
+      ],
+      "f008": [
+        "medqa-cs-034-p006"
+      ],
+      "f009": [
+        "medqa-cs-034-p007"
+      ],
+      "f010": [
+        "medqa-cs-034-p026"
+      ],
+      "f011": [
+        "note"
+      ],
+      "f012": [
+        "medqa-cs-034-p024"
+      ],
+      "f013": [
+        "note"
+      ],
+      "f014": [
+        "medqa-cs-034-p023"
+      ],
+      "f015": [
+        "medqa-cs-034-p025"
+      ],
+      "f016": [
+        "medqa-cs-034-p025"
+      ],
+      "f017": [
+        "medqa-cs-034-p027"
+      ],
+      "f018": [
+        "medqa-cs-034-p027"
+      ],
+      "f019": [
+        "medqa-cs-034-p027"
+      ],
+      "f020": [
+        "medqa-cs-034-p027"
+      ],
+      "f021": [
+        "medqa-cs-034-p027"
+      ],
+      "f022": [
+        "medqa-cs-034-p027"
+      ],
+      "f023": [
+        "medqa-cs-034-p027"
+      ],
+      "f024": [
+        "medqa-cs-034-p027"
+      ],
+      "f025": [
+        "medqa-cs-034-p027"
+      ],
+      "f026": [
+        "medqa-cs-034-p027"
+      ],
+      "f027": [
+        "medqa-cs-034-p019"
+      ],
+      "f028": [
+        "medqa-cs-034-p008"
+      ],
+      "f029": [
+        "medqa-cs-034-p009",
+        "medqa-cs-034-p015"
+      ],
+      "f030": [
+        "medqa-cs-034-p014"
+      ],
+      "f031": [
+        "medqa-cs-034-p014"
+      ],
+      "f032": [
+        "medqa-cs-034-p014"
+      ],
+      "f033": [
+        "medqa-cs-034-p009"
+      ],
+      "f034": [
+        "medqa-cs-034-p021"
+      ],
+      "f035": [
+        "medqa-cs-034-p021"
+      ],
+      "f036": [
+        "medqa-cs-034-p021"
+      ],
+      "f037": [
+        "note"
+      ],
+      "f038": [
+        "medqa-cs-034-p022"
+      ],
+      "f039": [
+        "medqa-cs-034-p029"
+      ],
+      "f040": [
+        "medqa-cs-034-p030"
+      ],
+      "f041": [
+        "medqa-cs-034-p030",
+        "note"
+      ],
+      "f042": [
+        "medqa-cs-034-p039"
+      ],
+      "f043": [
+        "medqa-cs-034-p028"
+      ],
+      "f044": [
+        "medqa-cs-034-p031"
+      ],
+      "f045": [
+        "medqa-cs-034-p031"
+      ],
+      "f046": [
+        "medqa-cs-034-p031"
+      ],
+      "f047": [
+        "medqa-cs-034-p033"
+      ],
+      "f048": [
+        "medqa-cs-034-p034"
+      ],
+      "f049": [
+        "medqa-cs-034-p035"
+      ],
+      "f050": [
+        "medqa-cs-034-p037"
+      ],
+      "f051": [
+        "medqa-cs-034-p037"
+      ],
+      "f052": [
+        "medqa-cs-034-p037"
+      ],
+      "f053": [
+        "medqa-cs-034-p038"
+      ],
+      "f054": [
+        "medqa-cs-034-p038"
+      ],
+      "f055": [
+        "medqa-cs-034-p032"
+      ],
+      "f056": [
+        "medqa-cs-034-p010"
+      ],
+      "f057": [
+        "medqa-cs-034-p010"
+      ],
+      "f058": [
+        "medqa-cs-034-p011"
+      ],
+      "f059": [
+        "medqa-cs-034-p012",
+        "note"
+      ],
+      "f060": [
+        "medqa-cs-034-p013"
+      ],
+      "f061": [
+        "medqa-cs-034-p013"
+      ],
+      "f062": [
+        "medqa-cs-034-p016"
+      ],
+      "f063": [
+        "medqa-cs-034-p017"
+      ],
+      "f064": [
+        "medqa-cs-034-p018"
+      ]
+    },
+    "quotes": {
+      "f001": "Feeling tired, weak, no energy.",
+      "f002": "Five months ago.",
+      "f003": "No.",
+      "f004": "I feel okay in the morning; then gradually I start feeling more and more tired and weak.",
+      "f005": "I don't have energy to work around the house.",
+      "f006": "Yes, I can't concentrate on my work.",
+      "f007": "No.",
+      "f008": "My appetite is excellent.",
+      "f009": "No.",
+      "f010": "Yes, I constantly feel thirsty and consume a lot of water.",
+      "f011": "There is a history of polyuria, polydipsia, nocturia for the past 5 months.",
+      "f012": "Yes, I find myself needing to use the bathroom more often throughout the day.",
+      "f013": "There is a history of polyuria, polydipsia, nocturia for the past 5 months.",
+      "f014": "I recently started to wake up at night to urinate.",
+      "f015": "No.",
+      "f016": "No.",
+      "f017": "No.",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "Sometimes I feel sad.",
+      "f029": "It's my fault; I don’t always stay focused. / Yes, I think I am being awkward. It is my fault.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "No.",
+      "f033": "I took a tumble down the stairs and got injured",
+      "f034": "Consistent",
+      "f035": "profuse",
+      "f036": "duration is 7 days.",
+      "f037": "every 28 days",
+      "f038": "Two weeks ago.",
+      "f039": "No.",
+      "f040": "I fractured my arm in a fall a year ago.",
+      "f041": "PMHJPSH: None",
+      "f042": "No.",
+      "f043": "No.",
+      "f044": "My father had diabetes",
+      "f045": "passed away from a heart attack.",
+      "f046": "My mother resides in a nursing home due to Alzheimer's.",
+      "f047": "No.",
+      "f048": "Never.",
+      "f049": "No.",
+      "f050": "I don't really have one",
+      "f051": "I know that I am overweight",
+      "f052": "should eat healthier foods. I am trying to change because my dad had diabetes.",
+      "f053": "I have no desire for sex",
+      "f054": "but I participate when my husband prefers.",
+      "f055": "Stay-at-home mom.",
+      "f056": "sometimes when my husband gets angry with me. He loves to hurt me very much",
+      "f057": "he promises not to do it again.",
+      "f058": "I occasionally feel scared, particularly when my husband has been drinking.",
+      "f059": "No.",
+      "f060": "He struck my younger son recently for accidentally breaking a glass.",
+      "f061": "He needs to be more mindful.",
+      "f062": "No.",
+      "f063": "No.",
+      "f064": "No."
+    },
+    "flags": {
+      "f011": [
+        "Duration only in the patient note ('polyuria, polydipsia, nocturia for the past 5 months'); the script gives no duration for thirst."
+      ],
+      "f013": [
+        "Duration only in the patient note ('polyuria, polydipsia, nocturia for the past 5 months'); the script gives no duration for frequent urination."
+      ],
+      "f026": [
+        "The general ROS denial of skin changes (p027) stands as scripted, although the SP shows bruises on the face and arms (environment x013); she attributes the bruises to a fall (f033)."
+      ],
+      "f037": [
+        "Only in the patient note HPI; the script does not give the cycle length."
+      ],
+      "f041": [
+        "The surgery question is answered with an arm fracture, without saying whether it was operated on; 'no surgery' is taken from the note ('PMH/PSH: None')."
+      ],
+      "f056": [
+        "Source wording is garbled ('He loves to hurt me very much'); recorded as the husband hurting her when angry, which the note confirms ('has beaten her')."
+      ],
+      "f059": [
+        "The parsed question asks 'Has he ever hit you or threatened you?', and a literal 'No' would contradict p010 and the note ('has beaten her'). Resolved from the topic heading ('Head trauma/accidents as a result of abuse') and the note ('There is no history of head trauma or accidents due to her husband')."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/85 mm Hg | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-034-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.2°F (36.7°C) | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-034-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 13/minute | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-034-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 80/minute, regular | VS: WNL.",
+        "exam_ids": [
+          "medqa-cs-034-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Patient is obese, in no acute distress, and appears anxious. | Look anxious and pale.",
+        "exam_ids": [
+          "medqa-cs-034-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Pale conjunctivae.",
+        "exam_ids": [
+          "medqa-cs-034-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Neck: No lymphadenopathy, normal thyroid.",
+        "exam_ids": [
+          "medqa-cs-034-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear bilateral breath sounds.",
+        "exam_ids": [
+          "medqa-cs-034-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR); normal S1S2; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-034-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, bowel sounds present in all four quadrants, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-034-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Extremities: Muscle strength 5/5 throughout; deep tendon reflexes (DTRs) 2+ bilaterally; symmetric, bruises on both arms.",
+        "exam_ids": [
+          "medqa-cs-034-e008"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Extremities: Muscle strength 5/5 throughout; deep tendon reflexes (DTRs) 2+ bilaterally; symmetric, bruises on both arms.",
+        "exam_ids": [
+          "medqa-cs-034-e008"
+        ]
+      },
+      "x013": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Extremities: ... bruises on both arms. | Look anxious and pale. | Exhibit bruises on the face and arms that elicit pain when touched.",
+        "exam_ids": [
+          "medqa-cs-034-e008"
+        ]
+      },
+      "x014": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Extremities: ... bruises on both arms. | Exhibit bruises on the face and arms that elicit pain when touched.",
+        "exam_ids": [
+          "medqa-cs-034-e008"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x012": [
+        "e008 punctuation ('DTRs 2+ bilaterally; symmetric, bruises on both arms') leaves it unclear whether 'symmetric' refers to the reflexes or the bruises; read as the reflexes (v1)."
+      ],
+      "x013": [
+        "Facial bruises and their tenderness come from the SP notes; the note exam records bruises on both arms only."
+      ]
+    },
+    "leakage": [
+      {
+        "fact_id": "f056",
+        "reason": "Legitimate disclosure on direct questioning, but it clearly gives away the rank-1 diagnosis (domestic violence)."
+      },
+      {
+        "fact_id": "f060",
+        "reason": "Legitimate disclosure (husband hit her son), but it clearly points to the rank-1 diagnosis (domestic violence)."
+      }
+    ],
+    "source_issues": [
+      "p003: the parser merged the alternative wording of the p002 question ('Did anything in your life change 5 months ago?', introduced by 'or') and the next topic heading into p003's question; p003's topic reads 'or' instead of 'Progression of fatigue during the day'. Annotated from the raw sheet with the given ids.",
+      "p010: the answer is garbled ('He loves to hurt me very much') and ends with an examinee sentence ('I want you to know that this is a safe environment and I am here to help you.') placed inside the patient's answer (also in raw_opening). The examinee sentence is not used as a patient fact.",
+      "p012: the question text ('Has he ever hit you or threatened you?') answered 'No.' contradicts p010 and the note ('has beaten her'); the topic heading and the note show the item is head trauma/accidents caused by the husband. Resolved from the note in f059.",
+      "p030: the surgery question is answered with an arm fracture from a fall a year ago; the note's 'PMH/PSH: None' omits this fracture.",
+      "p036: exercise question has no scripted answer ('No response given.').",
+      "The note gives a 5-month duration for polyuria, polydipsia and nocturia and a 28-day cycle; the script gives neither (nocturia is 'recently'). Added as from-note facts f011, f013 and f037.",
+      "The note says the husband 'is an alcoholic' and 'has beaten her' and that the father died 'from a heart attack due to diabetes'; the patient only says he hurts her when angry, that she is scared when he has been drinking, and that her father had diabetes and died of a heart attack. Clinician wording not copied into patient facts.",
+      "Note exam (e008) records bruises on both arms only; the SP notes and the p009 question also describe bruises on the face. The SP-simulated finding (face and arms, painful when touched) is used in x013.",
+      "e008 punctuation ('DTRs 2+ bilaterally; symmetric, bruises on both arms') leaves it unclear whether 'symmetric' refers to the reflexes or the bruises; read as the reflexes.",
+      "Challenging question has a doubled opening quotation mark in the source; cleaned in extras.",
+      "Note heading 'PMHJPSH' is an OCR artifact for 'PMH/PSH'.",
+      "Gold additional consideration (myasthenia gravis) says the patient denied ptosis, diplopia, chewing/swallowing difficulty, respiratory difficulties and limb weakness; the script only asks about vision change and shortness of breath, and she reports weakness. Ptosis and chewing/swallowing are never asked."
+    ],
+    "notes": [
+      "p009 (fell down the stairs) is kept as the patient's stated explanation for the bruises (f033); the abuse disclosures in p010-p013 are separate facts. No judgement is recorded about which account is true.",
+      "Self-blame in p009 and p015 is one fact (f029) with both sources to avoid a paraphrase duplicate.",
+      "p006 'My appetite is excellent' is recorded literally as a present statement under the neutral item 'appetite'; the note interprets it as 'no change in appetite'.",
+      "p014 is split into thoughts, plans and attempts (one absent fact each); p027 into one absent fact per symptom asked (including fever, which the question asks but the topic heading omits).",
+      "p038: 'I have no desire for sex' is a present finding (lack of sexual desire, f053); v1 subtype 'sexual' maps to habit_exposure.",
+      "'Married with two children' from the raw Patient Description is kept as an acting note, since it has no Q/A or note source id.",
+      "Bruises and pallor are environment findings (note exam plus SP notes in x005, x013, x014); the patient side only has her account of the bruises (f033). The SP direction to look anxious is behavior, but the note exam also records anxiety, so it is part of the general appearance (x005).",
+      "leakage uses a list of {fact_id, reason}; the father's diabetes (f044) names the rank-2 diagnosis but is legitimate family history and is not listed.",
+      "Conversion: the chief complaint 'tired, weak, no energy' is one parent fact (f001) because every attribute question (onset, daily course, effect) covers the whole complaint; weakness is an alias.",
+      "Conversion: v1 f032 (note-only 5-month duration of polyuria, polydipsia and nocturia) becomes duration children of thirst (f011) and frequent urination (f013). Nocturia (f014) keeps only the script's 'recently started' and gets no 5-month child, because the patient's own answer dates it as recent and a 5-month child would contradict her wording; the v1 flag already noted this tension.",
+      "Conversion: p027 'changes in hair or skin' is split into hair changes (f025) and skin changes (f026); v1 had one fact.",
+      "Conversion: v1 'other' facts go to social_background by content: knowing she is overweight (f051) and the comment that her husband 'needs to be more mindful' (f061, a child of f060). v1 'concerns' f058 becomes f052 (social_background).",
+      "Conversion: the note's 'VS: WNL' (e002) agrees with the doorway values, so it is cited in each doorway vital record rather than kept as a separate 'vital signs' record.",
+      "Conversion: menstrual history is a parent fact (f034, regular) with flow, duration and cycle-length children; the last menstrual period stays a separate fact (f038).",
+      "Harmonisation pass: f008 'loss of appetite' (absent) -> 'loss of appetite' (absent).",
+      "Fixes: f059 text rewritten; f003 answer word removed; f006 answer word removed; f007 answer word removed; f009 answer word removed; f010 answer word removed; f012 answer word removed; f015 answer word removed; f016 answer word removed; f024 answer word removed; f027 answer word removed; f029 answer word removed; f030 answer word removed; f031 answer word removed; f032 answer word removed; f039 answer word removed; f042 answer word removed; f043 answer word removed; f047 answer word removed; f049 answer word removed; f062 answer word removed; f063 answer word removed; f064 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Look anxious and pale.",
+        "Exhibit bruises on the face and arms that elicit pain when touched.",
+        "Look anxious when explaining the bruises (fall down the stairs).",
+        "Patient description: married with two children."
+      ],
+      "patient_questions": [
+        "I've been consuming a significant amount of water, doctor. What could be the underlying cause?"
+      ]
+    },
+    "excluded_sources": [
+      {
+        "id": "medqa-cs-034-p036",
+        "reason": "Exercise question has no scripted answer ('No response given.'); no clinical content."
+      }
+    ],
+    "excluded_exam_lines": []
+  }
+}

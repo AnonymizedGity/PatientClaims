@@ -1,0 +1,123 @@
+{
+  "patient": {
+    "case_id": "mcr-test-00302",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 37, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "weakness in the arms and legs", "aliases": ["limb weakness", "weakness", "quadriparesis", "can't move my arms and legs"], "text": "My arms and legs have become weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "weakness in the arms and legs: course", "parent": "f001", "attribute": "course", "text": "It has been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "difficulty swallowing", "aliases": ["dysphagia", "trouble swallowing"], "text": "I have trouble swallowing.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "drooling", "aliases": ["sialorrhea", "saliva running out of my mouth"], "text": "I've been drooling.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f005", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "I've been feeling nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "vomiting", "aliases": ["throwing up"], "text": "I've been vomiting.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "how long the symptoms have lasted", "text": "The weakness, swallowing trouble, drooling, nausea and vomiting have been going on for four days.", "value": "4 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "facial weakness", "aliases": ["facial paralysis", "face drooping", "can't move my face"], "text": "I can't move the muscles of my face properly, on both sides.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I was healthy before this; I don't have any medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f010", "item": "COVID-19 vaccination", "aliases": ["COVID vaccine", "SARS-CoV-2 vaccine", "coronavirus vaccine", "recent vaccination", "vaccines"], "text": "A month ago I had my first dose of an inactivated COVID-19 vaccine.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "tiredness after the vaccine", "aliases": ["lethargy", "fatigue", "sluggishness"], "text": "In the days after the vaccine I felt tired and sluggish.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f012", "item": "muscle aches after the vaccine", "aliases": ["myalgia", "muscle pain", "body aches"], "text": "In the days after the vaccine I had muscle aches that came and went.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f013", "item": "course of the tiredness and aches after the vaccine", "text": "The tiredness and the aches got partly better.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f014", "item": "recent infection", "aliases": ["recent illness", "cold or flu"], "text": "I haven't had any infection recently.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f015", "item": "COVID-19 exposure", "aliases": ["contact with COVID-19", "sick contacts", "coronavirus exposure"], "text": "As far as I know, I haven't been exposed to anyone with COVID-19.", "polarity": "absent", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-00302",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "37.0 °C"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "88/min"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "115/80 mm Hg"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "20/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["level of consciousness", "orientation", "alertness"], "result": "Alert and oriented."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves", "facial nerve", "face", "pupils"], "result": "Bilateral facial paralysis; pupils 3 mm and reactive bilaterally."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation", "sensory level"], "result": "No sensory level."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "limb strength"], "result": "2/5 in all four limbs."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Preserved."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "plantar responses", "aliases": ["Babinski sign", "plantar reflex"], "result": "Extensor."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "white blood cell count", "WBC", "platelets"], "result": "Hemoglobin 14.1 g/dL; WBC 11,600/µL; platelets 305,000/mm3."},
+      {"id": "x012", "kind": "test", "name": "coagulation studies", "aliases": ["coagulation", "PT", "PTT", "INR", "prothrombin time"], "result": "PT 17.5 s; PTT 37.2 s; INR 1.27."},
+      {"id": "x013", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "23 mm/hr."},
+      {"id": "x014", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Negative."},
+      {"id": "x015", "kind": "test", "name": "chemistry panel", "aliases": ["metabolic panel", "chemistry", "electrolytes", "kidney function", "liver function"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "SARS-CoV-2 PCR", "aliases": ["COVID-19 test", "COVID PCR", "coronavirus test"], "result": "Negative."},
+      {"id": "x017", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative."},
+      {"id": "x018", "kind": "test", "name": "urine culture", "aliases": ["urine cultures"], "result": "Negative."},
+      {"id": "x019", "kind": "test", "name": "cerebrospinal fluid analysis", "aliases": ["CSF analysis", "lumbar puncture", "spinal tap", "CSF cell count", "CSF protein", "CSF glucose"], "result": "2 WBCs, 32 RBCs; protein 56 mg/dL; glucose 97 mg/dL (serum glucose 159 mg/dL)."},
+      {"id": "x020", "kind": "test", "name": "CSF oligoclonal bands", "aliases": ["oligoclonal bands", "OCB"], "result": "No oligoclonal bands."},
+      {"id": "x021", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Unremarkable."},
+      {"id": "x022", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "Unremarkable."},
+      {"id": "x023", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "head MRI", "diffusion-weighted imaging", "DWI"], "result": "Poorly marginated T2-FLAIR hyperintense foci in the left cerebral peduncle, bilateral pons and medulla, with slight T1 hypointensity and faint contrast enhancement. Diffusion-weighted imaging: restricted diffusion in the pons.", "time": "hospital day 2"},
+      {"id": "x024", "kind": "test", "name": "brain MR spectroscopy", "aliases": ["MR spectroscopy", "MRS", "magnetic resonance spectroscopy"], "result": "Elevated choline and myoinositol peaks."},
+      {"id": "x025", "kind": "test", "name": "cervical spine MRI", "aliases": ["MRI of the neck", "spinal cord MRI", "C-spine MRI"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-00302",
+    "diagnosis": "Acute disseminated encephalomyelitis",
+    "aliases": ["ADEM", "post-vaccination acute disseminated encephalomyelitis", "postvaccinal encephalomyelitis", "post-vaccination ADEM"],
+    "reasoning": "1. Guillain–Barré syndrome was considered because of acute quadriparesis, but excluded because “The preserved reflexes, absence of sensory deficits, and brain MRI abnormalities were against the diagnosis of GBS.” 2. Multiple sclerosis was considered given multifocal CNS lesions, but deemed unlikely because “The lack of oligoclonal bands of CSF, bilateral neurologic signs, and configuration of lesions in MRI were not in line with the diagnosis of MS.” 3. Autoimmune encephalitis was considered, but excluded because “Autoimmune encephalitis has some key symptoms such as seizures, memory deficits, and psychiatric manifestations, none of which existed in this case.” 4. Cerebrovascular stroke was considered, but ruled out because “Lack of changes in the level of consciousness, gradual progression of symptoms, and clinical and imaging localization didn't match stroke.” 5. Acute disseminated encephalomyelitis was supported by the post-vaccination prodrome, multifocal poorly marginated demyelinating lesions on MRI, elevated CSF protein without oligoclonal bands, and MR spectroscopy findings."
+  },
+  "qc": {
+    "case_id": "mcr-test-00302",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s006"], "f009": ["s001"], "f010": ["s002"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s004"], "f015": ["s004"]
+    },
+    "quotes": {
+      "f001": "progressive weakness of all four limbs", "f007": "four days of progressive weakness of all four limbs, dysphagia, drooling, nausea, and vomiting",
+      "f008": "bilateral facial paralysis", "f009": "previously healthy",
+      "f010": "One month earlier, he had received the first dose of an inactivated SARS-CoV-2 vaccine",
+      "f011": "In the days after vaccination he developed lethargy", "f012": "intermittent myalgia", "f013": "with partial improvement",
+      "f015": "no known COVID-19 exposures"
+    },
+    "flags": {
+      "f008": ["Taken from the cranial-nerve examination (bilateral facial paralysis); the patient would notice he cannot move his face. Not in the presenting history of s001."],
+      "f013": ["'with partial improvement' is read as applying to both the lethargy and the myalgia."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "temperature was 37.0 °C"},
+      "x002": {"sentences": ["s005"], "source_text": "heart rate 88 bpm"},
+      "x003": {"sentences": ["s005"], "source_text": "blood pressure 115/80 mm Hg"},
+      "x004": {"sentences": ["s005"], "source_text": "respiratory rate 20 /min"},
+      "x005": {"sentences": ["s005"], "source_text": "He was alert and oriented."},
+      "x006": {"sentences": ["s006"], "source_text": "Cranial-nerve examination showed bilateral facial paralysis; pupils were 3 mm and reactive bilaterally."},
+      "x007": {"sentences": ["s007"], "source_text": "There was no sensory level."},
+      "x008": {"sentences": ["s008"], "source_text": "Muscle strength was 2/5 in all four limbs"},
+      "x009": {"sentences": ["s008"], "source_text": "reflexes were preserved"},
+      "x010": {"sentences": ["s008"], "source_text": "plantar responses were extensor"},
+      "x011": {"sentences": ["s009"], "source_text": "hemoglobin 14.1 g/dL, WBC 11,600/µL, platelets 305,000/mm3"},
+      "x012": {"sentences": ["s009"], "source_text": "PT 17.5 s, PTT 37.2 s, INR 1.27"},
+      "x013": {"sentences": ["s009"], "source_text": "ESR 23 mm/hr"},
+      "x014": {"sentences": ["s009"], "source_text": "negative CRP"},
+      "x015": {"sentences": ["s009"], "source_text": "normal chemistry"},
+      "x016": {"sentences": ["s004"], "source_text": "a negative SARS-CoV-2 PCR"},
+      "x017": {"sentences": ["s010"], "source_text": "Blood and urine cultures were negative."},
+      "x018": {"sentences": ["s010"], "source_text": "Blood and urine cultures were negative."},
+      "x019": {"sentences": ["s011"], "source_text": "Cerebrospinal fluid analysis showed 2 WBCs, 32 RBCs, protein 56 mg/dL, glucose 97 mg/dL (serum glucose 159 mg/dL)"},
+      "x020": {"sentences": ["s011"], "source_text": "no oligoclonal bands"},
+      "x021": {"sentences": ["s012"], "source_text": "Chest radiography and ECG were unremarkable."},
+      "x022": {"sentences": ["s012"], "source_text": "Chest radiography and ECG were unremarkable."},
+      "x023": {"sentences": ["s013", "s014"], "source_text": "On hospital day 2, brain MRI revealed poorly marginated T2-FLAIR hyperintense foci in the left cerebral peduncle, bilateral pons, and medulla with slight T1 hypointensity and faint contrast enhancement. / Diffusion-weighted imaging showed restricted diffusion in the pons."},
+      "x024": {"sentences": ["s015"], "source_text": "MR spectroscopy showed elevated choline and myoinositol peaks."},
+      "x025": {"sentences": ["s016"], "source_text": "Cervical spine MRI was normal."}
+    },
+    "finding_flags": {
+      "x023": ["Diffusion-weighted imaging (s014) is taken as a sequence of the hospital-day-2 brain MRI."],
+      "x024": ["Timing of the MR spectroscopy is not stated; no time given."],
+      "x025": ["Timing of the cervical spine MRI is not stated; no time given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Serum glucose 159 mg/dL (given with the CSF glucose) sits beside 'normal chemistry'."
+    ],
+    "notes": [
+      "Index visit: the presentation after four days of progressive weakness of all four limbs with dysphagia, drooling, nausea and vomiting (s001-s012); the brain MRI on hospital day 2 and the later imaging are findings of the same workup.",
+      "The post-vaccination lethargy and myalgia (s003) are an earlier prodrome, kept as facts without a 'current' time because the source reports only partial improvement.",
+      "COVID-19 vaccination is a medical_history fact (vaccinations are medical history in the schema)."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

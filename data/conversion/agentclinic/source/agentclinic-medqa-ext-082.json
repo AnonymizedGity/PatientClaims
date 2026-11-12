@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-082",
+  "source_row": 82,
+  "demographics_text": "42-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with abnormal behavior, difficulty swallowing, and involuntary movements.",
+  "chief_complaint": "Hearing voices, irritability, and restlessness",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p001",
+      "field": "History",
+      "text": "The patient has been experiencing irritability, restlessness, and auditory hallucinations for the past year. Over the past month, the patient has also developed difficulty swallowing. She has a 2-year history of depression, and was terminated from her job 6 months ago due to performance issues linked to forgetfulness. Family history includes the patient's father committing suicide at the age of 50. The patient has smoked one pack of cigarettes daily for the past 20 years and has a history of cocaine use for 8 years but quit 1 year ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty swallowing"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Memory issues"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Involuntary movements"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Poor articulation"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p006",
+      "field": "Past_Medical_History",
+      "text": "Depression for 2 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p007",
+      "field": "Social_History",
+      "text": "Current smoker, past cocaine use (ceased 1 year ago)."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-082-p008",
+      "field": "Review_of_Systems",
+      "text": "Patient exhibits confusion, and is oriented to person and place only."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e005",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Mental_Status",
+      "text": "Confused, oriented to person and place only."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e006",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Cranial_Nerves",
+      "text": "Normal findings."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e007",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Motor_System",
+      "text": "Irregular, nonrepetitive, and arrhythmic movements of the neck and head observed."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-e008",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Reflexes",
+      "text": "Delayed return to neutral ankle position after triggering the plantar reflex."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-082-i001",
+      "path": "Test_Results.Brain_MRI.Findings",
+      "text": "Atrophy of the caudate nuclei with ex vacuo dilatation of the frontal horns of the lateral ventricles."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-082-i002",
+      "path": "Test_Results.Genetic_Testing.Findings",
+      "text": "Positive for the huntingtin (HTT) gene mutation."
+    }
+  ],
+  "correct_diagnosis": "Huntington disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

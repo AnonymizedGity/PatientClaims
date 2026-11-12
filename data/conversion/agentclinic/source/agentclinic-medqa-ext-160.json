@@ -1,0 +1,143 @@
+{
+  "case_id": "agentclinic-medqa-ext-160",
+  "source_row": 160,
+  "demographics_text": "23-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with sudden loss of consciousness during a physical activity.",
+  "chief_complaint": "Sudden loss of consciousness",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-160-p001",
+      "field": "History",
+      "text": "The patient collapsed suddenly while pitching in a baseball game. He regained consciousness after receiving cardiopulmonary resuscitation. There is no notable history of trauma associated with the event. He denies any history of seizures, diabetes, or cardiovascular diseases. No family history of sudden cardiac death or genetic diseases."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-160-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Recovery after CPR"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-160-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No history of injury"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-160-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No previous similar episodes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-160-p005",
+      "field": "Past_Medical_History",
+      "text": "Negative for any neurological or cardiovascular problems."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-160-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, occasional alcohol drinker. No drug use. Active lifestyle as a baseball player."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-160-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies chest pain, palpitations, shortness of breath, or seizure-like activity prior to the event."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "68 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e005",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Inspection",
+      "text": "No visible chest deformities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e006",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Palpation",
+      "text": "Prominent double apical impulse"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e007",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Auscultation",
+      "text": "S4 present, no murmurs, rubs, or gallops heard."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e008",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.JVP",
+      "text": "Prominent A wave on jugular venous pulse."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Mental_Status",
+      "text": "Alert and oriented to time, place, and person."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e010",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e011",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Motor_Function",
+      "text": "No deficits noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e012",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensory_Function",
+      "text": "Intact"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-e013",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "Normal"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-160-i001",
+      "path": "Test_Results.ECG.Findings",
+      "text": "Normal sinus rhythm with possible left ventricular hypertrophy"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-i002",
+      "path": "Test_Results.Echocardiogram.Findings",
+      "text": "Left ventricular hypertrophy with asymmetrical septal thickening. No valvular abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-i003",
+      "path": "Test_Results.Blood_Tests.Complete_Blood_Count",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-i004",
+      "path": "Test_Results.Blood_Tests.Electrolytes",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-160-i005",
+      "path": "Test_Results.Blood_Tests.Cardiac_Enzymes",
+      "text": "Normal"
+    }
+  ],
+  "correct_diagnosis": "Hypertrophic Cardiomyopathy",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

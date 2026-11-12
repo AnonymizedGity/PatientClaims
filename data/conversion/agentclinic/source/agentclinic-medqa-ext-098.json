@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-098",
+  "source_row": 98,
+  "demographics_text": "50-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with blisters on her forearm and ulcers on mucosal surfaces.",
+  "chief_complaint": "Multiple, flaccid blisters on the volar surface of the forearm",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p001",
+      "field": "History",
+      "text": "The patient reports the appearance of blisters on her forearm 3 days ago, accompanied by pain in her left cheek when eating and pain during sexual intercourse for the past week. She has been hiking in the woods recently but denies contact with poison ivy. She has a history of hypertension and osteoarthritis, recently started taking captopril, and discontinued meloxicam 2 weeks ago. Family history includes pernicious anemia and Graves' disease."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Ulcers on the buccal, gingival, and vulvar mucosa"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Pain in the left cheek when eating"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Pain during sexual intercourse"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p005",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, osteoarthritis."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p006",
+      "field": "Social_History",
+      "text": "Has started hiking in the woods on weekends. No relevant travel history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p007",
+      "field": "Review_of_Systems",
+      "text": "No recent illnesses, denies fever, respiratory symptoms, or gastrointestinal symptoms."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-098-p008",
+      "field": "Drug_History",
+      "text": "Recently started captopril, stopped taking meloxicam 2 weeks ago."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-098-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "Multiple, flaccid blisters on the volar surface of the forearm, with 10% total body surface area involvement."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "Skin separation (Nikolsky sign positive) when lightly stroked."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-e007",
+      "path": "Physical_Examination_Findings.Skin_Examination.Mucosal_Examination",
+      "text": "Ulcers present on the buccal, gingival, and vulvar mucosa."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-098-i001",
+      "path": "Test_Results.Skin_Biopsy.Histopathology",
+      "text": "Acantholysis and intraepidermal blister formation."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-i002",
+      "path": "Test_Results.Direct_Immunofluorescence.Findings",
+      "text": "Intercellular IgG and C3 deposition within the epidermis."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-i003",
+      "path": "Test_Results.Blood_Tests.CBC",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-098-i004",
+      "path": "Test_Results.Blood_Tests.Autoantibodies",
+      "text": "Presence of desmoglein antibodies"
+    }
+  ],
+  "correct_diagnosis": "Pemphigus vulgaris",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

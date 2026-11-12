@@ -1,0 +1,53 @@
+{
+ "case_id": "medqa-cs-014",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have a headache. I have one right now.",
+   "It started two weeks ago.",
+   "It came on gradually.",
+   "Each one lasts one or two hours.",
+   "I get occasional aches and pains. I take ibuprofen for them.",
+   "When I have the pain, it's a 9 out of 10.",
+   "It feels sharp and throbbing."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have a headache, and I have one right now. It started two weeks ago and came on gradually. When I have the pain, it's a 9 out of 10 and feels sharp and throbbing. Each one lasts one or two hours. I also get occasional aches and pains, which I take ibuprofen for.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f010",
+    "f032",
+    "f007",
+    "f012"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4427,
+   "tokens_out": 82,
+   "seconds": 10.51,
+   "redrafts": 0
+  }
+ }
+}

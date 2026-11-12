@@ -1,0 +1,989 @@
+{
+  "case_id": "medqa-cs-031",
+  "demographics": {
+    "name": "Jessica Anderson",
+    "age": 21,
+    "sex": "female",
+    "setting": "emergency department"
+  },
+  "opening_fact": {
+    "text": "I have stomach pain.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-031-f001",
+      "source_ids": [
+        "medqa-cs-031-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The stomach pain began this morning.",
+      "quote": "It began this morning."
+    },
+    {
+      "id": "medqa-cs-031-f002",
+      "source_ids": [
+        "medqa-cs-031-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain is intense and constant.",
+      "quote": "Intense, constant pain."
+    },
+    {
+      "id": "medqa-cs-031-f003",
+      "source_ids": [
+        "medqa-cs-031-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain has been getting worse since this morning.",
+      "quote": "It is getting worse."
+    },
+    {
+      "id": "medqa-cs-031-f004",
+      "source_ids": [
+        "medqa-cs-031-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Pain severity is 7/10.",
+      "quote": "7/10."
+    },
+    {
+      "id": "medqa-cs-031-f005",
+      "source_ids": [
+        "medqa-cs-031-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain is in the right lower abdomen (she points to it).",
+      "quote": "It is here"
+    },
+    {
+      "id": "medqa-cs-031-f006",
+      "source_ids": [
+        "medqa-cs-031-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "The pain does not go anywhere else.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f007",
+      "source_ids": [
+        "medqa-cs-031-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain is cramping.",
+      "quote": "Cramping."
+    },
+    {
+      "id": "medqa-cs-031-f008",
+      "source_ids": [
+        "medqa-cs-031-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Nothing makes the pain better.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f009",
+      "source_ids": [
+        "medqa-cs-031-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Movement makes the pain worse.",
+      "quote": "Movement."
+    },
+    {
+      "id": "medqa-cs-031-f010",
+      "source_ids": [
+        "medqa-cs-031-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Had pain on the way to the hospital.",
+      "quote": "Yes."
+    },
+    {
+      "id": "medqa-cs-031-f011",
+      "source_ids": [
+        "medqa-cs-031-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Was not doing anything specific that may have caused the pain.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f012",
+      "source_ids": [
+        "medqa-cs-031-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has felt slightly warm since this morning.",
+      "quote": "I've felt slightly warm since this morning"
+    },
+    {
+      "id": "medqa-cs-031-f013",
+      "source_ids": [
+        "medqa-cs-031-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No chills.",
+      "quote": "but I haven't had any chills."
+    },
+    {
+      "id": "medqa-cs-031-f014",
+      "source_ids": [
+        "medqa-cs-031-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Nausea.",
+      "quote": "I am experiencing nausea"
+    },
+    {
+      "id": "medqa-cs-031-f015",
+      "source_ids": [
+        "medqa-cs-031-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Vomited once, two hours ago.",
+      "quote": "I vomited once two hours ago."
+    },
+    {
+      "id": "medqa-cs-031-f016",
+      "source_ids": [
+        "medqa-cs-031-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The vomit was a yellowish, sour liquid.",
+      "quote": "It was a yellowish, sour liquid."
+    },
+    {
+      "id": "medqa-cs-031-f017",
+      "source_ids": [
+        "medqa-cs-031-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No blood in the vomit.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f018",
+      "source_ids": [
+        "medqa-cs-031-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Diarrhea this morning.",
+      "quote": "Diarrhea this morning."
+    },
+    {
+      "id": "medqa-cs-031-f019",
+      "source_ids": [
+        "medqa-cs-031-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The stool was brown.",
+      "quote": "Brown."
+    },
+    {
+      "id": "medqa-cs-031-f020",
+      "source_ids": [
+        "medqa-cs-031-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No blood in the stool.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f021",
+      "source_ids": [
+        "medqa-cs-031-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in urinary habits.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f022",
+      "source_ids": [
+        "medqa-cs-031-p020"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Last menstrual period was five weeks ago.",
+      "quote": "Five weeks ago."
+    },
+    {
+      "id": "medqa-cs-031-f023",
+      "source_ids": [
+        "medqa-cs-031-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has had spotting today, which she describes as the first day of her menstrual period.",
+      "quote": "Yes, today is the first day of my menstrual period."
+    },
+    {
+      "id": "medqa-cs-031-f024",
+      "source_ids": [
+        "medqa-cs-031-p022"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The spotting is brownish.",
+      "quote": "Brownish."
+    },
+    {
+      "id": "medqa-cs-031-f025",
+      "source_ids": [
+        "medqa-cs-031-p023"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No other vaginal discharge.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f026",
+      "source_ids": [
+        "medqa-cs-031-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Periods usually come every 4 weeks and last 7 days.",
+      "quote": "Every 4 weeks; lasts for 7 days."
+    },
+    {
+      "id": "medqa-cs-031-f027",
+      "source_ids": [
+        "medqa-cs-031-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "First period at age 13.",
+      "quote": "Age 13."
+    },
+    {
+      "id": "medqa-cs-031-f028",
+      "source_ids": [
+        "medqa-cs-031-p026"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has changed one pad or tampon today; she usually changes two to three a day.",
+      "quote": "One, but usually two to three a day."
+    },
+    {
+      "id": "medqa-cs-031-f029",
+      "source_ids": [
+        "medqa-cs-031-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Gave birth 3 years ago.",
+      "quote": "Yes, I gave birth 3 years ago."
+    },
+    {
+      "id": "medqa-cs-031-f030",
+      "source_ids": [
+        "medqa-cs-031-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No complications in the pregnancy or delivery; the delivery went smoothly.",
+      "quote": "No, the delivery went smoothly"
+    },
+    {
+      "id": "medqa-cs-031-f031",
+      "source_ids": [
+        "medqa-cs-031-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Her child is in good health.",
+      "quote": "and my baby is in good health."
+    },
+    {
+      "id": "medqa-cs-031-f032",
+      "source_ids": [
+        "medqa-cs-031-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No miscarriages or abortions.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f033",
+      "source_ids": [
+        "medqa-cs-031-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes ibuprofen.",
+      "quote": "Ibuprofen."
+    },
+    {
+      "id": "medqa-cs-031-f034",
+      "source_ids": [
+        "medqa-cs-031-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sexually active.",
+      "quote": "Yes."
+    },
+    {
+      "id": "medqa-cs-031-f035",
+      "source_ids": [
+        "medqa-cs-031-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Uses oral contraceptive pills for contraception.",
+      "quote": "Oral contraceptive pills."
+    },
+    {
+      "id": "medqa-cs-031-f036",
+      "source_ids": [
+        "medqa-cs-031-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Her boyfriend refuses to use condoms.",
+      "quote": "My boyfriend refuses to use condoms."
+    },
+    {
+      "id": "medqa-cs-031-f037",
+      "source_ids": [
+        "medqa-cs-031-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Her only current sexual partner is her boyfriend; they have been together for six months.",
+      "quote": "Only my boyfriend; we've been together for six months."
+    },
+    {
+      "id": "medqa-cs-031-f038",
+      "source_ids": [
+        "medqa-cs-031-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Had three sexual partners over the past year.",
+      "quote": "I had three partners over the past year."
+    },
+    {
+      "id": "medqa-cs-031-f039",
+      "source_ids": [
+        "medqa-cs-031-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Had some kind of sexually transmitted infection 6 months ago; she cannot remember its name.",
+      "quote": "Yes, I had some kind of infection 6 months ago, but I can't remember the name of it."
+    },
+    {
+      "id": "medqa-cs-031-f040",
+      "source_ids": [
+        "medqa-cs-031-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "The doctor gave her a shot and pills for 1 week for the infection, and then it was over.",
+      "quote": "The doctor gave me a shot and some pills for 1 week, and then it was over."
+    },
+    {
+      "id": "medqa-cs-031-f041",
+      "source_ids": [
+        "medqa-cs-031-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Her partner refused treatment for the infection.",
+      "quote": "He refused the treatment."
+    },
+    {
+      "id": "medqa-cs-031-f042",
+      "source_ids": [
+        "medqa-cs-031-p036"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "preventive",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never been tested for HIV.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f043",
+      "source_ids": [
+        "medqa-cs-031-p037"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No other past medical issues apart from those already mentioned.",
+      "quote": "None except for what I've mentioned."
+    },
+    {
+      "id": "medqa-cs-031-f044",
+      "source_ids": [
+        "medqa-cs-031-p038"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f045",
+      "source_ids": [
+        "medqa-cs-031-p039"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as a waitress.",
+      "quote": "Waitress."
+    },
+    {
+      "id": "medqa-cs-031-f046",
+      "source_ids": [
+        "medqa-cs-031-p040"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinks two to three beers a week.",
+      "quote": "I have two to three beers weekly."
+    },
+    {
+      "id": "medqa-cs-031-f047",
+      "source_ids": [
+        "medqa-cs-031-p041"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No recreational drug use.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-031-f048",
+      "source_ids": [
+        "medqa-cs-031-p042"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Smokes one pack of cigarettes a day, for the past 6 years.",
+      "quote": "Cigarettes, one pack a day for the past 6 years."
+    },
+    {
+      "id": "medqa-cs-031-f049",
+      "source_ids": [
+        "medqa-cs-031-p043"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No drug allergies.",
+      "quote": "No."
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Patient description: single, with one child.",
+      "When asked where the pain is, point to the right lower abdomen.",
+      "Exhibit right lower abdominal tenderness on palpation.",
+      "Show rebound tenderness (pain when the examinee removes their palpating hand).",
+      "Demonstrate guarding (contraction of the abdominal muscles when palpating the RLQ).",
+      "Experience pain in the RLQ when the examinee presses on the RLQ (Rovsing sign).",
+      "Manifest pain when the examinee extends their right hip (psoas sign)."
+    ],
+    "patient_questions": [
+      "My child is home alone. I need to go now.",
+      "I can't bear the hospital costs. Please provide a prescription for antibiotics so I can discharge myself."
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "120/80 mm Hg",
+        "source_text": "BP: 120/80 mm Hg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "100.5°F (38.1°C)",
+        "source_text": "Temp: 100.5°F (38.1°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "20/minute",
+        "source_text": "RR: 20/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "88/minute, regular",
+        "source_text": "HR: 88/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e002"
+        ],
+        "name": "Temperature",
+        "finding": "100.5°F",
+        "source_text": "VS: WNL except for temperature of 100.5°F."
+      },
+      {
+        "id": "v006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits except for temperature",
+        "source_text": "VS: WNL except for temperature of 100.5°F."
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "In pain",
+        "source_text": "The patient is in pain."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e003"
+        ],
+        "system": "Chest",
+        "name": "Chest wall palpation",
+        "finding": "No tenderness",
+        "source_text": "Chest: No tenderness, clear breath sounds bilaterally."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e003"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: No tenderness, clear breath sounds bilaterally."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e004"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Regular rate and rhythm (RRR), 51152 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e004"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "S1 and S2 within normal limits",
+        "source_text": "Heart: Regular rate and rhythm (RRR), 51152 WNL; no murmurs, rubs, or gallops.",
+        "flags": [
+          "Source reads '51152 WNL' — OCR artifact for S1/S2."
+        ]
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e004"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Regular rate and rhythm (RRR), 51152 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Inspection and palpation",
+        "finding": "Soft, nondistended",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Bowel sounds",
+        "finding": "Hypoactive bowel sounds",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Liver and spleen",
+        "finding": "No hepatosplenomegaly",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Right lower quadrant palpation",
+        "finding": "Direct and rebound tenderness in the right lower quadrant",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Guarding",
+        "finding": "Right lower quadrant guarding",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Psoas sign",
+        "finding": "Result not documented",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness.",
+        "flags": [
+          "Source reads 'Ely's psoas sign' — prefix garbled (OCR); result cannot be recovered."
+        ]
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Rovsing sign",
+        "finding": "Result not documented",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness.",
+        "flags": [
+          "Source reads 'Ely's Rovsing sign' — prefix garbled (OCR); result cannot be recovered."
+        ]
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Obturator sign",
+        "finding": "Result not documented",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness.",
+        "flags": [
+          "Source reads '6 obturator sign' — prefix garbled (OCR); result cannot be recovered."
+        ]
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ],
+        "system": "Abdomen",
+        "name": "Costovertebral angle",
+        "finding": "No costovertebral angle tenderness",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+      },
+      {
+        "id": "x016",
+        "source": "sp_notes",
+        "system": "Abdomen",
+        "name": "Right lower quadrant palpation",
+        "finding": "Right lower abdominal tenderness on palpation",
+        "source_text": "Exhibit right lower abdominal tenderness on palpation."
+      },
+      {
+        "id": "x017",
+        "source": "sp_notes",
+        "system": "Abdomen",
+        "name": "Rebound tenderness",
+        "finding": "Rebound tenderness (pain when the palpating hand is removed)",
+        "source_text": "Show rebound tenderness (pain when the examinee removes their palpating hand)."
+      },
+      {
+        "id": "x018",
+        "source": "sp_notes",
+        "system": "Abdomen",
+        "name": "Guarding",
+        "finding": "Guarding on palpation of the right lower quadrant",
+        "source_text": "Demonstrate guarding (contraction of the abdominal muscles when palpating the RLQ)."
+      },
+      {
+        "id": "x019",
+        "source": "sp_notes",
+        "system": "Abdomen",
+        "name": "Rovsing sign",
+        "finding": "Right lower quadrant pain on pressure, labeled Rovsing sign (the SP note says pressure on the RLQ)",
+        "source_text": "Experience pain in the RLQ when the examinee presses on the RLQ (Rovsing sign)."
+      },
+      {
+        "id": "x020",
+        "source": "sp_notes",
+        "system": "Abdomen",
+        "name": "Psoas sign",
+        "finding": "Pain on extension of the right hip (positive psoas sign)",
+        "source_text": "Manifest pain when the examinee extends their right hip (psoas sign)."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Appendicitis",
+        "history_findings": [
+          "Right lower abdominal pain",
+          "Pain is exacerbated by movement",
+          "Nausea and vomiting"
+        ],
+        "exam_findings": [
+          "RLQ direct and rebound tenderness",
+          "RLQ guarding",
+          "Temperature 100.5°F",
+          "Positive Rovsing sign",
+          "Positive psoas sign"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Pelvic inflammatory disease",
+        "history_findings": [
+          "STD 6 months ago with untreated partner",
+          "RLQ tenderness",
+          "Nausea and vomiting",
+          "Spotting",
+          "Unprotected sex with multiple partners",
+          "Low-grade fever"
+        ],
+        "exam_findings": [
+          "RLQ rebound tenderness",
+          "RLQ guarding",
+          "Temperature 100.5°F"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Ruptured ectopic pregnancy",
+        "history_findings": [
+          "Last menstrual period 5 weeks ago and spotting",
+          "Crampy lower abdominal pain",
+          "Pain is exacerbated by movement",
+          "Nausea and vomiting",
+          "Pain is of recent onset"
+        ],
+        "exam_findings": [
+          "RLQ rebound tenderness",
+          "RLQ guarding"
+        ]
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Ruptured ovarian cyst",
+        "rationale": "Sudden unilateral lower abdominal pain with rebound and guarding fits, but it is less common than appendicitis or PID and would not explain a late period."
+      },
+      {
+        "diagnosis": "Adnexal torsion",
+        "rationale": "An uncommon cause of this presentation, usually associated with ovarian enlargement from a benign mass."
+      },
+      {
+        "diagnosis": "Gastroenteritis",
+        "rationale": "Causes crampy pain, nausea, vomiting, low-grade fever, and diarrhea, but rebound tenderness makes it less likely."
+      },
+      {
+        "diagnosis": "Abortion",
+        "rationale": "Crampy pain and spotting with an LMP 5 weeks ago raise the possibility, and fever suggests septic abortion, though the short interval makes it less likely."
+      },
+      {
+        "diagnosis": "Endometriosis",
+        "rationale": "Unlikely without chronic pelvic pain, dysmenorrhea, dyspareunia, or infertility; acute severe pain could come from a ruptured endometrioma."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "Exam line e004 reads '51152 WNL', an OCR artifact for 'S1/S2 WNL'.",
+      "Exam line e005 has garbled sign results: 'Ely's psoas sign', 'Ely's Rovsing sign', '6 obturator sign'. The direction of each sign is not legible; they are kept neutral (x012-x014). The SP notes and gold rank 1 treat psoas and Rovsing as positive (sp_notes records x019-x020); the obturator result is unknown.",
+      "The SP note describes Rovsing sign as RLQ pain 'when the examinee presses on the RLQ'; Rovsing sign is RLQ pain on pressure over the left lower quadrant. Kept as written (x019).",
+      "p021: asked about spotting since the last period, the patient says today is the first day of her menstrual period; the note and gold call it brownish spotting. Kept in her words (f023).",
+      "The note medication list gives only ibuprofen, although she uses oral contraceptive pills (p032).",
+      "The sample closure mentions 'a positive result on your pregnancy test', but no test result exists in the case; not added to investigations.",
+      "Gold rank 2 lists 'RLQ tenderness' (an exam finding) under history findings.",
+      "The note PMH 'possibly treated with ceftriaxone and doxycycline' is a clinician interpretation of 'a shot and some pills for a week'; patient facts keep her wording.",
+      "The raw Patient Description ('single with one child') is not in the parsed source fields; added to persona.acting_notes."
+    ],
+    "annotator_notes": [
+      "The stage direction '(points to the right lower abdomen)' in p005 is moved to persona.acting_notes; f005 keeps the location.",
+      "Spotting, its color, and today's pad count are filed as symptoms/hpi (part of the presenting picture); LMP, cycle pattern, menarche, and obstetric history are history_and_exposures/ob_gyn.",
+      "Vomiting two hours ago and diarrhea this morning are part of the current illness, so they are marked current.",
+      "Five SP-simulated abdominal findings are added as sp_notes records (x016-x020) alongside the note's findings.",
+      "Reviewer edit: environment commentary moved from `finding` to `flags` for x005, x012, x013, x014."
+    ]
+  }
+}

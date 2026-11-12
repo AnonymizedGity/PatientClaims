@@ -1,0 +1,93 @@
+{
+  "case_id": "agentclinic-medqa-ext-009",
+  "source_row": 9,
+  "demographics_text": "48-year-old woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a breast mass.",
+  "chief_complaint": "Presence of a left breast mass",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-009-p001",
+      "field": "History",
+      "text": "The patient noticed a mass in her left breast 4 weeks ago, which has rapidly increased in size. She denies any recent trauma or infections. No history of similar complaints in the past."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-009-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Rapid increase in size of the mass"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-009-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No skin or nipple changes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-009-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No pain associated with the mass"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-009-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical or surgical history. No family history of breast cancer."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-009-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, moderate alcohol use. Elementary school teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-009-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, night sweats, or changes in appetite."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-009-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.0°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-009-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-009-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-009-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-009-e005",
+      "path": "Physical_Examination_Findings.Breast_Examination.Inspection",
+      "text": "No skin changes, nipple retraction, or discharge."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-009-e006",
+      "path": "Physical_Examination_Findings.Breast_Examination.Palpation",
+      "text": "A 6-cm, nontender, multinodular mass palpated in the upper outer quadrant of the left breast. No palpable axillary or cervical lymphadenopathy."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-009-i001",
+      "path": "Test_Results.Mammography.Findings",
+      "text": "Smooth polylobulated mass in the left breast."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-009-i002",
+      "path": "Test_Results.Biopsy.Microscopic_Description",
+      "text": "Image shows leaf-like structures with stromal cellular overgrowth."
+    }
+  ],
+  "correct_diagnosis": "Phyllodes tumor",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

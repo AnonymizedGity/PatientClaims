@@ -1,0 +1,92 @@
+{
+ "case_id": "mcr-test-05119",
+ "pmcid": "PMC7873790",
+ "test_row": 340,
+ "test_index": 5119,
+ "case_prompt": "A 52-year-old woman with a history of ovarian cancer completed six cycles of postoperative chemotherapy with paclitaxel and carboplatin. After her 5th and 6th cycles, she developed myelosuppression and received filgrastim (75 µg/day) for 3 and 4 days, respectively. On the night after her last filgrastim dose, she developed high fever. \n\nShe was prescribed acetaminophen and levofloxacin as an outpatient but remained febrile and was admitted on day 4. She had no cough, chest pain, abdominal pain, rash, or visual symptoms. Her temperature was 38.0 °C, blood pressure 92/50 mmHg, pulse 70 beats/min, and oxygen saturation 96% on room air. The head and neck were without bruit or tenderness, chest and cardiac auscultation were unremarkable, and the abdomen was soft without tenderness. There were no skin lesions or peripheral edema. \n\nLaboratory studies showed a white blood cell count of 8780/µL, hemoglobin 7.2 g/dL, platelet count 70,000/µL, and C-reactive protein 19.39 mg/dL. Serum ferritin was elevated (883 ng/mL), β-D glucan was normal, and blood cultures were negative. Serologic tests including STS, tuberculosis interferon-γ, and viral panels were negative. Autoimmune serologies were negative (MPO-ANCA <1.0 U/mL, PR3-ANCA <1.0 U/mL, fluorescent ANA negative, IgG4 21 mg/dL). \n\nElectrocardiography, echocardiography, and chest radiography were unremarkable. Abdominal aortic ultrasonography demonstrated circumferential wall thickening with a surrounding hypoechoic rim. Contrast-enhanced CT showed new soft-tissue stranding around the aortic arch and abdominal aorta compared with pre-chemotherapy images. Gadolinium-enhanced MRI revealed thickening and enhancement of the aortic wall and periaortic tissue. These imaging findings suggested active inflammation of the aorta.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 52-year-old woman with a history of ovarian cancer completed six cycles of postoperative chemotherapy with paclitaxel and carboplatin."
+  },
+  {
+   "id": "s002",
+   "text": "After her 5th and 6th cycles, she developed myelosuppression and received filgrastim (75 µg/day) for 3 and 4 days, respectively."
+  },
+  {
+   "id": "s003",
+   "text": "On the night after her last filgrastim dose, she developed high fever."
+  },
+  {
+   "id": "s004",
+   "text": "She was prescribed acetaminophen and levofloxacin as an outpatient but remained febrile and was admitted on day 4."
+  },
+  {
+   "id": "s005",
+   "text": "She had no cough, chest pain, abdominal pain, rash, or visual symptoms."
+  },
+  {
+   "id": "s006",
+   "text": "Her temperature was 38.0 °C, blood pressure 92/50 mmHg, pulse 70 beats/min, and oxygen saturation 96% on room air."
+  },
+  {
+   "id": "s007",
+   "text": "The head and neck were without bruit or tenderness, chest and cardiac auscultation were unremarkable, and the abdomen was soft without tenderness."
+  },
+  {
+   "id": "s008",
+   "text": "There were no skin lesions or peripheral edema."
+  },
+  {
+   "id": "s009",
+   "text": "Laboratory studies showed a white blood cell count of 8780/µL, hemoglobin 7.2 g/dL, platelet count 70,000/µL, and C-reactive protein 19.39 mg/dL."
+  },
+  {
+   "id": "s010",
+   "text": "Serum ferritin was elevated (883 ng/mL), β-D glucan was normal, and blood cultures were negative."
+  },
+  {
+   "id": "s011",
+   "text": "Serologic tests including STS, tuberculosis interferon-γ, and viral panels were negative."
+  },
+  {
+   "id": "s012",
+   "text": "Autoimmune serologies were negative (MPO-ANCA <1.0 U/mL, PR3-ANCA <1.0 U/mL, fluorescent ANA negative, IgG4 21 mg/dL)."
+  },
+  {
+   "id": "s013",
+   "text": "Electrocardiography, echocardiography, and chest radiography were unremarkable."
+  },
+  {
+   "id": "s014",
+   "text": "Abdominal aortic ultrasonography demonstrated circumferential wall thickening with a surrounding hypoechoic rim."
+  },
+  {
+   "id": "s015",
+   "text": "Contrast-enhanced CT showed new soft-tissue stranding around the aortic arch and abdominal aorta compared with pre-chemotherapy images."
+  },
+  {
+   "id": "s016",
+   "text": "Gadolinium-enhanced MRI revealed thickening and enhancement of the aortic wall and periaortic tissue."
+  },
+  {
+   "id": "s017",
+   "text": "These imaging findings suggested active inflammation of the aorta."
+  }
+ ],
+ "final_diagnosis": "GCSFAortitis",
+ "diagnostic_reasoning": "1. Infectious aortitis was considered given persistent fever and periaortic inflammation but was excluded by “Negative bacterial, fungal, and viral test results were observed, and a broad-spectrum antibiotic treatment did not completely improve her condition.” 2. Syphilitic and tuberculous aortitis were considered and excluded by serology: “STS Negative; TbIFN-γ Negative.” 3. Systemic lupus erythematosus was considered but excluded by “FANA Negative.” 4. Behçet disease and Cogan syndrome were listed among other vasculitides under “Other differential diagnoses include … Behçet disease, Cogan syndrome …” 5. Malignancy with periaortic involvement was considered among “Other differential diagnoses include … malignancy,” but imaging lacked mass lesions.",
+ "selection": {
+  "age": 52,
+  "sex": "female",
+  "specialty": "toxicology",
+  "dx_key": "granulocyte colony-stimulating factor induced aortitis",
+  "setting": "outpatient",
+  "time_structure": "single_episode",
+  "leakage": "none",
+  "narrative_conclusion": true,
+  "interview_value": "high",
+  "screen_reason": "Fever starting right after filgrastim with new aortic wall inflammation on imaging and a negative infectious and autoimmune workup gives G-CSF-associated aortitis.",
+  "second_look_note": "Fever beginning the night after filgrastim with new aortic wall inflammation on imaging and a negative infectious and autoimmune workup; the drug timeline from the history is the key clue."
+ }
+}

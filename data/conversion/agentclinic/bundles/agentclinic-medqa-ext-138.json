@@ -1,0 +1,105 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-138", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 28, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "dizziness", "aliases": ["feeling dizzy", "lightheadedness"], "text": "I've been feeling dizzy.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "palpitations", "aliases": ["racing heart", "pounding heart", "feeling my heartbeat"], "text": "I've been having palpitations.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f003", "item": "how long the symptoms have been going on", "text": "The dizziness and palpitations started 2 days ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "shortness of breath on exertion", "aliases": ["breathless with activity", "shortness of breath"], "text": "I get short of breath when I exert myself.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f006", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f007", "item": "fainting", "aliases": ["passing out", "syncope", "blacking out"], "text": "I haven't fainted.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f010", "item": "stomach or bowel symptoms", "aliases": ["gastrointestinal symptoms", "GI symptoms"], "text": "I haven't had any stomach or bowel problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f011", "item": "recent heavy drinking", "aliases": ["binge drinking", "party", "drinking a lot recently"], "text": "Just before this started, I drank a lot of alcohol at a bachelor party.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking", "usual drinking"], "text": "I'm a social drinker.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "previous surgery", "aliases": ["operations", "surgical history"], "text": "I haven't had any significant surgery.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f015", "item": "regular medications", "aliases": ["medicines", "drugs"], "text": "I don't take any regular medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a financial analyst.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-138",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Irregularly irregular, varying from 88 to 110/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "cardiovascular examination", "aliases": ["heart examination", "heart auscultation", "heart sounds", "jugular venous pressure", "JVP", "edema"], "result": "Inspection: no jugular venous distention; no edema. Palpation: no heaves or thrills. Auscultation: irregularly irregular rhythm without murmurs."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "respiratory examination", "aliases": ["lung examination", "lung auscultation", "chest examination", "breath sounds"], "result": "Inspection: symmetrical chest wall. Palpation: equal tactile fremitus bilaterally. Percussion: resonant throughout. Auscultation: clear breath sounds in all lung fields, without wheeze or crackles."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "focal deficits"], "result": "No focal deficits."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Cranial nerves II-XII intact."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "gait", "aliases": ["walking"], "result": "Normal gait."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["cerebellar examination", "finger-nose test"], "result": "Normal coordination."},
+      {"id": "x011", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG", "12-lead ECG"], "result": "Irregularly irregular rhythm, absent P waves and variable R-R intervals, consistent with atrial fibrillation."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Within normal limits."},
+      {"id": "x013", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes", "sodium", "potassium"], "result": "Within normal limits."},
+      {"id": "x014", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "thyroid"], "result": "Within normal limits."},
+      {"id": "x015", "kind": "test", "name": "blood alcohol level", "aliases": ["alcohol level", "ethanol level", "BAC"], "result": "Elevated on the night of the party; currently normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-138",
+    "diagnosis": "Paroxysmal atrial fibrillation",
+    "aliases": ["paroxysmal AF", "paroxysmal AFib", "PAF", "alcohol-induced paroxysmal atrial fibrillation"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-138",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-138-p001"], "f002": ["agentclinic-medqa-ext-138-p001", "agentclinic-medqa-ext-138-p002"],
+      "f003": ["agentclinic-medqa-ext-138-p001"], "f004": ["agentclinic-medqa-ext-138-p003"], "f005": ["agentclinic-medqa-ext-138-p004"],
+      "f006": ["agentclinic-medqa-ext-138-p007"], "f007": ["agentclinic-medqa-ext-138-p007"], "f008": ["agentclinic-medqa-ext-138-p007"],
+      "f009": ["agentclinic-medqa-ext-138-p007"], "f010": ["agentclinic-medqa-ext-138-p007"],
+      "f011": ["agentclinic-medqa-ext-138-p001", "agentclinic-medqa-ext-138-p006"], "f012": ["agentclinic-medqa-ext-138-p006"],
+      "f013": ["agentclinic-medqa-ext-138-p005"], "f014": ["agentclinic-medqa-ext-138-p005"], "f015": ["agentclinic-medqa-ext-138-p005"],
+      "f016": ["agentclinic-medqa-ext-138-p006"], "f017": ["agentclinic-medqa-ext-138-p006"]
+    },
+    "quotes": {
+      "f003": "dizziness and palpitations for the last 2 days", "f005": "Shortness of breath with exertion",
+      "f007": "syncope", "f010": "or gastrointestinal symptoms",
+      "f011": "attending a bachelor party before the onset of symptoms where he engaged in excessive alcohol consumption",
+      "f012": "Social drinker", "f013": "No significant medical or surgical history.", "f014": "No significant medical or surgical history.",
+      "f015": "does not take any regular medications", "f017": "Works as a financial analyst."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-138-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-138-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "Irregularly irregular rate varying from 88 to 110 bpm", "exam_ids": ["agentclinic-medqa-ext-138-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-138-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.Inspection + Physical_Examination_Findings.Cardiovascular_Examination.Palpation + Physical_Examination_Findings.Cardiovascular_Examination.Auscultation", "source_text": "No jugular venous distention, no edema. | No heaves or thrills. | Irregularly irregular rhythm without murmurs.", "exam_ids": ["agentclinic-medqa-ext-138-e005", "agentclinic-medqa-ext-138-e006", "agentclinic-medqa-ext-138-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Palpation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "Chest wall symmetrical. | Equal tactile fremitus bilaterally. | Resonant throughout. | Clear breath sounds in all lung fields without wheeze or crackles.", "exam_ids": ["agentclinic-medqa-ext-138-e008", "agentclinic-medqa-ext-138-e009", "agentclinic-medqa-ext-138-e010", "agentclinic-medqa-ext-138-e011"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination", "source_text": "No focal deficits; cranial nerves II-XII intact; normal gait and coordination.", "exam_ids": ["agentclinic-medqa-ext-138-e012"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination", "source_text": "No focal deficits; cranial nerves II-XII intact; normal gait and coordination.", "exam_ids": ["agentclinic-medqa-ext-138-e012"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination", "source_text": "No focal deficits; cranial nerves II-XII intact; normal gait and coordination.", "exam_ids": ["agentclinic-medqa-ext-138-e012"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination", "source_text": "No focal deficits; cranial nerves II-XII intact; normal gait and coordination.", "exam_ids": ["agentclinic-medqa-ext-138-e012"]},
+      "x011": {"source": "Test_Results.ECG.Findings", "source_text": "Irregularly irregular rhythm, absent P waves, and variable R-R intervals consistent with atrial fibrillation.", "exam_ids": ["agentclinic-medqa-ext-138-i001"]},
+      "x012": {"source": "Test_Results.Blood_Tests.CBC", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-138-i002"]},
+      "x013": {"source": "Test_Results.Blood_Tests.Electrolytes", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-138-i003"]},
+      "x014": {"source": "Test_Results.Blood_Tests.Thyroid_Function_Tests", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-138-i004"]},
+      "x015": {"source": "Test_Results.Blood_Tests.Alcohol_Level", "source_text": "Elevated from the night of the party, currently normal", "exam_ids": ["agentclinic-medqa-ext-138-i005"]}
+    },
+    "leakage": [
+      {"id": "x011", "reason": "ECG result says 'consistent with atrial fibrillation' (gold diagnosis without the 'paroxysmal' qualifier); it is the test's answer."}
+    ],
+    "source_issues": [
+      "The rhythm is still irregular at the visit after 2 days; whether the atrial fibrillation is paroxysmal (self-terminating) cannot be confirmed from the case, although under 7 days is compatible.",
+      "Alcohol level 'Elevated from the night of the party, currently normal' reports a measurement from before the visit."
+    ],
+    "notes": [
+      "Opening is the chief complaint (dizziness) only; palpitations are reported in the History and Secondary_Symptoms.",
+      "The 2-day duration applies to dizziness and palpitations and is a standalone fact.",
+      "Recent heavy drinking at the party (History, Social_History) and his usual social drinking are separate facts.",
+      "'No significant medical or surgical history' is split into two denials (medical problems, surgery).",
+      "The single neurological leaf (e012) is split into four records (general neurological exam, cranial nerves, gait, coordination) to keep neurological components separate."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with dizziness and palpitations."
+    }
+  }
+}

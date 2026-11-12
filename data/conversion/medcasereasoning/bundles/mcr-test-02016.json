@@ -1,0 +1,122 @@
+{
+  "patient": {
+    "case_id": "mcr-test-02016",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 47, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "swelling all over the body", "aliases": ["body swelling", "generalized swelling", "edema", "puffiness"], "text": "My whole body has been swelling up.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "swollen belly", "aliases": ["abdominal swelling", "ascites", "fluid in the belly", "distended abdomen"], "text": "My belly has swollen up much more than the rest of me.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "loss of appetite", "aliases": ["poor appetite", "not hungry", "anorexia"], "text": "I've lost my appetite.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "how long the swelling, poor appetite and weight loss have lasted", "text": "The swelling, the poor appetite and the weight loss have been going on for four months.", "value": "4 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "fever", "aliases": ["fevers", "high temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "night sweats", "aliases": ["sweating at night"], "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "yellow skin or eyes", "aliases": ["jaundice", "yellowing"], "text": "My skin and eyes haven't turned yellow.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f009", "item": "bleeding", "aliases": ["blood loss", "bleeding problems"], "text": "I haven't had any bleeding.", "polarity": "absent", "category": "symptom", "system": "hematologic"},
+      {"id": "f010", "item": "cough", "aliases": ["coughing"], "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f011", "item": "contact with tuberculosis", "aliases": ["TB exposure", "TB contact", "exposure to TB"], "text": "As far as I know I haven't been exposed to TB.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I was healthy before this; I don't have any medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "heart disease", "aliases": ["heart problems", "heart failure"], "text": "I've never had heart disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "kidney disease", "aliases": ["kidney problems", "renal disease"], "text": "I've never had kidney disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "liver disease", "aliases": ["liver problems", "cirrhosis", "hepatitis"], "text": "I've never had liver disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-02016",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "vital", "name": "body mass index", "aliases": ["BMI"], "result": "18 kg/m2"},
+      {"id": "x003", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "nutritional status"], "result": "Emaciated."},
+      {"id": "x004", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "ascites", "liver", "spleen", "shifting dullness"], "result": "Moderate ascites; no hepatosplenomegaly."},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "ankle edema", "aliases": ["leg edema", "pitting edema", "peripheral edema", "extremities"], "result": "Mild ankle edema."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "stigmata of chronic liver disease", "aliases": ["spider naevi", "palmar erythema", "skin examination", "signs of liver disease"], "result": "None."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "platelets", "blood count"], "result": "Normochromic normocytic anemia; thrombocytosis."},
+      {"id": "x008", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "alkaline phosphatase", "GGT", "AST", "ALT"], "result": "Liver enzymes normal except mildly elevated alkaline phosphatase and GGT."},
+      {"id": "x009", "kind": "test", "name": "INR", "aliases": ["coagulation", "prothrombin time", "PT"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "renal function", "aliases": ["kidney function", "creatinine", "metabolic panel"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "CA-125", "aliases": ["serum CA-125", "tumor marker", "cancer antigen 125"], "result": "175 U/ml (normal <46)."},
+      {"id": "x012", "kind": "test", "name": "HIV test", "aliases": ["HIV", "HIV serology"], "result": "Negative."},
+      {"id": "x013", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "heart ultrasound"], "result": "Normal cardiac structure and function; no constrictive pericarditis."},
+      {"id": "x015", "kind": "test", "name": "transvaginal ultrasound", "aliases": ["pelvic ultrasound", "ovarian ultrasound", "TVUS"], "result": "No ovarian pathology."},
+      {"id": "x016", "kind": "test", "name": "abdominal ultrasound", "aliases": ["ultrasound of the abdomen", "liver ultrasound"], "result": "Heterogeneous liver parenchyma, minimal surface nodularity and moderate ascites, without portal vein thrombosis or lymphadenopathy."},
+      {"id": "x017", "kind": "test", "name": "contrast-enhanced abdominal CT", "aliases": ["CT abdomen", "CT scan", "abdominal CT"], "result": "Heterogeneous liver parenchyma, minimal surface nodularity and moderate ascites, without portal vein thrombosis or lymphadenopathy."},
+      {"id": "x018", "kind": "test", "name": "workup for causes of chronic liver disease", "aliases": ["cirrhosis workup", "liver disease screen", "liver screen", "chronic liver disease workup"], "result": "Unrevealing."},
+      {"id": "x019", "kind": "test", "name": "upper endoscopy", "aliases": ["gastroscopy", "EGD", "OGD", "varices screening"], "result": "No varices or portal gastropathy."},
+      {"id": "x020", "kind": "test", "name": "ascitic fluid analysis", "aliases": ["diagnostic paracentesis", "paracentesis", "ascitic tap", "ascitic fluid"], "result": "Exudative ascites with elevated inflammatory markers."},
+      {"id": "x021", "kind": "test", "name": "ascitic fluid cultures", "aliases": ["ascitic fluid culture", "bacterial culture", "fungal culture"], "result": "Bacterial and fungal cultures negative."},
+      {"id": "x022", "kind": "test", "name": "ascitic fluid mycobacterial tests", "aliases": ["AFB smear", "acid-fast bacilli", "TB culture", "GeneXpert", "mycobacterial culture", "TB PCR"], "result": "AFB smear negative; TB culture negative; GeneXpert negative."},
+      {"id": "x023", "kind": "test", "name": "ascitic fluid cytology", "aliases": ["cytology", "malignant cells"], "result": "Negative for malignant cells."},
+      {"id": "x024", "kind": "test", "name": "tuberculin skin test", "aliases": ["TST", "Mantoux test", "PPD", "TB skin test"], "result": "17 mm induration."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-02016",
+    "diagnosis": "Tuberculous peritonitis",
+    "aliases": ["TB peritonitis", "peritoneal tuberculosis", "peritoneal TB", "tuberculous ascites"],
+    "reasoning": "1. Cryptogenic chronic liver disease — “the findings were in favour of possible decompensated chronic liver disease” … “the CLD workup did not reveal any potential aetiology.” 2. Constrictive pericarditis — “transthoracic echocardiography showed … no evidence of constrictive pericarditis.” 3. Congestive heart failure, nephrotic syndrome, and renal impairment — “Other causes of generalised oedema … were also excluded by history, physical examination, and basic investigations.” 4. Spontaneous bacterial peritonitis — “There was no evidence of spontaneous bacterial peritonitis.” 5. Malignancy — “ascitic fluid cytology was negative for malignant cells.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-02016",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s002"], "f012": ["s001"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s003"], "f016": ["s003"]
+    },
+    "quotes": {
+      "f001": "generalized body swelling", "f002": "disproportionate ascites", "f005": "four months of generalized body swelling, disproportionate ascites, loss of appetite, and weight loss",
+      "f011": "TB exposure", "f012": "previously healthy"
+    },
+    "flags": {
+      "f002": ["'Disproportionate ascites' is written as what the patient notices: her belly swollen out of proportion to the rest of the swelling."],
+      "f011": ["'Denied ... TB exposure' is worded as no known exposure."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "afebrile"},
+      "x002": {"sentences": ["s004"], "source_text": "BMI 18"},
+      "x003": {"sentences": ["s004"], "source_text": "On exam she was emaciated"},
+      "x004": {"sentences": ["s004"], "source_text": "with moderate ascites / no hepatosplenomegaly"},
+      "x005": {"sentences": ["s004"], "source_text": "mild ankle edema"},
+      "x006": {"sentences": ["s004"], "source_text": "no stigmata of chronic liver disease"},
+      "x007": {"sentences": ["s005"], "source_text": "normochromic normocytic anemia, thrombocytosis"},
+      "x008": {"sentences": ["s005"], "source_text": "normal liver enzymes except mildly elevated alkaline phosphatase and GGT"},
+      "x009": {"sentences": ["s005"], "source_text": "normal INR"},
+      "x010": {"sentences": ["s005"], "source_text": "normal renal function"},
+      "x011": {"sentences": ["s005"], "source_text": "a serum CA-125 of 175 U/ml (normal <46)"},
+      "x012": {"sentences": ["s003"], "source_text": "an HIV test was negative"},
+      "x013": {"sentences": ["s006"], "source_text": "Chest radiograph was normal"},
+      "x014": {"sentences": ["s006"], "source_text": "echocardiography showed normal cardiac structure and function without constrictive pericarditis"},
+      "x015": {"sentences": ["s007"], "source_text": "Transvaginal ultrasound revealed no ovarian pathology."},
+      "x016": {"sentences": ["s008"], "source_text": "Abdominal ultrasound and contrast-enhanced CT suggested heterogeneous liver parenchyma, minimal surface nodularity, and moderate ascites without portal vein thrombosis or lymphadenopathy"},
+      "x017": {"sentences": ["s008"], "source_text": "Abdominal ultrasound and contrast-enhanced CT suggested heterogeneous liver parenchyma, minimal surface nodularity, and moderate ascites without portal vein thrombosis or lymphadenopathy"},
+      "x018": {"sentences": ["s009"], "source_text": "Workup for cirrhosis was unrevealing"},
+      "x019": {"sentences": ["s009"], "source_text": "upper endoscopy showed no varices or portal gastropathy"},
+      "x020": {"sentences": ["s011"], "source_text": "Diagnostic paracentesis revealed exudative ascites with elevated inflammatory markers"},
+      "x021": {"sentences": ["s011"], "source_text": "cultures (bacterial, fungal) / on fluid were negative"},
+      "x022": {"sentences": ["s011"], "source_text": "acid-fast bacilli (AFB) smear, TB culture, and GeneXpert on fluid were negative"},
+      "x023": {"sentences": ["s011"], "source_text": "cytology was negative for malignant cells"},
+      "x024": {"sentences": ["s012"], "source_text": "The tuberculin skin test measured 17 mm induration."}
+    },
+    "finding_flags": {
+      "x016": ["The source reports ultrasound and CT together; both return the shared result. Its closing clause ('raising concern for decompensated chronic liver disease') is the clinicians' interpretation and is dropped."],
+      "x018": ["The individual tests of the cirrhosis workup are not given; any request for them returns 'Unrevealing'."],
+      "x020": ["'Elevated inflammatory markers' in the ascitic fluid are not specified (e.g. no protein, albumin gradient, cell count or adenosine deaminase values)."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The ascitic fluid analysis gives no cell count, protein, serum-ascites albumin gradient or adenosine deaminase; only 'exudative ... with elevated inflammatory markers'.",
+      "No peritoneal biopsy or laparoscopy result is reported; the diagnosis rests on exudative ascites, negative alternatives and a 17 mm tuberculin reaction."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with four months of generalized swelling, disproportionate ascites, poor appetite and weight loss (s001-s012); the later staged tests are findings of the same workup.",
+      "s010 (diuretics started) is treatment and is excluded.",
+      "'Previously healthy' (s001) gives the blanket 'chronic medical problems' denial; s003 adds specific denials of heart, kidney and liver disease and alcohol."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s010", "reason": "Treatment during the workup (diuretics started)."}
+    ]
+  }
+}

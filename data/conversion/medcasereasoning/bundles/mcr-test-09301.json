@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "mcr-test-09301",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 69, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "blood in the urine", "aliases": ["hematuria", "bloody urine", "red urine"], "text": "I can see blood in my urine.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f002", "item": "blood in the urine: treatment response", "parent": "f001", "attribute": "treatment_response", "text": "It has carried on even after the aspirin/dipyridamole was stopped and I took the amoxicillin.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f003", "item": "passing little urine", "aliases": ["oliguria", "decreased urine output", "peeing less"], "text": "I've been passing very little urine.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f004", "item": "fever", "aliases": ["high temperature", "feeling feverish"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "fever: severity", "parent": "f004", "attribute": "severity", "text": "It reached 38.5 °C.", "value": "38.5 °C", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "tiredness", "aliases": ["fatigue", "low energy", "exhaustion"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "loss of appetite", "aliases": ["poor appetite", "not hungry", "decreased appetite"], "text": "My appetite has gone down.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "how long all these symptoms have lasted", "text": "All of this started 4 days ago.", "value": "4 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f009", "item": "kidney cancer", "aliases": ["renal cell carcinoma", "clear-cell renal carcinoma", "cancer", "metastases", "tumour"], "text": "I have stage IV clear-cell kidney cancer that has spread to my spine and brain.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "sunitinib", "aliases": ["Sutent", "cancer medicine", "cancer pills", "new medication"], "text": "Two weeks ago I started sunitinib, 50 mg every night.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "aspirin/dipyridamole", "aliases": ["aspirin", "dipyridamole", "Aggrenox", "blood thinner", "antiplatelet"], "text": "I had been taking aspirin/dipyridamole for five years to prevent strokes; it has been stopped since the bleeding.", "polarity": "present", "category": "medication", "time": "resolved"},
+      {"id": "f012", "item": "amoxicillin", "aliases": ["antibiotics", "Amoxil"], "text": "I was given a course of amoxicillin because they thought I had a urinary tract infection.", "polarity": "present", "category": "medication", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-09301",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "160/72 mmHg"},
+      {"id": "x002", "kind": "exam", "system": "gastrointestinal", "name": "digital rectal examination", "aliases": ["DRE", "rectal exam", "stool occult blood"], "result": "Negative for occult blood."},
+      {"id": "x003", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "platelets", "platelet count"], "result": "Hemoglobin 11.9 g/dL; platelets 68 000/mm3."},
+      {"id": "x004", "kind": "test", "name": "basic metabolic panel", "aliases": ["electrolytes", "sodium", "BUN", "blood urea nitrogen", "creatinine", "kidney function", "renal function", "metabolic panel"], "result": "Sodium 120 mEq/L; blood urea nitrogen 41 mg/dL; creatinine 2.7 mg/dL (baseline 1.0 mg/dL)."},
+      {"id": "x005", "kind": "test", "name": "coagulation studies", "aliases": ["coagulation", "PT", "INR", "aPTT", "clotting tests"], "result": "Normal."},
+      {"id": "x006", "kind": "test", "name": "urine dipstick", "aliases": ["urinalysis", "urine test", "urine blood", "urine protein"], "result": "Positive for blood and protein."},
+      {"id": "x007", "kind": "test", "name": "urine sodium", "aliases": ["urinary sodium", "spot urine sodium", "urine electrolytes"], "result": "< 10 mEq/L"},
+      {"id": "x008", "kind": "test", "name": "24-hour urine protein", "aliases": ["24-hour urine collection", "urine protein quantification"], "result": "484 mg"},
+      {"id": "x009", "kind": "test", "name": "haptoglobin", "aliases": ["serum haptoglobin", "hemolysis screen"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood film", "peripheral smear", "schistocytes"], "result": "No schistocytes."},
+      {"id": "x011", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "55 mg/L (elevated)"},
+      {"id": "x012", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "80 mm/hr (elevated)"},
+      {"id": "x013", "kind": "test", "name": "autoimmune and vasculitis serology", "aliases": ["ANCA", "p-ANCA", "c-ANCA", "MPO", "PR3", "ANA", "antinuclear antibody", "anti-dsDNA", "rheumatoid factor", "autoimmune serology", "glomerulonephritis serologies"], "result": "p-ANCA, c-ANCA (MPO, PR3), ANA, anti-dsDNA and rheumatoid factor: all negative."},
+      {"id": "x014", "kind": "test", "name": "complement levels", "aliases": ["complement", "C3", "C4"], "result": "Negative."},
+      {"id": "x015", "kind": "test", "name": "viral hepatitis serology", "aliases": ["hepatitis B serology", "hepatitis C serology", "hepatitis serology"], "result": "Hepatitis B negative; hepatitis C negative."},
+      {"id": "x016", "kind": "test", "name": "cryoglobulins", "aliases": ["cryoglobulin screen"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-09301",
+    "diagnosis": "Acute interstitial nephritis",
+    "aliases": ["AIN", "acute tubulointerstitial nephritis", "drug-induced acute interstitial nephritis", "allergic interstitial nephritis"],
+    "reasoning": "1. Thrombotic microangiopathy (e.g., HUS) was unlikely—“the absence of schistocytes on the peripheral smear along with the normal haptoglobin pointed away from this diagnosis.” 2. Primary nephritic syndrome was unlikely—“multiple serologies of systemic diseases associated with nephritic pattern pathology were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-09301",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s004"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s001"], "f010": ["s002"], "f011": ["s003", "s004"], "f012": ["s004"]
+    },
+    "quotes": {
+      "f001": "gross hematuria", "f002": "Hematuria persisted despite stopping aspirin/dipyridamole and a course of amoxicillin",
+      "f005": "fever (38.5 °C)", "f007": "decreased appetite", "f008": "a 4-day history",
+      "f009": "stage IV clear-cell renal carcinoma metastatic to the spine and brain", "f010": "Two weeks earlier, he had started sunitinib 50 mg nightly.",
+      "f011": "on acetylsalicylic acid/dipyridamole for five years for stroke prevention", "f012": "a course of amoxicillin for presumed urinary tract infection"
+    },
+    "flags": {
+      "f002": ["s004 is read as happening before the index visit (it precedes 'On arrival' in s005); the source does not date the stop of aspirin/dipyridamole or the amoxicillin course."],
+      "f011": ["The source says 'for stroke prevention' but not whether he had a stroke; no stroke fact is made."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "blood pressure was 160/72 mmHg"},
+      "x002": {"sentences": ["s005"], "source_text": "digital rectal examination was negative for occult blood"},
+      "x003": {"sentences": ["s006"], "source_text": "hemoglobin 11.9 g/dL, platelets 68 000/mm3"},
+      "x004": {"sentences": ["s006"], "source_text": "sodium 120 mEq/L, blood urea nitrogen 41 mg/dL, and creatinine 2.7 mg/dL (baseline 1.0 mg/dL)"},
+      "x005": {"sentences": ["s007"], "source_text": "Coagulation studies were normal."},
+      "x006": {"sentences": ["s007"], "source_text": "A urine dipstick was positive for blood and protein."},
+      "x007": {"sentences": ["s008"], "source_text": "Urine sodium was < 10 mEq/L"},
+      "x008": {"sentences": ["s008"], "source_text": "24-hour urinary protein was 484 mg"},
+      "x009": {"sentences": ["s009"], "source_text": "Haptoglobin was normal"},
+      "x010": {"sentences": ["s009"], "source_text": "peripheral smear showed no schistocytes"},
+      "x011": {"sentences": ["s010"], "source_text": "Inflammatory markers were elevated (CRP 55 mg/L"},
+      "x012": {"sentences": ["s010"], "source_text": "Inflammatory markers were elevated / ESR 80 mm/hr"},
+      "x013": {"sentences": ["s011"], "source_text": "Serologies for p-ANCA, c-ANCA (MPO, PR3) / ANA, anti-dsDNA, rheumatoid factor / were all negative"},
+      "x014": {"sentences": ["s011"], "source_text": "complement levels / were all negative"},
+      "x015": {"sentences": ["s011"], "source_text": "hepatitis B and C / were all negative"},
+      "x016": {"sentences": ["s011"], "source_text": "cryoglobulins were all negative"}
+    },
+    "finding_flags": {
+      "x014": ["The source lists complement levels among serologies that 'were all negative'; probably means normal."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s004: the timing of stopping aspirin/dipyridamole and of the amoxicillin course relative to the 4-day history and the arrival is not stated.",
+      "s011: complement levels are reported as 'negative'.",
+      "The fever of 38.5 °C is given in the presenting history only; no temperature is recorded on arrival."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation ('on arrival') with 4 days of visible hematuria, oliguria, fever, fatigue and decreased appetite (s001-s005); all laboratory results (s006-s011) are findings from the same workup.",
+      "s004: the amoxicillin for a presumed urinary tract infection and the stop of aspirin/dipyridamole are treated as care before the index visit, so they are patient facts (f002, f011, f012).",
+      "The 38.5 °C fever is a patient fact (f005), not a vital sign, because the source gives it as part of the history; a temperature request is unavailable."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "mcr-test-08789",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 29, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain", "stomach ache"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "abdominal pain: location", "parent": "f001", "attribute": "location", "text": "It's in the upper middle part of my belly, below the breastbone.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "dark urine", "aliases": ["tea-colored urine", "brown urine", "dark pee"], "text": "My urine has been dark, the colour of tea.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f004", "item": "pale stools", "aliases": ["light-colored stools", "clay-colored stools", "pale poo"], "text": "My stools have been pale.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "itching", "aliases": ["itchy skin", "pruritus"], "text": "I've been itchy all over.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "how long the dark urine, pale stools and itching have lasted", "text": "They've been going on for a week.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "rash", "aliases": ["skin rash", "spots", "bumps on the skin"], "text": "I have a new rash.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "rash: onset", "parent": "f007", "attribute": "onset", "text": "It came on after the dark urine, pale stools and itching had started.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f009", "item": "rash: location", "parent": "f007", "attribute": "location", "text": "It's all over: on my palms, the soles of my feet, my body, my face and my groin.", "value": ["palms", "soles", "trunk", "face", "groin"], "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f010", "item": "rash: appearance", "parent": "f007", "attribute": "appearance", "text": "It's made of small raised bumps.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f011", "item": "yellow eyes", "aliases": ["yellowing of the eyes", "jaundice", "scleral icterus"], "text": "The whites of my eyes have turned yellow.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["medical history", "past illnesses"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "medications", "aliases": ["medicines", "prescription drugs", "pills"], "text": "I'm not taking any medications.", "polarity": "absent", "category": "medication"},
+      {"id": "f014", "item": "herbal supplements", "aliases": ["supplements", "herbal remedies", "over-the-counter supplements"], "text": "I haven't taken any herbal supplements, not even over-the-counter ones.", "polarity": "absent", "category": "medication"},
+      {"id": "f015", "item": "painkillers", "aliases": ["analgesics", "acetaminophen", "Tylenol", "ibuprofen", "pain medicine"], "text": "I haven't taken any painkillers.", "polarity": "absent", "category": "medication"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking", "alcohol use"], "text": "I drink occasionally: 2–3 standard drinks on several days a month.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "sex with men", "aliases": ["sexual partners", "sexual orientation", "MSM", "sexual activity"], "text": "I'm a man who has sex with men.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "unprotected sex with multiple partners", "aliases": ["unprotected sex", "condom use", "multiple sexual partners", "safe sex"], "text": "Several months before I got sick, I had unprotected sex with multiple partners.", "polarity": "present", "category": "habit_exposure", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-08789",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash", "palms and soles"], "result": "Diffuse papular rash involving the palms, soles, trunk, face and groin."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["eyes", "sclera", "jaundice"], "result": "Scleral icterus."},
+      {"id": "x003", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver", "palpation of the abdomen"], "result": "Soft; no hepatomegaly; no tenderness."},
+      {"id": "x004", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "alkaline phosphatase", "ALP", "AST", "ALT", "bilirubin", "conjugated bilirubin", "albumin", "liver enzymes"], "result": "Alkaline phosphatase 279 U/L; AST 70 U/L; ALT 167 U/L; total bilirubin 5.6 mg/dL (conjugated bilirubin 3.7 mg/dL); albumin 2.6 g/dL."},
+      {"id": "x005", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "urine dipstick", "urine bilirubin", "urine protein"], "result": "Bilirubin 3+; protein 4+."},
+      {"id": "x006", "kind": "test", "name": "serum creatinine", "aliases": ["creatinine", "kidney function", "renal function"], "result": "1.0 mg/dL"},
+      {"id": "x007", "kind": "test", "name": "urine protein-to-creatinine ratio", "aliases": ["UPCR", "spot urine protein", "random urine protein"], "result": "6,667 mg/g"},
+      {"id": "x008", "kind": "test", "name": "24-hour urine protein", "aliases": ["24-hour urine collection", "urine protein quantification"], "result": "13.3 g of protein in 24 hours"},
+      {"id": "x009", "kind": "test", "name": "autoimmune liver serology", "aliases": ["antimitochondrial antibody", "AMA", "anti-smooth muscle antibody", "ASMA", "autoantibodies"], "result": "Antimitochondrial antibody positive (57 U); anti-smooth muscle antibody positive (31 U).", "time": "5 days before presentation"},
+      {"id": "x010", "kind": "test", "name": "viral hepatitis serology", "aliases": ["hepatitis serology", "hepatitis A", "hepatitis B", "hepatitis C", "hepatitis panel"], "result": "Hepatitis A, B and C negative."},
+      {"id": "x011", "kind": "test", "name": "magnetic resonance cholangiopancreatography", "aliases": ["MRCP", "MRI abdomen", "liver MRI", "biliary imaging"], "result": "Moderate intrahepatic biliary dilation; heterogeneous perfusion of the liver."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-08789",
+    "diagnosis": "Syphilis",
+    "aliases": ["secondary syphilis", "early syphilis", "syphilitic hepatitis", "Treponema pallidum infection", "lues"],
+    "reasoning": "1. Medication-induced cholestasis was considered but excluded based on history — “He denied taking any medications including over-the-counter herbal supplements or analgesics.” 2. Acute viral hepatitis was considered but excluded after testing — “Hepatitis screen was negative for acute hepatitis A, B, or C infection.” 3. Primary biliary cholangitis was considered given cholestatic injury and positive AMA but excluded because “In this case, the patient presented with features atypical of PBC, such as a diffuse rash along the palms and soles, biliary dilatation, evidence of glomerular injury, and a sudden onset of symptoms.” 4. Secondary syphilis was suspected based on rash and sexual risk factors — “Considering the patient's rash, the history of unprotected sex, and high-risk group (MSM), syphilis screening was performed.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-08789",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002", "s006"], "f008": ["s002"], "f009": ["s006"], "f010": ["s006"], "f011": ["s006"], "f012": ["s001"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s003"], "f016": ["s004"], "f017": ["s005"], "f018": ["s005"]
+    },
+    "quotes": {
+      "f002": "epigastric abdominal pain", "f003": "tea-colored urine", "f005": "diffuse pruritus", "f006": "a 1-week history",
+      "f008": "preceded the development of a new rash", "f009": "involving the palms, soles, trunk, face, and groin", "f010": "papular rash",
+      "f012": "no significant medical history", "f014": "including over-the-counter herbal supplements", "f016": "2–3 standard drinks several days per month",
+      "f017": "identified as a man who has sex with men", "f018": "unprotected sexual encounters with multiple partners several months before symptom onset"
+    },
+    "flags": {
+      "f009": ["Location and appearance (f009, f010) taken from the examination (s006); a patient would see a rash on the palms, soles, body, face and groin."],
+      "f011": ["Patient-noticeable sign taken from the examination (scleral icterus)."],
+      "f006": ["'1-week history of tea-colored urine, pale stools, and diffuse pruritus' gives the duration for those three; the duration of the epigastric pain is not stated."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "he had a diffuse papular rash involving the palms, soles, trunk, face, and groin"},
+      "x002": {"sentences": ["s006"], "source_text": "as well as scleral icterus"},
+      "x003": {"sentences": ["s006"], "source_text": "the abdomen was soft, without hepatomegaly or tenderness"},
+      "x004": {"sentences": ["s007"], "source_text": "an alkaline phosphatase level of 279 U/L, aspartate aminotransferase 70 U/L, alanine transaminase 167 U/L, total bilirubin 5.6 mg/dL (conjugated bilirubin 3.7 mg/dL), and serum albumin 2.6 g/dL"},
+      "x005": {"sentences": ["s008"], "source_text": "Urinalysis revealed 3+ bilirubin and 4+ protein"},
+      "x006": {"sentences": ["s008"], "source_text": "serum creatinine was 1.0 mg/dL"},
+      "x007": {"sentences": ["s009"], "source_text": "The random urine protein-to-creatinine ratio was 6,667 mg/g"},
+      "x008": {"sentences": ["s009"], "source_text": "a 24-hour urine collection showed 13.3 g of protein"},
+      "x009": {"sentences": ["s010"], "source_text": "Five days before presentation, antimitochondrial antibody and antismooth muscle antibody had returned positive (AMA 57 U; ASMA 31 U)."},
+      "x010": {"sentences": ["s011"], "source_text": "Hepatitis A, B, and C serologies were negative."},
+      "x011": {"sentences": ["s012"], "source_text": "Magnetic resonance cholangiopancreatography demonstrated moderate intrahepatic biliary dilation and heterogeneous perfusion of the liver."}
+    },
+    "finding_flags": {
+      "x009": ["Drawn 5 days before presentation; the source does not say whether the patient was told, so there is no patient fact."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s010: autoantibodies resulted 5 days before presentation imply an earlier evaluation that the prompt does not describe.",
+      "No syphilis serology result is given in the prompt; the diagnosis rests on testing outside the case text."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with epigastric pain after a week of dark urine, pale stools and itching followed by a new rash (s001-s012).",
+      "s002: the 1-week duration applies to the dark urine, pale stools and itching together, so it is a standalone fact (f006); the rash came after them (f008).",
+      "s003: the denial of medications, herbal supplements and analgesics is split into three absent facts because each is named.",
+      "A doctor requesting syphilis serology (RPR, VDRL, treponemal tests) gets no result: none is reported."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s013", "reason": "Hepatology consultation and its recommendations: clinician plan, not a finding."}
+    ]
+  }
+}

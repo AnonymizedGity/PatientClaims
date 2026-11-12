@@ -1,0 +1,85 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-047", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 23, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "rash", "aliases": ["skin rash", "rash on the arms"], "text": "I have a rash on both of my arms.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "rash: itching", "parent": "f001", "attribute": "character", "aliases": ["itchy", "itchy rash", "pruritus"], "text": "It itches.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "rash: duration", "parent": "f001", "attribute": "duration", "text": "It's been there for 5 months.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "rash: course", "parent": "f001", "attribute": "course", "text": "It gets worse now and then, but it has never completely gone away.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "recent illnesses", "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "joint pain", "text": "I don't have any joint pains.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "changes in bowel habits", "text": "I haven't had any changes in my bowel habits.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "contact with new substances", "aliases": ["new soaps or detergents", "new exposures"], "text": "I haven't come into contact with any new substances that I'm aware of.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "serious illnesses", "aliases": ["past medical history", "chronic medical problems"], "text": "I've never had a serious illness.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "drug allergies", "aliases": ["allergies"], "text": "I don't have any known drug allergies.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "current medications", "aliases": ["medicines", "new medications"], "text": "I don't take any medications, and I haven't started any new ones.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "studies", "student"], "text": "I'm a college student studying graphic design.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "recreational drugs", "aliases": ["drug use"], "text": "I don't use recreational drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-047",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.0°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "76/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "rash examination", "skin palpation"], "result": "Inspection: bilateral erythematous, scaly and crusted lesions localized to the upper extremities; palpation: no warmth or induration, lesions slightly raised and rough to the touch."},
+      {"id": "x006", "kind": "test", "name": "skin biopsy of arm lesion", "aliases": ["skin biopsy", "punch biopsy", "biopsy of the rash"], "result": "Intraepidermal accumulation of edematous fluid and widening of intercellular spaces between keratinocytes."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-047",
+    "diagnosis": "Eczematous dermatitis",
+    "aliases": ["eczema", "atopic dermatitis", "atopic eczema", "contact dermatitis", "allergic contact dermatitis", "nummular eczema"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-047",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-047-p001"], "f002": ["cc", "agentclinic-medqa-ext-047-p001"],
+      "f003": ["agentclinic-medqa-ext-047-p001"], "f004": ["agentclinic-medqa-ext-047-p001"],
+      "f005": ["agentclinic-medqa-ext-047-p001", "agentclinic-medqa-ext-047-p004"],
+      "f006": ["agentclinic-medqa-ext-047-p002", "agentclinic-medqa-ext-047-p007"],
+      "f007": ["agentclinic-medqa-ext-047-p003", "agentclinic-medqa-ext-047-p007"],
+      "f008": ["agentclinic-medqa-ext-047-p007"], "f009": ["agentclinic-medqa-ext-047-p007"],
+      "f010": ["agentclinic-medqa-ext-047-p001"], "f011": ["agentclinic-medqa-ext-047-p005"], "f012": ["agentclinic-medqa-ext-047-p005"],
+      "f013": ["agentclinic-medqa-ext-047-p001", "agentclinic-medqa-ext-047-p005"],
+      "f014": ["agentclinic-medqa-ext-047-p006"], "f015": ["agentclinic-medqa-ext-047-p006"], "f016": ["agentclinic-medqa-ext-047-p006"],
+      "f017": ["agentclinic-medqa-ext-047-p006"]
+    },
+    "quotes": {
+      "f001": "on both upper extremities", "f002": "pruritic rash", "f003": "present for 5 months",
+      "f004": "occasionally worsens but has not completely resolved at any point",
+      "f010": "come into contact with any new substances that she is aware of",
+      "f011": "No history of serious illness.", "f012": "No known drug allergies.",
+      "f013": "has not started any new medications / Takes no medications.", "f014": "College student studying graphic design",
+      "f016": "drinks alcohol socially"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.0°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-047-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-047-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "76 bpm", "exam_ids": ["agentclinic-medqa-ext-047-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-047-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Bilateral erythematous, scaly, and crusted lesions localized to the upper extremities. | No warmth or induration. The lesions are slightly raised and rough to touch.", "exam_ids": ["agentclinic-medqa-ext-047-e005", "agentclinic-medqa-ext-047-e006"]},
+      "x006": {"source": "Test_Results.Skin_Biopsy.Findings", "source_text": "Intraepidermal accumulation of edematous fluid and widening of intercellular spaces between keratinocytes.", "exam_ids": ["agentclinic-medqa-ext-047-i001"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "The itch is a character child of the rash (f002) rather than a separate symptom, since the source describes one pruritic rash.",
+      "'Has not started any new medications' (History) and 'Takes no medications' (PMH) are merged into one medication denial (f013).",
+      "Fever, joint pain and recent illness denials appear in both Secondary_Symptoms and ROS/History; one fact each.",
+      "Gold aliases: eczema is the lay synonym; atopic, contact and nummular eczema are specific eczematous dermatitides. 'Dermatitis' alone and 'spongiotic dermatitis' (a histologic pattern that also covers other conditions) are left out as broader."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a pruritic rash on the bilateral upper extremities."
+    }
+  }
+}

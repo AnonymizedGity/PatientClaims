@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-108", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 77, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "spots on the forehead", "aliases": ["skin lesions", "growths on the forehead", "skin spots"], "text": "I have several spots on my forehead.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "spots on the forehead: appearance", "parent": "f001", "attribute": "appearance", "value": ["brown", "greasy-looking"], "text": "They're brown and look greasy.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "spots on the forehead: onset", "parent": "f001", "attribute": "onset", "text": "They appeared recently; they've developed over the past few months.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "spots on the forehead: trying to remove them", "parent": "f001", "attribute": "treatment_response", "aliases": ["peeling them off"], "text": "They bother me because I can't get them off, even though I've tried to peel them off.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f005", "item": "itching", "aliases": ["itchy spots", "itchiness"], "text": "The spots don't itch.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "pain in the spots", "aliases": ["painful spots", "tenderness"], "text": "The spots aren't painful.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f007", "item": "bleeding from the spots", "aliases": ["bleeding"], "text": "The spots don't bleed.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "other symptoms", "aliases": ["other complaints", "symptoms elsewhere in the body"], "text": "Apart from these spots, I don't have any other complaints or symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "skin cancer", "aliases": ["history of skin cancer"], "text": "I've never had skin cancer.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "recent changes in medications or skin treatments", "aliases": ["new medications", "creams", "topical treatments"], "text": "I haven't changed any medications or started any creams or skin treatments recently.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "extensive sun exposure", "aliases": ["sun exposure", "sunburns"], "text": "I haven't had a lot of sun exposure.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f015", "item": "gardening", "aliases": ["hobbies", "outdoor activities"], "text": "I enjoy gardening.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "sun protection", "aliases": ["wearing a hat"], "text": "I always wear a hat to protect myself from the sun.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a retired postal worker.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f018", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-108",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "lesion examination", "palpation of the lesions"], "result": "Inspection: multiple well-defined, brown, greasy plaques of varying sizes on the forehead; no erythema or edema around the lesions. Palpation: lesions slightly raised above the skin surface with a rough texture; no tenderness."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "dermatoscopy", "aliases": ["dermoscopy"], "result": "A network of cerebriform patterns without evidence of melanocytic activity."},
+      {"id": "x007", "kind": "test", "name": "skin biopsy", "aliases": ["biopsy of a forehead lesion", "histopathology"], "result": "Hyperkeratosis with horn cysts, consistent with seborrheic keratosis."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-108",
+    "diagnosis": "Seborrheic keratosis",
+    "aliases": ["seborrhoeic keratosis", "seborrheic keratoses", "SK", "seborrheic wart", "basal cell papilloma", "senile wart"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-108",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-108-p001"], "f002": ["cc", "agentclinic-medqa-ext-108-p001"],
+      "f003": ["agentclinic-medqa-ext-108-p001", "agentclinic-medqa-ext-108-p002"], "f004": ["agentclinic-medqa-ext-108-p001", "agentclinic-medqa-ext-108-p003"],
+      "f005": ["agentclinic-medqa-ext-108-p006"], "f006": ["agentclinic-medqa-ext-108-p006"], "f007": ["agentclinic-medqa-ext-108-p006"],
+      "f008": ["agentclinic-medqa-ext-108-p006"], "f009": ["agentclinic-medqa-ext-108-p006"], "f010": ["agentclinic-medqa-ext-108-p001", "agentclinic-medqa-ext-108-p006"],
+      "f011": ["agentclinic-medqa-ext-108-p004"], "f012": ["agentclinic-medqa-ext-108-p004"], "f013": ["agentclinic-medqa-ext-108-p004"],
+      "f014": ["agentclinic-medqa-ext-108-p004"], "f015": ["agentclinic-medqa-ext-108-p005"], "f016": ["agentclinic-medqa-ext-108-p005"],
+      "f017": ["agentclinic-medqa-ext-108-p005"], "f018": ["agentclinic-medqa-ext-108-p005"], "f019": ["agentclinic-medqa-ext-108-p005"]
+    },
+    "quotes": {
+      "f001": "several brown, greasy-looking lesions on his forehead", "f002": "Brown, greasy-looking lesions",
+      "f003": "these lesions have developed over the past few months / Recent appearance",
+      "f004": "bothersome because he cannot seem to remove them despite attempting to peel them off",
+      "f007": "bleeding from the lesions", "f010": "has no complaints other than / any other systemic symptoms",
+      "f012": "No history of skin cancer", "f013": "No recent changes in medications or topical treatments",
+      "f014": "or extensive sun exposure", "f016": "always wears a hat for sun protection", "f017": "Retired postal worker",
+      "f019": "drinks alcohol socially"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-108-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-108-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-108-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-108-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Inspection + Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Inspection: Multiple well-defined, brown, greasy plaques of varying sizes noted on the forehead. No erythema or edema around the lesions.; Palpation: Lesions are slightly raised above the skin surface and have a rough texture. No tenderness on palpation.", "exam_ids": ["agentclinic-medqa-ext-108-e005", "agentclinic-medqa-ext-108-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin_Examination.Dermatoscopy", "source_text": "A network of cerebriform patterns without evidence of melanocytic activity.", "exam_ids": ["agentclinic-medqa-ext-108-e007"]},
+      "x007": {"source": "Test_Results.Biopsy_Report.Histopathology", "source_text": "Hyperkeratosis with horn cysts, consistent with seborrheic keratosis.", "exam_ids": ["agentclinic-medqa-ext-108-i001"]}
+    },
+    "finding_flags": {},
+    "leakage": [
+      {"id": "x007", "reason": "The biopsy result ends 'consistent with seborrheic keratosis'; kept because the pathologist's conclusion is the test's answer (CONVERSION.md allows results to state what the test shows)."}
+    ],
+    "source_issues": [
+      "The biopsy result names the gold diagnosis (pool flag: visible gold alias in test_results)."
+    ],
+    "notes": [
+      "'No complaints other than the lesions' (history) and 'denies ... any other systemic symptoms' (review of systems) are stated blanket denials; they form one 'other symptoms' fact (f010).",
+      "'Presents for a routine visit' is visit context and gives no answerable fact.",
+      "Dermatoscopy is an examination step requested separately from inspection and palpation, so it has its own record (x006).",
+      "Itching, pain and bleeding of the lesions are standalone denials with lesion wording, so a question about each reaches its own fact."
+    ],
+    "extras": {
+      "objective_for_doctor": "Perform a skin examination and diagnose the skin condition presented by the patient."
+    }
+  }
+}

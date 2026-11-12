@@ -1,0 +1,934 @@
+{
+  "case_id": "medqa-cs-017",
+  "demographics": {
+    "name": "Paul Stout",
+    "age": 75,
+    "sex": "male",
+    "setting": "office"
+  },
+  "opening_fact": {
+    "text": "I can't hear as well as I used to.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-017-f001",
+      "source_ids": [
+        "medqa-cs-017-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "His wife has told him that he can't hear well.",
+      "quote": "My wife has told me that I can't hear well"
+    },
+    {
+      "id": "medqa-cs-017-f002",
+      "source_ids": [
+        "medqa-cs-017-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Lately he has noticed that he has been reading lips.",
+      "quote": "lately I have noticed that I have been reading lips."
+    },
+    {
+      "id": "medqa-cs-017-f003",
+      "source_ids": [
+        "medqa-cs-017-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The hearing problem has been going on for a year.",
+      "quote": "This has been happening for a year."
+    },
+    {
+      "id": "medqa-cs-017-f004",
+      "source_ids": [
+        "medqa-cs-017-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The hearing has worsened since it began.",
+      "quote": "It has worsened."
+    },
+    {
+      "id": "medqa-cs-017-f005",
+      "source_ids": [
+        "medqa-cs-017-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Both ears seem to be affected, though he is uncertain.",
+      "quote": "It appears I’m experiencing issues with both ears, though I’m uncertain."
+    },
+    {
+      "id": "medqa-cs-017-f006",
+      "source_ids": [
+        "medqa-cs-017-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "He hears all sounds less well.",
+      "quote": "All sounds."
+    },
+    {
+      "id": "medqa-cs-017-f007",
+      "source_ids": [
+        "medqa-cs-017-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Words sound jumbled and distorted, especially in crowded places or when he watches television.",
+      "quote": "Jumbled and distorted, especially in crowded places or when I watch television."
+    },
+    {
+      "id": "medqa-cs-017-f008",
+      "source_ids": [
+        "medqa-cs-017-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No difficulty identifying the source of a sound.",
+      "quote": "Yes."
+    },
+    {
+      "id": "medqa-cs-017-f009",
+      "source_ids": [
+        "medqa-cs-017-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No problems understanding speech.",
+      "quote": "No.",
+      "flags": [
+        "Sits uneasily with p006 (words sound jumbled and distorted) and p001 (reading lips); recorded literally."
+      ]
+    },
+    {
+      "id": "medqa-cs-017-f010",
+      "source_ids": [
+        "medqa-cs-017-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Saw his doctor a month ago, who removed some wax from his ears.",
+      "quote": "I visited my doctor a month ago, and he removed some wax from my ears."
+    },
+    {
+      "id": "medqa-cs-017-f011",
+      "source_ids": [
+        "medqa-cs-017-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The wax removal gave only temporary relief; the hearing is now just as bad as before.",
+      "quote": "This provided temporary relief, but now the condition is just as severe as it was before."
+    },
+    {
+      "id": "medqa-cs-017-f012",
+      "source_ids": [
+        "medqa-cs-017-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No ear pain.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f013",
+      "source_ids": [
+        "medqa-cs-017-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No fluid coming from the ears.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f014",
+      "source_ids": [
+        "medqa-cs-017-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No sensation of the room spinning.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f015",
+      "source_ids": [
+        "medqa-cs-017-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No recent falls.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f016",
+      "source_ids": [
+        "medqa-cs-017-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No sensation of being about to fall.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f017",
+      "source_ids": [
+        "medqa-cs-017-p014"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Urinary tract infection about a year ago, treated with an antibiotic whose name he doesn't remember.",
+      "quote": "I had a urinary tract infection about a year ago. My doctor gave me an antibiotic, but I don't remember its name."
+    },
+    {
+      "id": "medqa-cs-017-f018",
+      "source_ids": [
+        "medqa-cs-017-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Occasional ringing in both ears.",
+      "quote": "Occasionally, in both ears."
+    },
+    {
+      "id": "medqa-cs-017-f019",
+      "source_ids": [
+        "medqa-cs-017-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No injury to the ears.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f020",
+      "source_ids": [
+        "medqa-cs-017-p017"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "exposures",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Exposed to loud noise in the army, where it was always loud.",
+      "quote": "Yes. I was in the army, and it was always loud."
+    },
+    {
+      "id": "medqa-cs-017-f021",
+      "source_ids": [
+        "medqa-cs-017-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Infrequent headaches.",
+      "quote": "Infrequently."
+    },
+    {
+      "id": "medqa-cs-017-f022",
+      "source_ids": [
+        "medqa-cs-017-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has not placed anything in his ears.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f023",
+      "source_ids": [
+        "medqa-cs-017-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No nausea.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f024",
+      "source_ids": [
+        "medqa-cs-017-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vomiting.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f025",
+      "source_ids": [
+        "medqa-cs-017-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No numbness anywhere in the body.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f026",
+      "source_ids": [
+        "medqa-cs-017-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No weakness.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f027",
+      "source_ids": [
+        "medqa-cs-017-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No tingling.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f028",
+      "source_ids": [
+        "medqa-cs-017-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes hydrochlorothiazide.",
+      "quote": "Hydrochlorothiazide."
+    },
+    {
+      "id": "medqa-cs-017-f029",
+      "source_ids": [
+        "medqa-cs-017-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has taken aspirin daily for the past 25 years to protect his heart.",
+      "quote": "For the past 25 years, I have also taken aspirin daily to protect my heart."
+    },
+    {
+      "id": "medqa-cs-017-f030",
+      "source_ids": [
+        "medqa-cs-017-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has hypertension, which is managed effectively.",
+      "quote": "I have hypertension. / it is managed effectively."
+    },
+    {
+      "id": "medqa-cs-017-f031",
+      "source_ids": [
+        "medqa-cs-017-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Checks his blood pressure daily.",
+      "quote": "I check my blood pressure daily"
+    },
+    {
+      "id": "medqa-cs-017-f032",
+      "source_ids": [
+        "medqa-cs-017-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "None."
+    },
+    {
+      "id": "medqa-cs-017-f033",
+      "source_ids": [
+        "medqa-cs-017-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No family history of similar hearing problems.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-017-f034",
+      "source_ids": [
+        "medqa-cs-017-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Retired military veteran.",
+      "quote": "Retired military veteran."
+    },
+    {
+      "id": "medqa-cs-017-f035",
+      "source_ids": [
+        "medqa-cs-017-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not drink alcohol.",
+      "quote": "Not at all."
+    },
+    {
+      "id": "medqa-cs-017-f036",
+      "source_ids": [
+        "medqa-cs-017-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never used recreational drugs.",
+      "quote": "Not at all."
+    },
+    {
+      "id": "medqa-cs-017-f037",
+      "source_ids": [
+        "medqa-cs-017-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not smoke.",
+      "quote": "Not at all."
+    },
+    {
+      "id": "medqa-cs-017-f038",
+      "source_ids": [
+        "medqa-cs-017-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sexually active only with his wife.",
+      "quote": "Only with my wife."
+    },
+    {
+      "id": "medqa-cs-017-f039",
+      "source_ids": [
+        "medqa-cs-017-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Allergic to penicillin: develops a rash when he takes it.",
+      "quote": "I develop a rash when I take penicillin."
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Ask the examinee to speak up if he or she did not speak in a loud and clear manner.",
+      "Pretend that you have difficulty hearing in both ears.",
+      "On physical exam, demonstrate that you have no lateralization on the Weber test (i.e., show that your hearing is equal in both ears).",
+      "Pretend that you cannot hear when spoken to from behind."
+    ],
+    "patient_questions": [
+      "Do you believe I might be losing my hearing?"
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "132/68 mm Hg",
+        "source_text": "BP: 132/68 mmHg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.4°F (36.9°C)",
+        "source_text": "Temp: 98.4°F (36.9°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "18/minute",
+        "source_text": "RR: 18/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "84/minute, regular",
+        "source_text": "HR: 84/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits",
+        "source_text": "VS: Within Normal Limits (WNL)"
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "No acute distress",
+        "source_text": "Patient is in no acute distress."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e004"
+        ],
+        "system": "HEENT",
+        "name": "Head",
+        "finding": "Normocephalic, atraumatic",
+        "source_text": "HEENT: - Normocephalic/atraumatic"
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e005"
+        ],
+        "system": "HEENT",
+        "name": "Pupils",
+        "finding": "Equal, round, reactive to light and accommodation",
+        "source_text": "HEENT: - Pupils Equal, Round, Reactive to Light and Accommodation (PERRLA)"
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e006"
+        ],
+        "system": "HEENT",
+        "name": "Extraocular movements",
+        "finding": "Intact",
+        "source_text": "HEENT: - Extraocular Movements Intact (EOMI), no nystagmus"
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e006"
+        ],
+        "system": "HEENT",
+        "name": "Nystagmus",
+        "finding": "No nystagmus",
+        "source_text": "HEENT: - Extraocular Movements Intact (EOMI), no nystagmus"
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e007"
+        ],
+        "system": "HEENT",
+        "name": "Funduscopy",
+        "finding": "No papilledema",
+        "source_text": "HEENT: - No papilledema, no cerumen"
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e007"
+        ],
+        "system": "HEENT",
+        "name": "Ear canals",
+        "finding": "No cerumen",
+        "source_text": "HEENT: - No papilledema, no cerumen"
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e008"
+        ],
+        "system": "HEENT",
+        "name": "Tympanic membranes",
+        "finding": "Light reflex present; no signs of infection",
+        "source_text": "HEENT: - Tympanic Membranes (TMs) with light reflex, no stigmata of infection, no redness to ear canal, no tenderness of auricle or periauricle, no lymphadenopathy"
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e008"
+        ],
+        "system": "HEENT",
+        "name": "Ear canals",
+        "finding": "No redness of the ear canal",
+        "source_text": "HEENT: - Tympanic Membranes (TMs) with light reflex, no stigmata of infection, no redness to ear canal, no tenderness of auricle or periauricle, no lymphadenopathy"
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e008"
+        ],
+        "system": "HEENT",
+        "name": "Auricle palpation",
+        "finding": "No tenderness of the auricle or periauricular area",
+        "source_text": "HEENT: - Tympanic Membranes (TMs) with light reflex, no stigmata of infection, no redness to ear canal, no tenderness of auricle or periauricle, no lymphadenopathy"
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e008"
+        ],
+        "system": "HEENT",
+        "name": "Lymph nodes",
+        "finding": "No lymphadenopathy",
+        "source_text": "HEENT: - Tympanic Membranes (TMs) with light reflex, no stigmata of infection, no redness to ear canal, no tenderness of auricle or periauricle, no lymphadenopathy"
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e009"
+        ],
+        "system": "HEENT",
+        "name": "Oropharynx",
+        "finding": "Normal",
+        "source_text": "HEENT: - Oropharynx normal"
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e010"
+        ],
+        "system": "HEENT",
+        "name": "Weber test",
+        "finding": "No lateralization",
+        "source_text": "Weber test without lateralization; normal Rinne test (revealed air conduction > bone conduction) bilaterally."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e010"
+        ],
+        "system": "HEENT",
+        "name": "Rinne test",
+        "finding": "Normal bilaterally (air conduction > bone conduction)",
+        "source_text": "Weber test without lateralization; normal Rinne test (revealed air conduction > bone conduction) bilaterally."
+      },
+      {
+        "id": "x015",
+        "source": "sp_notes",
+        "system": "HEENT",
+        "name": "Hearing",
+        "finding": "Difficulty hearing in both ears",
+        "source_text": "Pretend that you have difficulty hearing in both ears."
+      },
+      {
+        "id": "x016",
+        "source": "sp_notes",
+        "system": "HEENT",
+        "name": "Weber test",
+        "finding": "No lateralization (hearing equal in both ears)",
+        "source_text": "On physical exam, demonstrate that you have no lateralization on the Weber test (i.e., show that your hearing is equal in both ears)."
+      },
+      {
+        "id": "x017",
+        "source": "sp_notes",
+        "system": "HEENT",
+        "name": "Hearing when spoken to from behind",
+        "finding": "Cannot hear when spoken to from behind",
+        "source_text": "Pretend that you cannot hear when spoken to from behind."
+      },
+      {
+        "id": "x018",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e011"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: Clear breath sounds bilaterally."
+      },
+      {
+        "id": "x019",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e012"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Regular Rate and Rhythm (RRR); S1S2 Within Normal Limits (WNL); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x020",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e012"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "S1 and S2 within normal limits",
+        "source_text": "Heart: Regular Rate and Rhythm (RRR); S1S2 Within Normal Limits (WNL); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x021",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e012"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Regular Rate and Rhythm (RRR); S1S2 Within Normal Limits (WNL); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x022",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e014"
+        ],
+        "system": "Neuro",
+        "name": "Cranial nerves",
+        "finding": "Cranial nerves II-XII grossly intact except for decreased hearing",
+        "source_text": "Neuro: - Cranial nerves: II to XII grossly intact except for decreased hearing."
+      },
+      {
+        "id": "x023",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e015"
+        ],
+        "system": "Neuro",
+        "name": "Motor strength",
+        "finding": "5/5 throughout",
+        "source_text": "Neuro: - Motor: Strength 5/5 throughout."
+      },
+      {
+        "id": "x024",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e016"
+        ],
+        "system": "Neuro",
+        "name": "Deep tendon reflexes",
+        "finding": "2+ throughout",
+        "source_text": "Neuro: - Deep Tendon Reflexes (DTRs): 2+ throughout."
+      },
+      {
+        "id": "x025",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e017"
+        ],
+        "system": "Neuro",
+        "name": "Sensation",
+        "finding": "Intact",
+        "source_text": "Neuro: - Sensation: Intact."
+      },
+      {
+        "id": "x026",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e018"
+        ],
+        "system": "Neuro",
+        "name": "Gait",
+        "finding": "Normal",
+        "source_text": "Neuro: - Gait: Normal; no past pointing and 8 heel to shin."
+      },
+      {
+        "id": "x027",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e018"
+        ],
+        "system": "Neuro",
+        "name": "Finger-to-nose (past pointing)",
+        "finding": "No past pointing",
+        "source_text": "Neuro: - Gait: Normal; no past pointing and 8 heel to shin."
+      },
+      {
+        "id": "x028",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e018"
+        ],
+        "system": "Neuro",
+        "name": "Heel-to-shin test",
+        "finding": "Result not documented",
+        "source_text": "Neuro: - Gait: Normal; no past pointing and 8 heel to shin.",
+        "flags": [
+          "Source reads '8 heel to shin' — symbol garbled (OCR); result cannot be recovered."
+        ]
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Presbycusis",
+        "history_findings": [
+          "Bilateral, progressive hearing loss"
+        ],
+        "exam_findings": [
+          "Normal Rinne test",
+          "Lack of lateralization on Weber test"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Cochlear nerve damage",
+        "history_findings": [
+          "Prior exposure to loud noise",
+          "Bilateral hearing loss"
+        ],
+        "exam_findings": [
+          "Lack of lateralization on Weber test",
+          "Normal Rinne test"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Otosclerosis",
+        "history_findings": [
+          "Bilateral, progressive hearing loss"
+        ],
+        "exam_findings": [
+          "Lack of lateralization on Weber test"
+        ]
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Meniere's disease",
+        "rationale": "Usually hearing loss, tinnitus and episodic vertigo from endolymphatic disruption; may be unilateral or bilateral."
+      },
+      {
+        "diagnosis": "Ototoxicity",
+        "rationale": "Antibiotic-related hearing loss is permanent; aspirin-related loss is reversible, so aspirin should be withheld during the workup."
+      },
+      {
+        "diagnosis": "Acoustic neuroma",
+        "rationale": "Unlikely without other neurologic signs, but should be considered if focal deficits are found."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "Exam lines e003 ('HEENT:') and e013 ('Neuro:') are section headers with no findings; they are covered by listing them with the item lines that follow them.",
+      "Exam e018 'no past pointing and 8 heel to shin' contains an OCR artifact ('8'); the heel-to-shin result is not stated (x028).",
+      "The opening scenario omits the patient's sex; 'male' is taken from the raw patient description and the note.",
+      "Note HPI says cerumen removal gave 'moderate improvement'; the script says it gave only temporary relief and the hearing is now as bad as before.",
+      "p008 denies problems understanding speech, while p006 says words sound jumbled and distorted and p001 says he has been reading lips; the note also says 'no difficulty comprehending'."
+    ],
+    "annotator_notes": [
+      "Header-only exam lines (e003, e004-e009 under HEENT; e013, e014-e018 under Neuro) are recorded by putting the header id together with the item id in exam_ids.",
+      "All three hearing-related sp_notes directions (bilateral hearing difficulty, no Weber lateralization, cannot hear when spoken to from behind) are recorded as sp_notes exam findings (x015-x017) and also kept as acting notes.",
+      "p007 'Yes' (can identify the source of sound) is recorded as an absent difficulty localizing sound (f008).",
+      "p013 (falls / sensation of impending falls) is split into two absent facts.",
+      "Reviewer edit: environment commentary moved from `finding` to `flags` for x028."
+    ]
+  }
+}

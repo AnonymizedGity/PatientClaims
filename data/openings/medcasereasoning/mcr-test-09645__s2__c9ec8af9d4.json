@@ -1,0 +1,49 @@
+{
+ "case_id": "mcr-test-09645",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I have a lump on the right side of my neck.",
+   "I've had it for 2 weeks.",
+   "I've been getting more and more tired.",
+   "I have back pain.",
+   "I smoke 20 to 30 cigarettes a day."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have a lump on the right side of my neck, and I've had it for 2 weeks. I've been getting more and more tired, and I have back pain. I smoke 20 to 30 cigarettes a day.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f006",
+    "f007",
+    "f020"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3410,
+   "tokens_out": 62,
+   "seconds": 6.63,
+   "redrafts": 0
+  }
+ }
+}

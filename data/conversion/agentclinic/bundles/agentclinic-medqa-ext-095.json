@@ -1,0 +1,86 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-095", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 57, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "wound on the leg", "aliases": ["leg wound", "leg ulcer", "sore on the leg"], "text": "I have a large wound on my lower right leg.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "wound on the leg: duration", "parent": "f001", "attribute": "duration", "text": "It's been there for 6 months.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "leg swelling", "aliases": ["swollen legs", "edema"], "text": "My legs are swollen.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f004", "item": "leg swelling: duration", "parent": "f003", "attribute": "duration", "text": "They've been swollen for more than 10 years.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f005", "item": "family history of leg problems", "aliases": ["relatives with similar problems"], "text": "My mother and my brother had similar problems with their legs.", "polarity": "present", "category": "family_history"},
+      {"id": "f006", "item": "blood clot in the leg", "aliases": ["deep vein thrombosis", "DVT"], "text": "Five years ago I had a confirmed deep vein thrombosis, a blood clot, in my right leg.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the clot, I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "occupation", "aliases": ["job", "work"], "text": "I work as an accountant.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "recent injury", "aliases": ["trauma", "injury to the leg"], "text": "I haven't had any recent injuries.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "heart disease", "aliases": ["heart problems"], "text": "I don't have heart disease.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "diabetes", "aliases": ["high blood sugar"], "text": "I don't have diabetes.", "polarity": "absent", "category": "medical_history", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-095",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "126/84 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "62/min"},
+      {"id": "x003", "kind": "exam", "system": "cardiovascular", "name": "leg examination", "aliases": ["lower limb examination", "wound inspection", "skin around the wound", "leg swelling"], "result": "Inspection: large ulcer on the right lower leg; varicose veins. Skin around the wound discolored, with chronic changes such as pigmentation. Palpation: edema in both legs, more pronounced in the right leg."},
+      {"id": "x004", "kind": "exam", "system": "cardiovascular", "name": "foot pulses", "aliases": ["pedal pulses", "peripheral pulses", "dorsalis pedis pulse", "posterior tibial pulse"], "result": "Dorsalis pedis and posterior tibial pulses palpable but diminished in the right leg."},
+      {"id": "x005", "kind": "test", "name": "Doppler ultrasound of the legs", "aliases": ["leg Doppler", "duplex ultrasound of the legs", "lower limb ultrasound"], "result": "Reflux and obstruction in the superficial and deep venous systems of the right leg."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets", "platelet count"], "result": "WBC within normal limits; hemoglobin within normal limits; platelets within normal limits."},
+      {"id": "x007", "kind": "test", "name": "wound culture", "aliases": ["wound swab", "ulcer culture"], "result": "No growth of pathogenic bacteria."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-095",
+    "diagnosis": "Chronic venous insufficiency",
+    "aliases": ["CVI", "venous insufficiency", "chronic venous insufficiency of the legs", "post-thrombotic syndrome", "postphlebitic syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-095",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-095-p001"], "f002": ["agentclinic-medqa-ext-095-p001"],
+      "f003": ["agentclinic-medqa-ext-095-p001", "agentclinic-medqa-ext-095-p002"], "f004": ["agentclinic-medqa-ext-095-p001", "agentclinic-medqa-ext-095-p002"],
+      "f005": ["agentclinic-medqa-ext-095-p001", "agentclinic-medqa-ext-095-p003"], "f006": ["agentclinic-medqa-ext-095-p001", "agentclinic-medqa-ext-095-p004"],
+      "f007": ["agentclinic-medqa-ext-095-p001", "agentclinic-medqa-ext-095-p004"], "f008": ["agentclinic-medqa-ext-095-p005"],
+      "f009": ["agentclinic-medqa-ext-095-p005"], "f010": ["agentclinic-medqa-ext-095-p005"], "f011": ["agentclinic-medqa-ext-095-p006"],
+      "f012": ["agentclinic-medqa-ext-095-p006"], "f013": ["agentclinic-medqa-ext-095-p006"], "f014": ["agentclinic-medqa-ext-095-p006"]
+    },
+    "quotes": {
+      "f001": "a large wound on his right lower leg", "f002": "present for 6 months",
+      "f004": "chronically swollen for over 10 years / Chronic leg swelling", "f005": "his mother and brother had similar leg problems",
+      "f006": "He had a documented deep vein thrombosis (DVT) in the affected leg 5 years ago",
+      "f007": "has no other significant past medical history / No other significant medical history", "f009": "drinks alcohol socially",
+      "f012": "recent injuries"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "126/84 mmHg", "exam_ids": ["agentclinic-medqa-ext-095-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "62/min", "exam_ids": ["agentclinic-medqa-ext-095-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Leg_Examination.Inspection + Physical_Examination_Findings.Leg_Examination.Skin + Physical_Examination_Findings.Leg_Examination.Palpation", "source_text": "Inspection: Large ulcer on the right lower leg, presence of varicose veins; Skin: Skin around the wound is discolored with evidence of chronic changes such as pigmentation; Palpation: Edema in both legs, more pronounced in the right leg", "exam_ids": ["agentclinic-medqa-ext-095-e003", "agentclinic-medqa-ext-095-e006", "agentclinic-medqa-ext-095-e004"]},
+      "x004": {"source": "Physical_Examination_Findings.Leg_Examination.Pulse", "source_text": "Dorsalis pedis and posterior tibial pulses are palpable but diminished in the right leg", "exam_ids": ["agentclinic-medqa-ext-095-e005"]},
+      "x005": {"source": "Test_Results.Doppler_Ultrasound_Lower_Limb.Findings", "source_text": "Evidence of venous reflux and obstruction in superficial and deep venous systems of the right leg", "exam_ids": ["agentclinic-medqa-ext-095-i001"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "WBC: Within normal limits; Hemoglobin: Within normal limits; Platelets: Within normal limits", "exam_ids": ["agentclinic-medqa-ext-095-i002", "agentclinic-medqa-ext-095-i003", "agentclinic-medqa-ext-095-i004"]},
+      "x007": {"source": "Test_Results.Wound_Culture.Findings", "source_text": "No growth of pathogenic bacteria", "exam_ids": ["agentclinic-medqa-ext-095-i005"]}
+    },
+    "finding_flags": {
+      "x004": ["Diminished foot pulses in the right leg are not typical of isolated venous disease (could reflect edema or coexisting arterial disease); kept as given."]
+    },
+    "leakage": [
+      {"id": "x005", "reason": "The Doppler result (venous reflux and obstruction) is the objective finding that defines venous insufficiency; it is the test's answer."}
+    ],
+    "source_issues": [
+      "Right-leg pulses are described as diminished, which points away from a purely venous cause."
+    ],
+    "notes": [
+      "The leg's pulse check is kept as its own record (foot pulses) because a doctor requests it separately from inspecting and palpating the leg; inspection, skin and palpation of the leg form one record.",
+      "'Denies ... heart disease, or diabetes' (review of systems) are past-history denials (f013, f014); 'recent injuries' is filed under medical_history (f012).",
+      "The patient was told he had a DVT ('documented'), so the diagnosis name stays in f006.",
+      "Gold aliases include post-thrombotic syndrome (chronic venous insufficiency after a DVT, a more specific form); 'chronic venous disease' and 'venous leg ulcer' are not used (broader / a manifestation)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a chronic wound on his right lower leg."
+    }
+  }
+}

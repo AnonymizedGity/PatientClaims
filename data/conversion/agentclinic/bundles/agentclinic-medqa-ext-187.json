@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-187", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 20, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "hearing voices", "aliases": ["auditory hallucinations", "voices"], "text": "I've been hearing voices when there's no one there.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "hearing voices: what they say about her", "parent": "f001", "attribute": "character", "text": "They talk about me in a negative way.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f003", "item": "hearing voices: telling her to harm herself", "parent": "f001", "attribute": "character", "aliases": ["command hallucinations", "voices telling her to hurt herself"], "text": "They urge me to harm myself.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f004", "item": "hearing voices: onset", "parent": "f001", "attribute": "onset", "text": "They started after my father died a week ago.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f005", "item": "hearing voices: similar episodes before", "parent": "f001", "attribute": "other", "text": "Nothing like this has ever happened to me before.", "polarity": "absent", "category": "symptom", "system": "psychiatric"},
+      {"id": "f006", "item": "father's health", "aliases": ["father", "cancer in the family"], "text": "My father died of lung cancer a week ago.", "polarity": "present", "category": "family_history", "time": "historical"},
+      {"id": "f007", "item": "recent stressful events", "aliases": ["bereavement", "grief", "stress"], "text": "Losing my father has been very stressful for the whole family.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f008", "item": "intrusive thoughts", "aliases": ["unwanted thoughts"], "text": "I keep having unwanted thoughts that push their way into my mind.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f009", "item": "difficulty concentrating", "aliases": ["trouble focusing", "poor concentration"], "text": "I'm finding it hard to focus at work and in my studies.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f010", "item": "anxiety", "aliases": ["feeling anxious", "nervousness"], "text": "I've been feeling anxious.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f011", "item": "psychiatric history", "aliases": ["mental health problems", "psychiatric illness"], "text": "I've never had a psychiatric illness.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history", "medical illnesses"], "text": "I don't have any medical illnesses.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "recent medications", "aliases": ["medicines", "pills", "current medications"], "text": "I haven't taken any medications recently.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work", "school"], "text": "I'm a student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "living situation", "aliases": ["lives with", "home"], "text": "I live with my family.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "recreational drug use", "aliases": ["substance use", "drugs", "substance abuse"], "text": "I don't use drugs or other substances, and I've never had a problem with them.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-187",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.9°C (98.4°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/65 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["appearance", "general examination"], "result": "Appears gaunt and anxious."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "heart examination", "aliases": ["heart auscultation", "cardiovascular examination"], "result": "Regular rate and rhythm."},
+      {"id": "x007", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["lung auscultation", "respiratory examination", "chest examination"], "result": "Lungs clear to auscultation bilaterally."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["mental status examination", "orientation", "level of consciousness"], "result": "Alert and oriented, but distressed by auditory hallucinations."},
+      {"id": "x009", "kind": "test", "name": "comprehensive metabolic panel", "aliases": ["CMP", "metabolic panel", "electrolytes", "kidney function", "liver function tests"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "thyroid-stimulating hormone", "aliases": ["TSH", "thyroid function"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "urine toxicology screen", "aliases": ["urine drug screen", "drug screen", "tox screen"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-187",
+    "diagnosis": "Brief psychotic disorder",
+    "aliases": ["brief reactive psychosis", "brief psychotic disorder with marked stressors", "brief psychotic disorder with marked stressor"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-187",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-187-p001"], "f002": ["cc", "agentclinic-medqa-ext-187-p001"], "f003": ["cc", "agentclinic-medqa-ext-187-p001"],
+      "f004": ["agentclinic-medqa-ext-187-p001"], "f005": ["agentclinic-medqa-ext-187-p008"],
+      "f006": ["agentclinic-medqa-ext-187-p001", "agentclinic-medqa-ext-187-p005"], "f007": ["agentclinic-medqa-ext-187-p001", "agentclinic-medqa-ext-187-p005"],
+      "f008": ["agentclinic-medqa-ext-187-p002"], "f009": ["agentclinic-medqa-ext-187-p001", "agentclinic-medqa-ext-187-p003"],
+      "f010": ["agentclinic-medqa-ext-187-p004"], "f011": ["agentclinic-medqa-ext-187-p006"],
+      "f012": ["agentclinic-medqa-ext-187-p006", "agentclinic-medqa-ext-187-p008"], "f013": ["agentclinic-medqa-ext-187-p006"],
+      "f014": ["agentclinic-medqa-ext-187-p007"], "f015": ["agentclinic-medqa-ext-187-p007"],
+      "f016": ["agentclinic-medqa-ext-187-p007", "agentclinic-medqa-ext-187-p008"]
+    },
+    "quotes": {
+      "f001": "experiencing voices that are not present", "f002": "talking about her negatively", "f003": "urging her to harm herself",
+      "f004": "passed away from lung cancer 1 week ago / Since then", "f005": "Denies any history of similar episodes",
+      "f006": "father passed away from lung cancer 1 week ago", "f007": "has been a stressful event for the entire family",
+      "f009": "difficult to focus at work and in her studies", "f013": "Denies recent medication use.",
+      "f016": "No reported substance use. / substance abuse"
+    },
+    "flags": {
+      "f014": ["Social_History says 'currently a student'; the History also mentions work. Only the student role is stated as occupation; work appears in f009."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.9°C (98.4°F)", "exam_ids": ["agentclinic-medqa-ext-187-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/65 mm Hg", "exam_ids": ["agentclinic-medqa-ext-187-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90/min", "exam_ids": ["agentclinic-medqa-ext-187-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17/min", "exam_ids": ["agentclinic-medqa-ext-187-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Exam.Appearance", "source_text": "Appears gaunt and anxious", "exam_ids": ["agentclinic-medqa-ext-187-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Exam.Cardiovascular", "source_text": "Heart has a regular rate and rhythm", "exam_ids": ["agentclinic-medqa-ext-187-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Exam.Respiratory", "source_text": "Lungs are clear to auscultation bilaterally", "exam_ids": ["agentclinic-medqa-ext-187-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Exam.Neurological", "source_text": "Alert and oriented, but distressed by auditory hallucinations", "exam_ids": ["agentclinic-medqa-ext-187-e008"]},
+      "x009": {"source": "Test_Results.Comprehensive_Metabolic_Panel", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-187-i001"]},
+      "x010": {"source": "Test_Results.Complete_Blood_Count", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-187-i002"]},
+      "x011": {"source": "Test_Results.Thyroid_Stimulating_Hormone", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-187-i003"]},
+      "x012": {"source": "Test_Results.Urine_Toxicology_Screen", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-187-i004"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "objective_for_doctor mentions suicidal ideation and 'bizarre behavior', which the patient text does not describe (the voices urge self-harm; her own intent is not stated).",
+      "'Gaunt' appearance on exam is not explained by the history."
+    ],
+    "notes": [
+      "Psychiatric content is written as experience ('hearing voices when there's no one there', what the voices say), not as labels; 'auditory hallucinations' is an alias only.",
+      "The voices' content is split into negative talk (f002) and urging self-harm (f003) so the safety question can be answered on its own. Suicidal intent is not recorded because the source does not state it.",
+      "The father's death is family history (f006); the stress of the bereavement (p001, p005) is social_background (f007).",
+      "'Denies any history of similar episodes' is a child of the voices (f005); its 'medical illnesses' and 'substance abuse' merge with f012 and f016.",
+      "Anxiety is a Secondary_Symptom, so it is a patient fact (f010); the examiner's 'appears anxious' stays in the exam (x005)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Conduct a psychiatric evaluation of a 20-year-old woman presenting with auditory hallucinations, suicidal ideation, and recent onset of bizarre behavior following a significant bereavement."
+    }
+  }
+}

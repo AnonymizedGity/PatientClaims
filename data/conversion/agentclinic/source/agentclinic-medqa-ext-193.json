@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-193",
+  "source_row": 193,
+  "demographics_text": "53-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with a chronic cough, difficulty walking up stairs which improves after exercise, and significant weight loss.",
+  "chief_complaint": "Difficulty walking up stairs",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-193-p001",
+      "field": "History",
+      "text": "The patient reports a 3-month history of chronic cough and progressively worsening difficulty in walking up stairs in his apartment. Interestingly, he notes that his ability to climb stairs improves after he has exercised. Over the last 6 months, he has also experienced a weight loss of 4.6 kg (10.1 lb). The patient has been smoking one pack of cigarettes daily for 35 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-193-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Chronic cough"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-193-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Weight loss of 4.6 kg over 6 months"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-193-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Improvement in muscle strength post-exercise"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-193-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant previous medical or surgical history reported."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-193-p006",
+      "field": "Social_History",
+      "text": "Smokes one pack of cigarettes daily for 35 years, occasional alcohol consumption."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-193-p007",
+      "field": "Review_of_Systems",
+      "text": "{\"General\": \"Weight loss\", \"Respiratory\": \"Chronic cough\", \"Musculoskeletal\": \"Progressive muscle weakness, improving with exertion\", \"Neurological\": \"Sluggish pupil reaction to light\"}"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.0°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Pupillary_Response",
+      "text": "Equal, sluggishly reactive to light"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Muscle_Strength",
+      "text": "Proximal lower extremity strength initially 3/5, improving to 5/5 upon repeated muscle tapping"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Deep_Tendon_Reflexes",
+      "text": "Achilles reflex 1+"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-e008",
+      "path": "Physical_Examination_Findings.Other_Findings.Mucous_Membranes",
+      "text": "Dry"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i001",
+      "path": "Test_Results.Serum_Electrolytes.Na",
+      "text": "140 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i002",
+      "path": "Test_Results.Serum_Electrolytes.K",
+      "text": "4.3 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i003",
+      "path": "Test_Results.Serum_Electrolytes.Cl",
+      "text": "104 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i004",
+      "path": "Test_Results.Serum_Electrolytes.Ca",
+      "text": "9.2 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i005",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "7,800 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i006",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "14.2 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i007",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "230,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i008",
+      "path": "Test_Results.PFTs.Findings",
+      "text": "Normal spirometry"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-193-i009",
+      "path": "Test_Results.Voltage-Gated_Calcium_Channel_Antibody.Level",
+      "text": "Elevated"
+    }
+  ],
+  "correct_diagnosis": "Lambert-Eaton Syndrome",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

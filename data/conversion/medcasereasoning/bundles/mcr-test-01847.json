@@ -1,0 +1,113 @@
+{
+  "patient": {
+    "case_id": "mcr-test-01847",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 81, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea", "difficulty breathing", "short of breath"], "text": "I've been getting short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: course", "parent": "f001", "attribute": "course", "text": "It keeps getting worse.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "shortness of breath: duration", "parent": "f001", "attribute": "duration", "text": "It started about a month ago.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f004", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I have a 30 pack-year smoking history.", "value": "30 pack-years", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f005", "item": "rheumatoid arthritis", "aliases": ["arthritis", "RA", "joint disease"], "text": "Three months ago I was diagnosed with rheumatoid arthritis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "rheumatoid arthritis: response to treatment", "parent": "f005", "attribute": "treatment_response", "text": "My arthritis has improved since I started the treatment.", "polarity": "present", "category": "medical_history"},
+      {"id": "f007", "item": "bucillamine", "aliases": ["arthritis medicine", "antirheumatic drug", "DMARD", "new medication"], "text": "Three months ago I started bucillamine, 200 mg a day, for my arthritis.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "prednisolone", "aliases": ["steroids", "prednisone", "corticosteroid"], "text": "At the same time I started prednisolone, 4 mg a day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "angina", "aliases": ["angina pectoris", "chest pain on exertion", "heart disease"], "text": "I have angina.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "mitral valve replacement", "aliases": ["heart valve surgery", "valve replacement", "heart operation", "operations"], "text": "I had my mitral valve replaced a year ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "mother's health", "aliases": ["family history", "family history of rheumatoid arthritis", "mother"], "text": "My mother had rheumatoid arthritis.", "polarity": "present", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-01847",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "24/min"},
+      {"id": "x003", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["lungs", "chest examination", "breath sounds", "crackles"], "result": "Fine crackles bilaterally."},
+      {"id": "x004", "kind": "exam", "system": "cardiovascular", "name": "examination for heart failure", "aliases": ["cardiac examination", "jugular venous pressure", "JVP", "leg edema", "pitting edema"], "result": "No signs of congestive heart failure."},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "earlier lung auscultation", "aliases": ["earlier lung examination", "previous chest examination"], "result": "Fine crackles over both lower lung fields.", "time": "before the new arthritis medicine was started, about 3 months before presentation"},
+      {"id": "x006", "kind": "test", "name": "chest radiograph before treatment", "aliases": ["earlier chest X-ray", "previous chest X-ray", "previous CXR"], "result": "Reticular shadows in the bilateral lower lung zones.", "time": "before the new arthritis medicine was started, about 3 months before presentation"},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "neutrophils", "differential"], "result": "Leukocytes 10,900/µL with 81.5% neutrophils."},
+      {"id": "x008", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH"], "result": "408 U/L."},
+      {"id": "x009", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "5.51 mg/dL."},
+      {"id": "x010", "kind": "test", "name": "Krebs von den Lungen-6", "aliases": ["KL-6"], "result": "2,140 U/mL."},
+      {"id": "x011", "kind": "test", "name": "surfactant protein-D", "aliases": ["SP-D"], "result": "299.0 ng/mL."},
+      {"id": "x012", "kind": "test", "name": "autoimmune serology", "aliases": ["rheumatoid factor", "RF", "anti-CCP", "anti-cyclic citrullinated peptide antibody", "autoantibodies", "ANA"], "result": "Rheumatoid factor 352 IU/mL; anti-cyclic citrullinated peptide antibody ≥1,200 U/mL; other autoantibodies normal or negative."},
+      {"id": "x013", "kind": "test", "name": "arterial blood gas", "aliases": ["ABG", "blood gas", "PaO2", "oxygenation"], "result": "PaO2 87.2 mmHg on 3 L/min nasal oxygen."},
+      {"id": "x014", "kind": "test", "name": "drug lymphocyte stimulation test", "aliases": ["DLST", "lymphocyte stimulation test", "LST"], "result": "Bucillamine: negative (stimulation index 168%)."},
+      {"id": "x015", "kind": "test", "name": "brain natriuretic peptide", "aliases": ["BNP"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "immunoglobulins", "aliases": ["IgG", "IgA", "IgM", "serum immunoglobulins"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "β-D-glucan", "aliases": ["beta-D-glucan", "fungal marker"], "result": "Negative."},
+      {"id": "x018", "kind": "test", "name": "pulmonary function tests", "aliases": ["PFTs", "spirometry", "lung function tests", "DLCO", "diffusing capacity", "FVC", "FEV1"], "result": "Vital capacity 1.11 L (53.9% predicted); FVC 1.08 L (52.4% predicted); FEV1 1.03 L (77.4% predicted); DLCO 2.23 mL/min/mmHg (17.7% predicted)."},
+      {"id": "x019", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Infiltrative opacities with reticular shadows in the bilateral middle and lower lung fields."},
+      {"id": "x020", "kind": "test", "name": "high-resolution chest CT", "aliases": ["HRCT", "chest CT", "CT of the chest"], "result": "Ground-glass opacities and consolidations in both lungs, sparing the lung bases, along with reticular opacities, honeycombing and traction bronchiectasis in the lower lobes, consistent with pre-existing usual interstitial pneumonia."},
+      {"id": "x021", "kind": "test", "name": "bronchoalveolar lavage cell analysis", "aliases": ["BAL", "bronchoalveolar lavage", "BAL fluid", "bronchoscopy", "CD4/CD8 ratio"], "result": "2.45×10^5 cells/mL: macrophages 44.0%, lymphocytes 25.5%, neutrophils 26.0%, eosinophils 4.5%; CD4/CD8 ratio 0.2."},
+      {"id": "x022", "kind": "test", "name": "bronchoalveolar lavage cultures", "aliases": ["BAL culture", "BALF culture"], "result": "Negative."},
+      {"id": "x023", "kind": "test", "name": "transbronchial lung biopsy", "aliases": ["lung biopsy", "TBLB"], "result": "Alveolar organizing pneumonia, septal thickening and inflammatory cell infiltration."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-01847",
+    "diagnosis": "Bucillamine-induced pneumonitis",
+    "aliases": ["bucillamine-induced interstitial lung disease", "bucillamine-induced organizing pneumonia", "bucillamine-associated pneumonitis", "bucillamine lung toxicity", "drug-induced pneumonitis due to bucillamine"],
+    "reasoning": "1. Infection was considered but excluded because “No microorganisms were detected in a BALF culture.” 2. Congestive heart failure was considered but deemed unlikely given that “No physical findings suggestive of congestive heart failure (pitting edema of the lower extremities and jugular venous distention) were observed,” and cardiac biomarkers were normal. 3. Acute exacerbation of pre-existing ILD was considered but judged less likely since “The most common histologic pattern of AE of chronic ILD is DAD; less commonly, patients have OP …” and the patient’s presentation showed an OP pattern temporally related to bucillamine initiation."
+  },
+  "qc": {
+    "case_id": "mcr-test-01847",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s002"], "f005": ["s003"], "f006": ["s003"],
+      "f007": ["s003"], "f008": ["s003"], "f009": ["s005"], "f010": ["s005"], "f011": ["s006"]
+    },
+    "quotes": {
+      "f002": "progressive dyspnea", "f003": "a 1-month history of progressive dyspnea", "f004": "She had smoked 30 pack-years.",
+      "f005": "Three months earlier, she had been diagnosed with rheumatoid arthritis", "f006": "with improvement in her arthritis symptoms",
+      "f007": "bucillamine (200 mg/day)", "f008": "prednisolone (4 mg/day)", "f010": "mitral valve replacement one year earlier"
+    },
+    "flags": {
+      "f004": ["Whether she still smokes is not stated; no time given."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "she was afebrile"},
+      "x002": {"sentences": ["s007"], "source_text": "a respiratory rate of 24 breaths per minute"},
+      "x003": {"sentences": ["s008"], "source_text": "Fine crackles were audible bilaterally"},
+      "x004": {"sentences": ["s008"], "source_text": "there were no signs of congestive heart failure"},
+      "x005": {"sentences": ["s004"], "source_text": "Before starting bucillamine, fine crackles were noted over both lower lung fields"},
+      "x006": {"sentences": ["s004"], "source_text": "a chest radiograph showed reticular shadows in the bilateral lower lung zones"},
+      "x007": {"sentences": ["s009"], "source_text": "leukocytosis (10,900/µL) with neutrophilia (81.5%)"},
+      "x008": {"sentences": ["s009"], "source_text": "elevated lactate dehydrogenase (408 U/L)"},
+      "x009": {"sentences": ["s009"], "source_text": "C-reactive protein (5.51 mg/dL)"},
+      "x010": {"sentences": ["s009"], "source_text": "Krebs von den Lungen-6 (2,140 U/mL)"},
+      "x011": {"sentences": ["s009"], "source_text": "surfactant protein-D (299.0 ng/mL)"},
+      "x012": {"sentences": ["s009", "s011"], "source_text": "rheumatoid factor (352 IU/mL), anti-cyclic citrullinated peptide antibody (≥1,200 U/mL) / other autoantibodies were normal or negative"},
+      "x013": {"sentences": ["s009"], "source_text": "hypoxemia (PaO2 87.2 mmHg on 3 L/min nasal oxygen)"},
+      "x014": {"sentences": ["s010"], "source_text": "A lymphocyte stimulation test for bucillamine was negative (stimulation index, 168%)."},
+      "x015": {"sentences": ["s011"], "source_text": "Brain natriuretic peptide / were normal or negative"},
+      "x016": {"sentences": ["s011"], "source_text": "immunoglobulins / were normal or negative"},
+      "x017": {"sentences": ["s011"], "source_text": "β-D-glucan / were normal or negative"},
+      "x018": {"sentences": ["s012"], "source_text": "Pulmonary function tests revealed a vital capacity of 1.11 L (53.9% predicted), forced vital capacity of 1.08 L (52.4% predicted), FEV1 of 1.03 L (77.4% predicted), and DLCO of 2.23 mL/min/mmHg (17.7% predicted)."},
+      "x019": {"sentences": ["s013"], "source_text": "Chest radiography demonstrated infiltrative opacities with reticular shadows in the bilateral middle and lower lung fields."},
+      "x020": {"sentences": ["s014"], "source_text": "High-resolution CT showed ground-glass opacities and consolidations in both lungs, along with reticular opacities, honeycombing, and traction bronchiectasis in the lower lobes, consistent with pre-existing usual interstitial pneumonia; note that ground-glass opacities and consolidations spared the lung bases."},
+      "x021": {"sentences": ["s015"], "source_text": "Bronchoalveolar lavage fluid contained 2.45×10^5 cells/mL (44.0% macrophages, 25.5% lymphocytes, 26.0% neutrophils, 4.5% eosinophils; CD4/CD8 ratio 0.2)"},
+      "x022": {"sentences": ["s015"], "source_text": "cultures were negative"},
+      "x023": {"sentences": ["s016"], "source_text": "Transbronchial lung biopsy revealed alveolar organizing pneumonia, septal thickening, and inflammatory cell infiltration."}
+    },
+    "finding_flags": {
+      "x013": ["The source's label 'hypoxemia' is dropped; the PaO2 and oxygen flow are kept."],
+      "x014": ["The drug tested is part of the result, since a doctor would order the test for a named drug."]
+    },
+    "leakage": [
+      {"fact_id": "f007", "reason": "The patient's own medication (bucillamine) is part of the gold diagnosis name; the drug history is essential and the patient knows the drug."},
+      {"id": "x014", "reason": "The lymphocyte stimulation test result names bucillamine as the tested drug (negative)."}
+    ],
+    "source_issues": [
+      "A negative bucillamine lymphocyte stimulation test (stimulation index 168%) is reported, yet the diagnosis is bucillamine-induced pneumonitis."
+    ],
+    "notes": [
+      "Index visit: the referral for 1 month of progressive dyspnea (s001-s016); the crackles and chest radiograph from before bucillamine was started (s004) are earlier findings with time.",
+      "Interstitial lung changes (crackles and reticular shadows) were present before bucillamine was started, so the new process sits on pre-existing fibrosis (HRCT: consistent with pre-existing usual interstitial pneumonia).",
+      "Everything in s011 is reported jointly as 'normal or negative'; each test returns that state."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

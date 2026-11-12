@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-194",
+  "source_row": 194,
+  "demographics_text": "55-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with sudden onset of shortness of breath, substernal chest pain at rest increased by inspiration, nonproductive cough, fever, malaise, and hypotension.",
+  "chief_complaint": "Substernal chest pain at rest, increased by inspiration",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p001",
+      "field": "History",
+      "text": "The patient reports that he was brought to the emergency department due to a sudden onset of shortness of breath and substernal chest pain at rest, which increases with inspiration, occurring 12 hours ago. He also mentions a nonproductive cough, fever, and malaise for the past 5 days. He does not smoke or use illicit drugs."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Shortness of breath"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Nonproductive cough"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Malaise"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p007",
+      "field": "Social_History",
+      "text": "Denies smoking or illicit drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-194-p008",
+      "field": "Review_of_Systems",
+      "text": "The patient reviews symptoms as outlined in the history and symptom section. Denies headache, vision changes, urinary symptoms, or gastrointestinal symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "38°C (100.4°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "85/45 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "125 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "32 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e005",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Inspection",
+      "text": "Distended neck veins observed."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e006",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Auscultation",
+      "text": "Muffled heart sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e007",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Palpation",
+      "text": "No palpable thrill or heave."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e008",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "Normal chest wall movement."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e009",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Bilateral basilar rales."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e010",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Resonant."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-e011",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Palpation",
+      "text": "No chest wall tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-194-i001",
+      "path": "Test_Results.ECG.Findings",
+      "text": "Sinus tachycardia, diffuse ST segment elevation, low voltage QRS complexes, and fluctuating R wave amplitude."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-i002",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Normal size heart, no pulmonary congestion."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-194-i003",
+      "path": "Test_Results.Echocardiogram.Findings",
+      "text": "Evidence of pericardial effusion."
+    }
+  ],
+  "correct_diagnosis": "Cardiac Tamponade",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

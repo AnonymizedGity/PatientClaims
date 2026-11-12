@@ -1,0 +1,81 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12365",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 78, "sex": "female"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "loss of vision", "aliases": ["vision loss", "blurred vision", "can't see well", "poor eyesight"], "text": "I've had a loss of vision.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "loss of vision: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly.", "value": "sudden", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "headache", "aliases": ["head pain", "head hurts"], "text": "I have a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "cataract surgery", "aliases": ["pseudophakia", "lens implants", "artificial lenses", "eye surgery"], "text": "I've had cataract surgery with artificial lenses put in both eyes.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f005", "item": "macular degeneration", "aliases": ["dry macular degeneration", "AMD", "age-related macular degeneration"], "text": "I have dry macular degeneration.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "glaucoma", "aliases": ["open-angle glaucoma", "high eye pressure"], "text": "I have open-angle glaucoma.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "latanoprost eye drops", "aliases": ["latanoprost", "Xalatan", "glaucoma drops"], "text": "For a long time I've used latanoprost 0.005% drops in both eyes every night for the glaucoma.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "Simbrinza eye drops", "aliases": ["Simbrinza", "brimonidine", "brinzolamide", "brimonidine-brinzolamide", "new eye drops"], "text": "Three weeks ago I was started on Simbrinza drops (brimonidine 0.1%/brinzolamide 0.1%) for my glaucoma, twice a day in both eyes.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "COPD", "aliases": ["chronic obstructive pulmonary disease", "lung disease", "emphysema", "chronic bronchitis"], "text": "I have COPD.", "polarity": "present", "category": "medical_history", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12365",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "eye chart", "acuity"], "result": "20/400 in the right eye; 20/200 in the left eye."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "pupil examination", "aliases": ["pupils", "pupillary reflexes", "relative afferent pupillary defect", "RAPD", "swinging flashlight test"], "result": "Pupils equally reactive; no relative afferent pupillary defect."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "24 mm Hg right eye (OD); 23 mm Hg left eye (OS)."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["slit lamp", "anterior segment examination", "anterior chamber"], "result": "Quiet anterior chambers, shallow in the periphery."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "indentation gonioscopy", "aliases": ["gonioscopy"], "result": "Closed angles in both eyes."},
+      {"id": "x006", "kind": "test", "name": "ultrasound biomicroscopy", "aliases": ["UBM", "anterior segment ultrasound", "ocular ultrasound", "eye ultrasound"], "result": "Iridocorneal apposition with 360° choroidal effusions in both eyes."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "manifest refraction", "aliases": ["refraction", "glasses prescription", "refractive error"], "result": "Myopic shift of 3 diopters in each eye."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12365",
+    "diagnosis": "Drug-induced bilateral acute angle closure",
+    "aliases": ["drug-induced bilateral acute angle-closure glaucoma", "medication-induced bilateral acute angle closure", "drug-induced bilateral secondary angle closure", "sulfonamide-induced bilateral angle closure", "brinzolamide-induced bilateral angle closure", "drug-induced bilateral choroidal effusion with angle closure"],
+    "reasoning": "1. Brinzolamide–induced effusions were considered given its sulfamate moiety similar to topiramate and acetazolamide — “we initially hypothesized the choroidal effusions were due to brinzolamide … and therefore, has the potential to cause this idiosyncratic reaction.” 2. Latanoprost was also considered for its ability to increase uveoscleral outflow and disrupt the blood-aqueous barrier in pseudophakic eyes — “Latanoprost increases aqueous flow into [the] uveoscleral outflow pathway and could disrupt blood-aqueous barrier in pseudophakic eyes.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12365",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s002"],
+      "f005": ["s002"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s002"],
+      "f009": ["s003"]
+    },
+    "quotes": {
+      "f002": "acute vision loss",
+      "f004": "pseudophakia in both eyes",
+      "f005": "dry macular degeneration",
+      "f006": "open-angle glaucoma",
+      "f007": "treated chronically with latanoprost 0.005% nightly in both eyes",
+      "f008": "three weeks earlier she was started on Simbrinza™ (brimonidine 0.1%/brinzolamide 0.1%) twice daily in both eyes"
+    },
+    "flags": {
+      "f001": ["The source does not say which eye or whether both eyes lost vision; acuity is reduced in both eyes on examination (x001)."],
+      "f004": ["Pseudophakia (artificial lens in both eyes) worded as previous cataract surgery with lens implants."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "visual acuity was 20/400 in the right eye and 20/200 in the left eye"},
+      "x002": {"sentences": ["s005"], "source_text": "Pupils were equally reactive without a relative afferent pupillary defect."},
+      "x003": {"sentences": ["s006"], "source_text": "Intraocular pressures were 24 mm Hg OD and 23 mm Hg OS."},
+      "x004": {"sentences": ["s007"], "source_text": "Slit-lamp examination revealed quiet anterior chambers that were shallow in the periphery."},
+      "x005": {"sentences": ["s008"], "source_text": "Indentation gonioscopy showed closed angles in both eyes."},
+      "x006": {"sentences": ["s009"], "source_text": "Ultrasound biomicroscopy demonstrated iridocorneal apposition with 360° choroidal effusions in both eyes."},
+      "x007": {"sentences": ["s010"], "source_text": "Manifest refraction revealed a myopic shift of 3 diopters in each eye."}
+    },
+    "finding_flags": {},
+    "leakage": [
+      {"fact_id": "f006", "reason": "'open-angle' is part of her known earlier diagnosis (open-angle glaucoma), which she was told; it is not the gold angle closure."},
+      {"id": "x005", "reason": "Gonioscopy result 'closed angles' is the examination's answer and shows the angle closure; kept because it is what the doctor is told."}
+    ],
+    "source_issues": [],
+    "notes": ["Index visit: the emergency presentation with acute vision loss and headache (s001-s010; all examinations are from that visit).", "Simbrinza started three weeks before presentation is kept with its timing in the medication fact; it is the key history clue.", "Intraocular pressure, gonioscopy and refraction are eye examinations; ultrasound biomicroscopy is an imaging test.", "Fixes: f008 text rewritten; f007 alias 'eye drops' removed; f008 alias 'eye drops' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

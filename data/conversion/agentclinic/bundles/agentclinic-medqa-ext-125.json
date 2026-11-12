@@ -1,0 +1,114 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-125",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 67, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "right knee swelling", "aliases": ["knee swelling", "swollen knee"], "text": "My right knee is swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "right knee pain", "aliases": ["knee pain", "sore knee"], "text": "My right knee hurts.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "right knee symptoms getting worse", "aliases": ["flare-up"], "text": "The swelling and pain in my right knee have gotten worse recently.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "right knee pain: better with rest", "parent": "f002", "attribute": "relieving", "aliases": ["rest"], "text": "The pain gets a lot better when I rest.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "left knee swelling", "aliases": ["other knee"], "text": "My left knee was swollen like this a few weeks ago, but it has gotten better since.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "resolved"},
+      {"id": "f006", "item": "difficulty walking", "aliases": ["trouble walking"], "text": "The pain makes it hard for me to walk.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "difficulty with daily activities", "aliases": ["trouble with everyday tasks"], "text": "The pain makes it hard to do my daily activities.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "back pain", "aliases": ["backache"], "text": "I have back pain.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f009", "item": "back pain: course", "parent": "f008", "attribute": "course", "text": "It's persistent; it doesn't go away.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f010", "item": "back pain: limits movement", "parent": "f008", "attribute": "other", "aliases": ["mobility"], "text": "My back pain also makes it harder for me to move around.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "dandruff", "aliases": ["flaky scalp", "scalp flakes"], "text": "I have dandruff.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f012", "item": "special shampoo", "aliases": ["medicated shampoo", "dandruff shampoo"], "text": "I've been using special shampoos to manage my dandruff.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "arthritis", "aliases": ["joint disease"], "text": "I was diagnosed with arthritis 16 years ago.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "other medical problems", "aliases": ["past medical history"], "text": "I don't have any other significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "frustration about my limitations", "aliases": ["how I'm coping", "feelings about the symptoms"], "text": "I'm frustrated by how much my symptoms limit me.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "other symptoms", "aliases": ["systemic symptoms", "other symptoms"], "text": "I don't have any other symptoms in the rest of my body.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-125",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "knee examination", "aliases": ["joint examination", "musculoskeletal examination", "knee range of motion", "knee palpation"], "result": "Inspection: visible swelling of the right knee. Palpation: warmth and tenderness over the right knee joint; no similar findings in the left knee. Range of motion: reduced in the right knee due to pain and swelling."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "nail examination", "aliases": ["nails", "fingernails", "hand inspection"], "result": "Pitting of the nails."},
+      {"id": "x007", "kind": "exam", "system": "musculoskeletal", "name": "back examination", "aliases": ["spine examination", "spinal mobility", "back"], "result": "Limited spine mobility, without acute tenderness."},
+      {"id": "x008", "kind": "test", "name": "rheumatoid factor", "aliases": ["RF"], "result": "Negative."},
+      {"id": "x009", "kind": "test", "name": "anti-CCP antibody", "aliases": ["anti-cyclic citrullinated peptide", "ACPA", "anti-CCP"], "result": "Negative."},
+      {"id": "x010", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Elevated."},
+      {"id": "x011", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Elevated."},
+      {"id": "x012", "kind": "test", "name": "right knee X-ray", "aliases": ["knee X-ray", "knee radiograph"], "result": "Joint space narrowing, subchondral sclerosis, and no evidence of erosive disease."},
+      {"id": "x013", "kind": "test", "name": "spine X-ray", "aliases": ["back X-ray", "spinal radiograph", "sacroiliac joints"], "result": "Slight degenerative changes; no evidence of sacroiliitis."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-125",
+    "diagnosis": "Psoriatic arthritis",
+    "aliases": ["PsA", "psoriatic arthropathy", "arthropathic psoriasis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-125",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-125-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-125-p001"],
+      "f003": ["agentclinic-medqa-ext-125-p001"],
+      "f004": ["agentclinic-medqa-ext-125-p001", "agentclinic-medqa-ext-125-p002"],
+      "f005": ["agentclinic-medqa-ext-125-p001", "agentclinic-medqa-ext-125-p003"],
+      "f006": ["agentclinic-medqa-ext-125-p001", "agentclinic-medqa-ext-125-p005"],
+      "f007": ["agentclinic-medqa-ext-125-p001", "agentclinic-medqa-ext-125-p005"],
+      "f008": ["agentclinic-medqa-ext-125-p001", "agentclinic-medqa-ext-125-p004"],
+      "f009": ["agentclinic-medqa-ext-125-p001"],
+      "f010": ["agentclinic-medqa-ext-125-p001"],
+      "f011": ["agentclinic-medqa-ext-125-p001", "agentclinic-medqa-ext-125-p006"],
+      "f012": ["agentclinic-medqa-ext-125-p001"],
+      "f013": ["agentclinic-medqa-ext-125-p007"],
+      "f014": ["agentclinic-medqa-ext-125-p007"],
+      "f015": ["agentclinic-medqa-ext-125-p009"],
+      "f016": ["agentclinic-medqa-ext-125-p009"]
+    },
+    "quotes": {
+      "f003": "right knee swelling and pain that has recently exacerbated",
+      "f004": "significantly improving with rest",
+      "f005": "his left knee was similarly swollen a few weeks ago, but has since improved",
+      "f006": "difficulties walking",
+      "f007": "performing daily activities due to the pain",
+      "f009": "persistent back pain",
+      "f010": "contributes to his restricted mobility",
+      "f012": "using special shampoos to manage it",
+      "f013": "Diagnosed with arthritis 16 years ago.",
+      "f014": "No other significant medical history provided.",
+      "f015": "general frustration over the limitations imposed by his symptoms",
+      "f016": "does not report any other systemic complaints"
+    },
+    "flags": {
+      "f013": ["The type of arthritis diagnosed 16 years ago is not stated."],
+      "f014": ["Source wording is 'No other significant medical history provided'; read as a denial of other significant illness (the field lists only the arthritis)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-125-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-125-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-125-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-125-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection + Physical_Examination_Findings.Musculoskeletal_Examination.Palpation + Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion", "source_text": "Visible swelling of the right knee. Pitting of the nails noted. | Warmth and tenderness over the right knee joint. No similar findings in the left knee. | Reduced range of motion in the right knee due to pain and swelling.", "exam_ids": ["agentclinic-medqa-ext-125-e005", "agentclinic-medqa-ext-125-e006", "agentclinic-medqa-ext-125-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection", "source_text": "Visible swelling of the right knee. Pitting of the nails noted.", "exam_ids": ["agentclinic-medqa-ext-125-e005"]},
+      "x007": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Additional_Findings", "source_text": "Back examination shows limited spine mobility but without acute tenderness.", "exam_ids": ["agentclinic-medqa-ext-125-e008"]},
+      "x008": {"source": "Test_Results.Rheumatoid_Factor", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-125-i001"]},
+      "x009": {"source": "Test_Results.Anti-CCP_Antibody", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-125-i002"]},
+      "x010": {"source": "Test_Results.ESR", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-125-i003"]},
+      "x011": {"source": "Test_Results.CRP", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-125-i004"]},
+      "x012": {"source": "Test_Results.X-Ray_Right_Knee.Findings", "source_text": "Joint space narrowing, subchondral sclerosis, and no evidence of erosive disease.", "exam_ids": ["agentclinic-medqa-ext-125-i005"]},
+      "x013": {"source": "Test_Results.X-Ray_Spine.Findings", "source_text": "Slight degenerative changes but no evidence of sacroiliitis", "exam_ids": ["agentclinic-medqa-ext-125-i006"]}
+    },
+    "leakage": [
+      {"fact_id": "f013", "reason": "'Arthritis' is the patient's own prior diagnosis from the source past medical history (type unspecified); it is part of the gold term but is history the patient was told."}
+    ],
+    "source_issues": ["Temperature '36.8°C (98°F)': 36.8°C is 98.2°F.", "The knee X-ray (joint space narrowing, subchondral sclerosis, no erosions) and the spine X-ray (degenerative changes) look osteoarthritic; no psoriatic skin plaques are documented, only dandruff and nail pitting, so the case supports the gold diagnosis weakly.", "Social_History carries no information ('Does not provide specific details on lifestyle, smoking, or alcohol use')."],
+    "notes": ["The chief complaint names two complaints (right knee swelling and pain), both in the opening. The recent worsening applies to both and is a standalone fact (f003); relief with rest is attached to the pain, as in the source.", "Difficulty walking and difficulty with daily activities (p005) are split into two facts.", "The inspection leaf e005 mixes knee swelling and nail pitting, so it is cited by both the knee examination (x005) and a separate nail examination (x006).", "ESR and CRP are not one of the listed standard panels, so they stay separate records; so do rheumatoid factor and anti-CCP.", "Frustration with his limitations is kept as a social_background fact (the patient's own feeling), not a psychiatric symptom."],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-125-p008", "reason": "Meta statement with no content ('Does not provide specific details on lifestyle, smoking, or alcohol use'); smoking and alcohol stay unknown."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with knee swelling and pain, who has a history of arthritis and additional musculoskeletal complaints."
+    }
+  }
+}

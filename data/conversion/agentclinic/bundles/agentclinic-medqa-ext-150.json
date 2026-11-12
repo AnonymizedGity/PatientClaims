@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-150", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 20, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "hearing voices", "aliases": ["auditory hallucinations", "hearing things"], "text": "I've been hearing voices, but there's no one there.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "hearing voices: what they say about me", "parent": "f001", "attribute": "character", "text": "The voices talk about me in the third person.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f003", "item": "hearing voices: telling me to hurt myself", "parent": "f001", "attribute": "character", "aliases": ["command hallucinations", "voices encouraging self-harm"], "text": "The voices encourage me to hurt myself.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f004", "item": "how long the symptoms have been going on", "aliases": ["when it started", "onset"], "text": "This has been going on for the past week, since my father died.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "father's health", "aliases": ["recent death in the family", "bereavement", "loss"], "text": "My father died of lung cancer.", "polarity": "present", "category": "family_history", "time": "historical"},
+      {"id": "f006", "item": "unwanted thoughts", "aliases": ["intrusive thoughts"], "text": "I keep getting unwanted thoughts that push their way into my head.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "trouble concentrating", "aliases": ["concentration difficulties", "poor concentration"], "text": "I've had trouble concentrating.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f008", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I've never had any medical illness.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "past mental health problems", "aliases": ["psychiatric history", "previous psychiatric illness"], "text": "I've never had any psychiatric illness before.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "medications", "aliases": ["medicines"], "text": "I don't take any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "drug or substance use", "aliases": ["recreational drugs", "substance use", "drug use"], "text": "I don't use any drugs or other substances.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "headache", "text": "I haven't had any headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f015", "item": "other unusual sensory experiences", "aliases": ["seeing things", "visual hallucinations", "sensory disturbances"], "text": "Apart from the voices, I haven't noticed anything else unusual with my senses.", "polarity": "absent", "category": "symptom", "system": "psychiatric", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-150",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.9°C (98.4°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/65 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "exam", "system": "psychiatric", "name": "mental status examination", "aliases": ["MSE", "psychiatric examination", "appearance and behavior", "speech", "mood and affect", "thought process", "thought content", "perception", "cognition", "orientation", "concentration", "insight and judgment"], "result": "Appearance: gaunt and anxious. Behavior: cooperative, but appears distressed. Speech: coherent; reports distressing auditory hallucinations. Mood and affect: euthymic mood with congruent affect; subjectively reports feeling anxious. Thought process: linear. Thought content: reports hearing voices discussing her negatively and encouraging self-harm. Perception: auditory hallucinations. Cognition: alert and oriented to time, place and person; concentration impaired. Insight and judgment: insight somewhat limited; judgment fair."},
+      {"id": "x006", "kind": "test", "name": "comprehensive metabolic panel", "aliases": ["CMP", "metabolic panel", "electrolytes", "glucose", "renal function", "liver function tests", "BMP"], "result": "Normal."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "thyroid-stimulating hormone", "aliases": ["TSH", "thyroid function"], "result": "Normal."},
+      {"id": "x009", "kind": "test", "name": "urine toxicology", "aliases": ["urine drug screen", "tox screen", "drug screen"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-150",
+    "diagnosis": "Brief psychotic disorder",
+    "aliases": ["brief psychotic episode", "brief reactive psychosis", "brief psychotic disorder with marked stressor"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-150",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-150-p001", "agentclinic-medqa-ext-150-p007"],
+      "f002": ["agentclinic-medqa-ext-150-p004"], "f003": ["agentclinic-medqa-ext-150-p004"],
+      "f004": ["agentclinic-medqa-ext-150-p001"], "f005": ["agentclinic-medqa-ext-150-p001"],
+      "f006": ["agentclinic-medqa-ext-150-p001", "agentclinic-medqa-ext-150-p002"],
+      "f007": ["agentclinic-medqa-ext-150-p003"],
+      "f008": ["agentclinic-medqa-ext-150-p005"], "f009": ["agentclinic-medqa-ext-150-p005"],
+      "f010": ["agentclinic-medqa-ext-150-p006"], "f011": ["agentclinic-medqa-ext-150-p006"],
+      "f012": ["agentclinic-medqa-ext-150-p007"], "f013": ["agentclinic-medqa-ext-150-p007"], "f014": ["agentclinic-medqa-ext-150-p007"],
+      "f015": ["agentclinic-medqa-ext-150-p007"]
+    },
+    "quotes": {
+      "f001": "hearing voices that are not present", "f002": "Voices discussing the patient in the third person",
+      "f003": "encouraging self-harm", "f004": "for the past week following her father’s death",
+      "f005": "her father’s death from lung cancer", "f009": "No history of medical or psychiatric illness.",
+      "f011": "denies the use of medications or substances",
+      "f015": "any sensory disturbances other than auditory hallucinations"
+    },
+    "flags": {
+      "f004": ["In the source the one-week duration is attached to 'bizarre behavior'; it is applied here to the whole presentation (voices, intrusive thoughts), which is how the source frames the visit."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.9°C (98.4°F)", "exam_ids": ["agentclinic-medqa-ext-150-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/65 mm Hg", "exam_ids": ["agentclinic-medqa-ext-150-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90 bpm", "exam_ids": ["agentclinic-medqa-ext-150-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17 breaths/min", "exam_ids": ["agentclinic-medqa-ext-150-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Mental_Status_Examination.Appearance + Physical_Examination_Findings.Mental_Status_Examination.Behavior + Physical_Examination_Findings.Mental_Status_Examination.Speech + Physical_Examination_Findings.Mental_Status_Examination.Mood_And_Affect + Physical_Examination_Findings.Mental_Status_Examination.Thought_Process + Physical_Examination_Findings.Mental_Status_Examination.Thought_Content + Physical_Examination_Findings.Mental_Status_Examination.Perception + Physical_Examination_Findings.Mental_Status_Examination.Cognition + Physical_Examination_Findings.Mental_Status_Examination.Insight_And_Judgment", "source_text": "Gaunt and anxious | Cooperative, yet appears distressed | Coherent but reports distressing auditory hallucinations | Mood is euthymic with congruent affect, subjectively reports feeling anxious | Linear | Reports hearing voices discussing her negatively and encouraging self-harm | Experiencing auditory hallucinations | Alert and oriented to time, place, and person. Concentration impaired. | Insight is somewhat limited; judgment is fair.", "exam_ids": ["agentclinic-medqa-ext-150-e005", "agentclinic-medqa-ext-150-e006", "agentclinic-medqa-ext-150-e007", "agentclinic-medqa-ext-150-e008", "agentclinic-medqa-ext-150-e009", "agentclinic-medqa-ext-150-e010", "agentclinic-medqa-ext-150-e011", "agentclinic-medqa-ext-150-e012", "agentclinic-medqa-ext-150-e013"]},
+      "x006": {"source": "Test_Results.Comprehensive_Metabolic_Panel", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-150-i001"]},
+      "x007": {"source": "Test_Results.Complete_Blood_Count", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-150-i002"]},
+      "x008": {"source": "Test_Results.Thyroid_Stimulating_Hormone", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-150-i003"]},
+      "x009": {"source": "Test_Results.Urine_Toxicology", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-150-i004"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Mental status: mood is recorded as 'euthymic with congruent affect' while appearance is 'anxious' and the patient reports feeling anxious.",
+      "The Speech leaf contains perceptual content ('reports distressing auditory hallucinations').",
+      "The one-week duration in the history is attached to 'bizarre behavior', not explicitly to the voices."
+    ],
+    "notes": [
+      "'Bizarre behavior' and attending with her mother are observer-level information; the MSE leaves do not contain them, so they are in qc.extras.acting_notes, not patient facts.",
+      "Psychiatric content is written as experience ('hearing voices, but there's no one there', 'unwanted thoughts') with the clinical terms as aliases. The voices' third-person commentary and their encouragement of self-harm are separate children so a question about command voices gets its own answer; the patient's own intent to self-harm is not recorded and stays unknown.",
+      "The mental status examination is one record (mental status is one requestable component); its sub-headings are aliases.",
+      "The patient's subjective anxiety appears only in the MSE leaf, not in the patient fragments, so no patient fact was created for it.",
+      "'No notable social history provided' (p006) carries no meaning; p006 is cited for the medication and substance denials.",
+      "'No history of medical or psychiatric illness' is split into a medical (f008) and a psychiatric (f009) denial."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess, manage, and diagnose the patient presenting with symptoms of a psychiatric disorder, following recent bereavement.",
+      "acting_notes": ["Came in with her mother because of bizarre behavior over the past week (reported by others, not a patient statement)."]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

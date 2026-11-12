@@ -1,0 +1,133 @@
+{
+  "case_id": "agentclinic-medqa-ext-179",
+  "source_row": 179,
+  "demographics_text": "52-year-old male",
+  "objective_for_doctor": "Evaluate and manage a patient presenting with headache and dizziness.",
+  "chief_complaint": "Persistent headache",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p001",
+      "field": "History",
+      "text": "The patient describes a continuous 'nagging' headache for the past month, initially thought to be related to a cold. Over-the-counter ibuprofen provided only mild and temporary relief. Recently, has experienced dizziness and nausea, notably improving when outside in cold air. The patient has been staying in a cabin for 5 weeks and reports no significant travel."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Dizziness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Temporary relief upon exposure to cold air"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p005",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, type II diabetes mellitus, and asthma."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p006",
+      "field": "Social_History",
+      "text": "Denies tobacco or illicit drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p007",
+      "field": "Review_of_Systems",
+      "text": "Currently asymptomatic in the office; no fever, cough, chest pain, or recent changes in vision or hearing."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-179-p008",
+      "field": "Current_Medications",
+      "text": "[\"Amlodipine\", \"Metformin\", \"Glimepiride\", \"Fluticasone/Salmeterol inhaler\"]"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "99°F (37.2°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/78 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Mental_Status",
+      "text": "Alert and oriented x3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves",
+      "text": "Intact"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Motor",
+      "text": "Strength 5/5 in all extremities"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensory",
+      "text": "Intact to light touch"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e010",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Coordination",
+      "text": "No ataxia or dysmetria"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-e011",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "2+ and symmetric"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-179-i001",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "20 g/dL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hematocrit",
+      "text": "60% (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-i003",
+      "path": "Test_Results.Complete_Blood_Count.Leukocyte_Count",
+      "text": "10,050 cells/mm^3 with normal differential"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-179-i004",
+      "path": "Test_Results.Complete_Blood_Count.Platelet_Count",
+      "text": "350,000/mm^3"
+    }
+  ],
+  "correct_diagnosis": "Toxic exposure",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

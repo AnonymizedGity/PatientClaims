@@ -1,0 +1,103 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-021",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 34, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "decreased vision", "aliases": ["blurry vision", "vision loss", "worse eyesight"], "text": "The vision in my right eye has gotten worse.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "black spots in vision", "aliases": ["floaters", "spots in vision"], "text": "I'm seeing black spots in my right eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f003", "item": "how long the eye symptoms have been going on", "text": "The worse vision and the black spots both started 2 days ago.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f004", "item": "eye pain", "aliases": ["painful eye"], "text": "My eye doesn't hurt.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "problems with the left eye", "aliases": ["left eye symptoms", "other eye"], "text": "My left eye is fine; I don't have any problems with it.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f006", "item": "AIDS", "aliases": ["HIV", "HIV infection"], "text": "I have AIDS.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "fungal esophagitis", "aliases": ["esophageal thrush", "fungal infection of the food pipe"], "text": "I was treated for a fungal infection of my esophagus 6 months ago.", "polarity": "present", "category": "medical_history", "time": "resolved"},
+      {"id": "f008", "item": "fluconazole", "aliases": ["antifungal"], "text": "I took fluconazole for the esophagus infection.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "Kaposi sarcoma", "aliases": ["Kaposi's sarcoma"], "text": "I was diagnosed with Kaposi's sarcoma 2 years ago.", "polarity": "present", "category": "medical_history"},
+      {"id": "f010", "item": "efavirenz", "text": "I take efavirenz.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "tenofovir", "text": "I take tenofovir.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "emtricitabine", "text": "I take emtricitabine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "azithromycin", "text": "I take azithromycin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "trimethoprim-sulfamethoxazole", "aliases": ["Bactrim", "co-trimoxazole", "TMP-SMX"], "text": "I take trimethoprim-sulfamethoxazole.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "multivitamins", "aliases": ["vitamins"], "text": "I take multivitamins.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "nutritional supplement", "aliases": ["supplements"], "text": "I take a nutritional supplement.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "other symptoms", "text": "I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-021",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "89/min"},
+      {"id": "x004", "kind": "vital", "name": "weight", "aliases": ["body weight"], "result": "45 kg (99 lb)"},
+      {"id": "x005", "kind": "vital", "name": "height", "result": "170 cm (5 ft 7 in)"},
+      {"id": "x006", "kind": "vital", "name": "body mass index", "aliases": ["BMI"], "result": "15.6 kg/m2"},
+      {"id": "x007", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["cervical lymph nodes", "neck lymph nodes", "lymphadenopathy"], "result": "Cervical lymphadenopathy present."},
+      {"id": "x008", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "skin lesions"], "result": "Multiple violaceous plaques over the trunk and extremities."},
+      {"id": "x009", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["ophthalmoscopy", "dilated fundus examination", "retinal examination", "eye examination"], "result": "Granular yellow-white opacities around the retinal vessels and multiple areas of dot-blot hemorrhages."},
+      {"id": "x010", "kind": "test", "name": "CD4 count", "aliases": ["CD4 T-lymphocyte count", "CD4+ T-cell count", "T-cell count"], "result": "36/mm3"}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-021",
+    "diagnosis": "Cytomegalovirus retinitis",
+    "aliases": ["CMV retinitis", "cytomegalovirus retinopathy", "AIDS-related CMV retinitis", "HIV-associated CMV retinitis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-021",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-021-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-021-p001"],
+      "f003": ["agentclinic-medqa-ext-021-p001"],
+      "f004": ["agentclinic-medqa-ext-021-p001", "agentclinic-medqa-ext-021-p002"],
+      "f005": ["agentclinic-medqa-ext-021-p001", "agentclinic-medqa-ext-021-p003"],
+      "f006": ["agentclinic-medqa-ext-021-p004"],
+      "f007": ["agentclinic-medqa-ext-021-p001", "agentclinic-medqa-ext-021-p004"],
+      "f008": ["agentclinic-medqa-ext-021-p004"],
+      "f009": ["agentclinic-medqa-ext-021-p001", "agentclinic-medqa-ext-021-p004"],
+      "f010": ["agentclinic-medqa-ext-021-p007"],
+      "f011": ["agentclinic-medqa-ext-021-p007"],
+      "f012": ["agentclinic-medqa-ext-021-p007"],
+      "f013": ["agentclinic-medqa-ext-021-p007"],
+      "f014": ["agentclinic-medqa-ext-021-p007"],
+      "f015": ["agentclinic-medqa-ext-021-p007"],
+      "f016": ["agentclinic-medqa-ext-021-p007"],
+      "f017": ["agentclinic-medqa-ext-021-p006"]
+    },
+    "quotes": {
+      "f003": "a 2-day history of decreased vision and seeing black spots in the right eye",
+      "f004": "He reports no pain",
+      "f005": "the left eye is asymptomatic",
+      "f007": "treated for fungal esophagitis 6 months ago",
+      "f008": "fungal esophagitis treated with fluconazole",
+      "f009": "diagnosed with Kaposi's sarcoma 2 years ago",
+      "f017": "No additional symptoms mentioned"
+    },
+    "flags": {
+      "f004": ["The source says only 'He reports no pain' within the eye-symptom sentence; read as no eye pain."],
+      "f017": ["From the ROS line 'No additional symptoms mentioned', read as a negative review of systems (CONVERSION.md treats 'No ... provided' meta phrases as denials when they carry that meaning). Note the measured BMI of 15.6 kg/m2: the source never mentions weight loss, so weight loss stays unknown rather than denied, but a broad 'other symptoms' denial may be matched to it."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-021-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-021-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "89/min", "exam_ids": ["agentclinic-medqa-ext-021-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Weight", "source_text": "45 kg (99 lbs)", "exam_ids": ["agentclinic-medqa-ext-021-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Height", "source_text": "170 cm (5 ft 7 in)", "exam_ids": ["agentclinic-medqa-ext-021-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Vital_Signs.BMI", "source_text": "15.6 kg/m2", "exam_ids": ["agentclinic-medqa-ext-021-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Cervical_Lymphadenopathy", "source_text": "Present", "exam_ids": ["agentclinic-medqa-ext-021-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Examination.Skin_Examination", "source_text": "Multiple violaceous plaques over the trunk and extremities", "exam_ids": ["agentclinic-medqa-ext-021-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Eye_Examination.Fundoscopy", "source_text": "Granular yellow-white opacities around the retinal vessels and multiple areas of dot-blot hemorrhages", "exam_ids": ["agentclinic-medqa-ext-021-e009"]},
+      "x010": {"source": "Test_Results.CD4_Count.CD4_T-lymphocyte", "source_text": "36/mm3", "exam_ids": ["agentclinic-medqa-ext-021-i001"]}
+    },
+    "leakage": [],
+    "source_issues": ["No respiratory rate and no visual acuity are given.", "The objective line shown to the doctor states the patient's age, sex and AIDS history."],
+    "notes": ["The chief complaint names two complaints (decreased vision, black spots), so both open the case; the 2-day duration covers both and is a standalone fact (f003).", "'No pain' and 'Left eye is asymptomatic' (p002, p003) merge with the same statements in the History (f004, f005).", "Each prior diagnosis (AIDS, fungal esophagitis, Kaposi's sarcoma) is a medical-history fact citing the History and Past_Medical_History; fluconazole is a past-medication fact; the current medication list gives one fact per item.", "Social history 'No additional information provided' carries no meaning and is excluded. The ROS line 'No additional symptoms mentioned' is kept as a denial (f017).", "Fixes: f010 alias 'hiv medicines' removed; f011 alias 'hiv medicines' removed; f012 alias 'hiv medicines' removed; f010 alias 'antiretrovirals' removed; f011 alias 'antiretrovirals' removed; f012 alias 'antiretrovirals' removed; f013 alias 'antibiotics' removed; f014 alias 'antibiotics' removed."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose a 34-year-old male patient presenting with decreased vision and seeing black spots in his right eye, having a medical history of AIDS."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-021-p005", "reason": "'No additional information provided' states that social history is missing; it is not a denial of anything."}
+    ]
+  }
+}

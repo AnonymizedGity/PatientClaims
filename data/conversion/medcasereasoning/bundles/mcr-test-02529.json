@@ -1,0 +1,86 @@
+{
+  "patient": {
+    "case_id": "mcr-test-02529",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 52, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "rash", "aliases": ["skin rash", "patches on the skin", "rings on the skin"], "text": "I keep getting a rash.", "polarity": "present", "category": "symptom", "system": "skin", "time": "recurrent"},
+      {"id": "f002", "item": "rash: course", "parent": "f001", "attribute": "course", "text": "It has come and gone for 4 years.", "value": "4 years", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "rash: appearance", "parent": "f001", "attribute": "appearance", "text": "It's red, ring-shaped patches.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "rash: location", "parent": "f001", "attribute": "location", "text": "It's on my trunk, arms and legs, the same on both sides, in places that don't get sun.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "rash: how the patches change", "parent": "f001", "attribute": "other", "text": "Over several months each patch slowly spreads outward in rings, with scaling.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "itching", "aliases": ["pruritus", "itchy skin", "itchy rash"], "text": "The patches are mildly itchy.", "polarity": "present", "category": "symptom", "system": "skin", "time": "recurrent"},
+      {"id": "f007", "item": "joint pain during flare-ups", "aliases": ["joint pain", "arthralgia", "aching joints"], "text": "When the rash flares up, my joints ache.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "recurrent"},
+      {"id": "f008", "item": "proton pump inhibitor", "aliases": ["PPI", "acid medicine", "stomach medicine"], "text": "I take a proton pump inhibitor.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "other medications", "aliases": ["other medicines", "tablets"], "text": "The proton pump inhibitor is the only medicine I take.", "polarity": "absent", "category": "medication"},
+      {"id": "f010", "item": "steroid treatment for the rash", "aliases": ["steroids", "corticosteroids", "steroid cream", "previous treatment"], "text": "I've been treated for the rash with steroid creams and with steroids for the whole body.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f011", "item": "steroid treatment for the rash: response", "parent": "f010", "attribute": "treatment_response", "text": "They only helped for a while.", "polarity": "present", "category": "medication"},
+      {"id": "f012", "item": "ethnicity", "aliases": ["race", "background"], "text": "I'm white.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-02529",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash", "lesions", "body surface area"], "result": "Pink-red, symmetric, concentric annular patches with trailing scale involving 10% to 15% of the body surface area."},
+      {"id": "x002", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "lymphadenopathy"], "result": "No lymphadenopathy."},
+      {"id": "x003", "kind": "test", "name": "routine laboratory tests", "aliases": ["blood tests", "complete blood count", "CBC", "metabolic panel", "chemistry", "liver function tests"], "result": "Within normal limits."},
+      {"id": "x004", "kind": "test", "name": "Lyme disease testing", "aliases": ["Lyme serology", "Borrelia serology", "Lyme test"], "result": "Negative.", "time": "before this visit"},
+      {"id": "x005", "kind": "test", "name": "skin biopsy from the leading edge of a lesion", "aliases": ["skin biopsy", "punch biopsy", "shave biopsy", "histology", "immunohistochemistry", "PAS stain", "CD7"], "result": "Punch and broad shave biopsies: superficial perivascular and lichenoid lymphocytic infiltrate with exocytosis of small lymphocytes with mild nuclear contour irregularities, minimal spongiosis, vacuolar alteration at the dermoepidermal junction and papillary dermal fibrosis; no perivascular cuffing, interstitial lymphocytic infiltrate or significant red blood cell extravasation. Immunohistochemistry: predominantly CD3+ infiltrate with an approximately equal ratio of CD4+ to CD8+ cells; loss of CD7 on lymphocytes estimated at approximately 40%. Periodic acid–Schiff diastase stain negative for fungi."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-02529",
+    "diagnosis": "Mycosis fungoides",
+    "aliases": ["MF", "mycosis fungoides type cutaneous T-cell lymphoma", "early-stage mycosis fungoides", "patch-stage mycosis fungoides", "annular mycosis fungoides"],
+    "reasoning": "1. Erythema gyratum repens was considered clinically because of the multiple concentric, almost targetoid rings — “presenting similarly to that of gyratum repens.” 2. Tinea corporis was excluded by negative fungal staining — “Periodic acid–Schiff diastase staining was negative for fungi.” 3. Mycosis fungoides was suspected based on lichenoid and epidermotropic lymphocytic infiltrates — “we observed some of these features, including epidermotropism, in our patient that raised the suspicion for MF despite clinical features that were unusual for this diagnosis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-02529",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s002"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s003"],
+      "f009": ["s003"],
+      "f010": ["s005"],
+      "f011": ["s005"],
+      "f012": ["s001"]
+    },
+    "quotes": {
+      "f002": "a 4-year history of recurrent, intermittent rash",
+      "f003": "red annular patches",
+      "f004": "symmetrically distributed, red annular patches on non–sun-exposed areas of the trunk and extremities",
+      "f005": "The lesions gradually expanded in concentric rings with scale over several months",
+      "f006": "mildly pruritic",
+      "f007": "associated with arthralgias during flares",
+      "f009": "His only medication was a proton pump inhibitor.",
+      "f010": "Initial treatment with topical and systemic corticosteroids",
+      "f011": "resulted in only temporary improvement"
+    },
+    "flags": {
+      "f010": ["'Systemic corticosteroids' is worded as steroids for the whole body; the route (tablets or injection) is not stated."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "On examination, pink-red, symmetric, concentric annular patches with trailing scale involved 10% to 15% of his body surface area"},
+      "x002": {"sentences": ["s006"], "source_text": "without lymphadenopathy"},
+      "x003": {"sentences": ["s007"], "source_text": "Laboratory investigations were within normal limits."},
+      "x004": {"sentences": ["s004"], "source_text": "Lyme disease testing was negative."},
+      "x005": {"sentences": ["s008", "s009", "s010", "s011", "s012"], "source_text": "A punch biopsy and a broad shave biopsy from the leading edge of a lesion showed a superficial perivascular and lichenoid lymphocytic infiltrate with exocytosis of small lymphocytes with mild nuclear contour irregularities, minimal spongiosis, vacuolar alteration at the dermoepidermal junction, and papillary dermal fibrosis. / Immunohistochemical staining revealed a predominantly CD3⁺ infiltrate with an approximately equal ratio of CD4⁺ to CD8⁺ cells. / Periodic acid–Schiff diastase staining was negative for fungi. / No perivascular cuffing, interstitial lymphocytic infiltrate, or significant red blood cell extravasation was seen. / Loss of CD7 on lymphocytes was estimated to be approximately 40%."}
+    },
+    "finding_flags": {
+      "x003": ["'Laboratory investigations' are not itemised; any routine blood test request returns 'Within normal limits'."],
+      "x004": ["The Lyme test is reported in the history before the steroid treatment, so it is dated before this visit; the exact time is not given."],
+      "x005": ["The punch and shave biopsies come from the same lesion edge and are reported together, so they form one pathology record."]
+    },
+    "leakage": [],
+    "source_issues": ["The individual laboratory investigations are not reported, only 'within normal limits'."],
+    "notes": ["Index visit: the outpatient (dermatology) presentation after 4 years of recurrent annular rash (s001-s012); the earlier Lyme test and steroid treatment are history.", "The earlier steroid treatment and its temporary benefit are patient facts (earlier treatment); the agents are not named.", "Fixes: f010 text rewritten."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

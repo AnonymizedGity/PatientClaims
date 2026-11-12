@@ -1,0 +1,118 @@
+{
+  "case_id": "agentclinic-medqa-ext-196",
+  "source_row": 196,
+  "demographics_text": "34-year-old female",
+  "objective_for_doctor": "Evaluate a 34-year-old woman requesting prenatal care, with subjective feelings of pregnancy but negative urine β-hCG.",
+  "chief_complaint": "Reports of pregnancy symptoms",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p001",
+      "field": "History",
+      "text": "The patient reports a 2-month history of symptoms that she believes are indicative of pregnancy, including breast tenderness, nausea, weight gain, and urinary frequency. She has been attempting to conceive for 6 months after discontinuing oral contraceptives. She announces that she believes she is pregnant due to these symptoms."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Breast tenderness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p004",
+      "field": "Secondary_Symptoms",
+      "text": "6.6-lb weight gain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Urinary frequency"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p006",
+      "field": "Past_Medical_History",
+      "text": "Has been off oral contraceptives for 6 months. No other significant medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p007",
+      "field": "Social_History",
+      "text": "Married, trying to conceive. Non-smoker. Drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-196-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, vomiting, diarrhea, dysuria, or flank pain. Reports increased fatigue."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.2°C (99°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "110/60 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "100 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Mild, nontender abdominal enlargement."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds throughout."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic throughout."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Soft, non-tender."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e009",
+      "path": "Physical_Examination_Findings.Pelvic_Exam.Cervical_Os",
+      "text": "Closed"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-e010",
+      "path": "Physical_Examination_Findings.Pelvic_Exam.Adnexa",
+      "text": "No masses or tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-196-i001",
+      "path": "Test_Results.Urine_β-hCG.Result",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-196-i002",
+      "path": "Test_Results.Transvaginal_Ultrasound.Findings",
+      "text": "No abnormalities detected."
+    }
+  ],
+  "correct_diagnosis": "Pseudocyesis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

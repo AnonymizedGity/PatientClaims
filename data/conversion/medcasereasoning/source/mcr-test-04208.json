@@ -1,0 +1,68 @@
+{
+ "case_id": "mcr-test-04208",
+ "pmcid": "PMC2934912",
+ "test_row": 283,
+ "test_index": 4208,
+ "case_prompt": "A 27-year-old woman presented with two weeks of nocturnal fever, arthralgia, right upper–quadrant abdominal pain, and icterus. She is a sheep farmer who consumes nonpasteurized cheese and has no history of drug use. On examination, temperature was 38.5°C, blood pressure 70/45 mm Hg, pulse 70 beats/min, respirations 18 breaths/min, and oxygen saturation 96% on room air. She was euvolemic, had a palpable liver edge 5 cm below the costal margin, diffuse right upper–quadrant tenderness, and marginal splenomegaly. The remainder of the examination was normal.\n\nLaboratory studies showed WBC 5400 cells/mm³, hemoglobin 10.6 g/dL, platelets 216 000/mm³, AST 224 U/L, ALT 159 U/L, alkaline phosphatase 2340 U/L, γ-GGT 597 U/L, direct bilirubin 3.1 mg/dL, albumin 3.3 g/dL, globulin 4.3 g/dL, and uric acid 1.4 mg/dL. Serum sodium was 124 mmol/L, potassium 4.4 mmol/L, chloride 95 mmol/L, plasma osmolality 262 mmol/kg, urine osmolality 274 mmol/kg, and urine sodium 64 mmol/L. Serum pituitary, thyroid, and adrenal function tests were normal. ESR was 47 mm/hr and CRP 26 U/L. Serologic tests for Epstein–Barr virus, cytomegalovirus, and hepatitis viruses were negative.\n\nAbdominal ultrasonography and CT showed hepatomegaly, mild splenomegaly, and small pericardial effusion without biliary dilatation. CT of the thorax and brain was normal. Echocardiography confirmed mild pericardial effusion without cardiac dysfunction.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 27-year-old woman presented with two weeks of nocturnal fever, arthralgia, right upper–quadrant abdominal pain, and icterus."
+  },
+  {
+   "id": "s002",
+   "text": "She is a sheep farmer who consumes nonpasteurized cheese and has no history of drug use."
+  },
+  {
+   "id": "s003",
+   "text": "On examination, temperature was 38.5°C, blood pressure 70/45 mm Hg, pulse 70 beats/min, respirations 18 breaths/min, and oxygen saturation 96% on room air."
+  },
+  {
+   "id": "s004",
+   "text": "She was euvolemic, had a palpable liver edge 5 cm below the costal margin, diffuse right upper–quadrant tenderness, and marginal splenomegaly."
+  },
+  {
+   "id": "s005",
+   "text": "The remainder of the examination was normal."
+  },
+  {
+   "id": "s006",
+   "text": "Laboratory studies showed WBC 5400 cells/mm³, hemoglobin 10.6 g/dL, platelets 216 000/mm³, AST 224 U/L, ALT 159 U/L, alkaline phosphatase 2340 U/L, γ-GGT 597 U/L, direct bilirubin 3.1 mg/dL, albumin 3.3 g/dL, globulin 4.3 g/dL, and uric acid 1.4 mg/dL."
+  },
+  {
+   "id": "s007",
+   "text": "Serum sodium was 124 mmol/L, potassium 4.4 mmol/L, chloride 95 mmol/L, plasma osmolality 262 mmol/kg, urine osmolality 274 mmol/kg, and urine sodium 64 mmol/L."
+  },
+  {
+   "id": "s008",
+   "text": "Serum pituitary, thyroid, and adrenal function tests were normal. ESR was 47 mm/hr and CRP 26 U/L."
+  },
+  {
+   "id": "s009",
+   "text": "Serologic tests for Epstein–Barr virus, cytomegalovirus, and hepatitis viruses were negative."
+  },
+  {
+   "id": "s010",
+   "text": "Abdominal ultrasonography and CT showed hepatomegaly, mild splenomegaly, and small pericardial effusion without biliary dilatation."
+  },
+  {
+   "id": "s011",
+   "text": "CT of the thorax and brain was normal. Echocardiography confirmed mild pericardial effusion without cardiac dysfunction."
+  }
+ ],
+ "final_diagnosis": "Brucellosis",
+ "diagnostic_reasoning": "1. Central nervous system disorders — “CT scan of thorax and brain revealed no abnormality.” 2. Pulmonary tuberculosis — “CT scan of thorax and brain revealed no abnormality.” 3. Endocrine diseases — “Serum pituitary, thyroid, and adrenal function tests were in normal ranges.” 4. Epstein–Barr virus infection — “Serologic tests for Epstein-Barr virus … were negative.” 5. Cytomegalovirus infection — “Serologic tests for … cytomegalovirus … were negative.” 6. Hepatitis virus infection — “Serologic tests for … hepatitis viruses were negative.”",
+ "selection": {
+  "age": 27,
+  "sex": "female",
+  "specialty": "infectious_disease",
+  "dx_key": "brucellosis",
+  "setting": "emergency",
+  "time_structure": "single_episode",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "high",
+  "screen_reason": "Nocturnal fever, arthralgia, cholestatic hepatitis and hepatosplenomegaly in a sheep farmer who eats unpasteurized cheese is classic brucellosis.",
+  "second_look_note": "Nocturnal fevers, arthralgia and cholestatic hepatitis with hepatosplenomegaly in a sheep farmer eating unpasteurised cheese is a history-driven diagnosis."
+ }
+}

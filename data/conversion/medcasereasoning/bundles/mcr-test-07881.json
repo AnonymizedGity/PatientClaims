@@ -1,0 +1,133 @@
+{
+  "patient": {
+    "case_id": "mcr-test-07881",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 21, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "joint pain", "aliases": ["arthralgia", "aching joints", "painful joints"], "text": "My joints hurt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "muscle aches", "aliases": ["myalgia", "muscle pain", "body aches"], "text": "My muscles ache too.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "where the joint and muscle pains are", "text": "Both are in my wrists, ankles and knees, on both sides.", "value": ["wrists", "ankles", "knees"], "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "how long the joint and muscle pains have lasted", "text": "They've been going on for 2 weeks.", "value": "2 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "fever", "aliases": ["high temperature", "feeling feverish"], "text": "I've been having fevers.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "fever: frequency", "parent": "f005", "attribute": "frequency", "text": "I get them every day.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "fever: severity", "parent": "f005", "attribute": "severity", "text": "My temperature goes up to 102 °F.", "value": "102 °F", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "rash", "aliases": ["skin rash", "spots"], "text": "I have a rash.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f009", "item": "rash: appearance", "parent": "f008", "attribute": "appearance", "text": "It's salmon-coloured and a bit raised.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f010", "item": "rash: location", "parent": "f008", "attribute": "location", "text": "It's on my body, my arms and my legs.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f011", "item": "rash: when it appeared", "parent": "f008", "attribute": "onset", "text": "It appeared at almost the same time as the fevers.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f012", "item": "sore throat", "aliases": ["throat pain", "pharyngitis"], "text": "I have a sore throat.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f013", "item": "nausea", "aliases": ["feeling sick to my stomach", "queasiness"], "text": "I've been nauseous.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "vomiting", "aliases": ["throwing up", "being sick"], "text": "I've been vomiting.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f015", "item": "how long the fevers, rash, sore throat and stomach upset have lasted", "text": "All of those began during the past week.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f016", "item": "recent hiking or outdoor trips", "aliases": ["hiking", "outdoor activities", "camping", "recent travel", "woods"], "text": "I went hiking in North Georgia in March.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f017", "item": "tick bite", "aliases": ["ticks", "insect bite", "bug bite"], "text": "I removed a tick from my leg and from my pubic area, three days before my joint pains started.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f018", "item": "rash at the tick bite sites", "aliases": ["bullseye rash", "rash where the tick was", "bite site rash"], "text": "I didn't notice any rash where the tick had been.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f019", "item": "chronic medical problems", "aliases": ["medical history", "past illnesses"], "text": "I haven't had any significant medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f020", "item": "metronidazole", "aliases": ["Flagyl", "antibiotics"], "text": "I'm taking metronidazole.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f021", "item": "acetaminophen", "aliases": ["Tylenol", "paracetamol", "painkillers", "fever medicine"], "text": "I'm taking acetaminophen.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f022", "item": "diphenhydramine", "aliases": ["Benadryl", "antihistamine"], "text": "I'm taking diphenhydramine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f023", "item": "penicillin allergy", "aliases": ["drug allergies", "allergies", "medication allergy"], "text": "I'm allergic to penicillin; it gives me a bad rash.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f024", "item": "ethnic background", "aliases": ["ethnicity", "race"], "text": "I'm white.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-07881",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "142/72 mmHg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "81/min"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "18/min"},
+      {"id": "x004", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "102 °F"},
+      {"id": "x005", "kind": "exam", "system": "ent", "name": "mouth and throat examination", "aliases": ["oral examination", "throat", "pharynx", "tonsils", "oral mucosa"], "result": "Oral and pharyngeal mucosa erythematous, without exudate."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["eyes", "conjunctivae"], "result": "Mild conjunctival injection."},
+      {"id": "x007", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "neck examination", "cervical lymph nodes", "lymphadenopathy"], "result": "Cervical lymphadenopathy present."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "spleen", "liver", "palpation of the abdomen"], "result": "Abdomen tender; mildly enlarged spleen."},
+      {"id": "x009", "kind": "exam", "system": "musculoskeletal", "name": "joint examination", "aliases": ["joints", "musculoskeletal examination", "wrists", "knees", "ankles"], "result": "Multiple joints tender to palpation and passive motion."},
+      {"id": "x010", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash"], "result": "Salmon-colored, raised maculopapular rash on the trunk and extremities."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "neutrophils", "differential", "hemoglobin", "platelets"], "result": "WBC 13.93 × 10^3/mm^3 with 83% neutrophils; hemoglobin 11.2 g/dL; platelets 233 × 10^3/mm^3."},
+      {"id": "x012", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "AST", "ALT", "liver enzymes", "transaminases"], "result": "AST 134 U/L; ALT 156 U/L."},
+      {"id": "x013", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH"], "result": "430 U/L"},
+      {"id": "x014", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "21.1 mg/dL"},
+      {"id": "x015", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "119 mm/hr"},
+      {"id": "x016", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibody", "rheumatoid factor", "RF"], "result": "ANA negative; rheumatoid factor negative."},
+      {"id": "x017", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative."},
+      {"id": "x018", "kind": "test", "name": "urine culture", "aliases": ["urine cultures"], "result": "Negative."},
+      {"id": "x019", "kind": "test", "name": "vaginal and rectal cultures", "aliases": ["vaginal culture", "rectal culture", "genital cultures", "gonorrhea culture"], "result": "Negative."},
+      {"id": "x020", "kind": "test", "name": "HIV test", "aliases": ["HIV", "HIV serology"], "result": "Negative."},
+      {"id": "x021", "kind": "test", "name": "Rocky Mountain spotted fever titers", "aliases": ["RMSF serology", "Rickettsia rickettsii serology", "rickettsial serology", "tick-borne disease serology"], "result": "1:16 on admission; rose to 1:64 on repeat testing."},
+      {"id": "x022", "kind": "test", "name": "Mycoplasma serology", "aliases": ["Mycoplasma antibodies", "Mycoplasma pneumoniae serology"], "result": "Negative."},
+      {"id": "x023", "kind": "test", "name": "Chlamydia serology", "aliases": ["Chlamydia antibodies"], "result": "Negative."},
+      {"id": "x024", "kind": "test", "name": "CT of the abdomen and pelvis", "aliases": ["CT abdomen", "abdominal CT", "CT abdomen and pelvis"], "result": "Moderate splenomegaly and mesenteric adenitis."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-07881",
+    "diagnosis": "Adult-onset Still's disease",
+    "aliases": ["AOSD", "adult onset Still disease", "adult Still's disease", "Still's disease of adult onset"],
+    "reasoning": "1. Rocky Mountain spotted fever was later excluded because the rash was salmon colored and worsened with fever spikes — “We feel that our patient's symptoms were not due to RMSF, because the rash was salmon colored and worsened with the fever spikes.” 2. Mycoplasma pneumoniae and Chlamydia infections were ruled out by negative serologies — “Serology for Mycoplasma and Chlamydia was negative.” 3. Adult-onset Still’s disease was diagnosed based on fulfillment of clinical criteria — “Our patient's current symptoms were consistent with Yamaguchi criteria for Adult Onset Still's disease.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-07881",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002", "s011"], "f009": ["s002", "s011"], "f010": ["s002", "s011"], "f011": ["s002"], "f012": ["s002"],
+      "f013": ["s002"], "f014": ["s002"], "f015": ["s002"], "f016": ["s003"], "f017": ["s003"], "f018": ["s003"],
+      "f019": ["s004"], "f020": ["s005"], "f021": ["s005"], "f022": ["s005"], "f023": ["s006"], "f024": ["s001"]
+    },
+    "quotes": {
+      "f003": "involving wrists, ankles, and knees bilaterally", "f004": "a 2-week history of arthralgias and myalgias",
+      "f006": "daily fevers", "f007": "fevers up to 102 °F", "f009": "salmon-colored, raised maculopapular rash",
+      "f010": "on her trunk, arms, and legs", "f011": "an almost simultaneous salmon-colored rash", "f015": "During the past week",
+      "f016": "hiking in North Georgia in March", "f017": "removing a tick from her leg and pubis three days before the onset of joint symptoms",
+      "f018": "no local rash was noted at the bite sites", "f019": "Her past medical history was unremarkable.",
+      "f023": "a penicillin allergy described as causing a “bad rash.”", "f024": "white woman"
+    },
+    "flags": {
+      "f009": ["'a bit raised' is added from the examination (s011: raised maculopapular)."],
+      "f017": ["'a tick from her leg and pubis' is ambiguous between one tick and one at each site; the wording keeps the ambiguity."],
+      "f020": ["The reason for metronidazole is not given."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "blood pressure was 142/72 mm Hg"},
+      "x002": {"sentences": ["s007"], "source_text": "pulse 81 beats/min"},
+      "x003": {"sentences": ["s007"], "source_text": "respirations 18 breaths/min"},
+      "x004": {"sentences": ["s007"], "source_text": "temperature 102 °F"},
+      "x005": {"sentences": ["s008"], "source_text": "Oral and pharyngeal mucosa were erythematous without exudate"},
+      "x006": {"sentences": ["s008"], "source_text": "mild conjunctival injection"},
+      "x007": {"sentences": ["s008"], "source_text": "cervical lymphadenopathy were present"},
+      "x008": {"sentences": ["s009"], "source_text": "The abdomen was tender with a mildly enlarged spleen."},
+      "x009": {"sentences": ["s010"], "source_text": "Multiple joints were tender to palpation and passive motion."},
+      "x010": {"sentences": ["s011"], "source_text": "A salmon-colored, raised maculopapular rash involved the trunk and extremities."},
+      "x011": {"sentences": ["s012"], "source_text": "a WBC count of 13.93 × 10^3/mm^3 with 83% neutrophils; hemoglobin 11.2 g/dL; platelets 233 × 10^3/mm^3"},
+      "x012": {"sentences": ["s012"], "source_text": "AST 134 U/L; ALT 156 U/L"},
+      "x013": {"sentences": ["s012"], "source_text": "LDH 430 U/L"},
+      "x014": {"sentences": ["s012"], "source_text": "CRP 21.1 mg/dL"},
+      "x015": {"sentences": ["s012"], "source_text": "ESR 119 mm/hr"},
+      "x016": {"sentences": ["s013"], "source_text": "ANA and rheumatoid factor were negative."},
+      "x017": {"sentences": ["s014"], "source_text": "Blood, urine, and vaginal/rectal cultures were negative."},
+      "x018": {"sentences": ["s014"], "source_text": "Blood, urine, and vaginal/rectal cultures were negative."},
+      "x019": {"sentences": ["s014"], "source_text": "Blood, urine, and vaginal/rectal cultures were negative."},
+      "x020": {"sentences": ["s015"], "source_text": "HIV test was negative."},
+      "x021": {"sentences": ["s016"], "source_text": "Rocky Mountain spotted fever titers were 1:16 on admission and rose to 1:64."},
+      "x022": {"sentences": ["s017"], "source_text": "Serologies for Mycoplasma and Chlamydia were negative."},
+      "x023": {"sentences": ["s017"], "source_text": "Serologies for Mycoplasma and Chlamydia were negative."},
+      "x024": {"sentences": ["s018"], "source_text": "CT of the abdomen and pelvis showed moderate splenomegaly and mesenteric adenitis."}
+    },
+    "finding_flags": {
+      "x021": ["The timing of the repeat titer (1:64) is not given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s005: the reason for the current metronidazole is not given.",
+      "The gold reasoning says the rash worsened with fever spikes; the prompt only says the rash appeared almost at the same time as the fevers."
+    ],
+    "notes": [
+      "Index visit: the presentation (admission) after 2 weeks of joint and muscle pains and a week of daily fevers, rash, sore throat, nausea and vomiting (s001-s011); laboratory, serology and CT results (s012-s018) are findings from the same admission.",
+      "s001 and s002: location and duration shared by several symptoms are standalone facts (f003, f004, f015).",
+      "Conjunctival injection, cervical lymphadenopathy, abdominal tenderness and the enlarged spleen are examiner findings; the patient does not report them, so they are not facts.",
+      "Gold-diagnosis words (adult, onset, still) are avoided in fact items and texts; f011 uses the item 'rash: when it appeared' for that reason."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

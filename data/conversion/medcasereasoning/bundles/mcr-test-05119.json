@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "case_id": "mcr-test-05119",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 52, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["high temperature", "febrile"], "text": "I've had a high fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fever: onset", "parent": "f001", "attribute": "onset", "text": "It started the night after my last filgrastim dose.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "fever: duration", "parent": "f001", "attribute": "duration", "text": "Today is the fourth day of the fever.", "value": "4 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "fever: relief from acetaminophen and levofloxacin", "parent": "f001", "attribute": "relieving", "aliases": ["treatment so far", "did the medicines help"], "text": "The acetaminophen and levofloxacin I was prescribed as an outpatient didn't get rid of it; I still have the fever.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "ovarian cancer", "aliases": ["ovarian carcinoma", "cancer"], "text": "I've had ovarian cancer.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "chemotherapy", "aliases": ["chemo", "paclitaxel", "carboplatin"], "text": "After my operation I had chemotherapy with paclitaxel and carboplatin, and I've completed all six cycles.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f007", "item": "low blood counts after chemotherapy", "aliases": ["myelosuppression", "bone marrow suppression", "low blood counts"], "text": "After my fifth and sixth cycles my blood counts dropped (myelosuppression).", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "filgrastim", "aliases": ["G-CSF", "granulocyte colony-stimulating factor", "white blood cell booster"], "text": "Because of that I was given filgrastim, 75 micrograms a day: for 3 days after the fifth cycle and for 4 days after the sixth.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "acetaminophen", "aliases": ["paracetamol", "Tylenol", "fever medicine"], "text": "When the fever started I was prescribed acetaminophen as an outpatient.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "levofloxacin", "aliases": ["antibiotic", "antibiotics"], "text": "I was also prescribed the antibiotic levofloxacin as an outpatient.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "cough", "text": "I haven't had a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f013", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain"], "text": "I haven't had any abdominal pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "rash", "aliases": ["skin rash"], "text": "I haven't had a rash.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f015", "item": "vision problems", "aliases": ["visual symptoms", "trouble seeing"], "text": "I haven't had any problems with my vision.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-05119",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "38.0 °C"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "92/50 mmHg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "70/min"},
+      {"id": "x004", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "96% on room air"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "head and neck examination", "aliases": ["neck examination", "carotid bruit", "carotid auscultation"], "result": "No bruit or tenderness over the head and neck."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "chest auscultation", "aliases": ["lung auscultation", "lung examination", "breath sounds"], "result": "Unremarkable."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "heart auscultation", "aliases": ["cardiac examination", "heart sounds", "murmurs"], "result": "Unremarkable."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation"], "result": "Soft, without tenderness."},
+      {"id": "x009", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash", "skin lesions"], "result": "No skin lesions."},
+      {"id": "x010", "kind": "exam", "system": "cardiovascular", "name": "examination for peripheral edema", "aliases": ["peripheral edema", "leg swelling", "extremities"], "result": "No peripheral edema."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelet count", "platelets"], "result": "White blood cell count 8780/µL; hemoglobin 7.2 g/dL; platelet count 70,000/µL."},
+      {"id": "x012", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "19.39 mg/dL"},
+      {"id": "x013", "kind": "test", "name": "serum ferritin", "aliases": ["ferritin"], "result": "Elevated: 883 ng/mL."},
+      {"id": "x014", "kind": "test", "name": "beta-D-glucan", "aliases": ["β-D glucan", "(1,3)-beta-D-glucan", "fungal marker"], "result": "Normal."},
+      {"id": "x015", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative."},
+      {"id": "x016", "kind": "test", "name": "syphilis serology", "aliases": ["STS", "serologic test for syphilis", "RPR", "VDRL"], "result": "Negative."},
+      {"id": "x017", "kind": "test", "name": "tuberculosis interferon-gamma release assay", "aliases": ["IGRA", "interferon-gamma release assay", "QuantiFERON", "TB blood test"], "result": "Negative."},
+      {"id": "x018", "kind": "test", "name": "viral serology", "aliases": ["viral panels", "viral serologies", "virus tests"], "result": "Viral panels negative."},
+      {"id": "x019", "kind": "test", "name": "autoimmune serology", "aliases": ["ANCA", "MPO-ANCA", "PR3-ANCA", "ANA", "antinuclear antibody", "fluorescent ANA", "autoantibodies"], "result": "MPO-ANCA <1.0 U/mL; PR3-ANCA <1.0 U/mL; fluorescent ANA negative."},
+      {"id": "x020", "kind": "test", "name": "serum IgG4", "aliases": ["IgG4", "IgG4 level"], "result": "21 mg/dL"},
+      {"id": "x021", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "Unremarkable."},
+      {"id": "x022", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "cardiac ultrasound"], "result": "Unremarkable."},
+      {"id": "x023", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Unremarkable."},
+      {"id": "x024", "kind": "test", "name": "abdominal aortic ultrasound", "aliases": ["aortic ultrasound", "abdominal ultrasound", "abdominal aortic ultrasonography"], "result": "Circumferential wall thickening of the abdominal aorta with a surrounding hypoechoic rim."},
+      {"id": "x025", "kind": "test", "name": "contrast-enhanced CT", "aliases": ["CT scan", "CT chest", "CT abdomen", "CT angiography", "CT of the aorta"], "result": "New soft-tissue stranding around the aortic arch and abdominal aorta compared with pre-chemotherapy images."},
+      {"id": "x026", "kind": "test", "name": "gadolinium-enhanced MRI", "aliases": ["MRI", "MR angiography", "MRI of the aorta", "contrast MRI"], "result": "Thickening and enhancement of the aortic wall and periaortic tissue."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-05119",
+    "diagnosis": "G-CSF aortitis",
+    "aliases": ["G-CSF-induced aortitis", "G-CSF-associated aortitis", "granulocyte colony-stimulating factor-induced aortitis", "granulocyte colony-stimulating factor-associated aortitis", "filgrastim-induced aortitis", "filgrastim-associated aortitis"],
+    "reasoning": "1. Infectious aortitis was considered given persistent fever and periaortic inflammation but was excluded by “Negative bacterial, fungal, and viral test results were observed, and a broad-spectrum antibiotic treatment did not completely improve her condition.” 2. Syphilitic and tuberculous aortitis were considered and excluded by serology: “STS Negative; TbIFN-γ Negative.” 3. Systemic lupus erythematosus was considered but excluded by “FANA Negative.” 4. Behçet disease and Cogan syndrome were listed among other vasculitides under “Other differential diagnoses include … Behçet disease, Cogan syndrome …” 5. Malignancy with periaortic involvement was considered among “Other differential diagnoses include … malignancy,” but imaging lacked mass lesions."
+  },
+  "qc": {
+    "case_id": "mcr-test-05119",
+    "fact_sources": {
+      "f001": ["s003"], "f002": ["s003"], "f003": ["s004"], "f004": ["s004"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s004"], "f010": ["s004"], "f011": ["s005"], "f012": ["s005"],
+      "f013": ["s005"], "f014": ["s005"], "f015": ["s005"]
+    },
+    "quotes": {
+      "f001": "she developed high fever", "f002": "On the night after her last filgrastim dose", "f003": "admitted on day 4",
+      "f004": "She was prescribed acetaminophen and levofloxacin as an outpatient but remained febrile",
+      "f006": "completed six cycles of postoperative chemotherapy with paclitaxel and carboplatin",
+      "f007": "After her 5th and 6th cycles, she developed myelosuppression",
+      "f008": "received filgrastim (75 µg/day) for 3 and 4 days, respectively", "f015": "visual symptoms"
+    },
+    "flags": {
+      "f003": ["'Admitted on day 4' is read as day 4 of the fever, i.e. the day of the index visit."],
+      "f006": ["'Postoperative chemotherapy' implies an earlier operation; the type of operation is not given."],
+      "f009": ["The prompt does not say whether she is still taking acetaminophen and levofloxacin at admission; time 'current' reflects the outpatient prescription for this fever."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "Her temperature was 38.0 °C"},
+      "x002": {"sentences": ["s006"], "source_text": "blood pressure 92/50 mmHg"},
+      "x003": {"sentences": ["s006"], "source_text": "pulse 70 beats/min"},
+      "x004": {"sentences": ["s006"], "source_text": "oxygen saturation 96% on room air"},
+      "x005": {"sentences": ["s007"], "source_text": "The head and neck were without bruit or tenderness"},
+      "x006": {"sentences": ["s007"], "source_text": "chest and cardiac auscultation were unremarkable"},
+      "x007": {"sentences": ["s007"], "source_text": "chest and cardiac auscultation were unremarkable"},
+      "x008": {"sentences": ["s007"], "source_text": "the abdomen was soft without tenderness"},
+      "x009": {"sentences": ["s008"], "source_text": "There were no skin lesions"},
+      "x010": {"sentences": ["s008"], "source_text": "no skin lesions or peripheral edema"},
+      "x011": {"sentences": ["s009"], "source_text": "a white blood cell count of 8780/µL, hemoglobin 7.2 g/dL, platelet count 70,000/µL"},
+      "x012": {"sentences": ["s009"], "source_text": "C-reactive protein 19.39 mg/dL"},
+      "x013": {"sentences": ["s010"], "source_text": "Serum ferritin was elevated (883 ng/mL)"},
+      "x014": {"sentences": ["s010"], "source_text": "β-D glucan was normal"},
+      "x015": {"sentences": ["s010"], "source_text": "blood cultures were negative"},
+      "x016": {"sentences": ["s011"], "source_text": "Serologic tests including STS, tuberculosis interferon-γ, and viral panels were negative"},
+      "x017": {"sentences": ["s011"], "source_text": "Serologic tests including STS, tuberculosis interferon-γ, and viral panels were negative"},
+      "x018": {"sentences": ["s011"], "source_text": "Serologic tests including STS, tuberculosis interferon-γ, and viral panels were negative"},
+      "x019": {"sentences": ["s012"], "source_text": "Autoimmune serologies were negative (MPO-ANCA <1.0 U/mL, PR3-ANCA <1.0 U/mL, fluorescent ANA negative"},
+      "x020": {"sentences": ["s012"], "source_text": "IgG4 21 mg/dL"},
+      "x021": {"sentences": ["s013"], "source_text": "Electrocardiography, echocardiography, and chest radiography were unremarkable"},
+      "x022": {"sentences": ["s013"], "source_text": "Electrocardiography, echocardiography, and chest radiography were unremarkable"},
+      "x023": {"sentences": ["s013"], "source_text": "Electrocardiography, echocardiography, and chest radiography were unremarkable"},
+      "x024": {"sentences": ["s014"], "source_text": "Abdominal aortic ultrasonography demonstrated circumferential wall thickening with a surrounding hypoechoic rim."},
+      "x025": {"sentences": ["s015"], "source_text": "Contrast-enhanced CT showed new soft-tissue stranding around the aortic arch and abdominal aorta compared with pre-chemotherapy images."},
+      "x026": {"sentences": ["s016"], "source_text": "Gadolinium-enhanced MRI revealed thickening and enhancement of the aortic wall and periaortic tissue."}
+    },
+    "finding_flags": {
+      "x020": ["The prompt lists IgG4 21 mg/dL among the negative autoimmune serologies; it is given as a separate test because it is ordered separately."],
+      "x025": ["The prompt does not say which regions the contrast-enhanced CT covered; it reports the aortic arch and the abdominal aorta, so the name stays generic."]
+    },
+    "leakage": [
+      {"fact_id": "f008", "reason": "Aliases 'G-CSF' and 'granulocyte colony-stimulating factor' name the drug class of filgrastim, which is part of the gold label; the patient knows the drug she received (the text says only 'filgrastim'), and the exposure is history, not the diagnosis."}
+    ],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the admission on day 4 of the fever that began the night after her last filgrastim dose (s004), with the examination and the inpatient workup (s006–s016).",
+      "The earlier outpatient prescription of acetaminophen and levofloxacin and the persisting fever are history before the index visit, so they are patient facts.",
+      "The leakage check of check_coverage.py cannot split the label 'GCSFAortitis' into words; facts and findings were checked by hand: no fact or finding name says aortitis or G-CSF except the drug aliases listed in qc.leakage. The imaging results describe aortic wall thickening and periaortic inflammation but do not name the diagnosis; s017, which interprets them, is excluded."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s017", "reason": "Clinician's interpretation of the imaging ('suggested active inflammation of the aorta', narrative_conclusion); not a finding."}
+    ]
+  }
+}

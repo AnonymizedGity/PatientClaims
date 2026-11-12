@@ -1,0 +1,23 @@
+{
+  "dataset": "medcasereasoning",
+  "schema": "case_schema v1 (data/conversion/case_schema.md)",
+  "world": "open",
+  "cases": 100,
+  "source": "MedCaseReasoning test split (zou-lab/MedCaseReasoning); 100 adult cases chosen for dialogue simulation in two screening passes (see selection/README.md). case_id = mcr-test-<dataset index>",
+  "built_from": "data/raw/medcasereasoning/test.parquet via data/conversion/medcasereasoning/{selection,source,bundles}",
+  "gold_reasoning": "gold.reasoning holds the source diagnostic_reasoning verbatim",
+  "stats": {
+    "cases": 100,
+    "facts": 1672,
+    "child_facts": 308,
+    "absent_facts": 411,
+    "findings": 1667,
+    "findings_vital": 194,
+    "findings_exam": 401,
+    "findings_test": 1072,
+    "gold_aliases": 473,
+    "findings_with_time": 114,
+    "source_issues": 166,
+    "cases_with_leakage_entries": 41
+  }
+}

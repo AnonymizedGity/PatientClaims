@@ -1,0 +1,1098 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-020",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 26,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "cough",
+        "text": "I have a cough.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "cough: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started a week ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "cough: phlegm",
+        "parent": "f001",
+        "attribute": "appearance",
+        "aliases": [
+          "sputum",
+          "mucus"
+        ],
+        "text": "I cough up small amounts of white mucus.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "cough: blood in the phlegm",
+        "parent": "f001",
+        "attribute": "appearance",
+        "aliases": [
+          "coughing up blood"
+        ],
+        "text": "There's no blood in it.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "chest pain",
+        "aliases": [
+          "chest discomfort"
+        ],
+        "text": "I have chest pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "chest pain: what brings it on or makes it worse",
+        "parent": "f005",
+        "attribute": "aggravating",
+        "value": [
+          "coughing",
+          "deep breaths"
+        ],
+        "complete": true,
+        "text": "It comes on and gets worse when I cough or take a deep breath.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "chest pain: location",
+        "parent": "f005",
+        "attribute": "location",
+        "value": [
+          "right chest"
+        ],
+        "text": "In my right chest.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "chest pain: what it feels like",
+        "parent": "f005",
+        "attribute": "character",
+        "text": "It's sharp. It feels like a knife.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "chest pain: effect on breathing",
+        "parent": "f005",
+        "attribute": "other",
+        "text": "I can't take a deep breath.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "chest pain: what makes it better",
+        "parent": "f005",
+        "attribute": "relieving",
+        "text": "I feel better when I sleep on my right side.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "chest pain: spread",
+        "parent": "f005",
+        "attribute": "radiation",
+        "text": "It stays in one place.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "chest pain: severity",
+        "parent": "f005",
+        "attribute": "severity",
+        "value": 8,
+        "text": "It's an 8 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f013",
+        "item": "fever",
+        "text": "I believe I've had a slight fever, although I didn't check my temperature.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "chills",
+        "text": "I haven't had any chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "runny nose",
+        "text": "Two weeks ago I had a runny nose for a week, but I feel much better now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "resolved"
+      },
+      {
+        "id": "f016",
+        "item": "sore throat",
+        "text": "Two weeks ago I had a sore throat for a week, but I feel much better now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "resolved"
+      },
+      {
+        "id": "f017",
+        "item": "fever before the cough",
+        "aliases": [
+          "recent illness"
+        ],
+        "text": "Two weeks ago I had a fever for a week, along with the runny nose and sore throat, but I feel much better now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "resolved"
+      },
+      {
+        "id": "f018",
+        "item": "night sweats",
+        "text": "I haven't had night sweats.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I'm not short of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "wheezing",
+        "text": "I'm not wheezing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "stomach pain",
+        "aliases": [
+          "abdominal pain",
+          "belly pain"
+        ],
+        "text": "I don't have any stomach pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I'm not nauseated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't vomited.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "diarrhea",
+        "aliases": [
+          "loose stools"
+        ],
+        "text": "I don't have diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "appetite change",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "My appetite hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "gonorrhea",
+        "aliases": [
+          "sexually transmitted infections",
+          "STIs"
+        ],
+        "text": "I had gonorrhea 2 years ago and was treated with antibiotics.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f028",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f029",
+        "item": "TB skin test (PPD)",
+        "aliases": [
+          "tuberculosis test",
+          "PPD"
+        ],
+        "text": "I've never had it.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "Tylenol",
+        "aliases": [
+          "acetaminophen",
+          "paracetamol"
+        ],
+        "text": "I take Tylenol.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies"
+        ],
+        "text": "I don't have any allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "parents' health",
+        "aliases": [
+          "family history"
+        ],
+        "text": "My father and mother are alive and in good health.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "tuberculosis exposure",
+        "aliases": [
+          "TB contacts"
+        ],
+        "text": "I haven't been exposed to tuberculosis.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "contact with pets or animals",
+        "aliases": [
+          "pets",
+          "animals"
+        ],
+        "text": "I haven't been around any pets or animals recently.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "recent travel",
+        "aliases": [
+          "travel"
+        ],
+        "text": "I haven't traveled recently.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink quite a bit on weekends.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "alcohol: how much",
+        "parent": "f036",
+        "attribute": "quantity",
+        "text": "I don't keep track.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "thought about cutting down on drinking",
+        "text": "I've never thought about cutting down.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "bothered by comments about drinking",
+        "text": "People commenting on my drinking has never bothered me.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f040",
+        "item": "guilt about drinking",
+        "text": "I've never felt bad about my drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f041",
+        "item": "morning drink (eye-opener)",
+        "aliases": [
+          "drinking first thing in the morning"
+        ],
+        "text": "I never need a drink in the morning.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f042",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "Never. I've never used recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f043",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "smoking: how much",
+        "parent": "f043",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "smoking: when started",
+        "parent": "f043",
+        "attribute": "onset",
+        "text": "I started when I was 15 years old.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "sexual activity",
+        "text": "Every Saturday night, I pick up a new girl from the nightclub.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "number of sexual partners",
+        "aliases": [
+          "partners"
+        ],
+        "text": "Well, I've had many girlfriends.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f048",
+        "item": "condom use",
+        "aliases": [
+          "condoms",
+          "protection"
+        ],
+        "text": "I don't use condoms; I don't like using them.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a pizza delivery person.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-020",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "99.9°F (37.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "15/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "75/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "ent",
+        "name": "nose, mouth and throat examination",
+        "aliases": [
+          "nose",
+          "mouth",
+          "throat",
+          "pharynx"
+        ],
+        "result": "Nose, mouth and pharynx within normal limits."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "jugular veins",
+          "lymph nodes"
+        ],
+        "result": "No jugular venous distension or lymphadenopathy."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "breath sounds",
+          "chest auscultation"
+        ],
+        "result": "Decreased breath sounds on the right side; no rhonchi, rales or wheezing."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "tactile fremitus",
+        "aliases": [
+          "chest palpation",
+          "say 99"
+        ],
+        "result": "Increased tactile fremitus on the right side."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Apical impulse not displaced; regular rate and rhythm; S1 and S2 within normal limits; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "cyanosis",
+          "edema"
+        ],
+        "result": "No cyanosis or edema."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-020",
+    "diagnosis": "Pneumonia",
+    "aliases": [
+      "community-acquired pneumonia",
+      "CAP",
+      "bacterial pneumonia",
+      "lobar pneumonia",
+      "right-sided pneumonia",
+      "lung infection"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Pneumonia",
+        "evidence": [
+          "Persistent cough",
+          "Exam: Increased tactile fremitus",
+          "Exam: Decreased breath sounds on the right"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "URI-associated cough (post-infectious cough)",
+        "aliases": [
+          "post-infectious cough",
+          "postinfectious cough",
+          "post-viral cough",
+          "URI-associated cough",
+          "cough after an upper respiratory infection"
+        ],
+        "evidence": [
+          "Recent upper respiratory infection (URI)",
+          "Persistent cough",
+          "Exam: Low-grade fever (temperature 99.9°F)"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Acute bronchitis",
+        "aliases": [
+          "bronchitis",
+          "chest cold"
+        ],
+        "evidence": [
+          "Low-grade fever",
+          "Persistent cough",
+          "White sputum production",
+          "Exam: Increased tactile fremitus",
+          "Exam: Temperature 99.9°F"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Pleurodynia",
+        "note": "An uncommon coxsackievirus illness with acute severe paroxysmal chest or abdominal pain worse with cough or breathing; usually resolves within 3 days to 1 week."
+      },
+      {
+        "diagnosis": "Aspiration",
+        "note": "Another cause of acute cough; alcoholic, elderly and neurologically impaired patients are at risk."
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "note": "Extremely rare in a young patient with no risk factors."
+      },
+      {
+        "diagnosis": "Pulmonary edema",
+        "note": "Signs and symptoms of heart failure would be present."
+      },
+      {
+        "diagnosis": "HIV infection / Pneumocystis jirovecii pneumonia",
+        "note": "His sexual history warrants HIV screening, but there is no sign of immunosuppression (e.g. thrush) and PJP cough is usually nonproductive with dyspnea."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-020",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-020-p001"
+      ],
+      "f003": [
+        "medqa-cs-020-p004"
+      ],
+      "f004": [
+        "medqa-cs-020-p005"
+      ],
+      "f005": [
+        "medqa-cs-020-p006"
+      ],
+      "f006": [
+        "medqa-cs-020-p006",
+        "medqa-cs-020-p009"
+      ],
+      "f007": [
+        "medqa-cs-020-p007"
+      ],
+      "f008": [
+        "medqa-cs-020-p006",
+        "medqa-cs-020-p008"
+      ],
+      "f009": [
+        "medqa-cs-020-p008"
+      ],
+      "f010": [
+        "medqa-cs-020-p009"
+      ],
+      "f011": [
+        "medqa-cs-020-p010"
+      ],
+      "f012": [
+        "medqa-cs-020-p011"
+      ],
+      "f013": [
+        "medqa-cs-020-p003"
+      ],
+      "f014": [
+        "medqa-cs-020-p003"
+      ],
+      "f015": [
+        "medqa-cs-020-p002"
+      ],
+      "f016": [
+        "medqa-cs-020-p002"
+      ],
+      "f017": [
+        "medqa-cs-020-p002"
+      ],
+      "f018": [
+        "medqa-cs-020-p012"
+      ],
+      "f019": [
+        "medqa-cs-020-p017"
+      ],
+      "f020": [
+        "medqa-cs-020-p017"
+      ],
+      "f021": [
+        "medqa-cs-020-p017"
+      ],
+      "f022": [
+        "medqa-cs-020-p017"
+      ],
+      "f023": [
+        "medqa-cs-020-p017"
+      ],
+      "f024": [
+        "medqa-cs-020-p017"
+      ],
+      "f025": [
+        "medqa-cs-020-p018"
+      ],
+      "f026": [
+        "medqa-cs-020-p018"
+      ],
+      "f027": [
+        "medqa-cs-020-p020"
+      ],
+      "f028": [
+        "medqa-cs-020-p021"
+      ],
+      "f029": [
+        "medqa-cs-020-p016"
+      ],
+      "f030": [
+        "medqa-cs-020-p019"
+      ],
+      "f031": [
+        "medqa-cs-020-p030"
+      ],
+      "f032": [
+        "medqa-cs-020-p022"
+      ],
+      "f033": [
+        "medqa-cs-020-p013"
+      ],
+      "f034": [
+        "medqa-cs-020-p014"
+      ],
+      "f035": [
+        "medqa-cs-020-p015"
+      ],
+      "f036": [
+        "medqa-cs-020-p024"
+      ],
+      "f037": [
+        "medqa-cs-020-p024"
+      ],
+      "f038": [
+        "medqa-cs-020-p025"
+      ],
+      "f039": [
+        "medqa-cs-020-p025"
+      ],
+      "f040": [
+        "medqa-cs-020-p025"
+      ],
+      "f041": [
+        "medqa-cs-020-p025"
+      ],
+      "f042": [
+        "medqa-cs-020-p026"
+      ],
+      "f043": [
+        "medqa-cs-020-p027"
+      ],
+      "f044": [
+        "medqa-cs-020-p027"
+      ],
+      "f045": [
+        "medqa-cs-020-p027"
+      ],
+      "f046": [
+        "medqa-cs-020-p028"
+      ],
+      "f047": [
+        "medqa-cs-020-p028"
+      ],
+      "f048": [
+        "medqa-cs-020-p029"
+      ],
+      "f049": [
+        "medqa-cs-020-p023"
+      ]
+    },
+    "quotes": {
+      "f001": "Cough.",
+      "f002": "It started a week ago.",
+      "f003": "Small amounts of white mucus.",
+      "f004": "No.",
+      "f005": "Yes, I experience a sharp pain when I cough or breathe deeply.",
+      "f006": "a sharp pain when I cough or breathe deeply. / It increases when I take a deep breath and when I cough.",
+      "f007": "Right chest.",
+      "f008": "a sharp pain / It feels like a knife.",
+      "f009": "I can't take a deep breath.",
+      "f010": "I feel better when I sleep on my right side.",
+      "f011": "It remains localized.",
+      "f012": "8/10.",
+      "f013": "I believe I had a slight fever, although I didn't check my temperature",
+      "f014": "no chills.",
+      "f015": "I had a runny nose, fever, and sore throat for a week two weeks ago, but I feel much better now.",
+      "f016": "I had a runny nose, fever, and sore throat for a week two weeks ago, but I feel much better now.",
+      "f017": "I had a runny nose, fever, and sore throat for a week two weeks ago",
+      "f018": "No.",
+      "f019": "No, I do not.",
+      "f020": "No, I do not.",
+      "f021": "No, I do not.",
+      "f022": "No, I do not.",
+      "f023": "No, I do not.",
+      "f024": "No, I do not.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "I had gonorrhea 2 years ago and was treated with antibiotics.",
+      "f028": "No.",
+      "f029": "Never had it.",
+      "f030": "Tylenol.",
+      "f031": "No.",
+      "f032": "My father and mother are alive and in good health.",
+      "f033": "No.",
+      "f034": "No, I do not.",
+      "f035": "No.",
+      "f036": "I drink quite a bit on weekends.",
+      "f037": "I don't keep track.",
+      "f038": "No (to all four).",
+      "f039": "No (to all four).",
+      "f040": "No (to all four).",
+      "f041": "No (to all four).",
+      "f042": "Never.",
+      "f043": "Yes, I smoke a pack a day.",
+      "f044": "a pack a day.",
+      "f045": "I started when I was 15 years old.",
+      "f046": "Every Saturday night, I pick up a new girl from the nightclub.",
+      "f047": "Well, I've had many girlfriends.",
+      "f048": "No, I don't like it when using a condom.",
+      "f049": "Pizza delivery person."
+    },
+    "flags": {
+      "f019": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed.",
+        "Sits uneasily with p008 'I can't take a deep breath' (f009); both recorded literally."
+      ],
+      "f020": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ],
+      "f021": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ],
+      "f022": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ],
+      "f023": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ],
+      "f024": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p017) — denial confirmed."
+      ],
+      "f034": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p014) — denial confirmed."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway",
+        "source_text": "BP: 120/80 mmHg"
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 99.9°F (37.7°C) | VS: Low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-020-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway",
+        "source_text": "RR: 15/minute"
+      },
+      "x004": {
+        "source": "doorway",
+        "source_text": "HR: 75/minute, regular"
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-020-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Nose, mouth, and pharynx are within normal limits.",
+        "exam_ids": [
+          "medqa-cs-020-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Neck: No jugular vein distention (JVD) or lymphadenopathy.",
+        "exam_ids": [
+          "medqa-cs-020-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Chest: ... decreased breath sounds on the right side. No rhonchi, rales, or wheezing. | Chest auscultation: \"When asked to take a breath, pretend to inhale while the examinee is listening to your right chest by moving your shoulders up, but do not actually breathe in.\"",
+        "exam_ids": [
+          "medqa-cs-020-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Chest: Increased tactile fremitus ... on the right side. | Chest palpation: \"When the examinee palpates your right chest and asks you to say '99,' turn your face to the right side and say it in a coarse, deep voice.\"",
+        "exam_ids": [
+          "medqa-cs-020-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Heart: Apical impulse is not displaced; regular rhythm and rate; S1/S2 are within normal limits; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-020-e006"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Extremities: No cyanosis or edema.",
+        "exam_ids": [
+          "medqa-cs-020-e007"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x009": [
+        "The note does not say explicitly that the fremitus is right-sided; the SP simulates it on the right chest, so it is recorded as right-sided."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The note exam vital signs line (e002) gives only 'Low-grade fever' without values; the doorway vitals give 99.9°F (37.7°C) and normal BP, RR and HR.",
+      "Exam e005 'Increased tactile fremitus and decreased breath sounds on the right side' does not say explicitly that the fremitus is right-sided; the sp_notes simulate both findings on the right chest, so both were recorded as right-sided.",
+      "p008 'I can't take a deep breath' sits uneasily with the denial of shortness of breath in p017; both recorded literally.",
+      "p014 and p017 use the stock answer 'No, I do not.' for a recent-exposure question and a list of symptoms; the denials are clear.",
+      "The raw examinee task list repeats 'Write the patient note after leaving the room.' (task 5)."
+    ],
+    "notes": [
+      "The preceding URI (p002) is split into runny nose (f015), sore throat (f016) and fever (f017), each 'resolved' with the timing two weeks ago, lasting a week.",
+      "The current slight fever (p003, f013) is 'current' because it is reported as part of the present illness, although he did not measure it.",
+      "p006/p009 (pain triggered and worsened by cough and deep breathing) are merged into the aggravating child f006; p006 'sharp' and p008 'like a knife' are merged into the character child f008.",
+      "The two sp_notes chest maneuvers simulate the note's findings: not breathing in during right-chest auscultation gives the decreased right breath sounds (x008), and the coarse '99' on right-chest palpation gives the increased right tactile fremitus (x009). The coughing directions are kept as acting notes only, as in the worked example.",
+      "'Other etiologies' in the additional diagnoses is split into aspiration, pulmonary embolism, pulmonary edema and HIV/PJP.",
+      "2 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 7 facts confirmed (flags re-keyed to the v2 ids).",
+      "Conversion: sputum (p004) and blood in sputum (p005) are appearance children of the cough; the chest pain is a parent (f005) with its attributes as children; 'I don't keep track' is a quantity child (f037) of alcohol; smoking (p027) is split into the habit (f043) with amount and start-age children.",
+      "Conversion: the note's 'VS: Low-grade fever' (e002) agrees with the doorway temperature and is cited on that record only; the other doorway vitals have no note counterpart.",
+      "Harmonisation pass: scale [0, 10] added to f012.",
+      "Fixes: f048 text rewritten; f004 answer word removed; f005 answer word removed; f014 answer word removed; f018 answer word removed; f019 answer word removed; f020 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f024 answer word removed; f025 answer word removed; f026 answer word removed; f028 answer word removed; f031 answer word removed; f033 answer word removed; f034 answer word removed; f035 answer word removed; f038 answer word removed; f039 answer word removed; f040 answer word removed; f041 answer word removed; f043 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Cough as the examinee enters the room.",
+        "Continue coughing every 3 to 4 minutes during the encounter.",
+        "Chest auscultation: when asked to take a breath, pretend to inhale while the examinee is listening to your right chest by moving your shoulders up, but do not actually breathe in.",
+        "Chest palpation: when the examinee palpates your right chest and asks you to say '99', turn your face to the right side and say it in a coarse, deep voice.",
+        "During the encounter, pretend to have a severe coughing attack. Note whether the examinee offers you a glass of water or a tissue."
+      ],
+      "patient_questions": [
+        "Are antibiotics necessary for my recovery?",
+        "If asked about sputum, ask the examinee: \"What does 'sputum' mean?\""
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

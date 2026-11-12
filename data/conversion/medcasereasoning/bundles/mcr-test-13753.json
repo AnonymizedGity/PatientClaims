@@ -1,0 +1,103 @@
+{
+  "patient": {
+    "case_id": "mcr-test-13753",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 42, "sex": "female"},
+    "opening": ["f001", "f002", "f004"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["high temperature", "temperature", "feeling hot"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "chills", "aliases": ["shivering", "rigors", "shaking"], "text": "I've had chills.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "fever and chills: duration", "text": "The fever and chills started 5 days ago.", "value": "5 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "yellow skin or eyes", "aliases": ["jaundice", "yellowing", "yellow eyes", "yellow skin"], "text": "My skin and the whites of my eyes have turned yellow.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "yellow skin or eyes: duration", "parent": "f004", "attribute": "duration", "text": "That started 2 days ago.", "value": "2 days", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f006", "item": "gallbladder removal", "aliases": ["cholecystectomy", "laparoscopic cholecystectomy", "gallbladder surgery", "keyhole surgery", "operations"], "text": "Three months ago I had my gallbladder removed by keyhole surgery.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "gallstones", "aliases": ["cholelithiasis", "stones in the gallbladder"], "text": "I had gallstones.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "bile duct infection", "aliases": ["cholangitis", "infected bile ducts"], "text": "The gallstones caused an infection of the bile ducts, cholangitis, and that's why my gallbladder was taken out.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "family history of haemolytic disease", "aliases": ["family history of hemolytic disease", "family history of hemolytic anemia", "red cell breakdown disorder in the family"], "text": "Nobody in my family has a disease where the red blood cells break down.", "polarity": "absent", "category": "family_history"},
+      {"id": "f010", "item": "ethnic background", "aliases": ["ethnicity", "where my family is from", "race"], "text": "I'm Asian.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-13753",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "neurological", "name": "level of consciousness", "aliases": ["mental status", "alertness", "general appearance"], "result": "Alert."},
+      {"id": "x002", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "39.3 °C"},
+      {"id": "x003", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "122/61 mmHg"},
+      {"id": "x004", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "119/min"},
+      {"id": "x005", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal"},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "skin and eye inspection", "aliases": ["skin", "sclera", "scleral icterus", "jaundice", "eyes"], "result": "Icteric skin and sclera."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "abdominal tenderness"], "result": "No abdominal tenderness."},
+      {"id": "x008", "kind": "exam", "system": "genitourinary", "name": "costovertebral angle tenderness", "aliases": ["CVA tenderness", "flank tenderness", "renal punch", "kidney tenderness"], "result": "No costovertebral-angle tenderness."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "haemoglobin", "white-cell count", "WBC", "platelets", "platelet count"], "result": "Hemoglobin 9.0 g/dL; white-cell count 10,580/µL; platelets 125,000/µL."},
+      {"id": "x010", "kind": "test", "name": "reticulocyte count", "aliases": ["reticulocytes", "retic count"], "result": "25.0%"},
+      {"id": "x011", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "bilirubin", "total bilirubin", "direct bilirubin", "AST", "ALT", "ALP", "alkaline phosphatase", "GGT"], "result": "Total bilirubin 10.9 mg/dL (direct 6.0 mg/dL); AST 49 IU/L; ALT 65 IU/L; ALP 441 IU/L; GGT 301 IU/L."},
+      {"id": "x012", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH", "LD"], "result": "550 IU/L"},
+      {"id": "x013", "kind": "test", "name": "coagulation tests", "aliases": ["coagulation", "clotting tests", "PT", "INR", "APTT"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Grew Escherichia coli."},
+      {"id": "x015", "kind": "test", "name": "abdominal contrast CT", "aliases": ["CT abdomen", "abdominal CT", "CT scan", "contrast CT of the abdomen"], "result": "Splenomegaly; distended left kidney; no biliary-tract obstruction."},
+      {"id": "x016", "kind": "test", "name": "urinalysis", "aliases": ["urine dipstick", "urine test", "urine microscopy", "urine sediment"], "result": "Leukocyte esterase 3+, nitrite 2+, hemoglobin 3+, bilirubin 2+, urobilinogen 3+; sediment: white cells, bacteria, and 5–9 erythrocytes per high-power field."},
+      {"id": "x017", "kind": "test", "name": "urine culture", "aliases": ["urine culture and sensitivity"], "result": "Grew E. coli."},
+      {"id": "x018", "kind": "test", "name": "haptoglobin", "aliases": ["serum haptoglobin"], "result": "8 mg/dL"},
+      {"id": "x019", "kind": "test", "name": "Coombs tests", "aliases": ["direct Coombs test", "indirect Coombs test", "direct antiglobulin test", "DAT", "antiglobulin test"], "result": "Direct and indirect Coombs tests negative."},
+      {"id": "x020", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood film", "blood smear", "peripheral smear"], "result": "Spherocytes."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-13753",
+    "diagnosis": "Hereditary spherocytosis",
+    "aliases": ["HS", "hereditary spherocytic anemia", "congenital spherocytic anemia", "familial spherocytosis", "Minkowski-Chauffard syndrome"],
+    "reasoning": "1. Acute obstructive suppurative cholangitis was considered because of fever, jaundice, and elevated liver‐function tests, but it was excluded because “no signs of biliary tract obstruction were present.” 2. Pyelonephritis was suggested by the urine findings and imaging, as “urinalysis findings suggested the diagnosis of septicemia due to pyelonephritis; however, the cause of the patient’s hyperbilirubinemia was unclear.” 3. Other infections accompanied with hyperbilirubinemia, such as infectious mononucleosis, malaria, and Weil syndrome (leptospirosis), were deemed unlikely because “other infections … were unlikely in light of negative findings of the microbiological examination and peripheral blood smear.” 4. Autoimmune hemolytic anemia was excluded because “the results of direct and indirect Coombs tests were negative.” 5. Hereditary spherocytosis was strongly suspected on the basis of “peripheral blood smear findings, splenomegaly and the patient’s past history of cholelithiasis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-13753",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s003"], "f010": ["s001"]
+    },
+    "quotes": {
+      "f003": "a 5-day history of fever and chills", "f005": "a 2-day history of jaundice",
+      "f006": "Three months earlier she had undergone laparoscopic cholecystectomy", "f008": "for cholangitis due to gallstones",
+      "f009": "no family history of hemolytic disease", "f010": "Asian woman"
+    },
+    "flags": {
+      "f004": ["The history says 'jaundice'; skin and sclera are both icteric on examination, so the fact names yellow skin and eyes."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "she was alert"},
+      "x002": {"sentences": ["s004"], "source_text": "temperature 39.3 °C"},
+      "x003": {"sentences": ["s004"], "source_text": "blood pressure 122/61 mmHg"},
+      "x004": {"sentences": ["s004"], "source_text": "pulse 119 beats/min"},
+      "x005": {"sentences": ["s004"], "source_text": "respiration rate normal"},
+      "x006": {"sentences": ["s004"], "source_text": "skin and sclera were icteric"},
+      "x007": {"sentences": ["s004"], "source_text": "no abdominal or costovertebral-angle tenderness"},
+      "x008": {"sentences": ["s004"], "source_text": "no abdominal or costovertebral-angle tenderness"},
+      "x009": {"sentences": ["s005"], "source_text": "hemoglobin 9.0 g/dL / white-cell count 10,580/µL, platelets 125,000/µL"},
+      "x010": {"sentences": ["s005"], "source_text": "reticulocyte count 25.0%"},
+      "x011": {"sentences": ["s005"], "source_text": "total bilirubin 10.9 mg/dL (direct 6.0 mg/dL), AST 49 IU/L, ALT 65 IU/L, ALP 441 IU/L / and GGT 301 IU/L"},
+      "x012": {"sentences": ["s005"], "source_text": "LDH 550 IU/L"},
+      "x013": {"sentences": ["s005"], "source_text": "coagulation tests were normal"},
+      "x014": {"sentences": ["s005"], "source_text": "Blood cultures grew Escherichia coli."},
+      "x015": {"sentences": ["s006"], "source_text": "Abdominal contrast CT revealed splenomegaly and a distended left kidney, with no biliary-tract obstruction."},
+      "x016": {"sentences": ["s007"], "source_text": "Urinalysis showed leukocyte esterase 3+, nitrite 2+, hemoglobin 3+, bilirubin 2+, and urobilinogen 3+; sediment contained white cells, bacteria, and 5–9 erythrocytes per high-power field"},
+      "x017": {"sentences": ["s007"], "source_text": "urine culture grew E. coli"},
+      "x018": {"sentences": ["s008"], "source_text": "haptoglobin 8 mg/dL"},
+      "x019": {"sentences": ["s008"], "source_text": "negative direct and indirect Coombs tests"},
+      "x020": {"sentences": ["s009"], "source_text": "A peripheral blood smear revealed spherocytes."}
+    },
+    "finding_flags": {
+      "x020": ["The smear result 'spherocytes' is the defining finding of the diagnosis, though it does not name it; it is what the doctor is told."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s005 holds two sentences (laboratory studies; blood cultures)."
+    ],
+    "notes": [
+      "Index visit: the presentation with 5 days of fever and chills and 2 days of jaundice (s001-s009; all results belong to that workup).",
+      "Ethnicity (Asian) is a social-background fact, not part of demographics.",
+      "The cholecystectomy three months earlier and its reason (gallstones causing cholangitis) are medical-history facts.",
+      "LDH is its own record; the liver panel holds bilirubin, AST, ALT, ALP and GGT."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

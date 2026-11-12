@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06632",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 28, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "vision loss in both eyes", "aliases": ["vision loss", "poor vision", "blurred vision", "can't see well"], "text": "I've lost some of the vision in both eyes.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "flashes of light", "aliases": ["photopsia", "flashing lights", "seeing sparks"], "text": "I see flashes of light.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f003", "item": "how long the vision problems have lasted", "aliases": ["when the vision problems started"], "text": "It all started 3 years ago, a few days after I accidentally swallowed the niclosamide.", "value": "3 years", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f004", "item": "how the vision problems have changed over time", "aliases": ["getting worse", "progression"], "text": "Over these 3 years my vision problems have stayed the same.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f005", "item": "accidental ingestion of a veterinary drug", "aliases": ["niclosamide", "poisoning", "toxic ingestion", "swallowed something", "dewormer", "veterinary medicine"], "text": "Three years ago I accidentally swallowed four 1250 mg boluses of a veterinary niclosamide product.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f006", "item": "optic neuritis diagnosis", "aliases": ["optic neuritis", "previous eye diagnosis"], "text": "At that time the doctors thought I had optic neuritis in both eyes.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "oral steroids", "aliases": ["steroids", "corticosteroids", "steroid tablets"], "text": "I was treated with a short course of high-dose steroid tablets for it.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f008", "item": "oral steroids: effect on vision", "parent": "f007", "attribute": "treatment_response", "text": "My vision neither got better nor got worse with them.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "other medications", "aliases": ["medicines", "current medications"], "text": "I don't take any other medicines.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "night blindness", "aliases": ["poor night vision", "trouble seeing in the dark"], "text": "I don't have trouble seeing in the dark.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f013", "item": "sensitivity to light", "aliases": ["photophobia", "light hurting my eyes"], "text": "Light doesn't bother my eyes.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f014", "item": "vision loss or retinal disease in the family", "aliases": ["family history of eye disease", "relatives with eye problems"], "text": "No one in my family has had vision loss or retinal disease.", "polarity": "absent", "category": "family_history"},
+      {"id": "f015", "item": "parents related by blood", "aliases": ["consanguinity", "parents cousins"], "text": "My parents are not related to each other by blood.", "polarity": "absent", "category": "family_history"},
+      {"id": "f016", "item": "ethnicity", "aliases": ["nationality", "country of origin"], "text": "I'm Iranian.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06632",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Normal."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normal."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Normal."},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "best-corrected visual acuity", "aliases": ["visual acuity", "VA", "vision test", "Snellen chart"], "result": "20/50 in the right eye; 20/63 in the left eye."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "color vision", "aliases": ["colour vision", "Ishihara plates"], "result": "Normal."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "pupil examination", "aliases": ["pupils", "pupillary reactions", "light reflex", "RAPD"], "result": "Normal pupillary reactions."},
+      {"id": "x008", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["anterior segment", "vitreous", "slit lamp"], "result": "Anterior segment and vitreous unremarkable."},
+      {"id": "x009", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "Normal."},
+      {"id": "x010", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["fundus examination", "dilated fundus examination", "ophthalmoscopy", "optic discs", "retina", "macula"], "result": "Pink optic discs, cup-to-disc ratios of 0.2; parafoveal retinal pigment epithelial atrophy manifesting as bilateral bull's-eye maculopathy."},
+      {"id": "x011", "kind": "test", "name": "fundus autofluorescence", "aliases": ["FAF", "autofluorescence imaging"], "result": "Annular hyperautofluorescence in the parafoveal region."},
+      {"id": "x012", "kind": "test", "name": "optical coherence tomography", "aliases": ["OCT", "macular scan"], "result": "Parafoveal ellipsoid zone disruption, outer retinal thinning, and relative foveal sparing (\"flying saucer\" sign)."},
+      {"id": "x013", "kind": "test", "name": "full-field electroretinography", "aliases": ["ERG", "electroretinogram", "full-field ERG"], "result": "Decreased scotopic and photopic amplitudes with normal waveforms in both eyes."},
+      {"id": "x014", "kind": "test", "name": "electrooculography", "aliases": ["EOG", "Arden ratio"], "result": "Arden ratios 240% (right eye) and 202% (left eye)."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06632",
+    "diagnosis": "Niclosamide-induced maculopathy",
+    "aliases": ["niclosamide toxic maculopathy", "niclosamide-associated maculopathy", "niclosamide-induced bull's-eye maculopathy", "niclosamide retinal toxicity", "niclosamide retinopathy"],
+    "reasoning": "1. Chloroquine toxicity was contemplated based on imaging patterns — “Significant thinning of central foveal thickness, loss of ellipsoid zone in the parafovea, and relative central foveal sparing resemble chloroquine toxicity.” 2. Quinine- or cytarabine/daunorubicin-induced optic neuropathy with bull’s-eye maculopathy was noted but excluded by history — “Optic neuropathy with bull’s eye maculopathy has been reported as an adverse effect of some drugs such as quinine and chemotherapy with a combination of cytarabine and daunorubicin.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06632",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001", "s003"], "f004": ["s004"], "f005": ["s002"], "f006": ["s003"],
+      "f007": ["s003"], "f008": ["s003"], "f009": ["s005"], "f010": ["s005"], "f011": ["s005"], "f012": ["s005"],
+      "f013": ["s005"], "f014": ["s006"], "f015": ["s006"], "f016": ["s001"]
+    },
+    "quotes": {
+      "f001": "bilateral vision loss", "f002": "photopsia", "f003": "a 3-year history / A few days after ingestion, she noted visual disturbances",
+      "f004": "Over the next 3 years, her visual symptoms remained stable.", "f005": "accidentally ingested four 1250 mg boluses of veterinary niclosamide",
+      "f006": "for presumed bilateral optic neuritis", "f007": "a short course of high-dose oral corticosteroids",
+      "f008": "her vision neither improved nor worsened", "f009": "She denied other medication use",
+      "f014": "There was no family history of vision loss or retinal disease", "f015": "parents were nonconsanguineous", "f016": "Iranian"
+    },
+    "flags": {
+      "f003": ["s003 says 'visual disturbances' began a few days after the ingestion; read as the start of the vision loss and flashes that she presents with."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "vital signs were normal"},
+      "x002": {"sentences": ["s007"], "source_text": "vital signs were normal"},
+      "x003": {"sentences": ["s007"], "source_text": "vital signs were normal"},
+      "x004": {"sentences": ["s007"], "source_text": "vital signs were normal"},
+      "x005": {"sentences": ["s007"], "source_text": "Best-corrected visual acuities were 20/50 in the right eye and 20/63 in the left eye."},
+      "x006": {"sentences": ["s008"], "source_text": "Color vision and pupillary reactions were normal."},
+      "x007": {"sentences": ["s008"], "source_text": "Color vision and pupillary reactions were normal."},
+      "x008": {"sentences": ["s008"], "source_text": "Anterior segment and vitreous examinations were unremarkable"},
+      "x009": {"sentences": ["s008"], "source_text": "intraocular pressures were normal"},
+      "x010": {"sentences": ["s008"], "source_text": "Fundus examination revealed pink optic discs, cup-to-disc ratios of 0.2, and parafoveal retinal pigment epithelial atrophy manifesting as bilateral bull’s-eye maculopathy."},
+      "x011": {"sentences": ["s009"], "source_text": "Fundus autofluorescence demonstrated annular hyperautofluorescence in the parafoveal region."},
+      "x012": {"sentences": ["s010"], "source_text": "Optical coherence tomography showed parafoveal ellipsoid zone disruption, outer retinal thinning, and relative foveal sparing (“flying saucer” sign)."},
+      "x013": {"sentences": ["s011"], "source_text": "Full-field electroretinography revealed decreased scotopic and photopic amplitudes with normal waveforms in both eyes."},
+      "x014": {"sentences": ["s012"], "source_text": "Electrooculography showed Arden ratios of 240% (right eye) and 202% (left eye)."}
+    },
+    "finding_flags": {
+      "x001": ["'Vital signs were normal' gives no values; each standard vital sign is reported as 'Normal.'."]
+    },
+    "leakage": [
+      {"fact_id": "f003", "reason": "Names niclosamide (gold word) as the timing anchor of the symptoms; the patient knows what she swallowed. The cause of the eye disease is not stated."},
+      {"fact_id": "f005", "reason": "The accidental niclosamide ingestion is the patient's own exposure history and the key clue; the gold drug name cannot be removed without losing the history."},
+      {"id": "x010", "reason": "The fundus examination reports 'bull's-eye maculopathy' (a gold word); it is the observed appearance, not the cause."}
+    ],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the outpatient presentation with 3 years of bilateral vision loss and photopsia (s001–s006), with the eye examination and testing at that visit (s007–s012).",
+      "The earlier treatment with oral corticosteroids for presumed optic neuritis (s003) is past history before the index visit, so it is a patient fact (diagnosis she was given, the medicine, and its effect)."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

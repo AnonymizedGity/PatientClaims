@@ -1,0 +1,70 @@
+{
+  "case_id": "agentclinic-medqa-ext-174",
+  "source_row": 174,
+  "demographics_text": "68-year-old male from California",
+  "objective_for_doctor": "Perform a routine checkup on a 68-year-old man, assess any dermatological findings, and formulate a diagnosis.",
+  "chief_complaint": "Presence of a lesion on the scalp",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-174-p001",
+      "field": "History",
+      "text": "The patient comes in for a routine checkup without any specific complaints. He maintains an active lifestyle with jogging and gardening. He has been retired since age 50 and enjoys spending his mornings in the park and afternoons in his garden."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-174-p002",
+      "field": "Past_Medical_History",
+      "text": "No significant medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-174-p003",
+      "field": "Social_History",
+      "text": "No history of smoking. Drinks alcohol occasionally."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-174-p004",
+      "field": "Review_of_Systems",
+      "text": "Denies any symptoms of fatigue, weight loss, fever, or other systemic symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-174-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-174-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-174-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-174-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-174-e005",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Inspection",
+      "text": "A single, rough-textured lesion noted on the scalp, measuring approximately 1 cm in diameter. The lesion appears to be slightly erythematous with a scaly surface."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-174-i001",
+      "path": "Test_Results.Biopsy.Findings",
+      "text": "Histopathology shows atypical keratinocytes confined to the epidermis, consistent with actinic keratosis."
+    }
+  ],
+  "correct_diagnosis": "Actinic Keratosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

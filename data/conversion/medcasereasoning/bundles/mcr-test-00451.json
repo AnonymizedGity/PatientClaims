@@ -1,0 +1,101 @@
+{
+  "patient": {
+    "case_id": "mcr-test-00451",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 30, "sex": "male"},
+    "opening": ["f001", "f003", "f007"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["fevers", "high temperature", "feeling hot"], "text": "I've been having fevers.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fever: course", "parent": "f001", "attribute": "course", "text": "At first they came and went; now the fever is there all the time.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "headache", "aliases": ["headaches", "head pain"], "text": "I've been having headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "headache: course", "parent": "f003", "attribute": "course", "text": "At first they came and went; now my headache keeps getting worse.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "how long the fevers and headaches have lasted", "text": "The fevers and headaches started two weeks ago.", "value": "2 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost about 10 pounds over the past 9 months.", "value": "10 lb", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "facial weakness", "aliases": ["face drooping", "facial palsy", "facial paralysis"], "text": "The left side of my face has gone weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "loss of taste", "aliases": ["can't taste", "taste disturbance", "ageusia"], "text": "I've lost my sense of taste.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f009", "item": "when the face weakness and the worsening started", "text": "The face weakness, the loss of taste, the worse headache and the constant fever began about a month after I came back from Mexico.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "psoriatic arthritis", "aliases": ["arthritis", "psoriasis", "joint disease"], "text": "I have psoriatic arthritis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "adalimumab", "aliases": ["Humira", "biologic", "TNF inhibitor", "immunosuppressant", "injections for arthritis"], "text": "I've been on adalimumab for my psoriatic arthritis for 6 years.", "value": "6 years", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "adalimumab: interruption", "parent": "f011", "attribute": "other", "text": "I stopped it for a while and then started it again.", "polarity": "present", "category": "medication"},
+      {"id": "f013", "item": "hereditary spherocytosis", "aliases": ["spherocytosis", "inherited red blood cell disorder", "blood disorder"], "text": "I have hereditary spherocytosis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "shingles", "aliases": ["herpes zoster", "zoster", "skin infection"], "text": "I've had shingles on my skin before.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f015", "item": "recent travel", "aliases": ["travel", "travel to Mexico", "trips abroad"], "text": "I recently travelled to Mexico.", "polarity": "present", "category": "habit_exposure", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-00451",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision", "eye chart", "Snellen"], "result": "20/20 in the right eye; 20/50 in the left eye."},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves", "facial nerve", "face"], "result": "Left seventh-nerve palsy."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "anterior segment examination", "aliases": ["slit lamp", "slit-lamp examination", "cornea", "anterior chamber"], "result": "Exposure keratopathy of the left eye only; no anterior chamber cell or flare."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "funduscopic examination", "aliases": ["fundoscopy", "dilated fundus examination", "retina", "ophthalmoscopy"], "result": "Dozens of 100–200 µm, round, creamy yellow-white choroidal infiltrates disseminated throughout both fundi, without vitritis, vasculitis or optic nerve edema."},
+      {"id": "x005", "kind": "test", "name": "optical coherence tomography", "aliases": ["OCT", "retinal imaging"], "result": "Hyporeflective choroidal lesions without macular cysts or thickening."},
+      {"id": "x006", "kind": "test", "name": "Lyme serology", "aliases": ["Lyme disease test", "Borrelia serology"], "result": "Negative."},
+      {"id": "x007", "kind": "test", "name": "syphilis serology", "aliases": ["syphilis test", "RPR", "VDRL", "treponemal test"], "result": "Negative."},
+      {"id": "x008", "kind": "test", "name": "tuberculosis blood test", "aliases": ["TB test", "interferon-gamma release assay", "IGRA", "QuantiFERON"], "result": "Negative."},
+      {"id": "x009", "kind": "test", "name": "West Nile virus serology", "aliases": ["West Nile virus test"], "result": "Negative."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count", "hemoglobin", "white blood cell count", "platelets"], "result": "Within normal limits."},
+      {"id": "x011", "kind": "test", "name": "chemistry panel", "aliases": ["metabolic panel", "chemistry", "electrolytes", "kidney function", "liver function"], "result": "Within normal limits."},
+      {"id": "x012", "kind": "test", "name": "cerebrospinal fluid analysis", "aliases": ["CSF analysis", "lumbar puncture", "spinal tap", "CSF cell count", "CSF protein", "CSF glucose"], "result": "8 white blood cells/mm3 (91% lymphocytes); normal glucose and protein."},
+      {"id": "x013", "kind": "test", "name": "CSF microbiology", "aliases": ["CSF cryptococcal antigen", "cryptococcal antigen", "CSF culture", "CSF Gram stain"], "result": "Cryptococcal antigen negative; negative for other organisms."},
+      {"id": "x014", "kind": "test", "name": "MRI of the brain and orbits", "aliases": ["brain MRI", "orbital MRI", "head MRI"], "result": "Enhancement of the left facial nerve."},
+      {"id": "x015", "kind": "test", "name": "chest CT", "aliases": ["CT of the chest", "CT thorax"], "result": "Mediastinal lymphadenopathy."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-00451",
+    "diagnosis": "Sarcoidosis",
+    "aliases": ["sarcoid", "systemic sarcoidosis", "neurosarcoidosis", "ocular sarcoidosis", "sarcoid choroiditis", "sarcoid-associated choroiditis", "Heerfordt syndrome"],
+    "reasoning": "1. Fungal or mycobacterial meningitis — “Given the patient's history of immunosuppressive therapy and travel to Mexico, he was admitted for urgent evaluation for suspected fungal or mycobacterial meningitis… CSF examination was similarly negative for organisms including cryptococcal antigen…” 2. Other infectious etiologies (Lyme, syphilis, tuberculosis, West Nile virus) — “Serum testing for Lyme, syphilis, tuberculosis (TB), and West Nile virus was negative.” 3. Birdshot chorioretinopathy — “Lymphoma and birdshot chorioretinopathy (BSC) are important masquerades for sarcoid-associated choroiditis; however, workup for lymphoma was negative and retinal imaging and examination did not support a diagnosis of BSC.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-00451",
+    "fact_sources": {
+      "f001": ["s001", "s002"], "f002": ["s001", "s002"], "f003": ["s001", "s002"], "f004": ["s001", "s002"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s002", "s003"], "f008": ["s002"], "f009": ["s002"], "f010": ["s001"], "f011": ["s001"], "f012": ["s002"],
+      "f013": ["s001"], "f014": ["s001"], "f015": ["s002"]
+    },
+    "quotes": {
+      "f002": "intermittent fevers / persistent fever", "f004": "intermittent fevers and headaches / worsening headache",
+      "f005": "two weeks of intermittent fevers and headaches", "f006": "a 10-lb weight loss over 9 months", "f007": "left facial paresis",
+      "f009": "one month after returning from travel to Mexico, developed worsening headache, persistent fever, left facial paresis, and loss of taste",
+      "f011": "on adalimumab for 6 years", "f012": "He had temporarily discontinued and then restarted adalimumab",
+      "f014": "a history of cutaneous herpes zoster infection"
+    },
+    "flags": {
+      "f009": ["s001 (two weeks of intermittent fevers and headaches) and s002 (worsening one month after the Mexico trip) are read as one evolving illness; the source does not date the trip or the adalimumab interruption against the two weeks."],
+      "f012": ["The source does not say when or why adalimumab was interrupted."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "visual acuity was 20/20 in the right eye and 20/50 in the left eye"},
+      "x002": {"sentences": ["s003"], "source_text": "with a left seventh-nerve palsy"},
+      "x003": {"sentences": ["s004"], "source_text": "Anterior segment examination showed only exposure keratopathy of the left eye, with no anterior chamber cell or flare."},
+      "x004": {"sentences": ["s005"], "source_text": "Funduscopic examination revealed dozens of 100–200 µm, round, creamy yellow-white choroidal infiltrates disseminated throughout both fundi, without vitritis, vasculitis, or optic nerve edema."},
+      "x005": {"sentences": ["s006"], "source_text": "Optical coherence tomography demonstrated hyporeflective choroidal lesions without macular cysts or thickening."},
+      "x006": {"sentences": ["s007"], "source_text": "negative serum testing for Lyme disease"},
+      "x007": {"sentences": ["s007"], "source_text": "negative serum testing for Lyme disease, syphilis"},
+      "x008": {"sentences": ["s007"], "source_text": "negative serum testing for Lyme disease, syphilis, tuberculosis"},
+      "x009": {"sentences": ["s007"], "source_text": "negative serum testing for Lyme disease, syphilis, tuberculosis, and West Nile virus"},
+      "x010": {"sentences": ["s008"], "source_text": "Complete blood count and chemistry panel were within normal limits."},
+      "x011": {"sentences": ["s008"], "source_text": "Complete blood count and chemistry panel were within normal limits."},
+      "x012": {"sentences": ["s009"], "source_text": "Cerebrospinal fluid analysis revealed 8 white blood cells/mm3 (91% lymphocytes), normal glucose and protein"},
+      "x013": {"sentences": ["s009"], "source_text": "negative cryptococcal antigen and other organisms"},
+      "x014": {"sentences": ["s010"], "source_text": "MRI of the brain and orbits demonstrated enhancement of the left facial nerve."},
+      "x015": {"sentences": ["s011"], "source_text": "Chest CT was performed and revealed mediastinal lymphadenopathy."}
+    },
+    "finding_flags": {
+      "x008": ["'Serum testing for tuberculosis': the assay is not named; the name and aliases assume an interferon-gamma release assay."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "No vital signs are reported, although fever is a presenting complaint.",
+      "The timeline of s001 (two weeks of intermittent symptoms) and s002 (adalimumab interruption, Mexico trip, worsening a month after return) is not fully ordered."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with fevers, worsening headache, left facial weakness and loss of taste (s001-s003); all examinations and tests (s003-s011) belong to that admission workup.",
+      "Visual acuity loss in the left eye and the choroidal lesions are not reported as symptoms, so they are findings only; the left facial weakness, which the patient can notice, is both a fact and part of the cranial-nerve finding."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

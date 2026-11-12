@@ -1,0 +1,103 @@
+{
+  "patient": {
+    "case_id": "mcr-test-05660",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 72, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "vision loss in the right eye", "aliases": ["vision loss", "poor vision", "can't see well", "right eye vision"], "text": "I've been losing the vision in my right eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "vision loss in the right eye: course", "parent": "f001", "attribute": "course", "text": "It keeps getting worse.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "night blindness", "aliases": ["poor night vision", "trouble seeing in the dark", "nyctalopia"], "text": "I have trouble seeing in the dark.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f004", "item": "night blindness: onset", "parent": "f003", "attribute": "onset", "text": "I first noticed it in my 50s.", "value": "50s", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f005", "item": "night blindness: situations", "parent": "f003", "attribute": "context", "aliases": ["driving at night", "tunnels"], "text": "Driving through tunnels was particularly difficult.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f006", "item": "trouble with glare", "aliases": ["glare", "dazzle"], "text": "Glare hasn't been a problem for me.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f007", "item": "sensitivity to light", "aliases": ["photophobia", "light hurting my eyes"], "text": "Bright light doesn't bother my eyes.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f008", "item": "cataract surgery", "aliases": ["cataract extraction", "eye surgery", "lens replacement"], "text": "At 69 I had cataract surgery on both eyes.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "cataract surgery: effect on vision", "parent": "f008", "attribute": "treatment_response", "text": "My vision improved only for a short while afterwards.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "skin cancer on a fingertip", "aliases": ["squamous cell carcinoma", "skin cancer", "cancer"], "text": "At 54 I had a squamous cell carcinoma, a skin cancer, cut out of a fingertip.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the cataracts and that skin cancer, I've had no other medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "eye disease in the family", "aliases": ["family history of eye disease", "relatives with eye problems"], "text": "No one in my family has had eye disease.", "polarity": "absent", "category": "family_history"},
+      {"id": "f013", "item": "parents related by blood", "aliases": ["consanguinity", "parents cousins"], "text": "My parents were not related to each other by blood.", "polarity": "absent", "category": "family_history"},
+      {"id": "f014", "item": "ethnicity", "aliases": ["ethnic background", "nationality"], "text": "I'm Japanese.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-05660",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "best-corrected visual acuity", "aliases": ["visual acuity", "VA", "vision test", "Snellen chart"], "result": "0.08 in the right eye; 0.8 in the left eye."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "slit-lamp examination of the anterior segment", "aliases": ["slit lamp", "anterior segment", "lens", "intraocular lenses"], "result": "Anterior segments and intraocular lenses unremarkable."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "14 mm Hg right; 13 mm Hg left."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["fundus examination", "dilated fundus examination", "ophthalmoscopy", "retina", "macula"], "result": "Well-demarcated, symmetrical macular atrophy with a greater vertical than horizontal diameter, extending to and beyond the vascular arcades; yellowish-white, net-like pseudodrusen widespread throughout both retinas."},
+      {"id": "x005", "kind": "test", "name": "fundus autofluorescence", "aliases": ["FAF", "autofluorescence imaging"], "result": "Well-demarcated, symmetrical macular atrophy with a greater vertical than horizontal diameter, extending to and beyond the vascular arcades."},
+      {"id": "x006", "kind": "test", "name": "ultra-wide-field imaging", "aliases": ["ultra-widefield fundus imaging", "wide-field fundus photography", "ultra-widefield autofluorescence", "Optos"], "result": "Extensive pseudodrusen beyond the arcades; no mid-peripheral hypoautofluorescence or peripheral paving-stone degeneration."},
+      {"id": "x007", "kind": "test", "name": "swept-source OCT", "aliases": ["OCT", "optical coherence tomography", "SS-OCT"], "result": "Extensive outer nuclear layer atrophy; loss of the ellipsoid and cone outer segment termination lines, replaced by subretinal hyperreflective material; marked choroidal thinning."},
+      {"id": "x008", "kind": "test", "name": "fluorescein angiography", "aliases": ["FA", "FFA", "fluorescein angiogram"], "result": "Window defects without leakage or staining."},
+      {"id": "x009", "kind": "test", "name": "indocyanine green angiography", "aliases": ["ICGA", "ICG angiography"], "result": "Choroidal vessels delineated in the atrophic areas, without evidence of neovascularization."},
+      {"id": "x010", "kind": "test", "name": "wide-field OCT angiography", "aliases": ["OCTA", "OCT angiography"], "result": "Preserved superficial and deep capillary plexuses and foveal avascular zone; attenuation of the choriocapillaris and deeper choroidal vessels in the atrophic regions."},
+      {"id": "x011", "kind": "test", "name": "perimetry", "aliases": ["visual field test", "visual fields", "kinetic perimetry", "static perimetry", "Goldmann perimetry", "Humphrey visual field"], "result": "Kinetic and static perimetry: paracentral scotomas with unreliable fixation."},
+      {"id": "x012", "kind": "test", "name": "electroretinography", "aliases": ["ERG", "full-field ERG"], "result": "Electronegative bright-flash waveform; normal rod response, cone response, and 30 Hz flicker; preserved on and off responses on long-flash testing."},
+      {"id": "x013", "kind": "test", "name": "equatorial OCT", "aliases": ["peripheral OCT", "equatorial optical coherence tomography"], "result": "Pseudodrusen beneath the retinal pigment epithelium protruding into the outer nuclear layer, consistent with reticular pseudodrusen."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-05660",
+    "diagnosis": "Extensive macular atrophy with pseudodrusen",
+    "aliases": ["EMAP", "extensive macular atrophy with pseudodrusen-like appearance", "EMAP syndrome"],
+    "reasoning": "1. Consideration of diffuse trickling geographic atrophy (a severe form of dry AMD) — “In contrast to EMAP, patients with diffuse trickling geographic atrophy frequently have severe vascular or cardiac disorders; however, our patient had no preexisting medical conditions.” 2. Consideration of retinitis pigmentosa — “No obvious degeneration or low autofluorescence was observed in the mid-periphery, which is the area most likely to be affected first in retinitis pigmentosa.” 3. Consideration of choroidal neovascularization — “IA showed clearly delineated choroidal vessels in the degenerated area but no sign of CNV,” and “no suspicious signals for CNV were detected in the avascular slab.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-05660",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s003"], "f009": ["s003"], "f010": ["s004"], "f011": ["s004"], "f012": ["s005"],
+      "f013": ["s005"], "f014": ["s001"]
+    },
+    "quotes": {
+      "f001": "progressive vision loss in his right eye", "f004": "He noted night blindness in his 50s",
+      "f005": "particularly difficulty driving through tunnels", "f006": "without glare or photophobia", "f007": "without glare or photophobia",
+      "f008": "At age 69, he underwent bilateral cataract extraction", "f009": "with only transient visual improvement",
+      "f010": "excision of a fingertip squamous cell carcinoma at age 54", "f011": "His only other medical history",
+      "f012": "He had no family history of eye disease", "f013": "nonconsanguineous parents", "f014": "Japanese"
+    },
+    "flags": {
+      "f003": ["The prompt gives the onset of night blindness (his 50s) but not whether it persists; no time is set."],
+      "f006": ["'Without glare or photophobia' is attached to the description of the night blindness; read as a general denial of both."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "best-corrected visual acuity was 0.08 in the right eye and 0.8 in the left"},
+      "x002": {"sentences": ["s007"], "source_text": "Anterior segments and intraocular lenses were unremarkable"},
+      "x003": {"sentences": ["s007"], "source_text": "intraocular pressures were 14 mm Hg (right) and 13 mm Hg (left)"},
+      "x004": {"sentences": ["s008", "s009"], "source_text": "Fundoscopy and fundus autofluorescence revealed well-demarcated, symmetrical macular atrophy with a greater vertical than horizontal diameter, extending to and beyond the vascular arcades. / Yellowish-white, net-like pseudodrusen were widespread throughout both retinas."},
+      "x005": {"sentences": ["s008"], "source_text": "Fundoscopy and fundus autofluorescence revealed well-demarcated, symmetrical macular atrophy with a greater vertical than horizontal diameter, extending to and beyond the vascular arcades."},
+      "x006": {"sentences": ["s010"], "source_text": "Ultra-wide-field imaging confirmed extensive pseudodrusen beyond the arcades but showed no mid-peripheral hypoautofluorescence or peripheral paving-stone degeneration."},
+      "x007": {"sentences": ["s011"], "source_text": "Swept-source OCT demonstrated extensive outer nuclear layer atrophy, loss of ellipsoid and cone outer segment termination lines replaced by subretinal hyperreflective material, and marked choroidal thinning."},
+      "x008": {"sentences": ["s012"], "source_text": "Fluorescein angiography showed window defects without leakage or staining."},
+      "x009": {"sentences": ["s013"], "source_text": "Indocyanine green angiography delineated choroidal vessels in the atrophic areas without evidence of neovascularization."},
+      "x010": {"sentences": ["s014"], "source_text": "Wide-field OCT angiography revealed preserved superficial and deep capillary plexuses and foveal avascular zone, with attenuation of choriocapillaris and deeper choroidal vessels in the atrophic regions."},
+      "x011": {"sentences": ["s015"], "source_text": "Kinetic and static perimetry showed paracentral scotomas with unreliable fixation."},
+      "x012": {"sentences": ["s016"], "source_text": "Electroretinography demonstrated an electronegative bright-flash waveform, normal rod response, cone response, and 30 Hz flicker, and preserved on and off responses on long-flash testing."},
+      "x013": {"sentences": ["s017"], "source_text": "Equatorial OCT identified pseudodrusen beneath the retinal pigment epithelium protruding into the outer nuclear layer, consistent with reticular pseudodrusen."}
+    },
+    "finding_flags": {
+      "x004": ["s009 does not name the modality that showed the pseudodrusen; it follows the fundoscopy sentence and is placed with fundoscopy."],
+      "x013": ["Reticular pseudodrusen lie above the retinal pigment epithelium; 'beneath the retinal pigment epithelium protruding into the outer nuclear layer' is kept as written (see source_issues)."]
+    },
+    "leakage": [
+      {"id": "x004", "reason": "Fundoscopy result describes macular atrophy and pseudodrusen; the gold label is a description of exactly this appearance (selection.leakage = test_result), so the examination cannot be reported without it."},
+      {"id": "x005", "reason": "Autofluorescence result describes macular atrophy, words of the descriptive gold label."},
+      {"id": "x006", "reason": "Ultra-wide-field result reports extensive pseudodrusen, words of the descriptive gold label."},
+      {"id": "x007", "reason": "OCT report says 'extensive outer nuclear layer atrophy'; descriptive words shared with the gold label."},
+      {"id": "x013", "reason": "Equatorial OCT report names pseudodrusen (reticular pseudodrusen), part of the gold label."}
+    ],
+    "source_issues": [
+      "s017 places reticular pseudodrusen 'beneath the retinal pigment epithelium' yet 'protruding into the outer nuclear layer'; reticular pseudodrusen are subretinal (above the RPE), so 'beneath' is probably an error.",
+      "s008 reports fundoscopy and fundus autofluorescence together, so both records carry the same description."
+    ],
+    "notes": [
+      "Index visit: the referral evaluation for progressive vision loss in the right eye (s001), with the full ophthalmic examination and imaging of that evaluation (s006–s017).",
+      "The gold label is descriptive (extensive macular atrophy with pseudodrusen), so the imaging results necessarily contain its words; they are written reports or descriptive examination findings and are listed in qc.leakage."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

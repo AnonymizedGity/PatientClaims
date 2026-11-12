@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-169", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 25, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "swelling", "aliases": ["edema", "puffiness", "fluid retention"], "text": "I've noticed swelling.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "swelling: location", "parent": "f001", "attribute": "location", "value": ["around the eyes", "ankles"], "aliases": ["puffy eyes", "swollen ankles"], "text": "It's mostly around my eyes and my ankles.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "swelling: onset", "parent": "f001", "attribute": "onset", "text": "It came on over several days.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "fatigue", "aliases": ["tiredness"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "recent infections", "aliases": ["recent colds", "respiratory infections"], "text": "I haven't had any infections recently, including colds or chest infections.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "discolored urine", "aliases": ["dark urine", "urine color"], "text": "The color of my urine is the same as usual.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f007", "item": "peeing more or less often", "aliases": ["urinary frequency"], "text": "I'm not peeing any more or less often than usual.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f008", "item": "Hodgkin's lymphoma", "aliases": ["lymphoma", "cancer"], "text": "I was recently diagnosed with Hodgkin's lymphoma.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "treatment for the lymphoma", "aliases": ["chemotherapy", "cancer treatment"], "text": "I haven't started any treatment for the lymphoma yet.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "kidney disease", "aliases": ["kidney problems"], "text": "I've never had any kidney disease.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "swelling like this before", "aliases": ["previous episodes", "similar symptoms in the past"], "text": "I've never had swelling like this before.", "polarity": "absent", "category": "symptom", "system": "general", "time": "historical"},
+      {"id": "f012", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the lymphoma, I don't have any other significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "occupation", "aliases": ["job", "work", "studies"], "text": "I'm a graduate student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "drug use", "aliases": ["recreational drugs", "street drugs"], "text": "I've never used drugs.", "polarity": "absent", "category": "habit_exposure", "time": "historical"},
+      {"id": "f017", "item": "weight gain or loss", "aliases": ["weight"], "text": "My weight hasn't gone up or down significantly.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-169",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general inspection", "aliases": ["general examination", "edema", "swelling", "skin", "rash", "lymph nodes", "lymphadenopathy"], "result": "Mild periorbital and ankle edema. No rashes or lymphadenopathy."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "heart auscultation", "aliases": ["cardiac examination", "heart sounds"], "result": "Normal S1 and S2; no murmurs."},
+      {"id": "x007", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["respiratory examination", "chest auscultation", "breath sounds"], "result": "Clear breath sounds bilaterally; no crackles."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdominal exam", "abdomen", "ascites"], "result": "Inspection: no distension. Auscultation: normal bowel sounds. Percussion: tympanic throughout. Palpation: soft, non-tender, no organomegaly."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "focal deficits"], "result": "No focal deficits."},
+      {"id": "x010", "kind": "test", "name": "comprehensive metabolic panel", "aliases": ["CMP", "metabolic panel", "electrolytes", "sodium", "potassium", "albumin", "serum albumin", "bilirubin", "creatinine", "renal function", "liver function tests", "BMP"], "result": "Sodium 140 mmol/L; potassium 3.5 mmol/L; albumin 1.9 g/dL; total bilirubin 1.0 mg/dL; creatinine 1.2 mg/dL."},
+      {"id": "x011", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine dipstick", "urine protein", "proteinuria", "urine microscopy", "urine casts"], "result": "Protein 4+; fatty casts present."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-169",
+    "diagnosis": "Minimal change disease",
+    "aliases": ["MCD", "minimal change nephrotic syndrome", "minimal change glomerulopathy", "minimal change nephropathy", "lipoid nephrosis", "nil disease"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-169",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-169-p001"], "f002": ["cc", "agentclinic-medqa-ext-169-p001"], "f003": ["agentclinic-medqa-ext-169-p001"],
+      "f004": ["agentclinic-medqa-ext-169-p002"],
+      "f005": ["agentclinic-medqa-ext-169-p003", "agentclinic-medqa-ext-169-p007"],
+      "f006": ["agentclinic-medqa-ext-169-p004"], "f007": ["agentclinic-medqa-ext-169-p004"],
+      "f008": ["agentclinic-medqa-ext-169-p001", "agentclinic-medqa-ext-169-p005"], "f009": ["agentclinic-medqa-ext-169-p001"],
+      "f010": ["agentclinic-medqa-ext-169-p001"], "f011": ["agentclinic-medqa-ext-169-p001"], "f012": ["agentclinic-medqa-ext-169-p005"],
+      "f013": ["agentclinic-medqa-ext-169-p006"], "f014": ["agentclinic-medqa-ext-169-p006"], "f015": ["agentclinic-medqa-ext-169-p006"],
+      "f016": ["agentclinic-medqa-ext-169-p007"], "f017": ["agentclinic-medqa-ext-169-p007"]
+    },
+    "quotes": {
+      "f002": "particularly around the eyes and ankles", "f003": "over several days",
+      "f005": "No recent infections / Denies recent respiratory infections", "f006": "No changes in urine color or frequency",
+      "f007": "No changes in urine color or frequency", "f008": "Recently diagnosed with Hodgkin's lymphoma.",
+      "f009": "has not started treatment yet", "f010": "No history of kidney disease", "f011": "or similar symptoms in the past",
+      "f012": "No other significant medical history.", "f014": "does not consume alcohol", "f015": "Currently a graduate student.",
+      "f016": "no history of drug use", "f017": "no significant weight changes"
+    },
+    "flags": {
+      "f016": ["'No history of drug use' in the ROS is read as recreational drug use; it may also mean no medications (e.g. NSAIDs)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-169-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-169-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-169-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-169-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Inspection", "source_text": "Mild periorbital and ankle edema. No rashes or lymphadenopathy.", "exam_ids": ["agentclinic-medqa-ext-169-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Cardiovascular_System", "source_text": "Normal S1/S2, no murmurs.", "exam_ids": ["agentclinic-medqa-ext-169-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Respiratory_System", "source_text": "Clear breath sounds bilaterally, no crackles.", "exam_ids": ["agentclinic-medqa-ext-169-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Examination.Abdominal_Examination.Inspection + Physical_Examination_Findings.General_Examination.Abdominal_Examination.Auscultation + Physical_Examination_Findings.General_Examination.Abdominal_Examination.Percussion + Physical_Examination_Findings.General_Examination.Abdominal_Examination.Palpation", "source_text": "No distension. | Normal bowel sounds. | Tympanic throughout. | Soft, non-tender, no organomegaly.", "exam_ids": ["agentclinic-medqa-ext-169-e008", "agentclinic-medqa-ext-169-e009", "agentclinic-medqa-ext-169-e010", "agentclinic-medqa-ext-169-e011"]},
+      "x009": {"source": "Physical_Examination_Findings.General_Examination.Neurological_Examination", "source_text": "No focal deficits.", "exam_ids": ["agentclinic-medqa-ext-169-e012"]},
+      "x010": {"source": "Test_Results.Laboratory_Results.Serum_Na + Test_Results.Laboratory_Results.Serum_K + Test_Results.Laboratory_Results.Serum_Albumin + Test_Results.Laboratory_Results.Total_Serum_Bilirubin + Test_Results.Laboratory_Results.Serum_Creatinine", "source_text": "140 mmol/L | 3.5 mmol/L | 1.9 g/dL | 1.0 mg/dL | 1.2 mg/dL", "exam_ids": ["agentclinic-medqa-ext-169-i001", "agentclinic-medqa-ext-169-i002", "agentclinic-medqa-ext-169-i003", "agentclinic-medqa-ext-169-i004", "agentclinic-medqa-ext-169-i005"]},
+      "x011": {"source": "Test_Results.Urinalysis.Proteinuria + Test_Results.Urinalysis.Fatty_Casts", "source_text": "4+ | Present", "exam_ids": ["agentclinic-medqa-ext-169-i006", "agentclinic-medqa-ext-169-i007"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "No urine protein quantification, lipid panel or renal biopsy is given; the case rests on dipstick proteinuria, low albumin and fatty casts."
+    ],
+    "notes": [
+      "The swelling is one fact with location (eyes and ankles, not complete: 'particularly') and onset ('over several days') as children.",
+      "'No recent infections' (p003) and 'denies recent respiratory infections' (p007) are one fact. 'No changes in urine color or frequency' is split into colour (f006) and frequency (f007).",
+      "Not having started lymphoma treatment is a medication denial (f009) so a question about current treatment or chemotherapy gets an answer.",
+      "The gold words 'minimal' and 'change' are kept out of patient facts and finding names: the urine and weight denials are worded without 'change'.",
+      "Sodium, potassium, albumin, total bilirubin and creatinine are all comprehensive-metabolic-panel members, so they form one CMP record; proteinuria and fatty casts form the urinalysis."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with recent onset of edema and significant proteinuria."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

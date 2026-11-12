@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-182",
+  "source_row": 182,
+  "demographics_text": "25-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with extreme fatigue, yellow skin, and elevated alanine aminotransferase level.",
+  "chief_complaint": "Extreme fatigue",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-182-p001",
+      "field": "History",
+      "text": "The patient presents to the office complaining of extreme fatigue for the past 2 days and has noticed his skin turning yellow. He denies any fever, headache, or other specific symptoms. Admits to past illicit intravenous drug use. Moved to the US from Africa at the age of 18 and does not have any immunization records."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-182-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Yellowing of the skin"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-182-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-182-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No headache"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-182-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical or surgical history. Unverified vaccination status."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-182-p006",
+      "field": "Social_History",
+      "text": "Past illicit intravenous drug use. No current medication or known drug allergies."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-182-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies any respiratory, cardiovascular, gastrointestinal, genitourinary problems aside from mild diffuse abdominal tenderness."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.9°C (100.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "100/74 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Mild jaundice noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic, no hepatosplenomegaly noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Mild diffuse abdominal tenderness, no rebound tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-182-i001",
+      "path": "Test_Results.Liver_Function_Tests.ALT",
+      "text": "2,000 IU/L (significantly elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-i002",
+      "path": "Test_Results.Hepatitis_Viral_Panel.Anti-HAV IgM",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-i003",
+      "path": "Test_Results.Hepatitis_Viral_Panel.HBsAg",
+      "text": "Positive"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-i004",
+      "path": "Test_Results.Hepatitis_Viral_Panel.Anti-HBs",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-i005",
+      "path": "Test_Results.Hepatitis_Viral_Panel.IgM anti-HBc",
+      "text": "Positive"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-i006",
+      "path": "Test_Results.Hepatitis_Viral_Panel.Anti-HCV",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-182-i007",
+      "path": "Test_Results.Hepatitis_Viral_Panel.Anti-HDV",
+      "text": "Negative"
+    }
+  ],
+  "correct_diagnosis": "Acute Hepatitis B",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

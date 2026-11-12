@@ -1,0 +1,97 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-128",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 40, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "neck swelling", "aliases": ["swollen neck", "lump in the neck", "neck lump"], "text": "My neck is swollen.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "neck swelling: duration", "parent": "f001", "attribute": "duration", "text": "It started 3 weeks ago.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f003", "item": "neck swelling: appearance at first", "parent": "f001", "attribute": "appearance", "text": "At first the swelling was small and round.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f004", "item": "neck swelling: pain", "parent": "f001", "attribute": "character", "aliases": ["painful", "tender"], "text": "It wasn't painful when it started.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f005", "item": "neck swelling: getting bigger", "parent": "f001", "attribute": "course", "aliases": ["growing"], "text": "It has been getting bigger over time.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f006", "item": "sweaty palms and soles", "aliases": ["sweating", "excessive sweating", "sweaty hands"], "text": "My palms and the soles of my feet are sweaty.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f007", "item": "trouble sleeping", "aliases": ["insomnia", "can't sleep"], "text": "I've been having trouble sleeping.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "irritability", "aliases": ["short temper", "easily annoyed"], "text": "I've been irritable.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f009", "item": "nervousness", "aliases": ["feeling nervous", "anxiety", "jittery"], "text": "I've been feeling nervous.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f010", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "swollen lymph nodes in the neck", "aliases": ["swollen glands", "cervical lymphadenopathy"], "text": "I haven't noticed any swollen glands in my neck.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f013", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "vision problems", "aliases": ["eye problems", "blurred vision", "double vision"], "text": "I haven't had any problems with my vision.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f015", "item": "swelling elsewhere in the body", "aliases": ["body swelling", "leg swelling", "puffiness"], "text": "I haven't had any swelling anywhere else in my body.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "previous similar symptoms", "aliases": ["had this before"], "text": "I've never had symptoms like this before.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f017", "item": "thyroid problems", "aliases": ["thyroid disease", "thyroid disorder"], "text": "I've never had a thyroid problem.", "polarity": "absent", "category": "medical_history", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-128",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "76/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "ent", "name": "neck examination", "aliases": ["thyroid examination", "neck inspection", "neck palpation", "neck mass"], "result": "3 x 3 cm round, non-tender, non-fluctuant, non-pulsatile swelling in the anterior triangle of the neck."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "differential", "neutrophils", "lymphocytes", "eosinophils"], "result": "White blood cell count 10,200/mm3; neutrophils 70%; lymphocytes 30%; eosinophils 0%."},
+      {"id": "x007", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "20 mm/hr (normal range 0-29 mm/hr)."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-128",
+    "diagnosis": "Silent thyroiditis",
+    "aliases": ["painless thyroiditis", "silent lymphocytic thyroiditis", "painless lymphocytic thyroiditis", "subacute lymphocytic thyroiditis", "painless sporadic thyroiditis", "sporadic painless thyroiditis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-128",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-128-p001"],
+      "f002": ["agentclinic-medqa-ext-128-p001"],
+      "f003": ["agentclinic-medqa-ext-128-p001"],
+      "f004": ["agentclinic-medqa-ext-128-p001"],
+      "f005": ["agentclinic-medqa-ext-128-p001"],
+      "f006": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p002"],
+      "f007": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p003"],
+      "f008": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p004"],
+      "f009": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p005"],
+      "f010": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p006"],
+      "f011": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p009"],
+      "f012": ["agentclinic-medqa-ext-128-p001"],
+      "f013": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p009"],
+      "f014": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p009"],
+      "f015": ["agentclinic-medqa-ext-128-p001", "agentclinic-medqa-ext-128-p009"],
+      "f016": ["agentclinic-medqa-ext-128-p007"],
+      "f017": ["agentclinic-medqa-ext-128-p007"]
+    },
+    "quotes": {
+      "f002": "a 3-week history of a swollen neck",
+      "f003": "the swelling being small, round",
+      "f004": "and painless initially",
+      "f005": "increasing in size over time",
+      "f012": "cervical lymphadenopathy",
+      "f015": "or body swelling",
+      "f016": "Negative for similar symptoms",
+      "f017": "or a thyroid disorder."
+    },
+    "flags": {
+      "f004": ["Source: 'small, round, and painless initially'. Only the initial absence of pain is stated; whether it hurts now is not given (the exam finds it non-tender)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-128-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-128-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "76 bpm", "exam_ids": ["agentclinic-medqa-ext-128-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-128-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neck_Examination.Inspection", "source_text": "3 x 3 cm round, non-tender, non-fluctuant, and non-pulsatile swelling in the anterior triangle of the neck.", "exam_ids": ["agentclinic-medqa-ext-128-e005"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.Total_White_Blood_Cell_Count + Test_Results.Complete_Blood_Count.Neutrophils + Test_Results.Complete_Blood_Count.Lymphocytes + Test_Results.Complete_Blood_Count.Eosinophils", "source_text": "10,200/mm3 | 70% | 30% | 0%", "exam_ids": ["agentclinic-medqa-ext-128-i001", "agentclinic-medqa-ext-128-i002", "agentclinic-medqa-ext-128-i003", "agentclinic-medqa-ext-128-i004"]},
+      "x007": {"source": "Test_Results.Erythrocyte_Sedimentation_Rate.Rate + Test_Results.Erythrocyte_Sedimentation_Rate.Normal_Range", "source_text": "20 mm/hr | 0–29 mm/hr", "exam_ids": ["agentclinic-medqa-ext-128-i005", "agentclinic-medqa-ext-128-i006"]}
+    },
+    "leakage": [],
+    "source_issues": ["No thyroid function tests (TSH, free T4), thyroid antibodies or radioactive iodine uptake are given, so the tests cannot establish the thyroiditis or its silent (painless) type; a 3 x 3 cm round swelling that keeps growing reads more like a nodule.", "The History labels the symptoms as 'associated with hyperthyroidism' (narrator interpretation), and objective_for_doctor says 'systemic symptoms suggestive of a thyroid disorder', which hints at the organ."],
+    "notes": ["The narrator label 'symptoms associated with hyperthyroidism' is not a patient statement and is not converted; each listed symptom is its own fact.", "Sleep complaints use system 'psychiatric' (the schema has no sleep system).", "The ESR value and its normal range (two leaves) form one record."],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-128-p008", "reason": "Meta statement with no content ('Does not provide specifics that are contributory')."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a swollen neck and systemic symptoms suggestive of a thyroid disorder."
+    }
+  }
+}

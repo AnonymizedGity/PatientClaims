@@ -1,0 +1,89 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-020", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 26, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "lower back pain", "aliases": ["low back pain", "backache"], "text": "I have pain in my lower back.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "lower back pain: character", "parent": "f001", "attribute": "character", "text": "It's a sharp pain.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "lower back pain: radiation", "parent": "f001", "attribute": "radiation", "value": ["side of the leg", "foot"], "text": "It shoots down the side of my leg and into my foot.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "lower back pain: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly, several hours ago.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "lower back pain: what I was doing", "parent": "f001", "attribute": "context", "text": "It started while I was exercising at the gym.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f006", "item": "lower back pain: worse with movement", "parent": "f001", "attribute": "aggravating", "text": "It gets worse when I move.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "previous episodes of similar pain", "aliases": ["back pain before"], "text": "I've never had pain like this before.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "alcohol", "aliases": ["drinking"], "text": "I rarely drink alcohol.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "exercise", "aliases": ["gym", "physical activity", "sports"], "text": "I go to the gym regularly.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "change in bowel function", "aliases": ["bowel control", "bowel problems"], "text": "My bowel movements haven't changed.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f015", "item": "change in bladder function", "aliases": ["bladder control", "urinary problems"], "text": "I haven't had any change in my bladder or peeing.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-020",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.2°C"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "95/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "back examination", "aliases": ["spine examination", "lumbar spine examination", "back palpation", "spinal range of motion"], "result": "Inspection: normal spinal curvature, no visible swelling; palpation: tenderness localized to the lower lumbar spine; range of motion: limited by pain."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "straight leg raise test", "aliases": ["SLR", "straight leg raising", "Lasègue test"], "result": "Positive, with pain radiating down the leg."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact to light touch and pinprick throughout the leg and foot."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "motor function"], "result": "No significant weakness."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs", "ankle reflex", "knee reflex"], "result": "Normal ankle and knee reflexes."},
+      {"id": "x010", "kind": "test", "name": "MRI of the lumbar spine", "aliases": ["lumbar MRI", "MRI of the lower back", "spine MRI"], "result": "L5-S1 disc herniation impinging on the adjacent nerve root."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-020",
+    "diagnosis": "Disc herniation",
+    "aliases": ["herniated disc", "intervertebral disc herniation", "lumbar disc herniation", "L5-S1 disc herniation", "herniated nucleus pulposus", "HNP", "slipped disc", "prolapsed intervertebral disc", "disc prolapse"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-020",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-020-p001"], "f002": ["cc", "agentclinic-medqa-ext-020-p001"], "f003": ["cc", "agentclinic-medqa-ext-020-p001"],
+      "f004": ["agentclinic-medqa-ext-020-p001"], "f005": ["agentclinic-medqa-ext-020-p001", "agentclinic-medqa-ext-020-p003"],
+      "f006": ["agentclinic-medqa-ext-020-p002"], "f007": ["agentclinic-medqa-ext-020-p004"], "f008": ["agentclinic-medqa-ext-020-p004"],
+      "f009": ["agentclinic-medqa-ext-020-p005"], "f010": ["agentclinic-medqa-ext-020-p005"], "f011": ["agentclinic-medqa-ext-020-p005"],
+      "f012": ["agentclinic-medqa-ext-020-p006"], "f013": ["agentclinic-medqa-ext-020-p006"], "f014": ["agentclinic-medqa-ext-020-p006"],
+      "f015": ["agentclinic-medqa-ext-020-p006"]
+    },
+    "quotes": {
+      "f002": "Sharp lower back pain", "f003": "radiating down the side of her leg and into her foot",
+      "f004": "several hours ago when she suddenly felt a sharp pain", "f005": "exercising in the gym / The onset of pain while exercising",
+      "f006": "Pain worsens with movement", "f008": "No prior episodes of similar pain", "f010": "rarely drinks alcohol",
+      "f011": "Regular gym-goer", "f014": "changes in bowel or bladder function", "f015": "changes in bowel or bladder function"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.2°C", "exam_ids": ["agentclinic-medqa-ext-020-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-020-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "95 bpm", "exam_ids": ["agentclinic-medqa-ext-020-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-020-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection + Physical_Examination_Findings.Musculoskeletal_Examination.Palpation + Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion", "source_text": "Normal spine curvature, no visible swelling. + Tenderness localized to the lower lumbar spine. + Limited due to pain.", "exam_ids": ["agentclinic-medqa-ext-020-e005", "agentclinic-medqa-ext-020-e006", "agentclinic-medqa-ext-020-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Special_Test", "source_text": "Positive straight leg raise test with pain radiating down the leg.", "exam_ids": ["agentclinic-medqa-ext-020-e008"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensation", "source_text": "Intact to light touch and pin-prick throughout the leg and foot.", "exam_ids": ["agentclinic-medqa-ext-020-e009"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor_Function", "source_text": "No significant weakness noted.", "exam_ids": ["agentclinic-medqa-ext-020-e010"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal ankle and knee reflexes.", "exam_ids": ["agentclinic-medqa-ext-020-e011"]},
+      "x010": {"source": "Test_Results.MRI_Lumbar_Spine.Findings", "source_text": "Evidence of L5-S1 disc herniation impinging on the adjacent nerve root.", "exam_ids": ["agentclinic-medqa-ext-020-i001"]}
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The lumbar MRI result names the diagnosis (L5-S1 disc herniation). This is the test's answer; the finding name does not reveal it."}
+    ],
+    "source_issues": [
+      "Diagnosis text is visible in Test_Results (pool flag visible_gold_alias_partitions = test_results): the MRI names the disc herniation.",
+      "The source does not say which leg the pain radiates to."
+    ],
+    "notes": [
+      "Sharpness, radiation, sudden onset several hours ago, onset during gym exercise (History and p003) and worsening with movement (p002) are children of the back pain.",
+      "'No significant past medical history. No prior episodes of similar pain.' gives two denials (f007, f008). 'Changes in bowel or bladder function' is split into two denials (f014, f015).",
+      "The straight leg raise has its own record; the spinal inspection, palpation and range of motion form one back-examination record."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with sudden-onset lower back pain radiating down the leg."
+    }
+  }
+}

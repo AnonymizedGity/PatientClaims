@@ -1,0 +1,51 @@
+{
+ "case_id": "agentclinic-medqa-ext-213",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've been having diarrhea.",
+   "It's been going on for the past month.",
+   "My stool is often loose.",
+   "There's been blood in my stool.",
+   "I've had pain in my lower belly along with the diarrhea.",
+   "I work as a caretaker in a nursing home."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having diarrhea for the past month, and my stool is often loose. There's been blood in my stool, and I've had pain in my lower belly along with it. I work as a caretaker in a nursing home.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f004",
+    "f005",
+    "f006",
+    "f018"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3373,
+   "tokens_out": 61,
+   "seconds": 6.33,
+   "redrafts": 0
+  }
+ }
+}

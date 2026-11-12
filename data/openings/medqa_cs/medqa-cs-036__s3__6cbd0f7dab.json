@@ -1,0 +1,51 @@
+{
+ "case_id": "medqa-cs-036",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I'm here for the pre-employment medical checkup that my prospective employer requires.",
+   "I have a cough.",
+   "I bring up sputum when I cough.",
+   "I immigrated from Africa a month ago.",
+   "I used to work in a coal mine back home.",
+   "I smoke cigarettes."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "Hi, I'm here for the pre-employment medical checkup that my prospective employer requires. I do have a cough and I bring up sputum when I cough. I immigrated from Africa a month ago, and I used to work in a coal mine back home. I also smoke cigarettes.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f008",
+    "f047",
+    "f048",
+    "f051"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4320,
+   "tokens_out": 73,
+   "seconds": 6.56,
+   "redrafts": 0
+  }
+ }
+}

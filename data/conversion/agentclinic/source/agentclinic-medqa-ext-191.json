@@ -1,0 +1,143 @@
+{
+  "case_id": "agentclinic-medqa-ext-191",
+  "source_row": 191,
+  "demographics_text": "26-year-old female nurse",
+  "objective_for_doctor": "Evaluate and manage a patient presenting with fatigue, stress, and concern for cancer.",
+  "chief_complaint": "Fatigue",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p001",
+      "field": "History",
+      "text": "The patient reports a 2-month history of fatigue and several episodes of lower abdominal pain. She expresses a strong belief that she has cancer and desires a diagnostic laparoscopy. The patient has been off work for 2 weeks on sick leave due to stress at work and wishes to return. She was diagnosed with peptic ulcer disease 6 months ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Lower abdominal pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Stress at work"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Desire for diagnostic laparoscopy due to cancer concern"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p005",
+      "field": "Past_Medical_History",
+      "text": "Peptic ulcer disease"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p006",
+      "field": "Social_History",
+      "text": "Works as a nurse. No mention of smoking, alcohol use, or recreational drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p007",
+      "field": "Review_of_Systems",
+      "text": "Reports tiredness and depressed mood. No mention of changes in bowel or urinary habits."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-191-p008",
+      "field": "Medications",
+      "text": "Omeprazole"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.5°C (97.7°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "90/65 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "120 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e004",
+      "path": "Physical_Examination_Findings.General_Appearance",
+      "text": "Appears pale and tired"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e005",
+      "path": "Physical_Examination_Findings.Mental_Status_Examination",
+      "text": "Patient has a depressed mood and appears fatigued."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination",
+      "text": "Numerous crusts along the course of her left arm veins."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e007",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination",
+      "text": "Grade 2/6 systolic ejection murmur along the right-upper sternal border."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination",
+      "text": "No abnormalities detected."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-e009",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination",
+      "text": "Generalized weakness of the proximal muscles."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i001",
+      "path": "Test_Results.Laboratory_Studies.Hemoglobin",
+      "text": "7.5 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i002",
+      "path": "Test_Results.Laboratory_Studies.Mean_Corpuscular_Volume",
+      "text": "89 μm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i003",
+      "path": "Test_Results.Laboratory_Studies.Reticulocyte_Count",
+      "text": "13.3%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i004",
+      "path": "Test_Results.Laboratory_Studies.Sodium",
+      "text": "139 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i005",
+      "path": "Test_Results.Laboratory_Studies.Potassium",
+      "text": "3.9 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i006",
+      "path": "Test_Results.Laboratory_Studies.Calcium",
+      "text": "8.5 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i007",
+      "path": "Test_Results.Stool_Occult_Blood_Test",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-191-i008",
+      "path": "Test_Results.Abdominal_Ultrasonography",
+      "text": "No abnormalities"
+    }
+  ],
+  "correct_diagnosis": "Factitious disorder",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "case_id": "medqa-cs-021",
+  "source_case_id": 21,
+  "opening_scenario": "Gail Abbott, a 52-year-old female, comes to the office complaining of yellow eyes and skin.",
+  "doorway_vital_signs": [
+    "BP: 130/80 mmHg",
+    "Temp: 98.3°F (36.8°C)",
+    "RR: 15 per minute",
+    "HR: 70 per minute, regular"
+  ],
+  "sp_notes": [
+    "Sit up on the bed.",
+    "Show signs of scratching.",
+    "Exhibit right upper quadrant tenderness on palpation.",
+    "If ERCP, ultrasound, or MRI is mentioned, ask for an explanation."
+  ],
+  "challenging_questions": [
+    "My father was diagnosed with pancreatic cancer. Is it possible for me to develop it as well?"
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What has prompted your visit today?",
+    "answer": "Jaundice in my eyes and skin."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-021-p001",
+      "topic": "Onset",
+      "question": "When did you first notice that your eyes and skin were yellow?",
+      "answer": "Three weeks ago."
+    },
+    {
+      "fact_id": "medqa-cs-021-p002",
+      "topic": "Color of stool",
+      "question": "What color have your stools been?",
+      "answer": "Light."
+    },
+    {
+      "fact_id": "medqa-cs-021-p003",
+      "topic": "Color of urine",
+      "question": "What color has your urine been?",
+      "answer": "Darker than usual."
+    },
+    {
+      "fact_id": "medqa-cs-021-p004",
+      "topic": "Pruritus",
+      "question": "Have you experienced any itchiness? If yes, when did it begin? Have you tried any medications to help alleviate the itch?",
+      "answer": "I started itching 2 months ago; Benadryl used to help, but not anymore."
+    },
+    {
+      "fact_id": "medqa-cs-021-p005",
+      "topic": "Severity of pruritus on a scale",
+      "question": "On a scale of 0 to 10, how severe has your itch been?",
+      "answer": "Sometimes it's 7/10."
+    },
+    {
+      "fact_id": "medqa-cs-021-p006",
+      "topic": "Abdominal pain",
+      "question": "Any pain in your stomach?",
+      "answer": "Sometimes."
+    },
+    {
+      "fact_id": "medqa-cs-021-p007",
+      "topic": "Onset",
+      "question": "When did the pain in your stomach start?",
+      "answer": "It was around the same time that I noticed the change in the color of my eyes and skin."
+    },
+    {
+      "fact_id": "medqa-cs-021-p008",
+      "topic": "Constant/intermittent",
+      "question": "Has the pain been constant or does it come and go?",
+      "answer": "Well, I don't have the pain all the time. It comes and goes."
+    },
+    {
+      "fact_id": "medqa-cs-021-p009",
+      "topic": "Frequency",
+      "question": "How frequently do you experience the pain?",
+      "answer": "At least once every day."
+    },
+    {
+      "fact_id": "medqa-cs-021-p010",
+      "topic": "Progression",
+      "question": "Has the pain gotten better, worse, or stayed the same?",
+      "answer": "It is the same."
+    },
+    {
+      "fact_id": "medqa-cs-021-p011",
+      "topic": "Severity of pain on a scale",
+      "question": "On a scale from 0 to 10, where 0 indicates no pain and 10 represents the most intense pain you've experienced, how would you rate your pain severity?",
+      "answer": "When I experience the pain, it rates at 3 out of 10, but it can decrease to 0."
+    },
+    {
+      "fact_id": "medqa-cs-021-p012",
+      "topic": "Location",
+      "question": "Can you indicate where the pain is located?",
+      "answer": "It is located here (gestures to the RUQ)."
+    },
+    {
+      "fact_id": "medqa-cs-021-p013",
+      "topic": "Radiation",
+      "question": "Does the pain stay in one place or does it spread to other areas?",
+      "answer": "It stays in one place."
+    },
+    {
+      "fact_id": "medqa-cs-021-p014",
+      "topic": "Quality",
+      "question": "How would you describe the pain?",
+      "answer": "Dull."
+    },
+    {
+      "fact_id": "medqa-cs-021-p015",
+      "topic": "Alleviating factors",
+      "question": "Is there anything that alleviates the pain?",
+      "answer": "Tylenol. I take four tablets daily to ensure I don't experience pain."
+    },
+    {
+      "fact_id": "medqa-cs-021-p016",
+      "topic": "Exacerbating factors",
+      "question": "Does anything make the pain worse?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p017",
+      "topic": "Relationship of food to pain",
+      "question": "Do you notice if the pain is related to eating food?",
+      "answer": "It is not related to food."
+    },
+    {
+      "fact_id": "medqa-cs-021-p018",
+      "topic": "Previous episodes of similar pain",
+      "question": "Have you ever experienced pain like this before?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p019",
+      "topic": "Nausea/vomiting",
+      "question": "Any nausea or vomiting?",
+      "answer": "Sometimes I feel nauseated when I am in pain, but no vomiting."
+    },
+    {
+      "fact_id": "medqa-cs-021-p020",
+      "topic": "Diarrhea/constipation",
+      "question": "Any diarrhea or constipation?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p021",
+      "topic": "Colonoscopy",
+      "question": "Have you ever had a colonoscopy?",
+      "answer": "Never."
+    },
+    {
+      "fact_id": "medqa-cs-021-p022",
+      "topic": "Blood transfusion",
+      "question": "Have you ever had a blood transfusion?",
+      "answer": "Yes, when I had a C-section 20 years ago."
+    },
+    {
+      "fact_id": "medqa-cs-021-p023",
+      "topic": "Fever, night sweats",
+      "question": "Have you had a fever? Any night sweats?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p024",
+      "topic": "Fatigue",
+      "question": "Any feeling of being tired lately?",
+      "answer": "Yes, recently."
+    },
+    {
+      "fact_id": "medqa-cs-021-p025",
+      "topic": "Weight changes",
+      "question": "Have you noticed any fluctuations in your weight?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p026",
+      "topic": "Appetite change",
+      "question": "Have you experienced any changes in your appetite?",
+      "answer": "I have no appetite."
+    },
+    {
+      "fact_id": "medqa-cs-021-p027",
+      "topic": "Joint pain",
+      "question": "Are you experiencing any joint pain?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p028",
+      "topic": "Travel history",
+      "question": "Have you traveled recently?",
+      "answer": "I went to Mexico for a brief vacation about 2 months ago."
+    },
+    {
+      "fact_id": "medqa-cs-021-p029",
+      "topic": "Immunization before travel",
+      "question": "Did you receive any immunizations before you went on your trip?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p030",
+      "topic": "Current medications",
+      "question": "Are you taking any medications? If so, which ones?",
+      "answer": "Tylenol. Synthroid."
+    },
+    {
+      "fact_id": "medqa-cs-021-p031",
+      "topic": "Similar episodes",
+      "question": "Have you experienced symptoms similar to this in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p032",
+      "topic": "Past medical history",
+      "question": "Are you experiencing any other known medical issues?",
+      "answer": "Hypothyroidism."
+    },
+    {
+      "fact_id": "medqa-cs-021-p033",
+      "topic": "Past surgical history",
+      "question": "Have you undergone any surgical procedures?",
+      "answer": "I had two cesarean sections at 25 and 30 years old, followed by a tubal ligation at age 35."
+    },
+    {
+      "fact_id": "medqa-cs-021-p034",
+      "topic": "Family history",
+      "question": "Do you have any family medical history?",
+      "answer": "My father passed away at 55 from pancreatic cancer, but my mother is currently healthy and alive."
+    },
+    {
+      "fact_id": "medqa-cs-021-p035",
+      "topic": "Occupation",
+      "question": "What is your occupation?",
+      "answer": "I work in a travel agency."
+    },
+    {
+      "fact_id": "medqa-cs-021-p036",
+      "topic": "Illicit drug use",
+      "question": "Do you use any recreational drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p037",
+      "topic": "Tobacco",
+      "question": "Do you smoke?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-021-p038",
+      "topic": "Sexual activity",
+      "question": "Are you engaged in sexual activity?",
+      "answer": "Yes, with my spouse."
+    },
+    {
+      "fact_id": "medqa-cs-021-p039",
+      "topic": "Drug allergies",
+      "question": "Are you allergic to anything?",
+      "answer": "I have an allergy to penicillin; it makes my skin rash when I use it."
+    },
+    {
+      "fact_id": "medqa-cs-021-p040",
+      "topic": "Alcohol use",
+      "question": "Do you consume alcohol? If so, how much do you typically drink?",
+      "answer": "For the last 30 years, I have consumed one or two glasses of wine daily."
+    },
+    {
+      "fact_id": "medqa-cs-021-p041",
+      "topic": "CAGE questions",
+      "question": "Have you ever thought about reducing your alcohol intake? Have others expressed annoyance at your drinking habits? Do you ever feel remorse about consuming alcohol? Do you feel the need for a morning drink to calm your nerves or alleviate a hangover?",
+      "answer": "No (to all four)."
+    },
+    {
+      "fact_id": "medqa-cs-021-p042",
+      "topic": "Affecting job/relationships/legal problems",
+      "question": "Has your alcohol consumption impacted your employment or personal relationships? Has it led to any legal issues?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History \nHPI: A 52-year-old female complains of yellow skin and eyes for 3 weeks. She has dull, intermittent right upper quadrant pain that affects her daily, is unrelated to meals, and relieved by Tylenol; it is 3/10 in severity. She also reports pruritus that is 7/10 in severity, light-colored stools, and dark urine. She has experienced fatigue, anorexia, and nausea. She recently traveled to Mexico and has a history of a blood transfusion 20 years ago. No diarrhea, constipation, or weight loss. \nROS: Negative except as above. \nMedications: Tylenol, Synthroid. \nAllergies: Penicillin, causes a rash. \nPMH: Hypothyroidism. \nPSH: 2 C-sections, tubal ligation. \nSH: No smoking, 1-2 glasses of wine/day for 30 years, CAGE 0/4, no illicit drugs. Sexually active with husband only. \nFH: Father died of pancreatic cancer at age 55.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-021-e001",
+      "source_text": "Patient is in no acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-021-e002",
+      "source_text": "VS: within normal limits (WNL)"
+    },
+    {
+      "exam_id": "medqa-cs-021-e003",
+      "source_text": "HEENT: Sclerae icteric."
+    },
+    {
+      "exam_id": "medqa-cs-021-e004",
+      "source_text": "Chest: Clear breath sounds bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-021-e005",
+      "source_text": "Heart: regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-021-e006",
+      "source_text": "Abdomen: Soft, nondistended, C-section scar. Mild right upper quadrant tenderness without rebound or"
+    },
+    {
+      "exam_id": "medqa-cs-021-e007",
+      "source_text": "guarding, positive Murphy sign, normal bowel sounds (BS) x 4 quadrants, no organomegaly or masses. No evidence of fluid wave suggestive of ascites."
+    },
+    {
+      "exam_id": "medqa-cs-021-e008",
+      "source_text": "Skin: Jaundice, excoriations due to scratching, no spider telangiectasias or palmar erythema."
+    },
+    {
+      "exam_id": "medqa-cs-021-e009",
+      "source_text": "Extremities: No asterixis, no edema."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Extrahepatic biliary obstruction (e.g., pancreatic cancer, cholangiocarcinoma, ampullary carcinoma, sphincter of Oddi dysfunction)\n\nHistory Finding(s): \n- Light stools, dark urine \n- Pruritus \n- Father with pancreatic cancer\n\nPhysical Exam Finding(s): \n- Jaundice, scleral icterus \n- Right upper quadrant tenderness \n\nDiagnosis #2: Viral hepatitis \n\nHistory Finding(s): \n- History of blood transfusion \n- Recent travel to Mexico \n\nPhysical Exam Finding(s): \n- Jaundice, scleral icterus \n- Right upper quadrant tenderness \n\nDiagnosis #3: Acetaminophen hepatotoxicity \n\nHistory Finding(s): \n- Frequent acetaminophen use \n- Concomitant alcohol use \n\nPhysical Exam Finding(s): \n- Jaundice, scleral icterus \n- Right upper quadrant tenderness",
+  "gold_additional_diagnosis": "• Alcoholic hepatitis: The patient's symptoms are consistent with this diagnosis. Hepatomegaly is often present. Although she reports drinking only one or two glasses of wine daily, patients often underreport alcohol consumption. \n\n• Primary biliary cirrhosis: This usually occurs in women between 40 to 60 years of age and often presents with pruritus. It is commonly found in patients with other autoimmune diseases, such as hypothyroidism (as in this case). However, jaundice is usually a late finding and is not associated with RUQ pain.",
+  "raw_opening": "Opening Scenario:\n\nGail Abbott, a 52-year-old female, comes to the office complaining of yellow eyes and skin.\n\nVital Signs:\n\n- BP: 130/80 mmHg\n- Temp: 98.3°F (36.8°C)\n- RR: 15 per minute\n- HR: 70 per minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\n- Patient is a 52-year-old female.\n\nNotes for the SP:\n\n- Sit up on the bed.\n- Show signs of scratching.\n- Exhibit right upper quadrant tenderness on palpation.\n- If ERCP, ultrasound, or MRI is mentioned, ask for an explanation.\n\nChallenging Questions to Ask:\n\n- My father was diagnosed with pancreatic cancer. Is it possible for me to develop it as well?\n\nExaminee Response:\n\n\"It's possible; that's why we always rule it out in patients with yellow eyes or skin. Your family history does confer a minor elevation in risk.. However, we cannot ascertain anything definitively until we conduct some tests..\"\n\nExaminee Checklist:\n\nEntrance:\n\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified their role or position.\n\nReflective Listening:\n\n- Examinee asked an open-ended question and actively listened to the response.\n- Examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- Examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\nConnecting With the Patient:\n\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nAdditional Task:\n\n- Write the patient note after leaving the room.\n\nQuestion Patient Response:\n\nChief Complaint:\nDoctor: \"What has prompted your visit today?\"\nPatient: \"Jaundice in my eyes and skin.\"\n\nOnset:\nDoctor: \"When did you first notice that your eyes and skin were yellow?\"\nPatient: \"Three weeks ago.\"\n\nColor of stool:\nDoctor: \"What color have your stools been?\"\nPatient: \"Light.\"\n\nColor of urine:\nDoctor: \"What color has your urine been?\"\nPatient: \"Darker than usual.\"\n\nPruritus:\nDoctor: \"Have you experienced any itchiness? If yes, when did it begin? Have you tried any medications to help alleviate the itch?\"\nPatient: \"I started itching 2 months ago; Benadryl used to help, but not anymore.\"\n\nSeverity of pruritus on a scale:\nDoctor: \"On a scale of 0 to 10, how severe has your itch been?\"\nPatient: \"Sometimes it's 7/10.\"\n\nAbdominal pain:\nDoctor: \"Any pain in your stomach?\"\nPatient: \"Sometimes.\"\n\nOnset:\nDoctor: \"When did the pain in your stomach start?\"\nPatient: \"It was around the same time that I noticed the change in the color of my eyes and skin.\"\n\nConstant/intermittent:\nDoctor: \"Has the pain been constant or does it come and go?\"\nPatient: \"Well, I don't have the pain all the time. It comes and goes.\"\n\nFrequency:\nDoctor: \"How frequently do you experience the pain?\"\nPatient: \"At least once every day.\"\n\nProgression:\nDoctor: \"Has the pain gotten better, worse, or stayed the same?\"\nPatient: \"It is the same.\"\n\nSeverity of pain on a scale:\nDoctor: \"On a scale from 0 to 10, where 0 indicates no pain and 10 represents the most intense pain you've experienced, how would you rate your pain severity?\"\nPatient: \"When I experience the pain, it rates at 3 out of 10, but it can decrease to 0.\"\n\nLocation:\nDoctor: \"Can you indicate where the pain is located?\"\nPatient: \"It is located here (gestures to the RUQ).\"\n\nRadiation:\nDoctor: \"Does the pain stay in one place or does it spread to other areas?\"\nPatient: \"It stays in one place.\"\n\nQuality:\nDoctor: \"How would you describe the pain?\"\nPatient: \"Dull.\"\n\nAlleviating factors:\nDoctor: \"Is there anything that alleviates the pain?\"\nPatient: \"Tylenol. I take four tablets daily to ensure I don't experience pain.\"\n\nExacerbating factors:\nDoctor: \"Does anything make the pain worse?\"\nPatient: \"No.\"\n\nRelationship of food to pain:\nDoctor: \"Do you notice if the pain is related to eating food?\"\nPatient: \"It is not related to food.\"\n\nPrevious episodes of similar pain:\nDoctor: \"Have you ever experienced pain like this before?\"\nPatient: \"No.\"\n\nNausea/vomiting:\nDoctor: \"Any nausea or vomiting?\"\nPatient: \"Sometimes I feel nauseated when I am in pain, but no vomiting.\"\n\nDiarrhea/constipation:\nDoctor: \"Any diarrhea or constipation?\"\nPatient: \"No.\"\n\nColonoscopy:\nDoctor: \"Have you ever had a colonoscopy?\"\nPatient: \"Never.\"\n\nBlood transfusion:\nDoctor: \"Have you ever had a blood transfusion?\"\nPatient: \"Yes, when I had a C-section 20 years ago.\"\n\nFever, night sweats:\nDoctor: \"Have you had a fever? Any night sweats?\"\nPatient: \"No.\"\n\nFatigue:\nDoctor: \"Any feeling of being tired lately?\"\nPatient: \"Yes, recently.\"\n\nWeight changes:\nDoctor: \"Have you noticed any fluctuations in your weight?\"\nPatient: \"No.\"\n\nAppetite change:\nDoctor: \"Have you experienced any changes in your appetite?\"\nPatient: \"I have no appetite.\"\n\nJoint pain:\nDoctor: \"Are you experiencing any joint pain?\"\nPatient: \"No.\"\n\nTravel history:\nDoctor: \"Have you traveled recently?\"\nPatient: \"I went to Mexico for a brief vacation about 2 months ago.\"\n\nImmunization before travel:\nDoctor: \"Did you receive any immunizations before you went on your trip?\"\nPatient: \"No.\"\n\nCurrent medications:\nDoctor: \"Are you taking any medications? If so, which ones?\"\nPatient: \"Tylenol. Synthroid.\"\n\nSimilar episodes:\nDoctor: \"Have you experienced symptoms similar to this in the past?\"\nPatient: \"No.\"\n\nPast medical history:\nDoctor: \"Are you experiencing any other known medical issues?\"\nPatient: \"Hypothyroidism.\"\n\nPast surgical history:\nDoctor: \"Have you undergone any surgical procedures?\"\nPatient: \"I had two cesarean sections at 25 and 30 years old, followed by a tubal ligation at age 35.\"\n\nFamily history:\nDoctor: \"Do you have any family medical history?\"\nPatient: \"My father passed away at 55 from pancreatic cancer, but my mother is currently healthy and alive.\"\n\nOccupation:\nDoctor: \"What is your occupation?\"\nPatient: \"I work in a travel agency.\"\n\nIllicit drug use:\nDoctor: \"Do you use any recreational drugs?\"\nPatient: \"No.\"\n\nTobacco:\nDoctor: \"Do you smoke?\"\nPatient: \"No.\"\n\nSexual activity:\nDoctor: \"Are you engaged in sexual activity?\"\nPatient: \"Yes, with my spouse.\"\n\nDrug allergies:\nDoctor: \"Are you allergic to anything?\"\nPatient: \"I have an allergy to penicillin; it makes my skin rash when I use it.\"\n\nAlcohol use:\nDoctor: \"Do you consume alcohol? If so, how much do you typically drink?\"\nPatient: \"For the last 30 years, I have consumed one or two glasses of wine daily.\"\n\nCAGE questions:\nDoctor: \"Have you ever thought about reducing your alcohol intake? Have others expressed annoyance at your drinking habits? Do you ever feel remorse about consuming alcohol? Do you feel the need for a morning drink to calm your nerves or alleviate a hangover?\"\nPatient: \"No (to all four).\"\n\nAffecting job/relationships/legal problems:\nDoctor: \"Has your alcohol consumption impacted your employment or personal relationships? Has it led to any legal issues?\"\nPatient: \"No.\"\n\nPhysical Examination:\n\n- Examinee washed their hands.\n- Examinee asked for permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- HEENT: Inspected sclerae, under tongue.\n- CV exam: Auscultation.\n- Pulmonary exam: Auscultation.\n- Abdominal exam: Inspection, auscultation, palpation (including Murphy sign), percussion, measurement of liver span, palpation or percussion for splenomegaly, shifting dullness.\n- Extremities: Checked for asterixis, edema.\n- Skin: Looked for cutaneous telangiectasias, palmar erythema.\n\nSample Closure:\n\n\"Mrs. Abbott, the symptoms you've mentioned typically arise from a condition affecting either the liver or the adjacent bile ducts.. We will have to run some blood tests and conduct imaging studies, such as an ultrasound, to get a better idea of what is going on. Once we find the cause of your problem, we can come up with an appropriate treatment plan. In the meantime, I suggest you refrain from alcohol consumption and reduce your intake of Tylenol, as both can potentially damage your liver.. Do you have any questions for me?\"\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans.\n- Follow-up tests.\n- Examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory \nHPI: A 52-year-old female complains of yellow skin and eyes for 3 weeks. She has dull, intermittent right upper quadrant pain that affects her daily, is unrelated to meals, and relieved by Tylenol; it is 3/10 in severity. She also reports pruritus that is 7/10 in severity, light-colored stools, and dark urine. She has experienced fatigue, anorexia, and nausea. She recently traveled to Mexico and has a history of a blood transfusion 20 years ago. No diarrhea, constipation, or weight loss. \nROS: Negative except as above. \nMedications: Tylenol, Synthroid. \nAllergies: Penicillin, causes a rash. \nPMH: Hypothyroidism. \nPSH: 2 C-sections, tubal ligation. \nSH: No smoking, 1-2 glasses of wine/day for 30 years, CAGE 0/4, no illicit drugs. Sexually active with husband only. \nFH: Father died of pancreatic cancer at age 55. \n\nPhysical Examination:\n\nPatient is in no acute distress. \nVS: within normal limits (WNL) \nHEENT: Sclerae icteric. \nChest: Clear breath sounds bilaterally. \nHeart: regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops. \nAbdomen: Soft, nondistended, C-section scar. Mild right upper quadrant tenderness without rebound or \nguarding, positive Murphy sign, normal bowel sounds (BS) x 4 quadrants, no organomegaly or masses. No evidence of fluid wave suggestive of ascites. \nSkin: Jaundice, excoriations due to scratching, no spider telangiectasias or palmar erythema. \nExtremities: No asterixis, no edema."
+}

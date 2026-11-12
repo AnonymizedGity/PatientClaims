@@ -1,0 +1,89 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-195", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 36, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "lump in the neck", "aliases": ["neck lump", "neck mass", "swelling in the neck"], "text": "I have a lump on my neck.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "lump in the neck: location", "parent": "f001", "attribute": "location", "text": "It's on the left side of my neck.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f003", "item": "lump in the neck: pain", "parent": "f001", "attribute": "character", "aliases": ["painful lump", "tender lump"], "text": "It doesn't hurt.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f004", "item": "lump in the neck: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for the past 3 months.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f005", "item": "lump in the neck: course", "parent": "f001", "attribute": "course", "text": "It has been getting bigger over that time.", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f006", "item": "voice changes", "aliases": ["hoarseness", "change in voice"], "text": "My voice hasn't changed.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f007", "item": "difficulty swallowing", "aliases": ["trouble swallowing", "dysphagia"], "text": "I don't have any trouble swallowing.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f008", "item": "breathing problems", "aliases": ["respiratory symptoms", "shortness of breath"], "text": "I haven't had any breathing problems.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f009", "item": "radiation exposure", "aliases": ["radiation", "ionizing radiation", "radiation therapy"], "text": "As far as I know, I've never been exposed to radiation.", "polarity": "absent", "category": "habit_exposure", "time": "historical"},
+      {"id": "f010", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "allergies", "aliases": ["drug allergies"], "text": "I don't have any known allergies.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "current medications", "aliases": ["medicines", "pills"], "text": "I'm not taking any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a high school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f018", "item": "night sweats", "text": "I don't have night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f019", "item": "recent infections", "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-195",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "ent", "name": "neck examination", "aliases": ["neck palpation", "examination of the neck mass", "lymph node examination", "cervical lymph nodes"], "result": "Inspection: visible swelling on the left side of the neck; palpation: 2.5-cm firm, irregular mass on the left side of the neck that moves with swallowing, painless cervical lymphadenopathy; auscultation: no bruits over the mass."},
+      {"id": "x006", "kind": "test", "name": "neck ultrasound", "aliases": ["ultrasound of the neck", "neck sonography"], "result": "Solitary left lobe thyroid mass with increased vascularity and hyperechogenic punctate regions."},
+      {"id": "x007", "kind": "test", "name": "fine-needle aspiration biopsy of the neck mass", "aliases": ["FNA", "fine-needle aspiration", "FNAB", "biopsy of the neck mass"], "result": "Pending; the biopsy is scheduled for the following week."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-195",
+    "diagnosis": "Papillary carcinoma of the thyroid",
+    "aliases": ["papillary thyroid carcinoma", "papillary thyroid cancer", "PTC", "papillary carcinoma of thyroid", "thyroid papillary carcinoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-195",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-195-p001"], "f002": ["cc"], "f003": ["cc", "agentclinic-medqa-ext-195-p001"],
+      "f004": ["agentclinic-medqa-ext-195-p001", "agentclinic-medqa-ext-195-p002"], "f005": ["agentclinic-medqa-ext-195-p001", "agentclinic-medqa-ext-195-p002"],
+      "f006": ["agentclinic-medqa-ext-195-p001", "agentclinic-medqa-ext-195-p003"], "f007": ["agentclinic-medqa-ext-195-p001", "agentclinic-medqa-ext-195-p004"],
+      "f008": ["agentclinic-medqa-ext-195-p001", "agentclinic-medqa-ext-195-p005"], "f009": ["agentclinic-medqa-ext-195-p001", "agentclinic-medqa-ext-195-p007"],
+      "f010": ["agentclinic-medqa-ext-195-p006"], "f011": ["agentclinic-medqa-ext-195-p006"], "f012": ["agentclinic-medqa-ext-195-p006"],
+      "f013": ["agentclinic-medqa-ext-195-p007"], "f014": ["agentclinic-medqa-ext-195-p007"], "f015": ["agentclinic-medqa-ext-195-p007"],
+      "f016": ["agentclinic-medqa-ext-195-p008"], "f017": ["agentclinic-medqa-ext-195-p008"], "f018": ["agentclinic-medqa-ext-195-p008"],
+      "f019": ["agentclinic-medqa-ext-195-p008"]
+    },
+    "quotes": {
+      "f002": "on the left side of the neck", "f003": "Painless lump", "f004": "for the past 3 months",
+      "f005": "progressively increased in size", "f009": "No history of radiation exposure. / No known exposure to ionizing radiation.",
+      "f011": "No known allergies.", "f014": "drinks alcohol socially", "f015": "Works as a high school teacher."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-195-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-195-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-195-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-195-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neck_Examination.Inspection + Physical_Examination_Findings.Neck_Examination.Palpation + Physical_Examination_Findings.Neck_Examination.Auscultation", "source_text": "Visible swelling on the left side of the neck. + A 2.5-cm firm, irregular mass on the left side of the neck that moves with swallowing. Painless cervical lymphadenopathy noted. + No bruits over the mass.", "exam_ids": ["agentclinic-medqa-ext-195-e005", "agentclinic-medqa-ext-195-e006", "agentclinic-medqa-ext-195-e007"]},
+      "x006": {"source": "Test_Results.Ultrasound_Neck.Findings", "source_text": "Solitary left lobe thyroid mass with increased vascularity and hyperechogenic punctate regions.", "exam_ids": ["agentclinic-medqa-ext-195-i001"]},
+      "x007": {"source": "Test_Results.Fine_Needle_Aspiration_Biopsy.Scheduled", "source_text": "Biopsy results are pending, scheduled for the following week.", "exam_ids": ["agentclinic-medqa-ext-195-i002"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The fine-needle aspiration result is pending, so no test confirms the gold diagnosis; the ultrasound features (solitary mass, increased vascularity, punctate echogenic foci) only suggest it."
+    ],
+    "notes": [
+      "'Lump has increased in size over 3 months' (p002) and the History give duration (f004) and growth (f005); the three ROS-style Secondary_Symptoms denials (p003-p005) merge with the History's denials (f006-f008).",
+      "'No history of radiation exposure' (History) and 'No known exposure to ionizing radiation' (Social_History) are one denial (f009), keeping 'known' as 'as far as I know'.",
+      "Finding names and aliases avoid the gold word 'thyroid' ('neck examination', 'neck ultrasound'); the ultrasound result names a thyroid mass, which is the test's answer, not the diagnosis.",
+      "The FNA record keeps the source state 'pending'."
+    ],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-195-e008", "reason": "Neck percussion: 'Not applicable' (no information)."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a neck mass."
+    }
+  }
+}

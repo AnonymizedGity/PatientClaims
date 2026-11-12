@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-037", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 24, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "knee pain", "aliases": ["left knee pain"], "text": "I have pain in my left knee.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "knee swelling", "aliases": ["swollen knee"], "text": "My left knee is swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "how long the symptoms have been going on", "text": "The pain and swelling have been going on for 2 months.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "symptoms getting worse", "text": "The pain and the swelling have both been getting worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "knee pain: severity", "parent": "f001", "attribute": "severity", "text": "The pain is severe.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "knee pain: waking from sleep", "parent": "f001", "attribute": "timing", "aliases": ["night pain"], "text": "It's bad enough to wake me up from sleep; that has happened several times.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "ibuprofen", "aliases": ["painkillers", "NSAIDs"], "text": "I tried taking ibuprofen for the pain.", "polarity": "present", "category": "medication"},
+      {"id": "f008", "item": "ibuprofen: treatment response", "parent": "f007", "attribute": "treatment_response", "text": "It didn't give me any relief.", "polarity": "present", "category": "medication"},
+      {"id": "f009", "item": "fever", "text": "I haven't had any fevers recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "previous similar episodes", "text": "I've never had anything like this before.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "historical"},
+      {"id": "f012", "item": "knee injury", "aliases": ["knee trauma"], "text": "I haven't injured my knee.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "illnesses in the family", "aliases": ["family history"], "text": "No one in my family has had any significant illnesses.", "polarity": "absent", "category": "family_history"},
+      {"id": "f015", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work"], "text": "I'm an engineer.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-037",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "knee examination", "aliases": ["knee inspection", "knee palpation", "left knee examination"], "result": "Inspection: mild swelling around the left knee; palpation: tenderness, no warmth."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "knee range of motion", "aliases": ["ROM", "range of motion"], "result": "Limited by pain, particularly on extension and flexion."},
+      {"id": "x007", "kind": "exam", "system": "musculoskeletal", "name": "McMurray test", "aliases": ["meniscal test"], "result": "Negative."},
+      {"id": "x008", "kind": "exam", "system": "musculoskeletal", "name": "Lachman test", "result": "Negative."},
+      {"id": "x009", "kind": "exam", "system": "musculoskeletal", "name": "anterior drawer test", "result": "Negative."},
+      {"id": "x010", "kind": "exam", "system": "musculoskeletal", "name": "posterior drawer test", "result": "Negative."},
+      {"id": "x011", "kind": "test", "name": "left knee X-ray", "aliases": ["knee radiograph", "X-ray of the knee", "femur X-ray"], "result": "Lytic lesion in the distal femur near the knee joint with a thin rim of bone on the external surface and a 'soap bubble' appearance."},
+      {"id": "x012", "kind": "test", "name": "left knee MRI", "aliases": ["MRI of the knee", "femur MRI"], "result": "Lesion in the distal femur with clear demarcation and non-invasive characteristics, suggestive of a benign process."},
+      {"id": "x013", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Within normal limits."},
+      {"id": "x014", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Slightly elevated."},
+      {"id": "x015", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Within normal limits."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-037",
+    "diagnosis": "Osteoclastoma",
+    "aliases": ["giant cell tumor of bone", "giant cell tumour of bone", "GCTB", "giant cell tumor of the distal femur"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-037",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-037-p001"], "f002": ["cc", "agentclinic-medqa-ext-037-p001"],
+      "f003": ["agentclinic-medqa-ext-037-p001", "agentclinic-medqa-ext-037-p002"],
+      "f004": ["agentclinic-medqa-ext-037-p001", "agentclinic-medqa-ext-037-p002"],
+      "f005": ["cc", "agentclinic-medqa-ext-037-p001"],
+      "f006": ["agentclinic-medqa-ext-037-p001", "agentclinic-medqa-ext-037-p003"],
+      "f007": ["agentclinic-medqa-ext-037-p001", "agentclinic-medqa-ext-037-p004"],
+      "f008": ["agentclinic-medqa-ext-037-p001", "agentclinic-medqa-ext-037-p004"],
+      "f009": ["agentclinic-medqa-ext-037-p007"], "f010": ["agentclinic-medqa-ext-037-p007"], "f011": ["agentclinic-medqa-ext-037-p007"],
+      "f012": ["agentclinic-medqa-ext-037-p007"], "f013": ["agentclinic-medqa-ext-037-p001", "agentclinic-medqa-ext-037-p005"],
+      "f014": ["agentclinic-medqa-ext-037-p001"], "f015": ["agentclinic-medqa-ext-037-p006"], "f016": ["agentclinic-medqa-ext-037-p006"],
+      "f017": ["agentclinic-medqa-ext-037-p006"]
+    },
+    "quotes": {
+      "f003": "over 2 months", "f004": "increasing pain and swelling / Pain intensifying over 2 months", "f005": "Severe pain",
+      "f006": "severe enough to awaken him from sleep on several occasions", "f008": "with no relief",
+      "f009": "recent fevers", "f011": "previous similar episodes", "f012": "trauma to the knee",
+      "f013": "No significant past medical history.", "f014": "No family or personal history of significant illnesses", "f016": "drinks alcohol socially"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-037-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-037-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-037-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-037-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Knee_Examination.Inspection + Physical_Examination_Findings.Knee_Examination.Palpation", "source_text": "Mild swelling observed around the left knee. | Tenderness upon palpation, no warmth", "exam_ids": ["agentclinic-medqa-ext-037-e005", "agentclinic-medqa-ext-037-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Knee_Examination.Range_of_Motion", "source_text": "Limited by pain, particularly on extension and flexion", "exam_ids": ["agentclinic-medqa-ext-037-e007"]},
+      "x007": {"source": "Physical_Examination_Findings.Knee_Examination.Special_Tests", "source_text": "McMurray test negative; Lachman test negative; Anterior and posterior drawer tests negative", "exam_ids": ["agentclinic-medqa-ext-037-e008"]},
+      "x008": {"source": "Physical_Examination_Findings.Knee_Examination.Special_Tests", "source_text": "McMurray test negative; Lachman test negative; Anterior and posterior drawer tests negative", "exam_ids": ["agentclinic-medqa-ext-037-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Knee_Examination.Special_Tests", "source_text": "McMurray test negative; Lachman test negative; Anterior and posterior drawer tests negative", "exam_ids": ["agentclinic-medqa-ext-037-e008"]},
+      "x010": {"source": "Physical_Examination_Findings.Knee_Examination.Special_Tests", "source_text": "McMurray test negative; Lachman test negative; Anterior and posterior drawer tests negative", "exam_ids": ["agentclinic-medqa-ext-037-e008"]},
+      "x011": {"source": "Test_Results.X-Ray_Left_Knee.Findings", "source_text": "A lytic lesion in the distal femur near the knee joint with a thin rim of bone on the external surface and a 'soap bubble' appearance.", "exam_ids": ["agentclinic-medqa-ext-037-i001"]},
+      "x012": {"source": "Test_Results.MRI_Left_Knee.Findings", "source_text": "A lesion in the distal femur with clear demarcation and non-invasive characteristics, suggestive of a benign process.", "exam_ids": ["agentclinic-medqa-ext-037-i002"]},
+      "x013": {"source": "Test_Results.Blood_Tests.Complete_Blood_Count", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-037-i003"]},
+      "x014": {"source": "Test_Results.Blood_Tests.Erythrocyte_Sedimentation_Rate", "source_text": "Slightly elevated", "exam_ids": ["agentclinic-medqa-ext-037-i004"]},
+      "x015": {"source": "Test_Results.Blood_Tests.C-Reactive_Protein", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-037-i005"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Duration (2 months) and worsening apply to both pain and swelling, so they are standalone facts (f003, f004).",
+      "'No family or personal history of significant illnesses' gives two denials: personal (f013, merged with p005) and family (f014).",
+      "The special-tests leaf is split into one record per named test (McMurray, Lachman, anterior drawer, posterior drawer), all citing e008.",
+      "Ibuprofen is a medication fact (f007) with a treatment-response child (f008); 'tried' gives no current use, so f007 has no time."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with increasing pain and swelling of the left knee for the past 2 months."
+    }
+  }
+}

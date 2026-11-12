@@ -1,0 +1,91 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-148", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 31, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "flank pain", "aliases": ["side pain", "pain in the side"], "text": "I've been having pain in my flank.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f002", "item": "flank pain: pattern", "parent": "f001", "attribute": "timing", "text": "It comes and goes.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f003", "item": "flank pain: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 5 months.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f004", "item": "urinary tract infections", "aliases": ["UTIs", "bladder infections", "urine infections"], "text": "I've had five urinary tract infections over the past 2 years.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f005", "item": "other medical problems", "aliases": ["past medical history", "chronic medical problems"], "text": "Apart from those urinary infections, I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "fever", "text": "I haven't had any fever recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "weight loss", "text": "I haven't lost any significant weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "changes in urination", "aliases": ["urinary changes", "urinary habits"], "text": "I haven't noticed any significant changes in my urination.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f009", "item": "changes in bowel habits", "aliases": ["bowel changes"], "text": "I haven't noticed any significant changes in my bowel habits.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "injury to the back or belly", "aliases": ["trauma", "back injury", "abdominal injury"], "text": "I haven't had any injury to my back or belly.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "shortness of breath", "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f013", "item": "rash", "text": "I haven't had any rash.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f014", "item": "joint pain", "text": "I don't have any joint pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f015", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a middle school teacher.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-148",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "150/88 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "78/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdominal exam", "abdomen", "abdominal palpation", "flank examination"], "result": "Inspection: no visible scars or lesions. Auscultation: normal bowel sounds. Percussion: no ascites; bilateral flank dullness. Palpation: bilateral, nontender upper abdominal masses; liver and spleen not palpable."},
+      {"id": "x006", "kind": "test", "name": "renal function tests", "aliases": ["blood urea nitrogen", "BUN", "urea", "creatinine", "basic metabolic panel", "BMP"], "result": "Blood urea nitrogen 29 mg/dL (elevated); creatinine 1.4 mg/dL (elevated)."},
+      {"id": "x007", "kind": "test", "name": "renal ultrasound", "aliases": ["renal ultrasonography", "ultrasound of the renal tract", "abdominal ultrasound"], "result": "Bilaterally enlarged kidneys with multiple parenchymal anechoic masses."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-148",
+    "diagnosis": "Autosomal dominant polycystic kidney disease",
+    "aliases": ["ADPKD", "autosomal dominant PKD", "adult polycystic kidney disease", "adult-onset polycystic kidney disease"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-148",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-148-p001"], "f002": ["cc", "agentclinic-medqa-ext-148-p001"], "f003": ["agentclinic-medqa-ext-148-p001"],
+      "f004": ["agentclinic-medqa-ext-148-p001", "agentclinic-medqa-ext-148-p002", "agentclinic-medqa-ext-148-p006"],
+      "f005": ["agentclinic-medqa-ext-148-p006"],
+      "f006": ["agentclinic-medqa-ext-148-p001", "agentclinic-medqa-ext-148-p003", "agentclinic-medqa-ext-148-p008"],
+      "f007": ["agentclinic-medqa-ext-148-p001", "agentclinic-medqa-ext-148-p004"],
+      "f008": ["agentclinic-medqa-ext-148-p001", "agentclinic-medqa-ext-148-p005"],
+      "f009": ["agentclinic-medqa-ext-148-p001", "agentclinic-medqa-ext-148-p005"],
+      "f010": ["agentclinic-medqa-ext-148-p008"], "f011": ["agentclinic-medqa-ext-148-p008"], "f012": ["agentclinic-medqa-ext-148-p008"],
+      "f013": ["agentclinic-medqa-ext-148-p008"], "f014": ["agentclinic-medqa-ext-148-p008"],
+      "f015": ["agentclinic-medqa-ext-148-p007"], "f016": ["agentclinic-medqa-ext-148-p007"], "f017": ["agentclinic-medqa-ext-148-p007"]
+    },
+    "quotes": {
+      "f002": "Intermittent flank pain", "f003": "a 5-month history of intermittent flank pain",
+      "f004": "five urinary tract infections over the past 2 years",
+      "f005": "No significant past medical history apart from recurrent urinary tract infections.",
+      "f006": "not experienced any recent fever", "f007": "No significant weight loss",
+      "f008": "significant changes in urinary or bowel habits", "f009": "significant changes in urinary or bowel habits",
+      "f010": "trauma to the back or abdomen", "f016": "drinks alcohol socially", "f017": "Works as a middle school teacher."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-148-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "150/88 mmHg", "exam_ids": ["agentclinic-medqa-ext-148-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "78 bpm", "exam_ids": ["agentclinic-medqa-ext-148-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-148-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible scars or lesions. | Bowel sounds are normal. | No ascites. Bilateral flank dullness could be elicited. | Bilateral, nontender upper abdominal masses palpable. No palpable liver or spleen.", "exam_ids": ["agentclinic-medqa-ext-148-e005", "agentclinic-medqa-ext-148-e006", "agentclinic-medqa-ext-148-e007", "agentclinic-medqa-ext-148-e008"]},
+      "x006": {"source": "Test_Results.Blood_Works.Urea_Nitrogen + Test_Results.Blood_Works.Creatinine", "source_text": "29 mg/dL (elevated) | 1.4 mg/dL (elevated)", "exam_ids": ["agentclinic-medqa-ext-148-i001", "agentclinic-medqa-ext-148-i002"]},
+      "x007": {"source": "Test_Results.Imaging.Renal_Ultrasonography.Findings", "source_text": "Bilaterally enlarged kidneys with multiple parenchymal anechoic masses.", "exam_ids": ["agentclinic-medqa-ext-148-i003"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The side of the flank pain is not stated in the history; the examination finds bilateral masses."
+    ],
+    "notes": [
+      "The fever denial appears in p001, p003 and p008 and the urinary/bowel-habit denial in p001 and p005; each is one fact citing all its sources. The urinary and bowel denials are split into two facts.",
+      "'Recurrent urinary tract infections' (p006) merges with the five infections over 2 years (p001, p002) in f004; the rest of p006 ('no significant past medical history apart from...') is the separate denial f005.",
+      "'Intermittent' and the 5-month duration are children of the flank pain. 'Recent' in the ROS is read as qualifying fever only, so the trauma denial (f010) has no time qualifier.",
+      "BUN and creatinine are two basic-metabolic-panel members, so they are grouped as renal function tests. The word 'kidney' is kept out of finding names and aliases (gold term); the ultrasound is named 'renal ultrasound'."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with intermittent flank pain and a history of multiple urinary tract infections."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

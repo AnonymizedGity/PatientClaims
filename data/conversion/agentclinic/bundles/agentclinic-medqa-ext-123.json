@@ -1,0 +1,109 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-123",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 45, "sex": "male"},
+    "opening": ["f001", "f002", "f004"],
+    "facts": [
+      {"id": "f001", "item": "eye pain", "aliases": ["painful eye", "sore eye"], "text": "My right eye hurts.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "blurry vision", "aliases": ["blurred vision", "vision problems"], "text": "The vision in my right eye is blurry.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f003", "item": "how long the eye symptoms have been going on", "text": "This started a day ago.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f004", "item": "eye symptoms getting worse", "aliases": ["progression"], "text": "The pain and the blurriness have been getting worse.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "difficulty opening the eye", "aliases": ["can't open my eye", "keeping the eye shut"], "text": "It's hard to open my right eye because of the pain.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f006", "item": "symptoms in the left eye", "aliases": ["other eye"], "text": "My left eye is fine.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f007", "item": "changes in vision before this episode", "aliases": ["earlier vision changes"], "text": "I hadn't noticed any changes in my vision before this.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "historical"},
+      {"id": "f008", "item": "contact lens use", "aliases": ["contacts", "contact lenses"], "text": "I wear contact lenses regularly.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "changes in eye care routine", "aliases": ["lens care", "lens hygiene"], "text": "I haven't changed my eye care routine.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "asthma", "aliases": ["bronchial asthma"], "text": "I have bronchial asthma.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "salbutamol inhaler", "aliases": ["salbutamol", "albuterol", "inhaler"], "text": "I use a salbutamol inhaler for my asthma.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a kindergarten teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "heavy alcohol use", "aliases": ["alcohol", "drinking"], "text": "I don't drink much alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "nausea", "text": "I don't feel nauseous.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "other symptoms", "aliases": ["systemic symptoms", "other symptoms"], "text": "I don't have any other symptoms in the rest of my body.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-123",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.0°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/75 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "85/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "Snellen chart", "eye chart"], "result": "Right eye: counts fingers at 3 feet. Left eye: 20/25."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["eye inspection", "external eye examination", "orbit palpation"], "result": "Inspection: right eye red, with evident discomfort on attempting to open it. Palpation: no abnormalities around the orbit or eye."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["slit lamp", "biomicroscopy", "cornea examination", "fluorescein staining"], "result": "Corneal ulceration with infiltration."},
+      {"id": "x008", "kind": "test", "name": "corneal scraping culture", "aliases": ["corneal culture", "corneal scraping", "eye culture"], "result": "Growth of Pseudomonas aeruginosa."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-123",
+    "diagnosis": "Pseudomonas keratitis",
+    "aliases": ["Pseudomonas aeruginosa keratitis", "pseudomonal keratitis", "Pseudomonas corneal ulcer", "Pseudomonas aeruginosa corneal ulcer", "contact lens-associated Pseudomonas keratitis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-123",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-123-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-123-p001"],
+      "f003": ["agentclinic-medqa-ext-123-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-123-p001"],
+      "f005": ["agentclinic-medqa-ext-123-p001", "agentclinic-medqa-ext-123-p002"],
+      "f006": ["agentclinic-medqa-ext-123-p001", "agentclinic-medqa-ext-123-p003"],
+      "f007": ["agentclinic-medqa-ext-123-p001"],
+      "f008": ["agentclinic-medqa-ext-123-p001", "agentclinic-medqa-ext-123-p004"],
+      "f009": ["agentclinic-medqa-ext-123-p001"],
+      "f010": ["agentclinic-medqa-ext-123-p001", "agentclinic-medqa-ext-123-p005"],
+      "f011": ["agentclinic-medqa-ext-123-p001", "agentclinic-medqa-ext-123-p005"],
+      "f012": ["agentclinic-medqa-ext-123-p001", "agentclinic-medqa-ext-123-p006"],
+      "f013": ["agentclinic-medqa-ext-123-p006"],
+      "f014": ["agentclinic-medqa-ext-123-p006"],
+      "f015": ["agentclinic-medqa-ext-123-p007"],
+      "f016": ["agentclinic-medqa-ext-123-p007"],
+      "f017": ["agentclinic-medqa-ext-123-p007"]
+    },
+    "quotes": {
+      "f001": "Progressive pain and blurry vision in the right eye",
+      "f003": "a 1-day history",
+      "f004": "increasing pain and blurry vision in his right eye",
+      "f005": "difficult to open the eye due to the pain",
+      "f006": "The left eye is unaffected.",
+      "f007": "no recent changes in his vision",
+      "f008": "He uses contact lenses regularly",
+      "f009": "or eye care routine until this episode",
+      "f011": "uses inhaled salbutamol",
+      "f013": "no reported smoking",
+      "f014": "or significant alcohol use",
+      "f017": "any other systemic symptoms"
+    },
+    "flags": {
+      "f013": ["Source says 'no reported smoking', read as a plain denial of smoking."],
+      "f014": ["Source says 'no ... significant alcohol use': only heavy drinking is denied; whether he drinks at all is not stated."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.0°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-123-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/75 mmHg", "exam_ids": ["agentclinic-medqa-ext-123-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "85 bpm", "exam_ids": ["agentclinic-medqa-ext-123-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-123-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Ophthalmic_Examination.Visual_Acuity.Right_Eye + Physical_Examination_Findings.Ophthalmic_Examination.Visual_Acuity.Left_Eye", "source_text": "Count fingers at 3 feet | 20/25", "exam_ids": ["agentclinic-medqa-ext-123-e005", "agentclinic-medqa-ext-123-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Ophthalmic_Examination.Inspection + Physical_Examination_Findings.Ophthalmic_Examination.Palpation", "source_text": "The right eye appears red and there is evident discomfort on attempting to open the eye | No abnormalities noted on palpation around the orbit or eye", "exam_ids": ["agentclinic-medqa-ext-123-e007", "agentclinic-medqa-ext-123-e008"]},
+      "x007": {"source": "Test_Results.Slit_Lamp_Examination.Findings", "source_text": "Corneal ulceration with infiltration, hinting at microbial keratitis", "exam_ids": ["agentclinic-medqa-ext-123-i001"]},
+      "x008": {"source": "Test_Results.Microbiology.Corneal_Scraping_Culture.Findings", "source_text": "Growth of Pseudomonas aeruginosa", "exam_ids": ["agentclinic-medqa-ext-123-i002"]}
+    },
+    "leakage": [
+      {"id": "x008", "reason": "Culture result names Pseudomonas aeruginosa (the organism in the gold diagnosis); it is the test's answer."}
+    ],
+    "source_issues": ["The slit-lamp examination appears twice: as an exam leaf with no findings ('Recommended but findings not provided', e009) and as a test leaf with the findings (i001)."],
+    "notes": ["The chief complaint ('Progressive pain and blurry vision in the right eye') gives the opening: eye pain, blurry vision and their worsening (f004). The 1-day duration and the worsening apply to both symptoms, so they are standalone facts.", "The slit-lamp examination is one exam record (kind exam, eye) built from test leaf i001; the empty exam leaf e009 is excluded.", "Visual acuity of both eyes is one record; ophthalmic inspection and palpation are combined into one eye examination."],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-123-e009", "reason": "'Recommended but findings not provided': no information; the slit-lamp findings come from test leaf i001 (x007)."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with progressive pain and blurry vision in one eye."
+    },
+    "finding_flags": {
+      "x007": ["Source interpretation removed from the result (source: 'Corneal ulceration with infiltration, suggesting microbial keratitis.'); a bedside examination returns the finding, not the diagnosis."]
+    }
+  }
+}

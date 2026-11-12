@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-086", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 50, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "itchy rash", "aliases": ["rash", "itching", "skin rash"], "text": "I have an itchy rash on my upper body and face.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "itchy rash: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for a year.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f003", "item": "numbness in the palms", "aliases": ["numb hands", "loss of feeling in the hands"], "text": "Both of my palms feel numb.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "tingling in the palms", "aliases": ["pins and needles", "tingling hands"], "text": "I get a tingling feeling in both palms.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "thinning of the eyebrows", "aliases": ["eyebrow hair loss", "losing eyebrows"], "text": "My eyebrows have been thinning.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f006", "item": "loss of eyelashes", "aliases": ["eyelash loss", "losing eyelashes"], "text": "I've lost some of my eyelashes.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f007", "item": "light-colored patches of skin", "aliases": ["pale patches", "white spots", "hypopigmented patches"], "text": "I have some lighter patches of skin around my elbows.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a farmer; I work on my family's rice farm.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f009", "item": "livestock exposure", "aliases": ["animal exposure", "contact with animals", "farm animals"], "text": "I also take care of livestock.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "travel outside the local area", "aliases": ["travel", "recent travel", "travel abroad"], "text": "I've never traveled outside the local area.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost any weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "changes in vision", "aliases": ["vision problems", "blurry vision"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f015", "item": "respiratory symptoms", "aliases": ["breathing problems", "cough", "shortness of breath"], "text": "I haven't had any breathing or chest symptoms.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-086",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "rash", "lesions", "eyebrows", "eyelashes", "hair"], "result": "Multiple erythematous macules and papules on the face, arms, chest, and back; hypopigmented macules around the elbows; loss of eyebrow and eyelash hairs."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "sensation over the skin lesions", "aliases": ["sensation", "sensory examination", "light touch", "temperature sensation", "pinprick"], "result": "Insensitivity to light touch, temperature, and pinprick around the hypopigmented areas."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "grip strength", "aliases": ["hand strength", "motor strength", "muscle strength"], "result": "Slightly reduced bilaterally."},
+      {"id": "x008", "kind": "test", "name": "skin biopsy", "aliases": ["biopsy of skin lesion", "skin lesion biopsy", "punch biopsy"], "result": "Chronic inflammatory cells with features suggestive of leprosy."},
+      {"id": "x009", "kind": "test", "name": "nerve conduction studies", "aliases": ["NCS", "nerve conduction study", "EMG"], "result": "Reduced sensory nerve action potentials in the ulnar nerves."},
+      {"id": "x010", "kind": "test", "name": "anti-PGL-1 antibodies", "aliases": ["anti-phenolic glycolipid-1 antibodies", "PGL-1 serology", "serology"], "result": "Positive."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-086",
+    "diagnosis": "Leprosy",
+    "aliases": ["Hansen disease", "Hansen's disease", "Mycobacterium leprae infection", "M. leprae infection", "lepromatous leprosy", "borderline leprosy", "tuberculoid leprosy", "multibacillary leprosy", "paucibacillary leprosy"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-086",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-086-p001"], "f002": ["agentclinic-medqa-ext-086-p001"],
+      "f003": ["agentclinic-medqa-ext-086-p001", "agentclinic-medqa-ext-086-p002"], "f004": ["agentclinic-medqa-ext-086-p001", "agentclinic-medqa-ext-086-p002"],
+      "f005": ["agentclinic-medqa-ext-086-p003"], "f006": ["agentclinic-medqa-ext-086-p004"], "f007": ["agentclinic-medqa-ext-086-p005"],
+      "f008": ["agentclinic-medqa-ext-086-p001", "agentclinic-medqa-ext-086-p007"], "f009": ["agentclinic-medqa-ext-086-p001"],
+      "f010": ["agentclinic-medqa-ext-086-p007"], "f011": ["agentclinic-medqa-ext-086-p006"], "f012": ["agentclinic-medqa-ext-086-p008"],
+      "f013": ["agentclinic-medqa-ext-086-p008"], "f014": ["agentclinic-medqa-ext-086-p008"], "f015": ["agentclinic-medqa-ext-086-p008"]
+    },
+    "quotes": {
+      "f001": "an itchy rash on his upper body and face", "f002": "a year-long history", "f003": "numbness and tingling sensation on both palms",
+      "f004": "numbness and tingling sensation on both palms", "f006": "Loss of some eyelashes", "f007": "Hypopigmented macules around the elbows",
+      "f008": "working on his family's rice farm", "f009": "also caring for livestock", "f010": "no history of travel outside the local area",
+      "f015": "any respiratory symptoms"
+    },
+    "flags": {
+      "f015": ["'Denies ... any respiratory symptoms' is a general denial; cough and shortness of breath are only aliases."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-086-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-086-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-086-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-086-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Skin_Examination.Observation + Physical_Examination_Findings.Skin_Examination.Special_Tests", "source_text": "Multiple erythematous macules and papules on the face, arms, chest, and back. Hypopigmented macules around the elbows. | Loss of eyebrow and eyelash hairs.", "exam_ids": ["agentclinic-medqa-ext-086-e005", "agentclinic-medqa-ext-086-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Insensitivity to light touch, temperature, and pinprick around the hypopigmented areas. Slight reduction in grip strength bilaterally.", "exam_ids": ["agentclinic-medqa-ext-086-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Skin_Examination.Palpation", "source_text": "Insensitivity to light touch, temperature, and pinprick around the hypopigmented areas. Slight reduction in grip strength bilaterally.", "exam_ids": ["agentclinic-medqa-ext-086-e006"]},
+      "x008": {"source": "Test_Results.Skin_Biopsy.Findings", "source_text": "Chronic inflammatory cells with features suggestive of leprosy.", "exam_ids": ["agentclinic-medqa-ext-086-i001"]},
+      "x009": {"source": "Test_Results.Nerve_Conduction_Studies.Findings", "source_text": "Reduced sensory nerve action potentials in the ulnar nerves.", "exam_ids": ["agentclinic-medqa-ext-086-i002"]},
+      "x010": {"source": "Test_Results.Serology.Anti-PGL-1_antibodies", "source_text": "Positive", "exam_ids": ["agentclinic-medqa-ext-086-i003"]}
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The skin biopsy result says 'suggestive of leprosy' (the source's visible_gold_alias_partitions flag: test_results); it is the test's answer, so it stays."}
+    ],
+    "source_issues": [
+      "The skin biopsy result names the diagnosis ('features suggestive of leprosy'); pool flag requires_diagnosis_text_cleanup is set. Kept per CONVERSION.md (a result may state what the test shows) and listed in qc.leakage.",
+      "Skin_Examination.Special_Tests (e007) holds an inspection finding (loss of eyebrow and eyelash hairs), not a special test."
+    ],
+    "notes": [
+      "'Numbness and tingling' is split into two facts (f003, f004), both citing p001 and p002.",
+      "The palpation leaf (e006) holds two different requests, sensation testing over the lesions and grip strength, so it is split into x006 and x007; the eyebrow and eyelash loss joins the skin inspection (x005).",
+      "Hypopigmented macules are written as lighter patches the patient can see (f007).",
+      "Farming is the occupation (f008); caring for livestock is an exposure (f009)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a longstanding pruritic rash, numbness, and tingling sensation on the palms."
+    }
+  }
+}

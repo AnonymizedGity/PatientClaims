@@ -1,0 +1,115 @@
+{
+  "case_id": "agentclinic-medqa-ext-107",
+  "source_row": 107,
+  "demographics_text": "33-year-old woman",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with weakness and fatigue.",
+  "chief_complaint": "Weakness and fatigue",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-107-p001",
+      "field": "History",
+      "text": "The patient reports feeling extremely fatigued and weak, especially towards the end of the day, to the point of difficulty in self-care. She mentions experiencing these symptoms currently. The patient has been traveling, hiking, and camping recently and notes having had multiple illnesses in the recent past."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-107-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Mild diplopia"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-107-p003",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-107-p004",
+      "field": "Social_History",
+      "text": "Enjoys outdoor activities such as hiking and camping. No mention of smoking, alcohol, or drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-107-p005",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, headache, or any respiratory, gastrointestinal, or urinary symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "98.0°F (36.7°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "124/84 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "12/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Strength_Assessment.Upper_Extremities",
+      "text": "2/5 strength"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Strength_Assessment.Lower_Extremities",
+      "text": "4/5 strength"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerve_Examination.Finding",
+      "text": "Mild diplopia on visual exam"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination",
+      "text": "Normal sensation throughout"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-e010",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "Normal deep tendon reflexes"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-107-i001",
+      "path": "Test_Results.Blood_Test.Acetylcholine_Receptor_Antibody.Result",
+      "text": "Positive"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-i002",
+      "path": "Test_Results.Blood_Test.Acetylcholine_Receptor_Antibody.Interpretation",
+      "text": "Indicates the presence of autoantibodies to acetylcholine receptors, which is associated with myasthenia gravis."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-i003",
+      "path": "Test_Results.Electromyography_and_Nerve_Conduction_Studies.Finding",
+      "text": "Decreased response with repetitive nerve stimulation, suggestive of a neuromuscular junction disorder."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-107-i004",
+      "path": "Test_Results.CT_Scan_Chest.Findings",
+      "text": "No thymoma or other abnormalities"
+    }
+  ],
+  "correct_diagnosis": "Myasthenia gravis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

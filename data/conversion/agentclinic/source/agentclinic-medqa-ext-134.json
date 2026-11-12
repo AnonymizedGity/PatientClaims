@@ -1,0 +1,110 @@
+{
+  "case_id": "agentclinic-medqa-ext-134",
+  "source_row": 134,
+  "demographics_text": "55-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with tingling pain in the sole of the right foot, especially upon elevation and during exercise, with a significant history of type 2 diabetes mellitus and smoking.",
+  "chief_complaint": "Tingling pain in the sole of the right foot upon elevation",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-134-p001",
+      "field": "History",
+      "text": "The patient reports a 6-week history of tingling pain in the sole of his right foot, which worsens when he raises it above chest level during exercises. He mentions that he began exercising regularly 2 months ago and experiences right calf cramps with the use of the treadmill's incline feature, necessitating frequent breaks. The pain subsides completely after a few minutes of resting. He adds an 8-year history of type 2 diabetes mellitus."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-134-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Right calf cramps with exercise"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-134-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Pain disappears with rest"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-134-p004",
+      "field": "Past_Medical_History",
+      "text": "Type 2 diabetes mellitus for 8 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-134-p005",
+      "field": "Social_History",
+      "text": "Smokes two packs of cigarettes daily for 34 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-134-p006",
+      "field": "Review_of_Systems",
+      "text": "No other significant symptoms reported."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Pulse",
+      "text": "82/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "170/92 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e003",
+      "path": "Physical_Examination_Findings.Neurovascular_Examination.Straight_Leg_Raise_Test",
+      "text": "Elicits pallor and tingling pain in the right foot."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e004",
+      "path": "Physical_Examination_Findings.Neurovascular_Examination.Muscle_Strength",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e005",
+      "path": "Physical_Examination_Findings.Neurovascular_Examination.Pulses",
+      "text": "Femoral pulses are palpable; right pedal pulses are absent."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e006",
+      "path": "Physical_Examination_Findings.Neurovascular_Examination.Sensation",
+      "text": "No alterations noted besides tingling on straight leg raise."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e007",
+      "path": "Physical_Examination_Findings.Back_Examination.Inspection",
+      "text": "No abnormalities noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e008",
+      "path": "Physical_Examination_Findings.Back_Examination.Palpation",
+      "text": "No pain or tenderness."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-e009",
+      "path": "Physical_Examination_Findings.Back_Examination.Range_of_Motion",
+      "text": "Full range without eliciting discomfort."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-134-i001",
+      "path": "Test_Results.Blood_Glucose.Fasting_Blood_Glucose",
+      "text": "142 mg/dL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-i002",
+      "path": "Test_Results.HbA1c.Level",
+      "text": "7.2% (indicating poor diabetes control)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-134-i003",
+      "path": "Test_Results.Doppler_Ultrasound_Imaging_of_the_Right_Lower_Limb.Findings",
+      "text": "Evidence of significant femoropopliteal artery stenosis in the right leg."
+    }
+  ],
+  "correct_diagnosis": "Femoropopliteal artery stenosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

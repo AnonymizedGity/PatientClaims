@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-066", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 66, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "leg swelling", "aliases": ["swollen legs", "ankle swelling", "edema"], "text": "Both of my lower legs have been swelling up.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f003", "item": "how long the tiredness and leg swelling have been going on", "aliases": ["how long the symptoms have been going on"], "text": "The tiredness and the leg swelling started 10 days ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "unintentional weight loss", "aliases": ["losing weight", "weight loss"], "text": "I've been losing weight without trying.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "unintentional weight loss: amount", "parent": "f004", "attribute": "quantity", "text": "I've lost 3.6 kilos, about 8 pounds.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "unintentional weight loss: duration", "parent": "f004", "attribute": "duration", "text": "It's been over the past 6 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "chronic bronchitis", "aliases": ["bronchitis", "lung disease"], "text": "I have chronic bronchitis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "albuterol inhaler", "aliases": ["inhaler", "albuterol", "salbutamol"], "text": "I use an albuterol inhaler as needed.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "My smoking history is a pack of cigarettes a day for 44 years.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f010", "item": "alcohol", "aliases": ["drinking"], "text": "I have one alcoholic drink a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "cough", "text": "I haven't had a cough recently.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "change in urination", "aliases": ["urinary changes", "change in urinary habits"], "text": "I haven't noticed any change in my urination.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f013", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f014", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f015", "item": "fever", "aliases": ["fevers"], "text": "I haven't had any fevers.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-066",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/75 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "88/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["appearance", "general inspection"], "result": "Appears thin."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "heart examination", "aliases": ["heart auscultation", "cardiac examination"], "result": "No abnormalities detected."},
+      {"id": "x007", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["lung auscultation", "chest auscultation", "breath sounds"], "result": "Clear to auscultation bilaterally."},
+      {"id": "x008", "kind": "exam", "system": "cardiovascular", "name": "lower extremity examination", "aliases": ["legs", "edema", "pitting edema", "ankle swelling"], "result": "2+ pretibial edema bilaterally."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "leukocyte count", "WBC", "white blood cell count", "platelet count", "platelets"], "result": "Hemoglobin 11.2 g/dL; leukocyte count 8,500/mm3; platelet count 130,000/mm3."},
+      {"id": "x010", "kind": "test", "name": "comprehensive metabolic panel", "aliases": ["CMP", "metabolic panel", "BMP", "serum chemistry", "urea nitrogen", "BUN", "glucose", "creatinine", "kidney function", "albumin", "serum albumin"], "result": "Urea nitrogen 23 mg/dL; glucose 77 mg/dL; creatinine 1.6 mg/dL; albumin 1.8 mg/dL."},
+      {"id": "x011", "kind": "test", "name": "total cholesterol", "aliases": ["cholesterol", "lipid panel", "lipids"], "result": "475 mg/dL"},
+      {"id": "x012", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine dipstick", "urine microscopy", "urine protein", "proteinuria", "urine casts"], "result": "Blood negative; glucose negative; protein 4+; WBC 0-1/hpf; fatty casts numerous."},
+      {"id": "x013", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Right upper lobe density."},
+      {"id": "x014", "kind": "test", "name": "chest CT", "aliases": ["CT of the chest", "CT thorax"], "result": "2.5 x 3.5 x 2-cm right upper lobe mass."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-066",
+    "diagnosis": "Membranous nephropathy",
+    "aliases": ["membranous glomerulonephritis", "membranous glomerulopathy", "MN", "MGN", "secondary membranous nephropathy", "paraneoplastic membranous nephropathy"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-066",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-066-p001"], "f002": ["agentclinic-medqa-ext-066-p001", "agentclinic-medqa-ext-066-p002"],
+      "f003": ["agentclinic-medqa-ext-066-p001"], "f004": ["agentclinic-medqa-ext-066-p001", "agentclinic-medqa-ext-066-p003"],
+      "f005": ["agentclinic-medqa-ext-066-p001"], "f006": ["agentclinic-medqa-ext-066-p001"],
+      "f007": ["agentclinic-medqa-ext-066-p001", "agentclinic-medqa-ext-066-p004"], "f008": ["agentclinic-medqa-ext-066-p001"],
+      "f009": ["agentclinic-medqa-ext-066-p005"], "f010": ["agentclinic-medqa-ext-066-p005"], "f011": ["agentclinic-medqa-ext-066-p006"],
+      "f012": ["agentclinic-medqa-ext-066-p006"], "f013": ["agentclinic-medqa-ext-066-p006"], "f014": ["agentclinic-medqa-ext-066-p006"],
+      "f015": ["agentclinic-medqa-ext-066-p006"]
+    },
+    "quotes": {
+      "f002": "bilateral lower leg swelling", "f003": "a 10-day history of fatigue and bilateral lower leg swelling", "f004": "without trying",
+      "f005": "3.6 kg (8 lbs)", "f006": "over the past 6 months", "f008": "uses an albuterol inhaler as needed",
+      "f009": "History of smoking one pack of cigarettes daily for 44 years", "f010": "drinks one alcoholic beverage daily",
+      "f011": "denies any recent cough", "f012": "change in urinary habits", "f014": "dyspnea", "f015": "fevers"
+    },
+    "flags": {
+      "f009": ["'History of smoking ... for 44 years' does not say whether he still smokes; the text keeps that open and the fact has no time."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-066-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/75 mm Hg", "exam_ids": ["agentclinic-medqa-ext-066-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "88/min", "exam_ids": ["agentclinic-medqa-ext-066-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-066-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General.Appearance", "source_text": "The patient appears thin.", "exam_ids": ["agentclinic-medqa-ext-066-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Cardiopulmonary_Examination.Heart", "source_text": "No abnormalities detected.", "exam_ids": ["agentclinic-medqa-ext-066-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Cardiopulmonary_Examination.Lungs", "source_text": "Clear to auscultation bilaterally.", "exam_ids": ["agentclinic-medqa-ext-066-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Extremities.Edema", "source_text": "2+ pretibial edema bilaterally", "exam_ids": ["agentclinic-medqa-ext-066-e008"]},
+      "x009": {"source": "Test_Results.Laboratory_Studies.Hemoglobin + Test_Results.Laboratory_Studies.Leukocyte_count + Test_Results.Laboratory_Studies.Platelet_count", "source_text": "11.2 g/dL | 8500/mm3 | 130,000/mm3", "exam_ids": ["agentclinic-medqa-ext-066-i001", "agentclinic-medqa-ext-066-i002", "agentclinic-medqa-ext-066-i003"]},
+      "x010": {"source": "Test_Results.Laboratory_Studies.Serum_Urea_nitrogen + Test_Results.Laboratory_Studies.Glucose + Test_Results.Laboratory_Studies.Creatinine + Test_Results.Laboratory_Studies.Albumin", "source_text": "23 mg/dL | 77 mg/dL | 1.6 mg/dL | 1.8 mg/dL", "exam_ids": ["agentclinic-medqa-ext-066-i004", "agentclinic-medqa-ext-066-i005", "agentclinic-medqa-ext-066-i006", "agentclinic-medqa-ext-066-i007"]},
+      "x011": {"source": "Test_Results.Laboratory_Studies.Total_cholesterol", "source_text": "475 mg/dL", "exam_ids": ["agentclinic-medqa-ext-066-i008"]},
+      "x012": {"source": "Test_Results.Urine_Tests.Blood + Test_Results.Urine_Tests.Glucose + Test_Results.Urine_Tests.Protein + Test_Results.Urine_Tests.WBC + Test_Results.Urine_Tests.Fatty_casts", "source_text": "Negative | Negative | 4+ | 0–1/hpf | Numerous", "exam_ids": ["agentclinic-medqa-ext-066-i009", "agentclinic-medqa-ext-066-i010", "agentclinic-medqa-ext-066-i011", "agentclinic-medqa-ext-066-i012", "agentclinic-medqa-ext-066-i013"]},
+      "x013": {"source": "Test_Results.Imaging.Chest_X-ray.Findings", "source_text": "Right upper lobe density.", "exam_ids": ["agentclinic-medqa-ext-066-i014"]},
+      "x014": {"source": "Test_Results.Imaging.CT_Scan_Chest.Findings", "source_text": "2.5 x 3.5 x 2-cm right upper lobe mass.", "exam_ids": ["agentclinic-medqa-ext-066-i015"]}
+    },
+    "finding_flags": {
+      "x010": ["Albumin is given as 1.8 mg/dL; the unit is implausible (almost certainly g/dL). Kept as in the source."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Serum albumin 1.8 mg/dL: implausible unit, almost certainly 1.8 g/dL.",
+      "No renal biopsy or anti-PLA2R antibody: the diagnosis is inferred from nephrotic-range findings with a lung mass (secondary membranous nephropathy)."
+    ],
+    "notes": [
+      "The 10-day duration applies to both the tiredness and the leg swelling, so it is a standalone fact (f003), as in the worked example.",
+      "BUN, glucose, creatinine and albumin are grouped as a comprehensive metabolic panel (albumin is a CMP member); total cholesterol is the only lipid value, so it stays a single test.",
+      "The source demographics say 'white male'; race has no schema field and is not recorded.",
+      "Gold aliases exclude 'nephrotic syndrome' (broader)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, lower leg swelling, and weight loss."
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-212",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 75, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "knee pain", "aliases": ["sore knees", "painful knees"], "text": "I have some knee pain.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "knee pain: how often", "parent": "f001", "attribute": "frequency", "text": "It's only occasional.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "other symptoms", "aliases": ["other complaints", "anything else"], "text": "Apart from the occasional knee pain, I don't have any other complaints.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "reason for the visit", "aliases": ["why I came in", "check-up", "annual visit"], "text": "I'm here for my annual blood pressure check-up.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f005", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "knee osteoarthritis", "aliases": ["arthritis", "osteoarthritis", "wear and tear in my knees"], "text": "I have osteoarthritis in my knees.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "acetaminophen", "aliases": ["Tylenol", "paracetamol", "painkillers", "medications"], "text": "I occasionally take acetaminophen for my osteoarthritis.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "blood cancer in the family", "aliases": ["brother's health", "family history of cancer", "hematologic malignancy"], "text": "My brother had a blood cancer; he died at the age of 84.", "polarity": "present", "category": "family_history"},
+      {"id": "f009", "item": "vegetable-rich diet", "aliases": ["diet", "eating habits"], "text": "I follow a diet rich in vegetables.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "daily exercise", "aliases": ["exercise", "physical activity"], "text": "I exercise every day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-212",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Normal"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "knee examination", "aliases": ["knees", "joint examination", "musculoskeletal examination", "range of motion"], "result": "Reduced range of motion and crepitus in both knees."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "leukocyte count", "WBC", "white blood cell count", "platelet count"], "result": "Hemoglobin 15 g/dL; leukocyte count 58,000/mm³ (markedly elevated); platelet count 250,000/mm³."},
+      {"id": "x007", "kind": "test", "name": "flow cytometry", "aliases": ["peripheral blood flow cytometry", "immunophenotyping", "absolute lymphocyte count", "lymphocyte count", "WBC differential"], "result": "Absolute lymphocyte count 50,000/mm³, indicating a lymphocytosis."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-212",
+    "diagnosis": "Chronic lymphocytic leukemia (CLL)",
+    "aliases": ["CLL", "chronic lymphocytic leukemia", "chronic lymphocytic leukaemia", "chronic lymphoid leukemia", "B-cell chronic lymphocytic leukemia", "B-CLL"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-212",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-212-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-212-p001"],
+      "f003": ["agentclinic-medqa-ext-212-p001", "agentclinic-medqa-ext-212-p004"],
+      "f004": ["agentclinic-medqa-ext-212-p001"],
+      "f005": ["agentclinic-medqa-ext-212-p001", "agentclinic-medqa-ext-212-p002"],
+      "f006": ["agentclinic-medqa-ext-212-p001", "agentclinic-medqa-ext-212-p002"],
+      "f007": ["agentclinic-medqa-ext-212-p001"],
+      "f008": ["agentclinic-medqa-ext-212-p001"],
+      "f009": ["agentclinic-medqa-ext-212-p001", "agentclinic-medqa-ext-212-p003"],
+      "f010": ["agentclinic-medqa-ext-212-p001", "agentclinic-medqa-ext-212-p003"],
+      "f011": ["agentclinic-medqa-ext-212-p003"]
+    },
+    "quotes": {
+      "f002": "Occasional knee pain",
+      "f003": "has no other complaints / No additional complaints or symptoms noted.",
+      "f004": "annual blood pressure check-up",
+      "f007": "he occasionally takes acetaminophen",
+      "f008": "hematologic malignancy in a brother who died at the age of 84",
+      "f009": "follows a vegetable-rich diet",
+      "f010": "exercises daily"
+    },
+    "flags": {
+      "f008": ["The source does not say the brother died of the malignancy or which blood cancer it was; the text keeps both unstated."],
+      "f004": ["The visit reason is a social_background fact (the patient's own purpose); it is not in the opening because the chief complaint field is the knee pain."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8℃ (98.2℉)", "exam_ids": ["agentclinic-medqa-ext-212-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/85 mm Hg", "exam_ids": ["agentclinic-medqa-ext-212-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-212-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-212-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Knees", "source_text": "Reduced range of motion and crepitus noted in both knees indicating osteoarthritis.", "exam_ids": ["agentclinic-medqa-ext-212-e005"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Leukocyte_Count + Test_Results.Complete_Blood_Count.Platelet_Count", "source_text": "15 g/dL + 58,000/mm3 (markedly elevated) + 250,000/mm3", "exam_ids": ["agentclinic-medqa-ext-212-i001", "agentclinic-medqa-ext-212-i002", "agentclinic-medqa-ext-212-i003"]},
+      "x007": {"source": "Test_Results.Flow_Cytometry.Absolute_Lymphocyte_Count", "source_text": "50,000/mm3, indicating a lymphocytosis", "exam_ids": ["agentclinic-medqa-ext-212-i004"]}
+    },
+    "finding_flags": {
+      "x007": ["Under 'Flow_Cytometry' the source gives only an absolute lymphocyte count, no immunophenotype (CD5/CD19/CD23); aliases also let a differential request reach it."],
+      "x005": ["Source interpretation removed from the result (source: 'Reduced range of motion and crepitus in both knees, indicating osteoarthritis.'); a bedside examination returns the finding, not the diagnosis."]
+    },
+    "leakage": [],
+    "source_issues": ["The chief complaint is 'Occasional knee pain', but the History and the objective describe an annual blood-pressure check-up.", "Heart rate and respiratory rate are given only as 'Normal'.", "The flow cytometry entry reports a lymphocyte count, not immunophenotyping; there is no peripheral smear.", "Temperature uses the ℃/℉ symbols; normalised to °C/°F in the result."],
+    "notes": ["The opening follows the chief-complaint field (knee pain). The annual blood-pressure check-up is f004, so the patient can still give it as the reason for the visit.", "Hypertension medication is not mentioned in the source, so it stays unknown.", "Gold diagnosis keeps the source form 'Chronic lymphocytic leukemia (CLL)'; the plain name without the abbreviation is listed as an alias."],
+    "extras": {
+      "objective_for_doctor": "Evaluate a 75-year-old man presenting for an annual check-up, focusing on blood pressure management and interpreting laboratory test results."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+ "case_id": "medqa-cs-026",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have an ongoing cough.",
+   "I've had a cough for years.",
+   "It's quite bothersome.",
+   "I've been coughing up blood recently.",
+   "I've been sweating, especially at night.",
+   "I've lost 6 pounds in the past 2 months without intending to.",
+   "I work at a nursing home where several residents are being treated for TB.",
+   "I quit smoking two weeks ago.",
+   "I have long-term bronchitis."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've had a cough for years, and I have long-term bronchitis, but it's quite bothersome lately. Recently, I've been coughing up blood and sweating a lot, especially at night. I've also lost 6 pounds in the past 2 months without trying. I work at a nursing home where several residents are being treated for TB, and I quit smoking two weeks ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f017",
+    "f021",
+    "f028",
+    "f040",
+    "f044",
+    "f031"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4326,
+   "tokens_out": 94,
+   "seconds": 9.39,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "case_id": "ddxplus-v2-test-0004867",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "I've had weakness or paralysis on one side of my face; it may still be there or have gone.",
+   "I feel weakness in both arms and/or both legs.",
+   "I've had a viral infection recently."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've had a viral infection recently. I've also had weakness or paralysis on one side of my face; it may still be there or have gone. I feel weakness in both arms and/or both legs.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "unsupported",
+      "quote": "Since then",
+      "fix": "Remove the causal or temporal link between the viral infection and the weakness, as the record does not state the weakness started after the infection."
+     }
+    ],
+    "check_problems": [],
+    "draft": "I've had a viral infection recently. Since then, I've noticed weakness or paralysis on one side of my face, though I'm not sure if it's still there or has gone. I also feel weakness in both my arms and/or both legs.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 15908,
+   "tokens_out": 155,
+   "seconds": 34.3,
+   "redrafts": 0
+  }
+ }
+}

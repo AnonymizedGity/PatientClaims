@@ -1,0 +1,121 @@
+{
+  "patient": {
+    "case_id": "mcr-test-04970",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 25, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "loss of vision in the right eye", "aliases": ["vision loss", "blurred vision", "can't see well", "poor vision"], "text": "I've been losing vision in my right eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "loss of vision in the right eye: onset", "parent": "f001", "attribute": "onset", "text": "It started a week ago.", "value": "1 week ago", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "loss of vision in the right eye: course", "parent": "f001", "attribute": "course", "text": "It has been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f004", "item": "diabetes", "aliases": ["diabetes mellitus", "sugar diabetes", "high blood sugar"], "text": "I have diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f005", "item": "insulin", "aliases": ["insulin injections", "diabetes medicine"], "text": "I use insulin for my diabetes.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f006", "item": "recent childbirth", "aliases": ["delivery", "postpartum", "recent pregnancy", "giving birth"], "text": "I gave birth four weeks ago; it was a normal vaginal delivery without complications.", "value": "4 weeks ago", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "vaginal discharge", "aliases": ["discharge", "discharge down below", "vaginal symptoms"], "text": "Around the time of the birth I had a vaginal discharge that kept going and wouldn't clear up.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "historical"},
+      {"id": "f008", "item": "fever", "aliases": ["temperature", "feeling feverish"], "text": "I didn't have a fever with the discharge.", "polarity": "absent", "category": "symptom", "system": "general"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-04970",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Stable"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Stable"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Stable"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Stable"},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["eye chart", "vision test", "Snellen"], "result": "20/80 in the right eye; 20/20 in the left eye."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "14 mmHg in the right eye; 12 mmHg in the left eye."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["slit lamp", "anterior segment examination", "anterior chamber", "cornea", "lens"], "result": "Right eye: fine keratic precipitates, 3+ anterior chamber cells, clear lens. Left eye: normal."},
+      {"id": "x008", "kind": "exam", "system": "eye", "name": "dilated fundus examination", "aliases": ["fundoscopy", "ophthalmoscopy", "retina examination", "vitreous", "fundus"], "result": "Right eye: 1+ vitreous haze, hyperemic optic disc, multiple yellow-white retinal infiltrates. Left eye: normal."},
+      {"id": "x009", "kind": "test", "name": "fluorescein angiography of the right eye", "aliases": ["fluorescein angiogram", "FA", "FFA"], "result": "Diffuse retinal vascular leakage and optic-disc staining."},
+      {"id": "x010", "kind": "test", "name": "optical coherence tomography", "aliases": ["OCT", "macular OCT"], "result": "Dry macula."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "renal function tests", "aliases": ["kidney function", "creatinine", "urea"], "result": "Normal."},
+      {"id": "x013", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver tests"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "tuberculin skin test", "aliases": ["PPD", "purified protein derivative", "Mantoux test"], "result": "Negative."},
+      {"id": "x015", "kind": "test", "name": "chest CT", "aliases": ["CT chest", "chest imaging"], "result": "Negative."},
+      {"id": "x016", "kind": "test", "name": "syphilis serology", "aliases": ["syphilis test", "VDRL", "RPR", "TPHA"], "result": "Negative."},
+      {"id": "x017", "kind": "test", "name": "toxoplasmosis serology", "aliases": ["toxoplasma serology", "toxoplasma antibodies", "toxoplasma IgG", "toxoplasma IgM"], "result": "Negative."},
+      {"id": "x018", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Normal."},
+      {"id": "x019", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Normal."},
+      {"id": "x020", "kind": "test", "name": "urinalysis", "aliases": ["urine analysis", "UA", "urine test"], "result": "Normal."},
+      {"id": "x021", "kind": "test", "name": "hemoglobin A1c", "aliases": ["HbA1c", "A1c", "glycated hemoglobin"], "result": "6.7%."},
+      {"id": "x022", "kind": "test", "name": "repeat toxoplasmosis serology", "aliases": ["repeat toxoplasma serology"], "result": "Negative.", "time": "later in the admission, after empirical treatment"},
+      {"id": "x023", "kind": "test", "name": "vaginal swab culture", "aliases": ["vaginal swab", "high vaginal swab", "vaginal culture", "gynecologic evaluation"], "result": "Heavy growth of Candida albicans.", "time": "later in the admission"},
+      {"id": "x024", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Unremarkable.", "time": "later in the admission"},
+      {"id": "x025", "kind": "test", "name": "urine culture", "aliases": ["urine culture and sensitivity"], "result": "Unremarkable.", "time": "later in the admission"},
+      {"id": "x026", "kind": "test", "name": "contrast CT of the chest, abdomen and pelvis", "aliases": ["CT abdomen", "CT pelvis", "body CT", "CT CAP"], "result": "Unremarkable.", "time": "later in the admission"},
+      {"id": "x027", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "cardiac echography", "cardiac ultrasound"], "result": "Unremarkable.", "time": "later in the admission"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-04970",
+    "diagnosis": "Endogenous Candida endophthalmitis",
+    "aliases": ["endogenous candidal endophthalmitis", "endogenous Candida albicans endophthalmitis", "Candida endophthalmitis", "candidal endophthalmitis"],
+    "reasoning": "1. Atypical toxoplasmosis was initially considered given the presentation of acute panuveitis — “Patient was admitted with a provisional diagnosis of right acute nongranulomatous panuveitis probably representing atypical toxoplasmosis.” 2. Common infectious and noninfectious causes of uveitis were excluded by laboratory and imaging studies — “a uveitis workup was performed ... which all came to be negative.” 3. Systemic foci of infection, including endocarditis and visceral abscesses, were ruled out — “blood and urine culture; CT chest, abdomen, and pelvis with contrasts; and cardiac echography were performed, which all came to be unremarkable.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-04970",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s014"], "f008": ["s014"]
+    },
+    "quotes": {
+      "f002": "a 1-week history of progressive vision loss in her right eye", "f003": "progressive",
+      "f005": "insulin-treated diabetes mellitus", "f006": "4 weeks after an uncomplicated vaginal delivery",
+      "f007": "persistent vaginal discharge during the peripartum period", "f008": "without fever"
+    },
+    "flags": {
+      "f007": ["Elicited only on further history (s014), but it is something the patient knows at the index visit, so it is a fact. Whether the discharge persists now is not stated."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s002"], "source_text": "Vital signs were stable."},
+      "x002": {"sentences": ["s002"], "source_text": "Vital signs were stable."},
+      "x003": {"sentences": ["s002"], "source_text": "Vital signs were stable."},
+      "x004": {"sentences": ["s002"], "source_text": "Vital signs were stable."},
+      "x005": {"sentences": ["s003"], "source_text": "Visual acuity was 20/80 in the right eye and 20/20 in the left."},
+      "x006": {"sentences": ["s004"], "source_text": "Intraocular pressures were 14 mmHg OD and 12 mmHg OS."},
+      "x007": {"sentences": ["s005", "s007"], "source_text": "Slit-lamp examination of the right eye revealed fine keratic precipitates, 3+ anterior chamber cells, and a clear lens. / The left eye examination was normal."},
+      "x008": {"sentences": ["s006", "s007"], "source_text": "Dilated fundus examination showed 1+ vitreous haze, a hyperemic optic disc, and multiple yellow-white retinal infiltrates. / The left eye examination was normal."},
+      "x009": {"sentences": ["s007"], "source_text": "Fluorescein angiography of the right eye demonstrated diffuse retinal vascular leakage and optic-disc staining."},
+      "x010": {"sentences": ["s008"], "source_text": "Optical coherence tomography showed a dry macula."},
+      "x011": {"sentences": ["s010"], "source_text": "complete blood count / was entirely negative"},
+      "x012": {"sentences": ["s010"], "source_text": "renal and liver function tests / was entirely negative"},
+      "x013": {"sentences": ["s010"], "source_text": "renal and liver function tests / was entirely negative"},
+      "x014": {"sentences": ["s010"], "source_text": "purified protein derivative skin test / was entirely negative"},
+      "x015": {"sentences": ["s010"], "source_text": "chest CT / was entirely negative"},
+      "x016": {"sentences": ["s010"], "source_text": "syphilis and toxoplasmosis serology / was entirely negative"},
+      "x017": {"sentences": ["s010"], "source_text": "syphilis and toxoplasmosis serology / was entirely negative"},
+      "x018": {"sentences": ["s010"], "source_text": "erythrocyte sedimentation rate / was entirely negative"},
+      "x019": {"sentences": ["s010"], "source_text": "C-reactive protein / was entirely negative"},
+      "x020": {"sentences": ["s010"], "source_text": "urine analysis / was entirely negative"},
+      "x021": {"sentences": ["s011"], "source_text": "Hemoglobin A1c was 6.7%."},
+      "x022": {"sentences": ["s013"], "source_text": "Repeat toxoplasmosis serology remained negative."},
+      "x023": {"sentences": ["s015"], "source_text": "A gynecologic evaluation including a vaginal swab showed heavy growth of Candida albicans."},
+      "x024": {"sentences": ["s016"], "source_text": "blood and urine cultures / all of which were unremarkable"},
+      "x025": {"sentences": ["s016"], "source_text": "blood and urine cultures / all of which were unremarkable"},
+      "x026": {"sentences": ["s016"], "source_text": "contrast CT of the chest, abdomen, and pelvis / all of which were unremarkable"},
+      "x027": {"sentences": ["s016"], "source_text": "cardiac echography, all of which were unremarkable"}
+    },
+    "finding_flags": {
+      "x011": ["s010 calls the whole uveitis workup 'entirely negative'; quantitative tests (CBC, renal and liver function, ESR, CRP, urinalysis) are given 'Normal', the others 'Negative'."],
+      "x001": ["Only 'Vital signs were stable' is given; each standard parameter is given 'Stable'."]
+    },
+    "leakage": [
+      {"id": "x023", "reason": "The vaginal swab result names Candida albicans, the organism of the gold diagnosis; it is the key culture clue, not a statement about the eye."}
+    ],
+    "source_issues": [
+      "s007 holds two sentences (left eye normal; fluorescein angiography).",
+      "No intraocular (vitreous or aqueous) sample result is given; the diagnosis rests on the clinical picture and the vaginal Candida growth."
+    ],
+    "notes": [
+      "Index visit: the presentation four weeks postpartum with one week of progressive right-eye vision loss (s001–s008); the uveitis workup (s010–s011) belongs to the same admission, and the later results (s013, s015–s016) are given a time.",
+      "s014 (persistent peripartum vaginal discharge without fever) was elicited later but is the patient's own history, so it gives facts f007 and f008.",
+      "The eye findings (keratic precipitates, vitreous haze, retinal infiltrates) need a slit lamp or fundoscopy, so they are findings only; the patient-noticeable symptom is the vision loss."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s009", "reason": "Admission with a provisional diagnosis (acute nongranulomatous panuveitis, probably atypical toxoplasmosis): clinician reasoning, not a finding."},
+      {"id": "s012", "reason": "Empirical treatment (clindamycin, co-trimoxazole, prednisolone) and its response: treatment during the workup."}
+    ]
+  }
+}

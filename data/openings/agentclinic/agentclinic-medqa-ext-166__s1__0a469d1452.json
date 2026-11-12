@@ -1,0 +1,55 @@
+{
+ "case_id": "agentclinic-medqa-ext-166",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've been getting short of breath.",
+   "The shortness of breath and tiredness have been going on for a month.",
+   "I've been feeling tired.",
+   "I've been getting dizzy.",
+   "I can't climb more than one flight of stairs without getting short of breath and dizzy.",
+   "I have high blood pressure.",
+   "I take medication for my blood pressure.",
+   "I smoke a pack of cigarettes a day, and have for the past 50 years."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been getting short of breath, feeling tired, and dizzy for about a month. I can't climb more than one flight of stairs without getting short of breath and dizzy. I have high blood pressure and take medication for it. I also smoke a pack of cigarettes a day, and have for the past 50 years.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f006",
+    "f003",
+    "f004",
+    "f005",
+    "f007",
+    "f009",
+    "f011"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3480,
+   "tokens_out": 79,
+   "seconds": 10.23,
+   "redrafts": 0
+  }
+ }
+}

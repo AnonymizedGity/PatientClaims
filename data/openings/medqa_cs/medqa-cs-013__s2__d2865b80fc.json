@@ -1,0 +1,57 @@
+{
+ "case_id": "medqa-cs-013",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have stomach pain.",
+   "It started two weeks ago.",
+   "When I have the pain, it's a 7 out of 10, and then it can go down to 0.",
+   "It's burning.",
+   "Sometimes I feel nauseated when I'm in pain.",
+   "I vomited.",
+   "I take ibuprofen for the arthritis in my knees.",
+   "I take Maalox.",
+   "My father died at 55 of pancreatic cancer."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have stomach pain that started two weeks ago. It's a burning sensation, and when it hits, it's a 7 out of 10, though it can go down to 0. Sometimes I feel nauseated when I'm in pain, and I vomited at one point. I take ibuprofen for the arthritis in my knees, and I also take Maalox. My father died at 55 of pancreatic cancer.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f006",
+    "f009",
+    "f014",
+    "f015",
+    "f028",
+    "f027",
+    "f031"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4127,
+   "tokens_out": 103,
+   "seconds": 9.66,
+   "redrafts": 0
+  }
+ }
+}

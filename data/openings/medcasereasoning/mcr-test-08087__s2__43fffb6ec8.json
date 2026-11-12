@@ -1,0 +1,55 @@
+{
+ "case_id": "mcr-test-08087",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "My left eye hurts.",
+   "My left eye is extremely sensitive to light.",
+   "The vision in my left eye has got worse.",
+   "They started three weeks after I finished the week of eye drops for the infection.",
+   "My left eye is a little red.",
+   "A month ago my left eye suddenly became red and uncomfortable with pus coming out, and four days later my right eye did the same. I was told it was bacterial conjunctivitis in both eyes.",
+   "For that infection I used moxifloxacin 0.5%/dexamethasone 0.1% eye drops every 2 hours for one week.",
+   "When the pain and vision problems started, I was told my eye pressure was high and that I probably had autoimmune uveitis with high pressure in both eyes."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "My left eye hurts, is a little red, and is extremely sensitive to light, and the vision in it has got worse. These symptoms started three weeks after I finished the week of eye drops for an infection. A month ago, my left eye suddenly became red and uncomfortable with pus coming out, and four days later my right eye did the same, and I was told it was bacterial conjunctivitis in both eyes. For that infection, I used moxifloxacin 0.5%/dexamethasone 0.1% eye drops every 2 hours for one week. When the pain and vision problems started, I was told my eye pressure was high and that I probably had autoimmune uveitis with high pressure in both eyes.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f005",
+    "f003",
+    "f006",
+    "f007",
+    "f008"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3852,
+   "tokens_out": 166,
+   "seconds": 15.89,
+   "redrafts": 0
+  }
+ }
+}

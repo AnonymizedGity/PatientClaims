@@ -1,0 +1,123 @@
+{
+  "case_id": "agentclinic-medqa-ext-019",
+  "source_row": 19,
+  "demographics_text": "32-year-old woman, gravida 2, para 1, at 38 weeks' gestation",
+  "objective_for_doctor": "Evaluate and manage a pregnant patient presenting with vaginal bleeding and abdominal pain.",
+  "chief_complaint": "Vaginal bleeding",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-019-p001",
+      "field": "History",
+      "text": "The patient reports experiencing vaginal bleeding for the past hour accompanied by severe abdominal pain. She mentions that she felt contractions before the onset of the bleeding, but the contractions ceased once the bleeding began. Her first childbirth was a cesarean section due to nonreassuring fetal heart rate."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-019-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Severe abdominal pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-019-p003",
+      "field": "Secondary_Symptoms",
+      "text": "History of contractions that stopped"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-019-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Previous cesarean delivery"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-019-p005",
+      "field": "Past_Medical_History",
+      "text": "One previous childbirth via cesarean section. No other significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-019-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, occasional alcohol consumption. Works as an elementary school teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-019-p007",
+      "field": "Review_of_Systems",
+      "text": "Reports feeling the baby move before the onset of symptoms but is unsure about movement since the symptoms started. Denies any recent trauma to the abdomen or any urinary symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Pulse",
+      "text": "110/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "90/60 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "17/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e004",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Mild distension"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Decreased bowel sounds"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic sound predominating"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Diffuse abdominal tenderness without rebound or guarding"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e008",
+      "path": "Physical_Examination_Findings.Obstetric_Examination.Fetal_Heart_Rate_Monitoring",
+      "text": "Shows recurrent variable decelerations"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-e009",
+      "path": "Physical_Examination_Findings.Obstetric_Examination.Uterine_Examination",
+      "text": "No contractions felt at the time of examination"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-019-i001",
+      "path": "Test_Results.Hematology.Hemoglobin",
+      "text": "10.2 g/dL (decreased)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-i002",
+      "path": "Test_Results.Hematology.Platelets",
+      "text": "200,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-i003",
+      "path": "Test_Results.Coagulation_Profile.PT",
+      "text": "11 seconds"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-i004",
+      "path": "Test_Results.Coagulation_Profile.aPTT",
+      "text": "30 seconds"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-019-i005",
+      "path": "Test_Results.Imaging.Ultrasound_Abdomen_and_Pelvis.Findings",
+      "text": "Suggestive of a disruption in the uterine wall continuity adjacent to the scar from the previous cesarean section, with associated hemoperitoneum."
+    }
+  ],
+  "correct_diagnosis": "Uterine rupture",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

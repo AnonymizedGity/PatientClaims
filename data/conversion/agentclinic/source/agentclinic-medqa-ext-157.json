@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-157",
+  "source_row": 157,
+  "demographics_text": "27-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient who presents with chest pain following a motor vehicle collision.",
+  "chief_complaint": "Chest pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-157-p001",
+      "field": "History",
+      "text": "The patient was involved in a head-on collision as the front seat, unrestrained driver. Following the event, the patient complains of chest pain. No past significant medical history. The patient was given 2 liters of Ringer lactate solution and morphine for management."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-157-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Bruising over the chest wall"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-157-p003",
+      "field": "Past_Medical_History",
+      "text": "No known drug allergies. No previous surgeries or significant medical conditions."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-157-p004",
+      "field": "Social_History",
+      "text": "Occasional alcohol use, denies tobacco or illicit drug use. Works as a computer programmer."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-157-p005",
+      "field": "Review_of_Systems",
+      "text": "Complains of pain in the chest area, denies headache, dizziness, shortness of breath, or abdominal pain."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "99.5°F (37.5°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "107/58 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "120 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "17 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e006",
+      "path": "Physical_Examination_Findings.Chest_Examination.Inspection",
+      "text": "Visible bruising on the chest wall."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e007",
+      "path": "Physical_Examination_Findings.Chest_Examination.Palpation",
+      "text": "Tenderness over the bruised area, no crepitus felt."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e008",
+      "path": "Physical_Examination_Findings.Chest_Examination.Auscultation",
+      "text": "Heart sounds are normal, no murmurs, rubs, or gallops detected. Breath sounds are clear bilaterally."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-e009",
+      "path": "Physical_Examination_Findings.Chest_Examination.Percussion",
+      "text": "Resonant throughout, no areas of dullness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-157-i001",
+      "path": "Test_Results.Echocardiogram.Findings",
+      "text": "Normal chamber sizes, no valvular abnormalities, evidence of sinus tachycardia"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-i002",
+      "path": "Test_Results.Blood_Tests.Troponins",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-i003",
+      "path": "Test_Results.Blood_Tests.Pulmonary_Capillary_Wedge_Pressure",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-157-i004",
+      "path": "Test_Results.Imaging.Chest_X-ray.Findings",
+      "text": "No rib fractures or pneumothorax detected"
+    }
+  ],
+  "correct_diagnosis": "Cardiac contusion",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "case_id": "agentclinic-medqa-ext-213",
+  "source_row": 213,
+  "demographics_text": "30-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with ongoing diarrhea, occasionally bloody, and lower abdominal pain for the past month.",
+  "chief_complaint": "Intermittent diarrhea",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-213-p001",
+      "field": "History",
+      "text": "The patient reports that the diarrhea has been intermittently present for the past month, with the stool often being loose and associated with blood. She mentions experiencing lower abdominal pain along with the diarrhea. She denies any recent travel history. She works at a nursing home as a caretaker and is not currently on any medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-213-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Blood in stool"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-213-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Lower abdominal pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-213-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-213-p005",
+      "field": "Social_History",
+      "text": "Works as a caretaker in a nursing home, denies use of tobacco, alcohol, and recreational drugs."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-213-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, vomiting, night sweats, recent travel, or sick contacts."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.0°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "120/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "75 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic throughout, no evidence of ascites."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Mild tenderness in the suprapubic region, no rebound tenderness, or guarding. No organomegaly."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-213-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "11,000 /μL (slightly elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "13.2 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "240,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-i004",
+      "path": "Test_Results.Stool_Culture_and_Sensitivity",
+      "text": "No pathogenic organisms isolated."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-i005",
+      "path": "Test_Results.Colonoscopy.Findings",
+      "text": "Patchy erythema and ulceration seen in the cecum, ascending, descending, and sigmoid colon."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-213-i006",
+      "path": "Test_Results.Mucosal_Biopsy.Findings",
+      "text": "Colonic crypts with lymphocytic and neutrophilic infiltrates."
+    }
+  ],
+  "correct_diagnosis": "Crohn’s disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

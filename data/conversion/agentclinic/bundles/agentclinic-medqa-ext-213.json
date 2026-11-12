@@ -1,0 +1,91 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-213", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 30, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "diarrhea", "aliases": ["loose stools", "the runs"], "text": "I've been having diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "diarrhea: pattern", "parent": "f001", "attribute": "course", "text": "It comes and goes.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "diarrhea: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for the past month.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "diarrhea: stool consistency", "parent": "f001", "attribute": "character", "text": "My stool is often loose.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f005", "item": "blood in stool", "aliases": ["bloody stool", "bloody diarrhea", "rectal bleeding"], "text": "There's been blood in my stool.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "lower abdominal pain", "aliases": ["lower belly pain", "abdominal pain", "stomach pain"], "text": "I've had pain in my lower belly along with the diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "night sweats", "aliases": ["sweating at night"], "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "current medications", "aliases": ["medications", "medicines", "pills"], "text": "I'm not taking any medications at the moment.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "recent travel", "aliases": ["travel"], "text": "I haven't travelled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "sick contacts", "aliases": ["anyone sick around me", "contact with ill people"], "text": "I haven't been around anyone who's sick.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "tobacco use", "aliases": ["smoking"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "recreational drugs", "aliases": ["drug use", "street drugs"], "text": "I don't use recreational drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a caretaker in a nursing home.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-213",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.0°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "75/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "bowel sounds"], "result": "Inspection: no visible abnormalities; auscultation: normal bowel sounds; percussion: tympanic throughout, no evidence of ascites; palpation: mild suprapubic tenderness, no rebound tenderness or guarding; no organomegaly."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets"], "result": "WBC 11,000/μL (slightly elevated); hemoglobin 13.2 g/dL; platelets 240,000/μL."},
+      {"id": "x007", "kind": "test", "name": "stool culture and sensitivity", "aliases": ["stool culture", "stool test", "stool microbiology"], "result": "No pathogenic organisms isolated."},
+      {"id": "x008", "kind": "test", "name": "colonoscopy", "aliases": ["lower endoscopy", "lower GI endoscopy"], "result": "Patchy erythema and ulceration in the cecum, ascending, descending and sigmoid colon."},
+      {"id": "x009", "kind": "test", "name": "colonic mucosal biopsy", "aliases": ["colon biopsy", "mucosal biopsy", "biopsy", "histology"], "result": "Colonic crypts with lymphocytic and neutrophilic infiltrates."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-213",
+    "diagnosis": "Crohn's disease",
+    "aliases": ["Crohn disease", "Crohn's colitis", "Crohn colitis", "regional enteritis", "granulomatous colitis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-213",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-213-p001"], "f002": ["cc", "agentclinic-medqa-ext-213-p001"], "f003": ["agentclinic-medqa-ext-213-p001"],
+      "f004": ["agentclinic-medqa-ext-213-p001"], "f005": ["agentclinic-medqa-ext-213-p001", "agentclinic-medqa-ext-213-p002"],
+      "f006": ["agentclinic-medqa-ext-213-p001", "agentclinic-medqa-ext-213-p003"], "f007": ["agentclinic-medqa-ext-213-p006"],
+      "f008": ["agentclinic-medqa-ext-213-p006"], "f009": ["agentclinic-medqa-ext-213-p006"], "f010": ["agentclinic-medqa-ext-213-p006"],
+      "f011": ["agentclinic-medqa-ext-213-p004"], "f012": ["agentclinic-medqa-ext-213-p001"], "f013": ["agentclinic-medqa-ext-213-p001", "agentclinic-medqa-ext-213-p006"],
+      "f014": ["agentclinic-medqa-ext-213-p006"], "f015": ["agentclinic-medqa-ext-213-p005"], "f016": ["agentclinic-medqa-ext-213-p005"],
+      "f017": ["agentclinic-medqa-ext-213-p005"], "f018": ["agentclinic-medqa-ext-213-p001", "agentclinic-medqa-ext-213-p005"]
+    },
+    "quotes": {
+      "f002": "Intermittent diarrhea", "f003": "for the past month", "f004": "the stool often being loose", "f005": "associated with blood",
+      "f006": "lower abdominal pain along with the diarrhea", "f012": "is not currently on any medications", "f014": "or sick contacts",
+      "f018": "Works as a caretaker in a nursing home"
+    },
+    "flags": {
+      "f005": ["How often there is blood is unclear: the History says the stool is 'often' loose and 'associated with blood', the objective says 'occasionally bloody'; the text gives no frequency."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.0°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-213-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-213-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "75 bpm", "exam_ids": ["agentclinic-medqa-ext-213-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-213-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible abnormalities. + Normal bowel sounds. + Tympanic throughout, no evidence of ascites. + Mild tenderness in the suprapubic region, no rebound tenderness, or guarding. No organomegaly.", "exam_ids": ["agentclinic-medqa-ext-213-e005", "agentclinic-medqa-ext-213-e006", "agentclinic-medqa-ext-213-e007", "agentclinic-medqa-ext-213-e008"]},
+      "x006": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "11,000 /μL (slightly elevated) + 13.2 g/dL + 240,000 /μL", "exam_ids": ["agentclinic-medqa-ext-213-i001", "agentclinic-medqa-ext-213-i002", "agentclinic-medqa-ext-213-i003"]},
+      "x007": {"source": "Test_Results.Stool_Culture_and_Sensitivity", "source_text": "No pathogenic organisms isolated.", "exam_ids": ["agentclinic-medqa-ext-213-i004"]},
+      "x008": {"source": "Test_Results.Colonoscopy.Findings", "source_text": "Patchy erythema and ulceration seen in the cecum, ascending, descending, and sigmoid colon.", "exam_ids": ["agentclinic-medqa-ext-213-i005"]},
+      "x009": {"source": "Test_Results.Mucosal_Biopsy.Findings", "source_text": "Colonic crypts with lymphocytic and neutrophilic infiltrates.", "exam_ids": ["agentclinic-medqa-ext-213-i006"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Gold label uses a typographic apostrophe ('Crohn’s disease'); normalised to a straight apostrophe.",
+      "The biopsy finding (crypt lymphocytic and neutrophilic infiltrates) is nonspecific; no granulomas are mentioned.",
+      "Recent travel is denied in both the History and the Review_of_Systems; merged into f013."
+    ],
+    "notes": [
+      "Intermittent course, one-month duration and loose consistency are children of the diarrhea; blood in the stool is its own fact because it is asked about separately.",
+      "Nursing-home work appears in the History and Social_History; merged into one occupation fact (f018).",
+      "Gold aliases: 'inflammatory bowel disease'/'IBD' are broader and are not listed."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with ongoing diarrhea, occasionally bloody, and lower abdominal pain for the past month."
+    }
+  }
+}

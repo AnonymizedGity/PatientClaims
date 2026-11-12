@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-088", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 72, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "unintentional weight loss", "aliases": ["losing weight", "weight loss"], "text": "I've been losing weight without trying.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "unintentional weight loss: amount", "parent": "f002", "attribute": "quantity", "text": "I've lost 5 kilos, about 11 pounds.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "how long the tiredness and weight loss have been going on", "aliases": ["how long the symptoms have been going on"], "text": "The tiredness and the weight loss have both been going on for 6 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "loss of appetite", "aliases": ["poor appetite", "appetite"], "text": "My appetite is still good.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "change in diet", "aliases": ["diet", "eating habits"], "text": "I haven't changed my diet recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "change in physical activity", "aliases": ["exercise", "activity level"], "text": "I haven't changed how physically active I am.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "night sweats", "aliases": ["sweating at night"], "text": "I haven't had any night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "change in bowel habits", "aliases": ["bowel changes", "diarrhea", "constipation"], "text": "My bowel habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f011", "item": "change in bladder habits", "aliases": ["urinary changes", "change in urination"], "text": "My bladder habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f012", "item": "recent infections", "aliases": ["infections", "being sick recently"], "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "bleeding problems", "aliases": ["bleeding disorder", "easy bleeding"], "text": "I don't have any bleeding problems.", "polarity": "absent", "category": "symptom", "system": "hematologic", "time": "current"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["past medical history", "chronic illnesses"], "text": "I don't have any chronic illnesses or significant medical history.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "previous hospitalizations", "aliases": ["hospital stays", "admissions"], "text": "I've never been hospitalized.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f016", "item": "medications", "aliases": ["medicines", "regular medications"], "text": "I don't take any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I don't smoke or use any tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "illicit drug use", "aliases": ["drugs", "recreational drugs"], "text": "I don't use illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f020", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a retired engineer.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-088",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "80/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["appearance", "general inspection"], "result": "Looks his stated age; no acute distress."},
+      {"id": "x006", "kind": "exam", "system": "ent", "name": "head and neck examination", "aliases": ["HEENT", "pallor", "conjunctivae", "sclera", "icterus", "neck lymph nodes"], "result": "No pallor, icterus, or lymphadenopathy in the head and neck region."},
+      {"id": "x007", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "lymphadenopathy", "glands"], "result": "Diffuse, nontender lymphadenopathy."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "liver", "spleen"], "result": "Inspection: normal contour, no visible masses; auscultation: normal bowel sounds; percussion: diffuse dullness over the left and right upper quadrants; palpation: nontender hepatosplenomegaly."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets"], "result": "WBC 16,000/μL (elevated); hemoglobin 11 g/dL (low); platelets normal."},
+      {"id": "x010", "kind": "test", "name": "direct antiglobulin test", "aliases": ["DAT", "direct Coombs test", "Coombs test"], "result": "Positive."},
+      {"id": "x011", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood smear", "blood film", "peripheral smear"], "result": "Increased lymphocytes with smudge cells."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-088",
+    "diagnosis": "Chronic lymphocytic leukemia",
+    "aliases": ["CLL", "chronic lymphocytic leukaemia", "B-cell chronic lymphocytic leukemia", "B-CLL", "CLL with autoimmune hemolytic anemia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-088",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-088-p001"], "f002": ["agentclinic-medqa-ext-088-p001", "agentclinic-medqa-ext-088-p002"],
+      "f003": ["agentclinic-medqa-ext-088-p001", "agentclinic-medqa-ext-088-p002"], "f004": ["agentclinic-medqa-ext-088-p001", "agentclinic-medqa-ext-088-p002"],
+      "f005": ["agentclinic-medqa-ext-088-p001", "agentclinic-medqa-ext-088-p003"], "f006": ["agentclinic-medqa-ext-088-p001"],
+      "f007": ["agentclinic-medqa-ext-088-p001"], "f008": ["agentclinic-medqa-ext-088-p006"], "f009": ["agentclinic-medqa-ext-088-p006"],
+      "f010": ["agentclinic-medqa-ext-088-p006"], "f011": ["agentclinic-medqa-ext-088-p006"], "f012": ["agentclinic-medqa-ext-088-p006"],
+      "f013": ["agentclinic-medqa-ext-088-p006"], "f014": ["agentclinic-medqa-ext-088-p004"], "f015": ["agentclinic-medqa-ext-088-p004"],
+      "f016": ["agentclinic-medqa-ext-088-p001"], "f017": ["agentclinic-medqa-ext-088-p001", "agentclinic-medqa-ext-088-p005"],
+      "f018": ["agentclinic-medqa-ext-088-p001", "agentclinic-medqa-ext-088-p005"], "f019": ["agentclinic-medqa-ext-088-p005"],
+      "f020": ["agentclinic-medqa-ext-088-p005"]
+    },
+    "quotes": {
+      "f003": "5 kg (11 lb)", "f004": "a 6-month history of fatigue and an unintentional weight loss", "f005": "despite maintaining a good appetite",
+      "f006": "denies any recent changes in his diet", "f007": "or physical activity", "f013": "bleeding disorders",
+      "f014": "Patient denies any chronic illnesses", "f015": "or prior hospitalizations", "f016": "He takes no medications",
+      "f017": "denies tobacco use", "f019": "Drinks alcohol socially", "f020": "Retired engineer"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-088-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-088-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "80 bpm", "exam_ids": ["agentclinic-medqa-ext-088-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-088-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Appearance", "source_text": "Looks his stated age, no acute distress.", "exam_ids": ["agentclinic-medqa-ext-088-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.HEENT", "source_text": "No pallor, icterus, or lymphadenopathy in the head and neck region.", "exam_ids": ["agentclinic-medqa-ext-088-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Lymph_Nodes", "source_text": "Diffuse, nontender lymphadenopathy.", "exam_ids": ["agentclinic-medqa-ext-088-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Normal contour, no visible masses. | Normal bowel sounds. | Diffuse dullness over the left upper quadrant and right upper quadrant. | Nontender hepatosplenomegaly", "exam_ids": ["agentclinic-medqa-ext-088-e008", "agentclinic-medqa-ext-088-e009", "agentclinic-medqa-ext-088-e010", "agentclinic-medqa-ext-088-e011"]},
+      "x009": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "16,000 /μL (elevated) | 11 g/dL (low) | Normal", "exam_ids": ["agentclinic-medqa-ext-088-i001", "agentclinic-medqa-ext-088-i002", "agentclinic-medqa-ext-088-i003"]},
+      "x010": {"source": "Test_Results.Direct_Antiglobulin_Test", "source_text": "Positive", "exam_ids": ["agentclinic-medqa-ext-088-i004"]},
+      "x011": {"source": "Test_Results.Peripheral_Blood_Smear.Findings", "source_text": "Increased lymphocytes with smudge cells", "exam_ids": ["agentclinic-medqa-ext-088-i005"]}
+    },
+    "finding_flags": {
+      "x006": ["Says no lymphadenopathy in the head and neck while x007 reports diffuse lymphadenopathy; both kept as written."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Head and neck exam: 'no ... lymphadenopathy in the head and neck region', yet the lymph node exam reports 'Diffuse, nontender lymphadenopathy'."
+    ],
+    "notes": [
+      "The 6-month duration covers both the tiredness and the weight loss (p001 and p002), so it is a standalone fact (f004).",
+      "'Good appetite' is the normal state, so it is 'loss of appetite' absent (f005).",
+      "'Denies any chronic illnesses or prior hospitalizations' is split into two denials (f014, f015).",
+      "Gold aliases exclude 'leukemia', 'lymphoproliferative disorder' and 'small lymphocytic lymphoma' (broader or a different presentation)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, unintentional weight loss, and abnormal physical examination findings."
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-110", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 60, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I've been getting short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for the past 2 months.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f003", "item": "shortness of breath: course", "parent": "f001", "attribute": "course", "text": "It's been getting progressively worse.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "shortness of breath: at rest", "parent": "f001", "attribute": "timing", "text": "It doesn't happen when I'm resting.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f005", "item": "cough", "text": "I've had a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f006", "item": "cough: character", "parent": "f005", "attribute": "character", "text": "It's a dry cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f007", "item": "cough: frequency", "parent": "f005", "attribute": "frequency", "text": "It comes occasionally.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f008", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "chills", "text": "I haven't had chills.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "other symptoms", "aliases": ["other complaints"], "text": "I don't have any other complaints.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I've been healthy. I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I've smoked a pack of cigarettes a day for the past 40 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I drink a beer every day, sometimes more on weekends.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "illicit drug use", "aliases": ["drugs", "recreational drugs"], "text": "I don't use any illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-110",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "136/88 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "94/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "21/min"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "chest examination", "aliases": ["lung examination", "respiratory examination", "lung auscultation", "chest auscultation"], "result": "Inspection: normal chest wall movement; no use of accessory muscles at rest. Palpation: symmetrical chest wall movement. Percussion: resonant throughout. Auscultation: prolonged expiratory phase and end-expiratory wheezing."},
+      {"id": "x006", "kind": "test", "name": "lung function tests", "aliases": ["PFTs", "spirometry", "FEV1", "FEV1/FVC ratio", "total lung capacity", "TLC", "lung volumes", "DLCO", "diffusing capacity"], "result": "FEV1/FVC ratio 62%; FEV1 60% of predicted; total lung capacity 125% of predicted; diffusing capacity (DLCO) decreased."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-110",
+    "diagnosis": "Chronic obstructive pulmonary disease",
+    "aliases": ["COPD", "chronic obstructive lung disease", "chronic obstructive airway disease", "emphysema"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-110",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-110-p001"], "f002": ["agentclinic-medqa-ext-110-p001"], "f003": ["cc", "agentclinic-medqa-ext-110-p001"],
+      "f004": ["agentclinic-medqa-ext-110-p001"], "f005": ["agentclinic-medqa-ext-110-p001", "agentclinic-medqa-ext-110-p002"],
+      "f006": ["agentclinic-medqa-ext-110-p001", "agentclinic-medqa-ext-110-p002"], "f007": ["agentclinic-medqa-ext-110-p001"],
+      "f008": ["agentclinic-medqa-ext-110-p001", "agentclinic-medqa-ext-110-p003"], "f009": ["agentclinic-medqa-ext-110-p001", "agentclinic-medqa-ext-110-p004"],
+      "f010": ["agentclinic-medqa-ext-110-p001", "agentclinic-medqa-ext-110-p005"], "f011": ["agentclinic-medqa-ext-110-p008"],
+      "f012": ["agentclinic-medqa-ext-110-p006"], "f013": ["agentclinic-medqa-ext-110-p007"], "f014": ["agentclinic-medqa-ext-110-p007"],
+      "f015": ["agentclinic-medqa-ext-110-p007"]
+    },
+    "quotes": {
+      "f002": "for the past 2 months", "f003": "Progressively worsening shortness of breath", "f004": "which does not occur at rest",
+      "f006": "Dry cough", "f007": "He occasionally experiences a dry cough", "f011": "Denies any other systemic complaints.",
+      "f012": "The patient is previously healthy with no significant past medical history.",
+      "f013": "Smoked a pack of cigarettes daily for the past 40 years", "f014": "Drinks a beer daily with occasional increase on weekends",
+      "f015": "No illicit drug use."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-110-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "136/88 mmHg", "exam_ids": ["agentclinic-medqa-ext-110-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "94 bpm", "exam_ids": ["agentclinic-medqa-ext-110-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "21 breaths/min", "exam_ids": ["agentclinic-medqa-ext-110-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Lung_Examination.Inspection + Physical_Examination_Findings.Lung_Examination.Palpation + Physical_Examination_Findings.Lung_Examination.Percussion + Physical_Examination_Findings.Lung_Examination.Auscultation", "source_text": "Inspection: Normal chest wall movement, no use of accessory muscles at rest.; Palpation: Symmetrical chest wall movement.; Percussion: Resonant note throughout.; Auscultation: Prolonged expiratory phase and end-expiratory wheezing.", "exam_ids": ["agentclinic-medqa-ext-110-e005", "agentclinic-medqa-ext-110-e008", "agentclinic-medqa-ext-110-e007", "agentclinic-medqa-ext-110-e006"]},
+      "x006": {"source": "Test_Results.Spirometry.FEV1:FVC_Ratio + Test_Results.Spirometry.FEV1 + Test_Results.Spirometry.Total_Lung_Capacity + Test_Results.DLCO_Test.Diffusion_Capacity", "source_text": "FEV1:FVC_Ratio: 62%; FEV1: 60% of predicted; Total_Lung_Capacity: 125% of predicted; Diffusion_Capacity: Decreased", "exam_ids": ["agentclinic-medqa-ext-110-i001", "agentclinic-medqa-ext-110-i002", "agentclinic-medqa-ext-110-i003", "agentclinic-medqa-ext-110-i004"]}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Spirometry, lung volume (TLC) and DLCO are reported as one lung function test record (x006), as a doctor orders 'PFTs'; it is named 'lung function tests' rather than 'pulmonary function tests' so the name carries no word of the gold diagnosis, with 'PFTs' as an alias.",
+      "'Does not occur at rest' is an absent timing child of the shortness of breath (f004).",
+      "'Denies any other systemic complaints' (the whole review of systems) is kept as a stated blanket denial (f011).",
+      "Gold alias 'emphysema' is the COPD phenotype these results show (raised TLC, low DLCO); 'chronic bronchitis' is not used (no productive cough, and it can occur without obstruction)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with progressively worsening shortness of breath over the past 2 months."
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-198", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 31, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "flank pain", "aliases": ["pain in the side", "loin pain", "side pain"], "text": "I've been having pain in my side, in the flank area.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f002", "item": "flank pain: pattern", "parent": "f001", "attribute": "course", "text": "It comes and goes.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f003", "item": "flank pain: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 5 months.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f004", "item": "urinary tract infections", "aliases": ["UTIs", "bladder infections"], "text": "I've had five urinary tract infections over the past 2 years.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f005", "item": "change in urinary habits", "aliases": ["urinary frequency", "urgency", "peeing more often"], "text": "I haven't noticed any change in my peeing, like going more often or more urgently, except when I have a UTI.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f006", "item": "fever", "text": "I haven't had any fever recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "nausea", "aliases": ["feeling sick"], "text": "I haven't had any nausea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f008", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f009", "item": "rash", "text": "I haven't had any rash.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f010", "item": "joint pain", "text": "I haven't had any joint pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "recent infections", "text": "Apart from the UTIs, I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "weight loss", "text": "I haven't lost any significant weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "weight gain", "text": "I haven't gained any significant weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "kidney stones", "aliases": ["renal stones"], "text": "As far as I know, I've never had kidney stones.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f016", "item": "kidney disease in the family", "aliases": ["family history of kidney disease"], "text": "As far as I know, no one in my family has kidney disease.", "polarity": "absent", "category": "family_history"},
+      {"id": "f017", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "occupation", "aliases": ["job", "work"], "text": "I work in IT management.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f020", "item": "recent travel", "aliases": ["travel"], "text": "I haven't travelled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f021", "item": "unusual diet", "aliases": ["diet", "eating habits"], "text": "I don't have any unusual eating habits.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-198",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "150/88 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "85/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "flank examination"], "result": "Inspection: no visible abnormalities or distension; auscultation: normal bowel sounds; percussion: no shifting dullness, no flank pain elicited; palpation: nontender upper abdominal masses felt bilaterally."},
+      {"id": "x006", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "renal function tests", "urea and creatinine", "BUN", "blood urea nitrogen", "creatinine"], "result": "Blood urea nitrogen 29 mg/dL (elevated); creatinine 1.4 mg/dL (elevated)."},
+      {"id": "x007", "kind": "test", "name": "renal ultrasound", "aliases": ["renal ultrasonography", "abdominal ultrasound", "ultrasound of the abdomen"], "result": "Bilaterally enlarged kidneys with multiple parenchymal anechoic masses."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-198",
+    "diagnosis": "Autosomal dominant polycystic kidney disease",
+    "aliases": ["ADPKD", "adult polycystic kidney disease", "APKD", "autosomal dominant PKD"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-198",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-198-p001"], "f002": ["cc", "agentclinic-medqa-ext-198-p001"], "f003": ["agentclinic-medqa-ext-198-p001"],
+      "f004": ["agentclinic-medqa-ext-198-p001", "agentclinic-medqa-ext-198-p002"], "f005": ["agentclinic-medqa-ext-198-p001", "agentclinic-medqa-ext-198-p004"],
+      "f006": ["agentclinic-medqa-ext-198-p001", "agentclinic-medqa-ext-198-p007"], "f007": ["agentclinic-medqa-ext-198-p001", "agentclinic-medqa-ext-198-p003"],
+      "f008": ["agentclinic-medqa-ext-198-p001", "agentclinic-medqa-ext-198-p003"], "f009": ["agentclinic-medqa-ext-198-p007"],
+      "f010": ["agentclinic-medqa-ext-198-p007"], "f011": ["agentclinic-medqa-ext-198-p007"], "f012": ["agentclinic-medqa-ext-198-p007"],
+      "f013": ["agentclinic-medqa-ext-198-p007"], "f014": ["agentclinic-medqa-ext-198-p005"], "f015": ["agentclinic-medqa-ext-198-p005"],
+      "f016": ["agentclinic-medqa-ext-198-p005"], "f017": ["agentclinic-medqa-ext-198-p006"], "f018": ["agentclinic-medqa-ext-198-p006"],
+      "f019": ["agentclinic-medqa-ext-198-p006"], "f020": ["agentclinic-medqa-ext-198-p006"], "f021": ["agentclinic-medqa-ext-198-p006"]
+    },
+    "quotes": {
+      "f002": "intermittent flank pain", "f003": "a 5-month history", "f004": "five urinary tract infections over the past 2 years",
+      "f005": "No changes in urinary habits, such as increased frequency or urgency, except when experiencing a UTI", "f006": "does not report any recent fever",
+      "f011": "recent infections apart from the UTIs mentioned", "f012": "No significant weight loss or gain", "f013": "No significant weight loss or gain",
+      "f014": "No significant medical history.", "f015": "No history of kidney stones", "f016": "familial kidney diseases as per patient's knowledge",
+      "f018": "drinks alcohol socially", "f019": "works in IT management", "f021": "unusual dietary habits"
+    },
+    "flags": {
+      "f001": ["The side of the flank pain is not stated (the abdominal masses are bilateral); the text keeps it unspecified."],
+      "f015": ["'as per patient's knowledge' is read as covering both kidney stones and familial kidney disease."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-198-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure + Test_Results.Blood_Work.Blood_Pressure", "source_text": "150/88 mmHg + 150/88 mmHg (indication of hypertension)", "exam_ids": ["agentclinic-medqa-ext-198-e002", "agentclinic-medqa-ext-198-i003"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "85 bpm", "exam_ids": ["agentclinic-medqa-ext-198-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-198-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible abnormalities or distension. + Normal bowel sounds. + No shifting dullness or flank pain elicited. + Nontender upper abdominal masses felt bilaterally.", "exam_ids": ["agentclinic-medqa-ext-198-e005", "agentclinic-medqa-ext-198-e006", "agentclinic-medqa-ext-198-e007", "agentclinic-medqa-ext-198-e008"]},
+      "x006": {"source": "Test_Results.Blood_Work.Urea_Nitrogen + Test_Results.Blood_Work.Creatinine", "source_text": "29 mg/dL (elevated) + 1.4 mg/dL (elevated)", "exam_ids": ["agentclinic-medqa-ext-198-i001", "agentclinic-medqa-ext-198-i002"]},
+      "x007": {"source": "Test_Results.Imaging.Renal_Ultrasonography.Findings", "source_text": "Bilaterally enlarged kidneys with multiple parenchymal anechoic masses.", "exam_ids": ["agentclinic-medqa-ext-198-i004"]}
+    },
+    "finding_flags": {
+      "x002": ["The blood pressure also appears under Test_Results.Blood_Work with the interpretation '(indication of hypertension)'; both leaves are merged into the vital record and the interpretation is dropped."],
+      "x006": ["Only BUN and creatinine are reported; the record is named as the panel they belong to."]
+    },
+    "leakage": [
+      {"fact_id": "f015", "reason": "'kidney' is a gold-diagnosis word; here it is the organ in a source denial of kidney stones, not the diagnosis."},
+      {"fact_id": "f016", "reason": "'kidney' is a gold-diagnosis word; the fact is the source's denial of familial kidney disease (as far as she knows), which does not name the diagnosis."}
+    ],
+    "source_issues": [
+      "Blood pressure 150/88 mmHg is listed twice: as a vital sign and under Test_Results.Blood_Work with an interpretation.",
+      "Secondary_Symptoms holds denials and history ('No nausea or vomiting', 'No significant change in urinary habits', 'History of multiple UTIs'); merged with the same statements in the History.",
+      "No family history of kidney disease is reported for an autosomal dominant disease ('as per patient's knowledge')."
+    ],
+    "notes": [
+      "The urinary-habits sentence is one statement with examples (frequency, urgency) and an exception (during a UTI), so it is one fact with the examples as aliases.",
+      "Finding aliases avoid the word 'kidney' to keep gold words out of request names; 'renal ultrasound' is the clinical name."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with chronic flank pain and a history of urinary tract infections."
+    }
+  }
+}

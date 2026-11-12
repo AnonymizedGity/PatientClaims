@@ -1,0 +1,80 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-155", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 58, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "spot on the lip", "aliases": ["lip lesion", "sore on the lip", "lip ulcer"], "text": "I have a spot on my lower lip.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "spot on the lip: duration", "parent": "f001", "attribute": "duration", "text": "It's been there for 3 months.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "spot on the lip: pain", "parent": "f001", "attribute": "character", "aliases": ["painful lip"], "text": "It doesn't hurt.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "other symptoms", "aliases": ["other complaints"], "text": "I don't have any other complaints or symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "diabetes", "aliases": ["type 2 diabetes", "sugar diabetes"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "captopril", "aliases": ["blood pressure medication"], "text": "I take captopril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "metformin", "aliases": ["diabetes medication"], "text": "I take metformin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke a pack of cigarettes a day, and have for the last 20 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a fruit picker. I've done that for the past 25 years.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "working outdoors", "aliases": ["sun exposure", "time spent outside"], "text": "My work is outdoors.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-155",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "lip and mouth examination", "aliases": ["oral examination", "mouth examination", "lip examination", "inspection of the lip lesion"], "result": "Single ulcer near the vermilion border of the lower lip, without any obvious signs of healing; non-tender on palpation."},
+      {"id": "x006", "kind": "test", "name": "biopsy of the lip lesion", "aliases": ["lip biopsy", "lesion biopsy", "histopathology"], "result": "Dysplasia and keratin pearls, consistent with squamous cell carcinoma."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-155",
+    "diagnosis": "Squamous cell carcinoma",
+    "aliases": ["SCC", "squamous cell carcinoma of the lip", "squamous cell carcinoma of the lower lip", "lip squamous cell carcinoma", "epidermoid carcinoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-155",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-155-p001"], "f002": ["agentclinic-medqa-ext-155-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-155-p001"], "f004": ["agentclinic-medqa-ext-155-p004"],
+      "f005": ["agentclinic-medqa-ext-155-p002"], "f006": ["agentclinic-medqa-ext-155-p002"],
+      "f007": ["agentclinic-medqa-ext-155-p002"], "f008": ["agentclinic-medqa-ext-155-p002"],
+      "f009": ["agentclinic-medqa-ext-155-p001", "agentclinic-medqa-ext-155-p003"],
+      "f010": ["agentclinic-medqa-ext-155-p001", "agentclinic-medqa-ext-155-p003"],
+      "f011": ["agentclinic-medqa-ext-155-p003"]
+    },
+    "quotes": {
+      "f002": "a 3-month history", "f003": "Painless lesion on the lower lip", "f004": "No other complaints or symptoms reported.",
+      "f006": "Type 2 Diabetes Mellitus", "f009": "one pack per day habit for the last 20 years",
+      "f010": "worked as a fruit picker for the past 25 years", "f011": "Works outside as a fruit picker."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-155-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-155-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-155-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-155-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Oral_Examination.Inspection", "source_text": "Single ulcer near the vermillion border of the lower lip, without any obvious signs of healing. The ulcer is non-tender on palpation.", "exam_ids": ["agentclinic-medqa-ext-155-e005"]},
+      "x006": {"source": "Test_Results.Biopsy_of_Lesion.Findings", "source_text": "Dysplasia and keratin pearls, consistent with squamous cell carcinoma", "exam_ids": ["agentclinic-medqa-ext-155-i001"]}
+    },
+    "leakage": [
+      {"id": "x006", "reason": "The biopsy result names the diagnosis ('consistent with squamous cell carcinoma'); kept because that is the test's answer, and it is only seen when the doctor orders the biopsy."}
+    ],
+    "source_issues": [
+      "The gold diagnosis is visible in the biopsy result (pool flag visible_gold_alias_partitions: test_results).",
+      "'vermillion' is misspelled in the oral examination (vermilion)."
+    ],
+    "notes": [
+      "The source says 'lesion'; the patient calls it a 'spot' (lay word, no claim about pain or ulceration); 'lip lesion', 'sore' and 'ulcer' are aliases.",
+      "Smoking (p001, p003) and occupation (p001, p003) each merge into one fact. 'Works outside' becomes a separate exposure fact (f011) because it answers a sun-exposure question; the source does not mention sun or sunscreen, so the text states only that the work is outdoors.",
+      "'No other complaints or symptoms reported' (p004) is a denial of other symptoms (f004).",
+      "The oral examination leaf is one record; the system is 'skin' to match the lip-lesion fact."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a lesion on his lower lip, taking into consideration his medical history and habits."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

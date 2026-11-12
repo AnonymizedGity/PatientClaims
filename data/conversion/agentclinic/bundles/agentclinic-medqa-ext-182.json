@@ -1,0 +1,91 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-182", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 25, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "exhaustion"], "text": "I've been extremely tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fatigue: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for the past 2 days.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "yellow skin", "aliases": ["jaundice", "yellowing of the skin"], "text": "I've noticed my skin turning yellow.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "headache", "text": "I haven't had a headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "injecting drugs", "aliases": ["intravenous drug use", "IV drug use", "needle use", "illicit drugs"], "text": "In the past I've injected illegal drugs.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f007", "item": "where he is from", "aliases": ["country of origin", "immigration", "birthplace"], "text": "I moved to the US from Africa when I was 18.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f008", "item": "vaccination records", "aliases": ["vaccinations", "immunizations", "vaccines"], "text": "I don't have any records of my vaccinations, so I'm not sure which ones I've had.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "past surgery", "aliases": ["operations"], "text": "I haven't had any significant surgery.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "current medications", "aliases": ["medicines", "pills"], "text": "I'm not taking any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "drug allergies", "aliases": ["allergies", "medication allergies"], "text": "I don't have any known drug allergies.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "abdominal pain", "aliases": ["belly soreness", "abdominal tenderness", "stomach pain"], "text": "My belly feels mildly sore all over.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "breathing problems", "aliases": ["respiratory symptoms", "shortness of breath", "cough"], "text": "I haven't had any breathing problems.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f015", "item": "heart symptoms", "aliases": ["cardiovascular symptoms", "chest pain", "palpitations"], "text": "I haven't had any heart problems.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f016", "item": "other digestive symptoms", "aliases": ["gastrointestinal symptoms", "stomach or bowel problems"], "text": "Apart from that soreness, I haven't had any other stomach or bowel problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "urinary symptoms", "aliases": ["genitourinary symptoms", "problems peeing"], "text": "I haven't had any urinary problems.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-182",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.9°C (100.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "100/74 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen examination", "abdominal palpation", "liver examination", "inspection for jaundice"], "result": "Inspection: mild jaundice; auscultation: normal bowel sounds; percussion: tympanic, no hepatosplenomegaly; palpation: mild diffuse abdominal tenderness, no rebound tenderness."},
+      {"id": "x006", "kind": "test", "name": "alanine aminotransferase", "aliases": ["ALT", "liver function tests", "LFTs", "liver enzymes"], "result": "2,000 IU/L (significantly elevated)."},
+      {"id": "x007", "kind": "test", "name": "viral hepatitis serology", "aliases": ["hepatitis panel", "anti-HAV IgM", "HBsAg", "anti-HBs", "IgM anti-HBc", "anti-HCV", "anti-HDV"], "result": "Anti-HAV IgM negative; HBsAg positive; anti-HBs negative; IgM anti-HBc positive; anti-HCV negative; anti-HDV negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-182",
+    "diagnosis": "Acute hepatitis B",
+    "aliases": ["acute HBV infection", "acute hepatitis B virus infection", "acute viral hepatitis B", "acute HBV hepatitis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-182",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-182-p001"], "f002": ["agentclinic-medqa-ext-182-p001"],
+      "f003": ["agentclinic-medqa-ext-182-p001", "agentclinic-medqa-ext-182-p002"], "f004": ["agentclinic-medqa-ext-182-p001", "agentclinic-medqa-ext-182-p003"],
+      "f005": ["agentclinic-medqa-ext-182-p001", "agentclinic-medqa-ext-182-p004"], "f006": ["agentclinic-medqa-ext-182-p001", "agentclinic-medqa-ext-182-p006"],
+      "f007": ["agentclinic-medqa-ext-182-p001"], "f008": ["agentclinic-medqa-ext-182-p001", "agentclinic-medqa-ext-182-p005"],
+      "f009": ["agentclinic-medqa-ext-182-p005"], "f010": ["agentclinic-medqa-ext-182-p005"], "f011": ["agentclinic-medqa-ext-182-p006"],
+      "f012": ["agentclinic-medqa-ext-182-p006"], "f013": ["agentclinic-medqa-ext-182-p007"], "f014": ["agentclinic-medqa-ext-182-p007"],
+      "f015": ["agentclinic-medqa-ext-182-p007"], "f016": ["agentclinic-medqa-ext-182-p007"], "f017": ["agentclinic-medqa-ext-182-p007"]
+    },
+    "quotes": {
+      "f001": "Extreme fatigue", "f002": "for the past 2 days", "f003": "noticed his skin turning yellow",
+      "f006": "Admits to past illicit intravenous drug use.", "f007": "Moved to the US from Africa at the age of 18",
+      "f008": "does not have any immunization records / Unverified vaccination status.", "f010": "No significant past medical or surgical history.",
+      "f012": "known drug allergies", "f013": "aside from mild diffuse abdominal tenderness"
+    },
+    "flags": {
+      "f013": ["The ROS lists 'mild diffuse abdominal tenderness' as the patient's complaint; tenderness is an exam term, so it is worded as soreness the patient feels. The examiner's finding is also in x005."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.9°C (100.2°F)", "exam_ids": ["agentclinic-medqa-ext-182-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "100/74 mmHg", "exam_ids": ["agentclinic-medqa-ext-182-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-182-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-182-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Mild jaundice noted. + Normal bowel sounds. + Tympanic, no hepatosplenomegaly noted. + Mild diffuse abdominal tenderness, no rebound tenderness.", "exam_ids": ["agentclinic-medqa-ext-182-e005", "agentclinic-medqa-ext-182-e006", "agentclinic-medqa-ext-182-e007", "agentclinic-medqa-ext-182-e008"]},
+      "x006": {"source": "Test_Results.Liver_Function_Tests.ALT", "source_text": "2,000 IU/L (significantly elevated)", "exam_ids": ["agentclinic-medqa-ext-182-i001"]},
+      "x007": {"source": "Test_Results.Hepatitis_Viral_Panel.Anti-HAV IgM + Test_Results.Hepatitis_Viral_Panel.HBsAg + Test_Results.Hepatitis_Viral_Panel.Anti-HBs + Test_Results.Hepatitis_Viral_Panel.IgM anti-HBc + Test_Results.Hepatitis_Viral_Panel.Anti-HCV + Test_Results.Hepatitis_Viral_Panel.Anti-HDV", "source_text": "Negative + Positive + Negative + Positive + Negative + Negative", "exam_ids": ["agentclinic-medqa-ext-182-i002", "agentclinic-medqa-ext-182-i003", "agentclinic-medqa-ext-182-i004", "agentclinic-medqa-ext-182-i005", "agentclinic-medqa-ext-182-i006", "agentclinic-medqa-ext-182-i007"]}
+    },
+    "leakage": [
+      {"id": "x007", "reason": "The panel name 'viral hepatitis serology' / 'hepatitis panel' contains 'hepatitis'. It is the standard clinical name (listed as a panel in CONVERSION) and names the test, not the result."}
+    ],
+    "source_issues": [
+      "The patient denies fever, but the temperature is 37.9°C (100.2°F) (low-grade).",
+      "History 'denies ... other specific symptoms' vs ROS 'mild diffuse abdominal tenderness'.",
+      "Medication and allergy denials sit in Social_History."
+    ],
+    "notes": [
+      "The catch-all 'denies ... other specific symptoms' (p001) is not made a fact: it would contradict the ROS soreness (f013). The fever and headache denials are explicit (f004, f005).",
+      "The ROS system denials (respiratory, cardiovascular, gastrointestinal, genitourinary) are four catch-all facts (f014-f017); the GI one excludes the soreness.",
+      "'No immunization records' and 'unverified vaccination status' merge into f008 (no records, so unsure which vaccines).",
+      "Only ALT is reported from the liver function tests, so it is a single-test record (x006) with 'liver function tests' as an alias.",
+      "check_coverage warns on x007 ('hepatitis' in the name and alias): justified as the clinical panel name; listed in qc.leakage."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with extreme fatigue, yellow skin, and elevated alanine aminotransferase level."
+    }
+  }
+}

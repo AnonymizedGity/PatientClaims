@@ -1,0 +1,123 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06134",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 18, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["headaches", "head pain"], "text": "I've been having severe headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: severity", "parent": "f001", "attribute": "severity", "text": "They're 10 out of 10.", "value": 10, "scale": [0, 10], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "headache: location", "parent": "f001", "attribute": "location", "text": "They're all over my head.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "headache: duration", "parent": "f001", "attribute": "duration", "text": "I've had them for 4 years.", "value": "4 years", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "headache: course", "parent": "f001", "attribute": "course", "text": "They've been getting worse over the past 2 years.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "excessive thirst", "aliases": ["polydipsia", "thirst", "drinking a lot of water"], "text": "I'm very thirsty and drink about 15 litres a day.", "value": "15 L per day", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "passing large amounts of urine", "aliases": ["polyuria", "urinating a lot", "frequent urination"], "text": "I pass about as much urine as I drink.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f008", "item": "waking at night to urinate", "aliases": ["nocturia", "getting up at night to pee"], "text": "I wake up about 10 times a night to pass urine.", "value": 10, "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f009", "item": "how long the thirst and heavy urination have lasted", "text": "The thirst and the heavy urination started 18 months ago.", "value": "18 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "missed periods", "aliases": ["amenorrhea", "secondary amenorrhea", "no periods", "periods stopped"], "text": "My periods stopped 18 months ago.", "value": "18 months", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f011", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost 10 kg over the past year.", "value": "10 kg", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "upper abdominal discomfort", "aliases": ["epigastric pain", "epigastric discomfort", "stomach discomfort", "indigestion"], "text": "I get discomfort in the upper middle part of my belly on and off.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "recurrent"},
+      {"id": "f013", "item": "injury", "aliases": ["trauma", "head injury", "accident"], "text": "I haven't had any injuries.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "surgery", "aliases": ["operations", "past surgery"], "text": "I haven't had any surgery.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "radiation exposure", "aliases": ["radiation", "radiotherapy"], "text": "I haven't been exposed to radiation.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f016", "item": "fever", "aliases": ["temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "cough", "text": "I haven't had a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f018", "item": "osmotic diuretics", "aliases": ["osmotic diuretic", "mannitol"], "text": "I haven't taken any osmotic diuretics.", "polarity": "absent", "category": "medication"},
+      {"id": "f019", "item": "age at first period", "aliases": ["menarche", "first period"], "text": "My first period came at 13.", "value": 13, "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f020", "item": "diabetes mellitus", "aliases": ["diabetes", "high blood sugar", "sugar diabetes"], "text": "I don't have diabetes mellitus.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f021", "item": "other endocrine disorders", "aliases": ["hormone problems", "endocrine disease", "gland problems"], "text": "I've never had any other hormone problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f022", "item": "diabetes mellitus in the family", "aliases": ["family history of diabetes", "relatives with diabetes"], "text": "No one in my family has diabetes mellitus.", "polarity": "absent", "category": "family_history"},
+      {"id": "f023", "item": "endocrine disorders in the family", "aliases": ["family history of hormone problems", "relatives with hormone problems"], "text": "No one in my family has any other hormone problems either.", "polarity": "absent", "category": "family_history"},
+      {"id": "f024", "item": "antacids", "aliases": ["indigestion medicine", "heartburn medicine"], "text": "I take antacids now and then.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f025", "item": "painkillers", "aliases": ["analgesics", "pain relievers", "pain medicine"], "text": "I take painkillers now and then.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06134",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Normal."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normal."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Normal."},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal."},
+      {"id": "x005", "kind": "vital", "name": "body mass index", "aliases": ["BMI", "weight", "height"], "result": "16 kg/m2"},
+      {"id": "x006", "kind": "exam", "system": "endocrine", "name": "axillary and pubic hair", "aliases": ["secondary sexual characteristics", "Tanner staging", "body hair"], "result": "Normal axillary and pubic hair."},
+      {"id": "x007", "kind": "exam", "system": "general", "name": "rest of the physical examination", "aliases": ["physical examination", "general examination", "heart examination", "lung examination", "abdominal examination", "neurological examination"], "result": "Unremarkable."},
+      {"id": "x008", "kind": "test", "name": "urine specific gravity", "aliases": ["specific gravity", "urinalysis"], "result": "1.005"},
+      {"id": "x009", "kind": "test", "name": "random urine osmolality", "aliases": ["urine osmolality", "urine osmolarity"], "result": "150 mOsm/kg"},
+      {"id": "x010", "kind": "test", "name": "water deprivation test", "aliases": ["fluid deprivation test", "water restriction test", "serum osmolality"], "result": "After overnight water deprivation: serum osmolality 298 mOsm/kg; urine osmolality 210 mOsm/kg; urine output 3 L over 8 h; urine specific gravity 1.006."},
+      {"id": "x011", "kind": "test", "name": "desmopressin challenge", "aliases": ["DDAVP test", "desmopressin test", "vasopressin challenge"], "result": "IV desmopressin challenge unavailable. On low-dose oral desmopressin, urine specific gravity normalized to 1.020 and urine osmolality to 600 mOsm/kg.", "time": "after the water deprivation test"},
+      {"id": "x012", "kind": "test", "name": "serum beta-hCG", "aliases": ["βhCG", "hCG", "pregnancy test", "human chorionic gonadotropin"], "result": "1.2 mIU/mL"},
+      {"id": "x013", "kind": "test", "name": "alpha-fetoprotein", "aliases": ["AFP"], "result": "7 ng/mL"},
+      {"id": "x014", "kind": "test", "name": "serum IgG4", "aliases": ["IgG4"], "result": "28 mg/dL"},
+      {"id": "x015", "kind": "test", "name": "soluble IL-2 receptor", "aliases": ["sIL-2R", "soluble interleukin-2 receptor"], "result": "203 U/mL"},
+      {"id": "x016", "kind": "test", "name": "anterior pituitary hormones", "aliases": ["pituitary hormones", "thyroid function", "TSH", "T3", "T4", "prolactin", "cortisol"], "result": "TSH, T3, T4, prolactin and cortisol within normal limits."},
+      {"id": "x017", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "pituitary MRI", "MRI sella"], "result": "Partial filling of the pituitary fossa by CSF with a flattened pituitary gland measuring 3.68 mm, consistent with a partial empty sella. No evidence of intracranial hypertension."},
+      {"id": "x018", "kind": "test", "name": "pelvic ultrasound", "aliases": ["ultrasound of the pelvis", "pelvic US", "ovarian ultrasound"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06134",
+    "diagnosis": "Central diabetes insipidus",
+    "aliases": ["central DI", "cranial diabetes insipidus", "neurogenic diabetes insipidus", "neurohypophyseal diabetes insipidus", "arginine vasopressin deficiency", "AVP deficiency", "AVP-D"],
+    "reasoning": "1. Exclusion of pituitary adenoma (prolactinoma) — “Lambert et al. hypothesized that an empty sella may be due to necrosis of a previous pituitary adenoma, most commonly a prolactinoma, but again in our patient, we did not suspect this from the clinical presentation as the prolactin level was normal.” 2. Exclusion of intracranial mass lesions — “There is no mass on the MRI that suggests the possible differential diagnosis like craniopharyngioma, germinoma, pinealoma, or a metastasis, lymphomas.” 3. Exclusion of idiopathic intracranial hypertension — “There is no sign of intracranial hypertension.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06134",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s003"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s004"], "f014": ["s004"], "f015": ["s004"], "f016": ["s004"], "f017": ["s004"], "f018": ["s004"],
+      "f019": ["s005"], "f020": ["s006"], "f021": ["s006"], "f022": ["s006"], "f023": ["s006"], "f024": ["s007"],
+      "f025": ["s007"]
+    },
+    "quotes": {
+      "f001": "severe, global headaches", "f002": "(10/10)", "f003": "global headaches", "f004": "a 4-year history",
+      "f005": "worsened over the past 2 years", "f006": "polydipsia of approximately 15 L per day", "f007": "with matching polyuria",
+      "f008": "waking 10 times per night to urinate", "f009": "Eighteen months ago", "f010": "secondary amenorrhea for 18 months",
+      "f011": "a weight loss of 10 kg over the past year", "f012": "intermittent epigastric discomfort", "f013": "She denied trauma",
+      "f015": "radiation exposure", "f018": "osmotic diuretics", "f019": "Menarche occurred at age 13",
+      "f020": "no personal or family history of diabetes mellitus or other endocrine disorders",
+      "f022": "no personal or family history of diabetes mellitus or other endocrine disorders",
+      "f024": "occasional antacids and analgesics", "f025": "occasional antacids and analgesics"
+    },
+    "flags": {
+      "f013": ["'Denied trauma' is not limited to the head in the source; the alias 'head injury' is covered by the general denial."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s008"], "source_text": "vital signs were normal"},
+      "x002": {"sentences": ["s008"], "source_text": "vital signs were normal"},
+      "x003": {"sentences": ["s008"], "source_text": "vital signs were normal"},
+      "x004": {"sentences": ["s008"], "source_text": "vital signs were normal"},
+      "x005": {"sentences": ["s008"], "source_text": "BMI was 16 kg/m2"},
+      "x006": {"sentences": ["s009"], "source_text": "Axillary and pubic hair were normal"},
+      "x007": {"sentences": ["s009"], "source_text": "the remainder of the exam was unremarkable"},
+      "x008": {"sentences": ["s010"], "source_text": "urine specific gravity 1.005"},
+      "x009": {"sentences": ["s010"], "source_text": "random urine osmolality 150 mOsm/kg"},
+      "x010": {"sentences": ["s011"], "source_text": "After overnight water deprivation, serum osmolality rose to 298 mOsm/kg while urine osmolality remained low at 210 mOsm/kg; urine output was 3 L over 8 h and urine specific gravity 1.006."},
+      "x011": {"sentences": ["s012"], "source_text": "Desmopressin challenge by IV was unavailable; however, on low-dose oral desmopressin, her urine specific gravity normalized to 1.020 and urine osmolality to 600 mOsm/kg."},
+      "x012": {"sentences": ["s013"], "source_text": "βhCG 1.2 mIU/mL"},
+      "x013": {"sentences": ["s013"], "source_text": "AFP 7 ng/mL"},
+      "x014": {"sentences": ["s013"], "source_text": "IgG4 28 mg/dL"},
+      "x015": {"sentences": ["s013"], "source_text": "soluble IL-2 receptor 203 U/mL"},
+      "x016": {"sentences": ["s013"], "source_text": "anterior pituitary hormones (TSH, T3, T4, prolactin, cortisol) were within normal limits"},
+      "x017": {"sentences": ["s014", "s015"], "source_text": "Brain MRI showed partial filling of the pituitary fossa by CSF with a flattened pituitary gland measuring 3.68 mm, consistent with a partial empty sella. / There was no evidence of intracranial hypertension."},
+      "x018": {"sentences": ["s016"], "source_text": "Pelvic ultrasound was normal."}
+    },
+    "finding_flags": {
+      "x001": ["'Vital signs were normal' gives no values; each standard vital sign is reported as 'Normal.'."],
+      "x011": ["The oral desmopressin trial is kept as the desmopressin challenge because it is the diagnostic response test; it was given as low-dose oral treatment because the IV challenge was unavailable."],
+      "x017": ["s015 ('no evidence of intracranial hypertension') does not name its modality; it follows the MRI sentence and is placed with the MRI."]
+    },
+    "leakage": [
+      {"fact_id": "f020", "reason": "Explicit denial of diabetes mellitus from the source; 'diabetes' is shared with the gold label but names a different condition."},
+      {"fact_id": "f022", "reason": "Explicit denial of diabetes mellitus in the family from the source; 'diabetes' is shared with the gold label but names a different condition."}
+    ],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the outpatient presentation with 4 years of severe global headaches, 18 months of polydipsia and polyuria, amenorrhea and weight loss (s001–s009), with the water deprivation and desmopressin testing and the workup that followed (s010–s016).",
+      "The desmopressin response (s012) is kept as a test finding: it is how the diagnosis is confirmed, not treatment of the case outcome."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

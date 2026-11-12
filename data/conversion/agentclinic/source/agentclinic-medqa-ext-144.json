@@ -1,0 +1,110 @@
+{
+  "case_id": "agentclinic-medqa-ext-144",
+  "source_row": 144,
+  "demographics_text": "69-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with trouble sleeping, with a focus on identifying circadian rhythm sleep disorders.",
+  "chief_complaint": "Inability to stay awake past early evening",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-144-p001",
+      "field": "History",
+      "text": "The patient presents with difficulty staying awake past 6 pm and trouble sleeping at his preferred time. He reports that since retiring from his day shift job at a cemetery, he has been unable to engage in evening activities with his wife, which is causing marital strain. Attempts to correct his sleep pattern with caffeine have been unsuccessful. He feels rested upon waking."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-144-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Feeling rested upon waking"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-144-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Strain in marital relationship due to sleep issues"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-144-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Ineffectiveness of caffeine to adjust sleeping pattern"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-144-p005",
+      "field": "Past_Medical_History",
+      "text": "Irritable bowel syndrome managed with fiber supplements."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-144-p006",
+      "field": "Social_History",
+      "text": "Recently retired. No significant alcohol or tobacco use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-144-p007",
+      "field": "Review_of_Systems",
+      "text": "Normal, with no additional complaints outside of the sleep issue."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Mental_Status",
+      "text": "Alert and oriented to person, place, and time."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Motor_Examination",
+      "text": "Strength 5/5 in all extremities"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination",
+      "text": "Intact to light touch, vibration, and proprioception"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "2+ and symmetric in upper and lower extremities"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-144-i001",
+      "path": "Test_Results.Polysomnography.Findings",
+      "text": "Normal sleep efficiency with advanced sleep phase. The patient's melatonin levels are increased in the early evening, consistent with a diagnosis of advanced sleep phase disorder."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-144-i002",
+      "path": "Test_Results.Actigraphy.Findings",
+      "text": "Shows early sleep onset and wakeup times over a 2-week period."
+    }
+  ],
+  "correct_diagnosis": "Advanced sleep phase disorder",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

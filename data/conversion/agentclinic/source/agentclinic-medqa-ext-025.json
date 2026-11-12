@@ -1,0 +1,143 @@
+{
+  "case_id": "agentclinic-medqa-ext-025",
+  "source_row": 25,
+  "demographics_text": "40-year-old nulliparous woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with shortness of breath, increased abdominal girth, and a large ovarian mass.",
+  "chief_complaint": "Shortness of breath",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-025-p001",
+      "field": "History",
+      "text": "The patient reports experiencing shortness of breath and noticeable increase in abdominal size over the past month. She denies any significant medical history, previous surgeries, or use of medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-025-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Increased abdominal girth"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-025-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Fatigue"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-025-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No significant weight loss or gain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-025-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-025-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, does not consume alcohol regularly. Works as a high school teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-025-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, night sweats, chest pain, or swelling in the legs. She has not noticed any changes in bowel or urinary habits."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "85 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "20 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e005",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "Mild use of accessory muscles to breathe."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e006",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Dullness noted on the right lower lung fields."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e007",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Decreased breath sounds on the right basal areas."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Visible distension."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e010",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Shifting dullness suggestive of ascites."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e011",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Non-tender, fluid wave positive."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-e012",
+      "path": "Physical_Examination_Findings.Pelvic_Examination.Findings",
+      "text": "A palpable mass on the right side of the pelvis."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-025-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "8,500 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "12.8 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "275,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-i004",
+      "path": "Test_Results.Chest_X-Ray.Findings",
+      "text": "Right-sided pleural effusion"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-i005",
+      "path": "Test_Results.Abdominal_Ultrasound.Findings",
+      "text": "Large mass in the right ovary, significant ascites present."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-025-i006",
+      "path": "Test_Results.CA-125.Level",
+      "text": "Normal"
+    }
+  ],
+  "correct_diagnosis": "Meigs syndrome",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

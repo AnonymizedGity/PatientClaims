@@ -1,0 +1,1168 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-043",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 21,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "sore throat",
+        "aliases": [
+          "throat pain"
+        ],
+        "text": "I have a sore throat.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "sore throat: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started two weeks ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "fever",
+        "aliases": [
+          "temperature"
+        ],
+        "text": "I've had a mild fever, but I didn't take my temperature.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "fever: for how long",
+        "parent": "f003",
+        "attribute": "duration",
+        "text": "Over the past 2 weeks.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "tiredness",
+        "aliases": [
+          "fatigue",
+          "energy level"
+        ],
+        "text": "I've been feeling tired.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "tiredness: for how long",
+        "parent": "f005",
+        "attribute": "duration",
+        "text": "For the past 2 weeks.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "swelling or lumps",
+        "aliases": [
+          "swollen glands",
+          "swollen lymph nodes"
+        ],
+        "text": "I have some swelling.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "hematologic",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "swelling or lumps: where",
+        "parent": "f007",
+        "attribute": "location",
+        "value": [
+          "neck"
+        ],
+        "text": "In my neck.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "hematologic",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "swelling or lumps: painful",
+        "parent": "f007",
+        "attribute": "character",
+        "text": "It's a little painful.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "hematologic",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "runny nose",
+        "text": "I haven't had a runny nose.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "cough",
+        "text": "I don't have a cough.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "wheezing",
+        "text": "I haven't been wheezing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "chills",
+        "text": "I haven't had chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "night sweats",
+        "aliases": [
+          "sweating at night"
+        ],
+        "text": "I don't have night sweats.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "rash",
+        "text": "I don't have a rash.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "yellowing of the skin or eyes",
+        "aliases": [
+          "jaundice"
+        ],
+        "text": "I haven't noticed any yellowing of my skin or eyes.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "chest pain",
+        "text": "I don't have chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I haven't been short of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly discomfort"
+        ],
+        "text": "I've had some discomfort in my stomach.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "abdominal pain: location",
+        "parent": "f019",
+        "attribute": "location",
+        "value": [
+          "upper left abdomen"
+        ],
+        "text": "It's here, in the upper left part of my belly.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "abdominal pain: onset",
+        "parent": "f019",
+        "attribute": "onset",
+        "text": "Since yesterday.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "abdominal pain: whether it is constant",
+        "parent": "f019",
+        "attribute": "timing",
+        "text": "It's been there constantly.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "abdominal pain: spread",
+        "parent": "f019",
+        "attribute": "radiation",
+        "text": "It doesn't go anywhere.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "abdominal pain: severity",
+        "parent": "f019",
+        "attribute": "severity",
+        "value": 4,
+        "text": "4 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f025",
+        "item": "abdominal pain: effect of eating",
+        "parent": "f019",
+        "attribute": "other",
+        "text": "Eating doesn't change it.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "abdominal pain: what makes it better",
+        "parent": "f019",
+        "attribute": "relieving",
+        "text": "Nothing helps.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I don't have nausea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't vomited.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "change in bowel habits",
+        "aliases": [
+          "diarrhea",
+          "constipation"
+        ],
+        "text": "My bowel habits haven't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "change in urinary habits",
+        "aliases": [
+          "urinary problems"
+        ],
+        "text": "My urinary habits haven't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "headache",
+        "aliases": [
+          "headaches"
+        ],
+        "text": "I haven't had headaches.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "weight changes",
+        "aliases": [
+          "weight loss"
+        ],
+        "text": "I believe I'm losing weight, although I'm unsure of the amount.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "loss of appetite",
+        "aliases": [
+          "appetite",
+          "appetite changes"
+        ],
+        "text": "I have no desire to eat anything.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "gonorrhea",
+        "aliases": [
+          "sexually transmitted disease",
+          "STD"
+        ],
+        "text": "I had gonorrhea 4 months ago, and I was cured after a course of antibiotics.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f035",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I haven't had any surgeries.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medications"
+        ],
+        "text": "I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "acetaminophen",
+        "aliases": [
+          "Tylenol",
+          "current medications"
+        ],
+        "text": "I take acetaminophen.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "parents' health",
+        "aliases": [
+          "father's health",
+          "mother's health"
+        ],
+        "text": "My father and mother are alive and in good health.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "other relatives' health",
+        "aliases": [
+          "illnesses in the family"
+        ],
+        "text": "Everyone else in my family is healthy as well.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "alcohol: how often",
+        "parent": "f040",
+        "attribute": "frequency",
+        "text": "On weekends.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "recreational drugs",
+        "aliases": [
+          "street drugs"
+        ],
+        "text": "I don't use recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "smoking: how much",
+        "parent": "f043",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "smoking: when you started",
+        "parent": "f043",
+        "attribute": "onset",
+        "text": "I began at 15 years old.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "sexual activity",
+        "aliases": [
+          "sexually active"
+        ],
+        "text": "I'm sexually active with my new girlfriend.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "sexual activity: men, women or both",
+        "parent": "f046",
+        "attribute": "other",
+        "aliases": [
+          "sex with men"
+        ],
+        "text": "Both men and women.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "sexual activity: number of partners in the past year",
+        "parent": "f046",
+        "attribute": "quantity",
+        "value": 3,
+        "text": "Three.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "condom use",
+        "aliases": [
+          "safe sex",
+          "protection"
+        ],
+        "text": "I use condoms.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "contact with people with similar symptoms",
+        "aliases": [
+          "sick contacts"
+        ],
+        "text": "My ex-girlfriend had similar symptoms two months ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f051",
+        "item": "contact with similar symptoms: how that person is now",
+        "parent": "f050",
+        "attribute": "other",
+        "text": "I'm not aware of her current condition, since we ended our relationship around that time.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f052",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work",
+          "school"
+        ],
+        "text": "I'm in my final year of college. I haven't started working yet.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "relationship status",
+        "text": "I have a new girlfriend.",
+        "polarity": "present",
+        "category": "social_background"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-043",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "99°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "15/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "75/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "In no acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "ent",
+        "name": "nose, mouth and throat examination",
+        "aliases": [
+          "throat",
+          "pharynx",
+          "HEENT"
+        ],
+        "result": "Nose, mouth and pharynx within normal limits."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "hematologic",
+        "name": "neck examination",
+        "aliases": [
+          "lymph nodes",
+          "neck lymph nodes"
+        ],
+        "result": "Supple; cervical lymphadenopathy on both sides."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen",
+          "abdominal palpation"
+        ],
+        "result": "Soft, not distended; bowel sounds present in all four quadrants; no enlargement of the liver or spleen; tenderness in the left upper quadrant on palpation."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "skin",
+        "name": "skin examination",
+        "aliases": [
+          "rash",
+          "skin inspection"
+        ],
+        "result": "No rash."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-043",
+    "diagnosis": "Infectious mononucleosis",
+    "aliases": [
+      "mononucleosis",
+      "mono",
+      "infectious mono",
+      "glandular fever",
+      "EBV mononucleosis",
+      "Epstein-Barr virus infection",
+      "kissing disease"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Infectious mononucleosis",
+        "evidence": [
+          "Sore throat for 2 weeks",
+          "Recent history of ill contact",
+          "LUQ pain",
+          "Exam: Left upper quadrant (LUQ) tenderness",
+          "Exam: Lymphadenopathy"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Acute HIV infection",
+        "aliases": [
+          "acute retroviral syndrome",
+          "primary HIV infection",
+          "acute HIV",
+          "HIV seroconversion illness"
+        ],
+        "evidence": [
+          "Sore throat for 2 weeks",
+          "Two sexual partners over the past year, active with men and women",
+          "Treated for gonorrhea 4 months ago"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Streptococcal pharyngitis",
+        "aliases": [
+          "strep throat",
+          "strep pharyngitis",
+          "group A streptococcal pharyngitis",
+          "GAS pharyngitis"
+        ],
+        "evidence": [
+          "Sore throat for 2 weeks",
+          "Low-grade fever",
+          "History of cigarette smoking",
+          "Exam: Lymphadenopathy"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "CMV infection",
+        "note": "Can mimic infectious mononucleosis or acute HIV with fever, lymphadenopathy and fatigue, or be asymptomatic."
+      },
+      {
+        "diagnosis": "Neisseria gonorrhoeae infection",
+        "note": "Listed among other infections that can present with nonspecific symptoms."
+      },
+      {
+        "diagnosis": "Mycoplasma infection",
+        "note": "Can present with nonspecific symptoms, although lower respiratory symptoms usually predominate."
+      },
+      {
+        "diagnosis": "Rubella",
+        "note": "Listed among other infections that can present with nonspecific symptoms."
+      },
+      {
+        "diagnosis": "Chlamydia trachomatis infection",
+        "note": "Listed among other infections that can present with nonspecific symptoms."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-043",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-043-p001"
+      ],
+      "f003": [
+        "medqa-cs-043-p003"
+      ],
+      "f004": [
+        "medqa-cs-043-p003"
+      ],
+      "f005": [
+        "medqa-cs-043-p020"
+      ],
+      "f006": [
+        "medqa-cs-043-p020"
+      ],
+      "f007": [
+        "medqa-cs-043-p006"
+      ],
+      "f008": [
+        "medqa-cs-043-p006"
+      ],
+      "f009": [
+        "medqa-cs-043-p006"
+      ],
+      "f010": [
+        "medqa-cs-043-p002"
+      ],
+      "f011": [
+        "medqa-cs-043-p005"
+      ],
+      "f012": [
+        "note"
+      ],
+      "f013": [
+        "medqa-cs-043-p003"
+      ],
+      "f014": [
+        "medqa-cs-043-p004"
+      ],
+      "f015": [
+        "medqa-cs-043-p007"
+      ],
+      "f016": [
+        "medqa-cs-043-p008"
+      ],
+      "f017": [
+        "medqa-cs-043-p009"
+      ],
+      "f018": [
+        "medqa-cs-043-p010"
+      ],
+      "f019": [
+        "medqa-cs-043-p011"
+      ],
+      "f020": [
+        "medqa-cs-043-p011"
+      ],
+      "f021": [
+        "medqa-cs-043-p011"
+      ],
+      "f022": [
+        "medqa-cs-043-p011"
+      ],
+      "f023": [
+        "medqa-cs-043-p012"
+      ],
+      "f024": [
+        "medqa-cs-043-p013"
+      ],
+      "f025": [
+        "medqa-cs-043-p014"
+      ],
+      "f026": [
+        "medqa-cs-043-p015"
+      ],
+      "f027": [
+        "medqa-cs-043-p016"
+      ],
+      "f028": [
+        "medqa-cs-043-p016"
+      ],
+      "f029": [
+        "medqa-cs-043-p017"
+      ],
+      "f030": [
+        "medqa-cs-043-p018"
+      ],
+      "f031": [
+        "medqa-cs-043-p019"
+      ],
+      "f032": [
+        "medqa-cs-043-p022"
+      ],
+      "f033": [
+        "medqa-cs-043-p023"
+      ],
+      "f034": [
+        "medqa-cs-043-p025",
+        "medqa-cs-043-p036"
+      ],
+      "f035": [
+        "medqa-cs-043-p026"
+      ],
+      "f036": [
+        "medqa-cs-043-p037"
+      ],
+      "f037": [
+        "medqa-cs-043-p024"
+      ],
+      "f038": [
+        "medqa-cs-043-p027"
+      ],
+      "f039": [
+        "medqa-cs-043-p027"
+      ],
+      "f040": [
+        "medqa-cs-043-p029"
+      ],
+      "f041": [
+        "medqa-cs-043-p029"
+      ],
+      "f042": [
+        "medqa-cs-043-p030"
+      ],
+      "f043": [
+        "medqa-cs-043-p031"
+      ],
+      "f044": [
+        "medqa-cs-043-p031"
+      ],
+      "f045": [
+        "medqa-cs-043-p031"
+      ],
+      "f046": [
+        "medqa-cs-043-p032"
+      ],
+      "f047": [
+        "medqa-cs-043-p034"
+      ],
+      "f048": [
+        "medqa-cs-043-p035"
+      ],
+      "f049": [
+        "medqa-cs-043-p033"
+      ],
+      "f050": [
+        "medqa-cs-043-p021"
+      ],
+      "f051": [
+        "medqa-cs-043-p021"
+      ],
+      "f052": [
+        "medqa-cs-043-p028"
+      ],
+      "f053": [
+        "medqa-cs-043-p032"
+      ]
+    },
+    "quotes": {
+      "f001": "I have a sore throat.",
+      "f002": "Two weeks ago.",
+      "f003": "Mild fever over the past 2 weeks, but I didn't take my temperature.",
+      "f004": "over the past 2 weeks",
+      "f005": "I have been feeling tired for the past 2 weeks.",
+      "f006": "for the past 2 weeks.",
+      "f007": "Yes, in my neck (if asked)",
+      "f008": "in my neck (if asked)",
+      "f009": "a little painful (if asked).",
+      "f010": "No.",
+      "f011": "No.",
+      "f012": "he denies any chills, runny nose, cough, night sweats, shortness of breath, or wheezing",
+      "f013": "No chills.",
+      "f014": "No.",
+      "f015": "No.",
+      "f016": "No.",
+      "f017": "No.",
+      "f018": "No.",
+      "f019": "I've had some discomfort here (points to the LUQ) constantly since yesterday.",
+      "f020": "here (points to the LUQ)",
+      "f021": "since yesterday.",
+      "f022": "constantly",
+      "f023": "No.",
+      "f024": "4 out of 10.",
+      "f025": "No change.",
+      "f026": "Nothing helps.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "Yes, I believe I'm losing weight, although I'm unsure of the amount.",
+      "f033": "I have no desire to eat anything.",
+      "f034": "I had gonorrhea 4 months ago. I took some antibiotics. / I had gonorrhea 4 months ago, and I was cured after a course of antibiotics.",
+      "f035": "None.",
+      "f036": "No.",
+      "f037": "Acetaminophen.",
+      "f038": "My father and mother are alive and in good health.",
+      "f039": "Everyone else is healthy as well.",
+      "f040": "Yes, I do on weekends.",
+      "f041": "on weekends.",
+      "f042": "No.",
+      "f043": "Yes, I smoke a pack daily.",
+      "f044": "a pack daily.",
+      "f045": "I began at 15 years old.",
+      "f046": "Yes, with my new girlfriend.",
+      "f047": "Both men and women.",
+      "f048": "Three.",
+      "f049": "Yes.",
+      "f050": "My ex-girlfriend had similar symptoms two months ago.",
+      "f051": "I’m not aware of her current condition since we ended our relationship around that time.",
+      "f052": "I’m currently in my final year of college. I haven't started working yet."
+    },
+    "flags": {
+      "f012": [
+        "Only in the patient note HPI; wheezing is not asked in the script."
+      ],
+      "f053": [
+        "Split off from f046, whose text was the only record of it (fix)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "Blood Pressure (BP): 120/80 mm Hg | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-043-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temperature: 99°F (37°C) | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-043-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "Respiratory Rate (RR): 15/minute | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-043-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "Heart Rate (HR): 75/minute, regular | VS: WNL",
+        "exam_ids": [
+          "medqa-cs-043-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-043-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Nose, mouth, and pharynx within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-043-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Neck: Supple, bilateral cervical lymphadenopathy.",
+        "exam_ids": [
+          "medqa-cs-043-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-043-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-043-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Abdomen: Soft, nondistended, with bowel sounds present (BS x 4 quadrants); no hepatosplenomegaly. LUQ abdominal pain without tenderness on palpation (WO tenderness). | Pretend to have left upper quadrant (LUQ) tenderness on abdominal palpation.",
+        "exam_ids": [
+          "medqa-cs-043-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Skin: No rash.",
+        "exam_ids": [
+          "medqa-cs-043-e008"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x002": [
+        "The source pairs 99°F with 37°C; 99°F is 37.2°C. Kept as written."
+      ],
+      "x010": [
+        "The note exam says 'LUQ abdominal pain without tenderness on palpation'; the SP is told to show LUQ tenderness, and the gold lists 'LUQ tenderness' as an exam finding. The SP-simulated tenderness is used, as the conversion rules require."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "LUQ tenderness conflict: the SP notes tell the SP to show LUQ tenderness on palpation and the gold lists 'LUQ tenderness' as an exam finding, but the note exam (e007) says 'LUQ abdominal pain without tenderness on palpation (WO tenderness)'. The SP-simulated tenderness is the result in x010.",
+      "Gold rank 2 says 'Two sexual partners over the past year'; the patient says three (p035).",
+      "The note says he 'drinks heavily on weekends'; the patient only says he drinks on weekends and does not give an amount (p029). 'Heavily' is not copied.",
+      "The note says 'Two weeks ago, he had a mild fever and fatigue'; the script describes both as ongoing over the past 2 weeks.",
+      "The note denies wheezing, which the script never asks (added as from-note fact f012).",
+      "p006 and p016: the parser joined two doctor lines into one question; the content is intact. p006's answer carries '(if asked)' stage directions, moved to acting notes.",
+      "p015 asks what alleviates or exacerbates the pain; the answer 'Nothing helps.' covers only relief. The note says 'no alleviating or exacerbating factors'.",
+      "Doorway temperature '99°F (37°C)': 99°F is 37.2°C.",
+      "The sample closure addresses 'Mr. Davis'; the opening scenario name is Brian Davia."
+    ],
+    "notes": [
+      "'I have no desire to eat anything' (p023) is a present finding under the item 'loss of appetite' (f033).",
+      "Gonorrhea is one fact from p025 and p036 (resolved, cured with antibiotics) to avoid a duplicate; the irritated 'I told you' goes to acting notes.",
+      "The neck swelling is a patient fact (f007-f009); cervical lymphadenopathy is on the environment side (x007).",
+      "Exacerbating factors for the abdominal pain are left unrecorded because the script answers only about relief (f026).",
+      "The second gold additional-diagnosis bullet ('Other infectious etiologies') is split into one record per named infection.",
+      "Conversion: the '(if asked)' directions in p006 are built into the structure: the swelling parent (f007) only says yes; the neck location (f008) and the slight pain (f009) are children that are given only when asked.",
+      "Conversion: the abdominal discomfort (p011, 'here (points to the LUQ) constantly since yesterday') becomes parent f019 with location (f020, worded as 'the upper left part of my belly' because the patient model cannot point), onset (f021) and constancy (f022) children; radiation, severity, eating and relief are further children.",
+      "Conversion (changed from v1): v1 kept both the note's 'without tenderness' (x014) and the SP's LUQ tenderness (x016). Following CONVERSION.md, the SP-simulated finding wins, so the single abdominal record (x010) reports LUQ tenderness; the conflict stays in source_issues and finding_flags.",
+      "Conversion: the fever (f003), tiredness (f005), alcohol (f040) and smoking (f043) answers are split into parents with duration, frequency, amount and starting-age children; the gender of partners (f047) and number of partners (f048) are children of sexual activity.",
+      "Conversion: the note's 'VS: WNL' (e002) agrees with the doorway values, so it is cited in each doorway vital record rather than kept as a separate 'vital signs' record.",
+      "Harmonisation pass: scale [0, 10] added to f024.",
+      "Fixes: f013 text rewritten; f027 text rewritten; f028 text rewritten; f046 text rewritten; f007 answer word removed; f010 answer word removed; f011 answer word removed; f012 answer word removed; f014 answer word removed; f015 answer word removed; f016 answer word removed; f017 answer word removed; f018 answer word removed; f023 answer word removed; f029 answer word removed; f030 answer word removed; f031 answer word removed; f032 answer word removed; f036 answer word removed; f040 answer word removed; f042 answer word removed; f043 answer word removed; f049 answer word removed; f053 new fact 'relationship status' from f046."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Be rude and defensive.",
+        "Respond curtly with \"yes\" or \"no\".",
+        "Say the swelling is in the neck only if asked where it is, and that it is a little painful only if asked.",
+        "Point to the left upper abdomen when describing the abdominal discomfort.",
+        "When asked about sexually transmitted diseases, answer irritably: \"I told you, I had gonorrhea 4 months ago...\""
+      ],
+      "patient_questions": [
+        "Do you believe I might have AIDS?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

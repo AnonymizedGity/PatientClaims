@@ -1,0 +1,60 @@
+{
+ "case_id": "mcr-test-06180",
+ "pmcid": "PMC11497508",
+ "test_row": 408,
+ "test_index": 6180,
+ "case_prompt": "A 44-year-old man with end-stage kidney disease secondary to congenital oligomeganephronia underwent a living-donor kidney transplant 20 years earlier. Twenty-nine days before presentation, his maintenance immunosuppression (cyclosporine and prednisone) was stopped after an 8-cm clear cell carcinoma was diagnosed in the transplant. Six days before presentation, he received his first doses of nivolumab and ipilimumab.  \n\nHe presented to the emergency department with a 1-day history of fever. Vital signs showed a heart rate of 146 beats per minute; examination revealed tenderness over the transplant site, otherwise unremarkable.  \n\nLaboratory studies demonstrated a serum creatinine concentration of 275 μmol/L (baseline 150–180 μmol/L), urinalysis with 3.0 g/L protein and a small amount of blood, negative urine and blood cultures, and no laboratory evidence of tumor lysis syndrome. Chest radiograph was unremarkable.  \n\nContrast-enhanced CT of the abdomen and pelvis showed minimal interval increase in the size of the transplant mass and transplant renal vein findings consistent with tumor thrombus. Doppler ultrasound confirmed a near-occlusive thrombus in the transplant renal vein.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 44-year-old man with end-stage kidney disease secondary to congenital oligomeganephronia underwent a living-donor kidney transplant 20 years earlier."
+  },
+  {
+   "id": "s002",
+   "text": "Twenty-nine days before presentation, his maintenance immunosuppression (cyclosporine and prednisone) was stopped after an 8-cm clear cell carcinoma was diagnosed in the transplant."
+  },
+  {
+   "id": "s003",
+   "text": "Six days before presentation, he received his first doses of nivolumab and ipilimumab."
+  },
+  {
+   "id": "s004",
+   "text": "He presented to the emergency department with a 1-day history of fever."
+  },
+  {
+   "id": "s005",
+   "text": "Vital signs showed a heart rate of 146 beats per minute; examination revealed tenderness over the transplant site, otherwise unremarkable."
+  },
+  {
+   "id": "s006",
+   "text": "Laboratory studies demonstrated a serum creatinine concentration of 275 μmol/L (baseline 150–180 μmol/L), urinalysis with 3.0 g/L protein and a small amount of blood, negative urine and blood cultures, and no laboratory evidence of tumor lysis syndrome."
+  },
+  {
+   "id": "s007",
+   "text": "Chest radiograph was unremarkable."
+  },
+  {
+   "id": "s008",
+   "text": "Contrast-enhanced CT of the abdomen and pelvis showed minimal interval increase in the size of the transplant mass and transplant renal vein findings consistent with tumor thrombus."
+  },
+  {
+   "id": "s009",
+   "text": "Doppler ultrasound confirmed a near-occlusive thrombus in the transplant renal vein."
+  }
+ ],
+ "final_diagnosis": "acute renal allograft rejection",
+ "diagnostic_reasoning": "1. Considered acute allograft rejection — “Given the sudden decrease in kidney function in the context of recently discontinuing immunosuppression, starting immunotherapy, and the presence of graft-site tenderness, his presentation was felt to be most suspicious for acute allograft rejection…” 2. Considered renal vein thrombosis — “CT of the abdomen and pelvis … showed … transplant renal vein findings consistent with tumor thrombus, and a subsequent ultrasound confirmed a near occlusive thrombus in the transplant renal vein.” 3. Considered tumor lysis syndrome — “There was no laboratory evidence of tumor lysis syndrome.”",
+ "selection": {
+  "age": 44,
+  "sex": "male",
+  "specialty": "nephrology_urology",
+  "dx_key": "acute renal allograft rejection",
+  "setting": "emergency",
+  "time_structure": "single_episode",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "high",
+  "screen_reason": "Fever, graft tenderness and rising creatinine after stopping immunosuppression and starting checkpoint inhibitors point directly to acute rejection.",
+  "second_look_note": "Fever, graft tenderness and rising creatinine after stopping immunosuppression and starting checkpoint inhibitors; the medication history carries the diagnosis."
+ }
+}

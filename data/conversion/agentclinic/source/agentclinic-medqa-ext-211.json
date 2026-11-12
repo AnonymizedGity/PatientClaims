@@ -1,0 +1,133 @@
+{
+  "case_id": "agentclinic-medqa-ext-211",
+  "source_row": 211,
+  "demographics_text": "20-year-old male college student",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with symptoms of acute gastrointestinal illness.",
+  "chief_complaint": "Abdominal cramps",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-211-p001",
+      "field": "History",
+      "text": "The patient presents with abdominal cramps, nausea, vomiting, and diarrhea that began suddenly 2 hours ago. He reports eating reheated food from the afternoon, approximately 1 hour before symptom onset."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-211-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-211-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Vomiting"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-211-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Diarrhea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-211-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. No known food allergies."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-211-p006",
+      "field": "Social_History",
+      "text": "College student living in dormitories. No recent travel history. Reports being in the middle of exam period and experiencing high stress levels."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-211-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, blood in stool, headache, or any urinary symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "90/78 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "106 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "15 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic throughout, without peritoneal signs."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Diffuse tenderness, no rebound or guarding."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i004",
+      "path": "Test_Results.Stool_Culture",
+      "text": "Pending (not available at the time of initial assessment)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i005",
+      "path": "Test_Results.Electrolytes.Sodium",
+      "text": "Slightly low"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i006",
+      "path": "Test_Results.Electrolytes.Potassium",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i007",
+      "path": "Test_Results.Electrolytes.Chloride",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-211-i008",
+      "path": "Test_Results.Imaging.Abdominal_X-Ray.Findings",
+      "text": "No evidence of obstruction or free air under the diaphragm."
+    }
+  ],
+  "correct_diagnosis": "Bacillus cereus infection",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

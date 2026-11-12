@@ -1,0 +1,277 @@
+{
+  "case_id": "medqa-cs-001",
+  "source_case_id": 1,
+  "opening_scenario": "Joseph Shorr, a 46-year-old male, comes to the ED complaining of chest pain.",
+  "doorway_vital_signs": [
+    "BP: 165/85 mm Hg",
+    "Temp: 98.6°F (37°C)",
+    "RR: 22/minute",
+    "HR: 90/minute, regular"
+  ],
+  "sp_notes": [
+    "Lie on the bed and exhibit pain.",
+    "Place your hand in the middle of your chest.",
+    "Exhibit difficulty breathing.",
+    "If ECG is mentioned by the examinee, ask, \"What's an ECG?\""
+  ],
+  "challenging_questions": [
+    "Is it a myocardial infarction? Am I at risk of death?"
+  ],
+  "chief_complaint": {
+    "topic": "Chief complaint",
+    "question": "What concerns you most today?",
+    "answer": "I have chest pain."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-001-p001",
+      "topic": "Onset",
+      "question": "When did your chest pain first begin?",
+      "answer": "Forty minutes ago."
+    },
+    {
+      "fact_id": "medqa-cs-001-p002",
+      "topic": "Precipitating events",
+      "question": "Were you doing anything in particular when the pain began?",
+      "answer": "Nothing; I was asleep and woke up at 5:00 in the morning having this pain."
+    },
+    {
+      "fact_id": "medqa-cs-001-p003",
+      "topic": "Progression",
+      "question": "Has the intensity of the pain increased or decreased since it first started?",
+      "answer": "It remains consistently severe."
+    },
+    {
+      "fact_id": "medqa-cs-001-p004",
+      "topic": "Severity on a scale",
+      "question": "How would you rate your current chest pain on a scale from 0 to 10, where 0 means no pain and 10 indicates the most severe pain imaginable?",
+      "answer": "7 out of 10."
+    },
+    {
+      "fact_id": "medqa-cs-001-p005",
+      "topic": "Location",
+      "question": "Please show me exactly where you feel the pain.",
+      "answer": "Middle of the chest. It feels as if it's right underneath the bone."
+    },
+    {
+      "fact_id": "medqa-cs-001-p006",
+      "topic": "Radiation",
+      "question": "Does the pain move anywhere?",
+      "answer": "To my neck, upper back, and left arm."
+    },
+    {
+      "fact_id": "medqa-cs-001-p007",
+      "topic": "Quality",
+      "question": "How would you describe the pain?",
+      "answer": "It feels like pressure, as if something is resting on my chest."
+    },
+    {
+      "fact_id": "medqa-cs-001-p008",
+      "topic": "Alleviating/ exacerbating factors",
+      "question": "Is there anything that alleviates or intensifies the pain?",
+      "answer": "No, there isn't."
+    },
+    {
+      "fact_id": "medqa-cs-001-p009",
+      "topic": "Shortness of breath",
+      "question": "Have you had any difficulty breathing?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-001-p010",
+      "topic": "Nausea/vomiting",
+      "question": "Have you had any nausea or vomiting?",
+      "answer": "I feel nauseated, but I didn't vomit."
+    },
+    {
+      "fact_id": "medqa-cs-001-p011",
+      "topic": "Sweating",
+      "question": "Have you noticed any increased sweating?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-001-p012",
+      "topic": "Associated symptoms (cough, wheezing, abdominal pain)",
+      "question": "Have you noticed any other symptoms?",
+      "answer": "No. Cough, wheezing, stomach pain."
+    },
+    {
+      "fact_id": "medqa-cs-001-p013",
+      "topic": "Previous episodes of similar pain",
+      "question": "Have you experienced anything similar to this before?",
+      "answer": "Yes, but it wasn't precisely the same."
+    },
+    {
+      "fact_id": "medqa-cs-001-p014",
+      "topic": "Previous episodes of similar pain",
+      "question": "What makes this episode different from previous episodes?",
+      "answer": "The pain is much worse this time and feels more like pressure than burning."
+    },
+    {
+      "fact_id": "medqa-cs-001-p015",
+      "topic": "Previous episodes of similar pain",
+      "question": "When did you first experience this kind of chest pain?",
+      "answer": "The past 3 months."
+    },
+    {
+      "fact_id": "medqa-cs-001-p016",
+      "topic": "Severity",
+      "question": "How strong was the pain at that moment?",
+      "answer": "Not very severe."
+    },
+    {
+      "fact_id": "medqa-cs-001-p017",
+      "topic": "Frequency",
+      "question": "Since the initial incident, how often do you experience chest pain?",
+      "answer": "I've been having two to three episodes weekly, with each one lasting 5 to 10 minutes."
+    },
+    {
+      "fact_id": "medqa-cs-001-p018",
+      "topic": "Precipitating events",
+      "question": "Do you connect the start of the pain with any specific activities or events?",
+      "answer": "Climbing stairs, intense labor, and large meals."
+    },
+    {
+      "fact_id": "medqa-cs-001-p019",
+      "topic": "Alleviating factors",
+      "question": "Has anything helped to relieve your chest pain in the past?",
+      "answer": "Antacids."
+    },
+    {
+      "fact_id": "medqa-cs-001-p020",
+      "topic": "Associated symptoms",
+      "question": "Have you experienced any additional symptoms during those previous instances of chest pain?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-001-p021",
+      "topic": "Past medical history",
+      "question": "What medical problems do you have?",
+      "answer": "Hypertension for 5 years, treated with a diuretic. High cholesterol, managed with diet; I have not been very compliant with the diet. GERD 10 years ago, treated with antacids."
+    },
+    {
+      "fact_id": "medqa-cs-001-p022",
+      "topic": "Current medications",
+      "question": "What medications do you currently take?",
+      "answer": "Maalox, diuretic."
+    },
+    {
+      "fact_id": "medqa-cs-001-p023",
+      "topic": "Past surgical history",
+      "question": "Have you ever undergone surgery?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-001-p024",
+      "topic": "Family history",
+      "question": "Has anyone in your family been diagnosed with heart disease or suffered a sudden cardiac death or stroke?",
+      "answer": "My father died of lung cancer at age 72. My mother is alive and has a peptic ulcer. No early heart attacks."
+    },
+    {
+      "fact_id": "medqa-cs-001-p025",
+      "topic": "Occupation",
+      "question": "What do you do for a living?",
+      "answer": "Accountant."
+    },
+    {
+      "fact_id": "medqa-cs-001-p026",
+      "topic": "Alcohol use",
+      "question": "Do you consume alcohol?",
+      "answer": "Occasionally."
+    },
+    {
+      "fact_id": "medqa-cs-001-p027",
+      "topic": "Illicit drug use",
+      "question": "Do you ever use any recreational drugs?",
+      "answer": "Cocaine, once a week."
+    },
+    {
+      "fact_id": "medqa-cs-001-p028",
+      "topic": "Duration of cocaine use",
+      "question": "For how long have you been using cocaine?",
+      "answer": "Ten years."
+    },
+    {
+      "fact_id": "medqa-cs-001-p029",
+      "topic": "Last time of cocaine use",
+      "question": "When was the last time you used cocaine?",
+      "answer": "Yesterday afternoon."
+    },
+    {
+      "fact_id": "medqa-cs-001-p030",
+      "topic": "Tobacco",
+      "question": "Do you currently smoke cigarettes or use any tobacco products?",
+      "answer": "I quit three months ago."
+    },
+    {
+      "fact_id": "medqa-cs-001-p031",
+      "topic": "Duration",
+      "question": "For how many years have you been smoking cigarettes?",
+      "answer": "Twenty-five years."
+    },
+    {
+      "fact_id": "medqa-cs-001-p032",
+      "topic": "Amount",
+      "question": "How many packs of cigarettes do you smoke per day?",
+      "answer": "One pack a day."
+    },
+    {
+      "fact_id": "medqa-cs-001-p033",
+      "topic": "Sexual activity",
+      "question": "Are you sexually active?",
+      "answer": "Well, doctor, to be honest, I haven't had sex with my wife for the past 3 months because I get this pain in my chest during sex."
+    },
+    {
+      "fact_id": "medqa-cs-001-p034",
+      "topic": "Exercise",
+      "question": "Do you exercise regularly?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-001-p035",
+      "topic": "Diet",
+      "question": "How would you describe your diet?",
+      "answer": "My doctor gave me a strict diet last year to lower my cholesterol, but I always cheat."
+    },
+    {
+      "fact_id": "medqa-cs-001-p036",
+      "topic": "Drug allergies",
+      "question": "Are you allergic to any medications?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History\nHPI: A 46-year-old male (M) complains of substernal chest pain. The pain started 40 minutes before the patient presented to the ED. The pain woke the patient from sleep at 5:00 AM with a steady pressure sensation (7110) in the middle of his chest that radiated to the left arm, upper back, and neck. Nothing makes it worse or better. Nausea, sweating, and dyspnea are also present. Similar episodes have occurred during the past 3 months, 2-3 times per week. These episodes were precipitated by walking up the stairs, strenuous work, sexual intercourse, and heavy meals. Pain during these episodes was less severe, more burning in quality, lasted for 5-10 minutes, and disappeared spontaneously or after taking antacids.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Maalox, diuretic.\nPMH: HTN, HLD, GERD.\nSH: 1 PPD for 25 years; stopped 3 months ago. Occasional EtOH, occasional cocaine use for 10 years (last used yesterday afternoon). No regular exercise; poorly adherent to diet.\nFH: Noncontributory.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-001-e001",
+      "source_text": "The patient is in severe pain."
+    },
+    {
+      "exam_id": "medqa-cs-001-e002",
+      "source_text": "VS: BP 165/85 mm Hg (both arms), RR 22/minute."
+    },
+    {
+      "exam_id": "medqa-cs-001-e003",
+      "source_text": "Neck: No ND, no bruits."
+    },
+    {
+      "exam_id": "medqa-cs-001-e004",
+      "source_text": "Chest: No tenderness, clear symmetric breath sounds bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-001-e005",
+      "source_text": "Heart: Apical impulse not displaced; RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-001-e006",
+      "source_text": "Abdomen: Soft, non-distended, nontender, + BS x 4 quadrants, no hepatosplenomegaly."
+    },
+    {
+      "exam_id": "medqa-cs-001-e007",
+      "source_text": "Extremities: No peripheral edema, peripheral pulses 2+ and symmetric in upper and lower extremities, no cyanosis or clubbing."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Myocardial ischemia or infarction \nHistory Finding(s): \n-Pressure-like substernal chest pain \n-Pain radiates to left arm, upper back, and neck \n-Pain awakens the patient at night \nPhysical Exam Finding(s):\n-N/A\n\nDiagnosis #2: Cocaine-induced myocardial ischemia \nHistory Finding(s):\n-History of cocaine use \n-Last used yesterday afternoon \n-Pressure-like substernal chest pain \nPhysical Exam Finding(s):\n-N/A\n\nDiagnosis #3: GERD \nHistory Finding(s): \n-Pain in midchest \n-Previous pain was relieved by antacids \n-Previous pain occurred after heavy meals \nPhysical Exam Finding(s):\n-N/A",
+  "gold_additional_diagnosis": "-Aortic dissection: With the sudden onset of severe chest pain, aortic dissection should be suspected given the high potential for death if missed (and the potential for harm if mistaken for acute MI and treated with thrombolytic therapy). However, the patient's pain is not the classic sudden, tearing chest pain that radiates to the back. In addition, his peripheral pulses and blood pressures are not diminished or unequal, and there is no aortic regurgitant murmur (although physical exam findings have poor sensitivity and specificity to diagnose aortic dissection).\n-Boerhaave syndrome: The acute onset of severe pain is consistent with esophageal rupture. Although this patient lacks typical risk factors, such as alcoholism, vomiting, or prior endoscopic procedures, given the high mortality rate of Boerhaave syndrome, it is important to rule out.\n-Pericarditis: The absence of pain that changes with position or respiration and the absence of a pericardial friction rub make pericarditis less likely.\n-Pneumothorax: This diagnosis should be considered in a patient with acute chest pain and difficulty breathing, but it is less likely in this case given that breath sounds are symmetric.\n-Pulmonary embolism: As above, this is on the differential for acute chest pain and difficulty breathing, but this patient has no apparent risk factors for pulmonary embolism.\n-Costochondritis (or other musculoskeletal chest pain): This is more typically associated with pain on palpation of the chest or pleuritic pain.",
+  "raw_opening": "Opening Scenario:\n\nJoseph Shorr, a 46-year-old male, comes to the ED complaining of chest pain.\n\nVital Signs:\n\nBP: 165/85 mm Hg \nTemp: 98.6°F (37°C) \nRR: 22/minute \nHR: 90/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\nPatient - a 46-year-old male.\n\nNotes for the SP:\n- Lie on the bed and exhibit pain.\n- Place your hand in the middle of your chest.\n- Exhibit difficulty breathing.\n- If ECG is mentioned by the examinee, ask, \"What's an ECG?\"\n\nChallenging Questions to Ask:\nIs it a myocardial infarction? Am I at risk of death?\n\nSample Examinee Response:\n\"Your chest pain is of significant concern. Chest pain can stem from a wide range of conditions.. We need to gather more information to determine whether your pain poses a risk to your life..\"\n\nExaminee Checklist:\n\nEntrance:\n- Examinee made eye contact with the SP.\n- Examinee correctly used the patient's name.\n- Examinee introduced themselves by name.\n- Examinee identified their role or position.\n\nReflective Listening:\n- Examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- Examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n- The examinee elicited data efficiently and accurately.\n\nConnecting With the Patient:\n- The examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief complaint: \nDoctor: \"What concerns you most today?\" \nPatient: \"I have chest pain.\"\n\nOnset: \nDoctor: \"When did your chest pain first begin?\" \nPatient: \"Forty minutes ago.\"\n\nPrecipitating events: \nDoctor: \"Were you doing anything in particular when the pain began?\" \nPatient: \"Nothing; I was asleep and woke up at 5:00 in the morning having this pain.\"\n\nProgression: \nDoctor: \"Has the intensity of the pain increased or decreased since it first started?\" \nPatient: \"It remains consistently severe.\"\n\nSeverity on a scale: \nDoctor: \"How would you rate your current chest pain on a scale from 0 to 10, where 0 means no pain and 10 indicates the most severe pain imaginable?\" \nPatient: \"7 out of 10.\"\n\nLocation: \nDoctor: \"Please show me exactly where you feel the pain.\" \nPatient: \"Middle of the chest. It feels as if it's right underneath the bone.\"\n\nRadiation: \nDoctor: \"Does the pain move anywhere?\" \nPatient: \"To my neck, upper back, and left arm.\"\n\nQuality: \nDoctor: \"How would you describe the pain?\" \nPatient: \"It feels like pressure, as if something is resting on my chest.\"\n\nAlleviating/ exacerbating factors: \nDoctor: \"Is there anything that alleviates or intensifies the pain?\" \nPatient: \"No, there isn't.\"\n\nShortness of breath: \nDoctor: \"Have you had any difficulty breathing?\" \nPatient: \"Yes.\"\n\nNausea/vomiting: \nDoctor: \"Have you had any nausea or vomiting?\" \nPatient: \"I feel nauseated, but I didn't vomit.\"\n\nSweating: \nDoctor: \"Have you noticed any increased sweating?\" \nPatient: \"Yes.\"\n\nAssociated symptoms (cough, wheezing, abdominal pain): \nDoctor: \"Have you noticed any other symptoms?\" \nPatient: \"No. Cough, wheezing, stomach pain.\"\n\nPrevious episodes of similar pain: \nDoctor: \"Have you experienced anything similar to this before?\" \nPatient: \"Yes, but it wasn't precisely the same.\"\n\n\"What makes this episode different from previous episodes?\" \nPatient: \"The pain is much worse this time and feels more like pressure than burning.\"\n\n\"When did you first experience this kind of chest pain?\" \nPatient: \"The past 3 months.\"\n\nSeverity: \nDoctor: \"How strong was the pain at that moment?\" \nPatient: \"Not very severe.\"\n\nFrequency: \nDoctor: \"Since the initial incident, how often do you experience chest pain?\" \nPatient: \"I've been having two to three episodes weekly, with each one lasting 5 to 10 minutes.\"\n\nPrecipitating events: \nDoctor: \"Do you connect the start of the pain with any specific activities or events?\" \nPatient: \"Climbing stairs, intense labor, and large meals.\"\n\nAlleviating factors: \nDoctor: \"Has anything helped to relieve your chest pain in the past?\" \nPatient: \"Antacids.\"\n\nAssociated symptoms: \nDoctor: \"Have you experienced any additional symptoms during those previous instances of chest pain?\" \nPatient: \"No.\"\n\nPast medical history: \nDoctor: \"What medical problems do you have?\" \nPatient: \"Hypertension for 5 years, treated with a diuretic. High cholesterol, managed with diet; I have not been very compliant with the diet. GERD 10 years ago, treated with antacids.\"\n\nCurrent medications: \nDoctor: \"What medications do you currently take?\" \nPatient: \"Maalox, diuretic.\"\n\nPast surgical history: \nDoctor: \"Have you ever undergone surgery?\" \nPatient: \"No.\"\n\nFamily history: \nDoctor: \"Has anyone in your family been diagnosed with heart disease or suffered a sudden cardiac death or stroke?\" \nPatient: \"My father died of lung cancer at age 72. My mother is alive and has a peptic ulcer. No early heart attacks.\"\n\nOccupation: \nDoctor: \"What do you do for a living?\" \nPatient: \"Accountant.\"\n\nAlcohol use: \nDoctor: \"Do you consume alcohol?\" \nPatient: \"Occasionally.\"\n\nIllicit drug use: \nDoctor: \"Do you ever use any recreational drugs?\" \nPatient: \"Cocaine, once a week.\"\n\nDuration of cocaine use: \nDoctor: \"For how long have you been using cocaine?\" \nPatient: \"Ten years.\"\n\nLast time of cocaine use: \nDoctor: \"When was the last time you used cocaine?\" \nPatient: \"Yesterday afternoon.\"\n\nTobacco: \nDoctor: \"Do you currently smoke cigarettes or use any tobacco products?\" \nPatient: \"I quit three months ago.\"\n\nDuration: \nDoctor: \"For how many years have you been smoking cigarettes?\" \nPatient: \"Twenty-five years.\"\n\nAmount: \nDoctor: \"How many packs of cigarettes do you smoke per day?\" \nPatient: \"One pack a day.\"\n\nSexual activity: \nDoctor: \"Are you sexually active?\" \nPatient: \"Well, doctor, to be honest, I haven't had sex with my wife for the past 3 months because I get this pain in my chest during sex.\"\n\nExercise: \nDoctor: \"Do you exercise regularly?\" \nPatient: \"No.\"\n\nDiet: \nDoctor: \"How would you describe your diet?\" \nPatient: \"My doctor gave me a strict diet last year to lower my cholesterol, but I always cheat.\"\n\nDrug allergies: \nDoctor: \"Are you allergic to any medications?\" \nPatient: \"No.\"\n\nPhysical Examination:\n\n- Examinee washed their hands.\n- Examinee asked permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- Neck examination: JVD, carotid auscultation\n- Ocular examination: auscultation, palpation\n- Pulmonary examination: auscultation, palpation, percussion\n- Abdominal exam: auscultation, palpation, percussion\n- Extremities: Checked peripheral pulses, checked blood pressure in both arms, looked for edema and cyanosis\n\nSample Closure:\n\n\"Mr. Your pain may originate from a cardiac issue like a heart attack, or it could result from acid reflux, pulmonary conditions, or disorders affecting the major blood vessels in your chest.. It is essential to conduct tests to determine the origin of your issue..\n We will start with an ECG and some blood work, but more complex tests may be needed as well.\n In the meantime, I strongly recommend that you stop using cocaine, since use of this drug can\n lead to a variety of medical problems, including heart attacks. I applaud your decision to quit smoking and urge you to maintain this commitment, as cigarette use is linked to a deterioration of cardiovascular health and an elevated risk of future heart attacks..\n  Do you have any questions for me?\"\n\nClosure:\n\n- The examinee discussed initial diagnostic impressions.\n- The examinee discussed initial management plans:\n  - Follow-up tests.\n  - Lifestyle modification (diet, exercise).\n- The examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory\nHPI: A 46-year-old male (M) complains of substernal chest pain. The pain started 40 minutes before the patient presented to the ED. The pain woke the patient from sleep at 5:00 AM with a steady pressure sensation (7110) in the middle of his chest that radiated to the left arm, upper back, and neck. Nothing makes it worse or better. Nausea, sweating, and dyspnea are also present. Similar episodes have occurred during the past 3 months, 2-3 times per week. These episodes were precipitated by walking up the stairs, strenuous work, sexual intercourse, and heavy meals. Pain during these episodes was less severe, more burning in quality, lasted for 5-10 minutes, and disappeared spontaneously or after taking antacids.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Maalox, diuretic.\nPMH: HTN, HLD, GERD.\nSH: 1 PPD for 25 years; stopped 3 months ago. Occasional EtOH, occasional cocaine use for 10 years (last used yesterday afternoon). No regular exercise; poorly adherent to diet.\nFH: Noncontributory.\n\nPhysical Examination:\nThe patient is in severe pain.\nVS: BP 165/85 mm Hg (both arms), RR 22/minute.\nNeck: No ND, no bruits.\nChest: No tenderness, clear symmetric breath sounds bilaterally.\nHeart: Apical impulse not displaced; RRR; S1/S2 WNL; no murmurs, rubs, or gallops.\nAbdomen: Soft, non-distended, nontender, + BS x 4 quadrants, no hepatosplenomegaly.\nExtremities: No peripheral edema, peripheral pulses 2+ and symmetric in upper and lower extremities, no cyanosis or clubbing."
+}

@@ -1,0 +1,122 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-090",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 70, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "hand tremor", "aliases": ["tremor", "shaking hands", "shaky hands"], "text": "My hand shakes.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "hand tremor: which side", "parent": "f001", "attribute": "location", "text": "It's worse in my left hand.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "hand tremor: when it happens", "parent": "f001", "attribute": "timing", "text": "It happens when my hand is at rest.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "hand tremor: onset", "parent": "f001", "attribute": "onset", "text": "I first noticed it in my left hand a year ago.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "hand tremor: course", "parent": "f001", "attribute": "course", "text": "It's been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "difficulty with tasks that need steadiness", "aliases": ["trouble reading", "trouble with fine tasks"], "text": "Recently I've had trouble with tasks that need steadiness, like reading.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f007", "item": "memory problems", "aliases": ["forgetfulness", "memory decline", "memory loss"], "text": "My wife says my memory has been getting worse.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "difficulty managing finances", "aliases": ["paying bills", "managing money"], "text": "My wife noticed I was forgetting to pay the bills, so she's had to take that over.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f009", "item": "soft voice", "aliases": ["soft speech", "quiet voice", "speaking quietly"], "text": "My voice has become soft.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f010", "item": "high blood pressure", "aliases": ["hypertension", "HTN"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "aspirin", "text": "I take aspirin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "amlodipine", "aliases": ["blood pressure medicine"], "text": "I take amlodipine for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "other medical or psychiatric problems", "aliases": ["past medical history", "psychiatric history"], "text": "Apart from my blood pressure, I don't have any significant medical or psychiatric history.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "mother's health", "aliases": ["family history", "mental illness in the family", "schizophrenia in the family"], "text": "My mother has a history of schizophrenia.", "polarity": "present", "category": "family_history"},
+      {"id": "f015", "item": "alcohol", "aliases": ["drinking", "beer"], "text": "I drink 1 to 2 beers every night.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "smoking", "aliases": ["cigars", "tobacco"], "text": "I used to smoke cigars.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f017", "item": "spouse", "aliases": ["wife", "married", "who came with me"], "text": "My wife came with me today.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f018", "item": "other physical symptoms", "aliases": ["other symptoms"], "text": "I don't have any other physical complaints.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f019", "item": "urinary symptoms", "aliases": ["urinary problems", "trouble urinating"], "text": "I haven't had any problems with urination.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f020", "item": "change in bowel habits", "aliases": ["bowel changes", "constipation"], "text": "My bowel habits haven't changed significantly.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f021", "item": "falls", "aliases": ["falling"], "text": "I haven't had any falls.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f022", "item": "dizziness", "text": "I haven't been dizzy.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-090",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "140/85 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x004", "kind": "vital", "name": "temperature", "result": "36.7°C (98.06°F)"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "facial expression", "aliases": ["face", "facial appearance"], "result": "Reduced."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "speech", "aliases": ["voice", "speech assessment"], "result": "Soft and monotonous."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "tremor assessment", "aliases": ["tremor", "left hand examination", "hand examination", "observation of the hands"], "result": "Left hand: resting tremor, worsened by emotional stress or concentration."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "muscle tone", "aliases": ["tone", "rigidity", "passive movement of the arms", "upper extremity tone"], "result": "Mild rigidity on manipulation of both upper extremities."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets"], "result": "WBC 7,500/μL; hemoglobin 14 g/dL; platelets 230,000/μL."},
+      {"id": "x010", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "thyroid panel", "TSH", "free T4"], "result": "TSH 2.5 mIU/L; free T4 1.2 ng/dL."},
+      {"id": "x011", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "MRI head", "head imaging"], "result": "No acute abnormalities; mild age-appropriate cerebral atrophy."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-090",
+    "diagnosis": "Parkinson disease",
+    "aliases": ["Parkinson's disease", "PD", "idiopathic Parkinson disease", "idiopathic Parkinson's disease", "paralysis agitans"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-090",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-090-p001"],
+      "f002": ["cc"],
+      "f003": ["cc"],
+      "f004": ["agentclinic-medqa-ext-090-p001"],
+      "f005": ["agentclinic-medqa-ext-090-p001"],
+      "f006": ["agentclinic-medqa-ext-090-p001"],
+      "f007": ["agentclinic-medqa-ext-090-p001", "agentclinic-medqa-ext-090-p004"],
+      "f008": ["agentclinic-medqa-ext-090-p001", "agentclinic-medqa-ext-090-p005"],
+      "f009": ["agentclinic-medqa-ext-090-p002"],
+      "f010": ["agentclinic-medqa-ext-090-p006"],
+      "f011": ["agentclinic-medqa-ext-090-p006"],
+      "f012": ["agentclinic-medqa-ext-090-p006"],
+      "f013": ["agentclinic-medqa-ext-090-p006"],
+      "f014": ["agentclinic-medqa-ext-090-p006"],
+      "f015": ["agentclinic-medqa-ext-090-p007"],
+      "f016": ["agentclinic-medqa-ext-090-p007"],
+      "f017": ["agentclinic-medqa-ext-090-p001"],
+      "f018": ["agentclinic-medqa-ext-090-p008"],
+      "f019": ["agentclinic-medqa-ext-090-p008"],
+      "f020": ["agentclinic-medqa-ext-090-p008"],
+      "f021": ["agentclinic-medqa-ext-090-p008"],
+      "f022": ["agentclinic-medqa-ext-090-p008"]
+    },
+    "quotes": {
+      "f002": "worse on the left hand",
+      "f003": "Resting tremor",
+      "f004": "first noticed the tremor in his left hand 1 year ago",
+      "f005": "progressively worsening",
+      "f006": "difficulty in performing tasks that require steadiness, such as reading",
+      "f007": "His wife has observed a decline in his memory",
+      "f008": "forgetfulness in paying bills, a task she has since had to assume",
+      "f009": "Soft speech",
+      "f012": "medicated with aspirin and amlodipine",
+      "f013": "No other significant medical or psychiatric history.",
+      "f014": "Family history of schizophrenia in his mother",
+      "f015": "Drinks 1-2 beers nightly",
+      "f016": "former cigar smoker",
+      "f020": "no significant changes in bowel habits",
+      "f021": "no reported falls"
+    },
+    "flags": {
+      "f017": ["Only from the demographics line ('accompanied by his wife') and the history; cited to p001, which mentions the wife."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "140/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-090-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-090-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-090-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98.06°F)", "exam_ids": ["agentclinic-medqa-ext-090-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Facial_Expression", "source_text": "Reduced", "exam_ids": ["agentclinic-medqa-ext-090-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Speech", "source_text": "Soft and monotonous", "exam_ids": ["agentclinic-medqa-ext-090-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Left_Hand", "source_text": "Resting tremor present, worsened by emotional stress or concentration", "exam_ids": ["agentclinic-medqa-ext-090-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Upper_Extremities.Rigidity", "source_text": "Mild rigidity noted during manipulation of bilateral upper extremities", "exam_ids": ["agentclinic-medqa-ext-090-e008"]},
+      "x009": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "7,500 /μL | 14 g/dL | 230,000 /μL", "exam_ids": ["agentclinic-medqa-ext-090-i001", "agentclinic-medqa-ext-090-i002", "agentclinic-medqa-ext-090-i003"]},
+      "x010": {"source": "Test_Results.Thyroid_Function_Tests.TSH + Test_Results.Thyroid_Function_Tests.Free_T4", "source_text": "2.5 mIU/L | 1.2 ng/dL", "exam_ids": ["agentclinic-medqa-ext-090-i004", "agentclinic-medqa-ext-090-i005"]},
+      "x011": {"source": "Test_Results.Brain_MRI.Findings", "source_text": "No acute abnormalities. Mild age-appropriate cerebral atrophy.", "exam_ids": ["agentclinic-medqa-ext-090-i006"]}
+    },
+    "leakage": [],
+    "source_issues": ["Past_Medical_History says the hypertension is 'medicated with aspirin and amlodipine'; aspirin is not an antihypertensive. The facts list both drugs, tying only amlodipine to blood pressure.", "The chief complaint says the tremor is 'worse on the left hand' (implying both hands), while the history and exam describe only the left hand."],
+    "notes": ["The wife's observations (memory decline, forgetting to pay bills) are written as what the patient was told or noticed through her ('My wife says...').", "'Reduced facial expressions' (p003) is an observer-only sign already in the exam (x005), so it is excluded; the soft voice (p002) is kept as something the patient notices, and the exam also gives it (x006).", "Gold aliases exclude 'parkinsonism' (broader)."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with hand tremors and recent memory issues."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-090-p003", "reason": "Reduced facial expression is an observer-only sign; already in the exam (x005)."}
+    ]
+  }
+}

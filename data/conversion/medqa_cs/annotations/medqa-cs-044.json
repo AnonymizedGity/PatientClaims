@@ -1,0 +1,943 @@
+{
+  "case_id": "medqa-cs-044",
+  "demographics": {
+    "name": "Jay Keller",
+    "age": 49,
+    "sex": "male",
+    "setting": "emergency department"
+  },
+  "opening_fact": {
+    "text": "I fainted.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-044-f001",
+      "source_ids": [
+        "cc",
+        "medqa-cs-044-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Earlier this morning he fainted: he unexpectedly collapsed and lost consciousness.",
+      "quote": "I fainted. / Earlier this morning, while carrying groceries to the car with my wife, I unexpectedly collapsed and lost consciousness."
+    },
+    {
+      "id": "medqa-cs-044-f002",
+      "source_ids": [
+        "medqa-cs-044-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "He was carrying groceries to the car with his wife when it happened.",
+      "quote": "while carrying groceries to the car with my wife"
+    },
+    {
+      "id": "medqa-cs-044-f003",
+      "source_ids": [
+        "medqa-cs-044-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Thinks he lost consciousness first and then fell to the ground.",
+      "quote": "I think I lost consciousness and then fell down on the ground."
+    },
+    {
+      "id": "medqa-cs-044-f004",
+      "source_ids": [
+        "medqa-cs-044-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "His wife told him he did not respond to her for several minutes.",
+      "quote": "My wife told me that I did not respond to her for several minutes."
+    },
+    {
+      "id": "medqa-cs-044-f005",
+      "source_ids": [
+        "medqa-cs-044-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "His heart started racing just before he fell.",
+      "quote": "Yes, just before I fell down, my heart started racing."
+    },
+    {
+      "id": "medqa-cs-044-f006",
+      "source_ids": [
+        "medqa-cs-044-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Noticed nothing out of the ordinary before he fell, such as sounds, odors, or lights.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f007",
+      "source_ids": [
+        "medqa-cs-044-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Felt lightheaded right before the fall.",
+      "quote": "I felt lightheaded right before the fall."
+    },
+    {
+      "id": "medqa-cs-044-f008",
+      "source_ids": [
+        "medqa-cs-044-p007",
+        "medqa-cs-044-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "His wife said his arms and legs began to tremble after he collapsed and that this lasted about 30 seconds.",
+      "quote": "Yes, my wife mentioned that my arms and legs began to tremble after I collapsed. / She indicated it lasted approximately 30 seconds."
+    },
+    {
+      "id": "medqa-cs-044-f009",
+      "source_ids": [
+        "medqa-cs-044-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Did not bite his tongue.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f010",
+      "source_ids": [
+        "medqa-cs-044-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Did not lose control of his bladder.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f011",
+      "source_ids": [
+        "medqa-cs-044-p011",
+        "medqa-cs-044-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No weakness.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f012",
+      "source_ids": [
+        "medqa-cs-044-p011",
+        "medqa-cs-044-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No numbness.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f013",
+      "source_ids": [
+        "medqa-cs-044-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No problems with speech.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f014",
+      "source_ids": [
+        "medqa-cs-044-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No confusion on waking up after the episode.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f015",
+      "source_ids": [
+        "medqa-cs-044-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No headaches.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f016",
+      "source_ids": [
+        "medqa-cs-044-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No chest pain.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f017",
+      "source_ids": [
+        "medqa-cs-044-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No shortness of breath.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f018",
+      "source_ids": [
+        "medqa-cs-044-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No abdominal pain.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f019",
+      "source_ids": [
+        "medqa-cs-044-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No nausea.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f020",
+      "source_ids": [
+        "medqa-cs-044-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vomiting.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f021",
+      "source_ids": [
+        "medqa-cs-044-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No diarrhea.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f022",
+      "source_ids": [
+        "medqa-cs-044-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No constipation.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f023",
+      "source_ids": [
+        "medqa-cs-044-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No injuries to his head.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f024",
+      "source_ids": [
+        "medqa-cs-044-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No similar falls, lightheadedness, or passing out in the past.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f025",
+      "source_ids": [
+        "medqa-cs-044-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No trouble walking.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f026",
+      "source_ids": [
+        "medqa-cs-044-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in vision.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f027",
+      "source_ids": [
+        "medqa-cs-044-p021"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in weight.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f028",
+      "source_ids": [
+        "medqa-cs-044-p022"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in appetite.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f029",
+      "source_ids": [
+        "medqa-cs-044-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes hydrochlorothiazide.",
+      "quote": "Hydrochlorothiazide"
+    },
+    {
+      "id": "medqa-cs-044-f030",
+      "source_ids": [
+        "medqa-cs-044-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes captopril.",
+      "quote": "captopril"
+    },
+    {
+      "id": "medqa-cs-044-f031",
+      "source_ids": [
+        "medqa-cs-044-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes aspirin.",
+      "quote": "aspirin"
+    },
+    {
+      "id": "medqa-cs-044-f032",
+      "source_ids": [
+        "medqa-cs-044-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes atenolol.",
+      "quote": "atenolol."
+    },
+    {
+      "id": "medqa-cs-044-f033",
+      "source_ids": [
+        "medqa-cs-044-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "High blood pressure for the past 15 years.",
+      "quote": "High blood pressure for the past 15 years"
+    },
+    {
+      "id": "medqa-cs-044-f034",
+      "source_ids": [
+        "medqa-cs-044-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Had a heart attack 1 year ago.",
+      "quote": "heart attack 1 year ago."
+    },
+    {
+      "id": "medqa-cs-044-f035",
+      "source_ids": [
+        "medqa-cs-044-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Had his appendix removed (date not given).",
+      "quote": "Removal of the appendix."
+    },
+    {
+      "id": "medqa-cs-044-f036",
+      "source_ids": [
+        "medqa-cs-044-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father died of a heart attack at age 55.",
+      "quote": "My father died from a heart attack at age 55"
+    },
+    {
+      "id": "medqa-cs-044-f037",
+      "source_ids": [
+        "medqa-cs-044-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Mother has died; he says she 'died in good health' (cause and age not given).",
+      "quote": "my mother died in good health.",
+      "flags": [
+        "Wording is odd and may be a corruption of 'my mother is alive and in good health'; recorded literally."
+      ]
+    },
+    {
+      "id": "medqa-cs-044-f038",
+      "source_ids": [
+        "medqa-cs-044-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as a librarian.",
+      "quote": "I work as a librarian."
+    },
+    {
+      "id": "medqa-cs-044-f039",
+      "source_ids": [
+        "medqa-cs-044-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinks three to four beers a week.",
+      "quote": "Yes, I drink three to four beers a week."
+    },
+    {
+      "id": "medqa-cs-044-f040",
+      "source_ids": [
+        "medqa-cs-044-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not use recreational substances.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-044-f041",
+      "source_ids": [
+        "medqa-cs-044-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Former smoker; quit a year ago.",
+      "quote": "No, I stopped a year ago."
+    },
+    {
+      "id": "medqa-cs-044-f042",
+      "source_ids": [
+        "medqa-cs-044-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Smoked a pack a day for 25 years before quitting.",
+      "quote": "I had smoked a pack a day for the previous 25 years."
+    },
+    {
+      "id": "medqa-cs-044-f043",
+      "source_ids": [
+        "medqa-cs-044-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sexually active with his spouse.",
+      "quote": "Yes, with my spouse."
+    },
+    {
+      "id": "medqa-cs-044-f044",
+      "source_ids": [
+        "medqa-cs-044-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No known drug allergies.",
+      "quote": "No."
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Patient description: married with three children."
+    ],
+    "patient_questions": [
+      "Could I potentially have a brain tumor?"
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "135/85 mm Hg",
+        "source_text": "BP: 135/85 mm Hg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.0°F (36.7°C)",
+        "source_text": "Temp: 98.0°F (36.7°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "16/minute",
+        "source_text": "RR: 16/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "76/minute, regular",
+        "source_text": "HR: 76/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits",
+        "source_text": "VS: Within Normal Limits (WNL), no orthostatic changes."
+      },
+      {
+        "id": "v006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e002"
+        ],
+        "name": "Orthostatic vital signs",
+        "finding": "No orthostatic changes",
+        "source_text": "VS: Within Normal Limits (WNL), no orthostatic changes."
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "In no acute distress",
+        "source_text": "Patient is in no acute distress."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e003"
+        ],
+        "system": "HEENT",
+        "name": "Head",
+        "finding": "Normocephalic, atraumatic",
+        "source_text": "HEENT: Normocephalic/atraumatic (NC/AT), Pupils Equal, Round, and Reactive to Light (PERRLA), no funduscopic abnormalities, no tongue trauma."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e003"
+        ],
+        "system": "HEENT",
+        "name": "Pupils",
+        "finding": "Equal, round, and reactive to light",
+        "source_text": "HEENT: Normocephalic/atraumatic (NC/AT), Pupils Equal, Round, and Reactive to Light (PERRLA), no funduscopic abnormalities, no tongue trauma."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e003"
+        ],
+        "system": "HEENT",
+        "name": "Funduscopy",
+        "finding": "No funduscopic abnormalities",
+        "source_text": "HEENT: Normocephalic/atraumatic (NC/AT), Pupils Equal, Round, and Reactive to Light (PERRLA), no funduscopic abnormalities, no tongue trauma."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e003"
+        ],
+        "system": "HEENT",
+        "name": "Tongue",
+        "finding": "No tongue trauma",
+        "source_text": "HEENT: Normocephalic/atraumatic (NC/AT), Pupils Equal, Round, and Reactive to Light (PERRLA), no funduscopic abnormalities, no tongue trauma."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e004"
+        ],
+        "system": "Neck",
+        "name": "Neck mobility",
+        "finding": "Supple",
+        "source_text": "Neck: Supple, no carotid bruits, 2+ carotid pulses with good upstroke bilaterally, thyroid normal."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e004"
+        ],
+        "system": "Neck",
+        "name": "Carotid auscultation",
+        "finding": "No carotid bruits",
+        "source_text": "Neck: Supple, no carotid bruits, 2+ carotid pulses with good upstroke bilaterally, thyroid normal."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e004"
+        ],
+        "system": "Neck",
+        "name": "Carotid pulses",
+        "finding": "2+ with good upstroke bilaterally",
+        "source_text": "Neck: Supple, no carotid bruits, 2+ carotid pulses with good upstroke bilaterally, thyroid normal."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e004"
+        ],
+        "system": "Neck",
+        "name": "Thyroid",
+        "finding": "Normal thyroid",
+        "source_text": "Neck: Supple, no carotid bruits, 2+ carotid pulses with good upstroke bilaterally, thyroid normal."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e005"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: Clear breath sounds bilaterally."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e006"
+        ],
+        "system": "Heart",
+        "name": "Apical impulse",
+        "finding": "Not displaced",
+        "source_text": "Heart: Apical impulse not displaced; Regular Rate and Rhythm (RRR); S1S2 WNL (Within Normal Limits); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e006"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Apical impulse not displaced; Regular Rate and Rhythm (RRR); S1S2 WNL (Within Normal Limits); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e006"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "S1 and S2 within normal limits",
+        "source_text": "Heart: Apical impulse not displaced; Regular Rate and Rhythm (RRR); S1S2 WNL (Within Normal Limits); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e006"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Apical impulse not displaced; Regular Rate and Rhythm (RRR); S1S2 WNL (Within Normal Limits); no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e007"
+        ],
+        "system": "Extremities",
+        "name": "Peripheral pulses",
+        "finding": "Symmetric 2+ brachial, radial, and dorsalis pedis pulses bilaterally",
+        "source_text": "Extremities: Symmetric 2+ brachial, radial, and dorsalis pedis pulses bilaterally."
+      },
+      {
+        "id": "x016",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Cranial nerves",
+        "finding": "Cranial nerves II–XII grossly intact",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL."
+      },
+      {
+        "id": "x017",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Motor strength",
+        "finding": "5/5 throughout",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL."
+      },
+      {
+        "id": "x018",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Sensation",
+        "finding": "Intact to pinprick and light touch bilaterally",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL."
+      },
+      {
+        "id": "x019",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Deep tendon reflexes",
+        "finding": "Symmetric 2+ in upper and lower extremities",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL."
+      },
+      {
+        "id": "x020",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Babinski sign",
+        "finding": "Babinski sign present bilaterally",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL.",
+        "flags": [
+          "Faithful to the source, but clinically implausible next to an otherwise normal neurological exam (normal strength, sensation, reflexes, gait); likely a source error. Review before use in simulation."
+        ]
+      },
+      {
+        "id": "x021",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Romberg test",
+        "finding": "Within normal limits",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL."
+      },
+      {
+        "id": "x022",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Finger-to-nose test",
+        "finding": "Within normal limits",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL."
+      },
+      {
+        "id": "x023",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-044-e008"
+        ],
+        "system": "Neuro",
+        "name": "Gait",
+        "finding": "Within normal limits",
+        "source_text": "Neuro: Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 throughout. Sensation: Intact to pinprick and soft touch bilaterally. Deep Tendon Reflexes (DTRs): Symmetric 2+ in upper and lower extremities, Babinski sign present bilaterally. Romberg, finger to nose WNL (Within Normal Limits). Gait: WNL."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Convulsive syncope",
+        "history_findings": [
+          "Loss of consciousness lasting several minutes",
+          "Arms and legs shaking for 30 seconds",
+          "No subsequent confusion or weakness"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Cardiac arrhythmia",
+        "history_findings": [
+          "Loss of consciousness preceded by palpitations and lightheadedness",
+          "Taking a β-blocker (atenolol)",
+          "No subsequent confusion or weakness",
+          "History of MI"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Seizure",
+        "history_findings": [
+          "Loss of consciousness lasting several minutes",
+          "Arms and legs shaking for 30 seconds",
+          "Sudden onset"
+        ],
+        "exam_findings": []
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Vasovagal syncope",
+        "rationale": "Usually triggered by emotional stress or pain and heralded by nausea, sweating, pallor and feeling faint."
+      },
+      {
+        "diagnosis": "Drug-induced orthostatic hypotension",
+        "rationale": "His antihypertensives raise the risk, but this syncope is usually postural and his orthostatic vital signs were normal."
+      },
+      {
+        "diagnosis": "Aortic stenosis",
+        "rationale": "Mechanical causes (also HOCM, atrial myxoma) are usually exertional and without warning; no murmur or other supporting findings."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "Opening scenario says he complains 'of pulling out a few hours earlier', evidently a corruption of 'passing out'.",
+      "Name inconsistency: the opening scenario and sample closure say Keller; two doctor questions (cc, p013) say 'Mr. Kella'.",
+      "e008 'Babinski sign present bilaterally' does not state the plantar response direction in standard terms and a bilateral positive Babinski conflicts with the otherwise normal neurological exam and the gold (no exam findings). Kept neutral as recorded (x020); not converted to positive or negative.",
+      "p026 'my mother died in good health' is odd (possibly a corruption of 'is alive and in good health'); recorded literally with a flag. The note FH mentions only the father.",
+      "The note SH says 'Drinks 34 beers/week', an OCR artifact for the script's 'three to four beers a week'.",
+      "Gold rank-2 history finding 'Taking a P-blocker (atenolol)' has an OCR artifact for β-blocker; cleaned in gold.",
+      "p020 repeats the weakness/numbness question from p011; both ids are attached to the same facts.",
+      "The raw checklist contains a stray '581'; not patient content."
+    ],
+    "annotator_notes": [
+      "Event facts about this morning's episode (collapse, palpitations, lightheadedness, shaking, no tongue biting or incontinence, no confusion afterwards) are historical; current ROS denials are current.",
+      "p007 and p008 are merged so the 30-second duration stays with the shaking (rule 4).",
+      "Both the shaking and the duration of unresponsiveness are reported second-hand from his wife, and the texts say so.",
+      "The orthostatic finding in e002 is recorded as a separate vital-sign record (v006).",
+      "'Married with three children' from the raw Patient Description is kept as an acting note; the SP notes themselves are 'None.'",
+      "Reviewer edit: x020 restored to the source wording (\"present\"); the doubt is kept as a flag on the record instead of in the finding text."
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-188", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 43, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "chest pain", "text": "I have chest pain.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f002", "item": "chest pain: severity", "parent": "f001", "attribute": "severity", "text": "It's severe.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f003", "item": "who brought her to the hospital", "aliases": ["came with", "accompanied by"], "text": "My brother brought me to the emergency department because of the chest pain.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f004", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I'm short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f005", "item": "recent loss of a loved one", "aliases": ["bereavement", "husband's death", "widowed", "marital status"], "text": "My husband died recently in a car accident.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f006", "item": "emotional distress", "aliases": ["grief", "shock", "feeling upset"], "text": "I'm grieving and I'm still in shock over losing him. I'm very distressed.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f007", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "alcohol or drug abuse", "aliases": ["substance abuse", "alcohol abuse", "drug problem"], "text": "I've never had a problem with alcohol or drugs.", "polarity": "absent", "category": "habit_exposure", "time": "historical"},
+      {"id": "f010", "item": "recent illness", "aliases": ["been sick recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-188",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "105/67 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "96/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "23/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "cardiovascular examination", "aliases": ["heart examination", "heart auscultation", "heart sounds"], "result": "Heart sounds: S3 present; no murmurs, rubs or gallops detected."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["lung examination", "respiratory examination", "chest auscultation"], "result": "Rales in the right and left lower lobes."},
+      {"id": "x007", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "No significant findings."},
+      {"id": "x008", "kind": "test", "name": "echocardiogram", "aliases": ["echo", "echocardiography", "transthoracic echocardiogram", "TTE", "heart ultrasound"], "result": "Enlarged left ventricle and left atrium."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-188",
+    "diagnosis": "Takotsubo cardiomyopathy",
+    "aliases": ["takotsubo syndrome", "takotsubo", "stress cardiomyopathy", "stress-induced cardiomyopathy", "broken heart syndrome", "apical ballooning syndrome", "transient apical ballooning syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-188",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-188-p001"], "f002": ["cc", "agentclinic-medqa-ext-188-p001"], "f003": ["agentclinic-medqa-ext-188-p001"],
+      "f004": ["agentclinic-medqa-ext-188-p002"], "f005": ["agentclinic-medqa-ext-188-p001", "agentclinic-medqa-ext-188-p005"],
+      "f006": ["agentclinic-medqa-ext-188-p001", "agentclinic-medqa-ext-188-p003"], "f007": ["agentclinic-medqa-ext-188-p004"],
+      "f008": ["agentclinic-medqa-ext-188-p005"], "f009": ["agentclinic-medqa-ext-188-p005"], "f010": ["agentclinic-medqa-ext-188-p006"],
+      "f011": ["agentclinic-medqa-ext-188-p006"], "f012": ["agentclinic-medqa-ext-188-p006"]
+    },
+    "quotes": {
+      "f002": "Severe chest pain", "f003": "brought to the emergency department by her brother",
+      "f005": "the recent loss of her husband in a car accident / Recently widowed",
+      "f006": "grieving / still in a state of shock over the event / Emotional distress",
+      "f007": "No significant past medical history provided.", "f009": "No history of alcohol or drug abuse.", "f010": "recent illness"
+    },
+    "flags": {
+      "f007": ["Meta phrase 'No significant past medical history provided' converted to a plain denial, as CONVERSION directs for this wording."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-188-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "105/67 mmHg", "exam_ids": ["agentclinic-medqa-ext-188-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "96 bpm", "exam_ids": ["agentclinic-medqa-ext-188-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "23 breaths/min", "exam_ids": ["agentclinic-medqa-ext-188-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.Heart_Sounds + Physical_Examination_Findings.Cardiovascular_Examination.Other", "source_text": "Presence of S3 heart sound + No murmurs, rubs, or gallops detected", "exam_ids": ["agentclinic-medqa-ext-188-e005", "agentclinic-medqa-ext-188-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "Rales in the lower right and left lung lobes", "exam_ids": ["agentclinic-medqa-ext-188-e007"]},
+      "x007": {"source": "Test_Results.Electrocardiogram.Findings", "source_text": "No significant findings", "exam_ids": ["agentclinic-medqa-ext-188-i001"]},
+      "x008": {"source": "Test_Results.Echocardiography.Findings", "source_text": "Enlarged left ventricle and left atrium", "exam_ids": ["agentclinic-medqa-ext-188-i002"]}
+    },
+    "finding_flags": {
+      "x005": ["The source reports an S3 and also 'no ... gallops'; an S3 is a gallop. Both kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Cardiovascular exam contradicts itself: 'Presence of S3 heart sound' vs 'No murmurs, rubs, or gallops detected'.",
+      "Troponin and BNP leaves contain no results, only speculation ('Levels not mentioned, but the context suggests possible normal or slightly elevated'; 'Not mentioned, but can be useful in context').",
+      "The echocardiogram describes left ventricular and atrial enlargement, not the apical ballooning typical of the gold diagnosis; the ECG is reported as normal."
+    ],
+    "notes": [
+      "'Recently widowed' (Social_History) merges with the husband's death in the History (f005); grief, shock and 'Emotional distress' (p003) are one fact (f006).",
+      "Troponin and BNP are excluded (no result, speculative text); a doctor ordering them gets 'unavailable'.",
+      "Only a denial of alcohol or drug abuse is recorded (f009); whether she drinks at all is not stated."
+    ],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-188-i003", "reason": "Troponin: no result in the source ('Levels not mentioned, but the context suggests possible normal or slightly elevated'); speculative text, not a result."},
+      {"id": "agentclinic-medqa-ext-188-i004", "reason": "BNP: no result in the source ('Not mentioned, but can be useful in context'); commentary, not a result."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with severe chest pain."
+    }
+  }
+}

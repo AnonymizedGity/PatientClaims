@@ -1,0 +1,113 @@
+{
+  "patient": {
+    "case_id": "mcr-test-04493",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 42, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "muscle stiffness", "aliases": ["stiff muscles", "stiffness", "tight muscles", "stiff back"], "text": "The muscles of my back, upper arms and thighs have become stiff.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "muscle wasting", "aliases": ["wasting", "muscles getting thinner", "loss of muscle bulk", "atrophy"], "text": "Those same muscles have been wasting away.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "when the stiffness and wasting started", "text": "The stiffness and wasting started about six years ago.", "value": "6 years ago", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "course of the stiffness and wasting", "text": "They have been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "muscle pain", "aliases": ["pain", "aching muscles", "sore muscles"], "text": "It isn't painful; I don't have any pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "difficulty walking", "aliases": ["trouble walking", "short steps", "gait problems"], "text": "Walking is getting harder; I can only take short steps.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "difficulty getting up from lying down", "aliases": ["trouble rising", "getting out of bed", "sitting up"], "text": "It's getting harder to get up from lying on my back.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "difficulty bending", "aliases": ["can't bend", "trouble bending over", "bending forward"], "text": "It's getting harder to bend in any direction.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f009", "item": "difficulty lifting the arms", "aliases": ["can't raise my arms", "trouble lifting arms"], "text": "It's getting harder to lift my arms.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f010", "item": "difficulty moving the thighs apart", "aliases": ["can't spread my legs", "hip abduction", "thigh movement"], "text": "I can't move my thighs apart more than about 20 degrees.", "value": "20 degrees", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "weakness", "aliases": ["muscle weakness", "feeling weak", "loss of strength"], "text": "I don't feel weak.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f012", "item": "changes in feeling", "aliases": ["numbness", "tingling", "sensory changes", "pins and needles"], "text": "I haven't had any numbness or other change in feeling.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f013", "item": "muscle spasms", "aliases": ["spasms", "cramps", "muscle jerks"], "text": "I don't get muscle spasms.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f014", "item": "pentazocine injections", "aliases": ["injecting drugs", "drug injections", "pentazocine", "painkiller injections", "intramuscular injections", "opioid use"], "text": "Six years ago I started injecting myself with pentazocine, 60 mg a day into my muscles.", "value": "60 mg daily intramuscular", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f015", "item": "injections: sites", "parent": "f014", "attribute": "location", "text": "I injected into my buttocks and upper arms.", "value": ["buttocks", "upper arms"], "polarity": "present", "category": "habit_exposure"},
+      {"id": "f016", "item": "injections: other sites", "parent": "f014", "attribute": "location", "text": "I never injected my thighs, calves, abdomen, shoulder girdle or forearms.", "value": ["thighs", "calves", "abdomen", "shoulder girdle", "forearms"], "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f017", "item": "injections: why I started", "parent": "f014", "attribute": "context", "text": "I started the injections for abdominal pain, and I kept going because I became dependent.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f018", "item": "injections: when I stopped", "parent": "f014", "attribute": "course", "text": "I stopped the injections about six months after the stiffness began.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f019", "item": "promethazine injections", "aliases": ["promethazine", "Phenergan"], "text": "I injected promethazine together with it.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f020", "item": "alcohol dependence in the past", "aliases": ["alcoholism", "drinking problem", "alcohol history"], "text": "I was dependent on alcohol for 13 years.", "value": "13 years", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f021", "item": "alcohol use", "aliases": ["drinking", "current drinking"], "text": "I haven't had a drink for at least six years.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f022", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I don't have high blood pressure.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f023", "item": "diabetes", "aliases": ["sugar diabetes", "high blood sugar"], "text": "I don't have diabetes.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f024", "item": "right-handed", "aliases": ["hand dominance", "dominant hand"], "text": "I'm right-handed.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-04493",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normotensive"},
+      {"id": "x002", "kind": "exam", "system": "musculoskeletal", "name": "muscle examination", "aliases": ["muscle inspection", "muscle palpation", "muscle bulk", "injection sites"], "result": "Marked wasting and woody induration of the deltoids, biceps, glutei, quadriceps, and paraspinal muscles."},
+      {"id": "x003", "kind": "exam", "system": "musculoskeletal", "name": "range of motion", "aliases": ["joint movements", "active range of motion", "mobility"], "result": "Active range of motion markedly reduced: arm abduction to 45–50°, thigh abduction to 20°, elbow flexion to 15°, thigh flexion to 10°. Distal joint movements normal."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power"], "result": "Full power within the limited ranges."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation"], "result": "Intact."},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "other systems examination", "aliases": ["heart examination", "lung examination", "abdominal examination", "general examination"], "result": "Unremarkable."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Within normal limits."},
+      {"id": "x008", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver tests"], "result": "Within normal limits."},
+      {"id": "x009", "kind": "test", "name": "renal function tests", "aliases": ["kidney function", "creatinine", "urea"], "result": "Within normal limits."},
+      {"id": "x010", "kind": "test", "name": "serum calcium and phosphate", "aliases": ["calcium", "phosphate", "phosphorus", "bone profile"], "result": "Calcium and phosphate within normal limits."},
+      {"id": "x011", "kind": "test", "name": "creatine phosphokinase", "aliases": ["CPK", "CK", "creatine kinase", "muscle enzymes"], "result": "Within normal limits."},
+      {"id": "x012", "kind": "test", "name": "X-rays of the lumbar spine, pelvis, thighs, knees, chest and shoulders", "aliases": ["X-rays", "radiographs", "lumbar spine X-ray", "pelvis X-ray", "thigh X-ray", "knee X-ray", "chest X-ray", "shoulder X-ray", "skeletal survey"], "result": "Multiple soft-tissue calcifications with muscle hyperdensity."},
+      {"id": "x013", "kind": "test", "name": "electromyography of the affected muscles", "aliases": ["EMG", "electromyogram"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-04493",
+    "diagnosis": "Pentazocine-induced calcific myofibrosis",
+    "aliases": ["pentazocine-induced myofibrosis", "pentazocine-induced fibrous myopathy", "pentazocine myopathy", "calcific myofibrosis from pentazocine injections", "pentazocine injection-related muscle fibrosis"],
+    "reasoning": "1. Ankylosing spondylitis was considered but excluded — “Ankylosing spondylitis was ruled out as there was no involvement of the joints.” 2. Stiff-man syndrome was considered but excluded — “Stiff-man syndrome presents with spasms and cramps, and usual presentation is after middle age. These features ruled out the possibility of this syndrome.” 3. Myositis ossificans was considered but deemed unlikely — “The possibility of myositis ossificans was unlikely, as the present case was of late onset and was characterized by the absence of skeletal abnormality.” 4. Hypoparathyroidism was considered but excluded — “Normal serum calcium and phosphate levels excluded hypoparathyroidism.” 5. Drug-induced calcific myofibrosis was favored — “Pentazocine-induced calcific myofibrosis was a strong possibility in view of the history of pentazocine abuse, calcified muscles and the clinical presentation.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-04493",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001", "s003"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s004"], "f015": ["s004"], "f016": ["s005"], "f017": ["s004"], "f018": ["s006"],
+      "f019": ["s004"], "f020": ["s007"], "f021": ["s007"], "f022": ["s008"], "f023": ["s008"], "f024": ["s001"]
+    },
+    "quotes": {
+      "f001": "stiffness and wasting of the back and proximal limb muscles", "f003": "a 6-year history", "f004": "progressive",
+      "f005": "painless", "f006": "increasing difficulty with walking (short‐stepping gait)", "f007": "rising from supine",
+      "f008": "bending in any direction", "f010": "abducting his thighs beyond 20°",
+      "f014": "Six years earlier, he began self-injecting pentazocine (60 mg daily, intramuscularly into buttocks and upper arms)",
+      "f016": "He never injected the thighs, calves, abdomen, shoulder girdle, or forearms.",
+      "f017": "for abdominal pain and continued in a dependent fashion", "f018": "He stopped the injections 6 months after symptom onset.",
+      "f020": "a 13-year history of alcohol dependence", "f021": "had been abstinent for at least 6 years", "f024": "right‐handed"
+    },
+    "flags": {
+      "f001": ["'Proximal limb muscles' worded as upper arms and thighs, matching the examination (deltoids, biceps, glutei, quadriceps)."],
+      "f014": ["Recreational/dependent self-injection is classed as habit_exposure rather than medication."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s008"], "source_text": "He was normotensive"},
+      "x002": {"sentences": ["s009"], "source_text": "On examination, there was marked wasting and woody induration of the deltoids, biceps, glutei, quadriceps, and paraspinal muscles."},
+      "x003": {"sentences": ["s010", "s011"], "source_text": "Active range of motion was markedly reduced: arm abduction to 45–50°, thigh abduction to 20°, elbow flexion to 15°, and thigh flexion to 10°. / Distal joint movements were normal."},
+      "x004": {"sentences": ["s011"], "source_text": "Muscle power was full within the limited ranges"},
+      "x005": {"sentences": ["s011"], "source_text": "sensation was intact"},
+      "x006": {"sentences": ["s012"], "source_text": "Other systems were unremarkable."},
+      "x007": {"sentences": ["s013"], "source_text": "complete blood count / were within normal limits"},
+      "x008": {"sentences": ["s013"], "source_text": "liver and renal function / were within normal limits"},
+      "x009": {"sentences": ["s013"], "source_text": "liver and renal function / were within normal limits"},
+      "x010": {"sentences": ["s013"], "source_text": "serum calcium, phosphate / were within normal limits"},
+      "x011": {"sentences": ["s013"], "source_text": "creatine phosphokinase, were within normal limits"},
+      "x012": {"sentences": ["s014"], "source_text": "Roentgenograms of the lumbar spine, pelvis, thighs, knees, chest, and shoulders revealed multiple soft‐tissue calcifications with muscle hyperdensity."},
+      "x013": {"sentences": ["s015"], "source_text": "Electromyography of affected muscles was normal."}
+    },
+    "finding_flags": {
+      "x012": ["The source gives one combined result for six radiograph regions, so they are kept as one record; which regions show the calcifications is not stated."]
+    },
+    "leakage": [
+      {"fact_id": "f014", "reason": "The patient's own drug history names pentazocine, the key exposure in the source; it names the cause, not the muscle disease."},
+      {"id": "x012", "reason": "The radiograph report shows soft-tissue calcifications in the muscles (shares the stem of 'calcific'); a written report keeps its findings, and it does not name the diagnosis."}
+    ],
+    "source_issues": [
+      "The quadriceps are involved (s009) although the patient never injected the thighs (s005); not explained in the prompt.",
+      "s011 holds two sentences (distal joints; power and sensation)."
+    ],
+    "notes": [
+      "Index visit: the admission for six years of painless, progressive stiffness and wasting of the back and proximal limb muscles (s001); the examination and tests (s008–s015) belong to this evaluation.",
+      "'Normotensive and non-diabetic' (s008) gives two absent history facts; 'normotensive' is also kept as the blood pressure finding.",
+      "The children of the injection fact use the item prefix 'injections:' so only the parent names the drug."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

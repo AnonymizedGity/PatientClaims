@@ -1,0 +1,206 @@
+{
+  "case_id": "medqa-cs-007",
+  "source_case_id": 7,
+  "opening_scenario": "Richard Green, a 74-year-old male, comes to the emergency department complaining of pain in his right arm.",
+  "doorway_vital_signs": [
+    "BP: 135/85 mm Hg",
+    "Temp: 98.0°F (36.7°C)",
+    "RR: 12/minute",
+    "HR: 76/minute, regular"
+  ],
+  "sp_notes": [
+    "Sit up in bed.",
+    "Hold your right arm close to your body with your left hand and keep it externally rotated and slightly abducted.",
+    "Express pain when the examiner tries to move your right shoulder in any direction.",
+    "Do not allow the examiner to bring your shoulder to its full range of motion in flexion, extension, abduction, or external rotation."
+  ],
+  "challenging_questions": [
+    "1. \"Doctor, do you believe I will regain full movement in my arm as I had before?\"",
+    "2. \"I lack insurance coverage. What will the cost be for this appointment?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What brings you to the emergency department today?",
+    "answer": "I have really bad pain in my right arm."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-007-p001",
+      "topic": "Onset",
+      "question": "When did this start?",
+      "answer": "Three days ago."
+    },
+    {
+      "fact_id": "medqa-cs-007-p002",
+      "topic": "Precipitating Events",
+      "question": "What were you doing when the pain started?",
+      "answer": "I was playing with my grandchildren in the garden when I tripped and fell."
+    },
+    {
+      "fact_id": "medqa-cs-007-p003",
+      "topic": "Description of the Fall",
+      "question": "Can you provide more details about the fall?",
+      "answer": "I stumbled over a toy on the floor and attempted to brace myself with my arm, but I ended up landing on my hand."
+    },
+    {
+      "fact_id": "medqa-cs-007-p004",
+      "topic": "Loss of Consciousness",
+      "question": "Did you lose consciousness?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-007-p005",
+      "topic": "Location",
+      "question": "Where is the pain?",
+      "answer": "The upper and middle parts of my right arm."
+    },
+    {
+      "fact_id": "medqa-cs-007-p006",
+      "topic": "Weakness/Paralysis",
+      "question": "Is there weakness in your arm? Can you move it?",
+      "answer": "No, it isn't weak, and I believe I can move it in all directions, but it hurts when I do."
+    },
+    {
+      "fact_id": "medqa-cs-007-p007",
+      "topic": "Numbness/Loss of Sensation",
+      "question": "Does the arm feel numb? Have you lost any sensation?",
+      "answer": "No numbness. I can feel things fine."
+    },
+    {
+      "fact_id": "medqa-cs-007-p008",
+      "topic": "Onset of Pain",
+      "question": "Any change in the pain since you fell?",
+      "answer": "I didn't feel any pain when I first fell, but then the pain started gradually. It is stable now, but it is still there."
+    },
+    {
+      "fact_id": "medqa-cs-007-p009",
+      "topic": "Pain Anywhere Else",
+      "question": "Are you experiencing any other pain?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-007-p010",
+      "topic": "Seen by a Doctor Since Then",
+      "question": "Have you seen a doctor since the fall 3 days ago?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-007-p011",
+      "topic": "Any Treatments",
+      "question": "What measures have you taken to alleviate the pain?",
+      "answer": "I utilized a sling and took Tylenol, but the pain only improved slightly."
+    },
+    {
+      "fact_id": "medqa-cs-007-p012",
+      "topic": "Alleviating Factors",
+      "question": "What makes the pain better?",
+      "answer": "Not moving my arm and Tylenol."
+    },
+    {
+      "fact_id": "medqa-cs-007-p013",
+      "topic": "Exacerbating Factors",
+      "question": "What exacerbates the pain?",
+      "answer": "Using my arm."
+    },
+    {
+      "fact_id": "medqa-cs-007-p014",
+      "topic": "Reason for Not Seeking Medical Attention",
+      "question": "Why did you choose to come in today when it wasn't that bad, and I thought it would get better on its own? Also, I didn't want to bother my son. He doesn't have time to bring me to the hospital. He is busy.\" \"Living Conditions\": Doctor: \"Tell me more about where you live and who you live with.",
+      "answer": "I live with my son in his house. He is married and has three kids. Life has been hard on him lately. He lost his job and is looking for a new one."
+    },
+    {
+      "fact_id": "medqa-cs-007-p015",
+      "topic": "Social History",
+      "question": "Is there anyone else living with you? Do you have a significant other?\" \"Safety/Elder Abuse Screening\": Doctor: \"Do you feel safe where you live? Does anyone at home hurt you or threaten you? Are you afraid of anyone at home?",
+      "answer": "I feel safe. Nobody bothers me (looks anxious). They are all nice."
+    },
+    {
+      "fact_id": "medqa-cs-007-p016",
+      "topic": "Current Medications",
+      "question": "What medications are you taking currently?",
+      "answer": "Tylenol, albuterol inhaler."
+    },
+    {
+      "fact_id": "medqa-cs-007-p017",
+      "topic": "Allergies",
+      "question": "Do you have any allergies to medications?",
+      "answer": "Yes, I am allergic to aspirin."
+    },
+    {
+      "fact_id": "medqa-cs-007-p018",
+      "topic": "Nature of Reaction to Aspirin",
+      "question": "What happens when you take aspirin?",
+      "answer": "I get an itchy rash all over my body."
+    },
+    {
+      "fact_id": "medqa-cs-007-p019",
+      "topic": "Past Medical History",
+      "question": "What other health issues are you experiencing?",
+      "answer": "I have asthma."
+    },
+    {
+      "fact_id": "medqa-cs-007-p020",
+      "topic": "Past Surgical History",
+      "question": "Have you had any surgeries?",
+      "answer": "They removed part of my prostate 2 years ago. It was very difficult for me to urinate, but that has since gotten much better. They said there was no evidence of cancer."
+    },
+    {
+      "fact_id": "medqa-cs-007-p021",
+      "topic": "Occupation",
+      "question": "What do you do for work?",
+      "answer": "I don't work anymore. I am a retired schoolteacher."
+    },
+    {
+      "fact_id": "medqa-cs-007-p022",
+      "topic": "Alcohol Use",
+      "question": "Do you consume alcohol? What is your weekly intake?",
+      "answer": "No, I do not consume alcohol."
+    },
+    {
+      "fact_id": "medqa-cs-007-p023",
+      "topic": "Tobacco",
+      "question": "Do you smoke? For how many years? How many packs per day?",
+      "answer": "No, I don't smoke."
+    },
+    {
+      "fact_id": "medqa-cs-007-p024",
+      "topic": "Exercise",
+      "question": "Do you exercise regularly?",
+      "answer": "I walk 20 minutes every day to the grocery store and back."
+    }
+  ],
+  "patient_note_history": "History\nHPI: A 74-year-old male presents with right arm pain for the past three days. The pain started after he fell on his outstretched right arm and persisted despite his use of Tylenol and an ice pack at home. He did not lose consciousness before or after the fall, and he did not experience any paralysis or loss of sensation. The pain is located in the upper and middle part of the arm, increases with any movement of the arm, and is alleviated by rest. When asked why he delayed seeking medical assistance, the patient stated that his son did not have time to take him to the hospital. \nROS: Negative except as noted above. \nAllergies: Aspirin (rash). \nMedications: Tylenol, albuterol inhaler. \nPMH: Asthma, BPH. \nPSH: Prostatectomy. \nSH: Does not smoke or drink alcohol. Lives with his son's family. Walks for 20 minutes every morning.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-007-e001",
+      "source_text": "Patient is in no acute distress. Appears anxious."
+    },
+    {
+      "exam_id": "medqa-cs-007-e002",
+      "source_text": "VS: Within normal limits."
+    },
+    {
+      "exam_id": "medqa-cs-007-e003",
+      "source_text": "HEENT: Normocephalic, atraumatic, no bruises."
+    },
+    {
+      "exam_id": "medqa-cs-007-e004",
+      "source_text": "Neck: Supple, full range of motion in all directions, no bruises."
+    },
+    {
+      "exam_id": "medqa-cs-007-e005",
+      "source_text": "Chest: Breath sounds clear to auscultation bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-007-e006",
+      "source_text": "Heart: Regular rate and rhythm; normal S1/S2 sounds without murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-007-e007",
+      "source_text": "Extremities: Right arm held closely against chest wall. Non-localized tenderness over middle and upper right arm and right shoulder. Pain and restricted range of motion on flexion, extension, abduction, and external rotation of right shoulder. Right elbow and wrist are normal. Unable to assess muscle strength due to pain. Sensation intact to pinprick and soft touch. Pulses normal and symmetric in brachial and radial arteries. Deep tendon reflexes intact and symmetric."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Humeral fracture.\nHistory Finding(s): Pain following recent fall on outstretched hand.\nExam Finding(s): Tenderness over upper and middle right arm, pain increases with hand movement, restricted range of motion.\n\nDiagnosis #2: Shoulder dislocation \nHistory Finding(s): \n- Pain following recent fall on outstretched arm\nExam Finding(s): \n- Right arm externally rotated and slightly abducted\n- Pain and restricted range of motion on shoulder exam\n\nDiagnosis #3: Osteoporosis \nHistory Finding(s): \n- Advanced age\n- Pain following recent fall on outstretched arm\nExam Finding(s):",
+  "gold_additional_diagnosis": "• Elder abuse: The history contains red flags (anxious behavior, delayed care-seeking) that may point to elder abuse. The American Medical Association has defined elder abuse as \"an act or omission which results in harm or threatened harm to the health or welfare of an elderly person.\" The diagnosis of elder abuse is not readily made because often both the abuser and the victim deny abuse. Thus, the diagnosis is often inferential, and supporting evidence must be sought.\n• Rotator cuff tear: Patients usually present with nonspecific pain localized to the shoulder, but pain is often referred down the proximal lateral arm due to shared innervation. There may be an inability to abduct or flex the shoulder. Patients may also demonstrate significant weakness in internal or external rotation.",
+  "raw_opening": "Opening Scenario:\n\nRichard Green, a 74-year-old male, comes to the emergency department complaining of pain in his right arm.\n\nVital Signs:\n\n- BP: 135/85 mm Hg\n- Temp: 98.0°F (36.7°C)\n- RR: 12/minute\n- HR: 76/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genital, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nPatient is a 74-year-old male.\n\nNotes for the SP:\n\n- Sit up in bed.\n- Hold your right arm close to your body with your left hand and keep it externally rotated and slightly abducted.\n- Express pain when the examiner tries to move your right shoulder in any direction.\n- Do not allow the examiner to bring your shoulder to its full range of motion in flexion, extension, abduction, or external rotation.\n\nChallenging Questions to Ask:\n\n1. \"Doctor, do you believe I will regain full movement in my arm as I had before?\"  \n2. \"I lack insurance coverage. What will the cost be for this appointment?\"\n\nExaminee Response:\n\n1. \"Hopefully, your range of motion with your arm will go back to normal, but first, we need to find out exactly what is causing your problem.\"\n2. \"We provide various financial support programs for individuals with low income or without insurance.\". After I finish speaking with you and examining you, I will have our social worker come to help you sort out the insurance issues.\"\n\nExaminee Checklist:\n\nEntrance:\n\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified their role or position.\n\nReflective Listening:\n\n- Examinee asked an open-ended question and actively listened to the response.\n- Examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- Examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\n- Examinee dictated data efficiently and accurately.\n\nConnecting With the Patient:\n\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\n\"Chief Complaint\":\nDoctor: \"What brings you to the emergency department today?\"\nPatient: \"I have really bad pain in my right arm.\"\n\n\"Onset\":\nDoctor: \"When did this start?\"\nPatient: \"Three days ago.\"\n\n\"Precipitating Events\":\nDoctor: \"What were you doing when the pain started?\"\nPatient: \"I was playing with my grandchildren in the garden when I tripped and fell.\"\n\n\"Description of the Fall\":\nDoctor: \"Can you provide more details about the fall?\"\nPatient: \"I stumbled over a toy on the floor and attempted to brace myself with my arm, but I ended up landing on my hand.\"\n\n\"Loss of Consciousness\":\nDoctor: \"Did you lose consciousness?\"\nPatient: \"No.\"\n\n\"Location\":\nDoctor: \"Where is the pain?\"\nPatient: \"The upper and middle parts of my right arm.\"\n\n\"Weakness/Paralysis\":\nDoctor: \"Is there weakness in your arm? Can you move it?\"\nPatient: \"No, it isn't weak, and I believe I can move it in all directions, but it hurts when I do.\"\n\n\"Numbness/Loss of Sensation\":\nDoctor: \"Does the arm feel numb? Have you lost any sensation?\"\nPatient: \"No numbness. I can feel things fine.\"\n\n\"Onset of Pain\":\nDoctor: \"Any change in the pain since you fell?\"\nPatient: \"I didn't feel any pain when I first fell, but then the pain started gradually. It is stable now, but it is still there.\"\n\n\"Pain Anywhere Else\":\nDoctor: \"Are you experiencing any other pain?\"\nPatient: \"No.\"\n\n\"Seen by a Doctor Since Then\":\nDoctor: \"Have you seen a doctor since the fall 3 days ago?\"\nPatient: \"No.\"\n\n\"Any Treatments\":\nDoctor: \"What measures have you taken to alleviate the pain?\"\nPatient: \"I utilized a sling and took Tylenol, but the pain only improved slightly.\"\n\n\"Alleviating Factors\":\nDoctor: \"What makes the pain better?\"\nPatient: \"Not moving my arm and Tylenol.\"\n\n\"Exacerbating Factors\":\nDoctor: \"What exacerbates the pain?\"\nPatient: \"Using my arm.\"\n\n\"Reason for Not Seeking Medical Attention\":\nDoctor: \"Why did you choose to come in today when it wasn't that bad, and I thought it would get better on its own? Also, I didn't want to bother my son. He doesn't have time to bring me to the hospital. He is busy.\"\n\n\"Living Conditions\":\nDoctor: \"Tell me more about where you live and who you live with.\"\nPatient: \"I live with my son in his house. He is married and has three kids. Life has been hard on him lately. He lost his job and is looking for a new one.\"\n\n\"Social History\":\nDoctor: \"Is there anyone else living with you? Do you have a significant other?\"\n\n\"Safety/Elder Abuse Screening\":\nDoctor: \"Do you feel safe where you live? Does anyone at home hurt you or threaten you? Are you afraid of anyone at home?\"\nPatient: \"I feel safe. Nobody bothers me (looks anxious). They are all nice.\"\n\n\"Current Medications\":\nDoctor: \"What medications are you taking currently?\"\nPatient: \"Tylenol, albuterol inhaler.\"\n\n\"Allergies\":\nDoctor: \"Do you have any allergies to medications?\"\nPatient: \"Yes, I am allergic to aspirin.\"\n\n\"Nature of Reaction to Aspirin\":\nDoctor: \"What happens when you take aspirin?\"\nPatient: \"I get an itchy rash all over my body.\"\n\n\"Past Medical History\":\nDoctor: \"What other health issues are you experiencing?\"\nPatient: \"I have asthma.\"\n\n\"Past Surgical History\":\nDoctor: \"Have you had any surgeries?\"\nPatient: \"They removed part of my prostate 2 years ago. It was very difficult for me to urinate, but that has since gotten much better. They said there was no evidence of cancer.\"\n\n\"Occupation\":\nDoctor: \"What do you do for work?\"\nPatient: \"I don't work anymore. I am a retired schoolteacher.\"\n\n\"Alcohol Use\":\nDoctor: \"Do you consume alcohol? What is your weekly intake?\"\nPatient: \"No, I do not consume alcohol.\"\n\n\"Tobacco\":\nDoctor: \"Do you smoke? For how many years? How many packs per day?\"\nPatient: \"No, I don't smoke.\"\n\n\"Exercise\":\nDoctor: \"Do you exercise regularly?\"\nPatient: \"I walk 20 minutes every day to the grocery store and back.\"\n\nPhysical Examination:\n\n- The examinee washed his/her hands.\n- The examinee asked permission to start the exam.\n- The examinee used respectful draping.\n- The examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- Head and neck exam: checked for bruises, assessed neck movements.\n- Cardiovascular exam: performed auscultation.\n- Pulmonary exam: performed auscultation.\n- Musculoskeletal exam: compared strength, range of motion (shoulder, elbow, wrist), joint stability, sensation, deep tendon reflexes (DTRs), and pulses in both arms.\n\n\nSample Closure:\n\n\"Mr. Green, you might be dealing with a fractured bone, a mild sprain, or a dislocated shoulder joint.. We will need to obtain an X-ray image of your shoulder and arm to make a diagnosis, and more precise imaging studies, such as an MRI, may be necessary as well. Your safety is my primary concern, and I am here to help and support you. Living with family can occasionally create stress for everyone in the household.. Have you ever considered moving to an assisted living community or to an apartment complex for seniors? If you are interested, I can arrange a meeting with our social worker, who can assess your social situation and help you find the resources you need. \"Are there any questions you would like to ask me?\" (203 206)\n\nClosure:\n\n- The examinee discussed initial diagnostic impressions.\n- The examinee discussed initial management plans, including:\n    - Follow-up tests.\n    - Alternative living options such as independent living facilities.\n    - Social work assistance.\n- The examinee offered a statement of support: \"Your safety is my primary concern, and I am here to help and support you.\"\n- The examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory\nHPI: A 74-year-old male presents with right arm pain for the past three days. The pain started after he fell on his outstretched right arm and persisted despite his use of Tylenol and an ice pack at home. He did not lose consciousness before or after the fall, and he did not experience any paralysis or loss of sensation. The pain is located in the upper and middle part of the arm, increases with any movement of the arm, and is alleviated by rest. When asked why he delayed seeking medical assistance, the patient stated that his son did not have time to take him to the hospital. \nROS: Negative except as noted above. \nAllergies: Aspirin (rash). \nMedications: Tylenol, albuterol inhaler. \nPMH: Asthma, BPH. \nPSH: Prostatectomy. \nSH: Does not smoke or drink alcohol. Lives with his son's family. Walks for 20 minutes every morning. \n\nPhysical Examination:\nPatient is in no acute distress. Appears anxious.\nVS: Within normal limits.\nHEENT: Normocephalic, atraumatic, no bruises.\nNeck: Supple, full range of motion in all directions, no bruises.\nChest: Breath sounds clear to auscultation bilaterally.\nHeart: Regular rate and rhythm; normal S1/S2 sounds without murmurs, rubs, or gallops.\nExtremities: Right arm held closely against chest wall. Non-localized tenderness over middle and upper right arm and right shoulder. Pain and restricted range of motion on flexion, extension, abduction, and external rotation of right shoulder. Right elbow and wrist are normal. Unable to assess muscle strength due to pain. Sensation intact to pinprick and soft touch. Pulses normal and symmetric in brachial and radial arteries. Deep tendon reflexes intact and symmetric."
+}

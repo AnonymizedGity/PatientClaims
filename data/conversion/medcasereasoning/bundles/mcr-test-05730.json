@@ -1,0 +1,116 @@
+{
+  "patient": {
+    "case_id": "mcr-test-05730",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 37, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["fevers", "high temperature"], "text": "I've been having fevers that come and go.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fever: duration", "parent": "f001", "attribute": "duration", "text": "They've been going on for about a month.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "fever: highest temperature", "parent": "f001", "attribute": "severity", "text": "At the highest it reached 39.6 °C.", "value": "39.6 °C", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "night sweats", "aliases": ["sweating at night"], "text": "I've been having night sweats.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "cough", "text": "I have a mild cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f006", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost 7 kg over the past two months.", "value": "7 kg", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "moxifloxacin", "aliases": ["antibiotic", "antibiotics"], "text": "I was given moxifloxacin for ten days.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f008", "item": "moxifloxacin: effect", "parent": "f007", "attribute": "treatment_response", "text": "It didn't make me any better.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "voriconazole", "aliases": ["antifungal", "antifungal medicine"], "text": "I was also given voriconazole for three days.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f010", "item": "voriconazole: effect", "parent": "f009", "attribute": "treatment_response", "text": "That didn't make me better either.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f011", "item": "occupation", "aliases": ["job", "work"], "text": "I work in a blood bank.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "plasma donation", "aliases": ["donating plasma", "blood donation"], "text": "I donate plasma frequently.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "contact with soil", "aliases": ["soil exposure", "farm work", "farming", "home region"], "text": "Recently I did farm work in my home region along the Yangtze River, so I was in contact with soil.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f014", "item": "travel abroad", "aliases": ["foreign travel", "travel"], "text": "I've never travelled abroad.", "polarity": "absent", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-05730",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "39.1 °C"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Tachycardia."},
+      {"id": "x003", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "how he looks"], "result": "Ill-appearing."},
+      {"id": "x004", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "lymphadenopathy", "neck nodes", "axillary nodes", "inguinal nodes"], "result": "No lymphadenopathy."},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver size", "spleen size", "abdominal palpation"], "result": "Hepatomegaly, 2 cm below the costal margin; splenomegaly, 3 cm below the costal margin."},
+      {"id": "x006", "kind": "test", "name": "mycobacterial studies", "aliases": ["TB tests", "AFB smear", "acid-fast bacilli", "mycobacterial culture"], "result": "Negative.", "time": "initial workup"},
+      {"id": "x007", "kind": "test", "name": "bone marrow smear", "aliases": ["bone marrow aspirate", "bone marrow examination", "bone marrow cytology"], "result": "Yeast-like organisms seen.", "time": "initial workup"},
+      {"id": "x008", "kind": "test", "name": "bone marrow culture", "aliases": ["marrow culture"], "result": "Unrevealing.", "time": "initial workup"},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelets", "platelet count"], "result": "Progressive pancytopenia: WBC 1.86 × 10^9/L; hemoglobin 86 g/L; platelets 2 × 10^9/L."},
+      {"id": "x010", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Elevated: 43 mg/L."},
+      {"id": "x011", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "AST", "ALT", "transaminases"], "result": "Abnormal liver enzymes."},
+      {"id": "x012", "kind": "test", "name": "CD4 count", "aliases": ["CD4", "CD4 T-cell count", "lymphocyte subsets"], "result": "Low: 320 cells/μL."},
+      {"id": "x013", "kind": "test", "name": "viral serology", "aliases": ["CMV IgM", "cytomegalovirus serology", "HSV antibodies", "herpes simplex serology", "HIV test", "HIV serology"], "result": "CMV IgM positive; HSV antibodies positive; HIV serology negative."},
+      {"id": "x014", "kind": "test", "name": "tuberculin skin test", "aliases": ["PPD", "Mantoux test", "TST"], "result": "Negative."},
+      {"id": "x015", "kind": "test", "name": "T-SPOT.TB", "aliases": ["T-SPOT", "IGRA", "interferon-gamma release assay", "TB blood test"], "result": "Negative."},
+      {"id": "x016", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Repeatedly negative."},
+      {"id": "x017", "kind": "test", "name": "sputum cultures", "aliases": ["sputum culture"], "result": "Repeatedly negative."},
+      {"id": "x018", "kind": "test", "name": "abdominal CT", "aliases": ["CT abdomen", "CT of the abdomen"], "result": "Hepatosplenomegaly with retroperitoneal lymphadenopathy."},
+      {"id": "x019", "kind": "test", "name": "chest CT", "aliases": ["CT chest", "CT of the chest"], "result": "Only minimal chronic inflammation."},
+      {"id": "x020", "kind": "test", "name": "PET-CT", "aliases": ["PET scan", "FDG PET-CT", "positron emission tomography"], "result": "Increased glucose uptake in bone marrow and spleen without evidence of malignancy."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-05730",
+    "diagnosis": "Histoplasmosis",
+    "aliases": ["disseminated histoplasmosis", "progressive disseminated histoplasmosis", "Histoplasma capsulatum infection", "Histoplasma infection"],
+    "reasoning": "1. Lymphoma was considered but excluded — “PET‐CT revealed no malignant tumour, excluding lymphoma.” 2. Tuberculosis was considered but excluded — “no pathogenic evidence of tuberculosis was found, and the PPD and T‐SPOT results were negative.” 3. Penicilliosis was considered in the differential of systemic mycoses — “histoplasmosis and penicilliosis have similar clinical presentations, laboratory findings, and chest radiographic abnormalities… thus, these two kinds of microorganisms should be microbiologically distinguished.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-05730",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s003"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"], "f011": ["s004"], "f012": ["s004"],
+      "f013": ["s004"], "f014": ["s004"]
+    },
+    "quotes": {
+      "f001": "intermittent fevers", "f002": "of one month’s duration", "f003": "peaking at 39.6°C", "f005": "mild cough",
+      "f006": "a 7-kg weight loss over two months", "f007": "moxifloxacin for ten days", "f008": "without improvement",
+      "f009": "voriconazole for three days", "f010": "without improvement", "f011": "He worked in a blood bank",
+      "f012": "with frequent plasma donation",
+      "f013": "had recent soil exposure through farm work in his home region along the Yangtze River",
+      "f014": "he had never traveled abroad"
+    },
+    "flags": {
+      "f007": ["The prompt does not say whether moxifloxacin and voriconazole were given before this admission or early in it; s003 sits with the referral history (before the examination) and is read as treatment before the index visit."],
+      "f012": ["'He worked in a blood bank with frequent plasma donation' is ambiguous; read as the patient himself donating plasma frequently. It may instead describe his work."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "he was febrile (39.1°C)"},
+      "x002": {"sentences": ["s005"], "source_text": "tachycardic"},
+      "x003": {"sentences": ["s005"], "source_text": "ill-appearing"},
+      "x004": {"sentences": ["s005"], "source_text": "with no lymphadenopathy"},
+      "x005": {"sentences": ["s005"], "source_text": "hepatomegaly (2 cm below the costal margin) and splenomegaly (3 cm below the costal margin)"},
+      "x006": {"sentences": ["s002"], "source_text": "Initial mycobacterial studies were negative"},
+      "x007": {"sentences": ["s002"], "source_text": "a bone marrow smear showed yeast-like organisms"},
+      "x008": {"sentences": ["s002"], "source_text": "but culture was unrevealing"},
+      "x009": {"sentences": ["s006"], "source_text": "progressive pancytopenia (WBC 1.86 × 10^9/L, hemoglobin 86 g/L, platelets 2 × 10^9/L)"},
+      "x010": {"sentences": ["s006"], "source_text": "elevated C-reactive protein (43 mg/L)"},
+      "x011": {"sentences": ["s006"], "source_text": "abnormal liver enzymes"},
+      "x012": {"sentences": ["s006"], "source_text": "low CD4 count (320 cells/μL)"},
+      "x013": {"sentences": ["s006"], "source_text": "positive CMV IgM and HSV antibodies / HIV serology, PPD, and T-SPOT were negative"},
+      "x014": {"sentences": ["s006"], "source_text": "HIV serology, PPD, and T-SPOT were negative"},
+      "x015": {"sentences": ["s006"], "source_text": "HIV serology, PPD, and T-SPOT were negative"},
+      "x016": {"sentences": ["s007"], "source_text": "Blood and sputum cultures were repeatedly negative."},
+      "x017": {"sentences": ["s007"], "source_text": "Blood and sputum cultures were repeatedly negative."},
+      "x018": {"sentences": ["s008"], "source_text": "Abdominal CT demonstrated hepatosplenomegaly with retroperitoneal lymphadenopathy"},
+      "x019": {"sentences": ["s008"], "source_text": "chest CT showed only minimal chronic inflammation"},
+      "x020": {"sentences": ["s009"], "source_text": "PET-CT revealed increased glucose uptake in bone marrow and spleen without evidence of malignancy."}
+    },
+    "finding_flags": {
+      "x002": ["The prompt says only 'tachycardic'; no rate is given."],
+      "x006": ["'Initial mycobacterial studies' are not specified (smear, culture or PCR)."],
+      "x007": ["Time 'initial workup': the prompt calls these studies initial and places them before the treatment and the examination; whether they were done before this admission is not stated."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s004 'worked in a blood bank with frequent plasma donation' is ambiguous (his own donations or his work).",
+      "Low CD4 count (320 cells/μL) with negative HIV serology is not explained in the prompt."
+    ],
+    "notes": [
+      "Index visit: the admission in early November 2014 for a month of intermittent fevers, night sweats, mild cough and weight loss (s001), with the examination and inpatient workup (s005–s009).",
+      "Admission date (early November 2014) is not a patient fact.",
+      "Earlier studies of s002 (mycobacterial studies, bone marrow smear and culture) are findings with time 'initial workup'; the patient is not said to have been told their results, so there is no medical_history fact for them."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s010", "reason": "Treatment during the workup (ganciclovir, IVIG, thymalfasin) and the subsequent course (persistent fever and cytopenias, further hepatosplenomegaly): after the index visit."}
+    ]
+  }
+}

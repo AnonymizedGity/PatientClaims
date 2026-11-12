@@ -1,0 +1,47 @@
+{
+ "case_id": "agentclinic-medqa-ext-048",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I have pain in my joints.",
+   "I've been told I'm obese.",
+   "I have type 2 diabetes.",
+   "I have high blood pressure."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've come in because I have pain in my joints. I also have type 2 diabetes and high blood pressure, and I've been told I'm obese.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f007",
+    "f008",
+    "f009"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3147,
+   "tokens_out": 45,
+   "seconds": 3.95,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-079", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 59, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "room spinning", "aliases": ["vertigo", "dizziness", "spinning sensation"], "text": "I had a feeling that the room was spinning.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f002", "item": "room spinning: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly, as I was going to bed.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f003", "item": "room spinning: duration", "parent": "f001", "attribute": "duration", "text": "It lasted about 3 minutes.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f004", "item": "room spinning: previous episodes", "parent": "f001", "attribute": "other", "text": "I've never had anything like this before.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "historical"},
+      {"id": "f005", "item": "room spinning: course", "parent": "f001", "attribute": "course", "text": "It's passed; right now I feel back to my usual self.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "The spinning made me feel nauseous several times.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "resolved"},
+      {"id": "f007", "item": "vomiting", "aliases": ["throwing up"], "text": "I threw up several times because of it.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "resolved"},
+      {"id": "f008", "item": "eczema", "aliases": ["skin condition", "atopic dermatitis"], "text": "I have a history of eczema.", "polarity": "present", "category": "medical_history"},
+      {"id": "f009", "item": "other medical problems", "aliases": ["past medical history", "chronic medical problems"], "text": "Apart from eczema, I'm healthy.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "headache", "aliases": ["headaches"], "text": "I haven't had any headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f011", "item": "hearing loss", "aliases": ["trouble hearing"], "text": "I haven't noticed any hearing loss.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f012", "item": "ringing in the ears", "aliases": ["tinnitus"], "text": "I don't have any ringing in my ears.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f013", "item": "loss of consciousness", "aliases": ["fainting", "passing out", "blacking out"], "text": "I didn't pass out.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f014", "item": "neurological problems", "aliases": ["neurological deficits", "weakness", "numbness"], "text": "I haven't noticed any neurological problems.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-079",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "97.7°F (36.5°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "134/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "85/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "13/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["appearance", "general inspection", "gait"], "result": "Healthy man with a normal gait."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "nystagmus examination", "aliases": ["nystagmus", "eye movements", "extraocular movements"], "result": "Physiologic nystagmus; severe symptoms and notable nystagmus when the head is turned to the left and laid back."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Unremarkable."},
+      {"id": "x009", "kind": "exam", "system": "ent", "name": "Dix-Hallpike maneuver", "aliases": ["Dix-Hallpike test", "Hallpike test", "positional testing"], "result": "Positive: induces nystagmus and reproduces the patient's vertigo when the head is turned to the left and laid back."},
+      {"id": "x010", "kind": "test", "name": "head imaging", "aliases": ["head CT", "CT head", "brain MRI", "MRI of the brain", "neuroimaging"], "result": "Normal; no evidence of stroke or masses."},
+      {"id": "x011", "kind": "test", "name": "audiometry", "aliases": ["hearing test", "audiogram"], "result": "Within normal limits for age."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-079",
+    "diagnosis": "Benign paroxysmal positional vertigo",
+    "aliases": ["BPPV", "benign positional vertigo", "benign paroxysmal positioning vertigo", "posterior canal BPPV", "left posterior canal BPPV", "left-sided BPPV"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-079",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-079-p001", "agentclinic-medqa-ext-079-p004"], "f002": ["cc", "agentclinic-medqa-ext-079-p001"],
+      "f003": ["agentclinic-medqa-ext-079-p001"], "f004": ["agentclinic-medqa-ext-079-p001", "agentclinic-medqa-ext-079-p005"],
+      "f005": ["agentclinic-medqa-ext-079-p001"], "f006": ["agentclinic-medqa-ext-079-p001", "agentclinic-medqa-ext-079-p002"],
+      "f007": ["agentclinic-medqa-ext-079-p001", "agentclinic-medqa-ext-079-p003"], "f008": ["agentclinic-medqa-ext-079-p005"],
+      "f009": ["agentclinic-medqa-ext-079-p005"], "f010": ["agentclinic-medqa-ext-079-p007"], "f011": ["agentclinic-medqa-ext-079-p007"],
+      "f012": ["agentclinic-medqa-ext-079-p007"], "f013": ["agentclinic-medqa-ext-079-p007"], "f014": ["agentclinic-medqa-ext-079-p007"]
+    },
+    "quotes": {
+      "f002": "The symptoms started as he was going to bed", "f003": "lasted for approximately 3 minutes",
+      "f004": "he has never experienced anything like this before", "f005": "currently feels at his baseline",
+      "f006": "several episodes of nausea and vomiting", "f007": "several episodes of nausea and vomiting",
+      "f008": "only a history of eczema", "f009": "otherwise healthy", "f012": "tinnitus", "f014": "neurological deficits"
+    },
+    "flags": {
+      "f014": ["'Denies ... neurological deficits' is a general denial; it is kept general, with weakness and numbness only as aliases."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "97.7°F (36.5°C)", "exam_ids": ["agentclinic-medqa-ext-079-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "134/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-079-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "85 bpm", "exam_ids": ["agentclinic-medqa-ext-079-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "13 breaths/min", "exam_ids": ["agentclinic-medqa-ext-079-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-079-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Appearance", "source_text": "Healthy man with a normal gait", "exam_ids": ["agentclinic-medqa-ext-079-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Neurological.Nystagmus", "source_text": "Physiologic nystagmus observed, with severe symptoms and notable nystagmus when head is turned to the left and laid back", "exam_ids": ["agentclinic-medqa-ext-079-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Examination.Neurological.Cranial_Nerve_Exam", "source_text": "Unremarkable", "exam_ids": ["agentclinic-medqa-ext-079-e008"]},
+      "x009": {"source": "Test_Results.Dix-Hallpike_Manoeuvre.Findings", "source_text": "Positive, inducing nystagmus and reproducing patient’s symptoms of vertigo when head is turned to the left and laid back.", "exam_ids": ["agentclinic-medqa-ext-079-i003"]},
+      "x010": {"source": "Test_Results.Head_Imaging.Findings", "source_text": "Normal, with no evidence of stroke or masses.", "exam_ids": ["agentclinic-medqa-ext-079-i001"]},
+      "x011": {"source": "Test_Results.Audiometry.Findings", "source_text": "Within normal limits for age.", "exam_ids": ["agentclinic-medqa-ext-079-i002"]}
+    },
+    "finding_flags": {
+      "x010": ["The source does not say whether the head imaging was CT or MRI."]
+    },
+    "leakage": [
+      {"fact_id": "f001", "reason": "The alias 'vertigo' is the symptom's clinical name (also in the objective); kept so the controller can match a doctor who asks about vertigo. Item and text do not use it."}
+    ],
+    "source_issues": [
+      "The nystagmus exam leaf (e007) already contains the positional finding (nystagmus with the head turned left and laid back) that the Dix-Hallpike result gives.",
+      "The Dix-Hallpike manoeuvre is listed under Test_Results; it is a bedside manoeuvre, so it is an exam record (x009)."
+    ],
+    "notes": [
+      "'Dizziness' (p004) is the same complaint as the room spinning and merges into f001.",
+      "The episode has passed ('currently feels at his baseline'), so the spinning, nausea and vomiting are time 'resolved', with an explicit course child (f005).",
+      "The Dix-Hallpike record keeps the alias 'positional testing', which the coverage check flags as a gold word; that is the manoeuvre's usual clinical name and reveals nothing beyond the request.",
+      "Gold aliases exclude 'vertigo' and 'peripheral vertigo' (broader)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with sudden-onset symptoms of vertigo."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-079-p006", "reason": "'No significant social history provided.' names no habit or exposure, so it carries no answer."}
+    ]
+  }
+}

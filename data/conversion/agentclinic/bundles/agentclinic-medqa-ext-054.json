@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-054",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 70, "sex": "female"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "dizziness", "aliases": ["dizzy spells", "feeling dizzy"], "text": "I've been having episodes of dizziness.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f002", "item": "dizziness: onset", "parent": "f001", "attribute": "onset", "text": "The episodes come on suddenly.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "spinning sensation", "aliases": ["vertigo", "room spinning", "false sense of movement"], "text": "I get a false feeling of motion, and occasionally a spinning sensation.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f004", "item": "symptoms triggered by change in position", "aliases": ["position dependent", "dizziness when changing position"], "text": "The dizziness and the spinning depend on my position.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f005", "item": "headache", "text": "I haven't had any headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "ringing in the ears", "aliases": ["tinnitus"], "text": "I don't have any ringing in my ears.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f007", "item": "new hearing loss", "aliases": ["hearing loss", "trouble hearing"], "text": "Apart from my age-related hearing loss, my hearing hasn't changed.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f008", "item": "nausea", "aliases": ["feeling sick"], "text": "I haven't felt nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f009", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "recent respiratory infections", "aliases": ["recent cold", "chest infection"], "text": "I haven't had any respiratory infections recently.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f011", "item": "recent illnesses", "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "recent changes in health", "text": "Apart from my hearing, there haven't been any significant changes in my health.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "recent injuries", "aliases": ["head injury", "trauma", "falls"], "text": "I haven't had any injuries recently.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "age-related hearing loss", "aliases": ["presbycusis", "hard of hearing"], "text": "I have age-related hearing loss.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from my hearing, I don't have any significant medical history.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "past surgery", "aliases": ["operations", "surgical history"], "text": "I haven't had any significant surgery.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f017", "item": "Meniere's disease", "aliases": ["Meniere disease"], "text": "I've never been told I had Meniere's disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f018", "item": "vestibular neuritis", "aliases": ["inner ear nerve inflammation"], "text": "I've never had vestibular neuritis.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f019", "item": "labyrinthitis", "aliases": ["inner ear infection"], "text": "I've never had labyrinthitis.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f020", "item": "occupation", "aliases": ["job", "work", "retired"], "text": "I'm a retired school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f021", "item": "living situation", "aliases": ["lives alone", "who I live with"], "text": "I live alone.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f022", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f023", "item": "alcohol", "aliases": ["drinking", "wine"], "text": "I have a glass of wine occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f024", "item": "physical activity", "aliases": ["exercise", "hobbies", "gardening"], "text": "I enjoy light gardening.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-054",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "77/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination", "eye movements"], "result": "Normal."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["cerebellar testing", "finger-to-nose test", "ataxia"], "result": "No ataxia or dysmetria."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "gait", "aliases": ["walking", "balance"], "result": "Steady; no signs of imbalance when not experiencing vertigo."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "Dix-Hallpike maneuver", "aliases": ["Dix-Hallpike test", "Hallpike test", "Nylen-Barany test"], "result": "Positive: right-sided horizontal nystagmus when moving from sitting to supine."},
+      {"id": "x009", "kind": "test", "name": "audiometry", "aliases": ["hearing test", "audiogram"], "result": "Bilateral high-frequency sensorineural hearing loss, consistent with presbycusis. No sudden drops in hearing indicative of Meniere's disease or labyrinthitis."},
+      {"id": "x010", "kind": "test", "name": "videonystagmography", "aliases": ["VNG", "vestibular function tests", "electronystagmography"], "result": "Normal vestibular response except for the response elicited during the Dix-Hallpike maneuver, consistent with BPPV."},
+      {"id": "x011", "kind": "test", "name": "brain MRI", "aliases": ["MRI of the brain", "MRI head"], "result": "No evidence of central lesions or infarcts that would suggest a central cause of vertigo."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-054",
+    "diagnosis": "Benign paroxysmal positional vertigo (BPPV)",
+    "aliases": ["BPPV", "benign paroxysmal positional vertigo", "benign positional vertigo", "benign paroxysmal positioning vertigo", "posterior canal BPPV", "horizontal canal BPPV", "right-sided BPPV"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-054",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-054-p001"],
+      "f002": ["agentclinic-medqa-ext-054-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-054-p001", "agentclinic-medqa-ext-054-p002"],
+      "f004": ["agentclinic-medqa-ext-054-p001", "agentclinic-medqa-ext-054-p002"],
+      "f005": ["agentclinic-medqa-ext-054-p007"],
+      "f006": ["agentclinic-medqa-ext-054-p007"],
+      "f007": ["agentclinic-medqa-ext-054-p004", "agentclinic-medqa-ext-054-p007"],
+      "f008": ["agentclinic-medqa-ext-054-p007"],
+      "f009": ["agentclinic-medqa-ext-054-p007"],
+      "f010": ["agentclinic-medqa-ext-054-p007"],
+      "f011": ["agentclinic-medqa-ext-054-p001", "agentclinic-medqa-ext-054-p003"],
+      "f012": ["agentclinic-medqa-ext-054-p001"],
+      "f013": ["agentclinic-medqa-ext-054-p001"],
+      "f014": ["agentclinic-medqa-ext-054-p001", "agentclinic-medqa-ext-054-p004"],
+      "f015": ["agentclinic-medqa-ext-054-p005"],
+      "f016": ["agentclinic-medqa-ext-054-p005"],
+      "f017": ["agentclinic-medqa-ext-054-p005"],
+      "f018": ["agentclinic-medqa-ext-054-p005"],
+      "f019": ["agentclinic-medqa-ext-054-p005"],
+      "f020": ["agentclinic-medqa-ext-054-p006"],
+      "f021": ["agentclinic-medqa-ext-054-p006"],
+      "f022": ["agentclinic-medqa-ext-054-p006"],
+      "f023": ["agentclinic-medqa-ext-054-p006"],
+      "f024": ["agentclinic-medqa-ext-054-p006"]
+    },
+    "quotes": {
+      "f001": "Episodes of dizziness",
+      "f002": "sudden episodes of dizziness",
+      "f003": "a false sensation of motion and occasional spinning",
+      "f004": "position dependent",
+      "f007": "No hearing loss besides presbycusis",
+      "f010": "recent respiratory infections",
+      "f012": "significant changes in health status, apart from age-related hearing loss",
+      "f013": "injuries",
+      "f014": "age-related hearing loss (presbycusis)",
+      "f015": "No significant past medical",
+      "f016": "or surgical history",
+      "f023": "occasional wine",
+      "f024": "Enjoys light gardening"
+    },
+    "flags": {
+      "f007": ["The ROS 'denies ... hearing loss' contradicts the known presbycusis; read with p004 ('No hearing loss besides presbycusis') as no new hearing loss."],
+      "f015": ["'No significant past medical ... history' is read as apart from the presbycusis stated in the History."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-054-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-054-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "77 bpm", "exam_ids": ["agentclinic-medqa-ext-054-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-054-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-054-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Coordination", "source_text": "No ataxia or dysmetria", "exam_ids": ["agentclinic-medqa-ext-054-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Gait", "source_text": "Steady, no signs of imbalance when not experiencing vertigo", "exam_ids": ["agentclinic-medqa-ext-054-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Positional_Testing.Dix-Hallpike_Manoeuvre", "source_text": "Positive for right-sided horizontal nystagmus when moving from sitting to supine position, suggestive of BPPV", "exam_ids": ["agentclinic-medqa-ext-054-e008"]},
+      "x009": {"source": "Test_Results.Audiometry.Findings", "source_text": "Bilateral high-frequency sensorineural hearing loss, consistent with presbycusis. No sudden drops in hearing indicative of Meniere’s disease or labyrinthitis.", "exam_ids": ["agentclinic-medqa-ext-054-i001"]},
+      "x010": {"source": "Test_Results.Vestibular_Function_Tests.Videonystagmography", "source_text": "Normal vestibular response with the exception of response elicited during Dix-Hallpike maneuver, consistent with BPPV.", "exam_ids": ["agentclinic-medqa-ext-054-i002"]},
+      "x011": {"source": "Test_Results.Imaging.MRI_Brain.Findings", "source_text": "No evidence of central lesions or infarcts that would suggest central causes of vertigo.", "exam_ids": ["agentclinic-medqa-ext-054-i003"]}
+    },
+    "finding_flags": {
+      "x008": ["Horizontal nystagmus on Dix-Hallpike is atypical: posterior-canal BPPV gives torsional, upbeating nystagmus; horizontal-canal BPPV is usually shown by the supine roll test. Kept as given.", "Source interpretation removed from the result (source: 'Positive: right-sided horizontal nystagmus when moving from sitting to supine, suggestive of BPPV.'); a bedside examination returns the finding, not the diagnosis."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The videonystagmography result says 'consistent with BPPV' (pool flag: test_results); kept as the test's answer."}
+    ],
+    "source_issues": ["Diagnosis abbreviations appear in visible results (Dix-Hallpike 'suggestive of BPPV', VNG 'consistent with BPPV'); flagged by the source pool as requiring cleanup.", "The ROS denies hearing loss although the History and p004 record presbycusis.", "Horizontal nystagmus on the Dix-Hallpike manoeuvre is atypical for the canal it tests."],
+    "notes": ["Patient texts and items avoid the gold words ('vertigo', 'positional', 'benign', 'paroxysmal'): the patient describes dizziness, a false feeling of motion and spinning, and position dependence. 'vertigo' is only a controller-facing alias of f003.", "Position dependence applies to both the dizziness and the spinning, so it is a standalone fact (f004).", "Presbycusis is a known diagnosis the patient can name (f014); the denials of Meniere's disease, vestibular neuritis and labyrinthitis are prior-diagnosis denials (medical_history).", "Gold label kept as the source gives it (with '(BPPV)'), only re-capitalised."],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with episodes of dizziness and vertigo."
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "case_id": "agentclinic-medqa-ext-018",
+  "source_row": 18,
+  "demographics_text": "54-year-old woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a painful, ulcerative skin lesion on her leg.",
+  "chief_complaint": "Painful ulcerative lesion on the right leg",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p001",
+      "field": "History",
+      "text": "The patient reports a skin lesion on her right leg that has been present for 1 month. The lesion began as a small red spot and has increased in size. She recalls an ant bite at the site before the lesion developed. She has a history of anterior uveitis treated with corticosteroids 8 months ago, as well as Crohn's disease, type 2 diabetes mellitus, and hypertension."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Lesion has a central necrotic base and purplish irregular borders"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p003",
+      "field": "Secondary_Symptoms",
+      "text": "History of ant bite at the site of the lesion"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Pitting pedal edema of the lower extremities"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Dilated tortuous veins in both lower legs"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p006",
+      "field": "Past_Medical_History",
+      "text": "[\"Crohn's disease\", \"Type 2 diabetes mellitus\", \"Hypertension\", \"Treated for anterior uveitis 8 months ago\"]"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p007",
+      "field": "Social_History",
+      "text": "Recently returned from a visit to Wisconsin 2 months ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p008",
+      "field": "Review_of_Systems",
+      "text": "No additional systemic symptoms mentioned."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-018-p009",
+      "field": "Current_Medications",
+      "text": "[\"Insulin\", \"Mesalamine\", \"Enalapril\", \"Aspirin\"]"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-018-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.6°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Pulse",
+      "text": "98/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "126/88 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-e004",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "A 4-cm tender ulcerative lesion on the anterior right leg with a central necrotic base and purplish irregular borders. Pitting pedal edema is noted along with dilated tortuous veins in both lower legs."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "Tenderness over the lesion. Femoral and pedal pulses palpable bilaterally."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-018-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-i004",
+      "path": "Test_Results.Blood_Glucose_Level.Random",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-018-i005",
+      "path": "Test_Results.Skin_Biopsy.Histopathology.Findings",
+      "text": "Neutrophilic infiltration without infection, consistent with pyoderma gangrenosum."
+    }
+  ],
+  "correct_diagnosis": "Pyoderma gangrenosum",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

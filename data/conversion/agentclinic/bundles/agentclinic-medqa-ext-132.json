@@ -1,0 +1,84 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-132", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 62, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "positive screening stool test for blood", "aliases": ["fecal occult blood test", "FOBT", "stool test", "screening result", "reason for visit"], "text": "I'm here for a follow-up because my routine screening stool tests came back positive for hidden blood.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f002", "item": "current symptoms", "aliases": ["any symptoms", "feeling unwell"], "text": "I feel fine; I don't have any symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "change in bowel habits", "aliases": ["altered bowel habits", "diarrhea", "constipation"], "text": "I haven't noticed any change in my bowel habits.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain"], "text": "I don't have any belly pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "fever", "aliases": ["fevers"], "text": "I haven't had any fevers recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "chills", "text": "I haven't had chills.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "change in appetite", "aliases": ["loss of appetite"], "text": "My appetite hasn't changed.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "father's health", "aliases": ["family history of cancer", "colon cancer in the family", "bowel cancer in the family"], "text": "My father died of cancer of the large intestine.", "polarity": "present", "category": "family_history", "time": "historical"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work", "retirement"], "text": "I recently retired; I was an accountant.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-132",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "bowel sounds"], "result": "Inspection: normal, no visible masses or distension. Auscultation: normal bowel sounds. Percussion: tympanic in all quadrants. Palpation: no tenderness or palpable masses."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "digital rectal examination", "aliases": ["DRE", "rectal exam", "stool guaiac", "guaiac test"], "result": "No masses felt. Guaiac test positive for occult blood."},
+      {"id": "x007", "kind": "test", "name": "colonoscopy", "aliases": ["lower endoscopy", "colonoscopy report"], "result": "A single polyp in the descending colon; no other abnormalities. The polyp was excised."},
+      {"id": "x008", "kind": "test", "name": "histopathology of the excised colon lesion", "aliases": ["biopsy", "biopsy report", "pathology report", "histology"], "result": "75% tubular architecture; no high-grade dysplasia."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-132",
+    "diagnosis": "Adenomatous polyp",
+    "aliases": ["adenomatous colon polyp", "adenomatous polyp of the colon", "colonic adenoma", "colorectal adenoma", "tubular adenoma", "tubulovillous adenoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-132",
+    "fact_sources": {
+      "f001": ["agentclinic-medqa-ext-132-p001"], "f002": ["agentclinic-medqa-ext-132-p001"], "f003": ["agentclinic-medqa-ext-132-p001"],
+      "f004": ["agentclinic-medqa-ext-132-p001"], "f005": ["agentclinic-medqa-ext-132-p001"], "f006": ["agentclinic-medqa-ext-132-p004"],
+      "f007": ["agentclinic-medqa-ext-132-p004"], "f008": ["agentclinic-medqa-ext-132-p004"], "f009": ["agentclinic-medqa-ext-132-p004"],
+      "f010": ["agentclinic-medqa-ext-132-p001", "agentclinic-medqa-ext-132-p005"], "f011": ["agentclinic-medqa-ext-132-p002"],
+      "f012": ["agentclinic-medqa-ext-132-p003"], "f013": ["agentclinic-medqa-ext-132-p003"], "f014": ["agentclinic-medqa-ext-132-p003"]
+    },
+    "quotes": {
+      "f001": "presents for a follow-up visit after a routine screening revealed positive fecal occult blood tests",
+      "f002": "He reports being asymptomatic.", "f003": "altered bowel habits", "f006": "Denies any recent fevers",
+      "f009": "or changes in appetite", "f010": "Father died of large intestinal cancer.",
+      "f011": "No significant personal medical history.", "f013": "drinks alcohol socially", "f014": "Recently retired accountant."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-132-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-132-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-132-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-132-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Abdomen appears normal, no visible masses or distension. | Bowel sounds normal. | Tympanic across all quadrants. | No tenderness or palpable masses.", "exam_ids": ["agentclinic-medqa-ext-132-e005", "agentclinic-medqa-ext-132-e006", "agentclinic-medqa-ext-132-e007", "agentclinic-medqa-ext-132-e008"]},
+      "x006": {"source": "Physical_Examination_Findings.Rectal_Examination.Findings", "source_text": "No masses felt. Guaiac test positive for occult blood.", "exam_ids": ["agentclinic-medqa-ext-132-e009"]},
+      "x007": {"source": "Test_Results.Colonoscopy_Report.Findings", "source_text": "A single polyp identified in the descending colon, no other abnormalities noted. Polyp was excised.", "exam_ids": ["agentclinic-medqa-ext-132-i001"]},
+      "x008": {"source": "Test_Results.Biopsy_Report.Findings", "source_text": "Histopathology reveals 75% tubular architecture with no evidence of high-grade dysplasia.", "exam_ids": ["agentclinic-medqa-ext-132-i002"]}
+    },
+    "leakage": [
+      {"id": "x007", "reason": "Colonoscopy result names a 'polyp' (part of the gold diagnosis); it is the test's answer."}
+    ],
+    "source_issues": [
+      "No chief complaint: the patient is asymptomatic and attends for follow-up of a positive screening fecal occult blood test.",
+      "Exactly 75% tubular architecture lies on the tubular/tubulovillous adenoma boundary; the gold label 'adenomatous polyp' covers both."
+    ],
+    "notes": [
+      "With no chief complaint, the opening is the visit reason from the History (f001: follow-up of the positive screening stool test), as CONVERSION.md directs for this case.",
+      "'He mentions no specific gastrointestinal symptoms like altered bowel habits, abdominal pain, or weight loss' follows 'He reports being asymptomatic' and is read as denials.",
+      "The father's large-intestine cancer appears in History and Family_History; one fact.",
+      "The histopathology finding name avoids 'polyp' (gold term): 'histopathology of the excised colon lesion'."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient with a history of positive fecal occult blood test and family history of large intestinal cancer."
+    }
+  }
+}

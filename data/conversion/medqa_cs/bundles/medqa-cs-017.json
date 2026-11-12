@@ -1,0 +1,1135 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-017",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 75,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "hearing loss",
+        "aliases": [
+          "trouble hearing",
+          "hard of hearing"
+        ],
+        "text": "I can't hear as well as I used to.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "hearing loss: how it was noticed",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "My wife has told me that I can't hear well.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "hearing loss: lip reading",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "Lately I have noticed that I have been reading lips.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "hearing loss: how long",
+        "parent": "f001",
+        "attribute": "duration",
+        "text": "This has been happening for a year.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "hearing loss: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It has gotten worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "hearing loss: which ears",
+        "parent": "f001",
+        "attribute": "location",
+        "text": "It seems to be both ears, though I'm not sure.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "hearing loss: which sounds",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "All sounds.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "hearing loss: how words sound",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "Jumbled and distorted, especially in crowded places or when I watch television.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "hearing loss: seen a doctor about it",
+        "parent": "f001",
+        "attribute": "other",
+        "aliases": [
+          "earwax removal"
+        ],
+        "text": "I visited my doctor a month ago, and he removed some wax from my ears.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "historical"
+      },
+      {
+        "id": "f010",
+        "item": "hearing loss: effect of the wax removal",
+        "parent": "f001",
+        "attribute": "treatment_response",
+        "text": "It gave me temporary relief, but now it's just as bad as it was before.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "trouble telling where sounds come from",
+        "text": "I can tell where sounds are coming from.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "trouble understanding speech",
+        "text": "I don't have problems understanding speech.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "ringing in the ears",
+        "aliases": [
+          "tinnitus",
+          "buzzing in the ears"
+        ],
+        "text": "I occasionally have ringing in both ears.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "ent",
+        "time": "recurrent"
+      },
+      {
+        "id": "f014",
+        "item": "ear pain",
+        "aliases": [
+          "earache"
+        ],
+        "text": "My ears don't hurt.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "ear discharge",
+        "aliases": [
+          "fluid from the ears"
+        ],
+        "text": "There's no fluid coming from my ears.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "room spinning",
+        "aliases": [
+          "vertigo",
+          "spinning sensation"
+        ],
+        "text": "The room never feels like it's spinning.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "falls",
+        "aliases": [
+          "falling"
+        ],
+        "text": "I haven't had any falls lately.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "feeling about to fall",
+        "aliases": [
+          "unsteadiness",
+          "loss of balance"
+        ],
+        "text": "I don't feel like I'm about to fall.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "headache",
+        "text": "I get headaches infrequently.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "recurrent"
+      },
+      {
+        "id": "f020",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I'm not nauseated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't vomited.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "numbness",
+        "text": "I don't have any numbness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "weakness",
+        "text": "I don't have any weakness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "tingling",
+        "aliases": [
+          "pins and needles"
+        ],
+        "text": "I don't have any tingling.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "ear injury",
+        "aliases": [
+          "ear trauma"
+        ],
+        "text": "I haven't injured my ears.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "historical"
+      },
+      {
+        "id": "f026",
+        "item": "putting anything in the ears",
+        "aliases": [
+          "cotton swabs",
+          "foreign body in the ear"
+        ],
+        "text": "I haven't put anything in my ears.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "historical"
+      },
+      {
+        "id": "f027",
+        "item": "high blood pressure",
+        "aliases": [
+          "hypertension"
+        ],
+        "text": "I have hypertension, and it is managed effectively.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "high blood pressure: checking it",
+        "parent": "f027",
+        "attribute": "other",
+        "text": "I check my blood pressure daily.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "recent infections",
+        "aliases": [
+          "infections",
+          "urinary tract infection"
+        ],
+        "text": "I had a urinary tract infection about a year ago. My doctor gave me an antibiotic, but I don't remember its name.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "None. I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f031",
+        "item": "hydrochlorothiazide",
+        "aliases": [
+          "water pill",
+          "blood pressure pill"
+        ],
+        "text": "I take hydrochlorothiazide.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "aspirin",
+        "text": "For the past 25 years, I have also taken aspirin daily to protect my heart.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I develop a rash when I take penicillin.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "hearing loss in the family",
+        "aliases": [
+          "family history"
+        ],
+        "text": "Nobody in my family has had anything similar.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "loud noise exposure",
+        "aliases": [
+          "noise at work"
+        ],
+        "text": "I was in the army, and it was always loud.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "Not at all. I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "Not at all. I've never used recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f038",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "Not at all. I don't smoke.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "sexual activity",
+        "text": "I'm sexually active, only with my wife.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a retired military veteran.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "marital status",
+        "text": "I'm married.",
+        "polarity": "present",
+        "category": "social_background"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-017",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "132/68 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.4°F (36.9°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "18/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "84/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "general",
+        "name": "head examination",
+        "result": "Normocephalic and atraumatic."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "pupils",
+          "extraocular movements",
+          "nystagmus",
+          "fundoscopy"
+        ],
+        "result": "Pupils equal, round, reactive to light and accommodation; extraocular movements intact; no nystagmus; no papilledema."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "ent",
+        "name": "ear examination",
+        "aliases": [
+          "otoscopy",
+          "ear canals",
+          "tympanic membranes"
+        ],
+        "result": "No cerumen; no redness of the ear canals; tympanic membranes with light reflex and no signs of infection; no tenderness of the auricle or the area around it."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "hematologic",
+        "name": "lymph node examination",
+        "aliases": [
+          "lymph nodes"
+        ],
+        "result": "No lymphadenopathy."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "ent",
+        "name": "throat examination",
+        "aliases": [
+          "oropharynx",
+          "mouth"
+        ],
+        "result": "Oropharynx normal."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "ent",
+        "name": "hearing examination",
+        "aliases": [
+          "hearing test",
+          "whisper test",
+          "finger rub test"
+        ],
+        "result": "Decreased hearing in both ears; cannot hear when spoken to from behind."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "ent",
+        "name": "Weber test",
+        "result": "No lateralization; hearing equal in both ears."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "ent",
+        "name": "Rinne test",
+        "result": "Normal on both sides: air conduction greater than bone conduction."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; S1 and S2 within normal limits; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x016",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "cranial nerves",
+        "aliases": [
+          "cranial nerve examination"
+        ],
+        "result": "Cranial nerves II to XII grossly intact except for decreased hearing."
+      },
+      {
+        "id": "x017",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "strength",
+          "motor examination"
+        ],
+        "result": "5/5 throughout."
+      },
+      {
+        "id": "x018",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes 2+ throughout."
+      },
+      {
+        "id": "x019",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory examination"
+        ],
+        "result": "Intact."
+      },
+      {
+        "id": "x020",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "gait",
+        "result": "Normal."
+      },
+      {
+        "id": "x021",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "coordination",
+        "aliases": [
+          "finger-to-nose test",
+          "past pointing"
+        ],
+        "result": "No past pointing."
+      },
+      {
+        "id": "x022",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "heel-to-shin test",
+        "result": "Result not documented"
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-017",
+    "diagnosis": "Presbycusis",
+    "aliases": [
+      "presbyacusis",
+      "age-related hearing loss",
+      "senile hearing loss",
+      "age-related sensorineural hearing loss"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Presbycusis",
+        "evidence": [
+          "Bilateral, progressive hearing loss",
+          "Exam: Normal Rinne test",
+          "Exam: Lack of lateralization on Weber test"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Cochlear nerve damage",
+        "aliases": [
+          "noise-induced hearing loss",
+          "acoustic trauma",
+          "cochlear nerve injury",
+          "auditory nerve damage"
+        ],
+        "evidence": [
+          "Prior exposure to loud noise",
+          "Bilateral hearing loss",
+          "Exam: Lack of lateralization on Weber test",
+          "Exam: Normal Rinne test"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Otosclerosis",
+        "aliases": [
+          "otospongiosis"
+        ],
+        "evidence": [
+          "Bilateral, progressive hearing loss",
+          "Exam: Lack of lateralization on Weber test"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Meniere's disease",
+        "note": "Usually hearing loss, tinnitus and episodic vertigo from endolymphatic disruption; may be unilateral or bilateral."
+      },
+      {
+        "diagnosis": "Ototoxicity",
+        "note": "Antibiotic-related hearing loss is permanent; aspirin-related loss is reversible, so aspirin should be withheld during the workup."
+      },
+      {
+        "diagnosis": "Acoustic neuroma",
+        "note": "Unlikely without other neurologic signs, but should be considered if focal deficits are found."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-017",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-017-p001"
+      ],
+      "f003": [
+        "medqa-cs-017-p001"
+      ],
+      "f004": [
+        "medqa-cs-017-p002"
+      ],
+      "f005": [
+        "medqa-cs-017-p003"
+      ],
+      "f006": [
+        "medqa-cs-017-p004"
+      ],
+      "f007": [
+        "medqa-cs-017-p005"
+      ],
+      "f008": [
+        "medqa-cs-017-p006"
+      ],
+      "f009": [
+        "medqa-cs-017-p009"
+      ],
+      "f010": [
+        "medqa-cs-017-p009"
+      ],
+      "f011": [
+        "medqa-cs-017-p007"
+      ],
+      "f012": [
+        "medqa-cs-017-p008"
+      ],
+      "f013": [
+        "medqa-cs-017-p015"
+      ],
+      "f014": [
+        "medqa-cs-017-p010"
+      ],
+      "f015": [
+        "medqa-cs-017-p011"
+      ],
+      "f016": [
+        "medqa-cs-017-p012"
+      ],
+      "f017": [
+        "medqa-cs-017-p013"
+      ],
+      "f018": [
+        "medqa-cs-017-p013"
+      ],
+      "f019": [
+        "medqa-cs-017-p018"
+      ],
+      "f020": [
+        "medqa-cs-017-p020"
+      ],
+      "f021": [
+        "medqa-cs-017-p020"
+      ],
+      "f022": [
+        "medqa-cs-017-p021"
+      ],
+      "f023": [
+        "medqa-cs-017-p021"
+      ],
+      "f024": [
+        "medqa-cs-017-p021"
+      ],
+      "f025": [
+        "medqa-cs-017-p016"
+      ],
+      "f026": [
+        "medqa-cs-017-p019"
+      ],
+      "f027": [
+        "medqa-cs-017-p023"
+      ],
+      "f028": [
+        "medqa-cs-017-p023"
+      ],
+      "f029": [
+        "medqa-cs-017-p014"
+      ],
+      "f030": [
+        "medqa-cs-017-p024"
+      ],
+      "f031": [
+        "medqa-cs-017-p022"
+      ],
+      "f032": [
+        "medqa-cs-017-p022"
+      ],
+      "f033": [
+        "medqa-cs-017-p031"
+      ],
+      "f034": [
+        "medqa-cs-017-p025"
+      ],
+      "f035": [
+        "medqa-cs-017-p017"
+      ],
+      "f036": [
+        "medqa-cs-017-p027"
+      ],
+      "f037": [
+        "medqa-cs-017-p028"
+      ],
+      "f038": [
+        "medqa-cs-017-p029"
+      ],
+      "f039": [
+        "medqa-cs-017-p030"
+      ],
+      "f040": [
+        "medqa-cs-017-p026"
+      ],
+      "f041": [
+        "medqa-cs-017-p030"
+      ]
+    },
+    "quotes": {
+      "f001": "I can't hear as well as I used to.",
+      "f002": "My wife has told me that I can't hear well",
+      "f003": "lately I have noticed that I have been reading lips.",
+      "f004": "This has been happening for a year.",
+      "f005": "It has worsened.",
+      "f006": "It appears I’m experiencing issues with both ears, though I’m uncertain.",
+      "f007": "All sounds.",
+      "f008": "Jumbled and distorted, especially in crowded places or when I watch television.",
+      "f009": "I visited my doctor a month ago, and he removed some wax from my ears.",
+      "f010": "This provided temporary relief, but now the condition is just as severe as it was before.",
+      "f011": "Yes.",
+      "f012": "No.",
+      "f013": "Occasionally, in both ears.",
+      "f014": "No.",
+      "f015": "No.",
+      "f016": "No.",
+      "f017": "No.",
+      "f018": "No.",
+      "f019": "Infrequently.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "I have hypertension. / it is managed effectively.",
+      "f028": "I check my blood pressure daily",
+      "f029": "I had a urinary tract infection about a year ago. My doctor gave me an antibiotic, but I don't remember its name.",
+      "f030": "None.",
+      "f031": "Hydrochlorothiazide.",
+      "f032": "For the past 25 years, I have also taken aspirin daily to protect my heart.",
+      "f033": "I develop a rash when I take penicillin.",
+      "f034": "No.",
+      "f035": "Yes. I was in the army, and it was always loud.",
+      "f036": "Not at all.",
+      "f037": "Not at all.",
+      "f038": "Not at all.",
+      "f039": "Only with my wife.",
+      "f040": "Retired military veteran."
+    },
+    "flags": {
+      "f012": [
+        "Sits uneasily with p006 (words sound jumbled and distorted) and p001 (reading lips); recorded literally."
+      ],
+      "f041": [
+        "Split off from f039, whose text was the only record of it (fix)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 132/68 mmHg | VS: Within Normal Limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-017-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.4°F (36.9°C) | VS: Within Normal Limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-017-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 18/minute | VS: Within Normal Limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-017-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 84/minute, regular | VS: Within Normal Limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-017-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-017-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: - Normocephalic/atraumatic",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e004"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "HEENT: - Pupils Equal, Round, Reactive to Light and Accommodation (PERRLA) - Extraocular Movements Intact (EOMI), no nystagmus - No papilledema",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e005",
+          "medqa-cs-017-e006",
+          "medqa-cs-017-e007"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "HEENT: - no cerumen - Tympanic Membranes (TMs) with light reflex, no stigmata of infection, no redness to ear canal, no tenderness of auricle or periauricle",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e007",
+          "medqa-cs-017-e008"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "HEENT: - ... no lymphadenopathy",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e008"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "HEENT: - Oropharynx normal",
+        "exam_ids": [
+          "medqa-cs-017-e003",
+          "medqa-cs-017-e009"
+        ]
+      },
+      "x011": {
+        "source": "sp_notes + patient_note",
+        "source_text": "Pretend that you have difficulty hearing in both ears. | Pretend that you cannot hear when spoken to from behind. | Cranial nerves: II to XII grossly intact except for decreased hearing.",
+        "exam_ids": [
+          "medqa-cs-017-e014"
+        ]
+      },
+      "x012": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Weber test without lateralization | On physical exam, demonstrate that you have no lateralization on the Weber test (i.e., show that your hearing is equal in both ears).",
+        "exam_ids": [
+          "medqa-cs-017-e010"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "normal Rinne test (revealed air conduction > bone conduction) bilaterally.",
+        "exam_ids": [
+          "medqa-cs-017-e010"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-017-e011"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular Rate and Rhythm (RRR); S1S2 Within Normal Limits (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-017-e012"
+        ]
+      },
+      "x016": {
+        "source": "patient_note",
+        "source_text": "Neuro: - Cranial nerves: II to XII grossly intact except for decreased hearing.",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e014"
+        ]
+      },
+      "x017": {
+        "source": "patient_note",
+        "source_text": "Neuro: - Motor: Strength 5/5 throughout.",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e015"
+        ]
+      },
+      "x018": {
+        "source": "patient_note",
+        "source_text": "Neuro: - Deep Tendon Reflexes (DTRs): 2+ throughout.",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e016"
+        ]
+      },
+      "x019": {
+        "source": "patient_note",
+        "source_text": "Neuro: - Sensation: Intact.",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e017"
+        ]
+      },
+      "x020": {
+        "source": "patient_note",
+        "source_text": "Neuro: - Gait: Normal",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e018"
+        ]
+      },
+      "x021": {
+        "source": "patient_note",
+        "source_text": "Neuro: - Gait: Normal; no past pointing and 8 heel to shin.",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e018"
+        ]
+      },
+      "x022": {
+        "source": "patient_note",
+        "source_text": "Neuro: - Gait: Normal; no past pointing and 8 heel to shin.",
+        "exam_ids": [
+          "medqa-cs-017-e013",
+          "medqa-cs-017-e018"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x022": [
+        "Source reads '8 heel to shin' — symbol garbled; result cannot be recovered."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Exam lines e003 ('HEENT:') and e013 ('Neuro:') are section headers with no findings; they are covered by listing them with the item lines that follow them.",
+      "Exam e018 'no past pointing and 8 heel to shin' contains an OCR artifact ('8'); the heel-to-shin result is not stated (x022).",
+      "The opening scenario omits the patient's sex; 'male' is taken from the raw patient description and the note.",
+      "Note HPI says cerumen removal gave 'moderate improvement'; the script says it gave only temporary relief and the hearing is now as bad as before.",
+      "p008 denies problems understanding speech, while p006 says words sound jumbled and distorted and p001 says he has been reading lips; the note also says 'no difficulty comprehending'."
+    ],
+    "notes": [
+      "Header-only exam lines (e003, e004-e009 under HEENT; e013, e014-e018 under Neuro) are recorded by putting the header id together with the item id in exam_ids.",
+      "All three hearing-related sp_notes directions are SP-simulated findings: bilateral hearing difficulty and not hearing when spoken to from behind form the hearing examination (x011, together with the note's 'decreased hearing'); no Weber lateralization is part of the Weber record (x012). All are also kept as acting notes.",
+      "p007 'Yes' (can identify the source of sound) is recorded as an absent difficulty localizing sound (f011).",
+      "p013 (falls / sensation of impending falls) is split into two absent facts (f017, f018).",
+      "Conversion: the hearing-loss description is a parent (f001) with children for how it was noticed, lip reading, duration, course, side, sounds affected, how words sound, the doctor visit with wax removal and its effect. Hypertension monitoring is a child (f028) of the hypertension fact.",
+      "Conversion: the HEENT lines are grouped into head, eye, ear, lymph node and throat records; the neurological lines into cranial nerves, motor strength, reflexes, sensation, gait, coordination and heel-to-shin. The note's 'VS: Within Normal Limits' (e002) agrees with the doorway values and is cited on each doorway vital record.",
+      "Conversion: 'sensorineural hearing loss' is not added as a gold alias because it is broader than presbycusis.",
+      "Fixes: f013 text rewritten; f039 text rewritten; f011 answer word removed; f012 answer word removed; f014 answer word removed; f015 answer word removed; f016 answer word removed; f017 answer word removed; f018 answer word removed; f020 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f024 answer word removed; f025 answer word removed; f026 answer word removed; f034 answer word removed; f035 answer word removed; f041 new fact 'marital status' from f039."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Ask the examinee to speak up if he or she did not speak in a loud and clear manner.",
+        "Pretend that you have difficulty hearing in both ears.",
+        "On physical exam, demonstrate that you have no lateralization on the Weber test (i.e., show that your hearing is equal in both ears).",
+        "Pretend that you cannot hear when spoken to from behind."
+      ],
+      "patient_questions": [
+        "Do you believe I might be losing my hearing?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

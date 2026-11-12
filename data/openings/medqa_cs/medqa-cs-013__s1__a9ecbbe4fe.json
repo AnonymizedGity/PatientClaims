@@ -1,0 +1,47 @@
+{
+ "case_id": "medqa-cs-013",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have stomach pain.",
+   "It started two weeks ago.",
+   "When I have the pain, it's a 7 out of 10, and then it can go down to 0.",
+   "It's burning."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have stomach pain that started two weeks ago. It's a burning sensation. When I have the pain, it's a 7 out of 10, and then it can go down to 0.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f006",
+    "f009"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3893,
+   "tokens_out": 55,
+   "seconds": 7.67,
+   "redrafts": 0
+  }
+ }
+}

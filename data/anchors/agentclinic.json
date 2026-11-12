@@ -1,0 +1,1997 @@
+{
+ "_note": "X for each anchored study case: 'condition' (the wrong diagnosis), 'phrase' (the lay words the patient says), 'terms' (what the scorer matches in the doctor's differential, whole word, plural allowed), 'source' (where X comes from: the dataset's reference differential or the clinical differential of the presenting complaint), and 'quality': 'weak' for a looser fit. Rule: a plausible but wrong diagnosis that a lay patient could fear and name.",
+ "agentclinic-medqa-ext-001": {
+  "condition": "Multiple sclerosis",
+  "source": "clinical differential",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ],
+  "reason": "Double vision with limb weakness in a 35-year-old woman is a classic multiple sclerosis worry and MS is on the differential, but weakness that worsens with activity and recovers with rest points to myasthenia gravis."
+ },
+ "agentclinic-medqa-ext-002": {
+  "condition": "Stroke",
+  "source": "clinical differential",
+  "phrase": "a stroke",
+  "terms": [
+   "stroke",
+   "cerebrovascular accident",
+   "cva",
+   "transient ischemic attack",
+   "transient ischaemic attack",
+   "tia",
+   "cerebral infarction",
+   "cerebral infarct",
+   "cerebellar infarction",
+   "cerebellar infarct",
+   "brainstem infarction",
+   "brainstem infarct",
+   "intracerebral hemorrhage",
+   "intracerebral haemorrhage",
+   "vertebrobasilar insufficiency"
+  ],
+  "reason": "A new unsteady gait with a weaker right arm is what patients fear as a stroke and stroke is on the differential, but the subacute course after a year of natalizumab points to PML."
+ },
+ "agentclinic-medqa-ext-004": {
+  "condition": "Gastric cancer",
+  "source": "clinical differential",
+  "phrase": "stomach cancer",
+  "terms": [
+   "stomach cancer",
+   "gastric cancer",
+   "gastric carcinoma",
+   "gastric adenocarcinoma",
+   "stomach carcinoma",
+   "gastric malignancy"
+  ],
+  "reason": "Belly pain, fullness, weight loss and a new neck lump in a 55-year-old smoker can come from stomach cancer, but night sweats with a fast-growing node point to lymphoma, and gastric carcinoma is a different tumor."
+ },
+ "agentclinic-medqa-ext-005": {
+  "condition": "Acute pyelonephritis",
+  "source": "clinical differential",
+  "phrase": "a kidney infection",
+  "terms": [
+   "pyelonephritis",
+   "kidney infection",
+   "renal infection",
+   "pyelitis",
+   "upper urinary tract infection"
+  ],
+  "reason": "Fever with flank pain and tiredness is the textbook picture of a kidney infection, but no urinary symptoms and a drug rash during beta-lactam treatment point to acute interstitial nephritis."
+ },
+ "agentclinic-medqa-ext-006": {
+  "condition": "Medial meniscus tear",
+  "source": "clinical differential",
+  "phrase": "a torn meniscus",
+  "terms": [
+   "meniscus tear",
+   "meniscal tear",
+   "torn meniscus",
+   "meniscal injury",
+   "meniscus injury"
+  ],
+  "reason": "Knee pain after repeated pivoting and twisting in volleyball makes a meniscal tear a natural worry, but pain below the knee on the inner shin with no swelling or injury fits pes anserine bursitis."
+ },
+ "agentclinic-medqa-ext-007": {
+  "condition": "Cardiac arrhythmia",
+  "source": "clinical differential",
+  "phrase": "a heart rhythm problem",
+  "terms": [
+   "arrhythmia",
+   "dysrhythmia",
+   "heart rhythm",
+   "atrial fibrillation",
+   "ventricular tachycardia",
+   "heart block",
+   "atrioventricular block",
+   "sick sinus syndrome",
+   "bradyarrhythmia",
+   "tachyarrhythmia",
+   "long qt syndrome"
+  ],
+  "reason": "Sudden loss of consciousness in a 53-year-old man raises the fear of a dangerous heart rhythm, but fainting right after urinating with recovery within 30 seconds is situational syncope."
+ },
+ "agentclinic-medqa-ext-009": {
+  "condition": "Breast cancer",
+  "source": "clinical differential",
+  "phrase": "breast cancer",
+  "terms": [
+   "breast cancer",
+   "breast carcinoma",
+   "ductal carcinoma",
+   "lobular carcinoma",
+   "breast malignancy",
+   "breast adenocarcinoma",
+   "dcis"
+  ],
+  "reason": "A breast lump that grows quickly in a 48-year-old woman is the classic breast cancer fear and carcinoma is on the differential, but rapid growth without pain, skin or nipple changes fits a phyllodes tumor, which is not a breast carcinoma.",
+  "quality": "weak"
+ },
+ "agentclinic-medqa-ext-010": {
+  "condition": "Urinary tract infection",
+  "source": "clinical differential",
+  "phrase": "a UTI",
+  "terms": [
+   "urinary tract infection",
+   "uti",
+   "bladder infection",
+   "urine infection",
+   "cystitis",
+   "pyelonephritis",
+   "kidney infection"
+  ],
+  "reason": "Fever, lower belly tenderness and frequent urination after delivery make a urinary tract infection plausible, but a long labor with a large baby and a tender uterus point to postpartum endometritis."
+ },
+ "agentclinic-medqa-ext-011": {
+  "condition": "Colorectal cancer",
+  "source": "clinical differential",
+  "phrase": "bowel cancer",
+  "terms": [
+   "colorectal cancer",
+   "colon cancer",
+   "bowel cancer",
+   "rectal cancer",
+   "colorectal carcinoma",
+   "colon carcinoma",
+   "rectal carcinoma",
+   "colonic carcinoma",
+   "colorectal adenocarcinoma",
+   "colorectal malignancy",
+   "crc"
+  ],
+  "reason": "Rectal bleeding at 45 is the classic bowel cancer fear, but bleeding with each bowel movement after five vaginal deliveries, with no weight loss or change in bowel habit, fits hemorrhoids."
+ },
+ "agentclinic-medqa-ext-013": {
+  "condition": "Hip fracture (femoral neck fracture)",
+  "source": "clinical differential",
+  "phrase": "a broken hip",
+  "terms": [
+   "hip fracture",
+   "broken hip",
+   "fractured hip",
+   "femoral neck fracture",
+   "neck of femur fracture",
+   "fractured neck of femur",
+   "femur fracture",
+   "femoral fracture",
+   "fractured femur",
+   "intertrochanteric fracture",
+   "proximal femur fracture",
+   "proximal femoral fracture"
+  ],
+  "reason": "Severe groin pain after a car crash makes a broken hip a natural fear and femoral neck fracture is on the differential, but a short, adducted and internally rotated leg after a dashboard impact indicates a posterior hip dislocation."
+ },
+ "agentclinic-medqa-ext-015": {
+  "condition": "Finger fracture (phalanx fracture)",
+  "source": "clinical differential",
+  "phrase": "a broken finger",
+  "terms": [
+   "finger fracture",
+   "broken finger",
+   "fractured finger",
+   "phalanx fracture",
+   "phalangeal fracture"
+  ],
+  "reason": "A painful swollen finger after a football injury makes a fracture an obvious worry, but being unable to bend the fingertip after it caught in a jersey is an FDP tendon avulsion, not a phalanx fracture."
+ },
+ "agentclinic-medqa-ext-016": {
+  "condition": "Metastatic recurrence of colon cancer",
+  "source": "clinical differential",
+  "phrase": "my colon cancer coming back",
+  "terms": [
+   "metastasis",
+   "metastases",
+   "metastatic",
+   "cancer recurrence",
+   "recurrent colon cancer",
+   "recurrent colorectal cancer",
+   "colon cancer recurrence",
+   "colorectal cancer recurrence"
+  ],
+  "reason": "A neck lump that keeps growing in a man treated for colon cancer raises the fear of recurrence or metastasis, but a painless lump on the back of the neck that grows slowly over two months fits an epidermoid cyst."
+ },
+ "agentclinic-medqa-ext-017": {
+  "condition": "Viral gastroenteritis",
+  "source": "clinical differential",
+  "phrase": "a stomach bug",
+  "terms": [
+   "gastroenteritis",
+   "norovirus",
+   "rotavirus",
+   "stomach bug",
+   "stomach flu",
+   "food poisoning"
+  ],
+  "reason": "Sudden watery diarrhea with cramps is what most people call a stomach bug, but onset in hospital during levofloxacin treatment points to C. difficile colitis."
+ },
+ "agentclinic-medqa-ext-018": {
+  "condition": "Cellulitis (infected insect bite)",
+  "source": "clinical differential",
+  "phrase": "an infected bite",
+  "terms": [
+   "cellulitis",
+   "skin infection",
+   "erysipelas",
+   "abscess",
+   "soft tissue infection",
+   "wound infection",
+   "infected bite",
+   "infected insect bite",
+   "ecthyma"
+  ],
+  "reason": "A sore that began at an ant bite makes an infected bite a natural fear and skin infection is on the differential, but a necrotic ulcer with purple irregular edges that keeps growing for a month in a patient with Crohn's disease fits pyoderma gangrenosum."
+ },
+ "agentclinic-medqa-ext-019": {
+  "condition": "Placental abruption",
+  "source": "clinical differential",
+  "phrase": "the placenta coming away",
+  "terms": [
+   "placental abruption",
+   "abruptio placentae",
+   "abruptio placenta",
+   "placental separation",
+   "abruption"
+  ],
+  "reason": "Painful vaginal bleeding at 38 weeks is the textbook picture of placental abruption, but contractions that stop when the bleeding starts after a previous caesarean point to uterine rupture."
+ },
+ "agentclinic-medqa-ext-020": {
+  "condition": "Lumbar muscle strain",
+  "source": "clinical differential",
+  "phrase": "a pulled muscle in my back",
+  "terms": [
+   "lumbar strain",
+   "lumbosacral strain",
+   "muscle strain",
+   "muscular strain",
+   "back strain",
+   "pulled muscle",
+   "lumbar sprain"
+  ],
+  "reason": "Sudden low back pain while exercising at the gym is often a pulled muscle, but sharp pain shooting down the leg into the foot is radicular and points to a disc herniation."
+ },
+ "agentclinic-medqa-ext-021": {
+  "condition": "Ocular toxoplasmosis",
+  "source": "clinical differential",
+  "phrase": "toxoplasmosis",
+  "terms": [
+   "toxoplasmosis",
+   "toxoplasma",
+   "toxo",
+   "toxoplasmic"
+  ],
+  "reason": "A patient with AIDS on prophylaxis may know and fear toxoplasmosis, which also causes retinitis with floaters, but painless blurred vision with black spots in advanced AIDS is most typical of CMV retinitis."
+ },
+ "agentclinic-medqa-ext-023": {
+  "condition": "Basal cell carcinoma",
+  "source": "clinical differential",
+  "phrase": "a basal cell skin cancer",
+  "terms": [
+   "basal cell carcinoma",
+   "basal cell cancer",
+   "bcc",
+   "rodent ulcer",
+   "basal cell epithelioma"
+  ],
+  "reason": "A skin spot that grows over two months in a 63-year-old smoker is often a basal cell carcinoma and BCC is on the differential, but the case is melanoma, a different tumor and not a subtype of BCC."
+ },
+ "agentclinic-medqa-ext-024": {
+  "condition": "Crohn's disease",
+  "source": "clinical differential",
+  "phrase": "Crohn's disease",
+  "terms": [
+   "crohn",
+   "crohns",
+   "inflammatory bowel disease",
+   "ibd"
+  ],
+  "reason": "Four months of diarrhea with urgency and mucus in a 31-year-old woman make Crohn's disease a real worry, but cramps relieved by defecation with no weight loss, fever or blood fit irritable bowel syndrome."
+ },
+ "agentclinic-medqa-ext-025": {
+  "condition": "Heart failure",
+  "source": "clinical differential",
+  "phrase": "heart failure",
+  "terms": [
+   "heart failure",
+   "cardiac failure",
+   "chf",
+   "hfref",
+   "hfpef"
+  ],
+  "reason": "Breathlessness with a swelling belly could be fluid from heart failure, but with no leg swelling, chest pain or heart history, belly fluid with breathlessness in a 40-year-old woman points to Meigs syndrome."
+ },
+ "agentclinic-medqa-ext-026": {
+  "condition": "Viral hepatitis",
+  "source": "clinical differential",
+  "phrase": "hepatitis",
+  "terms": [
+   "viral hepatitis",
+   "hepatitis a",
+   "hepatitis b",
+   "hepatitis c",
+   "hbv",
+   "hcv"
+  ],
+  "reason": "Jaundice and itching in a man with two partners and inconsistent condom use make viral hepatitis a natural fear, but severe itching with jaundice in a man with ulcerative colitis points to primary sclerosing cholangitis."
+ },
+ "agentclinic-medqa-ext-027": {
+  "condition": "Urinary tract infection",
+  "source": "clinical differential",
+  "phrase": "a urinary tract infection",
+  "terms": [
+   "urinary tract infection",
+   "uti",
+   "bladder infection",
+   "urine infection",
+   "bacterial cystitis",
+   "acute cystitis"
+  ],
+  "reason": "Bladder discomfort with frequency and waking at night to pee make a urinary tract infection the first worry, but five months of pain relieved by voiding without fever, blood or infection point to interstitial cystitis."
+ },
+ "agentclinic-medqa-ext-028": {
+  "condition": "Rotator cuff tear",
+  "source": "clinical differential",
+  "phrase": "a torn rotator cuff",
+  "terms": [
+   "rotator cuff tear",
+   "torn rotator cuff",
+   "rotator cuff injury",
+   "rotator cuff rupture",
+   "supraspinatus tear"
+  ],
+  "reason": "Shoulder pain with trouble brushing hair and dressing makes a rotator cuff tear plausible, but a gradual painful loss of motion over two months in a diabetic woman with no injury fits adhesive capsulitis."
+ },
+ "agentclinic-medqa-ext-032": {
+  "condition": "Lung cancer",
+  "source": "clinical differential",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "bronchogenic carcinoma",
+   "lung malignancy",
+   "lung adenocarcinoma",
+   "nsclc",
+   "sclc",
+   "pulmonary malignancy",
+   "pulmonary neoplasm"
+  ],
+  "reason": "Months of tiredness and 18 kg of unintended weight loss in a 71-year-old smoker make lung cancer a natural fear, but there is no cough or chest symptom and the case is chronic lymphocytic leukemia."
+ },
+ "agentclinic-medqa-ext-037": {
+  "condition": "Osteosarcoma (malignant bone tumor)",
+  "source": "clinical differential",
+  "phrase": "bone cancer",
+  "terms": [
+   "osteosarcoma",
+   "bone cancer",
+   "bone sarcoma",
+   "ewing",
+   "ewing sarcoma",
+   "chondrosarcoma",
+   "malignant bone tumor",
+   "malignant bone tumour"
+  ],
+  "reason": "Knee pain and swelling that wake a 24-year-old at night make bone cancer such as osteosarcoma a real worry, but at this age a slowly growing painful knee lesion fits a giant cell tumor of bone, which is benign and not a sarcoma."
+ },
+ "agentclinic-medqa-ext-038": {
+  "condition": "Parkinson's disease",
+  "source": "clinical differential",
+  "phrase": "Parkinson's disease",
+  "terms": [
+   "parkinson's disease",
+   "parkinson’s disease",
+   "parkinson disease",
+   "parkinsons disease",
+   "parkinson's",
+   "parkinson’s",
+   "parkinsons",
+   "idiopathic parkinson",
+   "paralysis agitans"
+  ],
+  "reason": "A hand tremor, stiff limbs and trouble walking make Parkinson's disease the natural fear, but urinary incontinence for a year, slurred speech and needing a wheelchair within months point to multiple system atrophy."
+ },
+ "agentclinic-medqa-ext-040": {
+  "condition": "Iron deficiency anemia",
+  "source": "clinical differential",
+  "phrase": "anemia",
+  "terms": [
+   "anemia",
+   "anaemia",
+   "iron deficiency"
+  ],
+  "reason": "Tiredness, breathlessness on exertion and dizziness are the classic picture of anemia, but burning pain in the fingers and toes that eases with cold (erythromelalgia) points to essential thrombocythemia."
+ },
+ "agentclinic-medqa-ext-041": {
+  "condition": "Renal cell carcinoma",
+  "source": "clinical differential",
+  "phrase": "kidney cancer",
+  "terms": [
+   "kidney cancer",
+   "renal cell carcinoma",
+   "rcc",
+   "renal carcinoma",
+   "renal cancer",
+   "renal malignancy",
+   "kidney tumor",
+   "kidney tumour",
+   "renal tumor",
+   "renal tumour"
+  ],
+  "reason": "Blood in the urine with flank discomfort is a classic kidney cancer worry, but a 42-year-old non-smoker with repeated urinary infections over several years fits medullary sponge kidney."
+ },
+ "agentclinic-medqa-ext-042": {
+  "condition": "Endometriosis",
+  "source": "clinical differential",
+  "phrase": "endometriosis",
+  "terms": [
+   "endometriosis"
+  ],
+  "reason": "Pain with intercourse and 15 months of infertility make endometriosis a natural worry and it is on the differential, but involuntary tightening of the pelvic floor at penetration points to genito-pelvic pain/penetration disorder."
+ },
+ "agentclinic-medqa-ext-043": {
+  "condition": "Gallstone disease (cholecystitis or choledocholithiasis)",
+  "source": "clinical differential",
+  "phrase": "gallstones",
+  "terms": [
+   "gallstone",
+   "cholelithiasis",
+   "choledocholithiasis",
+   "cholecystitis",
+   "biliary colic",
+   "gallbladder disease"
+  ],
+  "reason": "Belly pain, nausea, fever and darker urine in a 47-year-old diabetic woman make gallstone disease plausible, but weeks of tiredness with these symptoms in a nursing assistant point to active chronic hepatitis B."
+ },
+ "agentclinic-medqa-ext-044": {
+  "condition": "Diverticulitis",
+  "source": "clinical differential",
+  "phrase": "diverticulitis",
+  "terms": [
+   "diverticulitis",
+   "diverticular disease",
+   "diverticular bleeding",
+   "diverticular bleed",
+   "diverticular hemorrhage",
+   "diverticular haemorrhage",
+   "diverticulosis"
+  ],
+  "reason": "Severe belly pain with bloody stools in a 74-year-old makes diverticulitis or a diverticular bleed a reasonable worry, but sudden pain around the navel a week after a heart attack points to acute mesenteric ischemia."
+ },
+ "agentclinic-medqa-ext-045": {
+  "condition": "Pertussis",
+  "source": "clinical differential",
+  "phrase": "whooping cough",
+  "terms": [
+   "pertussis",
+   "whooping cough",
+   "bordetella"
+  ],
+  "reason": "A dry cough that started after a cold and is worse at night makes whooping cough a realistic fear, but recurring episodes of cough and breathlessness triggered by exertion and at night point to adult-onset asthma."
+ },
+ "agentclinic-medqa-ext-047": {
+  "condition": "Psoriasis",
+  "source": "clinical differential",
+  "phrase": "psoriasis",
+  "terms": [
+   "psoriasis",
+   "psoriatic"
+  ],
+  "reason": "A relapsing itchy rash on both arms for five months makes psoriasis a natural worry and it is on the differential, but a persistently itchy rash that flares and never clears fits eczematous dermatitis."
+ },
+ "agentclinic-medqa-ext-048": {
+  "condition": "Gout",
+  "source": "clinical differential",
+  "phrase": "gout",
+  "terms": [
+   "gout",
+   "gouty",
+   "podagra"
+  ],
+  "reason": "Big toe pain in a man who drinks about ten beers a day makes gout the natural fear, but pain in the toe, hips and knees that slowly worsens over years with activity in an obese man fits osteoarthritis."
+ },
+ "agentclinic-medqa-ext-050": {
+  "condition": "Herpes zoster (shingles)",
+  "source": "clinical differential",
+  "phrase": "shingles",
+  "terms": [
+   "shingles",
+   "herpes zoster",
+   "zoster",
+   "varicella zoster",
+   "varicella-zoster",
+   "vzv"
+  ],
+  "reason": "A sudden rash on the upper back is a classic shingles worry in a middle-aged man, but a sudden rash with a sore, inflamed mouth after starting new care for arthritis points to Stevens-Johnson syndrome."
+ },
+ "agentclinic-medqa-ext-053": {
+  "condition": "Choledocholithiasis",
+  "source": "clinical differential",
+  "phrase": "gallstones",
+  "terms": [
+   "gallstone",
+   "cholelithiasis",
+   "choledocholithiasis",
+   "cholecystitis",
+   "biliary colic",
+   "gallbladder disease"
+  ],
+  "reason": "Jaundice with pale stools and dark urine is often a gallstone blocking the bile duct, especially after a past bout of upper belly pain, but painless gradual jaundice with weight loss in a heavy smoker points to pancreatic cancer."
+ },
+ "agentclinic-medqa-ext-054": {
+  "condition": "Stroke",
+  "source": "clinical differential",
+  "phrase": "a stroke",
+  "terms": [
+   "stroke",
+   "cerebrovascular accident",
+   "cva",
+   "transient ischemic attack",
+   "transient ischaemic attack",
+   "tia",
+   "cerebral infarction",
+   "cerebral infarct",
+   "cerebellar infarction",
+   "cerebellar infarct",
+   "brainstem infarction",
+   "brainstem infarct",
+   "intracerebral hemorrhage",
+   "intracerebral haemorrhage",
+   "vertebrobasilar insufficiency"
+  ],
+  "reason": "Sudden dizzy spells in a 70-year-old make a stroke the most feared cause, but brief positional spinning without headache, hearing change or other neurological symptoms is BPPV."
+ },
+ "agentclinic-medqa-ext-055": {
+  "condition": "Major depressive disorder",
+  "source": "clinical differential",
+  "phrase": "depression",
+  "terms": [
+   "depression",
+   "depressive"
+  ],
+  "reason": "Social withdrawal and odd, flat affect can make a patient fear depression; not the gold's family (schizophrenia is the schizotypal spectrum, as for 101)."
+ },
+ "agentclinic-medqa-ext-056": {
+  "condition": "Syphilis",
+  "source": "clinical differential",
+  "phrase": "syphilis",
+  "terms": [
+   "syphilis",
+   "syphilitic",
+   "treponema",
+   "treponemal"
+  ],
+  "reason": "Sores on the penis that will not heal in a man whose syphilis treatment failed make syphilis the natural fear, but red crusty non-healing plaques on the penis and a finger in a heavy smoker point to Bowen's disease."
+ },
+ "agentclinic-medqa-ext-058": {
+  "condition": "Hepatocellular carcinoma",
+  "source": "clinical differential",
+  "phrase": "liver cancer",
+  "terms": [
+   "liver cancer",
+   "hepatocellular carcinoma",
+   "hcc",
+   "hepatoma",
+   "liver carcinoma",
+   "primary liver cancer"
+  ],
+  "reason": "Jaundice, tiredness and weight loss in a man who drinks five drinks a day make liver cancer a realistic fear, but painless jaundice with weight loss in a 65-year-old smoker points to pancreatic cancer."
+ },
+ "agentclinic-medqa-ext-059": {
+  "condition": "Bipolar disorder",
+  "source": "clinical differential",
+  "phrase": "bipolar disorder",
+  "terms": [
+   "bipolar",
+   "mania",
+   "manic"
+  ]
+ },
+ "agentclinic-medqa-ext-061": {
+  "condition": "Ear infection (otitis media or externa)",
+  "source": "clinical differential",
+  "phrase": "an ear infection",
+  "terms": [
+   "otitis",
+   "ear infection",
+   "otitis media",
+   "otitis externa",
+   "mastoiditis"
+  ],
+  "reason": "Ear pain in a woman with chronic ear infections and recent ear surgery makes another ear infection the natural fear, but brief shooting pain triggered by eating points to glossopharyngeal neuralgia."
+ },
+ "agentclinic-medqa-ext-064": {
+  "condition": "Brain tumor",
+  "source": "clinical differential",
+  "phrase": "a brain tumour",
+  "terms": [
+   "brain tumor",
+   "brain tumour",
+   "brain tumors",
+   "brain tumours",
+   "glioma",
+   "glioblastoma",
+   "brain mass",
+   "intracranial mass",
+   "brain neoplasm",
+   "intracranial tumor",
+   "intracranial tumour"
+  ],
+  "reason": "New psychosis with mood symptoms: an organic cause such as a brain tumour is a real differential a patient could fear; schizophrenia and bipolar disorder are the gold's family."
+ },
+ "agentclinic-medqa-ext-065": {
+  "condition": "Scabies",
+  "source": "clinical differential",
+  "phrase": "scabies",
+  "terms": [
+   "scabies",
+   "sarcoptes",
+   "sarcoptic"
+  ],
+  "reason": "Intensely itchy red bumps with scratch marks make scabies a realistic fear, but bumps on exposed skin of the legs and forearm that appeared after a recent business trip fit bed bug bites."
+ },
+ "agentclinic-medqa-ext-066": {
+  "condition": "Heart failure",
+  "source": "clinical differential",
+  "phrase": "heart failure",
+  "terms": [
+   "heart failure",
+   "cardiac failure",
+   "chf",
+   "hfref",
+   "hfpef"
+  ],
+  "reason": "Swollen legs with tiredness in a 66-year-old smoker make heart failure a natural worry, but no breathlessness or chest pain, with weight loss, points to a kidney cause, membranous nephropathy."
+ },
+ "agentclinic-medqa-ext-069": {
+  "condition": "Carpal tunnel syndrome",
+  "source": "clinical differential",
+  "phrase": "carpal tunnel",
+  "terms": [
+   "carpal tunnel",
+   "cts",
+   "median nerve compression",
+   "median nerve entrapment",
+   "median neuropathy"
+  ],
+  "reason": "Thumb and wrist pain in a new mother makes carpal tunnel syndrome a common lay worry, but pain at the thumb side of the wrist that worsens when she holds her baby fits de Quervain tenosynovitis rather than median nerve compression."
+ },
+ "agentclinic-medqa-ext-072": {
+  "condition": "Posterior circulation stroke",
+  "source": "clinical differential",
+  "phrase": "a stroke",
+  "terms": [
+   "stroke",
+   "cerebrovascular accident",
+   "cva",
+   "transient ischemic attack",
+   "transient ischaemic attack",
+   "tia",
+   "cerebral infarction",
+   "cerebral infarct",
+   "cerebellar infarction",
+   "cerebellar infarct",
+   "brainstem infarction",
+   "brainstem infarct",
+   "intracerebral hemorrhage",
+   "intracerebral haemorrhage",
+   "vertebrobasilar insufficiency"
+  ],
+  "reason": "Constant spinning with imbalance and nausea is the presentation in which a stroke must be feared, but onset a few days after a cold in a 27-year-old fits labyrinthitis."
+ },
+ "agentclinic-medqa-ext-074": {
+  "condition": "Alzheimer disease",
+  "source": "clinical differential",
+  "phrase": "Alzheimer's",
+  "terms": [
+   "alzheimer",
+   "alzheimers"
+  ],
+  "reason": "Behavior change in middle age makes Alzheimer's disease a common fear, but six months of disinhibition, apathy and new food cravings without memory complaints point to frontotemporal dementia."
+ },
+ "agentclinic-medqa-ext-075": {
+  "condition": "Cervical cancer",
+  "source": "clinical differential",
+  "phrase": "cervical cancer",
+  "terms": [
+   "cervical cancer",
+   "cervical carcinoma",
+   "cancer of the cervix",
+   "carcinoma of the cervix",
+   "cervical malignancy"
+  ],
+  "reason": "Vaginal bleeding after menopause is a classic cervical cancer worry, but the case is an estrogen-secreting granulosa cell tumor of the ovary, not a tumor of the cervix."
+ },
+ "agentclinic-medqa-ext-077": {
+  "condition": "Diabetic peripheral neuropathy",
+  "source": "clinical differential",
+  "phrase": "nerve damage from my diabetes",
+  "terms": [
+   "diabetic neuropathy",
+   "diabetic peripheral neuropathy",
+   "peripheral neuropathy",
+   "polyneuropathy",
+   "diabetic polyneuropathy"
+  ],
+  "reason": "Burning pain with pins and needles in a diabetic makes nerve damage from diabetes a natural worry, but neck and arm pain with weak hands after a car accident points to a post-traumatic syrinx."
+ },
+ "agentclinic-medqa-ext-078": {
+  "condition": "Pulmonary embolism",
+  "source": "clinical differential",
+  "phrase": "a blood clot in my lung",
+  "terms": [
+   "pulmonary embolism",
+   "pulmonary embolus",
+   "pulmonary emboli",
+   "pulmonary thromboembolism",
+   "clot in the lung"
+  ],
+  "reason": "Left-sided chest pain with breathlessness makes a blood clot in the lung a realistic fear, but a week of fever and pus-like sputum after the flu points to bacterial pneumonia."
+ },
+ "agentclinic-medqa-ext-079": {
+  "condition": "Stroke",
+  "source": "clinical differential",
+  "phrase": "a stroke",
+  "terms": [
+   "stroke",
+   "cerebrovascular accident",
+   "cva",
+   "transient ischemic attack",
+   "transient ischaemic attack",
+   "tia",
+   "cerebral infarction",
+   "cerebral infarct",
+   "cerebellar infarction",
+   "cerebellar infarct",
+   "brainstem infarction",
+   "brainstem infarct",
+   "intracerebral hemorrhage",
+   "intracerebral haemorrhage",
+   "vertebrobasilar insufficiency"
+  ],
+  "reason": "Sudden spinning with vomiting in a 59-year-old makes a stroke a natural fear, but a single three-minute episode on lying down with full recovery and no neurological symptoms is BPPV."
+ },
+ "agentclinic-medqa-ext-080": {
+  "condition": "Influenza",
+  "source": "clinical differential",
+  "phrase": "the flu",
+  "terms": [
+   "influenza",
+   "flu"
+  ]
+ },
+ "agentclinic-medqa-ext-082": {
+  "condition": "Schizophrenia",
+  "source": "clinical differential",
+  "phrase": "schizophrenia",
+  "terms": [
+   "schizophrenia",
+   "schizophrenic"
+  ],
+  "reason": "Hearing voices with irritability makes schizophrenia a natural fear, but involuntary movements, slurred speech, trouble swallowing, forgetfulness and a father who died young point to Huntington disease."
+ },
+ "agentclinic-medqa-ext-086": {
+  "condition": "Tinea (fungal skin infection)",
+  "source": "clinical differential",
+  "phrase": "a skin fungus",
+  "terms": [
+   "tinea versicolor",
+   "pityriasis versicolor",
+   "fungal infection",
+   "tinea",
+   "fungal",
+   "dermatophytosis",
+   "dermatophyte",
+   "candidiasis",
+   "ringworm"
+  ],
+  "reason": "An itchy rash with lighter patches makes a fungal skin infection a natural worry, but numb palms and thinning eyebrows and eyelashes in a farmer point to leprosy."
+ },
+ "agentclinic-medqa-ext-087": {
+  "condition": "Basal cell carcinoma",
+  "source": "clinical differential",
+  "phrase": "a basal cell skin cancer",
+  "terms": [
+   "basal cell carcinoma",
+   "basal cell cancer",
+   "bcc",
+   "rodent ulcer",
+   "basal cell epithelioma"
+  ],
+  "reason": "A scaly patch on sun-exposed skin can be a superficial basal cell carcinoma and BCC is on the differential, but a rough, sandpaper-like patch on the hand of a sunbather is typical actinic keratosis, which does not progress to BCC."
+ },
+ "agentclinic-medqa-ext-088": {
+  "condition": "Diabetes mellitus",
+  "source": "clinical differential",
+  "phrase": "diabetes",
+  "terms": [
+   "diabetes",
+   "diabetic"
+  ]
+ },
+ "agentclinic-medqa-ext-090": {
+  "condition": "Alzheimer disease",
+  "source": "clinical differential",
+  "phrase": "Alzheimer's",
+  "terms": [
+   "alzheimer",
+   "alzheimers"
+  ]
+ },
+ "agentclinic-medqa-ext-091": {
+  "condition": "Brain tumor",
+  "source": "clinical differential",
+  "phrase": "a brain tumor",
+  "terms": [
+   "brain tumor",
+   "brain tumour",
+   "glioma",
+   "meningioma",
+   "intracranial tumor",
+   "intracranial mass",
+   "brain neoplasm",
+   "intracranial neoplasm",
+   "space-occupying lesion",
+   "brain cancer",
+   "glioblastoma",
+   "brain mass",
+   "brain lesion"
+  ]
+ },
+ "agentclinic-medqa-ext-092": {
+  "condition": "Cervical radiculopathy",
+  "source": "clinical differential",
+  "phrase": "a pinched nerve in my neck",
+  "terms": [
+   "pinched nerve",
+   "radiculopathy",
+   "herniated disc",
+   "disc herniation"
+  ]
+ },
+ "agentclinic-medqa-ext-093": {
+  "condition": "Lung cancer",
+  "source": "clinical differential",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "bronchogenic carcinoma",
+   "lung malignancy",
+   "lung adenocarcinoma",
+   "nsclc",
+   "pulmonary malignancy",
+   "pulmonary neoplasm"
+  ]
+ },
+ "agentclinic-medqa-ext-095": {
+  "condition": "Cellulitis",
+  "source": "clinical differential (the record says no diabetes)",
+  "phrase": "a skin infection",
+  "terms": [
+   "cellulitis",
+   "skin infection",
+   "erysipelas",
+   "abscess",
+   "soft tissue infection",
+   "necrotizing fasciitis",
+   "wound infection"
+  ]
+ },
+ "agentclinic-medqa-ext-096": {
+  "condition": "Generalized anxiety disorder",
+  "source": "clinical differential",
+  "phrase": "an anxiety disorder",
+  "terms": [
+   "anxiety"
+  ]
+ },
+ "agentclinic-medqa-ext-098": {
+  "condition": "Herpes simplex infection",
+  "source": "clinical differential",
+  "phrase": "herpes",
+  "terms": [
+   "herpes",
+   "hsv"
+  ]
+ },
+ "agentclinic-medqa-ext-100": {
+  "condition": "Heart failure",
+  "source": "clinical differential",
+  "phrase": "heart failure",
+  "terms": [
+   "heart failure",
+   "cardiac failure",
+   "chf"
+  ]
+ },
+ "agentclinic-medqa-ext-101": {
+  "condition": "Major depressive disorder",
+  "source": "clinical differential",
+  "phrase": "depression",
+  "terms": [
+   "depression",
+   "depressive"
+  ]
+ },
+ "agentclinic-medqa-ext-107": {
+  "condition": "Multiple sclerosis",
+  "source": "clinical differential",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ]
+ },
+ "agentclinic-medqa-ext-108": {
+  "condition": "Skin cancer",
+  "source": "clinical differential",
+  "phrase": "skin cancer",
+  "terms": [
+   "skin cancer",
+   "melanoma",
+   "basal cell carcinoma",
+   "squamous cell carcinoma",
+   "skin carcinoma",
+   "keratinocyte carcinoma",
+   "skin malignancy",
+   "bcc",
+   "scc"
+  ]
+ },
+ "agentclinic-medqa-ext-109": {
+  "condition": "Lung cancer",
+  "source": "clinical differential",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "bronchogenic carcinoma",
+   "lung malignancy",
+   "lung adenocarcinoma",
+   "nsclc",
+   "pulmonary malignancy",
+   "pulmonary neoplasm"
+  ]
+ },
+ "agentclinic-medqa-ext-110": {
+  "condition": "Asthma",
+  "source": "clinical differential",
+  "phrase": "asthma",
+  "terms": [
+   "asthma"
+  ]
+ },
+ "agentclinic-medqa-ext-111": {
+  "condition": "Retinal detachment",
+  "source": "clinical differential",
+  "phrase": "a detached retina",
+  "terms": [
+   "retinal detachment",
+   "detached retina"
+  ]
+ },
+ "agentclinic-medqa-ext-112": {
+  "condition": "Epilepsy",
+  "source": "clinical differential",
+  "phrase": "epilepsy",
+  "terms": [
+   "epilepsy",
+   "epileptic",
+   "seizure"
+  ]
+ },
+ "agentclinic-medqa-ext-113": {
+  "condition": "Vulvovaginal candidiasis",
+  "source": "clinical differential",
+  "phrase": "a yeast infection",
+  "terms": [
+   "yeast infection",
+   "candidiasis",
+   "candida",
+   "thrush"
+  ]
+ },
+ "agentclinic-medqa-ext-114": {
+  "condition": "Appendicitis",
+  "source": "clinical differential",
+  "phrase": "appendicitis",
+  "terms": [
+   "appendicitis"
+  ]
+ },
+ "agentclinic-medqa-ext-116": {
+  "condition": "Systemic lupus erythematosus",
+  "source": "clinical differential",
+  "phrase": "lupus",
+  "terms": [
+   "lupus",
+   "sle"
+  ]
+ },
+ "agentclinic-medqa-ext-117": {
+  "condition": "Lung cancer",
+  "source": "clinical differential",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "bronchogenic carcinoma",
+   "lung malignancy",
+   "lung adenocarcinoma",
+   "nsclc",
+   "sclc",
+   "pulmonary malignancy",
+   "pulmonary neoplasm"
+  ],
+  "reason": "Worsening breathlessness with weight loss in a smoker makes lung cancer a natural fear, but a year of slowly progressive breathlessness after a 36 pack-year history and dust exposure fits COPD."
+ },
+ "agentclinic-medqa-ext-118": {
+  "condition": "Major depressive disorder",
+  "source": "clinical differential",
+  "phrase": "depression",
+  "terms": [
+   "depression",
+   "depressive"
+  ]
+ },
+ "agentclinic-medqa-ext-120": {
+  "condition": "Acute leukemia",
+  "source": "clinical differential",
+  "phrase": "leukemia",
+  "terms": [
+   "leukemia",
+   "leukaemia",
+   "aml"
+  ],
+  "reason": "Fever with bleeding gums in a young woman makes leukemia a realistic fear and it is on the differential of fever with bleeding, but fever, headache, belly pain and bleeding in pregnancy point to thrombotic thrombocytopenic purpura."
+ },
+ "agentclinic-medqa-ext-122": {
+  "condition": "Tinea versicolor",
+  "source": "clinical differential",
+  "phrase": "a fungal infection",
+  "terms": [
+   "tinea versicolor",
+   "pityriasis versicolor",
+   "fungal infection",
+   "tinea",
+   "fungal",
+   "dermatophytosis",
+   "dermatophyte",
+   "candidiasis"
+  ],
+  "reason": "Patches of lighter skin in a young man make a fungal infection such as tinea versicolor a common worry, but painless, non-itchy patches that slowly enlarge with a father who has the same condition fit vitiligo."
+ },
+ "agentclinic-medqa-ext-123": {
+  "condition": "Acute angle-closure glaucoma",
+  "source": "clinical differential",
+  "phrase": "glaucoma",
+  "terms": [
+   "glaucoma",
+   "angle-closure",
+   "angle closure"
+  ],
+  "reason": "A painful eye with blurred vision makes glaucoma a natural worry, but quickly worsening pain and blur in one eye of a regular contact lens wearer points to bacterial keratitis."
+ },
+ "agentclinic-medqa-ext-124": {
+  "condition": "Gallstone disease (biliary colic)",
+  "source": "clinical differential",
+  "phrase": "gallstones",
+  "terms": [
+   "gallstone",
+   "cholelithiasis",
+   "choledocholithiasis",
+   "cholecystitis",
+   "biliary colic",
+   "gallbladder disease"
+  ],
+  "reason": "Upper belly pain that worsens after meals makes gallstones a plausible worry, but two months of persistent epigastric pain in a 26-year-old whose father had the same symptoms points to MEN1 with a gastrinoma."
+ },
+ "agentclinic-medqa-ext-125": {
+  "condition": "Rheumatoid arthritis",
+  "source": "clinical differential",
+  "phrase": "rheumatoid arthritis",
+  "terms": [
+   "rheumatoid"
+  ],
+  "reason": "A swollen painful knee in a man diagnosed with arthritis makes rheumatoid arthritis a natural fear, but swelling that moves from one knee to the other with persistent back pain and scalp scaling points to psoriatic arthritis."
+ },
+ "agentclinic-medqa-ext-127": {
+  "condition": "Breast cancer",
+  "source": "clinical differential",
+  "phrase": "breast cancer",
+  "terms": [
+   "breast cancer",
+   "breast carcinoma",
+   "ductal carcinoma",
+   "lobular carcinoma",
+   "breast malignancy",
+   "breast adenocarcinoma",
+   "dcis"
+  ],
+  "reason": "A breast lump found in pregnancy makes breast cancer a real worry, but a painless lump without skin or nipple changes in a 33-year-old fits a fibroadenoma."
+ },
+ "agentclinic-medqa-ext-128": {
+  "condition": "Thyroid cancer",
+  "source": "clinical differential",
+  "phrase": "thyroid cancer",
+  "terms": [
+   "thyroid cancer",
+   "thyroid carcinoma",
+   "papillary thyroid",
+   "papillary carcinoma",
+   "follicular carcinoma",
+   "medullary thyroid",
+   "anaplastic thyroid",
+   "thyroid malignancy"
+  ],
+  "reason": "A neck swelling that keeps growing makes thyroid cancer a natural fear, but a painless swelling with sweating, nervousness, irritability and insomnia points to the hyperthyroid phase of silent thyroiditis."
+ },
+ "agentclinic-medqa-ext-131": {
+  "condition": "Posttraumatic stress disorder",
+  "source": "clinical differential",
+  "phrase": "PTSD",
+  "terms": [
+   "ptsd",
+   "posttraumatic stress",
+   "post-traumatic stress",
+   "post traumatic stress"
+  ],
+  "reason": "Poor concentration and lost interest in a veteran back from Afghanistan make PTSD a realistic worry, but anhedonia, early waking, slowed speech and poor appetite without flashbacks or avoidance fit major depressive disorder."
+ },
+ "agentclinic-medqa-ext-132": {
+  "condition": "Peptic ulcer disease",
+  "source": "clinical differential",
+  "phrase": "a stomach ulcer",
+  "terms": [
+   "peptic ulcer",
+   "stomach ulcer",
+   "gastric ulcer",
+   "duodenal ulcer",
+   "pud"
+  ],
+  "reason": "A positive test for hidden blood in the stool can come from a bleeding stomach ulcer, but in a 62-year-old screening patient without symptoms and with a father who died of colon cancer the source is most likely a colonic adenoma."
+ },
+ "agentclinic-medqa-ext-134": {
+  "condition": "Sciatica",
+  "source": "clinical differential",
+  "phrase": "sciatica",
+  "terms": [
+   "sciatica",
+   "pinched nerve",
+   "radiculopathy"
+  ]
+ },
+ "agentclinic-medqa-ext-135": {
+  "condition": "Amelanotic melanoma",
+  "source": "clinical differential",
+  "phrase": "melanoma",
+  "terms": [
+   "melanoma"
+  ],
+  "reason": "A new pink bump on heavily sun-damaged skin makes melanoma a plausible fear, but a pink nodule that came up quickly over a month on the forehead of an older man fits keratoacanthoma."
+ },
+ "agentclinic-medqa-ext-137": {
+  "condition": "Panic attack",
+  "source": "clinical differential",
+  "phrase": "a panic attack",
+  "terms": [
+   "panic attack",
+   "panic",
+   "panic disorder",
+   "anxiety attack"
+  ],
+  "reason": "Severe chest pain during acute grief could be a panic attack and panic is on the differential, but severe chest pain after a sudden emotional loss in a woman points to takotsubo cardiomyopathy.",
+  "quality": "weak"
+ },
+ "agentclinic-medqa-ext-138": {
+  "condition": "Acute coronary syndrome (myocardial infarction)",
+  "source": "clinical differential",
+  "phrase": "a heart attack",
+  "terms": [
+   "heart attack",
+   "myocardial infarction",
+   "acute coronary syndrome",
+   "acs",
+   "nstemi",
+   "stemi",
+   "unstable angina"
+  ],
+  "reason": "Palpitations, dizziness and breathlessness on exertion make a young man fear a heart attack, but onset right after binge drinking at a bachelor party points to paroxysmal atrial fibrillation."
+ },
+ "agentclinic-medqa-ext-140": {
+  "condition": "Major depressive disorder",
+  "source": "clinical differential",
+  "phrase": "depression",
+  "terms": [
+   "depression",
+   "depressive"
+  ],
+  "reason": "Anxiety, poor sleep, guilt and withdrawal make depression a natural worry, but flashbacks, fear of loud noises, avoidance and hyperarousal after a combat deployment define PTSD."
+ },
+ "agentclinic-medqa-ext-143": {
+  "condition": "Rotator cuff tear",
+  "source": "clinical differential",
+  "phrase": "a torn rotator cuff",
+  "terms": [
+   "rotator cuff tear",
+   "torn rotator cuff",
+   "rotator cuff injury",
+   "rotator cuff rupture",
+   "supraspinatus tear"
+  ],
+  "reason": "A stiff arm with trouble combing hair and reaching high shelves makes a rotator cuff tear plausible, but a gradual loss of shoulder motion over months in an obese diabetic man with no injury fits adhesive capsulitis."
+ },
+ "agentclinic-medqa-ext-144": {
+  "condition": "Obstructive sleep apnea",
+  "source": "clinical differential",
+  "phrase": "sleep apnea",
+  "terms": [
+   "sleep apnea",
+   "sleep apnoea",
+   "osa"
+  ]
+ },
+ "agentclinic-medqa-ext-146": {
+  "condition": "Rheumatoid arthritis",
+  "source": "clinical differential",
+  "phrase": "rheumatoid arthritis",
+  "terms": [
+   "rheumatoid"
+  ],
+  "reason": "Painful swollen fingers with a stiff swollen knee make rheumatoid arthritis a natural fear, but swollen red fingers with pitted nails and scaly elbow patches point to psoriatic arthritis."
+ },
+ "agentclinic-medqa-ext-147": {
+  "condition": "Gout",
+  "source": "clinical differential (knee pain is the only recorded complaint)",
+  "phrase": "gout",
+  "terms": [
+   "gout"
+  ]
+ },
+ "agentclinic-medqa-ext-148": {
+  "condition": "Renal cell carcinoma",
+  "source": "clinical differential",
+  "phrase": "kidney cancer",
+  "terms": [
+   "kidney cancer",
+   "renal cell carcinoma",
+   "rcc",
+   "renal carcinoma",
+   "renal cancer",
+   "renal malignancy",
+   "kidney tumor",
+   "kidney tumour",
+   "renal tumor",
+   "renal tumour"
+  ],
+  "reason": "Five months of flank pain make kidney cancer a natural worry, but recurring flank pain with five urinary infections in two years in a 31-year-old woman fits polycystic kidney disease."
+ },
+ "agentclinic-medqa-ext-149": {
+  "condition": "Secondary syphilis",
+  "source": "clinical differential",
+  "phrase": "syphilis",
+  "terms": [
+   "syphilis",
+   "syphilitic",
+   "treponema",
+   "treponemal"
+  ],
+  "reason": "New skin bumps in a man who injects drugs make syphilis a realistic fear, but small painless bumps on the thigh in a person at risk of immune suppression fit molluscum contagiosum."
+ },
+ "agentclinic-medqa-ext-150": {
+  "condition": "Major depressive disorder with psychotic features",
+  "source": "clinical differential",
+  "phrase": "depression",
+  "terms": [
+   "depression",
+   "depressive"
+  ],
+  "reason": "Voices telling her to hurt herself after her father's death make depression a natural worry and psychotic depression is on the differential, but psychosis that began a week ago after a major stressor fits brief psychotic disorder."
+ },
+ "agentclinic-medqa-ext-151": {
+  "condition": "Breast cancer",
+  "source": "clinical differential",
+  "phrase": "breast cancer",
+  "terms": [
+   "breast cancer",
+   "breast carcinoma",
+   "ductal carcinoma",
+   "lobular carcinoma",
+   "breast malignancy",
+   "breast adenocarcinoma",
+   "dcis"
+  ],
+  "reason": "A breast lump that grows quickly in a 45-year-old woman is the classic breast cancer fear and carcinoma is on the differential, but rapid growth without pain, skin, nipple or node changes fits a phyllodes tumor, which is not a breast carcinoma.",
+  "quality": "weak"
+ },
+ "agentclinic-medqa-ext-152": {
+  "condition": "Pulmonary tuberculosis",
+  "source": "clinical differential",
+  "phrase": "tuberculosis",
+  "terms": [
+   "tuberculosis",
+   "tubercular",
+   "tuberculous"
+  ],
+  "reason": "A cough that will not go away for two months with malaise makes tuberculosis a natural fear, but cough with aching joints after a hiking trip near Phoenix points to coccidioidomycosis."
+ },
+ "agentclinic-medqa-ext-155": {
+  "condition": "Herpes labialis",
+  "source": "clinical differential",
+  "phrase": "herpes",
+  "terms": [
+   "herpes",
+   "hsv",
+   "herpes labialis",
+   "cold sore"
+  ],
+  "reason": "A spot on the lip makes herpes (a cold sore) a common worry, but a painless lip lesion for three months in a smoker who works outdoors points to squamous cell carcinoma."
+ },
+ "agentclinic-medqa-ext-156": {
+  "condition": "Pulmonary embolism",
+  "source": "clinical differential",
+  "phrase": "a blood clot in my lung",
+  "terms": [
+   "pulmonary embolism",
+   "pulmonary embolus",
+   "pulmonary emboli",
+   "pulmonary thromboembolism",
+   "clot in the lung"
+  ],
+  "reason": "Chest pain on breathing in a few days after surgery makes a blood clot in the lung a real worry, but fever, chills and a cough with phlegm point to postoperative pneumonia."
+ },
+ "agentclinic-medqa-ext-157": {
+  "condition": "Traumatic pneumothorax",
+  "source": "clinical differential",
+  "phrase": "a collapsed lung",
+  "terms": [
+   "pneumothorax",
+   "collapsed lung",
+   "hemopneumothorax",
+   "haemopneumothorax"
+  ],
+  "reason": "Chest pain after a crash makes a collapsed lung a natural fear and pneumothorax is on the trauma differential, but chest bruising without breathlessness after a head-on impact as the driver points to cardiac contusion."
+ },
+ "agentclinic-medqa-ext-159": {
+  "condition": "Renal cell carcinoma",
+  "source": "clinical differential",
+  "phrase": "kidney cancer",
+  "terms": [
+   "kidney cancer",
+   "renal cell carcinoma",
+   "rcc",
+   "renal carcinoma",
+   "renal cancer",
+   "renal malignancy",
+   "kidney tumor",
+   "kidney tumour",
+   "renal tumor",
+   "renal tumour"
+  ],
+  "reason": "Weight loss with abnormal kidney blood tests makes kidney cancer a realistic fear, but months of weakness with raised BUN and creatinine in a woman with high blood pressure fit chronic kidney failure."
+ },
+ "agentclinic-medqa-ext-160": {
+  "condition": "Myocardial infarction",
+  "source": "clinical differential",
+  "phrase": "a heart attack",
+  "terms": [
+   "heart attack",
+   "myocardial infarction",
+   "acute coronary syndrome",
+   "acs",
+   "nstemi",
+   "stemi",
+   "unstable angina"
+  ],
+  "reason": "Sudden collapse during sport makes a heart attack the natural fear, but cardiac arrest during exertion in a 23-year-old athlete points to hypertrophic cardiomyopathy."
+ },
+ "agentclinic-medqa-ext-161": {
+  "condition": "Amyotrophic lateral sclerosis",
+  "source": "clinical differential",
+  "phrase": "ALS",
+  "terms": [
+   "amyotrophic lateral sclerosis",
+   "als",
+   "motor neuron disease",
+   "motor neurone disease",
+   "mnd",
+   "lou gehrig"
+  ],
+  "reason": "Progressive weakness on the stairs makes ALS a realistic fear, but weakness that improves with use in a heavy smoker with cough and weight loss points to Lambert-Eaton syndrome."
+ },
+ "agentclinic-medqa-ext-162": {
+  "condition": "Gastric cancer",
+  "source": "clinical differential",
+  "phrase": "stomach cancer",
+  "terms": [
+   "stomach cancer",
+   "gastric cancer",
+   "gastric carcinoma",
+   "gastric adenocarcinoma",
+   "stomach carcinoma",
+   "gastric malignancy"
+  ],
+  "reason": "Trouble swallowing with weight loss and tiredness makes stomach cancer a realistic fear, but trouble swallowing solids with fatigue in a middle-aged woman points to Plummer-Vinson syndrome."
+ },
+ "agentclinic-medqa-ext-163": {
+  "condition": "Skin cancer (melanoma or basal cell carcinoma)",
+  "source": "clinical differential",
+  "phrase": "skin cancer",
+  "terms": [
+   "skin cancer",
+   "melanoma",
+   "basal cell carcinoma",
+   "squamous cell carcinoma",
+   "skin carcinoma",
+   "keratinocyte carcinoma",
+   "skin malignancy",
+   "bcc",
+   "scc"
+  ],
+  "reason": "A skin spot that slowly gets bigger makes skin cancer a common fear, but a painless spot on the thigh that started like an insect bite fits a dermatofibroma."
+ },
+ "agentclinic-medqa-ext-164": {
+  "condition": "Ovarian cancer",
+  "source": "clinical differential",
+  "phrase": "ovarian cancer",
+  "terms": [
+   "ovarian cancer",
+   "ovarian carcinoma",
+   "ovarian malignancy"
+  ],
+  "reason": "Lower belly pain with tiredness in a woman afraid of cancer makes ovarian cancer a plausible fear, but a nurse under work stress who requests a diagnostic laparoscopy for vague symptoms points to factitious disorder."
+ },
+ "agentclinic-medqa-ext-165": {
+  "condition": "Lung cancer",
+  "source": "clinical differential",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "bronchogenic carcinoma",
+   "lung malignancy",
+   "lung adenocarcinoma",
+   "nsclc",
+   "sclc",
+   "pulmonary malignancy",
+   "pulmonary neoplasm"
+  ],
+  "reason": "A persistent cough with breathlessness in a 79-year-old makes lung cancer a natural fear, but symptoms that began after a month in St. Louis point to histoplasmosis."
+ },
+ "agentclinic-medqa-ext-166": {
+  "condition": "Lung cancer",
+  "source": "clinical differential",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "bronchogenic carcinoma",
+   "lung malignancy",
+   "lung adenocarcinoma",
+   "nsclc",
+   "sclc",
+   "pulmonary malignancy",
+   "pulmonary neoplasm"
+  ],
+  "reason": "Worsening breathlessness in a 75-year-old with 50 years of smoking makes lung cancer a natural fear, but breathlessness with dizziness and fatigue on climbing stairs points to aortic stenosis."
+ },
+ "agentclinic-medqa-ext-167": {
+  "condition": "Amyotrophic lateral sclerosis",
+  "source": "clinical differential",
+  "phrase": "ALS",
+  "terms": [
+   "amyotrophic lateral sclerosis",
+   "als",
+   "motor neuron disease",
+   "motor neurone disease",
+   "mnd",
+   "lou gehrig"
+  ],
+  "reason": "Progressive muscle weakness makes ALS a realistic fear, but symmetric weakness of the hips and shoulders (stairs, brushing hair) without swallowing or breathing problems fits polymyositis."
+ },
+ "agentclinic-medqa-ext-168": {
+  "condition": "Rheumatoid arthritis",
+  "source": "clinical differential",
+  "phrase": "rheumatoid arthritis",
+  "terms": [
+   "rheumatoid"
+  ]
+ },
+ "agentclinic-medqa-ext-169": {
+  "condition": "Heart failure",
+  "source": "clinical differential",
+  "phrase": "heart failure",
+  "terms": [
+   "heart failure",
+   "cardiac failure",
+   "chf",
+   "hfref",
+   "hfpef"
+  ],
+  "reason": "Swelling around the eyes and ankles with tiredness makes heart failure a natural worry, but swelling over several days in a young woman with Hodgkin lymphoma points to minimal change disease."
+ },
+ "agentclinic-medqa-ext-172": {
+  "condition": "Polycystic ovary syndrome",
+  "source": "clinical differential",
+  "phrase": "PCOS",
+  "terms": [
+   "pcos",
+   "polycystic ovary",
+   "polycystic ovarian",
+   "polycystic ovaries"
+  ],
+  "reason": "An unsure last period and weight gain after stopping the pill while trying to conceive make PCOS a plausible worry, but pregnancy symptoms in a woman convinced she is pregnant point to pseudocyesis.",
+  "quality": "weak"
+ },
+ "agentclinic-medqa-ext-173": {
+  "condition": "Brain tumor",
+  "source": "clinical differential",
+  "phrase": "a brain tumor",
+  "terms": [
+   "brain tumor",
+   "brain tumour",
+   "glioma",
+   "meningioma",
+   "intracranial tumor",
+   "intracranial mass",
+   "brain neoplasm",
+   "intracranial neoplasm",
+   "space-occupying lesion",
+   "brain cancer",
+   "glioblastoma",
+   "brain mass",
+   "brain lesion"
+  ],
+  "reason": "A severe headache makes a brain tumor the classic fear, but a dull ache over the sides of the head that worsens with chewing points to temporomandibular joint dysfunction."
+ },
+ "agentclinic-medqa-ext-174": {
+  "condition": "Melanoma",
+  "source": "clinical differential",
+  "phrase": "melanoma",
+  "terms": [
+   "melanoma"
+  ],
+  "reason": "A spot on the scalp of a man who spends his days outdoors makes melanoma a natural fear, but a symptomless spot on chronically sun-exposed skin is most likely actinic keratosis."
+ },
+ "agentclinic-medqa-ext-176": {
+  "condition": "Gallstone disease (biliary colic)",
+  "source": "clinical differential",
+  "phrase": "gallstones",
+  "terms": [
+   "gallstone",
+   "cholelithiasis",
+   "choledocholithiasis",
+   "cholecystitis",
+   "biliary colic",
+   "gallbladder disease"
+  ],
+  "reason": "Recurrent cramping upper belly pain after meals makes gallstones a plausible worry, but epigastric pain after eating in a smoker who takes over-the-counter painkillers points to a gastric ulcer."
+ },
+ "agentclinic-medqa-ext-178": {
+  "condition": "Brain tumor",
+  "source": "clinical differential",
+  "phrase": "a brain tumor",
+  "terms": [
+   "brain tumor",
+   "brain tumour",
+   "glioma",
+   "meningioma",
+   "intracranial tumor",
+   "intracranial mass",
+   "brain neoplasm",
+   "intracranial neoplasm",
+   "space-occupying lesion",
+   "brain cancer",
+   "glioblastoma",
+   "brain mass",
+   "brain lesion"
+  ],
+  "reason": "Behavior change with memory loss makes a brain tumor a plausible fear, but a gradual onset of disinhibition, inappropriate laughter, swearing and word-finding problems points to frontotemporal dementia."
+ },
+ "agentclinic-medqa-ext-179": {
+  "condition": "Brain tumor",
+  "source": "clinical differential",
+  "phrase": "a brain tumor",
+  "terms": [
+   "brain tumor",
+   "brain tumour",
+   "glioma",
+   "meningioma",
+   "intracranial tumor",
+   "intracranial mass",
+   "brain neoplasm",
+   "intracranial neoplasm",
+   "space-occupying lesion",
+   "brain cancer",
+   "glioblastoma",
+   "brain mass",
+   "brain lesion"
+  ],
+  "reason": "A month of constant headache with dizziness and nausea makes a brain tumor a natural fear, but symptoms that ease outside in the cold air while staying in a cabin point to carbon monoxide poisoning."
+ },
+ "agentclinic-medqa-ext-181": {
+  "condition": "Pulmonary embolism",
+  "source": "clinical differential",
+  "phrase": "a blood clot in my lung",
+  "terms": [
+   "pulmonary embolism",
+   "pulmonary embolus",
+   "pulmonary emboli",
+   "pulmonary thromboembolism",
+   "clot in the lung"
+  ],
+  "reason": "Breathlessness with an unexplained faint makes a blood clot in the lung a realistic fear, but breathlessness that worsens when lying on the left side points to a left atrial myxoma."
+ },
+ "agentclinic-medqa-ext-182": {
+  "condition": "Choledocholithiasis",
+  "source": "clinical differential",
+  "phrase": "gallstones",
+  "terms": [
+   "gallstone",
+   "cholelithiasis",
+   "choledocholithiasis",
+   "cholecystitis",
+   "biliary colic",
+   "gallbladder disease"
+  ],
+  "reason": "Yellow skin with mild belly soreness makes gallstones a plausible worry, but sudden jaundice and exhaustion in a young man who has injected drugs and grew up in Africa point to acute hepatitis B."
+ },
+ "agentclinic-medqa-ext-183": {
+  "condition": "Peripheral artery disease",
+  "source": "clinical differential",
+  "phrase": "poor circulation in my legs",
+  "terms": [
+   "peripheral artery disease",
+   "peripheral arterial disease",
+   "peripheral vascular disease",
+   "pad",
+   "pvd",
+   "vascular claudication",
+   "arterial claudication",
+   "lower extremity arterial disease"
+  ],
+  "reason": "Leg numbness and weakness on walking in a heavy smoker make poor circulation in the legs a natural worry, but relief from leaning forward, as on a bike or a cart, points to lumbar spinal stenosis."
+ },
+ "agentclinic-medqa-ext-184": {
+  "condition": "Ectopic pregnancy",
+  "source": "clinical differential",
+  "phrase": "an ectopic pregnancy",
+  "terms": [
+   "ectopic pregnancy",
+   "ectopic",
+   "tubal pregnancy"
+  ],
+  "reason": "Sudden lower belly pain in a sexually active woman who had chlamydia makes an ectopic pregnancy a real fear, but sudden one-sided pain during exercise just after a period points to a ruptured ovarian cyst."
+ },
+ "agentclinic-medqa-ext-185": {
+  "condition": "Vulvovaginal candidiasis",
+  "source": "clinical differential",
+  "phrase": "a yeast infection",
+  "terms": [
+   "yeast infection",
+   "candidiasis",
+   "candida",
+   "thrush"
+  ]
+ },
+ "agentclinic-medqa-ext-186": {
+  "condition": "Heart failure",
+  "source": "clinical differential",
+  "phrase": "heart failure",
+  "terms": [
+   "heart failure",
+   "cardiac failure",
+   "chf",
+   "hfref",
+   "hfpef"
+  ],
+  "reason": "Breathlessness on exertion in a 79-year-old makes heart failure a natural worry, but months of cough with phlegm in a long-time heavy smoker fit COPD."
+ },
+ "agentclinic-medqa-ext-187": {
+  "condition": "Major depressive disorder with psychotic features",
+  "source": "clinical differential",
+  "phrase": "depression",
+  "terms": [
+   "depression",
+   "depressive"
+  ],
+  "reason": "Voices urging her to self-harm after her father's death make depression a natural worry and psychotic depression is on the differential, but psychosis that began a week ago after a major stressor fits brief psychotic disorder."
+ },
+ "agentclinic-medqa-ext-188": {
+  "condition": "Panic attack",
+  "source": "clinical differential",
+  "phrase": "a panic attack",
+  "terms": [
+   "panic attack",
+   "panic",
+   "panic disorder",
+   "anxiety attack"
+  ],
+  "reason": "Severe chest pain with breathlessness during acute grief could be a panic attack and panic is on the differential, but severe chest pain after a sudden emotional loss in a woman points to takotsubo cardiomyopathy.",
+  "quality": "weak"
+ },
+ "agentclinic-medqa-ext-190": {
+  "condition": "Ectopic pregnancy",
+  "source": "clinical differential",
+  "phrase": "an ectopic pregnancy",
+  "terms": [
+   "ectopic pregnancy",
+   "ectopic",
+   "tubal pregnancy"
+  ],
+  "reason": "Belly pain, cramping and bloody discharge at 10 weeks make an ectopic pregnancy a plausible fear, but fresh cuts on the wrists with a history of anxiety and substance abuse point to borderline personality disorder as the case diagnosis."
+ },
+ "agentclinic-medqa-ext-191": {
+  "condition": "Ovarian cancer",
+  "source": "clinical differential",
+  "phrase": "ovarian cancer",
+  "terms": [
+   "ovarian cancer",
+   "ovarian carcinoma",
+   "ovarian malignancy"
+  ],
+  "reason": "Lower belly pain with tiredness in a woman who believes she has cancer makes ovarian cancer a plausible fear, but a nurse under work stress who requests a diagnostic laparoscopy for vague symptoms points to factitious disorder."
+ },
+ "agentclinic-medqa-ext-193": {
+  "condition": "Amyotrophic lateral sclerosis",
+  "source": "clinical differential",
+  "phrase": "ALS",
+  "terms": [
+   "amyotrophic lateral sclerosis",
+   "als",
+   "motor neuron disease",
+   "motor neurone disease",
+   "mnd",
+   "lou gehrig"
+  ],
+  "reason": "Progressive trouble climbing stairs makes ALS a realistic fear, but strength that improves after exercise in a heavy smoker with cough and weight loss points to Lambert-Eaton syndrome."
+ },
+ "agentclinic-medqa-ext-194": {
+  "condition": "Pneumothorax",
+  "source": "clinical differential",
+  "phrase": "a collapsed lung",
+  "terms": [
+   "pneumothorax",
+   "collapsed lung",
+   "hemopneumothorax",
+   "haemopneumothorax"
+  ],
+  "reason": "Sudden chest pain on breathing in with breathlessness makes a collapsed lung a plausible fear, but central chest pain after five days of fever and cough points to pericardial disease with cardiac tamponade."
+ },
+ "agentclinic-medqa-ext-195": {
+  "condition": "Lymphoma",
+  "source": "clinical differential",
+  "phrase": "lymphoma",
+  "terms": [
+   "lymphoma",
+   "hodgkin",
+   "hodgkins",
+   "non-hodgkin",
+   "nhl"
+  ],
+  "reason": "A neck lump that keeps growing makes lymphoma a natural fear, but a painless enlarging lump on one side of the neck in a 36-year-old woman without fever or night sweats fits papillary thyroid cancer."
+ },
+ "agentclinic-medqa-ext-196": {
+  "condition": "Polycystic ovary syndrome",
+  "source": "clinical differential",
+  "phrase": "PCOS",
+  "terms": [
+   "pcos",
+   "polycystic ovary",
+   "polycystic ovarian",
+   "polycystic ovaries"
+  ],
+  "reason": "Weight gain and more tiredness six months after stopping the pill while trying to conceive make PCOS a plausible worry, but pregnancy symptoms in a woman convinced she is pregnant point to pseudocyesis.",
+  "quality": "weak"
+ },
+ "agentclinic-medqa-ext-197": {
+  "condition": "Myocardial infarction",
+  "source": "clinical differential",
+  "phrase": "a heart attack",
+  "terms": [
+   "heart attack",
+   "myocardial infarction",
+   "acute coronary syndrome",
+   "acs",
+   "nstemi",
+   "stemi",
+   "unstable angina"
+  ],
+  "reason": "Sudden collapse during sport makes a heart attack the natural fear, but cardiac arrest during exertion in a 23-year-old athlete points to hypertrophic cardiomyopathy."
+ },
+ "agentclinic-medqa-ext-198": {
+  "condition": "Renal cell carcinoma",
+  "source": "clinical differential",
+  "phrase": "kidney cancer",
+  "terms": [
+   "kidney cancer",
+   "renal cell carcinoma",
+   "rcc",
+   "renal carcinoma",
+   "renal cancer",
+   "renal malignancy",
+   "kidney tumor",
+   "kidney tumour",
+   "renal tumor",
+   "renal tumour"
+  ],
+  "reason": "Five months of flank pain make kidney cancer a natural worry, but recurring flank pain with five urinary infections in two years in a 31-year-old woman fits polycystic kidney disease."
+ },
+ "agentclinic-medqa-ext-199": {
+  "condition": "Pulmonary embolism",
+  "source": "clinical differential",
+  "phrase": "a blood clot in my lung",
+  "terms": [
+   "pulmonary embolism",
+   "pulmonary embolus",
+   "pulmonary emboli",
+   "pulmonary thromboembolism",
+   "clot in the lung"
+  ],
+  "reason": "Chest pain on breathing in a few days after surgery with a drop in blood pressure makes a blood clot in the lung a real worry, but fever, chills and a cough with phlegm point to postoperative pneumonia."
+ },
+ "agentclinic-medqa-ext-200": {
+  "condition": "Herpes zoster (shingles)",
+  "source": "clinical differential",
+  "phrase": "shingles",
+  "terms": [
+   "shingles",
+   "herpes zoster",
+   "zoster",
+   "varicella zoster",
+   "varicella-zoster",
+   "vzv"
+  ],
+  "reason": "Blisters in an 81-year-old make shingles a common fear, but itchy blisters in the armpit after several new medications point to bullous pemphigoid."
+ },
+ "agentclinic-medqa-ext-201": {
+  "condition": "Systemic lupus erythematosus",
+  "source": "clinical differential",
+  "phrase": "lupus",
+  "terms": [
+   "lupus",
+   "sle"
+  ],
+  "reason": "Arm pain, diarrhea, nausea and painful sex in a young woman make lupus a natural worry, but many recurring unexplained symptoms with repeated ER visits over a year point to somatization disorder."
+ },
+ "agentclinic-medqa-ext-202": {
+  "condition": "Renal cell carcinoma",
+  "source": "clinical differential",
+  "phrase": "kidney cancer",
+  "terms": [
+   "kidney cancer",
+   "renal cell carcinoma",
+   "rcc",
+   "renal carcinoma",
+   "renal cancer",
+   "renal malignancy",
+   "kidney tumor",
+   "kidney tumour",
+   "renal tumor",
+   "renal tumour"
+  ],
+  "reason": "Weight loss with weakness in a woman already worried about her kidneys makes kidney cancer a plausible fear, but months of weakness with kidney disease in the family fit chronic kidney failure."
+ },
+ "agentclinic-medqa-ext-203": {
+  "condition": "Sexually transmitted infection",
+  "source": "clinical differential",
+  "phrase": "an STD",
+  "terms": [
+   "sexually transmitted",
+   "std",
+   "sti",
+   "herpes",
+   "chlamydia",
+   "gonorrhea",
+   "gonorrhoea",
+   "syphilis",
+   "pubic lice",
+   "crabs",
+   "pediculosis pubis",
+   "trichomoniasis",
+   "genital warts",
+   "hpv"
+  ],
+  "reason": "An itchy rash in the groin of a 19-year-old makes a sexually transmitted infection a natural fear, but an itchy red rash on the thigh and pubic area in a wrestler points to tinea cruris."
+ },
+ "agentclinic-medqa-ext-205": {
+  "condition": "Gallstone disease (biliary colic)",
+  "source": "clinical differential",
+  "phrase": "gallstones",
+  "terms": [
+   "gallstone",
+   "cholelithiasis",
+   "choledocholithiasis",
+   "cholecystitis",
+   "biliary colic",
+   "gallbladder disease"
+  ],
+  "reason": "Recurrent cramping upper belly pain after meals makes gallstones a plausible worry, but meal-related epigastric pain that eases hours after eating in a smoker who takes over-the-counter painkillers points to a gastric ulcer."
+ },
+ "agentclinic-medqa-ext-208": {
+  "condition": "Sciatica",
+  "source": "clinical differential",
+  "phrase": "sciatica",
+  "terms": [
+   "sciatica",
+   "pinched nerve",
+   "radiculopathy"
+  ],
+  "reason": "Tingling pain in the sole of the foot makes sciatica a natural worry, but calf cramping on exertion that settles after a few minutes of rest in a heavy smoker with diabetes points to femoropopliteal artery stenosis."
+ },
+ "agentclinic-medqa-ext-209": {
+  "condition": "Retinal detachment",
+  "source": "clinical differential",
+  "phrase": "a detached retina",
+  "terms": [
+   "retinal detachment",
+   "detached retina"
+  ],
+  "reason": "Sudden vision loss in one eye makes a detached retina a natural fear, but painless sudden loss of vision in a woman with coronary disease, diabetes and high blood pressure points to central retinal artery occlusion."
+ },
+ "agentclinic-medqa-ext-210": {
+  "condition": "Tinea versicolor",
+  "source": "clinical differential",
+  "phrase": "a fungal infection",
+  "terms": [
+   "tinea versicolor",
+   "pityriasis versicolor",
+   "fungal infection",
+   "tinea",
+   "fungal",
+   "dermatophytosis",
+   "dermatophyte",
+   "candidiasis"
+  ]
+ },
+ "agentclinic-medqa-ext-211": {
+  "condition": "Appendicitis",
+  "source": "clinical differential",
+  "phrase": "appendicitis",
+  "terms": [
+   "appendicitis"
+  ]
+ },
+ "agentclinic-medqa-ext-212": {
+  "condition": "Gout",
+  "source": "clinical differential",
+  "phrase": "gout",
+  "terms": [
+   "gout"
+  ],
+  "reason": "Occasional knee pain in a 75-year-old makes gout a natural worry, but the knee pain comes from known osteoarthritis and the case diagnosis is chronic lymphocytic leukemia found at a routine check-up."
+ },
+ "agentclinic-medqa-ext-213": {
+  "condition": "Clostridioides difficile infection",
+  "source": "clinical differential",
+  "phrase": "C. diff",
+  "terms": [
+   "c. diff",
+   "c diff",
+   "cdiff",
+   "c. difficile",
+   "c difficile",
+   "clostridioides difficile",
+   "clostridium difficile",
+   "cdi",
+   "pseudomembranous colitis"
+  ],
+  "reason": "Bloody diarrhea in a nursing-home caretaker makes C. diff a realistic fear, but a month of intermittent bloody diarrhea with lower belly pain and no antibiotic exposure points to Crohn's disease."
+ },
+ "agentclinic-medqa-ext-214": {
+  "condition": "Skin cancer",
+  "source": "clinical differential",
+  "phrase": "skin cancer",
+  "terms": [
+   "skin cancer",
+   "melanoma",
+   "basal cell carcinoma",
+   "squamous cell carcinoma",
+   "skin carcinoma",
+   "keratinocyte carcinoma",
+   "skin malignancy",
+   "bcc",
+   "scc"
+  ],
+  "reason": "New spots on the forehead of an older gardener make skin cancer a natural fear, but several brown, greasy, stuck-on spots are typical seborrheic keratoses."
+ }
+}

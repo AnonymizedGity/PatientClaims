@@ -1,0 +1,110 @@
+{
+  "case_id": "agentclinic-medqa-ext-020",
+  "source_row": 20,
+  "demographics_text": "26-year-old woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with sudden-onset lower back pain radiating down the leg.",
+  "chief_complaint": "Sharp lower back pain radiating to the leg and foot",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-020-p001",
+      "field": "History",
+      "text": "The patient reports exercising in the gym several hours ago when she suddenly felt a sharp pain in her lower back. She describes the pain as radiating down the side of her leg and into her foot."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-020-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain worsens with movement"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-020-p003",
+      "field": "Secondary_Symptoms",
+      "text": "The onset of pain while exercising"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-020-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. No prior episodes of similar pain."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-020-p005",
+      "field": "Social_History",
+      "text": "Non-smoker, rarely drinks alcohol. Regular gym-goer."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-020-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, changes in bowel or bladder function."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.2°C"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "120/70 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "95 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e005",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection",
+      "text": "Normal spine curvature, no visible swelling."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e006",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation",
+      "text": "Tenderness localized to the lower lumbar spine."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e007",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion",
+      "text": "Limited due to pain."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e008",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Special_Test",
+      "text": "Positive straight leg raise test with pain radiating down the leg."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensation",
+      "text": "Intact to light touch and pin-prick throughout the leg and foot."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e010",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Motor_Function",
+      "text": "No significant weakness noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-020-e011",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "Normal ankle and knee reflexes."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-020-i001",
+      "path": "Test_Results.MRI_Lumbar_Spine.Findings",
+      "text": "Evidence of L5-S1 disc herniation impinging on the adjacent nerve root."
+    }
+  ],
+  "correct_diagnosis": "Disc herniation",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

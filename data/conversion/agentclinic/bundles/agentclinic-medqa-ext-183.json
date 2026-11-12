@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-183", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 65, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "back pain", "aliases": ["low back pain"], "text": "I have back pain.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "back pain: course", "parent": "f001", "attribute": "course", "text": "It has been gradually getting worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "back pain: what made it worse", "parent": "f001", "attribute": "context", "text": "It got worse after I moved some furniture recently.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "numbness in the legs", "aliases": ["leg numbness"], "text": "My legs go numb.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "weakness in the legs", "aliases": ["leg weakness"], "text": "My legs get weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "leg numbness and weakness when walking", "aliases": ["symptoms with walking"], "text": "The numbness and weakness in my legs come on while I'm walking.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f007", "item": "symptoms better when leaning forward", "aliases": ["riding a bike", "pushing a shopping cart"], "text": "My symptoms get better when I lean forward, like when I'm riding a bike or pushing a cart.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "relief from rest or medication", "aliases": ["relief from rest", "relief from medication"], "text": "Resting or taking medication doesn't give me any immediate relief.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "osteoporosis", "aliases": ["thin bones"], "text": "I have osteoporosis.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "high cholesterol", "aliases": ["dyslipidemia", "high lipids"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "diabetes", "aliases": ["high blood sugar"], "text": "I have diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking"], "text": "I have 3 alcoholic drinks a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "smoking", "aliases": ["tobacco", "cigarettes", "pack-years"], "text": "I have a 44 pack-year smoking history.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f014", "item": "fever", "text": "I haven't had a fever recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "unexplained weight loss", "aliases": ["weight loss"], "text": "I haven't lost any weight without explanation.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "change in bowel function", "aliases": ["bowel control", "bowel habits"], "text": "I haven't noticed any change in how my bowels work.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "change in bladder function", "aliases": ["bladder control", "urinary incontinence", "trouble urinating"], "text": "I haven't noticed any change in how my bladder works.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-183",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.5°C (99.5°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "157/108 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["motor examination", "muscle strength", "power", "leg strength"], "result": "Mild weakness in both lower extremities."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Decreased sensation in a stocking-glove distribution."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal reflexes; no pathological reflexes."},
+      {"id": "x009", "kind": "exam", "system": "musculoskeletal", "name": "back examination", "aliases": ["spine examination", "back range of motion", "lumbar spine examination"], "result": "Inspection: normal curvature, no visible deformities; palpation: non-tender spine, normal mobility in all 4 directions; range of motion: full, with discomfort only on extreme flexion."},
+      {"id": "x010", "kind": "test", "name": "spine X-ray", "aliases": ["lumbar spine X-ray", "back X-ray", "radiograph of the spine"], "result": "Evidence of lumbar spinal canal narrowing without acute fracture."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Within normal limits."},
+      {"id": "x012", "kind": "test", "name": "blood glucose", "aliases": ["glucose", "blood sugar"], "result": "Elevated."},
+      {"id": "x013", "kind": "test", "name": "lipid panel", "aliases": ["lipid profile", "cholesterol", "LDL", "HDL"], "result": "Total cholesterol elevated; LDL elevated; HDL normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-183",
+    "diagnosis": "Spinal stenosis",
+    "aliases": ["lumbar spinal stenosis", "lumbar stenosis", "lumbar canal stenosis", "spinal canal stenosis", "degenerative lumbar spinal stenosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-183",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-183-p001"], "f002": ["cc", "agentclinic-medqa-ext-183-p001"], "f003": ["agentclinic-medqa-ext-183-p001"],
+      "f004": ["agentclinic-medqa-ext-183-p001", "agentclinic-medqa-ext-183-p002"], "f005": ["agentclinic-medqa-ext-183-p001", "agentclinic-medqa-ext-183-p003"],
+      "f006": ["agentclinic-medqa-ext-183-p001"], "f007": ["agentclinic-medqa-ext-183-p001", "agentclinic-medqa-ext-183-p004"],
+      "f008": ["agentclinic-medqa-ext-183-p005"], "f009": ["agentclinic-medqa-ext-183-p006"], "f010": ["agentclinic-medqa-ext-183-p006"],
+      "f011": ["agentclinic-medqa-ext-183-p006"], "f012": ["agentclinic-medqa-ext-183-p007"], "f013": ["agentclinic-medqa-ext-183-p007"],
+      "f014": ["agentclinic-medqa-ext-183-p008"], "f015": ["agentclinic-medqa-ext-183-p008"], "f016": ["agentclinic-medqa-ext-183-p008"],
+      "f017": ["agentclinic-medqa-ext-183-p008"]
+    },
+    "quotes": {
+      "f002": "Gradually worsening back pain", "f003": "intensified after moving furniture recently", "f006": "numbness and weakness in his legs while walking",
+      "f007": "improvement in symptoms when riding a bike or pushing a cart / Pain alleviation while leaning forward",
+      "f008": "No immediate relief from rest or medication", "f010": "Dyslipidemia", "f012": "Drinks 3 alcoholic drinks daily",
+      "f013": "44 pack-year smoking history", "f014": "recent fever", "f015": "unexplained weight loss", "f016": "changes in bowel or bladder function"
+    },
+    "flags": {
+      "f013": ["Current or former smoker is not stated; 'time' is left out."],
+      "f008": ["'No immediate relief from rest' is atypical for the classic picture (neurogenic claudication eases with sitting); kept as written."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.5°C (99.5°F)", "exam_ids": ["agentclinic-medqa-ext-183-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "157/108 mmHg", "exam_ids": ["agentclinic-medqa-ext-183-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90 bpm", "exam_ids": ["agentclinic-medqa-ext-183-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17 breaths/min", "exam_ids": ["agentclinic-medqa-ext-183-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-183-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor_Function", "source_text": "Mild weakness noted in the bilateral lower extremities.", "exam_ids": ["agentclinic-medqa-ext-183-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination", "source_text": "Decreased sensation in a stocking-glove distribution.", "exam_ids": ["agentclinic-medqa-ext-183-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal reflexes with no pathological reflexes noted.", "exam_ids": ["agentclinic-medqa-ext-183-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Spinal_Examination.Inspection + Physical_Examination_Findings.Spinal_Examination.Palpation + Physical_Examination_Findings.Spinal_Examination.Range_of_Motion", "source_text": "Normal curvature with no visible deformities + Non-tender spine, normal mobility in all 4 directions + Full range of motion with discomfort only on extreme flexion", "exam_ids": ["agentclinic-medqa-ext-183-e009", "agentclinic-medqa-ext-183-e010", "agentclinic-medqa-ext-183-e011"]},
+      "x010": {"source": "Test_Results.Radiography_of_Spine.Findings", "source_text": "Evidence of lumbar spinal canal narrowing without acute fracture", "exam_ids": ["agentclinic-medqa-ext-183-i001"]},
+      "x011": {"source": "Test_Results.Basic_Labs.Complete_Blood_Count", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-183-i002"]},
+      "x012": {"source": "Test_Results.Basic_Labs.Blood_Glucose_Level", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-183-i003"]},
+      "x013": {"source": "Test_Results.Basic_Labs.Lipid_Profile.Cholesterol + Test_Results.Basic_Labs.Lipid_Profile.LDL + Test_Results.Basic_Labs.Lipid_Profile.HDL", "source_text": "Elevated + Elevated + Normal", "exam_ids": ["agentclinic-medqa-ext-183-i004", "agentclinic-medqa-ext-183-i005", "agentclinic-medqa-ext-183-i006"]}
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The X-ray result describes 'lumbar spinal canal narrowing', i.e. the gold diagnosis in descriptive words; this is the test's answer, kept per CONVERSION."}
+    ],
+    "source_issues": [
+      "Stocking-glove sensory loss (x007) fits a diabetic polyneuropathy rather than spinal stenosis.",
+      "'No immediate relief from rest or medication' (p005) is atypical for neurogenic claudication.",
+      "BP 157/108 mmHg, but no hypertension in the history."
+    ],
+    "notes": [
+      "The walking trigger (f006) and the leaning-forward relief (f007) apply to several symptoms, so they are standalone facts, as in the reference example. p004 ('Pain alleviation while leaning forward') generalises the History's bike/cart examples and is merged into f007.",
+      "'Changes in bowel or bladder function' is split into two denials (f016, f017).",
+      "The source exam 'Spinal_Examination' is renamed 'back examination' (range of motion grouped with inspection and palpation of the same region)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with back pain, numbness, and weakness in the legs."
+    }
+  }
+}

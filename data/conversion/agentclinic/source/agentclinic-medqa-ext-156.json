@@ -1,0 +1,143 @@
+{
+  "case_id": "agentclinic-medqa-ext-156",
+  "source_row": 156,
+  "demographics_text": "57-year-old obese female",
+  "objective_for_doctor": "Evaluate the patient presenting with postoperative fever, chest pain that increases on inspiration, and a productive cough, and determine the correct diagnosis.",
+  "chief_complaint": "Right-sided chest pain that increases on inspiration",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p001",
+      "field": "History",
+      "text": "The patient reports experiencing fever, chills, and a headache starting three days after undergoing an open cholecystectomy. She has a history of an abdominal hysterectomy 16 years ago. She has been smoking one pack of cigarettes daily for 17 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Productive cough for the last 12 hours"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Chills"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Headache"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p006",
+      "field": "Past_Medical_History",
+      "text": "{\"Surgeries\": [\"Open cholecystectomy three days prior\", \"Abdominal hysterectomy 16 years ago\"], \"Chronic_Conditions\": [\"None reported\"], \"Medications\": [\"None reported\"]}"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p007",
+      "field": "Social_History",
+      "text": "{\"Smoking_Status\": \"Current smoker, one pack daily for 17 years\", \"Alcohol_Use\": \"Not specified\", \"Occupation\": \"Not specified\", \"Activities\": \"Not specified\"}"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-156-p008",
+      "field": "Review_of_Systems",
+      "text": "{\"Respiratory\": \"Productive cough\", \"Cardiovascular\": \"No reported abnormalities\", \"Gastrointestinal\": \"Surgical site below right ribcage, otherwise unremarkable\", \"Musculoskeletal\": \"No reported abnormalities\", \"Neurological\": \"No reported abnormalities\"}"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "39°C (102.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "128/82 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "98 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e005",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "Appears uncomfortable"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e006",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Inspiratory crackles at the right lung base"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e007",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Not specified"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e008",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Palpation",
+      "text": "Not specified"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Healing surgical incision below the right ribcage"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e010",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Not specified"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e011",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Not specified"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-e012",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Soft and nontender"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-156-i001",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Infiltrates at the right lung base"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-i002",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-i003",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-i004",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-156-i005",
+      "path": "Test_Results.Blood_Culture.Findings",
+      "text": "Pending"
+    }
+  ],
+  "correct_diagnosis": "Pneumonia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

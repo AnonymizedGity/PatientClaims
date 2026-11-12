@@ -1,0 +1,132 @@
+{
+  "patient": {
+    "case_id": "mcr-test-14153",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 25, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "tics or twitches", "aliases": ["tics", "twitching", "motor tics", "involuntary movements", "jerks", "spasms"], "text": "I've been having twitches that I can't control.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "involuntary sounds", "aliases": ["vocal tics", "vocalizations", "making noises", "noises I can't control"], "text": "I've been making sounds that I can't control.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "tics and sounds: onset", "text": "It all started suddenly, 3 days ago.", "value": "sudden, 3 days ago", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "tics or twitches: location", "parent": "f001", "attribute": "location", "text": "It began in my face: twitches, and winking on the left side.", "value": ["face", "left eye"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "tics or twitches: frequency", "parent": "f001", "attribute": "frequency", "text": "The winking happened up to 12 times a minute.", "value": "up to 12 per minute", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "involuntary sounds: character", "parent": "f002", "attribute": "character", "text": "They're whistling sounds.", "value": "whistling", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f007", "item": "involuntary sounds: onset", "parent": "f002", "attribute": "onset", "text": "The whistling came after the face twitches started.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f008", "item": "other symptoms", "aliases": ["anything else", "review of systems"], "text": "I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f009", "item": "jumpiness", "aliases": ["jumpy", "on edge", "startling easily", "nervousness"], "text": "I've been more jumpy than usual.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f010", "item": "sleeping less", "aliases": ["poor sleep", "insomnia", "trouble sleeping", "decreased sleep"], "text": "I've been sleeping less.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "ruminating thoughts", "aliases": ["ruminations", "overthinking", "can't stop thinking", "dwelling on things"], "text": "I keep going over things in my head and can't stop.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f012", "item": "thoughts of suicide", "aliases": ["suicidal thoughts", "self-harm", "wanting to die"], "text": "I'm not having any thoughts of killing myself.", "polarity": "absent", "category": "symptom", "system": "psychiatric"},
+      {"id": "f013", "item": "thoughts of harming others", "aliases": ["homicidal thoughts", "wanting to hurt someone"], "text": "I'm not having any thoughts of hurting anyone else.", "polarity": "absent", "category": "symptom", "system": "psychiatric"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["medical history", "past illnesses"], "text": "I don't have any medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "marital separation", "aliases": ["separation", "marriage problems", "divorce", "relationship problems", "stress at home"], "text": "My wife and I separated four months ago.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f016", "item": "daughter moving out", "aliases": ["daughter left home", "family changes"], "text": "My daughter moved out of the home.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f017", "item": "going into my daughter's room", "aliases": ["upsetting event", "trigger", "stressful event before the tics"], "text": "One week before the tics started I went into my daughter's room, the first time since the separation.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f018", "item": "upcoming court date", "aliases": ["court case", "legal problems", "legal trouble", "domestic abuse allegation"], "text": "I have a court date coming up for alleged domestic abuse.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f019", "item": "knowing someone with tics", "aliases": ["Tourette's", "coworker with Tourette's syndrome", "someone with Tourette syndrome"], "text": "A former coworker of mine has Tourette's syndrome.", "polarity": "present", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-14153",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normal."},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves"], "result": "Cranial nerves II–XII intact."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "strength"], "result": "Full and symmetric."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs", "tendon reflexes"], "result": "Normal."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation", "sensory testing"], "result": "Normal."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["cerebellar examination", "finger-nose test", "coordination testing"], "result": "Normal."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "gait", "aliases": ["walking", "gait examination"], "result": "Normal."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "observation during the examination", "aliases": ["tics", "twitching", "facial twitching", "inspection", "observation", "face"], "result": "Frequent involuntary facial movements, left-sided hemifacial spasms, blinking, grimacing, clicking and whistling."},
+      {"id": "x009", "kind": "exam", "system": "psychiatric", "name": "psychiatric assessment", "aliases": ["mental status examination", "mental state", "speech", "suicide risk assessment"], "result": "Clear and fluent speech; no suicidal or homicidal ideation."},
+      {"id": "x010", "kind": "test", "name": "PHQ-9", "aliases": ["Patient Health Questionnaire-9", "depression questionnaire", "depression screening"], "result": "Score 4."},
+      {"id": "x011", "kind": "test", "name": "GAD-7", "aliases": ["Generalized Anxiety Disorder-7", "anxiety questionnaire", "anxiety screening"], "result": "Score 15."},
+      {"id": "x012", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Normal."},
+      {"id": "x013", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Normal."},
+      {"id": "x014", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-14153",
+    "diagnosis": "Psychogenic movement disorder",
+    "aliases": ["functional movement disorder", "FMD", "PMD", "psychogenic tics", "functional tic-like movements", "functional neurological symptom disorder with abnormal movement", "conversion disorder with abnormal movement"],
+    "reasoning": "1. Tourette’s syndrome was considered because of the co-occurrence of motor and vocal tics — “Differential diagnosis included Tourette's syndrome, dystonia, Parkinsonism, Wilson disease, enhanced physiologic tremor, Multiple sclerosis.” 2. Dystonia was considered given the abnormal involuntary movements — “Differential diagnosis included Tourette's syndrome, dystonia, Parkinsonism, Wilson disease, enhanced physiologic tremor, Multiple sclerosis.” 3. Parkinsonism was considered as movement disorders can present with tremor or bradykinesia — “Differential diagnosis included Tourette's syndrome, dystonia, Parkinsonism, Wilson disease, enhanced physiologic tremor, Multiple sclerosis.” 4. Wilson disease was considered because it can manifest with movement abnormalities — “Differential diagnosis included Tourette's syndrome, dystonia, Parkinsonism, Wilson disease, enhanced physiologic tremor, Multiple sclerosis.” 5. Enhanced physiologic tremor was considered for its tremulous component — “Differential diagnosis included Tourette's syndrome, dystonia, Parkinsonism, Wilson disease, enhanced physiologic tremor, Multiple sclerosis.” 6. Multiple sclerosis was considered as a demyelinating cause of motor symptoms — “Differential diagnosis included Tourette's syndrome, dystonia, Parkinsonism, Wilson disease, enhanced physiologic tremor, Multiple sclerosis.” 7. Organic causes were excluded by the absence of neurologic abnormalities on examination, obviating further testing — “Due to high suspicion of psychogenic movement disorder with very reassuring neurologic physical examination, no follow‐on labs, radiology, or special testing was required to begin treatment.” 8. Psychogenic movement disorder was identified based on sudden onset, stress triggers, suggestibility, and a normal exam — “Basis for diagnosis takes into account a normal physical exam with multiple typical characteristics of PMD that includes, but is not limited to: sudden abrupt onset of symptoms, Movements triggered or worsened by emotional or physical stressors, cessation of movements may occur by trialing a suggested physical treatment…”"
+  },
+  "qc": {
+    "case_id": "mcr-test-14153",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s002"],
+      "f005": ["s002"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s005"],
+      "f009": ["s009"],
+      "f010": ["s009"],
+      "f011": ["s009"],
+      "f012": ["s008"],
+      "f013": ["s008"],
+      "f014": ["s001"],
+      "f015": ["s003"],
+      "f016": ["s003"],
+      "f017": ["s003"],
+      "f018": ["s009"],
+      "f019": ["s004"]
+    },
+    "quotes": {
+      "f003": "3 days after the sudden onset of involuntary motor tics and vocalizations",
+      "f004": "facial twitches and left-sided winking",
+      "f005": "left-sided winking up to 12 times per minute",
+      "f006": "followed by whistling sounds",
+      "f007": "followed by whistling sounds",
+      "f009": "increased jumpiness",
+      "f010": "decreased sleep",
+      "f011": "persistent ruminations",
+      "f012": "without suicidal or homicidal ideation",
+      "f013": "without suicidal or homicidal ideation",
+      "f014": "no prior medical history",
+      "f015": "a marital separation four months earlier",
+      "f016": "his daughter’s move out of the home",
+      "f017": "he had entered his daughter’s room—his first return since the separation—one week before tic onset",
+      "f018": "an impending court date for alleged domestic abuse",
+      "f019": "a former coworker with Tourette’s syndrome"
+    },
+    "flags": {
+      "f005": ["The source puts 'up to 12 times per minute' after the left-sided winking; it may also cover the facial twitches."],
+      "f012": ["Absence of suicidal and homicidal ideation comes from the psychiatric assessment (s008); kept as facts because only the patient can answer it, and also in the psychiatric finding."],
+      "f016": ["The source does not date the daughter's move; probably with the separation four months earlier."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "On examination, vital signs were normal."},
+      "x002": {"sentences": ["s006"], "source_text": "intact cranial nerves II–XII"},
+      "x003": {"sentences": ["s006"], "source_text": "full symmetric strength"},
+      "x004": {"sentences": ["s006"], "source_text": "normal reflexes"},
+      "x005": {"sentences": ["s006"], "source_text": "normal reflexes, sensation"},
+      "x006": {"sentences": ["s006"], "source_text": "normal reflexes, sensation, coordination"},
+      "x007": {"sentences": ["s006"], "source_text": "normal reflexes, sensation, coordination, and gait"},
+      "x008": {"sentences": ["s007"], "source_text": "During the exam, he exhibited frequent involuntary facial movements, left-sided hemifacial spasms, blinking, grimacing, clicking, and whistling."},
+      "x009": {"sentences": ["s008"], "source_text": "Psychiatric assessment revealed clear and fluent speech without suicidal or homicidal ideation."},
+      "x010": {"sentences": ["s010"], "source_text": "His Patient Health Questionnaire-9 score was 4"},
+      "x011": {"sentences": ["s010"], "source_text": "his Generalized Anxiety Disorder-7 score was 15"},
+      "x012": {"sentences": ["s006"], "source_text": "On examination, vital signs were normal."},
+      "x013": {"sentences": ["s006"], "source_text": "On examination, vital signs were normal."},
+      "x014": {"sentences": ["s006"], "source_text": "On examination, vital signs were normal."}
+    },
+    "finding_flags": {
+      "x001": ["No individual vital-sign values are given ('vital signs were normal'); one record answers any vital-sign request."],
+      "x012": ["No individual vital-sign values are given ('vital signs were normal'); one record answers any vital-sign request."],
+      "x013": ["No individual vital-sign values are given ('vital signs were normal'); one record answers any vital-sign request."],
+      "x014": ["No individual vital-sign values are given ('vital signs were normal'); one record answers any vital-sign request."]
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The observation 'involuntary facial movements' contains the gold word 'movement' as a plain description of what is seen; it does not name the disorder."}
+    ],
+    "source_issues": ["s006 holds two sentences (vital signs; neurological examination)."],
+    "notes": ["Index visit: the outpatient presentation 3 days after the sudden onset of tics and vocalizations (s001-s010).", "He first denied stressors and disclosed them, and his jumpiness, poor sleep, ruminations and court date, only on further questioning; the facts hold what he discloses and the reluctance is an acting note.", "Clicking, blinking, grimacing and hemifacial spasm were observed during the examination only and stay in the observation finding; the patient's own account names facial twitches, left-sided winking and whistling.", "Patient fact labels avoid the gold word 'movement' ('tics or twitches'); the clinical term is an alias.", "'Review of systems was otherwise negative' is one 'other symptoms' absent fact.", "Harmonisation: the single 'vital signs' record was split into one record per standard parameter with the source's word; no oxygen saturation, which the source does not mention."],
+    "extras": {
+      "acting_notes": ["At first denies any stressors; discloses the marital separation, the daughter's move and entering her room only when asked further (s003).", "Mentions jumpiness, decreased sleep, ruminations and the court date only on further probing (s009)."]
+    },
+    "excluded_sentences": []
+  }
+}

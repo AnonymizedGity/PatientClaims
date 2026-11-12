@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-095",
+  "source_row": 95,
+  "demographics_text": "57-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with a chronic wound on his right lower leg.",
+  "chief_complaint": "Large wound on the right lower leg",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-095-p001",
+      "field": "History",
+      "text": "The patient reports a large wound on his right lower leg that has been present for 6 months. He mentions that his legs have been chronically swollen for over 10 years and that his mother and brother had similar leg problems. He had a documented deep vein thrombosis (DVT) in the affected leg 5 years ago but has no other significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-095-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Chronic leg swelling"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-095-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Family history of similar leg problems"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-095-p004",
+      "field": "Past_Medical_History",
+      "text": "Deep vein thrombosis in the right leg 5 years prior. No other significant medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-095-p005",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol socially. Works as an accountant."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-095-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, recent injuries, heart disease, or diabetes."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-095-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "126/84 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "62/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-e003",
+      "path": "Physical_Examination_Findings.Leg_Examination.Inspection",
+      "text": "Large ulcer on the right lower leg, presence of varicose veins"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-e004",
+      "path": "Physical_Examination_Findings.Leg_Examination.Palpation",
+      "text": "Edema in both legs, more pronounced in the right leg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-e005",
+      "path": "Physical_Examination_Findings.Leg_Examination.Pulse",
+      "text": "Dorsalis pedis and posterior tibial pulses are palpable but diminished in the right leg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-e006",
+      "path": "Physical_Examination_Findings.Leg_Examination.Skin",
+      "text": "Skin around the wound is discolored with evidence of chronic changes such as pigmentation"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-095-i001",
+      "path": "Test_Results.Doppler_Ultrasound_Lower_Limb.Findings",
+      "text": "Evidence of venous reflux and obstruction in superficial and deep venous systems of the right leg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-i002",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-i003",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-i004",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-095-i005",
+      "path": "Test_Results.Wound_Culture.Findings",
+      "text": "No growth of pathogenic bacteria"
+    }
+  ],
+  "correct_diagnosis": "Chronic Venous Insufficiency",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "case_id": "medqa-cs-004",
+  "source_case_id": 4,
+  "opening_scenario": "John Matthew, a 25-year-old male, came to the ED following a motor vehicle accident.",
+  "doorway_vital_signs": [
+    "BP: 123/88 mm Hg",
+    "Temp: 100°F (38°C)",
+    "RR: 22/minute",
+    "HR: 85/minute, regular"
+  ],
+  "sp_notes": [
+    "Exhibit pain in the left chest that worsens during inspiration and movement (i.e., when you breathe in, hold your side and stop your breathing with a short gasp).",
+    "Exhibit pain when your left chest is being palpated.",
+    "Exhibit pain when your left upper abdomen is being palpated.",
+    "Take fast, shallow breaths.",
+    "Occasionally cough hard into a tissue.",
+    "Moan occasionally and answer questions in short sentences."
+  ],
+  "challenging_questions": [
+    "Are you suggesting that I might die?"
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "Please tell me your concerns.",
+    "answer": "I'm having trouble breathing and have this excruciating pain (holds chest, left side)."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-004-p001",
+      "topic": "Onset",
+      "question": "When did you first experience the pain and trouble breathing?",
+      "answer": "It commenced last night."
+    },
+    {
+      "fact_id": "medqa-cs-004-p002",
+      "topic": "Severity on a scale",
+      "question": "On a scale of 0 to 10, 10 being the worst pain of your life, how bad is the pain?",
+      "answer": "It's some of the worst pain I've ever had. At least 8/10."
+    },
+    {
+      "fact_id": "medqa-cs-004-p003",
+      "topic": "Precipitating factor",
+      "question": "How did the pain come about?",
+      "answer": "I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree. I wasn't going very fast, and my car was basically okay. I was embarrassed, so I didn't call the police. I was wearing my seat belt and felt okay at first, so I didn't think I needed to come to the hospital."
+    },
+    {
+      "fact_id": "medqa-cs-004-p004",
+      "topic": "Alleviating factors",
+      "question": "Does anything help with the pain?",
+      "answer": "Nothing I do makes it better."
+    },
+    {
+      "fact_id": "medqa-cs-004-p005",
+      "topic": "Exacerbating factors",
+      "question": "Does anything worsen the pain?",
+      "answer": "It gets even worse when I take a deep breath or try to move."
+    },
+    {
+      "fact_id": "medqa-cs-004-p006",
+      "topic": "Cough",
+      "question": "Have you experienced a cough?",
+      "answer": "I've been coughing for the past few days, I suppose."
+    },
+    {
+      "fact_id": "medqa-cs-004-p007",
+      "topic": "Sputum production",
+      "question": "Any mucus or blood in your cough?",
+      "answer": "I have to use a tissue because I keep bringing up all this yellow junk."
+    },
+    {
+      "fact_id": "medqa-cs-004-p008",
+      "topic": "Fever/Chills",
+      "question": "Have you had any fever or chills recently?",
+      "answer": "I've been a bit warm and noticed some muscle soreness, but I don’t believe I've experienced any shivering or chills."
+    },
+    {
+      "fact_id": "medqa-cs-004-p009",
+      "topic": "Other injuries",
+      "question": "Were you hurt anywhere else?",
+      "answer": "I have a few scratches on my arms from the car accident."
+    },
+    {
+      "fact_id": "medqa-cs-004-p010",
+      "topic": "Head trauma",
+      "question": "Did you hit your head?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p011",
+      "topic": "Discharge from the ears, mouth, or nose (clear or bloody)",
+      "question": "Have you noticed any discharge from your ears, nose, or mouth?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p012",
+      "topic": "Loss of consciousness",
+      "question": "Did you faint?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p013",
+      "topic": "Convulsions",
+      "question": "Have you experienced any seizures?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p014",
+      "topic": "Headache",
+      "question": "Have you experienced any headaches?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p015",
+      "topic": "Change in vision",
+      "question": "Have you had any changes in your vision?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p016",
+      "topic": "Confusion, memory loss, or change in personality",
+      "question": "Have you experienced any disorientation, forgetfulness, or alterations in your behavior?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p017",
+      "topic": "Weakness or numbness in the extremities",
+      "question": "Have you noticed any weakness or numbness in your limbs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p018",
+      "topic": "Heart symptoms (palpitations)",
+      "question": "Have you felt any rapid heartbeats?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p019",
+      "topic": "Abdominal pain",
+      "question": "Have you experienced any abdominal pain?",
+      "answer": "Yes, I feel a sharp pain in this area (points to the LUQ)."
+    },
+    {
+      "fact_id": "medqa-cs-004-p020",
+      "topic": "Nausea/vomiting or stiff neck",
+      "question": "Have you been vomiting or feeling nauseous? Have you had any stiffness in your neck?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p021",
+      "topic": "Last meal/drink",
+      "question": "When did you last eat or drink?",
+      "answer": "I had breakfast this morning, about 5 hours ago. I didn't have any trouble keeping it down."
+    },
+    {
+      "fact_id": "medqa-cs-004-p022",
+      "topic": "Were you under the influence of alcohol or recreational drugs?",
+      "question": "At the time of the accident were you under the influence of any alcohol or drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p023",
+      "topic": "Pain on urination",
+      "question": "Does it hurt to urinate?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p024",
+      "topic": "Current medications",
+      "question": "Are you currently on any medications? If so, what are they?",
+      "answer": "No medications."
+    },
+    {
+      "fact_id": "medqa-cs-004-p025",
+      "topic": "Past medical history",
+      "question": "Do you have any medical problems?",
+      "answer": "I had a sore throat, mild fever, and fatigue 2 months ago. My doctor told me I had infectious mononucleosis, but it is gone now."
+    },
+    {
+      "fact_id": "medqa-cs-004-p026",
+      "topic": "Past surgical history",
+      "question": "Have you had any surgeries?",
+      "answer": "No medications."
+    },
+    {
+      "fact_id": "medqa-cs-004-p027",
+      "topic": "Family history",
+      "question": "Are there any medical problems that run in your family?",
+      "answer": "My mother and father are both healthy."
+    },
+    {
+      "fact_id": "medqa-cs-004-p028",
+      "topic": "Occupation",
+      "question": "What do you do for work?",
+      "answer": "I'm a banker."
+    },
+    {
+      "fact_id": "medqa-cs-004-p029",
+      "topic": "Alcohol use",
+      "question": "Do you consume alcohol?",
+      "answer": "Sometimes on weekends."
+    },
+    {
+      "fact_id": "medqa-cs-004-p030",
+      "topic": "Illicit drug use",
+      "question": "Do you ever use recreational drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p031",
+      "topic": "Tobacco",
+      "question": "Do you use cigarettes?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-004-p032",
+      "topic": "Drug allergies",
+      "question": "Are you allergic to any medications?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History \nHPI: A 25-year-old male complains of left chest pain and LUQ pain following an MVA. The patient struck a tree with his car at a slow speed. The chest pain is 8/10. It is exacerbated with movement or when he takes a deep breath, and nothing relieves it. He reports dyspnea and a productive cough with a low-grade fever but denies LOC, headache, change in mental status, or change in vision. No cardiovascular or neurologic symptoms. No nausea, vomiting, neck stiffness, or unusual fluid from the mouth or nose. No dysuria. His last meal was 5 hours ago. He denies being under the influence of alcohol or drugs. \nROS: As per HPI. \nAllergies: NKDA. \nMedications: No medications. \nPMH: Infectious mononucleosis 2 months ago. \nPSH: No medications. \nSH: No smoking, occasional EtOH, no illicit drugs. \nFH: Noncontributory.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-004-e001",
+      "source_text": "The patient is in acute distress and dyspneic."
+    },
+    {
+      "exam_id": "medqa-cs-004-e002",
+      "source_text": "VS: Temp 100°F, RR 22/minute."
+    },
+    {
+      "exam_id": "medqa-cs-004-e003",
+      "source_text": "HEENT: Atraumatic, no JVD, no bruises, PERRLA, EOMI, no pharyngeal edema or exudates."
+    },
+    {
+      "exam_id": "medqa-cs-004-e004",
+      "source_text": "Chest: Two large ecchymoses on the left chest, left rib tenderness, decreased breath sounds over the left lung field, right lung fields clear."
+    },
+    {
+      "exam_id": "medqa-cs-004-e005",
+      "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-004-e006",
+      "source_text": "Abdomen: Soft, nondistended, @ BS x 4 quadrants, LUQ tenderness, no rebound or guarding, no organomegaly."
+    },
+    {
+      "exam_id": "medqa-cs-004-e007",
+      "source_text": "HEENT: No bruises or lacerations."
+    },
+    {
+      "exam_id": "medqa-cs-004-e008",
+      "source_text": "Neuro: Mental status: Alert and oriented x 3. Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 in all muscle groups. Sensation: Intact to pinprick and soft touch."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Pneumothorax\nHistory Finding(s): \n- Left-sided chest pain following an MVA\n- Pain is exacerbated by movement and deep breaths\n- Dyspnea\n- Cough\n- RR 22/minute\nPhysical Exam Finding(s):\n- Decreased breath sounds over the left lung field\n- Bruising and tenderness over the left chest\n\nDiagnosis #2: Hemothorax \nHistory Finding(s): \n- Left-sided chest pain following an MVA\n- Dyspnea\n- Cough\n- RR 22/minute\nPhysical Exam Finding(s): \n- Decreased breath sounds over left lung field \n- Bruising and tenderness over left chest \n\nDiagnosis #3: Pneumonia \nHistory Finding(s): \n- Unilateral chest pain \n- Productive cough \n- Low-grade fever \nPhysical Exam Finding(s):\n- Temperature 100°F\n- RR 22/minute",
+  "gold_additional_diagnosis": "- Rib fracture: Rib fractures are the most common chest injury and can result from almost any insult to the chest wall. A simple fracture could cause this patient's pain on inspiration and cough. Rib fractures can also lead to pneumothorax. They can be diagnosed with a CXR.\n\n- Splenic rupture: Splenic injuries are always of great concern following trauma because they can cause significant blood loss very quickly. If this patient was exposed to infectious mononucleosis, his chances of splenic injury or bleeding are greater. Given that this patient's pain is primarily left-sided in the chest area and LU the spleen should be evaluated with an ultrasound exam followed by further imaging with an abdominal CT. On physical exam, it is important to evaluate for any signs or symptoms of organomegaly.\n\n- Pleuritis: Inflammation of the pleural membrane can cause severe pain that increases with inspiration or movement. The physical exam is generally negative with the exception of the chest pain. This patient may have simple viral pleuritis, but more emergent causes need to be ruled out first.",
+  "raw_opening": "Opening Scenario:\n\nJohn Matthew, a 25-year-old male, came to the ED following a motor vehicle accident.\n\nVital Signs:\n\nBP: 123/88 mm Hg\nTemp: 100°F (38°C)\nRR: 22/minute\nHR: 85/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or left breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nExaminee Checklist/SP Sheet:\n\nPatient Description:\n\nPatient - a 25-year-old male.\n\nNotes for the SP:\n- Exhibit pain in the left chest that worsens during inspiration and movement (i.e., when you breathe in, hold your side and stop your breathing with a short gasp).\n- Exhibit pain when your left chest is being palpated.\n- Exhibit pain when your left upper abdomen is being palpated.\n- Take fast, shallow breaths.\n- Occasionally cough hard into a tissue.\n- Moan occasionally and answer questions in short sentences.\n\nChallenging Questions to Ask:\n- Are you suggesting that I might die?\n\nSample Examinee Response:\n\nYour condition raises concern and is obviously urgent. We will begin by capturing images of your chest.. Then, once we have a better idea of what is wrong, we can give you some medication to help you with your pain. In cases where air or blood accumulates around the lungs, we can conduct a procedure to alleviate the pressure.. We will be monitoring you very closely from this point on, and if you have any significant problems, we will be available to help.\n\nExaminee Checklist:\n\nEntrance:\n- Examinee made eye contact with the SP.\n- Examinee correctly used the patient's name.\n- Examinee introduced himself/herself by name.\n- Examinee identified his/her role or position.\n\nReflective Listening:\n- Examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- Examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n- Examinee elicited data efficiently and accurately.\n\nConnecting With the Patient:\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nExaminee Tasks:\n- Write the patient note after leaving the room.\n\nQuestion Patient Response:\n\nTopic: Chief Complaint\nDoctor: \"Please tell me your concerns.\"\nPatient: \"I'm having trouble breathing and have this excruciating pain (holds chest, left side).\"\n\nTopic: Onset\nDoctor: \"When did you first experience the pain and trouble breathing?\"\nPatient: \"It commenced last night.\"\n\nTopic: Severity on a scale\nDoctor: \"On a scale of 0 to 10, 10 being the worst pain of your life, how bad is the pain?\"\nPatient: \"It's some of the worst pain I've ever had. At least 8/10.\"\n\nTopic: Precipitating factor\nDoctor: \"How did the pain come about?\"\nPatient: \"I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree. I wasn't going very fast, and my car was basically okay. I was embarrassed, so I didn't call the police. I was wearing my seat belt and felt okay at first, so I didn't think I needed to come to the hospital.\"\n\nTopic: Alleviating factors\nDoctor: \"Does anything help with the pain?\"\nPatient: \"Nothing I do makes it better.\"\n\nTopic: Exacerbating factors\nDoctor: \"Does anything worsen the pain?\"\nPatient: \"It gets even worse when I take a deep breath or try to move.\"\n\nTopic: Cough\nDoctor: \"Have you experienced a cough?\"\nPatient: \"I've been coughing for the past few days, I suppose.\"\n\nTopic: Sputum production\nDoctor: \"Any mucus or blood in your cough?\"\nPatient: \"I have to use a tissue because I keep bringing up all this yellow junk.\"\n\nTopic: Fever/Chills\nDoctor: \"Have you had any fever or chills recently?\"\nPatient: \"I've been a bit warm and noticed some muscle soreness, but I don’t believe I've experienced any shivering or chills.\"\n\nTopic: Other injuries\nDoctor: \"Were you hurt anywhere else?\"\nPatient: \"I have a few scratches on my arms from the car accident.\"\n\nTopic: Head trauma\nDoctor: \"Did you hit your head?\"\nPatient: \"No.\"\n\nTopic: Discharge from the ears, mouth, or nose (clear or bloody)\nDoctor: \"Have you noticed any discharge from your ears, nose, or mouth?\"\nPatient: \"No.\"\n\nTopic: Loss of consciousness\nDoctor: \"Did you faint?\"\nPatient: \"No.\"\n\nTopic: Convulsions\nDoctor: \"Have you experienced any seizures?\"\nPatient: \"No.\"\n\nTopic: Headache\nDoctor: \"Have you experienced any headaches?\"\nPatient: \"No.\"\n\nTopic: Change in vision\nDoctor: \"Have you had any changes in your vision?\"\nPatient: \"No.\"\n\nTopic: Confusion, memory loss, or change in personality\nDoctor: \"Have you experienced any disorientation, forgetfulness, or alterations in your behavior?\"\nPatient: \"No.\"\n\nTopic: Weakness or numbness in the extremities\nDoctor: \"Have you noticed any weakness or numbness in your limbs?\"\nPatient: \"No.\"\n\nTopic: Heart symptoms (palpitations)\nDoctor: \"Have you felt any rapid heartbeats?\"\nPatient: \"No.\"\n\nTopic: Abdominal pain\nDoctor: \"Have you experienced any abdominal pain?\"\nPatient: \"Yes, I feel a sharp pain in this area (points to the LUQ).\"\n\nTopic: Nausea/vomiting or stiff neck\nDoctor: \"Have you been vomiting or feeling nauseous? Have you had any stiffness in your neck?\"\nPatient: \"No.\"\n\nTopic: Last meal/drink\nDoctor: \"When did you last eat or drink?\"\nPatient: \"I had breakfast this morning, about 5 hours ago. I didn't have any trouble keeping it down.\"\n\nTopic: Were you under the influence of alcohol or recreational drugs?\nDoctor: \"At the time of the accident were you under the influence of any alcohol or drugs?\"\nPatient: \"No.\"\n\nTopic: Pain on urination\nDoctor: \"Does it hurt to urinate?\"\nPatient: \"No.\"\n\nTopic: Current medications\nDoctor: \"Are you currently on any medications? If so, what are they?\"\nPatient: \"No medications.\"\n\nTopic: Past medical history\nDoctor: \"Do you have any medical problems?\"\nPatient: \"I had a sore throat, mild fever, and fatigue 2 months ago. My doctor told me I had infectious mononucleosis, but it is gone now.\"\n\nTopic: Past surgical history\nDoctor: \"Have you had any surgeries?\"\nPatient: \"No medications.\"\n\nTopic: Family history\nDoctor: \"Are there any medical problems that run in your family?\"\nPatient: \"My mother and father are both healthy.\"\n\nTopic: Occupation\nDoctor: \"What do you do for work?\"\nPatient: \"I'm a banker.\"\n\nTopic: Alcohol use\nDoctor: \"Do you consume alcohol?\"\nPatient: \"Sometimes on weekends.\"\n\nTopic: Illicit drug use\nDoctor: \"Do you ever use recreational drugs?\"\nPatient: \"No.\"\n\nTopic: Tobacco\nDoctor: \"Do you use cigarettes?\"\nPatient: \"No.\"\n\nTopic: Drug allergies\nDoctor: \"Are you allergic to any medications?\"\nPatient: \"No.\"\n\nPhysical Examination:\n\n- Examinee washed their hands.\n- Examinee asked for permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\n\nExam Component Maneuver:\n\n- Head and neck exam: Inspection, palpation, auscultation\n- Pulmonary exam: Inspection, auscultation, palpation, percussion\n- Abdominal exam: Inspection, auscultation, palpation (examined specifically for organomegaly such as splenomegaly)\n- Neurologic exam: Mental status, cranial nerves, gross motor function, sensation\n- Skin exam: Inspection for abrasions, lacerations, bruising\n\n\nSample Closure:\n\n\"Mr. Matthews, it's a good thing that you decided to come to the emergency department. For future reference, it's important to seek medical treatment after an accident like this. We will need to run some tests and take imaging studies of your chest to determine the cause of your pain and breathing difficulties. We will administer medication for your pain and monitor your breathing to ensure adequate oxygen levels.. \"Are there any inquiries you would like to make?\"\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans, including follow-up tests.\n- Examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory \nHPI: A 25-year-old male complains of left chest pain and LUQ pain following an MVA. The patient struck a tree with his car at a slow speed. The chest pain is 8/10. It is exacerbated with movement or when he takes a deep breath, and nothing relieves it. He reports dyspnea and a productive cough with a low-grade fever but denies LOC, headache, change in mental status, or change in vision. No cardiovascular or neurologic symptoms. No nausea, vomiting, neck stiffness, or unusual fluid from the mouth or nose. No dysuria. His last meal was 5 hours ago. He denies being under the influence of alcohol or drugs. \nROS: As per HPI. \nAllergies: NKDA. \nMedications: No medications. \nPMH: Infectious mononucleosis 2 months ago. \nPSH: No medications. \nSH: No smoking, occasional EtOH, no illicit drugs. \nFH: Noncontributory. \n\nPhysical Examination:\nThe patient is in acute distress and dyspneic.\nVS: Temp 100°F, RR 22/minute.\nHEENT: Atraumatic, no JVD, no bruises, PERRLA, EOMI, no pharyngeal edema or exudates.\nChest: Two large ecchymoses on the left chest, left rib tenderness, decreased breath sounds over the left lung field, right lung fields clear.\nHeart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops.\nAbdomen: Soft, nondistended, @ BS x 4 quadrants, LUQ tenderness, no rebound or guarding, no organomegaly.\nHEENT: No bruises or lacerations.\nNeuro: Mental status: Alert and oriented x 3. Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 in all muscle groups. Sensation: Intact to pinprick and soft touch."
+}

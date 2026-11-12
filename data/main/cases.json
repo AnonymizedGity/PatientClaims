@@ -1,0 +1,1555 @@
+{
+ "_note": "The 384 cases of the study, by dataset, with the release version (first 12 hex digits of the sha256 of the release's <dataset>_patient.jsonl). All cases of MedQA-CS, AgentClinic-MedQA Extended and MedCaseReasoning in the converted releases, except agentclinic-medqa-ext-105 (one of its fact sentences appears verbatim as an example in the simulator's prompts/reply_rules.md), and 100 DDXPlus cases: the 47 with an anchor X plus 53 drawn at random (seed 20261025) from the rest of the release. 'anchored': the case has a wrong diagnosis X (data/anchors).",
+ "versions": {
+  "medqa_cs": "216669d727b9",
+  "agentclinic": "0669657c4f05",
+  "medcasereasoning": "3172e8076188",
+  "ddxplus": "ce9a684fa350"
+ },
+ "cases": {
+  "medqa_cs": [
+   {
+    "case_id": "medqa-cs-001",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-002",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-003",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-004",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-005",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-007",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-008",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-009",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-010",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-011",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-012",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-013",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-014",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-015",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-016",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-017",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-020",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-021",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-022",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-023",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-024",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-026",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-027",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-028",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-029",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-031",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-033",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-034",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-035",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-036",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-037",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-038",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-039",
+    "anchored": false
+   },
+   {
+    "case_id": "medqa-cs-043",
+    "anchored": true
+   },
+   {
+    "case_id": "medqa-cs-044",
+    "anchored": true
+   }
+  ],
+  "agentclinic": [
+   {
+    "case_id": "agentclinic-medqa-ext-001",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-002",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-004",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-005",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-006",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-007",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-009",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-010",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-011",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-013",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-015",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-016",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-017",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-018",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-019",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-020",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-021",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-023",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-024",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-025",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-026",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-027",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-028",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-032",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-037",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-038",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-040",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-041",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-042",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-043",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-044",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-045",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-047",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-048",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-050",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-053",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-054",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-055",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-056",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-058",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-059",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-061",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-064",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-065",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-066",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-069",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-072",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-074",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-075",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-077",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-078",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-079",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-080",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-082",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-086",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-087",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-088",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-090",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-091",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-092",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-093",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-095",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-096",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-098",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-100",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-101",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-107",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-108",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-109",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-110",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-111",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-112",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-113",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-114",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-116",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-117",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-118",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-120",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-122",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-123",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-124",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-125",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-127",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-128",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-131",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-132",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-134",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-135",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-137",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-138",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-140",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-143",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-144",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-146",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-147",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-148",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-149",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-150",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-151",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-152",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-155",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-156",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-157",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-159",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-160",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-161",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-162",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-163",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-164",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-165",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-166",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-167",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-168",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-169",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-172",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-173",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-174",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-176",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-178",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-179",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-181",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-182",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-183",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-184",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-185",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-186",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-187",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-188",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-190",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-191",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-193",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-194",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-195",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-196",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-197",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-198",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-199",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-200",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-201",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-202",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-203",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-205",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-208",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-209",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-210",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-211",
+    "anchored": true
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-212",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-213",
+    "anchored": false
+   },
+   {
+    "case_id": "agentclinic-medqa-ext-214",
+    "anchored": false
+   }
+  ],
+  "medcasereasoning": [
+   {
+    "case_id": "mcr-test-00215",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-00302",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-00403",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-00426",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-00451",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-00480",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-00635",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-00910",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-01508",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-01556",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-01598",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-01759",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-01847",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-01872",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-01919",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-02016",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-02529",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-02548",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-02593",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-02741",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-02749",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03106",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03402",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03450",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03594",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03624",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03752",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03768",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-03884",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-04208",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-04221",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-04493",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-04671",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-04724",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-04970",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-05119",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-05137",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-05660",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-05730",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-05910",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-06043",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06134",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06156",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06180",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06416",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06632",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06792",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06812",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06856",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-06913",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-07087",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-07236",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-07260",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-07488",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-07631",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-07845",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-07881",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-08068",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-08087",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-08789",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-08927",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-09048",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-09301",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-09617",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-09645",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-09698",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-10230",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-10347",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-10565",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-10584",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-10717",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-10805",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-10995",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-11043",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-11121",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-11154",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-11265",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-11394",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-11647",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-11820",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-11842",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-11855",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12081",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12090",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12132",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12157",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12205",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12209",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12365",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-12467",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12512",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-12811",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-13031",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-13161",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-13248",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-13753",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-13885",
+    "anchored": true
+   },
+   {
+    "case_id": "mcr-test-13891",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-13993",
+    "anchored": false
+   },
+   {
+    "case_id": "mcr-test-14153",
+    "anchored": false
+   }
+  ],
+  "ddxplus": [
+   {
+    "case_id": "ddxplus-v2-test-0000009",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000023",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000028",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000043",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000044",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000049",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000055",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000128",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000177",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000185",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000200",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000205",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000206",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000248",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000259",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000276",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000277",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000288",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000336",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000346",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000348",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000388",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000394",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000412",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000425",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000471",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000484",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000486",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000517",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000558",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000664",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000668",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000704",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000840",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000912",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0000969",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001019",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001136",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001220",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001302",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001305",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001371",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001411",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001456",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001508",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001540",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001613",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001724",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0001848",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002202",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002307",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002459",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002503",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002634",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002654",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002707",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002870",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002930",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0002984",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0003138",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0003159",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0003391",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0003489",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0003580",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0003614",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0004270",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0004351",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0004374",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0004486",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0004776",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0004799",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0004867",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0005558",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0005723",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0005796",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0005954",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0006065",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0006553",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0007672",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0007767",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0008058",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0008669",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0010794",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0012469",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0013309",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0014769",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0021328",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0024711",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0025307",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0031679",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0037820",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0039711",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0043876",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0043993",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0053720",
+    "anchored": true
+   },
+   {
+    "case_id": "ddxplus-v2-test-0055735",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0059675",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0081635",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0091556",
+    "anchored": false
+   },
+   {
+    "case_id": "ddxplus-v2-test-0104636",
+    "anchored": false
+   }
+  ]
+ }
+}

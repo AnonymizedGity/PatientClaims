@@ -1,0 +1,265 @@
+{
+  "case_id": "medqa-cs-002",
+  "source_case_id": 2,
+  "opening_scenario": "Patient: Carl Fisher, a 57-year-old man, presents to the ED with a complaint of bloody urine.",
+  "doorway_vital_signs": [
+    "Blood Pressure (BP): 130/80 mmHg",
+    "Temperature (Temp): 98.6°F (37°C)",
+    "Respiratory Rate (RR): 13/minute",
+    "Heart Rate (HR): 72/minute, regular"
+  ],
+  "sp_notes": [
+    "Show pain response when the examinee checks for CVA tenderness on the right.",
+    "If the examinee mentions prostate disease, ask \"What's prostate disease?\""
+  ],
+  "challenging_questions": [
+    "\"They mentioned that the presence of blood in my urine is due to my age. Is that accurate?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief complaint",
+    "question": "What has prompted your visit today?",
+    "answer": "I'm experiencing blood in my urine."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-002-p001",
+      "topic": "Description",
+      "question": "Please describe it to me, Mr. Fisher?",
+      "answer": "It was bright red and later had some clots."
+    },
+    {
+      "fact_id": "medqa-cs-002-p002",
+      "topic": "Onset",
+      "question": "When did you notice it for the first time?",
+      "answer": "Yesterday morning."
+    },
+    {
+      "fact_id": "medqa-cs-002-p003",
+      "topic": "Progression",
+      "question": "How many times did it happen since yesterday?",
+      "answer": "That was the only time it has ever happened; my urine is back to normal now."
+    },
+    {
+      "fact_id": "medqa-cs-002-p004",
+      "topic": "Pain/burning on urination",
+      "question": "Do you have pain or burning while passing urine?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p005",
+      "topic": "Fever",
+      "question": "Any fever recently?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p006",
+      "topic": "Abdominal/flank pain",
+      "question": "Do you experience any pain in your abdomen or back?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p007",
+      "topic": "Polyuria, frequency",
+      "question": "How many times do you have to use the bathroom in a day?",
+      "answer": "I have to go to the bathroom every 2 to 3 hours now."
+    },
+    {
+      "fact_id": "medqa-cs-002-p008",
+      "topic": "Polyuria, frequency",
+      "question": "How has this changed from the past?",
+      "answer": "Before, I used to go to the bathroom every 5 to 6 hours."
+    },
+    {
+      "fact_id": "medqa-cs-002-p009",
+      "topic": "Straining during urination",
+      "question": "Do you experience straining during urination?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-002-p010",
+      "topic": "Nocturia",
+      "question": "Do you have to use the bathroom at night?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-002-p011",
+      "topic": "Weak stream",
+      "question": "Have you experienced a weak urine stream?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-002-p012",
+      "topic": "Dribbling",
+      "question": "Does your urine dribble?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-002-p013",
+      "topic": "Onset of the previous symptoms",
+      "question": "Have you experienced anything like this before?",
+      "answer": "No. They mentioned that it's a part of aging."
+    },
+    {
+      "fact_id": "medqa-cs-002-p014",
+      "topic": "History of renal stones",
+      "question": "Were you ever diagnosed with kidney stones in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p015",
+      "topic": "Associated symptoms",
+      "question": "Do you have any nausea, vomiting, diarrhea, constipation, blood in your stools, or any bleeding from your gums or nose? Any bruising?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p016",
+      "topic": "Constitutional symptoms",
+      "question": "Have you noticed any change in your weight or dietary habits recently?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p017",
+      "topic": "Constitutional symptoms",
+      "question": "Do you sweat a lot during the night?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p018",
+      "topic": "Previous similar episodes",
+      "question": "Have you experienced comparable incidents previously?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p019",
+      "topic": "Current medications",
+      "question": "Are you currently taking any medications?",
+      "answer": "Allopurinol."
+    },
+    {
+      "fact_id": "medqa-cs-002-p020",
+      "topic": "Past medical history",
+      "question": "Do you have any medical conditions?",
+      "answer": "Gout."
+    },
+    {
+      "fact_id": "medqa-cs-002-p021",
+      "topic": "Past surgical history",
+      "question": "Have you had any previous surgeries?",
+      "answer": "I had an appendectomy when I was 23."
+    },
+    {
+      "fact_id": "medqa-cs-002-p022",
+      "topic": "Family history",
+      "question": "Has anyone in your family had significant medical conditions?",
+      "answer": "My father died at age 80 because of a kidney problem. My mother is alive and healthy."
+    },
+    {
+      "fact_id": "medqa-cs-002-p023",
+      "topic": "Occupation",
+      "question": "What is your occupation?",
+      "answer": "Painter."
+    },
+    {
+      "fact_id": "medqa-cs-002-p024",
+      "topic": "Alcohol use",
+      "question": "Do you consume alcohol?",
+      "answer": "I have a few beers after work, about two to three times a week. Prior to the social history, you may say, \"Some of the following questions may seem a bit uncomfortable, but I want to assure you that everything you share with me will be kept confidential.\""
+    },
+    {
+      "fact_id": "medqa-cs-002-p025",
+      "topic": "CAGE questions",
+      "question": "Do you feel the need to Cut down on your drinking?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p026",
+      "topic": "CAGE questions",
+      "question": "Do you get Annoyed by criticism of your drinking?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p027",
+      "topic": "CAGE questions",
+      "question": "Do you feel Guilty about drinking?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p028",
+      "topic": "CAGE questions",
+      "question": "Do you use alcohol as an Eye-opener or to reduce a hangover?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p029",
+      "topic": "Illicit drug use",
+      "question": "Do you use any illicit drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p030",
+      "topic": "Tobacco",
+      "question": "Do you smoke?",
+      "answer": "Yes, I have smoked a pack of cigarettes a day for 30 years."
+    },
+    {
+      "fact_id": "medqa-cs-002-p031",
+      "topic": "Sexual activity",
+      "question": "Are you sexually active?",
+      "answer": "Yes, I have a girlfriend; I met her 2 years ago through a mutual friend."
+    },
+    {
+      "fact_id": "medqa-cs-002-p032",
+      "topic": "Sexual orientation",
+      "question": "What is your preferred gender?",
+      "answer": "Only women."
+    },
+    {
+      "fact_id": "medqa-cs-002-p033",
+      "topic": "Use of condoms",
+      "question": "Do you use condoms?",
+      "answer": "Regularly."
+    },
+    {
+      "fact_id": "medqa-cs-002-p034",
+      "topic": "History of STDs",
+      "question": "Have you had any sexually transmitted disease in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-002-p035",
+      "topic": "Drug allergies",
+      "question": "Any drug allergies?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History\n\nHPI: A 57-year-old male complains of one episode of painless hematuria yesterday morning with no association with fever, dysuria, abdominal or flank pain. He reports straining during urination, polyuria, nocturia, weak urinary stream, and dribbling. He has no history of earlier similar episodes or renal stones, no nausea, vomiting, diarrhea, or constipation, and no changes in appetite or weight loss.\n\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Allopurinol.\nPMH: Gout.\nPSH: I had an appendectomy when I was 23.\nSH: He smokes 1 pack per day for 30 years, drinks 2 beers 2-3 times per week, has no history of illicit drug use, works as a painter, is heterosexual, has a partner, and uses condoms regularly.\nFH: His father died from kidney disease at age 80.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-002-e001",
+      "source_text": "The patient is in no acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-002-e002",
+      "source_text": "Vital signs: within normal limits."
+    },
+    {
+      "exam_id": "medqa-cs-002-e003",
+      "source_text": "Chest: clear breath sounds bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-002-e004",
+      "source_text": "Heart: regular rhythm and rate; S1/S2 within normal limits; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-002-e005",
+      "source_text": "Abdomen: soft, non-distended, non-tender, with active bowel sounds in all four quadrants; no hepatosplenomegaly. Mild tenderness at right costovertebral angle."
+    },
+    {
+      "exam_id": "medqa-cs-002-e006",
+      "source_text": "Extremities: no edema."
+    }
+  ],
+  "gold_target": "Diagnosis 1: Bladder cancer\nHistory Finding(s): \n- Hematuria\n- Straining on urination\n- Weak urinary stream and dribbling\n- Works as a painter\n- History of smoking 1 pack per day for 30 years\nPhysical Finding(s):\nN/A\n\nDiagnosis #2: Urolithiasis\nHistory Finding(s):\n- Hematuria\n- Right costovertebral angle tenderness\n- Straining on urination.\nPhysical Finding(s):\nN/A\n\nDiagnosis #3: Benign prostatic hypertrophy \nHistory Finding(s):\n- Polyuria, nocturia \n- Weak urinary stream and dribbling \n- Straining on urination\nPhysical Finding(s):\nN/A",
+  "gold_additional_diagnosis": "• Prostate cancer: As mentioned above, this diagnosis is plausible but is hard to reconcile with the presence of CVA tenderness (it could postulate metastasis to a right posterior rib).\n\n• Renal cell carcinoma: The classic triad is hematuria, flank pain, and a palpable mass. Constitutional symptoms may be prominent. The patient's other urinary symptoms may be due to coexisting BPH.\n\n• Glomerulonephritis: The absence of hypertension or signs of volume overload (e.g., edema) argues against intrinsic renal disease. However, remember that IgA nephropathy is the most common acute glomerulonephritis and often presents with an episode of gross hematuria. Presentation is usually concurrent with URI, GI symptoms, or an Aulike illness.\n\n• UTI: This can cause hematuria but is uncommon in males. The patient has no other symptoms to suggest an acute infection.",
+  "raw_opening": "Opening Scenario:\n\nPatient: Carl Fisher, a 57-year-old man, presents to the ED with a complaint of bloody urine.\n\nVital Signs:\n\n- Blood Pressure (BP): 130/80 mmHg\n- Temperature (Temp): 98.6°F (37°C)\n- Respiratory Rate (RR): 13/minute\n- Heart Rate (HR): 72/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (excluding rectal, genitourinary, or female breast exams).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nThe patient is a 57-year-old male.\n\nNotes for the SP:\n\n- Show pain response when the examinee checks for CVA tenderness on the right.\n- If the examinee mentions prostate disease, ask \"What's prostate disease?\"\n\nChallenging Questions to Ask:\n\n\"They mentioned that the presence of blood in my urine is due to my age. Is that accurate?\"\n\nSample Examinee Response:\n\n\"No. Blood in the urine is infrequently considered normal.. We will need to run a few more tests to determine the cause of this finding.\"\n\n\nEntrance:\n\n- Examinee knocked on the door before entering.\n- Examinee made eye contact with the SP.\n- Examinee correctly used the patient's name.\n- Examinee introduced themselves by name.\n- Examinee identified their role or position.\n\nExaminee Checklist:\n\nEntrance:\n\n- The examinee asked an open-ended question and actively listened to the response.\n- The examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- The examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\nThe examinee elicited data efficiently and accurately.\n\nConnecting With the Patient:\n\nExaminee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief complaint: \nDoctor: \"What has prompted your visit today?\"\nPatient response: I'm experiencing blood in my urine.\n\nDescription: \nDoctor: \"Please describe it to me, Mr. Fisher?\"\nPatient response: It was bright red and later had some clots.\n\nOnset: \nDoctor: \"When did you notice it for the first time?\"\nPatient response: Yesterday morning.\n\nProgression: \nDoctor: \"How many times did it happen since yesterday?\"\nPatient response: That was the only time it has ever happened; my urine is back to normal now.\n\nPain/burning on urination: \nDoctor: \"Do you have pain or burning while passing urine?\"\nPatient response: No.\n\nFever: \nDoctor: \"Any fever recently?\"\nPatient response: No.\n\nAbdominal/flank pain: \nDoctor: \"Do you experience any pain in your abdomen or back?\"\nPatient response: No.\n\nPolyuria, frequency: \nDoctor: \"How many times do you have to use the bathroom in a day?\"\nPatient response: I have to go to the bathroom every 2 to 3 hours now.\nDoctor: \"How has this changed from the past?\"\nPatient response: Before, I used to go to the bathroom every 5 to 6 hours.\n\nStraining during urination: \nDoctor: \"Do you experience straining during urination?\"\nPatient response: Yes.\n\nNocturia:\nDoctor: \"Do you have to use the bathroom at night?\"\nPatient response: Yes.\n\nWeak stream:\nDoctor: \"Have you experienced a weak urine stream?\"\nPatient response: Yes.\n\nDribbling:\nDoctor: \"Does your urine dribble?\"\nPatient response: Yes.\n\nOnset of the previous symptoms:\nDoctor: \"Have you experienced anything like this before?\"\nPatient response: No. They mentioned that it's a part of aging. \n\n\nHistory of renal stones: \nDoctor: \"Were you ever diagnosed with kidney stones in the past?\"\nPatient response: No.\n\nAssociated symptoms: \nDoctor: \"Do you have any nausea, vomiting, diarrhea, constipation, blood in your stools, or any bleeding from your gums or nose? Any bruising?\"\nPatient response: No.\n\nConstitutional symptoms: \nDoctor: \"Have you noticed any change in your weight or dietary habits recently?\"\nPatient response: No.\nDoctor: \"Do you sweat a lot during the night?\"\nPatient response: No.\n\nPrevious similar episodes:\nDoctor: \"Have you experienced comparable incidents previously?\"\nPatient response: No. \n\nCurrent medications: \nDoctor: \"Are you currently taking any medications?\"\nPatient response: Allopurinol.\n\nPast medical history: \nDoctor: \"Do you have any medical conditions?\"\nPatient response: Gout.\n\nPast surgical history: \nDoctor: \"Have you had any previous surgeries?\"\nPatient response: I had an appendectomy when I was 23.\n\nFamily history: \nDoctor: \"Has anyone in your family had significant medical conditions?\"\nPatient response: My father died at age 80 because of a kidney problem. My mother is alive and healthy.\n\nOccupation: \nDoctor: \"What is your occupation?\"\nPatient response: Painter.\n\nAlcohol use: \nDoctor: \"Do you consume alcohol?\"\nPatient response: I have a few beers after work, about two to three times a week.\nPrior to the social history, you may say, \"Some of the following questions may seem a bit uncomfortable, but I want to assure you that everything you share with me will be kept confidential.\"\n\nCAGE questions:\n\"Do you feel the need to Cut down on your drinking?\"\nPatient response: No.\n\"Do you get Annoyed by criticism of your drinking?\"\nPatient response: No.\n\"Do you feel Guilty about drinking?\"\nPatient response: No.\n\"Do you use alcohol as an Eye-opener or to reduce a hangover?\"\nPatient response: No.\n\nIllicit drug use: \nDoctor: \"Do you use any illicit drugs?\"\nPatient response: No.\n\nTobacco: \nDoctor: \"Do you smoke?\"\nPatient response: Yes, I have smoked a pack of cigarettes a day for 30 years. \n\nSexual activity: \nDoctor: \"Are you sexually active?\"\nPatient response: Yes, I have a girlfriend; I met her 2 years ago through a mutual friend.\n\nSexual orientation:\nDoctor: \"What is your preferred gender?\"\nPatient response: Only women.\n\nUse of condoms:\nDoctor: \"Do you use condoms?\"\nPatient response: Regularly.\n\nHistory of STDs:\nDoctor: \"Have you had any sexually transmitted disease in the past?\"\nPatient response: No.\n\nDrug allergies: \nDoctor: \"Any drug allergies?\"\nPatient response: No.\n\nPhysical Examination:\n\n- Examinee washed their hands.\n- Examinee asked for permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- CV Exam: Auscultation \n- Pulmonary Exam: Auscultation \n- Abdominal Exam: Inspection, auscultation, palpation, percussion. Check for CVA tenderness. \n- Extremities Exam: Inspection.\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions. \n- Examinee discussed initial management plans. \n- Follow-up tests: Examinee mentioned the need for a genital exam and a rectal exam for the prostate. \n- Examinee asked if the SP had any other questions or concerns. \n\n\nSample Closure:\n\n\"Mr. Fisher, the presence of blood in your urine may result from several factors, so I would like to conduct some tests to determine the cause.. \nFirst, I will draw some blood, and then I will perform a genital exam as well as a rectal exam to assess your prostate. I will subsequently request a urine analysis to check for indications of infection.. Depending on the results we obtain, I may also order some imaging \nstudies to determine if there is a stone in your kidneys, an anatomical abnormality, or a tumor. Do you have any questions for me?\"Patient Note:\n\nHistory\n\nHPI: A 57-year-old male complains of one episode of painless hematuria yesterday morning with no association with fever, dysuria, abdominal or flank pain. He reports straining during urination, polyuria, nocturia, weak urinary stream, and dribbling. He has no history of earlier similar episodes or renal stones, no nausea, vomiting, diarrhea, or constipation, and no changes in appetite or weight loss.\n\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Allopurinol.\nPMH: Gout.\nPSH: I had an appendectomy when I was 23.\nSH: He smokes 1 pack per day for 30 years, drinks 2 beers 2-3 times per week, has no history of illicit drug use, works as a painter, is heterosexual, has a partner, and uses condoms regularly.\nFH: His father died from kidney disease at age 80.\n\nPhysical Examination:\n\nThe patient is in no acute distress.\nVital signs: within normal limits.\nChest: clear breath sounds bilaterally.\nHeart: regular rhythm and rate; S1/S2 within normal limits; no murmurs, rubs, or gallops.\nAbdomen: soft, non-distended, non-tender, with active bowel sounds in all four quadrants; no hepatosplenomegaly. Mild tenderness at right costovertebral angle.\nExtremities: no edema."
+}

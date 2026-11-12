@@ -1,0 +1,85 @@
+{
+  "case_id": "agentclinic-medqa-ext-087",
+  "source_row": 87,
+  "demographics_text": "65-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the skin condition present on the patient's left dorsal hand.",
+  "chief_complaint": "The presence of a rough, scaly, sandpaper-like plaque on the left dorsal hand",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-087-p001",
+      "field": "History",
+      "text": "The patient is here for an annual well-check. She has a history of well-controlled diabetes and hypertension, managed with metformin and losartan, respectively. She reports maintaining a healthy diet primarily consisting of vegetables and lean meat, denies any tobacco or alcohol use, and enjoys outdoor activities like walking and sunbathing."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-087-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No tenderness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-087-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-087-p004",
+      "field": "Past_Medical_History",
+      "text": "Diabetes, Hypertension"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-087-p005",
+      "field": "Social_History",
+      "text": "Non-smoker, denies alcohol use, enjoys outdoor activities"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-087-p006",
+      "field": "Review_of_Systems",
+      "text": "Unremarkable except for the skin condition described"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-087-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-087-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-087-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-087-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-087-e005",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Inspection",
+      "text": "A rough, scaly plaque observed on the left dorsal hand. No other visible abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-087-e006",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Palpation",
+      "text": "No tenderness or pain upon palpation of the lesion."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-087-i001",
+      "path": "Test_Results.Skin_Biopsy.Findings",
+      "text": "Hyperkeratosis with parakeratosis, solar elastosis, and atypical keratinocytes confined to the epidermis. These findings are consistent with actinic keratosis."
+    }
+  ],
+  "correct_diagnosis": "Actinic Keratosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

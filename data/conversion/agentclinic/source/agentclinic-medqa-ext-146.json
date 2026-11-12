@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-146",
+  "source_row": 146,
+  "demographics_text": "31-year-old female",
+  "objective_for_doctor": "Assess and manage a patient presenting with joint swelling, stiffness, and skin changes.",
+  "chief_complaint": "Swelling and redness of fingers, knee stiffness and slight swelling",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p001",
+      "field": "History",
+      "text": "The patient presents with significant swelling and redness of the fingers causing her significant pain for the past few weeks. She has also experienced stiffness and slight swelling in her right knee for the past 6 weeks. She reports overall fatigue and difficulty moving around. Admits to delayed medical care seeking. Notes similar condition in her father."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Fatigue"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty moving"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Nail pitting and cracking"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Rough, erythematous skin patches over elbows"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. Uses hydrating creams and topical glucocorticoids with moderate benefit."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p007",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol socially. Works as a graphic designer."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-146-p008",
+      "field": "Review_of_Systems",
+      "text": "Reports general fatigue but denies fever, weight loss, or recent infections."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "115/75 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e005",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection",
+      "text": "Swelling and redness of the distal interphalangeal joints, right knee slightly swollen."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e006",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation",
+      "text": "Joints are warm and tender to touch."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e007",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion",
+      "text": "Reduced range of motion in affected joints due to pain and stiffness."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e008",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Special_Tests",
+      "text": "N/A"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-e009",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "Nail pitting and cracking observed. Rough, erythematous patches over elbows."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-146-i001",
+      "path": "Test_Results.Rheumatoid_Factor.Result",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-i002",
+      "path": "Test_Results.Anti-CCP.Result",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-i003",
+      "path": "Test_Results.ESR_and_CRP.ESR",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-i004",
+      "path": "Test_Results.ESR_and_CRP.CRP",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-146-i005",
+      "path": "Test_Results.Skin_Biopsy_of_Psoriatic_Patch.Findings",
+      "text": "Features consistent with psoriasis"
+    }
+  ],
+  "correct_diagnosis": "Psoriatic arthritis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

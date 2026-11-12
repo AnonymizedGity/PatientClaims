@@ -1,0 +1,76 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11394",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 37, "sex": "male"},
+    "opening": ["f001", "f003", "f004", "f005"],
+    "facts": [
+      {"id": "f001", "item": "red eye", "aliases": ["eye redness", "bloodshot eye", "redness of the eye"], "text": "My right eye has been red.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "red eye: duration", "parent": "f001", "attribute": "duration", "text": "It's been red for 5 days.", "value": "5 days", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "sensitivity to light", "aliases": ["photophobia", "light hurts my eyes", "light sensitivity"], "text": "Bright light bothers my right eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f004", "item": "eye pain", "aliases": ["ocular pain", "sore eye", "painful eye"], "text": "My right eye hurts.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "blurred vision", "aliases": ["blurry vision", "blurriness"], "text": "The vision in my right eye is slightly blurry.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f006", "item": "how long the light sensitivity, pain and blurriness have lasted", "aliases": ["how long the eye pain has been going on"], "text": "The light sensitivity, the pain and the blurriness started 3 days ago.", "value": "3 days", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f007", "item": "eye injury", "aliases": ["eye trauma", "something in the eye", "hit in the eye"], "text": "I haven't injured my eye.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f008", "item": "recent illness", "aliases": ["recent infection", "been sick recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f009", "item": "cold sores", "aliases": ["fever blisters", "herpes sores", "lip sores"], "text": "I haven't had any cold sores.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f010", "item": "laser eye surgery", "aliases": ["SMILE", "small-incision lenticule extraction", "refractive surgery", "eye surgery"], "text": "Six months ago I had SMILE laser vision correction on both eyes, with no complications.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "obstructive sleep apnea", "aliases": ["sleep apnea", "OSA", "stop breathing at night"], "text": "I was recently diagnosed with obstructive sleep apnea.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "CPAP", "aliases": ["CPAP machine", "continuous positive airway pressure", "breathing machine at night"], "text": "Two weeks ago I started using a CPAP machine at night.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "dry eye", "aliases": ["eye dryness", "dry eyes", "gritty eye"], "text": "Since I started CPAP, my right eye has felt drier than usual when I wake up.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f014", "item": "ethnicity", "aliases": ["race", "ethnic background"], "text": "I'm White (Caucasian).", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11394",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "Snellen chart", "eye chart"], "result": "Uncorrected: right eye 20/25; left eye 20/20."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["slit lamp", "cornea", "conjunctiva", "anterior segment examination", "fluorescein staining", "eye examination"], "result": "Right eye: inferonasal conjunctival injection with sectoral ciliary flush and limbitis; at the 4 o'clock position, small peripheral corneal infiltrates without epithelial defect or corneal staining; diffuse lamellar keratitis (grade I) beneath the SMILE cap margin, corresponding to the area of limbitis. Left eye: mild superficial punctate keratopathy."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "eyelid examination", "aliases": ["eyelids", "lid margins", "Meibomian glands"], "result": "Both eyes: inspissated Meibomian glands and posterior marginal telangiectasias."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11394",
+    "diagnosis": "Marginal keratitis",
+    "aliases": ["catarrhal keratitis", "catarrhal corneal ulcer", "staphylococcal marginal keratitis", "marginal corneal infiltrates"],
+    "reasoning": "1. Herpetic keratitis was considered as an infective cause of peripheral corneal inflammation—“Differential diagnosis considerations were given to various other possibilities including herpetic keratitis, peripheral stromal keratitis, and peripheral ulcerative keratitis including Mooren’s ulcer.” 2. Peripheral stromal keratitis was considered among the causes of peripheral infiltrates—“Differential diagnosis considerations were given to various other possibilities including herpetic keratitis, peripheral stromal keratitis, and peripheral ulcerative keratitis including Mooren’s ulcer.” 3. Peripheral ulcerative keratitis, including Mooren’s ulcer, was considered given the peripheral limbal involvement—“Differential diagnosis considerations were given to various other possibilities including herpetic keratitis, peripheral stromal keratitis, and peripheral ulcerative keratitis including Mooren’s ulcer.” 4. Ocular rosacea and keratitis associated with systemic vascular diseases or rheumatoid arthritis were also considered due to blepharitis signs—“In the setting of the appropriate patient past medical history or other applicable findings differential diagnoses could also have included ocular rosacea and keratitis associated with systemic vascular diseases or rheumatoid arthritis.” 5. All of these alternatives were excluded in favor of marginal keratitis because “Given the presence of limbitis and the absence of corneal staining or defect overlying the infiltrate, a diagnosis of marginal keratitis was made.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11394",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s003"], "f011": ["s004"], "f012": ["s004"],
+      "f013": ["s004"], "f014": ["s001"]
+    },
+    "quotes": {
+      "f002": "five days of redness in the right eye", "f005": "slight blurriness",
+      "f006": "three days of photophobia, ocular pain, and slight blurriness",
+      "f010": "uncomplicated bilateral small-incision lenticule extraction (SMILE) six months earlier",
+      "f011": "newly diagnosed obstructive sleep apnea", "f012": "He had begun nighttime continuous positive airway pressure (CPAP) therapy two weeks prior",
+      "f013": "noted increased right-eye dryness on awakening", "f014": "Caucasian man"
+    },
+    "flags": {
+      "f003": ["The source does not name the eye for the photophobia, pain and blurriness; read as the right eye, the eye of the presenting redness."],
+      "f004": ["The source does not name the eye for the photophobia, pain and blurriness; read as the right eye, the eye of the presenting redness."],
+      "f005": ["The source does not name the eye for the photophobia, pain and blurriness; read as the right eye, the eye of the presenting redness."],
+      "f012": ["CPAP is a device treatment, not a medicine; filed as medical_history next to the sleep apnea."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "uncorrected visual acuity was 20/25 in the right eye and 20/20 in the left eye"},
+      "x002": {"sentences": ["s006", "s007", "s008", "s009"], "source_text": "Slit-lamp examination of the right eye revealed inferonasal conjunctival injection with sectoral ciliary flush and limbitis. / At the 4 o’clock position, small peripheral corneal infiltrates were visible without epithelial defect or corneal staining. / Diffuse lamellar keratitis (grade I) was noted beneath the SMILE cap margin, corresponding to the area of limbitis. / Examination of the left eye revealed mild superficial punctate keratopathy."},
+      "x003": {"sentences": ["s010"], "source_text": "Both eyes showed inspissated Meibomian glands and posterior marginal telangiectasias."}
+    },
+    "finding_flags": {},
+    "leakage": [
+      {"id": "x002", "reason": "The slit-lamp result names 'diffuse lamellar keratitis' (a different, post-SMILE interface inflammation, as in the source); 'keratitis' is part of the gold name."},
+      {"id": "x003", "reason": "'Posterior marginal telangiectasias' refers to the eyelid margin, not the diagnosis; the word 'marginal' is part of the gold name."}
+    ],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the outpatient eye visit with 5 days of right-eye redness and 3 days of photophobia, pain and slight blurriness (s001-s010).",
+      "The slit-lamp findings of both eyes (s006-s009) are one record; the eyelid findings (s010) are a separate record so that a request about the lids or Meibomian glands is answered."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

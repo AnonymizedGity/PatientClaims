@@ -1,0 +1,111 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-041", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 42, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "blood in the urine", "aliases": ["hematuria", "red urine"], "text": "I've seen blood in my urine.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f002", "item": "flank pain", "aliases": ["right flank pain", "side pain", "pain in the side"], "text": "I have pain in my right flank.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f003", "item": "flank pain: character", "parent": "f002", "attribute": "character", "text": "It's more of a discomfort, really.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f004", "item": "recent injury to the flank", "aliases": ["trauma", "injury"], "text": "I haven't had any recent injury to that area.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f005", "item": "urinary tract infections", "aliases": ["UTIs", "bladder infections", "recurrent urinary infections"], "text": "I've had a series of urinary tract infections over the past few years.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f006", "item": "dialysis", "aliases": ["renal dialysis"], "text": "I've never been on dialysis.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f007", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from the urinary infections, I don't have any significant medical history.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f008", "item": "genetic diseases", "aliases": ["inherited conditions"], "text": "I don't have any known genetic diseases.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f009", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "nausea", "aliases": ["feeling sick"], "text": "I haven't felt nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f011", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f012", "item": "diarrhea", "aliases": ["loose stools"], "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "burning when urinating", "aliases": ["painful urination", "dysuria"], "text": "It doesn't burn or hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f014", "item": "recent illnesses", "text": "I haven't been ill with anything else recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work"], "text": "I work in an office.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-041",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "genitourinary", "name": "flank examination", "aliases": ["flank palpation", "palpation of the flank"], "result": "Mild to moderate tenderness on palpation of the right flank; no palpable mass."},
+      {"id": "x006", "kind": "exam", "system": "genitourinary", "name": "costovertebral angle tenderness", "aliases": ["CVA tenderness", "renal punch"], "result": "Positive on the right side."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "suprapubic palpation"], "result": "Soft, non-distended; no tenderness over the bladder area."},
+      {"id": "x008", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine microscopy", "urine red cells", "urine white cells", "nitrites", "leukocyte esterase"], "result": "Appearance reddish; WBC 10-20/HPF; RBC too numerous to count; nitrites negative; leukocyte esterase positive."},
+      {"id": "x009", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "renal function tests", "creatinine", "BUN", "blood urea nitrogen"], "result": "Creatinine 1.1 mg/dL; BUN 14 mg/dL."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Within normal limits."},
+      {"id": "x011", "kind": "test", "name": "intravenous pyelogram", "aliases": ["IVP", "IV urogram", "excretory urography"], "result": "Multiple cysts in the collecting ducts of the medulla; no obstruction."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-041",
+    "diagnosis": "Medullary sponge kidney",
+    "aliases": ["MSK", "Cacchi-Ricci disease", "medullary sponge kidney disease"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-041",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-041-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-041-p001"],
+      "f003": ["agentclinic-medqa-ext-041-p001"],
+      "f004": ["agentclinic-medqa-ext-041-p001", "agentclinic-medqa-ext-041-p003"],
+      "f005": ["agentclinic-medqa-ext-041-p001", "agentclinic-medqa-ext-041-p002", "agentclinic-medqa-ext-041-p004"],
+      "f006": ["agentclinic-medqa-ext-041-p001", "agentclinic-medqa-ext-041-p004"],
+      "f007": ["agentclinic-medqa-ext-041-p004"],
+      "f008": ["agentclinic-medqa-ext-041-p004"],
+      "f009": ["agentclinic-medqa-ext-041-p006"],
+      "f010": ["agentclinic-medqa-ext-041-p006"],
+      "f011": ["agentclinic-medqa-ext-041-p006"],
+      "f012": ["agentclinic-medqa-ext-041-p006"],
+      "f013": ["agentclinic-medqa-ext-041-p006"],
+      "f014": ["agentclinic-medqa-ext-041-p006"],
+      "f015": ["agentclinic-medqa-ext-041-p005"],
+      "f016": ["agentclinic-medqa-ext-041-p005"],
+      "f017": ["agentclinic-medqa-ext-041-p005"]
+    },
+    "quotes": {
+      "f001": "visible blood in his urine",
+      "f003": "discomfort in his right flank",
+      "f004": "denies any recent trauma to the area",
+      "f005": "a series of urinary tract infections over the past few years",
+      "f006": "has not been on renal dialysis",
+      "f007": "No significant previous medical history except noted recurrent urinary tract infections",
+      "f008": "known genetic diseases",
+      "f013": "dysuria",
+      "f014": "any recent illnesses",
+      "f016": "drinks alcohol socially",
+      "f017": "Works in an office setting"
+    },
+    "flags": {
+      "f002": ["The chief complaint says 'flank pain' and the History says 'discomfort'; the parent keeps 'pain' and the character child (f003) keeps 'discomfort'."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-041-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-041-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-041-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-041-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Kidney_Examination.Flank_Pain", "source_text": "Mild to moderate tenderness noted on palpation of the right flank, no palpable mass", "exam_ids": ["agentclinic-medqa-ext-041-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Kidney_Examination.Costovertebral_angle_tenderness", "source_text": "Positive on the right side", "exam_ids": ["agentclinic-medqa-ext-041-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Kidney_Examination.Abdominal_Examination", "source_text": "Soft, non-distended, with no tenderness over the bladder area", "exam_ids": ["agentclinic-medqa-ext-041-e007"]},
+      "x008": {"source": "Test_Results.Urinalysis.Appearance + Test_Results.Urinalysis.WBC + Test_Results.Urinalysis.RBC + Test_Results.Urinalysis.Nitrites + Test_Results.Urinalysis.Leukocyte_Esterase", "source_text": "Reddish | 10-20 /HPF | Too numerous to count | Negative | Positive", "exam_ids": ["agentclinic-medqa-ext-041-i001", "agentclinic-medqa-ext-041-i002", "agentclinic-medqa-ext-041-i003", "agentclinic-medqa-ext-041-i004", "agentclinic-medqa-ext-041-i005"]},
+      "x009": {"source": "Test_Results.Blood_Work.Creatinine + Test_Results.Blood_Work.BUN", "source_text": "1.1 mg/dL | 14 mg/dL", "exam_ids": ["agentclinic-medqa-ext-041-i006", "agentclinic-medqa-ext-041-i007"]},
+      "x010": {"source": "Test_Results.Blood_Work.Complete_Blood_Count", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-041-i008"]},
+      "x011": {"source": "Test_Results.Imaging.Intravenous_Pyelogram.Findings", "source_text": "Multiple cysts present in the collecting ducts of the medulla. No obstruction noted.", "exam_ids": ["agentclinic-medqa-ext-041-i009"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Urinalysis shows pyuria (WBC 10-20/HPF) with positive leukocyte esterase while dysuria and fever are denied; kept as given."
+    ],
+    "notes": [
+      "Recurrent UTIs appear in History, p002 and p004; one fact (f005). 'No recent trauma' (p003) merges with the History denial (f004).",
+      "Finding names avoid the gold word 'kidney' (source exam group 'Kidney_Examination'): flank examination, costovertebral angle tenderness (named manoeuvre, own record) and abdominal examination. The patient text says 'dialysis', not 'kidney dialysis'.",
+      "Creatinine and BUN are grouped as a basic metabolic panel (two members present).",
+      "'Caucasian' in the demographics is not part of the schema's demographics and is not used."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with hematuria and right flank pain."
+    }
+  }
+}

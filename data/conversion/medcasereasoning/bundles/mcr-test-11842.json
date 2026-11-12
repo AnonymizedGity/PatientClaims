@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11842",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 45, "sex": "female"},
+    "opening": ["f001", "f003", "f004"],
+    "facts": [
+      {"id": "f001", "item": "nausea", "aliases": ["feeling sick", "queasy", "sick to my stomach"], "text": "I've been feeling sick to my stomach.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "course of the symptoms", "text": "These have all been getting worse.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "slurred speech", "aliases": ["dysarthria", "trouble speaking", "speech problems"], "text": "My speech has become slurred.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "unsteady walking", "aliases": ["unsteady gait", "poor balance", "trouble walking", "wobbly walking"], "text": "I've been unsteady on my feet when I walk.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "unsteady walking: severity", "parent": "f004", "attribute": "severity", "text": "It's so bad that I can't stand up without help.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "how long the symptoms have been going on", "text": "All of this started 10 days ago.", "value": "10 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "what came before the symptoms", "aliases": ["when the symptoms started", "relation to the vaccine"], "text": "It started about 2 weeks after my first dose of the Sinopharm COVID-19 vaccine.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "COVID-19 vaccination", "aliases": ["COVID vaccine", "Sinopharm vaccine", "vaccinations", "recent vaccination"], "text": "I've had my first dose of the Sinopharm COVID-19 vaccine.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "headache", "aliases": ["head pain"], "text": "I haven't had a headache.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "focal weakness", "aliases": ["weakness in an arm or leg", "one-sided weakness", "localized weakness"], "text": "I haven't noticed weakness in any part of my body.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f011", "item": "vision changes", "aliases": ["blurred vision", "double vision", "trouble seeing"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f012", "item": "fever", "aliases": ["fevers", "temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f013", "item": "other breathing or chest symptoms", "aliases": ["respiratory symptoms", "chest symptoms"], "text": "I haven't had any breathing or chest symptoms.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f014", "item": "contact with someone with COVID-19", "aliases": ["COVID contacts", "sick contacts", "COVID exposure"], "text": "I haven't been in contact with anyone known to have COVID-19.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f015", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any medical problems.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11842",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Normal."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Normal."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Normal."},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["level of consciousness", "orientation", "mental state examination"], "result": "Alert and oriented."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["eye movements", "nystagmus", "speech", "extraocular movements"], "result": "Horizontal nystagmus to the left; dysarthria."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["cerebellar examination", "limb coordination", "ataxia"], "result": "Marked appendicular ataxia."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "finger-nose test", "aliases": ["finger-to-nose test", "dysmetria"], "result": "Left-sided dysmetria."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "rapid alternating movements", "aliases": ["dysdiadochokinesia", "alternating hand movements"], "result": "Impaired."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "gait and stance", "aliases": ["gait", "walking", "standing", "truncal ataxia"], "result": "Marked truncal ataxia; unable to stand unassisted."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power"], "result": "5/5 throughout."},
+      {"id": "x012", "kind": "exam", "system": "neurological", "name": "meningeal signs", "aliases": ["neck stiffness", "nuchal rigidity", "Kernig sign", "Brudzinski sign"], "result": "Absent."},
+      {"id": "x013", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Within normal limits."},
+      {"id": "x014", "kind": "test", "name": "thyroid-stimulating hormone", "aliases": ["TSH", "thyroid function"], "result": "Within normal limits."},
+      {"id": "x015", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Within normal limits."},
+      {"id": "x016", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Within normal limits."},
+      {"id": "x017", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "UA"], "result": "Within normal limits."},
+      {"id": "x018", "kind": "test", "name": "urine drug screen", "aliases": ["urine toxicology", "drug screen", "tox screen"], "result": "Within normal limits."},
+      {"id": "x019", "kind": "test", "name": "brain MRI with and without contrast", "aliases": ["MRI brain", "brain MRI", "head MRI"], "result": "Bilateral hyperintense lesions in the cerebellar hemispheres, most prominent in the left middle cerebellar peduncle, with faint enhancement; no cervical spinal cord involvement."},
+      {"id": "x020", "kind": "test", "name": "CSF analysis", "aliases": ["lumbar puncture", "spinal tap", "cerebrospinal fluid", "CSF protein", "CSF cell count"], "result": "Protein 90 mg/dL; 10 white cells/mm3 with 80% lymphocytes."},
+      {"id": "x021", "kind": "test", "name": "CSF Gram stain and culture", "aliases": ["CSF culture", "CSF Gram stain"], "result": "Negative."},
+      {"id": "x022", "kind": "test", "name": "CSF PCR panel", "aliases": ["CSF PCR", "CSF viral PCR", "SARS-CoV-2 PCR", "HSV PCR", "VZV PCR", "enterovirus PCR", "CMV PCR"], "result": "Positive for SARS-CoV-2; negative for varicella zoster virus, herpes simplex virus types 1 and 2, cytomegalovirus, and enterovirus."},
+      {"id": "x023", "kind": "test", "name": "CSF oligoclonal bands", "aliases": ["oligoclonal bands", "OCB"], "result": "Absent."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11842",
+    "diagnosis": "Acute cerebellitis",
+    "aliases": ["cerebellitis", "acute post-vaccination cerebellitis", "SARS-CoV-2-associated cerebellitis", "COVID-19-associated cerebellitis"],
+    "reasoning": "1. Multiple sclerosis was deemed unlikely because of absence of typical lesions and negative OCB — “The diagnosis of multiple sclerosis was unlikely due to the absence of multiple sclerosis‐like lesion in brain and oligoclonal bands in CSF.” 2. Acute disseminated encephalomyelitis and vascular lesions were excluded based on imaging findings — “The imaging studies were also negative for acute disseminated encephalomyelitis and vascular lesions.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11842",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s003"],
+      "f006": ["s001"],
+      "f007": ["s001"],
+      "f008": ["s001"],
+      "f009": ["s002"],
+      "f010": ["s002"],
+      "f011": ["s002"],
+      "f012": ["s002"],
+      "f013": ["s002"],
+      "f014": ["s002"],
+      "f015": ["s001"]
+    },
+    "quotes": {
+      "f002": "progressive nausea",
+      "f005": "inability to stand unassisted",
+      "f006": "10 days of progressive nausea, slurred speech, and unsteady gait",
+      "f007": "beginning approximately 2 weeks after her first dose of the Sinopharm COVID-19 vaccine",
+      "f010": "focal weakness",
+      "f013": "respiratory or chest symptoms",
+      "f014": "had no known COVID-19 contacts",
+      "f015": "no past medical history"
+    },
+    "flags": {
+      "f002": ["'Progressive' stands before the whole list of presenting symptoms, so it is one standalone fact for all of them (harmonisation)."],
+      "f005": ["Taken from the examination (s003): being unable to stand without help is something the patient notices."],
+      "f013": ["Blanket denial of a whole scope ('respiratory or chest symptoms'); answers only an open question about breathing or the chest. Specific chest symptoms stay unknown."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "Vital signs were normal."},
+      "x002": {"sentences": ["s003"], "source_text": "Vital signs were normal."},
+      "x003": {"sentences": ["s003"], "source_text": "Vital signs were normal."},
+      "x004": {"sentences": ["s003"], "source_text": "Vital signs were normal."},
+      "x005": {"sentences": ["s003"], "source_text": "she was alert and oriented"},
+      "x006": {"sentences": ["s003"], "source_text": "there was dysarthria / horizontal nystagmus to the left"},
+      "x007": {"sentences": ["s003"], "source_text": "marked appendicular and truncal ataxia"},
+      "x008": {"sentences": ["s003"], "source_text": "left-sided dysmetria on finger–nose testing"},
+      "x009": {"sentences": ["s003"], "source_text": "impaired rapid alternating movements"},
+      "x010": {"sentences": ["s003"], "source_text": "marked appendicular and truncal ataxia with inability to stand unassisted"},
+      "x011": {"sentences": ["s004"], "source_text": "Motor strength was 5/5 throughout"},
+      "x012": {"sentences": ["s004"], "source_text": "there were no meningeal signs"},
+      "x013": {"sentences": ["s005"], "source_text": "a complete blood count / were all within normal limits"},
+      "x014": {"sentences": ["s005"], "source_text": "thyroid-stimulating hormone level / were all within normal limits"},
+      "x015": {"sentences": ["s005"], "source_text": "erythrocyte sedimentation rate / were all within normal limits"},
+      "x016": {"sentences": ["s005"], "source_text": "C-reactive protein / were all within normal limits"},
+      "x017": {"sentences": ["s005"], "source_text": "urinalysis / were all within normal limits"},
+      "x018": {"sentences": ["s005"], "source_text": "urine drug screen, were all within normal limits"},
+      "x019": {"sentences": ["s006"], "source_text": "Brain MRI with and without contrast demonstrated bilateral hyperintense lesions in the cerebellar hemispheres, most prominent in the left middle cerebellar peduncle, with faint enhancement; there was no cervical spinal cord involvement."},
+      "x020": {"sentences": ["s007"], "source_text": "Lumbar puncture revealed cerebrospinal fluid protein of 90 mg/dL, 10 white cells per mm3 with 80% lymphocytes"},
+      "x021": {"sentences": ["s007"], "source_text": "negative Gram stain and culture"},
+      "x022": {"sentences": ["s008"], "source_text": "CSF PCR was positive for SARS-CoV-2 and negative for varicella zoster virus, herpes simplex virus types 1 and 2, cytomegalovirus, and enterovirus."},
+      "x023": {"sentences": ["s009"], "source_text": "Oligoclonal bands were absent."}
+    },
+    "finding_flags": {
+      "x001": ["'Vital signs were normal' is split into one record per usual vital parameter; oxygen saturation is not assumed."]
+    },
+    "leakage": [],
+    "source_issues": ["CSF PCR positive for SARS-CoV-2 in a patient with no known COVID-19 contacts and no respiratory symptoms; the Sinopharm vaccine is inactivated and would not explain a positive PCR.", "The cerebellar lesions are bilateral, while dysmetria is described only on the left."],
+    "notes": ["Index visit: the emergency presentation with 10 days of progressive nausea, slurred speech and unsteady gait (s001-s009 are this presentation and its workup).", "The vaccine timing is a standalone fact (what came before the symptoms) plus a vaccination history fact; the PCR and CSF results are findings."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

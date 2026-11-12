@@ -1,0 +1,1309 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-004",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 25,
+      "sex": "male"
+    },
+    "opening": [
+      "f001",
+      "f003"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "trouble breathing",
+        "aliases": [
+          "shortness of breath",
+          "difficulty breathing"
+        ],
+        "text": "I'm having trouble breathing.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "trouble breathing: when it started",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started last night, along with the pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "chest pain",
+        "text": "I have this excruciating pain in my chest.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "chest pain: location",
+        "parent": "f003",
+        "attribute": "location",
+        "value": [
+          "left side of the chest"
+        ],
+        "text": "It's on the left side of my chest.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "chest pain: when it started",
+        "parent": "f003",
+        "attribute": "onset",
+        "text": "It started last night.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "chest pain: severity",
+        "parent": "f003",
+        "attribute": "severity",
+        "text": "It's some of the worst pain I've ever had. At least 8 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "chest pain: what makes it better",
+        "parent": "f003",
+        "attribute": "relieving",
+        "text": "Nothing I do makes it better.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "chest pain: what makes it worse",
+        "parent": "f003",
+        "attribute": "aggravating",
+        "value": [
+          "taking a deep breath",
+          "moving"
+        ],
+        "complete": true,
+        "text": "It gets even worse when I take a deep breath or try to move.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "car accident",
+        "aliases": [
+          "car crash",
+          "motor vehicle accident"
+        ],
+        "text": "I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. I immediately tried to slow down but hit a tree.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f010",
+        "item": "car accident: speed",
+        "parent": "f009",
+        "attribute": "other",
+        "text": "I wasn't going very fast.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f011",
+        "item": "car accident: damage to the car",
+        "parent": "f009",
+        "attribute": "other",
+        "text": "My car was basically okay.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f012",
+        "item": "car accident: seat belt",
+        "parent": "f009",
+        "attribute": "other",
+        "text": "I was wearing my seat belt.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f013",
+        "item": "car accident: how you felt afterwards",
+        "parent": "f009",
+        "attribute": "course",
+        "text": "I felt okay at first, so I didn't think I needed to come to the hospital.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f014",
+        "item": "hitting your head",
+        "aliases": [
+          "head injury",
+          "head trauma"
+        ],
+        "text": "I didn't hit my head.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f015",
+        "item": "fainting",
+        "aliases": [
+          "passing out",
+          "loss of consciousness",
+          "blacking out"
+        ],
+        "text": "I didn't faint.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f016",
+        "item": "other injuries",
+        "aliases": [
+          "hurt anywhere else"
+        ],
+        "text": "I have a few scratches on my arms from the car accident.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "cough",
+        "text": "I've been coughing.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "cough: for how long",
+        "parent": "f017",
+        "attribute": "duration",
+        "text": "For the past few days, I suppose.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "cough: what comes up",
+        "parent": "f017",
+        "attribute": "appearance",
+        "aliases": [
+          "phlegm",
+          "mucus",
+          "sputum"
+        ],
+        "text": "I have to use a tissue because I keep bringing up all this yellow junk.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "fever",
+        "aliases": [
+          "feeling warm",
+          "temperature"
+        ],
+        "text": "I've been a bit warm.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "muscle aches",
+        "aliases": [
+          "muscle soreness",
+          "body aches"
+        ],
+        "text": "I've noticed some muscle soreness.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "chills",
+        "aliases": [
+          "shivering"
+        ],
+        "text": "I don't believe I've had any shivering or chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I have pain in my belly.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "abdominal pain: location",
+        "parent": "f023",
+        "attribute": "location",
+        "value": [
+          "left upper abdomen"
+        ],
+        "text": "It's here, in the upper left part of my belly.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "abdominal pain: what it feels like",
+        "parent": "f023",
+        "attribute": "character",
+        "text": "It's a sharp pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I haven't been feeling nauseous.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't been vomiting.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "neck stiffness",
+        "aliases": [
+          "stiff neck"
+        ],
+        "text": "My neck isn't stiff.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "discharge from the ears",
+        "text": "I haven't noticed any discharge from my ears.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "discharge from the nose",
+        "text": "I haven't noticed any discharge from my nose.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "discharge from the mouth",
+        "text": "I haven't noticed any discharge from my mouth.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "seizures",
+        "aliases": [
+          "convulsions",
+          "fits"
+        ],
+        "text": "I haven't had any seizures.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "headache",
+        "text": "I haven't had any headaches.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "change in vision",
+        "aliases": [
+          "vision problems",
+          "blurry vision"
+        ],
+        "text": "My vision hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "eye",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "disorientation",
+        "aliases": [
+          "confusion"
+        ],
+        "text": "I haven't felt disoriented.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "forgetfulness",
+        "aliases": [
+          "memory loss"
+        ],
+        "text": "I haven't been forgetful.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "change in behavior",
+        "aliases": [
+          "personality change"
+        ],
+        "text": "My behavior hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "weakness in arms or legs",
+        "aliases": [
+          "limb weakness"
+        ],
+        "text": "I haven't noticed any weakness in my arms or legs.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "numbness in arms or legs",
+        "aliases": [
+          "limb numbness"
+        ],
+        "text": "I haven't noticed any numbness in my arms or legs.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "rapid heartbeat",
+        "aliases": [
+          "palpitations",
+          "racing heart"
+        ],
+        "text": "I haven't felt my heart racing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "pain when urinating",
+        "aliases": [
+          "painful urination",
+          "burning urination"
+        ],
+        "text": "It doesn't hurt to urinate.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "infectious mononucleosis",
+        "aliases": [
+          "mono",
+          "glandular fever"
+        ],
+        "text": "My doctor told me I had infectious mononucleosis, but it is gone now.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f043",
+        "item": "infectious mononucleosis: when and how it showed",
+        "parent": "f042",
+        "attribute": "other",
+        "text": "I had a sore throat, mild fever and fatigue 2 months ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f044",
+        "item": "current medications",
+        "aliases": [
+          "medicines"
+        ],
+        "text": "I don't take any medications.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "parents' health",
+        "aliases": [
+          "mother's health",
+          "father's health"
+        ],
+        "text": "My mother and father are both healthy.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a banker.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink sometimes, on weekends.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "alcohol before the accident",
+        "aliases": [
+          "drinking at the time of the accident"
+        ],
+        "text": "I hadn't been drinking when the accident happened.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f050",
+        "item": "drugs before the accident",
+        "aliases": [
+          "under the influence at the time of the accident"
+        ],
+        "text": "I wasn't on any drugs when the accident happened.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f051",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't use recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke cigarettes.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "last meal",
+        "aliases": [
+          "last time you ate or drank"
+        ],
+        "text": "I had breakfast this morning, about 5 hours ago. I didn't have any trouble keeping it down.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f054",
+        "item": "reporting the accident to the police",
+        "aliases": [
+          "calling the police"
+        ],
+        "text": "I was embarrassed, so I didn't call the police.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-004",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "123/88 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "100°F (38°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "22/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "85/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "In acute distress and short of breath, taking fast, shallow breaths."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "general",
+        "name": "head examination",
+        "aliases": [
+          "head and face",
+          "signs of head injury"
+        ],
+        "result": "No signs of trauma; no bruises or lacerations."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "pupils",
+          "eye movements"
+        ],
+        "result": "Pupils equal, round and reactive to light and accommodation; extraocular movements intact."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "ent",
+        "name": "throat examination",
+        "aliases": [
+          "pharynx",
+          "mouth and throat"
+        ],
+        "result": "No pharyngeal swelling or exudates."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "jugular veins",
+          "JVD"
+        ],
+        "result": "No jugular venous distension."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "chest wall examination",
+        "aliases": [
+          "chest inspection",
+          "chest wall palpation",
+          "rib tenderness"
+        ],
+        "result": "Two large bruises on the left chest; left rib tenderness, with pain when the left chest is pressed."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation",
+          "breath sounds"
+        ],
+        "result": "Decreased breath sounds over the left lung field; right lung fields clear. Left chest pain worsens on breathing in and on movement: he holds his side and stops breathing in with a short gasp."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen",
+          "spleen"
+        ],
+        "result": "Soft, not distended; bowel sounds present in all four quadrants; left upper quadrant tenderness, with pain when the left upper abdomen is pressed; no rebound or guarding; no organ enlargement."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "mental status",
+        "aliases": [
+          "orientation",
+          "alertness"
+        ],
+        "result": "Alert and oriented to person, place and time."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "cranial nerves",
+        "result": "Cranial nerves II-XII grossly intact."
+      },
+      {
+        "id": "x016",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength"
+        ],
+        "result": "5/5 in all muscle groups."
+      },
+      {
+        "id": "x017",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam"
+        ],
+        "result": "Intact to pinprick and soft touch."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-004",
+    "diagnosis": "Pneumothorax",
+    "aliases": [
+      "traumatic pneumothorax",
+      "left pneumothorax",
+      "collapsed lung",
+      "PTX",
+      "tension pneumothorax"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Pneumothorax",
+        "evidence": [
+          "Left-sided chest pain following an MVA",
+          "Pain is exacerbated by movement and deep breaths",
+          "Dyspnea",
+          "Cough",
+          "RR 22/minute",
+          "Exam: Decreased breath sounds over the left lung field",
+          "Exam: Bruising and tenderness over the left chest"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Hemothorax",
+        "aliases": [
+          "haemothorax",
+          "traumatic hemothorax",
+          "blood in the pleural space"
+        ],
+        "evidence": [
+          "Left-sided chest pain following an MVA",
+          "Dyspnea",
+          "Cough",
+          "RR 22/minute",
+          "Exam: Decreased breath sounds over left lung field",
+          "Exam: Bruising and tenderness over left chest"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Pneumonia",
+        "aliases": [
+          "community-acquired pneumonia",
+          "CAP",
+          "bacterial pneumonia",
+          "lobar pneumonia"
+        ],
+        "evidence": [
+          "Unilateral chest pain",
+          "Productive cough",
+          "Low-grade fever",
+          "Exam: Temperature 100°F",
+          "Exam: RR 22/minute"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Rib fracture",
+        "note": "The most common chest injury; a simple fracture could explain pain on inspiration and cough, can lead to pneumothorax, and is diagnosed with a CXR."
+      },
+      {
+        "diagnosis": "Splenic rupture",
+        "note": "A major concern after trauma because of rapid blood loss; recent infectious mononucleosis raises the risk, and with left chest and left upper quadrant pain the spleen should be evaluated (ultrasound, then abdominal CT) and organomegaly looked for."
+      },
+      {
+        "diagnosis": "Pleuritis",
+        "note": "Causes severe pain that increases with inspiration or movement with an otherwise negative exam; may be simple viral pleuritis, but emergent causes must be ruled out first."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-004",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-004-p001"
+      ],
+      "f003": [
+        "cc"
+      ],
+      "f004": [
+        "cc"
+      ],
+      "f005": [
+        "medqa-cs-004-p001"
+      ],
+      "f006": [
+        "medqa-cs-004-p002"
+      ],
+      "f007": [
+        "medqa-cs-004-p004"
+      ],
+      "f008": [
+        "medqa-cs-004-p005"
+      ],
+      "f009": [
+        "medqa-cs-004-p003"
+      ],
+      "f010": [
+        "medqa-cs-004-p003"
+      ],
+      "f011": [
+        "medqa-cs-004-p003"
+      ],
+      "f012": [
+        "medqa-cs-004-p003"
+      ],
+      "f013": [
+        "medqa-cs-004-p003"
+      ],
+      "f014": [
+        "medqa-cs-004-p010"
+      ],
+      "f015": [
+        "medqa-cs-004-p012"
+      ],
+      "f016": [
+        "medqa-cs-004-p009"
+      ],
+      "f017": [
+        "medqa-cs-004-p006"
+      ],
+      "f018": [
+        "medqa-cs-004-p006"
+      ],
+      "f019": [
+        "medqa-cs-004-p007"
+      ],
+      "f020": [
+        "medqa-cs-004-p008"
+      ],
+      "f021": [
+        "medqa-cs-004-p008"
+      ],
+      "f022": [
+        "medqa-cs-004-p008"
+      ],
+      "f023": [
+        "medqa-cs-004-p019"
+      ],
+      "f024": [
+        "medqa-cs-004-p019"
+      ],
+      "f025": [
+        "medqa-cs-004-p019"
+      ],
+      "f026": [
+        "medqa-cs-004-p020"
+      ],
+      "f027": [
+        "medqa-cs-004-p020"
+      ],
+      "f028": [
+        "medqa-cs-004-p020"
+      ],
+      "f029": [
+        "medqa-cs-004-p011"
+      ],
+      "f030": [
+        "medqa-cs-004-p011"
+      ],
+      "f031": [
+        "medqa-cs-004-p011"
+      ],
+      "f032": [
+        "medqa-cs-004-p013"
+      ],
+      "f033": [
+        "medqa-cs-004-p014"
+      ],
+      "f034": [
+        "medqa-cs-004-p015"
+      ],
+      "f035": [
+        "medqa-cs-004-p016"
+      ],
+      "f036": [
+        "medqa-cs-004-p016"
+      ],
+      "f037": [
+        "medqa-cs-004-p016"
+      ],
+      "f038": [
+        "medqa-cs-004-p017"
+      ],
+      "f039": [
+        "medqa-cs-004-p017"
+      ],
+      "f040": [
+        "medqa-cs-004-p018"
+      ],
+      "f041": [
+        "medqa-cs-004-p023"
+      ],
+      "f042": [
+        "medqa-cs-004-p025"
+      ],
+      "f043": [
+        "medqa-cs-004-p025"
+      ],
+      "f044": [
+        "medqa-cs-004-p024",
+        "medqa-cs-004-p026"
+      ],
+      "f045": [
+        "medqa-cs-004-p032"
+      ],
+      "f046": [
+        "medqa-cs-004-p027"
+      ],
+      "f047": [
+        "medqa-cs-004-p028"
+      ],
+      "f048": [
+        "medqa-cs-004-p029"
+      ],
+      "f049": [
+        "medqa-cs-004-p022"
+      ],
+      "f050": [
+        "medqa-cs-004-p022"
+      ],
+      "f051": [
+        "medqa-cs-004-p030"
+      ],
+      "f052": [
+        "medqa-cs-004-p031"
+      ],
+      "f053": [
+        "medqa-cs-004-p021"
+      ],
+      "f054": [
+        "medqa-cs-004-p003"
+      ]
+    },
+    "quotes": {
+      "f001": "I'm having trouble breathing",
+      "f002": "It commenced last night.",
+      "f003": "have this excruciating pain",
+      "f004": "holds chest, left side",
+      "f005": "It commenced last night.",
+      "f006": "It's some of the worst pain I've ever had. At least 8/10.",
+      "f007": "Nothing I do makes it better.",
+      "f008": "It gets even worse when I take a deep breath or try to move.",
+      "f009": "I was driving my car and was trying to answer my cell phone. When I looked up, I found that I had veered off the road. / I immediately tried to slow down but hit a tree.",
+      "f010": "I wasn't going very fast",
+      "f011": "my car was basically okay.",
+      "f012": "I was wearing my seat belt",
+      "f013": "felt okay at first, so I didn't think I needed to come to the hospital.",
+      "f014": "No.",
+      "f015": "No.",
+      "f016": "I have a few scratches on my arms from the car accident.",
+      "f017": "I've been coughing",
+      "f018": "for the past few days, I suppose.",
+      "f019": "I have to use a tissue because I keep bringing up all this yellow junk.",
+      "f020": "I've been a bit warm",
+      "f021": "noticed some muscle soreness",
+      "f022": "I don’t believe I've experienced any shivering or chills.",
+      "f023": "Yes, I feel a sharp pain in this area",
+      "f024": "points to the LUQ",
+      "f025": "I feel a sharp pain",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "No.",
+      "f033": "No.",
+      "f034": "No.",
+      "f035": "No.",
+      "f036": "No.",
+      "f037": "No.",
+      "f038": "No.",
+      "f039": "No.",
+      "f040": "No.",
+      "f041": "No.",
+      "f042": "My doctor told me I had infectious mononucleosis, but it is gone now.",
+      "f043": "I had a sore throat, mild fever, and fatigue 2 months ago.",
+      "f044": "No medications. / No medications.",
+      "f045": "No.",
+      "f046": "My mother and father are both healthy.",
+      "f047": "I'm a banker.",
+      "f048": "Sometimes on weekends.",
+      "f049": "No.",
+      "f050": "No.",
+      "f051": "No.",
+      "f052": "No.",
+      "f053": "I had breakfast this morning, about 5 hours ago. I didn't have any trouble keeping it down.",
+      "f054": "I was embarrassed, so I didn't call the police."
+    },
+    "flags": {
+      "f004": [
+        "The location (left chest) comes from the stage direction '(holds chest, left side)' and the SP notes; the patient's words say only 'this excruciating pain'."
+      ],
+      "f024": [
+        "The location comes from the stage direction '(points to the LUQ)'; the patient's words say only 'this area'."
+      ],
+      "f044": [
+        "p026 is the surgery question ('Have you had any surgeries?') but the scripted answer is 'No medications.'; the note's PSH line repeats 'No medications.', so surgical history cannot be resolved and is left unknown."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway",
+        "source_text": "BP: 123/88 mm Hg"
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 100°F (38°C) | VS: Temp 100°F, RR 22/minute.",
+        "exam_ids": [
+          "medqa-cs-004-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 22/minute | VS: Temp 100°F, RR 22/minute.",
+        "exam_ids": [
+          "medqa-cs-004-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway",
+        "source_text": "HR: 85/minute, regular"
+      },
+      "x005": {
+        "source": "patient_note + sp_notes",
+        "source_text": "The patient is in acute distress and dyspneic. | Take fast, shallow breaths.",
+        "exam_ids": [
+          "medqa-cs-004-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Atraumatic, ... no bruises | HEENT: No bruises or lacerations.",
+        "exam_ids": [
+          "medqa-cs-004-e003",
+          "medqa-cs-004-e007"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "HEENT: ... PERRLA, EOMI",
+        "exam_ids": [
+          "medqa-cs-004-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "HEENT: ... no pharyngeal edema or exudates.",
+        "exam_ids": [
+          "medqa-cs-004-e003"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "HEENT: ... no JVD",
+        "exam_ids": [
+          "medqa-cs-004-e003"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Chest: Two large ecchymoses on the left chest, left rib tenderness | Exhibit pain when your left chest is being palpated.",
+        "exam_ids": [
+          "medqa-cs-004-e004"
+        ]
+      },
+      "x011": {
+        "source": "patient_note + sp_notes",
+        "source_text": "decreased breath sounds over the left lung field, right lung fields clear. | Exhibit pain in the left chest that worsens during inspiration and movement (i.e., when you breathe in, hold your side and stop your breathing with a short gasp).",
+        "exam_ids": [
+          "medqa-cs-004-e004"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-004-e005"
+        ]
+      },
+      "x013": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Abdomen: Soft, nondistended, @ BS x 4 quadrants, LUQ tenderness, no rebound or guarding, no organomegaly. | Exhibit pain when your left upper abdomen is being palpated.",
+        "exam_ids": [
+          "medqa-cs-004-e006"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Neuro: Mental status: Alert and oriented x 3.",
+        "exam_ids": [
+          "medqa-cs-004-e008"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "Cranial nerves: 2-12 grossly intact.",
+        "exam_ids": [
+          "medqa-cs-004-e008"
+        ]
+      },
+      "x016": {
+        "source": "patient_note",
+        "source_text": "Motor: Strength 5/5 in all muscle groups.",
+        "exam_ids": [
+          "medqa-cs-004-e008"
+        ]
+      },
+      "x017": {
+        "source": "patient_note",
+        "source_text": "Sensation: Intact to pinprick and soft touch.",
+        "exam_ids": [
+          "medqa-cs-004-e008"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x002": [
+        "100°F is 37.8°C; the source rounds it to 38°C."
+      ],
+      "x006": [
+        "e007 is a second 'HEENT' line placed after the abdomen; it may be a mislabeled skin exam. The arm scratches the patient reports (p009) are not recorded in any exam line."
+      ],
+      "x013": [
+        "Source reads '@ BS x 4 quadrants'; '@' is a garbled '+' (bowel sounds present), as in other notes' '+ BS x 4 quadrants'."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "p026: the surgery question ('Have you had any surgeries?') is answered 'No medications.' The note's PSH line also reads 'No medications.', so the note cannot resolve it; surgical history is unknown. Only the literal statement was recorded (added to the no-medications fact f044 with a flag).",
+      "The time of the accident is never stated; the pain and dyspnea began 'last night' (p001) and he 'felt okay at first'. The note does not give the time either.",
+      "p007 asks about mucus or blood in the cough; the answer describes yellow sputum and does not address blood.",
+      "Doorway temperature '100°F (38°C)': 100°F is 37.8°C.",
+      "The note's exam vitals (e002) give only temperature and respiratory rate; BP and HR come only from the doorway.",
+      "e003 (HEENT) contains 'no JVD', a neck finding.",
+      "e006: 'Soft, nondistended, @ BS x 4 quadrants' - '@' is a garbled symbol (probably '+', bowel sounds present); recorded as present with a flag (x013). The abdomen is not described as tender or nontender apart from LUQ tenderness.",
+      "e007 is a second 'HEENT' line ('No bruises or lacerations') placed after the abdomen; it may be a mislabeled skin exam (the checklist includes a skin inspection for abrasions, lacerations, bruising). The arm scratches the patient reports (p009) are not recorded anywhere in the exam.",
+      "Gold diagnoses #1 and #2 list 'RR 22/minute', a vital sign, under History Finding(s).",
+      "gold_additional_diagnosis (splenic rupture): 'in the chest area and LU the spleen' is truncated (probably 'LUQ,').",
+      "Name inconsistency: the opening gives 'John Matthew'; the sample closure says 'Mr. Matthews'.",
+      "Note HPI: 'unusual fluid from the mouth or nose' omits the ears asked about in p011."
+    ],
+    "notes": [
+      "The opening fact has the stage direction '(holds chest, left side)' removed; it is kept in acting_notes, and the left-chest location is recorded in f004 with a flag. '(points to the LUQ)' in p019 is handled the same way (f024).",
+      "The cough 'for the past few days' (p006) may predate the accident (the pain began last night); recorded as stated with the patient's hedge 'I suppose'.",
+      "SP instructions that create observable signs are merged into the matching exam records: splinting on inspiration (x011), left chest tenderness (x010), LUQ tenderness (x013), fast shallow breaths (x005, with the note's 'dyspneic'); moaning and short answers are left as acting notes only.",
+      "Mother and father 'both healthy' is coded as an absent family-history item.",
+      "p012 asks 'Did you faint?' under the topic 'Loss of consciousness'; recorded as no fainting or loss of consciousness.",
+      "Conversion: the chief complaint gives two opening facts, trouble breathing (f001) and chest pain (f003). The onset 'last night' (p001) covers both and is a child of each (f002, f005), so either question gets an answer.",
+      "Conversion: the accident story (p003) is a parent 'car accident' (f009, v1 f005 + f006) with speed, car damage, seat belt and how he felt afterwards as children (v1 f007 split into speed and damage); not calling the police out of embarrassment (v1 f010, subtype other) is social_background (f054).",
+      "Conversion: v1 x030 ('Occasionally cough hard into a tissue', sp_notes) is not an exam record: coughing is pure behavior and the note's exam does not record it (CONVERSION.md); it stays in acting_notes.",
+      "Conversion: the sputum (p007) is an appearance child of the cough (f019); infectious mononucleosis is a parent (f042) with the illness 2 months ago as a child (f043); last meal (v1 subtype other) is habit_exposure.",
+      "Fixes: f014 answer word removed; f015 answer word removed; f017 answer word removed; f023 answer word removed; f041 answer word removed; f049 answer word removed; f050 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Exhibit pain in the left chest that worsens during inspiration and movement (i.e., when you breathe in, hold your side and stop your breathing with a short gasp).",
+        "Exhibit pain when your left chest is being palpated.",
+        "Exhibit pain when your left upper abdomen is being palpated.",
+        "Take fast, shallow breaths.",
+        "Occasionally cough hard into a tissue.",
+        "Moan occasionally and answer questions in short sentences.",
+        "When stating the chief complaint, hold the left side of the chest.",
+        "When asked about abdominal pain, point to the left upper quadrant."
+      ],
+      "patient_questions": [
+        "Are you suggesting that I might die?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

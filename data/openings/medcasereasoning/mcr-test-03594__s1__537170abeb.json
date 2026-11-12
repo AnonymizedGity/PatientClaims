@@ -1,0 +1,43 @@
+{
+ "case_id": "mcr-test-03594",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I was referred because my blood calcium is low.",
+   "The face spasms, muscle spasms and leg cramps started when I was about 10."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I was referred because my blood calcium is low. The face spasms, muscle spasms and leg cramps started when I was about 10.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f005"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3412,
+   "tokens_out": 43,
+   "seconds": 6.16,
+   "redrafts": 0
+  }
+ }
+}

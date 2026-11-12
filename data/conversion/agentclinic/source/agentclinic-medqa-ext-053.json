@@ -1,0 +1,133 @@
+{
+  "case_id": "agentclinic-medqa-ext-053",
+  "source_row": 53,
+  "demographics_text": "72-year-old male",
+  "objective_for_doctor": "Assess the patient and determine the cause of jaundice, pruritus, weight loss, pale stool, and dark urine.",
+  "chief_complaint": "Yellow discoloration of the skin",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p001",
+      "field": "History",
+      "text": "The patient has experienced gradual yellow discoloration of the skin and generalized pruritus over the past 2 weeks. He also reports a decreased appetite and a weight loss of 6.3 kg (14 lb). The patient’s stool has been pale, and his urine is very dark. Three years ago, he had an episode of acute upper abdominal pain, which was managed with IV fluids, NSAIDs, and dietary modification. The patient has abstained from alcohol for these three years, after having consumed 1–2 beers daily for 40 years. He has a 50-year history of smoking a pack of cigarettes daily."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Generalized pruritus"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Decreased appetite"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Pale stool"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p006",
+      "field": "Secondary_Symptoms",
+      "text": "Dark urine"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p007",
+      "field": "Past_Medical_History",
+      "text": "Episode of acute upper abdominal pain treated three years ago. History of long-term alcohol consumption and smoking."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p008",
+      "field": "Social_History",
+      "text": "Stopped alcohol consumption three years ago; 50-year history of smoking a pack of cigarettes daily."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-053-p009",
+      "field": "Review_of_Systems",
+      "text": "No additional symptoms were reported."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Jaundice noted in the conjunctivae and skin."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Bowel sounds normal."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Abdomen is soft, non-distended."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "No tenderness, but a soft, cystic mass palpated in the right upper quadrant."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-053-i001",
+      "path": "Test_Results.Serum_Studies.Bilirubin_Total",
+      "text": "5.6 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-i002",
+      "path": "Test_Results.Serum_Studies.Direct_Bilirubin",
+      "text": "4.8 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-i003",
+      "path": "Test_Results.Serum_Studies.Alkaline_Phosphatase",
+      "text": "192 U/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-i004",
+      "path": "Test_Results.Serum_Studies.AST",
+      "text": "32 U/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-i005",
+      "path": "Test_Results.Serum_Studies.ALT",
+      "text": "34 U/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-053-i006",
+      "path": "Test_Results.Imaging.Abdominal_Ultrasonography.Findings",
+      "text": "Anechoic cystic mass in the subhepatic region. Dilation of the intrahepatic and extrahepatic bile ducts."
+    }
+  ],
+  "correct_diagnosis": "Pancreatic adenocarcinoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

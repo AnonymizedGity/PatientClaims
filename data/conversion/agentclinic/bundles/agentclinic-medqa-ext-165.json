@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-165",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 79, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "cough", "aliases": ["persistent cough"], "text": "I've had a cough that won't go away.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "cough: phlegm", "parent": "f001", "attribute": "character", "aliases": ["productive cough", "sputum"], "text": "It's a dry cough; I don't bring anything up.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea"], "text": "I've been short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f004", "item": "when the cough and breathlessness started", "aliases": ["onset", "recent cold"], "text": "The cough and breathlessness started after I had a cold about a month ago.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f005", "item": "health problems before this illness", "aliases": ["previous health"], "text": "Before this, my health was generally good.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "high cholesterol", "aliases": ["hyperlipidemia"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "hydrochlorothiazide", "aliases": ["water pill"], "text": "I take hydrochlorothiazide.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "lisinopril", "text": "I take lisinopril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "atorvastatin", "aliases": ["statin", "cholesterol medication"], "text": "I take atorvastatin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "recent travel", "aliases": ["trips"], "text": "I recently got back from a month-long trip to St. Louis, Missouri.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "other symptoms", "aliases": ["other complaints"], "text": "I don't have any other symptoms apart from the cough and breathlessness.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-165",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.0°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/82 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "20/min"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "chest examination", "aliases": ["lung examination", "respiratory examination", "lung auscultation", "breath sounds", "chest percussion", "chest palpation"], "result": "Inspection: no visible deformities. Auscultation: normal breath sounds without wheezes or rhonchi. Percussion: mild dullness on the right side. Palpation: mild crepitus on the right side."},
+      {"id": "x006", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Cavitary lesion in the right lung."},
+      {"id": "x007", "kind": "test", "name": "chest CT", "aliases": ["CT of the chest", "CT thorax"], "result": "Confirms the cavitary lesion seen on the chest X-ray."},
+      {"id": "x008", "kind": "test", "name": "lung biopsy", "aliases": ["biopsy of the lung lesion", "lung histopathology"], "result": "Necrotic granulomatous inflammation with oval yeast bodies within macrophages."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-165",
+    "diagnosis": "Histoplasmosis",
+    "aliases": ["Histoplasma capsulatum infection", "Histoplasma infection", "pulmonary histoplasmosis", "chronic pulmonary histoplasmosis", "chronic cavitary histoplasmosis", "Darling's disease"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-165",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-165-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-165-p001"],
+      "f003": ["agentclinic-medqa-ext-165-p001", "agentclinic-medqa-ext-165-p002"],
+      "f004": ["agentclinic-medqa-ext-165-p001", "agentclinic-medqa-ext-165-p003"],
+      "f005": ["agentclinic-medqa-ext-165-p001"],
+      "f006": ["agentclinic-medqa-ext-165-p004"],
+      "f007": ["agentclinic-medqa-ext-165-p004"],
+      "f008": ["agentclinic-medqa-ext-165-p004"],
+      "f009": ["agentclinic-medqa-ext-165-p004"],
+      "f010": ["agentclinic-medqa-ext-165-p004"],
+      "f011": ["agentclinic-medqa-ext-165-p005"],
+      "f012": ["agentclinic-medqa-ext-165-p005"],
+      "f013": ["agentclinic-medqa-ext-165-p005"],
+      "f014": ["agentclinic-medqa-ext-165-p006"]
+    },
+    "quotes": {
+      "f001": "persistent non-productive cough",
+      "f002": "non-productive",
+      "f004": "started after a cold about a month ago",
+      "f005": "Describes previous health as generally good.",
+      "f012": "drinks alcohol occasionally",
+      "f013": "Recently returned from a month-long trip to St. Louis, Missouri.",
+      "f014": "No other symptoms apart from those mentioned."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.0°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-165-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/82 mmHg", "exam_ids": ["agentclinic-medqa-ext-165-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-165-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "20 breaths/min", "exam_ids": ["agentclinic-medqa-ext-165-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Chest_Examination.Inspection + Physical_Examination_Findings.Chest_Examination.Auscultation + Physical_Examination_Findings.Chest_Examination.Percussion + Physical_Examination_Findings.Chest_Examination.Palpation", "source_text": "No visible deformities. | Normal breath sounds without wheezes or rhonchi. | Mild dullness on the right side. | Mild crepitus detected on the right side.", "exam_ids": ["agentclinic-medqa-ext-165-e005", "agentclinic-medqa-ext-165-e006", "agentclinic-medqa-ext-165-e007", "agentclinic-medqa-ext-165-e008"]},
+      "x006": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "Cavitary lesion in the right lung", "exam_ids": ["agentclinic-medqa-ext-165-i001"]},
+      "x007": {"source": "Test_Results.Chest_CT.Findings", "source_text": "Confirmation of the cavitary lesion seen on X-ray", "exam_ids": ["agentclinic-medqa-ext-165-i002"]},
+      "x008": {"source": "Test_Results.Lung_Biopsy.Histopathology", "source_text": "Necrotic granulomatous inflammation with oval yeast bodies within macrophages", "exam_ids": ["agentclinic-medqa-ext-165-i003"]}
+    },
+    "finding_flags": {
+      "x005": ["'Mild crepitus' on chest palpation is unusual for this picture (it normally means subcutaneous emphysema); kept as given."],
+      "x007": ["The CT result refers back to the chest X-ray and adds no own description; if the doctor orders CT without an X-ray, the result still points to an X-ray finding."]
+    },
+    "leakage": [],
+    "source_issues": ["The chest CT result has no independent description ('Confirmation of the cavitary lesion seen on X-ray').", "Chest palpation reports 'mild crepitus', which is atypical (possibly meant crackles on auscultation, which is reported as normal)."],
+    "notes": ["'Non-productive' is an absent child of the cough (f002). The onset after a cold about a month ago applies to the cough and the breathlessness, so it is a standalone fact citing the history and 'History of a recent cold' (p003).", "'Describes previous health as generally good' is f005 (absent health problems before this illness); her hypertension and hyperlipidemia are recorded separately as in the source.", "p004 lists three drugs without saying which treats which; each drug is one medication fact and the texts do not assign indications (aliases only).", "'No other symptoms apart from those mentioned' (p006) is a denial of other symptoms (f014).", "Fixes: f008 alias 'blood pressure medication' removed; f009 alias 'blood pressure medication' removed."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a persistent non-productive cough and dyspnea following a recent cold."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

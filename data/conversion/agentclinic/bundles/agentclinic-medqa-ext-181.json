@@ -1,0 +1,85 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-181", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 41, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I've been short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: worse lying on the left side", "parent": "f001", "attribute": "aggravating", "text": "It gets worse when I lie on my left side.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "passing out", "aliases": ["loss of consciousness", "fainting", "blackout", "syncope"], "text": "I had an episode where I lost consciousness, and there was no obvious reason for it.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f004", "item": "passing out: when it happened", "parent": "f003", "attribute": "onset", "text": "It happened about 10 days ago.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "family history of illness", "aliases": ["family medical history", "illnesses in the family"], "text": "There's no significant illness in my family.", "polarity": "absent", "category": "family_history", "time": "current"},
+      {"id": "f007", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "occupation", "aliases": ["job", "work"], "text": "I work as an accountant.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f010", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f011", "item": "palpitations", "aliases": ["racing heart", "heart pounding"], "text": "I haven't noticed any palpitations.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f014", "item": "swelling", "aliases": ["edema", "leg swelling", "ankle swelling"], "text": "I haven't had any swelling.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f015", "item": "recent travel", "aliases": ["trips"], "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-181",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "cardiovascular examination", "aliases": ["heart examination", "heart auscultation", "jugular venous pressure", "JVP", "neck veins"], "result": "Inspection: jugular venous distention; auscultation: diastolic murmur best heard over the left sternal border, accentuated in the left lateral decubitus position; palpation: no palpable thrill."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "respiratory examination", "aliases": ["lung examination", "chest examination", "lung auscultation"], "result": "Inspection: mild effort in breathing; auscultation: fine crackles at the lung bases, not clearing with cough; percussion: normal resonance; palpation: no tactile fremitus."},
+      {"id": "x007", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Evidence of pulmonary congestion."},
+      {"id": "x008", "kind": "test", "name": "echocardiogram", "aliases": ["echo", "echocardiography", "transthoracic echocardiogram", "TTE", "heart ultrasound"], "result": "Mass in the left atrium attached to the atrial septum."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-181",
+    "diagnosis": "Atrial myxoma",
+    "aliases": ["left atrial myxoma", "myxoma of the left atrium", "LA myxoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-181",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-181-p001"], "f002": ["cc", "agentclinic-medqa-ext-181-p001"],
+      "f003": ["agentclinic-medqa-ext-181-p001", "agentclinic-medqa-ext-181-p002"], "f004": ["agentclinic-medqa-ext-181-p001"],
+      "f005": ["agentclinic-medqa-ext-181-p001", "agentclinic-medqa-ext-181-p003"], "f006": ["agentclinic-medqa-ext-181-p001"],
+      "f007": ["agentclinic-medqa-ext-181-p004"], "f008": ["agentclinic-medqa-ext-181-p004"], "f009": ["agentclinic-medqa-ext-181-p004"],
+      "f010": ["agentclinic-medqa-ext-181-p005"], "f011": ["agentclinic-medqa-ext-181-p005"], "f012": ["agentclinic-medqa-ext-181-p005"],
+      "f013": ["agentclinic-medqa-ext-181-p005"], "f014": ["agentclinic-medqa-ext-181-p005"], "f015": ["agentclinic-medqa-ext-181-p005"]
+    },
+    "quotes": {
+      "f002": "worsens when lying on her left side", "f003": "an episode of unexplained loss of consciousness", "f004": "Approximately 10 days ago",
+      "f005": "Negative for any notable conditions.", "f006": "denies any significant past medical or family history", "f008": "drinks alcohol socially",
+      "f014": "edema", "f015": "recent travel"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-181-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-181-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90 bpm", "exam_ids": ["agentclinic-medqa-ext-181-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-181-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiac_Examination.Inspection + Physical_Examination_Findings.Cardiac_Examination.Auscultation + Physical_Examination_Findings.Cardiac_Examination.Palpation", "source_text": "Jugular venous distention + Diastolic murmur best heard over the left sternal border, accentuated in the left lateral decubitus position + No palpable thrill", "exam_ids": ["agentclinic-medqa-ext-181-e005", "agentclinic-medqa-ext-181-e006", "agentclinic-medqa-ext-181-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Auscultation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Palpation", "source_text": "Mild effort in breathing + Fine crackles at the base of the lungs, not clearing with cough + Normal resonance + No tactile fremitus", "exam_ids": ["agentclinic-medqa-ext-181-e008", "agentclinic-medqa-ext-181-e009", "agentclinic-medqa-ext-181-e010", "agentclinic-medqa-ext-181-e011"]},
+      "x007": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "Evidence of pulmonary congestion", "exam_ids": ["agentclinic-medqa-ext-181-i001"]},
+      "x008": {"source": "Test_Results.Echocardiogram.Findings", "source_text": "Mass in the left atrium attached to the atrial septum", "exam_ids": ["agentclinic-medqa-ext-181-i002"]}
+    },
+    "finding_flags": {
+      "x006": ["'No tactile fremitus' literally means absent fremitus (abnormal); probably meant 'no increased tactile fremitus'. Kept as written."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Temperature 36.8°C is 98.2°F; the source gives 98°F (rounding). Kept as written.",
+      "'No tactile fremitus' is ambiguous (absent vs not increased)."
+    ],
+    "notes": [
+      "'Episode of unexplained loss of consciousness' (p002) merges with the History sentence (f003); its timing ('approximately 10 days ago') is an onset child (f004).",
+      "The History's 'denies any significant past medical ... history' merges with p003 (f005); the family-history denial is f006.",
+      "The echocardiogram describes a left atrial mass without naming the tumour type, so it is not listed as leakage."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with shortness of breath and a history of an unexplained loss of consciousness."
+    }
+  }
+}

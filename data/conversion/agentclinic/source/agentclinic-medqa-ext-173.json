@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-173",
+  "source_row": 173,
+  "demographics_text": "24-year-old woman",
+  "objective_for_doctor": "Evaluate the patient presenting with a severe headache, focusing on history taking, physical examination, and formulation of a differential diagnosis.",
+  "chief_complaint": "Severe headache with intensity of 10/10",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-173-p001",
+      "field": "History",
+      "text": "The patient reports a severe, 10/10 headache that is exacerbated by chewing. The pain is described as a dull ache over the sides of her head. She mentions that the headache is new and she has never experienced something like this before. The patient denies any recent illnesses, injuries, or significant stressors."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-173-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain is associated with chewing"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-173-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Dull ache located over the sides of the head"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-173-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant medical history. Not currently taking any medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-173-p005",
+      "field": "Social_History",
+      "text": "Currently a graduate student. Does not smoke tobacco, use illicit drugs, and drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-173-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, vision changes, nausea, vomiting, weakness, numbness, or recent trauma to the head."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-173-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "97.0°F (36.4°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "111/74 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "83/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "13/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-e006",
+      "path": "Physical_Examination_Findings.Head_and_Neck_Examination.Inspection",
+      "text": "Normal appearance without asymmetry"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-e007",
+      "path": "Physical_Examination_Findings.Head_and_Neck_Examination.Palpation",
+      "text": "Pain and tenderness over mandibular and temporal regions, worsened with mouth movements"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-173-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-i004",
+      "path": "Test_Results.Inflammatory_Markers.ESR",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-i005",
+      "path": "Test_Results.Inflammatory_Markers.CRP",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-173-i006",
+      "path": "Test_Results.Imaging.TMJ_X-ray.Findings",
+      "text": "No structural abnormalities detected"
+    }
+  ],
+  "correct_diagnosis": "Temporomandibular joint dysfunction",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

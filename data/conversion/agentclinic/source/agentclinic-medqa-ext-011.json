@@ -1,0 +1,90 @@
+{
+  "case_id": "agentclinic-medqa-ext-011",
+  "source_row": 11,
+  "demographics_text": "45-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with rectal bleeding and a palpable rectal mass.",
+  "chief_complaint": "Rectal bleeding daily with bowel movements",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-011-p001",
+      "field": "History",
+      "text": "The patient reports a 2-week history of rectal bleeding occurring daily with bowel movements. She denies any pain with defecation and does not present with any other complaints."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-011-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No pain with defecation"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-011-p003",
+      "field": "Past_Medical_History",
+      "text": "The patient's past medical history is unremarkable except for 5 normal vaginal deliveries."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-011-p004",
+      "field": "Social_History",
+      "text": "Information not specified."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-011-p005",
+      "field": "Review_of_Systems",
+      "text": "The patient denies any changes in bowel habits, abdominal pain, weight loss, or other systemic symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-011-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98.1°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-011-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "115/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-011-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-011-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "15 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-011-e005",
+      "path": "Physical_Examination_Findings.Rectovaginal_Examination.Findings",
+      "text": "A palpable, non-tender, prolapsed mass that can be easily pushed back into the anal sphincter by the examiner's finger."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-011-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Normal range"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-011-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-011-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-011-i004",
+      "path": "Test_Results.Anoscopy.Findings",
+      "text": "Visualization of internal hemorrhoids"
+    }
+  ],
+  "correct_diagnosis": "Hemorrhoids",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

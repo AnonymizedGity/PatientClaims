@@ -1,0 +1,264 @@
+{
+  "case_id": "medqa-cs-024",
+  "source_case_id": 24,
+  "opening_scenario": "William Foreman, a 31-year-old male, came to his primary care physician complaining of heel pain.",
+  "doorway_vital_signs": [
+    "BP: 125/80 mmHg",
+    "Temp: 99.0°F (37.2°C)",
+    "RR: 14/minute",
+    "HR: 69/minute, regular"
+  ],
+  "sp_notes": [
+    "Pretend to have pain on the bottom of your right heel and into the arch of your right foot when the examinee extends your toes (moves them up).",
+    "Exhibit pain when the examinee palpates the arch of your right foot and the bottom of your right heel.",
+    "Give the appearance of pain with the first few steps you take after sitting."
+  ],
+  "challenging_questions": [
+    "\"Doctor, could you prescribe me some strong pain relief so I can keep running? I'm preparing for a marathon.\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What is the reason for your visit today?",
+    "answer": "Pain in the heel."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-024-p001",
+      "topic": "Location",
+      "question": "Can you specify the site of your pain?",
+      "answer": "The pain is most intense in my right heel."
+    },
+    {
+      "fact_id": "medqa-cs-024-p002",
+      "topic": "Onset",
+      "question": "When did the pain start?",
+      "answer": "It came on gradually over the past 2 weeks."
+    },
+    {
+      "fact_id": "medqa-cs-024-p003",
+      "topic": "Precipitating Events",
+      "question": "Can you recall any incidents where you might have injured your heel?",
+      "answer": "Not particularly, but I've been preparing for a marathon."
+    },
+    {
+      "fact_id": "medqa-cs-024-p004",
+      "topic": "Constant/Intermittent",
+      "question": "Has the pain been constant or intermittent?",
+      "answer": "Intermittent."
+    },
+    {
+      "fact_id": "medqa-cs-024-p005",
+      "topic": "Frequency and Intensity",
+      "question": "How frequently do you experience the pain? When is the pain worse?",
+      "answer": "It usually occurs every day. It seems to be worse in the morning."
+    },
+    {
+      "fact_id": "medqa-cs-024-p006",
+      "topic": "Time of Day",
+      "question": "When does it hurt most?",
+      "answer": "First thing in the morning or at the end of the day."
+    },
+    {
+      "fact_id": "medqa-cs-024-p007",
+      "topic": "Progression",
+      "question": "Has the pain gotten worse, stayed the same, or gotten better?",
+      "answer": "It has stayed about the same."
+    },
+    {
+      "fact_id": "medqa-cs-024-p008",
+      "topic": "Severity on a Scale",
+      "question": "On a 0 to 10 scale, with 0 being no pain and 10 being the worst pain imaginable, how would you rate your pain?",
+      "answer": "When it hurts, it can get up to a 7/10."
+    },
+    {
+      "fact_id": "medqa-cs-024-p009",
+      "topic": "Radiation",
+      "question": "Does your pain remain solely in your right heel, or does it spread to other areas?",
+      "answer": "Sometimes it extends into the arch of my foot."
+    },
+    {
+      "fact_id": "medqa-cs-024-p010",
+      "topic": "Quality",
+      "question": "How would you describe the pain?",
+      "answer": "Stretching/tearing pain."
+    },
+    {
+      "fact_id": "medqa-cs-024-p011",
+      "topic": "Burning, Tingling, Numbness",
+      "question": "Have you noticed any burning sensations? Any tingling? Any numbness?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p012",
+      "topic": "Alleviating Factors",
+      "question": "Does anything make the pain better?",
+      "answer": "Massaging the arch of my foot and applying ice."
+    },
+    {
+      "fact_id": "medqa-cs-024-p013",
+      "topic": "Exacerbating Factors",
+      "question": "Does anything make the pain worse?",
+      "answer": "Walking barefoot or walking after sitting for a prolonged period of time."
+    },
+    {
+      "fact_id": "medqa-cs-024-p014",
+      "topic": "Other Joint Pain",
+      "question": "Have you experienced any other joint discomfort?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p015",
+      "topic": "Previous Episodes of Similar Pain",
+      "question": "Have you ever had pain in your heel in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p016",
+      "topic": "Previous Injury to Your Feet or Ankles",
+      "question": "Have you ever had any injuries to your feet or ankles in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p017",
+      "topic": "Constitutional Symptoms",
+      "question": "Have you had any changes in appetite or weight? Any fevers or chills? Any fatigue?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p018",
+      "topic": "Current Medication",
+      "question": "Are you taking any medications? If so, which ones?",
+      "answer": "Occasionally I take ibuprofen for the pain."
+    },
+    {
+      "fact_id": "medqa-cs-024-p019",
+      "topic": "Past Medical History",
+      "question": "Do you have any other health issues?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p020",
+      "topic": "Past Surgical History",
+      "question": "Have you ever had surgery?",
+      "answer": "None."
+    },
+    {
+      "fact_id": "medqa-cs-024-p021",
+      "topic": "Family History",
+      "question": "Are there any medical issues in your family?",
+      "answer": "My father has arthritis."
+    },
+    {
+      "fact_id": "medqa-cs-024-p022",
+      "topic": "Occupation",
+      "question": "What is your occupation?",
+      "answer": "I work as an accountant."
+    },
+    {
+      "fact_id": "medqa-cs-024-p023",
+      "topic": "Exercise",
+      "question": "Do you exercise regularly? If so, what do you do?",
+      "answer": "Runner."
+    },
+    {
+      "fact_id": "medqa-cs-024-p024",
+      "topic": "Alcohol Use",
+      "question": "Some of these questions might be a little awkward, but please know that your responses will remain confidential. Do you consume alcohol? If yes, how much do you typically have?",
+      "answer": "I usually have about one to two beers each week."
+    },
+    {
+      "fact_id": "medqa-cs-024-p025",
+      "topic": "Illicit Drug Use",
+      "question": "Do you consume any illicit substances?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p026",
+      "topic": "Tobacco",
+      "question": "Do you use tobacco? If yes, how frequently?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-024-p027",
+      "topic": "Sexual Activity",
+      "question": "Are you sexually active?",
+      "answer": "I am sexually active with my wife of 10 years."
+    },
+    {
+      "fact_id": "medqa-cs-024-p028",
+      "topic": "Drug Allergies",
+      "question": "Do you have any allergies?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History\n\nHPI: A 31-year-old male complains of pain on the plantar surface of his right heel. The pain started about two weeks ago and has not progressed. The patient denies trauma or a specific inciting event but reports that he is training for a marathon. The pain is intermittent and worse after getting out of bed in the morning and after prolonged sitting. He reports that the pain has a tearing/stretching quality and that it can get as high as 7/10 in intensity. He has used ice, massages, and occasional ibuprofen for the pain, with limited relief. The patient denies any tingling, burning, or numbness. He denies proximally radiating symptoms but reports occasional pain radiating into his arch.\n\nROS: The patient denies weight and appetite changes, fever or chills, and fatigue.\n\nAllergies: NKDA.\n\nMedications: Occasional ibuprofen.\n\nPMH: None. The patient denies cancer, rheumatologic disorders, or diabetes.\n\nPSH: None.\n\nSH: The patient does not smoke and consumes 1-2 beers per week. They do not use illicit drugs. The patient works as an accountant and is sexually active with their wife of ten years. The patient is also a marathon runner.\n\nFH: The patient’s father has arthritis. The patient denies a family history of cancer, rheumatologic disorders, or diabetes.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-024-e001",
+      "source_text": "Patient is pleasant and in no acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-024-e002",
+      "source_text": "VS: Within normal limits (WNL)."
+    },
+    {
+      "exam_id": "medqa-cs-024-e003",
+      "source_text": "Chest: Clear to auscultation bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-024-e004",
+      "source_text": "Heart: Regular rate and rhythm (RRR); heart rate of 72 beats per minute (WNL); no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-024-e005",
+      "source_text": "Abdomen: Soft, nontender, nondistended, normal bowel sounds x 4."
+    },
+    {
+      "exam_id": "medqa-cs-024-e006",
+      "source_text": "Extremities:"
+    },
+    {
+      "exam_id": "medqa-cs-024-e007",
+      "source_text": "- Posterior tibialis and dorsalis pedis pulses 2+ bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-024-e008",
+      "source_text": "- Mild bilateral rearfoot pronation."
+    },
+    {
+      "exam_id": "medqa-cs-024-e009",
+      "source_text": "- Range of motion of hip/knee/ankle and foot WNL."
+    },
+    {
+      "exam_id": "medqa-cs-024-e010",
+      "source_text": "- Tender to palpation over medial calcaneal tuberosity and plantar fascia."
+    },
+    {
+      "exam_id": "medqa-cs-024-e011",
+      "source_text": "- Plantar heel and arch pain with dorsiflexion of toes."
+    },
+    {
+      "exam_id": "medqa-cs-024-e012",
+      "source_text": "Neuro:"
+    },
+    {
+      "exam_id": "medqa-cs-024-e013",
+      "source_text": "- Motor strength 5/5 in hip/knee/ankle and foot."
+    },
+    {
+      "exam_id": "medqa-cs-024-e014",
+      "source_text": "- Sensation intact to light touch in saphenous, sural, and deep/superficial peroneal nerve distributions (dermatomes L4-S1)."
+    },
+    {
+      "exam_id": "medqa-cs-024-e015",
+      "source_text": "- Deep tendon reflexes (DTRs): 1+ in Achilles tendon."
+    },
+    {
+      "exam_id": "medqa-cs-024-e016",
+      "source_text": "- Gait: Nonantalgic gait pattern."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Plantar fasciitis\nHistory Findings:\n- Training for a marathon\n- Tenderness over medial calcaneal tuberosity\n- Pain is gradual\n- Pain with toe dorsiflexion\n- Pain worsens with the first few steps in the morning and after prolonged sitting\n\nPhysical Exam Findings: \n- Tender to palpation over medial calcaneal tuberosity and plantar fascia\n- Plantar heel and arch pain with dorsiflexion of toes\n\nDiagnosis #2: Calcaneal stress fracture\nHistory Findings: \n- Training for a marathon\n- Tenderness over plantar heel and arch\n- Diffuse pain over heel\n- Refractory to conservative management\n\nPhysical Exam Findings:\n\nDiagnosis #3: Achilles tendinitis\nHistory Findings: \n- Training for a marathon\n\nPhysical Exam Findings: \n- Pain with toe dorsiflexion",
+  "gold_additional_diagnosis": "• Retrocalcaneal bursitis: Patients with this condition usually complain of posterior heel pain secondary to chronic irritation of the underlying bursae. The bursae are located between the posterior calcaneus and the Achilles tendon and between the Achilles tendon and the skin. The condition is commonly caused by ill-fitting footwear that has a poorly fitting, rigid heel cup. It can also be associated with Haglund deformity (a bony spur on the posterosuperior aspect of the calcaneus), which may exacerbate the condition. Conservative management includes analgesics, proper shoe wear, and heel padding.\n• Tarsal tunnel syndrome: The tarsal tunnel is on the medial aspect of the heel and is formed by the flexor retinaculum traversing over the talus and calcaneus. Compression of the tibial nerve in the tunnel can lead to pain, burning, tingling, or numbness that can radiate to the plantar heel and even to the distal sole and toes. Symptoms may be exacerbated by percussion of the tarsal tunnel or with dorsiflexion and eversion of the foot. Conservative management includes analgesics and correction of foot mechanics with orthotics.\n• Foreign body: If a foreign body is suspected, the foot should be inspected for signs of an entrance wound. The patient may or may not describe a mechanism of injury. Signs of local infection such as warmth, erythema, pain, induration, or a fluctuant mass should also be sought. Conservative management includes foreign body removal, topical antimicrobials, and appropriate dressing.\n• Ankle sprain: Ankle ligament injuries are the most common musculoskeletal injury, with the lateral collateral ligament complex most commonly involved. Patients typically describe an injury pattern consistent with \"rolling\" the ankle, often in the plantarflexed and inverted position. Examination reveals tenderness to palpation over the involved ligaments and increased laxity on stress testing. Significant edema and ecchymosis are often present in the acute/subacute stages. Conservative treatment involves rest, ice, compression, elevation, NSAIDs, and bracing.",
+  "raw_opening": "Opening Scenario:\n  \nWilliam Foreman, a 31-year-old male, came to his primary care physician complaining of heel pain.\n  \nVital Signs:\n  \nBP: 125/80 mmHg  \nTemp: 99.0°F (37.2°C)  \nRR: 14/minute  \nHR: 69/minute, regular\n  \nExaminee Tasks:\n  \n1. Take a focused history.  \n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exam).  \n3. Explain your clinical impression and workup plan to the patient.  \n4. Write the patient note after leaving the room.\n  \nChecklist/SP Sheet:\n  \nPatient Description:\n  \nPatient - a 31-year-old male.\n  \nNotes for the SP:\n  \n- Pretend to have pain on the bottom of your right heel and into the arch of your right foot when the examinee extends your toes (moves them up).\n- Exhibit pain when the examinee palpates the arch of your right foot and the bottom of your right heel.\n- Give the appearance of pain with the first few steps you take after sitting.\n  \nChallenging Questions to Ask:\n  \n\"Doctor, could you prescribe me some strong pain relief so I can keep running? I'm preparing for a marathon.\"\n  \nExaminee Response:\n  \n\"First, we need to do a complete evaluation to determine the cause of your pain. Then we can discuss the nature of your treatment.\"\n  \nExaminee Checklist:\n  \nEntrance:\n  \n- Examinee knocked on the door before entering.\n- Examinee made eye contact with the SP.\n- Examinee correctly used the patient's name.\n- Examinee introduced themselves by name.\n- Examinee identified their role or position.\n  \nThe patient may or may not describe a mechanism of injury. Signs of local infection such as warmth, erythema, pain, induration, or a fluctuant mass should also be sought. Conservative management includes foreign body removal, topical antimicrobials, and appropriate dressing.  \nAnkle sprain: Ankle ligament injuries are the most common musculoskeletal injury, with the lateral collateral ligament complex most commonly involved. Patients typically describe an injury pattern consistent with \"rolling\" the ankle, often in the plantarflex and inverted position. Examination reveals tenderness to palpation over the involved ligaments and increased laxity on stress testing. Significant edema and ecchymosis are often present in the acute/subacute stages. Conservative treatment involves rest, ice, compression, elevation, NSAIDs, and bracing.\n  \nReflective Listening:\n  \n- Examinee asked an open-ended question and actively listened to the response.\n- Examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- Examinee summarized the SP's concerns, often using the SP's own words.\n  \nInformation Gathering:\n  \n- Examinee elicited data efficiently and accurately.\n  \nConnecting With the Patient:\n  \n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\n\"Chief Complaint\":\nDoctor: \"What is the reason for your visit today?\"\nPatient: \"Pain in the heel.\"\n\n\"Location\":\nDoctor: \"Can you specify the site of your pain?\"\nPatient: \"The pain is most intense in my right heel.\"\n\n\"Onset\":\nDoctor: \"When did the pain start?\"\nPatient: \"It came on gradually over the past 2 weeks.\"\n\n\"Precipitating Events\":\nDoctor: \"Can you recall any incidents where you might have injured your heel?\"\nPatient: \"Not particularly, but I've been preparing for a marathon.\"\n\n\"Constant/Intermittent\":\nDoctor: \"Has the pain been constant or intermittent?\"\nPatient: \"Intermittent.\"\n\n\"Frequency and Intensity\":\nDoctor: \"How frequently do you experience the pain? When is the pain worse?\"\nPatient: \"It usually occurs every day. It seems to be worse in the morning.\"\n\n\"Time of Day\":\nDoctor: \"When does it hurt most?\"\nPatient: \"First thing in the morning or at the end of the day.\"\n\n\"Progression\":\nDoctor: \"Has the pain gotten worse, stayed the same, or gotten better?\"\nPatient: \"It has stayed about the same.\"\n\n\"Severity on a Scale\":\nDoctor: \"On a 0 to 10 scale, with 0 being no pain and 10 being the worst pain imaginable, how would you rate your pain?\"\nPatient: \"When it hurts, it can get up to a 7/10.\"\n\n\"Radiation\":\nDoctor: \"Does your pain remain solely in your right heel, or does it spread to other areas?\"\nPatient: \"Sometimes it extends into the arch of my foot.\"\n\n\"Quality\":\nDoctor: \"How would you describe the pain?\"\nPatient: \"Stretching/tearing pain.\"\n\n\"Burning, Tingling, Numbness\":\nDoctor: \"Have you noticed any burning sensations? Any tingling? Any numbness?\"\nPatient: \"No.\"\n\n\"Alleviating Factors\":\nDoctor: \"Does anything make the pain better?\"\nPatient: \"Massaging the arch of my foot and applying ice.\"\n\n\"Exacerbating Factors\":\nDoctor: \"Does anything make the pain worse?\"\nPatient: \"Walking barefoot or walking after sitting for a prolonged period of time.\"\n\n\"Other Joint Pain\":\nDoctor: \"Have you experienced any other joint discomfort?\"\nPatient: \"No.\"\n\n\"Previous Episodes of Similar Pain\":\nDoctor: \"Have you ever had pain in your heel in the past?\"\nPatient: \"No.\"\n\n\"Previous Injury to Your Feet or Ankles\":\nDoctor: \"Have you ever had any injuries to your feet or ankles in the past?\"\nPatient: \"No.\"\n\n\"Constitutional Symptoms\":\nDoctor: \"Have you had any changes in appetite or weight? Any fevers or chills? Any fatigue?\"\nPatient: \"No.\"\n\n\"Current Medication\":\nDoctor: \"Are you taking any medications? If so, which ones?\"\nPatient: \"Occasionally I take ibuprofen for the pain.\"\n\n\"Past Medical History\":\nDoctor: \"Do you have any other health issues?\"\nPatient: \"No.\"\n\n\"Past Surgical History\":\nDoctor: \"Have you ever had surgery?\"\nPatient: \"None.\"\n\n\"Family History\":\nDoctor: \"Are there any medical issues in your family?\"\nPatient: \"My father has arthritis.\"\n\n\"Occupation\":\nDoctor: \"What is your occupation?\"\nPatient: \"I work as an accountant.\"\n\n\"Exercise\":\nDoctor: \"Do you exercise regularly? If so, what do you do?\"\nPatient: \"Runner.\"\n\n\"Alcohol Use\":\nDoctor: \"Some of these questions might be a little awkward, but please know that your responses will remain confidential. Do you consume alcohol? If yes, how much do you typically have?\"\nPatient: \"I usually have about one to two beers each week.\"\n\n\"Illicit Drug Use\":\nDoctor: \"Do you consume any illicit substances?\"\nPatient: \"No.\"\n\n\"Tobacco\":\nDoctor: \"Do you use tobacco? If yes, how frequently?\"\nPatient: \"No.\"\n\n\"Sexual Activity\":\nDoctor: \"Are you sexually active?\"\nPatient: \"I am sexually active with my wife of 10 years.\"\n\n\"Drug Allergies\":\nDoctor: \"Do you have any allergies?\"\nPatient: \"No.\"\n\nPhysical Examination:\n\n- Examinee washed his/her hands.\n- Examinee asked for permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- CV exam: auscultation, distal pulses (posterior tibialis, dorsalis pedis), capillary refill of the toes.\n- Pulmonary exam: auscultation.\n- Abdominal exam: auscultation, palpation.\n- BD: extremities examination of both feet and ankles - non-weight bearing, weight bearing, and with ambulation. Palpation of medial calcaneal tuberosity, Achilles tendon, plantar fascia, retrocalcaneal bursae. Passive range of motion and general strength of ipsilateral knee and hip, ankle dorsiflexion, and great toe extension. Strength testing of ankle dorsiflexion and plantar flexion.\n- Neurologic exam: checked sensation to light touch for dermatomes of foot and ankle; assessed Achilles tendon reflex.\n\nSample Closure:\n\n\"Mr. Foreman, the probable reason for your heel pain is plantar fasciitis, the leading cause of discomfort at the heel's underside.. It usually resolves within a few months through conservative measures such as stretching, massage, nonsteroidal anti-inflammatory drugs (NSAIDs), and avoiding activities that cause pain.. I would highly suggest that you decrease the amount of running you do and avoid walking barefoot on hard surfaces until this improves. We will get an X-ray today to help confirm that there is no obvious fracture or foreign body and to look for possible bone spurs. After confirming the diagnosis, I can refer you to physical therapy to initiate your recovery process.. If your symptoms are not responsive to this treatment over the next 2 months, we may consider a bone scan to rule out a stress fracture. Do you have any questions for me?\"\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans.\n- Follow-up tests: X-ray of right ankle.\n- Examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory\n\nHPI: A 31-year-old male complains of pain on the plantar surface of his right heel. The pain started about two weeks ago and has not progressed. The patient denies trauma or a specific inciting event but reports that he is training for a marathon. The pain is intermittent and worse after getting out of bed in the morning and after prolonged sitting. He reports that the pain has a tearing/stretching quality and that it can get as high as 7/10 in intensity. He has used ice, massages, and occasional ibuprofen for the pain, with limited relief. The patient denies any tingling, burning, or numbness. He denies proximally radiating symptoms but reports occasional pain radiating into his arch.\n\nROS: The patient denies weight and appetite changes, fever or chills, and fatigue.\n\nAllergies: NKDA.\n\nMedications: Occasional ibuprofen.\n\nPMH: None. The patient denies cancer, rheumatologic disorders, or diabetes.\n\nPSH: None.\n\nSH: The patient does not smoke and consumes 1-2 beers per week. They do not use illicit drugs. The patient works as an accountant and is sexually active with their wife of ten years. The patient is also a marathon runner.\n\nFH: The patient’s father has arthritis. The patient denies a family history of cancer, rheumatologic disorders, or diabetes.\n\nPhysical Examination:\n\nPatient is pleasant and in no acute distress.\n\nVS: Within normal limits (WNL).\n\nChest: Clear to auscultation bilaterally.\n\nHeart: Regular rate and rhythm (RRR); heart rate of 72 beats per minute (WNL); no murmurs, rubs, or gallops.\n\nAbdomen: Soft, nontender, nondistended, normal bowel sounds x 4.\n\nExtremities: \n- Posterior tibialis and dorsalis pedis pulses 2+ bilaterally.\n- Mild bilateral rearfoot pronation.\n- Range of motion of hip/knee/ankle and foot WNL.\n- Tender to palpation over medial calcaneal tuberosity and plantar fascia.\n- Plantar heel and arch pain with dorsiflexion of toes.\n\nNeuro: \n- Motor strength 5/5 in hip/knee/ankle and foot.\n- Sensation intact to light touch in saphenous, sural, and deep/superficial peroneal nerve distributions (dermatomes L4-S1).\n- Deep tendon reflexes (DTRs): 1+ in Achilles tendon.\n- Gait: Nonantalgic gait pattern."
+}

@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-015",
+  "source_row": 15,
+  "demographics_text": "22-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with progressive swelling and pain in the right ring finger.",
+  "chief_complaint": "Progressive swelling and pain in the right ring finger",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-015-p001",
+      "field": "History",
+      "text": "The patient reports that the pain and swelling in his right ring finger began 2 days ago while playing football. He recalls his finger got caught in the jersey of another player, who then pulled away forcefully."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-015-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Inability to flex the right ring finger at the distal interphalangeal joint when making a fist"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-015-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Pain at the distal interphalangeal joint"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-015-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Extended right ring finger in resting position"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-015-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-015-p006",
+      "field": "Social_History",
+      "text": "Student and active in sports, particularly football. Non-smoker and drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-015-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, numbness, or tingling in the affected finger."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e005",
+      "path": "Physical_Examination_Findings.Hand_Examination.Inspection",
+      "text": "Right ring finger is extended, with visible swelling at the distal interphalangeal joint."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e006",
+      "path": "Physical_Examination_Findings.Hand_Examination.Palpation",
+      "text": "Tenderness localized at the distal interphalangeal joint of the right ring finger."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e007",
+      "path": "Physical_Examination_Findings.Hand_Examination.Range_of_Motion",
+      "text": "Patient unable to flex the right ring finger at the distal interphalangeal joint while attempting to make a fist. No joint laxity."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-e008",
+      "path": "Physical_Examination_Findings.Hand_Examination.Neurovascular_Assessment",
+      "text": "Normal capillary refill, no sensory deficits."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-015-i001",
+      "path": "Test_Results.X-ray_of_the_Right_Hand.Findings",
+      "text": "No bone fractures or dislocations visible. Soft tissue swelling noted around the distal interphalangeal joint of the right ring finger."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-015-i002",
+      "path": "Test_Results.MRI_of_the_Right_Hand.Preliminary_Findings",
+      "text": "Expected to show details regarding the integrity of tendons."
+    }
+  ],
+  "correct_diagnosis": "Rupture of the flexor digitorum profundus tendon at its point of insertion",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

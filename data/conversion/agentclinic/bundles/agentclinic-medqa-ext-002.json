@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-002", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 35, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "difficulty walking", "aliases": ["unsteady walking", "drunken gait", "gait ataxia"], "text": "I've recently started having trouble walking. People around me say I look drunk when I walk.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "clumsy, uncoordinated movements", "aliases": ["clumsiness", "poor coordination", "limb ataxia"], "text": "My movements feel clumsy and uncoordinated.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "arm weakness", "aliases": ["weakness in the arm"], "text": "My right arm has less strength than it should.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "Crohn disease", "aliases": ["Crohn's disease", "Crohn's"], "text": "I have Crohn's disease.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f005", "item": "Crohn disease: when diagnosed", "parent": "f004", "attribute": "onset", "text": "It was diagnosed 2 years ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "Crohn disease: worsening", "parent": "f004", "attribute": "course", "text": "It has gotten more severe over time.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "Crohn disease: resistance to standard treatments", "parent": "f004", "attribute": "treatment_response", "text": "It hasn't responded to the standard treatments.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "Crohn disease: follow-up visit", "parent": "f004", "attribute": "other", "text": "I'm here today for a follow-up visit for my Crohn's disease.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "natalizumab", "aliases": ["Tysabri"], "text": "I've been taking natalizumab for my Crohn's for the past year.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "other symptoms", "text": "I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-002",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "Normothermic."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Within normal range."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Within normal range."},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Within normal range."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "gait", "aliases": ["gait assessment", "gait examination", "walking"], "result": "Ataxic gait."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "arm strength"], "result": "Right upper limb strength 4/5."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["coordination tests", "finger-to-nose test", "heel-to-shin test", "cerebellar examination"], "result": "Evidence of ataxia."},
+      {"id": "x008", "kind": "test", "name": "MRI of the brain", "aliases": ["brain MRI", "MRI head", "cranial MRI"], "result": "Multifocal demyelinating lesions on T1/T2 images without gadolinium enhancement, consistent with progressive multifocal leukoencephalopathy (PML)."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-002",
+    "diagnosis": "Progressive multifocal leukoencephalopathy (PML)",
+    "aliases": ["PML", "progressive multifocal leukoencephalopathy", "progressive multifocal encephalopathy", "natalizumab-associated PML", "natalizumab-associated progressive multifocal leukoencephalopathy"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-002",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-002-p001", "agentclinic-medqa-ext-002-p002"], "f002": ["agentclinic-medqa-ext-002-p003"],
+      "f003": ["agentclinic-medqa-ext-002-p004"], "f004": ["agentclinic-medqa-ext-002-p001", "agentclinic-medqa-ext-002-p005"],
+      "f005": ["agentclinic-medqa-ext-002-p001", "agentclinic-medqa-ext-002-p005"], "f006": ["agentclinic-medqa-ext-002-p001"],
+      "f007": ["agentclinic-medqa-ext-002-p001"], "f008": ["agentclinic-medqa-ext-002-p001"],
+      "f009": ["agentclinic-medqa-ext-002-p001", "agentclinic-medqa-ext-002-p005"], "f010": ["agentclinic-medqa-ext-002-p007"]
+    },
+    "quotes": {
+      "f001": "new-onset difficulty walking, described by her peers as 'appearing drunk'", "f002": "Limb ataxia",
+      "f003": "Reduced strength in the right upper limb", "f005": "Crohn disease diagnosed 2 years ago",
+      "f006": "escalated in severity", "f007": "failing to respond to standard therapies",
+      "f008": "presents for a follow-up regarding her Crohn disease", "f009": "She has been on natalizumab for the past year",
+      "f010": "No additional symptoms provided."
+    },
+    "flags": {
+      "f002": ["The source lists 'Limb ataxia' as a secondary symptom; it is mainly an examination sign (see x007). Kept as patient-experienced clumsiness; the source does not say which limbs."],
+      "f010": ["From the ROS line 'No additional symptoms provided.', read as a negative review of systems (CONVERSION.md treats 'No ... provided' meta phrases as denials when they carry that meaning)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "Normothermic", "exam_ids": ["agentclinic-medqa-ext-002-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "Within normal range", "exam_ids": ["agentclinic-medqa-ext-002-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "Within normal range", "exam_ids": ["agentclinic-medqa-ext-002-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Within normal range", "exam_ids": ["agentclinic-medqa-ext-002-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Gait_Assessment", "source_text": "Ataxic gait noted.", "exam_ids": ["agentclinic-medqa-ext-002-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Limb_Examination.Right_Upper_Limb_Strength", "source_text": "4/5", "exam_ids": ["agentclinic-medqa-ext-002-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Coordination_Tests", "source_text": "Evidence of ataxia.", "exam_ids": ["agentclinic-medqa-ext-002-e007"]},
+      "x008": {"source": "Test_Results.MRI_Brain.Findings + Test_Results.MRI_Brain.Comments", "source_text": "Lesions consistent with Progressive Multifocal Encephalopathy (PML). + T1/T2 images showing multifocal demyelinating lesions without gadolinium enhancement, indicative of PML.", "exam_ids": ["agentclinic-medqa-ext-002-i001", "agentclinic-medqa-ext-002-i002"]}
+    },
+    "finding_flags": {
+      "x008": ["The two MRI leaves (Findings, Comments) are one study and are merged; the source's 'Encephalopathy' is corrected to 'leukoencephalopathy' (see source_issues)."]
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The MRI result names the diagnosis (PML). This is the test's answer; the finding name does not reveal it."}
+    ],
+    "source_issues": [
+      "The gold label and the MRI finding read 'Progressive multifocal encephalopathy'; the disease (and the abbreviation PML) is progressive multifocal leukoencephalopathy. Fixed as an obvious typo in gold.diagnosis and in the MRI result; the source wording is kept as a gold alias.",
+      "Diagnosis text is visible in Test_Results (pool flag visible_gold_alias_partitions = test_results): the MRI leaves name PML.",
+      "Vital signs are given only qualitatively ('Normothermic', 'Within normal range')."
+    ],
+    "notes": [
+      "'Gait ataxia' (p002) merges with the chief complaint of difficulty walking with a 'drunken gait' (f001).",
+      "The visit is a Crohn disease follow-up (f008); the opening is the new walking problem from the chief complaint.",
+      "Crohn disease details (diagnosed 2 years ago, worsening, not responding to standard therapy) are children of f004; natalizumab is a separate medication fact.",
+      "Social history 'Information not provided.' carries no meaning and is excluded. The ROS line 'No additional symptoms provided.' is kept as a denial of other symptoms (f010).",
+      "check_coverage warns that the gold diagnosis differs from the source label. The change is deliberate: the obvious typo 'encephalopathy' is corrected to 'leukoencephalopathy' (see source_issues)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with gait and limb ataxia, and a significant medical history."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-002-p006", "reason": "'Information not provided.' states that social history is missing; it is not a denial of anything."}
+    ]
+  }
+}

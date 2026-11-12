@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-016",
+  "source_row": 16,
+  "demographics_text": "50-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a neck swelling.",
+  "chief_complaint": "Progressively increasing swelling on the nape of neck for 2 months",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-016-p001",
+      "field": "History",
+      "text": "The patient reports a progressively increasing swelling on the nape of his neck for 2 months. He denies having a fever, pain, or any discharge from the swelling. He mentions a history of colon cancer for which he underwent colectomy at the age of 43. He also has a history of type 2 diabetes mellitus, hypertension, and osteoarthritis of the left knee. He takes insulin glargine, metformin, enalapril, and naproxen."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-016-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-016-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No discharge"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-016-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No pain associated with the swelling"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-016-p005",
+      "field": "Past_Medical_History",
+      "text": "Colon cancer (colectomy performed), type 2 diabetes mellitus, hypertension, osteoarthritis of the left knee."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-016-p006",
+      "field": "Social_History",
+      "text": "Works as a traffic warden, frequently plays golf."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-016-p007",
+      "field": "Review_of_Systems",
+      "text": "Overall healthy appearance, no other complaints or symptoms noted."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.3°C (99.1°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/86 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "88/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e005",
+      "path": "Physical_Examination_Findings.Neck_Examination.Inspection_and_Palpation",
+      "text": "A 2.5-cm (1-in) firm, mobile, painless nodule on the nape of the neck. The skin over the nodule cannot be pinched."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e006",
+      "path": "Physical_Examination_Findings.Neck_Examination.Other_Findings",
+      "text": "No lymphadenopathy or thyromegaly."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e007",
+      "path": "Physical_Examination_Findings.Lung_Examination.Auscultation",
+      "text": "Clear lungs bilaterally, no rales, rhonchi, or wheezes."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-e008",
+      "path": "Physical_Examination_Findings.Remainder_of_the_Examination.Findings",
+      "text": "No abnormalities"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-016-i001",
+      "path": "Test_Results.Imaging.Ultrasound_of_the_Neck.Findings",
+      "text": "Well-circumscribed lesion in the subcutaneous tissue suggestive of a cystic nature."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-i002",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-i003",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-i004",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-i005",
+      "path": "Test_Results.Serum_Chemistry.Glucose",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-i006",
+      "path": "Test_Results.Serum_Chemistry.Creatinine",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-016-i007",
+      "path": "Test_Results.Serum_Chemistry.Liver_Enzymes",
+      "text": "Normal"
+    }
+  ],
+  "correct_diagnosis": "Epidermoid cyst",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

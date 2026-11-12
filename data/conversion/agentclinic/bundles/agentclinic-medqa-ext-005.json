@@ -1,0 +1,120 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-005",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 62, "sex": "female"},
+    "opening": ["f001", "f002", "f003"],
+    "facts": [
+      {"id": "f001", "item": "tiredness", "aliases": ["fatigue", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "flank pain", "aliases": ["side pain", "pain in the side"], "text": "I have pain in my flank, along my side.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f003", "item": "fever", "aliases": ["high temperature"], "text": "I've had a fever that won't go away.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "symptoms continuing after the sinus infection", "text": "The tiredness, side pain and fever have kept going even though the sinusitis got better.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "acute sinusitis", "aliases": ["sinus infection"], "text": "I had acute sinusitis.", "polarity": "present", "category": "medical_history", "time": "resolved"},
+      {"id": "f006", "item": "amoxicillin", "text": "I was first treated with amoxicillin for the sinusitis, for 12 days.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f007", "item": "cephalexin", "aliases": ["Keflex"], "text": "Then my antibiotic was changed to cephalexin for another week.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f008", "item": "skin rash", "aliases": ["rash"], "text": "I got a skin rash while I was taking the amoxicillin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "resolved"},
+      {"id": "f009", "item": "skin rash: course", "parent": "f008", "attribute": "course", "text": "It went away after the antibiotic was changed to cephalexin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "resolved"},
+      {"id": "f010", "item": "high blood pressure", "aliases": ["hypertension", "essential hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "high cholesterol", "aliases": ["hyperlipidemia"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "acid reflux", "aliases": ["gastric reflux", "GERD", "heartburn"], "text": "I have acid reflux.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "lisinopril", "text": "I take lisinopril; it's been the same regimen for a while.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "simvastatin", "text": "I take simvastatin; it's been the same regimen for a while.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "omeprazole", "text": "I take omeprazole; it's been the same regimen for a while.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a retired school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f019", "item": "nausea", "aliases": ["feeling sick"], "text": "I haven't felt nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f020", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f021", "item": "burning or pain when urinating", "aliases": ["dysuria", "painful urination"], "text": "It doesn't burn or hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f022", "item": "change in urine color", "aliases": ["dark urine"], "text": "I haven't noticed any recent change in the color of my urine.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-005",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.9°C (100.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "145/90 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "75/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "rash"], "result": "No current rash or lesions."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "heart examination", "aliases": ["cardiac examination", "heart auscultation", "cardiovascular examination"], "result": "Regular heart rate; no murmurs."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation"], "result": "Mild flank tenderness; no rebound or guarding."},
+      {"id": "x008", "kind": "exam", "system": "genitourinary", "name": "costovertebral angle tenderness", "aliases": ["CVA tenderness", "renal angle percussion", "renal angles", "kidney punch"], "result": "Mild tenderness on percussion."},
+      {"id": "x009", "kind": "test", "name": "kidney function tests", "aliases": ["renal function tests", "urea", "blood urea nitrogen", "BUN", "creatinine", "serum creatinine", "serum biochemistry"], "result": "Urea elevated; creatinine elevated."},
+      {"id": "x010", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine dipstick", "leukocytes in urine", "urine white cells"], "result": "Leukocyturia present."},
+      {"id": "x011", "kind": "test", "name": "urine culture", "aliases": ["urine bacterial culture"], "result": "Negative."},
+      {"id": "x012", "kind": "test", "name": "urine cytospin with Hansel stain", "aliases": ["urine eosinophils", "Hansel stain", "urine cytology"], "result": "3% binucleated cells with eosinophilic, granular cytoplasm."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-005",
+    "diagnosis": "Acute interstitial nephritis",
+    "aliases": ["AIN", "acute tubulointerstitial nephritis", "ATIN", "drug-induced acute interstitial nephritis", "antibiotic-induced acute interstitial nephritis", "acute allergic interstitial nephritis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-005",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-005-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-005-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-005-p001"],
+      "f004": ["agentclinic-medqa-ext-005-p001", "agentclinic-medqa-ext-005-p003"],
+      "f005": ["agentclinic-medqa-ext-005-p001", "agentclinic-medqa-ext-005-p003"],
+      "f006": ["agentclinic-medqa-ext-005-p001"],
+      "f007": ["agentclinic-medqa-ext-005-p001"],
+      "f008": ["agentclinic-medqa-ext-005-p001", "agentclinic-medqa-ext-005-p002", "agentclinic-medqa-ext-005-p006"],
+      "f009": ["agentclinic-medqa-ext-005-p001", "agentclinic-medqa-ext-005-p006"],
+      "f010": ["agentclinic-medqa-ext-005-p001", "agentclinic-medqa-ext-005-p004"],
+      "f011": ["agentclinic-medqa-ext-005-p001", "agentclinic-medqa-ext-005-p004"],
+      "f012": ["agentclinic-medqa-ext-005-p001", "agentclinic-medqa-ext-005-p004"],
+      "f013": ["agentclinic-medqa-ext-005-p001"],
+      "f014": ["agentclinic-medqa-ext-005-p001"],
+      "f015": ["agentclinic-medqa-ext-005-p001"],
+      "f016": ["agentclinic-medqa-ext-005-p005"],
+      "f017": ["agentclinic-medqa-ext-005-p005"],
+      "f018": ["agentclinic-medqa-ext-005-p005"],
+      "f019": ["agentclinic-medqa-ext-005-p006"],
+      "f020": ["agentclinic-medqa-ext-005-p006"],
+      "f021": ["agentclinic-medqa-ext-005-p006"],
+      "f022": ["agentclinic-medqa-ext-005-p006"]
+    },
+    "quotes": {
+      "f003": "a persistent fever",
+      "f004": "these symptoms have continued despite the resolution of her sinusitis symptoms",
+      "f005": "acute sinusitis",
+      "f006": "initially treated with amoxicillin for acute sinusitis for 12 days",
+      "f007": "changed to cephalexin for an additional week",
+      "f008": "during which she developed a rash",
+      "f009": "changed to cephalexin for an additional week, and the rash resolved",
+      "f013": "stable regimen of lisinopril",
+      "f014": "simvastatin",
+      "f015": "omeprazole",
+      "f017": "drinks alcohol socially",
+      "f018": "retired school teacher",
+      "f021": "dysuria",
+      "f022": "recent changes in urine color"
+    },
+    "flags": {
+      "f007": ["The source does not state why the antibiotic was changed; the rash is the implied reason but is not written into the fact."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.9°C (100.2°F)", "exam_ids": ["agentclinic-medqa-ext-005-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "145/90 mmHg", "exam_ids": ["agentclinic-medqa-ext-005-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "75 bpm", "exam_ids": ["agentclinic-medqa-ext-005-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-005-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Skin", "source_text": "No current rash or lesions", "exam_ids": ["agentclinic-medqa-ext-005-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Cardiovascular", "source_text": "Regular heart rate, no murmurs", "exam_ids": ["agentclinic-medqa-ext-005-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Abdomen", "source_text": "Mild flank tenderness, no rebound or guarding", "exam_ids": ["agentclinic-medqa-ext-005-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.General_Examination.Renal_Angles", "source_text": "Mild tenderness on percussion", "exam_ids": ["agentclinic-medqa-ext-005-e008"]},
+      "x009": {"source": "Test_Results.Serum_Biochemistry.Urea + Test_Results.Serum_Biochemistry.Creatinine", "source_text": "Elevated + Elevated", "exam_ids": ["agentclinic-medqa-ext-005-i001", "agentclinic-medqa-ext-005-i002"]},
+      "x010": {"source": "Test_Results.Urinalysis.Leukocyturia", "source_text": "Present", "exam_ids": ["agentclinic-medqa-ext-005-i003"]},
+      "x011": {"source": "Test_Results.Urinalysis.Bacterial_Culture", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-005-i004"]},
+      "x012": {"source": "Test_Results.Urinalysis.Cytospin_Stained_With_Hansel’s_Solution", "source_text": "3% binucleated cells with eosinophilic, granular cytoplasm", "exam_ids": ["agentclinic-medqa-ext-005-i005"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": ["The chief complaint names three complaints (fatigue, flank pain, fever); all three open the case.", "Persistence of the symptoms after the sinusitis resolved (History and p003) is one standalone fact (f004), since it covers all three complaints; the sinusitis itself is a resolved medical-history fact (f005).", "The rash (History, p002, ROS 'resolved skin rash') is one symptom fact with a course child for its resolution.", "'Stable regimen' is kept on each of the three regular medicines. Urea and creatinine form one kidney-function record; urine culture and the Hansel-stained cytospin, filed under Urinalysis in the source, are separate orders.", "Fixes: f006 alias 'antibiotics' removed; f007 alias 'antibiotics' removed."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, flank pain, and fever after recent antibiotic treatment for acute sinusitis."
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "case_id": "agentclinic-medqa-ext-058",
+  "source_row": 58,
+  "demographics_text": "65-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, weight loss, and jaundice.",
+  "chief_complaint": "Fatigue",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-058-p001",
+      "field": "History",
+      "text": "The patient complains of persistent fatigue and reports poor sleep quality. He mentions adopting a vegetarian diet in recent months to improve his energy levels but hasn't noticed significant benefits. The patient reports losing weight without trying over the last month."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-058-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Poor sleep quality"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-058-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Unintentional weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-058-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Jaundice"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-058-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-058-p006",
+      "field": "Social_History",
+      "text": "Smokes 1 pack of cigarettes per day and consumes 5 alcoholic beverages per day."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-058-p007",
+      "field": "Review_of_Systems",
+      "text": "The patient does not report any fever, abdominal pain, or changes in bowel habits."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "80 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e005",
+      "path": "Physical_Examination_Findings.General_Appearance.Mental_Status",
+      "text": "Alert and oriented"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e006",
+      "path": "Physical_Examination_Findings.General_Appearance.Skin",
+      "text": "Icteric skin and sclera observed"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible distension."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Resonant throughout abdominal quadrants."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-e010",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "No palpable mass or tenderness. No hepatomegaly or splenomegaly was noted. Enlarged gallbladder without tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i001",
+      "path": "Test_Results.Blood_Tests.Liver_Function_Tests.AST",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i002",
+      "path": "Test_Results.Blood_Tests.Liver_Function_Tests.ALT",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i003",
+      "path": "Test_Results.Blood_Tests.Liver_Function_Tests.ALP",
+      "text": "Significantly elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i004",
+      "path": "Test_Results.Blood_Tests.Liver_Function_Tests.Bilirubin",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i005",
+      "path": "Test_Results.Blood_Tests.CBC.WBC",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i006",
+      "path": "Test_Results.Blood_Tests.CBC.Hemoglobin",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i007",
+      "path": "Test_Results.Blood_Tests.CBC.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i008",
+      "path": "Test_Results.Urine_Analysis.Appearance",
+      "text": "Amber colored"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i009",
+      "path": "Test_Results.Urine_Analysis.Bilirubin",
+      "text": "Positive"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-058-i010",
+      "path": "Test_Results.Imaging.Ultrasound_Abdomen.Findings",
+      "text": "Enlarged, thin-walled gallbladder. No evident stones."
+    }
+  ],
+  "correct_diagnosis": "Pancreatic adenocarcinoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

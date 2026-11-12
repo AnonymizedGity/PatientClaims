@@ -1,0 +1,55 @@
+{
+ "case_id": "mcr-test-11154",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I have a dry cough.",
+   "I've been short of breath.",
+   "I've had a fever.",
+   "I've had chills.",
+   "The symptoms began about two weeks after I started taking Sai-rei-to.",
+   "Both of my lower legs are swollen.",
+   "I started a herbal medicine called Sai-rei-to 25 days ago.",
+   "I have chronic kidney disease."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm an 88-year-old man with chronic kidney disease. I started a herbal medicine called Sai-rei-to 25 days ago, and about two weeks after that, my symptoms began. I have a dry cough, I've been short of breath, and I've had a fever and chills. Also, both of my lower legs are swollen.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f004",
+    "f005",
+    "f006",
+    "f014",
+    "f007",
+    "f013"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3381,
+   "tokens_out": 86,
+   "seconds": 5.95,
+   "redrafts": 0
+  }
+ }
+}

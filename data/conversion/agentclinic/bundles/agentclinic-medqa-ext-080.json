@@ -1,0 +1,116 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-080",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 22, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["temperature", "feeling hot"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "headache", "text": "I have a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "loss of appetite", "aliases": ["anorexia", "not hungry", "poor appetite"], "text": "I've lost my appetite.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "feeling unwell", "aliases": ["malaise", "feeling run down"], "text": "I've been feeling generally unwell.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "how the symptoms started", "aliases": ["onset", "sudden onset"], "text": "All of this came on suddenly.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "food eaten before getting sick", "aliases": ["ice cream", "dairy", "recent meals", "food exposure"], "text": "I ate ice cream 3 days before I got sick.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "pregnancy", "aliases": ["pregnant", "how far along"], "text": "I'm pregnant, at 30 weeks.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "other medical problems", "aliases": ["past medical history", "chronic medical problems"], "text": "Apart from the pregnancy, my medical history is unremarkable.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "allergies", "aliases": ["drug allergies"], "text": "I don't have any known allergies.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "recent travel", "aliases": ["travel", "trip"], "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "sick contacts", "aliases": ["contact with sick people"], "text": "I haven't been in contact with anyone who's sick.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f016", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f017", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I don't have any belly pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f018", "item": "diarrhea", "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f019", "item": "urinary symptoms", "aliases": ["burning when urinating", "peeing more often", "urinary problems"], "text": "I haven't had any problems with urination.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f020", "item": "last menstrual period", "text": "I haven't had a period since I became pregnant; I'm 30 weeks pregnant now.", "polarity": "present", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-080",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "38.5°C (101.3°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/70 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "88/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "obstetric examination", "aliases": ["abdominal examination", "fetal heart sounds", "fetal heart rate", "fundal height", "uterine palpation"], "result": "Inspection: no abdominal distention apart from pregnancy; auscultation: fetal heart sounds present; palpation: no uterine tenderness, fundal height appropriate for gestational age."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["orientation", "level of consciousness"], "result": "Alert and oriented, but appears fatigued."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Grossly intact."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["motor examination", "muscle strength", "power"], "result": "No motor deficits."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "No sensory deficits."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal deep tendon reflexes."},
+      {"id": "x011", "kind": "test", "name": "blood cultures", "aliases": ["blood culture", "Gram stain"], "result": "Gram-positive rods that are catalase-positive and show distinctive tumbling motility in liquid medium."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets"], "result": "WBC 15,000/μL (elevated); hemoglobin 12.5 g/dL; platelets 200,000/μL."},
+      {"id": "x013", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "hepatic panel", "AST", "ALT", "bilirubin"], "result": "AST within normal limits; ALT within normal limits; bilirubin within normal limits."},
+      {"id": "x014", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine dipstick", "urine microscopy"], "result": "Appearance clear; WBC 0-5/HPF; RBC 0-2/HPF; protein negative; glucose negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-080",
+    "diagnosis": "Listeriosis",
+    "aliases": ["Listeria infection", "Listeria monocytogenes infection", "Listeria bacteremia", "listerial bacteremia", "Listeria sepsis", "listeriosis in pregnancy", "maternal listeriosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-080",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-080-p001"],
+      "f002": ["agentclinic-medqa-ext-080-p001", "agentclinic-medqa-ext-080-p002"],
+      "f003": ["agentclinic-medqa-ext-080-p001", "agentclinic-medqa-ext-080-p003"],
+      "f004": ["agentclinic-medqa-ext-080-p001", "agentclinic-medqa-ext-080-p004"],
+      "f005": ["agentclinic-medqa-ext-080-p001", "agentclinic-medqa-ext-080-p005"],
+      "f006": ["agentclinic-medqa-ext-080-p001"],
+      "f007": ["agentclinic-medqa-ext-080-p001"],
+      "f008": ["agentclinic-medqa-ext-080-p006"],
+      "f009": ["agentclinic-medqa-ext-080-p006"],
+      "f010": ["agentclinic-medqa-ext-080-p007"],
+      "f011": ["agentclinic-medqa-ext-080-p007"],
+      "f012": ["agentclinic-medqa-ext-080-p007"],
+      "f013": ["agentclinic-medqa-ext-080-p007"],
+      "f014": ["agentclinic-medqa-ext-080-p007"],
+      "f015": ["agentclinic-medqa-ext-080-p008"],
+      "f016": ["agentclinic-medqa-ext-080-p008"],
+      "f017": ["agentclinic-medqa-ext-080-p008"],
+      "f018": ["agentclinic-medqa-ext-080-p008"],
+      "f019": ["agentclinic-medqa-ext-080-p008"],
+      "f020": ["agentclinic-medqa-ext-080-p006"]
+    },
+    "quotes": {
+      "f003": "Anorexia",
+      "f005": "malaise",
+      "f006": "a sudden onset of fever, headache, anorexia, fatigue, and malaise",
+      "f007": "consumption of ice cream 3 days prior to the onset of symptoms",
+      "f008": "currently pregnant, at her 30th week of gestation",
+      "f009": "Unremarkable.",
+      "f010": "No known allergies.",
+      "f014": "contact with sick individuals",
+      "f016": "shortness of breath",
+      "f019": "urinary symptoms"
+    },
+    "flags": {
+      "f020": ["Split off from f008, whose text was the only record of it (fix)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "38.5°C (101.3°F)", "exam_ids": ["agentclinic-medqa-ext-080-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/70 mmHg", "exam_ids": ["agentclinic-medqa-ext-080-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "88 bpm", "exam_ids": ["agentclinic-medqa-ext-080-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-080-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Obstetric_Examination.Inspection + Physical_Examination_Findings.Obstetric_Examination.Auscultation + Physical_Examination_Findings.Obstetric_Examination.Palpation", "source_text": "No abdominal distention apart from pregnancy. | Fetal heart sounds present. | No uterine tenderness. Fundal height appropriate for gestational age.", "exam_ids": ["agentclinic-medqa-ext-080-e005", "agentclinic-medqa-ext-080-e006", "agentclinic-medqa-ext-080-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Alert and oriented, but appears fatigued.", "exam_ids": ["agentclinic-medqa-ext-080-e008"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Grossly intact.", "exam_ids": ["agentclinic-medqa-ext-080-e009"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor", "source_text": "No motor deficits noted.", "exam_ids": ["agentclinic-medqa-ext-080-e010"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory", "source_text": "No sensory deficits noted.", "exam_ids": ["agentclinic-medqa-ext-080-e011"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal deep tendon reflexes.", "exam_ids": ["agentclinic-medqa-ext-080-e012"]},
+      "x011": {"source": "Test_Results.Blood_Cultures.Findings", "source_text": "Gram-positive rods that are catalase-positive and show distinctive tumbling motility in the liquid medium.", "exam_ids": ["agentclinic-medqa-ext-080-i001"]},
+      "x012": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "15,000 /μL (elevated) | 12.5 g/dL | 200,000 /μL", "exam_ids": ["agentclinic-medqa-ext-080-i002", "agentclinic-medqa-ext-080-i003", "agentclinic-medqa-ext-080-i004"]},
+      "x013": {"source": "Test_Results.Liver_Function_Tests.AST + Test_Results.Liver_Function_Tests.ALT + Test_Results.Liver_Function_Tests.Bilirubin", "source_text": "Within normal limits | Within normal limits | Within normal limits", "exam_ids": ["agentclinic-medqa-ext-080-i005", "agentclinic-medqa-ext-080-i006", "agentclinic-medqa-ext-080-i007"]},
+      "x014": {"source": "Test_Results.Urinalysis.Appearance + Test_Results.Urinalysis.WBC + Test_Results.Urinalysis.RBC + Test_Results.Urinalysis.Protein + Test_Results.Urinalysis.Glucose", "source_text": "Clear | 0-5 /HPF | 0-2 /HPF | Negative | Negative", "exam_ids": ["agentclinic-medqa-ext-080-i008", "agentclinic-medqa-ext-080-i009", "agentclinic-medqa-ext-080-i010", "agentclinic-medqa-ext-080-i011", "agentclinic-medqa-ext-080-i012"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": ["The sudden onset applies to all five complaints, so it is a standalone fact (f006).", "'Anorexia' is loss of appetite (f003); the clinical term is an alias.", "Pregnancy at 30 weeks is a medical_history fact (f008); the source puts it in Past_Medical_History and the demographics.", "Allergies (p007, in Social_History) are medical_history per the schema.", "Gold aliases exclude 'Gram-positive bacteremia' and 'food poisoning' (broader).", "Fixes: f020 new fact 'last menstrual period' from f008."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the pregnant patient presenting with fever, headache, anorexia, fatigue, and malaise."
+    }
+  }
+}

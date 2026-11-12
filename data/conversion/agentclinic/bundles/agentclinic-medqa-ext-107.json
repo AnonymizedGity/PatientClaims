@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-107", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 33, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "weakness", "aliases": ["muscle weakness", "feeling weak"], "text": "I've been feeling extremely weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "fatigue", "aliases": ["tiredness", "feeling tired", "exhaustion"], "text": "I've been extremely tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "symptoms worse at the end of the day", "aliases": ["time of day"], "text": "The weakness and tiredness are especially bad toward the end of the day.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "difficulty with self-care", "aliases": ["trouble with daily activities", "taking care of yourself"], "text": "It's gotten so bad that I have trouble taking care of myself.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "double vision", "aliases": ["seeing double"], "text": "I've been seeing double.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f006", "item": "double vision: severity", "parent": "f005", "attribute": "severity", "text": "It's mild.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f007", "item": "recent illnesses", "aliases": ["recent infections", "been sick recently"], "text": "I've had several illnesses recently.", "polarity": "present", "category": "symptom", "system": "general", "time": "historical"},
+      {"id": "f008", "item": "recent travel", "aliases": ["travel"], "text": "I've been traveling recently.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f009", "item": "hiking and camping", "aliases": ["outdoor activities", "camping", "hiking"], "text": "I enjoy the outdoors, and I've been hiking and camping recently.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "headache", "aliases": ["headaches"], "text": "I haven't had headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f014", "item": "breathing or chest problems", "aliases": ["respiratory symptoms"], "text": "I haven't had any problems with my breathing or chest.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f015", "item": "stomach or bowel problems", "aliases": ["gastrointestinal symptoms", "digestive problems"], "text": "I haven't had any stomach or bowel problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "urinary problems", "aliases": ["urinary symptoms", "problems peeing"], "text": "I haven't had any problems with peeing.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-107",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "98.0°F (36.7°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "124/84 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "12/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "strength"], "result": "Upper extremities 2/5; lower extremities 4/5."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["eye movements", "extraocular movements", "cranial nerve examination"], "result": "Mild diplopia on visual exam."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Normal sensation throughout."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal deep tendon reflexes."},
+      {"id": "x010", "kind": "test", "name": "acetylcholine receptor antibodies", "aliases": ["AChR antibodies", "anti-AChR"], "result": "Positive: autoantibodies to acetylcholine receptors present."},
+      {"id": "x011", "kind": "test", "name": "electromyography and nerve conduction studies", "aliases": ["EMG", "NCS", "nerve conduction study", "repetitive nerve stimulation"], "result": "Decreased response with repetitive nerve stimulation, suggestive of a neuromuscular junction disorder."},
+      {"id": "x012", "kind": "test", "name": "chest CT", "aliases": ["CT of the chest", "CT thorax"], "result": "No thymoma or other abnormalities."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-107",
+    "diagnosis": "Myasthenia gravis",
+    "aliases": ["MG", "myasthenia", "generalized myasthenia gravis", "acetylcholine receptor antibody-positive myasthenia gravis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-107",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-107-p001"], "f002": ["cc", "agentclinic-medqa-ext-107-p001"], "f003": ["agentclinic-medqa-ext-107-p001"],
+      "f004": ["agentclinic-medqa-ext-107-p001"], "f005": ["agentclinic-medqa-ext-107-p002"], "f006": ["agentclinic-medqa-ext-107-p002"],
+      "f007": ["agentclinic-medqa-ext-107-p001"], "f008": ["agentclinic-medqa-ext-107-p001"],
+      "f009": ["agentclinic-medqa-ext-107-p001", "agentclinic-medqa-ext-107-p004"], "f010": ["agentclinic-medqa-ext-107-p003"],
+      "f011": ["agentclinic-medqa-ext-107-p005"], "f012": ["agentclinic-medqa-ext-107-p005"], "f013": ["agentclinic-medqa-ext-107-p005"],
+      "f014": ["agentclinic-medqa-ext-107-p005"], "f015": ["agentclinic-medqa-ext-107-p005"], "f016": ["agentclinic-medqa-ext-107-p005"]
+    },
+    "quotes": {
+      "f001": "extremely fatigued and weak", "f002": "extremely fatigued", "f003": "especially towards the end of the day",
+      "f004": "to the point of difficulty in self-care", "f006": "Mild diplopia", "f007": "notes having had multiple illnesses in the recent past",
+      "f009": "Enjoys outdoor activities such as hiking and camping", "f010": "No significant past medical history provided."
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "98.0°F (36.7°C)", "exam_ids": ["agentclinic-medqa-ext-107-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "124/84 mmHg", "exam_ids": ["agentclinic-medqa-ext-107-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82/min", "exam_ids": ["agentclinic-medqa-ext-107-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "12/min", "exam_ids": ["agentclinic-medqa-ext-107-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-107-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Strength_Assessment.Upper_Extremities + Physical_Examination_Findings.Neurological_Examination.Strength_Assessment.Lower_Extremities", "source_text": "Upper_Extremities: 2/5 strength; Lower_Extremities: 4/5 strength", "exam_ids": ["agentclinic-medqa-ext-107-e006", "agentclinic-medqa-ext-107-e007"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerve_Examination.Finding", "source_text": "Mild diplopia on visual exam", "exam_ids": ["agentclinic-medqa-ext-107-e008"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination", "source_text": "Normal sensation throughout", "exam_ids": ["agentclinic-medqa-ext-107-e009"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal deep tendon reflexes", "exam_ids": ["agentclinic-medqa-ext-107-e010"]},
+      "x010": {"source": "Test_Results.Blood_Test.Acetylcholine_Receptor_Antibody.Result + Test_Results.Blood_Test.Acetylcholine_Receptor_Antibody.Interpretation", "source_text": "Result: Positive; Interpretation: Indicates the presence of autoantibodies to acetylcholine receptors, which is associated with myasthenia gravis.", "exam_ids": ["agentclinic-medqa-ext-107-i001", "agentclinic-medqa-ext-107-i002"]},
+      "x011": {"source": "Test_Results.Electromyography_and_Nerve_Conduction_Studies.Finding", "source_text": "Decreased response with repetitive nerve stimulation, suggestive of a neuromuscular junction disorder.", "exam_ids": ["agentclinic-medqa-ext-107-i003"]},
+      "x012": {"source": "Test_Results.CT_Scan_Chest.Findings", "source_text": "No thymoma or other abnormalities", "exam_ids": ["agentclinic-medqa-ext-107-i004"]}
+    },
+    "finding_flags": {
+      "x010": ["The interpretation leaf adds 'which is associated with myasthenia gravis', textbook commentary naming the gold diagnosis (pool flag requires_diagnosis_text_cleanup). The result keeps the finding (antibodies present) and drops that clause."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Test interpretation (i002) names the gold diagnosis ('associated with myasthenia gravis'); removed from the result shown to the doctor.",
+      "Social history says 'No mention of smoking, alcohol, or drug use', so these stay unknown rather than denied."
+    ],
+    "notes": [
+      "The chief complaint names two complaints (weakness and fatigue), so both open (f001, f002).",
+      "End-of-day worsening and difficulty with self-care apply to both complaints, so they are standalone facts (f003, f004), as in the reference example.",
+      "'She mentions experiencing these symptoms currently' only confirms the symptoms are current (time 'current'); it gives no separate fact.",
+      "'No significant past medical history provided' is a meta phrase read as a plain denial (f010), per CONVERSION.md.",
+      "Gold aliases follow the reference example for the same diagnosis."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with weakness and fatigue."
+    }
+  }
+}

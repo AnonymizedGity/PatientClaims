@@ -1,0 +1,91 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-024", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 31, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "diarrhea", "aliases": ["loose stools", "chronic diarrhea", "runny stools"], "text": "I've been having diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "diarrhea: how often", "parent": "f001", "attribute": "frequency", "text": "It happens on most days.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "diarrhea: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for the past four months.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "lower abdominal discomfort", "aliases": ["lower belly discomfort", "abdominal pain"], "text": "I have discomfort in my lower belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "abdominal cramps", "aliases": ["cramping", "stomach cramps"], "text": "I get cramps in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "relief of belly discomfort after diarrhea", "aliases": ["better after going to the toilet"], "text": "The discomfort and the cramping get better once I've had diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "urgency to pass stool", "aliases": ["urgent need to go", "urgency"], "text": "When I need to go, it's urgent.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f008", "item": "mucus in stool", "aliases": ["slime in stool", "mucus discharge"], "text": "Occasionally there's mucus with my stool.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f009", "item": "feeling of incomplete emptying after passing stool", "aliases": ["incomplete evacuation", "tenesmus"], "text": "Afterwards I often feel like I haven't completely emptied.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "camping trip", "aliases": ["outdoor trip", "recent travel"], "text": "I went camping several months ago.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f011", "item": "sick contacts", "aliases": ["someone else ill"], "text": "I remember that someone else from the camping group got sick recently.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any notable medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "weight change", "aliases": ["weight loss", "weight gain"], "text": "My weight hasn't changed recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "nausea", "aliases": ["feeling sick"], "text": "I haven't felt nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-024",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "122/78 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "67/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "15/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation"], "result": "Inspection: no visible abnormalities; auscultation: normal bowel sounds; percussion: non-tender, no distension; palpation: mild diffuse abdominal discomfort but no rebound tenderness or guarding."},
+      {"id": "x006", "kind": "test", "name": "stool examination", "aliases": ["routine stool examination", "stool test", "stool microscopy", "stool ova and parasites"], "result": "Within normal limits."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "hemoglobin", "differential count", "neutrophils", "lymphocytes", "monocytes"], "result": "Hemoglobin 13 g/dL; WBC 11,000/mm3; neutrophils 70%; lymphocytes 25%; monocytes 5%."},
+      {"id": "x008", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "10 mm/h"}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-024",
+    "diagnosis": "Irritable bowel syndrome",
+    "aliases": ["IBS", "diarrhea-predominant irritable bowel syndrome", "IBS-D", "IBS with diarrhea", "post-infectious irritable bowel syndrome", "irritable colon", "spastic colon"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-024",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-024-p001"], "f002": ["agentclinic-medqa-ext-024-p001"], "f003": ["agentclinic-medqa-ext-024-p001"],
+      "f004": ["agentclinic-medqa-ext-024-p001", "agentclinic-medqa-ext-024-p002"], "f005": ["agentclinic-medqa-ext-024-p001", "agentclinic-medqa-ext-024-p003"],
+      "f006": ["agentclinic-medqa-ext-024-p001", "agentclinic-medqa-ext-024-p003"], "f007": ["agentclinic-medqa-ext-024-p001", "agentclinic-medqa-ext-024-p004"],
+      "f008": ["agentclinic-medqa-ext-024-p001", "agentclinic-medqa-ext-024-p005"], "f009": ["agentclinic-medqa-ext-024-p001", "agentclinic-medqa-ext-024-p006"],
+      "f010": ["agentclinic-medqa-ext-024-p001"], "f011": ["agentclinic-medqa-ext-024-p001"], "f012": ["agentclinic-medqa-ext-024-p007"],
+      "f013": ["agentclinic-medqa-ext-024-p009"], "f014": ["agentclinic-medqa-ext-024-p009"], "f015": ["agentclinic-medqa-ext-024-p009"],
+      "f016": ["agentclinic-medqa-ext-024-p009"]
+    },
+    "quotes": {
+      "f002": "on most days", "f003": "for the past four months", "f006": "lower abdominal discomfort and cramping, which is relieved by diarrhea",
+      "f007": "the bowel movements are urgent", "f008": "occasionally accompanied by mucus discharge",
+      "f009": "often followed by a feeling of incomplete evacuation", "f010": "She went camping several months ago",
+      "f011": "recalls another member of the camping party falling ill recently", "f012": "No notable past medical history provided.",
+      "f013": "Denies any recent weight change"
+    },
+    "flags": {
+      "f006": ["The History says the discomfort and cramping are 'relieved by diarrhea' (p003 says only cramping); kept as one standalone fact covering both."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-024-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "122/78 mmHg", "exam_ids": ["agentclinic-medqa-ext-024-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "67 bpm", "exam_ids": ["agentclinic-medqa-ext-024-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "15 breaths/min", "exam_ids": ["agentclinic-medqa-ext-024-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible abnormalities. + Normal bowel sounds. + Non-tender, no distension. + Mild diffuse abdominal discomfort but no rebound tenderness or guarding.", "exam_ids": ["agentclinic-medqa-ext-024-e005", "agentclinic-medqa-ext-024-e006", "agentclinic-medqa-ext-024-e007", "agentclinic-medqa-ext-024-e008"]},
+      "x006": {"source": "Test_Results.Routine_Stool_Examination.Findings", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-024-i001"]},
+      "x007": {"source": "Test_Results.Blood_Tests.Hb + Test_Results.Blood_Tests.Total_WBC_Count + Test_Results.Blood_Tests.Differential_Count.Neutrophils + Test_Results.Blood_Tests.Differential_Count.Lymphocytes + Test_Results.Blood_Tests.Differential_Count.Monocytes", "source_text": "13 gm/dL + 11,000/mm3 + 70% + 25% + 5%", "exam_ids": ["agentclinic-medqa-ext-024-i002", "agentclinic-medqa-ext-024-i003", "agentclinic-medqa-ext-024-i004", "agentclinic-medqa-ext-024-i005", "agentclinic-medqa-ext-024-i006"]},
+      "x008": {"source": "Test_Results.Blood_Tests.ESR", "source_text": "10 mm/hr", "exam_ids": ["agentclinic-medqa-ext-024-i007"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The exam's percussion line reads 'Non-tender, no distension', which are not percussion findings; kept under percussion as written."
+    ],
+    "notes": [
+      "Each secondary symptom repeats the History and is merged with it (discomfort, cramping, urgency, mucus, incomplete evacuation). Patient facts avoid the word 'bowel' (a gold-diagnosis word), saying 'stool' or 'going' instead.",
+      "'No notable past medical history provided.' becomes a plain denial (f012), as CONVERSION.md directs. 'No pertinent social history related to symptoms.' denies no particular item (smoking, alcohol, etc. are not covered), so it is excluded rather than turned into denials.",
+      "The camping trip and the ill companion are exposure facts. They point toward an infectious cause; the gold label is IBS, and they are kept as given.",
+      "The blood counts form one CBC record ('gm/dL' written as 'g/dL'); ESR is separate."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with chronic diarrhea and lower abdominal discomfort."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-024-p008", "reason": "'No pertinent social history related to symptoms.' is a meta statement that denies no specific habit or exposure; making it a denial would invent answers to smoking, alcohol and similar questions."}
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12205",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 47, "sex": "female"},
+    "opening": ["f001", "f008"],
+    "facts": [
+      {"id": "f001", "item": "elbow pain", "aliases": ["sore elbow", "elbow ache", "arm pain"], "text": "I have pain in my left elbow.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "elbow pain: location", "parent": "f001", "attribute": "location", "text": "It's at the back of the elbow.", "value": "back of the left elbow", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "elbow pain: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly about a year ago.", "value": "sudden, about 1 year ago", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "elbow pain: context", "parent": "f001", "attribute": "context", "aliases": ["injury", "how it happened", "hyperextension injury"], "text": "It started when I was sitting on the ground and leaned back onto my hand on something hard, so my weight pushed through the arm with the elbow straight and bent backwards.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "elbow pain: severity", "parent": "f001", "attribute": "severity", "text": "It was severe when it happened.", "value": "severe", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "elbow pain: course", "parent": "f001", "attribute": "course", "text": "It has never gone away; it's been going on for a year now.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "elbow pain: aggravating", "parent": "f001", "attribute": "aggravating", "text": "It hurts when I straighten my elbow all the way.", "value": "full extension", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f008", "item": "elbow catching", "aliases": ["catching", "locking", "elbow clicking", "mechanical symptoms"], "text": "Since the injury my elbow catches when I bend and straighten it.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12205",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "musculoskeletal", "name": "elbow examination", "aliases": ["elbow range of motion", "range of motion", "elbow extension", "tenderness", "crepitus"], "result": "Left elbow extension limited to 5°, compared with 10° on the right; full extension of the left elbow elicits posterior tenderness and palpable crepitus."},
+      {"id": "x002", "kind": "exam", "system": "musculoskeletal", "name": "elbow ligament stability testing", "aliases": ["valgus stress test", "varus stress test", "collateral ligament testing", "ulnar collateral ligament", "lateral ulnar collateral ligament", "instability"], "result": "No instability of the ulnar collateral ligament or the lateral ulnar collateral ligament."},
+      {"id": "x003", "kind": "test", "name": "MRI of the left elbow", "aliases": ["elbow MRI", "MRI", "magnetic resonance imaging"], "result": "Hypertrophied posterior fat pad interposed between the olecranon and the olecranon fossa."},
+      {"id": "x004", "kind": "test", "name": "MRI of the right elbow", "aliases": ["contralateral elbow MRI", "MRI of the other elbow"], "result": "Similarly hypertrophied posterior fat pad, although positioned less inferiorly."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12205",
+    "diagnosis": "Posterior elbow impingement",
+    "aliases": ["posterior impingement of the elbow", "posterior elbow impingement syndrome", "posterior olecranon impingement", "posterior impingement caused by a hypertrophied posterior fat pad", "posterior fat pad impingement of the elbow"],
+    "reasoning": "1. Ligamentous instability (ulnar or lateral ulnar collateral) was considered as a mechanism for posterior impingement — “our patient showed no instability of these ligaments.” 2. Hypertrophied posterior fat pad impingement was supported by imaging findings — “This constellation of clinical symptoms and imaging findings was compatible with posterior impingement caused by a hypertrophied posterior fat pad.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12205",
+    "fact_sources": {
+      "f001": ["s001", "s003"], "f002": ["s002"], "f003": ["s001", "s003"], "f004": ["s001"], "f005": ["s002"], "f006": ["s003"],
+      "f007": ["s011"], "f008": ["s002"]
+    },
+    "quotes": {
+      "f001": "acute left elbow pain", "f002": "pain along the posterior aspect of the elbow", "f003": "One year after the injury",
+      "f004": "leaning back onto a hard object with her hand while sitting on the ground, applying axial pressure to a hyperextended elbow",
+      "f005": "severe pain", "f006": "referred for persistent symptoms", "f007": "the pain on full extension returned",
+      "f008": "subsequently a sensation of “catching” during flexion and extension"
+    },
+    "flags": {
+      "f007": ["Taken from s011, where the pain on full extension 'returned' after the injection; it implies this was the pain pattern before treatment. The examination (s005) agrees: full extension elicits posterior tenderness."],
+      "f005": ["The source gives the severity at the time of the injury only; current severity is unknown."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004", "s005"], "source_text": "left elbow extension was limited to 5°, compared with 10° on the right / Full extension of the left elbow elicited posterior tenderness and palpable crepitus."},
+      "x002": {"sentences": ["s006"], "source_text": "There was no instability of the ulnar collateral ligament or the lateral ulnar collateral ligament."},
+      "x003": {"sentences": ["s007"], "source_text": "Magnetic resonance imaging of the left elbow revealed a hypertrophied posterior fat pad interposed between the olecranon and the olecranon fossa."},
+      "x004": {"sentences": ["s008"], "source_text": "MRI of the contralateral elbow showed a similarly hypertrophied posterior fat pad, although it was positioned less inferiorly."}
+    },
+    "finding_flags": {},
+    "leakage": [
+      {"fact_id": "f001", "reason": "'elbow' is the body site of the complaint, not the diagnosis."},
+      {"fact_id": "f002", "reason": "'elbow' is the body site of the complaint, not the diagnosis."},
+      {"fact_id": "f003", "reason": "'elbow' (item label) is the body site, not the diagnosis."},
+      {"fact_id": "f004", "reason": "'elbow' is the body site of the injury, not the diagnosis."},
+      {"fact_id": "f005", "reason": "'elbow' (item label) is the body site, not the diagnosis."},
+      {"fact_id": "f006", "reason": "'elbow' (item label) is the body site, not the diagnosis."},
+      {"fact_id": "f007", "reason": "'elbow' is the body site, not the diagnosis."},
+      {"fact_id": "f008", "reason": "'elbow' is the body site, not the diagnosis."},
+      {"id": "x001", "reason": "'elbow' and 'posterior' describe the examined site and the side of the tenderness; the result does not name the impingement."},
+      {"id": "x002", "reason": "'elbow' is the examined site only."},
+      {"id": "x003", "reason": "'elbow' and 'posterior fat pad' are anatomy in the MRI report; the impingement interpretation (s009) is excluded."},
+      {"id": "x004", "reason": "'posterior fat pad' is anatomy in the MRI report."}
+    ],
+    "source_issues": [
+      "The order of s010-s011 suggests the anti-inflammatory and the injection were given after the MRI, during the workup; if they were given before the referral they would be earlier treatments the patient could report."
+    ],
+    "notes": [
+      "Index visit: the referral one year after the hyperextension injury for persistent elbow pain and catching (s003-s008).",
+      "s011: the injection and its 30% relief are treatment and response (excluded); only the remark that the pain on full extension returned is used, for the aggravating factor f007.",
+      "Gold-term warnings for finding names ('elbow examination', 'elbow ligament stability testing', 'MRI of the left/right elbow') are kept: 'elbow' is the body site and the examinations are named that way clinically.",
+      "s009 is treated as the narrative's interpretation of the MRI and dropped, as the selection note asks; the MRI findings keep only the described anatomy.",
+      "The 5° versus 10° extension difference is an examiner measurement and is not a patient fact."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s009", "reason": "Interpretation of the MRI findings naming the diagnosis (narrative_conclusion); not a finding."},
+      {"id": "s010", "reason": "Treatment with an anti-inflammatory agent and its lack of benefit: treatment during the workup."},
+      {"id": "s012", "reason": "Management plan (surgery considered)."}
+    ]
+  }
+}

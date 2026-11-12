@@ -1,0 +1,88 @@
+{
+  "case_id": "agentclinic-medqa-ext-112",
+  "source_row": 112,
+  "demographics_text": "24-year-old woman",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with a recent episode of loss of consciousness.",
+  "chief_complaint": "Episode of loss of consciousness",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-112-p001",
+      "field": "History",
+      "text": "The patient comes to the emergency department 2 hours after experiencing an episode of loss of consciousness. She reports being seated and receiving a tattoo on her right upper flank when she began feeling diaphoretic and pale, subsequently passing out. Her boyfriend, who accompanies her, states she fell to the floor and exhibited jerky movements of her arms and legs for a few seconds. She regained consciousness within 30 seconds, alert and fully oriented immediately after the episode. No known history of serious illness. She works as an event manager and reports experiencing higher levels of stress due to a recent concert tour."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-112-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Diaphoresis"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-112-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Pale appearance"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-112-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Jerky movements of arms and legs"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-112-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant history of medical illness."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-112-p006",
+      "field": "Social_History",
+      "text": "Works as an event manager, has been experiencing significant stress due to work demands. No reported use of tobacco, alcohol, or illicit drugs."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-112-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies headache, chest pain, palpitations, fever, or seizures."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-112-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.4°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-112-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "120/72 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-112-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "68/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-112-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-112-e005",
+      "path": "Physical_Examination_Findings.Cardiopulmonary_Examination",
+      "text": "No abnormalities detected"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-112-e006",
+      "path": "Physical_Examination_Findings.Neurologic_Examination",
+      "text": "No focal neurological deficits identified"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-112-i001",
+      "path": "Test_Results.ECG.Findings",
+      "text": "Incomplete right bundle branch block without evidence of acute ischemic changes."
+    }
+  ],
+  "correct_diagnosis": "Vasovagal syncope",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

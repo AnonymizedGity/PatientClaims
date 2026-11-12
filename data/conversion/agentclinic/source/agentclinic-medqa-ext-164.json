@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-164",
+  "source_row": 164,
+  "demographics_text": "26-year-old female nurse",
+  "objective_for_doctor": "Evaluate and manage a patient presenting with fatigue, episodes of lower abdominal pain, and a self-stated high cancer concern.",
+  "chief_complaint": "Fatigue",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-164-p001",
+      "field": "History",
+      "text": "The patient reports a 2-month history of persistent fatigue and several episodes of lower abdominal pain. Despite being on sick leave for 2 weeks, symptoms have not improved. She expresses a concern that she might have cancer and requests a diagnostic laparoscopy. She was diagnosed with peptic ulcer disease 6 months ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-164-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Lower abdominal pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-164-p003",
+      "field": "Secondary_Symptoms",
+      "text": "High stress levels"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-164-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Concerns of having cancer"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-164-p005",
+      "field": "Past_Medical_History",
+      "text": "Diagnosed with peptic ulcer disease 6 months prior, currently taking omeprazole."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-164-p006",
+      "field": "Social_History",
+      "text": "Works as a nurse, has been under a lot of stress at work."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-164-p007",
+      "field": "Review_of_Systems",
+      "text": "{\"General\": \"Appearance of fatigue and paleness\", \"Skin\": \"Numerous crusts along the left arm veins\", \"Cardiovascular\": \"Grade 2/6 systolic ejection murmur along the right-upper sternal border\", \"Gastrointestinal\": \"No abdominal abnormalities on examination\", \"Musculoskeletal\": \"Generalized weakness of the proximal muscles\", \"Psychiatric\": \"Tiredness and depressed mood\"}"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.5°C (97.7°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "90/65 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "120/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Not provided"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e005",
+      "path": "Physical_Examination_Findings.General_Appearance",
+      "text": "Patient appears pale, fatigued, and has dry mucous membranes."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e006",
+      "path": "Physical_Examination_Findings.Skin",
+      "text": "Crusts noted along the course of veins on left arm."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e007",
+      "path": "Physical_Examination_Findings.Cardiovascular",
+      "text": "A grade 2/6 systolic ejection murmur is appreciated along the right-upper sternal border."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e008",
+      "path": "Physical_Examination_Findings.Abdominal",
+      "text": "No abnormalities detected."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-e009",
+      "path": "Physical_Examination_Findings.Neurological",
+      "text": "Generalized weakness noted, particularly in proximal muscle groups."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i001",
+      "path": "Test_Results.Laboratory_Studies.Hemoglobin",
+      "text": "7.5 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i002",
+      "path": "Test_Results.Laboratory_Studies.Mean_Corpuscular_Volume",
+      "text": "89 μm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i003",
+      "path": "Test_Results.Laboratory_Studies.Reticulocyte_Count",
+      "text": "13.3%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i004",
+      "path": "Test_Results.Laboratory_Studies.Serum_Electrolytes.Sodium",
+      "text": "139 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i005",
+      "path": "Test_Results.Laboratory_Studies.Serum_Electrolytes.Potassium",
+      "text": "3.9 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i006",
+      "path": "Test_Results.Laboratory_Studies.Serum_Electrolytes.Calcium",
+      "text": "8.5 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i007",
+      "path": "Test_Results.Stool_Occult_Blood_Test",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-164-i008",
+      "path": "Test_Results.Abdominal_Ultrasonography.Findings",
+      "text": "No abnormalities"
+    }
+  ],
+  "correct_diagnosis": "Factitious disorder",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

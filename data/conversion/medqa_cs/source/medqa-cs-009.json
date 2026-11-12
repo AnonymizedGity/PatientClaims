@@ -1,0 +1,292 @@
+{
+  "case_id": "medqa-cs-009",
+  "source_case_id": 9,
+  "opening_scenario": "Julia Melton, a 27-year-old female, comes to the ED after being assaulted.",
+  "doorway_vital_signs": [
+    "BP: 120/85 mm Hg",
+    "Temp: 98.0°F (36.0°C)",
+    "RR: 17/minute",
+    "HR: 90/minute, regular"
+  ],
+  "sp_notes": [
+    "Look depressed and tearful.",
+    "Start weeping when asked about physical and/or sexual assaults.",
+    "Pretend to have right chest pain with deep inspiration, cough, and palpation."
+  ],
+  "challenging_questions": [
+    "\"I take full responsibility for this, doctor. Do you believe my friends will forgive me?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What brings you to the emergency department today?",
+    "answer": "I was attacked by two men."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-009-p001",
+      "topic": "Onset",
+      "question": "When did this occur?",
+      "answer": "Approximately 3 hours ago. I arrived at the ED immediately."
+    },
+    {
+      "fact_id": "medqa-cs-009-p002",
+      "topic": "Incident location",
+      "question": "Where did this occur?",
+      "answer": "It occurred outside my regular bar."
+    },
+    {
+      "fact_id": "medqa-cs-009-p003",
+      "topic": "Perpetrators",
+      "question": "Did you know the two assailants? Did you recognize them?",
+      "answer": "I don't know them. I've seen them in the bar but never talked to them."
+    },
+    {
+      "fact_id": "medqa-cs-009-p004",
+      "topic": "Police report",
+      "question": "Have you notified the police about the incident?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p005",
+      "topic": "Description of the assault",
+      "question": "I know that this is a traumatic event, but I need to know some details so I'll know how to best help you. Would you tell me more about what happened?",
+      "answer": "I was walking toward my car, and all of a sudden I was pulled into a storage room. I started screaming, but the men started to slap me and beat me up with their fists."
+    },
+    {
+      "fact_id": "medqa-cs-009-p006",
+      "topic": "Assault objects",
+      "question": "Did they use any weapons, such as a gun or knife, to force or threaten you?",
+      "answer": "They used their fists and their bodies to hold me down. I couldn't move at all even though I tried to struggle against them."
+    },
+    {
+      "fact_id": "medqa-cs-009-p007",
+      "topic": "Sexual assault",
+      "question": "Were you subjected to any sexual coercion?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-009-p008",
+      "topic": "Type of intercourse (oral, vaginal, anal)",
+      "question": "What types of sexual activities did they force on you?",
+      "answer": "They both penetrated me vaginally."
+    },
+    {
+      "fact_id": "medqa-cs-009-p009",
+      "topic": "Contraception",
+      "question": "Are you on any form of birth control, such as oral contraceptive pills or intrauterine devices?",
+      "answer": "No, I'm not on the pill or anything."
+    },
+    {
+      "fact_id": "medqa-cs-009-p010",
+      "topic": "Pain",
+      "question": "Where are you hurt? Do you have pain?",
+      "answer": "Yes, I feel sore all over, especially on the right side of my chest."
+    },
+    {
+      "fact_id": "medqa-cs-009-p011",
+      "topic": "Location of the pain",
+      "question": "Where do you experience the greatest pain?",
+      "answer": "In the right side of the chest."
+    },
+    {
+      "fact_id": "medqa-cs-009-p012",
+      "topic": "Radiation",
+      "question": "Does the pain travel elsewhere?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p013",
+      "topic": "Severity on a scale",
+      "question": "On a scale of 0 to 10, with 10 being the worst pain ever, how painful is it?",
+      "answer": "About 5/10."
+    },
+    {
+      "fact_id": "medqa-cs-009-p014",
+      "topic": "Alleviating factors",
+      "question": "Is there anything that improves the pain?",
+      "answer": "It improves when I sit still."
+    },
+    {
+      "fact_id": "medqa-cs-009-p015",
+      "topic": "Exacerbating factors",
+      "question": "Have you noticed anything that worsens the pain?",
+      "answer": "It gets worse whenever I move or take a deep breath."
+    },
+    {
+      "fact_id": "medqa-cs-009-p016",
+      "topic": "Shortness of breath",
+      "question": "Do you feel short of breath?",
+      "answer": "Yes, I feel that I can't get enough air."
+    },
+    {
+      "fact_id": "medqa-cs-009-p017",
+      "topic": "Bleeding or bruises",
+      "question": "Have you experienced any bleeding or bruising?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p018",
+      "topic": "Loss of consciousness",
+      "question": "Did you hurt your head, faint, or lose consciousness during the assault?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p019",
+      "topic": "Headache",
+      "question": "Do you have a headache?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p020",
+      "topic": "Change in vision",
+      "question": "Any changes in your vision, such as blurriness or double vision?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p021",
+      "topic": "Dizziness",
+      "question": "Have you experienced any dizziness?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p022",
+      "topic": "Weakness",
+      "question": "Are you experiencing any numbness or weakness?",
+      "answer": "No, I only feel fatigued."
+    },
+    {
+      "fact_id": "medqa-cs-009-p023",
+      "topic": "Palpitations",
+      "question": "Do you have palpitations or feel like your heart is racing?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-009-p024",
+      "topic": "Blood in stool/urine",
+      "question": "Have you noticed any blood in your stool or urine?",
+      "answer": "No, but I haven't used the bathroom since the event."
+    },
+    {
+      "fact_id": "medqa-cs-009-p025",
+      "topic": "Vaginal bleeding",
+      "question": "Have you noticed any vaginal bleeding?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p026",
+      "topic": "Nausea/vomiting",
+      "question": "Do you feel nauseated? Have you vomited?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p027",
+      "topic": "Abdominal pain",
+      "question": "Any abdominal pain?",
+      "answer": "Yes, it hurts everywhere."
+    },
+    {
+      "fact_id": "medqa-cs-009-p028",
+      "topic": "Joint pain",
+      "question": "Any joint pain?",
+      "answer": "My wrists hurt where they were holding me down."
+    },
+    {
+      "fact_id": "medqa-cs-009-p029",
+      "topic": "Current medication",
+      "question": "What medications are you currently taking?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p030",
+      "topic": "Drug allergies",
+      "question": "Do you have any allergies to medications?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p031",
+      "topic": "Past medical history",
+      "question": "Are you aware of any medical conditions you have?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p032",
+      "topic": "Past surgical history",
+      "question": "Have you had any surgeries?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p033",
+      "topic": "Family history",
+      "question": "Are there any illnesses that run in your family?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p034",
+      "topic": "Sexual history",
+      "question": "Prior to this event, have you been sexually active?",
+      "answer": "Yes, with my girlfriend of 6 months."
+    },
+    {
+      "fact_id": "medqa-cs-009-p035",
+      "topic": "Occupation",
+      "question": "What do you do for work?",
+      "answer": "I don't work. I'm a full-time student."
+    },
+    {
+      "fact_id": "medqa-cs-009-p036",
+      "topic": "Alcohol use",
+      "question": "Do you consume alcoholic beverages? How frequently?",
+      "answer": "Yes, but just occasionally during social gatherings."
+    },
+    {
+      "fact_id": "medqa-cs-009-p037",
+      "topic": "Tobacco",
+      "question": "Do you use tobacco products?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-009-p038",
+      "topic": "Illicit drug use",
+      "question": "Do you consume any illicit substances for recreation?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History:\nHPI: A 25-year-old female comes to the ED after being sexually and physically assaulted. The event happened about 3 hours ago as she was leaving a bar. She was beaten and raped by two unknown men. They had vaginal intercourse with her without using condoms, and she is unsure if ejaculation occurred. Her last menstrual period was three weeks ago. She does not use any form of contraception. She also reports shortness of breath, palpitations, and right chest pain. The chest pain is nonradiating, exacerbated by movement and deep breaths, and relieved by sitting still. There is no nausea or vomiting. There is no dizziness or headache. There is no weakness or numbness in her extremities. There is no vaginal, rectal, or urinary bleeding.\nROS: Negative except as mentioned above.\nAllergies: No known drug allergies.\nMedications: No.\nPMH: No.\nPSH: No.\nSH: She denies smoking, occasional EtOH, and illicit drug use. She is sexually active with a girlfriend only.\nFH: Noncontributory.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-009-e001",
+      "source_text": "Patient is anxious and experiencing acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-009-e002",
+      "source_text": "VS: WNL"
+    },
+    {
+      "exam_id": "medqa-cs-009-e003",
+      "source_text": "HEENT: No JVD, PERRLA, EOMI."
+    },
+    {
+      "exam_id": "medqa-cs-009-e004",
+      "source_text": "Chest: Tenderness on palpation of right lateral chest wall. Tympanic to percussion throughout lung fields."
+    },
+    {
+      "exam_id": "medqa-cs-009-e005",
+      "source_text": "Breath sounds clear to auscultation bilaterally. No wheezes, rales, or rhonchi."
+    },
+    {
+      "exam_id": "medqa-cs-009-e006",
+      "source_text": "Heart: S1/S2 WNL; RRR, no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-009-e007",
+      "source_text": "Abdomen: Soft, nontender, nondistended, G > BS x 4 quadrants, no rebound, no hepatosplenomegaly."
+    },
+    {
+      "exam_id": "medqa-cs-009-e008",
+      "source_text": "Neuro: Mental status: Alert and oriented x 3. Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 in all muscle groups."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Rib fracture\nHistory Findings:\n- Physical assault\n- Right chest pain\n- Pain is exacerbated by movement and deep breaths\nPhysical Exam Findings:\n- Tenderness on palpation of right chest wall\n\nDiagnosis #2: Sexually transmitted infection (gonorrhea, chlamydia, syphilis)\nHistory Findings:\n- Sexual assault by 2 men\n- No condom use\nPhysical Exam Findings:\nNone mentioned\n\nDiagnosis #3: Pregnancy\nHistory Findings:\n- Unprotected vaginal intercourse with possible ejaculation\n- No OCP use\n- Last menstrual period 3 weeks ago\nPhysical Exam Findings:\nNone mentioned",
+  "gold_additional_diagnosis": "- Pneumothorax/hemothorax: Defined as the presence of air or blood in the pleural space between the visceral and parietal pleurae. Physical findings include unilateral loss of breath sounds with hyperresonance, shifting of the trachea away from the injured side, and JVD. Because this patient suffered physical trauma, she may have a traumatic pneumothorax. A chest X-ray is a fast and easy tool to evaluate patients for a pneumothorax.\n- Muscle rupture: Chest pain in trauma victims may be of musculoskeletal origin.",
+  "raw_opening": "Opening Scenario:\n\nJulia Melton, a 27-year-old female, comes to the ED after being assaulted.\n\nVital Signs:\n\n- BP: 120/85 mm Hg\n- Temp: 98.0°F (36.0°C)\n- RR: 17/minute\n- HR: 90/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exams). \n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nPatient is a 25-year-old female.\n\nNotes for the SP:\n\n- Look depressed and tearful.\n- Start weeping when asked about physical and/or sexual assaults.\n- Pretend to have right chest pain with deep inspiration, cough, and palpation.\n\nChallenging Questions to Ask:\n\n\"I take full responsibility for this, doctor. Do you believe my friends will forgive me?\"\n\nExaminee Response:\n\n\"I am so sorry for what happened to you. It is alarming and likely quite challenging to manage at this moment.. However, it is not your fault by any means. Right now, I want to make sure you are in a safe environment and medically stable. There are a number of resources available to help you process this event.\"\n\nExaminee Checklist:\n\nEntrance:\n\n- Examinee knocked on the door before entering.\n- Examinee made eye contact with the SP.\n- Examinee correctly used the patient's name.\n- Examinee introduced themselves by name.\n- Examinee identified their role or position.\n\nReflective Listening:\n\n- Examinee asked an open-ended question and actively listened to the response. \n- Examinee asked the SP to list his/her concerns and listened to the response without interrupting. \n- Examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\n- Examinee dictated data efficiently and accurately.\n\nConnecting With the Patient:\n\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\n\"Chief Complaint\": \nDoctor: \"What brings you to the emergency department today?\"\nPatient: I was attacked by two men. \n\n\"Onset\": \nDoctor: \"When did this occur?\"\nPatient: Approximately 3 hours ago. I arrived at the ED immediately. \n\n\"Incident location\": \nDoctor: \"Where did this occur?\"\nPatient: It occurred outside my regular bar. \n\n\"Perpetrators\": \nDoctor: \"Did you know the two assailants? Did you recognize them?\"\nPatient: I don't know them. I've seen them in the bar but never talked to them. \n\n\"Police report\": \nDoctor: \"Have you notified the police about the incident?\"\nPatient: No. \n\n\"Description of the assault\": \nDoctor: \"I know that this is a traumatic event, but I need to know some details so I'll know how to best help you. Would you tell me more about what happened?\"\nPatient: I was walking toward my car, and all of a sudden I was pulled into a storage room. I started screaming, but the men started to slap me and beat me up with their fists. \n\n\"Assault objects\": \nDoctor: \"Did they use any weapons, such as a gun or knife, to force or threaten you?\"\nPatient: They used their fists and their bodies to hold me down. I couldn't move at all even though I tried to struggle against them. \n\n\"Sexual assault\": \nDoctor: \"Were you subjected to any sexual coercion?\"\nPatient: Yes. \n\n\"Type of intercourse (oral, vaginal, anal)\": \nDoctor: \"What types of sexual activities did they force on you?\"\nPatient: They both penetrated me vaginally. \n\n\"Contraception\": \nDoctor: \"Are you on any form of birth control, such as oral contraceptive pills or intrauterine devices?\"\nPatient: No, I'm not on the pill or anything. \n\n\"Pain\": \nDoctor: \"Where are you hurt? Do you have pain?\"\nPatient: Yes, I feel sore all over, especially on the right side of my chest. \n\n\"Location of the pain\": \nDoctor: \"Where do you experience the greatest pain?\"\nPatient: In the right side of the chest. \n\n\"Radiation\": \nDoctor: \"Does the pain travel elsewhere?\"\nPatient: No. \n\n\"Severity on a scale\": \nDoctor: \"On a scale of 0 to 10, with 10 being the worst pain ever, how painful is it?\"\nPatient: About 5/10. \n\n\"Alleviating factors\": \nDoctor: \"Is there anything that improves the pain?\"\nPatient: It improves when I sit still. \n\n\"Exacerbating factors\": \nDoctor: \"Have you noticed anything that worsens the pain?\"\nPatient: It gets worse whenever I move or take a deep breath. \n\n\"Shortness of breath\": \nDoctor: \"Do you feel short of breath?\"\nPatient: Yes, I feel that I can't get enough air. \n\n\"Bleeding or bruises\": \nDoctor: \"Have you experienced any bleeding or bruising?\"\nPatient: No. \n\n\"Loss of consciousness\": \nDoctor: \"Did you hurt your head, faint, or lose consciousness during the assault?\"\nPatient: No. \n\n\"Headache\": \nDoctor: \"Do you have a headache?\"\nPatient: No. \n\n\"Change in vision\": \nDoctor: \"Any changes in your vision, such as blurriness or double vision?\"\nPatient: No. \n\n\"Dizziness\": \nDoctor: \"Have you experienced any dizziness?\"\nPatient: No. \n\n\"Weakness\": \nDoctor: \"Are you experiencing any numbness or weakness?\"\nPatient: No, I only feel fatigued. \n\n\"Palpitations\": \nDoctor: \"Do you have palpitations or feel like your heart is racing?\"\nPatient: Yes. \n\n\"Blood in stool/urine\": \nDoctor: \"Have you noticed any blood in your stool or urine?\"\nPatient: No, but I haven't used the bathroom since the event. \n\n\"Vaginal bleeding\": \nDoctor: \"Have you noticed any vaginal bleeding?\"\nPatient: No. \n\n\"Nausea/vomiting\": \nDoctor: \"Do you feel nauseated? Have you vomited?\"\nPatient: No. \n\n\"Abdominal pain\": \nDoctor: \"Any abdominal pain?\"\nPatient: Yes, it hurts everywhere. \n\n\"Joint pain\": \nDoctor: \"Any joint pain?\"\nPatient: My wrists hurt where they were holding me down. \n\n\"Current medication\": \nDoctor: \"What medications are you currently taking?\"\nPatient: No. \n\n\"Drug allergies\": \nDoctor: \"Do you have any allergies to medications?\"\nPatient: No. \n\n\"Past medical history\": \nDoctor: \"Are you aware of any medical conditions you have?\"\nPatient: No. \n\n\"Past surgical history\": \nDoctor: \"Have you had any surgeries?\"\nPatient: No. \n\n\"Family history\": \nDoctor: \"Are there any illnesses that run in your family?\"\nPatient: No. \n\n\"Sexual history\": \nDoctor: \"Prior to this event, have you been sexually active?\"\nPatient: Yes, with my girlfriend of 6 months. \n\n\"Occupation\": \nDoctor: \"What do you do for work?\"\nPatient: I don't work. I'm a full-time student. \n\n\"Alcohol use\": \nDoctor: \"Do you consume alcoholic beverages? How frequently?\"\nPatient: Yes, but just occasionally during social gatherings. \n\n\"Tobacco\": \nDoctor: \"Do you use tobacco products?\"\nPatient: No. \n\n\"Illicit drug use\": \nDoctor: \"Do you consume any illicit substances for recreation?\"\nPatient: No.\n\nPhysical Examination:\n\n- Examinee washed his/her hands.\n- Examinee asked for permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- Head and neck exam: Inspection, palpation, and auscultation\n- Pulmonary exam: Inspection, palpation, percussion, and auscultation\n- Abdominal exam: Inspection, auscultation, and palpation\n- Neurological exam: Mental status, cranial nerves, and gross motor skills\n- Musculoskeletal exam: Inspection and palpation\n\nSample Closure:\n\n\"Ms. Melton, I sincerely regret what occurred to you.. I want to stress that this is not your responsibility, and you should not experience any guilt regarding it.. I recommend that you report the incident to the police. In the meantime, I will need to perform a pelvic examination to ensure that you have no injuries in the genital area. Additionally, I will need to collect some specimens and swabs from your body and genital area for evidence if you choose to press charges, as well as to check for any sexually transmitted infections. We will conduct some blood tests to check for potential infections, and we will order a pregnancy test and some x-rays to look for any other injuries. If your pregnancy test is positive, we will provide you with options for emergency contraception. We will prescribe antibiotics to prevent infections.. Finally, our social worker can come and talk to you, providing you with resources that will assist you in processing this trauma and moving forward. Are there any questions you would like to ask me?\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans.\n- Follow-up tests: Examinee mentioned the need for a pelvic exam.\n- Examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory:\nHPI: A 25-year-old female comes to the ED after being sexually and physically assaulted. The event happened about 3 hours ago as she was leaving a bar. She was beaten and raped by two unknown men. They had vaginal intercourse with her without using condoms, and she is unsure if ejaculation occurred. Her last menstrual period was three weeks ago. She does not use any form of contraception. She also reports shortness of breath, palpitations, and right chest pain. The chest pain is nonradiating, exacerbated by movement and deep breaths, and relieved by sitting still. There is no nausea or vomiting. There is no dizziness or headache. There is no weakness or numbness in her extremities. There is no vaginal, rectal, or urinary bleeding.\nROS: Negative except as mentioned above.\nAllergies: No known drug allergies.\nMedications: No.\nPMH: No.\nPSH: No.\nSH: She denies smoking, occasional EtOH, and illicit drug use. She is sexually active with a girlfriend only.\nFH: Noncontributory.\n\nPhysical Examination:\nPatient is anxious and experiencing acute distress.\nVS: WNL\nHEENT: No JVD, PERRLA, EOMI.\nChest: Tenderness on palpation of right lateral chest wall. Tympanic to percussion throughout lung fields.\nBreath sounds clear to auscultation bilaterally. No wheezes, rales, or rhonchi.\nHeart: S1/S2 WNL; RRR, no murmurs, rubs, or gallops.\nAbdomen: Soft, nontender, nondistended, G > BS x 4 quadrants, no rebound, no hepatosplenomegaly.\nNeuro: Mental status: Alert and oriented x 3. Cranial nerves: 2-12 grossly intact. Motor: Strength 5/5 in all muscle groups."
+}

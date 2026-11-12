@@ -1,0 +1,45 @@
+{
+ "case_id": "mcr-test-09301",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I can see blood in my urine.",
+   "I've been passing very little urine.",
+   "All of this started 4 days ago."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I can see blood in my urine, and I've been passing very little of it. All of this started 4 days ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f008"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3168,
+   "tokens_out": 39,
+   "seconds": 5.68,
+   "redrafts": 0
+  }
+ }
+}

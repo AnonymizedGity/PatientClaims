@@ -1,0 +1,98 @@
+{
+  "case_id": "agentclinic-medqa-ext-113",
+  "source_row": 113,
+  "demographics_text": "60-year-old female",
+  "objective_for_doctor": "Evaluate and manage a patient presenting with vulvar itching and discomfort.",
+  "chief_complaint": "Severe vulvar itching",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-113-p001",
+      "field": "History",
+      "text": "The patient presents with a year-long history of severe vulvar itching and pain during sexual intercourse that has gradually worsened. She has tried over-the-counter lubricants without significant relief. Menopause occurred 8 years ago. Her medical history is significant for diet-controlled type 2 diabetes mellitus and hypertension treated with hydrochlorothiazide."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-113-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain during sexual intercourse"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-113-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Ineffectiveness of over-the-counter lubricants"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-113-p004",
+      "field": "Past_Medical_History",
+      "text": "Type 2 diabetes mellitus (diet-controlled), hypertension (treated with hydrochlorothiazide), menopause at 52 years of age."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-113-p005",
+      "field": "Social_History",
+      "text": "Married, sexually active with her husband until recently due to severe pain. Non-smoker, drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-113-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies urinary incontinence, postcoital bleeding, or recent changes in skin elsewhere on the body."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-113-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-e005",
+      "path": "Physical_Examination_Findings.Gynecologic_Examination.External_Genitalia",
+      "text": "Dry, thin, white plaque-like lesions on the vulva. Atrophy of the labia minora and retraction of the clitoris. Pale and wrinkled perianal skin."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-e006",
+      "path": "Physical_Examination_Findings.Gynecologic_Examination.Speculum_Examination",
+      "text": "No vaginal discharge or bleeding. Vaginal mucosa appears atrophic."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-e007",
+      "path": "Physical_Examination_Findings.Gynecologic_Examination.Bimanual_Examination",
+      "text": "Nontender uterus and adnexa. No masses palpated."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-113-i001",
+      "path": "Test_Results.Pap_Smear.Findings",
+      "text": "Negative for intraepithelial lesion or malignancy"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-i002",
+      "path": "Test_Results.Biopsy_of_Vulvar_Lesions.Histopathology",
+      "text": "Hyperkeratosis with a thinning of the epidermis and loss of rete ridges, sclerotic changes in the dermis."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-113-i003",
+      "path": "Test_Results.Blood_Glucose.Fasting_Glucose_Level",
+      "text": "6.5 mmol/L (117 mg/dL) - Indicative of controlled diabetes."
+    }
+  ],
+  "correct_diagnosis": "Lichen Sclerosus",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-185",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 60, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "itching of the vulva", "aliases": ["vulvar itching", "genital itching", "itching down there"], "text": "I have itching around my vulva.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "itching of the vulva: severity", "parent": "f001", "attribute": "severity", "text": "The itching is severe.", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f003", "item": "itching of the vulva: course", "parent": "f001", "attribute": "course", "text": "It has been gradually getting worse over the past year.", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f004", "item": "pain during sex", "aliases": ["painful intercourse", "dyspareunia"], "text": "I get pain during vaginal intercourse.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f005", "item": "pain during sex: severity", "parent": "f004", "attribute": "severity", "text": "The pain is severe.", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f006", "item": "sexual activity", "aliases": ["sexually active"], "text": "I was sexually active with my husband until recently, but we stopped because of the pain and discomfort.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "over-the-counter lubricants", "aliases": ["lubricant", "home remedies"], "text": "I've tried over-the-counter lubricants.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "over-the-counter lubricants: relief", "parent": "f007", "attribute": "treatment_response", "text": "They haven't given me any real relief.", "polarity": "absent", "category": "medication"},
+      {"id": "f009", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes, which I control with diet.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "hydrochlorothiazide", "aliases": ["blood pressure medication", "water pill", "HCTZ"], "text": "I take hydrochlorothiazide for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f012", "item": "menopause", "aliases": ["last menstrual period", "periods stopped"], "text": "I went through menopause at 52.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "urinary symptoms", "aliases": ["problems peeing", "burning when peeing"], "text": "I don't have any urinary problems.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f014", "item": "abnormal vaginal discharge", "aliases": ["vaginal discharge"], "text": "I haven't had any abnormal vaginal discharge.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f015", "item": "rectal symptoms", "aliases": ["problems with the back passage"], "text": "I don't have any rectal problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "marital status", "text": "I'm married.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-185",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "genital examination", "aliases": ["vulvar examination", "genitourinary examination", "external genitalia examination", "pelvic examination", "perianal examination"], "result": "Inspection: dry, thin, white plaque-like lesions in the vulvar area with atrophy of the labia minora; the clitoris appears retracted; the perianal skin is pale and wrinkled; palpation: the lesions are palpable and the vulvar area is tender to touch."},
+      {"id": "x006", "kind": "test", "name": "vulvar biopsy", "aliases": ["biopsy of the vulvar lesion", "skin biopsy", "histopathology"], "result": "Hyperkeratosis with thinning of the epidermis and sclerosis of the dermis, confirming lichen sclerosus."},
+      {"id": "x007", "kind": "test", "name": "fasting blood glucose", "aliases": ["fasting glucose", "blood sugar", "glucose"], "result": "6.8 mmol/L."},
+      {"id": "x008", "kind": "test", "name": "blood pressure monitoring", "aliases": ["repeat blood pressure readings", "ambulatory blood pressure monitoring"], "result": "135/85 mm Hg; 130/80 mm Hg."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-185",
+    "diagnosis": "Lichen sclerosus",
+    "aliases": ["vulvar lichen sclerosus", "lichen sclerosus et atrophicus", "LS", "LSA", "kraurosis vulvae"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-185",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-185-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-185-p001"],
+      "f003": ["agentclinic-medqa-ext-185-p001"],
+      "f004": ["agentclinic-medqa-ext-185-p001", "agentclinic-medqa-ext-185-p002"],
+      "f005": ["agentclinic-medqa-ext-185-p001"],
+      "f006": ["agentclinic-medqa-ext-185-p001", "agentclinic-medqa-ext-185-p005"],
+      "f007": ["agentclinic-medqa-ext-185-p001", "agentclinic-medqa-ext-185-p003"],
+      "f008": ["agentclinic-medqa-ext-185-p001", "agentclinic-medqa-ext-185-p003"],
+      "f009": ["agentclinic-medqa-ext-185-p004"],
+      "f010": ["agentclinic-medqa-ext-185-p004"],
+      "f011": ["agentclinic-medqa-ext-185-p004"],
+      "f012": ["agentclinic-medqa-ext-185-p004"],
+      "f013": ["agentclinic-medqa-ext-185-p006"],
+      "f014": ["agentclinic-medqa-ext-185-p006"],
+      "f015": ["agentclinic-medqa-ext-185-p006"],
+      "f016": ["agentclinic-medqa-ext-185-p001", "agentclinic-medqa-ext-185-p005"]
+    },
+    "quotes": {
+      "f002": "Severe vulvar itching",
+      "f003": "gradually worsening over the course of the past year",
+      "f005": "severe pain during vaginal intercourse",
+      "f006": "Sexually active with her husband until recently due to discomfort / recently led to cessation of sexual activity",
+      "f007": "over-the-counter lubricants",
+      "f008": "no substantial improvement / with no relief",
+      "f009": "Diet-controlled type 2 diabetes mellitus",
+      "f011": "hypertension treated with hydrochlorothiazide",
+      "f012": "menopause occurred at 52 years of age"
+    },
+    "flags": {
+      "f008": ["The History says 'no substantial improvement', p003 says 'no relief'; worded as 'no real relief'. Which complaint the lubricants were meant for (itching or painful sex) is not stated, so the response is a child of the lubricant fact, not of a symptom."],
+      "f006": ["Not sexually active now (polarity absent); the text keeps that she was active with her husband until recently."],
+      "f016": ["Split off from f006, whose text was the only record of it (fix)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-185-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-185-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-185-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-185-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Genitourinary_Examination.Inspection + Physical_Examination_Findings.Genitourinary_Examination.Palpation", "source_text": "Dry, thin, white plaque-like lesions in the vulvar area, with atrophy of the labia minora. The clitoris appears retracted. The perianal skin is pale and wrinkled. + The lesions are palpable and the vulvar area is tender to touch.", "exam_ids": ["agentclinic-medqa-ext-185-e005", "agentclinic-medqa-ext-185-e006"]},
+      "x006": {"source": "Test_Results.Vulvar_Biopsy.Findings", "source_text": "Hyperkeratosis with thinning of the epidermis and sclerosis of the dermis, confirming lichen sclerosus.", "exam_ids": ["agentclinic-medqa-ext-185-i001"]},
+      "x007": {"source": "Test_Results.Blood_Glucose_Level.Fasting_Blood_Glucose", "source_text": "6.8 mmol/L", "exam_ids": ["agentclinic-medqa-ext-185-i002"]},
+      "x008": {"source": "Test_Results.Blood_Pressure_Monitoring.Recordings", "source_text": "135/85 mmHg; 130/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-185-i003"]}
+    },
+    "leakage": [
+      {"id": "x006", "reason": "The biopsy result names the gold diagnosis ('confirming lichen sclerosus'); this is the test's answer, kept per CONVERSION."}
+    ],
+    "source_issues": ["Biopsy result names the gold diagnosis (pool flag visible_gold_alias_partitions: test_results).", "Temperature 36.8°C is 98.2°F; the source gives 98°F (rounding). Kept as written."],
+    "notes": ["'Painful sexual intercourse' (p002) merges with the History's severe pain during vaginal intercourse (f004, severity f005).", "The stop in sexual activity appears in the History and in Social_History (p005); merged into f006 (habit_exposure).", "Past_Medical_History is split into diet-controlled diabetes (f009), hypertension (f010), hydrochlorothiazide (f011, medication) and menopause at 52 (f012).", "Repeated blood pressure recordings are a test record (x008), separate from the vital sign (x002).", "Fixes: f016 new fact 'marital status' from f006."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with chronic vulvar itching and discomfort."
+    }
+  }
+}

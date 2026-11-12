@@ -1,0 +1,53 @@
+{
+ "case_id": "medqa-cs-027",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I'm feeling tired, weak and low on energy.",
+   "For six months.",
+   "I have lost 8 pounds during the past 6 months."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm feeling tired, weak and low on energy for the past six months. I've also lost 8 pounds during that time.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f008"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "unsupported",
+      "quote": "about",
+      "fix": "8 pounds"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I'm feeling tired, weak and low on energy for the past six months. I've also lost about 8 pounds during that time.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 7928,
+   "tokens_out": 91,
+   "seconds": 11.26,
+   "redrafts": 0
+  }
+ }
+}

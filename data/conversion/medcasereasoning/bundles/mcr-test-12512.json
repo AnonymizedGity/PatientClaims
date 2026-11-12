@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12512",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 41, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "dead skin on the thigh", "aliases": ["skin necrosis", "black skin", "wound on the thigh", "skin ulcer", "dying skin"], "text": "I have a large patch of dead skin on my left thigh.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "lump on the thigh before the dead skin", "aliases": ["nodule", "lump", "swelling on the thigh"], "text": "It started as a lump, about 4 by 5 cm, in the same spot.", "polarity": "present", "category": "symptom", "system": "skin", "time": "resolved"},
+      {"id": "f003", "item": "lump on the thigh: onset", "parent": "f002", "attribute": "onset", "text": "I noticed the lump in April.", "value": "April", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "lump on the thigh: course", "parent": "f002", "attribute": "course", "text": "Over two weeks it turned into dead skin.", "value": "two weeks", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "lump on the thigh: redness", "parent": "f002", "attribute": "appearance", "text": "The lump wasn't red.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "lump on the thigh: itching", "parent": "f002", "attribute": "other", "aliases": ["pruritus", "itchy"], "text": "The lump didn't itch.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f007", "item": "lump on the thigh: pain", "parent": "f002", "attribute": "other", "aliases": ["painful", "tender"], "text": "The lump didn't hurt.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f008", "item": "chest pain", "aliases": ["pain in the chest"], "text": "I have some chest pain.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f009", "item": "chest pain: location", "parent": "f008", "attribute": "location", "text": "It's on the right side of my chest.", "value": "right side", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f010", "item": "chest pain: severity", "parent": "f008", "attribute": "severity", "text": "It's mild.", "value": "mild", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f011", "item": "cough", "aliases": ["coughing"], "text": "I have a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f012", "item": "cough: what comes up", "parent": "f011", "attribute": "character", "aliases": ["coughing up blood", "bloody sputum", "haemoptysis", "hemoptysis", "phlegm"], "text": "I'm coughing up bloody phlegm.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f013", "item": "fever", "aliases": ["temperature", "high temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f014", "item": "shortness of breath", "aliases": ["dyspnoea", "dyspnea", "breathlessness"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f015", "item": "medications", "aliases": ["medicines", "drugs", "regular medication", "tablets"], "text": "I haven't been taking any medicines.", "polarity": "absent", "category": "medication"},
+      {"id": "f016", "item": "injury", "aliases": ["trauma", "injury to the thigh", "accident"], "text": "I haven't had any injury.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f017", "item": "family history of clotting disorders", "aliases": ["thrombophilia in the family", "family history of thrombophilia", "inherited clotting problem"], "text": "Nobody in my family has a blood-clotting disorder.", "polarity": "absent", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12512",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "thigh lesion", "wound inspection", "left thigh"], "result": "20 × 18 cm area of cutaneous necrosis on the left thigh."},
+      {"id": "x002", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "differential", "eosinophil count", "platelets", "platelet count"], "result": "Leukocytosis (white blood cells 36.59 × 10^9/L) with hypereosinophilia (eosinophils 21.15 × 10^9/L; 57.8%); thrombocytopenia (platelets 19 × 10^9/L)."},
+      {"id": "x003", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "ALT", "AST", "GGT", "gamma-glutamyl transferase"], "result": "Elevated: ALT 178 IU/L; AST 68 IU/L; GGT 329 IU/L."},
+      {"id": "x004", "kind": "test", "name": "procalcitonin", "aliases": ["PCT"], "result": "0.51 ng/mL (mildly increased)."},
+      {"id": "x005", "kind": "test", "name": "coagulation studies", "aliases": ["coagulation", "clotting tests", "fibrinogen", "D-dimer"], "result": "Fibrinogen 4.15 g/L (elevated); D-dimer 82.20 mg/L FEU (markedly increased)."},
+      {"id": "x006", "kind": "test", "name": "allergic, parasitic, rheumatologic and immunologic workup", "aliases": ["allergy workup", "parasite workup", "parasitic serology", "rheumatologic workup", "autoimmune serology", "immunologic workup"], "result": "Unremarkable."},
+      {"id": "x007", "kind": "test", "name": "chest CT", "aliases": ["CT chest", "CT scan of the chest", "chest computed tomography"], "result": "Bilateral patchy pulmonary opacities and a small pleural effusion."},
+      {"id": "x008", "kind": "test", "name": "abdominal ultrasound", "aliases": ["abdominal ultrasonography", "ultrasound of the abdomen"], "result": "Normal."},
+      {"id": "x009", "kind": "test", "name": "skin biopsy of the thigh lesion", "aliases": ["skin biopsy", "biopsy of the necrotic lesion", "thigh biopsy"], "result": "Dermal necrosis and hemorrhage with perivascular lymphocytes, histiocytes, and eosinophils."},
+      {"id": "x010", "kind": "test", "name": "bone marrow aspiration", "aliases": ["bone marrow aspirate", "bone marrow", "marrow examination"], "result": "Eosinophils comprise 27.5% of leukocytes."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12512",
+    "diagnosis": "Idiopathic hypereosinophilic syndrome",
+    "aliases": ["idiopathic HES", "iHES", "idiopathic hypereosinophilia syndrome"],
+    "reasoning": "1. Other allergic, parasitic, rheumatologic, and immunologic disorders were excluded — “The workup for allergic, parasitic, rheumatologic, and immunologic diseases was unremarkable.” 2. Eosinophilic granulomatosis with polyangiitis was considered among skin-eosinophil syndromes — “Differential diagnosis may include eosinophilic granulomatosis with polyangiitis…” 3. Purpura fulminans was considered among causes of cutaneous necrosis — “…purpura fulminans…” 4. Eosinophilic cellulitis was considered among eosinophilic skin conditions — “…and eosinophilic cellulitis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12512",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s002"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s004"], "f009": ["s004"], "f010": ["s004"], "f011": ["s004"], "f012": ["s004"],
+      "f013": ["s003", "s004"], "f014": ["s004"], "f015": ["s003"], "f016": ["s003"], "f017": ["s003"]
+    },
+    "quotes": {
+      "f001": "a 20 × 18 cm area of cutaneous necrosis on the left thigh", "f002": "a 4 × 5 cm nodule at the same site",
+      "f003": "He noted a 4 × 5 cm nodule at the same site in April", "f004": "progressed to necrosis over two weeks",
+      "f005": "without redness, pruritus, or pain", "f006": "without redness, pruritus, or pain", "f007": "without redness, pruritus, or pain",
+      "f009": "mild right-sided chest pain", "f010": "mild right-sided chest pain", "f012": "cough productive of bloody sputum",
+      "f015": "no history of medication use", "f017": "family history of thrombophilia"
+    },
+    "flags": {
+      "f001": ["The 20 × 18 cm size is kept in the skin examination; the fact says 'large'."],
+      "f008": ["System set to respiratory: the chest pain is reported with a bloody productive cough and the chest CT shows opacities and effusion; the source does not characterise the pain further."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s001"], "source_text": "a 20 × 18 cm area of cutaneous necrosis on the left thigh"},
+      "x002": {"sentences": ["s005"], "source_text": "leukocytosis (36.59 × 10^9/L) with hypereosinophilia (21.15 × 10^9/L; 57.8%), thrombocytopenia (19 × 10^9/L)"},
+      "x003": {"sentences": ["s005"], "source_text": "elevated liver enzymes (ALT 178 IU/L; AST 68 IU/L; GGT 329 IU/L)"},
+      "x004": {"sentences": ["s005"], "source_text": "mildly increased procalcitonin (0.51 ng/mL)"},
+      "x005": {"sentences": ["s005"], "source_text": "elevated fibrinogen (4.15 g/L), and a markedly increased D-dimer (82.20 mg/L FEU)"},
+      "x006": {"sentences": ["s006"], "source_text": "The workup for allergic, parasitic, rheumatologic, and immunologic diseases was unremarkable."},
+      "x007": {"sentences": ["s007"], "source_text": "Chest CT revealed bilateral patchy pulmonary opacities and a small pleural effusion"},
+      "x008": {"sentences": ["s007"], "source_text": "abdominal ultrasound was normal"},
+      "x009": {"sentences": ["s007"], "source_text": "Skin biopsy of the necrotic lesion showed dermal necrosis and hemorrhage with perivascular lymphocytes, histiocytes, and eosinophils."},
+      "x010": {"sentences": ["s008"], "source_text": "Bone marrow aspiration demonstrated eosinophils comprising 27.5% of leukocytes."}
+    },
+    "finding_flags": {
+      "x006": ["The source names only the disease groups, not the individual tests; the record answers a request for that workup, not for a specific named test."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s007 holds two sentences (chest CT and abdominal ultrasound; skin biopsy)."
+    ],
+    "notes": [
+      "Index visit: the admission in May 2013 for the thigh necrosis, at which he also reported right-sided chest pain and bloody sputum (s001-s008).",
+      "The April nodule and its evolution are history of the presenting complaint (f002-f007); its absent redness, itch and pain are children of the nodule.",
+      "Fever is denied twice (s003, s004) and is one fact citing both."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

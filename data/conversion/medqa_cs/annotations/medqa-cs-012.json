@@ -1,0 +1,846 @@
+{
+  "case_id": "medqa-cs-012",
+  "demographics": {
+    "name": "Carol Holland",
+    "age": 67,
+    "sex": "female",
+    "setting": "office"
+  },
+  "opening_fact": {
+    "text": "Pain in my neck.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-012-f001",
+      "source_ids": [
+        "medqa-cs-012-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Neck pain began two days ago.",
+      "quote": "It started two days ago."
+    },
+    {
+      "id": "medqa-cs-012-f002",
+      "source_ids": [
+        "medqa-cs-012-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain began when someone called her name and she turned her head to the left to look.",
+      "quote": "Someone called my name and I turned my head to the left to look."
+    },
+    {
+      "id": "medqa-cs-012-f003",
+      "source_ids": [
+        "medqa-cs-012-p002",
+        "medqa-cs-012-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Moving has hurt since then; turning the head in either direction makes the pain worse.",
+      "quote": "Since then it hurts to move. / Turning my head in either direction."
+    },
+    {
+      "id": "medqa-cs-012-f004",
+      "source_ids": [
+        "medqa-cs-012-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain has stayed the same since onset.",
+      "quote": "It has stayed the same."
+    },
+    {
+      "id": "medqa-cs-012-f005",
+      "source_ids": [
+        "medqa-cs-012-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Pain severity is 2/10 at rest and 8/10 with motion.",
+      "quote": "2/10 at rest, 8/10 with motion."
+    },
+    {
+      "id": "medqa-cs-012-f006",
+      "source_ids": [
+        "medqa-cs-012-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain involves the whole neck and is worse on the left.",
+      "quote": "The whole neck, but worse on the left."
+    },
+    {
+      "id": "medqa-cs-012-f007",
+      "source_ids": [
+        "medqa-cs-012-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain travels down the left arm.",
+      "quote": "It travels down my left arm."
+    },
+    {
+      "id": "medqa-cs-012-f008",
+      "source_ids": [
+        "medqa-cs-012-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain is sharp.",
+      "quote": "It’s sharp."
+    },
+    {
+      "id": "medqa-cs-012-f009",
+      "source_ids": [
+        "medqa-cs-012-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Holding the head still relieves the pain.",
+      "quote": "Holding my head still."
+    },
+    {
+      "id": "medqa-cs-012-f010",
+      "source_ids": [
+        "medqa-cs-012-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No weakness.",
+      "quote": "No weakness"
+    },
+    {
+      "id": "medqa-cs-012-f011",
+      "source_ids": [
+        "medqa-cs-012-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Tingling in the left arm.",
+      "quote": "my left arm tingles."
+    },
+    {
+      "id": "medqa-cs-012-f012",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Numbness of the left arm.",
+      "quote": "left upper extremity numbness",
+      "flags": [
+        "Only in the note HPI. The script answer to 'weakness or numbness?' mentions tingling only; sp_notes ask the SP to pretend numbness in the back of the left forearm (also recorded as an sp_notes exam finding)."
+      ]
+    },
+    {
+      "id": "medqa-cs-012-f013",
+      "source_ids": [
+        "medqa-cs-012-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No recent neck injury.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f014",
+      "source_ids": [
+        "medqa-cs-012-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No recent heavy lifting.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f015",
+      "source_ids": [
+        "medqa-cs-012-p013"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Had a neck injury in the past, but it was not like the current problem.",
+      "quote": "I have had a neck injury before, but it wasn't like this."
+    },
+    {
+      "id": "medqa-cs-012-f016",
+      "source_ids": [
+        "medqa-cs-012-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Lost about 10 pounds over the past 6 months.",
+      "quote": "I've lost about 10 pounds in the past 6 months"
+    },
+    {
+      "id": "medqa-cs-012-f017",
+      "source_ids": [
+        "medqa-cs-012-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Decreased appetite.",
+      "quote": "my appetite has decreased."
+    },
+    {
+      "id": "medqa-cs-012-f018",
+      "source_ids": [
+        "medqa-cs-012-p014",
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No fevers.",
+      "quote": "No dyspnea, fever, or night sweats.",
+      "flags": [
+        "The script answer to 'weight loss, fevers, or night sweats?' reports only weight loss and appetite; the denial of fever comes from the note HPI."
+      ]
+    },
+    {
+      "id": "medqa-cs-012-f019",
+      "source_ids": [
+        "medqa-cs-012-p014",
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No night sweats.",
+      "quote": "No dyspnea, fever, or night sweats.",
+      "flags": [
+        "The script answer to 'weight loss, fevers, or night sweats?' reports only weight loss and appetite; the denial of night sweats comes from the note HPI."
+      ]
+    },
+    {
+      "id": "medqa-cs-012-f020",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No shortness of breath.",
+      "quote": "No dyspnea",
+      "flags": [
+        "Only in the note HPI; not asked in the script."
+      ]
+    },
+    {
+      "id": "medqa-cs-012-f021",
+      "source_ids": [
+        "medqa-cs-012-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No headaches.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f022",
+      "source_ids": [
+        "medqa-cs-012-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No dizziness.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f023",
+      "source_ids": [
+        "medqa-cs-012-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No sensitivity to light.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f024",
+      "source_ids": [
+        "medqa-cs-012-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No nausea.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f025",
+      "source_ids": [
+        "medqa-cs-012-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vomiting.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f026",
+      "source_ids": [
+        "medqa-cs-012-p016"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Reports no health problems.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f027",
+      "source_ids": [
+        "medqa-cs-012-p017"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-012-f028",
+      "source_ids": [
+        "medqa-cs-012-p018"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "preventive",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Up to date on mammograms.",
+      "quote": "I am up to date on mammograms"
+    },
+    {
+      "id": "medqa-cs-012-f029",
+      "source_ids": [
+        "medqa-cs-012-p018"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "preventive",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Had a normal colonoscopy last year.",
+      "quote": "had a normal colonoscopy last year."
+    },
+    {
+      "id": "medqa-cs-012-f030",
+      "source_ids": [
+        "medqa-cs-012-p018"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Osteopenia found at her last osteoporosis screening.",
+      "quote": "I was found to have osteopenia at my last osteoporosis screening."
+    },
+    {
+      "id": "medqa-cs-012-f031",
+      "source_ids": [
+        "medqa-cs-012-p019"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes calcium supplements.",
+      "quote": "I take calcium"
+    },
+    {
+      "id": "medqa-cs-012-f032",
+      "source_ids": [
+        "medqa-cs-012-p019"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes vitamin D supplements.",
+      "quote": "vitamin D supplements."
+    },
+    {
+      "id": "medqa-cs-012-f033",
+      "source_ids": [
+        "medqa-cs-012-p020"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Mother had osteoporosis.",
+      "quote": "My mother had osteoporosis"
+    },
+    {
+      "id": "medqa-cs-012-f034",
+      "source_ids": [
+        "medqa-cs-012-p020"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father had a heart attack at age 68.",
+      "quote": "my father experienced a heart attack at the age of 68."
+    },
+    {
+      "id": "medqa-cs-012-f035",
+      "source_ids": [
+        "medqa-cs-012-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Retired magazine editor.",
+      "quote": "Retired magazine editor."
+    },
+    {
+      "id": "medqa-cs-012-f036",
+      "source_ids": [
+        "medqa-cs-012-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinks a glass of wine with dinner on weekends.",
+      "quote": "Just a glass of wine with dinner on weekends."
+    },
+    {
+      "id": "medqa-cs-012-f037",
+      "source_ids": [
+        "medqa-cs-012-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never used illegal drugs.",
+      "quote": "Not at all."
+    },
+    {
+      "id": "medqa-cs-012-f038",
+      "source_ids": [
+        "medqa-cs-012-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not smoke or use any other tobacco products.",
+      "quote": "Not at all."
+    },
+    {
+      "id": "medqa-cs-012-f039",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No known drug allergies.",
+      "quote": "No known drug allergies.",
+      "flags": [
+        "The script asks 'Any known allergies?' but gives no patient answer; taken from the note."
+      ]
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Sit still with your back slightly hunched and head straight ahead; avoid turning your neck, and instead just move your eyes to make eye contact with the examinee.",
+      "Show pain when moving your neck and when the examinee palpates your neck.",
+      "Pretend to have numbness in the back of your left forearm.",
+      "Patient description: lives with her husband."
+    ],
+    "patient_questions": [
+      "I am scheduled to visit my sister in Florida in three days. Am I still able to go?"
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "115/75 mm Hg",
+        "source_text": "BP: 115/75 mmHg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.0°F (36.7°C)",
+        "source_text": "Temp: 98.0°F (36.7°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "16/minute",
+        "source_text": "RR: 16/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "74/minute, regular",
+        "source_text": "HR: 74/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits",
+        "source_text": "Vital Signs (VS): Within normal limits."
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "Sitting rigid and still, avoiding moving the neck",
+        "source_text": "General: Patient is sitting rigid and still, avoiding moving the neck."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e003"
+        ],
+        "system": "Neck",
+        "name": "Inspection",
+        "finding": "No scars or deformities",
+        "source_text": "Neck: No scars or deformities, limited range of motion in all directions with pain. Tenderness to palpation on cervical spinous processes. Lhermitte and Spurling tests are positive."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e003"
+        ],
+        "system": "Neck",
+        "name": "Range of motion",
+        "finding": "Limited in all directions, with pain",
+        "source_text": "Neck: No scars or deformities, limited range of motion in all directions with pain. Tenderness to palpation on cervical spinous processes. Lhermitte and Spurling tests are positive."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e003"
+        ],
+        "system": "Neck",
+        "name": "Palpation of cervical spinous processes",
+        "finding": "Tender to palpation",
+        "source_text": "Neck: No scars or deformities, limited range of motion in all directions with pain. Tenderness to palpation on cervical spinous processes. Lhermitte and Spurling tests are positive."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e003"
+        ],
+        "system": "Neck",
+        "name": "Lhermitte sign",
+        "finding": "Positive",
+        "source_text": "Neck: No scars or deformities, limited range of motion in all directions with pain. Tenderness to palpation on cervical spinous processes. Lhermitte and Spurling tests are positive."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e003"
+        ],
+        "system": "Neck",
+        "name": "Spurling test",
+        "finding": "Positive",
+        "source_text": "Neck: No scars or deformities, limited range of motion in all directions with pain. Tenderness to palpation on cervical spinous processes. Lhermitte and Spurling tests are positive.",
+        "flags": [
+          "Side not stated in the source."
+        ]
+      },
+      {
+        "id": "x007",
+        "source": "sp_notes",
+        "system": "Neck",
+        "name": "Neck movement",
+        "finding": "Pain when moving the neck",
+        "source_text": "Show pain when moving your neck and when the examinee palpates your neck."
+      },
+      {
+        "id": "x008",
+        "source": "sp_notes",
+        "system": "Neck",
+        "name": "Neck palpation",
+        "finding": "Pain when the neck is palpated",
+        "source_text": "Show pain when moving your neck and when the examinee palpates your neck."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e004"
+        ],
+        "system": "Extremities",
+        "name": "Inspection",
+        "finding": "No scars or deformities",
+        "source_text": "Extremities: No scars or deformities. Brachial and radial pulses are full. Full range of motion."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e004"
+        ],
+        "system": "Extremities",
+        "name": "Brachial and radial pulses",
+        "finding": "Full",
+        "source_text": "Extremities: No scars or deformities. Brachial and radial pulses are full. Full range of motion."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e004"
+        ],
+        "system": "Extremities",
+        "name": "Range of motion",
+        "finding": "Full range of motion",
+        "source_text": "Extremities: No scars or deformities. Brachial and radial pulses are full. Full range of motion."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e005"
+        ],
+        "system": "Neuro",
+        "name": "Motor strength",
+        "finding": "5/5 throughout the upper extremities",
+        "source_text": "Neurological Examination: Motor strength 5/5 throughout upper extremities. Deep tendon reflexes are 2+ symmetric, and Babinski reflex is 8 bilaterally. Sensation: Loss of pinprick sensation noted on dorsum of the left hand and posterior left arm and forearm; all other sensations are normal. Kernig and Brudzinski signs are positive."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e005"
+        ],
+        "system": "Neuro",
+        "name": "Deep tendon reflexes",
+        "finding": "2+ and symmetric",
+        "source_text": "Neurological Examination: Motor strength 5/5 throughout upper extremities. Deep tendon reflexes are 2+ symmetric, and Babinski reflex is 8 bilaterally. Sensation: Loss of pinprick sensation noted on dorsum of the left hand and posterior left arm and forearm; all other sensations are normal. Kernig and Brudzinski signs are positive."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e005"
+        ],
+        "system": "Neuro",
+        "name": "Babinski reflex",
+        "finding": "Result not documented",
+        "source_text": "Neurological Examination: Motor strength 5/5 throughout upper extremities. Deep tendon reflexes are 2+ symmetric, and Babinski reflex is 8 bilaterally. Sensation: Loss of pinprick sensation noted on dorsum of the left hand and posterior left arm and forearm; all other sensations are normal. Kernig and Brudzinski signs are positive.",
+        "flags": [
+          "Source reads 'Babinski reflex is 8 bilaterally' — symbol garbled (OCR); direction cannot be recovered."
+        ]
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e005"
+        ],
+        "system": "Neuro",
+        "name": "Pinprick sensation",
+        "finding": "Loss of pinprick sensation on the dorsum of the left hand and the posterior left arm and forearm",
+        "source_text": "Neurological Examination: Motor strength 5/5 throughout upper extremities. Deep tendon reflexes are 2+ symmetric, and Babinski reflex is 8 bilaterally. Sensation: Loss of pinprick sensation noted on dorsum of the left hand and posterior left arm and forearm; all other sensations are normal. Kernig and Brudzinski signs are positive."
+      },
+      {
+        "id": "x016",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e005"
+        ],
+        "system": "Neuro",
+        "name": "Other sensation",
+        "finding": "All other sensations normal",
+        "source_text": "Neurological Examination: Motor strength 5/5 throughout upper extremities. Deep tendon reflexes are 2+ symmetric, and Babinski reflex is 8 bilaterally. Sensation: Loss of pinprick sensation noted on dorsum of the left hand and posterior left arm and forearm; all other sensations are normal. Kernig and Brudzinski signs are positive."
+      },
+      {
+        "id": "x017",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-012-e005"
+        ],
+        "system": "Neuro",
+        "name": "Kernig and Brudzinski signs",
+        "finding": "Positive",
+        "source_text": "Neurological Examination: Motor strength 5/5 throughout upper extremities. Deep tendon reflexes are 2+ symmetric, and Babinski reflex is 8 bilaterally. Sensation: Loss of pinprick sensation noted on dorsum of the left hand and posterior left arm and forearm; all other sensations are normal. Kernig and Brudzinski signs are positive.",
+        "flags": [
+          "Stated positive in the source, but meningeal signs fit neither the history nor the gold differential; likely a source error. Review before use."
+        ]
+      },
+      {
+        "id": "x018",
+        "source": "sp_notes",
+        "system": "Neuro",
+        "name": "Sensation",
+        "finding": "Numbness over the back of the left forearm",
+        "source_text": "Pretend to have numbness in the back of your left forearm."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Spinal disc herniation",
+        "history_findings": [
+          "Neck pain that increases with movement",
+          "Radiculopathy (left arm pain and numbness)"
+        ],
+        "exam_findings": [
+          "Loss of pinprick sensation noted on dorsum of the left hand and posterior left arm and forearm",
+          "Neck tenderness",
+          "Spasm",
+          "Decreased range of motion"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Cervical fracture",
+        "history_findings": [
+          "Rapid rotation of the neck preceded pain",
+          "Pain increases with movement",
+          "Osteopenia on the last DEXA"
+        ],
+        "exam_findings": [
+          "Tenderness over the spinous process"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Neck muscle strain",
+        "history_findings": [
+          "Rapid rotation of the neck preceded pain"
+        ],
+        "exam_findings": [
+          "Tenderness",
+          "Decreased range of motion"
+        ]
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Osteoarthritis",
+        "rationale": "Degenerative spine disease can compress nerves like herniation or fracture, but its time course is usually more chronic than in this case."
+      },
+      {
+        "diagnosis": "Cervical spondylosis",
+        "rationale": "Age-related changes that would cause a slowly progressive radiculopathy."
+      },
+      {
+        "diagnosis": "Metastatic cancer",
+        "rationale": "A possible spinal lesion with weight loss in an older woman raises concern for bone metastasis, most likely from breast."
+      },
+      {
+        "diagnosis": "Multiple myeloma",
+        "rationale": "A rarer cause of spinal lesions; may come with anemia, renal failure, hypercalcemia and constitutional symptoms."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "The script asks 'Any known allergies?' (topic Drug Allergies) with no patient answer, so the parsed qa has no allergy item; the note gives 'No known drug allergies' (added as from_note fact f039).",
+      "Exam e005: 'Babinski reflex is 8 bilaterally' is an OCR artifact (probably a downgoing/negative symbol); direction not stated, recorded neutrally (x014).",
+      "Exam e005 records Kernig and Brudzinski signs as positive, which fits neither the history (no fever, headache, photophobia) nor the gold; possibly an error for 'negative'. Recorded as written (x017). The checklist spells it 'Kemig'.",
+      "Note HPI says 'left upper extremity numbness'; the script answer to the weakness/numbness question reports only tingling of the left arm, while sp_notes ask the SP to pretend numbness in the back of the left forearm.",
+      "The weight-loss/fever/night-sweats answer (p014) does not explicitly deny fever or night sweats; the denials come from the note HPI. The note's 'No dyspnea' was not asked in the script.",
+      "p016 'Do you experience any health problems?' is answered 'No', yet p018 reveals osteopenia found at screening (note PMH: 'Osteopenia on last DEXA').",
+      "Script says the mother 'had' osteoporosis; the note says she 'has' it. Parents' living status is not given although asked.",
+      "Gold #1 exam finding 'spasm' is not documented in the note exam.",
+      "The challenging question starts with a doubled quotation mark ('\"\"I am scheduled...'); cleaned in persona."
+    ],
+    "annotator_notes": [
+      "p002 'Since then it hurts to move' and p009 'Turning my head in either direction' are merged into one aggravating-factor fact (f003) to avoid a paraphrase duplicate.",
+      "f012 (left arm numbness) is note-only and flagged; the SP's simulated forearm numbness is also recorded as exam finding x018.",
+      "f026 records the literal 'No' to health problems; osteopenia is kept as a separate present PMH fact (f030).",
+      "Family history marked historical because the patient uses the past tense and the parents' living status is not stated.",
+      "The patient-description line 'lives with her husband' exists only in raw_opening; kept in persona.acting_notes because source ids cannot point to it.",
+      "The upcoming trip to visit her sister in Florida in three days appears only in the challenging question (persona.patient_questions).",
+      "Reviewer edit: environment commentary moved from `finding` to `flags` for x006, x014, x017."
+    ]
+  }
+}

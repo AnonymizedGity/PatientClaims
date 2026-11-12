@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-149",
+  "source_row": 149,
+  "demographics_text": "44-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with small, non-pruritic bumps on the left thigh and general malaise.",
+  "chief_complaint": "Small, non-pruritic bumps on the left thigh",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-149-p001",
+      "field": "History",
+      "text": "The patient reports the appearance of small bumps on his left thigh for the last 3 weeks. He mentions feeling fatigued and a general sense of malaise for a few months. Denies any known medical problems or medication use. Shares a history of smoking one pack of cigarettes per day and using intravenous street drugs."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-149-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Fatigue"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-149-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Malaise"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-149-p004",
+      "field": "Past_Medical_History",
+      "text": "No known medical problems. No regular medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-149-p005",
+      "field": "Social_History",
+      "text": "Smokes one pack of cigarettes per day. Uses intravenous street drugs."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-149-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, night sweats, cough, or shortness of breath."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98.1°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "126/80 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "Three 2-3 mm, dome-shaped, hardened papules on the left thigh with central umbilication."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e006",
+      "path": "Physical_Examination_Findings.Lymph_Nodes.Inspection_and_Palpation",
+      "text": "Non-tender cervical lymphadenopathy."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e007",
+      "path": "Physical_Examination_Findings.Cardiovascular_Examination.Auscultation",
+      "text": "Heart sounds are normal, without murmurs."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-e008",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Lungs are clear bilaterally, without wheezes, crackles, or rhonchi."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-149-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-149-i004",
+      "path": "Test_Results.HIV_Test.Result",
+      "text": "Pending (To be given to the doctor verbally during the encounter as positive if needed)"
+    }
+  ],
+  "correct_diagnosis": "Molluscum contagiosum",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

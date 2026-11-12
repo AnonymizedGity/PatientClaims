@@ -1,0 +1,47 @@
+{
+ "case_id": "mcr-test-05730",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've been having fevers that come and go.",
+   "They've been going on for about a month.",
+   "I've lost 7 kg over the past two months.",
+   "At the highest it reached 39.6 °C."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having fevers that come and go, and they've been going on for about a month. At the highest, it reached 39.6 °C. I've also lost 7 kg over the past two months.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f006",
+    "f003"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3247,
+   "tokens_out": 61,
+   "seconds": 6.73,
+   "redrafts": 0
+  }
+ }
+}

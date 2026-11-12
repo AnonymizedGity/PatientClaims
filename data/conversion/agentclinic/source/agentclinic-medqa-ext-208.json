@@ -1,0 +1,88 @@
+{
+  "case_id": "agentclinic-medqa-ext-208",
+  "source_row": 208,
+  "demographics_text": "55-year-old male",
+  "objective_for_doctor": "Evaluate a 55-year-old man presenting with foot pain and cramping during exercise, and diagnose the underlying condition.",
+  "chief_complaint": "Tingling pain in the sole of the right foot during exercise",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-208-p001",
+      "field": "History",
+      "text": "The patient has been experiencing tingling pain in the sole of his right foot for the last 6 weeks, which occurs when he raises his foot above chest level during exercises. He started exercising regularly 2 months ago and notices his right calf cramps when using the incline feature on his treadmill, requiring him to stop frequently. The pain subsides after a few minutes of rest. He has been managing type 2 diabetes mellitus for 8 years. He is a smoker with a 34-year history of smoking two packs per day."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-208-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Right calf cramps with incline exercise"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-208-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Pain resolution upon rest"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-208-p004",
+      "field": "Past_Medical_History",
+      "text": "Type 2 diabetes mellitus, managed with metformin for the past 8 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-208-p005",
+      "field": "Social_History",
+      "text": "Smoking history of two packs per day for 34 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-208-p006",
+      "field": "Review_of_Systems",
+      "text": "No other systemic symptoms reported."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-208-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Pulse",
+      "text": "82/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-208-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "170/92 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-208-e003",
+      "path": "Physical_Examination_Findings.Neurovascular_Examination.Straight_Leg_Raise_Test",
+      "text": "Induces pallor and tingling pain in the right foot, without back pain"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-208-e004",
+      "path": "Physical_Examination_Findings.Neurovascular_Examination.Muscle_Strength",
+      "text": "Normal throughout"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-208-e005",
+      "path": "Physical_Examination_Findings.Neurovascular_Examination.Pulses",
+      "text": "Femoral pulses palpable, right pedal pulses absent"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-208-i001",
+      "path": "Test_Results.Blood_Glucose.Fasting_Blood_Glucose",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-208-i002",
+      "path": "Test_Results.Ankle-Brachial_Index.Right",
+      "text": "Reduced, indicative of peripheral artery disease"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-208-i003",
+      "path": "Test_Results.Doppler_Ultrasound_Right_Lower_Extremity.Findings",
+      "text": "Reduced blood flow and stenosis in the femoropopliteal artery segment"
+    }
+  ],
+  "correct_diagnosis": "Femoropopliteal artery stenosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

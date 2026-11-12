@@ -1,0 +1,319 @@
+{
+  "case_id": "medqa-cs-008",
+  "source_case_id": 8,
+  "opening_scenario": "Raymond Stern, a 56-year-old male, comes to the clinic for a diabetes follow-up.",
+  "doorway_vital_signs": [
+    "BP: 139/85 mmHg",
+    "Temp: 98.0°F (36.7°C)",
+    "RR: 15/minute",
+    "HR: 75/minute, regular"
+  ],
+  "sp_notes": [
+    "Pretend that you have a loss of sharp and dull sensations, vibration sense, and position sense in both feet (stocking distribution).",
+    "Pretend to have a normal knee-jerk reflex and an absent ankle reflex."
+  ],
+  "challenging_questions": [
+    "\"Doctor, am I at risk of losing my feet?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief complaint",
+    "question": "What brings you into the office today?",
+    "answer": "I am here for a diabetes checkup. The last time I saw the doctor was 6 months ago."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-008-p001",
+      "topic": "Onset",
+      "question": "How long have you had diabetes?",
+      "answer": "I have had diabetes for the past 25 years."
+    },
+    {
+      "fact_id": "medqa-cs-008-p002",
+      "topic": "Treatment",
+      "question": "What medications are you taking?",
+      "answer": "I am on NPH insulin. I take 20 units every morning and 15 units in the evening."
+    },
+    {
+      "fact_id": "medqa-cs-008-p003",
+      "topic": "Medication side effects",
+      "question": "Have you noticed any adverse effects from the medication?",
+      "answer": "No, it's been a consistent treatment, and I haven't encountered any issues."
+    },
+    {
+      "fact_id": "medqa-cs-008-p004",
+      "topic": "Compliance with medication",
+      "question": "Are you able to take these medications consistently every day?",
+      "answer": "Yes, I never miss any doses."
+    },
+    {
+      "fact_id": "medqa-cs-008-p005",
+      "topic": "Blood sugar monitoring",
+      "question": "Do you check your blood sugar regularly at home? How often? What are your levels usually like?",
+      "answer": "Yes, I have a blood sugar monitor at home, and I check my blood sugar twice a week. It usually ranges between 120 and 145."
+    },
+    {
+      "fact_id": "medqa-cs-008-p006",
+      "topic": "Last blood sugar reading",
+      "question": "What was your most recent blood sugar reading?",
+      "answer": "I checked 3 days ago and it was 135."
+    },
+    {
+      "fact_id": "medqa-cs-008-p007",
+      "topic": "Last HbA1c",
+      "question": "Have you had your hemoglobin A1c checked lately? Are you aware of the result?",
+      "answer": "It was last tested 6 months ago, and the result was 7.210."
+    },
+    {
+      "fact_id": "medqa-cs-008-p008",
+      "topic": "Diabetic eye exam",
+      "question": "Do you see an eye doctor regularly?",
+      "answer": "I saw one about 1 year ago, and he said there were no signs of diabetic eye disease."
+    },
+    {
+      "fact_id": "medqa-cs-008-p009",
+      "topic": "Visual problems (blurred vision)",
+      "question": "Have you noticed any recent alterations in your eyesight?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p010",
+      "topic": "Diabetic foot exams",
+      "question": "Do you have regular appointments with a podiatrist or foot specialist?",
+      "answer": "I used to, but I haven't seen one in the last couple of years."
+    },
+    {
+      "fact_id": "medqa-cs-008-p011",
+      "topic": "Foot infection",
+      "question": "Have you experienced any infections in your feet?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p012",
+      "topic": "Hypoglycemic symptoms",
+      "question": "Have you experienced symptoms of hypoglycemia, like dizziness, heart palpitations, confusion, or sweating?",
+      "answer": "Yes, I tend to sweat and notice my heart racing occasionally. This occurs infrequently if I skip a meal. I feel better after having orange juice."
+    },
+    {
+      "fact_id": "medqa-cs-008-p013",
+      "topic": "Heart symptoms (chest pain, palpitations)",
+      "question": "Do you ever feel chest pain or palpitations?",
+      "answer": "Just the palpitations I mentioned. No chest pain."
+    },
+    {
+      "fact_id": "medqa-cs-008-p014",
+      "topic": "Pulmonary complaints (shortness of breath, cough)",
+      "question": "Do you experience any difficulty breathing? Have you had a cough?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p015",
+      "topic": "Neurologic complaints (headaches, dizziness, weakness, numbness)",
+      "question": "Any headaches, dizziness, weakness, numbness, or tingling?",
+      "answer": "I have tingling and numbness in my feet all the time, especially at night, and it's gotten worse over the past 2 months."
+    },
+    {
+      "fact_id": "medqa-cs-008-p016",
+      "topic": "Polyuria, dysuria, hematuria",
+      "question": "Do you have frequent urination? Any pain with urination or blood in your urine?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p017",
+      "topic": "Abdominal complaints (pain, dyspepsia, nausea)",
+      "question": "Are you experiencing any abdominal discomfort, indigestion, nausea, or vomiting?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p018",
+      "topic": "Change in bowel habits",
+      "question": "Have you experienced any alterations in your bowel habits, including constipation, diarrhea, or inconsistent stools?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p019",
+      "topic": "Feelings of anxiety or stress",
+      "question": "Do you ever feel anxious or stressed?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p020",
+      "topic": "Weight changes",
+      "question": "Any recent weight gain or loss?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p021",
+      "topic": "Appetite changes",
+      "question": "Any changes in your appetite?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p022",
+      "topic": "History of hypertension",
+      "question": "Have you ever been diagnosed with high blood pressure?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p023",
+      "topic": "History of hypercholesterolemia",
+      "question": "Have you ever been diagnosed with high cholesterol?",
+      "answer": "Yes, it was diagnosed 2 years ago."
+    },
+    {
+      "fact_id": "medqa-cs-008-p024",
+      "topic": "History of heart problems",
+      "question": "Have you experienced any heart issues, like a cardiac arrest or arrhythmia?",
+      "answer": "I suffered a heart attack last year."
+    },
+    {
+      "fact_id": "medqa-cs-008-p025",
+      "topic": "History of TIA or stroke",
+      "question": "Have you ever had a stroke?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p026",
+      "topic": "Current medications",
+      "question": "Which medications are you taking at the moment?",
+      "answer": "Insulin, lovastatin, aspirin, and atenolol."
+    },
+    {
+      "fact_id": "medqa-cs-008-p027",
+      "topic": "Drug allergies",
+      "question": "Do you have any allergies to medications?",
+      "answer": "None."
+    },
+    {
+      "fact_id": "medqa-cs-008-p028",
+      "topic": "Past medical history",
+      "question": "Besides diabetes, what medical problems do you have?",
+      "answer": "I mentioned the heart attack last year and the high cholesterol, which I have had for 2 years."
+    },
+    {
+      "fact_id": "medqa-cs-008-p029",
+      "topic": "Past surgical history",
+      "question": "Have you ever had any surgeries?",
+      "answer": "None."
+    },
+    {
+      "fact_id": "medqa-cs-008-p030",
+      "topic": "Family history",
+      "question": "What health issues are present in your family history?",
+      "answer": "My father passed away from a stroke at 60, while my mother is in good health."
+    },
+    {
+      "fact_id": "medqa-cs-008-p031",
+      "topic": "Occupation",
+      "question": "What is your occupation?",
+      "answer": "I'm a clerk."
+    },
+    {
+      "fact_id": "medqa-cs-008-p032",
+      "topic": "Diet",
+      "question": "Tell me about your diet.",
+      "answer": "I eat everything that my wife cooks - meat, vegetables, etc. I don't follow any special diet."
+    },
+    {
+      "fact_id": "medqa-cs-008-p033",
+      "topic": "Exercise",
+      "question": "Do you regularly engage in physical activity?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p034",
+      "topic": "Alcohol use",
+      "question": "Do you drink alcohol? How much? How often?",
+      "answer": "Yes, whiskey, but only on the weekend..."
+    },
+    {
+      "fact_id": "medqa-cs-008-p035",
+      "topic": "Tobacco",
+      "question": "Do you smoke? Did you ever smoke in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p036",
+      "topic": "Illicit drug use",
+      "question": "Do you use any recreational drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-008-p037",
+      "topic": "Social history",
+      "question": "Where do you live? Who do you live with?",
+      "answer": "I live in my own home with my wife."
+    },
+    {
+      "fact_id": "medqa-cs-008-p038",
+      "topic": "Sexual activity",
+      "question": "Are you currently sexually active?",
+      "answer": "Well, I am not doing my job the way I used to, but my wife understands and is supportive. They told me it is the diabetes. Is it?"
+    },
+    {
+      "fact_id": "medqa-cs-008-p039",
+      "topic": "Type of sexual problem",
+      "question": "Would you describe what problems you are having with your sexual function?",
+      "answer": "I can't get it up, doc. I don't even wake up with erections anymore."
+    },
+    {
+      "fact_id": "medqa-cs-008-p040",
+      "topic": "Duration",
+      "question": "How long has this been happening?",
+      "answer": "One or 2 years."
+    },
+    {
+      "fact_id": "medqa-cs-008-p041",
+      "topic": "Libido",
+      "question": "Has your libido, or sex drive, decreased at all?",
+      "answer": "I think it's about the same."
+    },
+    {
+      "fact_id": "medqa-cs-008-p042",
+      "topic": "Feelings of depression",
+      "question": "Have you ever experienced feelings of sadness or depression?",
+      "answer": "No, I do not feel depressed."
+    }
+  ],
+  "patient_note_history": "History\nHPI: A 56-year-old male presents for diabetes follow-up. He has a 25-year history of DM treated with insulin and is compliant with medications. He monitors blood glucose twice a week, readings between 120 and 145 mg/dL. Last HbA1c 6 months ago was 7%, per patient report. Occasional episodes of palpitations and diaphoresis, occurring after missing meals and resolving with drinking orange juice. Tingling and numbness in feet all the time, especially at night, worse over the past 2 months. Loss of erections for 2 years; absence of early-morning erections. No weight or appetite changes. No special diet. Does not exercise regularly.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Lovastatin, NPH insulin, aspirin, atenolol.\nPMH: Hypercholesterolemia diagnosed 2 years ago; MI 1 year ago.\nPSH: None.\nSH: No smoking, drinks whiskey on weekends, no illicit drugs. Works as a clerk. He is married and lives with his wife.\nFH: Father died of a stroke at age 60.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-008-e001",
+      "source_text": "Patient is well-nourished and well-developed. Sitting comfortably and in no distress."
+    },
+    {
+      "exam_id": "medqa-cs-008-e002",
+      "source_text": "VS: Within normal limits."
+    },
+    {
+      "exam_id": "medqa-cs-008-e003",
+      "source_text": "HEENT: Pupils equal, round, and reactive to light and accommodation. Fundoscopic exam normal with no arteriovenous nicking, hemorrhages, or exudates."
+    },
+    {
+      "exam_id": "medqa-cs-008-e004",
+      "source_text": "Neck: No carotid bruits, no jugular venous distention."
+    },
+    {
+      "exam_id": "medqa-cs-008-e005",
+      "source_text": "Chest: Breath sounds clear to auscultation bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-008-e006",
+      "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; first heart sound/second heart sound within normal limits; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-008-e007",
+      "source_text": "Abdomen: Soft, non-distended, non-tender, bowel sounds present in all four quadrants, no bruits, no hepatosplenomegaly."
+    },
+    {
+      "exam_id": "medqa-cs-008-e008",
+      "source_text": "Extremities: No edema, no skin breakdown, 2+ dorsalis pedis pulses symmetric."
+    },
+    {
+      "exam_id": "medqa-cs-008-e009",
+      "source_text": "Neuro: Motor strength 5/5 in bilateral lower extremities. Deep tendon reflexes symmetrically present and 2+ at the knee, absent at the ankle, and 6 Babinski bilaterally. Sensation: Diminished pinprick sensation on plantar surfaces bilaterally. Sensation to soft touch, vibratory, and position is intact in bilateral lower extremities."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Insulin-induced hypoglycemia\nHistory Finding(s):\n- Episodes of palpitations and diaphoresis that resolve with drinking orange juice\n- Tight glycemic control\n\nDiagnosis #2: Diabetic peripheral neuropathy\nHistory Finding(s):\n- History of diabetes mellitus\n- Constant numbness and tingling in feet bilaterally\n\nPhysical Exam Finding(s):\n- Diminished pinprick sensation on plantar surfaces\n\nDiagnosis #3: Organic erectile dysfunction\nHistory Finding(s):\n- Loss of erection for 2 years with absence of early-morning erection\n- History of diabetes mellitus\n- History of alcohol use\n- Taking lovastatin and atenolol",
+  "gold_additional_diagnosis": "The differential for nondiabetic peripheral neuropathy includes hereditary, toxic, metabolic, infectious, inflammatory, and paraneoplastic disorders. No specific cause is determined in up to 50% of cases. The history and exam guide us to some of the common causes discussed below.\n- Alcoholic peripheral neuropathy: This is a distal sensorimotor polyneuropathy marked by painful leg paresthesias. It is directly attributable to alcohol or to associated nutritional deficiencies (e.g., thiamine and vitamin B).\n- Multiple myeloma: Myeloma or other paraproteinemias must be ruled out in a patient with peripheral neuropathy.\n- Renal failure: Uremia may cause a sensory peripheral neuropathy that may affect diabetic patients.\n- Hypothyroidism: Peripheral neuropathy and other neurologic symptoms may be associated with hypothyroidism.\n- Vasculitides: Polyarteritis nodosa, rheumatoid arthritis, and other vasculitides may cause peripheral neuropathy and can be detected by laboratory data such as ESR, ANCA, RF, and anti-cyclic citrullinated peptide (anti-CCP) antibody.",
+  "raw_opening": "Opening Scenario:\n\nRaymond Stern, a 56-year-old male, comes to the clinic for a diabetes follow-up.\n\nVital Signs:\n\nBP: 139/85 mmHg\nTemp: 98.0°F (36.7°C)\nRR: 15/minute\nHR: 75/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genital, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nThe patient is a 56-year-old male.\n\nNotes for the SP:\n- Pretend that you have a loss of sharp and dull sensations, vibration sense, and position sense in both feet (stocking distribution).\n- Pretend to have a normal knee-jerk reflex and an absent ankle reflex.\n\nChallenging Questions to Ask:\n- \"Doctor, am I at risk of losing my feet?\"\n\nExaminee Response:\n\"Amputation is considered a final option for diabetic patients with foot infections; fortunately, we have not reached that stage.\". The nerve damage to your feet is uncomfortable, but it will not lead to amputation as long as you take the proper measures to protect your feet from injury. If we continue to keep your blood sugar and cholesterol well-controlled, we should be able to manage this condition through medications. We will revisit your diabetes management later during the appointment..\"\n\nExaminee Checklist:\n\nEntrance:\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified their role or position.\n\nReflective Listening:\n- The examinee asked an open-ended question and actively listened to the response.\n- The examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- The examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n- The examinee dictated data efficiently and accurately.\n\nConnecting With the Patient:\n- The examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nTopic: Chief complaint:\nDoctor: \"What brings you into the office today?\"\nPatient: \"I am here for a diabetes checkup. The last time I saw the doctor was 6 months ago.\"\n\nTopic: Onset:\nDoctor: \"How long have you had diabetes?\"\nPatient: \"I have had diabetes for the past 25 years.\"\n\nTopic: Treatment:\nDoctor: \"What medications are you taking?\"\nPatient: \"I am on NPH insulin. I take 20 units every morning and 15 units in the evening.\"\n\nTopic: Medication side effects:\nDoctor: \"Have you noticed any adverse effects from the medication?\"\nPatient: \"No, it's been a consistent treatment, and I haven't encountered any issues.\"\n\nTopic: Compliance with medication:\nDoctor: \"Are you able to take these medications consistently every day?\"\nPatient: \"Yes, I never miss any doses.\"\n\nTopic: Blood sugar monitoring:\nDoctor: \"Do you check your blood sugar regularly at home? How often? What are your levels usually like?\"\nPatient: \"Yes, I have a blood sugar monitor at home, and I check my blood sugar twice a week. It usually ranges between 120 and 145.\"\n\nTopic: Last blood sugar reading:\nDoctor: \"What was your most recent blood sugar reading?\"\nPatient: \"I checked 3 days ago and it was 135.\"\n\nTopic: Last HbA1c:\nDoctor: \"Have you had your hemoglobin A1c checked lately? Are you aware of the result?\"\nPatient: \"It was last tested 6 months ago, and the result was 7.210.\"\n\nTopic: Diabetic eye exam:\nDoctor: \"Do you see an eye doctor regularly?\"\nPatient: \"I saw one about 1 year ago, and he said there were no signs of diabetic eye disease.\"\n\nTopic: Visual problems (blurred vision):\nDoctor: \"Have you noticed any recent alterations in your eyesight?\"\nPatient: \"No.\"\n\nTopic: Diabetic foot exams:\nDoctor: \"Do you have regular appointments with a podiatrist or foot specialist?\"\nPatient: \"I used to, but I haven't seen one in the last couple of years.\"\n\nTopic: Foot infection:\nDoctor: \"Have you experienced any infections in your feet?\"\nPatient: \"No.\"\n\nTopic: Hypoglycemic symptoms:\nDoctor: \"Have you experienced symptoms of hypoglycemia, like dizziness, heart palpitations, confusion, or sweating?\"\nPatient: \"Yes, I tend to sweat and notice my heart racing occasionally. This occurs infrequently if I skip a meal. I feel better after having orange juice.\"\n\nTopic: Heart symptoms (chest pain, palpitations):\nDoctor: \"Do you ever feel chest pain or palpitations?\"\nPatient: \"Just the palpitations I mentioned. No chest pain.\"\n\nTopic: Pulmonary complaints (shortness of breath, cough):\nDoctor: \"Do you experience any difficulty breathing? Have you had a cough?\"\nPatient: \"No.\"\n\nTopic: Neurologic complaints (headaches, dizziness, weakness, numbness):\nDoctor: \"Any headaches, dizziness, weakness, numbness, or tingling?\"\nPatient: \"I have tingling and numbness in my feet all the time, especially at night, and it's gotten worse over the past 2 months.\"\n\nTopic: Polyuria, dysuria, hematuria:\nDoctor: \"Do you have frequent urination? Any pain with urination or blood in your urine?\"\nPatient: \"No.\"\n\nTopic: Abdominal complaints (pain, dyspepsia, nausea):\nDoctor: \"Are you experiencing any abdominal discomfort, indigestion, nausea, or vomiting?\"\nPatient: \"No.\"\n\nTopic: Change in bowel habits:\nDoctor: \"Have you experienced any alterations in your bowel habits, including constipation, diarrhea, or inconsistent stools?\"\nPatient: \"No.\"\n\nTopic: Feelings of anxiety or stress:\nDoctor: \"Do you ever feel anxious or stressed?\"\nPatient: \"No.\"\n\nTopic: Weight changes:\nDoctor: \"Any recent weight gain or loss?\"\nPatient: \"No.\"\n\nTopic: Appetite changes:\nDoctor: \"Any changes in your appetite?\"\nPatient: \"No.\"\n\nTopic: History of hypertension:\nDoctor: \"Have you ever been diagnosed with high blood pressure?\"\nPatient: \"No.\"\n\nTopic: History of hypercholesterolemia:\nDoctor: \"Have you ever been diagnosed with high cholesterol?\"\nPatient: \"Yes, it was diagnosed 2 years ago.\"\n\nTopic: History of heart problems:\nDoctor: \"Have you experienced any heart issues, like a cardiac arrest or arrhythmia?\"\nPatient: \"I suffered a heart attack last year.\"\n\nTopic: History of TIA or stroke:\nDoctor: \"Have you ever had a stroke?\"\nPatient: \"No.\"\n\nTopic: Current medications:\nDoctor: \"Which medications are you taking at the moment?\"\nPatient: \"Insulin, lovastatin, aspirin, and atenolol.\"\n\nTopic: Drug allergies:\nDoctor: \"Do you have any allergies to medications?\"\nPatient: \"None.\"\n\nTopic: Past medical history:\nDoctor: \"Besides diabetes, what medical problems do you have?\"\nPatient: \"I mentioned the heart attack last year and the high cholesterol, which I have had for 2 years.\"\n\nTopic: Past surgical history:\nDoctor: \"Have you ever had any surgeries?\"\nPatient: \"None.\"\n\nTopic: Family history:\nDoctor: \"What health issues are present in your family history?\"\nPatient: \"My father passed away from a stroke at 60, while my mother is in good health.\"\n\nTopic: Occupation:\nDoctor: \"What is your occupation?\"\nPatient: \"I'm a clerk.\"\n\nTopic: Diet:\nDoctor: \"Tell me about your diet.\"\nPatient: \"I eat everything that my wife cooks - meat, vegetables, etc. I don't follow any special diet.\"\n\nTopic: Exercise:\nDoctor: \"Do you regularly engage in physical activity?\"\nPatient: \"No.\"\n\nTopic: Alcohol use:\nDoctor: \"Do you drink alcohol? How much? How often?\"\nPatient: \"Yes, whiskey, but only on the weekend...\"\n\nTopic: Tobacco:\nDoctor: \"Do you smoke? Did you ever smoke in the past?\"\nPatient: \"No.\"\n\nTopic: Illicit drug use:\nDoctor: \"Do you use any recreational drugs?\"\nPatient: \"No.\"\n\nTopic: Social history:\nDoctor: \"Where do you live? Who do you live with?\"\nPatient: \"I live in my own home with my wife.\"\n\nTopic: Sexual activity:\nDoctor: \"Are you currently sexually active?\"\nPatient: \"Well, I am not doing my job the way I used to, but my wife understands and is supportive. They told me it is the diabetes. Is it?\"\n\nTopic: Type of sexual problem:\nDoctor: \"Would you describe what problems you are having with your sexual function?\"\nPatient: \"I can't get it up, doc. I don't even wake up with erections anymore.\"\n\nTopic: Duration:\nDoctor: \"How long has this been happening?\"\nPatient: \"One or 2 years.\"\n\nTopic: Libido:\nDoctor: \"Has your libido, or sex drive, decreased at all?\"\nPatient: \"I think it's about the same.\"\n\nTopic: Feelings of depression:\nDoctor: \"Have you ever experienced feelings of sadness or depression?\"\nPatient: \"No, I do not feel depressed.\"\n\nPhysical Examination:\n\n- Examinee washed their hands.\n- Examinee asked for permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- HEENT: Fundoscopic exam\n- Cardiovascular: Palpation, auscultation\n- Pulmonary exam: Auscultation\n- Abdominal exam: Auscultation, palpation, percussion\n- Musculoskeletal exam: Inspected feet, checked peripheral pulses\n- Neurologic exam: Checked DTRs (knee and ankle), tested for Babinski sign, assessed strength, sharp and dull sensations, vibration sense, and position sense in lower extremities.\n\nSample Closure:\n\n\"Mr. Stern, the palpitations and sweating you have experienced are most likely due to episodes of low blood sugar, which may have resulted from a higher-than-normal dose of insulin or from skipping or delaying meals. The numbness in your feet is likely due to the impact of diabetes on your nervous system.. Better control of your blood sugar may help improve this problem. Many factors, including diabetes, can cause the erection difficulties you describe. I will need to perform an examination of your genital area and run some blood tests. At a subsequent stage, we might need to perform additional complex tests to determine the underlying cause of your issues.. Do you have any questions for me?\" \n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans.\n- Follow-up tests.\n- Lifestyle modification (diet, exercise).\n- Examinee asked if the patient had any other questions or concerns.Patient Note\nHistory\nHPI: A 56-year-old male presents for diabetes follow-up. He has a 25-year history of DM treated with insulin and is compliant with medications. He monitors blood glucose twice a week, readings between 120 and 145 mg/dL. Last HbA1c 6 months ago was 7%, per patient report. Occasional episodes of palpitations and diaphoresis, occurring after missing meals and resolving with drinking orange juice. Tingling and numbness in feet all the time, especially at night, worse over the past 2 months. Loss of erections for 2 years; absence of early-morning erections. No weight or appetite changes. No special diet. Does not exercise regularly.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Lovastatin, NPH insulin, aspirin, atenolol.\nPMH: Hypercholesterolemia diagnosed 2 years ago; MI 1 year ago.\nPSH: None.\nSH: No smoking, drinks whiskey on weekends, no illicit drugs. Works as a clerk. He is married and lives with his wife.\nFH: Father died of a stroke at age 60.\n\nPhysical Examination:\nPatient is well-nourished and well-developed. Sitting comfortably and in no distress.\nVS: Within normal limits.\nHEENT: Pupils equal, round, and reactive to light and accommodation. Fundoscopic exam normal with no arteriovenous nicking, hemorrhages, or exudates.\nNeck: No carotid bruits, no jugular venous distention.\nChest: Breath sounds clear to auscultation bilaterally.\nHeart: Apical impulse not displaced; regular rate and rhythm; first heart sound/second heart sound within normal limits; no murmurs, rubs, or gallops.\nAbdomen: Soft, non-distended, non-tender, bowel sounds present in all four quadrants, no bruits, no hepatosplenomegaly.\nExtremities: No edema, no skin breakdown, 2+ dorsalis pedis pulses symmetric.\nNeuro: Motor strength 5/5 in bilateral lower extremities. Deep tendon reflexes symmetrically present and 2+ at the knee, absent at the ankle, and 6 Babinski bilaterally. Sensation: Diminished pinprick sensation on plantar surfaces bilaterally. Sensation to soft touch, vibratory, and position is intact in bilateral lower extremities."
+}

@@ -1,0 +1,72 @@
+{
+ "case_id": "mcr-test-12132",
+ "pmcid": "PMC10872682",
+ "test_row": 747,
+ "test_index": 12132,
+ "case_prompt": "A 27-year-old man presented with several months of progressive exertional dyspnoea and lower extremity oedema that began after a motor vehicle accident 5 months earlier. He denied any preceding viral illness, sick contacts, or travel. His initial laboratory studies showed hepatic injury (aspartate aminotransferase 632 IU/L, alanine transferase 248 IU/L), a normal troponin I level of 0.04 ng/mL, and an elevated B-type natriuretic peptide at 1787 pg/mL. A transthoracic echocardiogram demonstrated a normal left ventricular chamber size (end-diastolic diameter 5.6 cm), severely reduced systolic function (ejection fraction <20%), and an apical thrombus. He was treated with intravenous diuretics with symptomatic improvement. \n\nOn transfer, he reported that during the prior accident he had struck his chest on the steering wheel and experienced musculoskeletal chest discomfort that resolved without evaluation. Over the ensuing months he developed orthopnoea, intermittent chest tightness, and paroxysmal nocturnal dyspnoea. Vital signs revealed a heart rate of 109 b.p.m. and blood pressure of 98/60 mm Hg. Physical examination showed jugular venous distension, abdominal ascites, and bilateral lower extremity pitting oedema. A 12-lead electrocardiogram showed sinus tachycardia with low voltage, premature ventricular contractions, and an anterolateral infarct pattern. \n\nA repeat transthoracic echocardiogram confirmed severe biventricular systolic dysfunction and suggested an apical aneurysm or pseudo-aneurysm with thrombus. Cardiac magnetic resonance imaging demonstrated severe biventricular systolic dysfunction, full-thickness late-gadolinium enhancement of all apical left ventricular segments, apical aneurysm formation, and an associated layering thrombus.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 27-year-old man presented with several months of progressive exertional dyspnoea and lower extremity oedema that began after a motor vehicle accident 5 months earlier."
+  },
+  {
+   "id": "s002",
+   "text": "He denied any preceding viral illness, sick contacts, or travel."
+  },
+  {
+   "id": "s003",
+   "text": "His initial laboratory studies showed hepatic injury (aspartate aminotransferase 632 IU/L, alanine transferase 248 IU/L), a normal troponin I level of 0.04 ng/mL, and an elevated B-type natriuretic peptide at 1787 pg/mL."
+  },
+  {
+   "id": "s004",
+   "text": "A transthoracic echocardiogram demonstrated a normal left ventricular chamber size (end-diastolic diameter 5.6 cm), severely reduced systolic function (ejection fraction <20%), and an apical thrombus."
+  },
+  {
+   "id": "s005",
+   "text": "He was treated with intravenous diuretics with symptomatic improvement."
+  },
+  {
+   "id": "s006",
+   "text": "On transfer, he reported that during the prior accident he had struck his chest on the steering wheel and experienced musculoskeletal chest discomfort that resolved without evaluation."
+  },
+  {
+   "id": "s007",
+   "text": "Over the ensuing months he developed orthopnoea, intermittent chest tightness, and paroxysmal nocturnal dyspnoea."
+  },
+  {
+   "id": "s008",
+   "text": "Vital signs revealed a heart rate of 109 b.p.m. and blood pressure of 98/60 mm Hg."
+  },
+  {
+   "id": "s009",
+   "text": "Physical examination showed jugular venous distension, abdominal ascites, and bilateral lower extremity pitting oedema."
+  },
+  {
+   "id": "s010",
+   "text": "A 12-lead electrocardiogram showed sinus tachycardia with low voltage, premature ventricular contractions, and an anterolateral infarct pattern."
+  },
+  {
+   "id": "s011",
+   "text": "A repeat transthoracic echocardiogram confirmed severe biventricular systolic dysfunction and suggested an apical aneurysm or pseudo-aneurysm with thrombus."
+  },
+  {
+   "id": "s012",
+   "text": "Cardiac magnetic resonance imaging demonstrated severe biventricular systolic dysfunction, full-thickness late-gadolinium enhancement of all apical left ventricular segments, apical aneurysm formation, and an associated layering thrombus."
+  }
+ ],
+ "final_diagnosis": "Traumatic coronary artery injury",
+ "diagnostic_reasoning": "1. Viral or autoimmune myocarditis was considered but made less likely by the absence of infectious symptoms — “He denied any preceding viral illness, sick contacts, or travel.” 2. Inherited or idiopathic cardiomyopathy was included in the differential of new-onset systolic dysfunction — “The differential diagnosis included autoimmune or viral myocarditis, inherited or idiopathic cardiomyopathy, and stress cardiomyopathy amongst other diagnoses.” 3. Stress (takotsubo) cardiomyopathy was considered as a non-ischaemic cause — “The differential diagnosis included autoimmune or viral myocarditis, inherited or idiopathic cardiomyopathy, and stress cardiomyopathy amongst other diagnoses.” 4. Ischaemic cardiomyopathy was initially felt unlikely due to the patient’s youth but suspicion increased with supportive ECG and thrombus findings — “Ischaemic cardiomyopathy was initially felt to be less likely based on the patient’s age, though the presence of an anterolateral infarct pattern on ECG and an LV apical thrombus increased suspicion for a prior ischaemic insult.” 5. Transmural enhancement and aneurysm formation on cardiac MRI pointed to infarction rather than myocarditis or stress cardiomyopathy — “a subsequent cardiac magnetic resonance imaging scan confirmed … full-thickness late-gadolinium enhancement involving all apical LV segments, with apical aneurysm formation in addition to an associated layering thrombus.”",
+ "selection": {
+  "age": 27,
+  "sex": "male",
+  "specialty": "cardiology",
+  "dx_key": "traumatic coronary artery injury",
+  "setting": "referral",
+  "time_structure": "single_episode",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "high",
+  "screen_reason": "Steering-wheel chest blow followed by heart failure, an anterolateral infarct pattern and transmural apical LGE points to traumatic coronary injury.",
+  "second_look_note": "The steering-wheel chest blow before months of heart failure is the decisive history clue to the infarct pattern on ECG and cardiac MRI."
+ }
+}

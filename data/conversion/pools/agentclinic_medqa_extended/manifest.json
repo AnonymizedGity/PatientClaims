@@ -1,0 +1,1388 @@
+{
+  "dataset": "AgentClinic-MedQA Extended",
+  "selection_status": "complete_adult_source_pool_requires_preprocessing",
+  "selection": {
+    "selected_records": 165,
+    "source_records": 214,
+    "rule": "Parsed age >= 18. Visible diagnosis text is flagged, not used for exclusion.",
+    "adult_cases_requiring_diagnosis_text_cleanup": 21,
+    "adult_cases_without_detected_visible_alias": 144,
+    "preprocessing_policy": "Keep the raw row immutable. Before simulation, remove or replace explicit diagnosis-bearing phrases only in agent-visible fields and record every transformation; keep Correct_Diagnosis hidden as gold.",
+    "review_note": "The alias screen does not flag all possible indirect leakage and does not treat pathognomonic findings as leakage."
+  },
+  "source_release": {
+    "input_file": "data/raw/agentclinic/agentclinic_medqa_extended.jsonl",
+    "input_file_sha256": "54a024eb2705c6c55d1988766adf4ab02ea7bbe2a28f843107b740032200f232"
+  },
+  "source_records_file": {
+    "path": "data/conversion/pools/agentclinic_medqa_extended/source_records/agentclinic_medqa_extended_all_adults_165.jsonl",
+    "bytes": 317346,
+    "sha256": "0a1259da946038126d1b0a7446d33b5c7f98598022317b66b120867e6d037465",
+    "values_policy": "Selected JSONL source lines are copied without changing JSON content."
+  },
+  "records": [
+    {
+      "source_row_index_zero_based": 0,
+      "age_years": 35.0,
+      "correct_diagnosis": "Myasthenia gravis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "a07753fb90c80b0e494174bfe3059227b3cf9addddd61586719b2d92f29189cb"
+    },
+    {
+      "source_row_index_zero_based": 1,
+      "age_years": 35.0,
+      "correct_diagnosis": "Progressive multifocal encephalopathy (PML)",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "0db3d74a8838f9e5e73c2e97fb114191fd6809399ca8fbe450e9575a921e2eba"
+    },
+    {
+      "source_row_index_zero_based": 3,
+      "age_years": 55.0,
+      "correct_diagnosis": "Diffuse large B-cell lymphoma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "4d6bc2f9b6d89d6ccef8ad46ffcec17eda22acb40dd90a3d2df9b303ca37963b"
+    },
+    {
+      "source_row_index_zero_based": 4,
+      "age_years": 62.0,
+      "correct_diagnosis": "Acute interstitial nephritis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2ba8383d7c2c3c319b74d38038c06395ce20cdd0add04b577abf77769cf6b637"
+    },
+    {
+      "source_row_index_zero_based": 5,
+      "age_years": 23.0,
+      "correct_diagnosis": "Pes anserine bursitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "13a5e3d3f736f7311131cb07cbbfd172a550ca75bae835d5d94985e268dd03b1"
+    },
+    {
+      "source_row_index_zero_based": 6,
+      "age_years": 53.0,
+      "correct_diagnosis": "Situational syncope",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "f823bed2135f73038ed5369c37c6ed7fd765c685af2d39d56211c396992fb8b9"
+    },
+    {
+      "source_row_index_zero_based": 8,
+      "age_years": 48.0,
+      "correct_diagnosis": "Phyllodes tumor",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "9843b0a3b100eaea431fe14f6d8c93d8a1e808398580c840a069ec87552ffa17"
+    },
+    {
+      "source_row_index_zero_based": 9,
+      "age_years": 24.0,
+      "correct_diagnosis": "Endometritis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "8d8ccfed44b87196cd85f00671114d077a78600903818168f98b69016ed061b5"
+    },
+    {
+      "source_row_index_zero_based": 10,
+      "age_years": 45.0,
+      "correct_diagnosis": "Hemorrhoids",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "4762168063649c43440b9c0dee5e5e5f89508cae8cd1d58652eadf5f25056c30"
+    },
+    {
+      "source_row_index_zero_based": 12,
+      "age_years": 25.0,
+      "correct_diagnosis": "Posterior hip dislocation",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "e916de0cdeb23031bc39f6cd34eb552ac366cff0524d7cd834954626b638508d"
+    },
+    {
+      "source_row_index_zero_based": 14,
+      "age_years": 22.0,
+      "correct_diagnosis": "Rupture of the flexor digitorum profundus tendon at its point of insertion",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "f272383db4635bd0f497641b16e464c7c9cf46377b31a5aabe93956b9695f0e8"
+    },
+    {
+      "source_row_index_zero_based": 15,
+      "age_years": 50.0,
+      "correct_diagnosis": "Epidermoid cyst",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "10d23b6169e9b3f612181dcd4b3599b25c5a15099a9896e5285c2d780b5d0577"
+    },
+    {
+      "source_row_index_zero_based": 16,
+      "age_years": 58.0,
+      "correct_diagnosis": "C. difficile colitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "53aed58a61b60fed84a76f7a9b275928f7389ebd5f5b45f31543eefcaaf67f31"
+    },
+    {
+      "source_row_index_zero_based": 17,
+      "age_years": 54.0,
+      "correct_diagnosis": "Pyoderma gangrenosum",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "76316c58158555bf26986bbff2a369c55594cd72a2b33f3dc8059539e154bc93"
+    },
+    {
+      "source_row_index_zero_based": 18,
+      "age_years": 32.0,
+      "correct_diagnosis": "Uterine rupture",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2ba79d89ae0f5d8a1464418565edebcaf4f01e295309158976bd65356bbb480c"
+    },
+    {
+      "source_row_index_zero_based": 19,
+      "age_years": 26.0,
+      "correct_diagnosis": "Disc herniation",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "b2e0250daf69d50820bdf92abf39bf144dabab6e82cdbb904e3905af2f23659f"
+    },
+    {
+      "source_row_index_zero_based": 20,
+      "age_years": 34.0,
+      "correct_diagnosis": "Cytomegalovirus retinitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "a17c757eaeff3029aa7f02f1cfb740e87887a823b53cb537e0bdb4365725890b"
+    },
+    {
+      "source_row_index_zero_based": 22,
+      "age_years": 63.0,
+      "correct_diagnosis": "Malignant melanoma",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "4ba84a576c8121aa5ccd3ee640183818a2828d3175c50fc2f2c8eb228c544c5e"
+    },
+    {
+      "source_row_index_zero_based": 23,
+      "age_years": 31.0,
+      "correct_diagnosis": "Irritable Bowel Syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "c93e22e936b9294831f7a065a62036e9c7a08a7f4b086437ed6d10e57c524e1a"
+    },
+    {
+      "source_row_index_zero_based": 24,
+      "age_years": 40.0,
+      "correct_diagnosis": "Meigs syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "e2828bdfeb9ff163c9669ce477b94856757d43feaa06c8b1d2ccb3db50bc33fc"
+    },
+    {
+      "source_row_index_zero_based": 25,
+      "age_years": 32.0,
+      "correct_diagnosis": "Primary sclerosing cholangitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "bc1d5896c55fdf4e7db2fee8a0a829ad9878548c98ad09719fb02aa341f24728"
+    },
+    {
+      "source_row_index_zero_based": 26,
+      "age_years": 40.0,
+      "correct_diagnosis": "Interstitial cystitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "6e7f7b95f52e0ec2a8de1bbbf6a100127133901482ab0657a65bb5e76c99a1bb"
+    },
+    {
+      "source_row_index_zero_based": 27,
+      "age_years": 55.0,
+      "correct_diagnosis": "Adhesive capsulitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "3e44bb309a039f284857101c117965882592192d1b147f7c422f2d225f28518b"
+    },
+    {
+      "source_row_index_zero_based": 28,
+      "age_years": 48.0,
+      "correct_diagnosis": "Lung cancer",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "3a0ca7981e7c780d4e6348c18f68d894a4cd55f29ca842bd5a6e9f42b98ffc0f"
+    },
+    {
+      "source_row_index_zero_based": 31,
+      "age_years": 71.0,
+      "correct_diagnosis": "Chronic lymphocytic leukemia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "6e7670274195e7c82da6ce70f2f3e5322addeee3b7f1a7a396881501af046642"
+    },
+    {
+      "source_row_index_zero_based": 32,
+      "age_years": 20.0,
+      "correct_diagnosis": "Fulminant hepatic failure",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "330120f72a001efa7befc7463536a84dc4ab0241c96f1f42c3e0d067de80a3e2"
+    },
+    {
+      "source_row_index_zero_based": 36,
+      "age_years": 24.0,
+      "correct_diagnosis": "Osteoclastoma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "bbb21934b9ae18f8b19f19c069283983a248956bdd9ff76ca7eca80989491ac1"
+    },
+    {
+      "source_row_index_zero_based": 37,
+      "age_years": 54.0,
+      "correct_diagnosis": "Multiple system atrophy",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "957efd781fc38756f30a5834cb431f4efc445c397be7f5246ea29a2b4e446788"
+    },
+    {
+      "source_row_index_zero_based": 39,
+      "age_years": 53.0,
+      "correct_diagnosis": "Essential thrombocythemia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "f00e25505aab04b81f9ea56748ec50fe0647efefdc13cb8c3cf4edba89aa8f6b"
+    },
+    {
+      "source_row_index_zero_based": 40,
+      "age_years": 42.0,
+      "correct_diagnosis": "Medullary Sponge Kidney",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "9f80ce59ab5aa762316eb64f0018e50540c22c88892ab3188035950bf49556af"
+    },
+    {
+      "source_row_index_zero_based": 41,
+      "age_years": 30.0,
+      "correct_diagnosis": "Genitopelvic pain disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "f530e0113766bff036b70284cadc8df8778596bdab6d576130a9559a1b070d29"
+    },
+    {
+      "source_row_index_zero_based": 42,
+      "age_years": 47.0,
+      "correct_diagnosis": "Active chronic hepatitis B infection",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "9638443195aaa41991dd688db7c15bb7259c17b11d0c57f6b9d7c53dc1c9a8cf"
+    },
+    {
+      "source_row_index_zero_based": 43,
+      "age_years": 74.0,
+      "correct_diagnosis": "Acute Mesenteric Ischemia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "bf549e52f50d8d36eaca17260d8d82733d06c3c0aafefdfa193d93472c1842fc"
+    },
+    {
+      "source_row_index_zero_based": 44,
+      "age_years": 59.0,
+      "correct_diagnosis": "Asthma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "99967e53ad72c24d84b9d7e2d88f6124fefe930ff58ec5712429a654d9486d14"
+    },
+    {
+      "source_row_index_zero_based": 46,
+      "age_years": 23.0,
+      "correct_diagnosis": "Eczematous dermatitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "d9939e2a63e3d35fd57a0080094afed125953ba0739608ebe737264e34fdab50"
+    },
+    {
+      "source_row_index_zero_based": 47,
+      "age_years": 69.0,
+      "correct_diagnosis": "Osteoarthritis",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "a7a46795fe06b75896c54089582c486a016e67919239c9c371ed147c4bee53ed"
+    },
+    {
+      "source_row_index_zero_based": 49,
+      "age_years": 47.0,
+      "correct_diagnosis": "Steven-Johnson syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "55113b8b4c70866e164c34f7cdd425d2d4b0d7450a3776302f75f188c9b1cac1"
+    },
+    {
+      "source_row_index_zero_based": 52,
+      "age_years": 72.0,
+      "correct_diagnosis": "Pancreatic adenocarcinoma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "b5a97162a38a5cf9f953bb9e60ad06ff585d9731389d30ff822b5681345d0065"
+    },
+    {
+      "source_row_index_zero_based": 53,
+      "age_years": 70.0,
+      "correct_diagnosis": "Benign Paroxysmal Positional Vertigo (BPPV)",
+      "visible_gold_alias_partitions": [
+        "physical_examination",
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "0b3ec364978fb5046a8a0859edc20bcc41ccc03a9071a98a5e31844bc3bf378b"
+    },
+    {
+      "source_row_index_zero_based": 54,
+      "age_years": 25.0,
+      "correct_diagnosis": "Schizotypal personality disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "514e60345e0bc3121b2ab7c02ae798da9f0d5a19d2bfc6849071ef0f951fe7e1"
+    },
+    {
+      "source_row_index_zero_based": 55,
+      "age_years": 62.0,
+      "correct_diagnosis": "Bowen's Disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "15768fd66eb6bef7c0459a000940ebf621544e8f3acce102f349d36929f6390b"
+    },
+    {
+      "source_row_index_zero_based": 57,
+      "age_years": 65.0,
+      "correct_diagnosis": "Pancreatic adenocarcinoma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "490f8866c2d0e88bbe6179094d0ef7fa98063e7d6bdcce4a85eb64de8c226b14"
+    },
+    {
+      "source_row_index_zero_based": 58,
+      "age_years": 24.0,
+      "correct_diagnosis": "Lisdexamfetamine intoxication",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "77b663ba8b2689277f2b1ea80f46f50793250c6023407df03c9fd365939b1b17"
+    },
+    {
+      "source_row_index_zero_based": 60,
+      "age_years": 25.0,
+      "correct_diagnosis": "Glossopharyngeal Neuralgia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "aa10f6ed8d66838ee2d189d340293770bf8e981aa84ac14035a52c2088fc5517"
+    },
+    {
+      "source_row_index_zero_based": 63,
+      "age_years": 23.0,
+      "correct_diagnosis": "Schizoaffective disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "4fa58a0662277b13caca35034aed35f0c9be6521ecfd822a27dbe68b6bcffceb"
+    },
+    {
+      "source_row_index_zero_based": 64,
+      "age_years": 47.0,
+      "correct_diagnosis": "Bed bug bite",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "6df413029b01ccf3a2e81572a40eef4b68832fc6fa91b69798d7b964313c5773"
+    },
+    {
+      "source_row_index_zero_based": 65,
+      "age_years": 66.0,
+      "correct_diagnosis": "Membranous nephropathy",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "524a6d8e619609adae6ab06434bb7589e5de2bf35c1961f5bd0bed7ba577ae69"
+    },
+    {
+      "source_row_index_zero_based": 68,
+      "age_years": 34.0,
+      "correct_diagnosis": "De Quervain tenosynovitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "3fe3b6da827f412cef9b1cf201265b63a48068828b1b5225c1dba09ae93a87ba"
+    },
+    {
+      "source_row_index_zero_based": 69,
+      "age_years": 44.0,
+      "correct_diagnosis": "Dumping Syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "5cdb88fd7b9c855c5eca584e3e182f077987e5d85aee9ccca0cf9011b87a28dd"
+    },
+    {
+      "source_row_index_zero_based": 71,
+      "age_years": 27.0,
+      "correct_diagnosis": "Labyrinthitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "d0393ab5ce37ee0364b9c689a1699f3915a16b926fcf402d329c912189ab15f2"
+    },
+    {
+      "source_row_index_zero_based": 73,
+      "age_years": 55.0,
+      "correct_diagnosis": "Frontotemporal Dementia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "316370b148b98d606d18fac566f1837575c93547787958adcde6c81cc8c96e93"
+    },
+    {
+      "source_row_index_zero_based": 74,
+      "age_years": 65.0,
+      "correct_diagnosis": "Granulosa cell tumor",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "91a84e22c22256d15e32a8037b4282a15e55bddefba67f9a4d05f27238bceb23"
+    },
+    {
+      "source_row_index_zero_based": 76,
+      "age_years": 58.0,
+      "correct_diagnosis": "Syringomyelia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "76f657f42629613a4627cc571fefae121974718f43b7c9d7b7e40f9c0ea653de"
+    },
+    {
+      "source_row_index_zero_based": 77,
+      "age_years": 30.0,
+      "correct_diagnosis": "Pneumonia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ce995ba58a76254931d6cbbf7910fb7c7e1bcf41bee2e8fefb78fd4c311dddb3"
+    },
+    {
+      "source_row_index_zero_based": 78,
+      "age_years": 59.0,
+      "correct_diagnosis": "Benign paroxysmal positional vertigo",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "9191a4efdd2cc0dcfe8203151f2c4590bfaba8de5b6721ed0d4cff875b86439f"
+    },
+    {
+      "source_row_index_zero_based": 79,
+      "age_years": 22.0,
+      "correct_diagnosis": "Listeriosis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "95fb92d395e2e787de7854f502e306cd295015adfcd5285819d5b46e86f0529a"
+    },
+    {
+      "source_row_index_zero_based": 81,
+      "age_years": 42.0,
+      "correct_diagnosis": "Huntington disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "fc00795c24a966145e53312ed6f088cbe0dc0ba301127d6a888680146a36a0ef"
+    },
+    {
+      "source_row_index_zero_based": 83,
+      "age_years": 22.0,
+      "correct_diagnosis": "Neuroleptic malignant syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "858e8b0b8cc174d7765185b242ce0adebb16c3f212da32d9478d91cd4eba6db7"
+    },
+    {
+      "source_row_index_zero_based": 85,
+      "age_years": 50.0,
+      "correct_diagnosis": "Leprosy",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "6628138fe7b53ee6299f4c9b817792ac82e9203a8794f6f551d4f17f7928244f"
+    },
+    {
+      "source_row_index_zero_based": 86,
+      "age_years": 65.0,
+      "correct_diagnosis": "Actinic Keratosis",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "db22d02cdae83da0a1c380a06c28c9975c7c5303a8ae21a8cf7c11424cdecfd8"
+    },
+    {
+      "source_row_index_zero_based": 87,
+      "age_years": 72.0,
+      "correct_diagnosis": "Chronic lymphocytic leukemia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "a703905a482ca4f0f4f8b969896563a07d8210d654e4f381c43eb161caec5e33"
+    },
+    {
+      "source_row_index_zero_based": 89,
+      "age_years": 70.0,
+      "correct_diagnosis": "Parkinson disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "36c513ba2af59df683781271f505bdd6c579e1ab8f1e49507a7d573a84959063"
+    },
+    {
+      "source_row_index_zero_based": 90,
+      "age_years": 69.0,
+      "correct_diagnosis": "Waldenstrom macroglobulinemia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "72568d42de0a0f18242f43932ed6ae03cfac81ae39fc93e71ad1b0e00780f38c"
+    },
+    {
+      "source_row_index_zero_based": 91,
+      "age_years": 55.0,
+      "correct_diagnosis": "Apical lung tumor",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2f186876f107514a844203cb59dd296a1606f99e9446bccb8357cb8dcb65df1a"
+    },
+    {
+      "source_row_index_zero_based": 92,
+      "age_years": 68.0,
+      "correct_diagnosis": "Tuberculosis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ff08362294ca2a8d60a369a90810f9b8b0fa0ff2acbe025348585d7d802d795d"
+    },
+    {
+      "source_row_index_zero_based": 93,
+      "age_years": 51.0,
+      "correct_diagnosis": "Boerhaave syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "6eae7a3a2d57cf3707acaea75984e3f70de2ced586022da8cc0eace5dc6c2059"
+    },
+    {
+      "source_row_index_zero_based": 94,
+      "age_years": 57.0,
+      "correct_diagnosis": "Chronic Venous Insufficiency",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "c58ff70e79e9ed9597a3ff15b5142643b2bd0c2e9e4bf999d15b9cacdda38316"
+    },
+    {
+      "source_row_index_zero_based": 95,
+      "age_years": 23.0,
+      "correct_diagnosis": "Akathisia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "8a054b58f541392b1faf53c049271163073cbb135474dc798d0b8de8f14cb166"
+    },
+    {
+      "source_row_index_zero_based": 97,
+      "age_years": 50.0,
+      "correct_diagnosis": "Pemphigus vulgaris",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "5e5330dc7997207c48b0fef9c3dfef6579f161e094d7bf00eafa8ef79bdd8c67"
+    },
+    {
+      "source_row_index_zero_based": 98,
+      "age_years": 44.0,
+      "correct_diagnosis": "Progressive multifocal leukoencephalopathy",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ef3074ff12ae10be0843a5a0603a1d8825a9661ed32a8b34b1c2c1b4914ff38b"
+    },
+    {
+      "source_row_index_zero_based": 99,
+      "age_years": 67.0,
+      "correct_diagnosis": "Acute myelogenous leukemia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "86ce0fec7c0e926b256795a180e434bfad62b948a0f2eb1b5bf8a9a8c8fbe631"
+    },
+    {
+      "source_row_index_zero_based": 100,
+      "age_years": 26.0,
+      "correct_diagnosis": "Schizophreniform Disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ffdfa377bad527468ac6f45366445803f2a97db5d41a44c80cba01710445344b"
+    },
+    {
+      "source_row_index_zero_based": 104,
+      "age_years": 51.0,
+      "correct_diagnosis": "Bronchiectasis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "9f3122bbe4d42e9954b4f588f79aef5f7c5432fb706091abecd9992489469ce1"
+    },
+    {
+      "source_row_index_zero_based": 106,
+      "age_years": 33.0,
+      "correct_diagnosis": "Myasthenia gravis",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "1a5b346da1c5891c03f7ac864a9caa450c96e6fb7c7f27118dccbcb2809cf223"
+    },
+    {
+      "source_row_index_zero_based": 107,
+      "age_years": 77.0,
+      "correct_diagnosis": "Seborrheic keratosis",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "1e59b7ad06869b8b33d4f84a3cd8d700a6f281a77fb4432f894fbf7b433e43e3"
+    },
+    {
+      "source_row_index_zero_based": 108,
+      "age_years": 60.0,
+      "correct_diagnosis": "Silicosis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "8fb2db95ffb60438fe2339ca9180226fffa9e3ca6516706e21e8553077f682de"
+    },
+    {
+      "source_row_index_zero_based": 109,
+      "age_years": 60.0,
+      "correct_diagnosis": "Chronic obstructive pulmonary disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "54d167008b87e138d4a4c973de4f2395b2d8665d1c242f1aa478ed172a3524d6"
+    },
+    {
+      "source_row_index_zero_based": 110,
+      "age_years": 60.0,
+      "correct_diagnosis": "Central retinal artery occlusion",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "981abbaca7d34d001343a8de2c5c6376d6ef54523d07c4b78b0c67c862b3e5cc"
+    },
+    {
+      "source_row_index_zero_based": 111,
+      "age_years": 24.0,
+      "correct_diagnosis": "Vasovagal syncope",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "652ff5712466bcbf47705dfe7eb54fdbd57825f5e1aeb2e67f3731a66ad9d941"
+    },
+    {
+      "source_row_index_zero_based": 112,
+      "age_years": 60.0,
+      "correct_diagnosis": "Lichen Sclerosus",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "4f7ba0c280bfb82adf7eab5dc126fcc27feb3e0600c09b22065136f390380bd0"
+    },
+    {
+      "source_row_index_zero_based": 113,
+      "age_years": 20.0,
+      "correct_diagnosis": "Bacillus cereus infection",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "e6cd00dbd350161075de66a262377c7469d4384a16adf2be97aca4987d13b293"
+    },
+    {
+      "source_row_index_zero_based": 115,
+      "age_years": 21.0,
+      "correct_diagnosis": "Somatization disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "e13c216973fcab30cb15b2516161f23b63e87f0c8c2ecb8c1c88a876f5cd2b8c"
+    },
+    {
+      "source_row_index_zero_based": 116,
+      "age_years": 56.0,
+      "correct_diagnosis": "Chronic obstructive pulmonary disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "e5eec8cb8a27b16943cc64546287e6bfb8f6c7cbbd2e5ac7826e46d8e8e9b25f"
+    },
+    {
+      "source_row_index_zero_based": 117,
+      "age_years": 23.0,
+      "correct_diagnosis": "Schizophrenia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2d87f52186958361eee28f9b3f1d9ce0fb169b68c1684ba23f1cd6ebf806ddb6"
+    },
+    {
+      "source_row_index_zero_based": 119,
+      "age_years": 35.0,
+      "correct_diagnosis": "Thrombotic Thrombocytopenic Purpura",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "7fce313cb78467a70d4d2207a1fb1bc913a961511a1f3e5f0f3770621f6765bf"
+    },
+    {
+      "source_row_index_zero_based": 120,
+      "age_years": 67.0,
+      "correct_diagnosis": "Acalculous cholecystitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "f0b7298f4f07cbab562abb6f6789484789ecdecb37d516fde6ef9c2fe201a4fc"
+    },
+    {
+      "source_row_index_zero_based": 121,
+      "age_years": 19.0,
+      "correct_diagnosis": "Vitiligo",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "cf77c905963dd3735e9ad60bdd35c12c5f12e9cfc49da9d3f269dcdb113446ed"
+    },
+    {
+      "source_row_index_zero_based": 122,
+      "age_years": 45.0,
+      "correct_diagnosis": "Pseudomonas keratitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "6eb3976ac4df697f403caa3ea353ca0fb23e8a4dc98716063390a38a8856dfa3"
+    },
+    {
+      "source_row_index_zero_based": 123,
+      "age_years": 26.0,
+      "correct_diagnosis": "MEN1",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "35d43fbada1476acb5ae2aa68d18418260ddb905710465a651f7fea324c000a0"
+    },
+    {
+      "source_row_index_zero_based": 124,
+      "age_years": 67.0,
+      "correct_diagnosis": "Psoriatic arthritis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "537c5aeffc90cc5361b377b6054606e3b1e3671d4b9a4464f0b8e1d423bac989"
+    },
+    {
+      "source_row_index_zero_based": 126,
+      "age_years": 33.0,
+      "correct_diagnosis": "Fibroadenoma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "703d9ca28afe086b1b9f3baa727f6a629fcf3ddd8b3fe1bc7e90053030f960be"
+    },
+    {
+      "source_row_index_zero_based": 127,
+      "age_years": 40.0,
+      "correct_diagnosis": "Silent Thyroiditis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "839e9370808a360490470827879c292213ea89227f281b9cd9202d65ac6e21a0"
+    },
+    {
+      "source_row_index_zero_based": 130,
+      "age_years": 34.0,
+      "correct_diagnosis": "Major depressive disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "275d491d211c52ad2fea9806735e1d947182e2cdcf3cf468ddea47d25abdbdb8"
+    },
+    {
+      "source_row_index_zero_based": 131,
+      "age_years": 62.0,
+      "correct_diagnosis": "Adenomatous polyp",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "bc37e4cb93d335e1c891ae9f6bcb488f8ffd209120e45f0de2325efa60fb64d9"
+    },
+    {
+      "source_row_index_zero_based": 133,
+      "age_years": 55.0,
+      "correct_diagnosis": "Femoropopliteal artery stenosis",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "84dca991c49b8e72a7d5549a3a935c17d1a5fd95b7f942efe906bb1823640c3a"
+    },
+    {
+      "source_row_index_zero_based": 134,
+      "age_years": 67.0,
+      "correct_diagnosis": "Keratoacanthoma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "de8a372efdb548bac89b7d6c54004fa540cf7277fc8b1c68589cf61b6a69ab65"
+    },
+    {
+      "source_row_index_zero_based": 136,
+      "age_years": 43.0,
+      "correct_diagnosis": "Takotsubo cardiomyopathy",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "5a5945647f0997ee08ade5ad8fac561dc902770aaf93fce790ce91fecb15c67d"
+    },
+    {
+      "source_row_index_zero_based": 137,
+      "age_years": 28.0,
+      "correct_diagnosis": "Paroxysmal Atrial Fibrillation",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "0f037b747eb43491a71d71956a67442fe93b3673be49d21e3d9f025dee52bb41"
+    },
+    {
+      "source_row_index_zero_based": 138,
+      "age_years": 26.0,
+      "correct_diagnosis": "Thoracic aortic rupture",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2529e472fe96280b18466b76b00b3e8fa9bd1638e628dc2e60de2fa88001acd1"
+    },
+    {
+      "source_row_index_zero_based": 139,
+      "age_years": 28.0,
+      "correct_diagnosis": "Posttraumatic stress disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "b89bdf221b136c908cc8d0784533d178721c9714e4d967333f1b6894c2f23b9c"
+    },
+    {
+      "source_row_index_zero_based": 142,
+      "age_years": 65.0,
+      "correct_diagnosis": "Adhesive capsulitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "a42ef1fc0ebe70c34fdd99a5ee9329af1c8a2e9529edfa4e9f41ce7f19c1f2b0"
+    },
+    {
+      "source_row_index_zero_based": 143,
+      "age_years": 69.0,
+      "correct_diagnosis": "Advanced sleep phase disorder",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "87bac0f16006b339dc14d2b8cd31634a215e481f5c860c2b4752e657cc7187cb"
+    },
+    {
+      "source_row_index_zero_based": 144,
+      "age_years": 33.0,
+      "correct_diagnosis": "Exertional heat stroke",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "216ca983217ba99b39a7175bd94215b411ba0df0e8d5039197cd0e7467c52554"
+    },
+    {
+      "source_row_index_zero_based": 145,
+      "age_years": 31.0,
+      "correct_diagnosis": "Psoriatic arthritis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "6e26b3b7896ef78abf184779af3f1e6ad490bb03441f2160cdad70d7b350208d"
+    },
+    {
+      "source_row_index_zero_based": 146,
+      "age_years": 75.0,
+      "correct_diagnosis": "Chronic lymphocytic leukemia (CLL)",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "a1368c113eb2cd2bed378442c3c0bca514e43b0d7174ce2703508f2b92de3a60"
+    },
+    {
+      "source_row_index_zero_based": 147,
+      "age_years": 31.0,
+      "correct_diagnosis": "Autosomal dominant polycystic kidney disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "23a85bb90432ab18fd99c01b9310c616ff29318d7e85c6d14d45b3f46b03611a"
+    },
+    {
+      "source_row_index_zero_based": 148,
+      "age_years": 44.0,
+      "correct_diagnosis": "Molluscum contagiosum",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "012ca6ff8a3b7a297224aef279885a861f2b09031788c1e184c0e43870d8f050"
+    },
+    {
+      "source_row_index_zero_based": 149,
+      "age_years": 20.0,
+      "correct_diagnosis": "Brief Psychotic Disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "d32081f214cf436f060824006b3f578b50d2183049c3dd29eaf20f2c6d04aec8"
+    },
+    {
+      "source_row_index_zero_based": 150,
+      "age_years": 45.0,
+      "correct_diagnosis": "Phyllodes tumor",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "da62f0a1d18cea853cd52f3e3fc2e2c7352cdacb228deca17c2b054b0a3336b9"
+    },
+    {
+      "source_row_index_zero_based": 151,
+      "age_years": 50.0,
+      "correct_diagnosis": "Valley fever",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "d982bbb097a1f2e8641733ea085d3f790093e00bae971dc487e2e313f41cdbae"
+    },
+    {
+      "source_row_index_zero_based": 152,
+      "age_years": 46.0,
+      "correct_diagnosis": "Cardiac Contusion",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "4b26eccdab8be352a370a03b40c21ab2a599b167101963f289af59cc052017a4"
+    },
+    {
+      "source_row_index_zero_based": 154,
+      "age_years": 58.0,
+      "correct_diagnosis": "Squamous cell carcinoma",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "f39bc65cb0d537f95928f5d7aaaad79df1b0af83a417501c5c21e40cda77f683"
+    },
+    {
+      "source_row_index_zero_based": 155,
+      "age_years": 57.0,
+      "correct_diagnosis": "Pneumonia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2cbff0f337447da23b85d060c8888f6942a53c0bba52be56e4096d4b52386efb"
+    },
+    {
+      "source_row_index_zero_based": 156,
+      "age_years": 27.0,
+      "correct_diagnosis": "Cardiac contusion",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "27afdc546fb32fed6079ca3eb84ca4007f124c221ba67685bb52c194311eb99b"
+    },
+    {
+      "source_row_index_zero_based": 157,
+      "age_years": 33.0,
+      "correct_diagnosis": "Tracheobronchial rupture",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "b83dc1366744923c1518aa19141b2c1cb34e19d6953bc112a93ac73343b35743"
+    },
+    {
+      "source_row_index_zero_based": 158,
+      "age_years": 40.0,
+      "correct_diagnosis": "Chronic kidney failure",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "1d1ba8f7070a124032ae998105dda9cc307039dde0f629560d921a84345b5e6a"
+    },
+    {
+      "source_row_index_zero_based": 159,
+      "age_years": 23.0,
+      "correct_diagnosis": "Hypertrophic Cardiomyopathy",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "f847fe5444e76b1030a424a4ed84a404978a09d8f9b5ce87ebd8c50b6beaa126"
+    },
+    {
+      "source_row_index_zero_based": 160,
+      "age_years": 53.0,
+      "correct_diagnosis": "Lambert-Eaton syndrome",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "a766b5adb6d37323d6e86b983967c58c090a50fbd4e12c6e7a60c7dd34eba89c"
+    },
+    {
+      "source_row_index_zero_based": 161,
+      "age_years": 61.0,
+      "correct_diagnosis": "Plummer-Vinson syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "60afa58b3849468030c9eaabe2fa5b40249ea41701090e8d471484ee629bdbad"
+    },
+    {
+      "source_row_index_zero_based": 162,
+      "age_years": 38.0,
+      "correct_diagnosis": "Dermatofibroma",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "cd1c9b6300b9cb5b1beaef360462a02454eaa13efe2ab711074c1d89da5e4821"
+    },
+    {
+      "source_row_index_zero_based": 163,
+      "age_years": 26.0,
+      "correct_diagnosis": "Factitious disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "50c5fe1984a1a97f985593909059d1fff2f322be032ac12ceb34b9cbc794581c"
+    },
+    {
+      "source_row_index_zero_based": 164,
+      "age_years": 79.0,
+      "correct_diagnosis": "Histoplasmosis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "e35341048e034e3718785c3d5da4038f75a4b8192f19ceae41ea06efd35ec554"
+    },
+    {
+      "source_row_index_zero_based": 165,
+      "age_years": 75.0,
+      "correct_diagnosis": "Aortic valve stenosis",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "a3d9ee46bca9cbb208a8c79df9969cf275deaefdaec59e93b3e9865f652e76bc"
+    },
+    {
+      "source_row_index_zero_based": 166,
+      "age_years": 40.0,
+      "correct_diagnosis": "Polymyositis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "4d60dad2a1d856e0028be70054ed1f5bcca3d0bbbda3646f95fee21ae7618248"
+    },
+    {
+      "source_row_index_zero_based": 167,
+      "age_years": 55.0,
+      "correct_diagnosis": "Osteoarthritis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "be884c2b78328ff3ac1265d332991e4de0b7f923c84c55238208b9abe6902c33"
+    },
+    {
+      "source_row_index_zero_based": 168,
+      "age_years": 25.0,
+      "correct_diagnosis": "Minimal Change Disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "6102a8a689b30d5ba38da0a7e6b2464b0b82d20e8b2319194a60537ed127cded"
+    },
+    {
+      "source_row_index_zero_based": 170,
+      "age_years": 55.0,
+      "correct_diagnosis": "Perforated gastric peptic ulcer",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "bd0551a7e3d36c5ff7a285d9170d482150c39d5b78de811fbb94fc2043e7e39f"
+    },
+    {
+      "source_row_index_zero_based": 171,
+      "age_years": 34.0,
+      "correct_diagnosis": "Pseudocyesis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "66eb6c113897999d1ec5a30be6e6aa413c06968ee8c6c43197786b43156825b8"
+    },
+    {
+      "source_row_index_zero_based": 172,
+      "age_years": 24.0,
+      "correct_diagnosis": "Temporomandibular joint dysfunction",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ca374b89b24f2cfe21fe263343799be0923422f3530228e889f93794ed590ab7"
+    },
+    {
+      "source_row_index_zero_based": 173,
+      "age_years": 68.0,
+      "correct_diagnosis": "Actinic Keratosis",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "893e0590892d653fa7c8e09df835e1e19b9702a19bbc3e2f57c9ebce70ba0419"
+    },
+    {
+      "source_row_index_zero_based": 175,
+      "age_years": 38.0,
+      "correct_diagnosis": "Gastric peptic ulcer",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "eef9e41e7994ef0f0a54733a363288119e639dbf8c9aa65afbd3828e89b2dc50"
+    },
+    {
+      "source_row_index_zero_based": 177,
+      "age_years": 65.0,
+      "correct_diagnosis": "Frontotemporal Dementia",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "52e6ece2f630a1b80958acbeba3b66e66b8ee148ab65fa2010df456da1e70a35"
+    },
+    {
+      "source_row_index_zero_based": 178,
+      "age_years": 52.0,
+      "correct_diagnosis": "Toxic exposure",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ff91dda2e604af0ff99025f04a4e96946193e732af669e4b2cba7a01a73f9781"
+    },
+    {
+      "source_row_index_zero_based": 179,
+      "age_years": 22.0,
+      "correct_diagnosis": "Neuroleptic Malignant Syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "a53e794519744171e4e2ffc20bc6d260c894962b104ca27f4114bb937748a9ab"
+    },
+    {
+      "source_row_index_zero_based": 180,
+      "age_years": 41.0,
+      "correct_diagnosis": "Atrial Myxoma",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ac9007f50360f62cde7eb798d42e77954f1c0b7c0f603fd3f451d49d11203a84"
+    },
+    {
+      "source_row_index_zero_based": 181,
+      "age_years": 25.0,
+      "correct_diagnosis": "Acute Hepatitis B",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "5645aa634cb0f0869c1199d73ea9d8c6762c844a3523fe15c51c26b3068e27db"
+    },
+    {
+      "source_row_index_zero_based": 182,
+      "age_years": 65.0,
+      "correct_diagnosis": "Spinal Stenosis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "37cf388535069403db5f31b0fb94ae2763d15e4aa846f83620b04ec63388b3db"
+    },
+    {
+      "source_row_index_zero_based": 183,
+      "age_years": 32.0,
+      "correct_diagnosis": "Ruptured ovarian cyst",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "991df0afcdbe1f9f68ac68cba018a5c38d5cbc392e6b631912ccdb416c8fb439"
+    },
+    {
+      "source_row_index_zero_based": 184,
+      "age_years": 60.0,
+      "correct_diagnosis": "Lichen Sclerosus",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "501c0f93dd6292f7d5264331fcabe4ce84cf0f915a0a59613ae1e1ec258532fb"
+    },
+    {
+      "source_row_index_zero_based": 185,
+      "age_years": 79.0,
+      "correct_diagnosis": "Chronic obstructive pulmonary disease (COPD)",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "b004f6348645bf6bd31f4e66479ca63b7660124cd85eb4a4467f2e2706cc078c"
+    },
+    {
+      "source_row_index_zero_based": 186,
+      "age_years": 20.0,
+      "correct_diagnosis": "Brief Psychotic Disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "73b02d676e33c353b400fbb1e7f6213920a384f2abc247507316adf196262dc4"
+    },
+    {
+      "source_row_index_zero_based": 187,
+      "age_years": 43.0,
+      "correct_diagnosis": "Takotsubo cardiomyopathy",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2d836a9521d958e9a904c5a2ee0e1af6d0806e02f08f83cf4da124e291726d30"
+    },
+    {
+      "source_row_index_zero_based": 189,
+      "age_years": 22.0,
+      "correct_diagnosis": "Borderline personality disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "9487e42f41f6d53b2fe271a35528add09f4694326932947b34ced6503b0de0ce"
+    },
+    {
+      "source_row_index_zero_based": 190,
+      "age_years": 26.0,
+      "correct_diagnosis": "Factitious disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "21dca86ff63faa0137d9443f17ba22fcf40e3cbbc6fbadf39e21f9a321c70bbc"
+    },
+    {
+      "source_row_index_zero_based": 191,
+      "age_years": 67.0,
+      "correct_diagnosis": "Acalculous cholecystitis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "ce9ddee1157559ab1b0219abd861fbd3b0c5c300c3244d636e24b519f8362c14"
+    },
+    {
+      "source_row_index_zero_based": 192,
+      "age_years": 53.0,
+      "correct_diagnosis": "Lambert-Eaton Syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "89683bfce377faf7fd8e71dc6da3e9a87768d8101925a802eea48f385b060730"
+    },
+    {
+      "source_row_index_zero_based": 193,
+      "age_years": 55.0,
+      "correct_diagnosis": "Cardiac Tamponade",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2faad8e6aa08a84decf3d91382fc38ffb30289505a20a1d232d6cf4887999652"
+    },
+    {
+      "source_row_index_zero_based": 194,
+      "age_years": 36.0,
+      "correct_diagnosis": "Papillary carcinoma of the thyroid",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "bbcfb9410b23e392ff60dbaac8574aeccfc1587510eff3d5dd055712b4e9f1ef"
+    },
+    {
+      "source_row_index_zero_based": 195,
+      "age_years": 34.0,
+      "correct_diagnosis": "Pseudocyesis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "3b04edf18c67fbcce8baf29c13c1c36d38d5a858890eff565ddb55267cc9281e"
+    },
+    {
+      "source_row_index_zero_based": 196,
+      "age_years": 23.0,
+      "correct_diagnosis": "Hypertrophic cardiomyopathy",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "9da53ad055615e591fd247d82eed9347ad89cc8e7b751a696b870c2512328677"
+    },
+    {
+      "source_row_index_zero_based": 197,
+      "age_years": 31.0,
+      "correct_diagnosis": "Autosomal dominant polycystic kidney disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "1eaf84c9b33e0e727698cb1ec31fcf0e02e006e49664869df3b15f3cce1f647f"
+    },
+    {
+      "source_row_index_zero_based": 198,
+      "age_years": 57.0,
+      "correct_diagnosis": "Pneumonia",
+      "visible_gold_alias_partitions": [
+        "test_results"
+      ],
+      "requires_diagnosis_text_cleanup": true,
+      "source_line_sha256": "16869268d3ab56a8d44041a8b40eaa700f300d14e7ae8014fb29909f3181a410"
+    },
+    {
+      "source_row_index_zero_based": 199,
+      "age_years": 81.0,
+      "correct_diagnosis": "Bullous pemphigoid",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "1f3d4843d400bc38ed9de48cf00718c0cfb62dfef4afa77c73c2006dd52eddce"
+    },
+    {
+      "source_row_index_zero_based": 200,
+      "age_years": 21.0,
+      "correct_diagnosis": "Somatization disorder",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "7f8a3ed148bf4f0f6167595cd13f71cbe204a2796a9e56be3f69fc809cccff8f"
+    },
+    {
+      "source_row_index_zero_based": 201,
+      "age_years": 40.0,
+      "correct_diagnosis": "Chronic kidney failure",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "d1532b2cefcbcc82f096b432c5d5d28925dc2fbd11fee8b6aaa86782ecfb5f42"
+    },
+    {
+      "source_row_index_zero_based": 202,
+      "age_years": 19.0,
+      "correct_diagnosis": "Tinea cruris",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "1ed06d0ef73fb598a5fcd2288b626caa405d8313a3eee889b1f287a62ff7144c"
+    },
+    {
+      "source_row_index_zero_based": 204,
+      "age_years": 38.0,
+      "correct_diagnosis": "Gastric peptic ulcer",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "9947fd3a2c99e5f8b4bdc1bae4b1a95638aed92dee384929deaf1be6529a5125"
+    },
+    {
+      "source_row_index_zero_based": 205,
+      "age_years": 22.0,
+      "correct_diagnosis": "Neuroleptic Malignant Syndrome",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "24a4b045549b2744940851b47ae389b9a45aaea460d92b260cb34469a7f4be9c"
+    },
+    {
+      "source_row_index_zero_based": 207,
+      "age_years": 55.0,
+      "correct_diagnosis": "Femoropopliteal artery stenosis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "8f6abf60bd94a4c570c1a738e1b27ff8d06c82c182c9a15d2faafdeef91e83be"
+    },
+    {
+      "source_row_index_zero_based": 208,
+      "age_years": 60.0,
+      "correct_diagnosis": "Central retinal artery occlusion",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "756d70ea6c1b8d93280f17c723446b0a01aa1d53d6af53634bacedec2e01aaa2"
+    },
+    {
+      "source_row_index_zero_based": 209,
+      "age_years": 19.0,
+      "correct_diagnosis": "Vitiligo",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "d4666074fb56fd03fee7e6443c0e06656c53762d1ccdc6d3a2c0ec9c3bac304d"
+    },
+    {
+      "source_row_index_zero_based": 210,
+      "age_years": 20.0,
+      "correct_diagnosis": "Bacillus cereus infection",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "665daf04a2c02dfa1f3c64d85cfc3059e0e22689269bc18592f947c0ac122575"
+    },
+    {
+      "source_row_index_zero_based": 211,
+      "age_years": 75.0,
+      "correct_diagnosis": "Chronic lymphocytic leukemia (CLL)",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "eb9e1a4c462074e05dd3858a791cea0ed0339078379b12a3234b6e930151bc12"
+    },
+    {
+      "source_row_index_zero_based": 212,
+      "age_years": 30.0,
+      "correct_diagnosis": "Crohn’s disease",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "2adbb752c24ce626ba343f36fe8230e642937c3d92e78c9fe639abccd917359e"
+    },
+    {
+      "source_row_index_zero_based": 213,
+      "age_years": 77.0,
+      "correct_diagnosis": "Seborrheic keratosis",
+      "visible_gold_alias_partitions": [],
+      "requires_diagnosis_text_cleanup": false,
+      "source_line_sha256": "01c6fad7b7028f003f8756fd3155ae6309c4936f44b442ab9e8144a3fdce5d9d"
+    }
+  ]
+}

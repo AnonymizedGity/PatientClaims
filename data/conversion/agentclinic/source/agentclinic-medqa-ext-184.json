@@ -1,0 +1,113 @@
+{
+  "case_id": "agentclinic-medqa-ext-184",
+  "source_row": 184,
+  "demographics_text": "32-year-old female",
+  "objective_for_doctor": "Evaluate the patient presenting with acute onset left-sided abdominal pain and provide a differential diagnosis.",
+  "chief_complaint": "Left-sided lower abdominal pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p001",
+      "field": "History",
+      "text": "The patient reports sudden onset of left-sided abdominal pain during a kickboxing class. She has a history significant for chlamydia and is currently sexually active without using contraception. States that her menstrual periods are regular, with the last one ending 2 days ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Guarding"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Acute onset during physical activity"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No recent fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Regular menstrual cycles"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p006",
+      "field": "Past_Medical_History",
+      "text": "Chlamydia in the past. No other significant medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p007",
+      "field": "Social_History",
+      "text": "Sexually active without contraception."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-184-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies nausea, vomiting, diarrhea, dysuria, or recent changes in bowel or urinary habits."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.2°C (99°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "110/68 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "88 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Normal."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Tenderness and guarding on the left lower quadrant."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-184-e010",
+      "path": "Physical_Examination_Findings.Pelvic_Exam.Findings",
+      "text": "Clear mucous in the vaginal introitus. Tenderness of the left adnexa."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-184-i001",
+      "path": "Test_Results.Pelvic_Ultrasound_with_Doppler.Findings",
+      "text": "Large amount of fluid in the rectouterine pouch."
+    }
+  ],
+  "correct_diagnosis": "Ruptured ovarian cyst",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

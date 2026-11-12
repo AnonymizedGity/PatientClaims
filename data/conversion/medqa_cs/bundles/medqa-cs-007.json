@@ -1,0 +1,993 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-007",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 74,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "arm pain",
+        "aliases": [
+          "right arm pain"
+        ],
+        "text": "I have really bad pain in my right arm.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "arm pain: when it started",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started three days ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "arm pain: what you were doing when it started",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "I was playing with my grandchildren in the garden when I tripped and fell.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f004",
+        "item": "how the fall happened",
+        "aliases": [
+          "details of the fall",
+          "how you landed"
+        ],
+        "text": "I stumbled over a toy on the floor and tried to brace myself with my right arm, but I ended up landing on my hand.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f005",
+        "item": "loss of consciousness",
+        "aliases": [
+          "passing out",
+          "blacking out",
+          "fainting"
+        ],
+        "text": "I didn't lose consciousness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f006",
+        "item": "arm pain: location",
+        "parent": "f001",
+        "attribute": "location",
+        "value": [
+          "upper right arm",
+          "middle of the right arm"
+        ],
+        "text": "It's in the upper and middle parts of my right arm.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "arm pain: at the moment of the fall",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "I didn't feel any pain when I first fell.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f008",
+        "item": "arm pain: how it came on",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "Then the pain started gradually.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "arm pain: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It is stable now, but it is still there.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "arm pain: what you've tried",
+        "parent": "f001",
+        "attribute": "treatment_response",
+        "text": "I used a sling and took Tylenol, but the pain only improved slightly.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "arm pain: using an ice pack",
+        "parent": "f001",
+        "attribute": "treatment_response",
+        "text": "I also used an ice pack at home.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "arm pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "value": [
+          "not moving the arm",
+          "Tylenol"
+        ],
+        "complete": true,
+        "text": "Not moving my arm and taking Tylenol make it better.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "arm pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "using the arm"
+        ],
+        "complete": true,
+        "text": "Using my arm makes it worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "arm pain: seeing a doctor for it",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "I haven't seen a doctor since the fall.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f015",
+        "item": "arm pain: why you didn't come in sooner",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "It wasn't that bad, and I thought it would get better on its own. Also, I didn't want to bother my son. He doesn't have time to bring me to the hospital. He is busy.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f016",
+        "item": "arm weakness",
+        "aliases": [
+          "weakness in the arm"
+        ],
+        "text": "My arm isn't weak.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "moving the arm",
+        "aliases": [
+          "ability to move the arm",
+          "arm movement"
+        ],
+        "text": "I believe I can move it in all directions, but it hurts when I do.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "arm numbness",
+        "aliases": [
+          "numbness in the arm"
+        ],
+        "text": "My arm isn't numb.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "loss of feeling in the arm",
+        "aliases": [
+          "loss of sensation"
+        ],
+        "text": "I can feel things fine.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "pain elsewhere",
+        "aliases": [
+          "other pain"
+        ],
+        "text": "I don't have pain anywhere else.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "asthma",
+        "text": "I have asthma.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "They removed part of my prostate 2 years ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f023",
+        "item": "past surgery: what they found",
+        "parent": "f022",
+        "attribute": "other",
+        "text": "They said there was no evidence of cancer.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f024",
+        "item": "difficulty urinating",
+        "aliases": [
+          "trouble passing urine",
+          "urination problems"
+        ],
+        "text": "It was very difficult for me to urinate, but that has since gotten much better.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f025",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I am allergic to aspirin.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "drug allergies: reaction",
+        "parent": "f025",
+        "attribute": "other",
+        "text": "I get an itchy rash all over my body.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "Tylenol",
+        "aliases": [
+          "acetaminophen",
+          "paracetamol"
+        ],
+        "text": "I take Tylenol.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "albuterol inhaler",
+        "aliases": [
+          "inhaler"
+        ],
+        "text": "I use an albuterol inhaler.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I don't work anymore. I am a retired schoolteacher.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I do not drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "exercise",
+        "aliases": [
+          "physical activity",
+          "walking"
+        ],
+        "text": "I walk 20 minutes every day to the grocery store and back.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "living situation",
+        "aliases": [
+          "who you live with",
+          "home"
+        ],
+        "text": "I live with my son in his house.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "living situation: who else is at home",
+        "parent": "f033",
+        "attribute": "other",
+        "text": "My son is married and has three kids.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "son's circumstances",
+        "aliases": [
+          "stress at home",
+          "family stress"
+        ],
+        "text": "Life has been hard on my son lately. He lost his job and is looking for a new one.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "feeling unsafe at home",
+        "aliases": [
+          "safety at home"
+        ],
+        "text": "I feel safe.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "being hurt or threatened at home",
+        "aliases": [
+          "abuse at home",
+          "afraid of anyone at home"
+        ],
+        "text": "Nobody bothers me.",
+        "polarity": "absent",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "how the family treats you",
+        "aliases": [
+          "relationship with family"
+        ],
+        "text": "They are all nice.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-007",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "135/85 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.0°F (36.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "12/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "76/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress; appears anxious."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "general",
+        "name": "head examination",
+        "aliases": [
+          "head",
+          "signs of head injury"
+        ],
+        "result": "Normal head shape; no signs of trauma; no bruises."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "neck examination",
+        "aliases": [
+          "neck"
+        ],
+        "result": "Supple; full range of motion in all directions; no bruises."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Breath sounds clear on both sides."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "right arm and shoulder examination",
+        "aliases": [
+          "arm examination",
+          "shoulder examination",
+          "shoulder range of motion"
+        ],
+        "result": "He holds the right arm close against the chest wall with his left hand, externally rotated and slightly abducted. Non-localized tenderness over the middle and upper right arm and the right shoulder. Pain when the right shoulder is moved in any direction, with restricted range of motion in flexion, extension, abduction and external rotation. Right elbow and wrist normal."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength",
+          "arm strength"
+        ],
+        "result": "Unable to assess because of pain."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam"
+        ],
+        "result": "Intact to pinprick and soft touch."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes intact and symmetric."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "arm pulses",
+        "aliases": [
+          "peripheral pulses",
+          "radial pulse",
+          "brachial pulse"
+        ],
+        "result": "Brachial and radial pulses normal and symmetric."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-007",
+    "diagnosis": "Humeral fracture",
+    "aliases": [
+      "humerus fracture",
+      "fractured humerus",
+      "fracture of the humerus",
+      "proximal humerus fracture",
+      "proximal humeral fracture",
+      "humeral shaft fracture",
+      "broken upper arm"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Humeral fracture",
+        "evidence": [
+          "Pain following recent fall on outstretched hand",
+          "Exam: Tenderness over upper and middle right arm",
+          "Exam: Pain increases with hand movement",
+          "Exam: Restricted range of motion"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Shoulder dislocation",
+        "aliases": [
+          "dislocated shoulder",
+          "glenohumeral dislocation",
+          "glenohumeral joint dislocation",
+          "anterior shoulder dislocation"
+        ],
+        "evidence": [
+          "Pain following recent fall on outstretched arm",
+          "Exam: Right arm externally rotated and slightly abducted",
+          "Exam: Pain and restricted range of motion on shoulder exam"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Osteoporosis",
+        "aliases": [
+          "osteoporotic fracture",
+          "fragility fracture",
+          "senile osteoporosis"
+        ],
+        "evidence": [
+          "Advanced age",
+          "Pain following recent fall on outstretched arm"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Elder abuse",
+        "note": "Red flags in the history (anxious behavior, delayed care-seeking) may point to it; abuser and victim often both deny abuse, so the diagnosis is often inferential and supporting evidence must be sought."
+      },
+      {
+        "diagnosis": "Rotator cuff tear",
+        "note": "Usually nonspecific shoulder pain often referred down the proximal lateral arm, with possible inability to abduct or flex the shoulder and weakness in internal or external rotation."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-007",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-007-p001"
+      ],
+      "f003": [
+        "medqa-cs-007-p002"
+      ],
+      "f004": [
+        "medqa-cs-007-p003",
+        "note"
+      ],
+      "f005": [
+        "medqa-cs-007-p004"
+      ],
+      "f006": [
+        "medqa-cs-007-p005"
+      ],
+      "f007": [
+        "medqa-cs-007-p008"
+      ],
+      "f008": [
+        "medqa-cs-007-p008"
+      ],
+      "f009": [
+        "medqa-cs-007-p008"
+      ],
+      "f010": [
+        "medqa-cs-007-p011"
+      ],
+      "f011": [
+        "note"
+      ],
+      "f012": [
+        "medqa-cs-007-p012"
+      ],
+      "f013": [
+        "medqa-cs-007-p013"
+      ],
+      "f014": [
+        "medqa-cs-007-p010"
+      ],
+      "f015": [
+        "medqa-cs-007-p014"
+      ],
+      "f016": [
+        "medqa-cs-007-p006"
+      ],
+      "f017": [
+        "medqa-cs-007-p006"
+      ],
+      "f018": [
+        "medqa-cs-007-p007"
+      ],
+      "f019": [
+        "medqa-cs-007-p007"
+      ],
+      "f020": [
+        "medqa-cs-007-p009"
+      ],
+      "f021": [
+        "medqa-cs-007-p019"
+      ],
+      "f022": [
+        "medqa-cs-007-p020"
+      ],
+      "f023": [
+        "medqa-cs-007-p020"
+      ],
+      "f024": [
+        "medqa-cs-007-p020"
+      ],
+      "f025": [
+        "medqa-cs-007-p017"
+      ],
+      "f026": [
+        "medqa-cs-007-p018"
+      ],
+      "f027": [
+        "medqa-cs-007-p016"
+      ],
+      "f028": [
+        "medqa-cs-007-p016"
+      ],
+      "f029": [
+        "medqa-cs-007-p021"
+      ],
+      "f030": [
+        "medqa-cs-007-p022"
+      ],
+      "f031": [
+        "medqa-cs-007-p023"
+      ],
+      "f032": [
+        "medqa-cs-007-p024"
+      ],
+      "f033": [
+        "medqa-cs-007-p014"
+      ],
+      "f034": [
+        "medqa-cs-007-p014"
+      ],
+      "f035": [
+        "medqa-cs-007-p014"
+      ],
+      "f036": [
+        "medqa-cs-007-p015"
+      ],
+      "f037": [
+        "medqa-cs-007-p015"
+      ],
+      "f038": [
+        "medqa-cs-007-p015"
+      ]
+    },
+    "quotes": {
+      "f001": "I have really bad pain in my right arm.",
+      "f002": "Three days ago.",
+      "f003": "I was playing with my grandchildren in the garden when I tripped and fell.",
+      "f004": "I stumbled over a toy on the floor and attempted to brace myself with my arm, but I ended up landing on my hand. / he fell on his outstretched right arm",
+      "f005": "No.",
+      "f006": "The upper and middle parts of my right arm.",
+      "f007": "I didn't feel any pain when I first fell",
+      "f008": "but then the pain started gradually.",
+      "f009": "It is stable now, but it is still there.",
+      "f010": "I utilized a sling and took Tylenol, but the pain only improved slightly.",
+      "f011": "persisted despite his use of Tylenol and an ice pack at home",
+      "f012": "Not moving my arm and Tylenol.",
+      "f013": "Using my arm.",
+      "f014": "No.",
+      "f015": "it wasn't that bad, and I thought it would get better on its own / Also, I didn't want to bother my son. He doesn't have time to bring me to the hospital. He is busy.",
+      "f016": "No, it isn't weak",
+      "f017": "I believe I can move it in all directions, but it hurts when I do.",
+      "f018": "No numbness.",
+      "f019": "I can feel things fine.",
+      "f020": "No.",
+      "f021": "I have asthma.",
+      "f022": "They removed part of my prostate 2 years ago.",
+      "f023": "They said there was no evidence of cancer.",
+      "f024": "It was very difficult for me to urinate, but that has since gotten much better.",
+      "f025": "Yes, I am allergic to aspirin.",
+      "f026": "I get an itchy rash all over my body.",
+      "f027": "Tylenol",
+      "f028": "albuterol inhaler.",
+      "f029": "I don't work anymore. I am a retired schoolteacher.",
+      "f030": "No, I do not consume alcohol.",
+      "f031": "No, I don't smoke.",
+      "f032": "I walk 20 minutes every day to the grocery store and back.",
+      "f033": "I live with my son in his house.",
+      "f034": "He is married and has three kids.",
+      "f035": "Life has been hard on him lately. He lost his job and is looking for a new one.",
+      "f036": "I feel safe.",
+      "f037": "Nobody bothers me",
+      "f038": "They are all nice."
+    },
+    "flags": {
+      "f004": [
+        "The script does not say which arm he braced with; the side (right) comes from the patient note HPI."
+      ],
+      "f011": [
+        "Only in the patient note HPI; the scripted answer about measures taken (p011) mentions a sling and Tylenol, not an ice pack."
+      ],
+      "f015": [
+        "Parser merge: this answer to 'Reason for Not Seeking Medical Attention' sits inside p014's question field (the raw sheet has it on the Doctor line and the doctor's actual question is missing)."
+      ],
+      "f036": [
+        "Said while looking anxious (stage direction '(looks anxious)'); the gold lists elder abuse as an additional consideration."
+      ],
+      "f037": [
+        "Said while looking anxious; the question asked whether anyone at home hurts or threatens him or whether he is afraid of anyone."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 135/85 mm Hg | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-007-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.0°F (36.7°C) | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-007-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 12/minute | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-007-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 76/minute, regular | VS: Within normal limits.",
+        "exam_ids": [
+          "medqa-cs-007-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress. Appears anxious.",
+        "exam_ids": [
+          "medqa-cs-007-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Normocephalic, atraumatic, no bruises.",
+        "exam_ids": [
+          "medqa-cs-007-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Neck: Supple, full range of motion in all directions, no bruises.",
+        "exam_ids": [
+          "medqa-cs-007-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Chest: Breath sounds clear to auscultation bilaterally.",
+        "exam_ids": [
+          "medqa-cs-007-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm; normal S1/S2 sounds without murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-007-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Extremities: Right arm held closely against chest wall. Non-localized tenderness over middle and upper right arm and right shoulder. Pain and restricted range of motion on flexion, extension, abduction, and external rotation of right shoulder. Right elbow and wrist are normal. | Hold your right arm close to your body with your left hand and keep it externally rotated and slightly abducted. | Express pain when the examiner tries to move your right shoulder in any direction. | Do not allow the examiner to bring your shoulder to its full range of motion in flexion, extension, abduction, or external rotation.",
+        "exam_ids": [
+          "medqa-cs-007-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Unable to assess muscle strength due to pain.",
+        "exam_ids": [
+          "medqa-cs-007-e007"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Sensation intact to pinprick and soft touch.",
+        "exam_ids": [
+          "medqa-cs-007-e007"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Deep tendon reflexes intact and symmetric.",
+        "exam_ids": [
+          "medqa-cs-007-e007"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Pulses normal and symmetric in brachial and radial arteries.",
+        "exam_ids": [
+          "medqa-cs-007-e007"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x010": [
+        "The external rotation and slight abduction come only from the SP notes; the note exam says only 'Right arm held closely against chest wall'."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "p014 (parser merge): the question field holds the patient's answer to 'Reason for Not Seeking Medical Attention' (\"...when it wasn't that bad, and I thought it would get better on its own? Also, I didn't want to bother my son. He doesn't have time to bring me to the hospital. He is busy.\"), followed by the 'Living Conditions' question. In the raw sheet the answer is written on the Doctor line and the doctor's actual question is missing. The answer field is the Living Conditions answer. Annotated from the correct content (f015, f033-f035), keeping id p014.",
+      "p015 (parser merge): the question field joins the 'Social History' question ('Is there anyone else living with you? Do you have a significant other?'), which has no answer in the raw sheet, with the 'Safety/Elder Abuse Screening' question; the answer belongs to the safety question. Whether he has a significant other is unknown.",
+      "Note HPI says he used 'Tylenol and an ice pack at home'; the script (p011) says a sling and Tylenol. The ice pack is added as a flagged note-only fact (f011).",
+      "Note HPI says he 'fell on his outstretched right arm'; the script says he braced with 'my arm' and landed on his hand without naming the side.",
+      "Note PMH lists 'BPH' and PSH 'Prostatectomy'; the patient says only that part of his prostate was removed 2 years ago for difficulty urinating with no evidence of cancer. BPH is a clinician interpretation and was not copied into patient facts.",
+      "Note SH: 'Walks for 20 minutes every morning'; script says every day.",
+      "Gold diagnosis #1 'pain increases with hand movement': the script describes pain with using or moving the arm, not the hand. Its exam line is one comma-separated sentence, split into three items.",
+      "Gold diagnosis #2 exam finding 'Right arm externally rotated and slightly abducted' comes only from the SP notes; the note exam says only 'Right arm held closely against chest wall'.",
+      "p006: the patient believes he can move the arm in all directions, while the SP is told not to allow full shoulder range of motion and the note exam records restricted ROM; recorded as the patient's belief.",
+      "The sample closure ends with a stray page-number artifact '(203 206)'."
+    ],
+    "notes": [
+      "The home-safety denials (f036, f037) are coded absent and flagged because the script has him look anxious while giving them; the stage direction is kept in acting_notes.",
+      "f010 (sling and Tylenol give only slight relief) and f012 (not moving the arm and Tylenol make it better) come from different questions and are both kept; f027 records Tylenol as a current medication.",
+      "Prostate history: surgery is historical; the voiding difficulty is historical and 'much better', not explicitly resolved.",
+      "The lack of insurance appears only in the challenging question and is kept in patient_questions.",
+      "'Sit up in bed' is positioning only and is not an exam finding; the arm position, pain on shoulder movement and restricted ROM (v1 x020-x022) are merged with the note's arm findings into the arm and shoulder record x010.",
+      "Conversion: the two reasons for the delay (v1 f019, hpi, and f020, social) answer one scripted question and are one child fact (f015) so that the question gets the whole answer; living with the son (p014) is f033 with the son's family as a child, and the son's job loss is a stressor (f035).",
+      "Conversion: the fall details (p003) are a separate fact (f004) next to the context child f003; the aspirin reaction (p018) is a child of the allergy (f026); 'no evidence of cancer' is a child of the prostate surgery (f023).",
+      "Conversion: 'Appears anxious' is in the general-appearance record (x005) because the note's exam records it; otherwise it would stay a behavior. The note's 'VS: Within normal limits' (e002) agrees with the doorway values and is cited on all four doorway records.",
+      "Fixes: f005 answer word removed; f014 answer word removed; f016 answer word removed; f018 answer word removed; f020 answer word removed; f025 answer word removed; f030 answer word removed; f031 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Sit up in bed.",
+        "Hold your right arm close to your body with your left hand and keep it externally rotated and slightly abducted.",
+        "Express pain when the examiner tries to move your right shoulder in any direction.",
+        "Do not allow the examiner to bring your shoulder to its full range of motion in flexion, extension, abduction, or external rotation.",
+        "Look anxious when saying that nobody at home bothers you (home-safety questions)."
+      ],
+      "patient_questions": [
+        "Doctor, do you believe I will regain full movement in my arm as I had before?",
+        "I lack insurance coverage. What will the cost be for this appointment?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

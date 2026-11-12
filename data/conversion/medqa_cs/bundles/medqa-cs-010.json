@@ -1,0 +1,1132 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-010",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 35,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "calf pain",
+        "aliases": [
+          "leg pain",
+          "pain in the calf"
+        ],
+        "text": "I have pain in my right calf muscle.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "calf pain: when it started",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "The pain started a few days ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "calf pain: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It has gotten worse. Initially the pain was mild, but now it occurs with even the slightest movement.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "calf pain: constant or comes and goes",
+        "parent": "f001",
+        "attribute": "frequency",
+        "text": "It is present all the time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "calf pain: severity",
+        "parent": "f001",
+        "attribute": "severity",
+        "value": 8,
+        "text": "It's 8 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f006",
+        "item": "calf pain: spread",
+        "parent": "f001",
+        "attribute": "radiation",
+        "text": "It doesn't move anywhere.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "calf pain: what it feels like",
+        "parent": "f001",
+        "attribute": "character",
+        "value": [
+          "pressure",
+          "spasms"
+        ],
+        "text": "It feels like pressure and spasms.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "calf pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "value": [
+          "ibuprofen",
+          "propping the leg up on a pillow"
+        ],
+        "complete": true,
+        "text": "Pain medication, ibuprofen. It also helps if I prop up my leg with a pillow.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "calf pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "walking",
+          "extending the knee"
+        ],
+        "complete": true,
+        "text": "Walking and extending my knee make it worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "heaviness in the legs",
+        "aliases": [
+          "legs feeling heavy",
+          "pressure in the legs"
+        ],
+        "text": "By the end of the day, my legs feel heavy and I feel pressure in them.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f011",
+        "item": "recent injury",
+        "aliases": [
+          "fall",
+          "injury to the leg"
+        ],
+        "text": "I fell down and scratched my right leg.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "historical"
+      },
+      {
+        "id": "f012",
+        "item": "redness",
+        "aliases": [
+          "red skin"
+        ],
+        "text": "There is redness.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "warmth of the leg",
+        "aliases": [
+          "warmth",
+          "leg feeling warm"
+        ],
+        "text": "My right leg seems to be warmer compared to my left.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "bulging veins",
+        "aliases": [
+          "varicose veins"
+        ],
+        "text": "I don't have any bulging veins on my legs.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing",
+          "difficulty breathing"
+        ],
+        "text": "I haven't been short of breath.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "chest pain",
+        "text": "I haven't had any chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "fever",
+        "aliases": [
+          "feeling warm",
+          "temperature"
+        ],
+        "text": "I have felt warm recently, but I haven't measured my temperature.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "weight change",
+        "aliases": [
+          "weight gain",
+          "weight loss"
+        ],
+        "text": "I increased my weight by 50 pounds following the birth of my last child three years ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "recent long travel or immobility",
+        "aliases": [
+          "long flight",
+          "long trip",
+          "bed rest"
+        ],
+        "text": "A week ago, I had a 15-hour flight to see a crucial client.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f020",
+        "item": "travel for work",
+        "aliases": [
+          "business travel"
+        ],
+        "text": "I often travel for my consulting work.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "last menstrual period",
+        "aliases": [
+          "last period",
+          "LMP"
+        ],
+        "text": "My last period was two weeks ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f022",
+        "item": "menstrual periods",
+        "aliases": [
+          "periods",
+          "menstrual cycle"
+        ],
+        "text": "They're regular.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "menstrual periods: how long they last",
+        "parent": "f022",
+        "attribute": "duration",
+        "text": "My periods last 3 days.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "menstrual periods: flow",
+        "parent": "f022",
+        "attribute": "quantity",
+        "text": "I use three to four pads.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "menstrual periods: pain",
+        "parent": "f022",
+        "attribute": "other",
+        "aliases": [
+          "painful periods",
+          "period cramps"
+        ],
+        "text": "They are not accompanied by pain.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "pregnancies",
+        "aliases": [
+          "children",
+          "been pregnant"
+        ],
+        "text": "I have been pregnant twice and have two kids.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f027",
+        "item": "miscarriages",
+        "text": "I haven't had any miscarriages.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f028",
+        "item": "deliveries",
+        "aliases": [
+          "childbirth",
+          "complications with deliveries"
+        ],
+        "text": "Both times I had a normal vaginal delivery without complications.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f029",
+        "item": "Pap smear",
+        "aliases": [
+          "last Pap smear",
+          "cervical screening"
+        ],
+        "text": "My last Pap smear was one year ago; it was normal.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "chronic medical problems",
+        "aliases": [
+          "medical conditions",
+          "health problems"
+        ],
+        "text": "None. I don't have any medical conditions.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "None. I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies",
+          "allergies to medicines"
+        ],
+        "text": "I don't have any allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "ibuprofen",
+        "aliases": [
+          "pain medication"
+        ],
+        "text": "I take pain medication, ibuprofen.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "birth control pills",
+        "aliases": [
+          "oral contraceptives",
+          "the pill",
+          "contraception"
+        ],
+        "text": "I've been using oral contraceptives for the past 2 years.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "birth control pills: for how long",
+        "parent": "f034",
+        "attribute": "duration",
+        "text": "For the past 2 years.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "father's health",
+        "aliases": [
+          "blood clots in the family"
+        ],
+        "text": "My dad had a clot in his leg.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "sudden deaths in the family",
+        "text": "No one in my family has died suddenly.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f038",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a consultant in an executive capacity.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't use recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't use tobacco.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "sexual activity",
+        "aliases": [
+          "sexual partners"
+        ],
+        "text": "I'm sexually active with my spouse.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "marital status",
+        "text": "I'm married.",
+        "polarity": "present",
+        "category": "social_background"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-010",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "130/70 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "99.9°F (37.7°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "13/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "88/min",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "In severe pain."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides; no rales or rhonchi."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not tender, not distended; bowel sounds present in all four quadrants."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "leg examination",
+        "aliases": [
+          "calf examination",
+          "extremities examination",
+          "leg swelling",
+          "pedal pulses"
+        ],
+        "result": "Right calf red and swollen compared with the left; muscle contours normal; no ulcers or pigmentation. Right leg warmer than the left; pitting pedal edema on the right; multiple healing cuts on the right leg, covered with a bandage; dorsalis pedis pulses palpable and equal on both sides; normal mobility at the ankle, knee and hip."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "Homans sign",
+        "aliases": [
+          "calf pain on ankle dorsiflexion",
+          "Homan's sign"
+        ],
+        "result": "Pain in the right calf when the right ankle is dorsiflexed."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "mental status",
+        "aliases": [
+          "orientation",
+          "alertness"
+        ],
+        "result": "Alert and oriented."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "cranial nerves",
+        "result": "Cranial nerves II-XII intact."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength"
+        ],
+        "result": "Normal."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam"
+        ],
+        "result": "Normal."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes 2+ and symmetric."
+      },
+      {
+        "id": "x016",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "gait",
+        "aliases": [
+          "walking"
+        ],
+        "result": "Normal."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-010",
+    "diagnosis": "Deep venous thrombosis",
+    "aliases": [
+      "deep vein thrombosis",
+      "DVT",
+      "right leg DVT",
+      "lower extremity deep vein thrombosis",
+      "calf vein thrombosis",
+      "blood clot in the leg"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Deep venous thrombosis",
+        "evidence": [
+          "Recent 15-hour airplane flight",
+          "Weight gain of 50 lbs over the past 3 years",
+          "Taking OCPs for 2 years",
+          "Father with DVT (possible familial thrombophilia)",
+          "Exam: Homans sign",
+          "Exam: Pitting edema",
+          "Exam: Swollen, tender, red, warm right calf"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Cellulitis",
+        "aliases": [
+          "cellulitis of the leg",
+          "right leg cellulitis",
+          "bacterial skin infection of the leg"
+        ],
+        "evidence": [
+          "Cuts to right leg secondary to fall",
+          "Low-grade fever",
+          "Exam: Temperature 99.9°F",
+          "Exam: Swollen, tender, red, warm right calf"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Rupture of Baker cyst",
+        "aliases": [
+          "ruptured Baker cyst",
+          "ruptured Baker's cyst",
+          "Baker cyst rupture",
+          "ruptured popliteal cyst"
+        ],
+        "evidence": [
+          "Spasmodic pain in right calf",
+          "Exam: Swollen, tender, warm right calf"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Hematoma",
+        "note": "Injury can cause intramuscular or intermuscular bleeding with pain, swelling and restricted movement, and may lead to posterior compartment syndrome."
+      },
+      {
+        "diagnosis": "Rupture of the gastrocnemius muscle",
+        "note": "Sudden pain at the musculotendinous junction halfway between knee and heel, possibly with bruising, pain on tiptoe and pain on resisted ankle dorsiflexion."
+      },
+      {
+        "diagnosis": "Spasm/sprain",
+        "note": "Undue strain can tear muscles or tendons, causing spasm and pain; ligaments can be torn by overstretching or injury."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-010",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-010-p001"
+      ],
+      "f003": [
+        "medqa-cs-010-p001",
+        "medqa-cs-010-p003"
+      ],
+      "f004": [
+        "medqa-cs-010-p002"
+      ],
+      "f005": [
+        "medqa-cs-010-p004"
+      ],
+      "f006": [
+        "medqa-cs-010-p005"
+      ],
+      "f007": [
+        "medqa-cs-010-p006"
+      ],
+      "f008": [
+        "medqa-cs-010-p007"
+      ],
+      "f009": [
+        "medqa-cs-010-p008"
+      ],
+      "f010": [
+        "medqa-cs-010-p009"
+      ],
+      "f011": [
+        "medqa-cs-010-p010"
+      ],
+      "f012": [
+        "medqa-cs-010-p011"
+      ],
+      "f013": [
+        "medqa-cs-010-p012"
+      ],
+      "f014": [
+        "medqa-cs-010-p013"
+      ],
+      "f015": [
+        "medqa-cs-010-p014"
+      ],
+      "f016": [
+        "medqa-cs-010-p015"
+      ],
+      "f017": [
+        "medqa-cs-010-p017"
+      ],
+      "f018": [
+        "medqa-cs-010-p023"
+      ],
+      "f019": [
+        "medqa-cs-010-p016"
+      ],
+      "f020": [
+        "medqa-cs-010-p016"
+      ],
+      "f021": [
+        "medqa-cs-010-p018"
+      ],
+      "f022": [
+        "medqa-cs-010-p020"
+      ],
+      "f023": [
+        "medqa-cs-010-p020"
+      ],
+      "f024": [
+        "medqa-cs-010-p020"
+      ],
+      "f025": [
+        "medqa-cs-010-p020"
+      ],
+      "f026": [
+        "medqa-cs-010-p021"
+      ],
+      "f027": [
+        "medqa-cs-010-p021"
+      ],
+      "f028": [
+        "medqa-cs-010-p021"
+      ],
+      "f029": [
+        "medqa-cs-010-p022"
+      ],
+      "f030": [
+        "medqa-cs-010-p024"
+      ],
+      "f031": [
+        "medqa-cs-010-p025"
+      ],
+      "f032": [
+        "medqa-cs-010-p032"
+      ],
+      "f033": [
+        "medqa-cs-010-p007"
+      ],
+      "f034": [
+        "medqa-cs-010-p019"
+      ],
+      "f035": [
+        "medqa-cs-010-p019"
+      ],
+      "f036": [
+        "medqa-cs-010-p026"
+      ],
+      "f037": [
+        "note"
+      ],
+      "f038": [
+        "medqa-cs-010-p027"
+      ],
+      "f039": [
+        "medqa-cs-010-p028"
+      ],
+      "f040": [
+        "medqa-cs-010-p029"
+      ],
+      "f041": [
+        "medqa-cs-010-p030"
+      ],
+      "f042": [
+        "medqa-cs-010-p031"
+      ],
+      "f043": [
+        "medqa-cs-010-p031"
+      ]
+    },
+    "quotes": {
+      "f001": "Pain in my right calf muscle.",
+      "f002": "The pain started a few days ago",
+      "f003": "and has gotten worse. / Initially, the pain was mild, but now it occurs with even the slightest movement.",
+      "f004": "It is present all the time.",
+      "f005": "8/10.",
+      "f006": "No.",
+      "f007": "Pressure, spasms.",
+      "f008": "Pain medication (ibuprofen). / It also helps if I prop up my leg with a pillow.",
+      "f009": "Walking and extending my knee.",
+      "f010": "By the end of the day, my legs feel heavy and experience pressure.",
+      "f011": "Yes, I fell down and scratched my right leg",
+      "f012": "Yes.",
+      "f013": "My right leg seems to be warmer compared to my left.",
+      "f014": "No.",
+      "f015": "No.",
+      "f016": "No.",
+      "f017": "I have felt warm recently but haven't measured my temperature.",
+      "f018": "I increased my weight by 50 pounds following the birth of my last child three years ago.",
+      "f019": "a week ago, I had a 15-hour flight to see a crucial client.",
+      "f020": "I often travel for my consulting work",
+      "f021": "Two weeks ago.",
+      "f022": "Regular.",
+      "f023": "My periods last 3 days",
+      "f024": "I use three to four pads.",
+      "f025": "They are not accompanied by pain.",
+      "f026": "I have been pregnant twice and have two kids.",
+      "f027": "I haven't had any miscarriages.",
+      "f028": "Both times I had a normal vaginal delivery without complications.",
+      "f029": "One year ago; it was normal.",
+      "f030": "None.",
+      "f031": "None.",
+      "f032": "No.",
+      "f033": "Pain medication (ibuprofen).",
+      "f034": "I have been using oral contraceptives for the past 2 years.",
+      "f035": "for the past 2 years.",
+      "f036": "My dad had a clot in his leg.",
+      "f037": "No history of sudden deaths in the family.",
+      "f038": "Consultant in an executive capacity.",
+      "f039": "No.",
+      "f040": "No.",
+      "f041": "No.",
+      "f042": "With my spouse."
+    },
+    "flags": {
+      "f010": [
+        "Answer to 'Have you observed any swelling?'; it neither confirms nor denies swelling and refers to both legs. The note HPI says the pain is associated with swelling."
+      ],
+      "f024": [
+        "Whether this is per day or per period is not stated."
+      ],
+      "f037": [
+        "Only in the patient note FH; not asked in the script."
+      ],
+      "f043": [
+        "Split off from f042, whose text was the only record of it (fix)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "Blood Pressure (BP): 130/70 mmHg | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-010-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temperature (Temp): 99.9°F (37.7°C) | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-010-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "Respiratory Rate (RR): 13 per minute | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-010-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "Heart Rate (HR): 88 per minute | VS: WNL except for low-grade fever.",
+        "exam_ids": [
+          "medqa-cs-010-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in severe pain.",
+        "exam_ids": [
+          "medqa-cs-010-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally; no rales or rhonchi.",
+        "exam_ids": [
+          "medqa-cs-010-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-010-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, non-tender, non-distended, ~ BS x 4 quadrants.",
+        "exam_ids": [
+          "medqa-cs-010-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Inspection: Right calf appears red and swollen compared to the left; contours of the muscles appear normal; no ulcers or pigmentation. | Palpation: Right leg is warmer compared to the left; pitting pedal edema present on the right side; multiple healing cuts covered with a bandage on the right leg; dorsalis pedis pulse felt and equal on both sides; mobility normal at ankle joint, knee, and hip joint | Place a bandage on your right leg to cover the cuts that you got after a fall.",
+        "exam_ids": [
+          "medqa-cs-010-e007",
+          "medqa-cs-010-e008"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "no Homans sign on the right side. | Exhibit pain in your calf when the doctor dorsiflexes your right ankle.",
+        "exam_ids": [
+          "medqa-cs-010-e008"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Mental status: Alert and oriented.",
+        "exam_ids": [
+          "medqa-cs-010-e010"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Cranial nerves: 2-12 intact.",
+        "exam_ids": [
+          "medqa-cs-010-e013"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Motor/sensation: Normal.",
+        "exam_ids": [
+          "medqa-cs-010-e012"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Motor/sensation: Normal.",
+        "exam_ids": [
+          "medqa-cs-010-e012"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "DTRs: Symmetric 2+.",
+        "exam_ids": [
+          "medqa-cs-010-e011"
+        ]
+      },
+      "x016": {
+        "source": "patient_note",
+        "source_text": "Gait: Normal.",
+        "exam_ids": [
+          "medqa-cs-010-e014"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x008": [
+        "Source reads '~ BS x 4 quadrants'; '~' is a garbled '+' (bowel sounds present)."
+      ],
+      "x010": [
+        "The note exam says 'no Homans sign on the right side'; the SP is told to show calf pain on dorsiflexion of the right ankle, and gold diagnosis #1 lists 'Homans sign'. The simulated finding is the result (CONVERSION.md), worded as the SP shows it."
+      ],
+      "x009": [
+        "Gold diagnoses describe a 'tender' right calf, but neither the note exam nor the SP notes record calf tenderness on palpation."
+      ]
+    },
+    "leakage": [
+      {
+        "fact_id": "f036",
+        "reason": "'My dad had a clot in his leg' is a lay description of DVT, the rank-1 diagnosis (legitimate family history, also in the challenging question)."
+      }
+    ],
+    "source_issues": [
+      "Homans sign conflict: the note exam says 'no Homans sign on the right side', while the SP is told to show calf pain when the right ankle is dorsiflexed and gold diagnosis #1 lists 'Homans sign' as a supporting exam finding. The simulated calf pain on dorsiflexion is the Homans record (x010).",
+      "Gold diagnoses #1-#3 describe a 'tender' right calf, but the note exam records no calf tenderness on palpation.",
+      "p009 asks about swelling; the answer (legs feel heavy with pressure at the end of the day, both legs) neither confirms nor denies swelling. The note HPI says the pain is 'associated with swelling', and the exam records a swollen right calf.",
+      "Gold #2 lists 'Low-grade fever' as a history finding; the patient only felt warm and did not measure her temperature. The doorway temperature is 99.9°F and the note says 'low-grade fever' without a value.",
+      "e005: '~ BS x 4 quadrants' is a garbled symbol (probably '+'); recorded as present with a flag (x008).",
+      "e006 ('Extremities:') and e009 ('Neuro:') are header-only lines with no findings; listed in excluded_exam_lines.",
+      "The note HPI says the pain is aggravated by dorsiflexion of the foot; this is not in the script's exacerbating-factors answer (walking, extending the knee) but matches the SP notes.",
+      "The note FH adds 'No history of sudden deaths in the family', which is not in the script (added as flagged note-only fact f037).",
+      "p020: 'I use three to four pads' does not say whether per day or per period.",
+      "p032 topic is 'Drug allergies/herbal medication', but herbal medicines are never asked about.",
+      "The raw sheet's 'Closure' section contains unrelated text about exam-day logistics (arrival time, ID, scratch paper); it was not used."
+    ],
+    "notes": [
+      "Ibuprofen use (medication, f033) and its effect (relief, in f008) are recorded separately, as the example does for antacids and Maalox.",
+      "Swelling was not inferred from the heaviness/pressure answer (f010, flagged).",
+      "The 50-lb weight gain since her last delivery 3 years ago is coded current, since nothing says it was lost.",
+      "'Married with two children' from the SP-sheet patient description is in acting_notes (no valid source id); it agrees with 'my spouse' and 'two kids'.",
+      "The calf pain on dorsiflexion is worded as the SP shows it, not labeled a positive Homans sign, because the note explicitly records no Homans sign; as the simulated finding it is the result of the Homans record (x010), replacing v1's separate note and SP records (x018, x025).",
+      "Conversion: v1 f008 (ibuprofen eases the pain) and f009 (propping the leg up eases it) answer one question and form one relieving list (f008). v1 f002 (worse; mild at first, now with the slightest movement) is the course child f003.",
+      "Conversion: the 15-hour flight a week ago (v1 subtype exposures) and frequent work travel (v1 subtype social) are habit_exposure (travel). Oral contraceptives (p019) are a medication parent f034 with the 2-year duration as a child.",
+      "Conversion: inspection (e007) and palpation (e008) of the leg form one leg-examination record x009, with the SP's bandage; the Homans sign is its own record (named special test). The note's 'VS: WNL except for low-grade fever' (e002) agrees with the doorway values (99.9°F) and is cited on all four doorway records.",
+      "Harmonisation pass: scale [0, 10] added to f005; f030 item -> 'chronic medical problems' (blanket denial).",
+      "Fixes: f042 text rewritten; f034 text rewritten; f006 answer word removed; f011 answer word removed; f012 answer word removed; f014 answer word removed; f015 answer word removed; f016 answer word removed; f032 answer word removed; f039 answer word removed; f040 answer word removed; f041 answer word removed; f043 new fact 'marital status' from f042."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Exhibit pain in your calf when the doctor dorsiflexes your right ankle.",
+        "Place a bandage on your right leg to cover the cuts that you got after a fall.",
+        "When asked about recent injuries, point to the bandage on your right leg.",
+        "Background from the SP sheet's patient description: married with two children."
+      ],
+      "patient_questions": [
+        "My father experienced a clot in his leg. What measures do you recommend to prevent me from developing a clot as well?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": [
+      {
+        "id": "medqa-cs-010-e006",
+        "reason": "Section header 'Extremities:' with no finding; its findings are in e007 and e008."
+      },
+      {
+        "id": "medqa-cs-010-e009",
+        "reason": "Section header 'Neuro:' with no finding; its findings are in e010-e014."
+      }
+    ]
+  }
+}

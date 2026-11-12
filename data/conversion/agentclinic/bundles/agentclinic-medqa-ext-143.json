@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-143", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 65, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "arm stiffness", "aliases": ["stiff arm", "stiffness"], "text": "My arm has been stiff.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "difficulty combing hair", "aliases": ["trouble brushing hair"], "text": "I have trouble combing my hair.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "difficulty reaching high shelves", "aliases": ["trouble reaching up", "reaching overhead"], "text": "I have trouble reaching things on high shelves.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "how long the symptoms have been going on", "text": "This has been going on for the past few months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "problems in other joints", "aliases": ["other joint pain", "other joints"], "text": "None of my other joints are affected.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f006", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "recent arm or shoulder injury", "aliases": ["trauma", "injury", "fall"], "text": "I haven't injured my arm or shoulder recently.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "obesity", "aliases": ["overweight", "weight"], "text": "I'm obese.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "metformin", "text": "I take metformin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "insulin", "text": "I take insulin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "lisinopril", "text": "I take lisinopril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "hydrochlorothiazide", "aliases": ["HCTZ", "water pill"], "text": "I take hydrochlorothiazide.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "sedentary lifestyle", "aliases": ["exercise", "physical activity", "lack of exercise"], "text": "I'm not very active; I mostly stay indoors and watch television.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-143",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "142/85 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "78/min"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x004", "kind": "vital", "name": "temperature", "result": "36.6°C (97.9°F)"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "shoulder examination", "aliases": ["shoulder range of motion", "shoulder palpation", "shoulder inspection", "musculoskeletal examination"], "result": "Inspection: no visible swelling or deformity. Palpation: tenderness around the shoulder joint. Range of motion: decreased passive and active range of motion."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "motor strength", "aliases": ["muscle strength", "arm strength", "power", "strength testing"], "result": "Upper extremity strength 4/5."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Within normal limits."},
+      {"id": "x008", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Slightly elevated."},
+      {"id": "x009", "kind": "test", "name": "blood glucose", "aliases": ["glucose", "blood sugar"], "result": "Elevated."},
+      {"id": "x010", "kind": "test", "name": "shoulder X-ray", "aliases": ["shoulder radiograph", "X-ray of the shoulder"], "result": "No acute bony abnormality. Signs consistent with reduced joint space, but no significant osteoarthritic changes."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-143",
+    "diagnosis": "Adhesive capsulitis",
+    "aliases": ["frozen shoulder", "adhesive capsulitis of the shoulder", "adhesive capsulitis of the glenohumeral joint"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-143",
+    "fact_sources": {
+      "f001": ["cc"], "f002": ["agentclinic-medqa-ext-143-p001", "agentclinic-medqa-ext-143-p002"],
+      "f003": ["agentclinic-medqa-ext-143-p001", "agentclinic-medqa-ext-143-p003"], "f004": ["agentclinic-medqa-ext-143-p001"],
+      "f005": ["agentclinic-medqa-ext-143-p008"], "f006": ["agentclinic-medqa-ext-143-p008"], "f007": ["agentclinic-medqa-ext-143-p008"],
+      "f008": ["agentclinic-medqa-ext-143-p008"], "f009": ["agentclinic-medqa-ext-143-p006"], "f010": ["agentclinic-medqa-ext-143-p006"],
+      "f011": ["agentclinic-medqa-ext-143-p006"], "f012": ["agentclinic-medqa-ext-143-p006"], "f013": ["agentclinic-medqa-ext-143-p006"],
+      "f014": ["agentclinic-medqa-ext-143-p006"], "f015": ["agentclinic-medqa-ext-143-p006"],
+      "f016": ["agentclinic-medqa-ext-143-p001", "agentclinic-medqa-ext-143-p007"]
+    },
+    "quotes": {
+      "f001": "Stiffness in the arm", "f002": "difficulty in combing hair", "f003": "reaching objects on high shelves",
+      "f004": "for the past few months", "f005": "or other joint involvement",
+      "f008": "Denies recent injuries or trauma to the arm or shoulder.", "f009": "Diabetes mellitus type II",
+      "f016": "Sedentary lifestyle, predominately staying indoors and watching television."
+    },
+    "flags": {
+      "f001": ["The side of the affected arm is not stated anywhere in the source."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "142/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-143-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "78 bpm", "exam_ids": ["agentclinic-medqa-ext-143-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-143-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.6°C (97.9°F)", "exam_ids": ["agentclinic-medqa-ext-143-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Shoulder_Examination.Inspection + Physical_Examination_Findings.Shoulder_Examination.Palpation + Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion", "source_text": "No visible swelling or deformity | Tenderness around the shoulder joint | Decreased passive and active range of motion", "exam_ids": ["agentclinic-medqa-ext-143-e005", "agentclinic-medqa-ext-143-e008", "agentclinic-medqa-ext-143-e009"]},
+      "x006": {"source": "Physical_Examination_Findings.Shoulder_Examination.Strength_Testing", "source_text": "Upper extremity strength 4/5", "exam_ids": ["agentclinic-medqa-ext-143-e010"]},
+      "x007": {"source": "Test_Results.Blood_Tests.CBC", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-143-i001"]},
+      "x008": {"source": "Test_Results.Blood_Tests.CRP", "source_text": "Slightly elevated", "exam_ids": ["agentclinic-medqa-ext-143-i002"]},
+      "x009": {"source": "Test_Results.Blood_Tests.Glucose", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-143-i003"]},
+      "x010": {"source": "Test_Results.Imaging.X-ray_Shoulder.Findings", "source_text": "No acute bony abnormality. Signs consistent with reduced joint space but no significant osteoarthritic changes.", "exam_ids": ["agentclinic-medqa-ext-143-i004"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Secondary_Symptoms lists examination results ('Decreased range of motion in shoulder', 'Arm strength 4/5') that are also in the shoulder exam leaves e009 and e010.",
+      "The affected side is never stated, and the history reports no shoulder pain although the exam finds tenderness around the shoulder joint."
+    ],
+    "notes": [
+      "The difficulties combing hair and reaching high shelves are separate facts; their 'past few months' duration applies to both (and plausibly to the stiffness) and is a standalone fact.",
+      "The diagnosis list and the medication list are split one condition and one drug per fact.",
+      "Shoulder inspection, palpation and range of motion are one shoulder examination record; strength testing is a separate motor strength record."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-143-p004", "reason": "'Decreased range of motion in shoulder' is an examination measurement, recorded in exam leaf e009 (x005); the patient-level complaint is the stiffness and difficulty reaching."},
+      {"id": "agentclinic-medqa-ext-143-p005", "reason": "'Arm strength 4/5' is an examiner's grade, recorded in exam leaf e010 (x006)."}
+    ],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-143-e006", "reason": "Shoulder auscultation 'N/A': no information."},
+      {"id": "agentclinic-medqa-ext-143-e007", "reason": "Shoulder percussion 'N/A': no information."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with stiffness in his arm impacting daily activities."
+    }
+  }
+}

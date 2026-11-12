@@ -1,0 +1,108 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03402",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 31, "sex": "male"},
+    "opening": ["f001", "f012"],
+    "facts": [
+      {"id": "f001", "item": "right wrist pain", "aliases": ["wrist pain", "sore wrist"], "text": "I have pain in my right wrist.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "right wrist pain: duration", "parent": "f001", "attribute": "duration", "text": "It has been going on for more than three months.", "value": "more than 3 months", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "right wrist pain: course", "parent": "f001", "attribute": "course", "text": "It has been getting worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "right wrist pain: how it started", "parent": "f001", "attribute": "context", "text": "It started after a minor strain while I was lifting something.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "right wrist pain: what makes it worse", "parent": "f001", "attribute": "aggravating", "text": "Even small movements of my wrist hurt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "right wrist pain: response to treatment", "parent": "f001", "attribute": "treatment_response", "text": "The treatment I've had so far hasn't made it better.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "wrist sprain", "aliases": ["sprain", "earlier diagnosis"], "text": "At first I was told it was a wrist sprain.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "anti-inflammatory painkillers", "aliases": ["NSAIDs", "anti-inflammatories", "painkillers"], "text": "I was given anti-inflammatory painkillers (NSAIDs) for it.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "osteoarthritis of the wrist", "aliases": ["osteoarthritis", "arthritis", "wear and tear"], "text": "Later I was told it was osteoarthritis.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "right-handed", "aliases": ["hand dominance", "dominant hand"], "text": "I'm right-handed.", "polarity": "present", "category": "social_background"},
+      {"id": "f011", "item": "country of origin", "aliases": ["nationality", "where I'm from", "ethnicity"], "text": "I'm originally from Afghanistan.", "polarity": "present", "category": "social_background"},
+      {"id": "f012", "item": "swelling on the palm side of the wrist", "aliases": ["wrist swelling", "lump on the wrist", "soft swelling"], "text": "There's a new soft swelling on the palm side of my right wrist.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f013", "item": "red, peeling skin over the wrist", "aliases": ["redness", "peeling skin", "skin changes on the wrist"], "text": "The skin over it is red and peeling.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f014", "item": "recent travel", "aliases": ["travel", "moving around"], "text": "Since this started, I've been moving back and forth between Florida and Canada.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "moving to the United States", "aliases": ["immigration", "how long in the US"], "text": "I moved to the United States seven years ago.", "value": "7 years ago", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03402",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp", "fever"], "result": "Afebrile"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Hemodynamically stable"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Hemodynamically stable"},
+      {"id": "x004", "kind": "exam", "system": "musculoskeletal", "name": "right wrist examination", "aliases": ["wrist examination", "wrist range of motion", "volar wrist", "inspection of the wrist"], "result": "Erythematous, desquamated, fluctuant lesion on the volar right wrist; pain with small arcs of motion."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "upper limb reflexes", "tendon reflexes"], "result": "Hyperreflexia of the upper extremities."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "neurovascular examination of the upper limbs", "aliases": ["neurovascular status", "sensation", "pulses", "distal circulation", "motor examination"], "result": "Intact apart from upper-extremity hyperreflexia."},
+      {"id": "x007", "kind": "test", "name": "white blood cell count", "aliases": ["WBC", "complete blood count", "CBC", "white cell count"], "result": "Mild leukocytosis."},
+      {"id": "x008", "kind": "test", "name": "inflammatory markers", "aliases": ["ESR", "CRP", "sed rate", "C-reactive protein"], "result": "Elevated."},
+      {"id": "x009", "kind": "test", "name": "HIV test", "aliases": ["HIV serology", "HIV antibody test"], "result": "Negative."},
+      {"id": "x010", "kind": "test", "name": "X-ray of the right wrist", "aliases": ["wrist radiograph", "wrist X-ray", "hand X-ray"], "result": "Diffuse destruction and osteopenia of the proximal and distal carpal rows with scattered cystic changes of the distal radius, ulna, and carpal bones."},
+      {"id": "x011", "kind": "test", "name": "contrast-enhanced MRI of the right wrist", "aliases": ["wrist MRI", "MRI wrist"], "result": "Diffuse T2-weighted enhancement of the carpal bones and a subcutaneous fluid collection communicating with the radiocarpal joint."},
+      {"id": "x012", "kind": "test", "name": "wrist joint aspiration", "aliases": ["synovial aspiration", "joint fluid", "arthrocentesis", "synovial fluid appearance"], "result": "Grossly purulent fluid."},
+      {"id": "x013", "kind": "test", "name": "chest X-ray", "aliases": ["chest radiograph", "CXR"], "result": "Unremarkable for pulmonary disease."},
+      {"id": "x014", "kind": "test", "name": "MRI of the cervical spine", "aliases": ["cervical spine MRI", "neck MRI", "MRI C-spine"], "result": "No syrinx."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03402",
+    "diagnosis": "Tuberculosis",
+    "aliases": ["TB", "Mycobacterium tuberculosis infection", "skeletal tuberculosis", "osteoarticular tuberculosis", "musculoskeletal tuberculosis", "extrapulmonary tuberculosis", "tuberculous arthritis", "tuberculous arthritis of the wrist", "wrist tuberculosis", "tuberculous osteomyelitis"],
+    "reasoning": "1. A neuropathic joint was considered, but imaging ruled out a syrinx — “the MRI of the cervical spine did not show a syrinx.” 2. Pulmonary tuberculosis was considered, but chest imaging was unremarkable — “the chest radiograph was negative for any acute or indolent pulmonary disease.” 3. Non-infectious inflammatory arthropathy was considered, but the presence of purulent fluid made it less likely — “the fluid appeared grossly purulent.” 4. Aggressive bacterial infection was considered, but rapid-onset pathogens were deemed less likely than indolent organisms — “our differential was narrowed to infectious arthropathy of the wrist and carpus likely secondary to an indolent bacteria or fungi.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-03402",
+    "fact_sources": {
+      "f001": ["s001", "s005"], "f002": ["s001"], "f003": ["s001"], "f004": ["s003"], "f005": ["s009"], "f006": ["s004", "s005"],
+      "f007": ["s004"], "f008": ["s004"], "f009": ["s004"], "f010": ["s001"], "f011": ["s001"], "f012": ["s005", "s009"],
+      "f013": ["s009"], "f014": ["s002"], "f015": ["s002"]
+    },
+    "quotes": {
+      "f002": "over 3 months of progressive right wrist pain", "f003": "progressive", "f004": "Initial wrist pain followed minor lifting trauma",
+      "f005": "pain with small arcs of motion", "f006": "without improvement", "f007": "first diagnosed with a wrist sprain",
+      "f008": "treated with nonsteroidal anti-inflammatory drugs", "f009": "then with primary osteoarthritis",
+      "f010": "right-hand–dominant", "f011": "originally from Afghanistan", "f015": "Seven years earlier he had immigrated to the United States",
+      "f012": "new fluctuance over the volar wrist", "f013": "an erythematous, desquamated, fluctuant lesion on the volar right wrist",
+      "f014": "during the current illness he moved between Florida and Canada"
+    },
+    "flags": {
+      "f005": ["Taken from the examination (pain with small arcs of motion); the patient would feel it."],
+      "f006": ["'Without improvement' (s004) is read as applying to the treatment so far; s005 adds 'continued pain'."],
+      "f012": ["Fluctuance is an examiner's sign; the patient-noticeable part (a new soft swelling) is the fact."],
+      "f013": ["Taken from the examination (erythematous, desquamated lesion); visible to the patient."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "On admission he was afebrile"},
+      "x002": {"sentences": ["s006"], "source_text": "hemodynamically stable"},
+      "x003": {"sentences": ["s006"], "source_text": "hemodynamically stable"},
+      "x004": {"sentences": ["s009"], "source_text": "an erythematous, desquamated, fluctuant lesion on the volar right wrist, pain with small arcs of motion"},
+      "x005": {"sentences": ["s009"], "source_text": "hyperreflexia of the upper extremities"},
+      "x006": {"sentences": ["s009"], "source_text": "but otherwise intact neurovascular status"},
+      "x007": {"sentences": ["s007"], "source_text": "Laboratory studies showed mild leukocytosis"},
+      "x008": {"sentences": ["s007"], "source_text": "elevated inflammatory markers"},
+      "x009": {"sentences": ["s007"], "source_text": "HIV testing was negative"},
+      "x010": {"sentences": ["s008"], "source_text": "Radiographs of the right wrist demonstrated diffuse destruction and osteopenia of the proximal and distal carpal rows with scattered cystic changes of the distal radius, ulna, and carpal bones."},
+      "x011": {"sentences": ["s010"], "source_text": "Contrast-enhanced MRI of the wrist showed diffuse T2-weighted enhancement of the carpal bones and a subcutaneous fluid collection communicating with the radiocarpal joint."},
+      "x012": {"sentences": ["s011"], "source_text": "Synovial aspiration yielded grossly purulent fluid"},
+      "x013": {"sentences": ["s012"], "source_text": "A chest radiograph was unremarkable for pulmonary disease"},
+      "x014": {"sentences": ["s012"], "source_text": "MRI of the cervical spine showed no syrinx"}
+    },
+    "finding_flags": {
+      "x008": ["The individual inflammatory markers are not named; ESR and CRP are aliases because they are the usual markers."],
+      "x002": ["Only 'hemodynamically stable' is given; no values for blood pressure or heart rate."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "No culture, stain or histology result is given (s011 lists what was sent but not the results); tuberculosis is the expert diagnosis from the clinical picture (selection note).",
+      "Upper-extremity hyperreflexia is not explained in the prompt (the cervical MRI showed no syrinx).",
+      "s004 is ambiguous about which treatment failed ('then with primary osteoarthritis without improvement')."
+    ],
+    "notes": [
+      "Index visit: the re-presentation with continued right wrist pain and new volar fluctuance, leading to admission (s005–s012); s001–s004 are the history before it (earlier diagnoses of sprain and osteoarthritis).",
+      "s011: the aspirate was sent for cytology, Gram stain, aerobic, anaerobic, fungal and acid-fast cultures and crystal analysis, but no results are given, so the only finding is the fluid's appearance (x012).",
+      "Earlier diagnoses the patient was given (sprain, osteoarthritis) are medical_history facts; they are not the gold diagnosis."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s013", "reason": "Clinician's presumptive diagnosis (septic arthritis) and a therapeutic procedure (open irrigation and debridement) with its operative findings; hospital course after the index visit."},
+      {"id": "s014", "reason": "Treatment (intravenous antibiotics) during the workup."}
+    ]
+  }
+}

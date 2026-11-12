@@ -1,0 +1,53 @@
+{
+ "case_id": "ddxplus-v2-test-0000348",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "My symptoms get worse when I lie down and better when I sit up.",
+   "I'm quite short of breath; it's hard to breathe.",
+   "I have bouts of choking or shortness of breath that wake me up at night.",
+   "I have swelling in one or more parts of my body.",
+   "I have heart failure.",
+   "I've had fluid in my lungs before.",
+   "I'm on dialysis."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm on dialysis and I have heart failure. I've had fluid in my lungs before, but lately I'm quite short of breath and it's hard to breathe. My symptoms get worse when I lie down and better when I sit up. I also have bouts of choking or shortness of breath that wake me up at night, and I have swelling in one or more parts of my body.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f010",
+    "f011",
+    "f012",
+    "f015",
+    "f016",
+    "f017"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8638,
+   "tokens_out": 93,
+   "seconds": 16.52,
+   "redrafts": 0
+  }
+ }
+}

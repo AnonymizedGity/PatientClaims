@@ -1,0 +1,72 @@
+{
+ "case_id": "mcr-test-11265",
+ "pmcid": "PMC6787862",
+ "test_row": 691,
+ "test_index": 11265,
+ "case_prompt": "A 54-year-old Caucasian woman presented with 5 days of nausea, vomiting, and fatigue. She reported a 1-month history of poor appetite, fatigue, 6-kg unintentional weight loss, occasional vague abdominal pain, and recent tanning of her skin. Her medical history was notable for 17 years of hypothyroidism, initially well-controlled on levothyroxine until she switched to animal thyroid extract several months earlier. One week before presentation, she began trimethoprim-sulfamethoxazole (TMP-SMX) 160 mg twice daily for a sinus infection.\n\nOn examination, she appeared ill and dehydrated. Supine blood pressure was 131/80 mm Hg with heart rate 81/min; standing blood pressure was 107/67 mm Hg with heart rate 96/min. Skin and mucous membranes were dry, capillary refill was 3 seconds, and there was mild epigastric tenderness without guarding. Neurologic examination was normal.\n\nLaboratory studies revealed sodium 101 mmol/L, chloride 73 mmol/L, potassium 5.2 mmol/L, CO2 16 mmol/L, BUN 20 mg/dL, creatinine 0.8 mg/dL, and normal liver function tests, calcium, phosphorus, glucose, albumin, and lipid panel. Plasma osmolality was 225 mOsm/kg (normal 275–295), urine sodium 128 mmol/L, and urine osmolality 128 mOsm/kg. Hyperglycemia and other causes of nonhypotonic hyponatremia were excluded. She was diagnosed with hypotonic hypovolemic hyponatremia with elevated urine sodium and osmolality and no history of diuretic use. According to the diagnostic algorithm, adrenal insufficiency was considered and adrenal function tests were ordered.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 54-year-old Caucasian woman presented with 5 days of nausea, vomiting, and fatigue."
+  },
+  {
+   "id": "s002",
+   "text": "She reported a 1-month history of poor appetite, fatigue, 6-kg unintentional weight loss, occasional vague abdominal pain, and recent tanning of her skin."
+  },
+  {
+   "id": "s003",
+   "text": "Her medical history was notable for 17 years of hypothyroidism, initially well-controlled on levothyroxine until she switched to animal thyroid extract several months earlier."
+  },
+  {
+   "id": "s004",
+   "text": "One week before presentation, she began trimethoprim-sulfamethoxazole (TMP-SMX) 160 mg twice daily for a sinus infection."
+  },
+  {
+   "id": "s005",
+   "text": "On examination, she appeared ill and dehydrated."
+  },
+  {
+   "id": "s006",
+   "text": "Supine blood pressure was 131/80 mm Hg with heart rate 81/min; standing blood pressure was 107/67 mm Hg with heart rate 96/min. Skin and mucous membranes were dry, capillary refill was 3 seconds, and there was mild epigastric tenderness without guarding."
+  },
+  {
+   "id": "s007",
+   "text": "Neurologic examination was normal."
+  },
+  {
+   "id": "s008",
+   "text": "Laboratory studies revealed sodium 101 mmol/L, chloride 73 mmol/L, potassium 5.2 mmol/L, CO2 16 mmol/L, BUN 20 mg/dL, creatinine 0.8 mg/dL, and normal liver function tests, calcium, phosphorus, glucose, albumin, and lipid panel."
+  },
+  {
+   "id": "s009",
+   "text": "Plasma osmolality was 225 mOsm/kg (normal 275–295), urine sodium 128 mmol/L, and urine osmolality 128 mOsm/kg."
+  },
+  {
+   "id": "s010",
+   "text": "Hyperglycemia and other causes of nonhypotonic hyponatremia were excluded."
+  },
+  {
+   "id": "s011",
+   "text": "She was diagnosed with hypotonic hypovolemic hyponatremia with elevated urine sodium and osmolality and no history of diuretic use."
+  },
+  {
+   "id": "s012",
+   "text": "According to the diagnostic algorithm, adrenal insufficiency was considered and adrenal function tests were ordered."
+  }
+ ],
+ "final_diagnosis": "primary adrenal insufficiency",
+ "diagnostic_reasoning": "1. Consideration of nonhypotonic hyponatremia was excluded — “Since hyperglycemia and other causes of nonhypotonic hyponatremia were excluded, our patient had hypotonic hypovolemic hyponatremia.” 2. Diuretic-induced hyponatremia was ruled out — “…no history of diuretic use…” 3. Hypothyroidism was considered a minor contributor — “we also believe that inadequately controlled hypothyroidism due to self‐switching from levothyroxine to animal thyroid extract … may have played a minor role in the development of the hyponatremia.” 4. TMP-SMX was identified as an acute exacerbating factor — “this situation was acutely exacerbated by TMP‐SMX use several days prior.”",
+ "selection": {
+  "age": 54,
+  "sex": "female",
+  "specialty": "endocrinology",
+  "dx_key": "primary adrenal insufficiency",
+  "setting": "emergency",
+  "time_structure": "staged_workup",
+  "leakage": "none",
+  "narrative_conclusion": true,
+  "interview_value": "high",
+  "screen_reason": "Anorexia, weight loss, skin tanning and vomiting with profound hyponatremia, hyperkalemia and orthostasis give primary adrenal insufficiency; the closing sentence naming it as the next step should be dropped from findings.",
+  "second_look_note": "Anorexia, weight loss and new skin tanning carry the diagnosis with profound hyponatremia and hyperkalemia; the closing sentence naming adrenal insufficiency must be dropped and cortisol results are not given."
+ }
+}

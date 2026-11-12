@@ -1,0 +1,1424 @@
+{
+ "_note": "X for each anchored study case: 'condition' (the wrong diagnosis), 'phrase' (the lay words the patient says), 'terms' (what the scorer matches in the doctor's differential, whole word, plural allowed), 'source' (where X comes from: the dataset's reference differential or the clinical differential of the presenting complaint), and 'quality': 'weak' for a looser fit. Rule: a plausible but wrong diagnosis that a lay patient could fear and name.",
+ "mcr-test-00215": {
+  "condition": "Acute viral hepatitis",
+  "source": "report differential 1",
+  "phrase": "hepatitis",
+  "terms": [
+   "viral hepatitis",
+   "infectious hepatitis",
+   "hepatitis a",
+   "hepatitis b",
+   "hepatitis c",
+   "hepatitis e",
+   "hav",
+   "hbv",
+   "hcv",
+   "hev"
+  ],
+  "reason": "Entry 1 (acute viral hepatitis) is a disease lay people know and fear with yellow eyes and dark urine, and it is a separate infection, not a drug reaction like DRESS; terms are limited to viral hepatitis so that 'nevirapine-induced hepatitis' does not score."
+ },
+ "mcr-test-00302": {
+  "condition": "Multiple sclerosis",
+  "source": "report differential 2 (entry 1, Guillain-Barré syndrome, is the textbook name of this ascending weakness with facial diplegia, so the doctor would already name it)",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ],
+  "reason": "Entry 2 (multiple sclerosis) is a widely known neurological disease a young man with new weakness could fear, and it is a distinct demyelinating disease, not a subtype, cause or complication of ADEM."
+ },
+ "mcr-test-00403": {
+  "condition": "Systemic lupus erythematosus",
+  "source": "report differential 3",
+  "phrase": "lupus",
+  "terms": [
+   "lupus",
+   "sle"
+  ]
+ },
+ "mcr-test-00426": {
+  "condition": "Intestinal parasitic infection",
+  "source": "report differential 2 (entry 1, infectious gastroenteritis, is the default for vomiting and diarrhoea and shares the gold's head word)",
+  "phrase": "a parasite in my gut",
+  "terms": [
+   "parasite",
+   "parasitic",
+   "helminth",
+   "helminthic",
+   "helminthiasis",
+   "giardiasis",
+   "giardia",
+   "strongyloides",
+   "strongyloidiasis",
+   "amoebiasis",
+   "amebiasis",
+   "ascariasis",
+   "hookworm",
+   "tapeworm",
+   "anisakiasis",
+   "intestinal worms",
+   "worm infection"
+  ],
+  "reason": "Entry 2 (parasitic infection) is a lay worry ('a parasite') after weeks of diarrhoea unhelped by antibiotics, and it is an infection, not eosinophilic gastroenteritis itself."
+ },
+ "mcr-test-00451": {
+  "condition": "Fungal or mycobacterial meningitis",
+  "source": "report differential 1",
+  "phrase": "meningitis",
+  "terms": [
+   "fungal meningitis",
+   "cryptococcal meningitis",
+   "cryptococcal",
+   "coccidioidal meningitis",
+   "coccidioidomycosis",
+   "tuberculous meningitis",
+   "tb meningitis",
+   "mycobacterial meningitis",
+   "bacterial meningitis",
+   "viral meningitis",
+   "infectious meningitis"
+  ],
+  "reason": "Entry 1 (fungal or mycobacterial meningitis) is lay-known as 'meningitis' and fits fever, headache and immunosuppression; it is an infection, not sarcoidosis, and bare 'meningitis' is left out because neurosarcoidosis can itself cause aseptic meningitis (the CSF had 8 lymphocytes)."
+ },
+ "mcr-test-00480": {
+  "condition": "Lung cancer (primary or metastatic)",
+  "source": "report differential 1",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "lung adenocarcinoma",
+   "bronchogenic carcinoma",
+   "bronchial carcinoma",
+   "pulmonary carcinoma",
+   "carcinoma of the lung",
+   "cancer of the lung",
+   "squamous cell carcinoma of the lung",
+   "nsclc",
+   "sclc",
+   "lung malignancy",
+   "pulmonary malignancy",
+   "lung neoplasm",
+   "pulmonary neoplasm",
+   "lung tumor",
+   "lung tumour",
+   "lung metastases",
+   "lung metastasis",
+   "pulmonary metastases",
+   "pulmonary metastasis"
+  ],
+  "reason": "Entry 1 (primary or metastatic lung cancer) is the obvious lay fear of a smoker told his CT shows spots in the lung, and a cancer is unrelated to syphilis."
+ },
+ "mcr-test-00635": {
+  "condition": "Insulinoma",
+  "source": "report differential 2 (entry 1, medication-induced hypoglycaemia, is in the record — metformin was stopped for it — and its name contains the gold's head word)",
+  "phrase": "a growth in my pancreas making too much insulin",
+  "terms": [
+   "insulinoma",
+   "insulin-secreting tumor",
+   "insulin-secreting tumour",
+   "insulin-producing tumor",
+   "insulin-producing tumour",
+   "hyperinsulinism",
+   "endogenous hyperinsulinism"
+  ],
+  "reason": "Entry 2 (insulinoma) is what anyone searching recurrent low sugars finds, said in lay words as an insulin-making growth, and it is a different (islet-cell, insulin-mediated) cause of hypoglycaemia, not NICTH; 'islet cell tumor' is left out because it matches the alias 'non-islet cell tumor hypoglycemia'."
+ },
+ "mcr-test-00910": {
+  "condition": "HIV infection",
+  "source": "report differential 2 (entry 1, heparin-induced thrombocytopenia, is not lay-nameable)",
+  "phrase": "HIV",
+  "terms": [
+   "hiv",
+   "human immunodeficiency virus",
+   "acute retroviral syndrome",
+   "aids"
+  ],
+  "reason": "Entry 2 (viral infections: CMV, EBV, HIV) contains HIV, which a homeless cocaine user feeling very ill can name and fear, and it is a different infection from leptospirosis."
+ },
+ "mcr-test-01508": {
+  "condition": "Glaucoma",
+  "source": "other consideration (entry 1, meningitis from a CSF leak, was actually present and is a complication of the invasive adenoma; entry 2, pituitary apoplexy, is the gold's own family)",
+  "phrase": "glaucoma",
+  "terms": [
+   "glaucoma",
+   "angle-closure",
+   "angle closure"
+  ],
+  "reason": "Glaucoma is the lay fear for losing the sight of one eye, and acute angle closure gives severe headache with vomiting, so it is plausible and unrelated to a pituitary tumour."
+ },
+ "mcr-test-01556": {
+  "condition": "Chronic osteomyelitis",
+  "source": "report differential 2 (entry 1, Paget's disease of bone, is implausible at 20)",
+  "phrase": "a bone infection",
+  "terms": [
+   "osteomyelitis",
+   "bone infection",
+   "crmo",
+   "brodie",
+   "brodie abscess"
+  ],
+  "reason": "Entry 2 (chronic non-infectious osteomyelitis) is lay-nameable as osteomyelitis, 'a bone infection', which fits years of constant night pain in a woman whose hip was once tapped for infection, and it is not a sclerosing bone dysplasia like melorheostosis."
+ },
+ "mcr-test-01598": {
+  "condition": "Odontalgia (dental pain or tooth abscess)",
+  "source": "report differential 2 (entry 1, cluster headache, is the textbook name for unilateral orbital pain with tearing and a runny nose, so the doctor would already name it)",
+  "phrase": "a bad tooth",
+  "terms": [
+   "odontalgia",
+   "dental pain",
+   "toothache",
+   "odontogenic pain",
+   "odontogenic",
+   "dental abscess",
+   "tooth abscess",
+   "periapical abscess",
+   "pulpitis",
+   "dental infection"
+  ],
+  "reason": "Entry 2 (odontalgia) is a lay worry ('a bad tooth') after a gunshot to the jaw and palate repair, and dental pain is not a trigeminal autonomic cephalalgia like hemicrania continua."
+ },
+ "mcr-test-01759": {
+  "condition": "Soft-tissue sarcoma of the thigh",
+  "source": "other consideration (entry 1, DVT, is the textbook first thought for a swollen painful thigh; entry 2 is not lay-nameable; entry 3, vitamin D deficiency, is not a plausible fear for a one-sided swelling)",
+  "phrase": "a cancer growing in my thigh",
+  "terms": [
+   "sarcoma",
+   "liposarcoma",
+   "rhabdomyosarcoma",
+   "leiomyosarcoma",
+   "osteosarcoma",
+   "soft tissue tumor",
+   "soft tissue tumour",
+   "soft-tissue tumor",
+   "soft-tissue tumour",
+   "soft tissue neoplasm",
+   "bone tumor",
+   "bone tumour",
+   "bone cancer"
+  ],
+  "reason": "A tumour is in the clinical differential of a thigh swollen for three months and a realistic lay fear, and it is not diabetic muscle infarction; CT showed no mass."
+ },
+ "mcr-test-01847": {
+  "condition": "Infectious pneumonia",
+  "source": "report differential 1",
+  "phrase": "a chest infection",
+  "terms": [
+   "community-acquired pneumonia",
+   "bacterial pneumonia",
+   "infectious pneumonia",
+   "atypical pneumonia",
+   "viral pneumonia",
+   "aspiration pneumonia",
+   "pneumocystis",
+   "pjp",
+   "chest infection",
+   "lower respiratory tract infection",
+   "respiratory tract infection",
+   "bronchitis"
+  ],
+  "reason": "Entry 1 (infection) is the lay worry 'a chest infection' for an older woman on prednisolone getting short of breath, and it is not a drug reaction; bare 'pneumonia' is left out because it matches the alias 'bucillamine-induced organizing pneumonia'."
+ },
+ "mcr-test-01872": {
+  "condition": "Breast cancer recurrence infiltrating the brachial plexus",
+  "source": "report differential 2 (brachial plexus pathology), as its lay-known cause in this patient (entry 1, carpal tunnel syndrome, is already in the record)",
+  "phrase": "my breast cancer coming back",
+  "terms": [
+   "breast cancer recurrence",
+   "recurrent breast cancer",
+   "metastatic breast cancer",
+   "breast cancer metastasis",
+   "breast cancer metastases",
+   "neoplastic brachial plexopathy",
+   "malignant brachial plexopathy",
+   "metastatic brachial plexopathy",
+   "tumor infiltration of the brachial plexus",
+   "tumour infiltration of the brachial plexus",
+   "malignant infiltration",
+   "neoplastic infiltration"
+  ],
+  "reason": "Entry 2 (brachial plexus pathology) is not lay-nameable itself, but its feared cause here, the treated breast cancer returning in the armpit, is, and it is unrelated to median nerve entrapment at the pronator teres."
+ },
+ "mcr-test-01919": {
+  "condition": "Hypertrophic cardiomyopathy",
+  "source": "report differential 2 (entry 1, hypertensive heart disease, is implausible: he knows he has never had high blood pressure)",
+  "phrase": "a thickened heart muscle",
+  "terms": [
+   "hypertrophic cardiomyopathy",
+   "hypertrophic obstructive cardiomyopathy",
+   "hcm",
+   "hocm",
+   "thickened heart muscle"
+  ],
+  "reason": "Entry 2 (hypertrophic cardiomyopathy) is lay-known as a thickened heart muscle and is a distinct genetic cardiomyopathy, not an infiltrative one; bare 'cardiomyopathy' is left out because it matches the alias 'amyloid cardiomyopathy'."
+ },
+ "mcr-test-02016": {
+  "condition": "Congestive heart failure",
+  "source": "report differential 3 (entry 1, chronic liver disease, is the default for ascites and was not clearly excluded — imaging showed surface nodularity; entry 2, constrictive pericarditis, is not lay-nameable)",
+  "phrase": "heart failure",
+  "terms": [
+   "heart failure",
+   "cardiac failure",
+   "chf",
+   "hfref",
+   "hfpef",
+   "biventricular failure"
+  ],
+  "reason": "Entry 3 (congestive heart failure, nephrotic syndrome, renal impairment) gives 'heart failure', a lay fear for a body swelling all over, and it is unrelated to tuberculous peritonitis."
+ },
+ "mcr-test-02529": {
+  "condition": "Tinea corporis",
+  "source": "report differential 2",
+  "phrase": "ringworm",
+  "terms": [
+   "ringworm",
+   "tinea corporis",
+   "tinea",
+   "fungal infection",
+   "fungal",
+   "dermatophytosis",
+   "dermatophyte"
+  ]
+ },
+ "mcr-test-02548": {
+  "condition": "Multiple myeloma",
+  "source": "report differential 1",
+  "phrase": "multiple myeloma",
+  "terms": [
+   "multiple myeloma",
+   "myeloma",
+   "plasma cell myeloma",
+   "plasmacytoma",
+   "plasma cell neoplasm"
+  ],
+  "reason": "Entries 1-2 (multiple myeloma) name a well-known blood cancer that fits back pain with anaemia and low platelets, and it is not a prostate cancer."
+ },
+ "mcr-test-02593": {
+  "condition": "Infectious keratitis",
+  "source": "report differential 1",
+  "phrase": "an infection in my eye",
+  "terms": [
+   "infectious keratitis",
+   "microbial keratitis",
+   "bacterial keratitis",
+   "fungal keratitis",
+   "viral keratitis",
+   "herpetic keratitis",
+   "herpes simplex keratitis",
+   "hsv keratitis",
+   "acanthamoeba keratitis",
+   "corneal infection",
+   "corneal ulcer",
+   "eye infection"
+  ],
+  "reason": "Entry 1 (infectious keratitis) is the lay worry 'an eye infection' for a painful light-sensitive eye with failing sight, and an infection is not a lipid deposit; bare 'keratitis' is left out because entry 2 (autoimmune keratitis) is a different worry."
+ },
+ "mcr-test-02741": {
+  "condition": "Tuberculosis",
+  "source": "report differential 1",
+  "phrase": "tuberculosis",
+  "terms": [
+   "tuberculosis",
+   "tuberculous"
+  ]
+ },
+ "mcr-test-02749": {
+  "condition": "Primary CNS lymphoma",
+  "source": "report differential 2",
+  "phrase": "a brain tumor",
+  "terms": [
+   "lymphoma",
+   "brain tumor",
+   "brain tumour",
+   "brain neoplasm",
+   "intracranial neoplasm",
+   "space-occupying lesion",
+   "brain cancer",
+   "glioblastoma",
+   "brain mass",
+   "brain lesion"
+  ]
+ },
+ "mcr-test-03106": {
+  "condition": "Salivary gland tumor",
+  "source": "report differential 3",
+  "phrase": "a tumor in my salivary gland",
+  "terms": [
+   "salivary gland tumor",
+   "salivary gland tumour",
+   "salivary gland neoplasm",
+   "parotid tumor",
+   "parotid tumour",
+   "parotid neoplasm",
+   "pleomorphic adenoma"
+  ]
+ },
+ "mcr-test-03402": {
+  "condition": "Rheumatoid arthritis",
+  "source": "report differential 3 (inflammatory arthropathy)",
+  "phrase": "rheumatoid arthritis",
+  "terms": [
+   "rheumatoid"
+  ]
+ },
+ "mcr-test-03450": {
+  "condition": "Multiple sclerosis",
+  "source": "report differential 1 (demyelinating optic neuritis, which the doctor would already name), as its lay-known cause",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ]
+ },
+ "mcr-test-03594": {
+  "condition": "Vitamin D deficiency",
+  "source": "other consideration (no report entry is lay-nameable)",
+  "phrase": "a vitamin D deficiency",
+  "terms": [
+   "vitamin d deficiency",
+   "vitamin d"
+  ]
+ },
+ "mcr-test-03624": {
+  "condition": "Pancreatic cancer",
+  "source": "report differential 1",
+  "phrase": "pancreatic cancer",
+  "terms": [
+   "pancreatic cancer",
+   "pancreatic carcinoma",
+   "pancreatic adenocarcinoma",
+   "cancer of the pancreas",
+   "adenocarcinoma of the pancreas"
+  ]
+ },
+ "mcr-test-03752": {
+  "condition": "Brain tumor",
+  "source": "report differential 2 (entry 1, ischemic stroke, is in the record's history)",
+  "phrase": "a brain tumor",
+  "terms": [
+   "brain tumor",
+   "brain tumour",
+   "glioma",
+   "brain metastases",
+   "brain metastasis",
+   "brain neoplasm",
+   "intracranial neoplasm",
+   "space-occupying lesion",
+   "brain cancer",
+   "glioblastoma",
+   "brain mass",
+   "brain lesion"
+  ]
+ },
+ "mcr-test-03768": {
+  "condition": "Guillain-Barre syndrome",
+  "source": "report differential 1-2",
+  "phrase": "Guillain-Barré syndrome",
+  "terms": [
+   "guillain",
+   "miller fisher",
+   "gbs"
+  ]
+ },
+ "mcr-test-03884": {
+  "condition": "Sinusitis",
+  "source": "other consideration (entry 1, allergic rhinitis, is a diagnosis already in the record)",
+  "phrase": "a sinus infection",
+  "terms": [
+   "sinusitis",
+   "sinus infection"
+  ]
+ },
+ "mcr-test-04208": {
+  "condition": "Tuberculosis",
+  "source": "report differential 2",
+  "phrase": "tuberculosis",
+  "terms": [
+   "tuberculosis",
+   "tuberculous"
+  ]
+ },
+ "mcr-test-04221": {
+  "condition": "Peripheral neuropathy",
+  "source": "report differential 1",
+  "phrase": "nerve damage",
+  "terms": [
+   "neuropathy",
+   "polyneuropathy",
+   "nerve damage"
+  ]
+ },
+ "mcr-test-04493": {
+  "condition": "Ankylosing spondylitis",
+  "source": "report differential 1",
+  "phrase": "ankylosing spondylitis",
+  "terms": [
+   "ankylosing spondylitis",
+   "spondylitis",
+   "spondyloarthritis"
+  ]
+ },
+ "mcr-test-04671": {
+  "condition": "Hepatitis",
+  "source": "other consideration (no report entry is lay-nameable)",
+  "phrase": "hepatitis",
+  "terms": [
+   "hepatitis"
+  ]
+ },
+ "mcr-test-04724": {
+  "condition": "Labyrinthitis",
+  "source": "other consideration (no report entry is lay-nameable)",
+  "phrase": "an inner ear infection",
+  "terms": [
+   "labyrinthitis",
+   "vestibular neuritis",
+   "inner ear infection",
+   "inner ear",
+   "bppv",
+   "benign paroxysmal positional vertigo",
+   "meniere",
+   "ménière"
+  ]
+ },
+ "mcr-test-04970": {
+  "condition": "Ocular toxoplasmosis",
+  "source": "report differential 1",
+  "phrase": "toxoplasmosis",
+  "terms": [
+   "toxoplasmosis",
+   "toxoplasma"
+  ]
+ },
+ "mcr-test-05119": {
+  "condition": "Tuberculosis",
+  "source": "report differential 2 (tuberculous aortitis)",
+  "phrase": "tuberculosis",
+  "terms": [
+   "tuberculosis",
+   "tuberculous"
+  ]
+ },
+ "mcr-test-05137": {
+  "condition": "Bacterial meningitis",
+  "source": "report differential 1",
+  "phrase": "meningitis",
+  "terms": [
+   "meningitis"
+  ]
+ },
+ "mcr-test-05660": {
+  "condition": "Retinitis pigmentosa",
+  "source": "report differential 2 (entry 1, dry age-related macular degeneration, is the gold's own family)",
+  "phrase": "retinitis pigmentosa",
+  "terms": [
+   "retinitis pigmentosa"
+  ]
+ },
+ "mcr-test-05730": {
+  "condition": "Lymphoma",
+  "source": "report differential 1",
+  "phrase": "lymphoma",
+  "terms": [
+   "lymphoma"
+  ]
+ },
+ "mcr-test-05910": {
+  "condition": "Hypothyroidism",
+  "source": "other consideration (secondary cause of high cholesterol; no report entry is lay-nameable)",
+  "phrase": "an underactive thyroid",
+  "terms": [
+   "hypothyroidism",
+   "underactive thyroid"
+  ]
+ },
+ "mcr-test-06043": {
+  "condition": "Salivary gland tumour",
+  "source": "report differential 2 (entry 1, infection, is too generic and implausible for a painless, recurrent, self-resolving swelling)",
+  "phrase": "a tumour in my salivary gland",
+  "terms": [
+   "salivary gland tumor",
+   "salivary gland tumour",
+   "salivary gland neoplasm",
+   "salivary gland carcinoma",
+   "salivary gland cancer",
+   "submandibular gland tumor",
+   "submandibular gland tumour",
+   "submandibular gland neoplasm",
+   "parotid tumor",
+   "parotid tumour",
+   "parotid neoplasm",
+   "pleomorphic adenoma",
+   "warthin",
+   "mucoepidermoid carcinoma",
+   "adenoid cystic carcinoma"
+  ],
+  "reason": "Entry 2 (tumour of salivary origin) is a natural lay fear for a swelling of the face and neck, as in the existing anchor for mcr-test-03106, and a tumour is not a mucus extravasation."
+ },
+ "mcr-test-06134": {
+  "condition": "Prolactinoma (pituitary adenoma)",
+  "source": "report differential 1",
+  "phrase": "a tumour on my pituitary gland",
+  "terms": [
+   "pituitary adenoma",
+   "pituitary tumor",
+   "pituitary tumour",
+   "pituitary macroadenoma",
+   "pituitary microadenoma",
+   "pituitary neoplasm",
+   "prolactinoma",
+   "macroprolactinoma",
+   "microprolactinoma"
+  ],
+  "reason": "Entry 1 (pituitary adenoma, prolactinoma) is what a young woman with severe headaches and stopped periods would find and fear, and an anterior pituitary adenoma is not a usual cause of central diabetes insipidus (the sellar masses that are, craniopharyngioma and germinoma, are not in the terms)."
+ },
+ "mcr-test-06156": {
+  "condition": "Hydatid cyst (echinococcosis)",
+  "source": "report differential 1",
+  "phrase": "a hydatid cyst from a tapeworm",
+  "terms": [
+   "hydatid",
+   "echinococcosis",
+   "echinococcal",
+   "echinococcus"
+  ],
+  "reason": "Entry 1 (hydatid cyst) is a disease known in pastoral East Africa, where she comes from, and the report itself could not exclude it; a parasitic cyst is not a lymphatic malformation.",
+  "quality": "weak"
+ },
+ "mcr-test-06180": {
+  "condition": "Urinary tract infection / graft pyelonephritis",
+  "source": "other consideration (entry 1 is the gold; entry 2, renal vein thrombosis, was actually present as tumour thrombus; entry 3, tumour lysis syndrome, is not lay-nameable)",
+  "phrase": "a urine infection",
+  "terms": [
+   "urinary tract infection",
+   "uti",
+   "pyelonephritis",
+   "kidney infection",
+   "urosepsis",
+   "cystitis",
+   "urine infection"
+  ],
+  "reason": "A urine or kidney infection is the lay fear for a fever in a kidney-transplant patient and was excluded by negative urine and blood cultures, and an infection is not rejection; the phrase avoids the word 'kidney', which is in a gold alias."
+ },
+ "mcr-test-06416": {
+  "condition": "Herpes simplex encephalitis",
+  "source": "report differential 1",
+  "phrase": "a brain infection like encephalitis",
+  "terms": [
+   "encephalitis",
+   "meningoencephalitis",
+   "cerebritis",
+   "brain infection"
+  ],
+  "reason": "Entry 1 (herpes simplex encephalitis) is lay-known as encephalitis, a brain infection that fits headache with a first seizure, and it is an infection, not a diffuse glioma (the natural lay fear, a brain tumour, is the gold's own family)."
+ },
+ "mcr-test-06632": {
+  "condition": "Multiple sclerosis",
+  "source": "other consideration (entries 1-2 are drug toxicities she never took; the earlier optic neuritis diagnosis is in the record)",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ],
+  "reason": "A young woman once told she had optic neuritis in both eyes could realistically fear MS, its best-known cause, and MS is unrelated to a niclosamide maculopathy."
+ },
+ "mcr-test-06792": {
+  "condition": "Systemic lupus erythematosus",
+  "source": "other consideration (entries 1-2, Castleman disease and hyper-IgD syndrome, are not lay-nameable)",
+  "phrase": "lupus",
+  "terms": [
+   "lupus",
+   "sle"
+  ],
+  "reason": "Lupus fits hives with fevers and joint pains (urticarial vasculitis with SLE is in the clinical differential), is a lay-known disease, and was excluded by negative serology; it is not an autoinflammatory IgM syndrome."
+ },
+ "mcr-test-06812": {
+  "condition": "Avascular necrosis of the hip",
+  "source": "report differential 2 (entry 1, sarcoidosis or multicentric histiocytosis, is not a plausible fear for hip and toe pain)",
+  "phrase": "the bone in my hip dying off",
+  "terms": [
+   "avascular necrosis",
+   "osteonecrosis",
+   "aseptic necrosis",
+   "avn",
+   "ischemic necrosis",
+   "ischaemic necrosis"
+  ],
+  "reason": "Entry 2 (avascular necrosis) is a lay-known cause of worsening hip and groin pain ('the bone dying off'), and it is not an inflammatory arthritis; the phrase avoids 'arthritis', which is in the gold."
+ },
+ "mcr-test-06856": {
+  "condition": "Lymphoma",
+  "source": "report differential 1",
+  "phrase": "lymphoma",
+  "terms": [
+   "lymphoma",
+   "hodgkin"
+  ],
+  "reason": "Entry 1 (malignant lymphoma) is the lay fear for neck lumps that keep growing, and a cancer is not Kimura's disease."
+ },
+ "mcr-test-06913": {
+  "condition": "Tuberculosis",
+  "source": "report differential 4 (entry 1, cystic fibrosis, is implausible at 62)",
+  "phrase": "tuberculosis",
+  "terms": [
+   "tuberculosis",
+   "tuberculous"
+  ]
+ },
+ "mcr-test-07087": {
+  "condition": "Inherited channelopathy or paroxysmal AV block",
+  "source": "report differential 1",
+  "phrase": "an inherited heart rhythm problem",
+  "terms": [
+   "brugada",
+   "channelopathy",
+   "channelopathies",
+   "inherited arrhythmia",
+   "hereditary arrhythmia",
+   "long qt",
+   "short qt",
+   "cpvt",
+   "catecholaminergic polymorphic ventricular tachycardia",
+   "heart block",
+   "av block",
+   "atrioventricular block",
+   "mobitz"
+  ],
+  "reason": "Entry 1 (inherited channelopathy such as Brugada, or paroxysmal AV block) is the lay fear of a young man who keeps blacking out, and it is a primary cardiac cause, not reflex syncope; generic 'arrhythmia' and 'ventricular tachycardia' are left out because his Holter showed pauses and a slow VT run during the reflex episodes."
+ },
+ "mcr-test-07236": {
+  "condition": "Inflammatory bowel disease (Crohn's disease)",
+  "source": "report differential 1 (its first member, infection, is implausible after 8 years of diarrhoea; IBD is also entry 4)",
+  "phrase": "Crohn's disease",
+  "terms": [
+   "inflammatory bowel disease",
+   "ibd",
+   "crohn",
+   "crohns",
+   "ulcerative colitis",
+   "indeterminate colitis"
+  ],
+  "reason": "Entry 1 lists IBD, lay-known as Crohn's disease, a realistic fear for years of worsening watery diarrhoea, and it is not a drug effect; bare 'colitis' is left out of terms and phrase because it is in the alias 'vismodegib-induced colitis'."
+ },
+ "mcr-test-07260": {
+  "condition": "Intracranial haemorrhage",
+  "source": "other consideration (entry 1 is the gold; entry 2, PRES, is not lay-nameable)",
+  "phrase": "a bleed on the brain",
+  "terms": [
+   "intracerebral hemorrhage",
+   "intracerebral haemorrhage",
+   "intracranial hemorrhage",
+   "intracranial haemorrhage",
+   "cerebral hemorrhage",
+   "cerebral haemorrhage",
+   "brain hemorrhage",
+   "brain haemorrhage",
+   "brain bleed",
+   "hemorrhagic stroke",
+   "haemorrhagic stroke",
+   "intraparenchymal hemorrhage",
+   "intraparenchymal haemorrhage",
+   "subarachnoid hemorrhage",
+   "subarachnoid haemorrhage",
+   "ich",
+   "sah"
+  ],
+  "reason": "A brain bleed is a lay fear for a sudden headache with one-sided clumsiness and is in the clinical differential after cranial radiation, but it is not SMART; 'stroke' and 'migraine' are avoided because both are words of the gold alias."
+ },
+ "mcr-test-07488": {
+  "condition": "Intracranial (parasellar) aneurysm",
+  "source": "other consideration (entries 1-3 are other forms of hypophysitis, the gold's own family, and not lay-nameable)",
+  "phrase": "a brain aneurysm",
+  "terms": [
+   "aneurysm"
+  ],
+  "reason": "A brain aneurysm is a lay fear for a throbbing headache and is a real mimic of a sellar lesion compressing the chiasm, but it is not pituitary inflammation; a pituitary tumour was not chosen because bitemporal field loss would make the doctor name it anyway."
+ },
+ "mcr-test-07631": {
+  "condition": "Tuberculosis (tuberculous lymphadenitis)",
+  "source": "report differential 1",
+  "phrase": "tuberculosis",
+  "terms": [
+   "tuberculosis",
+   "tuberculous",
+   "scrofula",
+   "mycobacterial lymphadenitis"
+  ],
+  "reason": "Entry 1 (tuberculosis) is a lay-known fear for a neck lump with high fevers, and it is an infection, not Kikuchi's necrotizing lymphadenitis; bare 'lymphadenitis' is left out because it is in a gold alias."
+ },
+ "mcr-test-07845": {
+  "condition": "Dermatitis herpetiformis",
+  "source": "report differential 2 (entry 1 is the gold)",
+  "phrase": "a skin rash from coeliac disease",
+  "terms": [
+   "dermatitis herpetiformis",
+   "duhring",
+   "celiac",
+   "coeliac",
+   "gluten-sensitive enteropathy"
+  ],
+  "reason": "Entry 2 (dermatitis herpetiformis) is known to lay people as the itchy blistering rash of coeliac disease, and it is a gluten disease, not lupus."
+ },
+ "mcr-test-07881": {
+  "condition": "Systemic lupus erythematosus",
+  "source": "other consideration (entry 1, Rocky Mountain spotted fever, needs a tick exposure)",
+  "phrase": "lupus",
+  "terms": [
+   "lupus",
+   "sle"
+  ]
+ },
+ "mcr-test-08068": {
+  "condition": "Carotid artery dissection",
+  "source": "report differential 1",
+  "phrase": "a torn blood vessel in my neck",
+  "terms": [
+   "carotid dissection",
+   "carotid artery dissection",
+   "cervical artery dissection",
+   "cervical arterial dissection",
+   "vertebral artery dissection",
+   "arterial dissection",
+   "intramural hematoma",
+   "intramural haematoma"
+  ],
+  "reason": "Entry 1 (carotid dissection) is lay-known as a tear in a neck artery and a real fear with pain over the neck pulse, and a tear is not perivascular inflammation; the phrase avoids 'artery', which is in a gold alias."
+ },
+ "mcr-test-08087": {
+  "condition": "Viral (herpetic) iridocyclitis",
+  "source": "report differential 3 (entries 1-2, pigment dispersion and pseudoexfoliation, are not lay-nameable)",
+  "phrase": "a herpes infection in my eye",
+  "terms": [
+   "viral iridocyclitis",
+   "viral uveitis",
+   "viral anterior uveitis",
+   "herpetic anterior uveitis",
+   "herpes",
+   "herpetic",
+   "hsv",
+   "vzv",
+   "cmv anterior uveitis",
+   "cytomegalovirus anterior uveitis",
+   "posner-schlossman",
+   "glaucomatocyclitic crisis"
+  ],
+  "reason": "Entry 3 (viral iridocyclitis) is lay-known as herpes in the eye and fits a painful light-sensitive eye after an infection, and a viral infection is not a drug-induced iris depigmentation."
+ },
+ "mcr-test-08789": {
+  "condition": "Acute HIV infection",
+  "source": "other consideration (entry 1, medication-induced cholestasis, is implausible — he takes nothing; entry 2, acute viral hepatitis, is the default for this jaundice and its word is in the alias 'syphilitic hepatitis'; entry 3, PBC, is not lay-nameable)",
+  "phrase": "HIV",
+  "terms": [
+   "hiv",
+   "human immunodeficiency virus",
+   "acute retroviral syndrome",
+   "aids"
+  ],
+  "reason": "HIV is the obvious lay fear of a man with a new rash after unprotected sex with several partners, acute HIV is in the clinical differential of rash with hepatitis, and it was not his diagnosis."
+ },
+ "mcr-test-08927": {
+  "condition": "Spinal cord compression",
+  "source": "report differential 1",
+  "phrase": "something pressing on my spinal cord",
+  "terms": [
+   "spinal cord compression",
+   "cord compression",
+   "compressive myelopathy",
+   "cervical myelopathy",
+   "spondylotic myelopathy",
+   "spinal stenosis",
+   "epidural abscess",
+   "epidural hematoma",
+   "epidural haematoma",
+   "cauda equina"
+  ],
+  "reason": "Entry 1 (spinal cord compression) is a lay worry for weak legs and trouble walking, and a compression is not an inflammatory polyneuropathy; MRI showed none."
+ },
+ "mcr-test-09048": {
+  "condition": "Allergic angioedema / anaphylaxis",
+  "source": "report differential 1",
+  "phrase": "a severe allergic reaction",
+  "terms": [
+   "angioedema",
+   "anaphylaxis",
+   "anaphylactic",
+   "allergic reaction"
+  ],
+  "reason": "Entry 1 (allergic, histamine-mediated angioedema) is the lay fear of a woman with many allergies whose face and neck swell, and it is not an infection like pertussis."
+ },
+ "mcr-test-09301": {
+  "condition": "Kidney stones",
+  "source": "other consideration (entries 1-2, thrombotic microangiopathy and primary nephritic syndrome, are not lay-nameable, and 'kidney inflammation' would name the gold)",
+  "phrase": "kidney stones",
+  "terms": [
+   "kidney stone",
+   "nephrolithiasis",
+   "urolithiasis",
+   "ureterolithiasis",
+   "renal calculus",
+   "renal calculi",
+   "ureteric stone",
+   "ureteral stone",
+   "urinary stone",
+   "urinary calculi",
+   "renal colic"
+  ],
+  "reason": "Kidney stones are a lay explanation for blood in the urine with little urine passed, and an obstruction is not a drug-induced interstitial nephritis."
+ },
+ "mcr-test-09617": {
+  "condition": "Graves' disease with thyroid acropachy",
+  "source": "report differential 1 (thyroid acropachy), as its lay-known cause",
+  "phrase": "an overactive thyroid",
+  "terms": [
+   "thyroid acropachy",
+   "acropachy",
+   "graves",
+   "basedow",
+   "hyperthyroidism",
+   "overactive thyroid",
+   "thyrotoxicosis"
+  ],
+  "reason": "Entry 1 (thyroid acropachy) is not lay-nameable, but its cause, an overactive thyroid, is, and fits his heavy sweating; thyroid function was normal and it is not a primary osteoarthropathy (acromegaly, the natural lay fear, is not in the report and would be named anyway)."
+ },
+ "mcr-test-09645": {
+  "condition": "Head and neck squamous cell carcinoma",
+  "source": "report differential 1",
+  "phrase": "a tumour in my throat",
+  "terms": [
+   "head and neck cancer",
+   "head and neck carcinoma",
+   "head and neck squamous cell carcinoma",
+   "hnscc",
+   "throat cancer",
+   "laryngeal cancer",
+   "laryngeal carcinoma",
+   "pharyngeal cancer",
+   "pharyngeal carcinoma",
+   "oropharyngeal cancer",
+   "oropharyngeal carcinoma",
+   "nasopharyngeal cancer",
+   "nasopharyngeal carcinoma",
+   "hypopharyngeal cancer",
+   "hypopharyngeal carcinoma",
+   "tonsillar cancer",
+   "tonsillar carcinoma",
+   "oral cavity cancer",
+   "oral cancer",
+   "mouth cancer"
+  ],
+  "reason": "Entry 1 (primary head and neck squamous carcinoma) is the lay fear 'throat cancer' of a heavy smoker with a neck lump, and it is not a cervical (uterine) cancer; no term contains 'cervical' or bare 'squamous cell carcinoma', and the phrase avoids 'cancer', a word of the gold aliases."
+ },
+ "mcr-test-09698": {
+  "condition": "Pituitary adenoma",
+  "source": "other consideration (entry 1 is the gold and its cause, hypothyroidism; entry 2, hypophysitis, is not lay-nameable)",
+  "phrase": "a brain tumour",
+  "terms": [
+   "pituitary adenoma",
+   "pituitary tumor",
+   "pituitary tumour",
+   "pituitary macroadenoma",
+   "pituitary microadenoma",
+   "pituitary neoplasm",
+   "prolactinoma",
+   "macroprolactinoma",
+   "microprolactinoma",
+   "thyrotropinoma",
+   "tsh-secreting adenoma",
+   "tsh-secreting pituitary adenoma",
+   "tshoma",
+   "tsh-oma",
+   "brain tumor",
+   "brain tumour"
+  ],
+  "reason": "A brain tumour is the lay fear for chronic headaches, and a pituitary adenoma is the classic mistaken diagnosis for reactive thyrotroph hyperplasia but is a true neoplasm; the phrase avoids 'pituitary' (a word of the gold aliases) and 'thyroid'."
+ },
+ "mcr-test-10230": {
+  "condition": "Systemic lupus erythematosus",
+  "source": "other consideration (entry 1, CIDP, is not lay-nameable; entry 2, essential thrombocythaemia, and systemic sclerosis are already in the record)",
+  "phrase": "lupus",
+  "terms": [
+   "lupus",
+   "sle"
+  ],
+  "reason": "Lupus is a lay-known disease that fits Raynaud's, livedo, skin changes and weight loss in a woman of 46, and it is a connective tissue disease, not a plasma-cell syndrome like POEMS."
+ },
+ "mcr-test-10347": {
+  "condition": "Odontogenic infection (spreading dental abscess)",
+  "source": "report differential 4 (entry 1, conjunctivitis, is in the record; entry 2, anaphylaxis, is what she already believes and the doctor would name; entry 3, 'a sinus infection', describes the gold itself, an invasive fungal sinus infection)",
+  "phrase": "a tooth abscess that has spread",
+  "terms": [
+   "odontogenic infection",
+   "odontogenic",
+   "dental abscess",
+   "tooth abscess",
+   "dental infection",
+   "periapical abscess",
+   "ludwig",
+   "deep neck space infection",
+   "deep neck infection"
+  ],
+  "reason": "Entry 4 (maxillary odontogenic infection) is lay-known as a spreading tooth infection and fits a swelling head and throat, and a bacterial dental infection is not mucormycosis; the phrase avoids 'infection', a word of the alias 'Mucorales infection'.",
+  "quality": "weak"
+ },
+ "mcr-test-10565": {
+  "condition": "Crohn's disease",
+  "source": "report differential 3 (entry 1, urticarial vasculitis, is not lay-nameable; entry 2, chronic urticaria, is how he has already been treated)",
+  "phrase": "Crohn's",
+  "terms": [
+   "inflammatory bowel disease",
+   "ibd",
+   "crohn",
+   "crohns",
+   "ulcerative colitis",
+   "indeterminate colitis"
+  ],
+  "reason": "Entry 3 (Crohn's disease) is a lay-known disease that fits flares of fever, joint aches and diarrhoea, and it is not an autoinflammatory syndrome; the phrase drops 'disease', a word of the alias 'NOD2-associated autoinflammatory disease'."
+ },
+ "mcr-test-10584": {
+  "condition": "Hereditary spherocytosis (inherited haemolytic anaemia)",
+  "source": "report differential 1",
+  "phrase": "an inherited blood disorder",
+  "terms": [
+   "hereditary spherocytosis",
+   "hereditary elliptocytosis",
+   "hereditary hemolytic anemia",
+   "hereditary haemolytic anaemia",
+   "congenital hemolytic anemia",
+   "congenital haemolytic anaemia",
+   "red cell membrane disorder",
+   "thalassemia",
+   "thalassaemia",
+   "sickle cell",
+   "g6pd deficiency",
+   "glucose-6-phosphate dehydrogenase deficiency",
+   "pyruvate kinase deficiency",
+   "hemoglobinopathy",
+   "haemoglobinopathy"
+  ],
+  "reason": "Entry 1 (hereditary spherocytosis) is lay-nameable as an inherited blood disorder, a realistic fear with anaemia in his mother and grandmother, and it is not autoimmune; bare 'spherocytosis' is left out because spherocytes also occur in warm AIHA."
+ },
+ "mcr-test-10717": {
+  "condition": "Adrenal insufficiency",
+  "source": "report differential 1",
+  "phrase": "Addison's disease",
+  "terms": [
+   "adrenal insufficiency",
+   "addison",
+   "addisons"
+  ]
+ },
+ "mcr-test-10805": {
+  "condition": "Gastro-oesophageal reflux disease",
+  "source": "report differential 1",
+  "phrase": "acid reflux",
+  "terms": [
+   "gastroesophageal reflux",
+   "gastro-oesophageal reflux",
+   "gastro-esophageal reflux",
+   "gerd",
+   "gord",
+   "acid reflux",
+   "reflux esophagitis",
+   "reflux oesophagitis",
+   "reflux disease"
+  ],
+  "reason": "Entry 1 (GERD) is the lay self-diagnosis 'acid reflux' for upper belly pain at night and was the first impression in the report, and it is unrelated to adrenal haemorrhage."
+ },
+ "mcr-test-10995": {
+  "condition": "Carotid atherosclerotic disease",
+  "source": "report differential 1",
+  "phrase": "a blocked artery in my neck",
+  "terms": [
+   "carotid stenosis",
+   "carotid artery stenosis",
+   "carotid atherosclerosis",
+   "carotid atherosclerotic disease",
+   "carotid artery disease",
+   "carotid disease",
+   "carotid occlusion",
+   "carotid artery occlusion",
+   "carotid plaque",
+   "large artery atherosclerosis",
+   "large-artery atherosclerosis"
+  ],
+  "reason": "Entry 1 (carotid atherosclerotic disease) is lay-known as a blocked neck artery causing a stroke, and it is an atherosclerotic cause, not a heparin reaction; 'stroke' itself is avoided because here it is the gold's complication."
+ },
+ "mcr-test-11043": {
+  "condition": "Myocardial infarction",
+  "source": "report differential 1",
+  "phrase": "a heart attack",
+  "terms": [
+   "myocardial infarction",
+   "heart attack",
+   "acute coronary syndrome",
+   "nstemi",
+   "stemi",
+   "acs"
+  ],
+  "reason": "Entry 1 (myocardial infarction) is the universal lay heart fear, and an infarct is not myocarditis."
+ },
+ "mcr-test-11121": {
+  "condition": "Melanoma (nail or mucosal)",
+  "source": "report differential 1",
+  "phrase": "melanoma",
+  "terms": [
+   "melanoma"
+  ],
+  "reason": "Entry 1 (nail melanoma) is the lay fear for dark streaks in the nails, and a cancer is not a benign pigmentation syndrome."
+ },
+ "mcr-test-11154": {
+  "condition": "Lung cancer",
+  "source": "other consideration (entry 1 is the gold; entry 2, community-acquired pneumonia, is the textbook name for fever, chills and cough, so the doctor would already name it; entry 3, pulmonary vasculitis, is not lay-nameable)",
+  "phrase": "a cancer in my chest",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "lung adenocarcinoma",
+   "bronchogenic carcinoma",
+   "bronchial carcinoma",
+   "pulmonary carcinoma",
+   "carcinoma of the lung",
+   "cancer of the lung",
+   "squamous cell carcinoma of the lung",
+   "nsclc",
+   "sclc",
+   "lung malignancy",
+   "pulmonary malignancy",
+   "lung neoplasm",
+   "pulmonary neoplasm",
+   "lung tumor",
+   "lung tumour"
+  ],
+  "reason": "Lung cancer is the lay fear of an elderly ex-smoker with a worsening cough and breathlessness, and a cancer is not a drug-induced lung injury (CT showed ground-glass change, not a mass); the phrase avoids 'lung', a word of the gold."
+ },
+ "mcr-test-11265": {
+  "condition": "Pancreatic cancer",
+  "source": "other consideration (entries 1-2 are not lay-nameable or implausible; entry 3, her known hypothyroidism, is in the record; entry 4, TMP-SMX, was a real contributor)",
+  "phrase": "pancreatic cancer",
+  "terms": [
+   "pancreatic cancer",
+   "pancreatic carcinoma",
+   "pancreatic adenocarcinoma",
+   "cancer of the pancreas",
+   "adenocarcinoma of the pancreas",
+   "pancreatic malignancy"
+  ],
+  "reason": "Pancreatic cancer is the lay fear for weight loss, poor appetite and vague belly pain, and it is not adrenal failure."
+ },
+ "mcr-test-11394": {
+  "condition": "Herpetic keratitis",
+  "source": "report differential 1",
+  "phrase": "a herpes infection in my eye",
+  "terms": [
+   "herpetic keratitis",
+   "herpes simplex keratitis",
+   "hsv keratitis",
+   "herpes keratitis",
+   "herpes",
+   "herpetic",
+   "hsv",
+   "vzv"
+  ],
+  "reason": "Entry 1 (herpetic keratitis) is lay-known as herpes in the eye and fits a red painful light-sensitive eye, and a viral keratitis is not a staphylococcal hypersensitivity keratitis; bare 'keratitis' is left out because it is in the gold."
+ },
+ "mcr-test-11647": {
+  "condition": "Bacterial pneumonia",
+  "source": "report differential 3 (entry 1, RA-associated ILD, follows directly from her known RA and is co-leading with the gold; entry 2, hypersensitivity pneumonitis, has no exposure and its name is inside a gold alias)",
+  "phrase": "a chest infection",
+  "terms": [
+   "community-acquired pneumonia",
+   "bacterial pneumonia",
+   "infectious pneumonia",
+   "atypical pneumonia",
+   "viral pneumonia",
+   "aspiration pneumonia",
+   "pneumocystis",
+   "pjp",
+   "chest infection",
+   "lower respiratory tract infection",
+   "respiratory tract infection",
+   "bronchitis"
+  ],
+  "reason": "Entry 3 (bacterial infection) is the lay worry 'a chest infection' for a month of dry cough and breathlessness on methotrexate, and an infection is not a drug pneumonitis; bare 'pneumonia' is left out so that 'organizing' or 'eosinophilic pneumonia' (drug patterns) do not score."
+ },
+ "mcr-test-11820": {
+  "condition": "Aneurysm",
+  "source": "report differential 4",
+  "phrase": "an aneurysm",
+  "terms": [
+   "aneurysm"
+  ]
+ },
+ "mcr-test-11842": {
+  "condition": "Multiple sclerosis",
+  "source": "report differential 1",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ]
+ },
+ "mcr-test-11855": {
+  "condition": "Prosthetic aortic valve dysfunction",
+  "source": "report differential 2 (entry 1, acute LV dysfunction, is the heart-failure syndrome he presents with)",
+  "phrase": "a problem with my new heart valve",
+  "terms": [
+   "prosthetic valve dysfunction",
+   "bioprosthetic valve dysfunction",
+   "prosthetic valve",
+   "bioprosthetic valve",
+   "valve dysfunction",
+   "valvular dysfunction",
+   "valve failure",
+   "paravalvular leak",
+   "paravalvular regurgitation",
+   "perivalvular leak",
+   "valve thrombosis",
+   "endocarditis",
+   "aortic regurgitation",
+   "patient-prosthesis mismatch"
+  ],
+  "reason": "Entry 2 (acute valvular pathology) is the natural lay fear four weeks after a valve replacement, the echo showed normal prosthetic function, and a valve problem is not pericardial constriction."
+ },
+ "mcr-test-12081": {
+  "condition": "Graves' disease",
+  "source": "report differential 1",
+  "phrase": "Graves' disease",
+  "terms": [
+   "graves",
+   "basedow",
+   "diffuse toxic goiter",
+   "toxic diffuse goiter"
+  ],
+  "reason": "Entry 1 (Graves' disease) is a well-known autoimmune thyroid disease a type-1 diabetic losing weight could fear, and it is a distinct disease (TSI undetectable), not autoimmune thyroiditis."
+ },
+ "mcr-test-12090": {
+  "condition": "Multiple sclerosis",
+  "source": "other consideration (entry 1, mal de débarquement, is what he already describes as 'sea legs' and is not lay-nameable; entry 2, chronic subjective dizziness, is not lay-nameable)",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ],
+  "reason": "MS is a lay fear for a young man with years of balance problems, confusion and word-finding trouble, his MRI was normal, and it is not a drug toxicity."
+ },
+ "mcr-test-12132": {
+  "condition": "Viral myocarditis",
+  "source": "report differential 1",
+  "phrase": "myocarditis",
+  "terms": [
+   "myocarditis",
+   "myopericarditis",
+   "perimyocarditis"
+  ],
+  "reason": "Entry 1 (viral or autoimmune myocarditis) is widely known to lay people and fits new heart failure in a young man, and inflammation is not a traumatic coronary injury."
+ },
+ "mcr-test-12157": {
+  "condition": "Metastatic head and neck cancer in a lymph node",
+  "source": "report differential 3 (a necrotic lymph node), via its usual cause (entry 1 is the gold; entry 2, a nerve-sheath tumour, would describe the gold in lay words)",
+  "phrase": "throat cancer",
+  "terms": [
+   "head and neck cancer",
+   "head and neck carcinoma",
+   "head and neck squamous cell carcinoma",
+   "hnscc",
+   "throat cancer",
+   "laryngeal cancer",
+   "laryngeal carcinoma",
+   "pharyngeal cancer",
+   "pharyngeal carcinoma",
+   "oropharyngeal cancer",
+   "oropharyngeal carcinoma",
+   "nasopharyngeal cancer",
+   "nasopharyngeal carcinoma",
+   "hypopharyngeal cancer",
+   "hypopharyngeal carcinoma",
+   "tonsillar cancer",
+   "tonsillar carcinoma",
+   "oral cavity cancer",
+   "oral cancer",
+   "mouth cancer",
+   "metastatic lymph node",
+   "lymph node metastasis",
+   "lymph node metastases",
+   "nodal metastasis",
+   "nodal metastases",
+   "metastatic squamous cell carcinoma"
+  ],
+  "reason": "A necrotic neck node usually means spread from a throat cancer, the lay fear of a 70-year-old with a neck lump, cough and hoarse voice, and a carcinoma is not a paraganglioma."
+ },
+ "mcr-test-12205": {
+  "condition": "Non-united elbow fracture",
+  "source": "other consideration (entry 1, ligament instability, is offered by the report as a cause of posterior impingement; entry 2 is the gold)",
+  "phrase": "a broken bone that never healed properly",
+  "terms": [
+   "fracture",
+   "nonunion",
+   "non-union",
+   "malunion"
+  ],
+  "reason": "A missed or unhealed fracture is the lay fear after a forced hyperextension with a year of pain and catching, MRI showed none, and a fracture is not soft-tissue impingement; the phrase avoids 'elbow', a word of the gold."
+ },
+ "mcr-test-12209": {
+  "condition": "Melanoma",
+  "source": "other consideration (entry 1, morphea/lupus overlap, is the gold's family and lupus is already in the record; entry 2, MCTD, is not lay-nameable)",
+  "phrase": "melanoma",
+  "terms": [
+   "melanoma"
+  ],
+  "reason": "Melanoma is the lay fear for a dark raised patch on the calf, the biopsy showed sclerosis, and a skin cancer is not morphea."
+ },
+ "mcr-test-12365": {
+  "condition": "Stroke",
+  "source": "other consideration (the report's entries are drugs)",
+  "phrase": "a stroke",
+  "terms": [
+   "stroke",
+   "cerebrovascular accident",
+   "cva"
+  ]
+ },
+ "mcr-test-12467": {
+  "condition": "Myasthenia gravis",
+  "source": "other consideration (entries 1-2 are denied by the patient; entries 3-5 are not lay-nameable)",
+  "phrase": "myasthenia gravis",
+  "terms": [
+   "myasthenia gravis",
+   "myasthenia"
+  ],
+  "reason": "Myasthenia gravis is the lay-known disease of proximal weakness brought on by exertion, and a neuromuscular junction disease is not a renal salt-wasting tubulopathy."
+ },
+ "mcr-test-12512": {
+  "condition": "Lung cancer",
+  "source": "other consideration (entry 1 is a broad category; entries 2-4, EGPA, purpura fulminans and eosinophilic cellulitis, are not lay-nameable)",
+  "phrase": "lung cancer",
+  "terms": [
+   "lung cancer",
+   "lung carcinoma",
+   "lung adenocarcinoma",
+   "bronchogenic carcinoma",
+   "bronchial carcinoma",
+   "pulmonary carcinoma",
+   "carcinoma of the lung",
+   "cancer of the lung",
+   "squamous cell carcinoma of the lung",
+   "nsclc",
+   "sclc",
+   "lung malignancy",
+   "pulmonary malignancy",
+   "lung neoplasm",
+   "pulmonary neoplasm",
+   "lung tumor",
+   "lung tumour"
+  ],
+  "reason": "Lung cancer is the lay fear for coughing up blood with chest pain, CT showed patchy opacities and no mass, and it is not a hypereosinophilic syndrome (a blood clot in the lung was avoided because thrombosis is a complication of HES)."
+ },
+ "mcr-test-12811": {
+  "condition": "Septic arthritis",
+  "source": "report differential 1",
+  "phrase": "an infection in my joints",
+  "terms": [
+   "septic arthritis",
+   "infectious arthritis",
+   "bacterial arthritis",
+   "pyogenic arthritis",
+   "tuberculous arthritis",
+   "gonococcal arthritis",
+   "disseminated gonococcal",
+   "joint infection",
+   "infected joint"
+  ],
+  "reason": "Entry 1 (septic or tuberculous arthritis) is the lay fear 'an infection in my joints' for hot swollen joints with fever, and an infected joint is not a reactive one; the phrase avoids 'arthritis', which is in the gold."
+ },
+ "mcr-test-13031": {
+  "condition": "Multiple sclerosis",
+  "source": "report differential 4 (demyelinating optic neuropathy), as its lay-known cause (entry 1 is the gold's own family; entry 2, alcohol-tobacco toxic optic neuropathy, is near-synonymous with it; entry 3, LHON, is not lay-nameable)",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ],
+  "reason": "Demyelinating optic neuropathy is lay-known through MS, a realistic fear for progressive vision loss in a woman of 44, MRI showed no demyelination, and it is not a nutritional deficiency."
+ },
+ "mcr-test-13161": {
+  "condition": "Tongue cancer",
+  "source": "other consideration (entry 1, infection, was already treated with four courses; entries 2-3, atherosclerosis and other vasculitides, are not plausible lay fears for a tongue ulcer)",
+  "phrase": "tongue cancer",
+  "terms": [
+   "tongue cancer",
+   "cancer of the tongue",
+   "tongue carcinoma",
+   "carcinoma of the tongue",
+   "lingual carcinoma",
+   "oral cancer",
+   "mouth cancer",
+   "oral cavity cancer",
+   "oral cavity carcinoma",
+   "oral squamous cell carcinoma",
+   "oscc",
+   "squamous cell carcinoma of the tongue",
+   "oral carcinoma"
+  ],
+  "reason": "Cancer is the lay fear for a painful tongue ulcer in a woman of 77, the biopsy showed inflammation only, and a carcinoma is not a vasculitis."
+ },
+ "mcr-test-13248": {
+  "condition": "Stroke or TIA",
+  "source": "other consideration (entries 1, 2 and 4 are not lay-nameable or are the gold's mechanism, hypovolaemia; entry 3, chronic kidney disease, is not a plausible fear for a fall with dizziness)",
+  "phrase": "a stroke",
+  "terms": [
+   "stroke",
+   "cerebrovascular accident",
+   "cva",
+   "transient ischemic attack",
+   "transient ischaemic attack",
+   "tia"
+  ],
+  "reason": "A stroke is the lay fear of a 75-year-old who falls dizzy, CT showed nothing acute and he had no focal deficit, and it is not a salt-wasting state (a brain bleed was avoided: after his skull fracture the doctor would name it anyway, and CT showed a hygroma)."
+ },
+ "mcr-test-13753": {
+  "condition": "Malaria",
+  "source": "report differential 3 (entry 1, cholangitis, is in her record and the textbook reading of fever with jaundice; entry 2, pyelonephritis, was actually present — E. coli in urine and blood)",
+  "phrase": "malaria",
+  "terms": [
+   "malaria",
+   "plasmodium",
+   "falciparum"
+  ],
+  "reason": "Entry 3 (infections with jaundice: mononucleosis, malaria, leptospirosis) gives malaria, the best-known lay cause of fever, chills and yellowing, excluded on the smear, and an infection is not an inherited membrane disorder."
+ },
+ "mcr-test-13885": {
+  "condition": "Rheumatoid arthritis",
+  "source": "report differential 1",
+  "phrase": "rheumatoid arthritis",
+  "terms": [
+   "rheumatoid"
+  ]
+ },
+ "mcr-test-13891": {
+  "condition": "Amyotrophic lateral sclerosis",
+  "source": "report differential 1",
+  "phrase": "ALS",
+  "terms": [
+   "amyotrophic lateral sclerosis",
+   "als",
+   "lou gehrig"
+  ],
+  "reason": "Entry 1 (motor-neuron syndromes including ALS) gives ALS, the lay fear for a weak, wasting hand, and ALS is not a benign focal amyotrophy; 'spinal muscular atrophy' and generic 'motor neuron disease' are left out because they describe the gold."
+ },
+ "mcr-test-13993": {
+  "condition": "Scabies",
+  "source": "other consideration (entry 1, dermatomyositis, is not lay-nameable; entry 2, docetaxel dermatitis, needs chemotherapy he never had)",
+  "phrase": "scabies",
+  "terms": [
+   "scabies",
+   "sarcoptes",
+   "sarcoptic"
+  ],
+  "reason": "Scabies is a lay fear for an intensely itchy rash with pustules in the skin folds, and an infestation is not a toxic reaction to shiitake; 'a mushroom allergy' was avoided because it would name the gold in lay words."
+ },
+ "mcr-test-14153": {
+  "condition": "Multiple sclerosis",
+  "source": "report differential 6 (entry 1, Tourette's syndrome, is the textbook name of motor plus vocal tics and his coworker has it, so the doctor would already name it; entries 2-5 are not lay-nameable or implausible at 25)",
+  "phrase": "multiple sclerosis",
+  "terms": [
+   "multiple sclerosis"
+  ],
+  "reason": "Entry 6 (multiple sclerosis) is a lay fear for a young man with sudden uncontrollable twitches, and an organic demyelinating disease is not a functional movement disorder.",
+  "quality": "weak"
+ }
+}

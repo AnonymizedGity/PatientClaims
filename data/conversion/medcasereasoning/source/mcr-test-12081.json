@@ -1,0 +1,68 @@
+{
+ "case_id": "mcr-test-12081",
+ "pmcid": "PMC3141718",
+ "test_row": 740,
+ "test_index": 12081,
+ "case_prompt": "A 32-year-old Caucasian man with an eight-year history of well-controlled type 1 diabetes mellitus (average blood glucose 150 mg/dL; hemoglobin A₁c 7.5%) presented with a three-month history of an unintended 22-pound weight loss. He denied abdominal pain, diarrhea, changes in diet or exercise, palpitations, heat intolerance, neck soreness, or other thyroid-related symptoms. His diabetes regimen (insulin pump plus pramlintide) and glycemic control were unchanged. \n\nOn examination, he was well-nourished and in no distress. Blood pressure was 130/80 mmHg, pulse 72 beats/minute. There was no lid lag, proptosis, thyroid enlargement, tenderness, cervical lymphadenopathy, or tremor. \n\nLaboratory studies showed normal complete blood count, electrolytes, liver and kidney function. Thyroid studies revealed a suppressed TSH level of 0.033 mIU/L (reference 0.4–5.0 mIU/L) and a free thyroxine level of 33 pmol/L (reference 7.7–15.4 pmol/L). An anti-thyroid peroxidase antibody was elevated at 13.2 SD (normal <2.0 SD). A thyroid-stimulating immunoglobulin (TSI) assay was undetectable. Serum thyroglobulin was within the normal range.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 32-year-old Caucasian man with an eight-year history of well-controlled type 1 diabetes mellitus (average blood glucose 150 mg/dL; hemoglobin A₁c 7.5%) presented with a three-month history of an unintended 22-pound weight loss."
+  },
+  {
+   "id": "s002",
+   "text": "He denied abdominal pain, diarrhea, changes in diet or exercise, palpitations, heat intolerance, neck soreness, or other thyroid-related symptoms."
+  },
+  {
+   "id": "s003",
+   "text": "His diabetes regimen (insulin pump plus pramlintide) and glycemic control were unchanged."
+  },
+  {
+   "id": "s004",
+   "text": "On examination, he was well-nourished and in no distress."
+  },
+  {
+   "id": "s005",
+   "text": "Blood pressure was 130/80 mmHg, pulse 72 beats/minute."
+  },
+  {
+   "id": "s006",
+   "text": "There was no lid lag, proptosis, thyroid enlargement, tenderness, cervical lymphadenopathy, or tremor."
+  },
+  {
+   "id": "s007",
+   "text": "Laboratory studies showed normal complete blood count, electrolytes, liver and kidney function."
+  },
+  {
+   "id": "s008",
+   "text": "Thyroid studies revealed a suppressed TSH level of 0.033 mIU/L (reference 0.4–5.0 mIU/L) and a free thyroxine level of 33 pmol/L (reference 7.7–15.4 pmol/L)."
+  },
+  {
+   "id": "s009",
+   "text": "An anti-thyroid peroxidase antibody was elevated at 13.2 SD (normal <2.0 SD)."
+  },
+  {
+   "id": "s010",
+   "text": "A thyroid-stimulating immunoglobulin (TSI) assay was undetectable."
+  },
+  {
+   "id": "s011",
+   "text": "Serum thyroglobulin was within the normal range."
+  }
+ ],
+ "final_diagnosis": "autoimmune thyroiditis",
+ "diagnostic_reasoning": "1. Graves’ disease was unlikely given thyroid-stimulating immunoglobulin was not detected — “the results of a thyroid-stimulating immunoglobulin (TSI) assay were undetectable.” 2. Thyrotoxicosis factitia was ruled out by a normal thyroglobulin level, which would be low in exogenous hormone use — “His serum thyroglobulin was normal, arguing against thyroid hormone self-administration (thyrotoxicosis factitia).” 3. Autoimmune thyroiditis best fit the findings, given high anti-thyroid peroxidase antibodies and exclusion of other causes — “the diagnosis of autoimmune thyroiditis was made on the basis of the presence of anti-thyroid peroxidase antibodies and the absence of evidence of another etiology for hyperthyroidism, such as Graves' disease, multi-nodular goiter or toxic adenoma.”",
+ "selection": {
+  "age": 32,
+  "sex": "male",
+  "specialty": "endocrinology",
+  "dx_key": "autoimmune thyroiditis",
+  "setting": "outpatient",
+  "time_structure": "single_episode",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Thyrotoxicosis with positive TPO, undetectable TSI and normal thyroglobulin supports thyrotoxic autoimmune thyroiditis; good negatives in the history.",
+  "second_look_note": "Unexplained weight loss in a type 1 diabetic with denied thyroid symptoms directs thyroid testing; positive TPO antibodies with undetectable TSI and normal thyroglobulin decide."
+ }
+}

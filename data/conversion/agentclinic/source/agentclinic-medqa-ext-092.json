@@ -1,0 +1,123 @@
+{
+  "case_id": "agentclinic-medqa-ext-092",
+  "source_row": 92,
+  "demographics_text": "55-year-old male bodybuilder",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with weakness and decreased sensation in the right arm.",
+  "chief_complaint": "Weakness in the right arm",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-092-p001",
+      "field": "History",
+      "text": "The patient has been experiencing weakness in his right arm for a few weeks, which has progressively worsened to the point of dropping objects. He also reports a recent unexplained weight loss of 17 pounds and has a history of diabetes. The patient admits to chronic alcohol use, heavy smoking, and anabolic steroid use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-092-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Decreased sensation in the right arm"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-092-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Dull aching and burning pain in the right arm"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-092-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Significant weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-092-p005",
+      "field": "Past_Medical_History",
+      "text": "Diabetes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-092-p006",
+      "field": "Social_History",
+      "text": "Drinks 2-7 alcoholic beverages per day. Has smoked 2 packs of cigarettes per day since he was 25. Uses anabolic steroids."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-092-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies recent fevers, changes in vision, difficulty speaking, or changes in balance."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "99.5°F (37.5°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "177/108 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "90/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "17/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Strength_Assessment",
+      "text": "2/5 strength in the right arm and 5/5 strength in the left arm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensory_Examination",
+      "text": "Decreased sensation in the right arm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Coordination",
+      "text": "Unaffected"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-092-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-i004",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Mass noted at the apex of the right lung"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-092-i005",
+      "path": "Test_Results.CT_Chest.Findings",
+      "text": "Solid mass at the apex of the right lung, suggestive of a tumor"
+    }
+  ],
+  "correct_diagnosis": "Apical lung tumor",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

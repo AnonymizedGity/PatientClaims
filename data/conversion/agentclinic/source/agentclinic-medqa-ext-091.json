@@ -1,0 +1,118 @@
+{
+  "case_id": "agentclinic-medqa-ext-091",
+  "source_row": 91,
+  "demographics_text": "69-year-old woman",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with headache and worsening vision over a 3-week period.",
+  "chief_complaint": "Headache",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p001",
+      "field": "History",
+      "text": "The patient reports a 3-week history of headache and progressively worsening vision. She has not noticed any other symptoms, including no recent weight changes, no fevers, no night sweats, and no pain elsewhere in the body."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Worsening vision over the past 3 weeks"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No weight changes"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No fevers"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No night sweats"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p006",
+      "field": "Secondary_Symptoms",
+      "text": "No other pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p007",
+      "field": "Past_Medical_History",
+      "text": "The patient has hypertension, which is controlled with medication. She also has a history of high cholesterol."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p008",
+      "field": "Social_History",
+      "text": "Retired school teacher. Non-smoker and drinks alcohol socially. No recreational drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-091-p009",
+      "field": "Review_of_Systems",
+      "text": "Denies nausea, vomiting, diarrhea. No recent travel or sick contacts. No changes in hearing. Denies neck stiffness or photophobia."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-091-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "78 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-e005",
+      "path": "Physical_Examination_Findings.Ophthalmologic_Examination.Visual_Acuity.Right_Eye",
+      "text": "20/120"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-e006",
+      "path": "Physical_Examination_Findings.Ophthalmologic_Examination.Visual_Acuity.Left_Eye",
+      "text": "20/80"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-e007",
+      "path": "Physical_Examination_Findings.Ophthalmologic_Examination.Fundoscopy",
+      "text": "Details are not provided in this scenario but imagine findings suggestive of retinal vein occlusion or hemorrhages."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-091-i001",
+      "path": "Test_Results.Laboratory_Studies.Hemoglobin",
+      "text": "14.2 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-i002",
+      "path": "Test_Results.Laboratory_Studies.Total_Serum_Calcium",
+      "text": "9.9 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-i003",
+      "path": "Test_Results.Peripheral_Blood_Smear.Findings",
+      "text": "Not specified in this scenario, but imagine findings are indicative of increased circulating immunoglobulins."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-091-i004",
+      "path": "Test_Results.Serum_Electrophoresis.Findings",
+      "text": "Increased concentration of a pentameric immunoglobulin, consistent with a monoclonal gammopathy."
+    }
+  ],
+  "correct_diagnosis": "Waldenstrom macroglobulinemia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

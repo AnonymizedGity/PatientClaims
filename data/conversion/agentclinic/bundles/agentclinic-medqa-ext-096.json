@@ -1,0 +1,106 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-096", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 23, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "feeling restless", "aliases": ["restlessness", "inner restlessness"], "text": "I have this constant feeling of restlessness.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "unable to keep still", "aliases": ["can't sit still", "can't stay still"], "text": "I just can't stay still.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "fidgeting", "aliases": ["fidgety"], "text": "I fidget a lot.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "crossing and uncrossing the legs", "aliases": ["leg crossing"], "text": "I keep crossing and uncrossing my legs, over and over.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "pacing", "aliases": ["walking back and forth"], "text": "I keep pacing around.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "schizophrenia", "aliases": ["mental illness", "psychiatric diagnosis"], "text": "I was recently diagnosed with schizophrenia.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "risperidone", "aliases": ["antipsychotic", "medications"], "text": "I started taking risperidone about 2 months ago.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "risperidone: effect on symptoms", "parent": "f007", "attribute": "treatment_response", "aliases": ["hallucinations", "false beliefs", "paranoia"], "text": "It has helped a lot. Since I started it, my psychiatric symptoms are much better: the false beliefs, seeing or hearing things that weren't there, and being suspicious of people have all improved.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from that, I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "occupation", "aliases": ["job", "school", "studies"], "text": "I'm a college student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "living situation", "aliases": ["who you live with", "home"], "text": "I live with my parents.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "smoking", "aliases": ["tobacco"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "drug use", "aliases": ["drugs", "recreational drugs"], "text": "I don't use drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "seizures", "aliases": ["fits", "convulsions"], "text": "I've never had a seizure.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "headaches", "aliases": ["headache"], "text": "I don't get headaches.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f017", "item": "previous movement problems", "aliases": ["movement disorder in the past"], "text": "I've never had any problems with my movements before.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-096",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["mental status examination", "orientation", "MSE"], "result": "Alert and oriented to person, place, time, and situation. Improved psychotic symptoms."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination"], "result": "Intact."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor examination", "aliases": ["muscle strength", "muscle tone", "power", "involuntary movements"], "result": "Normal tone and strength in all extremities. No involuntary movements noted."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination"], "result": "Intact."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "coordination", "aliases": ["finger-to-nose test", "cerebellar examination"], "result": "Normal."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "gait", "aliases": ["walking"], "result": "Normal gait; the patient is unable to sit still and paces frequently."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets", "platelet count"], "result": "WBC 5,000/μL; hemoglobin 14 g/dL; platelets 250,000/μL."},
+      {"id": "x012", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver panel", "AST", "ALT", "bilirubin", "alkaline phosphatase", "ALP"], "result": "AST 25 U/L; ALT 20 U/L; bilirubin 1.0 mg/dL; alkaline phosphatase 75 U/L."},
+      {"id": "x013", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes", "basic metabolic panel", "BMP", "sodium", "potassium", "chloride", "bicarbonate"], "result": "Sodium 140 mEq/L; potassium 4.0 mEq/L; chloride 100 mEq/L; bicarbonate 24 mEq/L."},
+      {"id": "x014", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "thyroid panel", "TSH", "free T4"], "result": "TSH 2.5 mIU/L; free T4 1.1 ng/dL."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-096",
+    "diagnosis": "Akathisia",
+    "aliases": ["acute akathisia", "drug-induced akathisia", "antipsychotic-induced akathisia", "neuroleptic-induced akathisia", "risperidone-induced akathisia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-096",
+    "fact_sources": {
+      "f001": ["cc"], "f002": ["cc"], "f003": ["agentclinic-medqa-ext-096-p002"], "f004": ["agentclinic-medqa-ext-096-p003"],
+      "f005": ["agentclinic-medqa-ext-096-p004"], "f006": ["agentclinic-medqa-ext-096-p001", "agentclinic-medqa-ext-096-p005"],
+      "f007": ["agentclinic-medqa-ext-096-p001"], "f008": ["agentclinic-medqa-ext-096-p001", "agentclinic-medqa-ext-096-p007"],
+      "f009": ["agentclinic-medqa-ext-096-p005"], "f010": ["agentclinic-medqa-ext-096-p006"], "f011": ["agentclinic-medqa-ext-096-p006"],
+      "f012": ["agentclinic-medqa-ext-096-p006"], "f013": ["agentclinic-medqa-ext-096-p006"], "f014": ["agentclinic-medqa-ext-096-p006"],
+      "f015": ["agentclinic-medqa-ext-096-p007"], "f016": ["agentclinic-medqa-ext-096-p007"], "f017": ["agentclinic-medqa-ext-096-p007"]
+    },
+    "quotes": {
+      "f001": "persistent feeling of restlessness", "f002": "Inability to remain still", "f003": "Frequent fidgeting",
+      "f004": "Repetitive crossing and uncrossing of legs", "f006": "Recently diagnosed with schizophrenia",
+      "f007": "started on risperidone approximately 2 months ago",
+      "f008": "significant improvement in psychiatric symptoms since the start of treatment / Improvement in delusions, hallucinations, and paranoid behaviors since starting risperidone",
+      "f009": "No other significant past medical history", "f017": "previous movement disorders"
+    },
+    "flags": {
+      "f008": ["The source's labels (delusions, hallucinations, paranoid behaviors) are rendered as experiences; their content is not described in the source."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-096-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-096-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-096-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-096-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Alert and oriented to person, place, time, and situation. Improved psychotic symptoms.", "exam_ids": ["agentclinic-medqa-ext-096-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Intact.", "exam_ids": ["agentclinic-medqa-ext-096-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor", "source_text": "Normal tone and strength in all extremities. No involuntary movements noted.", "exam_ids": ["agentclinic-medqa-ext-096-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory", "source_text": "Intact.", "exam_ids": ["agentclinic-medqa-ext-096-e008"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Coordination", "source_text": "Normal.", "exam_ids": ["agentclinic-medqa-ext-096-e009"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination.Gait", "source_text": "Normal, but patient exhibits inability to sit still with frequent pacing", "exam_ids": ["agentclinic-medqa-ext-096-e010"]},
+      "x011": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "WBC: 5,000 /μL; Hemoglobin: 14 g/dL; Platelets: 250,000 /μL", "exam_ids": ["agentclinic-medqa-ext-096-i001", "agentclinic-medqa-ext-096-i002", "agentclinic-medqa-ext-096-i003"]},
+      "x012": {"source": "Test_Results.Liver_Function_Tests.AST + Test_Results.Liver_Function_Tests.ALT + Test_Results.Liver_Function_Tests.Bilirubin + Test_Results.Liver_Function_Tests.Alkaline_Phosphatase", "source_text": "AST: 25 U/L; ALT: 20 U/L; Bilirubin: 1.0 mg/dL; Alkaline_Phosphatase: 75 U/L", "exam_ids": ["agentclinic-medqa-ext-096-i004", "agentclinic-medqa-ext-096-i005", "agentclinic-medqa-ext-096-i006", "agentclinic-medqa-ext-096-i007"]},
+      "x013": {"source": "Test_Results.Electrolytes.Sodium + Test_Results.Electrolytes.Potassium + Test_Results.Electrolytes.Chloride + Test_Results.Electrolytes.Bicarbonate", "source_text": "Sodium: 140 mEq/L; Potassium: 4.0 mEq/L; Chloride: 100 mEq/L; Bicarbonate: 24 mEq/L", "exam_ids": ["agentclinic-medqa-ext-096-i008", "agentclinic-medqa-ext-096-i009", "agentclinic-medqa-ext-096-i010", "agentclinic-medqa-ext-096-i011"]},
+      "x014": {"source": "Test_Results.Thyroid_Function_Tests.TSH + Test_Results.Thyroid_Function_Tests.Free_T4", "source_text": "TSH: 2.5 mIU/L; Free_T4: 1.1 ng/dL", "exam_ids": ["agentclinic-medqa-ext-096-i012", "agentclinic-medqa-ext-096-i013"]}
+    },
+    "finding_flags": {
+      "x007": ["'No involuntary movements noted' sits beside the gait finding of inability to sit still with frequent pacing (x010); akathisia movements are semi-voluntary, so both are kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The demographics text ('23-year-old college student') gives no sex; the history uses 'He', so sex is male."
+    ],
+    "notes": [
+      "The chief complaint names two complaints (inability to remain still; persistent restlessness), so both facts open (f001, f002).",
+      "Fidgeting, leg crossing and pacing are things the patient can report about himself, so they stay patient facts; the observed pacing is also in the gait examination.",
+      "The schizophrenia diagnosis stays in the patient's words because he was told it (f006).",
+      "The improvement in psychiatric symptoms (history and review of systems) is one treatment-response child of risperidone (f008); its aliases name the symptoms so a question about them reaches it.",
+      "'Here for a follow-up appointment' (p001) is the visit context and gives no answerable fact.",
+      "The onset of the restlessness is not stated in the source (only that risperidone began about 2 months ago), so no onset fact is given.",
+      "Gold aliases exclude 'tardive akathisia' (a different, late form) and 'extrapyramidal symptoms' (broader)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient with psychiatric condition and new onset movement disorder."
+    }
+  }
+}

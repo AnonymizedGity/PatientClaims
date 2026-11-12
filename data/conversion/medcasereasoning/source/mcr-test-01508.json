@@ -1,0 +1,64 @@
+{
+ "case_id": "mcr-test-01508",
+ "pmcid": "PMC3892129",
+ "test_row": 103,
+ "test_index": 1508,
+ "case_prompt": "A 31-year-old man presented with a 6-day history of severe headache and vomiting. He reported a progressive loss of vision in his left eye and decreased libido over the preceding two years. He denied any rhinorrhea, trauma, or prior neurosurgery. On examination, he was alert, febrile (38.0 °C), and had complete blindness of the left eye without other cranial-nerve deficits; no nasal discharge was noted.\n\nLaboratory studies showed a C-reactive protein level of 305 mg/L (normal <10 mg/L), a leukocyte count of 13,000/μL, serum sodium 131 mEq/L, and blood glucose 127 mg/dL. Hormonal assays revealed a prolactin level of 9000 ng/mL (normal 2.5–11 ng/mL) with additional findings consistent with panhypopituitarism.\n\nComputed tomography of the head demonstrated a large sellar mass with erosion of the sellar floor and extension into the sphenoid sinus. Magnetic resonance imaging confirmed a suprasellar and infrasellar lesion extending into the cavernous sinuses, encroaching on the third ventricle, and compressing the optic chiasm, without evidence of intratumoral hemorrhage.\n\nA lumbar puncture yielded purulent cerebrospinal fluid containing 11,900 white blood cells/μL, 2,680 red blood cells/μL, protein 6.3 g/L, glucose 39 mg/dL, and lactate 81 mg/dL.  \nWhat is your differential diagnosis?",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 31-year-old man presented with a 6-day history of severe headache and vomiting."
+  },
+  {
+   "id": "s002",
+   "text": "He reported a progressive loss of vision in his left eye and decreased libido over the preceding two years."
+  },
+  {
+   "id": "s003",
+   "text": "He denied any rhinorrhea, trauma, or prior neurosurgery."
+  },
+  {
+   "id": "s004",
+   "text": "On examination, he was alert, febrile (38.0 °C), and had complete blindness of the left eye without other cranial-nerve deficits; no nasal discharge was noted."
+  },
+  {
+   "id": "s005",
+   "text": "Laboratory studies showed a C-reactive protein level of 305 mg/L (normal <10 mg/L), a leukocyte count of 13,000/μL, serum sodium 131 mEq/L, and blood glucose 127 mg/dL."
+  },
+  {
+   "id": "s006",
+   "text": "Hormonal assays revealed a prolactin level of 9000 ng/mL (normal 2.5–11 ng/mL) with additional findings consistent with panhypopituitarism."
+  },
+  {
+   "id": "s007",
+   "text": "Computed tomography of the head demonstrated a large sellar mass with erosion of the sellar floor and extension into the sphenoid sinus."
+  },
+  {
+   "id": "s008",
+   "text": "Magnetic resonance imaging confirmed a suprasellar and infrasellar lesion extending into the cavernous sinuses, encroaching on the third ventricle, and compressing the optic chiasm, without evidence of intratumoral hemorrhage."
+  },
+  {
+   "id": "s009",
+   "text": "A lumbar puncture yielded purulent cerebrospinal fluid containing 11,900 white blood cells/μL, 2,680 red blood cells/μL, protein 6.3 g/L, glucose 39 mg/dL, and lactate 81 mg/dL."
+  },
+  {
+   "id": "s010",
+   "text": "What is your differential diagnosis?"
+  }
+ ],
+ "final_diagnosis": "Macroprolactinoma",
+ "diagnostic_reasoning": "1. Bacterial meningitis from a CSF leak — “Meningitis in a patient with an invasive pituitary macroadenoma is generally due to an infection of cerebrospinal fluid (CSF) leaking through the disrupted bony skull into the sphenoid sinus, allowing the entry of nasopharyngeal organisms.” 2. Pituitary apoplexy — excluded because “No intratumoral hemorrhage was observed.”",
+ "selection": {
+  "age": 31,
+  "sex": "male",
+  "specialty": "endocrinology",
+  "dx_key": "prolactinoma",
+  "setting": "emergency",
+  "time_structure": "single_episode",
+  "leakage": "test_result",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Two years of visual loss and low libido, a prolactin of 9000 and an invasive sellar mass clinch macroprolactinoma (presenting with meningitis).",
+  "second_look_note": "Two years of unilateral vision loss and low libido behind an acute meningitis point to an invasive pituitary tumour, which a prolactin of 9000 identifies."
+ }
+}

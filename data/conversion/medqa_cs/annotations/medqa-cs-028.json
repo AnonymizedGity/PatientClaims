@@ -1,0 +1,1024 @@
+{
+  "case_id": "medqa-cs-028",
+  "demographics": {
+    "name": "James Miller",
+    "age": 50,
+    "sex": "male",
+    "setting": "clinic"
+  },
+  "opening_fact": {
+    "text": "I am here to check on my blood pressure as I have been diagnosed with hypertension.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-028-f001",
+      "source_ids": [
+        "medqa-cs-028-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Found out he had high blood pressure last year.",
+      "quote": "I discovered I had high blood pressure last year."
+    },
+    {
+      "id": "medqa-cs-028-f002",
+      "source_ids": [
+        "medqa-cs-028-p002"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Was prescribed hydrochlorothiazide for his blood pressure.",
+      "quote": "I was prescribed hydrochlorothiazide"
+    },
+    {
+      "id": "medqa-cs-028-f003",
+      "source_ids": [
+        "medqa-cs-028-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "unclear",
+      "text": "Blood pressure is still elevated despite hydrochlorothiazide.",
+      "quote": "but my blood pressure is still elevated.",
+      "flags": [
+        "Present tense in the script, but it is followed by 'Six months ago, propranolol was added'; unclear whether it describes the time before or after propranolol was added."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f004",
+      "source_ids": [
+        "medqa-cs-028-p002"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Propranolol was added six months ago.",
+      "quote": "Six months ago, propranolol was added."
+    },
+    {
+      "id": "medqa-cs-028-f005",
+      "source_ids": [
+        "medqa-cs-028-p003"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "In general takes his pills regularly.",
+      "quote": "but in general, I take them regularly."
+    },
+    {
+      "id": "medqa-cs-028-f006",
+      "source_ids": [
+        "medqa-cs-028-p003"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Sometimes forgets to take his pills.",
+      "quote": "Well, sometimes I forget to take the pills"
+    },
+    {
+      "id": "medqa-cs-028-f007",
+      "source_ids": [
+        "medqa-cs-028-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not check his blood pressure at home.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p004) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f008",
+      "source_ids": [
+        "medqa-cs-028-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Blood pressure was last checked six months ago.",
+      "quote": "Six months ago."
+    },
+    {
+      "id": "medqa-cs-028-f009",
+      "source_ids": [
+        "medqa-cs-028-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Feels fine today.",
+      "quote": "I feel fine."
+    },
+    {
+      "id": "medqa-cs-028-f010",
+      "source_ids": [
+        "medqa-cs-028-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Losing more hair than usual from his head.",
+      "quote": "I've been losing more hair than usual from my head."
+    },
+    {
+      "id": "medqa-cs-028-f011",
+      "source_ids": [
+        "medqa-cs-028-p007"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "concerns",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Thinks he is starting to go bald.",
+      "quote": "I think I'm starting to go bald."
+    },
+    {
+      "id": "medqa-cs-028-f012",
+      "source_ids": [
+        "medqa-cs-028-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Problems with sexual performance over the past 4 months.",
+      "quote": "Over the past 4 months, I have started to experience problems with my sexual performance."
+    },
+    {
+      "id": "medqa-cs-028-f013",
+      "source_ids": [
+        "medqa-cs-028-p008"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "concerns",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "A friend told him the sexual problems are caused by the propranolol, but he thinks they are due to his age.",
+      "quote": "A friend told me it is the propranolol, but I think it is my age."
+    },
+    {
+      "id": "medqa-cs-028-f014",
+      "source_ids": [
+        "medqa-cs-028-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Weak erections.",
+      "quote": "I have a weak erection."
+    },
+    {
+      "id": "medqa-cs-028-f015",
+      "source_ids": [
+        "medqa-cs-028-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Sometimes cannot get an erection at all.",
+      "quote": "Sometimes I can't get an erection at all."
+    },
+    {
+      "id": "medqa-cs-028-f016",
+      "source_ids": [
+        "medqa-cs-028-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Rates his erection about 4 on a 0-10 scale where 0 is flaccid and 6 is adequate for penetration.",
+      "quote": "About a 4."
+    },
+    {
+      "id": "medqa-cs-028-f017",
+      "source_ids": [
+        "medqa-cs-028-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No early-morning or nocturnal erections.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p011) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f018",
+      "source_ids": [
+        "medqa-cs-028-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Decreased sexual desire; he is not as interested in sex as he used to be.",
+      "quote": "It's diminished as well, Doc. I'm not as interested in sex like I used to be."
+    },
+    {
+      "id": "medqa-cs-028-f019",
+      "source_ids": [
+        "medqa-cs-028-p013"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Before these problems he was intimate with his wife a few times each week.",
+      "quote": "A few times each week with my wife."
+    },
+    {
+      "id": "medqa-cs-028-f020",
+      "source_ids": [
+        "medqa-cs-028-p014"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No problems with his wife; family life is the same as it has always been.",
+      "quote": "My family life is the same as it has always been"
+    },
+    {
+      "id": "medqa-cs-028-f021",
+      "source_ids": [
+        "medqa-cs-028-p014"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Is very happy in his job.",
+      "quote": "and I am very happy in my job."
+    },
+    {
+      "id": "medqa-cs-028-f022",
+      "source_ids": [
+        "medqa-cs-028-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in mood.",
+      "quote": "No changes."
+    },
+    {
+      "id": "medqa-cs-028-f023",
+      "source_ids": [
+        "medqa-cs-028-p015"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "concerns",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has been happy apart from his concern about not being able to perform sexually.",
+      "quote": "I've been happy other than my concern with not being able to perform."
+    },
+    {
+      "id": "medqa-cs-028-f024",
+      "source_ids": [
+        "medqa-cs-028-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No anxiety.",
+      "quote": "No, I do not.",
+      "flags": [
+        "The raw Patient Description says he 'appears anxious'.",
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f025",
+      "source_ids": [
+        "medqa-cs-028-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No stress.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f026",
+      "source_ids": [
+        "medqa-cs-028-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No pain when walking or at rest.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p017) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f027",
+      "source_ids": [
+        "medqa-cs-028-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No weight changes.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p018) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f028",
+      "source_ids": [
+        "medqa-cs-028-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in appetite.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p019) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f029",
+      "source_ids": [
+        "medqa-cs-028-p020"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never been diagnosed with diabetes.",
+      "quote": "No, I do not."
+    },
+    {
+      "id": "medqa-cs-028-f030",
+      "source_ids": [
+        "medqa-cs-028-p020"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "preventive",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Blood sugar was last tested six months ago (result not stated).",
+      "quote": "Six months ago."
+    },
+    {
+      "id": "medqa-cs-028-f031",
+      "source_ids": [
+        "medqa-cs-028-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "High cholesterol, diagnosed last year.",
+      "quote": "Yes, it was diagnosed last year."
+    },
+    {
+      "id": "medqa-cs-028-f032",
+      "source_ids": [
+        "medqa-cs-028-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No heart problems in the past.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p022) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f033",
+      "source_ids": [
+        "medqa-cs-028-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous strokes.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p023) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f034",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No history of transient ischemic attack (mini-stroke).",
+      "quote": "No leg claudication or any previous history of heart problems, stroke, TIA, or diabetes.",
+      "flags": [
+        "Only in the patient note HPI."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f035",
+      "source_ids": [
+        "medqa-cs-028-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes lovastatin.",
+      "quote": "Yes, lovastatin."
+    },
+    {
+      "id": "medqa-cs-028-f036",
+      "source_ids": [
+        "medqa-cs-028-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No other diagnoses apart from hypertension and high cholesterol.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p025) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f037",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No history of trauma.",
+      "quote": "No depression, anxiety, appetite or weight changes, or history of trauma.",
+      "flags": [
+        "Only in the patient note HPI; the type of trauma is not specified."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f038",
+      "source_ids": [
+        "medqa-cs-028-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'None.' (p026) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f039",
+      "source_ids": [
+        "medqa-cs-028-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father died of a heart attack at age 50.",
+      "quote": "My father died at the age of 50 of a heart attack."
+    },
+    {
+      "id": "medqa-cs-028-f040",
+      "source_ids": [
+        "medqa-cs-028-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Mother has Alzheimer's disease but is otherwise healthy.",
+      "quote": "My mother is healthy, but she has Alzheimer's disease."
+    },
+    {
+      "id": "medqa-cs-028-f041",
+      "source_ids": [
+        "medqa-cs-028-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Mother is now in a nursing home.",
+      "quote": "She is in a nursing home now."
+    },
+    {
+      "id": "medqa-cs-028-f042",
+      "source_ids": [
+        "medqa-cs-028-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as a schoolteacher.",
+      "quote": "Schoolteacher."
+    },
+    {
+      "id": "medqa-cs-028-f043",
+      "source_ids": [
+        "medqa-cs-028-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Eats a lot of junk food.",
+      "quote": "I eat a lot of junk food."
+    },
+    {
+      "id": "medqa-cs-028-f044",
+      "source_ids": [
+        "medqa-cs-028-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not exercise.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p030) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f045",
+      "source_ids": [
+        "medqa-cs-028-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinks three to four beers a week, for the last decade.",
+      "quote": "Yes, I have been drinking three to four beers weekly for the last decade."
+    },
+    {
+      "id": "medqa-cs-028-f046",
+      "source_ids": [
+        "medqa-cs-028-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No illegal drug use.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p032) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f047",
+      "source_ids": [
+        "medqa-cs-028-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not smoke.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p033) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-028-f048",
+      "source_ids": [
+        "medqa-cs-028-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Lives with his wife in their home.",
+      "quote": "My wife and I reside together in our home."
+    },
+    {
+      "id": "medqa-cs-028-f049",
+      "source_ids": [
+        "medqa-cs-028-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No drug allergies.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p035) — denial confirmed."
+      ]
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Patient description: appears anxious.",
+      "Don't mention impotence unless the examinee asks whether you are having any side effects from your medications or whether you have any other concerns."
+    ],
+    "patient_questions": [
+      "I've begun to encounter issues with my sexual performance, which I believe are related to my age. Is that correct, doctor?",
+      "A friend told me it is the propranolol, but I think it is my age. Isn't that right, doctor?"
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "135/88 mm Hg",
+        "source_text": "BP: 135/88 mmHg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.0°F (36.7°C)",
+        "source_text": "Temp: 98.0°F (36.7°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "16/minute",
+        "source_text": "RR: 16/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "70/minute, regular",
+        "source_text": "HR: 70/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits",
+        "source_text": "VS: within normal limits"
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "No acute distress",
+        "source_text": "Patient is in no acute distress."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e003"
+        ],
+        "system": "HEENT",
+        "name": "Funduscopic exam",
+        "finding": "No funduscopic abnormalities",
+        "source_text": "HEENT: No funduscopic abnormalities."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e004"
+        ],
+        "system": "Neck",
+        "name": "Carotid auscultation",
+        "finding": "No carotid bruits",
+        "source_text": "Neck: No carotid bruits, no jugular venous distention."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e004"
+        ],
+        "system": "Neck",
+        "name": "Jugular veins",
+        "finding": "No jugular venous distension",
+        "source_text": "Neck: No carotid bruits, no jugular venous distention."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e005"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: Clear breath sounds bilaterally. No gynecomastia."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e005"
+        ],
+        "system": "Chest",
+        "name": "Breast tissue",
+        "finding": "No gynecomastia",
+        "source_text": "Chest: Clear breath sounds bilaterally. No gynecomastia."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e006"
+        ],
+        "system": "Heart",
+        "name": "Apical impulse",
+        "finding": "Not displaced",
+        "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e006"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e006"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "Within normal limits",
+        "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e006"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Palpation",
+        "finding": "Soft, non-distended, non-tender",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, normal bowel sounds x 4 quadrants, no bruits, no organomegaly."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Bowel sounds",
+        "finding": "Normal bowel sounds in all four quadrants",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, normal bowel sounds x 4 quadrants, no bruits, no organomegaly."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Abdominal bruits",
+        "finding": "No abdominal bruits",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, normal bowel sounds x 4 quadrants, no bruits, no organomegaly."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Organs",
+        "finding": "No organomegaly",
+        "source_text": "Abdomen: Soft, non-distended, non-tender, normal bowel sounds x 4 quadrants, no bruits, no organomegaly."
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e008"
+        ],
+        "system": "Extremities",
+        "name": "Edema",
+        "finding": "No edema",
+        "source_text": "Extremities: No edema, no hair loss or skin changes. Radial, brachial, femoral, dorsalis pedis, and posterior tibialis 2+ and symmetric."
+      },
+      {
+        "id": "x016",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e008"
+        ],
+        "system": "Extremities",
+        "name": "Hair and skin of the extremities",
+        "finding": "No hair loss or skin changes",
+        "source_text": "Extremities: No edema, no hair loss or skin changes. Radial, brachial, femoral, dorsalis pedis, and posterior tibialis 2+ and symmetric."
+      },
+      {
+        "id": "x017",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e008"
+        ],
+        "system": "Extremities",
+        "name": "Peripheral pulses",
+        "finding": "Radial, brachial, femoral, dorsalis pedis, and posterior tibial pulses 2+ and symmetric",
+        "source_text": "Extremities: No edema, no hair loss or skin changes. Radial, brachial, femoral, dorsalis pedis, and posterior tibialis 2+ and symmetric."
+      },
+      {
+        "id": "x018",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ],
+        "system": "Neuro",
+        "name": "Motor strength",
+        "finding": "5/5 in both lower extremities",
+        "source_text": "Neuro: Motor strength grade 5/5 in bilateral lower extremities. Sensation: Intact to pinprick and soft touch in lower extremities. Deep tendon reflexes: Symmetric grade 2+ in lower extremities, bilateral Babinski sign present."
+      },
+      {
+        "id": "x019",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ],
+        "system": "Neuro",
+        "name": "Sensation",
+        "finding": "Intact to pinprick and soft touch in the lower extremities",
+        "source_text": "Neuro: Motor strength grade 5/5 in bilateral lower extremities. Sensation: Intact to pinprick and soft touch in lower extremities. Deep tendon reflexes: Symmetric grade 2+ in lower extremities, bilateral Babinski sign present."
+      },
+      {
+        "id": "x020",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ],
+        "system": "Neuro",
+        "name": "Deep tendon reflexes",
+        "finding": "Symmetric, 2+ in the lower extremities",
+        "source_text": "Neuro: Motor strength grade 5/5 in bilateral lower extremities. Sensation: Intact to pinprick and soft touch in lower extremities. Deep tendon reflexes: Symmetric grade 2+ in lower extremities, bilateral Babinski sign present."
+      },
+      {
+        "id": "x021",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-028-e009"
+        ],
+        "system": "Neuro",
+        "name": "Babinski sign",
+        "finding": "Babinski sign present bilaterally",
+        "source_text": "Neuro: Motor strength grade 5/5 in bilateral lower extremities. Sensation: Intact to pinprick and soft touch in lower extremities. Deep tendon reflexes: Symmetric grade 2+ in lower extremities, bilateral Babinski sign present.",
+        "flags": [
+          "Faithful to the source, but clinically implausible next to an otherwise normal neurological exam; likely a source error. Review before use."
+        ]
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Medication-induced erectile dysfunction",
+        "history_findings": [
+          "Taking propranolol",
+          "Onset of erectile dysfunction coincides with propranolol use",
+          "No early-morning or nocturnal tumescence"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Erectile dysfunction secondary to vascular disease",
+        "history_findings": [
+          "History of hypertension",
+          "History of hyperlipidemia",
+          "No early-morning or nocturnal tumescence"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Hypogonadism",
+        "history_findings": [
+          "Loss of libido and ED",
+          "Hair loss",
+          "No early-morning or nocturnal tumescence"
+        ],
+        "exam_findings": []
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Depression",
+        "rationale": "Psychogenic causes reduce libido and erections but usually spare nocturnal or morning erections, which are absent here; he denies other depressive symptoms, though his feelings about his mother in a nursing home may deserve exploration."
+      },
+      {
+        "diagnosis": "Peyronie's disease",
+        "rationale": "Fibrous plaque of the tunica albuginea can cause penile scarring and erectile dysfunction."
+      }
+    ],
+    "leakage_check": [
+      {
+        "fact_id": "medqa-cs-028-f013",
+        "reason": "A friend's attribution of the sexual problems to propranolol points directly at the rank-1 diagnosis (medication-induced erectile dysfunction); it is scripted history the SP gives, so it is kept."
+      }
+    ]
+  },
+  "qc": {
+    "source_issues": [
+      "Age conflict: the opening scenario says 50 years old; the raw Patient Description and the note HPI say 54. demographics.age uses the opening scenario (50).",
+      "Exam line e009 says 'bilateral Babinski sign present'. Read literally this is an abnormal (upgoing) plantar response, which fits poorly with an otherwise normal lower-extremity neuro exam and is not mentioned in the gold; it is kept neutral in x021 (direction not stated).",
+      "The note says 'VS: within normal limits' (e002), but the doorway BP is 135/88 mm Hg, above the 130/80 target named in the sample closure.",
+      "The raw Patient Description says the patient 'appears anxious', but he denies anxiety and stress (p016).",
+      "p002 'my blood pressure is still elevated' is ambiguous in time (before or after propranolol was added); temporality set to unclear (f003).",
+      "Note PSH reads 'No, I do not.' (script wording copied into the note).",
+      "Gold rank 1 'Onset of erectile dysfunction coincides with propranolol use': propranolol was added 6 months ago and the problems began 4 months ago; roughly consistent.",
+      "The challenging question has a doubled opening quotation mark in the source; cleaned."
+    ],
+    "annotator_notes": [
+      "The visit is a hypertension follow-up, so hypertension course facts (diagnosis, persistent elevation, home monitoring, last check) are filed as symptoms/hpi; the drugs are history_and_exposures/medications.",
+      "p020 is split into never diagnosed with diabetes (f029) and last blood-sugar test six months ago with no result given (f030).",
+      "Note-only facts added (from_note): no TIA (f034) and no history of trauma (f037).",
+      "The scripted 'Isn't that right, doctor?' in p008 is added to patient_questions next to the challenging question.",
+      "leakage_check lists f013 because it names propranolol as the cause, which is the rank-1 diagnosis.",
+      "Reviewer edit: environment commentary moved from `finding` to `flags` for x021.",
+      "14 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 15 facts confirmed."
+    ]
+  }
+}

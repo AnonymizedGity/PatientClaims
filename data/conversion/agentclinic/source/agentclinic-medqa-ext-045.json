@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-045",
+  "source_row": 45,
+  "demographics_text": "59-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with episodic cough and shortness of breath.",
+  "chief_complaint": "Episodic cough and shortness of breath",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-045-p001",
+      "field": "History",
+      "text": "The patient reports a 1-month history of episodic cough and shortness of breath. The cough is nonproductive and worsens when climbing stairs and at night. She experienced fever, sore throat, and nasal congestion 8 weeks ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-045-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Cough worsens with exertion and at night"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-045-p003",
+      "field": "Secondary_Symptoms",
+      "text": "History of recent upper respiratory tract infection symptoms such as fever, sore throat, and nasal congestion"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-045-p004",
+      "field": "Past_Medical_History",
+      "text": "10-year history of hypertension, currently managed with enalapril. History of smoking half a pack of cigarettes daily for 16 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-045-p005",
+      "field": "Social_History",
+      "text": "Smoker, half a pack of cigarettes daily for 16 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-045-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies chest pain or palpitations."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Pulse",
+      "text": "78/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respirations",
+      "text": "18/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "145/95 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "96% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e005",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Inspection",
+      "text": "No visible abnormalities"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e006",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Palpation",
+      "text": "No tactile fremitus"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e007",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Percussion",
+      "text": "Resonant"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-e008",
+      "path": "Physical_Examination_Findings.Respiratory_Examination.Auscultation",
+      "text": "Diffuse end-expiratory wheezes"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-045-i001",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "No abnormalities"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-i002",
+      "path": "Test_Results.Spirometry.FEV1_FVC_Ratio",
+      "text": "65%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-045-i003",
+      "path": "Test_Results.Spirometry.FEV1",
+      "text": "60%"
+    }
+  ],
+  "correct_diagnosis": "Asthma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

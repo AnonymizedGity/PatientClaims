@@ -1,0 +1,89 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-214", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 77, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "spots on the forehead", "aliases": ["forehead lesions", "skin growths", "skin spots", "lesions on my forehead"], "text": "I've got some spots on my forehead.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "forehead spots: appearance", "parent": "f001", "attribute": "appearance", "aliases": ["colour", "what they look like"], "text": "They're brown and greasy-looking, and they seem to sit just on the surface of the skin.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "forehead spots: how many", "parent": "f001", "attribute": "quantity", "text": "There are several of them.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "forehead spots: onset", "parent": "f001", "attribute": "onset", "aliases": ["when they appeared"], "text": "They appeared a few weeks ago.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "forehead spots: change in size or colour", "parent": "f001", "attribute": "course", "aliases": ["growing", "changing colour"], "text": "I haven't noticed any change in their size or colour.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "forehead spots: trying to remove them", "parent": "f001", "attribute": "treatment_response", "aliases": ["scraping them off", "what I've tried"], "text": "I tried to scrape them off, thinking they were dirt or a smear, but they didn't come off.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f007", "item": "forehead spots: itching", "parent": "f001", "attribute": "character", "aliases": ["itchy"], "text": "They don't itch.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f008", "item": "forehead spots: pain", "parent": "f001", "attribute": "character", "aliases": ["painful", "sore"], "text": "They don't hurt.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f009", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "night sweats", "aliases": ["sweating at night"], "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "recent illness", "aliases": ["been unwell recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "blood pressure medication", "aliases": ["medications", "pills"], "text": "I take medication for my blood pressure, and it keeps it under control.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "skin cancer", "aliases": ["history of skin cancer"], "text": "I've never had skin cancer.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f016", "item": "chronic skin conditions", "aliases": ["skin disease", "eczema", "psoriasis"], "text": "I don't have any long-term skin conditions.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work", "retired"], "text": "I'm a retired school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f018", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "time spent outdoors", "aliases": ["sun exposure", "gardening", "hobbies"], "text": "I enjoy gardening and spend time outdoors.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-214",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["dermatological examination", "examination of the forehead lesions", "skin inspection"], "result": "Inspection: multiple well-defined, round to oval, brown, greasy plaques, 0.5 to 1.5 cm in diameter, located predominantly on the forehead. Palpation: lesions slightly raised, with a waxy texture; no tenderness or warmth."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-214",
+    "diagnosis": "Seborrheic keratosis",
+    "aliases": ["seborrhoeic keratosis", "seborrheic keratoses", "SK", "seborrheic wart", "basal cell papilloma", "senile wart"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-214",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-214-p001"], "f002": ["cc", "agentclinic-medqa-ext-214-p001"], "f003": ["agentclinic-medqa-ext-214-p001"],
+      "f004": ["agentclinic-medqa-ext-214-p001"], "f005": ["agentclinic-medqa-ext-214-p001"], "f006": ["agentclinic-medqa-ext-214-p001", "agentclinic-medqa-ext-214-p002"],
+      "f007": ["agentclinic-medqa-ext-214-p001", "agentclinic-medqa-ext-214-p003"], "f008": ["agentclinic-medqa-ext-214-p001", "agentclinic-medqa-ext-214-p003"],
+      "f009": ["agentclinic-medqa-ext-214-p006"], "f010": ["agentclinic-medqa-ext-214-p006"], "f011": ["agentclinic-medqa-ext-214-p006"],
+      "f012": ["agentclinic-medqa-ext-214-p006"], "f013": ["agentclinic-medqa-ext-214-p004"], "f014": ["agentclinic-medqa-ext-214-p004"],
+      "f015": ["agentclinic-medqa-ext-214-p004"], "f016": ["agentclinic-medqa-ext-214-p004"], "f017": ["agentclinic-medqa-ext-214-p005"],
+      "f018": ["agentclinic-medqa-ext-214-p005"], "f019": ["agentclinic-medqa-ext-214-p005"]
+    },
+    "quotes": {
+      "f002": "brown, greasy, seemingly superficial lesions", "f003": "several", "f004": "they appeared a few weeks ago",
+      "f005": "has not noticed any recent changes in size or color", "f006": "He attempted to scrape them off, assuming they were dirt or a smear, but they persisted.",
+      "f007": "No itching or pain is associated with the lesions.", "f008": "No itching or pain is associated with the lesions.",
+      "f014": "controlled with medication", "f015": "No history of skin cancer", "f016": "chronic skin diseases", "f017": "Retired school teacher.",
+      "f019": "Enjoys gardening and spends time outdoors."
+    },
+    "flags": {
+      "f014": ["The blood-pressure drug is not named."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-214-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-214-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-214-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-214-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Dermatological_Examination.Inspection + Physical_Examination_Findings.Dermatological_Examination.Palpation", "source_text": "Multiple well-defined, round to oval, brown, greasy plaques ranging from 0.5 to 1.5 cm in diameter located predominantly on the forehead. + Lesions are slightly raised, with a waxy texture. No tenderness or warmth on palpation.", "exam_ids": ["agentclinic-medqa-ext-214-e005", "agentclinic-medqa-ext-214-e006"]}
+    },
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-214-e007", "reason": "Dermoscopy 'Not available'; the rest is textbook commentary on what dermoscopy typically shows in seborrheic keratoses (names the gold diagnosis), not a finding for this patient."},
+      {"id": "agentclinic-medqa-ext-214-i001", "reason": "Skin biopsy 'Not performed'; the rest is a hypothetical description of what it would show, not a result."}
+    ],
+    "leakage": [],
+    "source_issues": [
+      "The dermoscopy and biopsy entries are not results: one is 'Not available' with typical findings of seborrheic keratosis, the other 'Not performed but would show...'. Both name or describe the gold diagnosis and are excluded.",
+      "Secondary_Symptoms holds history items ('Attempts to remove lesions unsuccessful', 'No associated pain or itching'); merged with the same statements in the History."
+    ],
+    "notes": [
+      "The case has no tests: both test-like leaves are excluded, so the environment reports dermoscopy and biopsy as unavailable.",
+      "Appearance, number, onset, unchanged size/colour, the failed scraping, and absent itch and pain are children of the forehead-spots fact.",
+      "Hypertension (medical_history) and its medication (medication) are split; the source's 'controlled with medication' is in the medication fact."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with skin lesions on the forehead."
+    }
+  }
+}

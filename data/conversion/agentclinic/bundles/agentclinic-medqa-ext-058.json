@@ -1,0 +1,95 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-058",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 65, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "low energy", "exhaustion"], "text": "I've been tired all the time, and it just doesn't go away.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "poor sleep quality", "aliases": ["trouble sleeping", "sleeping badly"], "text": "I've been sleeping poorly.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f003", "item": "vegetarian diet", "aliases": ["diet", "eating habits"], "text": "In the last few months I switched to a vegetarian diet to try to get my energy back up.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f004", "item": "vegetarian diet: effect on energy", "parent": "f003", "attribute": "treatment_response", "text": "I haven't noticed much benefit from it.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f005", "item": "unintentional weight loss", "aliases": ["losing weight", "weight loss"], "text": "I've been losing weight without trying.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "unintentional weight loss: duration", "parent": "f005", "attribute": "duration", "text": "It's been over the last month.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "yellowing of the skin", "aliases": ["jaundice", "yellow skin", "turning yellow"], "text": "My skin has turned yellow.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I don't have any belly pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "change in bowel habits", "aliases": ["diarrhea", "constipation"], "text": "My bowel habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke a pack of cigarettes a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I have 5 alcoholic drinks a day.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-058",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "80/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["orientation", "level of consciousness"], "result": "Alert and oriented."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "skin and sclera inspection", "aliases": ["skin examination", "eyes", "sclera", "check for jaundice"], "result": "Icteric skin and sclerae."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "liver", "spleen", "gallbladder"], "result": "Inspection: no visible distension; auscultation: normal bowel sounds; percussion: resonant throughout the abdominal quadrants; palpation: no palpable mass or tenderness, no hepatomegaly or splenomegaly; enlarged, non-tender gallbladder."},
+      {"id": "x008", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "hepatic panel", "AST", "ALT", "ALP", "alkaline phosphatase", "bilirubin"], "result": "AST elevated; ALT elevated; ALP significantly elevated; bilirubin elevated."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x010", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine bilirubin"], "result": "Appearance amber; bilirubin positive."},
+      {"id": "x011", "kind": "test", "name": "abdominal ultrasound", "aliases": ["ultrasound of the abdomen", "RUQ ultrasound", "gallbladder ultrasound"], "result": "Enlarged, thin-walled gallbladder; no evident stones."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-058",
+    "diagnosis": "Pancreatic adenocarcinoma",
+    "aliases": ["pancreatic ductal adenocarcinoma", "PDAC", "adenocarcinoma of the pancreas", "pancreatic head adenocarcinoma", "adenocarcinoma of the head of the pancreas", "pancreatic cancer", "pancreatic carcinoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-058",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-058-p001"],
+      "f002": ["agentclinic-medqa-ext-058-p001", "agentclinic-medqa-ext-058-p002"],
+      "f003": ["agentclinic-medqa-ext-058-p001"],
+      "f004": ["agentclinic-medqa-ext-058-p001"],
+      "f005": ["agentclinic-medqa-ext-058-p001", "agentclinic-medqa-ext-058-p003"],
+      "f006": ["agentclinic-medqa-ext-058-p001"],
+      "f007": ["agentclinic-medqa-ext-058-p004"],
+      "f008": ["agentclinic-medqa-ext-058-p007"],
+      "f009": ["agentclinic-medqa-ext-058-p007"],
+      "f010": ["agentclinic-medqa-ext-058-p007"],
+      "f011": ["agentclinic-medqa-ext-058-p005"],
+      "f012": ["agentclinic-medqa-ext-058-p006"],
+      "f013": ["agentclinic-medqa-ext-058-p006"]
+    },
+    "quotes": {
+      "f001": "persistent fatigue",
+      "f002": "poor sleep quality",
+      "f003": "adopting a vegetarian diet in recent months to improve his energy levels",
+      "f004": "hasn't noticed significant benefits",
+      "f005": "losing weight without trying",
+      "f006": "over the last month",
+      "f007": "Jaundice",
+      "f010": "changes in bowel habits",
+      "f011": "No significant past medical history.",
+      "f012": "Smokes 1 pack of cigarettes per day",
+      "f013": "consumes 5 alcoholic beverages per day"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-058-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-058-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "80 bpm", "exam_ids": ["agentclinic-medqa-ext-058-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-058-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Appearance.Mental_Status", "source_text": "Alert and oriented", "exam_ids": ["agentclinic-medqa-ext-058-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Appearance.Skin", "source_text": "Icteric skin and sclera observed", "exam_ids": ["agentclinic-medqa-ext-058-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible distension. | Normal bowel sounds. | Resonant throughout abdominal quadrants. | No palpable mass or tenderness. No hepatomegaly or splenomegaly was noted. Enlarged gallbladder without tenderness.", "exam_ids": ["agentclinic-medqa-ext-058-e007", "agentclinic-medqa-ext-058-e008", "agentclinic-medqa-ext-058-e009", "agentclinic-medqa-ext-058-e010"]},
+      "x008": {"source": "Test_Results.Blood_Tests.Liver_Function_Tests.AST + Test_Results.Blood_Tests.Liver_Function_Tests.ALT + Test_Results.Blood_Tests.Liver_Function_Tests.ALP + Test_Results.Blood_Tests.Liver_Function_Tests.Bilirubin", "source_text": "Elevated | Elevated | Significantly elevated | Elevated", "exam_ids": ["agentclinic-medqa-ext-058-i001", "agentclinic-medqa-ext-058-i002", "agentclinic-medqa-ext-058-i003", "agentclinic-medqa-ext-058-i004"]},
+      "x009": {"source": "Test_Results.Blood_Tests.CBC.WBC + Test_Results.Blood_Tests.CBC.Hemoglobin + Test_Results.Blood_Tests.CBC.Platelets", "source_text": "Normal | Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-058-i005", "agentclinic-medqa-ext-058-i006", "agentclinic-medqa-ext-058-i007"]},
+      "x010": {"source": "Test_Results.Urine_Analysis.Appearance + Test_Results.Urine_Analysis.Bilirubin", "source_text": "Amber colored | Positive", "exam_ids": ["agentclinic-medqa-ext-058-i008", "agentclinic-medqa-ext-058-i009"]},
+      "x011": {"source": "Test_Results.Imaging.Ultrasound_Abdomen.Findings", "source_text": "Enlarged, thin-walled gallbladder. No evident stones.", "exam_ids": ["agentclinic-medqa-ext-058-i010"]}
+    },
+    "leakage": [],
+    "source_issues": ["No pancreatic imaging (CT or MRI), tumour marker or tissue diagnosis in the source: the diagnosis rests on painless jaundice with an enlarged non-tender gallbladder (Courvoisier sign), weight loss and cholestatic tests, so the environment cannot confirm it.", "Abdominal palpation says 'No palpable mass' and also 'Enlarged gallbladder without tenderness'; kept as written."],
+    "notes": ["The diet change and its lack of effect are split: the diet is a habit_exposure fact (f003) with a treatment_response child (f004).", "Jaundice is written as what the patient sees ('My skin has turned yellow'); the scleral icterus is only in the exam (x006).", "Gold aliases exclude 'pancreatic cancer' and 'pancreatic carcinoma': they also cover neuroendocrine and acinar tumours, so they are broader than adenocarcinoma; partial credit is left to the judge.", "Gold aliases added in harmonisation (pancreatic cancer, pancreatic carcinoma): 'Pancreatic cancer' is the everyday name of pancreatic adenocarcinoma (about 90% of pancreatic cancers)."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, weight loss, and jaundice."
+    }
+  }
+}

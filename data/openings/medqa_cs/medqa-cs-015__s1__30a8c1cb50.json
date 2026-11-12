@@ -1,0 +1,75 @@
+{
+ "case_id": "medqa-cs-015",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I haven't had my menstrual period.",
+   "For the past three months.",
+   "Over the past year, I started having my periods less often: every 5 to 6 weeks, lasting 7 days.",
+   "The blood flow is becoming less, and I use only one pad a day now.",
+   "I noticed some discharge from my breast.",
+   "Actually, I recently noticed some hair on my chin that I've been plucking.",
+   "I've been taking the same birth control pills for 8 years.",
+   "I have one child; he is 10 years old.",
+   "I've been a vegetarian for 10 years."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I haven't had my menstrual period for the past three months. Over the past year, I started having my periods less often, every 5 to 6 weeks, lasting 7 days, and the blood flow is becoming less, so I use only one pad a day now. I've been taking the same birth control pills for 8 years. I have one child, and he is 10 years old. I've been a vegetarian for 10 years. I noticed some milky discharge from my left breast just last week, and actually, I recently noticed some hair on my chin that I've been plucking.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f005",
+    "f007",
+    "f014",
+    "f042",
+    "f034",
+    "f050"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "missing",
+      "quote": "nipple discharge: what it looks like",
+      "fix": "It's milky."
+     },
+     {
+      "kind": "missing",
+      "quote": "nipple discharge: which side",
+      "fix": "From my left breast."
+     },
+     {
+      "kind": "missing",
+      "quote": "nipple discharge: when it started",
+      "fix": "I noticed it just last week."
+     }
+    ],
+    "check_problems": [],
+    "draft": "I haven't had my menstrual period for the past three months. Over the past year, I started having my periods less often, every 5 to 6 weeks, lasting 7 days, and the blood flow is becoming less, so I use only one pad a day now. I've been taking the same birth control pills for 8 years. I have one child, and he is 10 years old. I've been a vegetarian for 10 years. I noticed some discharge from my breast, and actually, I recently noticed some hair on my chin that I've been plucking.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 8104,
+   "tokens_out": 353,
+   "seconds": 26.15,
+   "redrafts": 0
+  }
+ }
+}

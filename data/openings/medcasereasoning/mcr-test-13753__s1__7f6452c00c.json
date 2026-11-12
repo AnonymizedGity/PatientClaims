@@ -1,0 +1,55 @@
+{
+ "case_id": "mcr-test-13753",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've had a fever.",
+   "I've had chills.",
+   "My skin and the whites of my eyes have turned yellow.",
+   "That started 2 days ago.",
+   "The fever and chills started 5 days ago.",
+   "Three months ago I had my gallbladder removed by keyhole surgery.",
+   "The gallstones caused an infection of the bile ducts, cholangitis, and that's why my gallbladder was taken out.",
+   "I'm Asian."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm Asian, and three months ago I had my gallbladder removed by keyhole surgery because the gallstones caused an infection of the bile ducts, cholangitis. Since then, I've had a fever and chills that started 5 days ago. Also, my skin and the whites of my eyes have turned yellow, which started 2 days ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f005",
+    "f003",
+    "f006",
+    "f008",
+    "f010"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3376,
+   "tokens_out": 87,
+   "seconds": 10.81,
+   "redrafts": 0
+  }
+ }
+}

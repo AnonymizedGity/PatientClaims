@@ -1,0 +1,87 @@
+{
+  "case_id": "agentclinic-medqa-ext-069",
+  "source_row": 69,
+  "demographics_text": "34-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with wrist pain and difficulty in hand movement.",
+  "chief_complaint": "Pain in the right thumb and wrist, radiating to the elbow",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-069-p001",
+      "field": "History",
+      "text": "The patient reports experiencing pain in her right thumb and wrist, which radiates to her elbow for the past three months. The pain worsens when she holds her infant son and is alleviated somewhat with an ice pack. She mentions a history of falling on her right outstretched hand about six months ago. She also notes that her mother has a history of chronic joint pain treated with methotrexate. The patient has been taking ibuprofen as needed for her symptoms."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-069-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain worsens with holding objects"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-069-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Pain improves with ice pack application"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-069-p004",
+      "field": "Past_Medical_History",
+      "text": "Previous fall on right outstretched hand six months ago. No significant other medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-069-p005",
+      "field": "Social_History",
+      "text": "Patient is a mother of an infant, leading a relatively active lifestyle. Does not smoke or consume alcohol regularly."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-069-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies any fever, weight loss, or other joint problems."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "117/76 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e005",
+      "path": "Physical_Examination_Findings.Right_Hand_Examination.Inspection",
+      "text": "Swelling over the radial styloid with no redness"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e006",
+      "path": "Physical_Examination_Findings.Right_Hand_Examination.Palpation",
+      "text": "Tenderness over the radial styloid. No crepitus."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e007",
+      "path": "Physical_Examination_Findings.Right_Hand_Examination.Special_Tests.Finkelstein's_Test",
+      "text": "Positive, eliciting pain on the radial side of the wrist when grasping the thumb and exerting longitudinal traction towards the ulnar side."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-069-e008",
+      "path": "Physical_Examination_Findings.Right_Hand_Examination.Range_of_Motion",
+      "text": "Normal range of motion of finger joints. No swelling, redness, or tenderness in other joints."
+    }
+  ],
+  "test_leaves": [],
+  "correct_diagnosis": "De Quervain tenosynovitis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

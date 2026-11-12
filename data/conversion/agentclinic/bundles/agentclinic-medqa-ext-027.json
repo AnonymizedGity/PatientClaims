@@ -1,0 +1,129 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-027", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 40, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "bladder discomfort", "aliases": ["bladder pain", "discomfort low in the belly"], "text": "I have discomfort in my bladder.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f002", "item": "bladder discomfort: relieving", "parent": "f001", "attribute": "relieving", "text": "It gets better when I pee.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f003", "item": "bladder discomfort: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for about 5 months.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f004", "item": "bladder discomfort: course", "parent": "f001", "attribute": "course", "text": "It's been getting worse.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f005", "item": "bladder discomfort: drinking less fluid", "parent": "f001", "attribute": "relieving", "text": "I've tried drinking less fluid, but it has helped only a little.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f006", "item": "frequent urination", "aliases": ["urinary frequency", "peeing often"], "text": "I've been peeing more often than usual.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f007", "item": "frequent urination: how often", "parent": "f006", "attribute": "frequency", "text": "I go 10 to 15 times during the day.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f008", "item": "waking at night to urinate", "aliases": ["nocturia", "getting up at night to pee"], "text": "I wake up at night to pee.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f009", "item": "waking at night to urinate: how often", "parent": "f008", "attribute": "frequency", "text": "It happens 2 to 3 times a night.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f010", "item": "leaking urine", "aliases": ["urinary incontinence", "involuntary loss of urine"], "text": "I don't leak any urine.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f011", "item": "pain during sex", "aliases": ["painful intercourse", "dyspareunia"], "text": "Sex has been painful recently.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f012", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "blood in the urine", "aliases": ["hematuria"], "text": "I haven't seen any blood in my urine.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f014", "item": "back pain", "text": "I don't have back pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f015", "item": "pelvic pain other than during sex", "text": "I don't have pelvic pain apart from during sex.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f016", "item": "recent infections", "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "bipolar disorder", "aliases": ["mood disorder"], "text": "I have bipolar disorder.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f018", "item": "lithium", "text": "I take lithium for my bipolar disorder.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f019", "item": "NSAIDs", "aliases": ["anti-inflammatory painkillers", "ibuprofen", "painkillers"], "text": "I've taken NSAIDs for the bladder discomfort.", "polarity": "present", "category": "medication"},
+      {"id": "f020", "item": "NSAIDs: treatment response", "parent": "f019", "attribute": "treatment_response", "text": "They've given me only minimal relief.", "polarity": "present", "category": "medication"},
+      {"id": "f021", "item": "marital status", "aliases": ["married", "husband"], "text": "I'm married.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f022", "item": "sexual activity", "text": "I'm sexually active with my husband.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f023", "item": "alcohol", "aliases": ["drinking"], "text": "I don't really drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f024", "item": "tobacco", "aliases": ["smoking"], "text": "I don't really use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f025", "item": "recreational drugs", "aliases": ["drug use"], "text": "I don't really use recreational drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-027",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "65/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "suprapubic palpation"], "result": "Inspection: normal; auscultation: normal bowel sounds; percussion: normal; palpation: tenderness in the suprapubic region, no masses."},
+      {"id": "x006", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "speculum examination", "bimanual examination"], "result": "No external lesions, vaginal discharge or obvious masses. Speculum: cervix appears normal. Bimanual: normal uterus and adnexa; discomfort on palpation of the bladder region."},
+      {"id": "x007", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine dipstick", "urine microscopy", "urine protein", "urine blood", "nitrite", "leukocyte esterase", "urine white cells", "urine bacteria"], "result": "Color clear; pH 6.7; specific gravity 1.010; protein 1+; glucose negative; ketones negative; blood negative; nitrite negative; leukocyte esterase negative; WBC 0/hpf; squamous epithelial cells 2/hpf; bacteria none."},
+      {"id": "x008", "kind": "test", "name": "post-void residual urine volume", "aliases": ["PVR", "post-void residual", "pelvic ultrasound", "bladder ultrasound"], "result": "Post-void residual urine 25 mL on pelvic ultrasound."},
+      {"id": "x009", "kind": "test", "name": "cystoscopy", "aliases": ["bladder endoscopy"], "result": "Normal urethra and bladder mucosa."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-027",
+    "diagnosis": "Interstitial cystitis",
+    "aliases": ["IC", "bladder pain syndrome", "painful bladder syndrome", "interstitial cystitis/bladder pain syndrome", "IC/BPS"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-027",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-027-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-027-p001"],
+      "f003": ["agentclinic-medqa-ext-027-p001"],
+      "f004": ["agentclinic-medqa-ext-027-p001"],
+      "f005": ["agentclinic-medqa-ext-027-p001"],
+      "f006": ["agentclinic-medqa-ext-027-p001", "agentclinic-medqa-ext-027-p002"],
+      "f007": ["agentclinic-medqa-ext-027-p001"],
+      "f008": ["agentclinic-medqa-ext-027-p001", "agentclinic-medqa-ext-027-p003"],
+      "f009": ["agentclinic-medqa-ext-027-p001"],
+      "f010": ["agentclinic-medqa-ext-027-p001"],
+      "f011": ["agentclinic-medqa-ext-027-p001", "agentclinic-medqa-ext-027-p004"],
+      "f012": ["agentclinic-medqa-ext-027-p007"],
+      "f013": ["agentclinic-medqa-ext-027-p007"],
+      "f014": ["agentclinic-medqa-ext-027-p007"],
+      "f015": ["agentclinic-medqa-ext-027-p007"],
+      "f016": ["agentclinic-medqa-ext-027-p007"],
+      "f017": ["agentclinic-medqa-ext-027-p005"],
+      "f018": ["agentclinic-medqa-ext-027-p005"],
+      "f019": ["agentclinic-medqa-ext-027-p001"],
+      "f020": ["agentclinic-medqa-ext-027-p001"],
+      "f021": ["agentclinic-medqa-ext-027-p006"],
+      "f022": ["agentclinic-medqa-ext-027-p006"],
+      "f023": ["agentclinic-medqa-ext-027-p006"],
+      "f024": ["agentclinic-medqa-ext-027-p006"],
+      "f025": ["agentclinic-medqa-ext-027-p006"]
+    },
+    "quotes": {
+      "f002": "relieved by voiding",
+      "f003": "a 5-month history",
+      "f004": "worsening bladder discomfort",
+      "f005": "reduced fluid intake / have provided minimal relief",
+      "f006": "increased frequency of urination",
+      "f007": "voiding 10–15 times during the day",
+      "f009": "waking up 2–3 times at night to void",
+      "f010": "denies any involuntary loss of urine",
+      "f011": "recent painful intercourse",
+      "f015": "pelvic pain other than with intercourse",
+      "f016": "any recent infections",
+      "f018": "currently managed with lithium",
+      "f020": "NSAIDs have provided minimal relief",
+      "f023": "No significant alcohol",
+      "f024": "tobacco",
+      "f025": "recreational drug use"
+    },
+    "flags": {
+      "f015": ["The ROS denies pelvic pain other than with intercourse, while the chief complaint is bladder (suprapubic) discomfort; kept with the source's wording."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-027-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/80 mm Hg", "exam_ids": ["agentclinic-medqa-ext-027-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "65 bpm", "exam_ids": ["agentclinic-medqa-ext-027-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-027-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Normal | Normal bowel sounds | Normal | Tenderness to palpation of the suprapubic region, no masses palpated", "exam_ids": ["agentclinic-medqa-ext-027-e005", "agentclinic-medqa-ext-027-e006", "agentclinic-medqa-ext-027-e007", "agentclinic-medqa-ext-027-e008"]},
+      "x006": {"source": "Physical_Examination_Findings.Pelvic_Examination.Findings", "source_text": "No external lesions, vaginal discharge, or obvious masses. Cervix appears normal upon speculum examination. Bimanual examination reveals normal uterus and adnexa, with discomfort noted on palpation of the bladder region.", "exam_ids": ["agentclinic-medqa-ext-027-e009"]},
+      "x007": {"source": "Test_Results.Urinalysis.Color + Test_Results.Urinalysis.pH + Test_Results.Urinalysis.Specific_Gravity + Test_Results.Urinalysis.Protein + Test_Results.Urinalysis.Glucose + Test_Results.Urinalysis.Ketones + Test_Results.Urinalysis.Blood + Test_Results.Urinalysis.Nitrite + Test_Results.Urinalysis.Leukocyte Esterase + Test_Results.Urinalysis.WBC + Test_Results.Urinalysis.Squamous Epithelial Cells + Test_Results.Urinalysis.Bacteria", "source_text": "Clear | 6.7 | 1.010 | 1+ | Negative | Negative | Negative | Negative | Negative | 0/hpf | 2/hpf | None", "exam_ids": ["agentclinic-medqa-ext-027-i001", "agentclinic-medqa-ext-027-i002", "agentclinic-medqa-ext-027-i003", "agentclinic-medqa-ext-027-i004", "agentclinic-medqa-ext-027-i005", "agentclinic-medqa-ext-027-i006", "agentclinic-medqa-ext-027-i007", "agentclinic-medqa-ext-027-i008", "agentclinic-medqa-ext-027-i009", "agentclinic-medqa-ext-027-i010", "agentclinic-medqa-ext-027-i011", "agentclinic-medqa-ext-027-i012"]},
+      "x008": {"source": "Test_Results.Pelvic_Ultrasound.Postvoid_Residual_Urine", "source_text": "25 mL", "exam_ids": ["agentclinic-medqa-ext-027-i013"]},
+      "x009": {"source": "Test_Results.Cystoscopy.Findings", "source_text": "Normal urethra and bladder mucosa", "exam_ids": ["agentclinic-medqa-ext-027-i014"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Urinalysis 'Color: Clear' describes clarity rather than color; kept as given.",
+      "The ROS denies pelvic pain other than with intercourse although the chief complaint is bladder discomfort (see flag on f015)."
+    ],
+    "notes": [
+      "Frequency (p002) and nocturia (p003) merge with the History statements (f006, f008); the History's counts are frequency children (f007, f009). Painful intercourse (p004) merges with the History (f011).",
+      "Self-management: drinking less is a relieving-attribute child of the bladder discomfort (f005); NSAIDs are a medication fact (f019) with a treatment-response child (f020). Whether NSAIDs are still taken is not stated, so f019 has no time.",
+      "'No significant alcohol, tobacco, or recreational drug use' is kept as 'I don't really ...' (absent) to preserve the hedge.",
+      "Marital status follows the example's neutral social-background pattern (like occupation)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient presenting with chronic bladder discomfort and frequent urination."
+    }
+  }
+}

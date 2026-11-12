@@ -1,0 +1,118 @@
+{
+  "case_id": "agentclinic-medqa-ext-128",
+  "source_row": 128,
+  "demographics_text": "40-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a swollen neck and systemic symptoms suggestive of a thyroid disorder.",
+  "chief_complaint": "Swollen neck",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p001",
+      "field": "History",
+      "text": "Complains of a 3-week history of a swollen neck with the swelling being small, round, and painless initially, increasing in size over time. The patient also reports symptoms associated with hyperthyroidism such as sweaty palms and soles, insomnia, irritability, nervousness, and fatigue but denies having a fever, cervical lymphadenopathy, weight loss, vision problems, or body swelling."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Sweaty palms and soles"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Insomnia"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Irritability"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Nervousness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p006",
+      "field": "Secondary_Symptoms",
+      "text": "Fatigue"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p007",
+      "field": "Past_Medical_History",
+      "text": "Negative for similar symptoms or a thyroid disorder."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p008",
+      "field": "Social_History",
+      "text": "Does not provide specifics that are contributory."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-128-p009",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, vision problems, or body swelling."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-128-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "120/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "76 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-e005",
+      "path": "Physical_Examination_Findings.Neck_Examination.Inspection",
+      "text": "3 x 3 cm round, non-tender, non-fluctuant, and non-pulsatile swelling in the anterior triangle of the neck."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-128-i001",
+      "path": "Test_Results.Complete_Blood_Count.Total_White_Blood_Cell_Count",
+      "text": "10,200/mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-i002",
+      "path": "Test_Results.Complete_Blood_Count.Neutrophils",
+      "text": "70%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-i003",
+      "path": "Test_Results.Complete_Blood_Count.Lymphocytes",
+      "text": "30%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-i004",
+      "path": "Test_Results.Complete_Blood_Count.Eosinophils",
+      "text": "0%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-i005",
+      "path": "Test_Results.Erythrocyte_Sedimentation_Rate.Rate",
+      "text": "20 mm/hr"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-128-i006",
+      "path": "Test_Results.Erythrocyte_Sedimentation_Rate.Normal_Range",
+      "text": "0–29 mm/hr"
+    }
+  ],
+  "correct_diagnosis": "Silent Thyroiditis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

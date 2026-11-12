@@ -1,0 +1,243 @@
+{
+  "case_id": "medqa-cs-020",
+  "source_case_id": 20,
+  "opening_scenario": "Eric Glenn, a 26-year-old male, comes to the office complaining of a cough.",
+  "doorway_vital_signs": [
+    "BP: 120/80 mmHg",
+    "Temp: 99.9°F (37.7°C)",
+    "RR: 15/minute",
+    "HR: 75/minute, regular"
+  ],
+  "sp_notes": [
+    "Cough as the examinee enters the room.",
+    "Continue coughing every 3 to 4 minutes during the encounter.",
+    "Chest auscultation: \"When asked to take a breath, pretend to inhale while the examinee is listening to your right chest by moving your shoulders up, but do not actually breathe in.\"",
+    "Chest palpation: \"When the examinee palpates your right chest and asks you to say '99,' turn your face to the right side and say it in a coarse, deep voice.\"",
+    "If asked about sputum, ask the examinee, \"What does 'sputum' mean?\"",
+    "During the encounter, pretend to have a severe coughing attack. Note whether the examinee offers you a glass of water or a tissue."
+  ],
+  "challenging_questions": [
+    "\"Are antibiotics necessary for my recovery?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What brings you to the office today?",
+    "answer": "Cough."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-020-p001",
+      "topic": "Onset",
+      "question": "When did your cough begin?",
+      "answer": "It started a week ago."
+    },
+    {
+      "fact_id": "medqa-cs-020-p002",
+      "topic": "Preceding symptoms/events",
+      "question": "Have you experienced any illness lately? If so, what symptoms occurred?",
+      "answer": "I had a runny nose, fever, and sore throat for a week two weeks ago, but I feel much better now."
+    },
+    {
+      "fact_id": "medqa-cs-020-p003",
+      "topic": "Fever/Chills",
+      "question": "Have you experienced any fevers or chills?",
+      "answer": "I believe I had a slight fever, although I didn't check my temperature; no chills."
+    },
+    {
+      "fact_id": "medqa-cs-020-p004",
+      "topic": "Sputum production",
+      "question": "Have you noticed any sputum associated with your cough? If yes, what color is it?",
+      "answer": "Small amounts of white mucus."
+    },
+    {
+      "fact_id": "medqa-cs-020-p005",
+      "topic": "Blood in sputum",
+      "question": "Any blood in your sputum?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-020-p006",
+      "topic": "Chest pain",
+      "question": "Are you experiencing any chest discomfort?",
+      "answer": "Yes, I experience a sharp pain when I cough or breathe deeply."
+    },
+    {
+      "fact_id": "medqa-cs-020-p007",
+      "topic": "Location",
+      "question": "Where is the pain?",
+      "answer": "Right chest."
+    },
+    {
+      "fact_id": "medqa-cs-020-p008",
+      "topic": "Quality",
+      "question": "How would you describe the pain?",
+      "answer": "It feels like a knife. I can't take a deep breath."
+    },
+    {
+      "fact_id": "medqa-cs-020-p009",
+      "topic": "Alleviating/Exacerbating factors",
+      "question": "Does anything make the pain worse? Does anything make the pain better?",
+      "answer": "It increases when I take a deep breath and when I cough. I feel better when I sleep on my right side."
+    },
+    {
+      "fact_id": "medqa-cs-020-p010",
+      "topic": "Radiation of pain",
+      "question": "Does the pain remain localized, or does it shift to another area?",
+      "answer": "It remains localized."
+    },
+    {
+      "fact_id": "medqa-cs-020-p011",
+      "topic": "Severity",
+      "question": "On a 0 to 10 scale, with 0 being no pain and 10 being the worst pain you can imagine, how severe is your pain?",
+      "answer": "8/10."
+    },
+    {
+      "fact_id": "medqa-cs-020-p012",
+      "topic": "Night sweats",
+      "question": "Have you had any night sweats?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-020-p013",
+      "topic": "Exposure to TB",
+      "question": "Have you had any exposure to tuberculosis?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-020-p014",
+      "topic": "Pet/animal exposure",
+      "question": "Have you been around any pets or other animals recently?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-020-p015",
+      "topic": "Recent travel",
+      "question": "Have you traveled anywhere recently?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-020-p016",
+      "topic": "Last PPD",
+      "question": "When was your last PPD test for TB?",
+      "answer": "Never had it."
+    },
+    {
+      "fact_id": "medqa-cs-020-p017",
+      "topic": "Associated symptoms",
+      "question": "Are you experiencing shortness of breath, wheezing, stomach pain, nausea, vomiting, or diarrhea?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-020-p018",
+      "topic": "Weight/appetite changes",
+      "question": "Have you had any changes in appetite or weight recently?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-020-p019",
+      "topic": "Current medications",
+      "question": "Are you taking any medications? If yes, which ones?",
+      "answer": "Tylenol."
+    },
+    {
+      "fact_id": "medqa-cs-020-p020",
+      "topic": "Past medical history",
+      "question": "Do you have any other medical problems that you are aware of?",
+      "answer": "I had gonorrhea 2 years ago and was treated with antibiotics."
+    },
+    {
+      "fact_id": "medqa-cs-020-p021",
+      "topic": "Past surgical history",
+      "question": "Have you ever had surgery?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-020-p022",
+      "topic": "Family history",
+      "question": "Are there any medical issues in your family? If yes, what kind?",
+      "answer": "My father and mother are alive and in good health."
+    },
+    {
+      "fact_id": "medqa-cs-020-p023",
+      "topic": "Occupation",
+      "question": "What do you do for work?",
+      "answer": "Pizza delivery person."
+    },
+    {
+      "fact_id": "medqa-cs-020-p024",
+      "topic": "Alcohol use",
+      "question": "Some of the upcoming questions might feel a bit awkward, but I want to reassure you that anything you tell me will remain confidential. Do you consume alcohol?",
+      "answer": "I drink quite a bit on weekends. I don't keep track."
+    },
+    {
+      "fact_id": "medqa-cs-020-p025",
+      "topic": "CAGE",
+      "question": "Have you ever thought about reducing your alcohol consumption? Have others ever bothered you by commenting on your drinking habits? Have you ever felt remorseful about your alcohol use? Do you sometimes feel the urge to have a drink in the morning to calm your nerves or alleviate a hangover?",
+      "answer": "No (to all four)."
+    },
+    {
+      "fact_id": "medqa-cs-020-p026",
+      "topic": "Illicit drug use",
+      "question": "Do you use recreational drugs?",
+      "answer": "Never."
+    },
+    {
+      "fact_id": "medqa-cs-020-p027",
+      "topic": "Tobacco",
+      "question": "Do you smoke?",
+      "answer": "Yes, I smoke a pack a day. I started when I was 15 years old."
+    },
+    {
+      "fact_id": "medqa-cs-020-p028",
+      "topic": "Sexual activity",
+      "question": "Are you sexually active?",
+      "answer": "Well, I've had many girlfriends. Every Saturday night, I pick up a new girl from the nightclub."
+    },
+    {
+      "fact_id": "medqa-cs-020-p029",
+      "topic": "Use of condoms",
+      "question": "Do you utilize condoms?",
+      "answer": "No, I don't like it when using a condom."
+    },
+    {
+      "fact_id": "medqa-cs-020-p030",
+      "topic": "Drug allergies",
+      "question": "Do you have any allergies?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History\nHPI: A 26-year-old male complains of a cough for one week. His cough has been persistently productive with a small amount of white sputum, but there has been no hemoptysis. The cough has been associated with a mild fever and a sharp, stabbing pain in his right chest that is 8/10 in severity and exacerbated by cough and deep inspiration. Two weeks ago, he experienced a fever, rhinorrhea, and sore throat. He has no chills, night sweats, SOB, or wheezing. He has not experienced any weight or appetite changes nor does have any recent travel or TB exposure. \n\nROS: Negative except as above.\n\nAllergies: NKDA. \n\nMedications: Tylenol. \n\nPMH: He had Gonorrhea two years ago, which was treated with antibiotics. \n\nSH: He smokes 1 PPD since age 15; he drinks heavily on weekends but has a CAGE score of 0/4. He has had unprotected sex with multiple female partners.\n\nFH: Noncontributory.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-020-e001",
+      "source_text": "Patient is in no acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-020-e002",
+      "source_text": "VS: Low-grade fever."
+    },
+    {
+      "exam_id": "medqa-cs-020-e003",
+      "source_text": "HEENT: Nose, mouth, and pharynx are within normal limits."
+    },
+    {
+      "exam_id": "medqa-cs-020-e004",
+      "source_text": "Neck: No jugular vein distention (JVD) or lymphadenopathy."
+    },
+    {
+      "exam_id": "medqa-cs-020-e005",
+      "source_text": "Chest: Increased tactile fremitus and decreased breath sounds on the right side. No rhonchi, rales, or wheezing."
+    },
+    {
+      "exam_id": "medqa-cs-020-e006",
+      "source_text": "Heart: Apical impulse is not displaced; regular rhythm and rate; S1/S2 are within normal limits; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-020-e007",
+      "source_text": "Extremities: No cyanosis or edema."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Pneumonia \nHistory Finding(s): \n- Persistent cough \nPhysical Exam Finding(s): \n- Increased tactile fremitus \n- Decreased breath sounds on the right \n\nDiagnosis #2: URI-associated cough (post-infectious cough) \nHistory Finding(s): \n- Recent upper respiratory infection (URI) \n- Persistent cough \nPhysical Exam Finding(s): \n- Low-grade fever (temperature 99.9°F)\n\nDiagnosis #3: Acute bronchitis \nHistory Finding(s): \n- Low-grade fever \n- Persistent cough \n- White sputum production \nPhysical Exam Finding(s): \n- Increased tactile fremitus \n- Temperature 99.9°F",
+  "gold_additional_diagnosis": "• Pleurodynia: An uncommon acute illness usually caused by one of the coxsackieviruses. It occurs in summer and early fall and presents with acute, severe paroxysmal pain of the thorax or abdomen that worsens with cough or breathing. Most patients recover within 3 days to 1 week. \n• Other etiologies: Other causes of acute cough include aspiration (for which alcoholic, elderly, and neurologically impaired patients are at risk), pulmonary embolism (extremely rare in a young patient with no risk factors), and pulmonary edema (signs and symptoms of heart failure would be present). Given the patient's history, he should be screened for HIV infection. Notably, there is no evidence of immunosuppression on exam (e.g. no thrush), and in Pneumocystis jirovecii pneumonia, cough is usually nonproductive and accompanied by dyspnea.",
+  "raw_opening": "Opening Scenario:\n\nEric Glenn, a 26-year-old male, comes to the office complaining of a cough.\n\nVital Signs:\nBP: 120/80 mmHg\nTemp: 99.9°F (37.7°C)\nRR: 15/minute\nHR: 75/minute, regular\n\nExaminee Tasks:\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genital, or female breast exams).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n5. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\nThe patient is a 26-year-old male.\n\nNotes for the SP:\n- Cough as the examinee enters the room.\n- Continue coughing every 3 to 4 minutes during the encounter.\n- Chest auscultation: \"When asked to take a breath, pretend to inhale while the examinee is listening to your right chest by moving your shoulders up, but do not actually breathe in.\"\n- Chest palpation: \"When the examinee palpates your right chest and asks you to say '99,' turn your face to the right side and say it in a coarse, deep voice.\"\n- If asked about sputum, ask the examinee, \"What does 'sputum' mean?\"\n- During the encounter, pretend to have a severe coughing attack. Note whether the examinee offers you a glass of water or a tissue.\n\nChallenging Questions to Ask:\n\"Are antibiotics necessary for my recovery?\"\n\nExaminee Response:\n\"Possibly. Antibiotics are ineffective for bronchitis since this condition is mainly triggered by viruses that do not respond to these medications.. If I determine that you have bacterial pneumonia, treatment with antibiotics will be necessary..\"\n\nExaminee Checklist:\n\nEntrance:\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified their role or position.\n\nReflective Listening:\n- The examinee asked an open-ended question and actively listened to the response.\n- The examinee asked the SP to list their concerns and listened to the response without interrupting.\n- The examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n- The examinee dictated data efficiently and accurately.\n- The examinee offered the SP a glass of water or a tissue during the severe bout of coughing.\n\nConnecting With the Patient:\n- The examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief Complaint:\nDoctor: \"What brings you to the office today?\"\nPatient: \"Cough.\"\n\nOnset:\nDoctor: \"When did your cough begin?\"\nPatient: \"It started a week ago.\"\n\nPreceding symptoms/events:\nDoctor: \"Have you experienced any illness lately? If so, what symptoms occurred?\"\nPatient: \"I had a runny nose, fever, and sore throat for a week two weeks ago, but I feel much better now.\"\n\nFever/Chills:\nDoctor: \"Have you experienced any fevers or chills?\"\nPatient: \"I believe I had a slight fever, although I didn't check my temperature; no chills.\"\n\nSputum production:\nDoctor: \"Have you noticed any sputum associated with your cough? If yes, what color is it?\"\nPatient: \"Small amounts of white mucus.\"\n\nBlood in sputum:\nDoctor: \"Any blood in your sputum?\"\nPatient: \"No.\"\n\nChest pain:\nDoctor: \"Are you experiencing any chest discomfort?\"\nPatient: \"Yes, I experience a sharp pain when I cough or breathe deeply.\"\n\nLocation:\nDoctor: \"Where is the pain?\"\nPatient: \"Right chest.\"\n\nQuality:\nDoctor: \"How would you describe the pain?\"\nPatient: \"It feels like a knife. I can't take a deep breath.\"\n\nAlleviating/Exacerbating factors:\nDoctor: \"Does anything make the pain worse? Does anything make the pain better?\"\nPatient: \"It increases when I take a deep breath and when I cough. I feel better when I sleep on my right side.\"\n\nRadiation of pain:\nDoctor: \"Does the pain remain localized, or does it shift to another area?\"\nPatient: \"It remains localized.\"\n\nSeverity:\nDoctor: \"On a 0 to 10 scale, with 0 being no pain and 10 being the worst pain you can imagine, how severe is your pain?\"\nPatient: \"8/10.\"\n\nNight sweats:\nDoctor: \"Have you had any night sweats?\"\nPatient: \"No.\"\n\nExposure to TB:\nDoctor: \"Have you had any exposure to tuberculosis?\"\nPatient: \"No.\"\n\nPet/animal exposure:\nDoctor: \"Have you been around any pets or other animals recently?\"\nPatient: \"No, I do not.\"\n\nRecent travel:\nDoctor: \"Have you traveled anywhere recently?\"\nPatient: \"No.\"\n\nLast PPD:\nDoctor: \"When was your last PPD test for TB?\"\nPatient: \"Never had it.\"\n\nAssociated symptoms:\nDoctor: \"Are you experiencing shortness of breath, wheezing, stomach pain, nausea, vomiting, or diarrhea?\"\nPatient: \"No, I do not.\"\n\nWeight/appetite changes:\nDoctor: \"Have you had any changes in appetite or weight recently?\"\nPatient: \"No.\"\n\nCurrent medications:\nDoctor: \"Are you taking any medications? If yes, which ones?\"\nPatient: \"Tylenol.\"\n\nPast medical history:\nDoctor: \"Do you have any other medical problems that you are aware of?\"\nPatient: \"I had gonorrhea 2 years ago and was treated with antibiotics.\"\n\nPast surgical history:\nDoctor: \"Have you ever had surgery?\"\nPatient: \"No.\"\n\nFamily history:\nDoctor: \"Are there any medical issues in your family? If yes, what kind?\"\nPatient: \"My father and mother are alive and in good health.\"\n\nOccupation:\nDoctor: \"What do you do for work?\"\nPatient: \"Pizza delivery person.\"\n\nAlcohol use:\nDoctor: \"Some of the upcoming questions might feel a bit awkward, but I want to reassure you that anything you tell me will remain confidential. Do you consume alcohol?\"\nPatient: \"I drink quite a bit on weekends. I don't keep track.\"\n\nCAGE:\nDoctor: \"Have you ever thought about reducing your alcohol consumption? Have others ever bothered you by commenting on your drinking habits? Have you ever felt remorseful about your alcohol use? Do you sometimes feel the urge to have a drink in the morning to calm your nerves or alleviate a hangover?\"\nPatient: \"No (to all four).\"\n\nIllicit drug use:\nDoctor: \"Do you use recreational drugs?\"\nPatient: \"Never.\"\n\nTobacco:\nDoctor: \"Do you smoke?\"\nPatient: \"Yes, I smoke a pack a day. I started when I was 15 years old.\"\n\nSexual activity:\nDoctor: \"Are you sexually active?\"\nPatient: \"Well, I've had many girlfriends. Every Saturday night, I pick up a new girl from the nightclub.\"\n\nUse of condoms:\nDoctor: \"Do you utilize condoms?\"\nPatient: \"No, I don't like it when using a condom.\"\n\nDrug allergies:\nDoctor: \"Do you have any allergies?\"\nPatient: \"No.\"\n\nPhysical Examination:\n\n- Examinee washed their hands.\n- Examinee asked permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- Head and neck exam: Examination of the mouth, throat, and lymph nodes.\n- Cardiovascular exam: Auscultation and palpation.\n- Pulmonary exam: Auscultation, palpation, and percussion.\n- Extremities: Inspection.\n\nSample Closure:\n\n\"Mr. Glenn, your cough is most likely due to an infection that can either be bacterial or viral. The chest pain you are feeling is likely caused by infection-related irritation of your lung membranes.. Some of this information can be more common with HIV, and given your sexual history, I recommend that we test for it. Another reason for your cough may be acid reflux, commonly known as heartburn. We are going to test your blood and sputum and obtain a chest x-ray to help us make a definitive diagnosis. If your cough is ongoing, we might also need to conduct a PPD test for tuberculosis.. In the meantime, I strongly recommend that you use condoms during intercourse to prevent STDs such as HIV and unwanted pregnancies. \"Do you have any inquiries for me?\"\n\nClosure:\n\nExaminee discussed:\n- Initial diagnostic impressions.\n- Initial management plans:\n   - Follow-up tests.\n   - Safe sex practices.\n   - HIV testing (and discussed consent).\nExaminee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory\nHPI: A 26-year-old male complains of a cough for one week. His cough has been persistently productive with a small amount of white sputum, but there has been no hemoptysis. The cough has been associated with a mild fever and a sharp, stabbing pain in his right chest that is 8/10 in severity and exacerbated by cough and deep inspiration. Two weeks ago, he experienced a fever, rhinorrhea, and sore throat. He has no chills, night sweats, SOB, or wheezing. He has not experienced any weight or appetite changes nor does have any recent travel or TB exposure. \n\nROS: Negative except as above.\n\nAllergies: NKDA. \n\nMedications: Tylenol. \n\nPMH: He had Gonorrhea two years ago, which was treated with antibiotics. \n\nSH: He smokes 1 PPD since age 15; he drinks heavily on weekends but has a CAGE score of 0/4. He has had unprotected sex with multiple female partners.\n\nFH: Noncontributory.\n\nPhysical Examination:\n\nPatient is in no acute distress. \nVS: Low-grade fever. \nHEENT: Nose, mouth, and pharynx are within normal limits. \nNeck: No jugular vein distention (JVD) or lymphadenopathy. \nChest: Increased tactile fremitus and decreased breath sounds on the right side. No rhonchi, rales, or wheezing. \nHeart: Apical impulse is not displaced; regular rhythm and rate; S1/S2 are within normal limits; no murmurs, rubs, or gallops. \nExtremities: No cyanosis or edema."
+}

@@ -1,0 +1,898 @@
+{
+  "case_id": "medqa-cs-001",
+  "demographics": {
+    "name": "Joseph Shorr",
+    "age": 46,
+    "sex": "male",
+    "setting": "emergency department"
+  },
+  "opening_fact": {
+    "text": "I have chest pain.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-001-f001",
+      "source_ids": [
+        "medqa-cs-001-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Chest pain began 40 minutes ago.",
+      "quote": "Forty minutes ago."
+    },
+    {
+      "id": "medqa-cs-001-f002",
+      "source_ids": [
+        "medqa-cs-001-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain woke him from sleep at 5:00 AM; he was not doing anything when it started.",
+      "quote": "Nothing; I was asleep and woke up at 5:00 in the morning having this pain."
+    },
+    {
+      "id": "medqa-cs-001-f003",
+      "source_ids": [
+        "medqa-cs-001-p003"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain has stayed constantly severe since onset.",
+      "quote": "It remains consistently severe."
+    },
+    {
+      "id": "medqa-cs-001-f004",
+      "source_ids": [
+        "medqa-cs-001-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Current pain severity is 7/10.",
+      "quote": "7 out of 10."
+    },
+    {
+      "id": "medqa-cs-001-f005",
+      "source_ids": [
+        "medqa-cs-001-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain is in the middle of the chest and feels as if it is right under the breastbone.",
+      "quote": "Middle of the chest. It feels as if it's right underneath the bone."
+    },
+    {
+      "id": "medqa-cs-001-f006",
+      "source_ids": [
+        "medqa-cs-001-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain radiates to the neck, upper back, and left arm.",
+      "quote": "To my neck, upper back, and left arm."
+    },
+    {
+      "id": "medqa-cs-001-f007",
+      "source_ids": [
+        "medqa-cs-001-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "The pain feels like pressure, as if something is resting on the chest.",
+      "quote": "It feels like pressure, as if something is resting on my chest."
+    },
+    {
+      "id": "medqa-cs-001-f008",
+      "source_ids": [
+        "medqa-cs-001-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Nothing relieves or worsens the current pain.",
+      "quote": "No, there isn't.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'Nothing.' (p008) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-001-f009",
+      "source_ids": [
+        "medqa-cs-001-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Shortness of breath.",
+      "quote": "Yes."
+    },
+    {
+      "id": "medqa-cs-001-f010",
+      "source_ids": [
+        "medqa-cs-001-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Nausea.",
+      "quote": "I feel nauseated"
+    },
+    {
+      "id": "medqa-cs-001-f011",
+      "source_ids": [
+        "medqa-cs-001-p010"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vomiting.",
+      "quote": "I didn't vomit."
+    },
+    {
+      "id": "medqa-cs-001-f012",
+      "source_ids": [
+        "medqa-cs-001-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Increased sweating.",
+      "quote": "Yes."
+    },
+    {
+      "id": "medqa-cs-001-f013",
+      "source_ids": [
+        "medqa-cs-001-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No cough.",
+      "quote": "No. Cough, wheezing, stomach pain."
+    },
+    {
+      "id": "medqa-cs-001-f014",
+      "source_ids": [
+        "medqa-cs-001-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No wheezing.",
+      "quote": "No. Cough, wheezing, stomach pain."
+    },
+    {
+      "id": "medqa-cs-001-f015",
+      "source_ids": [
+        "medqa-cs-001-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No abdominal pain.",
+      "quote": "No. Cough, wheezing, stomach pain."
+    },
+    {
+      "id": "medqa-cs-001-f016",
+      "source_ids": [
+        "medqa-cs-001-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Has had similar chest pain before, though not exactly the same as this episode.",
+      "quote": "Yes, but it wasn't precisely the same."
+    },
+    {
+      "id": "medqa-cs-001-f017",
+      "source_ids": [
+        "medqa-cs-001-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "This episode is much more severe than the previous ones and feels more like pressure than burning.",
+      "quote": "The pain is much worse this time and feels more like pressure than burning."
+    },
+    {
+      "id": "medqa-cs-001-f018",
+      "source_ids": [
+        "medqa-cs-001-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "The previous episodes had a burning quality.",
+      "quote": "feels more like pressure than burning"
+    },
+    {
+      "id": "medqa-cs-001-f019",
+      "source_ids": [
+        "medqa-cs-001-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "The previous chest-pain episodes started 3 months ago.",
+      "quote": "The past 3 months."
+    },
+    {
+      "id": "medqa-cs-001-f020",
+      "source_ids": [
+        "medqa-cs-001-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "The previous episodes were not very severe.",
+      "quote": "Not very severe."
+    },
+    {
+      "id": "medqa-cs-001-f021",
+      "source_ids": [
+        "medqa-cs-001-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "The previous episodes occur 2–3 times a week and last 5–10 minutes each.",
+      "quote": "I've been having two to three episodes weekly, with each one lasting 5 to 10 minutes."
+    },
+    {
+      "id": "medqa-cs-001-f022",
+      "source_ids": [
+        "medqa-cs-001-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "The previous episodes are brought on by climbing stairs, strenuous work, and large meals.",
+      "quote": "Climbing stairs, intense labor, and large meals."
+    },
+    {
+      "id": "medqa-cs-001-f023",
+      "source_ids": [
+        "medqa-cs-001-p033"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Chest pain also comes on during sex.",
+      "quote": "I get this pain in my chest during sex."
+    },
+    {
+      "id": "medqa-cs-001-f024",
+      "source_ids": [
+        "medqa-cs-001-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "Antacids relieved the previous episodes.",
+      "quote": "Antacids."
+    },
+    {
+      "id": "medqa-cs-001-f025",
+      "source_ids": [
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "recurrent",
+      "text": "The previous episodes also went away on their own.",
+      "quote": "disappeared spontaneously or after taking antacids",
+      "flags": [
+        "Only in the patient note HPI; the script mentions antacids only."
+      ]
+    },
+    {
+      "id": "medqa-cs-001-f026",
+      "source_ids": [
+        "medqa-cs-001-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "absent",
+      "temporality": "recurrent",
+      "text": "No other symptoms accompanied the previous episodes.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-001-f027",
+      "source_ids": [
+        "medqa-cs-001-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Hypertension for 5 years, treated with a diuretic.",
+      "quote": "Hypertension for 5 years, treated with a diuretic."
+    },
+    {
+      "id": "medqa-cs-001-f028",
+      "source_ids": [
+        "medqa-cs-001-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "High cholesterol, managed with diet.",
+      "quote": "High cholesterol, managed with diet"
+    },
+    {
+      "id": "medqa-cs-001-f029",
+      "source_ids": [
+        "medqa-cs-001-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "His doctor prescribed a strict cholesterol-lowering diet last year.",
+      "quote": "My doctor gave me a strict diet last year to lower my cholesterol"
+    },
+    {
+      "id": "medqa-cs-001-f030",
+      "source_ids": [
+        "medqa-cs-001-p021",
+        "medqa-cs-001-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Poor adherence to the cholesterol diet; he often does not follow it.",
+      "quote": "I have not been very compliant with the diet. / but I always cheat."
+    },
+    {
+      "id": "medqa-cs-001-f031",
+      "source_ids": [
+        "medqa-cs-001-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "GERD 10 years ago, treated with antacids.",
+      "quote": "GERD 10 years ago, treated with antacids."
+    },
+    {
+      "id": "medqa-cs-001-f032",
+      "source_ids": [
+        "medqa-cs-001-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes Maalox.",
+      "quote": "Maalox"
+    },
+    {
+      "id": "medqa-cs-001-f033",
+      "source_ids": [
+        "medqa-cs-001-p022"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes a diuretic.",
+      "quote": "diuretic."
+    },
+    {
+      "id": "medqa-cs-001-f034",
+      "source_ids": [
+        "medqa-cs-001-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-001-f035",
+      "source_ids": [
+        "medqa-cs-001-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Father died of lung cancer at age 72.",
+      "quote": "My father died of lung cancer at age 72."
+    },
+    {
+      "id": "medqa-cs-001-f036",
+      "source_ids": [
+        "medqa-cs-001-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Mother is alive and has a peptic ulcer.",
+      "quote": "My mother is alive and has a peptic ulcer."
+    },
+    {
+      "id": "medqa-cs-001-f037",
+      "source_ids": [
+        "medqa-cs-001-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No family history of early heart attacks.",
+      "quote": "No early heart attacks."
+    },
+    {
+      "id": "medqa-cs-001-f038",
+      "source_ids": [
+        "medqa-cs-001-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as an accountant.",
+      "quote": "Accountant."
+    },
+    {
+      "id": "medqa-cs-001-f039",
+      "source_ids": [
+        "medqa-cs-001-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Drinks alcohol occasionally.",
+      "quote": "Occasionally."
+    },
+    {
+      "id": "medqa-cs-001-f040",
+      "source_ids": [
+        "medqa-cs-001-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Uses cocaine once a week.",
+      "quote": "Cocaine, once a week."
+    },
+    {
+      "id": "medqa-cs-001-f041",
+      "source_ids": [
+        "medqa-cs-001-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has used cocaine for 10 years.",
+      "quote": "Ten years."
+    },
+    {
+      "id": "medqa-cs-001-f042",
+      "source_ids": [
+        "medqa-cs-001-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Last used cocaine yesterday afternoon.",
+      "quote": "Yesterday afternoon."
+    },
+    {
+      "id": "medqa-cs-001-f043",
+      "source_ids": [
+        "medqa-cs-001-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "resolved",
+      "text": "Former cigarette smoker; quit 3 months ago.",
+      "quote": "I quit three months ago."
+    },
+    {
+      "id": "medqa-cs-001-f044",
+      "source_ids": [
+        "medqa-cs-001-p031",
+        "medqa-cs-001-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Smoked one pack of cigarettes a day for 25 years.",
+      "quote": "Twenty-five years. / One pack a day."
+    },
+    {
+      "id": "medqa-cs-001-f045",
+      "source_ids": [
+        "medqa-cs-001-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has not had sex with his wife for the past 3 months because of the chest pain during sex.",
+      "quote": "I haven't had sex with my wife for the past 3 months because I get this pain in my chest during sex."
+    },
+    {
+      "id": "medqa-cs-001-f046",
+      "source_ids": [
+        "medqa-cs-001-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not exercise regularly.",
+      "quote": "No."
+    },
+    {
+      "id": "medqa-cs-001-f047",
+      "source_ids": [
+        "medqa-cs-001-p036"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No known drug allergies.",
+      "quote": "No."
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [
+      "Lie on the bed and exhibit pain.",
+      "Place your hand in the middle of your chest.",
+      "Exhibit difficulty breathing."
+    ],
+    "patient_questions": [
+      "Is it a myocardial infarction? Am I at risk of death?",
+      "If the examinee mentions an ECG, ask: \"What's an ECG?\""
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "165/85 mm Hg",
+        "source_text": "BP: 165/85 mm Hg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.6°F (37°C)",
+        "source_text": "Temp: 98.6°F (37°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "22/minute",
+        "source_text": "RR: 22/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "90/minute, regular",
+        "source_text": "HR: 90/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e002"
+        ],
+        "name": "Blood pressure",
+        "finding": "165/85 mm Hg in both arms",
+        "source_text": "VS: BP 165/85 mm Hg (both arms), RR 22/minute."
+      },
+      {
+        "id": "v006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e002"
+        ],
+        "name": "Respiratory rate",
+        "finding": "22/minute",
+        "source_text": "VS: BP 165/85 mm Hg (both arms), RR 22/minute."
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "In severe pain",
+        "source_text": "The patient is in severe pain."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e003"
+        ],
+        "system": "Neck",
+        "name": "Jugular veins",
+        "finding": "No jugular venous distension",
+        "source_text": "Neck: No ND, no bruits."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e003"
+        ],
+        "system": "Neck",
+        "name": "Carotid auscultation",
+        "finding": "No carotid bruits",
+        "source_text": "Neck: No ND, no bruits."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e004"
+        ],
+        "system": "Chest",
+        "name": "Chest wall palpation",
+        "finding": "No tenderness",
+        "source_text": "Chest: No tenderness, clear symmetric breath sounds bilaterally."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e004"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear, symmetric breath sounds bilaterally",
+        "source_text": "Chest: No tenderness, clear symmetric breath sounds bilaterally."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e005"
+        ],
+        "system": "Heart",
+        "name": "Apical impulse",
+        "finding": "Not displaced",
+        "source_text": "Heart: Apical impulse not displaced; RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e005"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: Apical impulse not displaced; RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e005"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "S1 and S2 within normal limits",
+        "source_text": "Heart: Apical impulse not displaced; RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e005"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: Apical impulse not displaced; RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e006"
+        ],
+        "system": "Abdomen",
+        "name": "Palpation",
+        "finding": "Soft, non-distended, nontender",
+        "source_text": "Abdomen: Soft, non-distended, nontender, + BS x 4 quadrants, no hepatosplenomegaly."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e006"
+        ],
+        "system": "Abdomen",
+        "name": "Bowel sounds",
+        "finding": "Present in all four quadrants",
+        "source_text": "Abdomen: Soft, non-distended, nontender, + BS x 4 quadrants, no hepatosplenomegaly."
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e006"
+        ],
+        "system": "Abdomen",
+        "name": "Liver and spleen",
+        "finding": "No hepatosplenomegaly",
+        "source_text": "Abdomen: Soft, non-distended, nontender, + BS x 4 quadrants, no hepatosplenomegaly."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e007"
+        ],
+        "system": "Extremities",
+        "name": "Edema",
+        "finding": "No peripheral edema",
+        "source_text": "Extremities: No peripheral edema, peripheral pulses 2+ and symmetric in upper and lower extremities, no cyanosis or clubbing."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e007"
+        ],
+        "system": "Extremities",
+        "name": "Peripheral pulses",
+        "finding": "2+ and symmetric in upper and lower extremities",
+        "source_text": "Extremities: No peripheral edema, peripheral pulses 2+ and symmetric in upper and lower extremities, no cyanosis or clubbing."
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-001-e007"
+        ],
+        "system": "Extremities",
+        "name": "Cyanosis and clubbing",
+        "finding": "No cyanosis or clubbing",
+        "source_text": "Extremities: No peripheral edema, peripheral pulses 2+ and symmetric in upper and lower extremities, no cyanosis or clubbing."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Myocardial ischemia or infarction",
+        "history_findings": [
+          "Pressure-like substernal chest pain",
+          "Pain radiates to left arm, upper back, and neck",
+          "Pain awakens the patient at night"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Cocaine-induced myocardial ischemia",
+        "history_findings": [
+          "History of cocaine use",
+          "Last used yesterday afternoon",
+          "Pressure-like substernal chest pain"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 3,
+        "diagnosis": "GERD",
+        "history_findings": [
+          "Pain in midchest",
+          "Previous pain was relieved by antacids",
+          "Previous pain occurred after heavy meals"
+        ],
+        "exam_findings": []
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Aortic dissection",
+        "rationale": "Must be considered with sudden severe chest pain, but the pain is not tearing or radiating to the back and pulses and blood pressures are equal."
+      },
+      {
+        "diagnosis": "Boerhaave syndrome",
+        "rationale": "Acute severe pain fits esophageal rupture; risk factors are absent but it must be ruled out because of high mortality."
+      },
+      {
+        "diagnosis": "Pericarditis",
+        "rationale": "Less likely: no positional or respiratory variation and no friction rub."
+      },
+      {
+        "diagnosis": "Pneumothorax",
+        "rationale": "Considered for chest pain with dyspnea; less likely with symmetric breath sounds."
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "rationale": "On the differential for chest pain and dyspnea, but no apparent risk factors."
+      },
+      {
+        "diagnosis": "Costochondritis or other musculoskeletal chest pain",
+        "rationale": "Usually reproduced by palpation or pleuritic; neither is present."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "The patient-note exam vitals (e002) omit temperature and heart rate; the doorway vitals give 98.6°F and HR 90/minute, regular.",
+      "Patient-note HPI writes the severity as '(7110)', an OCR artifact for 7/10.",
+      "The note HPI says previous episodes 'disappeared spontaneously or after taking antacids'; the script mentions antacids only (added as from_note fact f025).",
+      "The physical-exam checklist lists 'Ocular examination: auscultation, palpation', which is evidently the cardiac exam; checklist items are not used as findings."
+    ],
+    "annotator_notes": [
+      "p033 is split into a symptom trigger (f023, chest pain during sex) and a sexual-history fact (f045).",
+      "GERD is marked historical as stated ('10 years ago'); current Maalox use is a separate medication fact (f032).",
+      "Smoking: resolved current status (f043) plus historical exposure (f044).",
+      "1 template answers (No, there isn't.) checked against the June-2024 release: all are plain denials there; 1 facts confirmed."
+    ]
+  }
+}

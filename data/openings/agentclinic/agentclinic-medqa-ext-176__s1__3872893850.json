@@ -1,0 +1,53 @@
+{
+ "case_id": "agentclinic-medqa-ext-176",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I have pain in my stomach area.",
+   "This time it's been going on for the past 2 hours.",
+   "It's a cramping pain, and there's a general discomfort there too.",
+   "I've lost some weight recently without meaning to.",
+   "I smoke.",
+   "I drink alcohol occasionally.",
+   "I take over-the-counter painkillers for my knee pain."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have pain in my stomach area, and it's been going on for the past 2 hours. It's a cramping pain, and there's a general discomfort there too. I've lost some weight recently without meaning to. I smoke, and I drink alcohol occasionally. I take over-the-counter painkillers for my knee pain.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f003",
+    "f007",
+    "f009",
+    "f010",
+    "f012"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3451,
+   "tokens_out": 81,
+   "seconds": 9.61,
+   "redrafts": 0
+  }
+ }
+}

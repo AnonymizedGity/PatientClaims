@@ -1,0 +1,103 @@
+{
+  "patient": {
+    "case_id": "mcr-test-13031",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 44, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "worsening vision", "aliases": ["vision loss", "blurred vision", "poor eyesight", "visual deterioration", "can't see well"], "text": "My eyesight has been getting worse.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "worsening vision: location", "parent": "f001", "attribute": "location", "text": "It's both eyes.", "value": "both eyes", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "worsening vision: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 2 weeks.", "value": "2 weeks", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f004", "item": "worsening vision: course", "parent": "f001", "attribute": "course", "text": "It keeps getting steadily worse.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f005", "item": "eye pain", "aliases": ["painful eyes", "sore eyes", "painful vision loss"], "text": "My eyes don't hurt; there's no pain with it.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f006", "item": "reading glasses prescribed", "aliases": ["glasses", "reading glasses", "optician visit", "eye test"], "text": "A month ago I was prescribed reading glasses.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "reading glasses: treatment response", "parent": "f006", "attribute": "treatment_response", "text": "They haven't made my vision any better.", "polarity": "present", "category": "medical_history"},
+      {"id": "f008", "item": "chronic medical problems", "aliases": ["medical history", "past illnesses"], "text": "I don't have any medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f009", "item": "alcohol use", "aliases": ["drinking", "alcohol"], "text": "I drink about 14 units of alcohol a week.", "value": "14 units per week", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke 20 cigarettes a day.", "value": "20 cigarettes per day", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f012", "item": "poor diet", "aliases": ["diet", "unhealthy eating", "what I eat", "nutrition"], "text": "I admit my diet is poor.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "poor diet: breakfast", "parent": "f012", "attribute": "other", "text": "For breakfast I have tea with milk and toast.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f014", "item": "poor diet: lunch", "parent": "f012", "attribute": "other", "text": "I often skip lunch, or just have a packet of crisps.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f015", "item": "poor diet: dinner", "parent": "f012", "attribute": "other", "text": "Dinner is usually meat and potatoes.", "polarity": "present", "category": "habit_exposure"},
+      {"id": "f016", "item": "poor diet: green leafy vegetables", "parent": "f012", "attribute": "frequency", "aliases": ["vegetables", "greens", "salad"], "text": "I only eat green leafy vegetables once or twice a month.", "value": "once or twice a month", "polarity": "present", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-13031",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "eye chart", "acuity"], "result": "6/60 in both eyes.", "time": "9 days after presentation"},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "confrontation visual field testing", "aliases": ["visual fields", "confrontation testing", "red pin test", "central vision", "scotoma"], "result": "With a red pin: bilateral central scotomas.", "time": "9 days after presentation"},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "Goldmann kinetic perimetry", "aliases": ["perimetry", "formal visual fields", "Goldmann perimetry", "peripheral visual fields"], "result": "Normal peripheral fields.", "time": "9 days after presentation"},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["ophthalmoscopy", "fundus examination", "disc examination", "dilated fundus examination"], "result": "Optic discs appear normal and are not pale.", "time": "9 days after presentation"},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "Ishihara colour vision test", "aliases": ["colour vision", "color vision", "Ishihara plates", "Ishihara test"], "result": "Could not identify any Ishihara test plates.", "time": "9 days after presentation"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "general physical examination", "aliases": ["physical examination", "rest of the examination", "systemic examination"], "result": "Otherwise normal."},
+      {"id": "x007", "kind": "test", "name": "serum folate", "aliases": ["serum folic acid", "folic acid level", "folate level"], "result": "1.5 ng/ml (reference 2.5–18)."},
+      {"id": "x008", "kind": "test", "name": "red cell folate", "aliases": ["RBC folate", "erythrocyte folate"], "result": "208 nmol/l (reference 220–620)."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "haemoglobin", "MCV", "mean corpuscular volume", "red cell indices"], "result": "Hemoglobin 14 g/dl; MCV 122.8 fl (reference 78–100)."},
+      {"id": "x010", "kind": "test", "name": "vitamin B12", "aliases": ["B12", "cobalamin", "serum B12"], "result": "354 nmol/l."},
+      {"id": "x011", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "thyroid tests", "TSH", "free T4"], "result": "Negative."},
+      {"id": "x012", "kind": "test", "name": "coeliac serology", "aliases": ["celiac serology", "endomysial antibodies", "EMA", "gliadin antibodies", "anti-gliadin antibodies"], "result": "Endomysial and gliadin antibodies negative."},
+      {"id": "x013", "kind": "test", "name": "brain MRI", "aliases": ["MRI brain", "MRI head", "magnetic resonance imaging of the brain"], "result": "Tiny focus of high T2 signal in the left frontal lobe consistent with a benign perivascular space; no evidence of demyelination."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-13031",
+    "diagnosis": "Folate-deficient optic neuropathy",
+    "aliases": ["folate deficiency optic neuropathy", "folate-deficiency optic neuropathy", "folic acid deficiency optic neuropathy", "nutritional optic neuropathy due to folate deficiency"],
+    "reasoning": "1. Nutritional optic neuropathy considered because of poor dietary intake and classic central scotomas — “it is important that a careful history is taken when evaluating patients with suspected optic neuropathy … low intake of green leafy vegetables should be actively sought.” 2. Toxic optic neuropathy due to alcohol and tobacco less likely because moderate consumption and visual improvement occurs despite continued use in folate deficiency — “vision can return to normal with vitamin supplementation … despite no modification of alcohol/tobacco consumption.” 3. Leber’s hereditary optic neuropathy excluded by patient demographics and nutritional correlations — “LHON … is more common in young men” and is a mitochondrial disorder not directly linked to diet. 4. Demyelinating optic neuropathy ruled out by MRI findings showing no evidence of demyelination — “MRI … revealed … no evidence of demyelination.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-13031",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s007"], "f009": ["s008"], "f010": ["s008"], "f011": ["s009"], "f012": ["s009"],
+      "f013": ["s009"], "f014": ["s009"], "f015": ["s009"], "f016": ["s009"]
+    },
+    "quotes": {
+      "f002": "bilateral visual deterioration", "f003": "a 2-week history", "f004": "progressive, painless bilateral visual deterioration",
+      "f005": "painless", "f006": "prescribed reading glasses one month earlier", "f007": "noted no improvement",
+      "f009": "14 units of alcohol per week", "f010": "smoked 20 cigarettes daily", "f012": "admitted to a poor diet",
+      "f013": "breakfast of milk tea and toast", "f014": "lunch often skipped or a packet of crisps",
+      "f015": "dinner usually meat and potatoes", "f016": "green leafy vegetables only once or twice a month"
+    },
+    "flags": {
+      "f005": ["'Painless' visual deterioration is written as an absent eye-pain fact."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "On examination 9 days later, her visual acuity had declined to 6/60 bilaterally."},
+      "x002": {"sentences": ["s004"], "source_text": "Confrontational testing with a red pin revealed bilateral central scotomas"},
+      "x003": {"sentences": ["s004"], "source_text": "Goldman kinetic perimetry showed normal peripheral fields"},
+      "x004": {"sentences": ["s005"], "source_text": "The optic discs appeared normal and were not pale."},
+      "x005": {"sentences": ["s006"], "source_text": "She could not identify any Ishihara test plates."},
+      "x006": {"sentences": ["s010"], "source_text": "Physical examination was otherwise normal."},
+      "x007": {"sentences": ["s011"], "source_text": "Serum folic acid: 1.5 ng/ml (reference 2.5–18)"},
+      "x008": {"sentences": ["s012"], "source_text": "Red cell folate: 208 nmol/l (reference 220–620)"},
+      "x009": {"sentences": ["s013"], "source_text": "Hemoglobin: 14 g/dl; MCV: 122.8 fl (reference 78–100)"},
+      "x010": {"sentences": ["s014"], "source_text": "Vitamin B12: 354 nmol/l"},
+      "x011": {"sentences": ["s015"], "source_text": "Thyroid function tests / negative"},
+      "x012": {"sentences": ["s015"], "source_text": "endomysial and gliadin antibodies: negative"},
+      "x013": {"sentences": ["s016"], "source_text": "Brain MRI revealed a tiny focus of high T2 signal in the left frontal lobe consistent with a benign perivascular space and no evidence of demyelination."}
+    },
+    "finding_flags": {
+      "x002": ["The source does not date the field, disc and colour-vision tests (s004-s006); they follow the 9-day examination in the narrative and are given the same time."],
+      "x011": ["The source reports thyroid function tests as 'negative'; probably normal."]
+    },
+    "leakage": [
+      {"id": "x004", "reason": "'optic discs' is anatomy in the fundoscopy result; the result is normal and does not name the neuropathy."}
+    ],
+    "source_issues": [
+      "Reading glasses were prescribed one month before presentation, but the visual deterioration is a 2-week history; the glasses may have been for an earlier, unrelated need.",
+      "Vitamin B12 354 nmol/l is implausibly high in nmol/l; probably pmol/l or ng/l.",
+      "'Goldman' is spelled for Goldmann perimetry."
+    ],
+    "notes": [
+      "Index visit: the presentation with a 2-week history of progressive painless bilateral visual deterioration (s001); the eye examination 9 days later and the laboratory tests and MRI of the same workup are findings with time where given.",
+      "The visual acuity of 6/60 records a decline after presentation; it is kept as a timed finding and not as a new patient fact.",
+      "Gold-term warnings for 'serum folate' and 'red cell folate' are kept: these are the tests' clinical names.",
+      "The diet is a present 'poor diet' habit fact with the meal pattern and green-vegetable frequency as children."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

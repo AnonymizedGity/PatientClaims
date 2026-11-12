@@ -1,0 +1,112 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-056", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 62, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "skin sores", "aliases": ["skin lesions", "penile lesion", "sore on the penis", "sore on the finger", "rash"], "text": "I have sores on my skin.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "skin sores: location", "parent": "f001", "attribute": "location", "value": ["shaft of the penis", "left middle finger"], "complete": true, "text": "One is on the shaft of my penis and a similar one is on my left middle finger. I don't have any others like them anywhere on my body.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "skin sores: appearance", "parent": "f001", "attribute": "appearance", "text": "They're red and crusty.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "skin sores: course", "parent": "f001", "attribute": "course", "aliases": ["non-healing", "healing"], "text": "They won't heal.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "skin sores: pain", "parent": "f001", "attribute": "character", "aliases": ["painful sores"], "text": "They don't hurt.", "polarity": "absent", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "feeling generally unwell", "aliases": ["malaise"], "text": "I don't feel generally unwell.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "previous treatment for syphilis", "aliases": ["syphilis", "sexually transmitted infection"], "text": "In my home country I was treated for syphilis, but the treatment was unsuccessful.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "previous treatment for eczema", "aliases": ["eczema"], "text": "In my home country I was also treated for eczema, and that treatment was unsuccessful too.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "cancer in the family", "aliases": ["family history of cancer"], "text": "As far as I know, no one in my family has had cancer.", "polarity": "absent", "category": "family_history"},
+      {"id": "f013", "item": "hereditary diseases in the family", "aliases": ["family history", "inherited diseases"], "text": "As far as I know, there are no hereditary diseases in my family.", "polarity": "absent", "category": "family_history"},
+      {"id": "f014", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke 2 packs of cigarettes a day, and have for the last 30 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "living situation", "aliases": ["who I live with", "wife", "marital status"], "text": "I live with my fourth wife.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f016", "item": "recent immigration", "aliases": ["where I'm from", "moved to the US", "travel"], "text": "I recently immigrated to the US from Africa.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-056",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["dermatological examination", "lesion examination", "genital examination", "penile examination", "finger examination"], "result": "Inspection: erythematous plaque with areas of crusting, oozing and irregular borders on the dorsal surface of the penile shaft and on the left middle finger; palpation: lesions firm, non-tender, no warmth."},
+      {"id": "x006", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "regional lymph nodes", "inguinal lymph nodes", "axillary lymph nodes", "cervical lymph nodes"], "result": "No palpable cervical, axillary or inguinal lymphadenopathy."},
+      {"id": "x007", "kind": "test", "name": "skin biopsy of lesion", "aliases": ["skin biopsy", "biopsy", "punch biopsy"], "result": "Cells with nuclear hyperchromasia, multinucleation and increased mitotic figures within the follicle-bearing epithelium."},
+      {"id": "x008", "kind": "test", "name": "syphilis test", "aliases": ["syphilis serology", "RPR", "VDRL", "STD panel"], "result": "Negative."},
+      {"id": "x009", "kind": "test", "name": "HIV test", "aliases": ["HIV screening", "STD panel"], "result": "Negative."},
+      {"id": "x010", "kind": "test", "name": "viral hepatitis serology", "aliases": ["hepatitis panel", "HBV", "hepatitis B", "HCV", "hepatitis C", "STD panel"], "result": "HBV negative; HCV negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-056",
+    "diagnosis": "Bowen's disease",
+    "aliases": ["Bowen disease", "cutaneous squamous cell carcinoma in situ", "squamous cell carcinoma in situ of the skin", "intraepidermal squamous cell carcinoma", "intraepidermal carcinoma"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-056",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-056-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-056-p001", "agentclinic-medqa-ext-056-p006"],
+      "f003": ["cc", "agentclinic-medqa-ext-056-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-056-p001"],
+      "f005": ["agentclinic-medqa-ext-056-p002"],
+      "f006": ["agentclinic-medqa-ext-056-p006"],
+      "f007": ["agentclinic-medqa-ext-056-p006"],
+      "f008": ["agentclinic-medqa-ext-056-p006"],
+      "f009": ["agentclinic-medqa-ext-056-p006"],
+      "f010": ["agentclinic-medqa-ext-056-p001", "agentclinic-medqa-ext-056-p003", "agentclinic-medqa-ext-056-p004"],
+      "f011": ["agentclinic-medqa-ext-056-p001", "agentclinic-medqa-ext-056-p003", "agentclinic-medqa-ext-056-p004"],
+      "f012": ["agentclinic-medqa-ext-056-p004"],
+      "f013": ["agentclinic-medqa-ext-056-p004"],
+      "f014": ["agentclinic-medqa-ext-056-p001", "agentclinic-medqa-ext-056-p005"],
+      "f015": ["agentclinic-medqa-ext-056-p005"],
+      "f016": ["agentclinic-medqa-ext-056-p001", "agentclinic-medqa-ext-056-p005"]
+    },
+    "quotes": {
+      "f002": "on the shaft of his penis and a similar lesion on his left middle finger / No other similar lesions elsewhere on the body",
+      "f003": "red, crusty",
+      "f004": "Non-healing",
+      "f005": "Lesions are painless",
+      "f010": "Previous treatments in his home country for syphilis and eczema have been unsuccessful",
+      "f011": "Previous treatments in his home country for syphilis and eczema have been unsuccessful",
+      "f012": "No known malignancies",
+      "f013": "or hereditary diseases in the family",
+      "f014": "two packs per day for the last 30 years",
+      "f015": "Lives with his 4th wife",
+      "f016": "recently immigrated to the US from Africa"
+    },
+    "flags": {
+      "f010": ["The source does not say whether syphilis or eczema was confirmed, or whether these treatments were aimed at the current sores; the facts state only that he was treated and that the treatment failed."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-056-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-056-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-056-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-056-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Dermatological_Examination.Inspection + Physical_Examination_Findings.Dermatological_Examination.Palpation", "source_text": "An erythematous plaque with areas of crusting, oozing, and irregular borders observed on the dorsal surface of the penile shaft and on the left middle finger. | Lesions are firm to touch, non-tender, with no warmth.", "exam_ids": ["agentclinic-medqa-ext-056-e005", "agentclinic-medqa-ext-056-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Dermatological_Examination.Regional_Lymph_Nodes", "source_text": "No palpable cervical, axillary, or inguinal lymphadenopathy.", "exam_ids": ["agentclinic-medqa-ext-056-e007"]},
+      "x007": {"source": "Test_Results.Biopsy.Findings", "source_text": "Cells with nuclear hyperchromasia, multinucleation, and increased mitotic figures within the follicle-bearing epithelium.", "exam_ids": ["agentclinic-medqa-ext-056-i001"]},
+      "x008": {"source": "Test_Results.STD_Panel.Syphilis", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-056-i002"]},
+      "x009": {"source": "Test_Results.STD_Panel.HIV", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-056-i003"]},
+      "x010": {"source": "Test_Results.STD_Panel.HBV + Test_Results.STD_Panel.HCV", "source_text": "Negative | Negative", "exam_ids": ["agentclinic-medqa-ext-056-i004", "agentclinic-medqa-ext-056-i005"]}
+    },
+    "finding_flags": {
+      "x007": ["The biopsy site is not stated; the result does not say the atypia is full-thickness or confined to the epidermis."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The biopsy does not say which lesion was sampled.",
+      "HBV and HCV results do not name the assay (e.g., HBsAg, anti-HCV).",
+      "No duration of the lesions is given."
+    ],
+    "notes": [
+      "The two lesions share their description (red, crusty, non-healing, painless), so they are one 'skin sores' fact with location, appearance, course and pain children. The ROS statement 'No other similar lesions elsewhere on the body' makes the location list complete (f002).",
+      "The STD panel is split per CONVERSION.md: syphilis and HIV as single tests, HBV and HCV grouped as viral hepatitis serology; all carry the alias 'STD panel'.",
+      "Prior syphilis and eczema treatments appear in History, p003 and PMH; one fact each (f010, f011).",
+      "'No known malignancies or hereditary diseases in the family' gives two family-history denials, keeping the 'known' hedge."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the dermatological condition presented by the patient, focusing on lesions with potential oncologic implications."
+    }
+  }
+}

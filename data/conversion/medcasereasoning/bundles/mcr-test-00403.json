@@ -1,0 +1,136 @@
+{
+  "patient": {
+    "case_id": "mcr-test-00403",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 55, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain", "tummy ache"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "abdominal pain: location", "parent": "f001", "attribute": "location", "text": "It's all over my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f003", "item": "abdominal pain: radiation", "parent": "f001", "attribute": "radiation", "value": ["flanks"], "text": "It spreads to my sides (my flanks).", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "I feel nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "how long the belly pain and nausea have lasted", "text": "The belly pain and the nausea started 6 days ago.", "value": "6 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "constipation", "aliases": ["hard stools", "not moving my bowels"], "text": "I've been constipated for a long time.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "fever", "aliases": ["high temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f009", "item": "discomfort in the legs", "aliases": ["leg pain", "leg discomfort", "lower-limb discomfort"], "text": "I've had some discomfort in my legs.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f010", "item": "NSAID painkillers", "aliases": ["NSAIDs", "anti-inflammatories", "painkillers", "anti-inflammatory drugs"], "text": "For the past week I've been taking anti-inflammatory painkillers (NSAIDs) for the discomfort in my legs.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "pneumonia", "aliases": ["chest infection", "lung infection", "recent infection"], "text": "I was recently treated for pneumonia.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "shortness of breath on exertion", "aliases": ["breathlessness", "short of breath", "exertional dyspnea"], "text": "I get short of breath when I exert myself.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f013", "item": "shortness of breath on exertion: course", "parent": "f012", "attribute": "course", "text": "It has been gradually getting worse over the past year.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f014", "item": "shortness of breath on exertion: limits my activities", "parent": "f012", "attribute": "severity", "text": "It doesn't stop me from doing my usual activities.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f015", "item": "heart murmur", "aliases": ["murmur", "heart problem", "heart valve problem"], "text": "Eleven years ago I was told I have a heart murmur; it wasn't causing me any symptoms.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f016", "item": "appendectomy", "aliases": ["appendix removed"], "text": "I've had my appendix taken out.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f017", "item": "hysterectomy", "aliases": ["womb removed", "uterus removed"], "text": "I've had a hysterectomy.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f018", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I've smoked a lot over the years: about 90 pack-years.", "value": "90 pack-years", "polarity": "present", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-00403",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Hemodynamically stable."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Hemodynamically stable."},
+      {"id": "x004", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["skin colour", "pallor", "general inspection"], "result": "Pale."},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "extremity examination", "aliases": ["legs", "peripheral edema", "ankle swelling"], "result": "No peripheral edema."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["lungs", "chest examination", "breath sounds"], "result": "Clear."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "cardiac examination", "aliases": ["heart examination", "heart sounds", "murmur"], "result": "Systolic ejection murmur, best heard in the aortic area."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "bowel sounds"], "result": "Flat, mildly tender abdomen; normal bowel sounds; no peritoneal signs."},
+      {"id": "x009", "kind": "test", "name": "metabolic panel", "aliases": ["kidney function", "renal function", "creatinine", "urea", "BUN", "electrolytes", "potassium"], "result": "Creatinine 7.6 mg/dL (reference 0.4–1.3); urea 191 mg/dL (reference 10–50); potassium 5.6 mEq/L; other electrolytes normal."},
+      {"id": "x010", "kind": "test", "name": "blood pH", "aliases": ["blood gas", "acid-base status", "arterial blood gas", "venous blood gas"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "hematocrit", "blood count"], "result": "Hemoglobin 8 g/dL; hematocrit 27%."},
+      {"id": "x012", "kind": "test", "name": "iron studies", "aliases": ["iron profile", "ferritin", "serum iron", "transferrin saturation"], "result": "Iron profile consistent with iron-deficiency anemia."},
+      {"id": "x013", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "urine dipstick", "urine microscopy", "blood in urine"], "result": "Hematuria."},
+      {"id": "x014", "kind": "test", "name": "24-hour urine protein", "aliases": ["urine protein", "proteinuria", "24-hour urine collection"], "result": "689 mg per 24 hours."},
+      {"id": "x015", "kind": "test", "name": "renal ultrasound", "aliases": ["kidney ultrasound", "ultrasound of the kidneys"], "result": "Normal kidney size with parenchymal thickening."},
+      {"id": "x016", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "cardiac ultrasound"], "result": "Left atrial enlargement (47 mm); left ventricular ejection fraction 62%; septal thickness 17 mm; posterior wall thickness 14 mm; inferolateral hypokinesia; calcified aortic valve with severe stenosis (peak gradient 92 mmHg)."},
+      {"id": "x017", "kind": "test", "name": "renal biopsy", "aliases": ["kidney biopsy"], "result": "Crescentic glomerulonephritis with medullary lymphomonocytic infiltration; of five glomeruli, four were sclerotic.", "time": "later in the workup"},
+      {"id": "x018", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibody", "anti-double-stranded DNA", "anti-dsDNA", "lupus tests"], "result": "ANA negative; anti-double-stranded DNA negative."},
+      {"id": "x019", "kind": "test", "name": "complement levels", "aliases": ["complement", "C3", "C4"], "result": "Normal."},
+      {"id": "x020", "kind": "test", "name": "viral serology", "aliases": ["HIV test", "hepatitis B serology", "hepatitis C serology", "viral hepatitis serology"], "result": "HIV negative; hepatitis B negative; hepatitis C negative."},
+      {"id": "x021", "kind": "test", "name": "ANCA testing", "aliases": ["ANCA", "antineutrophil cytoplasmic antibodies", "p-ANCA", "MPO antibody", "myeloperoxidase antibody", "anti-MPO"], "result": "p-ANCA positive at >1/80 (normal: nonreactive); myeloperoxidase antibody 120 U (normal <20)."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-00403",
+    "diagnosis": "Microscopic polyangiitis",
+    "aliases": ["MPA", "microscopic polyarteritis", "MPO-ANCA-positive microscopic polyangiitis", "microscopic polyangiitis with crescentic glomerulonephritis"],
+    "reasoning": "1. NSAID-induced acute interstitial nephritis — “initially considered as NSAID-induced acute interstitial nephritis ... but no improvement of renal function was observed.” 2. Severe aortic stenosis–related hemodynamic impairment — “Although it is a serious condition, we consider the AS to be a bystander lesion in the final event of this patient.” 3. Systemic lupus erythematosus — “Anti-nuclear antibody (ANA) ... and anti-DNA, were negative; complement determination was normal.” 4. Viral infections (HIV, hepatitis B, and C) — “Serologies for HIV, hepatitis B, and hepatitis C were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-00403",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s001"],
+      "f006": ["s001"],
+      "f007": ["s002"],
+      "f008": ["s002"],
+      "f009": ["s003"],
+      "f010": ["s003"],
+      "f011": ["s004"],
+      "f012": ["s004"],
+      "f013": ["s004"],
+      "f014": ["s004"],
+      "f015": ["s004"],
+      "f016": ["s004"],
+      "f017": ["s004"],
+      "f018": ["s004"]
+    },
+    "quotes": {
+      "f002": "diffuse abdominal pain",
+      "f003": "radiating to the flanks",
+      "f005": "a 6-day history of diffuse abdominal pain radiating to the flanks, nausea",
+      "f006": "chronic constipation",
+      "f010": "She had used NSAIDs for the past week for lower-limb discomfort",
+      "f011": "recent treatment for pneumonia",
+      "f013": "progressive exertional dyspnea over 1 year",
+      "f014": "without functional limitation",
+      "f015": "an asymptomatic cardiac murmur diagnosed 11 years earlier",
+      "f018": "a 90 pack-year smoking history"
+    },
+    "flags": {
+      "f005": ["The 6-day history in s001 is applied to the pain and nausea, not to the constipation, which the source calls chronic."],
+      "f014": ["'without functional limitation' written as a child of the exertional breathlessness (activity limitation absent)."],
+      "f018": ["The source does not say whether she still smokes; no time given."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "she was afebrile"},
+      "x002": {"sentences": ["s005"], "source_text": "hemodynamically stable"},
+      "x003": {"sentences": ["s005"], "source_text": "hemodynamically stable"},
+      "x004": {"sentences": ["s005"], "source_text": "pale"},
+      "x005": {"sentences": ["s005"], "source_text": "without peripheral edema"},
+      "x006": {"sentences": ["s006"], "source_text": "Lung auscultation was clear."},
+      "x007": {"sentences": ["s007"], "source_text": "Cardiac exam revealed a systolic ejection murmur best heard in the aortic area."},
+      "x008": {"sentences": ["s008"], "source_text": "Abdominal examination showed a flat but mildly tender abdomen with normal bowel sounds and no peritoneal signs."},
+      "x009": {"sentences": ["s009", "s010"], "source_text": "creatinine 7.6 mg/dL (0.4–1.3), urea 191 mg/dL (10–50) / Potassium was 5.6 mEq/L; other electrolytes and pH were normal."},
+      "x010": {"sentences": ["s010"], "source_text": "other electrolytes and pH were normal"},
+      "x011": {"sentences": ["s009"], "source_text": "hemoglobin 8 g/dL, hematocrit 27%"},
+      "x012": {"sentences": ["s009"], "source_text": "an iron profile consistent with iron-deficiency anemia"},
+      "x013": {"sentences": ["s010"], "source_text": "Urinalysis revealed hematuria"},
+      "x014": {"sentences": ["s010"], "source_text": "24-hour proteinuria of 689 mg"},
+      "x015": {"sentences": ["s011"], "source_text": "Renal ultrasound demonstrated normal kidney size with parenchymal thickening."},
+      "x016": {"sentences": ["s012"], "source_text": "Echocardiography showed left atrial enlargement (47 mm), left ventricular ejection fraction 62%, septal thickness 17 mm, posterior wall thickness 14 mm, inferolateral hypokinesia, and a calcified aortic valve with severe stenosis (peak gradient 92 mmHg)."},
+      "x017": {"sentences": ["s014"], "source_text": "A renal biopsy showed crescentic glomerulonephritis with medullary lymphomonocytic infiltration; of five glomeruli, four were sclerotic."},
+      "x018": {"sentences": ["s015"], "source_text": "ANA and anti–double-stranded DNA were negative"},
+      "x019": {"sentences": ["s015"], "source_text": "complement levels were normal"},
+      "x020": {"sentences": ["s015"], "source_text": "Serologies for HIV, hepatitis B, and hepatitis C were negative."},
+      "x021": {"sentences": ["s015"], "source_text": "p-ANCA was positive at > 1 / 80 (nonreactive normal), and myeloperoxidase antibody was 120 U (normal < 20)."}
+    },
+    "finding_flags": {
+      "x002": ["Only 'hemodynamically stable' is given; no blood pressure value."],
+      "x003": ["Only 'hemodynamically stable' is given; no heart rate value."],
+      "x017": ["The biopsy is reported after the failed steroid course and hemodialysis (s013); its exact timing is not given."],
+      "x018": ["Timing of the serologies (s015) is not stated."]
+    },
+    "leakage": [],
+    "source_issues": ["Chronic constipation is listed inside the 6-day history of s001."],
+    "notes": ["Index visit: the outpatient presentation with 6 days of diffuse abdominal pain radiating to the flanks and nausea (s001-s012); the renal biopsy and serologies (s014-s015) are later results of the same workup.", "Pallor, murmur and edema status are examination findings only; the earlier murmur diagnosis the patient was told about is a medical_history fact (f015).", "s013 is excluded as a whole (presumed diagnosis, prednisone treatment, non-response and hemodialysis).", "Fixes: f016 alias 'previous surgery' removed; f017 alias 'previous surgery' removed; f016 alias 'operations' removed; f017 alias 'operations' removed."],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s013", "reason": "Treatment for a presumed diagnosis (NSAID-induced acute interstitial nephritis), non-response and hemodialysis: clinician reasoning and hospital course after the index visit."}
+    ]
+  }
+}

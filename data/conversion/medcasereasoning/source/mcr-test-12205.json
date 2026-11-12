@@ -1,0 +1,72 @@
+{
+ "case_id": "mcr-test-12205",
+ "pmcid": "PMC4647021",
+ "test_row": 753,
+ "test_index": 12205,
+ "case_prompt": "A 47-year-old woman reported acute left elbow pain after leaning back onto a hard object with her hand while sitting on the ground, applying axial pressure to a hyperextended elbow. She experienced severe pain along the posterior aspect of the elbow and subsequently a sensation of “catching” during flexion and extension. One year after the injury, she was referred for persistent symptoms.\n\nOn examination, left elbow extension was limited to 5°, compared with 10° on the right. Full extension of the left elbow elicited posterior tenderness and palpable crepitus. There was no instability of the ulnar collateral ligament or the lateral ulnar collateral ligament.\n\nMagnetic resonance imaging of the left elbow revealed a hypertrophied posterior fat pad interposed between the olecranon and the olecranon fossa. MRI of the contralateral elbow showed a similarly hypertrophied posterior fat pad, although it was positioned less inferiorly. These findings were interpreted as consistent with posterior impingement caused by a hypertrophied posterior fat pad.\n\nConservative treatment with an anti-inflammatory agent provided no benefit. An intraarticular injection of procaine hydrochloride with dexamethasone yielded 30% pain relief for a few days, after which the pain on full extension returned. Surgical intervention was then considered.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 47-year-old woman reported acute left elbow pain after leaning back onto a hard object with her hand while sitting on the ground, applying axial pressure to a hyperextended elbow."
+  },
+  {
+   "id": "s002",
+   "text": "She experienced severe pain along the posterior aspect of the elbow and subsequently a sensation of “catching” during flexion and extension."
+  },
+  {
+   "id": "s003",
+   "text": "One year after the injury, she was referred for persistent symptoms."
+  },
+  {
+   "id": "s004",
+   "text": "On examination, left elbow extension was limited to 5°, compared with 10° on the right."
+  },
+  {
+   "id": "s005",
+   "text": "Full extension of the left elbow elicited posterior tenderness and palpable crepitus."
+  },
+  {
+   "id": "s006",
+   "text": "There was no instability of the ulnar collateral ligament or the lateral ulnar collateral ligament."
+  },
+  {
+   "id": "s007",
+   "text": "Magnetic resonance imaging of the left elbow revealed a hypertrophied posterior fat pad interposed between the olecranon and the olecranon fossa."
+  },
+  {
+   "id": "s008",
+   "text": "MRI of the contralateral elbow showed a similarly hypertrophied posterior fat pad, although it was positioned less inferiorly."
+  },
+  {
+   "id": "s009",
+   "text": "These findings were interpreted as consistent with posterior impingement caused by a hypertrophied posterior fat pad."
+  },
+  {
+   "id": "s010",
+   "text": "Conservative treatment with an anti-inflammatory agent provided no benefit."
+  },
+  {
+   "id": "s011",
+   "text": "An intraarticular injection of procaine hydrochloride with dexamethasone yielded 30% pain relief for a few days, after which the pain on full extension returned."
+  },
+  {
+   "id": "s012",
+   "text": "Surgical intervention was then considered."
+  }
+ ],
+ "final_diagnosis": "posterior elbow impingement",
+ "diagnostic_reasoning": "1. Ligamentous instability (ulnar or lateral ulnar collateral) was considered as a mechanism for posterior impingement — “our patient showed no instability of these ligaments.” 2. Hypertrophied posterior fat pad impingement was supported by imaging findings — “This constellation of clinical symptoms and imaging findings was compatible with posterior impingement caused by a hypertrophied posterior fat pad.”",
+ "selection": {
+  "age": 47,
+  "sex": "female",
+  "specialty": "surgery_trauma",
+  "dx_key": "posterior elbow impingement",
+  "setting": "referral",
+  "time_structure": "single_episode",
+  "leakage": "test_result",
+  "narrative_conclusion": true,
+  "interview_value": "medium",
+  "screen_reason": "Hyperextension injury with posterior pain, catching and limited extension, and MRI showing a hypertrophied fat pad between the olecranon and its fossa.",
+  "second_look_note": "Hyperextension injury mechanism and catching frame the problem and MRI decides; the sentence interpreting the MRI as posterior impingement must be dropped."
+ }
+}

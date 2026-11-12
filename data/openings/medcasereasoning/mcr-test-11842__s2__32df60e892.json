@@ -1,0 +1,49 @@
+{
+ "case_id": "mcr-test-11842",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've been feeling sick to my stomach.",
+   "My speech has become slurred.",
+   "I've been unsteady on my feet when I walk.",
+   "All of this started 10 days ago.",
+   "It's so bad that I can't stand up without help."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been feeling sick to my stomach, and my speech has become slurred. I've also been unsteady on my feet when I walk; it's so bad that I can't stand up without help. All of this started 10 days ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f004",
+    "f006",
+    "f005"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3344,
+   "tokens_out": 65,
+   "seconds": 7.4,
+   "redrafts": 0
+  }
+ }
+}

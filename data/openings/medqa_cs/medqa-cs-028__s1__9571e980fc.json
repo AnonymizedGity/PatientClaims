@@ -1,0 +1,55 @@
+{
+ "case_id": "medqa-cs-028",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I'm here to check on my blood pressure, because I've been diagnosed with hypertension.",
+   "I discovered I had high blood pressure last year.",
+   "I've started to have problems with my sexual performance.",
+   "My sex drive has diminished, Doc. I'm not as interested in sex as I used to be.",
+   "I've been losing more hair than usual from my head.",
+   "I was prescribed hydrochlorothiazide for my blood pressure.",
+   "Six months ago, propranolol was added for my blood pressure.",
+   "My father died of a heart attack at the age of 50."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here to check on my blood pressure, because I've been diagnosed with hypertension. I discovered I had high blood pressure last year, and I was prescribed hydrochlorothiazide for it. Six months ago, propranolol was added for my blood pressure. I've started to have problems with my sexual performance, and my sex drive has diminished, Doc. I'm not as interested in sex as I used to be. I've also been losing more hair than usual from my head. My father died of a heart attack at the age of 50.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f007",
+    "f014",
+    "f015",
+    "f034",
+    "f035",
+    "f039"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4580,
+   "tokens_out": 127,
+   "seconds": 16.56,
+   "redrafts": 0
+  }
+ }
+}

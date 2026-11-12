@@ -1,0 +1,313 @@
+{
+  "case_id": "medqa-cs-031",
+  "source_case_id": 31,
+  "opening_scenario": "Jessica Anderson, a 21-year-old female, comes to the ED complaining of abdominal pain.",
+  "doorway_vital_signs": [
+    "BP: 120/80 mm Hg",
+    "Temp: 100.5°F (38.1°C)",
+    "RR: 20/minute",
+    "HR: 88/minute, regular"
+  ],
+  "sp_notes": [
+    "Exhibit right lower abdominal tenderness on palpation.",
+    "Show rebound tenderness (pain when the examinee removes their palpating hand).",
+    "Demonstrate guarding (contraction of the abdominal muscles when palpating the RLQ).",
+    "Experience pain in the RLQ when the examinee presses on the RLQ (Rovsing sign).",
+    "Manifest pain when the examinee extends their right hip (psoas sign)."
+  ],
+  "challenging_questions": [
+    "\"My child is home alone. I need to go now.\"",
+    "\"I can't bear the hospital costs. Please provide a prescription for antibiotics so I can discharge myself.\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "What is the reason for your visit today?",
+    "answer": "I have stomach pain."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-031-p001",
+      "topic": "Onset",
+      "question": "When did it begin?",
+      "answer": "It began this morning."
+    },
+    {
+      "fact_id": "medqa-cs-031-p002",
+      "topic": "Frequency",
+      "question": "Is the pain constant or does it fluctuate?",
+      "answer": "Intense, constant pain."
+    },
+    {
+      "fact_id": "medqa-cs-031-p003",
+      "topic": "Progression",
+      "question": "Has it gotten better or worse since this morning?",
+      "answer": "It is getting worse."
+    },
+    {
+      "fact_id": "medqa-cs-031-p004",
+      "topic": "Severity",
+      "question": "On a scale of 0 to 10, with 10 being the worst pain imaginable, how would you rate your pain?",
+      "answer": "7/10."
+    },
+    {
+      "fact_id": "medqa-cs-031-p005",
+      "topic": "Location",
+      "question": "Where exactly is the pain?",
+      "answer": "It is here (points to the right lower abdomen)."
+    },
+    {
+      "fact_id": "medqa-cs-031-p006",
+      "topic": "Radiation",
+      "question": "Does it go anywhere?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p007",
+      "topic": "Quality",
+      "question": "What kind of pain is it? Sharp, dull, or cramping?",
+      "answer": "Cramping."
+    },
+    {
+      "fact_id": "medqa-cs-031-p008",
+      "topic": "Alleviating Factors",
+      "question": "Does anything make the pain better?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p009",
+      "topic": "Exacerbating Factors",
+      "question": "Does anything make the pain worse?",
+      "answer": "Movement."
+    },
+    {
+      "fact_id": "medqa-cs-031-p010",
+      "topic": "Pain with ride to hospital",
+      "question": "Did you experience pain on your way here?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-031-p011",
+      "topic": "Precipitating Events",
+      "question": "Were you doing anything specific that may have caused the pain?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p012",
+      "topic": "Fever/Chills",
+      "question": "Have you experienced any fever or chills?",
+      "answer": "I've felt slightly warm since this morning, but I haven't had any chills."
+    },
+    {
+      "fact_id": "medqa-cs-031-p013",
+      "topic": "Nausea/Vomiting",
+      "question": "Nausea, Vomiting?",
+      "answer": "I am experiencing nausea and I vomited once two hours ago."
+    },
+    {
+      "fact_id": "medqa-cs-031-p014",
+      "topic": "Description of Vomitus",
+      "question": "How would you describe the vomit?",
+      "answer": "It was a yellowish, sour liquid."
+    },
+    {
+      "fact_id": "medqa-cs-031-p015",
+      "topic": "Blood in Vomitus",
+      "question": "Is there any blood present in the vomit?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p016",
+      "topic": "Diarrhea/Constipation",
+      "question": "Any changes in your bowel habits?",
+      "answer": "Diarrhea this morning."
+    },
+    {
+      "fact_id": "medqa-cs-031-p017",
+      "topic": "Description of Stool",
+      "question": "What color was the stool?",
+      "answer": "Brown."
+    },
+    {
+      "fact_id": "medqa-cs-031-p018",
+      "topic": "Blood in Stool",
+      "question": "Any blood in the stool?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p019",
+      "topic": "Urinary Frequency/Burning",
+      "question": "Any changes in your urinary habits?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p020",
+      "topic": "Last Menstrual Period",
+      "question": "When was your last menstrual period?",
+      "answer": "Five weeks ago."
+    },
+    {
+      "fact_id": "medqa-cs-031-p021",
+      "topic": "Vaginal Spotting",
+      "question": "Any spotting since then?",
+      "answer": "Yes, today is the first day of my menstrual period."
+    },
+    {
+      "fact_id": "medqa-cs-031-p022",
+      "topic": "Color of the Spotting",
+      "question": "What color is the spotting?",
+      "answer": "Brownish."
+    },
+    {
+      "fact_id": "medqa-cs-031-p023",
+      "topic": "Vaginal Discharge",
+      "question": "Any other vaginal discharge?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p024",
+      "topic": "Frequency of Menstrual Periods",
+      "question": "How often do you typically get your period?",
+      "answer": "Every 4 weeks; lasts for 7 days."
+    },
+    {
+      "fact_id": "medqa-cs-031-p025",
+      "topic": "Started Menses",
+      "question": "At what age did you first get your period?",
+      "answer": "Age 13."
+    },
+    {
+      "fact_id": "medqa-cs-031-p026",
+      "topic": "Pads/Tampons Changed This Day",
+      "question": "How many pads/tampons did you change today?",
+      "answer": "One, but usually two to three a day."
+    },
+    {
+      "fact_id": "medqa-cs-031-p027",
+      "topic": "Pregnancies",
+      "question": "Have you been pregnant at any point?",
+      "answer": "Yes, I gave birth 3 years ago."
+    },
+    {
+      "fact_id": "medqa-cs-031-p028",
+      "topic": "Problems During Pregnancy/Delivery",
+      "question": "Have you experienced any complications in your pregnancy or during childbirth?",
+      "answer": "No, the delivery went smoothly, and my baby is in good health."
+    },
+    {
+      "fact_id": "medqa-cs-031-p029",
+      "topic": "Miscarriages/Abortions",
+      "question": "Have you experienced any miscarriages or abortions?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p030",
+      "topic": "Current Medications",
+      "question": "Are you taking any medications now?",
+      "answer": "Ibuprofen."
+    },
+    {
+      "fact_id": "medqa-cs-031-p031",
+      "topic": "Sexual Activity",
+      "question": "Are you engaged in sexual activity?",
+      "answer": "Yes."
+    },
+    {
+      "fact_id": "medqa-cs-031-p032",
+      "topic": "Contraceptives",
+      "question": "Are you using any contraceptives?",
+      "answer": "Oral contraceptive pills. My boyfriend refuses to use condoms."
+    },
+    {
+      "fact_id": "medqa-cs-031-p033",
+      "topic": "Sexual Partners",
+      "question": "How many sexual partners do you have?",
+      "answer": "Only my boyfriend; we've been together for six months. I had three partners over the past year."
+    },
+    {
+      "fact_id": "medqa-cs-031-p034",
+      "topic": "History of STDs",
+      "question": "Any history of sexually transmitted diseases?",
+      "answer": "Yes, I had some kind of infection 6 months ago, but I can't remember the name of it. The doctor gave me a shot and some pills for 1 week, and then it was over."
+    },
+    {
+      "fact_id": "medqa-cs-031-p035",
+      "topic": "Treatment of the Partner",
+      "question": "Was your partner treated as well?",
+      "answer": "He refused the treatment."
+    },
+    {
+      "fact_id": "medqa-cs-031-p036",
+      "topic": "HIV Test",
+      "question": "Have you been tested for HIV?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p037",
+      "topic": "Past Medical History",
+      "question": "Any other medical issues in the past that you can think of?",
+      "answer": "None except for what I've mentioned."
+    },
+    {
+      "fact_id": "medqa-cs-031-p038",
+      "topic": "Past Surgical History",
+      "question": "Any surgeries in the past?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p039",
+      "topic": "Occupation",
+      "question": "What do you do for a living?",
+      "answer": "Waitress."
+    },
+    {
+      "fact_id": "medqa-cs-031-p040",
+      "topic": "Alcohol Use",
+      "question": "How often do you consume alcohol?",
+      "answer": "I have two to three beers weekly."
+    },
+    {
+      "fact_id": "medqa-cs-031-p041",
+      "topic": "Illicit Drug Use",
+      "question": "Have you used any recreational drugs?",
+      "answer": "No."
+    },
+    {
+      "fact_id": "medqa-cs-031-p042",
+      "topic": "Tobacco",
+      "question": "Any tobacco products?",
+      "answer": "Cigarettes, one pack a day for the past 6 years."
+    },
+    {
+      "fact_id": "medqa-cs-031-p043",
+      "topic": "Drug Allergies",
+      "question": "Are you allergic to any medications?",
+      "answer": "No."
+    }
+  ],
+  "patient_note_history": "History:\nHPI: A 21-year-old G1P1 female complains of right lower abdominal pain that started this morning. The pain is severe, crampy, nonradiating, and constant. It is exacerbated by movement and accompanied by fever, nausea, vomiting, and loose stools. The patient noticed some brownish spotting this morning. No urinary symptoms; no abnormal vaginal discharge.\nOB/GYN: LMP 5 weeks ago. Regular periods every 4 weeks lasting 7 days. Menarche at age 13. Uncomplicated NSVD at full term 3 years ago.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Ibuprofen.\nPMH: STD 6 months ago, possibly treated with ceftriaxone and doxycycline. (\"Dr. gave a shot and some pills for a week.\")\nPSH: No.\nSH: 1 pack per day for 6 years, 2-3 beers/week, no illicit drugs. Unprotected sex with multiple partners over the past year.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-031-e001",
+      "source_text": "The patient is in pain."
+    },
+    {
+      "exam_id": "medqa-cs-031-e002",
+      "source_text": "VS: WNL except for temperature of 100.5°F."
+    },
+    {
+      "exam_id": "medqa-cs-031-e003",
+      "source_text": "Chest: No tenderness, clear breath sounds bilaterally."
+    },
+    {
+      "exam_id": "medqa-cs-031-e004",
+      "source_text": "Heart: Regular rate and rhythm (RRR), 51152 WNL; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-031-e005",
+      "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Appendicitis \n\nHistory Finding(s): \n- Right lower abdominal pain\n- Pain is exacerbated by movement \n- Nausea and vomiting \n\nPhysical Exam Finding(s): \n- RLQ direct and rebound tenderness \n- RLQ guarding \n- Temperature 100.5°F \n- Positive Rovsing sign \n- Positive psoas sign\n\nDiagnosis #2: Pelvic inflammatory disease \n\nHistory Finding(s): \n- STD 6 months ago with untreated partner \n- RLQ tenderness \n- Nausea and vomiting \n- Spotting \n- Unprotected sex with multiple partners \n- Low-grade fever \n\nPhysical Exam Finding(s): \n- RLQ rebound tenderness \n- RLQ guarding \n- Temperature 100.5°F \n\nDiagnosis #3: Ruptured ectopic pregnancy \n\nHistory Finding(s): \n- Last menstrual period 5 weeks ago and spotting \n- Crampy lower abdominal pain \n- Pain is exacerbated by movement \n- Nausea and vomiting \n- Pain is of recent onset \n\nPhysical Exam Finding(s): \n- RLQ rebound tenderness \n- RLQ guarding",
+  "gold_additional_diagnosis": "• Ruptured ovarian cyst: The patient's sudden onset, unilateral lower abdominal pain, rebound tenderness, and guarding are consistent with this diagnosis. Rupture may occur at any time during the menstrual cycle, and symptoms may resemble a ruptured ectopic pregnancy as described above. However, this diagnosis is less common than appendicitis and PID. In addition, given the patient's history of having her last menstrual period 5 weeks ago, ruptured ectopic pregnancy must be placed higher on the differential, as a ruptured ovarian cyst would not be associated with a late menstrual period.\n\n• Adnexal torsion: This presentation may be due to adnexal torsion, an uncommon complication that is most often associated with ovarian enlargement due to a benign mass.\n\n• Gastroenteritis: Viral gastroenteritis presents with crampy abdominal pain, nausea and vomiting, low-grade fever, and diarrhea. It can be difficult to distinguish from appendicitis and gynecologic etiologies but is less likely in this case given the presence of rebound tenderness.\n\n• Abortion: The fact that the patient's last menstrual period was only 5 weeks ago makes this diagnosis less likely, but the crampy abdominal pain and vaginal spotting may signal an abortion. Furthermore, the presence of fever suggests possible septic abortion.\n\n• Endometriosis: This is an unlikely diagnosis, in part because the patient has no history of chronic pelvic pain, dysmenorrhea, dyspareunia, or infertility, which are often associated. In the setting of established endometriosis, this presentation in a patient with acute, severe pain, including rebound tenderness, could be due to rupture of an endometrioma (\"chocolate cyst\").",
+  "raw_opening": "Opening Scenario:\n\nJessica Anderson, a 21-year-old female, comes to the ED complaining of abdominal pain.\n\nVital Signs:\n\nBP: 120/80 mm Hg\nTemp: 100.5°F (38.1°C)\nRR: 20/minute\nHR: 88/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nPatient is a 21-year-old female, single with one child.\n\nNotes for the SP:\n\n- Exhibit right lower abdominal tenderness on palpation.\n- Show rebound tenderness (pain when the examinee removes their palpating hand).\n- Demonstrate guarding (contraction of the abdominal muscles when palpating the RLQ).\n- Experience pain in the RLQ when the examinee presses on the RLQ (Rovsing sign).\n- Manifest pain when the examinee extends their right hip (psoas sign).\n\nChallenging Questions to Ask:\n\n- \"My child is home alone. I need to go now.\"\n- \"I can't bear the hospital costs. Please provide a prescription for antibiotics so I can discharge myself.\"\n\nExaminee Response:\n\n\"Ms. Anderson, I understand your concern for your child's safety. It is essential to ensure that your condition does not pose a threat to life.. Our social worker would be happy to work with you to ensure that your child is taken care of, as well as to address any financial concerns you may have.\"\n\nExaminee Checklist:\n\nEntrance:\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified his/her role or position.\n\nReflective Listening:\n- The examinee asked an open-ended question and actively listened to the response.\n- The examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- The examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n- Examinee elicited data efficiently and accurately.\n\nConnecting With the Patient:\n- Examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\n\"Chief Complaint\": \nDoctor: \"What is the reason for your visit today?\" \nPatient: \"I have stomach pain.\"\n\n\"Onset\":\nDoctor: \"When did it begin?\"\nPatient: \"It began this morning.\"\n\n\"Frequency\":\nDoctor: \"Is the pain constant or does it fluctuate?\"\nPatient: \"Intense, constant pain.\"\n\n\"Progression\":\nDoctor: \"Has it gotten better or worse since this morning?\"\nPatient: \"It is getting worse.\"\n\n\"Severity\":\nDoctor: \"On a scale of 0 to 10, with 10 being the worst pain imaginable, how would you rate your pain?\"\nPatient: \"7/10.\"\n\n\"Location\":\nDoctor: \"Where exactly is the pain?\"\nPatient: \"It is here (points to the right lower abdomen).\"\n\n\"Radiation\":\nDoctor: \"Does it go anywhere?\"\nPatient: \"No.\"\n\n\"Quality\":\nDoctor: \"What kind of pain is it? Sharp, dull, or cramping?\"\nPatient: \"Cramping.\"\n\n\"Alleviating Factors\":\nDoctor: \"Does anything make the pain better?\"\nPatient: \"No.\"\n\n\"Exacerbating Factors\":\nDoctor: \"Does anything make the pain worse?\"\nPatient: \"Movement.\"\n\n\"Pain with ride to hospital\":\nDoctor: \"Did you experience pain on your way here?\"\nPatient: \"Yes.\"\n\n\"Precipitating Events\":\nDoctor: \"Were you doing anything specific that may have caused the pain?\"\nPatient: \"No.\"\n\n\"Fever/Chills\":\nDoctor: \"Have you experienced any fever or chills?\"\nPatient: \"I've felt slightly warm since this morning, but I haven't had any chills.\"\n\n\"Nausea/Vomiting\":\nDoctor: \"Nausea, Vomiting?\"\nPatient: \"I am experiencing nausea and I vomited once two hours ago.\"\n\n\"Description of Vomitus\":\nDoctor: \"How would you describe the vomit?\"\nPatient: \"It was a yellowish, sour liquid.\"\n\n\"Blood in Vomitus\":\nDoctor: \"Is there any blood present in the vomit?\"\nPatient: \"No.\"\n\n\"Diarrhea/Constipation\":\nDoctor: \"Any changes in your bowel habits?\"\nPatient: \"Diarrhea this morning.\"\n\n\"Description of Stool\":\nDoctor: \"What color was the stool?\"\nPatient: \"Brown.\"\n\n\"Blood in Stool\":\nDoctor: \"Any blood in the stool?\"\nPatient: \"No.\"\n\n\"Urinary Frequency/Burning\":\nDoctor: \"Any changes in your urinary habits?\"\nPatient: \"No.\"\n\n\"Last Menstrual Period\":\nDoctor: \"When was your last menstrual period?\"\nPatient: \"Five weeks ago.\"\n\n\"Vaginal Spotting\":\nDoctor: \"Any spotting since then?\"\nPatient: \"Yes, today is the first day of my menstrual period.\"\n\n\"Color of the Spotting\":\nDoctor: \"What color is the spotting?\"\nPatient: \"Brownish.\"\n\n\"Vaginal Discharge\":\nDoctor: \"Any other vaginal discharge?\"\nPatient: \"No.\"\n\n\"Frequency of Menstrual Periods\":\nDoctor: \"How often do you typically get your period?\"\nPatient: \"Every 4 weeks; lasts for 7 days.\"\n\n\"Started Menses\":\nDoctor: \"At what age did you first get your period?\"\nPatient: \"Age 13.\"\n\n\"Pads/Tampons Changed This Day\":\nDoctor: \"How many pads/tampons did you change today?\"\nPatient: \"One, but usually two to three a day.\"\n\n\"Pregnancies\":\nDoctor: \"Have you been pregnant at any point?\"\nPatient: \"Yes, I gave birth 3 years ago.\"\n\n\"Problems During Pregnancy/Delivery\":\nDoctor: \"Have you experienced any complications in your pregnancy or during childbirth?\"\nPatient: \"No, the delivery went smoothly, and my baby is in good health.\"\n\n\"Miscarriages/Abortions\":\nDoctor: \"Have you experienced any miscarriages or abortions?\"\nPatient: \"No.\"\n\n\"Current Medications\":\nDoctor: \"Are you taking any medications now?\"\nPatient: \"Ibuprofen.\"\n\n\"Sexual Activity\":\nDoctor: \"Are you engaged in sexual activity?\"\nPatient: \"Yes.\"\n\n\"Contraceptives\":\nDoctor: \"Are you using any contraceptives?\"\nPatient: \"Oral contraceptive pills. My boyfriend refuses to use condoms.\"\n\n\"Sexual Partners\":\nDoctor: \"How many sexual partners do you have?\"\nPatient: \"Only my boyfriend; we've been together for six months. I had three partners over the past year.\"\n\n\"History of STDs\":\nDoctor: \"Any history of sexually transmitted diseases?\"\nPatient: \"Yes, I had some kind of infection 6 months ago, but I can't remember the name of it. The doctor gave me a shot and some pills for 1 week, and then it was over.\"\n\n\"Treatment of the Partner\":\nDoctor: \"Was your partner treated as well?\"\nPatient: \"He refused the treatment.\"\n\n\"HIV Test\":\nDoctor: \"Have you been tested for HIV?\"\nPatient: \"No.\"\n\n\"Past Medical History\":\nDoctor: \"Any other medical issues in the past that you can think of?\"\nPatient: \"None except for what I've mentioned.\"\n\n\"Past Surgical History\":\nDoctor: \"Any surgeries in the past?\"\nPatient: \"No.\"\n\n\"Occupation\":\nDoctor: \"What do you do for a living?\"\nPatient: \"Waitress.\"\n\n\"Alcohol Use\":\nDoctor: \"How often do you consume alcohol?\"\nPatient: \"I have two to three beers weekly.\"\n\n\"Illicit Drug Use\":\nDoctor: \"Have you used any recreational drugs?\"\nPatient: \"No.\"\n\n\"Tobacco\":\nDoctor: \"Any tobacco products?\"\nPatient: \"Cigarettes, one pack a day for the past 6 years.\"\n\n\"Drug Allergies\":\nDoctor: \"Are you allergic to any medications?\"\nPatient: \"No.\"\n\nPhysical Examination:\n\n- The examinee washed their hands.\n- The examinee asked for permission to start the exam.\n- The examinee used respectful draping.\n- The examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\nCV exam: Auscultation\nPulmonary exam: Auscultation\nAbdominal exam: Inspection, auscultation, palpation, percussion, psoas sign, obturator sign, Romaa sign, CVA tenderness\n\nSample Closure:\n\n\"Ms. Anderson, your symptoms could stem from an issue with your reproductive system, such as a fallopian tube infection or an ovarian cyst.. They could also stem from a complicated pregnancy, suggested by a positive result on your pregnancy test.. Another possibility is an infection in your appendix, which could require surgery. To ensure an accurate diagnosis, we will need to run some tests, including a blood test, a urinalysis, a pregnancy test, and possibly a CT scan of your abdomen and pelvis. We will also need to perform rectal and pelvic exams. Since cigarette smoking is associated with a variety of diseases, I advise you to quit smoking. We offer various options to assist you if you are interested.. I also recommend that you use a condom every time you have intercourse to prevent STDs, including HIV, and to avoid pregnancy. Our social worker is available to meet with you to review your social circumstances and provide various resources.. Do you have any questions for me?\"\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans.\n- Follow-up tests: Examinee mentioned the need for rectal and pelvic exams.\n- Safe sex practices.\n- Help with smoking cessation.\n- Assistance from social workers to help the patient identify available financial resources.\n- Examinee asked if the SP had any other questions or concerns.Patient Note:\n\n\nHistory:\nHPI: A 21-year-old G1P1 female complains of right lower abdominal pain that started this morning. The pain is severe, crampy, nonradiating, and constant. It is exacerbated by movement and accompanied by fever, nausea, vomiting, and loose stools. The patient noticed some brownish spotting this morning. No urinary symptoms; no abnormal vaginal discharge.\nOB/GYN: LMP 5 weeks ago. Regular periods every 4 weeks lasting 7 days. Menarche at age 13. Uncomplicated NSVD at full term 3 years ago.\nROS: Negative except as above.\nAllergies: NKDA.\nMedications: Ibuprofen.\nPMH: STD 6 months ago, possibly treated with ceftriaxone and doxycycline. (\"Dr. gave a shot and some pills for a week.\")\nPSH: No.\nSH: 1 pack per day for 6 years, 2-3 beers/week, no illicit drugs. Unprotected sex with multiple partners over the past year.\n\nPhysical Examination:\nThe patient is in pain. \n\nVS: WNL except for temperature of 100.5°F.\nChest: No tenderness, clear breath sounds bilaterally. \nHeart: Regular rate and rhythm (RRR), 51152 WNL; no murmurs, rubs, or gallops. \nAbdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding, Ely's psoas sign, Ely's Rovsing sign, 6 obturator sign, no Costo-Vertebral Angle tenderness."
+}

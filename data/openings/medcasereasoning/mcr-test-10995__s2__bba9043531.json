@@ -1,0 +1,47 @@
+{
+ "case_id": "mcr-test-10995",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've had a fever.",
+   "I've had a headache.",
+   "My right side suddenly became weak.",
+   "I had one episode, lasting about 2 minutes, when I wasn't fully conscious."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've had a fever and a headache. My right side suddenly became weak, and I had one episode, lasting about 2 minutes, when I wasn't fully conscious.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f004",
+    "f005",
+    "f006",
+    "f007"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3254,
+   "tokens_out": 47,
+   "seconds": 5.21,
+   "redrafts": 0
+  }
+ }
+}

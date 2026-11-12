@@ -1,0 +1,55 @@
+{
+ "case_id": "agentclinic-medqa-ext-120",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've had a fever.",
+   "I've had a headache.",
+   "I've been feeling nauseous.",
+   "My belly has been uncomfortable.",
+   "All of this started about a week ago.",
+   "My gums bleed when I brush my teeth.",
+   "I got back from a camping trip in Sri Lanka a month ago.",
+   "I'm 12 weeks pregnant."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm 12 weeks pregnant and I've been feeling pretty rough. I've had a fever, a headache, and I've been feeling nauseous. My belly has been uncomfortable, and my gums bleed when I brush my teeth. All of this started about a week ago. I did get back from a camping trip in Sri Lanka a month ago, though.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f005",
+    "f006",
+    "f007",
+    "f009",
+    "f011"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3446,
+   "tokens_out": 86,
+   "seconds": 11.09,
+   "redrafts": 0
+  }
+ }
+}

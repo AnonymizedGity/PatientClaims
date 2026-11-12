@@ -1,0 +1,85 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-172", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 34, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "breast tenderness", "aliases": ["sore breasts", "tender breasts"], "text": "My breasts have been tender.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "breast tenderness: course", "parent": "f001", "attribute": "course", "text": "The tenderness has been getting worse and worse.", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f003", "item": "nausea", "aliases": ["feeling sick to my stomach"], "text": "I've been feeling nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "weight gain", "text": "I've gained 6.6 pounds.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "frequent urination", "aliases": ["urinary frequency", "peeing more often"], "text": "I've been needing to pee more often than usual.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f006", "item": "how long the symptoms have been going on", "text": "All of this has been going on for 2 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "last menstrual period", "aliases": ["LMP", "last period"], "text": "I'm not sure of the date of my last period.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "birth control pills", "aliases": ["oral contraceptives", "the pill", "contraception"], "text": "I stopped taking birth control pills 6 months ago.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "trying to get pregnant", "aliases": ["trying to conceive", "planning a pregnancy"], "text": "My husband and I have been actively trying to get pregnant since I stopped the pill.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f010", "item": "relationship status", "aliases": ["marriage", "partner", "husband"], "text": "I'm in a stable relationship with my husband.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "belief that she is pregnant", "aliases": ["pregnancy", "thinks she is pregnant"], "text": "I believe I'm pregnant.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "reason for visit", "aliases": ["prenatal care"], "text": "I've come in because I'd like to start prenatal care.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "telling her husband about the pregnancy", "text": "Last week I was happy to share the news with my husband.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f014", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "diarrhea", "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "pain when urinating", "aliases": ["dysuria", "burning when peeing"], "text": "It doesn't burn or hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f018", "item": "flank pain", "aliases": ["pain in the side of the back"], "text": "I haven't had any pain in my sides.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-172",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.2°C (99°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/60 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "100/min"},
+      {"id": "x004", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen examination", "abdominal palpation", "bowel sounds"], "result": "Inspection: mild, nontender abdominal enlargement; auscultation: normal bowel sounds; percussion: normal, no abnormalities; palpation: no tenderness, masses or abnormalities."},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "speculum examination", "bimanual examination", "vaginal examination"], "result": "Inspection: no lesions or discharge; speculum: closed cervical os, no abnormalities; bimanual: normal adnexa and uterus, no tenderness or masses."},
+      {"id": "x006", "kind": "test", "name": "urine beta-hCG", "aliases": ["urine pregnancy test", "urine hCG", "pregnancy test"], "result": "Negative."},
+      {"id": "x007", "kind": "test", "name": "transvaginal ultrasound", "aliases": ["pelvic ultrasound", "TVUS", "obstetric ultrasound"], "result": "No abnormalities detected; no gestational sac."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-172",
+    "diagnosis": "Pseudocyesis",
+    "aliases": ["false pregnancy", "phantom pregnancy", "pseudopregnancy", "hysterical pregnancy"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-172",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-172-p001"], "f002": ["cc", "agentclinic-medqa-ext-172-p001"],
+      "f003": ["agentclinic-medqa-ext-172-p001", "agentclinic-medqa-ext-172-p002"], "f004": ["agentclinic-medqa-ext-172-p001", "agentclinic-medqa-ext-172-p003"],
+      "f005": ["agentclinic-medqa-ext-172-p001", "agentclinic-medqa-ext-172-p004"], "f006": ["agentclinic-medqa-ext-172-p001"],
+      "f007": ["agentclinic-medqa-ext-172-p001"], "f008": ["agentclinic-medqa-ext-172-p001", "agentclinic-medqa-ext-172-p005"],
+      "f009": ["agentclinic-medqa-ext-172-p001", "agentclinic-medqa-ext-172-p005", "agentclinic-medqa-ext-172-p006"], "f010": ["agentclinic-medqa-ext-172-p006"],
+      "f011": ["agentclinic-medqa-ext-172-p001"], "f012": ["agentclinic-medqa-ext-172-p001"], "f013": ["agentclinic-medqa-ext-172-p001"],
+      "f014": ["agentclinic-medqa-ext-172-p007"], "f015": ["agentclinic-medqa-ext-172-p007"], "f016": ["agentclinic-medqa-ext-172-p007"],
+      "f017": ["agentclinic-medqa-ext-172-p007"], "f018": ["agentclinic-medqa-ext-172-p007"]
+    },
+    "quotes": {
+      "f001": "Increasing breast tenderness", "f002": "increasing breast tenderness", "f004": "a 6.6 lb weight gain",
+      "f005": "increased urinary frequency", "f006": "2 months of increasing breast tenderness, nausea, a 6.6 lb weight gain, increased urinary frequency",
+      "f007": "uncertainty about the date of her last menstrual period", "f008": "stopped taking oral contraceptives 6 months ago",
+      "f009": "actively trying to conceive with her husband", "f010": "stable relationship", "f011": "She believes she is pregnant",
+      "f012": "requesting prenatal care", "f013": "was happy to share this news with her husband last week"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.2°C (99°F)", "exam_ids": ["agentclinic-medqa-ext-172-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/60 mmHg", "exam_ids": ["agentclinic-medqa-ext-172-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "100 bpm", "exam_ids": ["agentclinic-medqa-ext-172-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Mild, nontender abdominal enlargement. + Normal bowel sounds. + Normal findings, no abnormalities detected. + No tenderness, masses, or abnormalities noted.", "exam_ids": ["agentclinic-medqa-ext-172-e004", "agentclinic-medqa-ext-172-e005", "agentclinic-medqa-ext-172-e006", "agentclinic-medqa-ext-172-e007"]},
+      "x005": {"source": "Physical_Examination_Findings.Pelvic_Examination.Visual_Inspection + Physical_Examination_Findings.Pelvic_Examination.Speculum_Examination + Physical_Examination_Findings.Pelvic_Examination.Bimanual_Examination", "source_text": "No lesions or discharge. + Closed cervical os, no abnormalities detected. + Normal adnexa and uterus, no tenderness or masses palpated.", "exam_ids": ["agentclinic-medqa-ext-172-e008", "agentclinic-medqa-ext-172-e009", "agentclinic-medqa-ext-172-e010"]},
+      "x006": {"source": "Test_Results.Urine_Beta_hCG.Result", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-172-i001"]},
+      "x007": {"source": "Test_Results.Transvaginal_Ultrasound.Findings", "source_text": "No abnormalities detected, absence of gestational sac.", "exam_ids": ["agentclinic-medqa-ext-172-i002"]}
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "The History's '2 months of' governs the whole list (breast tenderness, nausea, weight gain, urinary frequency), so the duration is a standalone fact (f006), as in the reference example; 'increasing' belongs to the breast tenderness only (f002).",
+      "Stopping the pill 6 months ago is a historical medication fact (f008); trying to conceive is habit_exposure (sexual activity, f009). The patient's belief that she is pregnant, the visit reason and sharing the news are social_background (own understanding and wishes).",
+      "Uncertainty about the LMP date is a real answer ('not sure'), recorded present (f007), not a missing answer.",
+      "Opening is the chief complaint only (breast tenderness); the History's visit reason (requesting prenatal care) is a separate fact (f012)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with symptoms suggestive of early pregnancy."
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "patient": {
+    "case_id": "mcr-test-07845",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 24, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "blisters on the skin", "aliases": ["blisters", "bullae", "vesicles", "blistering rash"], "text": "I have blisters on my skin, some small and some large.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "blisters: itch", "parent": "f001", "attribute": "character", "aliases": ["itching", "pruritus", "itchy skin"], "text": "They're itchy.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "blisters: location", "parent": "f001", "attribute": "location", "text": "They're on my hands, my face, the back of my neck and my body.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "blisters: course", "parent": "f001", "attribute": "course", "text": "They started on my hands and gradually spread to my face and body.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "blisters: duration", "parent": "f001", "attribute": "duration", "text": "I've had them for 2 months.", "value": "2 months", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "rash on the face", "aliases": ["facial rash", "rash on the cheeks", "malar rash", "butterfly rash"], "text": "I have a rash on my cheeks.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f007", "item": "patches on the ears", "aliases": ["rash on the ears", "ear lesions", "discoid lesions"], "text": "I have patchy skin lesions on my ears.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "mouth sores", "aliases": ["sores in the mouth", "sores on the lips", "oral ulcers", "mouth ulcers", "oral erosions"], "text": "I have raw sores inside my cheeks, on the roof of my mouth and on my lips.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f009", "item": "hair loss", "aliases": ["losing hair", "alopecia", "thinning hair"], "text": "I've been losing hair.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f010", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "muscle aches", "aliases": ["myalgia", "muscle pain", "body aches"], "text": "My muscles ache.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f012", "item": "tiredness", "aliases": ["fatigue", "low energy", "exhaustion"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "fever", "aliases": ["high temperature", "feeling feverish"], "text": "I've been getting fevers.", "polarity": "present", "category": "symptom", "system": "general", "time": "recurrent"},
+      {"id": "f014", "item": "fever: frequency", "parent": "f013", "attribute": "frequency", "text": "They come and go.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f015", "item": "nosebleeds", "aliases": ["epistaxis", "bleeding from the nose"], "text": "I've had some nosebleeds; they stopped on their own.", "polarity": "present", "category": "symptom", "system": "ent", "time": "recurrent"},
+      {"id": "f016", "item": "shortness of breath", "aliases": ["dyspnea", "breathlessness", "trouble breathing"], "text": "I'm not short of breath.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f017", "item": "blood in the urine", "aliases": ["hematuria", "red urine"], "text": "I haven't seen any blood in my urine.", "polarity": "absent", "category": "symptom", "system": "genitourinary"},
+      {"id": "f018", "item": "passing less urine", "aliases": ["decreased urine output", "oliguria", "peeing less"], "text": "I'm not passing less urine than usual.", "polarity": "absent", "category": "symptom", "system": "genitourinary"},
+      {"id": "f019", "item": "muscle weakness", "aliases": ["weakness", "weak muscles"], "text": "My muscles aren't weak.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f020", "item": "joint pain", "aliases": ["arthralgia", "painful joints", "sore joints"], "text": "I don't have any joint pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f021", "item": "new medications", "aliases": ["new medicines", "recently started drugs"], "text": "I haven't started any new medicines.", "polarity": "absent", "category": "medication"},
+      {"id": "f022", "item": "ethnic background", "aliases": ["ethnicity", "where my family is from"], "text": "I'm Southeast Asian.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-07845",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Normal."},
+      {"id": "x002", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Normal."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "112/min"},
+      {"id": "x004", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "80/60 mmHg"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "96% on room air"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "general inspection", "aliases": ["general appearance", "pallor", "skin colour"], "result": "Pallor."},
+      {"id": "x007", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash", "blisters", "face", "hair", "scalp", "ears"], "result": "Non-cicatricial hair loss; malar rash sparing the nasolabial folds; discoid lesions on the ears; numerous tense, clear vesicles and bullae on an erythematous base on the face, nape of the neck, trunk and hands."},
+      {"id": "x008", "kind": "exam", "system": "ent", "name": "oral examination", "aliases": ["mouth", "oral cavity", "oral mucosa", "lips", "throat"], "result": "Superficial erosions on the buccal mucosa, hard palate and lips."},
+      {"id": "x009", "kind": "exam", "system": "skin", "name": "Nikolsky sign", "result": "Positive."},
+      {"id": "x010", "kind": "exam", "system": "skin", "name": "bulla spread sign", "aliases": ["Asboe-Hansen sign", "blister spread sign"], "result": "Positive."},
+      {"id": "x011", "kind": "exam", "system": "general", "name": "general physical examination", "aliases": ["physical examination", "cardiovascular examination", "respiratory examination", "abdominal examination", "heart", "lungs", "abdomen", "joints", "musculoskeletal examination", "neurological examination"], "result": "Apart from pallor and the skin, hair and mouth findings, the examination was unremarkable."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white cell count", "WBC", "hemoglobin"], "result": "White cell count 2600/mm³; hemoglobin 8.1 g/dL."},
+      {"id": "x013", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "AST", "aspartate aminotransferase", "ALT", "alanine aminotransferase", "albumin", "liver enzymes"], "result": "AST 194 U/L; ALT 53 U/L; albumin 2.9 g/L."},
+      {"id": "x014", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "urine microscopy", "urine sediment", "urine dipstick"], "result": "Active urinary sediment with white cells and albumin."},
+      {"id": "x015", "kind": "test", "name": "24-hour urine protein", "aliases": ["24-hour urine", "urine protein quantification", "proteinuria"], "result": "0.42 g/24 h"},
+      {"id": "x016", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood film", "peripheral smear"], "result": "Microcytic hypochromic anemia with pencil and teardrop cells."},
+      {"id": "x017", "kind": "test", "name": "antinuclear antibody", "aliases": ["ANA", "autoimmune serology"], "result": "Positive."},
+      {"id": "x018", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "18 mm/h"},
+      {"id": "x019", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "1.8 mg/L (normal 0–4.8)"},
+      {"id": "x020", "kind": "test", "name": "complement levels", "aliases": ["complement", "C3", "C4"], "result": "Slightly decreased."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-07845",
+    "diagnosis": "Bullous systemic lupus erythematosus",
+    "aliases": ["bullous SLE", "BSLE", "bullous lupus", "bullous lupus erythematosus"],
+    "reasoning": "1. Bullous systemic lupus erythematosus was considered given underlying SLE manifestations and widespread tense vesicles and bullae — “Bullous systemic lupus erythematosus (BSLE) is a blistering disease characterized by tense subepidermal fluid‐filled vesicles and bullae. The common sites of involvement include the face, trunk, neck, extensor surfaces of upper limbs, and oral mucosa.” 2. Dermatitis herpetiformis was considered because of pruritic vesicles but is typically intensely pruritic on extensor surfaces rather than sun‐exposed skin — “Predilection to extensor surfaces, elbows, knees, and buttocks; intensely pruritic.” 3. Epidermolysis bullosa acquisita was considered due to subepidermal blistering but usually occurs without SLE and heals with scarring — “Absence of SLE; heal with scarring and milia formation.” 4. Bullous pemphigoid was considered given tense bullae but often presents with eosinophil‐rich infiltrates and a prodrome of pruritus without mucosal involvement — “Prodrome of moderate to severe pruritus +/− urticarial, papular lesions; responsive to corticosteroids.” 5. Linear IgA bullous dermatosis was considered as it can mimic other bullous diseases but shows linear IgA deposition on split skin — “Linear deposition of IgA on the epidermal side of split skin. Resembles dermatitis herpetiformis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-07845",
+    "fact_sources": {
+      "f001": ["s001", "s006"], "f002": ["s001"], "f003": ["s001", "s006"], "f004": ["s001"], "f005": ["s001"], "f006": ["s005"],
+      "f007": ["s005"], "f008": ["s007"], "f009": ["s002", "s005"], "f010": ["s002"], "f011": ["s002"], "f012": ["s002"],
+      "f013": ["s002"], "f014": ["s002"], "f015": ["s002"], "f016": ["s003"], "f017": ["s003"], "f018": ["s003"],
+      "f019": ["s003"], "f020": ["s003"], "f021": ["s003"], "f022": ["s001"]
+    },
+    "quotes": {
+      "f001": "pruritic blisters and bullae", "f002": "pruritic", "f003": "involved her face, nape of neck, trunk, and hands",
+      "f004": "initially on her hands that gradually involved her face and trunk", "f005": "a 2-month history",
+      "f006": "a malar rash sparing the nasolabial folds", "f007": "discoid lesions on the ears",
+      "f008": "Superficial erosions were noted on the buccal mucosa, hard palate, and lips.", "f014": "intermittent fever",
+      "f015": "self-limiting epistaxis", "f018": "decreased urine output", "f021": "new medications", "f022": "Southeast Asian"
+    },
+    "flags": {
+      "f003": ["The back of the neck is added from the examination (s006); the history (s001) names hands, face and trunk."],
+      "f006": ["Patient-noticeable sign taken from the examination (malar rash); worded as a rash on the cheeks without the examiner's detail."],
+      "f007": ["Patient-noticeable sign taken from the examination (discoid lesions on the ears)."],
+      "f008": ["Patient-noticeable sign taken from the examination (oral and lip erosions)."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "temperature and respiratory rate were normal"},
+      "x002": {"sentences": ["s004"], "source_text": "temperature and respiratory rate were normal"},
+      "x003": {"sentences": ["s004"], "source_text": "pulse was 112 beats per minute"},
+      "x004": {"sentences": ["s004"], "source_text": "blood pressure was 80/60 mmHg"},
+      "x005": {"sentences": ["s004"], "source_text": "oxygen saturation was 96% on room air"},
+      "x006": {"sentences": ["s005"], "source_text": "pallor"},
+      "x007": {"sentences": ["s005", "s006"], "source_text": "non-cicatricial hair loss / a malar rash sparing the nasolabial folds, and discoid lesions on the ears / Numerous tense, clear vesicles and bullae on an erythematous base involved her face, nape of neck, trunk, and hands."},
+      "x008": {"sentences": ["s007"], "source_text": "Superficial erosions were noted on the buccal mucosa, hard palate, and lips."},
+      "x009": {"sentences": ["s008"], "source_text": "The Nikolsky sign and bulla spread sign were positive"},
+      "x010": {"sentences": ["s008"], "source_text": "The Nikolsky sign and bulla spread sign were positive"},
+      "x011": {"sentences": ["s008"], "source_text": "the remainder of the exam was unremarkable"},
+      "x012": {"sentences": ["s009"], "source_text": "a white-cell count of 2600/mm³, hemoglobin 8.1 g/dL"},
+      "x013": {"sentences": ["s009"], "source_text": "aspartate aminotransferase 194 U/L, alanine aminotransferase 53 U/L, albumin 2.9 g/L"},
+      "x014": {"sentences": ["s009"], "source_text": "active urinary sediments with white cells and albumin"},
+      "x015": {"sentences": ["s009"], "source_text": "proteinuria of 0.42 g/24 h"},
+      "x016": {"sentences": ["s010"], "source_text": "Peripheral smear showed microcytic hypochromic anemia with pencil and teardrop cells."},
+      "x017": {"sentences": ["s011"], "source_text": "Antinuclear antibody testing was positive"},
+      "x018": {"sentences": ["s011"], "source_text": "erythrocyte sedimentation rate was 18 mm/h"},
+      "x019": {"sentences": ["s011"], "source_text": "C-reactive protein was 1.8 mg/L (normal 0–4.8)"},
+      "x020": {"sentences": ["s011"], "source_text": "complement levels were slightly decreased"}
+    },
+    "finding_flags": {
+      "x001": ["No temperature value, only 'normal'."],
+      "x002": ["No respiratory rate value, only 'normal'."],
+      "x013": ["Albumin 2.9 g/L is implausibly low; probably g/dL. Kept as written."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s009: albumin 2.9 g/L is implausible as written (probably 2.9 g/dL).",
+      "s002 reports intermittent fever while s004 gives a normal temperature at the visit; not a contradiction for an intermittent symptom."
+    ],
+    "notes": [
+      "Index visit: the presentation after 2 months of itchy blisters spreading from the hands to the face and trunk (s001-s008); the laboratory results (s009-s011) are findings from the same workup.",
+      "Signs the patient can notice (facial rash, ear lesions, mouth and lip sores, hair loss, blisters on the back of the neck) are facts in lay words and also stay in the examination findings; pallor and tachycardia are examiner findings only.",
+      "s008 'the remainder of the exam was unremarkable' is a general examination record (x011) whose result names what was abnormal elsewhere.",
+      "Gold aliases are lupus forms with blisters only; plain 'systemic lupus erythematosus' is broader and is left to the judge."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

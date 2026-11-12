@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-111", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 60, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "loss of vision in the right eye", "aliases": ["vision loss", "can't see out of one eye", "blindness in one eye"], "text": "I've lost the vision in my right eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "loss of vision in the right eye: onset", "parent": "f001", "attribute": "onset", "text": "It happened suddenly, about 30 minutes ago.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f003", "item": "loss of vision in the right eye: context", "parent": "f001", "attribute": "context", "aliases": ["what you were doing"], "text": "I was watching TV when it happened.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f004", "item": "eye pain", "aliases": ["painful eye"], "text": "It doesn't hurt. I have no eye pain.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "vision changes in the left eye", "aliases": ["other eye"], "text": "The vision in my left eye hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f006", "item": "eye injury", "aliases": ["eye trauma", "hit in the eye"], "text": "I haven't injured my eye recently.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "coronary artery disease", "aliases": ["heart disease", "CAD"], "text": "I have coronary artery disease.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "diabetes", "aliases": ["type 2 diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "missing medication doses", "aliases": ["medication adherence", "not taking medications as prescribed", "medications"], "text": "I don't always take my prescribed medications the way I'm supposed to.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "living situation", "aliases": ["who you live with", "home"], "text": "I live alone.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "occupation", "aliases": ["job", "work", "retirement"], "text": "I recently retired.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke 10 cigarettes a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "headache", "aliases": ["headaches"], "text": "I haven't had a headache recently.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f016", "item": "dizziness", "aliases": ["lightheadedness"], "text": "I haven't been dizzy.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f017", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f018", "item": "difficulty breathing", "aliases": ["shortness of breath", "breathlessness"], "text": "I haven't had any trouble breathing.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-111",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "160/85 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "88/min"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x004", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "eye chart", "Snellen chart"], "result": "Right eye: no perception of light. Left eye: 20/50."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "pupillary light reflex", "aliases": ["pupils", "pupil reaction to light", "light reflex"], "result": "Right eye: absent. Left eye: present."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "Right eye 18 mm Hg; left eye 16 mm Hg."},
+      {"id": "x008", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["ophthalmoscopy", "fundoscopic examination", "dilated eye examination"], "result": "Right eye: pale, white retina with a bright red area within the macula; normal optic disc. Left eye: normal."},
+      {"id": "x009", "kind": "exam", "system": "eye", "name": "accommodation", "aliases": ["near reflex", "accommodation reflex"], "result": "Intact bilaterally."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-111",
+    "diagnosis": "Central retinal artery occlusion",
+    "aliases": ["CRAO", "central retinal artery obstruction", "central retinal artery embolism"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-111",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-111-p001"], "f002": ["cc", "agentclinic-medqa-ext-111-p001"], "f003": ["agentclinic-medqa-ext-111-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-111-p001", "agentclinic-medqa-ext-111-p003"], "f005": ["agentclinic-medqa-ext-111-p002"],
+      "f006": ["agentclinic-medqa-ext-111-p004"], "f007": ["agentclinic-medqa-ext-111-p001", "agentclinic-medqa-ext-111-p005"],
+      "f008": ["agentclinic-medqa-ext-111-p001", "agentclinic-medqa-ext-111-p005"], "f009": ["agentclinic-medqa-ext-111-p001", "agentclinic-medqa-ext-111-p005"],
+      "f010": ["agentclinic-medqa-ext-111-p001"], "f011": ["agentclinic-medqa-ext-111-p006"], "f012": ["agentclinic-medqa-ext-111-p006"],
+      "f013": ["agentclinic-medqa-ext-111-p006"], "f014": ["agentclinic-medqa-ext-111-p006"], "f015": ["agentclinic-medqa-ext-111-p007"],
+      "f016": ["agentclinic-medqa-ext-111-p007"], "f017": ["agentclinic-medqa-ext-111-p007"], "f018": ["agentclinic-medqa-ext-111-p007"]
+    },
+    "quotes": {
+      "f002": "sudden, painless loss of vision in her right eye that occurred about 30 minutes ago",
+      "f003": "the episode happened while she was watching TV", "f004": "No eye pain", "f005": "No changes in vision in the left eye",
+      "f006": "No recent history of eye trauma", "f010": "She admits to not always adhering to her prescribed medication regimen",
+      "f012": "recently retired", "f013": "She smokes 10 cigarettes a day", "f014": "drinks alcohol occasionally", "f015": "Denies recent headache"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "160/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-111-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "88 bpm", "exam_ids": ["agentclinic-medqa-ext-111-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-111-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-111-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Ophthalmic_Examination.Visual_Acuity.Right_Eye + Physical_Examination_Findings.Ophthalmic_Examination.Visual_Acuity.Left_Eye", "source_text": "Right_Eye: No perception of light; Left_Eye: 20/50 vision", "exam_ids": ["agentclinic-medqa-ext-111-e005", "agentclinic-medqa-ext-111-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Ophthalmic_Examination.Pupillary_Light_Reflex.Right_Eye + Physical_Examination_Findings.Ophthalmic_Examination.Pupillary_Light_Reflex.Left_Eye", "source_text": "Right_Eye: Absent; Left_Eye: Present", "exam_ids": ["agentclinic-medqa-ext-111-e007", "agentclinic-medqa-ext-111-e008"]},
+      "x007": {"source": "Physical_Examination_Findings.Ophthalmic_Examination.Intraocular_Pressure.Right_Eye + Physical_Examination_Findings.Ophthalmic_Examination.Intraocular_Pressure.Left_Eye", "source_text": "Right_Eye: 18 mmHg; Left_Eye: 16 mmHg", "exam_ids": ["agentclinic-medqa-ext-111-e009", "agentclinic-medqa-ext-111-e010"]},
+      "x008": {"source": "Physical_Examination_Findings.Ophthalmic_Examination.Fundoscopy.Right_Eye + Physical_Examination_Findings.Ophthalmic_Examination.Fundoscopy.Left_Eye", "source_text": "Right_Eye: Pale, white retina with a bright red area within the macula. Normal optic disc.; Left_Eye: Normal examination findings", "exam_ids": ["agentclinic-medqa-ext-111-e011", "agentclinic-medqa-ext-111-e012"]},
+      "x009": {"source": "Physical_Examination_Findings.Ophthalmic_Examination.Accommodation", "source_text": "Intact bilaterally", "exam_ids": ["agentclinic-medqa-ext-111-e013"]}
+    },
+    "finding_flags": {
+      "x005": ["Left-eye acuity is 20/50 although the patient reports no change in that eye; possibly her baseline. Kept as given."],
+      "x009": ["Accommodation 'intact bilaterally' in an eye with no light perception is hard to assess; kept as given."]
+    },
+    "leakage": [
+      {"fact_id": "f007", "reason": "'Artery' comes from her own prior diagnosis of coronary artery disease, not from the gold diagnosis."}
+    ],
+    "source_issues": [
+      "Left visual acuity 20/50 alongside 'no changes in vision in the left eye'; accommodation reported intact in a no-light-perception eye.",
+      "Blood pressure 160/85 mmHg with known hypertension and admitted non-adherence."
+    ],
+    "notes": [
+      "Each paired right/left eye measurement forms one record per examination step (acuity, pupils, pressure, fundus).",
+      "'Painless' in the chief complaint and 'No eye pain' merge into one eye-pain denial (f004).",
+      "Medication non-adherence is a medication fact (f010); the source names no drugs.",
+      "The fundoscopy aliases avoid 'retinal examination' because 'retinal' is a word of the gold diagnosis."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with sudden, unilateral loss of vision."
+    }
+  }
+}

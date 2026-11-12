@@ -1,0 +1,57 @@
+{
+ "case_id": "mcr-test-09301",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I can see blood in my urine.",
+   "I've been passing very little urine.",
+   "All of this started 4 days ago.",
+   "I've had a fever.",
+   "I've been feeling tired.",
+   "My appetite has gone down.",
+   "I have stage IV clear-cell kidney cancer that has spread to my spine and brain.",
+   "Two weeks ago I started sunitinib, 50 mg every night.",
+   "I had been taking aspirin/dipyridamole for five years to prevent strokes; it has been stopped since the bleeding."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I can see blood in my urine and I've been passing very little. I've had a fever, been feeling tired, and my appetite has gone down. All of this started 4 days ago. I have stage IV clear-cell kidney cancer that has spread to my spine and brain, and two weeks ago I started sunitinib, 50 mg every night. I had been taking aspirin/dipyridamole for five years to prevent strokes, but it has been stopped since the bleeding.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f008",
+    "f004",
+    "f006",
+    "f007",
+    "f009",
+    "f010",
+    "f011"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3528,
+   "tokens_out": 115,
+   "seconds": 8.52,
+   "redrafts": 0
+  }
+ }
+}

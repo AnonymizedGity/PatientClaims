@@ -1,0 +1,57 @@
+{
+ "case_id": "ddxplus-v2-test-0007672",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "I have a fever.",
+   "I have pain.",
+   "I have a cough.",
+   "My voice has become deeper, softer or hoarse.",
+   "I've had a cold in the last 2 weeks."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been feeling unwell with a fever and a cough. I also have some pain, and my voice has become deeper, softer or hoarse. I've had a cold in the last two weeks.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f009",
+    "f010",
+    "f011"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "changed",
+      "quote": "deeper and hoarse",
+      "fix": "deeper, softer or hoarse"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I've been feeling unwell with a fever and a cough. I also have some pain, and my voice has become deeper and hoarse. I've had a cold in the last two weeks.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 16237,
+   "tokens_out": 127,
+   "seconds": 18.9,
+   "redrafts": 0
+  }
+ }
+}

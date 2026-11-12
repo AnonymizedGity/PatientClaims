@@ -1,0 +1,55 @@
+{
+ "case_id": "mcr-test-03594",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I was referred because my blood calcium is low.",
+   "The face spasms, muscle spasms and leg cramps started when I was about 10.",
+   "I've had spasms in my face.",
+   "I've had attacks where my muscles go into spasm (tetany).",
+   "I've had leg cramps.",
+   "I take vitamin D by mouth.",
+   "I take calcium tablets.",
+   "Since I was 4 I've had moderate hearing loss in both ears (sensorineural), and I wear hearing aids."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I was referred because my blood calcium is low. I've had spasms in my face, leg cramps, and attacks where my muscles go into spasm, or tetany, since I was about 10. Since I was 4, I've had moderate hearing loss in both ears, which is sensorineural, and I wear hearing aids. I take vitamin D by mouth and calcium tablets.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f005",
+    "f002",
+    "f003",
+    "f004",
+    "f007",
+    "f008",
+    "f010"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3724,
+   "tokens_out": 95,
+   "seconds": 15.35,
+   "redrafts": 0
+  }
+ }
+}

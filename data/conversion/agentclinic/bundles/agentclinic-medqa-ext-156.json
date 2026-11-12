@@ -1,0 +1,116 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-156",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 57, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "chest pain", "aliases": ["pleuritic chest pain"], "text": "I have pain on the right side of my chest.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "chest pain: worse when breathing in", "parent": "f001", "attribute": "aggravating", "text": "It gets worse when I breathe in.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "fever", "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "chills", "text": "I've had chills.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "headache", "text": "I've had a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "when the fever, chills and headache started", "text": "The fever, chills and headache started three days after my gallbladder operation.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "cough", "text": "I have a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f008", "item": "cough: phlegm", "parent": "f007", "attribute": "character", "aliases": ["productive cough", "sputum"], "text": "I'm bringing up phlegm when I cough.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f009", "item": "cough: duration", "parent": "f007", "attribute": "duration", "text": "I've had it for the last 12 hours.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f010", "item": "recent surgery", "aliases": ["gallbladder surgery", "cholecystectomy", "operation"], "text": "Three days ago I had an open operation to take out my gallbladder. The cut is below my right ribs.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "hysterectomy", "aliases": ["womb removed", "abdominal hysterectomy", "past surgery"], "text": "I had a hysterectomy through my abdomen 16 years ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any chronic medical conditions.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "regular medications", "aliases": ["medicines"], "text": "I don't take any regular medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke a pack of cigarettes a day, and have for 17 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "heart symptoms", "aliases": ["heart problems"], "text": "I haven't noticed any problems with my heart.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f016", "item": "belly symptoms apart from the surgery", "aliases": ["stomach problems", "abdominal symptoms"], "text": "Apart from the surgery cut, my belly has been fine.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "muscle or joint problems", "aliases": ["musculoskeletal symptoms"], "text": "I haven't had any problems with my muscles or joints.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-156",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "39°C (102.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "128/82 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "98/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["respiratory examination", "chest examination", "lung auscultation", "breath sounds"], "result": "Inspection: appears uncomfortable. Auscultation: inspiratory crackles at the right lung base."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdominal exam", "abdomen", "surgical wound", "incision"], "result": "Inspection: healing surgical incision below the right ribcage. Palpation: soft and nontender."},
+      {"id": "x007", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Infiltrates at the right lung base."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelets", "platelet count"], "result": "White blood cell count elevated; hemoglobin within normal limits; platelets within normal limits."},
+      {"id": "x009", "kind": "test", "name": "blood culture", "aliases": ["blood cultures"], "result": "pending"}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-156",
+    "diagnosis": "Pneumonia",
+    "aliases": ["postoperative pneumonia", "hospital-acquired pneumonia", "nosocomial pneumonia", "right lower lobe pneumonia", "bacterial pneumonia", "lung infection"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-156",
+    "fact_sources": {
+      "f001": ["cc"],
+      "f002": ["cc"],
+      "f003": ["agentclinic-medqa-ext-156-p001", "agentclinic-medqa-ext-156-p003"],
+      "f004": ["agentclinic-medqa-ext-156-p001", "agentclinic-medqa-ext-156-p004"],
+      "f005": ["agentclinic-medqa-ext-156-p001", "agentclinic-medqa-ext-156-p005"],
+      "f006": ["agentclinic-medqa-ext-156-p001"],
+      "f007": ["agentclinic-medqa-ext-156-p002", "agentclinic-medqa-ext-156-p008"],
+      "f008": ["agentclinic-medqa-ext-156-p002", "agentclinic-medqa-ext-156-p008"],
+      "f009": ["agentclinic-medqa-ext-156-p002"],
+      "f010": ["agentclinic-medqa-ext-156-p001", "agentclinic-medqa-ext-156-p006", "agentclinic-medqa-ext-156-p008"],
+      "f011": ["agentclinic-medqa-ext-156-p001", "agentclinic-medqa-ext-156-p006"],
+      "f012": ["agentclinic-medqa-ext-156-p006"],
+      "f013": ["agentclinic-medqa-ext-156-p006"],
+      "f014": ["agentclinic-medqa-ext-156-p001", "agentclinic-medqa-ext-156-p007"],
+      "f015": ["agentclinic-medqa-ext-156-p008"],
+      "f016": ["agentclinic-medqa-ext-156-p008"],
+      "f017": ["agentclinic-medqa-ext-156-p008"]
+    },
+    "quotes": {
+      "f001": "Right-sided chest pain",
+      "f002": "increases on inspiration",
+      "f006": "starting three days after undergoing an open cholecystectomy",
+      "f008": "Productive cough",
+      "f009": "for the last 12 hours",
+      "f010": "Open cholecystectomy three days prior / Surgical site below right ribcage",
+      "f011": "Abdominal hysterectomy 16 years ago",
+      "f012": "\"Chronic_Conditions\": [\"None reported\"]",
+      "f013": "\"Medications\": [\"None reported\"]",
+      "f014": "Current smoker, one pack daily for 17 years",
+      "f015": "\"Cardiovascular\": \"No reported abnormalities\"",
+      "f016": "Surgical site below right ribcage, otherwise unremarkable",
+      "f017": "\"Musculoskeletal\": \"No reported abnormalities\""
+    },
+    "flags": {
+      "f012": ["Source: 'Chronic_Conditions: None reported'; read as a denial per the meta-phrase rule."],
+      "f013": ["Source: 'Medications: None reported'; read as no regular medications. Peri-operative medicines after the cholecystectomy are not documented."],
+      "f015": ["From the ROS line 'Cardiovascular: No reported abnormalities'. The right-sided pleuritic chest pain is the chief complaint and is filed as respiratory; this denial covers other heart symptoms."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "39°C (102.2°F)", "exam_ids": ["agentclinic-medqa-ext-156-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "128/82 mm Hg", "exam_ids": ["agentclinic-medqa-ext-156-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "98 bpm", "exam_ids": ["agentclinic-medqa-ext-156-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-156-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "Appears uncomfortable | Inspiratory crackles at the right lung base", "exam_ids": ["agentclinic-medqa-ext-156-e005", "agentclinic-medqa-ext-156-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Healing surgical incision below the right ribcage | Soft and nontender", "exam_ids": ["agentclinic-medqa-ext-156-e009", "agentclinic-medqa-ext-156-e012"]},
+      "x007": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "Infiltrates at the right lung base", "exam_ids": ["agentclinic-medqa-ext-156-i001"]},
+      "x008": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Elevated | Within normal limits | Within normal limits", "exam_ids": ["agentclinic-medqa-ext-156-i002", "agentclinic-medqa-ext-156-i003", "agentclinic-medqa-ext-156-i004"]},
+      "x009": {"source": "Test_Results.Blood_Culture.Findings", "source_text": "Pending", "exam_ids": ["agentclinic-medqa-ext-156-i005"]}
+    },
+    "finding_flags": {
+      "x005": ["'Appears uncomfortable' is a general-appearance observation filed under respiratory inspection in the source; kept in the lung examination record."]
+    },
+    "leakage": [],
+    "source_issues": ["ROS 'Neurological: No reported abnormalities' contradicts the reported headache; the neurological denial is not encoded.", "ROS 'Cardiovascular: No reported abnormalities' sits next to a chief complaint of chest pain (pleuritic, so plausibly not cardiac).", "Respiratory percussion and palpation, and abdominal auscultation and percussion, are 'Not specified'.", "Alcohol use, occupation and activities are 'Not specified'.", "The demographics describe the patient as obese; no other field mentions it."],
+    "notes": ["The chest pain appears only in the chief complaint; its location (right side) is in the parent text and 'increases on inspiration' is a child. The pain is filed under the respiratory system because it is pleuritic.", "Surgery three days ago (p006) and symptom onset three days after surgery (p001) are consistent: the fever, chills and headache began on about post-operative day 3. The onset applies to three symptoms, so it is a standalone fact (f006).", "The productive cough appears in p002 and p008; one cough fact with 'productive' and '12 hours' as children.", "'None reported' and 'No reported abnormalities' are treated as denials where they carry that meaning (chronic conditions, medications, cardiovascular, musculoskeletal, gastrointestinal apart from the surgical site). 'Not specified' social-history items are left unknown, with no facts.", "Obesity (from the demographics) is in qc.extras.acting_notes as a visible characteristic, not a patient fact."],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient presenting with postoperative fever, chest pain that increases on inspiration, and a productive cough, and determine the correct diagnosis.",
+      "acting_notes": ["The patient is obese (demographics)."]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-156-e007", "reason": "Respiratory percussion: 'Not specified' (no information)."},
+      {"id": "agentclinic-medqa-ext-156-e008", "reason": "Respiratory palpation: 'Not specified' (no information)."},
+      {"id": "agentclinic-medqa-ext-156-e010", "reason": "Abdominal auscultation: 'Not specified' (no information)."},
+      {"id": "agentclinic-medqa-ext-156-e011", "reason": "Abdominal percussion: 'Not specified' (no information)."}
+    ]
+  }
+}

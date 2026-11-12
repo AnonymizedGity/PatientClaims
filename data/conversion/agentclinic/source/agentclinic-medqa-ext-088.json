@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-088",
+  "source_row": 88,
+  "demographics_text": "72-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with fatigue, unintentional weight loss, and abnormal physical examination findings.",
+  "chief_complaint": "Fatigue",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-088-p001",
+      "field": "History",
+      "text": "The patient reports a 6-month history of fatigue and an unintentional weight loss of 5 kg (11 lb) despite maintaining a good appetite. He denies any recent changes in his diet or physical activity. He takes no medications and does not smoke or use illicit drugs."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-088-p002",
+      "field": "Secondary_Symptoms",
+      "text": "5 kg unintentional weight loss over 6 months"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-088-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Good appetite"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-088-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. Patient denies any chronic illnesses or prior hospitalizations."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-088-p005",
+      "field": "Social_History",
+      "text": "Retired engineer; denies tobacco use or illicit drug use. Drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-088-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, night sweats, changes in bowel or bladder habits, recent infections, or bleeding disorders."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "80 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e005",
+      "path": "Physical_Examination_Findings.General_Examination.Appearance",
+      "text": "Looks his stated age, no acute distress."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e006",
+      "path": "Physical_Examination_Findings.General_Examination.HEENT",
+      "text": "No pallor, icterus, or lymphadenopathy in the head and neck region."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e007",
+      "path": "Physical_Examination_Findings.General_Examination.Lymph_Nodes",
+      "text": "Diffuse, nontender lymphadenopathy."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "Normal contour, no visible masses."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e010",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Diffuse dullness over the left upper quadrant and right upper quadrant."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-e011",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Nontender hepatosplenomegaly"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-088-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "16,000 /μL (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "11 g/dL (low)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-i004",
+      "path": "Test_Results.Direct_Antiglobulin_Test",
+      "text": "Positive"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-088-i005",
+      "path": "Test_Results.Peripheral_Blood_Smear.Findings",
+      "text": "Increased lymphocytes with smudge cells"
+    }
+  ],
+  "correct_diagnosis": "Chronic lymphocytic leukemia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

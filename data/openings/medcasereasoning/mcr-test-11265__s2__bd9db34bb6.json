@@ -1,0 +1,69 @@
+{
+ "case_id": "mcr-test-11265",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've been feeling sick to my stomach.",
+   "I've been vomiting.",
+   "I've been feeling tired.",
+   "It's been going on for about a month.",
+   "The nausea and vomiting started 5 days ago.",
+   "For about a month I haven't had much appetite.",
+   "I've lost 6 kg over the past month without trying.",
+   "Over the past month I've had occasional vague belly pain.",
+   "I've had an underactive thyroid for 17 years.",
+   "Several months ago I switched from levothyroxine to animal thyroid extract.",
+   "A week ago I started trimethoprim-sulfamethoxazole, 160 mg twice a day."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been feeling sick to my stomach and vomiting, which started five days ago. I've also been feeling tired and haven't had much appetite for about a month, and I've lost 6 kg over that time without trying. I've had occasional vague belly pain over the past month. I've had an underactive thyroid for 17 years, and several months ago I switched from levothyroxine to animal thyroid extract. A week ago I started trimethoprim-sulfamethoxazole, 160 mg twice a day.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f004",
+    "f005",
+    "f006",
+    "f007",
+    "f008",
+    "f010",
+    "f012",
+    "f013"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "changed",
+      "quote": "have had no appetite",
+      "fix": "haven't had much appetite"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I've been feeling sick to my stomach and vomiting, which started five days ago. I've also been feeling tired and have had no appetite for about a month, and I've lost 6 kg over that time without trying. I've had occasional vague belly pain over the past month. I've had an underactive thyroid for 17 years, and several months ago I switched from levothyroxine to animal thyroid extract. A week ago I started trimethoprim-sulfamethoxazole, 160 mg twice a day.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 6336,
+   "tokens_out": 269,
+   "seconds": 28.32,
+   "redrafts": 0
+  }
+ }
+}

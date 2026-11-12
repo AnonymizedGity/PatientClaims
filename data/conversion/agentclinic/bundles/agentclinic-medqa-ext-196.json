@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-196",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 34, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "belief of being pregnant", "aliases": ["pregnancy", "think I'm pregnant"], "text": "I think I'm pregnant, because of the symptoms I've been having.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f002", "item": "breast tenderness", "aliases": ["sore breasts", "tender breasts"], "text": "My breasts have been tender.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f003", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "I've been feeling nauseous.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "weight gain", "aliases": ["putting on weight"], "text": "I've gained 6.6 pounds.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "urinating more often", "aliases": ["urinary frequency", "frequent urination", "peeing a lot"], "text": "I've been needing to pee more often.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f006", "item": "how long the symptoms have been going on", "text": "I've had the breast tenderness, nausea, weight gain and peeing more often for 2 months.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "trying to get pregnant", "aliases": ["trying to conceive", "planning a pregnancy"], "text": "I've been trying to get pregnant for 6 months.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f008", "item": "birth control pills", "aliases": ["oral contraceptives", "the pill", "contraception"], "text": "I stopped taking birth control pills 6 months ago.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f009", "item": "other medical problems", "aliases": ["past medical history"], "text": "I don't have any other significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "marital status", "aliases": ["married", "husband", "partner"], "text": "I'm married.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f015", "item": "diarrhea", "aliases": ["loose stools"], "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "pain or burning when urinating", "aliases": ["dysuria", "painful urination"], "text": "It doesn't burn or hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f017", "item": "flank pain", "aliases": ["pain in the side", "loin pain"], "text": "I haven't had any pain in my sides.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f018", "item": "tiredness", "aliases": ["fatigue", "low energy"], "text": "I've been feeling more tired than usual.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-196",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.2°C (99°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/60 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "100/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "bowel sounds"], "result": "Inspection: mild, nontender abdominal enlargement; auscultation: normal bowel sounds throughout; percussion: tympanic throughout; palpation: soft, nontender."},
+      {"id": "x006", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "bimanual examination", "cervix", "adnexa"], "result": "Cervical os closed; adnexa: no masses or tenderness."},
+      {"id": "x007", "kind": "test", "name": "urine β-hCG", "aliases": ["urine pregnancy test", "urine hCG", "pregnancy test", "beta-hCG"], "result": "Negative."},
+      {"id": "x008", "kind": "test", "name": "transvaginal ultrasound", "aliases": ["TVUS", "pelvic ultrasound", "transvaginal sonography"], "result": "No abnormalities detected."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-196",
+    "diagnosis": "Pseudocyesis",
+    "aliases": ["false pregnancy", "pseudopregnancy", "phantom pregnancy", "hysterical pregnancy", "spurious pregnancy"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-196",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-196-p001"],
+      "f002": ["agentclinic-medqa-ext-196-p001", "agentclinic-medqa-ext-196-p002"],
+      "f003": ["agentclinic-medqa-ext-196-p001", "agentclinic-medqa-ext-196-p003"],
+      "f004": ["agentclinic-medqa-ext-196-p001", "agentclinic-medqa-ext-196-p004"],
+      "f005": ["agentclinic-medqa-ext-196-p001", "agentclinic-medqa-ext-196-p005"],
+      "f006": ["agentclinic-medqa-ext-196-p001"],
+      "f007": ["agentclinic-medqa-ext-196-p001", "agentclinic-medqa-ext-196-p007"],
+      "f008": ["agentclinic-medqa-ext-196-p001", "agentclinic-medqa-ext-196-p006"],
+      "f009": ["agentclinic-medqa-ext-196-p006"],
+      "f010": ["agentclinic-medqa-ext-196-p007"],
+      "f011": ["agentclinic-medqa-ext-196-p007"],
+      "f012": ["agentclinic-medqa-ext-196-p007"],
+      "f013": ["agentclinic-medqa-ext-196-p008"],
+      "f014": ["agentclinic-medqa-ext-196-p008"],
+      "f015": ["agentclinic-medqa-ext-196-p008"],
+      "f016": ["agentclinic-medqa-ext-196-p008"],
+      "f017": ["agentclinic-medqa-ext-196-p008"],
+      "f018": ["agentclinic-medqa-ext-196-p008"]
+    },
+    "quotes": {
+      "f001": "She announces that she believes she is pregnant due to these symptoms",
+      "f004": "6.6-lb weight gain",
+      "f006": "a 2-month history of symptoms",
+      "f007": "attempting to conceive for 6 months",
+      "f008": "Has been off oral contraceptives for 6 months",
+      "f009": "No other significant medical history.",
+      "f012": "Drinks alcohol socially",
+      "f016": "dysuria",
+      "f018": "Reports increased fatigue"
+    },
+    "flags": {
+      "f007": ["Trying to conceive is filed as social_background (the patient's own wishes); it could also be read as reproductive history."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.2°C (99°F)", "exam_ids": ["agentclinic-medqa-ext-196-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/60 mmHg", "exam_ids": ["agentclinic-medqa-ext-196-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "100 bpm", "exam_ids": ["agentclinic-medqa-ext-196-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-196-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Mild, nontender abdominal enlargement. + Normal bowel sounds throughout. + Tympanic throughout. + Soft, non-tender.", "exam_ids": ["agentclinic-medqa-ext-196-e005", "agentclinic-medqa-ext-196-e006", "agentclinic-medqa-ext-196-e007", "agentclinic-medqa-ext-196-e008"]},
+      "x006": {"source": "Physical_Examination_Findings.Pelvic_Exam.Cervical_Os + Physical_Examination_Findings.Pelvic_Exam.Adnexa", "source_text": "Closed + No masses or tenderness.", "exam_ids": ["agentclinic-medqa-ext-196-e009", "agentclinic-medqa-ext-196-e010"]},
+      "x007": {"source": "Test_Results.Urine_β-hCG.Result", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-196-i001"]},
+      "x008": {"source": "Test_Results.Transvaginal_Ultrasound.Findings", "source_text": "No abnormalities detected.", "exam_ids": ["agentclinic-medqa-ext-196-i002"]}
+    },
+    "leakage": [],
+    "source_issues": ["The objective_for_doctor discloses the negative urine β-hCG result (a test answer in the task line).", "No menstrual history (last period, missed periods) is given; it stays unknown.", "Off oral contraceptives for 6 months appears in both the History and the Past_Medical_History; merged into f008."],
+    "notes": ["The chief complaint 'Reports of pregnancy symptoms' becomes the patient's belief that she is pregnant (f001, social_background: her own understanding); the four symptoms she attributes to pregnancy are separate facts.", "The 2-month duration covers the four listed symptoms, so it is a standalone general fact (f006); fatigue comes only from the review of systems and has no duration.", "Stopping the pill is a medication fact with time 'historical'; she is not on contraception now, but no current-contraception denial is stated, so none is added."],
+    "extras": {
+      "objective_for_doctor": "Evaluate a 34-year-old woman requesting prenatal care, with subjective feelings of pregnancy but negative urine β-hCG."
+    }
+  }
+}

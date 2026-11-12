@@ -1,0 +1,133 @@
+{
+  "case_id": "agentclinic-medqa-ext-078",
+  "source_row": 78,
+  "demographics_text": "30-year-old male",
+  "objective_for_doctor": "Evaluate and manage a patient presenting with left chest pain, a productive cough with purulent sputum, and shortness of breath.",
+  "chief_complaint": "Left chest pain",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-078-p001",
+      "field": "History",
+      "text": "The patient reports experiencing left-sided chest pain and a productive cough with purulent sputum for the past week. He mentions shortness of breath. States he was diagnosed with influenza recently but did not adhere to the treatment plan provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-078-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Productive cough with purulent sputum"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-078-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Shortness of breath"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-078-p004",
+      "field": "Past_Medical_History",
+      "text": "Diagnosed with influenza recently, with non-compliance to treatment. No other significant past medical or surgical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-078-p005",
+      "field": "Social_History",
+      "text": "Non-smoker, occasional alcohol intake. Occupation and hobbies not specified."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-078-p006",
+      "field": "Review_of_Systems",
+      "text": "Reports fever and malaise. Denies recent travel, animal exposures, or sick contacts."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "38.7°C (101.7°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "120/60 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "70 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "22 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.SO2",
+      "text": "80%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e006",
+      "path": "Physical_Examination_Findings.Chest_Examination.Inspection",
+      "text": "No cyanosis or use of accessory respiratory muscles."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e007",
+      "path": "Physical_Examination_Findings.Chest_Examination.Auscultation",
+      "text": "Decreased breath sounds at the left base, crackles."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e008",
+      "path": "Physical_Examination_Findings.Chest_Examination.Percussion",
+      "text": "Dullness to percussion over the left lower lung fields."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-e009",
+      "path": "Physical_Examination_Findings.Chest_Examination.Palpation",
+      "text": "No significant findings."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i001",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "14 mg/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hematocrit",
+      "text": "45%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i003",
+      "path": "Test_Results.Complete_Blood_Count.Leukocyte_count",
+      "text": "12,000/mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i004",
+      "path": "Test_Results.Complete_Blood_Count.Neutrophils",
+      "text": "82%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i005",
+      "path": "Test_Results.Complete_Blood_Count.Lymphocytes",
+      "text": "15%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i006",
+      "path": "Test_Results.Complete_Blood_Count.Monocytes",
+      "text": "3%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i007",
+      "path": "Test_Results.Complete_Blood_Count.Platelet_count",
+      "text": "270,000/mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-078-i008",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Alveolar infiltrates in the left base with air bronchograms"
+    }
+  ],
+  "correct_diagnosis": "Pneumonia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

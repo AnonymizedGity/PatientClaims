@@ -1,0 +1,104 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-091", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 69, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["head pain"], "text": "I've been having headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "worsening vision", "aliases": ["vision loss", "poor vision", "trouble seeing"], "text": "My vision has been getting progressively worse.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f003", "item": "how long the symptoms have been going on", "text": "Both the headaches and the worsening vision have been going on for 3 weeks.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "weight change", "aliases": ["weight loss", "weight gain"], "text": "I haven't noticed any recent changes in my weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "fever", "aliases": ["fevers"], "text": "I haven't had any fevers.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "pain elsewhere in the body", "aliases": ["other pain"], "text": "I don't have pain anywhere else in my body.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "blood pressure medication", "aliases": ["antihypertensive", "regular medications"], "text": "I take medication for my blood pressure, and it keeps it under control.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "high cholesterol", "aliases": ["hypercholesterolemia"], "text": "I also have a history of high cholesterol.", "polarity": "present", "category": "medical_history"},
+      {"id": "f011", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a retired school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f012", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "recreational drug use", "aliases": ["drugs", "illicit drugs"], "text": "I don't use recreational drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "nausea", "text": "I haven't felt nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "diarrhea", "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f018", "item": "recent travel", "aliases": ["travel"], "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "sick contacts", "aliases": ["contact with sick people"], "text": "I haven't been around anyone who's sick.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f020", "item": "change in hearing", "aliases": ["hearing loss", "hearing problems"], "text": "I haven't noticed any changes in my hearing.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f021", "item": "neck stiffness", "aliases": ["stiff neck"], "text": "My neck isn't stiff.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f022", "item": "sensitivity to light", "aliases": ["photophobia"], "text": "Light doesn't bother my eyes.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f023", "item": "other symptoms", "aliases": ["any other complaints"], "text": "Apart from the headaches and my vision, I haven't noticed any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-091",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "78/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "eye chart", "Snellen chart"], "result": "Right eye 20/120; left eye 20/80."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["ophthalmoscopy", "fundoscopic examination", "retinal examination", "dilated eye examination"], "result": "Findings suggestive of retinal vein occlusion or hemorrhages."},
+      {"id": "x007", "kind": "test", "name": "hemoglobin", "aliases": ["Hb", "complete blood count", "CBC", "blood count"], "result": "14.2 g/dL."},
+      {"id": "x008", "kind": "test", "name": "serum calcium", "aliases": ["calcium", "total calcium", "Ca"], "result": "Total serum calcium 9.9 mg/dL."},
+      {"id": "x009", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood smear", "blood film"], "result": "Findings indicative of increased circulating immunoglobulins."},
+      {"id": "x010", "kind": "test", "name": "serum protein electrophoresis", "aliases": ["SPEP", "serum electrophoresis", "protein electrophoresis"], "result": "Increased concentration of a pentameric immunoglobulin, consistent with a monoclonal gammopathy."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-091",
+    "diagnosis": "Waldenstrom macroglobulinemia",
+    "aliases": ["Waldenström macroglobulinemia", "Waldenström's macroglobulinemia", "Waldenstrom's macroglobulinemia", "WM", "primary macroglobulinemia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-091",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-091-p001"], "f002": ["agentclinic-medqa-ext-091-p001", "agentclinic-medqa-ext-091-p002"],
+      "f003": ["agentclinic-medqa-ext-091-p001", "agentclinic-medqa-ext-091-p002"], "f004": ["agentclinic-medqa-ext-091-p001", "agentclinic-medqa-ext-091-p003"],
+      "f005": ["agentclinic-medqa-ext-091-p001", "agentclinic-medqa-ext-091-p004"], "f006": ["agentclinic-medqa-ext-091-p001", "agentclinic-medqa-ext-091-p005"],
+      "f007": ["agentclinic-medqa-ext-091-p001", "agentclinic-medqa-ext-091-p006"], "f008": ["agentclinic-medqa-ext-091-p007"],
+      "f009": ["agentclinic-medqa-ext-091-p007"], "f010": ["agentclinic-medqa-ext-091-p007"],
+      "f011": ["agentclinic-medqa-ext-091-p008"], "f012": ["agentclinic-medqa-ext-091-p008"], "f013": ["agentclinic-medqa-ext-091-p008"],
+      "f014": ["agentclinic-medqa-ext-091-p008"], "f015": ["agentclinic-medqa-ext-091-p009"], "f016": ["agentclinic-medqa-ext-091-p009"],
+      "f017": ["agentclinic-medqa-ext-091-p009"], "f018": ["agentclinic-medqa-ext-091-p009"], "f019": ["agentclinic-medqa-ext-091-p009"],
+      "f020": ["agentclinic-medqa-ext-091-p009"], "f021": ["agentclinic-medqa-ext-091-p009"], "f022": ["agentclinic-medqa-ext-091-p009"],
+      "f023": ["agentclinic-medqa-ext-091-p001"]
+    },
+    "quotes": {
+      "f002": "progressively worsening vision", "f003": "a 3-week history of headache and progressively worsening vision / over the past 3 weeks",
+      "f004": "no recent weight changes", "f007": "no pain elsewhere in the body", "f009": "controlled with medication",
+      "f010": "a history of high cholesterol", "f011": "Retired school teacher", "f013": "drinks alcohol socially",
+      "f020": "No changes in hearing", "f022": "Denies neck stiffness or photophobia", "f023": "She has not noticed any other symptoms"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-091-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-091-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "78 bpm", "exam_ids": ["agentclinic-medqa-ext-091-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16 breaths/min", "exam_ids": ["agentclinic-medqa-ext-091-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Ophthalmologic_Examination.Visual_Acuity.Right_Eye + Physical_Examination_Findings.Ophthalmologic_Examination.Visual_Acuity.Left_Eye", "source_text": "Right_Eye: 20/120; Left_Eye: 20/80", "exam_ids": ["agentclinic-medqa-ext-091-e005", "agentclinic-medqa-ext-091-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Ophthalmologic_Examination.Fundoscopy", "source_text": "Details are not provided in this scenario but imagine findings suggestive of retinal vein occlusion or hemorrhages.", "exam_ids": ["agentclinic-medqa-ext-091-e007"]},
+      "x007": {"source": "Test_Results.Laboratory_Studies.Hemoglobin", "source_text": "14.2 g/dL", "exam_ids": ["agentclinic-medqa-ext-091-i001"]},
+      "x008": {"source": "Test_Results.Laboratory_Studies.Total_Serum_Calcium", "source_text": "9.9 mg/dL", "exam_ids": ["agentclinic-medqa-ext-091-i002"]},
+      "x009": {"source": "Test_Results.Peripheral_Blood_Smear.Findings", "source_text": "Not specified in this scenario, but imagine findings are indicative of increased circulating immunoglobulins.", "exam_ids": ["agentclinic-medqa-ext-091-i003"]},
+      "x010": {"source": "Test_Results.Serum_Electrophoresis.Findings", "source_text": "Increased concentration of a pentameric immunoglobulin, consistent with a monoclonal gammopathy.", "exam_ids": ["agentclinic-medqa-ext-091-i004"]}
+    },
+    "finding_flags": {
+      "x006": ["Source is a placeholder ('Details are not provided in this scenario but imagine findings suggestive of ...'); the result keeps only the imagined finding, without the scenario commentary."],
+      "x009": ["Source is a placeholder ('Not specified in this scenario, but imagine findings are indicative of ...'); the result keeps only the imagined finding. A smear does not measure immunoglobulins directly (rouleaux would be the usual description)."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Fundoscopy (e007) and peripheral blood smear (i003) are author placeholders asking the reader to 'imagine' findings rather than reporting them."
+    ],
+    "notes": [
+      "The 3-week duration covers both the headache and the worsening vision, so it is a standalone symptom fact (f003), as in the reference example.",
+      "The blanket statement 'She has not noticed any other symptoms' is kept as a stated denial (f023, item 'other symptoms') beside its listed specifics (weight change, fevers, night sweats, pain elsewhere), which are separate facts.",
+      "'Hypertension, which is controlled with medication' gives the diagnosis fact (f008) and one medication fact carrying the control (f009); the drug is not named in the source.",
+      "Only hemoglobin is reported from the blood count, so it stays a single-test record with CBC as an alias.",
+      "Gold aliases exclude lymphoplasmacytic lymphoma and IgM monoclonal gammopathy, which are broader than the diagnosis."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with headache and worsening vision over a 3-week period."
+    }
+  }
+}

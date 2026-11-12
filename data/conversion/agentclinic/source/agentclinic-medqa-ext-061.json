@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-061",
+  "source_row": 61,
+  "demographics_text": "25-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with occasional shooting ear pain and difficulty wearing earrings post tympanoplasty.",
+  "chief_complaint": "Occasional shooting pain in the ear with eating",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-061-p001",
+      "field": "History",
+      "text": "The patient has a history of polycystic ovarian syndrome, depression, and chronic bilateral ear infections. She underwent right ear tympanoplasty 12 weeks ago. Although audiology report from one week ago showed improved hearing by 20 decibels, she reports occasional shooting pain when eating and discomfort when wearing earrings. She describes her job as stressful and mentions poor sleep quality."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-061-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Discomfort when wearing earrings"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-061-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Stress from job"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-061-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Poor sleep quality"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-061-p005",
+      "field": "Past_Medical_History",
+      "text": "History of polycystic ovarian syndrome, depression, and chronic bilateral ear infections. Underwent right ear tympanoplasty 12 weeks prior."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-061-p006",
+      "field": "Social_History",
+      "text": "Works as a cashier at a local department store."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-061-p007",
+      "field": "Review_of_Systems",
+      "text": "{\"General\": \"Denies fever or weight loss.\", \"ENT\": \"Reports shooting pain and discomfort in the right ear. Denies neck pain or facial tenderness.\", \"Neurological\": \"Denies dizziness, loss of consciousness.\"}"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "115/75 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e005",
+      "path": "Physical_Examination_Findings.ENT_Examination.Preauricular_Area",
+      "text": "No tenderness with palpation bilaterally."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e006",
+      "path": "Physical_Examination_Findings.ENT_Examination.Mandibular_Area",
+      "text": "No jaw clicking heard. No tenderness with palpation."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e007",
+      "path": "Physical_Examination_Findings.ENT_Examination.Postauricular_Area",
+      "text": "Right postauricular tapping causes tenderness in right tonsillar area."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-e008",
+      "path": "Physical_Examination_Findings.ENT_Examination.Oral_Exam",
+      "text": "Even and symmetric molar teeth bilaterally. Uvula is midline. Gag reflex intact."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-061-i001",
+      "path": "Test_Results.Audiology_Report_One_Week_Ago.Findings",
+      "text": "Improved hearing by 20 decibels post tympanoplasty."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-061-i002",
+      "path": "Test_Results.Additional_Tests.Suggestion",
+      "text": "MRI of the brainstem and cerebellopontine angle with and without contrast could be considered to rule out underlying causes if clinical suspicion persists."
+    }
+  ],
+  "correct_diagnosis": "Glossopharyngeal Neuralgia",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

@@ -1,0 +1,53 @@
+{
+ "case_id": "ddxplus-v2-test-0000049",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "I have a fever.",
+   "My voice has become deeper, softer or hoarse.",
+   "I have pain.",
+   "I have a cough.",
+   "I've had a cold in the last 2 weeks.",
+   "I smoke cigarettes.",
+   "I go to or work in a daycare."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been dealing with a fever, a cough, and some pain. My voice has become deeper, softer, or hoarse. I've had a cold in the last 2 weeks. I smoke cigarettes, and I go to or work in a daycare.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f010",
+    "f002",
+    "f009",
+    "f011",
+    "f012",
+    "f013"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8685,
+   "tokens_out": 65,
+   "seconds": 10.02,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,133 @@
+{
+  "case_id": "agentclinic-medqa-ext-007",
+  "source_row": 7,
+  "demographics_text": "53-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with an episode of loss of consciousness.",
+  "chief_complaint": "Episode of loss of consciousness",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-007-p001",
+      "field": "History",
+      "text": "The patient was brought to the emergency department after an episode of loss of consciousness that occurred 1 hour ago, immediately after micturating. His wife found him unconscious on the bathroom floor. He regained consciousness after about 30 seconds without any confusion or amnesia for the event. No history of urinary incontinence during the event."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-007-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Regained consciousness quickly without confusion"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-007-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No urinary incontinence"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-007-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No bite marks or injuries"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-007-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical or surgical history. Not on any regular medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-007-p006",
+      "field": "Social_History",
+      "text": "Non-smoker. Drinks alcohol socially. Works as a high school teacher. No recent travel or sick contacts."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-007-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies chest pain, palpitations, fevers, headaches, seizures, recent illnesses, or any other neurological symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e005",
+      "path": "Physical_Examination_Findings.Cardiopulmonary_Examination.Heart",
+      "text": "Normal rate, regular rhythm, no murmurs."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e006",
+      "path": "Physical_Examination_Findings.Cardiopulmonary_Examination.Lungs",
+      "text": "Clear to auscultation bilaterally, no wheezes, rales, or rhonchi."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e007",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Mental_Status",
+      "text": "Alert and oriented to person, place, time, and situation."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e008",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Cranial_Nerves",
+      "text": "Intact."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e009",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Motor",
+      "text": "Normal strength and tone in all extremities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e010",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Sensory",
+      "text": "No sensory deficits."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e011",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Reflexes",
+      "text": "Physiologic reflexes present and symmetrical."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-e012",
+      "path": "Physical_Examination_Findings.Neurologic_Examination.Coordination",
+      "text": "No ataxia or dysmetria."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-007-i001",
+      "path": "Test_Results.Blood_Tests.Glucose",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-i002",
+      "path": "Test_Results.Blood_Tests.Creatinine",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-i003",
+      "path": "Test_Results.Blood_Tests.Electrolytes",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-007-i004",
+      "path": "Test_Results.Electrocardiogram.Findings",
+      "text": "No abnormalities."
+    }
+  ],
+  "correct_diagnosis": "Situational syncope",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

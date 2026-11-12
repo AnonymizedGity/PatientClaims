@@ -1,0 +1,95 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11855",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 68, "sex": "male"},
+    "opening": ["f001", "f002", "f003", "f004"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath on exertion", "aliases": ["exertional dyspnoea", "breathless with activity", "shortness of breath"], "text": "I get short of breath when I exert myself.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath lying flat", "aliases": ["orthopnoea", "orthopnea", "can't lie flat", "need extra pillows"], "text": "I get short of breath when I lie flat.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f003", "item": "waking up at night short of breath", "aliases": ["paroxysmal nocturnal dyspnoea", "PND", "night-time breathlessness"], "text": "I wake up at night short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "recurrent"},
+      {"id": "f004", "item": "swelling", "aliases": ["oedema", "edema", "swollen legs", "fluid retention"], "text": "I've been swelling up.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f005", "item": "swelling: course", "parent": "f004", "attribute": "course", "text": "It keeps getting worse.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f006", "item": "swelling: location", "parent": "f004", "attribute": "location", "text": "It now reaches up to my belly.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f007", "item": "how long the symptoms have been going on", "text": "All of this started about a week ago.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f008", "item": "heart bypass surgery", "aliases": ["coronary artery bypass grafting", "CABG", "bypass operation", "heart surgery", "recent surgery"], "text": "Four weeks ago I had heart bypass surgery, with grafts to two arteries (the LAD and the posterior descending artery).", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f009", "item": "heart valve replacement", "aliases": ["aortic valve replacement", "AVR", "tissue valve", "bioprosthetic valve"], "text": "In the same operation my aortic valve was replaced with a tissue (bioprosthetic) valve.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "coronary artery disease", "aliases": ["CAD", "blocked heart arteries", "heart disease"], "text": "I have coronary artery disease in several arteries.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "aortic stenosis", "aliases": ["narrowed aortic valve", "valve disease"], "text": "Before the valve replacement I had severe aortic stenosis.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f012", "item": "atrial fibrillation", "aliases": ["AF", "AFib", "irregular heartbeat", "paroxysmal atrial fibrillation"], "text": "I have paroxysmal atrial fibrillation, an irregular heartbeat that comes and goes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "high cholesterol", "aliases": ["hypercholesterolaemia", "hypercholesterolemia", "raised cholesterol"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "disease of the lining around the heart", "aliases": ["pericardial disease", "pericarditis", "pericardial effusion"], "text": "I've never had any problem with the sac around my heart.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "heart muscle disease", "aliases": ["myocardial disease", "cardiomyopathy", "myocarditis"], "text": "I've never had heart muscle disease.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f017", "item": "autoimmune conditions", "aliases": ["autoimmune disease"], "text": "I don't have any autoimmune conditions.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f018", "item": "symptoms of heart rhythm problems", "aliases": ["arrhythmia symptoms", "heart rhythm symptoms"], "text": "I've never noticed any symptoms from my heart rhythm.", "polarity": "absent", "category": "symptom", "system": "cardiovascular"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11855",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "cardiovascular", "name": "peripheral oedema", "aliases": ["oedema", "edema", "leg swelling", "pitting oedema", "volume status"], "result": "Pitting oedema extending to the abdomen."},
+      {"id": "x002", "kind": "exam", "system": "cardiovascular", "name": "jugular venous pressure", "aliases": ["JVP", "neck veins"], "result": "Markedly elevated."},
+      {"id": "x003", "kind": "exam", "system": "cardiovascular", "name": "Kussmaul's sign", "aliases": ["Kussmaul sign", "inspiratory rise in JVP"], "result": "Positive."},
+      {"id": "x004", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["chest auscultation", "breath sounds", "respiratory examination"], "result": "Reduced breath sounds at both lung bases."},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "heart auscultation", "aliases": ["heart sounds", "cardiac examination", "murmurs"], "result": "Dual heart sounds without murmurs."},
+      {"id": "x006", "kind": "test", "name": "NT-proBNP", "aliases": ["N-terminal pro-B-type natriuretic peptide", "BNP", "natriuretic peptide"], "result": "3034 ng/L (normal < 126 ng/L)"},
+      {"id": "x007", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Bilateral pleural effusions without pericardial calcification."},
+      {"id": "x008", "kind": "test", "name": "electrocardiography", "aliases": ["ECG", "EKG", "electrocardiogram"], "result": "Sinus rhythm without ischaemic changes or low-voltage QRS complexes."},
+      {"id": "x009", "kind": "test", "name": "transthoracic echocardiography", "aliases": ["echocardiogram", "echo", "TTE", "cardiac ultrasound"], "result": "Normal chamber sizes; preserved left ventricular systolic function; normal prosthetic valve function; no regional wall-motion abnormalities. Bright, thickened pericardium with a small pericardial effusion. Dilated inferior vena cava without respirophasic collapse. Respirophasic septal motion (septal bounce) indicating ventricular interdependence. Mitral inflow velocity varies by > 25% with respiration and tricuspid inflow velocity by > 40%."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11855",
+    "diagnosis": "Constrictive pericarditis",
+    "aliases": ["pericardial constriction", "post-cardiac surgery constrictive pericarditis", "post-pericardiotomy constrictive pericarditis", "postoperative constrictive pericarditis"],
+    "reasoning": "1. Acute left ventricular dysfunction was considered but deemed unlikely — “there was no clear precipitant for this identified from the patient’s clinical history.” 2. Acute valvular pathology was considered but made less likely — “although no murmur was identified on clinical exam.” 3. Uncontrolled tachyarrhythmias were considered but unsupported — “there was no history of palpitations, pre-syncope, or syncope to support this.” 4. Pulmonary embolism or lower respiratory tract infection were considered in the differential — “other diagnostic possibilities included superimposed pulmonary pathology such as pulmonary embolism or lower respiratory tract infection.” 5. Constrictive pericarditis was suspected based on echocardiographic features — “Note was made of a bright, thickened pericardium, and a small pericardial effusion… Respirophasic septal motion (septal bounce) consistent with ventricular interdependence was also noted.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11855",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s004"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s001", "s002"], "f010": ["s002"], "f011": ["s002"], "f012": ["s002"],
+      "f013": ["s002"], "f014": ["s002"], "f015": ["s003"], "f016": ["s003"], "f017": ["s003"], "f018": ["s003"]
+    },
+    "quotes": {
+      "f005": "progressive oedema", "f006": "pitting oedema extending to the abdomen",
+      "f007": "a 1-week history of dyspnoea on exertion, orthopnoea, paroxysmal nocturnal dyspnoea, and progressive oedema",
+      "f008": "4 weeks after coronary artery bypass grafting to the left anterior descending and posterior descending arteries",
+      "f009": "bioprosthetic aortic-valve replacement", "f010": "multivessel coronary artery disease",
+      "f011": "severe aortic stenosis (status post-AVR)", "f012": "paroxysmal atrial fibrillation",
+      "f015": "no prior pericardial or myocardial disease", "f018": "history of arrhythmia symptoms"
+    },
+    "flags": {
+      "f006": ["Taken from the examination (s004): swelling up to the abdomen is visible to the patient. The history does not say where the swelling started."],
+      "f018": ["Paroxysmal atrial fibrillation without arrhythmia symptoms; written as never having noticed rhythm symptoms. Specific symptoms (palpitations, fainting) stay unknown."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "he was euvolaemic except for pitting oedema extending to the abdomen"},
+      "x002": {"sentences": ["s004"], "source_text": "jugular venous pressure markedly elevated"},
+      "x003": {"sentences": ["s004"], "source_text": "with a positive Kussmaul’s sign"},
+      "x004": {"sentences": ["s004"], "source_text": "reduced breath sounds at both lung bases"},
+      "x005": {"sentences": ["s005"], "source_text": "Heart sounds were dual without murmurs."},
+      "x006": {"sentences": ["s006"], "source_text": "an N-terminal pro–B-type natriuretic peptide level of 3034 ng/L (normal < 126 ng/L)"},
+      "x007": {"sentences": ["s007"], "source_text": "A chest radiograph demonstrated bilateral pleural effusions without pericardial calcification."},
+      "x008": {"sentences": ["s008"], "source_text": "Electrocardiography showed sinus rhythm without ischaemic changes or low-voltage QRS complexes."},
+      "x009": {"sentences": ["s009", "s010", "s011", "s012", "s013"], "source_text": "Transthoracic echocardiography revealed normal chamber sizes, preserved left ventricular systolic function, and normal prosthetic valve function without regional wall-motion abnormalities. / A bright, thickened pericardium and a small pericardial effusion were noted. / The inferior vena cava was dilated without respirophasic collapse. / Respirophasic septal motion (“septal bounce”) indicating ventricular interdependence was observed. / Mitral inflow velocity varied by > 25% with respiration, and tricuspid inflow velocity varied by > 40%."}
+    },
+    "finding_flags": {
+      "x009": ["Echocardiography is a written report, so 'indicating ventricular interdependence' is kept."]
+    },
+    "leakage": [
+      {"fact_id": "f015", "reason": "Only the alias 'pericarditis' on a history denial contains a gold word; the patient text does not."}
+    ],
+    "source_issues": [
+      "s004 calls him 'euvolaemic' while listing pitting oedema to the abdomen, a markedly raised JVP and reduced basal breath sounds; the 'euvolaemic' label is not used in the findings.",
+      "No vital signs are reported."
+    ],
+    "notes": [
+      "Index visit: the presentation 4 weeks after CABG and bioprosthetic aortic-valve replacement with a 1-week history of exertional dyspnoea, orthopnoea, paroxysmal nocturnal dyspnoea and progressive oedema (s001-s013 are this presentation and its workup).",
+      "The echocardiography sentences s009-s013 are one study and one record."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

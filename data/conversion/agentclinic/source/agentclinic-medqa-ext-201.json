@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-201",
+  "source_row": 201,
+  "demographics_text": "21-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with right arm pain, limited range of motion, general abdominal discomfort, and symptoms of gastrointestinal distress without any recalled trauma.",
+  "chief_complaint": "Right arm pain and limited range of motion",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p001",
+      "field": "History",
+      "text": "The patient reports experiencing right arm pain and limited range of motion for no apparent reason. Additionally, she mentions having diarrhea, nausea, and pain during intercourse. She cannot recall any injury or trauma to her arm that could have started the pain. Reports being sexually active with one partner. Patient also mentions having gone through similar symptoms several times in the past year, resulting in multiple ER visits."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Diarrhea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Pain during intercourse"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Generalized abdominal tenderness without clear localization"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p006",
+      "field": "Past_Medical_History",
+      "text": "Multiple ER visits in the past year with similar presentations. No significant findings from past investigations."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p007",
+      "field": "Social_History",
+      "text": "Currently in a monogamous relationship. Does not use tobacco, moderate alcohol use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-201-p008",
+      "field": "Review_of_Systems",
+      "text": "Reports general malaise but denies fever, vomiting, chills, weight changes, or urinary symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "115/75 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e005",
+      "path": "Physical_Examination_Findings.Arm_Examination.Inspection",
+      "text": "No erythema, swelling, or deformity noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e006",
+      "path": "Physical_Examination_Findings.Arm_Examination.Palpation",
+      "text": "Diffuse tenderness, no localized swelling or warmth."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e007",
+      "path": "Physical_Examination_Findings.Arm_Examination.Range_of_Motion",
+      "text": "Limited due to pain, not due to mechanical restriction."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible distension or masses."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e009",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Bowel sounds present and normal."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e010",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic throughout, no shifting dullness."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-e011",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Vague and diffuse tenderness, no rebound or guarding."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-201-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-i004",
+      "path": "Test_Results.Fecal_Occult_Blood_Test",
+      "text": "Negative"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-201-i005",
+      "path": "Test_Results.Others.Remarks",
+      "text": "No significant abnormalities in basic lab work or specialty tests relevant to the symptoms."
+    }
+  ],
+  "correct_diagnosis": "Somatization disorder",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

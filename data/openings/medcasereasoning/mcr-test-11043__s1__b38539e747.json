@@ -1,0 +1,51 @@
+{
+ "case_id": "mcr-test-11043",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've been short of breath.",
+   "It started about a week ago.",
+   "I've had a low-grade fever.",
+   "I've been feeling generally unwell.",
+   "I've been sweating a lot.",
+   "I'm Sri Lankan."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm Sri Lankan, and I've been feeling generally unwell for about a week now. I've been short of breath, and I've had a low-grade fever along with sweating a lot.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f004",
+    "f005",
+    "f006",
+    "f015"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3272,
+   "tokens_out": 53,
+   "seconds": 5.04,
+   "redrafts": 0
+  }
+ }
+}

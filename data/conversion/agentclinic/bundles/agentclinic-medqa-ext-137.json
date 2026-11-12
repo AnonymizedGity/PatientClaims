@@ -1,0 +1,78 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-137", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 43, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "chest pain", "aliases": ["pain in the chest"], "text": "I'm having chest pain.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f002", "item": "chest pain: severity", "parent": "f001", "attribute": "severity", "aliases": ["how bad"], "text": "It's severe.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f003", "item": "previous similar episodes", "aliases": ["had this before"], "text": "I've never had an episode like this before.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f004", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f005", "item": "recent death of my husband", "aliases": ["bereavement", "loss of spouse", "recent loss"], "text": "My husband died recently in a tragic car accident.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f006", "item": "emotional stress", "aliases": ["stress", "psychological stress", "emotional trauma"], "text": "Since losing my husband I've been under a great deal of emotional and psychological stress.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f007", "item": "came with a family member", "aliases": ["who brought me in", "accompanied"], "text": "My brother brought me to the emergency department.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-137",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "105/67 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "96/min, regular"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "23/min"},
+      {"id": "x004", "kind": "vital", "name": "oxygen saturation", "aliases": ["pulse oximetry", "SpO2", "O2 sat"], "result": "96%"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "heart auscultation", "aliases": ["heart sounds", "cardiac examination", "cardiovascular examination"], "result": "S3 heart sound present."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "lung auscultation", "aliases": ["lung examination", "breath sounds", "chest auscultation"], "result": "Rales in the right and left lower lung lobes."},
+      {"id": "x007", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG", "12-lead ECG"], "result": "No significant findings."},
+      {"id": "x008", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "cardiac ultrasound"], "result": "Enlarged left ventricle and left atrium."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-137",
+    "diagnosis": "Takotsubo cardiomyopathy",
+    "aliases": ["Takotsubo syndrome", "stress cardiomyopathy", "stress-induced cardiomyopathy", "broken heart syndrome", "apical ballooning syndrome", "transient left ventricular apical ballooning syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-137",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-137-p001"], "f002": ["cc", "agentclinic-medqa-ext-137-p001"], "f003": ["agentclinic-medqa-ext-137-p006"],
+      "f004": ["agentclinic-medqa-ext-137-p003", "agentclinic-medqa-ext-137-p004"],
+      "f005": ["agentclinic-medqa-ext-137-p001", "agentclinic-medqa-ext-137-p002"],
+      "f006": ["agentclinic-medqa-ext-137-p001", "agentclinic-medqa-ext-137-p002", "agentclinic-medqa-ext-137-p004", "agentclinic-medqa-ext-137-p005"],
+      "f007": ["agentclinic-medqa-ext-137-p001"]
+    },
+    "quotes": {
+      "f002": "Severe chest pain", "f003": "Denies history of similar episodes.", "f004": "No significant past medical history.",
+      "f005": "recently lost her husband in a tragic car accident",
+      "f006": "experiencing a significant amount of emotional stress / acute emotional and psychological stress",
+      "f007": "brought to the emergency department by her brother"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "105/67 mm Hg", "exam_ids": ["agentclinic-medqa-ext-137-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "96/min and regular", "exam_ids": ["agentclinic-medqa-ext-137-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "23/min", "exam_ids": ["agentclinic-medqa-ext-137-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Pulse_Oximetry", "source_text": "96%", "exam_ids": ["agentclinic-medqa-ext-137-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiac_Examination.Heart_Sounds", "source_text": "Presence of S3 heart sound", "exam_ids": ["agentclinic-medqa-ext-137-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Cardiac_Examination.Lung_Auscultation", "source_text": "Rales in the lower right and left lung lobes", "exam_ids": ["agentclinic-medqa-ext-137-e006"]},
+      "x007": {"source": "Test_Results.ECG.Findings", "source_text": "No significant findings", "exam_ids": ["agentclinic-medqa-ext-137-i001"]},
+      "x008": {"source": "Test_Results.Echocardiography.Findings", "source_text": "Enlarged left ventricle and left atrium", "exam_ids": ["agentclinic-medqa-ext-137-i002"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The echocardiogram shows an enlarged left ventricle and atrium rather than the transient apical ballooning typical of Takotsubo cardiomyopathy, and the ECG is normal; no troponin or coronary angiography is given, so the tests support the gold diagnosis weakly.",
+      "No temperature is given; lung auscultation is filed under Cardiac_Examination.",
+      "Social_History has no own content ('No specific details provided. Attention to recent emotional trauma is noted.')."
+    ],
+    "notes": [
+      "The chief complaint 'Severe chest pain' gives the opening: chest pain and its severity (child fact).",
+      "The source has no further chest-pain characteristics (onset, character, radiation); they stay unknown.",
+      "The bereavement and the resulting emotional stress are social_background facts (stressor). The stress appears in History, Secondary_Symptoms, Past_Medical_History and Social_History and is one fact (f006).",
+      "'The patient appears to be in distress' (p006) is an observer sign not in the exam leaves; moved to qc.extras.acting_notes.",
+      "'No significant past medical history mentioned' (p003) and 'No significant past medical history' (p004) are read as one denial."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient presenting with severe chest pain and provide a diagnosis based on the clinical findings and test results presented.",
+      "acting_notes": ["Appears to be in distress due to the chest pain and recent emotional events (source Review_of_Systems p006)."]
+    }
+  }
+}

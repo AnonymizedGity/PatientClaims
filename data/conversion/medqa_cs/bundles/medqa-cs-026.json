@@ -1,0 +1,1092 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-026",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 54,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "cough",
+        "text": "I have an ongoing cough.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "cough: how long",
+        "parent": "f001",
+        "attribute": "duration",
+        "text": "I've had a cough for years.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "cough: time of day",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "It's been particularly in the mornings.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "cough: change over time",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "Over the last month it has intensified, and it's getting worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "cough: how much it bothers me",
+        "parent": "f001",
+        "attribute": "severity",
+        "text": "It's quite bothersome.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "cough: variation during the day",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "I haven't noticed it change depending on the time of day.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "cough: effect on sleep",
+        "parent": "f001",
+        "attribute": "other",
+        "aliases": [
+          "cough at night"
+        ],
+        "text": "There are times when it keeps me from sleeping.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "cough: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "text": "Nothing makes it better.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "cough: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "text": "Nothing makes it worse.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "cough: what brought it on",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "I can't think of anything that brought it on.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "coughing up mucus",
+        "aliases": [
+          "phlegm",
+          "sputum",
+          "productive cough"
+        ],
+        "text": "My cough brings up mucus.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "coughing up mucus: how much",
+        "parent": "f011",
+        "attribute": "quantity",
+        "text": "Two teaspoonfuls.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "coughing up mucus: change in amount",
+        "parent": "f011",
+        "attribute": "course",
+        "text": "The amount has been stable.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "coughing up mucus: color",
+        "parent": "f011",
+        "attribute": "appearance",
+        "text": "The mucus is yellowish.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "coughing up mucus: smell",
+        "parent": "f011",
+        "attribute": "other",
+        "text": "It doesn't have any smell.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "coughing up mucus: consistency",
+        "parent": "f011",
+        "attribute": "character",
+        "text": "It's thick and viscous.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "coughing up blood",
+        "aliases": [
+          "blood in the mucus",
+          "blood in sputum"
+        ],
+        "text": "I've been coughing up blood recently.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "coughing up blood: how much",
+        "parent": "f017",
+        "attribute": "quantity",
+        "text": "Streaks.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "recent illness",
+        "aliases": [
+          "recent cold",
+          "recent infection"
+        ],
+        "text": "I haven't had any recent illnesses.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "historical"
+      },
+      {
+        "id": "f020",
+        "item": "fever",
+        "text": "I've had a mild fever. I didn't take my temperature.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "night sweats",
+        "aliases": [
+          "sweating",
+          "sweating at night"
+        ],
+        "text": "I've been sweating, especially at night.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "chills",
+        "text": "I haven't had any chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing",
+          "breathlessness"
+        ],
+        "text": "I feel short of breath when I walk upstairs.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "wheezing",
+        "text": "I haven't been wheezing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "chest pain",
+        "text": "I don't have any chest pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "swelling in the feet",
+        "aliases": [
+          "leg swelling",
+          "ankle swelling"
+        ],
+        "text": "I haven't had any swelling in my feet.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite",
+          "loss of appetite"
+        ],
+        "text": "I no longer have an appetite.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "weight loss",
+        "aliases": [
+          "weight change"
+        ],
+        "text": "I've lost 6 pounds in the past 2 months without intending to.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "energy level",
+        "aliases": [
+          "tiredness",
+          "fatigue"
+        ],
+        "text": "I don't have the energy that I had before.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "energy level: since when",
+        "parent": "f029",
+        "attribute": "onset",
+        "text": "Since two months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "bronchitis",
+        "aliases": [
+          "chronic bronchitis",
+          "lung problems",
+          "medical problems"
+        ],
+        "text": "I have long-term bronchitis.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "past surgery",
+        "aliases": [
+          "operations",
+          "tonsils"
+        ],
+        "text": "I had a tonsillectomy and adenoidectomy at age 11.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "last tuberculosis skin test",
+        "aliases": [
+          "TB skin test",
+          "PPD test"
+        ],
+        "text": "My last skin test was last year, before I started working in the nursing home. It was negative.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies"
+        ],
+        "text": "I'm not allergic to anything.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "cough syrup",
+        "text": "I take an over-the-counter cough syrup.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f036",
+        "item": "multivitamins",
+        "aliases": [
+          "vitamins"
+        ],
+        "text": "I take multivitamins.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "albuterol inhaler",
+        "aliases": [
+          "inhaler",
+          "rescue inhaler"
+        ],
+        "text": "I use an albuterol inhaler.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "father's health",
+        "text": "My father died of old age.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "mother's health",
+        "text": "My mother is alive and has Alzheimer's.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "contact with tuberculosis",
+        "aliases": [
+          "TB exposure",
+          "sick contacts"
+        ],
+        "text": "I work at a nursing home where several residents are being treated for TB.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "recent travel",
+        "aliases": [
+          "travel"
+        ],
+        "text": "I haven't traveled recently.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f042",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I've never used drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f044",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I quit smoking two weeks ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "resolved"
+      },
+      {
+        "id": "f045",
+        "item": "smoking: for how long",
+        "parent": "f044",
+        "attribute": "duration",
+        "text": "I smoked for the past 35 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f046",
+        "item": "smoking: how much",
+        "parent": "f044",
+        "attribute": "quantity",
+        "text": "One to two packs a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f047",
+        "item": "sexual activity",
+        "text": "I'm sexually active with my spouse.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I work as a nursing assistant.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "marital status",
+        "text": "I'm married.",
+        "polarity": "present",
+        "category": "social_background"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-026",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "99°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "15/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "75/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "ent",
+        "name": "mouth and throat examination",
+        "aliases": [
+          "pharynx",
+          "oral cavity",
+          "HEENT examination"
+        ],
+        "result": "Mouth and pharynx within normal limits."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "neck lymph nodes",
+          "jugular veins"
+        ],
+        "result": "No jugular venous distension; no enlarged lymph nodes."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung examination",
+        "aliases": [
+          "lung auscultation",
+          "listen to the lungs",
+          "tactile fremitus"
+        ],
+        "result": "Clear breath sounds on both sides; no rhonchi, rales or wheezing; tactile fremitus normal."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Apical impulse not displaced; regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not tender; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "clubbing",
+          "edema",
+          "leg swelling"
+        ],
+        "result": "No clubbing, cyanosis or edema."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-026",
+    "diagnosis": "Pulmonary tuberculosis",
+    "aliases": [
+      "tuberculosis",
+      "TB",
+      "pulmonary TB",
+      "active tuberculosis",
+      "active pulmonary tuberculosis"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Pulmonary tuberculosis",
+        "evidence": [
+          "Fever and night sweats with fatigue",
+          "worsening productive cough with blood-tinged mucus",
+          "cough of 1 month's duration",
+          "Close contact with patients with active TB",
+          "Decreased appetite with unintentional weight loss of 6 lbs over 2 months"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Malignant neoplasm of the lung",
+        "aliases": [
+          "lung cancer",
+          "lung carcinoma",
+          "bronchogenic carcinoma",
+          "primary lung cancer"
+        ],
+        "evidence": [
+          "Fever and night sweats with fatigue",
+          "Blood-tinged mucus",
+          "Decreased appetite with unintentional weight loss of 6 lbs over 2 months",
+          "History of heavy smoking and chronic bronchitis"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Typical pneumonia",
+        "aliases": [
+          "bacterial pneumonia",
+          "typical bacterial pneumonia",
+          "community-acquired pneumonia"
+        ],
+        "evidence": [
+          "Fever",
+          "Sputum production",
+          "Mucus production",
+          "History of heavy smoking and chronic bronchitis"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Lung abscess",
+        "note": "Gradual fatigue, fever, night sweats, and cough over weeks to months fit, but the sputum is not foul-smelling and risk factors (impaired consciousness, dysphagia, immunodeficiency) are absent."
+      },
+      {
+        "diagnosis": "Atypical pneumonia",
+        "note": "Mycoplasma, Chlamydia, or Legionella usually cause an insidious, nonproductive cough; weight loss, night sweats, and productive cough make it less likely."
+      },
+      {
+        "diagnosis": "COPD exacerbation",
+        "note": "Her baseline cough is from smoking-related chronic bronchitis, but exacerbations are more acute and night sweats and weight loss are not typical; COPD also raises TB risk."
+      },
+      {
+        "diagnosis": "Other causes of chronic cough (postnasal drip, GERD, asthma, ACE inhibitors)",
+        "note": "Common benign causes, but none explains the systemic symptoms."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-026",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-026-p001"
+      ],
+      "f003": [
+        "medqa-cs-026-p001"
+      ],
+      "f004": [
+        "medqa-cs-026-p001",
+        "medqa-cs-026-p003"
+      ],
+      "f005": [
+        "medqa-cs-026-p001"
+      ],
+      "f006": [
+        "medqa-cs-026-p002"
+      ],
+      "f007": [
+        "medqa-cs-026-p004"
+      ],
+      "f008": [
+        "medqa-cs-026-p005"
+      ],
+      "f009": [
+        "medqa-cs-026-p005"
+      ],
+      "f010": [
+        "medqa-cs-026-p013"
+      ],
+      "f011": [
+        "medqa-cs-026-p006"
+      ],
+      "f012": [
+        "medqa-cs-026-p007"
+      ],
+      "f013": [
+        "medqa-cs-026-p007"
+      ],
+      "f014": [
+        "medqa-cs-026-p008"
+      ],
+      "f015": [
+        "medqa-cs-026-p009"
+      ],
+      "f016": [
+        "medqa-cs-026-p010"
+      ],
+      "f017": [
+        "medqa-cs-026-p011"
+      ],
+      "f018": [
+        "medqa-cs-026-p012"
+      ],
+      "f019": [
+        "medqa-cs-026-p013"
+      ],
+      "f020": [
+        "medqa-cs-026-p014"
+      ],
+      "f021": [
+        "medqa-cs-026-p014"
+      ],
+      "f022": [
+        "medqa-cs-026-p014"
+      ],
+      "f023": [
+        "medqa-cs-026-p014"
+      ],
+      "f024": [
+        "note"
+      ],
+      "f025": [
+        "medqa-cs-026-p014",
+        "note"
+      ],
+      "f026": [
+        "medqa-cs-026-p014"
+      ],
+      "f027": [
+        "medqa-cs-026-p018"
+      ],
+      "f028": [
+        "medqa-cs-026-p019"
+      ],
+      "f029": [
+        "medqa-cs-026-p020"
+      ],
+      "f030": [
+        "medqa-cs-026-p021"
+      ],
+      "f031": [
+        "medqa-cs-026-p023"
+      ],
+      "f032": [
+        "medqa-cs-026-p024"
+      ],
+      "f033": [
+        "medqa-cs-026-p017"
+      ],
+      "f034": [
+        "medqa-cs-026-p033"
+      ],
+      "f035": [
+        "medqa-cs-026-p022"
+      ],
+      "f036": [
+        "medqa-cs-026-p022"
+      ],
+      "f037": [
+        "medqa-cs-026-p022"
+      ],
+      "f038": [
+        "medqa-cs-026-p025"
+      ],
+      "f039": [
+        "medqa-cs-026-p025"
+      ],
+      "f040": [
+        "medqa-cs-026-p015"
+      ],
+      "f041": [
+        "medqa-cs-026-p016"
+      ],
+      "f042": [
+        "medqa-cs-026-p027"
+      ],
+      "f043": [
+        "medqa-cs-026-p028"
+      ],
+      "f044": [
+        "medqa-cs-026-p029"
+      ],
+      "f045": [
+        "medqa-cs-026-p030"
+      ],
+      "f046": [
+        "medqa-cs-026-p031"
+      ],
+      "f047": [
+        "medqa-cs-026-p032"
+      ],
+      "f048": [
+        "medqa-cs-026-p026"
+      ],
+      "f049": [
+        "medqa-cs-026-p032"
+      ]
+    },
+    "quotes": {
+      "f001": "Ongoing cough.",
+      "f002": "I've been experiencing a cough for years",
+      "f003": "particularly in the mornings.",
+      "f004": "Over the last month, it has intensified / It is getting worse.",
+      "f005": "it’s quite bothersome.",
+      "f006": "No.",
+      "f007": "Yes, there are times when it prevents me from sleeping.",
+      "f008": "Nothing.",
+      "f009": "Nothing.",
+      "f010": "None.",
+      "f011": "Yes.",
+      "f012": "Two teaspoonful",
+      "f013": "stable.",
+      "f014": "Mucus is yellowish.",
+      "f015": "None.",
+      "f016": "Thick and viscous.",
+      "f017": "Yes, recently.",
+      "f018": "Streaks.",
+      "f019": "None.",
+      "f020": "Mild fever / I didn't take my temperature.",
+      "f021": "with sweating, especially at night.",
+      "f022": "I have had no chills or swelling.",
+      "f023": "I feel short of breath when I walk upstairs.",
+      "f024": "No chills or wheezing.",
+      "f025": "No chest pain or leg swelling.",
+      "f026": "I have had no chills or swelling.",
+      "f027": "Yes, I no longer have an appetite.",
+      "f028": "I've lost 6 pounds in the past 2 months without intending to.",
+      "f029": "Yes, I don't have the energy that I had before.",
+      "f030": "Two months ago.",
+      "f031": "Long-term bronchitis.",
+      "f032": "Tonsillectomy and adenoidectomy at age 11.",
+      "f033": "Last year, before I started working in the nursing home. It was negative.",
+      "f034": "No.",
+      "f035": "Cough syrup (over the counter)",
+      "f036": "multivitamins",
+      "f037": "albuterol inhaler.",
+      "f038": "My father died of old age.",
+      "f039": "My mother is alive and has Alzheimer's.",
+      "f040": "Yes, I work at a nursing home where several residents are receiving treatment for TB.",
+      "f041": "None.",
+      "f042": "None.",
+      "f043": "Never.",
+      "f044": "No, I quit smoking two weeks ago.",
+      "f045": "I've smoked for the past 35 years.",
+      "f046": "One to two packs a day.",
+      "f047": "With my spouse.",
+      "f048": "I work as a nursing assistant."
+    },
+    "flags": {
+      "f003": [
+        "Conflicts with p002, where she reports no variation of the cough with time of day (f006)."
+      ],
+      "f006": [
+        "Conflicts with p001, where the cough is 'particularly in the mornings' (f003)."
+      ],
+      "f024": [
+        "Only in the student note HPI."
+      ],
+      "f025": [
+        "Chest pain is asked in p014 but the scripted answer does not address it; the denial comes from the student note HPI."
+      ],
+      "f049": [
+        "Split off from f047, whose text was the only record of it (fix)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/80 mmHg | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-026-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 99°F (37°C) | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-026-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 15/minute | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-026-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 75/minute, regular | VS: within normal limits",
+        "exam_ids": [
+          "medqa-cs-026-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-026-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Mouth and pharynx within normal limits.",
+        "exam_ids": [
+          "medqa-cs-026-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Neck: No jugular venous distension, no lymphadenopathy.",
+        "exam_ids": [
+          "medqa-cs-026-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally; no rhonchi, rales, or wheezing; tactile fremitus normal.",
+        "exam_ids": [
+          "medqa-cs-026-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; S1/S2 within normal limits; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-026-e006"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, nontender, bowel sounds present times 4, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-026-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Extremities: No clubbing, cyanosis, or edema.",
+        "exam_ids": [
+          "medqa-cs-026-e008"
+        ]
+      }
+    },
+    "finding_flags": {},
+    "leakage": [
+      {
+        "fact_id": "f040",
+        "reason": "Names TB (the rank-1 diagnosis) as a close occupational exposure; legitimate exposure history."
+      },
+      {
+        "fact_id": "f033",
+        "reason": "Mentions a previous TB skin test (the item label names tuberculosis); names the rank-1 diagnosis but is legitimate preventive history."
+      }
+    ],
+    "source_issues": [
+      "Internal inconsistency: p001 says the cough is 'particularly in the mornings', but p002 says there is no variation with time of day. Both kept and flagged (f003, f006).",
+      "p014 asks about fever, chills, night sweats, dyspnea, stomach pain, chest pain, and foot swelling, but the scripted answer does not address stomach pain or chest pain. Chest pain is resolved from the note HPI ('No chest pain or leg swelling', f025); stomach pain is left unrecorded because neither the script nor the note states it.",
+      "No wheezing is only in the note HPI (note fact f024).",
+      "Gold headings read 'Diagnosis 111' and 'Diagnosis 113' (OCR artifacts for #1 and #3); cleaned.",
+      "Gold rank 1 'cough of 1 month's duration' simplifies the script: chronic cough for years that has worsened over the last month (p001).",
+      "Gold rank 1 cites 'night sweats with fatigue' and 'fever'; fever is subjective and was not measured (p014), and doorway temperature is 99°F with note VS within normal limits.",
+      "Gold rank 3 lists 'Sputum production' and 'Mucus production' as separate findings; they are the same finding. Kept as in the source.",
+      "The sample closure addresses the patient as 'Mr. McLean' although she is female; not used."
+    ],
+    "notes": [
+      "p001 and p003 (worsening) are merged into f004. v1 f013 (blood, recently, in streaks; p011 + p012) becomes parent f017 with a quantity child f018.",
+      "p013 answers two questions with 'None': no identifiable trigger (f010) and no recent illness (f019).",
+      "Coughing, the severe coughing attack, and the red-stained tissue are SP behavior and props; they are kept in extras.acting_notes and not added as examination records, following the worked example where behavioral directions ('Exhibit difficulty breathing') stay in acting notes.",
+      "Smoking: resolved current status (f044) plus historical duration and amount children (f045, f046).",
+      "leakage lists the two facts that name TB (rank-1 diagnosis); both are legitimate history the SP must be able to give. The skin-test text itself says only 'skin test'; the item label and alias name TB.",
+      "Conversion: 'Nothing' to better or worse (p005) is split into relieving (f008) and aggravating (f009) denials, as in the worked example. Sputum (p006-p010) is a parent 'coughing up mucus' (f011) with amount, stability, color, smell and consistency children; v1 f009 (two teaspoonfuls, stable) is split into quantity (f012) and course (f013).",
+      "Conversion: fatigue (p020) is parent f029 with onset child f030 (p021). Long-term bronchitis is labelled by the condition (f031), like the conditions in the worked example.",
+      "Vitals: doorway values agree with the note's 'VS: within normal limits' (e002); one record per parameter citing both, marked initial.",
+      "Fixes: f047 text rewritten; f006 answer word removed; f007 answer word removed; f011 answer word removed; f017 answer word removed; f027 answer word removed; f029 answer word removed; f040 answer word removed; f044 answer word removed; f049 new fact 'marital status' from f047."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Cough as the examinee enters the room.",
+        "Continue coughing every 3 to 4 minutes during the encounter.",
+        "Hold a red-stained tissue in your hand to simulate blood. Don't show it to the examinee unless they ask you.",
+        "During the encounter, pretend to have a severe attack of coughing. Notice whether the examinee offers you a glass of water or a tissue."
+      ],
+      "patient_questions": [
+        "Will I improve if I quit smoking?"
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-120", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 35, "sex": "female"},
+    "opening": ["f001", "f002", "f004", "f005"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["high temperature"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "headache", "text": "I've had a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "headache: course", "parent": "f002", "attribute": "course", "text": "It's persistent; it doesn't go away.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "nausea", "aliases": ["feeling sick to my stomach"], "text": "I've been feeling nauseous.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "abdominal discomfort", "aliases": ["stomach discomfort", "belly discomfort", "tummy ache"], "text": "My belly has been uncomfortable.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "how long the symptoms have been going on", "text": "All of this started about a week ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "bleeding gums", "aliases": ["gum bleeding", "bleeding when brushing teeth"], "text": "My gums bleed when I brush my teeth.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f008", "item": "bleeding gums: duration", "parent": "f007", "attribute": "duration", "text": "That has been happening for the past week.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f009", "item": "recent travel", "aliases": ["travel abroad", "trip"], "text": "I got back from a camping trip in Sri Lanka a month ago.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f010", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "pregnancy", "aliases": ["pregnant", "how far along"], "text": "I'm 12 weeks pregnant.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "previous pregnancies", "aliases": ["first pregnancy", "obstetric history"], "text": "This is my first pregnancy.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "breathing problems", "aliases": ["respiratory symptoms", "cough", "shortness of breath"], "text": "I haven't had any breathing problems.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f016", "item": "urinary symptoms", "aliases": ["problems peeing", "burning when urinating"], "text": "I haven't had any urinary problems.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f017", "item": "illness after previous travel", "aliases": ["past travel illnesses"], "text": "I've never had a significant illness after traveling before.", "polarity": "absent", "category": "medical_history", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-120",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "39.3°C (102.8°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/88 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "104/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "24/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection", "sclera", "eyes", "pallor", "jaundice"], "result": "Pallor and mild scleral icterus; a few scattered petechiae over the trunk and back."},
+      {"id": "x006", "kind": "exam", "system": "ent", "name": "HEENT examination", "aliases": ["mouth", "gums", "oral examination", "lymph nodes", "head and neck examination"], "result": "Bleeding gums on inspection; no lymphadenopathy."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "liver and spleen"], "result": "Soft, non-tender; no organomegaly."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "leukocyte count", "white blood cell count", "WBC", "platelet count", "platelets"], "result": "Hemoglobin 8.2 g/dL; leukocyte count 10,000/mm3; platelet count 18,000/mm3."},
+      {"id": "x009", "kind": "test", "name": "coagulation studies", "aliases": ["coagulation panel", "INR", "PT", "prothrombin time", "fibrin split products", "fibrin degradation products", "FDP"], "result": "INR 1.0; fibrin split products negative."},
+      {"id": "x010", "kind": "test", "name": "Coombs test", "aliases": ["antiglobulin test", "direct antiglobulin test", "DAT", "direct Coombs test"], "result": "Negative."},
+      {"id": "x011", "kind": "test", "name": "kidney function tests", "aliases": ["renal function", "urea", "BUN", "creatinine", "basic metabolic panel"], "result": "Urea 20 mg/dL; creatinine 1.1 mg/dL."},
+      {"id": "x012", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "hepatic panel", "bilirubin", "total bilirubin", "direct bilirubin", "ALT", "alanine aminotransferase", "AST", "aspartate aminotransferase", "transaminases"], "result": "Total bilirubin 3.0 mg/dL; direct bilirubin 0.8 mg/dL; ALT 20 U/L; AST 16 U/L."},
+      {"id": "x013", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH", "serum LDH"], "result": "900 U/L."},
+      {"id": "x014", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine dipstick", "urine microscopy", "urine protein", "urine RBCs"], "result": "Protein 1+; WBCs occasional; RBCs 50-60/hpf; bacteria nil."},
+      {"id": "x015", "kind": "test", "name": "fecal occult blood test", "aliases": ["FOBT", "stool occult blood", "stool guaiac"], "result": "Positive."},
+      {"id": "x016", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative."},
+      {"id": "x017", "kind": "test", "name": "urine culture", "aliases": ["urine culture and sensitivity"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-120",
+    "diagnosis": "Thrombotic thrombocytopenic purpura",
+    "aliases": ["TTP", "Moschcowitz syndrome", "acquired TTP", "immune TTP", "acquired thrombotic thrombocytopenic purpura", "immune-mediated thrombotic thrombocytopenic purpura"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-120",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-120-p001"], "f002": ["cc", "agentclinic-medqa-ext-120-p001"], "f003": ["agentclinic-medqa-ext-120-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-120-p001"], "f005": ["cc", "agentclinic-medqa-ext-120-p001"], "f006": ["agentclinic-medqa-ext-120-p001"],
+      "f007": ["agentclinic-medqa-ext-120-p001", "agentclinic-medqa-ext-120-p002"], "f008": ["agentclinic-medqa-ext-120-p001"],
+      "f009": ["agentclinic-medqa-ext-120-p001"], "f010": ["agentclinic-medqa-ext-120-p001"], "f011": ["agentclinic-medqa-ext-120-p006"],
+      "f012": ["agentclinic-medqa-ext-120-p006"], "f013": ["agentclinic-medqa-ext-120-p006"], "f014": ["agentclinic-medqa-ext-120-p006"],
+      "f015": ["agentclinic-medqa-ext-120-p007"], "f016": ["agentclinic-medqa-ext-120-p007"], "f017": ["agentclinic-medqa-ext-120-p007"]
+    },
+    "quotes": {
+      "f003": "persistent headache", "f006": "a one-week history of fever, persistent headache, nausea, and abdominal discomfort",
+      "f007": "bleeding gums while brushing her teeth", "f008": "for the past week",
+      "f009": "She returned from a camping trip to Sri Lanka a month ago.", "f010": "No significant past medical history.",
+      "f011": "First pregnancy.", "f012": "First pregnancy.", "f015": "Denies any respiratory symptoms",
+      "f016": "urinary symptoms", "f017": "significant past travel illnesses"
+    },
+    "flags": {
+      "f011": ["The gestational age (12 weeks) comes from demographics_text ('35-year-old primigravid woman at 12 weeks' gestation'), which has no fragment id; p006 ('First pregnancy.') confirms the current pregnancy."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "39.3°C (102.8°F)", "exam_ids": ["agentclinic-medqa-ext-120-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/88 mm Hg", "exam_ids": ["agentclinic-medqa-ext-120-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "104/min", "exam_ids": ["agentclinic-medqa-ext-120-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "24/min", "exam_ids": ["agentclinic-medqa-ext-120-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Skin", "source_text": "Pallor and mild scleral icterus noted, with a few scattered petechiae over the trunk and back.", "exam_ids": ["agentclinic-medqa-ext-120-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.HEENT", "source_text": "Bleeding gums noted upon inspection, no lymphadenopathy.", "exam_ids": ["agentclinic-medqa-ext-120-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Abdominal_Examination", "source_text": "Soft, non-tender, no organomegaly detected.", "exam_ids": ["agentclinic-medqa-ext-120-e007"]},
+      "x008": {"source": "Test_Results.Laboratory_Studies.Hemoglobin + Test_Results.Laboratory_Studies.Leukocyte_Count + Test_Results.Laboratory_Studies.Platelet_Count", "source_text": "8.2 g/dL | 10,000/mm3 | 18,000/mm3", "exam_ids": ["agentclinic-medqa-ext-120-i001", "agentclinic-medqa-ext-120-i002", "agentclinic-medqa-ext-120-i003"]},
+      "x009": {"source": "Test_Results.Laboratory_Studies.INR + Test_Results.Laboratory_Studies.Fibrin_Split_Products", "source_text": "1.0 | Negative", "exam_ids": ["agentclinic-medqa-ext-120-i004", "agentclinic-medqa-ext-120-i006"]},
+      "x010": {"source": "Test_Results.Laboratory_Studies.Coomb's_Test", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-120-i005"]},
+      "x011": {"source": "Test_Results.Laboratory_Studies.Serum.Urea + Test_Results.Laboratory_Studies.Serum.Creatinine", "source_text": "20 mg/dL | 1.1 mg/dL", "exam_ids": ["agentclinic-medqa-ext-120-i007", "agentclinic-medqa-ext-120-i008"]},
+      "x012": {"source": "Test_Results.Laboratory_Studies.Serum.Bilirubin_Total + Test_Results.Laboratory_Studies.Serum.Bilirubin_Direct + Test_Results.Laboratory_Studies.Serum.Alanine_Aminotransferase + Test_Results.Laboratory_Studies.Serum.Aspartate_Aminotransferase", "source_text": "3.0 mg/dL | 0.8 mg/dL | 20 U/L | 16 U/L", "exam_ids": ["agentclinic-medqa-ext-120-i009", "agentclinic-medqa-ext-120-i010", "agentclinic-medqa-ext-120-i011", "agentclinic-medqa-ext-120-i012"]},
+      "x013": {"source": "Test_Results.Laboratory_Studies.Serum.Lactate_Dehydrogenase", "source_text": "900 U/L", "exam_ids": ["agentclinic-medqa-ext-120-i013"]},
+      "x014": {"source": "Test_Results.Urine.Protein + Test_Results.Urine.WBCs + Test_Results.Urine.RBCs + Test_Results.Urine.Bacteria", "source_text": "1+ | Occasional | 50–60/hpf | Nil", "exam_ids": ["agentclinic-medqa-ext-120-i014", "agentclinic-medqa-ext-120-i015", "agentclinic-medqa-ext-120-i016", "agentclinic-medqa-ext-120-i017"]},
+      "x015": {"source": "Test_Results.Stool.Occult_Blood_Test", "source_text": "Positive", "exam_ids": ["agentclinic-medqa-ext-120-i018"]},
+      "x016": {"source": "Test_Results.Blood_and_Urine_Cultures", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-120-i019"]},
+      "x017": {"source": "Test_Results.Blood_and_Urine_Cultures", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-120-i019"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Secondary_Symptoms lists examination signs (pallor, mild scleral icterus, scattered petechiae over the trunk and back) that are also in the skin exam leaf e005.",
+      "No peripheral blood smear (schistocytes) or ADAMTS13 activity is given; the diagnosis has to be inferred from anemia, severe thrombocytopenia, raised LDH, indirect hyperbilirubinemia, negative Coombs test and normal INR. Fever after travel to Sri Lanka also points toward infectious differentials (e.g. dengue, malaria) that the tests do not address."
+    ],
+    "notes": [
+      "The chief complaint names four complaints (fever, headache, nausea, abdominal discomfort), so all four facts are in the opening. The one-week duration applies to all of them and is a standalone fact (f006).",
+      "Pallor, scleral icterus and petechiae (p003-p005) are observer signs already in exam leaf e005, so they are not patient facts (qc.excluded_sources).",
+      "Hemoglobin, leukocyte and platelet counts are grouped as a complete blood count; INR and fibrin split products as coagulation studies; urea and creatinine as kidney function; bilirubin, ALT and AST as liver function tests; the four urine leaves as urinalysis. LDH and the Coombs test stay separate.",
+      "The single source leaf 'Blood_and_Urine_Cultures: Negative' is split into two ordered tests (blood cultures, urine culture), both citing i019.",
+      "Gold diagnosis capitalisation normalised from 'Thrombotic Thrombocytopenic Purpura'."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-120-p003", "reason": "Pallor is an observer-only sign; it is recorded in the skin exam (e005, x005)."},
+      {"id": "agentclinic-medqa-ext-120-p004", "reason": "Mild scleral icterus is an observer-only sign; it is recorded in the skin exam (e005, x005)."},
+      {"id": "agentclinic-medqa-ext-120-p005", "reason": "Scattered petechiae over the trunk and back are an examination finding; recorded in the skin exam (e005, x005)."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a fever, persistent headache, nausea, abdominal discomfort, and bleeding gums, in the context of recent travel and current pregnancy."
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-165",
+  "source_row": 165,
+  "demographics_text": "79-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a persistent non-productive cough and dyspnea following a recent cold.",
+  "chief_complaint": "Persistent non-productive cough",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-165-p001",
+      "field": "History",
+      "text": "Patient presents complaining of a persistent non-productive cough and breathlessness that started after a cold about a month ago. Describes previous health as generally good."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-165-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Dyspnea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-165-p003",
+      "field": "Secondary_Symptoms",
+      "text": "History of a recent cold"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-165-p004",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, Hyperlipidemia on Hydrochlorothiazide, Lisinopril, and Atorvastatin."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-165-p005",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol occasionally. Recently returned from a month-long trip to St. Louis, Missouri."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-165-p006",
+      "field": "Review_of_Systems",
+      "text": "No other symptoms apart from those mentioned."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.0°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/82 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "20 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e005",
+      "path": "Physical_Examination_Findings.Chest_Examination.Inspection",
+      "text": "No visible deformities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e006",
+      "path": "Physical_Examination_Findings.Chest_Examination.Auscultation",
+      "text": "Normal breath sounds without wheezes or rhonchi."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e007",
+      "path": "Physical_Examination_Findings.Chest_Examination.Percussion",
+      "text": "Mild dullness on the right side."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-e008",
+      "path": "Physical_Examination_Findings.Chest_Examination.Palpation",
+      "text": "Mild crepitus detected on the right side."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-165-i001",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Cavitary lesion in the right lung"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-i002",
+      "path": "Test_Results.Chest_CT.Findings",
+      "text": "Confirmation of the cavitary lesion seen on X-ray"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-165-i003",
+      "path": "Test_Results.Lung_Biopsy.Histopathology",
+      "text": "Necrotic granulomatous inflammation with oval yeast bodies within macrophages"
+    }
+  ],
+  "correct_diagnosis": "Histoplasmosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

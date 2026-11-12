@@ -1,0 +1,122 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-160", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 23, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "passing out", "aliases": ["loss of consciousness", "fainting", "collapse", "syncope", "blackout"], "text": "I suddenly collapsed and lost consciousness.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "passing out: what I was doing", "parent": "f001", "attribute": "context", "text": "It happened while I was pitching in a baseball game.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "passing out: how I came round", "parent": "f001", "attribute": "treatment_response", "aliases": ["CPR", "resuscitation"], "text": "I came round after I was given CPR.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "injury around the collapse", "aliases": ["trauma", "blow", "head injury"], "text": "I didn't have any injury around the time I collapsed.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "previous episodes of passing out", "aliases": ["similar episodes before"], "text": "This has never happened to me before.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "historical"},
+      {"id": "f006", "item": "seizures", "aliases": ["epilepsy", "fits"], "text": "I've never had seizures.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "diabetes", "text": "I don't have diabetes.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "heart problems", "aliases": ["heart disease", "cardiovascular disease"], "text": "I don't have any heart problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "neurological problems", "aliases": ["nerve problems", "brain problems"], "text": "I don't have any neurological problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "family history of sudden death", "aliases": ["sudden cardiac death in the family", "relatives dying suddenly"], "text": "No one in my family has died suddenly from a heart problem.", "polarity": "absent", "category": "family_history", "time": "current"},
+      {"id": "f011", "item": "genetic diseases in the family", "aliases": ["inherited conditions", "family history"], "text": "There are no genetic diseases in my family.", "polarity": "absent", "category": "family_history", "time": "current"},
+      {"id": "f012", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "drug use", "aliases": ["recreational drugs", "street drugs"], "text": "I don't use any drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "physical activity", "aliases": ["exercise", "sports"], "text": "I have an active lifestyle; I play baseball.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "chest pain", "text": "I didn't have any chest pain before I collapsed.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "historical"},
+      {"id": "f017", "item": "palpitations", "aliases": ["racing heart", "pounding heart"], "text": "I didn't notice my heart racing or pounding before I collapsed.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "historical"},
+      {"id": "f018", "item": "shortness of breath", "text": "I wasn't short of breath before I collapsed.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "historical"},
+      {"id": "f019", "item": "seizure-like activity", "aliases": ["fitting", "shaking"], "text": "I didn't have anything like a seizure before I collapsed.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-160",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "68/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "cardiac examination", "aliases": ["heart examination", "precordial examination", "apex beat", "apical impulse", "heart auscultation", "heart sounds"], "result": "Inspection: no visible chest deformities. Palpation: prominent double apical impulse. Auscultation: S4 present; no murmurs, rubs or gallops."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "jugular venous pulse", "aliases": ["JVP", "jugular venous pressure", "neck veins"], "result": "Prominent a wave on the jugular venous pulse."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "mental status", "aliases": ["orientation", "level of consciousness", "alertness"], "result": "Alert and oriented to time, place and person."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "cranial nerves", "result": "Normal."},
+      {"id": "x009", "kind": "exam", "system": "neurological", "name": "motor function", "aliases": ["motor strength", "muscle strength", "power"], "result": "No deficits."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "sensation", "aliases": ["sensory examination", "sensory function"], "result": "Intact."},
+      {"id": "x011", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "DTRs"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "ECG", "aliases": ["EKG", "electrocardiogram"], "result": "Normal sinus rhythm with possible left ventricular hypertrophy."},
+      {"id": "x013", "kind": "test", "name": "echocardiogram", "aliases": ["echo", "transthoracic echocardiogram"], "result": "Left ventricular hypertrophy with asymmetrical septal thickening; no valvular abnormalities."},
+      {"id": "x014", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count"], "result": "Normal."},
+      {"id": "x015", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes", "sodium", "potassium", "basic metabolic panel", "BMP"], "result": "Within normal limits."},
+      {"id": "x016", "kind": "test", "name": "cardiac enzymes", "aliases": ["troponin", "CK-MB", "cardiac biomarkers"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-160",
+    "diagnosis": "Hypertrophic cardiomyopathy",
+    "aliases": ["HCM", "hypertrophic obstructive cardiomyopathy", "HOCM", "idiopathic hypertrophic subaortic stenosis", "IHSS", "asymmetric septal hypertrophy", "familial hypertrophic cardiomyopathy"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-160",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-160-p001"], "f002": ["agentclinic-medqa-ext-160-p001"],
+      "f003": ["agentclinic-medqa-ext-160-p001", "agentclinic-medqa-ext-160-p002"],
+      "f004": ["agentclinic-medqa-ext-160-p001", "agentclinic-medqa-ext-160-p003"],
+      "f005": ["agentclinic-medqa-ext-160-p004"],
+      "f006": ["agentclinic-medqa-ext-160-p001"], "f007": ["agentclinic-medqa-ext-160-p001"],
+      "f008": ["agentclinic-medqa-ext-160-p001", "agentclinic-medqa-ext-160-p005"],
+      "f009": ["agentclinic-medqa-ext-160-p005"],
+      "f010": ["agentclinic-medqa-ext-160-p001"], "f011": ["agentclinic-medqa-ext-160-p001"],
+      "f012": ["agentclinic-medqa-ext-160-p006"], "f013": ["agentclinic-medqa-ext-160-p006"], "f014": ["agentclinic-medqa-ext-160-p006"],
+      "f015": ["agentclinic-medqa-ext-160-p006"],
+      "f016": ["agentclinic-medqa-ext-160-p007"], "f017": ["agentclinic-medqa-ext-160-p007"], "f018": ["agentclinic-medqa-ext-160-p007"],
+      "f019": ["agentclinic-medqa-ext-160-p007"]
+    },
+    "quotes": {
+      "f001": "collapsed suddenly", "f002": "while pitching in a baseball game",
+      "f003": "regained consciousness after receiving cardiopulmonary resuscitation",
+      "f004": "no notable history of trauma associated with the event / No history of injury",
+      "f005": "No previous similar episodes", "f008": "denies any history of seizures, diabetes, or cardiovascular diseases",
+      "f009": "Negative for any neurological or cardiovascular problems.",
+      "f010": "No family history of sudden cardiac death or genetic diseases.", "f011": "No family history of sudden cardiac death or genetic diseases.",
+      "f013": "occasional alcohol drinker", "f015": "Active lifestyle as a baseball player.",
+      "f016": "prior to the event", "f017": "prior to the event", "f018": "prior to the event", "f019": "seizure-like activity prior to the event"
+    },
+    "flags": {
+      "f004": ["'No history of injury' (Secondary_Symptoms, p003) is read as no injury associated with the collapse, matching p001; it could also mean no past injuries."],
+      "f015": ["'Active lifestyle as a baseball player' does not say whether baseball is his job; recorded as physical activity, not occupation."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-160-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-160-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "68 bpm", "exam_ids": ["agentclinic-medqa-ext-160-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-160-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.Inspection + Physical_Examination_Findings.Cardiovascular_Examination.Palpation + Physical_Examination_Findings.Cardiovascular_Examination.Auscultation", "source_text": "No visible chest deformities. | Prominent double apical impulse | S4 present, no murmurs, rubs, or gallops heard.", "exam_ids": ["agentclinic-medqa-ext-160-e005", "agentclinic-medqa-ext-160-e006", "agentclinic-medqa-ext-160-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.JVP", "source_text": "Prominent A wave on jugular venous pulse.", "exam_ids": ["agentclinic-medqa-ext-160-e008"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status", "source_text": "Alert and oriented to time, place, and person.", "exam_ids": ["agentclinic-medqa-ext-160-e009"]},
+      "x008": {"source": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-160-e010"]},
+      "x009": {"source": "Physical_Examination_Findings.Neurological_Examination.Motor_Function", "source_text": "No deficits noted.", "exam_ids": ["agentclinic-medqa-ext-160-e011"]},
+      "x010": {"source": "Physical_Examination_Findings.Neurological_Examination.Sensory_Function", "source_text": "Intact", "exam_ids": ["agentclinic-medqa-ext-160-e012"]},
+      "x011": {"source": "Physical_Examination_Findings.Neurological_Examination.Reflexes", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-160-e013"]},
+      "x012": {"source": "Test_Results.ECG.Findings", "source_text": "Normal sinus rhythm with possible left ventricular hypertrophy", "exam_ids": ["agentclinic-medqa-ext-160-i001"]},
+      "x013": {"source": "Test_Results.Echocardiogram.Findings", "source_text": "Left ventricular hypertrophy with asymmetrical septal thickening. No valvular abnormalities.", "exam_ids": ["agentclinic-medqa-ext-160-i002"]},
+      "x014": {"source": "Test_Results.Blood_Tests.Complete_Blood_Count", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-160-i003"]},
+      "x015": {"source": "Test_Results.Blood_Tests.Electrolytes", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-160-i004"]},
+      "x016": {"source": "Test_Results.Blood_Tests.Cardiac_Enzymes", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-160-i005"]}
+    },
+    "finding_flags": {
+      "x005": ["Auscultation says 'S4 present, no murmurs, rubs, or gallops heard'; an S4 is itself a gallop. Kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Cardiac auscultation is self-contradictory: 'S4 present' and 'no ... gallops'.",
+      "No systolic murmur is reported, and no dynamic manoeuvres (Valsalva, standing) are documented."
+    ],
+    "notes": [
+      "The collapse context (pitching), recovery after CPR, and absence of associated trauma are children or companions of the loss-of-consciousness fact; 'Recovery after CPR' (p002) merges with p001.",
+      "The ROS denials are qualified 'prior to the event', so their texts keep that qualifier; the patient's current chest pain or breathlessness is not recorded and stays unknown.",
+      "'Denies any history of seizures, diabetes, or cardiovascular diseases' (p001) and 'Negative for any neurological or cardiovascular problems' (p005): the cardiovascular denial is one fact citing both; seizures, diabetes and neurological problems are separate facts.",
+      "The cardiovascular inspection, palpation and auscultation form one record; the JVP is a separate request (neck, not precordium). Neurological components are kept separate."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with sudden loss of consciousness during a physical activity."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

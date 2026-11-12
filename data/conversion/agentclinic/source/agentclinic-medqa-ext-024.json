@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-024",
+  "source_row": 24,
+  "demographics_text": "31-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with chronic diarrhea and lower abdominal discomfort.",
+  "chief_complaint": "Chronic diarrhea",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p001",
+      "field": "History",
+      "text": "The patient reports experiencing chronic diarrhea on most days for the past four months. She mentions lower abdominal discomfort and cramping, which is relieved by diarrhea. The patient notes the bowel movements are urgent, occasionally accompanied by mucus discharge, and often followed by a feeling of incomplete evacuation. She went camping several months ago and recalls another member of the camping party falling ill recently."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Lower abdominal discomfort"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Cramping relieved by diarrhea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Sensation of urgency before bowel movement"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Mucus discharge"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p006",
+      "field": "Secondary_Symptoms",
+      "text": "Feeling of incomplete evacuation post bowel movement"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p007",
+      "field": "Past_Medical_History",
+      "text": "No notable past medical history provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p008",
+      "field": "Social_History",
+      "text": "No pertinent social history related to symptoms."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-024-p009",
+      "field": "Review_of_Systems",
+      "text": "Denies any recent weight change, fever, nausea, or vomiting."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "122/78 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "67 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "15 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No visible abnormalities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Normal bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Non-tender, no distension."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Mild diffuse abdominal discomfort but no rebound tenderness or guarding."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-024-i001",
+      "path": "Test_Results.Routine_Stool_Examination.Findings",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-i002",
+      "path": "Test_Results.Blood_Tests.Hb",
+      "text": "13 gm/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-i003",
+      "path": "Test_Results.Blood_Tests.Total_WBC_Count",
+      "text": "11,000/mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-i004",
+      "path": "Test_Results.Blood_Tests.Differential_Count.Neutrophils",
+      "text": "70%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-i005",
+      "path": "Test_Results.Blood_Tests.Differential_Count.Lymphocytes",
+      "text": "25%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-i006",
+      "path": "Test_Results.Blood_Tests.Differential_Count.Monocytes",
+      "text": "5%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-024-i007",
+      "path": "Test_Results.Blood_Tests.ESR",
+      "text": "10 mm/hr"
+    }
+  ],
+  "correct_diagnosis": "Irritable Bowel Syndrome",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

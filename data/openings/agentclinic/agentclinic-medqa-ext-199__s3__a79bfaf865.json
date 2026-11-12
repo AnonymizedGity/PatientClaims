@@ -1,0 +1,65 @@
+{
+ "case_id": "agentclinic-medqa-ext-199",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I've had a fever.",
+   "I've been coughing up phlegm.",
+   "I've had the cough for the last 12 hours.",
+   "The fever, chills and headache started three days after my gallbladder operation.",
+   "I've had chills.",
+   "I've had a headache.",
+   "I have chest pain.",
+   "I recently had open surgery to remove my gallbladder.",
+   "I've smoked a pack of cigarettes a day for 17 years."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I recently had open surgery to remove my gallbladder. Three days after that, I started having a fever, chills, and a headache. I've also been coughing up phlegm for the last 12 hours and I have chest pain. I've smoked a pack of cigarettes a day for 17 years.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003",
+    "f006",
+    "f004",
+    "f005",
+    "f007",
+    "f012",
+    "f015"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "missing",
+      "quote": "productive cough: duration",
+      "fix": "The reply must state that the cough has been present for the last 12 hours, which it does, but the plan lists 'productive cough' and 'productive cough: duration' as separate entries. The reply combines them. However, looking closely at the plan, it lists 'productive cough' and 'productive cough: duration'. The reply says 'coughing up phlegm for the last 12 hours'. This covers both. Let's re-evaluate. The plan requires: 1. fever, 2. productive cough, 3. productive cough duration, 4. start time of fever/chills/headache, 5. chills, 6. headache, 7. chest pain, 8. recent surgery, 9. smoking. The reply includes: surgery, start time (fever/chills/headache), coughing up phlegm (productive cough) + 12 hours (duration), chest pain, smoking. It is missing the explicit statement of 'I've had a fever' and 'I've had chills' and 'I've had a headache' as distinct entries? No, it says 'started having a fever, chills, and a headache'. This covers f001, f004, f005. It covers f006. It covers f002 and f003. It covers f007. It covers f012. It covers f015. All plan items are present. Wait, is there anything unsupported? No. Is anything changed? No. Is anything missing? No. The reply is accurate."
+     }
+    ],
+    "check_problems": [],
+    "draft": "I recently had open surgery to remove my gallbladder. Three days after that, I started having a fever, chills, and a headache. I've also been coughing up phlegm for the last 12 hours and I have chest pain. I've smoked a pack of cigarettes a day for 17 years.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 6282,
+   "tokens_out": 511,
+   "seconds": 40.8,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "case_id": "agentclinic-medqa-ext-007",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I passed out.",
+   "It happened 1 hour ago.",
+   "I came round quickly, after about 30 seconds.",
+   "I drink alcohol socially.",
+   "I work as a high school teacher."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I passed out about an hour ago, but I came round quickly after about 30 seconds. By the way, I work as a high school teacher and I drink alcohol socially.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f015",
+    "f016"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "changed",
+      "quote": "just 30 seconds",
+      "fix": "about 30 seconds"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I passed out about an hour ago, but I came round quickly after just 30 seconds. By the way, I work as a high school teacher and I drink alcohol socially.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 6080,
+   "tokens_out": 117,
+   "seconds": 10.67,
+   "redrafts": 0
+  }
+ }
+}

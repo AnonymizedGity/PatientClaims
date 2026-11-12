@@ -1,0 +1,90 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-194", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 55, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "chest pain", "text": "I have chest pain.", "polarity": "present", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f002", "item": "chest pain: location", "parent": "f001", "attribute": "location", "text": "It's in the middle of my chest, behind the breastbone.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f003", "item": "chest pain: worse when breathing in", "parent": "f001", "attribute": "aggravating", "text": "It gets worse when I breathe in.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f004", "item": "chest pain: at rest", "parent": "f001", "attribute": "context", "text": "I have it even when I'm resting.", "polarity": "present", "category": "symptom", "system": "cardiovascular"},
+      {"id": "f005", "item": "when the chest pain and breathlessness started", "text": "The chest pain and the shortness of breath came on suddenly 12 hours ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I'm short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f007", "item": "cough", "text": "I've had a cough.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f008", "item": "cough: character", "parent": "f007", "attribute": "character", "aliases": ["dry cough", "phlegm"], "text": "It's a dry cough; nothing comes up.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f009", "item": "fever", "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "feeling generally unwell", "aliases": ["malaise", "feeling unwell"], "text": "I've been feeling generally unwell.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "how long the cough, fever and malaise have been going on", "text": "The cough, the fever and feeling unwell have been going on for the past 5 days.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "recreational drug use", "aliases": ["illicit drugs", "street drugs"], "text": "I don't use illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "headache", "text": "I haven't had a headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f016", "item": "vision changes", "aliases": ["blurry vision", "trouble seeing"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f017", "item": "urinary symptoms", "aliases": ["problems peeing"], "text": "I don't have any urinary problems.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f018", "item": "digestive symptoms", "aliases": ["gastrointestinal symptoms", "stomach or bowel problems"], "text": "I don't have any stomach or bowel problems.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-194",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "38°C (100.4°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "85/45 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "125/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "32/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "cardiovascular examination", "aliases": ["heart examination", "heart auscultation", "heart sounds", "jugular venous pressure", "JVP", "neck veins"], "result": "Inspection: distended neck veins; auscultation: muffled heart sounds; palpation: no palpable thrill or heave."},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "respiratory examination", "aliases": ["lung examination", "chest examination", "lung auscultation"], "result": "Inspection: normal chest wall movement; auscultation: bilateral basilar rales; percussion: resonant; palpation: no chest wall tenderness."},
+      {"id": "x007", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "Sinus tachycardia, diffuse ST-segment elevation, low-voltage QRS complexes, and fluctuating R-wave amplitude."},
+      {"id": "x008", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Normal heart size; no pulmonary congestion."},
+      {"id": "x009", "kind": "test", "name": "echocardiogram", "aliases": ["echo", "echocardiography", "transthoracic echocardiogram", "TTE", "heart ultrasound"], "result": "Evidence of pericardial effusion."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-194",
+    "diagnosis": "Cardiac tamponade",
+    "aliases": ["pericardial tamponade", "tamponade", "acute cardiac tamponade"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-194",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-194-p001"], "f002": ["cc", "agentclinic-medqa-ext-194-p001"], "f003": ["cc", "agentclinic-medqa-ext-194-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-194-p001"], "f005": ["agentclinic-medqa-ext-194-p001"],
+      "f006": ["agentclinic-medqa-ext-194-p001", "agentclinic-medqa-ext-194-p002"], "f007": ["agentclinic-medqa-ext-194-p001", "agentclinic-medqa-ext-194-p003"],
+      "f008": ["agentclinic-medqa-ext-194-p001", "agentclinic-medqa-ext-194-p003"], "f009": ["agentclinic-medqa-ext-194-p001", "agentclinic-medqa-ext-194-p004"],
+      "f010": ["agentclinic-medqa-ext-194-p001", "agentclinic-medqa-ext-194-p005"], "f011": ["agentclinic-medqa-ext-194-p001"],
+      "f012": ["agentclinic-medqa-ext-194-p006"], "f013": ["agentclinic-medqa-ext-194-p001", "agentclinic-medqa-ext-194-p007"],
+      "f014": ["agentclinic-medqa-ext-194-p001", "agentclinic-medqa-ext-194-p007"], "f015": ["agentclinic-medqa-ext-194-p008"],
+      "f016": ["agentclinic-medqa-ext-194-p008"], "f017": ["agentclinic-medqa-ext-194-p008"], "f018": ["agentclinic-medqa-ext-194-p008"]
+    },
+    "quotes": {
+      "f002": "Substernal chest pain", "f003": "increased by inspiration", "f004": "at rest",
+      "f005": "a sudden onset of shortness of breath and substernal chest pain at rest, which increases with inspiration, occurring 12 hours ago",
+      "f008": "Nonproductive cough", "f010": "Malaise", "f011": "nonproductive cough, fever, and malaise for the past 5 days",
+      "f018": "gastrointestinal symptoms"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "38°C (100.4°F)", "exam_ids": ["agentclinic-medqa-ext-194-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "85/45 mm Hg", "exam_ids": ["agentclinic-medqa-ext-194-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "125 bpm", "exam_ids": ["agentclinic-medqa-ext-194-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "32 breaths/min", "exam_ids": ["agentclinic-medqa-ext-194-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiovascular_Examination.Inspection + Physical_Examination_Findings.Cardiovascular_Examination.Auscultation + Physical_Examination_Findings.Cardiovascular_Examination.Palpation", "source_text": "Distended neck veins observed. + Muffled heart sounds. + No palpable thrill or heave.", "exam_ids": ["agentclinic-medqa-ext-194-e005", "agentclinic-medqa-ext-194-e006", "agentclinic-medqa-ext-194-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Auscultation + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Palpation", "source_text": "Normal chest wall movement. + Bilateral basilar rales. + Resonant. + No chest wall tenderness.", "exam_ids": ["agentclinic-medqa-ext-194-e008", "agentclinic-medqa-ext-194-e009", "agentclinic-medqa-ext-194-e010", "agentclinic-medqa-ext-194-e011"]},
+      "x007": {"source": "Test_Results.ECG.Findings", "source_text": "Sinus tachycardia, diffuse ST segment elevation, low voltage QRS complexes, and fluctuating R wave amplitude.", "exam_ids": ["agentclinic-medqa-ext-194-i001"]},
+      "x008": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "Normal size heart, no pulmonary congestion.", "exam_ids": ["agentclinic-medqa-ext-194-i002"]},
+      "x009": {"source": "Test_Results.Echocardiogram.Findings", "source_text": "Evidence of pericardial effusion.", "exam_ids": ["agentclinic-medqa-ext-194-i003"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Bilateral basilar rales on auscultation vs 'no pulmonary congestion' on the chest X-ray.",
+      "The ROS opens with a meta sentence ('reviews symptoms as outlined in the history and symptom section'); only its explicit denials are converted."
+    ],
+    "notes": [
+      "The chief complaint's substernal location, inspiratory worsening and 'at rest' are children of the chest pain (f002-f004). The sudden onset 12 hours ago covers both the chest pain and the shortness of breath, so it is a standalone fact (f005); the 5-day duration of cough, fever and malaise likewise (f011).",
+      "'Brought to the emergency department' carries no answerable patient information beyond the visit itself and is not a separate fact.",
+      "Aliases avoid the gold word 'cardiac' (e.g. 'heart examination')."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with sudden onset of shortness of breath, substernal chest pain at rest increased by inspiration, nonproductive cough, fever, malaise, and hypotension."
+    }
+  }
+}

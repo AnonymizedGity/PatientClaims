@@ -1,0 +1,113 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-072", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 27, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "room spinning", "aliases": ["vertigo", "dizziness", "spinning sensation"], "text": "I've had a feeling that the room is spinning.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "room spinning: onset", "parent": "f001", "attribute": "onset", "text": "It started this morning.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f003", "item": "room spinning: severity", "parent": "f001", "attribute": "severity", "text": "It's low-grade, not intense.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f004", "item": "room spinning: pattern", "parent": "f001", "attribute": "timing", "text": "It's constant; it hasn't let up.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "feeling off balance", "aliases": ["imbalance", "unsteadiness"], "text": "I feel off balance.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "I've been feeling nauseous.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "nausea: frequency", "parent": "f006", "attribute": "frequency", "text": "It only comes occasionally.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f008", "item": "diphenhydramine", "aliases": ["Benadryl", "sleeping pill", "antihistamine"], "text": "I've taken diphenhydramine to help me sleep.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "diphenhydramine: effect on symptoms", "parent": "f008", "attribute": "treatment_response", "text": "It also eases my symptoms slightly.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "recent cold", "aliases": ["cold", "upper respiratory infection", "recent illness"], "text": "I had a cold a few days ago and have been trying to get over it.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f011", "item": "garlic intake", "aliases": ["diet", "garlic"], "text": "I've been eating more garlic lately, to help me recover from the cold.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I'm generally healthy, with no significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f015", "item": "headache", "text": "I haven't had any significant headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f016", "item": "ear pain", "aliases": ["earache"], "text": "I don't have any ear pain.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f017", "item": "recent foreign travel", "aliases": ["travel abroad", "travel"], "text": "I haven't traveled abroad recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "toxin exposure", "aliases": ["chemical exposure", "poisons"], "text": "I haven't been exposed to any toxins that I know of.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "new medications", "aliases": ["new medicines", "recent medication changes"], "text": "I haven't started any new medications.", "polarity": "absent", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-072",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "98.7°F (37.1°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "122/81 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "15/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "99% on room air"},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerves", "aliases": ["cranial nerve examination", "eye movements", "nystagmus", "hearing"], "result": "Nystagmus; bilateral decreased hearing."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "gait and balance", "aliases": ["gait", "tandem gait", "balance", "walking"], "result": "Unstable tandem gait; unremarkable baseline gait. The patient reports a sensation of imbalance."},
+      {"id": "x008", "kind": "exam", "system": "ent", "name": "Dix-Hallpike maneuver", "aliases": ["positional testing", "Dix-Hallpike test", "Hallpike test"], "result": "Laying the patient flat rapidly with the head turned to each side does not provoke symptoms."},
+      {"id": "x009", "kind": "test", "name": "audiometry", "aliases": ["hearing test", "audiogram", "basic audiometry"], "result": "Bilateral decreased hearing sensitivity; details not specified."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count"], "result": "Within normal limits."},
+      {"id": "x011", "kind": "test", "name": "electrolytes", "aliases": ["serum electrolytes", "sodium", "potassium", "basic metabolic panel"], "result": "Within normal limits."},
+      {"id": "x012", "kind": "test", "name": "head CT or MRI", "aliases": ["head CT", "CT head", "brain MRI", "MRI of the brain", "head imaging", "neuroimaging"], "result": "No acute abnormalities; specifically no signs of stroke or significant lesions."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-072",
+    "diagnosis": "Labyrinthitis",
+    "aliases": ["viral labyrinthitis", "acute labyrinthitis", "acute viral labyrinthitis", "post-viral labyrinthitis", "otitis interna", "inner ear infection"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-072",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-072-p001"], "f002": ["agentclinic-medqa-ext-072-p001"], "f003": ["agentclinic-medqa-ext-072-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-072-p001"], "f005": ["agentclinic-medqa-ext-072-e007"],
+      "f006": ["agentclinic-medqa-ext-072-p001", "agentclinic-medqa-ext-072-p002"], "f007": ["agentclinic-medqa-ext-072-p001", "agentclinic-medqa-ext-072-p002"],
+      "f008": ["agentclinic-medqa-ext-072-p001", "agentclinic-medqa-ext-072-p003"], "f009": ["agentclinic-medqa-ext-072-p001", "agentclinic-medqa-ext-072-p003"],
+      "f010": ["agentclinic-medqa-ext-072-p001", "agentclinic-medqa-ext-072-p004"], "f011": ["agentclinic-medqa-ext-072-p001"],
+      "f012": ["agentclinic-medqa-ext-072-p001", "agentclinic-medqa-ext-072-p005"], "f013": ["agentclinic-medqa-ext-072-p007"],
+      "f014": ["agentclinic-medqa-ext-072-p007"], "f015": ["agentclinic-medqa-ext-072-p007"], "f016": ["agentclinic-medqa-ext-072-p007"],
+      "f017": ["agentclinic-medqa-ext-072-p007"], "f018": ["agentclinic-medqa-ext-072-p007"], "f019": ["agentclinic-medqa-ext-072-p007"]
+    },
+    "quotes": {
+      "f001": "a sustained sensation of the room spinning", "f002": "since this morning", "f003": "low grade", "f004": "constant",
+      "f007": "He occasionally feels nauseous", "f008": "has taken diphenhydramine to help him sleep", "f009": "which also alleviates his symptoms slightly",
+      "f010": "trying to recover from a cold a few days ago", "f011": "recent increased intake of garlic due to trying to recover from a cold",
+      "f012": "Generally healthy with no significant past medical history.", "f015": "significant headache", "f017": "recent foreign travel",
+      "f018": "known exposure to toxins", "f019": "use of new medications"
+    },
+    "flags": {
+      "f005": ["Only in the exam leaf e007 ('Patient reports sensation of imbalance'), cited instead of a fragment; the objective also lists imbalance."],
+      "f019": ["The ROS denies new medications while the history says he has taken diphenhydramine; kept as written."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "98.7°F (37.1°C)", "exam_ids": ["agentclinic-medqa-ext-072-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "122/81 mmHg", "exam_ids": ["agentclinic-medqa-ext-072-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-072-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "15 breaths/min", "exam_ids": ["agentclinic-medqa-ext-072-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "99% on room air", "exam_ids": ["agentclinic-medqa-ext-072-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Exam.Cranial_Nerve_Exam", "source_text": "Nystagmus noted, bilateral decreased hearing.", "exam_ids": ["agentclinic-medqa-ext-072-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Exam.Balance_and_Gait", "source_text": "Unstable tandem gait but unremarkable baseline gait. Patient reports sensation of imbalance.", "exam_ids": ["agentclinic-medqa-ext-072-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Head_and_Neck_Exam.Positional_Testing", "source_text": "Laying the patient flat rapidly with head turned to each side does not provoke symptoms.", "exam_ids": ["agentclinic-medqa-ext-072-e009"]},
+      "x009": {"source": "Test_Results.Basic_Audiometry.Findings", "source_text": "Bilateral decreased hearing sensitivity, details not specified.", "exam_ids": ["agentclinic-medqa-ext-072-i001"]},
+      "x010": {"source": "Test_Results.Laboratory_Tests.Complete_Blood_Count", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-072-i002"]},
+      "x011": {"source": "Test_Results.Laboratory_Tests.Electrolytes", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-072-i003"]},
+      "x012": {"source": "Test_Results.Imaging.Head_CT_or_MRI.Findings", "source_text": "No acute abnormalities noted, specifically no signs of stroke or significant lesions.", "exam_ids": ["agentclinic-medqa-ext-072-i005"]}
+    },
+    "finding_flags": {
+      "x012": ["The source does not say whether the head imaging was CT or MRI."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "e008 Inner_Ear_Assessment gives no finding, only advice ('consider checking for signs of infection or inflammation'); excluded.",
+      "i004 Laboratory_Tests.Other ('No other abnormalities detected.') names no test; excluded.",
+      "p006 says smoking, alcohol and drug use are not specified; these stay unknown.",
+      "Hearing loss is bilateral on exam and audiometry, while labyrinthitis is usually unilateral; the patient reports no hearing change (unknown)."
+    ],
+    "notes": [
+      "The sensation of imbalance is reported by the patient inside the gait exam leaf (e007), so it is both a patient fact (f005) and part of the exam result (x007).",
+      "Diphenhydramine is a medication fact with a treatment_response child; the source says it eases 'his symptoms' without naming which, so the child keeps 'my symptoms'.",
+      "The positional test is named 'Dix-Hallpike maneuver' because the source describes exactly that manoeuvre."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient presenting with dizziness, nausea, and imbalance."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-072-p006", "reason": "Meta statement that social habits (smoking, alcohol, drugs) are not specified; no answer, so these stay unknown."}
+    ],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-072-e008", "reason": "No examination details; only a suggestion to check for infection or inflammation."},
+      {"id": "agentclinic-medqa-ext-072-i004", "reason": "'Other' laboratory tests with no test named ('No other abnormalities detected'); nothing a doctor could request."}
+    ]
+  }
+}

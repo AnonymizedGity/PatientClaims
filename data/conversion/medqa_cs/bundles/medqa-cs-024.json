@@ -1,0 +1,1180 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-024",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 31,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "heel pain",
+        "text": "I have pain in my heel.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "heel pain: location",
+        "parent": "f001",
+        "attribute": "location",
+        "value": [
+          "right heel"
+        ],
+        "text": "The pain is most intense in my right heel.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "heel pain: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It came on gradually over the past 2 weeks.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "heel pain: injury that started it",
+        "parent": "f001",
+        "attribute": "context",
+        "aliases": [
+          "heel injury"
+        ],
+        "text": "Not particularly. I can't recall anything where I might have injured my heel.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f005",
+        "item": "heel pain: constant or intermittent",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It's intermittent.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "heel pain: how often",
+        "parent": "f001",
+        "attribute": "frequency",
+        "text": "It usually happens every day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "heel pain: time of day",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "It seems to be worse in the morning. It hurts most first thing in the morning or at the end of the day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "heel pain: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It has stayed about the same.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "heel pain: severity",
+        "parent": "f001",
+        "attribute": "severity",
+        "value": 7,
+        "text": "When it hurts, it can get up to a 7 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f010",
+        "item": "heel pain: spread",
+        "parent": "f001",
+        "attribute": "radiation",
+        "value": [
+          "arch of the foot"
+        ],
+        "complete": true,
+        "text": "Sometimes it extends into the arch of my foot.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "heel pain: spread up the leg",
+        "parent": "f001",
+        "attribute": "radiation",
+        "text": "It doesn't spread up my leg.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "heel pain: what it feels like",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "It's a stretching, tearing pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "heel pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "value": [
+          "massaging the arch of the foot",
+          "ice"
+        ],
+        "text": "Massaging the arch of my foot and applying ice make it better.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "heel pain: how much treatment helps",
+        "parent": "f001",
+        "attribute": "treatment_response",
+        "text": "I've used ice, massage and occasional ibuprofen for the pain, but they give me only limited relief.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "heel pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "walking barefoot",
+          "walking after sitting for a long time"
+        ],
+        "complete": true,
+        "text": "Walking barefoot, or walking after sitting for a long period of time, makes it worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "burning sensation",
+        "text": "I haven't noticed any burning.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "tingling",
+        "aliases": [
+          "pins and needles"
+        ],
+        "text": "I haven't had any tingling.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "numbness",
+        "text": "I haven't had any numbness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "pain in other joints",
+        "aliases": [
+          "other joint discomfort"
+        ],
+        "text": "I haven't had discomfort in any other joints.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "appetite changes",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "My appetite hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "fever",
+        "text": "I haven't had any fevers.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "chills",
+        "text": "I haven't had any chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "tiredness",
+        "aliases": [
+          "fatigue"
+        ],
+        "text": "I haven't felt tired.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "earlier episodes of heel pain",
+        "aliases": [
+          "previous heel pain"
+        ],
+        "text": "I've never had pain in my heel before.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "historical"
+      },
+      {
+        "id": "f026",
+        "item": "earlier foot or ankle injuries",
+        "aliases": [
+          "previous foot injury",
+          "previous ankle injury"
+        ],
+        "text": "I've never had any injuries to my feet or ankles.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f027",
+        "item": "other medical problems",
+        "aliases": [
+          "health issues",
+          "medical conditions"
+        ],
+        "text": "I don't have any other health issues.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "cancer",
+        "text": "I've never had cancer.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f029",
+        "item": "rheumatologic disorders",
+        "aliases": [
+          "rheumatic disease",
+          "autoimmune disease"
+        ],
+        "text": "I've never had a rheumatologic disorder.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "diabetes",
+        "aliases": [
+          "high blood sugar"
+        ],
+        "text": "I don't have diabetes.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies"
+        ],
+        "text": "I don't have any allergies.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f033",
+        "item": "ibuprofen",
+        "aliases": [
+          "Advil",
+          "Motrin",
+          "painkillers"
+        ],
+        "text": "Occasionally I take ibuprofen for the pain.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "father's health",
+        "text": "My father has arthritis.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "cancer in the family",
+        "text": "Nobody in my family has had cancer.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "diabetes in the family",
+        "text": "Nobody in my family has diabetes.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "exercise",
+        "aliases": [
+          "sports",
+          "running"
+        ],
+        "text": "I'm a runner.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "exercise: current training",
+        "parent": "f037",
+        "attribute": "other",
+        "aliases": [
+          "recent change in activity",
+          "training for an event"
+        ],
+        "text": "I've been preparing for a marathon.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "alcohol: how much",
+        "parent": "f039",
+        "attribute": "quantity",
+        "text": "I usually have about one to two beers each week.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any illicit drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "smoking",
+        "aliases": [
+          "tobacco",
+          "cigarettes"
+        ],
+        "text": "I don't use tobacco.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "sexual activity",
+        "text": "I'm sexually active with my wife of 10 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I work as an accountant.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "marital status",
+        "text": "I've been married for 10 years.",
+        "polarity": "present",
+        "category": "social_background"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-024",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "125/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "99.0°F (37.2°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "14/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "69/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "vital",
+        "name": "heart rate on recheck",
+        "aliases": [
+          "pulse on recheck"
+        ],
+        "result": "72/min"
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "Pleasant and in no acute distress."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear to auscultation on both sides."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not tender, not distended; normal bowel sounds in all four quadrants."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "foot pulses",
+        "aliases": [
+          "peripheral pulses",
+          "dorsalis pedis pulse",
+          "posterior tibial pulse"
+        ],
+        "result": "Posterior tibial and dorsalis pedis pulses 2+ on both sides."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "foot inspection",
+        "aliases": [
+          "foot alignment",
+          "foot arches"
+        ],
+        "result": "Mild rearfoot pronation on both sides."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "range of motion of the leg joints",
+        "aliases": [
+          "ankle range of motion",
+          "foot range of motion",
+          "hip and knee range of motion"
+        ],
+        "result": "Range of motion of the hip, knee, ankle and foot within normal limits."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "heel and foot palpation",
+        "aliases": [
+          "plantar fascia palpation",
+          "heel tenderness",
+          "foot palpation"
+        ],
+        "result": "Tender to palpation over the medial calcaneal tuberosity and the plantar fascia; pain when the bottom of the right heel and the arch of the right foot are pressed."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "toe dorsiflexion",
+        "aliases": [
+          "toe extension",
+          "windlass test"
+        ],
+        "result": "Pain on the bottom of the right heel and into the arch of the right foot when the toes are dorsiflexed (moved up)."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "muscle strength"
+        ],
+        "result": "5/5 in the hip, knee, ankle and foot."
+      },
+      {
+        "id": "x016",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "sensation",
+        "aliases": [
+          "sensory exam",
+          "light touch"
+        ],
+        "result": "Intact to light touch in the saphenous, sural, and deep and superficial peroneal nerve distributions (L4-S1 dermatomes)."
+      },
+      {
+        "id": "x017",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "Achilles reflex",
+          "ankle jerk",
+          "deep tendon reflexes"
+        ],
+        "result": "Achilles tendon reflex 1+."
+      },
+      {
+        "id": "x018",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "gait",
+        "aliases": [
+          "walking"
+        ],
+        "result": "Nonantalgic gait; pain with the first few steps after sitting."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-024",
+    "diagnosis": "Plantar fasciitis",
+    "aliases": [
+      "plantar fasciopathy",
+      "plantar fasciosis",
+      "plantar heel pain syndrome",
+      "inflammation of the plantar fascia"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Plantar fasciitis",
+        "evidence": [
+          "Training for a marathon",
+          "Tenderness over medial calcaneal tuberosity",
+          "Pain is gradual",
+          "Pain with toe dorsiflexion",
+          "Pain worsens with the first few steps in the morning and after prolonged sitting",
+          "Exam: Tender to palpation over medial calcaneal tuberosity and plantar fascia",
+          "Exam: Plantar heel and arch pain with dorsiflexion of toes"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Calcaneal stress fracture",
+        "aliases": [
+          "calcaneus stress fracture",
+          "stress fracture of the calcaneus",
+          "heel stress fracture"
+        ],
+        "evidence": [
+          "Training for a marathon",
+          "Tenderness over plantar heel and arch",
+          "Diffuse pain over heel",
+          "Refractory to conservative management"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Achilles tendinitis",
+        "aliases": [
+          "Achilles tendonitis",
+          "Achilles tendinopathy",
+          "Achilles tendinosis"
+        ],
+        "evidence": [
+          "Training for a marathon",
+          "Exam: Pain with toe dorsiflexion"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Retrocalcaneal bursitis",
+        "note": "Causes posterior heel pain from irritation of the bursae around the Achilles insertion, often from ill-fitting footwear or a Haglund deformity."
+      },
+      {
+        "diagnosis": "Tarsal tunnel syndrome",
+        "note": "Tibial nerve compression at the medial heel causes pain, burning, tingling, or numbness radiating to the plantar heel and sole."
+      },
+      {
+        "diagnosis": "Foreign body",
+        "note": "Look for an entrance wound and signs of local infection; the patient may not describe a mechanism of injury."
+      },
+      {
+        "diagnosis": "Ankle sprain",
+        "note": "Usually follows rolling the ankle, with ligament tenderness, laxity, edema, and ecchymosis."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-024",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-024-p001"
+      ],
+      "f003": [
+        "medqa-cs-024-p002"
+      ],
+      "f004": [
+        "medqa-cs-024-p003"
+      ],
+      "f005": [
+        "medqa-cs-024-p004"
+      ],
+      "f006": [
+        "medqa-cs-024-p005"
+      ],
+      "f007": [
+        "medqa-cs-024-p005",
+        "medqa-cs-024-p006"
+      ],
+      "f008": [
+        "medqa-cs-024-p007"
+      ],
+      "f009": [
+        "medqa-cs-024-p008"
+      ],
+      "f010": [
+        "medqa-cs-024-p009"
+      ],
+      "f011": [
+        "note"
+      ],
+      "f012": [
+        "medqa-cs-024-p010"
+      ],
+      "f013": [
+        "medqa-cs-024-p012"
+      ],
+      "f014": [
+        "note"
+      ],
+      "f015": [
+        "medqa-cs-024-p013"
+      ],
+      "f016": [
+        "medqa-cs-024-p011"
+      ],
+      "f017": [
+        "medqa-cs-024-p011"
+      ],
+      "f018": [
+        "medqa-cs-024-p011"
+      ],
+      "f019": [
+        "medqa-cs-024-p014"
+      ],
+      "f020": [
+        "medqa-cs-024-p017"
+      ],
+      "f021": [
+        "medqa-cs-024-p017"
+      ],
+      "f022": [
+        "medqa-cs-024-p017"
+      ],
+      "f023": [
+        "medqa-cs-024-p017"
+      ],
+      "f024": [
+        "medqa-cs-024-p017"
+      ],
+      "f025": [
+        "medqa-cs-024-p015"
+      ],
+      "f026": [
+        "medqa-cs-024-p016"
+      ],
+      "f027": [
+        "medqa-cs-024-p019"
+      ],
+      "f028": [
+        "note"
+      ],
+      "f029": [
+        "note"
+      ],
+      "f030": [
+        "note"
+      ],
+      "f031": [
+        "medqa-cs-024-p020"
+      ],
+      "f032": [
+        "medqa-cs-024-p028"
+      ],
+      "f033": [
+        "medqa-cs-024-p018"
+      ],
+      "f034": [
+        "medqa-cs-024-p021"
+      ],
+      "f035": [
+        "note"
+      ],
+      "f036": [
+        "note"
+      ],
+      "f037": [
+        "medqa-cs-024-p023"
+      ],
+      "f038": [
+        "medqa-cs-024-p003"
+      ],
+      "f039": [
+        "medqa-cs-024-p024"
+      ],
+      "f040": [
+        "medqa-cs-024-p024"
+      ],
+      "f041": [
+        "medqa-cs-024-p025"
+      ],
+      "f042": [
+        "medqa-cs-024-p026"
+      ],
+      "f043": [
+        "medqa-cs-024-p027"
+      ],
+      "f044": [
+        "medqa-cs-024-p022"
+      ],
+      "f045": [
+        "medqa-cs-024-p027"
+      ]
+    },
+    "quotes": {
+      "f001": "Pain in the heel.",
+      "f002": "The pain is most intense in my right heel.",
+      "f003": "It came on gradually over the past 2 weeks.",
+      "f004": "Not particularly",
+      "f005": "Intermittent.",
+      "f006": "It usually occurs every day.",
+      "f007": "It seems to be worse in the morning. / First thing in the morning or at the end of the day.",
+      "f008": "It has stayed about the same.",
+      "f009": "When it hurts, it can get up to a 7/10.",
+      "f010": "Sometimes it extends into the arch of my foot.",
+      "f011": "He denies proximally radiating symptoms",
+      "f012": "Stretching/tearing pain.",
+      "f013": "Massaging the arch of my foot and applying ice.",
+      "f014": "He has used ice, massages, and occasional ibuprofen for the pain, with limited relief.",
+      "f015": "Walking barefoot or walking after sitting for a prolonged period of time.",
+      "f016": "No.",
+      "f017": "No.",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "The patient denies cancer, rheumatologic disorders, or diabetes.",
+      "f029": "The patient denies cancer, rheumatologic disorders, or diabetes.",
+      "f030": "The patient denies cancer, rheumatologic disorders, or diabetes.",
+      "f031": "None.",
+      "f032": "No.",
+      "f033": "Occasionally I take ibuprofen for the pain.",
+      "f034": "My father has arthritis.",
+      "f035": "The patient denies a family history of cancer, rheumatologic disorders, or diabetes.",
+      "f036": "The patient denies a family history of cancer, rheumatologic disorders, or diabetes.",
+      "f037": "Runner.",
+      "f038": "I've been preparing for a marathon.",
+      "f039": "I usually have about one to two beers each week.",
+      "f040": "I usually have about one to two beers each week.",
+      "f041": "No.",
+      "f042": "No.",
+      "f043": "I am sexually active with my wife of 10 years.",
+      "f044": "I work as an accountant."
+    },
+    "flags": {
+      "f011": [
+        "Only in the student note HPI; the script answer on radiation mentions only the arch."
+      ],
+      "f014": [
+        "'Limited relief' is only in the student note HPI; the script says massage and ice make the pain better (p012, f013)."
+      ],
+      "f028": [
+        "Only in the student note PMH."
+      ],
+      "f029": [
+        "Only in the student note PMH."
+      ],
+      "f030": [
+        "Only in the student note PMH."
+      ],
+      "f035": [
+        "Only in the student note FH."
+      ],
+      "f036": [
+        "Only in the student note FH."
+      ],
+      "f045": [
+        "Split off from f043, whose text was the only record of it (fix)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 125/80 mmHg | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-024-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 99.0°F (37.2°C) | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-024-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 14/minute | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-024-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 69/minute, regular | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-024-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR); heart rate of 72 beats per minute (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-024-e004"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Patient is pleasant and in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-024-e001"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear to auscultation bilaterally.",
+        "exam_ids": [
+          "medqa-cs-024-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR); heart rate of 72 beats per minute (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-024-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, nontender, nondistended, normal bowel sounds x 4.",
+        "exam_ids": [
+          "medqa-cs-024-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "- Posterior tibialis and dorsalis pedis pulses 2+ bilaterally.",
+        "exam_ids": [
+          "medqa-cs-024-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "- Mild bilateral rearfoot pronation.",
+        "exam_ids": [
+          "medqa-cs-024-e008"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "- Range of motion of hip/knee/ankle and foot WNL.",
+        "exam_ids": [
+          "medqa-cs-024-e009"
+        ]
+      },
+      "x013": {
+        "source": "patient_note + sp_notes",
+        "source_text": "- Tender to palpation over medial calcaneal tuberosity and plantar fascia. | Exhibit pain when the examinee palpates the arch of your right foot and the bottom of your right heel.",
+        "exam_ids": [
+          "medqa-cs-024-e010"
+        ]
+      },
+      "x014": {
+        "source": "patient_note + sp_notes",
+        "source_text": "- Plantar heel and arch pain with dorsiflexion of toes. | Pretend to have pain on the bottom of your right heel and into the arch of your right foot when the examinee extends your toes (moves them up).",
+        "exam_ids": [
+          "medqa-cs-024-e011"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "- Motor strength 5/5 in hip/knee/ankle and foot.",
+        "exam_ids": [
+          "medqa-cs-024-e013"
+        ]
+      },
+      "x016": {
+        "source": "patient_note",
+        "source_text": "- Sensation intact to light touch in saphenous, sural, and deep/superficial peroneal nerve distributions (dermatomes L4-S1).",
+        "exam_ids": [
+          "medqa-cs-024-e014"
+        ]
+      },
+      "x017": {
+        "source": "patient_note",
+        "source_text": "- Deep tendon reflexes (DTRs): 1+ in Achilles tendon.",
+        "exam_ids": [
+          "medqa-cs-024-e015"
+        ]
+      },
+      "x018": {
+        "source": "patient_note + sp_notes",
+        "source_text": "- Gait: Nonantalgic gait pattern. | Give the appearance of pain with the first few steps you take after sitting.",
+        "exam_ids": [
+          "medqa-cs-024-e016"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x013": [
+        "The note line (e010) does not state the side; the SP notes and history place the findings on the right foot."
+      ],
+      "x017": [
+        "The note line (e015) does not state the side."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Heart rate disagrees: doorway HR 69/minute vs patient-note exam HR 72 beats per minute (e004). Doorway value kept as heart rate (x004); the note value is 'heart rate on recheck' (x005).",
+      "Exam lines e006 ('Extremities:') and e012 ('Neuro:') are bare section headers split off by the parser; listed in excluded_exam_lines.",
+      "Exam lines e010, e011, and e015 do not state the side; the SP notes and history place the findings on the right foot. Kept as written, with the SP-simulated right-foot findings added to the same records (x013, x014).",
+      "The note HPI says ice, massage, and occasional ibuprofen gave 'limited relief' (note fact f014); the script says massage and ice make the pain better (p012, f013).",
+      "The note FH says the patient denies a family history of rheumatologic disorders, while the father has arthritis (p021, type not given). The family rheumatologic denial was not added as a patient fact.",
+      "Gold rank 1 lists exam findings (tenderness over the medial calcaneal tuberosity, pain with toe dorsiflexion) under history findings. Its 'first few steps in the morning' is not in the script, which says the pain is worse in the morning and after prolonged sitting; 'first few steps after sitting' comes from the SP notes.",
+      "Gold rank 2 'Diffuse pain over heel' is not supported by the script (pain most intense in the right heel), and 'Refractory to conservative management' rests only on the note's 'limited relief'.",
+      "Raw sheet artifact: part of the Foreign body / Ankle sprain rationale text is pasted into the examinee checklist after 'Entrance'. Parsed fields are not affected.",
+      "The note exam reports a nonantalgic gait, while the SP is told to show pain with the first few steps after sitting; not necessarily a contradiction, and both are in the gait record (x018)."
+    ],
+    "notes": [
+      "p005 and p006 both answer when the pain is worse; merged into one time-of-day fact (f007). 'Usually every day' (p005) is the frequency child f006.",
+      "Training for a marathon (p003) and being a runner (p023) say different things: f037 (exercise) with the marathon training as its child f038 (v1 f004, social, mapped to habit_exposure).",
+      "Note-only facts (v1 from_note): no proximal radiation (f011), limited relief of conservative measures (f014), PMH denials of cancer, rheumatologic disorders, and diabetes (f028-f030), and family denials of cancer and diabetes (f035-f036).",
+      "Daily intermittent heel pain is the ongoing presenting problem, so its attributes are marked current rather than recurrent.",
+      "SP-simulated findings: pain on toe extension goes into the toe dorsiflexion record (x014), pain on palpation of the arch and plantar heel into the heel and foot palpation record (x013), and pain with the first few steps after sitting into the gait record (x018), because it is elicited when the examinee watches him walk.",
+      "Conversion: the relieving list (f013) is not marked complete, because the note adds occasional ibuprofen (f014). The radiation list (f010) is complete; the note's denial of proximal radiation (f011) agrees.",
+      "Conversion: alcohol (p024) is a parent (f039) with a quantity child (f040).",
+      "Vitals: doorway values agree with the note's 'VS: WNL' (e002), so each doorway record cites both; the note's different heart rate (72) is a separate recheck record (x005), not initial.",
+      "Harmonisation pass: scale [0, 10] added to f009.",
+      "Fixes: f039 answer word removed; f045 new fact 'marital status' from f043."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Pretend to have pain on the bottom of your right heel and into the arch of your right foot when the examinee extends your toes (moves them up).",
+        "Exhibit pain when the examinee palpates the arch of your right foot and the bottom of your right heel.",
+        "Give the appearance of pain with the first few steps you take after sitting."
+      ],
+      "patient_questions": [
+        "Doctor, could you prescribe me some strong pain relief so I can keep running? I'm preparing for a marathon."
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": [
+      {
+        "id": "medqa-cs-024-e006",
+        "reason": "Section header 'Extremities:' with no finding; its content is in e007-e011."
+      },
+      {
+        "id": "medqa-cs-024-e012",
+        "reason": "Section header 'Neuro:' with no finding; its content is in e013-e016."
+      }
+    ]
+  }
+}

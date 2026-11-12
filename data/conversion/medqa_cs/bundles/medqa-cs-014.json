@@ -1,0 +1,1226 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-014",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 35,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "headache",
+        "aliases": [
+          "head pain"
+        ],
+        "text": "I have a headache. I have one right now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "headache: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started two weeks ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "headache: sudden or gradual start",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It came on gradually.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "headache: constant or comes and goes",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "Well, I don't have the pain all the time. It comes and goes.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "recurrent"
+      },
+      {
+        "id": "f005",
+        "item": "headache: how often",
+        "parent": "f001",
+        "attribute": "frequency",
+        "text": "At least once a day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "recurrent"
+      },
+      {
+        "id": "f006",
+        "item": "headache: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It's getting worse. Now I get it two to three times a day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "headache: severity",
+        "parent": "f001",
+        "attribute": "severity",
+        "value": 9,
+        "text": "When I have the pain, it's a 9 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "recurrent",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f008",
+        "item": "headache: effect on daily activities",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "When I have the pain, it prevents me from working.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "recurrent"
+      },
+      {
+        "id": "f009",
+        "item": "headache: location",
+        "parent": "f001",
+        "attribute": "location",
+        "value": [
+          "right side of the head"
+        ],
+        "text": "It's here, on the right side of my head.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "headache: how long each lasts",
+        "parent": "f001",
+        "attribute": "duration",
+        "text": "Each one lasts one or two hours.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "recurrent"
+      },
+      {
+        "id": "f011",
+        "item": "headache: spread",
+        "parent": "f001",
+        "attribute": "radiation",
+        "text": "It doesn't move to other areas.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "headache: what it feels like",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "It feels sharp and throbbing.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "headache: warning signs before it starts",
+        "parent": "f001",
+        "attribute": "other",
+        "aliases": [
+          "aura"
+        ],
+        "text": "I don't get any warning signs before it comes.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "headache: time of day",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "It can come at any time of day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "recurrent"
+      },
+      {
+        "id": "f015",
+        "item": "headache: change with periods",
+        "parent": "f001",
+        "attribute": "other",
+        "aliases": [
+          "headache and menstrual cycle"
+        ],
+        "text": "It doesn't get more frequent or worse during my periods.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "headache: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "value": [
+          "resting in a quiet, dark room",
+          "sleep",
+          "aspirin"
+        ],
+        "complete": true,
+        "text": "Resting in a quiet, dark room, sleep, and aspirin make it better.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "headache: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "stress",
+          "light",
+          "noise"
+        ],
+        "complete": true,
+        "text": "Stress, light and noise make it worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "headache: waking from sleep",
+        "parent": "f001",
+        "attribute": "timing",
+        "text": "My headaches don't wake me up from sleep.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "Sometimes I feel nauseated when I'm in pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f020",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I vomited.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "historical"
+      },
+      {
+        "id": "f021",
+        "item": "vomiting: when",
+        "parent": "f020",
+        "attribute": "onset",
+        "text": "Yesterday, for the first time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "historical"
+      },
+      {
+        "id": "f022",
+        "item": "vision changes",
+        "aliases": [
+          "blurry vision",
+          "trouble seeing"
+        ],
+        "text": "My vision hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "eye",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "unusual tearing",
+        "aliases": [
+          "watery eyes"
+        ],
+        "text": "My eyes haven't been tearing unusually.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "eye",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "eye redness",
+        "aliases": [
+          "red eye"
+        ],
+        "text": "My eyes haven't been red.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "eye",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "weakness",
+        "text": "I haven't had any weakness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "numbness",
+        "text": "I haven't had any numbness.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "tingling",
+        "aliases": [
+          "pins and needles"
+        ],
+        "text": "I haven't had any tingling.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "trouble speaking",
+        "aliases": [
+          "speech difficulty",
+          "slurred speech"
+        ],
+        "text": "I haven't had any difficulty with my speech.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "runny nose during headaches",
+        "aliases": [
+          "runny nose"
+        ],
+        "text": "I don't get a runny nose during the headaches.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "ent",
+        "time": "recurrent"
+      },
+      {
+        "id": "f030",
+        "item": "appetite change",
+        "aliases": [
+          "appetite"
+        ],
+        "text": "My appetite hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "joint pain or body aches",
+        "aliases": [
+          "aches and pains",
+          "joint pain"
+        ],
+        "text": "I get occasional aches and pains. I take ibuprofen for them.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f033",
+        "item": "head injury",
+        "aliases": [
+          "head trauma",
+          "hitting your head"
+        ],
+        "text": "I haven't had any injuries to my head.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "neurological",
+        "time": "historical"
+      },
+      {
+        "id": "f034",
+        "item": "earlier episodes of headache",
+        "aliases": [
+          "previous headaches"
+        ],
+        "text": "In college I had a similar headache.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "earlier headache: other symptoms with it",
+        "parent": "f034",
+        "attribute": "other",
+        "text": "It came with nausea.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "sinusitis",
+        "aliases": [
+          "sinus infection"
+        ],
+        "text": "I had a sinusitis episode four months ago, and I was treated with amoxicillin.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "sinusitis: compared with the current pain",
+        "parent": "f036",
+        "attribute": "other",
+        "text": "The pain I had then was different from what I'm feeling now.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f038",
+        "item": "past surgery",
+        "aliases": [
+          "operations",
+          "tubal ligation"
+        ],
+        "text": "I had a tubal ligation 8 years ago, after my third child.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "last menstrual period",
+        "aliases": [
+          "last period",
+          "LMP"
+        ],
+        "text": "My last period was two weeks ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f040",
+        "item": "ibuprofen",
+        "aliases": [
+          "painkillers",
+          "Advil"
+        ],
+        "text": "I take ibuprofen.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "birth control pills",
+        "aliases": [
+          "the pill",
+          "oral contraceptives"
+        ],
+        "text": "I don't take birth control pills.",
+        "polarity": "absent",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "allergies",
+        "aliases": [
+          "drug allergies"
+        ],
+        "text": "I'm not allergic to anything.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "father's health",
+        "text": "My father died at age 65 of a brain tumor.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f044",
+        "item": "mother's health",
+        "text": "My mother is alive and has migraines.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I don't drink alcohol.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "smoking",
+        "aliases": [
+          "tobacco",
+          "cigarettes"
+        ],
+        "text": "I don't use tobacco.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "sexual activity",
+        "text": "I'm sexually active with my husband.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "recent stress or life changes",
+        "aliases": [
+          "stress"
+        ],
+        "text": "I'm working on a new project that I have to finish this month.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "recent stress: last month",
+        "parent": "f049",
+        "attribute": "context",
+        "text": "Last month was a disaster. I worked hard on my designs, but they were rejected, and I have to start all over again.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      },
+      {
+        "id": "f051",
+        "item": "living situation",
+        "aliases": [
+          "who you live with",
+          "home"
+        ],
+        "text": "I live with my husband and three children.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm an engineer.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-014",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "135/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "16/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "76/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "In severe pain."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "general",
+        "name": "head examination",
+        "aliases": [
+          "head palpation",
+          "scalp"
+        ],
+        "result": "Normocephalic and atraumatic; not tender to palpation."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "pupils",
+          "fundoscopy",
+          "extraocular movements"
+        ],
+        "result": "Pupils equal, round, reactive to light and accommodation; extraocular movements intact; no papilledema."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "ent",
+        "name": "nose and throat examination",
+        "aliases": [
+          "nose",
+          "throat",
+          "mouth"
+        ],
+        "result": "No nasal congestion; no pharyngeal erythema or exudates; good dentition."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "ent",
+        "name": "neck examination",
+        "aliases": [
+          "neck stiffness",
+          "lymph nodes"
+        ],
+        "result": "Supple; no lymphadenopathy."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; S1 and S2 within normal limits; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "mental status",
+        "aliases": [
+          "orientation",
+          "mental status examination"
+        ],
+        "result": "Alert and oriented to person, place and time; good concentration."
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "cranial nerves",
+        "aliases": [
+          "cranial nerve examination"
+        ],
+        "result": "Cranial nerves II to XII grossly intact."
+      },
+      {
+        "id": "x014",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "motor strength",
+        "aliases": [
+          "strength",
+          "motor examination"
+        ],
+        "result": "5/5 throughout."
+      },
+      {
+        "id": "x015",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "reflexes",
+        "aliases": [
+          "deep tendon reflexes",
+          "DTRs"
+        ],
+        "result": "Deep tendon reflexes 2+, intact and symmetric."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-014",
+    "diagnosis": "Migraine headache",
+    "aliases": [
+      "migraine",
+      "migraine without aura",
+      "common migraine",
+      "migraine attack",
+      "acute migraine"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Migraine headache",
+        "evidence": [
+          "Unilateral, sharp headaches",
+          "Severe pain with lack of neurologic findings",
+          "Associated with nausea and vomiting",
+          "Photophobia"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Tension headache",
+        "aliases": [
+          "tension-type headache",
+          "TTH",
+          "stress headache",
+          "muscle contraction headache"
+        ],
+        "evidence": [
+          "Chronic headaches",
+          "Severe pain with lack of neurologic findings",
+          "Associated with stress at work",
+          "Improve with sleep"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Intracranial mass lesion",
+        "aliases": [
+          "brain tumor",
+          "intracranial tumor",
+          "intracranial neoplasm",
+          "brain mass",
+          "space-occupying lesion"
+        ],
+        "evidence": [
+          "Headaches associated with nausea and vomiting",
+          "Family history of brain tumor"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Pseudotumor cerebri",
+        "note": "Headaches may be focal but usually come with diplopia or other visual symptoms; papilledema is expected, though the exam may be normal in the first days."
+      },
+      {
+        "diagnosis": "Cluster headache",
+        "note": "Unilateral periorbital pain with ipsilateral autonomic signs, occurring in clusters and often waking patients at night; rare in women."
+      },
+      {
+        "diagnosis": "Sinusitis",
+        "note": "A rare cause of headache; she had sinusitis months ago but has no current signs or symptoms of sinus or respiratory infection."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-014",
+    "fact_sources": {
+      "f001": [
+        "cc",
+        "medqa-cs-014-p012"
+      ],
+      "f002": [
+        "medqa-cs-014-p001"
+      ],
+      "f003": [
+        "medqa-cs-014-p002"
+      ],
+      "f004": [
+        "medqa-cs-014-p003"
+      ],
+      "f005": [
+        "medqa-cs-014-p004"
+      ],
+      "f006": [
+        "medqa-cs-014-p005"
+      ],
+      "f007": [
+        "medqa-cs-014-p006"
+      ],
+      "f008": [
+        "medqa-cs-014-p006"
+      ],
+      "f009": [
+        "medqa-cs-014-p007"
+      ],
+      "f010": [
+        "medqa-cs-014-p008"
+      ],
+      "f011": [
+        "medqa-cs-014-p009"
+      ],
+      "f012": [
+        "medqa-cs-014-p010"
+      ],
+      "f013": [
+        "medqa-cs-014-p011"
+      ],
+      "f014": [
+        "medqa-cs-014-p012"
+      ],
+      "f015": [
+        "medqa-cs-014-p013"
+      ],
+      "f016": [
+        "medqa-cs-014-p014"
+      ],
+      "f017": [
+        "medqa-cs-014-p015"
+      ],
+      "f018": [
+        "medqa-cs-014-p017"
+      ],
+      "f019": [
+        "medqa-cs-014-p016"
+      ],
+      "f020": [
+        "medqa-cs-014-p016"
+      ],
+      "f021": [
+        "medqa-cs-014-p016"
+      ],
+      "f022": [
+        "medqa-cs-014-p018"
+      ],
+      "f023": [
+        "medqa-cs-014-p018"
+      ],
+      "f024": [
+        "medqa-cs-014-p018"
+      ],
+      "f025": [
+        "medqa-cs-014-p019"
+      ],
+      "f026": [
+        "medqa-cs-014-p019"
+      ],
+      "f027": [
+        "medqa-cs-014-p019"
+      ],
+      "f028": [
+        "medqa-cs-014-p020"
+      ],
+      "f029": [
+        "medqa-cs-014-p021"
+      ],
+      "f030": [
+        "medqa-cs-014-p023"
+      ],
+      "f031": [
+        "medqa-cs-014-p023"
+      ],
+      "f032": [
+        "medqa-cs-014-p024"
+      ],
+      "f033": [
+        "medqa-cs-014-p026"
+      ],
+      "f034": [
+        "medqa-cs-014-p022"
+      ],
+      "f035": [
+        "medqa-cs-014-p022"
+      ],
+      "f036": [
+        "medqa-cs-014-p029"
+      ],
+      "f037": [
+        "medqa-cs-014-p029"
+      ],
+      "f038": [
+        "medqa-cs-014-p030",
+        "medqa-cs-014-p038"
+      ],
+      "f039": [
+        "medqa-cs-014-p027"
+      ],
+      "f040": [
+        "medqa-cs-014-p028"
+      ],
+      "f041": [
+        "medqa-cs-014-p038"
+      ],
+      "f042": [
+        "medqa-cs-014-p039"
+      ],
+      "f043": [
+        "medqa-cs-014-p031"
+      ],
+      "f044": [
+        "medqa-cs-014-p031"
+      ],
+      "f045": [
+        "medqa-cs-014-p033"
+      ],
+      "f046": [
+        "medqa-cs-014-p034"
+      ],
+      "f047": [
+        "medqa-cs-014-p035"
+      ],
+      "f048": [
+        "medqa-cs-014-p037"
+      ],
+      "f049": [
+        "medqa-cs-014-p025"
+      ],
+      "f050": [
+        "medqa-cs-014-p025"
+      ],
+      "f051": [
+        "medqa-cs-014-p036"
+      ],
+      "f052": [
+        "medqa-cs-014-p032"
+      ]
+    },
+    "quotes": {
+      "f001": "I'm experiencing a headache. / I currently have one.",
+      "f002": "Two weeks ago.",
+      "f003": "Gradually.",
+      "f004": "Well, I don't have the pain all the time. It comes and goes.",
+      "f005": "At least once a day.",
+      "f006": "It is getting worse (two to three times a day).",
+      "f007": "When I have the pain, it is 9/10",
+      "f008": "prevents me from working.",
+      "f009": "It's located here (indicates the right side of the head).",
+      "f010": "One or 2 hours.",
+      "f011": "No.",
+      "f012": "It feels sharp and throbbing.",
+      "f013": "No.",
+      "f014": "The headache can occur at any time",
+      "f015": "No.",
+      "f016": "Resting in a quiet, dark room; sleep, aspirin.",
+      "f017": "Stress, light, and noise.",
+      "f018": "No.",
+      "f019": "Sometimes I feel nauseated when I am in pain.",
+      "f020": "Yesterday I vomited for the first time.",
+      "f021": "Yesterday I vomited for the first time.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "No.",
+      "f030": "No.",
+      "f031": "No.",
+      "f032": "Occasional aches and pains treated with ibuprofen.",
+      "f033": "No.",
+      "f034": "Yes, in college I had a similar headache",
+      "f035": "accompanied by nausea.",
+      "f036": "I had a sinusitis episode four months ago, for which I was treated with amoxicillin",
+      "f037": "but the pain I experienced then was different from what I'm feeling now.",
+      "f038": "Tubal ligation 8 years ago. / I had a tubal ligation after my third child 8 years ago.",
+      "f039": "Two weeks ago.",
+      "f040": "Ibuprofen.",
+      "f041": "No",
+      "f042": "No.",
+      "f043": "My father died at age 65 of a brain tumor.",
+      "f044": "My mother is alive and has migraines.",
+      "f045": "No.",
+      "f046": "No.",
+      "f047": "No.",
+      "f048": "With my husband.",
+      "f049": "Yes, I am working on a new project that I have to finish this month.",
+      "f050": "Last month was a disaster. I worked hard on my designs, but they were rejected, and I have to start all over again.",
+      "f051": "I live with my husband and three children.",
+      "f052": "Engineer."
+    },
+    "flags": {
+      "f032": [
+        "p024 also asks about fatigue; the answer does not address it, so fatigue is left unknown."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 135/80 mm Hg | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-014-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.6°F (37°C) | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-014-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 16/minute | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-014-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 76/minute, regular | VS: Within normal limits (WNL).",
+        "exam_ids": [
+          "medqa-cs-014-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in severe pain.",
+        "exam_ids": [
+          "medqa-cs-014-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Normocephalic/atraumatic, nontender to palpation",
+        "exam_ids": [
+          "medqa-cs-014-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "pupils equal, round, reactive to light and accommodation (PERRLA), extraocular movements (EOM) intact, no papilledema",
+        "exam_ids": [
+          "medqa-cs-014-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "no nasal congestion, no pharyngeal erythema or exudates, good dentition.",
+        "exam_ids": [
+          "medqa-cs-014-e003"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Neck: Supple, no lymphadenopathy.",
+        "exam_ids": [
+          "medqa-cs-014-e004"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-014-e005"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Heart: Respiratory rate and rhythm; first heart sound/second heart sound within normal limits (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-014-e006"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Neuro: Mental status: Alert and oriented x 3, good concentration.",
+        "exam_ids": [
+          "medqa-cs-014-e007"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "Cranial nerves: 2-12 grossly intact.",
+        "exam_ids": [
+          "medqa-cs-014-e007"
+        ]
+      },
+      "x014": {
+        "source": "patient_note",
+        "source_text": "Motor: Strength 5/5 throughout.",
+        "exam_ids": [
+          "medqa-cs-014-e007"
+        ]
+      },
+      "x015": {
+        "source": "patient_note",
+        "source_text": "Deep tendon reflexes (DTRs): 2+ intact symmetric.",
+        "exam_ids": [
+          "medqa-cs-014-e007"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x011": [
+        "Source reads 'Respiratory rate and rhythm' — evidently a mis-expanded 'RRR' (regular rate and rhythm)."
+      ]
+    },
+    "leakage": [
+      {
+        "fact_id": "f044",
+        "reason": "Family history 'mother has migraines' names the rank-1 diagnosis (migraine); legitimate history, kept as is."
+      }
+    ],
+    "source_issues": [
+      "Exam e006 reads 'Heart: Respiratory rate and rhythm', evidently a mis-expansion of 'RRR' (regular rate and rhythm); recorded as regular rate and rhythm with the original wording in finding_flags (x011).",
+      "The note lists 'Medications: Ibuprofen, aspirin', but the script's medication answer (p028) is 'Ibuprofen' only; aspirin appears only as a relieving factor (p014, f016).",
+      "Note HPI says the pain is 'sometimes accompanied by nausea and vomiting'; the script says she vomited for the first time yesterday.",
+      "p024 asks about joint pains and fatigue; the answer ('Occasional aches and pains treated with ibuprofen') does not address fatigue.",
+      "Gold #2 cites 'Chronic headaches', but the script gives a 2-week history plus one similar headache in college.",
+      "The patient name 'Kindly Clark' may be a transcription error; kept as given (the sample closure addresses 'Mrs. Clark'). The sample closure ends with a stray '[276]'."
+    ],
+    "notes": [
+      "The parenthetical in p005 '(two to three times a day)' is content, not a stage direction; it is kept in f006. '(indicates the right side of the head)' in p007 is moved to extras.acting_notes.",
+      "Temporality: the episodic pattern (intermittent, frequency, per-episode severity and duration, functional limitation during episodes, nausea during pain) is 'recurrent'; the headache present now (p012) is 'current'.",
+      "Tubal ligation from p030 and p038 combined into one fact (f038); p038's denial of birth-control pills is a separate fact (f041).",
+      "Following the worked example, the sp_notes direction 'look as if you are in severe pain' is kept as an acting note only; the note exam (x005) already records severe pain.",
+      "The patient description 'married with three children' exists only in raw_opening; kept in extras.acting_notes (p036 also gives husband and three children).",
+      "Conversion: p012 'I currently have one' (v1 f014) is merged into the chief-complaint fact f001 ('I have a headache. I have one right now.'), since a separate 'headache right now' fact would paraphrase the opening complaint; the time-of-day pattern stays a timing child (f014).",
+      "Conversion: v1's three relieving facts (dark quiet room, sleep, aspirin) and three aggravating facts (stress, light, noise) become one relieving (f016) and one aggravating (f017) child with complete value lists, as in the reference conversion. Aura, timing, menses relationship, waking from sleep and the effect on work (v1 'functional') are children of the headache.",
+      "Conversion: vomiting (p016) is split into the symptom (f020) and its onset child (f021); the earlier college headache (p022) is a parent with an 'other symptoms' child (f035); the sinusitis comparison is a child of the sinusitis fact (f037); last month's setback at work is a context child (f050) of the current work stress (f049).",
+      "Conversion: birth control pills (f041; v1 subtype ob_gyn) are given category 'medication', following the schema ('medication: ... contraception'), although the CONVERSION.md subtype table maps ob_gyn to medical_history.",
+      "Conversion: the note's 'VS: Within normal limits' (e002) agrees with the doorway values and is cited on each doorway vital record. The HEENT line (e003) is split into head, eye, and nose-and-throat records.",
+      "Harmonisation pass: scale [0, 10] added to f007.",
+      "Fixes: f011 answer word removed; f013 answer word removed; f015 answer word removed; f018 answer word removed; f020 answer word removed; f022 answer word removed; f028 answer word removed; f029 answer word removed; f030 answer word removed; f031 answer word removed; f033 answer word removed; f034 answer word removed; f041 answer word removed; f042 answer word removed; f049 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Hold the right side of your head during the encounter and look as if you are in severe pain.",
+        "Indicate the right side of the head when asked where the pain is located.",
+        "Patient description: married with three children."
+      ],
+      "patient_questions": [
+        "Do you have anything to alleviate my pain? Please, doctor, it is painful."
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

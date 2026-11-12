@@ -1,0 +1,88 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-075", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 65, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "vaginal bleeding", "aliases": ["bleeding from the vagina", "postmenopausal bleeding", "spotting"], "text": "I've been having bleeding from my vagina.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "vaginal bleeding: pattern", "parent": "f001", "attribute": "timing", "text": "It comes and goes.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f003", "item": "vaginal bleeding: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 2 months.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f004", "item": "vaginal bleeding: previous episodes", "parent": "f001", "attribute": "other", "text": "I've never had anything like this before.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "historical"},
+      {"id": "f005", "item": "menopause", "aliases": ["periods stopped", "postmenopausal"], "text": "I've already gone through menopause.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost any weight recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "change in bladder habits", "aliases": ["urinary changes", "change in urination"], "text": "My bladder habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f009", "item": "change in bowel habits", "aliases": ["bowel changes", "constipation"], "text": "My bowel habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "nausea", "aliases": ["feeling sick"], "text": "I haven't felt nauseous.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f011", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f012", "item": "diarrhea", "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "burning when urinating", "aliases": ["painful urination", "dysuria"], "text": "It doesn't burn when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f014", "item": "flank pain", "aliases": ["pain in the side", "side pain"], "text": "I don't have any pain in my sides.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f015", "item": "serious illness", "aliases": ["past medical history", "chronic medical problems"], "text": "I've never had any serious illness.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f016", "item": "regular medications", "aliases": ["medicines", "medications"], "text": "I don't take any medications regularly.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "occupation", "aliases": ["job", "work"], "text": "I'm a retired school teacher.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-075",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "135/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["gynecological examination", "speculum examination", "bimanual examination", "external genitalia", "adnexa"], "result": "External genitalia: normal, no lesions or masses; speculum: vaginal atrophy, no active bleeding; bimanual: palpable non-tender left adnexal mass, uterus not enlarged."},
+      {"id": "x006", "kind": "test", "name": "pelvic ultrasound", "aliases": ["transvaginal ultrasound", "pelvic US", "ultrasound of the pelvis"], "result": "Thickened endometrial stripe and left adnexal mass."},
+      {"id": "x007", "kind": "test", "name": "inhibin B", "aliases": ["inhibin", "serum inhibin"], "result": "Increased levels."},
+      {"id": "x008", "kind": "test", "name": "endometrial biopsy", "aliases": ["endometrial sampling", "uterine biopsy"], "result": "Well-differentiated adenocarcinoma."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-075",
+    "diagnosis": "Granulosa cell tumor",
+    "aliases": ["granulosa cell tumour", "ovarian granulosa cell tumor", "granulosa cell tumor of the ovary", "adult granulosa cell tumor", "AGCT"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-075",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-075-p001"], "f002": ["cc", "agentclinic-medqa-ext-075-p001"], "f003": ["agentclinic-medqa-ext-075-p001"],
+      "f004": ["agentclinic-medqa-ext-075-p001"], "f005": ["agentclinic-medqa-ext-075-p001"],
+      "f006": ["agentclinic-medqa-ext-075-p001", "agentclinic-medqa-ext-075-p002"], "f007": ["agentclinic-medqa-ext-075-p001", "agentclinic-medqa-ext-075-p003"],
+      "f008": ["agentclinic-medqa-ext-075-p001", "agentclinic-medqa-ext-075-p004"], "f009": ["agentclinic-medqa-ext-075-p001", "agentclinic-medqa-ext-075-p004"],
+      "f010": ["agentclinic-medqa-ext-075-p007"], "f011": ["agentclinic-medqa-ext-075-p007"], "f012": ["agentclinic-medqa-ext-075-p007"],
+      "f013": ["agentclinic-medqa-ext-075-p007"], "f014": ["agentclinic-medqa-ext-075-p007"],
+      "f015": ["agentclinic-medqa-ext-075-p001", "agentclinic-medqa-ext-075-p005"], "f016": ["agentclinic-medqa-ext-075-p001"],
+      "f017": ["agentclinic-medqa-ext-075-p006"], "f018": ["agentclinic-medqa-ext-075-p006"], "f019": ["agentclinic-medqa-ext-075-p006"]
+    },
+    "quotes": {
+      "f002": "Intermittent", "f003": "a 2-month history", "f004": "No previous history of similar symptoms.", "f005": "postmenopausal bleeding",
+      "f006": "No recent weight loss", "f008": "changes in bladder or bowel habits", "f009": "changes in bladder or bowel habits",
+      "f013": "dysuria", "f015": "She has no history of serious illness", "f016": "takes no medications regularly", "f019": "retired school teacher"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-075-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "135/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-075-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-075-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-075-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Pelvic_Examination.External_Genitalia + Physical_Examination_Findings.Pelvic_Examination.Speculum_Exam + Physical_Examination_Findings.Pelvic_Examination.Bimanual_Exam", "source_text": "Normal, no lesions or masses | Vaginal atrophy, no active bleeding | A palpable left adnexal mass, non-tender, uterus non-enlarged", "exam_ids": ["agentclinic-medqa-ext-075-e005", "agentclinic-medqa-ext-075-e006", "agentclinic-medqa-ext-075-e007"]},
+      "x006": {"source": "Test_Results.Imaging.Pelvic_Ultrasound.Findings", "source_text": "Thickened endometrial stripe and left adnexal mass observed", "exam_ids": ["agentclinic-medqa-ext-075-i001"]},
+      "x007": {"source": "Test_Results.Laboratory_Studies.Inhibin_B", "source_text": "Increased levels", "exam_ids": ["agentclinic-medqa-ext-075-i002"]},
+      "x008": {"source": "Test_Results.Biopsy.Endometrial_Biopsy.Findings", "source_text": "Well-differentiated adenocarcinoma", "exam_ids": ["agentclinic-medqa-ext-075-i003"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The endometrial biopsy shows well-differentiated adenocarcinoma (endometrial cancer), while the gold is the ovarian granulosa cell tumour that drives it; no ovarian tissue diagnosis is given, so the gold rests on the adnexal mass with raised inhibin B."
+    ],
+    "notes": [
+      "Postmenopausal status is a separate medical_history fact (f005), and the bleeding has children for pattern (intermittent), duration (2 months) and no previous episodes.",
+      "'Changes in bladder or bowel habits' is split into two denials (f008, f009).",
+      "The three pelvic examination leaves are one record (x005), as a doctor requests a pelvic examination.",
+      "Gold aliases exclude 'sex cord-stromal tumor' and 'ovarian tumor' (broader)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with postmenopausal bleeding and an adnexal mass."
+    }
+  }
+}

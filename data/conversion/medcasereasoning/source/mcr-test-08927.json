@@ -1,0 +1,72 @@
+{
+ "case_id": "mcr-test-08927",
+ "pmcid": "PMC4144080",
+ "test_row": 561,
+ "test_index": 8927,
+ "case_prompt": "A 68-year-old man with chronic obstructive pulmonary disease underwent an uncomplicated bilateral lung transplant four months earlier. His regimen included prednisone 20 mg daily, mycophenolate mofetil 1000 mg twice daily, and tacrolimus 5 mg twice daily (target trough 8–12 ng/mL; prior 3-month average 10.5 ± 4.1 ng/mL). He denied recent infections, immunizations, or new medications. He presented with two weeks of dizziness, generalized weakness, fatigue, and difficulty ambulating. On initial exam, upper-extremity strength was normal, lower-extremity strength was 3/5 symmetrically, there were no sensory deficits, and deep tendon reflexes were normal. Tacrolimus dosing was adjusted to maintain therapeutic levels. Serum PCR for cytomegalovirus and Epstein–Barr virus was negative. Brain MRI with contrast was normal.\n\nOver the next two weeks, his lower-extremity strength declined further to 1/5 bilaterally, and deep tendon reflexes became hypoactive. Lumbar puncture showed cerebrospinal fluid protein 76 mg/dL and glucose 68 mg/dL. CSF, blood, and urine cultures were negative; repeat serum CMV PCR was negative. Spinal MRI demonstrated mild degenerative cervical changes without spinal cord compression. Electromyogram and nerve conduction studies revealed increased latency and decreased amplitude of the left ulnar sensory and left sural sensory potentials and decreased conduction velocity and amplitude of the left tibial and ulnar motor potentials, consistent with an acute demyelinating polyneuropathy with axonal changes.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 68-year-old man with chronic obstructive pulmonary disease underwent an uncomplicated bilateral lung transplant four months earlier."
+  },
+  {
+   "id": "s002",
+   "text": "His regimen included prednisone 20 mg daily, mycophenolate mofetil 1000 mg twice daily, and tacrolimus 5 mg twice daily (target trough 8–12 ng/mL; prior 3-month average 10.5 ± 4.1 ng/mL)."
+  },
+  {
+   "id": "s003",
+   "text": "He denied recent infections, immunizations, or new medications."
+  },
+  {
+   "id": "s004",
+   "text": "He presented with two weeks of dizziness, generalized weakness, fatigue, and difficulty ambulating."
+  },
+  {
+   "id": "s005",
+   "text": "On initial exam, upper-extremity strength was normal, lower-extremity strength was 3/5 symmetrically, there were no sensory deficits, and deep tendon reflexes were normal. Tacrolimus dosing was adjusted to maintain therapeutic levels."
+  },
+  {
+   "id": "s006",
+   "text": "Serum PCR for cytomegalovirus and Epstein–Barr virus was negative."
+  },
+  {
+   "id": "s007",
+   "text": "Brain MRI with contrast was normal."
+  },
+  {
+   "id": "s008",
+   "text": "Over the next two weeks, his lower-extremity strength declined further to 1/5 bilaterally, and deep tendon reflexes became hypoactive."
+  },
+  {
+   "id": "s009",
+   "text": "Lumbar puncture showed cerebrospinal fluid protein 76 mg/dL and glucose 68 mg/dL."
+  },
+  {
+   "id": "s010",
+   "text": "CSF, blood, and urine cultures were negative; repeat serum CMV PCR was negative."
+  },
+  {
+   "id": "s011",
+   "text": "Spinal MRI demonstrated mild degenerative cervical changes without spinal cord compression."
+  },
+  {
+   "id": "s012",
+   "text": "Electromyogram and nerve conduction studies revealed increased latency and decreased amplitude of the left ulnar sensory and left sural sensory potentials and decreased conduction velocity and amplitude of the left tibial and ulnar motor potentials, consistent with an acute demyelinating polyneuropathy with axonal changes."
+  }
+ ],
+ "final_diagnosis": "Guillain-Barre syndrome",
+ "diagnostic_reasoning": "1. Spinal cord compression was excluded — “MRI of the spine revealed mild degenerative cervical spine disease without evidence of spine compression.” 2. Infection was considered but ruled out — “Urine, blood, and CSF cultures were negative for bacteria, fungi, and viruses, while a repeat serum CMV DNA by PCR was negative.” 3. Tacrolimus-induced polyneuropathy was considered but deemed unlikely — “Although nerve conduction studies in patients with tacrolimus polyneuropathy may also show evidence of demyelinating changes, the symmetric ascending presentation and the absence of a history of elevated tacrolimus levels favor the diagnosis of GBS over tacrolimus polyneuropathy in our patients.” 4. Chronic inflammatory demyelinating polyneuropathy was considered but is less likely given the acute progression — “Symptoms in CIDP tend to progress slowly over eight weeks or several months.” 5. Guillain–Barré syndrome was supported by neurophysiology and CSF findings — “Electromyogram (EMG) and nerve conduction studies showed increased latency and decreased amplitude of the left ulnar sensory and left sural sensory … consistent with an acute demyelinating polyneuropathy with axonal changes.”",
+ "selection": {
+  "age": 68,
+  "sex": "male",
+  "specialty": "neurology",
+  "dx_key": "guillain-barre syndrome",
+  "setting": "emergency",
+  "time_structure": "staged_workup",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Subacute symmetric leg weakness with loss of reflexes, albuminocytologic dissociation and demyelinating nerve conduction studies make Guillain-Barre syndrome reachable through orderable tests.",
+  "second_look_note": "Subacute symmetric leg weakness in a lung-transplant recipient on tacrolimus with albuminocytologic dissociation and demyelinating nerve conduction gives Guillain-Barre syndrome."
+ }
+}

@@ -1,0 +1,118 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-026", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 32, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fatigue: course", "parent": "f001", "attribute": "course", "text": "It has been getting worse.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "itching", "aliases": ["pruritus", "itchy skin"], "text": "I've been itching.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f004", "item": "itching: severity", "parent": "f003", "attribute": "severity", "text": "The itching is severe.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "how long the symptoms have been going on", "text": "The tiredness and the itching started about 2 months ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "yellow eyes", "aliases": ["yellowing of the whites of the eyes", "scleral icterus", "jaundice"], "text": "The whites of my eyes have turned yellow.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f007", "item": "scratch marks on the skin", "aliases": ["excoriations"], "text": "I have a lot of scratch marks on my body, arms and legs.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "diarrhea", "aliases": ["loose stools"], "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "joint pain", "text": "I don't have any joint pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "ulcerative colitis", "aliases": ["colitis", "inflammatory bowel disease"], "text": "I was diagnosed with ulcerative colitis 5 years ago.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "lisinopril", "aliases": ["blood pressure medicine"], "text": "I take lisinopril.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "mesalamine", "aliases": ["rectal mesalamine", "colitis medicine"], "text": "I use mesalamine rectally.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "sexual activity", "aliases": ["sexual partners"], "text": "I'm sexually active with 2 female partners.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "inconsistent condom use", "aliases": ["condom use", "unprotected sex"], "text": "I don't use condoms consistently.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "recent travel", "text": "I haven't traveled recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-026",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.3°C (99.1°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/84 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "86/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection"], "result": "No acute distress."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin inspection"], "result": "Multiple scratch marks on the trunk and extremities."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["sclerae", "inspection of the eyes", "jaundice"], "result": "Scleral icterus."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver and spleen palpation"], "result": "Inspection: no distension; auscultation: normal bowel sounds; percussion: normal; palpation: soft and non-tender, no hepatosplenomegaly."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "leukocyte count", "white blood cell count", "WBC", "platelet count"], "result": "Hemoglobin 11.5 g/dL; leukocyte count 7,500/mm3; platelet count 280,000/mm3."},
+      {"id": "x010", "kind": "test", "name": "serum electrolytes", "aliases": ["electrolytes", "sodium", "potassium", "Na", "K"], "result": "Sodium 138 mEq/L; potassium 4.7 mEq/L."},
+      {"id": "x011", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver panel", "bilirubin", "total bilirubin", "direct bilirubin", "alkaline phosphatase", "ALP", "AST", "ALT"], "result": "Total bilirubin 1.5 mg/dL; direct bilirubin 0.9 mg/dL; alkaline phosphatase 460 U/L; AST 75 U/L; ALT 78 U/L."},
+      {"id": "x012", "kind": "test", "name": "antinuclear antibody", "aliases": ["ANA"], "result": "Negative."},
+      {"id": "x013", "kind": "test", "name": "antimitochondrial antibodies", "aliases": ["AMA"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "abdominal ultrasound", "aliases": ["ultrasound of the abdomen", "right upper quadrant ultrasound", "liver ultrasound"], "result": "Thickening of the bile ducts and focal bile duct dilatation."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-026",
+    "diagnosis": "Primary sclerosing cholangitis",
+    "aliases": ["PSC", "large-duct primary sclerosing cholangitis", "primary sclerosing cholangitis associated with ulcerative colitis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-026",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-026-p001"],
+      "f002": ["agentclinic-medqa-ext-026-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-026-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-026-p001"],
+      "f005": ["agentclinic-medqa-ext-026-p001"],
+      "f006": ["agentclinic-medqa-ext-026-p002"],
+      "f007": ["agentclinic-medqa-ext-026-p003"],
+      "f008": ["agentclinic-medqa-ext-026-p006"],
+      "f009": ["agentclinic-medqa-ext-026-p006"],
+      "f010": ["agentclinic-medqa-ext-026-p006"],
+      "f011": ["agentclinic-medqa-ext-026-p001", "agentclinic-medqa-ext-026-p004"],
+      "f012": ["agentclinic-medqa-ext-026-p001", "agentclinic-medqa-ext-026-p004"],
+      "f013": ["agentclinic-medqa-ext-026-p007"],
+      "f014": ["agentclinic-medqa-ext-026-p007"],
+      "f015": ["agentclinic-medqa-ext-026-p001", "agentclinic-medqa-ext-026-p005"],
+      "f016": ["agentclinic-medqa-ext-026-p001", "agentclinic-medqa-ext-026-p005"],
+      "f017": ["agentclinic-medqa-ext-026-p006"]
+    },
+    "quotes": {
+      "f001": "generalized fatigue",
+      "f002": "increasing generalized fatigue",
+      "f004": "severe pruritus",
+      "f005": "a 2-month history",
+      "f007": "Multiple scratch marks on trunk and extremities",
+      "f012": "diagnosed with ulcerative colitis 5 years ago",
+      "f014": "Rectal Mesalamine",
+      "f015": "sexually active with 2 female partners",
+      "f016": "inconsistent condom use",
+      "f017": "or recent travel"
+    },
+    "flags": {
+      "f006": ["Scleral icterus is listed as a secondary symptom; kept as a patient fact in lay words (yellow whites of the eyes are something a patient can notice), and also present in the exam (x007)."],
+      "f007": ["Scratch marks are listed as a secondary symptom; kept as a patient fact because the patient knows he has been scratching; also present in the skin exam (x006)."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.3°C (99.1°F)", "exam_ids": ["agentclinic-medqa-ext-026-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/84 mmHg", "exam_ids": ["agentclinic-medqa-ext-026-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "86 bpm", "exam_ids": ["agentclinic-medqa-ext-026-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-026-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General.Appearance", "source_text": "No acute distress", "exam_ids": ["agentclinic-medqa-ext-026-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Skin.Inspection", "source_text": "Scleral icterus and multiple scratch marks on trunk and extremities", "exam_ids": ["agentclinic-medqa-ext-026-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Skin.Inspection", "source_text": "Scleral icterus and multiple scratch marks on trunk and extremities", "exam_ids": ["agentclinic-medqa-ext-026-e006"]},
+      "x008": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No distension | Normal bowel sounds | Normal | Soft and non-tender. No hepatosplenomegaly.", "exam_ids": ["agentclinic-medqa-ext-026-e007", "agentclinic-medqa-ext-026-e008", "agentclinic-medqa-ext-026-e009", "agentclinic-medqa-ext-026-e010"]},
+      "x009": {"source": "Test_Results.Blood_Work.Hemoglobin + Test_Results.Blood_Work.Leukocyte_Count + Test_Results.Blood_Work.Platelet_Count", "source_text": "11.5 g/dL | 7500/mm3 | 280,000/mm3", "exam_ids": ["agentclinic-medqa-ext-026-i001", "agentclinic-medqa-ext-026-i002", "agentclinic-medqa-ext-026-i003"]},
+      "x010": {"source": "Test_Results.Blood_Work.Na + Test_Results.Blood_Work.K", "source_text": "138 mEq/L | 4.7 mEq/L", "exam_ids": ["agentclinic-medqa-ext-026-i004", "agentclinic-medqa-ext-026-i005"]},
+      "x011": {"source": "Test_Results.Blood_Work.Bilirubin_Total + Test_Results.Blood_Work.Bilirubin_Direct + Test_Results.Blood_Work.Alkaline_Phosphatase + Test_Results.Blood_Work.AST + Test_Results.Blood_Work.ALT", "source_text": "1.5 mg/dL | 0.9 mg/dL | 460 U/L | 75 U/L | 78 U/L", "exam_ids": ["agentclinic-medqa-ext-026-i006", "agentclinic-medqa-ext-026-i007", "agentclinic-medqa-ext-026-i008", "agentclinic-medqa-ext-026-i009", "agentclinic-medqa-ext-026-i010"]},
+      "x012": {"source": "Test_Results.Blood_Work.Anti-Nuclear_Antibody", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-026-i011"]},
+      "x013": {"source": "Test_Results.Blood_Work.Antimitochondrial_Antibodies", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-026-i012"]},
+      "x014": {"source": "Test_Results.Imaging.Abdominal_Ultrasound.Findings", "source_text": "Thickening of the bile ducts and focal bile duct dilatation.", "exam_ids": ["agentclinic-medqa-ext-026-i013"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Scleral icterus with a total bilirubin of only 1.5 mg/dL is unusual (icterus is usually visible from about 2.5-3 mg/dL).",
+      "Scleral icterus is recorded under Skin.Inspection; scleral icterus and scratch marks (exam signs) are also listed as Secondary_Symptoms."
+    ],
+    "notes": [
+      "The 2-month duration covers both complaints, so it is a standalone fact (f005); 'increasing' is a course child of the fatigue (f002) and 'severe' a severity child of the itching (f004).",
+      "The single Skin.Inspection leaf is split into a skin record (scratch marks, x006) and an eye record (scleral icterus, x007), because a doctor requests them separately; both cite e006.",
+      "Hypertension and ulcerative colitis appear in both History and Past_Medical_History; one fact each. Ulcerative colitis is a prior diagnosis the patient knows, not the gold diagnosis.",
+      "Condom use is habit_exposure per the schema."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with generalized fatigue, severe pruritus, and abnormal liver function tests."
+    }
+  }
+}

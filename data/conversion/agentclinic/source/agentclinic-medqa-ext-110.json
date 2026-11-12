@@ -1,0 +1,118 @@
+{
+  "case_id": "agentclinic-medqa-ext-110",
+  "source_row": 110,
+  "demographics_text": "60-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with progressively worsening shortness of breath over the past 2 months.",
+  "chief_complaint": "Progressively worsening shortness of breath",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p001",
+      "field": "History",
+      "text": "The patient reports progressively worsening shortness of breath for the past 2 months, which does not occur at rest. He occasionally experiences a dry cough but denies having fever, chills, or night sweats."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Dry cough"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No chills"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No night sweats"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p006",
+      "field": "Past_Medical_History",
+      "text": "The patient is previously healthy with no significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p007",
+      "field": "Social_History",
+      "text": "Smoked a pack of cigarettes daily for the past 40 years. Drinks a beer daily with occasional increase on weekends. No illicit drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-110-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies any other systemic complaints."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "136/88 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "94 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "21 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e005",
+      "path": "Physical_Examination_Findings.Lung_Examination.Inspection",
+      "text": "Normal chest wall movement, no use of accessory muscles at rest."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e006",
+      "path": "Physical_Examination_Findings.Lung_Examination.Auscultation",
+      "text": "Prolonged expiratory phase and end-expiratory wheezing."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e007",
+      "path": "Physical_Examination_Findings.Lung_Examination.Percussion",
+      "text": "Resonant note throughout."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-e008",
+      "path": "Physical_Examination_Findings.Lung_Examination.Palpation",
+      "text": "Symmetrical chest wall movement."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-110-i001",
+      "path": "Test_Results.Spirometry.FEV1:FVC_Ratio",
+      "text": "62%"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-i002",
+      "path": "Test_Results.Spirometry.FEV1",
+      "text": "60% of predicted"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-i003",
+      "path": "Test_Results.Spirometry.Total_Lung_Capacity",
+      "text": "125% of predicted"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-110-i004",
+      "path": "Test_Results.DLCO_Test.Diffusion_Capacity",
+      "text": "Decreased"
+    }
+  ],
+  "correct_diagnosis": "Chronic obstructive pulmonary disease",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

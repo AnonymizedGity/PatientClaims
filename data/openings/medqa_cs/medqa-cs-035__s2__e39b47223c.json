@@ -1,0 +1,61 @@
+{
+ "case_id": "medqa-cs-035",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have been noticing unusual writing on the wall.",
+   "It started yesterday.",
+   "It lasts less than a minute.",
+   "It's not clear, and I can't read it most of the time.",
+   "I feel as though I hear strange voices when I see the writing.",
+   "I use recreational drugs occasionally.",
+   "I smoke."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been noticing unusual writing on the wall, and it started yesterday. Each time it happens, it lasts less than a minute, and it's not clear, so I can't read it most of the time. I also feel as though I hear strange voices when I see the writing. By the way, I smoke and I use recreational drugs occasionally.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f003",
+    "f011",
+    "f038",
+    "f041"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "changed",
+      "quote": "the writing is never clear",
+      "fix": "It's not clear"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I've been noticing unusual writing on the wall, and it started yesterday. Each time it happens, it lasts less than a minute, and the writing is never clear, so I can't read it most of the time. I also feel as though I hear strange voices when I see the writing. By the way, I smoke and I use recreational drugs occasionally.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 7712,
+   "tokens_out": 187,
+   "seconds": 16.66,
+   "redrafts": 0
+  }
+ }
+}

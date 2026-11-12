@@ -1,0 +1,65 @@
+{
+ "case_id": "medqa-cs-044",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I fainted.",
+   "I unexpectedly collapsed and lost consciousness.",
+   "My wife told me that I did not respond to her for several minutes.",
+   "Just before I fell down, my heart started racing.",
+   "I felt lightheaded right before the fall.",
+   "My wife mentioned that my arms and legs began to tremble after I collapsed.",
+   "I had a heart attack 1 year ago.",
+   "I've had high blood pressure for the past 15 years.",
+   "My father died from a heart attack at age 55."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I fainted and unexpectedly collapsed, losing consciousness for several minutes as my wife told me. Just before I fell, my heart started racing and I felt lightheaded. My wife mentioned that my arms and legs began to tremble after I collapsed. I had a heart attack one year ago, and I've had high blood pressure for the past 15 years. My father died from a heart attack at age 55.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f006",
+    "f007",
+    "f008",
+    "f010",
+    "f033",
+    "f032",
+    "f040"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "missing",
+      "quote": "My wife mentioned that my arms and legs began to tremble after I collapsed.",
+      "fix": "My wife mentioned that my arms and legs began to tremble after I collapsed."
+     }
+    ],
+    "check_problems": [],
+    "draft": "I fainted and unexpectedly collapsed, losing consciousness for several minutes as my wife told me. Just before I fell, my heart started racing and I felt lightheaded. After I collapsed, my arms and legs began to tremble. I had a heart attack one year ago, and I've had high blood pressure for the past 15 years. My father died from a heart attack at age 55.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 7656,
+   "tokens_out": 237,
+   "seconds": 18.49,
+   "redrafts": 0
+  }
+ }
+}

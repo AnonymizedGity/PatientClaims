@@ -1,0 +1,53 @@
+{
+ "case_id": "medqa-cs-024",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have pain in my heel.",
+   "It came on gradually over the past 2 weeks.",
+   "When it hurts, it can get up to a 7 out of 10.",
+   "It's a stretching, tearing pain.",
+   "I'm a runner.",
+   "Occasionally I take ibuprofen for the pain.",
+   "My father has arthritis."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have pain in my heel. It came on gradually over the past 2 weeks and it's a stretching, tearing pain that can get up to a 7 out of 10 when it hurts. I'm a runner, and I occasionally take ibuprofen for the pain. My father has arthritis.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f009",
+    "f012",
+    "f037",
+    "f033",
+    "f034"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4188,
+   "tokens_out": 75,
+   "seconds": 6.58,
+   "redrafts": 0
+  }
+ }
+}

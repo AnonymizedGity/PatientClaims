@@ -1,0 +1,110 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-043",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 47, "sex": "female"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I've been feeling tired all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fatigue: course", "parent": "f001", "attribute": "course", "text": "The tiredness has increased slightly over the past few weeks.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "fever", "aliases": ["temperature"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "fever: severity", "parent": "f003", "attribute": "severity", "text": "It's been mild.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain"], "text": "I've had pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "nausea", "aliases": ["feeling sick"], "text": "I've been feeling nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "how long the symptoms have been going on", "text": "The tiredness, fever, belly pain and nausea started about 3 weeks ago.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "dark urine", "aliases": ["urine color change"], "text": "Recently I've noticed my urine getting darker.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f009", "item": "dark urine: what I think causes it", "parent": "f008", "attribute": "other", "text": "I think it's because I haven't been drinking enough water.", "polarity": "present", "category": "symptom", "system": "genitourinary"},
+      {"id": "f010", "item": "increased thirst", "aliases": ["thirst"], "text": "I haven't been more thirsty than usual.", "polarity": "absent", "category": "symptom", "system": "endocrine", "time": "current"},
+      {"id": "f011", "item": "increased urination", "aliases": ["peeing more often", "frequent urination"], "text": "I'm not urinating more than usual.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f012", "item": "type 2 diabetes", "aliases": ["diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "glyburide", "text": "I take glyburide.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "sitagliptin", "text": "I take sitagliptin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "multivitamin", "aliases": ["vitamins", "supplements"], "text": "I take a multivitamin.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "recent food exposures", "aliases": ["state fair", "eating unusual foods", "eating out"], "text": "Over a month ago I went to the state fair and tried various regional foods.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f017", "item": "travel abroad", "aliases": ["recent travel"], "text": "I haven't traveled abroad recently.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "alcohol", "aliases": ["drinking", "beer"], "text": "I drink 1 to 2 beers a day.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f019", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a nursing assistant in a rehabilitation facility.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-043",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "38.1°C (100.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "110/74 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "99/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Normal"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection"], "result": "Appears tired."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["sclerae", "inspection for jaundice", "jaundice"], "result": "Mild scleral icterus."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "liver palpation", "liver and spleen palpation"], "result": "Inspection: no visible abnormalities; auscultation: normal bowel sounds; percussion: no abnormalities; palpation: liver palpable 2-3 cm below the right costal margin, tender."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "leukocyte count", "white blood cell count", "WBC", "platelet count"], "result": "Hemoglobin 10.6 g/dL; leukocyte count 11,600/mm3; platelet count 221,000/mm3."},
+      {"id": "x009", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "urea nitrogen", "BUN", "glucose", "blood sugar", "creatinine", "renal function tests"], "result": "Urea nitrogen 26 mg/dL; glucose 122 mg/dL; creatinine 1.3 mg/dL."},
+      {"id": "x010", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver panel", "bilirubin", "total bilirubin", "direct bilirubin", "alkaline phosphatase", "ALP", "AST", "ALT", "transaminases"], "result": "Total bilirubin 3.6 mg/dL; direct bilirubin 2.4 mg/dL; alkaline phosphatase 72 U/L; AST 488 U/L; ALT 798 U/L."},
+      {"id": "x011", "kind": "test", "name": "viral hepatitis serology", "aliases": ["hepatitis panel", "hepatitis A IgG antibody", "anti-HAV IgG", "hepatitis B surface antigen", "HBsAg", "hepatitis B core IgG antibody", "anti-HBc IgG", "hepatitis B e antigen", "HBeAg", "hepatitis C antibody", "anti-HCV"], "result": "Hepatitis A IgG antibody positive; hepatitis B surface antigen positive; hepatitis B core IgG antibody positive; hepatitis B e antigen positive; hepatitis C antibody negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-043",
+    "diagnosis": "Active chronic hepatitis B infection",
+    "aliases": ["chronic active hepatitis B", "active chronic HBV infection", "immune-active chronic hepatitis B", "HBeAg-positive chronic hepatitis B", "flare of chronic hepatitis B", "chronic hepatitis B", "chronic HBV infection"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-043",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-043-p001", "agentclinic-medqa-ext-043-p007"],
+      "f002": ["agentclinic-medqa-ext-043-p007"],
+      "f003": ["cc", "agentclinic-medqa-ext-043-p001"],
+      "f004": ["cc", "agentclinic-medqa-ext-043-p001"],
+      "f005": ["agentclinic-medqa-ext-043-p001", "agentclinic-medqa-ext-043-p002"],
+      "f006": ["agentclinic-medqa-ext-043-p001", "agentclinic-medqa-ext-043-p003"],
+      "f007": ["agentclinic-medqa-ext-043-p001"],
+      "f008": ["agentclinic-medqa-ext-043-p001", "agentclinic-medqa-ext-043-p004"],
+      "f009": ["agentclinic-medqa-ext-043-p001"],
+      "f010": ["agentclinic-medqa-ext-043-p007"],
+      "f011": ["agentclinic-medqa-ext-043-p007"],
+      "f012": ["agentclinic-medqa-ext-043-p001", "agentclinic-medqa-ext-043-p005"],
+      "f013": ["agentclinic-medqa-ext-043-p008"],
+      "f014": ["agentclinic-medqa-ext-043-p008"],
+      "f015": ["agentclinic-medqa-ext-043-p008"],
+      "f016": ["agentclinic-medqa-ext-043-p001"],
+      "f017": ["agentclinic-medqa-ext-043-p007"],
+      "f018": ["agentclinic-medqa-ext-043-p006"],
+      "f019": ["agentclinic-medqa-ext-043-p006"]
+    },
+    "quotes": {
+      "f001": "generalized fatigue",
+      "f002": "a slight increase in fatigue over the past few weeks",
+      "f004": "mild fever",
+      "f007": "a 3-week history of generalized fatigue, mild fever, abdominal pain, and nausea",
+      "f008": "Recently, she has observed the darkening of her urine",
+      "f009": "she believes is due to inadequate water intake",
+      "f010": "no increase in thirst",
+      "f011": "or urination",
+      "f016": "attending the state fair over a month ago where she tried various regional foods",
+      "f017": "No recent travels abroad",
+      "f018": "Consumes 1–2 beers daily",
+      "f019": "nursing assistant in a rehabilitation facility"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "38.1°C (100.6°F)", "exam_ids": ["agentclinic-medqa-ext-043-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "110/74 mm Hg", "exam_ids": ["agentclinic-medqa-ext-043-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "99/min", "exam_ids": ["agentclinic-medqa-ext-043-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-043-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Appearance", "source_text": "Appears tired", "exam_ids": ["agentclinic-medqa-ext-043-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Jaundice", "source_text": "Mild scleral icterus observed", "exam_ids": ["agentclinic-medqa-ext-043-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "No visible abnormalities | Normal bowel sounds | No abnormalities detected | Liver palpated 2–3 cm below the right costal margin, tender on palpation", "exam_ids": ["agentclinic-medqa-ext-043-e007", "agentclinic-medqa-ext-043-e008", "agentclinic-medqa-ext-043-e009", "agentclinic-medqa-ext-043-e010"]},
+      "x008": {"source": "Test_Results.Blood_Tests.Hemoglobin + Test_Results.Blood_Tests.Leukocyte_Count + Test_Results.Blood_Tests.Platelet_Count", "source_text": "10.6 g/dL | 11,600/mm3 | 221,000/mm3", "exam_ids": ["agentclinic-medqa-ext-043-i001", "agentclinic-medqa-ext-043-i002", "agentclinic-medqa-ext-043-i003"]},
+      "x009": {"source": "Test_Results.Blood_Tests.Urea_Nitrogen + Test_Results.Blood_Tests.Glucose + Test_Results.Blood_Tests.Creatinine", "source_text": "26 mg/dL | 122 mg/dL | 1.3 mg/dL", "exam_ids": ["agentclinic-medqa-ext-043-i004", "agentclinic-medqa-ext-043-i005", "agentclinic-medqa-ext-043-i006"]},
+      "x010": {"source": "Test_Results.Blood_Tests.Bilirubin_Total + Test_Results.Blood_Tests.Bilirubin_Direct + Test_Results.Blood_Tests.Alkaline_Phosphatase + Test_Results.Blood_Tests.AST + Test_Results.Blood_Tests.ALT", "source_text": "3.6 mg/dL | 2.4 mg/dL | 72 U/L | 488 U/L | 798 U/L", "exam_ids": ["agentclinic-medqa-ext-043-i007", "agentclinic-medqa-ext-043-i008", "agentclinic-medqa-ext-043-i009", "agentclinic-medqa-ext-043-i010", "agentclinic-medqa-ext-043-i011"]},
+      "x011": {"source": "Test_Results.Infectious_Disease_Testing.Hepatitis_A_IgG_Antibody + Test_Results.Infectious_Disease_Testing.Hepatitis_B_Surface_Antigen + Test_Results.Infectious_Disease_Testing.Hepatitis_B_Core_IgG_Antibody + Test_Results.Infectious_Disease_Testing.Hepatitis_B_Envelope_Antigen + Test_Results.Infectious_Disease_Testing.Hepatitis_C_Antibody", "source_text": "Positive | Positive | Positive | Positive | Negative", "exam_ids": ["agentclinic-medqa-ext-043-i012", "agentclinic-medqa-ext-043-i013", "agentclinic-medqa-ext-043-i014", "agentclinic-medqa-ext-043-i015", "agentclinic-medqa-ext-043-i016"]}
+    },
+    "leakage": [
+      {"id": "x011", "reason": "The finding name and aliases contain 'hepatitis' (gold word); kept because viral hepatitis serology is the standard clinical name of the panel (CONVERSION.md lists it). The name does not reveal which virus."}
+    ],
+    "source_issues": ["The ROS sentence 'The patient appears tired' is an observer sign inside the patient's history; it is already in the exam (e005)."],
+    "notes": ["The ROS's 'slight increase in fatigue over the past few weeks' is kept as a course child of the fatigue (f002); the History's 3-week duration covers all four complaints and is a standalone fact (f007).", "The patient's own explanation of the dark urine (not drinking enough water) is kept as her belief (f009).", "The source's 'Hepatitis_B_Envelope_Antigen' is the hepatitis B e antigen (HBeAg).", "Gold aliases leave out 'chronic hepatitis B' and 'hepatitis B', which also cover inactive or acute infection (broader).", "check_coverage warning on x011 (gold word 'hepatitis' in the finding name) is accepted: 'viral hepatitis serology' is how the panel is named clinically and in CONVERSION.md; see qc.leakage.", "Gold aliases added in harmonisation (chronic hepatitis B, chronic HBV infection): 'Chronic hepatitis B' accepted: the case separates chronic from acute or resolved infection; activity is a refinement.", "Fixes: f013 alias 'diabetes medicine' removed; f014 alias 'diabetes medicine' removed."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with generalized fatigue, mild fever, abdominal pain, and nausea."
+    }
+  }
+}

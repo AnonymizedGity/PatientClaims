@@ -1,0 +1,87 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-174",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 68, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "spot on the scalp", "aliases": ["scalp lesion", "skin lesion", "skin growth"], "text": "I have a spot on my scalp.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "reason for visit", "aliases": ["checkup"], "text": "I came in for a routine checkup. Nothing in particular has been bothering me.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f003", "item": "exercise", "aliases": ["physical activity", "sports"], "text": "I keep an active lifestyle: I go jogging and I do gardening.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f004", "item": "time spent outdoors", "aliases": ["sun exposure", "outdoor activities"], "text": "I spend my mornings in the park and my afternoons in my garden.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f005", "item": "occupation", "aliases": ["job", "work", "retirement"], "text": "I've been retired since I was 50.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f006", "item": "where the patient is from", "aliases": ["home", "residence", "origin"], "text": "I'm from California.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f007", "item": "fatigue", "aliases": ["tiredness"], "text": "I haven't been feeling tired.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f010", "item": "other symptoms", "aliases": ["systemic symptoms"], "text": "I haven't had any other general symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "smoking", "aliases": ["tobacco"], "text": "I've never smoked.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-174",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["dermatological examination", "scalp examination", "examination of the skin lesion"], "result": "A single rough-textured lesion on the scalp, approximately 1 cm in diameter; slightly erythematous with a scaly surface."},
+      {"id": "x006", "kind": "test", "name": "biopsy of the scalp lesion", "aliases": ["skin biopsy", "scalp biopsy", "histopathology"], "result": "Histopathology shows atypical keratinocytes confined to the epidermis, consistent with actinic keratosis."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-174",
+    "diagnosis": "Actinic keratosis",
+    "aliases": ["AK", "solar keratosis", "actinic keratoses", "solar keratoses"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-174",
+    "fact_sources": {
+      "f001": ["cc"],
+      "f002": ["agentclinic-medqa-ext-174-p001"],
+      "f003": ["agentclinic-medqa-ext-174-p001"],
+      "f004": ["agentclinic-medqa-ext-174-p001"],
+      "f005": ["agentclinic-medqa-ext-174-p001"],
+      "f006": ["demographics_text"],
+      "f007": ["agentclinic-medqa-ext-174-p004"],
+      "f008": ["agentclinic-medqa-ext-174-p004"],
+      "f009": ["agentclinic-medqa-ext-174-p004"],
+      "f010": ["agentclinic-medqa-ext-174-p004"],
+      "f011": ["agentclinic-medqa-ext-174-p002"],
+      "f012": ["agentclinic-medqa-ext-174-p003"],
+      "f013": ["agentclinic-medqa-ext-174-p003"]
+    },
+    "quotes": {
+      "f001": "Presence of a lesion on the scalp",
+      "f002": "routine checkup without any specific complaints",
+      "f003": "active lifestyle with jogging and gardening",
+      "f004": "spending his mornings in the park and afternoons in his garden",
+      "f005": "retired since age 50",
+      "f010": "or other systemic symptoms",
+      "f012": "No history of smoking.",
+      "f013": "Drinks alcohol occasionally."
+    },
+    "flags": {
+      "f001": ["The chief complaint is the scalp lesion, but the History says the visit is a routine checkup 'without any specific complaints'. Kept as a patient fact because the chief complaint is patient text; the History does not say whether he has noticed it."],
+      "f006": ["From demographics_text ('68-year-old male from California'), which has no fragment id; cited as 'demographics_text'. Relevant to sun exposure."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-174-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-174-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-174-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-174-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Dermatological_Examination.Inspection", "source_text": "A single, rough-textured lesion noted on the scalp, measuring approximately 1 cm in diameter. The lesion appears to be slightly erythematous with a scaly surface.", "exam_ids": ["agentclinic-medqa-ext-174-e005"]},
+      "x006": {"source": "Test_Results.Biopsy.Findings", "source_text": "Histopathology shows atypical keratinocytes confined to the epidermis, consistent with actinic keratosis.", "exam_ids": ["agentclinic-medqa-ext-174-i001"]}
+    },
+    "leakage": [
+      {"id": "x006", "reason": "The biopsy result names the gold diagnosis ('consistent with actinic keratosis'); this is the test's answer, kept per CONVERSION."}
+    ],
+    "source_issues": ["Chief complaint 'Presence of a lesion on the scalp' vs History 'routine checkup without any specific complaints'.", "Biopsy result names the gold diagnosis (pool flag visible_gold_alias_partitions: test_results)."],
+    "notes": ["Opening is the chief complaint (f001) per CONVERSION; the visit reason with 'nothing in particular has been bothering me' is a separate fact (f002), worded so it does not deny the spot.", "The lesion's appearance (rough, 1 cm, erythematous, scaly) is exam-only and not given to the patient.", "Outdoor time (f004) and 'from California' (f006) are kept as the sun-exposure history; 'from California' comes from demographics_text, which has no fragment id.", "'Denies ... other systemic symptoms' kept as a catch-all denial (f010)."],
+    "extras": {
+      "objective_for_doctor": "Perform a routine checkup on a 68-year-old man, assess any dermatological findings, and formulate a diagnosis."
+    }
+  }
+}

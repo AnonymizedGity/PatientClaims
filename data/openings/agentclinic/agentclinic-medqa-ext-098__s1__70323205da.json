@@ -1,0 +1,45 @@
+{
+ "case_id": "agentclinic-medqa-ext-098",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I have blisters on my skin.",
+   "They appeared 3 days ago.",
+   "The pain in my cheek when eating and the pain during sex have been going on for the past week."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have blisters on my skin, and they appeared 3 days ago. Also, the pain in my cheek when eating and the pain during sex have been going on for the past week.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f004",
+    "f009"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3462,
+   "tokens_out": 51,
+   "seconds": 7.67,
+   "redrafts": 0
+  }
+ }
+}

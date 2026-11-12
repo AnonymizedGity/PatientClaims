@@ -1,0 +1,88 @@
+{
+  "case_id": "agentclinic-medqa-ext-047",
+  "source_row": 47,
+  "demographics_text": "23-year-old female",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with a pruritic rash on the bilateral upper extremities.",
+  "chief_complaint": "Pruritic rash on the bilateral upper extremities",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-047-p001",
+      "field": "History",
+      "text": "The patient complains of a pruritic rash on both upper extremities that has been present for 5 months. She notes that the rash occasionally worsens but has not completely resolved at any point. She denies any recent illnesses and mentions that she has not started any new medications or come into contact with any new substances that she is aware of."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-047-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No fever"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-047-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No joint pains"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-047-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No recent illnesses"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-047-p005",
+      "field": "Past_Medical_History",
+      "text": "No history of serious illness. No known drug allergies. Takes no medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-047-p006",
+      "field": "Social_History",
+      "text": "College student studying graphic design. Non-smoker, drinks alcohol socially. No recreational drug use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-047-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies recent fever, joint pains, weight loss, or changes in bowel habits."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-047-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37.0°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-047-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "110/70 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-047-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "76 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-047-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-047-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "Bilateral erythematous, scaly, and crusted lesions localized to the upper extremities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-047-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "No warmth or induration. The lesions are slightly raised and rough to touch."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-047-i001",
+      "path": "Test_Results.Skin_Biopsy.Findings",
+      "text": "Intraepidermal accumulation of edematous fluid and widening of intercellular spaces between keratinocytes."
+    }
+  ],
+  "correct_diagnosis": "Eczematous dermatitis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

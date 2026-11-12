@@ -1,0 +1,68 @@
+{
+ "case_id": "mcr-test-00451",
+ "pmcid": "PMC8365578",
+ "test_row": 33,
+ "test_index": 451,
+ "case_prompt": "A 30-year-old man with psoriatic arthritis (on adalimumab for 6 years), hereditary spherocytosis, and a history of cutaneous herpes zoster infection presented with two weeks of intermittent fevers and headaches and a 10-lb weight loss over 9 months. He had temporarily discontinued and then restarted adalimumab and, one month after returning from travel to Mexico, developed worsening headache, persistent fever, left facial paresis, and loss of taste.\n\nOn examination, visual acuity was 20/20 in the right eye and 20/50 in the left eye, with a left seventh-nerve palsy. Anterior segment examination showed only exposure keratopathy of the left eye, with no anterior chamber cell or flare. Funduscopic examination revealed dozens of 100–200 µm, round, creamy yellow-white choroidal infiltrates disseminated throughout both fundi, without vitritis, vasculitis, or optic nerve edema. Optical coherence tomography demonstrated hyporeflective choroidal lesions without macular cysts or thickening.\n\nLaboratory studies showed negative serum testing for Lyme disease, syphilis, tuberculosis, and West Nile virus. Complete blood count and chemistry panel were within normal limits. Cerebrospinal fluid analysis revealed 8 white blood cells/mm3 (91% lymphocytes), normal glucose and protein, and negative cryptococcal antigen and other organisms. MRI of the brain and orbits demonstrated enhancement of the left facial nerve. Chest CT was performed and revealed mediastinal lymphadenopathy.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 30-year-old man with psoriatic arthritis (on adalimumab for 6 years), hereditary spherocytosis, and a history of cutaneous herpes zoster infection presented with two weeks of intermittent fevers and headaches and a 10-lb weight loss over 9 months."
+  },
+  {
+   "id": "s002",
+   "text": "He had temporarily discontinued and then restarted adalimumab and, one month after returning from travel to Mexico, developed worsening headache, persistent fever, left facial paresis, and loss of taste."
+  },
+  {
+   "id": "s003",
+   "text": "On examination, visual acuity was 20/20 in the right eye and 20/50 in the left eye, with a left seventh-nerve palsy."
+  },
+  {
+   "id": "s004",
+   "text": "Anterior segment examination showed only exposure keratopathy of the left eye, with no anterior chamber cell or flare."
+  },
+  {
+   "id": "s005",
+   "text": "Funduscopic examination revealed dozens of 100–200 µm, round, creamy yellow-white choroidal infiltrates disseminated throughout both fundi, without vitritis, vasculitis, or optic nerve edema."
+  },
+  {
+   "id": "s006",
+   "text": "Optical coherence tomography demonstrated hyporeflective choroidal lesions without macular cysts or thickening."
+  },
+  {
+   "id": "s007",
+   "text": "Laboratory studies showed negative serum testing for Lyme disease, syphilis, tuberculosis, and West Nile virus."
+  },
+  {
+   "id": "s008",
+   "text": "Complete blood count and chemistry panel were within normal limits."
+  },
+  {
+   "id": "s009",
+   "text": "Cerebrospinal fluid analysis revealed 8 white blood cells/mm3 (91% lymphocytes), normal glucose and protein, and negative cryptococcal antigen and other organisms."
+  },
+  {
+   "id": "s010",
+   "text": "MRI of the brain and orbits demonstrated enhancement of the left facial nerve."
+  },
+  {
+   "id": "s011",
+   "text": "Chest CT was performed and revealed mediastinal lymphadenopathy."
+  }
+ ],
+ "final_diagnosis": "sarcoidosis",
+ "diagnostic_reasoning": "1. Fungal or mycobacterial meningitis — “Given the patient's history of immunosuppressive therapy and travel to Mexico, he was admitted for urgent evaluation for suspected fungal or mycobacterial meningitis… CSF examination was similarly negative for organisms including cryptococcal antigen…” 2. Other infectious etiologies (Lyme, syphilis, tuberculosis, West Nile virus) — “Serum testing for Lyme, syphilis, tuberculosis (TB), and West Nile virus was negative.” 3. Birdshot chorioretinopathy — “Lymphoma and birdshot chorioretinopathy (BSC) are important masquerades for sarcoid-associated choroiditis; however, workup for lymphoma was negative and retinal imaging and examination did not support a diagnosis of BSC.”",
+ "selection": {
+  "age": 30,
+  "sex": "male",
+  "specialty": "rheumatology_immunology",
+  "dx_key": "sarcoidosis",
+  "setting": "emergency",
+  "time_structure": "single_episode",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Facial palsy, multifocal choroidal infiltrates, lymphocytic CSF and mediastinal lymphadenopathy with infections excluded point to sarcoidosis; good history including TNF-inhibitor use and travel.",
+  "second_look_note": "Fever, weight loss, facial palsy with taste loss, multifocal choroiditis and mediastinal adenopathy with infections excluded point to sarcoidosis; the TNF-inhibitor and travel history direct the workup."
+ }
+}

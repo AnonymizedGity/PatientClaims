@@ -1,0 +1,86 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-069", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 34, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "thumb and wrist pain", "aliases": ["wrist pain", "thumb pain", "hand pain"], "text": "I have pain in my right thumb and wrist.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "thumb and wrist pain: radiation", "parent": "f001", "attribute": "radiation", "text": "The pain goes up to my elbow.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "thumb and wrist pain: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for the past three months.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "thumb and wrist pain: what makes it worse", "parent": "f001", "attribute": "aggravating", "text": "It gets worse when I hold things, especially when I hold my baby son.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "thumb and wrist pain: what makes it better", "parent": "f001", "attribute": "relieving", "text": "An ice pack helps somewhat.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f006", "item": "ibuprofen", "aliases": ["painkillers", "Advil", "Motrin"], "text": "I've been taking ibuprofen as needed for my symptoms.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f007", "item": "fall on the hand", "aliases": ["hand injury", "fall", "trauma"], "text": "About six months ago I fell on my outstretched right hand.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "other medical problems", "aliases": ["past medical history"], "text": "Apart from that fall, I don't have any significant medical history.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "joint problems in the family", "aliases": ["family history", "mother's health"], "text": "My mother has chronic joint pain that's treated with methotrexate.", "polarity": "present", "category": "family_history", "time": "current"},
+      {"id": "f010", "item": "children", "aliases": ["baby", "family"], "text": "I'm the mother of an infant son.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "physical activity", "aliases": ["exercise", "active lifestyle"], "text": "I lead a relatively active lifestyle.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol regularly.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost any weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "problems in other joints", "aliases": ["other joint pain", "joint pain elsewhere"], "text": "I don't have problems with any other joints.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-069",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.7°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "117/76 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "right wrist examination", "aliases": ["wrist examination", "hand examination", "thumb examination", "radial styloid", "wrist palpation"], "result": "Inspection: swelling over the radial styloid, no redness; palpation: tenderness over the radial styloid, no crepitus."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "Finkelstein test", "aliases": ["Finkelstein's test", "Finkelstein maneuver"], "result": "Positive: pain on the radial side of the wrist when the thumb is grasped and longitudinal traction is applied towards the ulnar side."},
+      {"id": "x007", "kind": "exam", "system": "musculoskeletal", "name": "range of motion of the fingers", "aliases": ["finger range of motion", "range of motion", "other joints", "joint examination"], "result": "Normal range of motion of the finger joints; no swelling, redness, or tenderness in other joints."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-069",
+    "diagnosis": "De Quervain tenosynovitis",
+    "aliases": ["de Quervain's tenosynovitis", "de Quervain syndrome", "de Quervain's disease", "de Quervain tendinopathy", "first dorsal compartment tenosynovitis", "stenosing tenosynovitis of the first dorsal compartment", "radial styloid tenosynovitis", "mommy thumb", "mother's wrist"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-069",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-069-p001"], "f002": ["cc", "agentclinic-medqa-ext-069-p001"], "f003": ["agentclinic-medqa-ext-069-p001"],
+      "f004": ["agentclinic-medqa-ext-069-p001", "agentclinic-medqa-ext-069-p002"], "f005": ["agentclinic-medqa-ext-069-p001", "agentclinic-medqa-ext-069-p003"],
+      "f006": ["agentclinic-medqa-ext-069-p001"], "f007": ["agentclinic-medqa-ext-069-p001", "agentclinic-medqa-ext-069-p004"],
+      "f008": ["agentclinic-medqa-ext-069-p004"], "f009": ["agentclinic-medqa-ext-069-p001"],
+      "f010": ["agentclinic-medqa-ext-069-p001", "agentclinic-medqa-ext-069-p005"], "f011": ["agentclinic-medqa-ext-069-p005"],
+      "f012": ["agentclinic-medqa-ext-069-p005"], "f013": ["agentclinic-medqa-ext-069-p005"], "f014": ["agentclinic-medqa-ext-069-p006"],
+      "f015": ["agentclinic-medqa-ext-069-p006"], "f016": ["agentclinic-medqa-ext-069-p006"]
+    },
+    "quotes": {
+      "f001": "Pain in the right thumb and wrist", "f002": "radiates to her elbow", "f003": "for the past three months",
+      "f004": "The pain worsens when she holds her infant son / Pain worsens with holding objects", "f005": "alleviated somewhat with an ice pack",
+      "f006": "taking ibuprofen as needed", "f007": "falling on her right outstretched hand about six months ago",
+      "f008": "No significant other medical history.", "f009": "her mother has a history of chronic joint pain treated with methotrexate",
+      "f011": "leading a relatively active lifestyle", "f013": "Does not smoke or consume alcohol regularly", "f016": "or other joint problems"
+    },
+    "flags": {
+      "f013": ["'Does not smoke or consume alcohol regularly' is ambiguous: 'regularly' may qualify only alcohol (read this way) or both."],
+      "f006": ["The source does not say whether ibuprofen helps."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-069-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "117/76 mmHg", "exam_ids": ["agentclinic-medqa-ext-069-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-069-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-069-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Right_Hand_Examination.Inspection + Physical_Examination_Findings.Right_Hand_Examination.Palpation", "source_text": "Swelling over the radial styloid with no redness | Tenderness over the radial styloid. No crepitus.", "exam_ids": ["agentclinic-medqa-ext-069-e005", "agentclinic-medqa-ext-069-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Right_Hand_Examination.Special_Tests.Finkelstein's_Test", "source_text": "Positive, eliciting pain on the radial side of the wrist when grasping the thumb and exerting longitudinal traction towards the ulnar side.", "exam_ids": ["agentclinic-medqa-ext-069-e007"]},
+      "x007": {"source": "Physical_Examination_Findings.Right_Hand_Examination.Range_of_Motion", "source_text": "Normal range of motion of finger joints. No swelling, redness, or tenderness in other joints.", "exam_ids": ["agentclinic-medqa-ext-069-e008"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "No tests are given (no X-ray despite the fall on an outstretched hand); every test request will be unavailable."
+    ],
+    "notes": [
+      "Holding her infant son (history) and holding objects (p002) are one aggravating factor (f004).",
+      "The mother's methotrexate-treated joint pain is family history; no diagnosis is named in the source, so none is added.",
+      "Gold aliases exclude plain 'stenosing tenosynovitis' and 'tenosynovitis' (broader: they include trigger finger and other tendons)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with wrist pain and difficulty in hand movement."
+    }
+  }
+}

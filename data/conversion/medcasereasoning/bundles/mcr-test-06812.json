@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06812",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 57, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "right hip and groin pain", "aliases": ["hip pain", "groin pain"], "text": "I have pain in my right hip and groin.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "right hip and groin pain: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for 6 months.", "value": "6 months", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "right hip and groin pain: course", "parent": "f001", "attribute": "course", "text": "It has been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "injury to the hip", "aliases": ["trauma", "fall", "injury"], "text": "I haven't injured my hip.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f005", "item": "steroid use", "aliases": ["steroids", "corticosteroids", "prednisone"], "text": "I haven't taken steroids.", "polarity": "absent", "category": "medication"},
+      {"id": "f006", "item": "pain in the toe joints", "aliases": ["toe pain", "foot pain", "forefoot pain", "MTP joint pain", "ball of the foot pain"], "text": "I have pain in the joints at the base of my toes and in my toes.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f007", "item": "pain in the toe joints: duration", "parent": "f006", "attribute": "duration", "text": "It's been going on for 3 years.", "value": "3 years", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f008", "item": "toe deformities", "aliases": ["deformed toes", "bent toes", "foot deformity"], "text": "My toes have become deformed.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f009", "item": "swelling of the toe joints", "aliases": ["swollen toes", "swollen feet", "foot swelling"], "text": "Recently the joints at the base of my toes have become swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f010", "item": "right knee pain", "aliases": ["knee pain"], "text": "My right knee hurts.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "right knee pain: onset", "parent": "f010", "attribute": "onset", "text": "It started after the swelling in my toe joints.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f012", "item": "warmth of the right knee", "aliases": ["warm knee", "hot knee"], "text": "My right knee feels warm.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f013", "item": "swelling of the right knee", "aliases": ["swollen knee", "knee swelling"], "text": "My right knee is swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f014", "item": "morning stiffness", "aliases": ["stiffness in the morning", "stiff joints"], "text": "In the mornings I'm stiff for about 2 hours.", "value": "2 hours", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f015", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost 50 pounds without trying.", "value": "50 lb", "polarity": "present", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06812",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "musculoskeletal", "name": "right hip examination", "aliases": ["hip examination", "hip range of motion", "leg length", "hip movement"], "result": "3 cm right leg-length discrepancy; severely limited right hip motion."},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "neurovascular examination of the legs", "aliases": ["pulses", "sensation", "leg neurovascular status", "neurological examination of the legs"], "result": "No neurovascular deficits."},
+      {"id": "x003", "kind": "exam", "system": "musculoskeletal", "name": "joint examination", "aliases": ["swollen joint count", "joint count", "knee examination", "foot examination", "MTP joints", "synovitis"], "result": "Swollen joint count 8/66 (right knee and multiple MTP joints), rising to 11/66 on subsequent visits."},
+      {"id": "x004", "kind": "test", "name": "inflammatory markers", "aliases": ["ESR", "CRP", "sed rate", "C-reactive protein"], "result": "Elevated."},
+      {"id": "x005", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibody", "rheumatoid factor", "RF", "anti-CCP", "CCP antibodies"], "result": "ANA weakly positive; rheumatoid factor negative; anti-CCP negative."},
+      {"id": "x006", "kind": "test", "name": "blood cultures", "aliases": ["blood culture", "fungal blood culture", "mycobacterial blood culture"], "result": "All negative (aerobic, anaerobic, fungal, mycobacterial)."},
+      {"id": "x007", "kind": "test", "name": "metabolic panel", "aliases": ["electrolytes", "renal function", "kidney function", "calcium", "BMP", "CMP"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "ACE level", "aliases": ["angiotensin-converting enzyme", "serum ACE"], "result": "Normal."},
+      {"id": "x009", "kind": "test", "name": "serum and urine protein electrophoresis", "aliases": ["SPEP", "UPEP", "protein electrophoresis"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "CEA", "aliases": ["carcinoembryonic antigen", "tumor markers"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "CA-125", "aliases": ["CA125", "tumor markers"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "total-body PET scan", "aliases": ["PET scan", "PET-CT", "whole-body PET"], "result": "Normal."},
+      {"id": "x013", "kind": "test", "name": "bone scan", "aliases": ["bone scintigraphy", "nuclear bone scan"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "CT thorax", "aliases": ["chest CT", "CT chest"], "result": "Two benign pulmonary nodules."},
+      {"id": "x015", "kind": "test", "name": "CT abdomen and pelvis", "aliases": ["abdominal CT", "CT abdomen"], "result": "Soft-tissue calcified mass in the right sacroiliac fossa and gluteal muscles."},
+      {"id": "x016", "kind": "test", "name": "right hip and pelvis radiographs", "aliases": ["hip X-ray", "pelvis X-ray", "hip radiograph"], "result": "Femoral head lucencies compatible with subchondral cysts, moderate diffuse joint-space loss, and flattening of the femoral head."},
+      {"id": "x017", "kind": "test", "name": "repeat right hip and pelvis radiographs", "aliases": ["follow-up hip X-ray", "repeat hip radiograph"], "result": "Complete destruction of the femoral head, acetabular erosion, and lateral subluxation of the proximal femur.", "time": "5 months later"},
+      {"id": "x018", "kind": "test", "name": "contrast-enhanced CT of the pelvis", "aliases": ["CT pelvis", "pelvic CT"], "result": "Fragmented bone within the acetabular fossa."},
+      {"id": "x019", "kind": "test", "name": "MRI of the right hip", "aliases": ["hip MRI", "MRI hip"], "result": "Extensive synovial hypertrophy, minimal bone marrow edema, an iliopsoas bursal fluid collection extending to the sciatic notch, and enlargement of the hip joint capsule."},
+      {"id": "x020", "kind": "test", "name": "foot radiographs", "aliases": ["foot X-ray", "X-ray of the feet"], "result": "Erosive changes in the MTP joints."},
+      {"id": "x021", "kind": "test", "name": "hand radiographs", "aliases": ["hand X-ray", "X-ray of the hands"], "result": "Periarticular osteopenia of the MCP joints and ulnar deviation."},
+      {"id": "x022", "kind": "test", "name": "imaging of the knees, shoulders, and spine", "aliases": ["knee X-ray", "shoulder X-ray", "spine X-ray", "knee imaging"], "result": "Degenerative changes."},
+      {"id": "x023", "kind": "test", "name": "right hip joint aspiration", "aliases": ["hip aspiration", "hip synovial fluid analysis", "arthrocentesis of the hip", "crystal analysis"], "result": "Three aspirations: bloody fluid with 0.6 × 10^9 nucleated cells (17% neutrophils) and only extracellular CPPD crystals."},
+      {"id": "x024", "kind": "test", "name": "right knee joint aspiration", "aliases": ["knee aspiration", "knee synovial fluid analysis", "arthrocentesis of the knee"], "result": "Bloody fluid with 35 × 10^9 nucleated cells (96% neutrophils) and no crystals."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06812",
+    "diagnosis": "Rheumatoid arthritis",
+    "aliases": ["RA", "seronegative rheumatoid arthritis", "erosive rheumatoid arthritis"],
+    "reasoning": "1. Multicentric histiocytosis and sarcoidosis excluded — “Other potential etiologies…including systemic diseases such as multicentric histiocytosis and sarcoidosis, but the patient lacked any other features of these diseases.” 2. Avascular necrosis excluded — “An avascular type necrosis (AVN)…was possible, but unusual without a history of steroidal use… The imaging was also not classic for AVN and the patient did not have monoarthritis.” 3. Chronic infection excluded — “All cultures, including three sets of anaerobic and aerobic cultures and one set of systemic fungal and mycobacterial culture, were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06812",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s004"],
+      "f007": ["s004"], "f008": ["s004"], "f009": ["s004"], "f010": ["s004"], "f011": ["s004"], "f012": ["s004"],
+      "f013": ["s004"], "f014": ["s005"], "f015": ["s007"]
+    },
+    "quotes": {
+      "f001": "right hip and groin pain", "f002": "6 months of progressive right hip and groin pain", "f003": "progressive",
+      "f004": "without trauma", "f005": "steroid use", "f006": "chronic metatarsophalangeal joint and toe pain",
+      "f007": "a 3-year history", "f008": "with deformities", "f009": "recent swelling", "f011": "recent swelling, followed by right knee pain",
+      "f012": "right knee pain with warmth and swelling", "f013": "right knee pain with warmth and swelling",
+      "f014": "Morning stiffness lasted approximately 2 hours.", "f015": "an unintentional 50 lb weight loss"
+    },
+    "flags": {
+      "f009": ["'Deformities and recent swelling' is read as swelling of the same MTP and toe joints."],
+      "f014": ["The prompt does not say which joints are stiff in the morning."],
+      "f015": ["The prompt does not say over what period the 50 lb were lost, or whether before or during the workup; kept as a presenting fact."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s002"], "source_text": "She had a 3 cm right leg-length discrepancy, severely limited right hip motion"},
+      "x002": {"sentences": ["s002"], "source_text": "no neurovascular deficits"},
+      "x003": {"sentences": ["s006"], "source_text": "On examination her swollen joint count was initially 8/66 (right knee and multiple MTPs), rising to 11/66 on subsequent visits."},
+      "x004": {"sentences": ["s008"], "source_text": "elevated inflammatory markers"},
+      "x005": {"sentences": ["s008"], "source_text": "a weakly positive ANA, and negative RF and anti-CCP"},
+      "x006": {"sentences": ["s009"], "source_text": "All blood cultures (aerobic, anaerobic, fungal, mycobacterial) were negative."},
+      "x007": {"sentences": ["s010"], "source_text": "Metabolic panel and ACE level were normal."},
+      "x008": {"sentences": ["s010"], "source_text": "Metabolic panel and ACE level were normal."},
+      "x009": {"sentences": ["s010"], "source_text": "including serum and urine electrophoresis / was normal"},
+      "x010": {"sentences": ["s010"], "source_text": "CEA / was normal"},
+      "x011": {"sentences": ["s010"], "source_text": "CA-125 / was normal"},
+      "x012": {"sentences": ["s010"], "source_text": "body PET scan / was normal"},
+      "x013": {"sentences": ["s010"], "source_text": "and bone scan—was normal"},
+      "x014": {"sentences": ["s010"], "source_text": "CT thorax showed two benign pulmonary nodules."},
+      "x015": {"sentences": ["s011"], "source_text": "CT abdomen and pelvis revealed a soft / tissue calcified mass in the right sacroiliac fossa and gluteal muscles."},
+      "x016": {"sentences": ["s012"], "source_text": "Initial right hip and pelvis radiographs showed femoral head lucencies compatible with subchondral cysts, moderate diffuse joint-space loss, and flattening of the femoral head."},
+      "x017": {"sentences": ["s013"], "source_text": "Five months later films demonstrated complete destruction of the femoral head, acetabular erosion, and lateral subluxation of the proximal femur."},
+      "x018": {"sentences": ["s014"], "source_text": "CT pelvis with contrast showed fragmented bone within the acetabular fossa."},
+      "x019": {"sentences": ["s015"], "source_text": "MRI of the right hip revealed extensive synovial hypertrophy, minimal bone marrow edema, an iliopsoas bursal fluid collection extending to the sciatic notch, and hip joint–capsule enlargement."},
+      "x020": {"sentences": ["s016"], "source_text": "Foot radiographs showed erosive changes in the MTPs"},
+      "x021": {"sentences": ["s016"], "source_text": "hand radiographs showed periarticular osteopenia of the MCPs and ulnar deviation"},
+      "x022": {"sentences": ["s017"], "source_text": "Imaging of the knees, shoulders, and spine revealed degenerative changes."},
+      "x023": {"sentences": ["s018"], "source_text": "Three hip aspirations yielded bloody fluid with 0.6 × 10^9 nucleated cells (17% neutrophils) and only extracellular CPPD crystals"},
+      "x024": {"sentences": ["s018"], "source_text": "a right knee aspiration showed bloody fluid with 35 × 10^9 nucleated cells (96% neutrophils) and no crystals"}
+    },
+    "finding_flags": {
+      "x004": ["The prompt does not name the inflammatory markers (ESR, CRP) or give values."],
+      "x006": ["The diagnostic reasoning speaks of three sets of aerobic and anaerobic cultures without saying blood; the prompt says blood cultures, kept as written."],
+      "x018": ["Timing of the contrast CT of the pelvis and the hip MRI relative to the radiographs is not given."],
+      "x022": ["The prompt groups imaging of three regions with one result; kept as one record."]
+    },
+    "leakage": [
+      {"id": "x005", "reason": "Result names 'rheumatoid factor' (a gold word as part of a standard test name); the test is negative and does not name the diagnosis."}
+    ],
+    "source_issues": [
+      "The diagnostic reasoning mentions three sets of aerobic and anaerobic cultures and one set of fungal and mycobacterial culture; the prompt calls all of them blood cultures."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with 6 months of progressive right hip and groin pain (s001, s002, s004, s005, s007), with the staged workup that followed; results from later visits carry time where the prompt gives it (repeat radiographs 5 months later; swollen joint count on subsequent visits).",
+      "x005 aliases include 'rheumatoid factor' (check_coverage warns: gold word in a finding alias): it is the clinical name of the test and is kept so the request can be matched; the warning is accepted.",
+      "Leg-length discrepancy and limited hip motion are examination measurements and stay in the findings; ulnar deviation is reported only on the hand radiographs, so it is not a patient fact."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s003", "reason": "'Over 5 months she became unable to ambulate': read as progression during the 5-month workup (the repeat radiographs 5 months later show complete femoral head destruction), i.e. course after the index visit. If it instead describes the 6 months before presentation, it would be a patient fact (unable to walk)."}
+    ]
+  }
+}

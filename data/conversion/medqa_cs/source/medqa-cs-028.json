@@ -1,0 +1,276 @@
+{
+  "case_id": "medqa-cs-028",
+  "source_case_id": 28,
+  "opening_scenario": "James Miller, a 50-year-old male, comes to the clinic for a hypertension follow-up.",
+  "doorway_vital_signs": [
+    "BP: 135/88 mmHg",
+    "Temp: 98.0°F (36.7°C)",
+    "RR: 16/minute",
+    "HR: 70/minute, regular"
+  ],
+  "sp_notes": [
+    "Don't mention impotence unless the examinee asks whether you are having any side effects from your medications or whether you have any other concerns."
+  ],
+  "challenging_questions": [
+    "\"\"I've begun to encounter issues with my sexual performance, which I believe are related to my age. Is that correct, doctor?\""
+  ],
+  "chief_complaint": {
+    "topic": "Chief Complaint",
+    "question": "Mr. Miller, what brings you in today?",
+    "answer": "I am here to check on my blood pressure as I have been diagnosed with hypertension."
+  },
+  "qa": [
+    {
+      "fact_id": "medqa-cs-028-p001",
+      "topic": "Onset of Symptoms",
+      "question": "When did this start?",
+      "answer": "I discovered I had high blood pressure last year."
+    },
+    {
+      "fact_id": "medqa-cs-028-p002",
+      "topic": "Treatment",
+      "question": "Are you undergoing any treatment?",
+      "answer": "I was prescribed hydrochlorothiazide, but my blood pressure is still elevated. Six months ago, propranolol was added."
+    },
+    {
+      "fact_id": "medqa-cs-028-p003",
+      "topic": "Medication Compliance",
+      "question": "Do you take your medication as prescribed?",
+      "answer": "Well, sometimes I forget to take the pills, but in general, I take them regularly."
+    },
+    {
+      "fact_id": "medqa-cs-028-p004",
+      "topic": "Home Monitoring",
+      "question": "Do you check your blood pressure at home?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p005",
+      "topic": "Last Checkup",
+      "question": "When was the last time your blood pressure was checked?",
+      "answer": "Six months ago."
+    },
+    {
+      "fact_id": "medqa-cs-028-p006",
+      "topic": "Current Condition",
+      "question": "How are you feeling today?",
+      "answer": "I feel fine."
+    },
+    {
+      "fact_id": "medqa-cs-028-p007",
+      "topic": "Other Symptoms",
+      "question": "What other symptoms are you concerned about?",
+      "answer": "I've been losing more hair than usual from my head. I think I'm starting to go bald."
+    },
+    {
+      "fact_id": "medqa-cs-028-p008",
+      "topic": "Medication Side Effects",
+      "question": "Have you experienced any changes since you started taking the medications?",
+      "answer": "Over the past 4 months, I have started to experience problems with my sexual performance. A friend told me it is the propranolol, but I think it is my age. Isn't that right, doctor?"
+    },
+    {
+      "fact_id": "medqa-cs-028-p009",
+      "topic": "Sexual Performance",
+      "question": "Tell me more about the problems with your sexual performance.",
+      "answer": "I have a weak erection. Sometimes I can't get an erection at all."
+    },
+    {
+      "fact_id": "medqa-cs-028-p010",
+      "topic": "Severity",
+      "question": "On a scale of 0 to 10, where 0 is flaccid and 6 is adequate for penetration, how would you rate your erection?",
+      "answer": "About a 4."
+    },
+    {
+      "fact_id": "medqa-cs-028-p011",
+      "topic": "Morning Erections",
+      "question": "Any early morning or nocturnal erections?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p012",
+      "topic": "Sexual Drive",
+      "question": "How has your desire for sexual activity been lately?",
+      "answer": "It's diminished as well, Doc. I'm not as interested in sex like I used to be."
+    },
+    {
+      "fact_id": "medqa-cs-028-p013",
+      "topic": "Frequency of Sex",
+      "question": "Before experiencing these problems, how frequently were you intimate, and with whom?",
+      "answer": "A few times each week with my wife."
+    },
+    {
+      "fact_id": "medqa-cs-028-p014",
+      "topic": "Marital/Work Problems",
+      "question": "Any problems with your wife lately? Any issues at work?",
+      "answer": "My family life is the same as it has always been, and I am very happy in my job."
+    },
+    {
+      "fact_id": "medqa-cs-028-p015",
+      "topic": "Mood",
+      "question": "How has your mood been? Any changes?",
+      "answer": "No changes. I've been happy other than my concern with not being able to perform."
+    },
+    {
+      "fact_id": "medqa-cs-028-p016",
+      "topic": "Anxiety/Stress",
+      "question": "Any anxiety? Stress?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p017",
+      "topic": "Pain",
+      "question": "Any pain when walking or resting?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p018",
+      "topic": "Weight Changes",
+      "question": "Have you experienced any weight fluctuations?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p019",
+      "topic": "Appetite Changes",
+      "question": "Any changes in your appetite?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p020",
+      "topic": "Diabetes",
+      "question": "Have you ever been diagnosed with diabetes? When were your sugar levels tested?",
+      "answer": "No, I do not. Six months ago."
+    },
+    {
+      "fact_id": "medqa-cs-028-p021",
+      "topic": "Cholesterol History",
+      "question": "Any history of high cholesterol?",
+      "answer": "Yes, it was diagnosed last year."
+    },
+    {
+      "fact_id": "medqa-cs-028-p022",
+      "topic": "Heart Problems",
+      "question": "Any heart problems in the past?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p023",
+      "topic": "Stroke History",
+      "question": "Have you had any strokes previously?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p024",
+      "topic": "Current Medications",
+      "question": "Other than hydrochlorothiazide and propranolol, are you taking any other medications?",
+      "answer": "Yes, lovastatin."
+    },
+    {
+      "fact_id": "medqa-cs-028-p025",
+      "topic": "Medical History",
+      "question": "Have you received any other diagnoses apart from hypertension and hypercholesterolemia?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p026",
+      "topic": "Surgical History",
+      "question": "Have you had any previous surgeries?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p027",
+      "topic": "Family History",
+      "question": "Any illness in your immediate family members?",
+      "answer": "My father died at the age of 50 of a heart attack. My mother is healthy, but she has Alzheimer's disease. She is in a nursing home now."
+    },
+    {
+      "fact_id": "medqa-cs-028-p028",
+      "topic": "Occupation",
+      "question": "What do you do for a living?",
+      "answer": "Schoolteacher."
+    },
+    {
+      "fact_id": "medqa-cs-028-p029",
+      "topic": "Diet",
+      "question": "What kind of foods do you eat?",
+      "answer": "I eat a lot of junk food."
+    },
+    {
+      "fact_id": "medqa-cs-028-p030",
+      "topic": "Exercise",
+      "question": "Do you exercise?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p031",
+      "topic": "Alcohol Use",
+      "question": "Have you consumed alcohol?",
+      "answer": "Yes, I have been drinking three to four beers weekly for the last decade."
+    },
+    {
+      "fact_id": "medqa-cs-028-p032",
+      "topic": "Illicit Drug Use",
+      "question": "Have you used any illegal substances?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p033",
+      "topic": "Tobacco",
+      "question": "Do you smoke?",
+      "answer": "No, I do not."
+    },
+    {
+      "fact_id": "medqa-cs-028-p034",
+      "topic": "Social History",
+      "question": "What is your living situation like?",
+      "answer": "My wife and I reside together in our home."
+    },
+    {
+      "fact_id": "medqa-cs-028-p035",
+      "topic": "Allergies",
+      "question": "Do you have any drug allergies?",
+      "answer": "No, I do not."
+    }
+  ],
+  "patient_note_history": "History \nHPI: A 54-year-old male presents for follow-up of his hypertension that was diagnosed last year. He was initially started on HCTZ; propranolol was added 6 months ago. He is fairly compliant with his medications. He does not monitor his blood pressure at home. His last blood pressure checkup was 6 months ago. He is feeling well except for erectile dysfunction and decreased libido noted 4 months ago. No leg claudication or any previous history of heart problems, stroke, TIA, or diabetes. No marital or work problems. No depression, anxiety, appetite or weight changes, or history of trauma. \nROS: Negative except as above. \nAllergies: NKDA. \nMedications: HCTZ, propranolol, lovastatin. \nPMH: Hypertension, hypercholesterolemia diagnosed 1 year ago. \nPSH: No, I do not. \nSH: No smoking, 3-4 beers/week, no illicit drugs. Works as a schoolteacher; married and lives with his wife. \nFH: Father died of a heart attack at age 50. Mother is in a nursing home due to Alzheimer's disease.",
+  "exam_lines": [
+    {
+      "exam_id": "medqa-cs-028-e001",
+      "source_text": "Patient is in no acute distress."
+    },
+    {
+      "exam_id": "medqa-cs-028-e002",
+      "source_text": "VS: within normal limits"
+    },
+    {
+      "exam_id": "medqa-cs-028-e003",
+      "source_text": "HEENT: No funduscopic abnormalities."
+    },
+    {
+      "exam_id": "medqa-cs-028-e004",
+      "source_text": "Neck: No carotid bruits, no jugular venous distention."
+    },
+    {
+      "exam_id": "medqa-cs-028-e005",
+      "source_text": "Chest: Clear breath sounds bilaterally. No gynecomastia."
+    },
+    {
+      "exam_id": "medqa-cs-028-e006",
+      "source_text": "Heart: Apical impulse not displaced; regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs, or gallops."
+    },
+    {
+      "exam_id": "medqa-cs-028-e007",
+      "source_text": "Abdomen: Soft, non-distended, non-tender, normal bowel sounds x 4 quadrants, no bruits, no organomegaly."
+    },
+    {
+      "exam_id": "medqa-cs-028-e008",
+      "source_text": "Extremities: No edema, no hair loss or skin changes. Radial, brachial, femoral, dorsalis pedis, and posterior tibialis 2+ and symmetric."
+    },
+    {
+      "exam_id": "medqa-cs-028-e009",
+      "source_text": "Neuro: Motor strength grade 5/5 in bilateral lower extremities. Sensation: Intact to pinprick and soft touch in lower extremities. Deep tendon reflexes: Symmetric grade 2+ in lower extremities, bilateral Babinski sign present."
+    }
+  ],
+  "gold_target": "Diagnosis #1: Medication-induced erectile dysfunction \nHistory Finding(s): \n- Taking propranolol \n- Onset of erectile dysfunction coincides with propranolol use\n- No early-morning or nocturnal tumescence\n\nPhysical Exam Finding(s): None\n\nDiagnosis #2: Erectile dysfunction secondary to vascular disease \nHistory Finding(s): \n- History of hypertension \n- History of hyperlipidemia \n- No early-morning or nocturnal tumescence \n\nPhysical Exam Finding(s): None\n\nDiagnosis #3: Hypogonadism \nHistory Finding(s): \n- Loss of libido and ED \n- Hair loss \n- No early-morning or nocturnal tumescence \n\nPhysical Exam Finding(s): None",
+  "gold_additional_diagnosis": "• Depression: Psychogenic causes can lead to a loss of libido and loss of erections and are suggested when \nnocturnal or early morning erections are preserved (not seen in this case). This patient denies other depressive \nsymptoms, but further exploration of his feelings about his nursing home-bound mother may be more revealing. \n• Peyronie's disease: Fibrous plaque of the tunica albuginea can lead to penile scarring and ED.",
+  "raw_opening": "Opening Scenario:\n\nJames Miller, a 50-year-old male, comes to the clinic for a hypertension follow-up.\n\nVital Signs:\n\n- BP: 135/88 mmHg\n- Temp: 98.0°F (36.7°C)\n- RR: 16/minute\n- HR: 70/minute, regular\n\nExaminee Tasks:\n\n1. Take a focused history.\n2. Perform a focused physical exam (do not perform rectal, genitourinary, or female breast exam).\n3. Explain your clinical impression and workup plan to the patient.\n4. Write the patient note after leaving the room.\n\nChecklist/SP Sheet:\n\nPatient Description:\n\nThe patient is a 54-year-old male who appears anxious.\n\nNotes for the SP:\n\n- Don't mention impotence unless the examinee asks whether you are having any side effects from your medications or whether you have any other concerns.\n\nChallenging Questions to Ask:\n\n\"\"I've begun to encounter issues with my sexual performance, which I believe are related to my age. Is that correct, doctor?\"\n\nExaminee Response:\n\n\"I don't believe your age is the cause.\". I worry more about your medications. Testosterone levels may decline with aging, and we will monitor for this..\"\n\nExaminee Checklist:\n\nEntrance:\n\n- The examinee knocked on the door before entering.\n- The examinee made eye contact with the SP.\n- The examinee correctly used the patient's name.\n- The examinee introduced themselves by name.\n- The examinee identified their role or position.\n\nReflective Listening:\n\n- The examinee asked an open-ended question and actively listened to the response.\n- The examinee asked the SP to list his/her concerns and listened to the response without interrupting.\n- The examinee summarized the SP's concerns, often using the SP's own words.\n\nInformation Gathering:\n\nThe examinee elicited data efficiently and accurately.\n\nConnecting With the Patient:\n\nThe examinee recognized the SP's emotions and responded with PEARLS.\n\nQuestion Patient Response:\n\nChief Complaint:\nDoctor: \"Mr. Miller, what brings you in today?\"\nPatient: \"I am here to check on my blood pressure as I have been diagnosed with hypertension.\"\n\nOnset of Symptoms:\nDoctor: \"When did this start?\"\nPatient: \"I discovered I had high blood pressure last year.\"\n\nTreatment:\nDoctor: \"Are you undergoing any treatment?\"\nPatient: \"I was prescribed hydrochlorothiazide, but my blood pressure is still elevated. Six months ago, propranolol was added.\"\n\nMedication Compliance:\nDoctor: \"Do you take your medication as prescribed?\"\nPatient: \"Well, sometimes I forget to take the pills, but in general, I take them regularly.\"\n\nHome Monitoring:\nDoctor: \"Do you check your blood pressure at home?\"\nPatient: \"No, I do not.\"\n\nLast Checkup:\nDoctor: \"When was the last time your blood pressure was checked?\"\nPatient: \"Six months ago.\"\n\nCurrent Condition:\nDoctor: \"How are you feeling today?\"\nPatient: \"I feel fine.\"\n\nOther Symptoms:\nDoctor: \"What other symptoms are you concerned about?\"\nPatient: \"I've been losing more hair than usual from my head. I think I'm starting to go bald.\"\n\nMedication Side Effects:\nDoctor: \"Have you experienced any changes since you started taking the medications?\"\nPatient: \"Over the past 4 months, I have started to experience problems with my sexual performance. A friend told me it is the propranolol, but I think it is my age. Isn't that right, doctor?\"\n\nSexual Performance:\nDoctor: \"Tell me more about the problems with your sexual performance.\"\nPatient: \"I have a weak erection. Sometimes I can't get an erection at all.\"\n\nSeverity:\nDoctor: \"On a scale of 0 to 10, where 0 is flaccid and 6 is adequate for penetration, how would you rate your erection?\"\nPatient: \"About a 4.\"\n\nMorning Erections:\nDoctor: \"Any early morning or nocturnal erections?\"\nPatient: \"No, I do not.\"\n\nSexual Drive:\nDoctor: \"How has your desire for sexual activity been lately?\"\nPatient: \"It's diminished as well, Doc. I'm not as interested in sex like I used to be.\"\n\nFrequency of Sex:\nDoctor: \"Before experiencing these problems, how frequently were you intimate, and with whom?\"\nPatient: \"A few times each week with my wife.\"\n\nMarital/Work Problems:\nDoctor: \"Any problems with your wife lately? Any issues at work?\"\nPatient: \"My family life is the same as it has always been, and I am very happy in my job.\"\n\nMood:\nDoctor: \"How has your mood been? Any changes?\"\nPatient: \"No changes. I've been happy other than my concern with not being able to perform.\"\n\nAnxiety/Stress:\nDoctor: \"Any anxiety? Stress?\"\nPatient: \"No, I do not.\"\n\nPain:\nDoctor: \"Any pain when walking or resting?\"\nPatient: \"No, I do not.\"\n\nWeight Changes:\nDoctor: \"Have you experienced any weight fluctuations?\"\nPatient: \"No, I do not.\"\n\nAppetite Changes:\nDoctor: \"Any changes in your appetite?\"\nPatient: \"No, I do not.\"\n\nDiabetes:\nDoctor: \"Have you ever been diagnosed with diabetes? When were your sugar levels tested?\"\nPatient: \"No, I do not. Six months ago.\"\n\nCholesterol History:\nDoctor: \"Any history of high cholesterol?\"\nPatient: \"Yes, it was diagnosed last year.\"\n\nHeart Problems:\nDoctor: \"Any heart problems in the past?\"\nPatient: \"No, I do not.\"\n\nStroke History:\nDoctor: \"Have you had any strokes previously?\"\nPatient: \"No, I do not.\"\n\nCurrent Medications:\nDoctor: \"Other than hydrochlorothiazide and propranolol, are you taking any other medications?\"\nPatient: \"Yes, lovastatin.\"\n\nMedical History:\nDoctor: \"Have you received any other diagnoses apart from hypertension and hypercholesterolemia?\"\nPatient: \"No, I do not.\"\n\nSurgical History:\nDoctor: \"Have you had any previous surgeries?\"\nPatient: \"No, I do not.\"\n\nFamily History:\nDoctor: \"Any illness in your immediate family members?\"\nPatient: \"My father died at the age of 50 of a heart attack. My mother is healthy, but she has Alzheimer's disease. She is in a nursing home now.\"\n\nOccupation:\nDoctor: \"What do you do for a living?\"\nPatient: \"Schoolteacher.\"\n\nDiet:\nDoctor: \"What kind of foods do you eat?\"\nPatient: \"I eat a lot of junk food.\"\n\nExercise:\nDoctor: \"Do you exercise?\"\nPatient: \"No, I do not.\"\n\nAlcohol Use:\nDoctor: \"Have you consumed alcohol?\"\nPatient: \"Yes, I have been drinking three to four beers weekly for the last decade.\"\n\nIllicit Drug Use:\nDoctor: \"Have you used any illegal substances?\"\nPatient: \"No, I do not.\"\n\nTobacco:\nDoctor: \"Do you smoke?\"\nPatient: \"No, I do not.\"\n\nSocial History:\nDoctor: \"What is your living situation like?\"\nPatient: \"My wife and I reside together in our home.\"\n\nAllergies:\nDoctor: \"Do you have any drug allergies?\"\nPatient: \"No, I do not.\"\n\nPhysical Examination:\n\n- Examinee washed their hands.\n- Examinee asked permission to start the exam.\n- Examinee used respectful draping.\n- Examinee did not repeat painful maneuvers.\n\nExam Component Maneuver:\n\n- Head and neck exam: Fundoscopic exam, carotid auscultation.\n- Cardiovascular exam: Palpation, auscultation.\n- Pulmonary exam: Auscultation.\n- Abdominal exam: Auscultation, palpation.\n- Extremities exam: Palpation of peripheral pulses.\n- Neurological exam: Deep tendon reflexes (DTRs), Babinski sign, sensation, and strength in bilateral lower extremities.\n\nSample Closure:\n\n\"Mr. Miller, your blood pressure level was 135/88 when we measured it earlier today, which is close to our target of 130/80. However, it would be even better if we could get it down to around 120/80. Fortunately, achieving this is attainable by implementing lifestyle modifications, including reducing your salt and fat consumption and initiating regular exercise.. Even half an hour of walking can make a huge difference. \n\nAs for your problems with your erection, this is a very common side effect of one of the blood pressure medications you are taking. Therefore, I would like to prescribe you a different medication besides propranolol to manage your blood pressure.. I will also request some blood tests to rule out other potential medical conditions contributing to your issue.. In addition, I would like to perform a genital exam as well as a rectal exam to assess your prostate. Do you have any questions for me?\"\n\nClosure:\n\n- Examinee discussed initial diagnostic impressions.\n- Examinee discussed initial management plans.\n  - Follow-up tests: Examinee mentioned the need for genital and rectal exams.\n  - Lifestyle modification (diet, exercise, alcohol cessation).\n  - Changing propranolol to another antihypertensive medication that does not cause erectile dysfunction.\n- Examinee asked if the SP had any other questions or concerns.Patient Note:\n\nHistory \nHPI: A 54-year-old male presents for follow-up of his hypertension that was diagnosed last year. He was initially started on HCTZ; propranolol was added 6 months ago. He is fairly compliant with his medications. He does not monitor his blood pressure at home. His last blood pressure checkup was 6 months ago. He is feeling well except for erectile dysfunction and decreased libido noted 4 months ago. No leg claudication or any previous history of heart problems, stroke, TIA, or diabetes. No marital or work problems. No depression, anxiety, appetite or weight changes, or history of trauma. \nROS: Negative except as above. \nAllergies: NKDA. \nMedications: HCTZ, propranolol, lovastatin. \nPMH: Hypertension, hypercholesterolemia diagnosed 1 year ago. \nPSH: No, I do not. \nSH: No smoking, 3-4 beers/week, no illicit drugs. Works as a schoolteacher; married and lives with his wife. \nFH: Father died of a heart attack at age 50. Mother is in a nursing home due to Alzheimer's disease. \n\nPhysical Examination:\n\nPatient is in no acute distress. \nVS: within normal limits \nHEENT: No funduscopic abnormalities. \nNeck: No carotid bruits, no jugular venous distention. \nChest: Clear breath sounds bilaterally. No gynecomastia. \nHeart: Apical impulse not displaced; regular rate and rhythm; heart sounds within normal limits; no murmurs, rubs, or gallops. \nAbdomen: Soft, non-distended, non-tender, normal bowel sounds x 4 quadrants, no bruits, no organomegaly. \nExtremities: No edema, no hair loss or skin changes. Radial, brachial, femoral, dorsalis pedis, and posterior tibialis 2+ and symmetric. \nNeuro: Motor strength grade 5/5 in bilateral lower extremities. Sensation: Intact to pinprick and soft touch in lower extremities. Deep tendon reflexes: Symmetric grade 2+ in lower extremities, bilateral Babinski sign present."
+}

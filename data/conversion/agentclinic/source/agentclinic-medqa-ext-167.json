@@ -1,0 +1,148 @@
+{
+  "case_id": "agentclinic-medqa-ext-167",
+  "source_row": 167,
+  "demographics_text": "40-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with weakness in climbing stairs or brushing hair.",
+  "chief_complaint": "Muscle weakness affecting daily activities",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p001",
+      "field": "History",
+      "text": "The patient presents with complaints of progressive weakness that has made it difficult for him to climb stairs or brush his hair. He denies experiencing any headaches or changes in vision. Symptoms have been progressively getting worse over the past few months."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty climbing stairs"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty brushing hair"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No headaches"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p005",
+      "field": "Secondary_Symptoms",
+      "text": "No changes in vision"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. Not currently on any medications."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p007",
+      "field": "Social_History",
+      "text": "Non-smoker, occasional alcohol use. Employed as a school teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-167-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, rash, joint pains, dysphagia, or respiratory difficulties."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Muscle_Strength",
+      "text": "Reduced strength in proximal muscle groups of both upper and lower limbs"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e008",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Sensation",
+      "text": "Intact"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e009",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Coordination",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e010",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection",
+      "text": "No obvious muscle wasting or deformities"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e011",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation",
+      "text": "Muscles are tender to palpation in the shoulders and thighs"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-e012",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion",
+      "text": "Limited due to pain and weakness"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-167-i001",
+      "path": "Test_Results.Blood_Tests.Creatine_Kinase",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-i002",
+      "path": "Test_Results.Blood_Tests.Aldolase",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-i003",
+      "path": "Test_Results.Blood_Tests.Liver_Enzymes",
+      "text": "Slightly elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-i004",
+      "path": "Test_Results.Blood_Tests.Erythrocyte_Sedimentation_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-i005",
+      "path": "Test_Results.Muscle_Biopsy.Findings",
+      "text": "CD8+ lymphocyte infiltration in the endomysium"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-167-i006",
+      "path": "Test_Results.Electromyography.Findings",
+      "text": "Abnormalities consistent with inflammatory myopathy"
+    }
+  ],
+  "correct_diagnosis": "Polymyositis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

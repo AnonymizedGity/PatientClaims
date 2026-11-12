@@ -1,0 +1,49 @@
+{
+ "case_id": "mcr-test-01598",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I can hardly open my mouth since my injury and operations.",
+   "I also have a headache.",
+   "During the flare-ups my left eye waters.",
+   "During the flare-ups my nose keeps running.",
+   "It's an aching pain."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I can hardly open my mouth since my injury and operations. I also have a headache; it's an aching pain. During the flare-ups, my left eye waters and my nose keeps running.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f007",
+    "f012",
+    "f013",
+    "f009"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3416,
+   "tokens_out": 52,
+   "seconds": 7.27,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-117", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 56, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "trouble breathing"], "text": "I've been getting short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: course", "parent": "f001", "attribute": "course", "text": "It's been getting progressively worse.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f003", "item": "weight loss", "aliases": ["losing weight"], "text": "I've been losing weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "how long the symptoms have been going on", "text": "The shortness of breath and the weight loss have been going on for a year.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "smoking", "aliases": ["cigarettes", "tobacco", "pack-years"], "text": "I still smoke. I have a 36 pack-year history.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f006", "item": "occupation", "aliases": ["job", "work"], "text": "I used to work in construction.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f007", "item": "steel mill work", "aliases": ["previous jobs", "factory work"], "text": "During high school I worked in a steel mill.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f008", "item": "other hazardous exposures", "aliases": ["chemical exposure", "dust exposure", "occupational exposures"], "text": "I haven't had any other hazardous exposures that I know of.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "asthma", "text": "I've never had asthma.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "allergic conditions", "aliases": ["allergic diseases", "hay fever", "eczema"], "text": "I don't have any allergic conditions.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "fever", "aliases": ["fevers"], "text": "I haven't had any fevers recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f014", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-117",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/78 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x004", "kind": "vital", "name": "body mass index", "aliases": ["BMI", "weight"], "result": "31 kg/m2"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry", "O2 sat"], "result": "95% on room air"},
+      {"id": "x006", "kind": "exam", "system": "respiratory", "name": "chest examination", "aliases": ["lung examination", "respiratory examination", "lung auscultation", "chest auscultation"], "result": "Inspection: no visible chest deformities. Palpation: no tenderness or chest wall abnormalities. Percussion: resonant lung fields. Auscultation: mildly prolonged expiratory phase; no wheezing or crackles."},
+      {"id": "x007", "kind": "test", "name": "lung function tests", "aliases": ["PFTs", "spirometry", "FEV1", "FEV1/FVC ratio", "total lung capacity", "TLC", "residual volume", "lung volumes", "DLCO", "diffusing capacity"], "result": "FEV1/FVC ratio 60%; FEV1 50% of predicted; total lung capacity 110% of predicted; residual volume 115% of predicted; DLCO 60% of predicted."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-117",
+    "diagnosis": "Chronic obstructive pulmonary disease",
+    "aliases": ["COPD", "chronic obstructive lung disease", "chronic obstructive airway disease", "emphysema"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-117",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-117-p001"], "f002": ["cc", "agentclinic-medqa-ext-117-p001"],
+      "f003": ["agentclinic-medqa-ext-117-p001", "agentclinic-medqa-ext-117-p002"], "f004": ["agentclinic-medqa-ext-117-p001"],
+      "f005": ["agentclinic-medqa-ext-117-p001", "agentclinic-medqa-ext-117-p004"], "f006": ["agentclinic-medqa-ext-117-p001", "agentclinic-medqa-ext-117-p004"],
+      "f007": ["agentclinic-medqa-ext-117-p001", "agentclinic-medqa-ext-117-p004"], "f008": ["agentclinic-medqa-ext-117-p004"],
+      "f009": ["agentclinic-medqa-ext-117-p003"], "f010": ["agentclinic-medqa-ext-117-p005"], "f011": ["agentclinic-medqa-ext-117-p005"],
+      "f012": ["agentclinic-medqa-ext-117-p005"], "f013": ["agentclinic-medqa-ext-117-p005"], "f014": ["agentclinic-medqa-ext-117-p005"]
+    },
+    "quotes": {
+      "f002": "progressive shortness of breath", "f004": "a 1-year history of progressive shortness of breath and weight loss",
+      "f005": "He is an active smoker with a 36-pack-year history", "f006": "former construction worker",
+      "f007": "worked in a steel mill during high school", "f008": "No other hazardous exposures mentioned.",
+      "f009": "No significant past medical history noted.", "f010": "No history of asthma or allergic diseases mentioned.",
+      "f011": "No history of asthma or allergic diseases mentioned.", "f012": "Denies recent fevers"
+    },
+    "flags": {
+      "f008": ["Source says 'No other hazardous exposures mentioned'; read as a denial in the way CONVERSION.md treats 'No notable past medical history provided'."],
+      "f010": ["Source says 'No history of asthma or allergic diseases mentioned' (review of systems); read as a denial, like f008."],
+      "f011": ["As f010."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/78 mmHg", "exam_ids": ["agentclinic-medqa-ext-117-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90/min", "exam_ids": ["agentclinic-medqa-ext-117-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "17/min", "exam_ids": ["agentclinic-medqa-ext-117-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.BMI", "source_text": "31 kg/m2", "exam_ids": ["agentclinic-medqa-ext-117-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "95% on room air", "exam_ids": ["agentclinic-medqa-ext-117-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Pulmonary_Examination.Inspection + Physical_Examination_Findings.Pulmonary_Examination.Palpation + Physical_Examination_Findings.Pulmonary_Examination.Percussion + Physical_Examination_Findings.Pulmonary_Examination.Auscultation", "source_text": "Inspection: No visible chest deformities.; Palpation: No tenderness or chest wall abnormalities.; Percussion: Resonant lung fields.; Auscultation: Mildly prolonged expiratory phase with no wheezing or crackles.", "exam_ids": ["agentclinic-medqa-ext-117-e006", "agentclinic-medqa-ext-117-e007", "agentclinic-medqa-ext-117-e008", "agentclinic-medqa-ext-117-e009"]},
+      "x007": {"source": "Test_Results.Pulmonary_Function_Test.FEV1_FVC_Ratio + Test_Results.Pulmonary_Function_Test.FEV1 + Test_Results.Pulmonary_Function_Test.Total_Lung_Capacity + Test_Results.Pulmonary_Function_Test.Residual_Volume + Test_Results.Pulmonary_Function_Test.DLCO", "source_text": "FEV1_FVC_Ratio: 60%; FEV1: 50% of predicted value; Total_Lung_Capacity: 110% of predicted value; Residual_Volume: 115% of predicted value; DLCO: 60% of predicted value", "exam_ids": ["agentclinic-medqa-ext-117-i001", "agentclinic-medqa-ext-117-i002", "agentclinic-medqa-ext-117-i003", "agentclinic-medqa-ext-117-i004", "agentclinic-medqa-ext-117-i005"]}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [
+      "Unexplained weight loss in an active heavy smoker is not otherwise addressed (BMI 31 kg/m2); no temperature recorded."
+    ],
+    "notes": [
+      "The 1-year duration covers both the shortness of breath and the weight loss, so it is a standalone fact (f004); 'progressive' is a course child of the shortness of breath (f002), matching the chief complaint 'Worsening shortness of breath'.",
+      "Construction work (f006) and the high-school steel mill job (f007) are separate occupation facts.",
+      "'Mentioned' phrasing in the social history and review of systems is read as a denial (see qc.flags).",
+      "PFT components form one 'lung function tests' record (x007), named without the gold word 'pulmonary'; 'PFTs' is an alias. BMI is kept as a vital."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a 1-year history of worsening shortness of breath and weight loss."
+    }
+  }
+}

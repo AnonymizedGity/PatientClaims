@@ -1,0 +1,61 @@
+{
+ "case_id": "mcr-test-00302",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "My arms and legs have become weak.",
+   "I have trouble swallowing.",
+   "The weakness, swallowing trouble, drooling, nausea and vomiting have been going on for four days.",
+   "I've been drooling.",
+   "I can't move the muscles of my face properly, on both sides.",
+   "I've been feeling nauseated.",
+   "A month ago I had my first dose of an inactivated COVID-19 vaccine."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "My arms and legs have become weak, and I've been drooling. I have trouble swallowing, I can't move the muscles of my face properly on both sides, and I've been feeling nauseated and vomiting. All of this has been going on for four days. A month ago I had my first dose of an inactivated COVID-19 vaccine.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f007",
+    "f004",
+    "f008",
+    "f005",
+    "f010"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "missing",
+      "quote": "vomiting",
+      "fix": "The reply must include the recorded symptom of vomiting, as it is part of the plan's entry for 'how long the symptoms have lasted' and is a distinct recorded symptom (f006)."
+     }
+    ],
+    "check_problems": [],
+    "draft": "My arms and legs have become weak, and I've been drooling. I have trouble swallowing, I can't move the muscles of my face properly on both sides, and I've been feeling nauseated. All of this has been going on for four days. A month ago I had my first dose of an inactivated COVID-19 vaccine.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 5940,
+   "tokens_out": 219,
+   "seconds": 19.61,
+   "redrafts": 0
+  }
+ }
+}

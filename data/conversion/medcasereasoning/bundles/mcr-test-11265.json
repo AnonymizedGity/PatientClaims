@@ -1,0 +1,105 @@
+{
+  "patient": {
+    "case_id": "mcr-test-11265",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 54, "sex": "female"},
+    "opening": ["f001", "f002", "f003"],
+    "facts": [
+      {"id": "f001", "item": "nausea", "aliases": ["feeling sick", "queasy", "sick to my stomach"], "text": "I've been feeling sick to my stomach.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "vomiting", "aliases": ["throwing up", "being sick"], "text": "I've been vomiting.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "tiredness", "aliases": ["fatigue", "feeling tired", "exhaustion"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "tiredness: duration", "parent": "f003", "attribute": "duration", "text": "It's been going on for about a month.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "how long the nausea and vomiting have been going on", "aliases": ["how long the symptoms have been going on"], "text": "The nausea and vomiting started 5 days ago.", "value": "5 days", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "loss of appetite", "aliases": ["poor appetite", "not hungry", "anorexia"], "text": "For about a month I haven't had much appetite.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f007", "item": "weight loss", "aliases": ["losing weight"], "text": "I've lost 6 kg over the past month without trying.", "value": "6 kg", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "abdominal pain", "aliases": ["stomach pain", "belly pain", "tummy ache"], "text": "Over the past month I've had occasional vague belly pain.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "recurrent"},
+      {"id": "f009", "item": "darkening of the skin", "aliases": ["tanning", "tanned skin", "skin getting darker", "hyperpigmentation"], "text": "My skin has recently become more tanned.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f010", "item": "underactive thyroid", "aliases": ["hypothyroidism", "thyroid problem", "low thyroid"], "text": "I've had an underactive thyroid for 17 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "levothyroxine", "aliases": ["thyroid tablets", "Synthroid", "thyroxine"], "text": "For years I took levothyroxine, and my thyroid was well controlled on it.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f012", "item": "animal thyroid extract", "aliases": ["desiccated thyroid", "natural thyroid", "Armour Thyroid", "thyroid medicine"], "text": "Several months ago I switched from levothyroxine to animal thyroid extract.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "trimethoprim-sulfamethoxazole", "aliases": ["TMP-SMX", "Bactrim", "Septra", "co-trimoxazole", "antibiotics"], "text": "A week ago I started trimethoprim-sulfamethoxazole, 160 mg twice a day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f014", "item": "sinus infection", "aliases": ["sinusitis", "recent infection", "recent illness"], "text": "I have a sinus infection; that is what I started the antibiotic for a week ago.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f015", "item": "diuretics", "aliases": ["water pills", "fluid tablets"], "text": "I've never taken water pills.", "polarity": "absent", "category": "medication"},
+      {"id": "f016", "item": "ethnicity", "aliases": ["race", "ethnic background"], "text": "I'm White (Caucasian).", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-11265",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "hydration status"], "result": "Appeared ill and dehydrated."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP", "orthostatic blood pressure", "lying and standing blood pressure"], "result": "Supine 131/80 mmHg; standing 107/67 mmHg."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR", "orthostatic heart rate"], "result": "Supine 81/min; standing 96/min."},
+      {"id": "x004", "kind": "exam", "system": "skin", "name": "skin and mucous membranes", "aliases": ["skin", "mucous membranes", "skin turgor", "mouth"], "result": "Dry skin and mucous membranes."},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "capillary refill", "aliases": ["capillary refill time", "CRT"], "result": "3 seconds."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation"], "result": "Mild epigastric tenderness without guarding."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "neurologic examination"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "metabolic panel", "aliases": ["electrolytes", "basic metabolic panel", "comprehensive metabolic panel", "BMP", "CMP", "sodium", "chloride", "potassium", "bicarbonate", "CO2", "BUN", "creatinine", "calcium", "phosphorus", "glucose", "albumin"], "result": "Sodium 101 mmol/L; chloride 73 mmol/L; potassium 5.2 mmol/L; CO2 16 mmol/L; BUN 20 mg/dL; creatinine 0.8 mg/dL; calcium normal; phosphorus normal; glucose normal; albumin normal."},
+      {"id": "x009", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "lipid panel", "aliases": ["lipid profile", "cholesterol"], "result": "Normal."},
+      {"id": "x011", "kind": "test", "name": "plasma osmolality", "aliases": ["serum osmolality", "osmolality"], "result": "225 mOsm/kg (normal 275–295)"},
+      {"id": "x012", "kind": "test", "name": "urine sodium", "aliases": ["urinary sodium", "spot urine sodium"], "result": "128 mmol/L"},
+      {"id": "x013", "kind": "test", "name": "urine osmolality", "aliases": ["urinary osmolality"], "result": "128 mOsm/kg"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-11265",
+    "diagnosis": "Primary adrenal insufficiency",
+    "aliases": ["Addison's disease", "Addison disease", "primary adrenocortical insufficiency", "primary hypoadrenalism", "primary adrenal failure"],
+    "reasoning": "1. Consideration of nonhypotonic hyponatremia was excluded — “Since hyperglycemia and other causes of nonhypotonic hyponatremia were excluded, our patient had hypotonic hypovolemic hyponatremia.” 2. Diuretic-induced hyponatremia was ruled out — “…no history of diuretic use…” 3. Hypothyroidism was considered a minor contributor — “we also believe that inadequately controlled hypothyroidism due to self‐switching from levothyroxine to animal thyroid extract … may have played a minor role in the development of the hyponatremia.” 4. TMP-SMX was identified as an acute exacerbating factor — “this situation was acutely exacerbated by TMP‐SMX use several days prior.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-11265",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001", "s002"], "f004": ["s002"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s003"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s004"], "f014": ["s004"], "f015": ["s011"], "f016": ["s001"]
+    },
+    "quotes": {
+      "f004": "a 1-month history of poor appetite, fatigue", "f005": "5 days of nausea, vomiting, and fatigue",
+      "f006": "a 1-month history of poor appetite", "f007": "6-kg unintentional weight loss",
+      "f008": "occasional vague abdominal pain", "f009": "recent tanning of her skin",
+      "f010": "17 years of hypothyroidism", "f011": "initially well-controlled on levothyroxine",
+      "f012": "until she switched to animal thyroid extract several months earlier",
+      "f013": "One week before presentation, she began trimethoprim-sulfamethoxazole (TMP-SMX) 160 mg twice daily",
+      "f015": "no history of diuretic use", "f016": "Caucasian woman"
+    },
+    "flags": {
+      "f003": ["Fatigue appears both in the 5-day presentation (s001) and the 1-month history (s002); one fact with the longer duration."],
+      "f012": ["The reasoning calls this a self-switch; the prompt says only 'she switched', so the text does not say who decided."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "On examination, she appeared ill and dehydrated."},
+      "x002": {"sentences": ["s006"], "source_text": "Supine blood pressure was 131/80 mm Hg / standing blood pressure was 107/67 mm Hg"},
+      "x003": {"sentences": ["s006"], "source_text": "with heart rate 81/min / with heart rate 96/min"},
+      "x004": {"sentences": ["s006"], "source_text": "Skin and mucous membranes were dry"},
+      "x005": {"sentences": ["s006"], "source_text": "capillary refill was 3 seconds"},
+      "x006": {"sentences": ["s006"], "source_text": "there was mild epigastric tenderness without guarding"},
+      "x007": {"sentences": ["s007"], "source_text": "Neurologic examination was normal."},
+      "x008": {"sentences": ["s008"], "source_text": "sodium 101 mmol/L, chloride 73 mmol/L, potassium 5.2 mmol/L, CO2 16 mmol/L, BUN 20 mg/dL, creatinine 0.8 mg/dL / normal liver function tests, calcium, phosphorus, glucose, albumin"},
+      "x009": {"sentences": ["s008"], "source_text": "normal liver function tests"},
+      "x010": {"sentences": ["s008"], "source_text": "normal liver function tests, calcium, phosphorus, glucose, albumin, and lipid panel"},
+      "x011": {"sentences": ["s009"], "source_text": "Plasma osmolality was 225 mOsm/kg (normal 275–295)"},
+      "x012": {"sentences": ["s009"], "source_text": "urine sodium 128 mmol/L"},
+      "x013": {"sentences": ["s009"], "source_text": "urine osmolality 128 mOsm/kg"}
+    },
+    "finding_flags": {
+      "x001": ["'Dehydrated' is the examiner's overall impression as written in the source."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Urine sodium (128 mmol/L) and urine osmolality (128 mOsm/kg) have the same number, which may be a copying error.",
+      "Cortisol and ACTH results are not given; s012 only says adrenal function tests were ordered."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation with 5 days of nausea, vomiting and fatigue on a background of a month of poor appetite, weight loss, vague abdominal pain and skin tanning (s001-s009).",
+      "s011 is cited only for 'no history of diuretic use' (f015); its diagnostic label (hypotonic hypovolemic hyponatremia) is the clinician's interpretation and is not a finding.",
+      "Calcium, phosphorus, glucose and albumin are grouped with the metabolic panel; liver function tests and the lipid panel are separate records.",
+      "The sinus infection (f014) is recent history before the index visit; the TMP-SMX started for it is a medication fact."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s010", "reason": "Clinician's reasoning (hyperglycemia and nonhypotonic hyponatremia excluded); no result is given beyond the normal glucose already in x008."},
+      {"id": "s012", "reason": "Clinician's reasoning naming adrenal insufficiency (narrative_conclusion); adrenal function tests were ordered but no results are given."}
+    ]
+  }
+}

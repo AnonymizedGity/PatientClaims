@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-208", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 55, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "tingling pain in the sole of the right foot", "aliases": ["foot pain", "pins and needles in the foot", "tingling foot"], "text": "I get a tingling pain in the sole of my right foot.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "foot pain: duration", "parent": "f001", "attribute": "duration", "text": "It's been happening for the last 6 weeks.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "foot pain: what brings it on", "parent": "f001", "attribute": "aggravating", "aliases": ["during exercise", "raising the leg"], "text": "It comes on during exercise, when I raise my foot above chest level.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "right calf cramps", "aliases": ["calf pain", "leg cramps", "cramping in the calf"], "text": "My right calf cramps up.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "calf cramps: what brings them on", "parent": "f004", "attribute": "aggravating", "aliases": ["walking uphill", "treadmill incline"], "text": "It happens when I use the incline feature on my treadmill.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "calf cramps: effect on exercise", "parent": "f004", "attribute": "severity", "text": "It makes me stop frequently.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "symptoms better with rest", "aliases": ["relief with rest"], "text": "The pain goes away after a few minutes of rest.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "other symptoms", "aliases": ["anything else", "systemic symptoms"], "text": "I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "type 2 diabetes", "aliases": ["diabetes", "high blood sugar"], "text": "I've had type 2 diabetes for 8 years.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "metformin", "aliases": ["diabetes medication", "medications"], "text": "I've been taking metformin for my diabetes for the past 8 years.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke two packs a day, and have for 34 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "regular exercise", "aliases": ["exercise", "working out", "treadmill"], "text": "I started exercising regularly 2 months ago.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-208",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "170/92 mm Hg"},
+      {"id": "x003", "kind": "exam", "system": "cardiovascular", "name": "straight-leg raise test", "aliases": ["straight leg raise", "SLR", "leg elevation test", "Buerger test", "elevation pallor"], "result": "Induces pallor and tingling pain in the right foot, without back pain."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power"], "result": "Normal throughout."},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "peripheral pulses", "aliases": ["pedal pulses", "foot pulses", "femoral pulses", "dorsalis pedis pulse", "posterior tibial pulse", "leg pulses"], "result": "Femoral pulses palpable; right pedal pulses absent."},
+      {"id": "x006", "kind": "test", "name": "fasting blood glucose", "aliases": ["fasting glucose", "blood sugar", "FBG"], "result": "Elevated."},
+      {"id": "x007", "kind": "test", "name": "ankle-brachial index", "aliases": ["ABI", "ankle-brachial pressure index", "ABPI"], "result": "Right: reduced, indicative of peripheral artery disease."},
+      {"id": "x008", "kind": "test", "name": "Doppler ultrasound of the right leg", "aliases": ["arterial duplex ultrasound", "lower extremity Doppler", "leg Doppler", "duplex ultrasound"], "result": "Reduced blood flow and stenosis in the femoropopliteal artery segment."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-208",
+    "diagnosis": "Femoropopliteal artery stenosis",
+    "aliases": ["femoropopliteal stenosis", "femoropopliteal arterial stenosis", "stenosis of the femoropopliteal artery", "superficial femoral artery stenosis", "popliteal artery stenosis", "femoropopliteal atherosclerotic stenosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-208",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-208-p001"], "f002": ["agentclinic-medqa-ext-208-p001"], "f003": ["cc", "agentclinic-medqa-ext-208-p001"],
+      "f004": ["agentclinic-medqa-ext-208-p001", "agentclinic-medqa-ext-208-p002"], "f005": ["agentclinic-medqa-ext-208-p001", "agentclinic-medqa-ext-208-p002"],
+      "f006": ["agentclinic-medqa-ext-208-p001"], "f007": ["agentclinic-medqa-ext-208-p001", "agentclinic-medqa-ext-208-p003"],
+      "f008": ["agentclinic-medqa-ext-208-p006"], "f009": ["agentclinic-medqa-ext-208-p001", "agentclinic-medqa-ext-208-p004"],
+      "f010": ["agentclinic-medqa-ext-208-p004"], "f011": ["agentclinic-medqa-ext-208-p001", "agentclinic-medqa-ext-208-p005"],
+      "f012": ["agentclinic-medqa-ext-208-p001"]
+    },
+    "quotes": {
+      "f001": "Tingling pain in the sole of the right foot", "f002": "for the last 6 weeks", "f003": "when he raises his foot above chest level during exercises",
+      "f005": "his right calf cramps when using the incline feature on his treadmill", "f006": "requiring him to stop frequently",
+      "f007": "The pain subsides after a few minutes of rest.", "f008": "No other systemic symptoms reported.",
+      "f009": "type 2 diabetes mellitus for 8 years", "f010": "managed with metformin for the past 8 years",
+      "f011": "two packs per day for 34 years", "f012": "He started exercising regularly 2 months ago"
+    },
+    "flags": {
+      "f007": ["'The pain subsides after a few minutes of rest' follows the calf-cramp sentence but may cover both complaints; kept as a standalone fact for both."],
+      "f011": ["'34-year history of smoking two packs per day' is read as current smoking."],
+      "f001": ["System 'neurological' follows the patient's description (tingling); the cause is vascular."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Pulse", "source_text": "82/min", "exam_ids": ["agentclinic-medqa-ext-208-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "170/92 mm Hg", "exam_ids": ["agentclinic-medqa-ext-208-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Neurovascular_Examination.Straight_Leg_Raise_Test", "source_text": "Induces pallor and tingling pain in the right foot, without back pain", "exam_ids": ["agentclinic-medqa-ext-208-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Neurovascular_Examination.Muscle_Strength", "source_text": "Normal throughout", "exam_ids": ["agentclinic-medqa-ext-208-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurovascular_Examination.Pulses", "source_text": "Femoral pulses palpable, right pedal pulses absent", "exam_ids": ["agentclinic-medqa-ext-208-e005"]},
+      "x006": {"source": "Test_Results.Blood_Glucose.Fasting_Blood_Glucose", "source_text": "Elevated", "exam_ids": ["agentclinic-medqa-ext-208-i001"]},
+      "x007": {"source": "Test_Results.Ankle-Brachial_Index.Right", "source_text": "Reduced, indicative of peripheral artery disease", "exam_ids": ["agentclinic-medqa-ext-208-i002"]},
+      "x008": {"source": "Test_Results.Doppler_Ultrasound_Right_Lower_Extremity.Findings", "source_text": "Reduced blood flow and stenosis in the femoropopliteal artery segment", "exam_ids": ["agentclinic-medqa-ext-208-i003"]}
+    },
+    "finding_flags": {
+      "x003": ["The source calls this a straight-leg raise, but the finding (pallor and foot pain on elevation, no back pain) is the leg-elevation (Buerger) response; 'Buerger test' and 'leg elevation test' are aliases so either request gets it. System set to cardiovascular for that reason."],
+      "x007": ["Only the right ABI is reported, with no numeric value."]
+    },
+    "leakage": [
+      {"id": "x008", "reason": "The Doppler result states the gold diagnosis (stenosis in the femoropopliteal segment); kept because it is the imaging answer."},
+      {"id": "x007", "reason": "The ABI result names peripheral artery disease, a broader category containing the gold diagnosis; kept as the source interpretation."}
+    ],
+    "source_issues": [
+      "The 'straight leg raise test' result describes elevation pallor, which is Buerger's test, not a nerve-root test.",
+      "No temperature or respiratory rate is given.",
+      "The ankle-brachial index and fasting glucose are qualitative ('Reduced', 'Elevated') with no values."
+    ],
+    "notes": [
+      "Foot pain and calf cramps keep separate triggers (raising the foot above chest level during exercise; treadmill incline). Relief with rest is a standalone fact because it is not clear which pain it refers to.",
+      "Diabetes is a prior diagnosis the patient knows, so its name stays in the patient text.",
+      "Finding names and aliases avoid the gold words 'artery' and 'stenosis'; 'arterial' is used where needed."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate a 55-year-old man presenting with foot pain and cramping during exercise, and diagnose the underlying condition."
+    }
+  }
+}

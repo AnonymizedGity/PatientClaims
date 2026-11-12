@@ -1,0 +1,63 @@
+{
+ "case_id": "mcr-test-13753",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've had a fever.",
+   "I've had chills.",
+   "My skin and the whites of my eyes have turned yellow.",
+   "That started 2 days ago.",
+   "The fever and chills started 5 days ago.",
+   "Three months ago I had my gallbladder removed by keyhole surgery.",
+   "The gallstones caused an infection of the bile ducts, cholangitis, and that's why my gallbladder was taken out.",
+   "I'm Asian."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm Asian. I've had a fever and chills for the last five days, and two days ago my skin and the whites of my eyes turned yellow. This is all following my gallbladder removal three months ago, which was done because gallstones caused an infection of the bile ducts.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f005",
+    "f003",
+    "f006",
+    "f008",
+    "f010"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "unsupported",
+      "quote": "I'm a 42-year-old",
+      "fix": "I'm Asian."
+     }
+    ],
+    "check_problems": [],
+    "draft": "I'm a 42-year-old Asian woman. I've had a fever and chills for the last five days, and two days ago my skin and the whites of my eyes turned yellow. This is all following my gallbladder removal three months ago, which was done because gallstones caused an infection of the bile ducts.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 5698,
+   "tokens_out": 174,
+   "seconds": 22.23,
+   "redrafts": 0
+  }
+ }
+}

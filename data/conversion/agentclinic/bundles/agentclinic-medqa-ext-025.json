@@ -1,0 +1,115 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-025",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 40, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "difficulty breathing"], "text": "I've been short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "increase in belly size", "aliases": ["abdominal swelling", "increased abdominal girth", "bloating"], "text": "My belly has gotten noticeably bigger.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "how long the breathlessness and belly swelling have been going on", "text": "The shortness of breath and my belly getting bigger have both been going on over the past month.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "tiredness", "aliases": ["fatigue", "low energy"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "weight change", "aliases": ["weight loss", "weight gain"], "text": "I haven't had any significant weight loss or gain.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "previous surgeries", "aliases": ["operations"], "text": "I haven't had any surgeries.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "regular medications", "aliases": ["medicines", "pills"], "text": "I don't take any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "previous childbirths", "aliases": ["children", "deliveries"], "text": "I've never given birth.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "regular alcohol use", "aliases": ["alcohol", "drinking"], "text": "I don't drink alcohol regularly.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a high school teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f016", "item": "leg swelling", "aliases": ["swollen ankles", "swollen legs"], "text": "My legs aren't swollen.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f017", "item": "change in bowel habits", "aliases": ["constipation", "diarrhea"], "text": "I haven't noticed any change in my bowel habits.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f018", "item": "change in urinary habits", "aliases": ["urinary problems", "peeing more often"], "text": "I haven't noticed any change in my urinary habits.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-025",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "125/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "85/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "20/min"},
+      {"id": "x005", "kind": "exam", "system": "respiratory", "name": "chest examination", "aliases": ["lung examination", "respiratory examination", "chest auscultation", "chest percussion"], "result": "Inspection: mild use of accessory muscles to breathe; percussion: dullness over the right lower lung fields; auscultation: decreased breath sounds at the right base."},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation"], "result": "Inspection: visible distension; auscultation: normal bowel sounds; palpation: non-tender."},
+      {"id": "x007", "kind": "exam", "system": "gastrointestinal", "name": "shifting dullness", "aliases": ["abdominal percussion", "test for ascites"], "result": "Present."},
+      {"id": "x008", "kind": "exam", "system": "gastrointestinal", "name": "fluid wave test", "aliases": ["fluid thrill"], "result": "Positive."},
+      {"id": "x009", "kind": "exam", "system": "reproductive", "name": "pelvic examination", "aliases": ["bimanual examination", "gynecological examination", "vaginal examination"], "result": "Palpable mass on the right side of the pelvis."},
+      {"id": "x010", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "hemoglobin", "platelets"], "result": "WBC 8,500/μL; hemoglobin 12.8 g/dL; platelets 275,000/μL."},
+      {"id": "x011", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "Right-sided pleural effusion."},
+      {"id": "x012", "kind": "test", "name": "abdominal ultrasound", "aliases": ["ultrasound of the abdomen", "pelvic ultrasound"], "result": "Large mass in the right ovary; significant ascites."},
+      {"id": "x013", "kind": "test", "name": "CA-125", "aliases": ["CA 125", "cancer antigen 125", "tumor marker"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-025",
+    "diagnosis": "Meigs syndrome",
+    "aliases": ["Meigs' syndrome", "Meig syndrome", "Demons-Meigs syndrome", "Meigs-Salmon syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-025",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-025-p001"],
+      "f002": ["agentclinic-medqa-ext-025-p001", "agentclinic-medqa-ext-025-p002"],
+      "f003": ["agentclinic-medqa-ext-025-p001"],
+      "f004": ["agentclinic-medqa-ext-025-p003"],
+      "f005": ["agentclinic-medqa-ext-025-p004"],
+      "f006": ["agentclinic-medqa-ext-025-p001", "agentclinic-medqa-ext-025-p005"],
+      "f007": ["agentclinic-medqa-ext-025-p001"],
+      "f008": ["agentclinic-medqa-ext-025-p001"],
+      "f009": ["demographics_text"],
+      "f010": ["agentclinic-medqa-ext-025-p006"],
+      "f011": ["agentclinic-medqa-ext-025-p006"],
+      "f012": ["agentclinic-medqa-ext-025-p006"],
+      "f013": ["agentclinic-medqa-ext-025-p007"],
+      "f014": ["agentclinic-medqa-ext-025-p007"],
+      "f015": ["agentclinic-medqa-ext-025-p007"],
+      "f016": ["agentclinic-medqa-ext-025-p007"],
+      "f017": ["agentclinic-medqa-ext-025-p007"],
+      "f018": ["agentclinic-medqa-ext-025-p007"]
+    },
+    "quotes": {
+      "f002": "noticeable increase in abdominal size",
+      "f003": "over the past month",
+      "f005": "No significant weight loss or gain",
+      "f007": "previous surgeries",
+      "f008": "or use of medications",
+      "f011": "does not consume alcohol regularly",
+      "f012": "Works as a high school teacher",
+      "f016": "swelling in the legs",
+      "f017": "changes in bowel or urinary habits",
+      "f018": "changes in bowel or urinary habits"
+    },
+    "flags": {
+      "f009": ["From demographics_text ('40-year-old nulliparous woman'), which is not a patient fragment; cited as 'demographics_text'. Nulliparous means she has never given birth (not necessarily never pregnant), so 'pregnancies' is not an alias."],
+      "f005": ["She reports no significant weight change despite a visibly larger abdomen; kept as given."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-025-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "125/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-025-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "85 bpm", "exam_ids": ["agentclinic-medqa-ext-025-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "20 breaths/min", "exam_ids": ["agentclinic-medqa-ext-025-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Respiratory_Examination.Inspection + Physical_Examination_Findings.Respiratory_Examination.Percussion + Physical_Examination_Findings.Respiratory_Examination.Auscultation", "source_text": "Mild use of accessory muscles to breathe. + Dullness noted on the right lower lung fields. + Decreased breath sounds on the right basal areas.", "exam_ids": ["agentclinic-medqa-ext-025-e005", "agentclinic-medqa-ext-025-e006", "agentclinic-medqa-ext-025-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Visible distension. + Normal bowel sounds. + Non-tender, fluid wave positive.", "exam_ids": ["agentclinic-medqa-ext-025-e008", "agentclinic-medqa-ext-025-e009", "agentclinic-medqa-ext-025-e011"]},
+      "x007": {"source": "Physical_Examination_Findings.Abdominal_Examination.Percussion", "source_text": "Shifting dullness suggestive of ascites.", "exam_ids": ["agentclinic-medqa-ext-025-e010"]},
+      "x008": {"source": "Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Non-tender, fluid wave positive.", "exam_ids": ["agentclinic-medqa-ext-025-e011"]},
+      "x009": {"source": "Physical_Examination_Findings.Pelvic_Examination.Findings", "source_text": "A palpable mass on the right side of the pelvis.", "exam_ids": ["agentclinic-medqa-ext-025-e012"]},
+      "x010": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "8,500 /μL + 12.8 g/dL + 275,000 /μL", "exam_ids": ["agentclinic-medqa-ext-025-i001", "agentclinic-medqa-ext-025-i002", "agentclinic-medqa-ext-025-i003"]},
+      "x011": {"source": "Test_Results.Chest_X-Ray.Findings", "source_text": "Right-sided pleural effusion", "exam_ids": ["agentclinic-medqa-ext-025-i004"]},
+      "x012": {"source": "Test_Results.Abdominal_Ultrasound.Findings", "source_text": "Large mass in the right ovary, significant ascites present.", "exam_ids": ["agentclinic-medqa-ext-025-i005"]},
+      "x013": {"source": "Test_Results.CA-125.Level", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-025-i006"]}
+    },
+    "finding_flags": {
+      "x006": ["The palpation leaf ('Non-tender, fluid wave positive') is split: tenderness stays in the abdominal examination, the fluid wave goes to its own special-test record (x008)."],
+      "x007": ["The whole percussion leaf is the shifting-dullness maneuver; following CONVERSION.md, named special tests get their own record, so abdominal percussion is reached through this record's alias.", "Source interpretation removed from the result (source: 'Present, suggestive of ascites.'); a bedside examination returns the finding, not the diagnosis."]
+    },
+    "leakage": [],
+    "source_issues": ["The objective line shown to the doctor already names 'a large ovarian mass' and 'increased abdominal girth'."],
+    "notes": ["The one-month duration covers both the shortness of breath and the abdominal enlargement, so it is a standalone fact (f003).", "The History's 'denies any significant medical history, previous surgeries, or use of medications' gives three denials (f006 to f008); f006 also cites Past_Medical_History.", "Shifting dullness and the fluid wave are treated as named special tests (CONVERSION.md) and each gets its own record; the rest of the abdominal exam (inspection, auscultation, non-tender palpation) is one record.", "'Changes in bowel or urinary habits' is split into two denials (f017, f018)."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with shortness of breath, increased abdominal girth, and a large ovarian mass."
+    }
+  }
+}

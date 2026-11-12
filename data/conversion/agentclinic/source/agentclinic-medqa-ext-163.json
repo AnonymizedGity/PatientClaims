@@ -1,0 +1,90 @@
+{
+  "case_id": "agentclinic-medqa-ext-163",
+  "source_row": 163,
+  "demographics_text": "38-year-old female",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with a painless, nonpruritic skin lesion on her right thigh.",
+  "chief_complaint": "Painless, nonpruritic skin lesion on right thigh",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-163-p001",
+      "field": "History",
+      "text": "The patient presents with a 1-month history of a painless, nonpruritic skin lesion on her right thigh. She initially thought it was an insect bite but noticed that it has slowly increased in size over the past weeks."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-163-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Slow increase in size over the past month"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-163-p003",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical or dermatologic history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-163-p004",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks socially. Works as a teacher."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-163-p005",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, night sweats, or recent travel."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-163-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.7°C (98°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-163-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "128/76 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-163-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "75 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-163-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-163-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "A 0.8-cm hyperpigmented papule on the right thigh."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-163-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "The lesion retracts inward when squeezed (dimple sign)."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-163-e007",
+      "path": "Physical_Examination_Findings.Skin_Examination.Additional_Features",
+      "text": "No discharge, erythema, or warmth surrounding the lesion."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-163-i001",
+      "path": "Test_Results.Dermoscopic_Examination.Findings",
+      "text": "Central white patch and peripheral pigment network, indicative of a benign process."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-163-i002",
+      "path": "Test_Results.Biopsy.Histopathology",
+      "text": "Positive for dermatofibroma, showing a benign proliferation of fibroblasts."
+    }
+  ],
+  "correct_diagnosis": "Dermatofibroma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

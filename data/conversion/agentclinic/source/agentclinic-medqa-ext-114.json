@@ -1,0 +1,138 @@
+{
+  "case_id": "agentclinic-medqa-ext-114",
+  "source_row": 114,
+  "demographics_text": "20-year-old male college student",
+  "objective_for_doctor": "Assess and manage a patient presenting with symptoms of food poisoning, taking into account the history of presentation and clinical findings.",
+  "chief_complaint": "Abdominal cramps",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-114-p001",
+      "field": "History",
+      "text": "The patient presents with complaints of abdominal cramps, nausea, vomiting, and diarrhea which started 2 hours ago. Reports eating reheated food from the afternoon about an hour before symptoms started. Denies any recent travel, sick contacts, or similar symptoms in people around him."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-114-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-114-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Vomiting"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-114-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Diarrhea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-114-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant medical or surgical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-114-p006",
+      "field": "Social_History",
+      "text": "College student, reports studying for exams late at night. No recent travel. No history of alcohol or drug abuse."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-114-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, headache, rash, chest pain, dysuria, or cough."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "37°C (98.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "90/78 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "106 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "15 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e005",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Inspection",
+      "text": "No distension or visible rashes."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e006",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Auscultation",
+      "text": "Hyperactive bowel sounds."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e007",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Percussion",
+      "text": "Tympanic throughout, no dullness."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-e008",
+      "path": "Physical_Examination_Findings.Abdominal_Examination.Palpation",
+      "text": "Diffuse abdominal tenderness without guarding or rebound. No hepatosplenomegaly."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "9,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "14 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "300,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i004",
+      "path": "Test_Results.Electrolytes.Sodium",
+      "text": "138 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i005",
+      "path": "Test_Results.Electrolytes.Potassium",
+      "text": "3.9 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i006",
+      "path": "Test_Results.Electrolytes.Chloride",
+      "text": "100 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i007",
+      "path": "Test_Results.Electrolytes.Bicarbonate",
+      "text": "24 mEq/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i008",
+      "path": "Test_Results.Stool_Culture",
+      "text": "Pending"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-114-i009",
+      "path": "Test_Results.Blood_Cultures",
+      "text": "No growth in 24 hours"
+    }
+  ],
+  "correct_diagnosis": "Bacillus cereus infection",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

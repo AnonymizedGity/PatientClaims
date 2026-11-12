@@ -1,0 +1,976 @@
+{
+  "case_id": "medqa-cs-015",
+  "demographics": {
+    "name": "Patricia Garriman",
+    "age": 36,
+    "sex": "female",
+    "setting": "office"
+  },
+  "opening_fact": {
+    "text": "I haven't had my menstrual period for the past three months.",
+    "source_ids": [
+      "cc"
+    ]
+  },
+  "patient_facts": [
+    {
+      "id": "medqa-cs-015-f001",
+      "source_ids": [
+        "cc"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has not had a menstrual period for the past three months.",
+      "quote": "I haven't had my menstrual period for the past three months."
+    },
+    {
+      "id": "medqa-cs-015-f002",
+      "source_ids": [
+        "medqa-cs-015-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Before the past year, periods were regular, every month, lasting 4 to 5 days.",
+      "quote": "I used to have regular periods every month lasting for 4 to 5 days"
+    },
+    {
+      "id": "medqa-cs-015-f003",
+      "source_ids": [
+        "medqa-cs-015-p001"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Over the past year, periods have come less often, every 5 to 6 weeks, lasting 7 days.",
+      "quote": "over the past year, I started having them less frequently – every 5 to 6 weeks, lasting for 7 days."
+    },
+    {
+      "id": "medqa-cs-015-f004",
+      "source_ids": [
+        "medqa-cs-015-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Previously used 2 to 3 pads a day during her period.",
+      "quote": "It was 2 to 3 a day"
+    },
+    {
+      "id": "medqa-cs-015-f005",
+      "source_ids": [
+        "medqa-cs-015-p002"
+      ],
+      "category": "symptoms",
+      "subtype": "hpi",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Menstrual flow has become lighter; she now uses only one pad a day.",
+      "quote": "the blood flow is becoming less, and I use only one pad a day now."
+    },
+    {
+      "id": "medqa-cs-015-f006",
+      "source_ids": [
+        "medqa-cs-015-p003"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Menarche at age 14.",
+      "quote": "Age 14."
+    },
+    {
+      "id": "medqa-cs-015-f007",
+      "source_ids": [
+        "medqa-cs-015-p004"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Gained 15 pounds in the last year.",
+      "quote": "I've put on 15 pounds in the last year."
+    },
+    {
+      "id": "medqa-cs-015-f008",
+      "source_ids": [
+        "medqa-cs-015-p005"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No cold intolerance.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p005) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f009",
+      "source_ids": [
+        "medqa-cs-015-p006"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Recently noticed some hair on her chin, which she has been plucking.",
+      "quote": "Actually, I recently noticed some hair on my chin that I have been plucking."
+    },
+    {
+      "id": "medqa-cs-015-f010",
+      "source_ids": [
+        "medqa-cs-015-p006",
+        "note"
+      ],
+      "from_note": true,
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No dry skin.",
+      "quote": "denies dry skin",
+      "flags": [
+        "The script answer to 'changes in your skin or hair?' mentions only chin hair; the denial of dry skin comes from the note HPI."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f011",
+      "source_ids": [
+        "medqa-cs-015-p007"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in her voice.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p007) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f012",
+      "source_ids": [
+        "medqa-cs-015-p008"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No change in bowel habits.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p008) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f013",
+      "source_ids": [
+        "medqa-cs-015-p009"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has a good appetite.",
+      "quote": "I have a good appetite."
+    },
+    {
+      "id": "medqa-cs-015-f014",
+      "source_ids": [
+        "medqa-cs-015-p010"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not follow a fad diet or take diet pills to lose weight.",
+      "quote": "No"
+    },
+    {
+      "id": "medqa-cs-015-f015",
+      "source_ids": [
+        "medqa-cs-015-p010"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Has been a vegetarian for 10 years.",
+      "quote": "I've been a vegetarian for 10 years."
+    },
+    {
+      "id": "medqa-cs-015-f016",
+      "source_ids": [
+        "medqa-cs-015-p011"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No fatigue.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p011) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f017",
+      "source_ids": [
+        "medqa-cs-015-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Not feeling depressed lately.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p012) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f018",
+      "source_ids": [
+        "medqa-cs-015-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Not feeling anxious lately.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p012) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f019",
+      "source_ids": [
+        "medqa-cs-015-p012"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Not feeling stressed out lately.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p012) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f020",
+      "source_ids": [
+        "medqa-cs-015-p013"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No hot flashes.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p013) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f021",
+      "source_ids": [
+        "medqa-cs-015-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vaginal dryness.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p014) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f022",
+      "source_ids": [
+        "medqa-cs-015-p014"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No vaginal itching.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p014) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f023",
+      "source_ids": [
+        "medqa-cs-015-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No difficulty falling or staying asleep.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p015) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f024",
+      "source_ids": [
+        "medqa-cs-015-p015"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No snoring.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p015) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f025",
+      "source_ids": [
+        "medqa-cs-015-p016"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Not urinating more often than usual.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p016) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f026",
+      "source_ids": [
+        "medqa-cs-015-p017"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Noticed some milky discharge from her left breast just last week.",
+      "quote": "Yes, I noticed some milky discharge from my left breast just last week."
+    },
+    {
+      "id": "medqa-cs-015-f027",
+      "source_ids": [
+        "medqa-cs-015-p018"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No changes in vision.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p018) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f028",
+      "source_ids": [
+        "medqa-cs-015-p019"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No headaches.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p019) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f029",
+      "source_ids": [
+        "medqa-cs-015-p020"
+      ],
+      "category": "symptoms",
+      "subtype": "ros",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No abdominal pain.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p020) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f030",
+      "source_ids": [
+        "medqa-cs-015-p021"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "sexual",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Sexually active with her husband, once a week on average.",
+      "quote": "Once a week on average with my husband."
+    },
+    {
+      "id": "medqa-cs-015-f031",
+      "source_ids": [
+        "medqa-cs-015-p022",
+        "medqa-cs-015-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes oral contraceptive pills for contraception, the same pills for 8 years.",
+      "quote": "The same birth control pills for 8 years. / oral contraceptive pills for 8 years."
+    },
+    {
+      "id": "medqa-cs-015-f032",
+      "source_ids": [
+        "medqa-cs-015-p023"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Takes the birth control pills regularly as prescribed.",
+      "quote": "Yes, I take them regularly as prescribed."
+    },
+    {
+      "id": "medqa-cs-015-f033",
+      "source_ids": [
+        "medqa-cs-015-p024"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Has been pregnant before; has one child, a 10-year-old son.",
+      "quote": "I have one child; he is 10 years old."
+    },
+    {
+      "id": "medqa-cs-015-f034",
+      "source_ids": [
+        "medqa-cs-015-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No complications during the pregnancy or delivery; the delivery was uncomplicated.",
+      "quote": "No, the delivery was uncomplicated"
+    },
+    {
+      "id": "medqa-cs-015-f035",
+      "source_ids": [
+        "medqa-cs-015-p025"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Her son is well.",
+      "quote": "my baby is well."
+    },
+    {
+      "id": "medqa-cs-015-f036",
+      "source_ids": [
+        "medqa-cs-015-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Never had a miscarriage.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p026) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f037",
+      "source_ids": [
+        "medqa-cs-015-p026"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "ob_gyn",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Never had an abortion.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p026) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f038",
+      "source_ids": [
+        "medqa-cs-015-p027"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "preventive",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Last Pap smear was ten months ago and was normal.",
+      "quote": "Ten months ago. It was normal."
+    },
+    {
+      "id": "medqa-cs-015-f039",
+      "source_ids": [
+        "medqa-cs-015-p028"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "preventive",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Never had an abnormal Pap smear.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p028) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f040",
+      "source_ids": [
+        "medqa-cs-015-p029"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "medications",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Takes no other medications besides the oral contraceptive pills.",
+      "quote": "None, other than oral contraceptive pills"
+    },
+    {
+      "id": "medqa-cs-015-f041",
+      "source_ids": [
+        "medqa-cs-015-p030"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "pmh",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No other known medical problems.",
+      "quote": "None."
+    },
+    {
+      "id": "medqa-cs-015-f042",
+      "source_ids": [
+        "medqa-cs-015-p031"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "psh",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "No previous surgery.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p031) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f043",
+      "source_ids": [
+        "medqa-cs-015-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Both parents are in good health.",
+      "quote": "Both my parents are in good health"
+    },
+    {
+      "id": "medqa-cs-015-f044",
+      "source_ids": [
+        "medqa-cs-015-p032"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "family",
+      "assertion": "present",
+      "temporality": "historical",
+      "text": "Mother went through menopause at age 55.",
+      "quote": "my mother experienced menopause at 55."
+    },
+    {
+      "id": "medqa-cs-015-f045",
+      "source_ids": [
+        "medqa-cs-015-p033"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Works as a nurse.",
+      "quote": "Nurse."
+    },
+    {
+      "id": "medqa-cs-015-f046",
+      "source_ids": [
+        "medqa-cs-015-p034"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not drink alcohol.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p034) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f047",
+      "source_ids": [
+        "medqa-cs-015-p035"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "historical",
+      "text": "Has never used recreational substances.",
+      "quote": "I have never used them."
+    },
+    {
+      "id": "medqa-cs-015-f048",
+      "source_ids": [
+        "medqa-cs-015-p036"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "Does not smoke cigarettes.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p036) — denial confirmed."
+      ]
+    },
+    {
+      "id": "medqa-cs-015-f049",
+      "source_ids": [
+        "medqa-cs-015-p037"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "social",
+      "assertion": "present",
+      "temporality": "current",
+      "text": "Runs 2 miles three times a week.",
+      "quote": "I run 2 miles three times a week."
+    },
+    {
+      "id": "medqa-cs-015-f050",
+      "source_ids": [
+        "medqa-cs-015-p038"
+      ],
+      "category": "history_and_exposures",
+      "subtype": "allergies",
+      "assertion": "absent",
+      "temporality": "current",
+      "text": "No known allergies.",
+      "quote": "No, I do not.",
+      "flags": [
+        "Sep-2024 template answer; the June-2024 release reads 'No.' (p038) — denial confirmed."
+      ]
+    }
+  ],
+  "excluded_source_ids": [],
+  "persona": {
+    "acting_notes": [],
+    "patient_questions": [
+      "Am I experiencing menopause?"
+    ]
+  },
+  "clinical_environment": {
+    "vital_signs": [
+      {
+        "id": "v001",
+        "source": "doorway",
+        "name": "Blood pressure",
+        "finding": "120/85 mm Hg",
+        "source_text": "BP: 120/85 mm Hg"
+      },
+      {
+        "id": "v002",
+        "source": "doorway",
+        "name": "Temperature",
+        "finding": "98.0°F (36.7°C)",
+        "source_text": "Temp: 98.0°F (36.7°C)"
+      },
+      {
+        "id": "v003",
+        "source": "doorway",
+        "name": "Respiratory rate",
+        "finding": "13/minute",
+        "source_text": "RR: 13/minute"
+      },
+      {
+        "id": "v004",
+        "source": "doorway",
+        "name": "Heart rate",
+        "finding": "65/minute, regular",
+        "source_text": "HR: 65/minute, regular"
+      },
+      {
+        "id": "v005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e002"
+        ],
+        "name": "Vital signs",
+        "finding": "Within normal limits",
+        "source_text": "VS: WNL"
+      }
+    ],
+    "physical_examination": [
+      {
+        "id": "x001",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e001"
+        ],
+        "system": "General",
+        "name": "General appearance",
+        "finding": "Not in acute distress",
+        "source_text": "Patient is not in acute distress."
+      },
+      {
+        "id": "x002",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e003"
+        ],
+        "system": "HEENT",
+        "name": "Extraocular movements",
+        "finding": "Intact, without diplopia",
+        "source_text": "HEENT: EOMI without diplopia or lid lag; visual fields full to confrontation."
+      },
+      {
+        "id": "x003",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e003"
+        ],
+        "system": "HEENT",
+        "name": "Eyelids",
+        "finding": "No lid lag",
+        "source_text": "HEENT: EOMI without diplopia or lid lag; visual fields full to confrontation."
+      },
+      {
+        "id": "x004",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e003"
+        ],
+        "system": "HEENT",
+        "name": "Visual fields",
+        "finding": "Full to confrontation",
+        "source_text": "HEENT: EOMI without diplopia or lid lag; visual fields full to confrontation."
+      },
+      {
+        "id": "x005",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e004"
+        ],
+        "system": "Neck",
+        "name": "Thyroid",
+        "finding": "No thyromegaly",
+        "source_text": "Neck: No thyromegaly."
+      },
+      {
+        "id": "x006",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e005"
+        ],
+        "system": "Chest",
+        "name": "Lung auscultation",
+        "finding": "Clear breath sounds bilaterally",
+        "source_text": "Chest: Clear breath sounds bilaterally."
+      },
+      {
+        "id": "x007",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e006"
+        ],
+        "system": "Heart",
+        "name": "Rate and rhythm",
+        "finding": "Regular rate and rhythm",
+        "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x008",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e006"
+        ],
+        "system": "Heart",
+        "name": "Heart sounds",
+        "finding": "S1 and S2 within normal limits",
+        "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x009",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e006"
+        ],
+        "system": "Heart",
+        "name": "Murmurs, rubs, gallops",
+        "finding": "No murmurs, rubs, or gallops",
+        "source_text": "Heart: RRR; S1/S2 WNL; no murmurs, rubs, or gallops."
+      },
+      {
+        "id": "x010",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Palpation",
+        "finding": "Soft, nontender, nondistended",
+        "source_text": "Abdomen: Soft, nontender, nondistended, EF> bowel sounds x 4 quadrants, no hepatosplenomegaly."
+      },
+      {
+        "id": "x011",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Bowel sounds",
+        "finding": "Bowel sounds present in all four quadrants",
+        "source_text": "Abdomen: Soft, nontender, nondistended, EF> bowel sounds x 4 quadrants, no hepatosplenomegaly.",
+        "flags": [
+          "Source reads 'EF> bowel sounds x 4 quadrants' — OCR artifact, most likely '+'."
+        ]
+      },
+      {
+        "id": "x012",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e007"
+        ],
+        "system": "Abdomen",
+        "name": "Liver and spleen",
+        "finding": "No hepatosplenomegaly",
+        "source_text": "Abdomen: Soft, nontender, nondistended, EF> bowel sounds x 4 quadrants, no hepatosplenomegaly."
+      },
+      {
+        "id": "x013",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e008"
+        ],
+        "system": "Extremities",
+        "name": "Edema",
+        "finding": "No edema",
+        "source_text": "Extremities: No edema, no tremor."
+      },
+      {
+        "id": "x014",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e008"
+        ],
+        "system": "Extremities",
+        "name": "Tremor",
+        "finding": "No tremor",
+        "source_text": "Extremities: No edema, no tremor."
+      },
+      {
+        "id": "x015",
+        "source": "patient_note",
+        "exam_ids": [
+          "medqa-cs-015-e009"
+        ],
+        "system": "Neuro",
+        "name": "Deep tendon reflexes",
+        "finding": "Normal in the lower extremities bilaterally (eye findings: see HEENT)",
+        "source_text": "Neuro: See HEENT. Normal DTRs in lower extremities bilaterally."
+      }
+    ],
+    "investigations": []
+  },
+  "excluded_exam_ids": [],
+  "gold": {
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Hyperprolactinemia",
+        "history_findings": [
+          "Galactorrhea",
+          "Oligomenorrhea"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Polycystic ovary syndrome",
+        "history_findings": [
+          "Weight gain",
+          "Hirsutism",
+          "Oligomenorrhea"
+        ],
+        "exam_findings": []
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Pregnancy",
+        "history_findings": [
+          "Change in menstrual cycles",
+          "Regular sexual activity",
+          "Previous successful pregnancy"
+        ],
+        "exam_findings": []
+      }
+    ],
+    "additional_considerations": [
+      {
+        "diagnosis": "Thyroid disease",
+        "rationale": "Hyper- and especially hypothyroidism can cause menstrual irregularity, but apart from galactorrhea and weight gain she has no thyroid signs or symptoms."
+      },
+      {
+        "diagnosis": "Premature ovarian failure",
+        "rationale": "Primary hypogonadism before age 40; unlikely because she lacks menopausal symptoms such as hot flashes, fatigue, insomnia or depression."
+      }
+    ],
+    "leakage_check": "none"
+  },
+  "qc": {
+    "source_issues": [
+      "The sp_notes field reads 'None. (The given text is already error-free.)', an artifact of an automatic text rewrite; treated as no SP notes.",
+      "Exam e007 contains the OCR artifact 'EF> bowel sounds x 4 quadrants' (probably '+ bowel sounds'); recorded with the artifact noted (x011).",
+      "p002 says she 'now' uses one pad a day, although the chief complaint is no period for three months.",
+      "Several answers read 'No, I do not.' to past-tense or 'ever' questions (surgery p031, miscarriage/abortion p026, abnormal Pap p028, allergies p038); the meaning (denial) is clear.",
+      "The skin/hair answer (p006) mentions only chin hair; the note's denial of dry skin is not in the script (added as from_note fact f010).",
+      "The sample closure addresses 'Mrs. Garrison' instead of Garriman; not used."
+    ],
+    "annotator_notes": [
+      "The chief complaint carries the 3-month duration, so it is both the opening fact and patient fact f001 (source 'cc').",
+      "Temporality: the regular monthly cycles and 2-3 pads a day before the past year are 'historical'; the past-year change (cycles every 5-6 weeks, lighter flow) is treated as part of the current problem ('current'), as the patient describes it in the present tense.",
+      "OCP use from p022 and p029 combined into f031; compliance (p023) and 'no other medications' (p029) are separate facts.",
+      "p010 'No, I've been a vegetarian for 10 years' is split into no fad diet/diet pills (absent) and vegetarian for 10 years (present).",
+      "No acting notes: the case has no SP notes.",
+      "Reviewer edit: environment commentary moved from `finding` to `flags` for x011.",
+      "18 template answers (No, I do not.) checked against the June-2024 release: all are plain denials there; 23 facts confirmed."
+    ]
+  }
+}

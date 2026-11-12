@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-173", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 24, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "headache", "text": "I have a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: severity", "parent": "f001", "attribute": "severity", "value": 10, "scale": [0, 10], "text": "It's severe, a 10 out of 10.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "headache: worse with chewing", "parent": "f001", "attribute": "aggravating", "text": "It gets worse when I chew.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "headache: character", "parent": "f001", "attribute": "character", "text": "It's a dull ache.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "headache: location", "parent": "f001", "attribute": "location", "text": "It's over the sides of my head.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "headache: similar headaches before", "parent": "f001", "attribute": "other", "text": "This headache is new. I've never had anything like it before.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f007", "item": "recent illness", "aliases": ["been sick recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "recent injury", "aliases": ["head injury", "head trauma", "trauma"], "text": "I haven't had any injuries recently, including to my head.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "stress", "aliases": ["stressors", "stressful events"], "text": "I haven't had any significant stress lately.", "polarity": "absent", "category": "social_background", "time": "current"},
+      {"id": "f010", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "vision changes", "aliases": ["blurry vision", "trouble seeing"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f012", "item": "nausea", "text": "I don't feel nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "weakness", "text": "I don't have any weakness.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f015", "item": "numbness", "text": "I don't have any numbness.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f016", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f017", "item": "current medications", "aliases": ["medicines", "pills"], "text": "I'm not taking any medications at the moment.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f018", "item": "occupation", "aliases": ["job", "work", "school"], "text": "I'm a graduate student.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f019", "item": "smoking", "aliases": ["tobacco"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f020", "item": "recreational drug use", "aliases": ["illicit drugs", "street drugs"], "text": "I don't use any illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f021", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol socially.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-173",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "97.0°F (36.4°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "111/74 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "83/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "13/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "head and neck examination", "aliases": ["jaw examination", "TMJ examination", "head examination", "neck examination", "palpation of the jaw"], "result": "Inspection: normal appearance, no asymmetry; palpation: pain and tenderness over the mandibular and temporal regions, worse with mouth movements."},
+      {"id": "x007", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "blood count", "WBC", "white blood cell count", "hemoglobin", "platelets"], "result": "WBC within normal limits; hemoglobin within normal limits; platelets within normal limits."},
+      {"id": "x008", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate", "inflammatory markers"], "result": "Normal."},
+      {"id": "x009", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP", "inflammatory markers"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "jaw X-ray", "aliases": ["TMJ X-ray", "X-ray of the jaw", "mandible X-ray"], "result": "No structural abnormalities detected."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-173",
+    "diagnosis": "Temporomandibular joint dysfunction",
+    "aliases": ["TMJ dysfunction", "TMJ disorder", "temporomandibular joint disorder", "temporomandibular disorder", "TMD", "temporomandibular joint syndrome", "TMJ syndrome", "temporomandibular joint dysfunction syndrome"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-173",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-173-p001"], "f002": ["cc", "agentclinic-medqa-ext-173-p001"],
+      "f003": ["agentclinic-medqa-ext-173-p001", "agentclinic-medqa-ext-173-p002"], "f004": ["agentclinic-medqa-ext-173-p001", "agentclinic-medqa-ext-173-p003"],
+      "f005": ["agentclinic-medqa-ext-173-p001", "agentclinic-medqa-ext-173-p003"], "f006": ["agentclinic-medqa-ext-173-p001"],
+      "f007": ["agentclinic-medqa-ext-173-p001"], "f008": ["agentclinic-medqa-ext-173-p001", "agentclinic-medqa-ext-173-p006"],
+      "f009": ["agentclinic-medqa-ext-173-p001"], "f010": ["agentclinic-medqa-ext-173-p006"], "f011": ["agentclinic-medqa-ext-173-p006"],
+      "f012": ["agentclinic-medqa-ext-173-p006"], "f013": ["agentclinic-medqa-ext-173-p006"], "f014": ["agentclinic-medqa-ext-173-p006"],
+      "f015": ["agentclinic-medqa-ext-173-p006"], "f016": ["agentclinic-medqa-ext-173-p004"], "f017": ["agentclinic-medqa-ext-173-p004"],
+      "f018": ["agentclinic-medqa-ext-173-p005"], "f019": ["agentclinic-medqa-ext-173-p005"], "f020": ["agentclinic-medqa-ext-173-p005"],
+      "f021": ["agentclinic-medqa-ext-173-p005"]
+    },
+    "quotes": {
+      "f002": "Severe headache with intensity of 10/10", "f003": "exacerbated by chewing", "f004": "dull ache",
+      "f005": "over the sides of her head", "f006": "the headache is new and she has never experienced something like this before",
+      "f008": "injuries / recent trauma to the head", "f009": "significant stressors", "f017": "Not currently taking any medications.",
+      "f021": "drinks alcohol socially"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "97.0°F (36.4°C)", "exam_ids": ["agentclinic-medqa-ext-173-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "111/74 mmHg", "exam_ids": ["agentclinic-medqa-ext-173-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "83/min", "exam_ids": ["agentclinic-medqa-ext-173-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "13/min", "exam_ids": ["agentclinic-medqa-ext-173-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-173-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Head_and_Neck_Examination.Inspection + Physical_Examination_Findings.Head_and_Neck_Examination.Palpation", "source_text": "Normal appearance without asymmetry + Pain and tenderness over mandibular and temporal regions, worsened with mouth movements", "exam_ids": ["agentclinic-medqa-ext-173-e006", "agentclinic-medqa-ext-173-e007"]},
+      "x007": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Within normal limits + Within normal limits + Within normal limits", "exam_ids": ["agentclinic-medqa-ext-173-i001", "agentclinic-medqa-ext-173-i002", "agentclinic-medqa-ext-173-i003"]},
+      "x008": {"source": "Test_Results.Inflammatory_Markers.ESR", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-173-i004"]},
+      "x009": {"source": "Test_Results.Inflammatory_Markers.CRP", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-173-i005"]},
+      "x010": {"source": "Test_Results.Imaging.TMJ_X-ray.Findings", "source_text": "No structural abnormalities detected", "exam_ids": ["agentclinic-medqa-ext-173-i006"]}
+    },
+    "leakage": [
+      {"id": "x010", "reason": "Alias 'TMJ X-ray' (source test 'TMJ_X-ray') names the imaged joint, not the dysfunction; kept so a doctor's request phrased that way matches. Primary name is 'jaw X-ray'."}
+    ],
+    "source_issues": [],
+    "notes": [
+      "'Pain is associated with chewing' (p002) merges with 'exacerbated by chewing' (f003); 'Dull ache located over the sides of the head' (p003) is split into character (f004) and location (f005).",
+      "History 'denies ... injuries' and ROS 'recent trauma to the head' say the same thing at two levels of detail; merged into one denial (f008) citing both.",
+      "ESR and CRP are not one of the CONVERSION standard panels, so they are separate records (x008, x009), each with the alias 'inflammatory markers'.",
+      "The source test name 'TMJ_X-ray' is renamed 'jaw X-ray'; the spelled-out alias 'temporomandibular joint X-ray' was dropped (it repeats gold words), 'TMJ X-ray' kept for request matching and listed in qc.leakage."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient presenting with a severe headache, focusing on history taking, physical examination, and formulation of a differential diagnosis."
+    }
+  }
+}

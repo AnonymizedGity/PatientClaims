@@ -1,0 +1,1029 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-001",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 46,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "chest pain",
+        "text": "I have chest pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "chest pain: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It started about 40 minutes ago. It woke me up at 5 in the morning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "chest pain: what you were doing when it started",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "I wasn't doing anything. I was asleep when it started.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "chest pain: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It has stayed severe the whole time.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "chest pain: severity",
+        "parent": "f001",
+        "attribute": "severity",
+        "value": 7,
+        "text": "Right now it's a 7 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f006",
+        "item": "chest pain: location",
+        "parent": "f001",
+        "attribute": "location",
+        "value": [
+          "middle of the chest"
+        ],
+        "text": "It's in the middle of my chest. It feels like it's right under the breastbone.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "chest pain: spread",
+        "parent": "f001",
+        "attribute": "radiation",
+        "value": [
+          "neck",
+          "upper back",
+          "left arm"
+        ],
+        "complete": true,
+        "text": "It goes to my neck, my upper back and my left arm.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "chest pain: what it feels like",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "It feels like pressure, like something is resting on my chest.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "chest pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "text": "Nothing makes it better.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "chest pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "text": "Nothing makes it worse.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "chest pain: compared with earlier episodes",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "This time it's much worse, and it feels more like pressure than burning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "shortness of breath",
+        "aliases": [
+          "trouble breathing"
+        ],
+        "text": "I'm having trouble breathing.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I feel nauseated.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't vomited.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "sweating",
+        "text": "I've been sweating more than usual.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "cough",
+        "text": "I don't have a cough.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "wheezing",
+        "text": "I haven't been wheezing.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "respiratory",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I don't have any stomach pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "earlier episodes of chest pain",
+        "aliases": [
+          "previous chest pain"
+        ],
+        "text": "I've had chest pain like this before, but it wasn't exactly the same.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f020",
+        "item": "earlier chest pain: when they started",
+        "parent": "f019",
+        "attribute": "onset",
+        "text": "They started about 3 months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f021",
+        "item": "earlier chest pain: how often",
+        "parent": "f019",
+        "attribute": "frequency",
+        "text": "Two or three times a week.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f022",
+        "item": "earlier chest pain: how long each lasts",
+        "parent": "f019",
+        "attribute": "duration",
+        "text": "Each one lasts 5 to 10 minutes.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f023",
+        "item": "earlier chest pain: severity",
+        "parent": "f019",
+        "attribute": "severity",
+        "text": "They weren't very severe.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f024",
+        "item": "earlier chest pain: what it felt like",
+        "parent": "f019",
+        "attribute": "character",
+        "text": "They felt more like burning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f025",
+        "item": "earlier chest pain: what brings it on",
+        "parent": "f019",
+        "attribute": "aggravating",
+        "value": [
+          "climbing stairs",
+          "hard physical work",
+          "big meals",
+          "sex"
+        ],
+        "text": "It comes on when I climb stairs, do hard physical work or eat a big meal, and also during sex.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f026",
+        "item": "earlier chest pain: what helped",
+        "parent": "f019",
+        "attribute": "relieving",
+        "text": "Antacids helped.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f027",
+        "item": "earlier chest pain: going away on its own",
+        "parent": "f019",
+        "attribute": "course",
+        "text": "They also went away on their own.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f028",
+        "item": "earlier chest pain: other symptoms with it",
+        "parent": "f019",
+        "attribute": "other",
+        "text": "I didn't have any other symptoms with those episodes.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "cardiovascular",
+        "time": "recurrent"
+      },
+      {
+        "id": "f029",
+        "item": "high blood pressure",
+        "aliases": [
+          "hypertension"
+        ],
+        "text": "I've had high blood pressure for 5 years. I take a diuretic for it.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "high cholesterol",
+        "text": "I have high cholesterol. I'm supposed to control it with diet.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "following the cholesterol diet",
+        "text": "My doctor gave me a strict diet last year to lower my cholesterol, but I don't really stick to it. I always cheat.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "acid reflux (GERD)",
+        "aliases": [
+          "heartburn",
+          "GERD"
+        ],
+        "text": "I had GERD 10 years ago. It was treated with antacids.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "Maalox",
+        "text": "I take Maalox.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "diuretic",
+        "aliases": [
+          "water pill"
+        ],
+        "text": "I take a diuretic.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I've never had surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "father's health",
+        "text": "My father died of lung cancer at 72.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "mother's health",
+        "text": "My mother is alive. She has a peptic ulcer.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "early heart attacks in the family",
+        "text": "Nobody in my family had a heart attack at a young age.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm an accountant.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink occasionally.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "recreational drugs",
+        "aliases": [
+          "cocaine"
+        ],
+        "text": "I use cocaine.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "cocaine: how often",
+        "parent": "f041",
+        "attribute": "frequency",
+        "text": "About once a week.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "cocaine: for how long",
+        "parent": "f041",
+        "attribute": "duration",
+        "text": "For about 10 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "cocaine: last use",
+        "parent": "f041",
+        "attribute": "timing",
+        "text": "The last time was yesterday afternoon.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f045",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I used to smoke, but I quit three months ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "resolved"
+      },
+      {
+        "id": "f046",
+        "item": "smoking: how much",
+        "parent": "f045",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f047",
+        "item": "smoking: for how long",
+        "parent": "f045",
+        "attribute": "duration",
+        "text": "For 25 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f048",
+        "item": "sexual activity",
+        "text": "To be honest, I haven't had sex with my wife for the past 3 months, because I get this chest pain during sex.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "exercise",
+        "text": "I don't exercise regularly.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-001",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "165/85 mm Hg, the same in both arms",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "22/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "90/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "In severe pain."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "neck examination",
+        "aliases": [
+          "jugular veins",
+          "carotid auscultation"
+        ],
+        "result": "No jugular venous distension; no carotid bruits."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "chest wall palpation",
+        "result": "No chest wall tenderness."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear, symmetric breath sounds on both sides."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Apical impulse not displaced; regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not distended, not tender; bowel sounds present in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "peripheral pulses",
+          "leg swelling",
+          "edema"
+        ],
+        "result": "No peripheral edema; pulses 2+ and symmetric in the arms and legs; no cyanosis or clubbing."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-001",
+    "diagnosis": "Myocardial ischemia or infarction",
+    "aliases": [
+      "myocardial infarction",
+      "MI",
+      "acute myocardial infarction",
+      "heart attack",
+      "acute coronary syndrome",
+      "ACS",
+      "myocardial ischemia",
+      "unstable angina",
+      "STEMI",
+      "NSTEMI"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Myocardial ischemia or infarction",
+        "evidence": [
+          "Pressure-like substernal chest pain",
+          "Pain radiates to left arm, upper back, and neck",
+          "Pain awakens the patient at night"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Cocaine-induced myocardial ischemia",
+        "aliases": [
+          "cocaine-induced chest pain",
+          "cocaine-associated myocardial ischemia",
+          "cocaine-induced myocardial infarction",
+          "cocaine-induced coronary vasospasm"
+        ],
+        "evidence": [
+          "History of cocaine use",
+          "Last used yesterday afternoon",
+          "Pressure-like substernal chest pain"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "GERD",
+        "aliases": [
+          "gastroesophageal reflux disease",
+          "acid reflux",
+          "reflux esophagitis"
+        ],
+        "evidence": [
+          "Pain in midchest",
+          "Previous pain was relieved by antacids",
+          "Previous pain occurred after heavy meals"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Aortic dissection",
+        "note": "Must be considered with sudden severe chest pain, but the pain is not tearing or radiating to the back and pulses and blood pressures are equal."
+      },
+      {
+        "diagnosis": "Boerhaave syndrome",
+        "note": "Acute severe pain fits esophageal rupture; risk factors are absent but it must be ruled out because of high mortality."
+      },
+      {
+        "diagnosis": "Pericarditis",
+        "note": "Less likely: no positional or respiratory variation and no friction rub."
+      },
+      {
+        "diagnosis": "Pneumothorax",
+        "note": "Considered for chest pain with dyspnea; less likely with symmetric breath sounds."
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "note": "On the differential for chest pain and dyspnea, but no apparent risk factors."
+      },
+      {
+        "diagnosis": "Costochondritis or other musculoskeletal chest pain",
+        "note": "Usually reproduced by palpation or pleuritic; neither is present."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-001",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-001-p001",
+        "medqa-cs-001-p002"
+      ],
+      "f003": [
+        "medqa-cs-001-p002"
+      ],
+      "f004": [
+        "medqa-cs-001-p003"
+      ],
+      "f005": [
+        "medqa-cs-001-p004"
+      ],
+      "f006": [
+        "medqa-cs-001-p005"
+      ],
+      "f007": [
+        "medqa-cs-001-p006"
+      ],
+      "f008": [
+        "medqa-cs-001-p007"
+      ],
+      "f009": [
+        "medqa-cs-001-p008"
+      ],
+      "f010": [
+        "medqa-cs-001-p008"
+      ],
+      "f011": [
+        "medqa-cs-001-p014"
+      ],
+      "f012": [
+        "medqa-cs-001-p009"
+      ],
+      "f013": [
+        "medqa-cs-001-p010"
+      ],
+      "f014": [
+        "medqa-cs-001-p010"
+      ],
+      "f015": [
+        "medqa-cs-001-p011"
+      ],
+      "f016": [
+        "medqa-cs-001-p012"
+      ],
+      "f017": [
+        "medqa-cs-001-p012"
+      ],
+      "f018": [
+        "medqa-cs-001-p012"
+      ],
+      "f019": [
+        "medqa-cs-001-p013"
+      ],
+      "f020": [
+        "medqa-cs-001-p015"
+      ],
+      "f021": [
+        "medqa-cs-001-p017"
+      ],
+      "f022": [
+        "medqa-cs-001-p017"
+      ],
+      "f023": [
+        "medqa-cs-001-p016"
+      ],
+      "f024": [
+        "medqa-cs-001-p014"
+      ],
+      "f025": [
+        "medqa-cs-001-p018",
+        "medqa-cs-001-p033"
+      ],
+      "f026": [
+        "medqa-cs-001-p019"
+      ],
+      "f027": [
+        "note"
+      ],
+      "f028": [
+        "medqa-cs-001-p020"
+      ],
+      "f029": [
+        "medqa-cs-001-p021"
+      ],
+      "f030": [
+        "medqa-cs-001-p021"
+      ],
+      "f031": [
+        "medqa-cs-001-p021",
+        "medqa-cs-001-p035"
+      ],
+      "f032": [
+        "medqa-cs-001-p021"
+      ],
+      "f033": [
+        "medqa-cs-001-p022"
+      ],
+      "f034": [
+        "medqa-cs-001-p022"
+      ],
+      "f035": [
+        "medqa-cs-001-p023"
+      ],
+      "f036": [
+        "medqa-cs-001-p024"
+      ],
+      "f037": [
+        "medqa-cs-001-p024"
+      ],
+      "f038": [
+        "medqa-cs-001-p024"
+      ],
+      "f039": [
+        "medqa-cs-001-p025"
+      ],
+      "f040": [
+        "medqa-cs-001-p026"
+      ],
+      "f041": [
+        "medqa-cs-001-p027"
+      ],
+      "f042": [
+        "medqa-cs-001-p027"
+      ],
+      "f043": [
+        "medqa-cs-001-p028"
+      ],
+      "f044": [
+        "medqa-cs-001-p029"
+      ],
+      "f045": [
+        "medqa-cs-001-p030"
+      ],
+      "f046": [
+        "medqa-cs-001-p032"
+      ],
+      "f047": [
+        "medqa-cs-001-p031"
+      ],
+      "f048": [
+        "medqa-cs-001-p033"
+      ],
+      "f049": [
+        "medqa-cs-001-p034"
+      ],
+      "f050": [
+        "medqa-cs-001-p036"
+      ]
+    },
+    "quotes": {
+      "f001": "I have chest pain.",
+      "f002": "Forty minutes ago. / I was asleep and woke up at 5:00 in the morning having this pain.",
+      "f005": "7 out of 10.",
+      "f007": "To my neck, upper back, and left arm.",
+      "f008": "It feels like pressure, as if something is resting on my chest.",
+      "f009": "No, there isn't.",
+      "f023": "Not very severe.",
+      "f025": "Climbing stairs, intense labor, and large meals. / I get this pain in my chest during sex.",
+      "f027": "disappeared spontaneously or after taking antacids",
+      "f031": "I have not been very compliant with the diet. / but I always cheat."
+    },
+    "flags": {
+      "f009": [
+        "Sep-2024 template answer; the June-2024 release reads 'Nothing.' (p008) — denial confirmed."
+      ],
+      "f010": [
+        "Sep-2024 template answer; the June-2024 release reads 'Nothing.' (p008) — denial confirmed."
+      ],
+      "f027": [
+        "Only in the student note HPI ('disappeared spontaneously or after taking antacids'); the script mentions antacids only."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 165/85 mm Hg | VS: BP 165/85 mm Hg (both arms), RR 22/minute.",
+        "exam_ids": [
+          "medqa-cs-001-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway",
+        "source_text": "Temp: 98.6°F (37°C)"
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 22/minute | VS: BP 165/85 mm Hg (both arms), RR 22/minute.",
+        "exam_ids": [
+          "medqa-cs-001-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway",
+        "source_text": "HR: 90/minute, regular"
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient is in severe pain.",
+        "exam_ids": [
+          "medqa-cs-001-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Neck: No ND, no bruits.",
+        "exam_ids": [
+          "medqa-cs-001-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Chest: No tenderness, clear symmetric breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-001-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Chest: No tenderness, clear symmetric breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-001-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note",
+        "source_text": "Heart: Apical impulse not displaced; RRR; S1/S2 WNL; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-001-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Abdomen: Soft, non-distended, nontender, + BS x 4 quadrants, no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-001-e006"
+        ]
+      },
+      "x011": {
+        "source": "patient_note",
+        "source_text": "Extremities: No peripheral edema, peripheral pulses 2+ and symmetric in upper and lower extremities, no cyanosis or clubbing.",
+        "exam_ids": [
+          "medqa-cs-001-e007"
+        ]
+      }
+    },
+    "leakage": [],
+    "source_issues": [
+      "The patient-note exam vitals (e002) omit temperature and heart rate; the doorway vitals give 98.6°F and HR 90/minute, regular.",
+      "Patient-note HPI writes the severity as '(7110)', an OCR artifact for 7/10.",
+      "The note HPI says previous episodes 'disappeared spontaneously or after taking antacids'; the script mentions antacids only (f027, from the note).",
+      "The physical-exam checklist lists 'Ocular examination: auscultation, palpation', which is evidently the cardiac exam; checklist items are not used as findings."
+    ],
+    "notes": [
+      "Reference conversion for the case schema v1: earlier-episode attributes are children of f019; 'during sex' joins the triggers list (f025) and the sexual-history fact (f048).",
+      "Vitals: doorway and note values agree, so one record per parameter, marked initial (shown at the door in the OSCE).",
+      "Harmonisation pass: scale [0, 10] added to f005.",
+      "Fixes: f012 answer word removed; f015 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Lie on the bed and exhibit pain.",
+        "Place your hand in the middle of your chest.",
+        "Exhibit difficulty breathing."
+      ],
+      "patient_questions": [
+        "Is it a myocardial infarction? Am I at risk of death?",
+        "If the examinee mentions an ECG, ask: \"What's an ECG?\""
+      ]
+    }
+  }
+}

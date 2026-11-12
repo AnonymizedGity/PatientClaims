@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-140",
+  "source_row": 140,
+  "demographics_text": "28-year-old male",
+  "objective_for_doctor": "Identify and manage a patient presenting with symptoms indicative of a mental health condition, following active duty service.",
+  "chief_complaint": "Disturbing flashbacks and intense fear of loud noises",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p001",
+      "field": "History",
+      "text": "The patient reports recent onset of upsetting dreams, marked anxiety, and disturbing flashbacks. He states these symptoms began roughly 7 weeks ago, after returning from active duty in Iraq 3 months prior. He reports an intense fear of loud noises reminiscent of his experiences in Iraq, to the point where he took a leave from his army instructor duties. He has been avoiding settings that trigger memories of the conflict, such as practice shooting ranges. Recently, he has been refusing to leave his house until persuaded by his wife."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Upsetting dreams"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Anxiety"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Avoidance of situations reminiscent of the trauma"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Refusing to leave the house"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. Returned from active duty in Iraq 3 months ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p007",
+      "field": "Social_History",
+      "text": "Army instructor. Reports difficulty adjusting to life back home after military service."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-140-p008",
+      "field": "Review_of_Systems",
+      "text": "{\"Psychological\": \"Reports constant alertness and being on the edge. Experiences guilt about events happened during deployment. Difficulty sleeping.\", \"General\": \"Denies weight loss, fever, or fatigue.\"}"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "88 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e005",
+      "path": "Physical_Examination_Findings.Mental_Status_Evaluation.Appearance",
+      "text": "Anxious, hypervigilant, avoids eye contact"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e006",
+      "path": "Physical_Examination_Findings.Mental_Status_Evaluation.Mood_and_Affect",
+      "text": "Mood is anxious; affect constricted"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e007",
+      "path": "Physical_Examination_Findings.Mental_Status_Evaluation.Thought_Process",
+      "text": "Coherent, goal directed"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-e008",
+      "path": "Physical_Examination_Findings.Mental_Status_Evaluation.Insight_and_Judgment",
+      "text": "Insight is fair; judgment is intact"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-140-i001",
+      "path": "Test_Results.No specific lab tests",
+      "text": "Non-applicable for this case"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-140-i002",
+      "path": "Test_Results.Psychological_Assessment_Tools.Findings",
+      "text": "Scores suggestive of PTSD, including high scores on avoidance, intrusion, and hyperarousal subscales."
+    }
+  ],
+  "correct_diagnosis": "Posttraumatic stress disorder",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

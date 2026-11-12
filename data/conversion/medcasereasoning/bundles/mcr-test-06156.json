@@ -1,0 +1,131 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06156",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 28, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "lump in the left armpit", "aliases": ["armpit lump", "axillary mass", "swelling under the arm", "lump"], "text": "I have a large lump in my left armpit.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f002", "item": "lump in the left armpit: tenderness", "parent": "f001", "attribute": "character", "aliases": ["painful lump", "sore lump"], "text": "It's tender now.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f003", "item": "lump in the left armpit: onset", "parent": "f001", "attribute": "onset", "text": "I first noticed it 3 years ago, as a small lump that wasn't tender.", "value": "3 years ago", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f004", "item": "lump in the left armpit: what was happening when it appeared", "parent": "f001", "attribute": "context", "aliases": ["implant", "after pregnancy", "after moving"], "text": "That was 6 months after my contraceptive implant was put into my left arm, 8 months after my last baby was born, and 2 years after I arrived in the United States.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f005", "item": "lump in the left armpit: early growth", "parent": "f001", "attribute": "course", "text": "At first it grew slowly and didn't hurt.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f006", "item": "lump in the left armpit: recent rapid growth", "parent": "f001", "attribute": "course", "aliases": ["getting bigger", "growing fast"], "text": "Six months ago it started growing quickly and became tender.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f007", "item": "drainage from the lump", "aliases": ["discharge", "pus", "leaking"], "text": "While it was growing slowly, it never drained anything.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "historical"},
+      {"id": "f008", "item": "skin changes over the lump while it grew slowly", "aliases": ["redness over the lump"], "text": "While it was growing slowly, the skin over it didn't change.", "polarity": "absent", "category": "symptom", "system": "skin", "time": "historical"},
+      {"id": "f009", "item": "nerve symptoms from the lump", "aliases": ["neurologic symptoms", "neurological symptoms"], "text": "While it was growing slowly, it didn't cause any nerve symptoms.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "historical"},
+      {"id": "f010", "item": "trouble breastfeeding because of the lump", "aliases": ["breastfeeding problems"], "text": "It didn't get in the way of breastfeeding.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "historical"},
+      {"id": "f011", "item": "trouble bringing the left arm in to the side", "aliases": ["limited arm movement", "can't move the arm fully", "arm adduction"], "text": "It stops me from bringing my left arm all the way in against my side.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f012", "item": "lump in the left armpit: discomfort when moving the arm", "parent": "f001", "attribute": "aggravating", "text": "It's mildly uncomfortable when I bring my arm in against my side.", "polarity": "present", "category": "symptom", "system": "skin"},
+      {"id": "f013", "item": "streaks on the skin over the lump", "aliases": ["stretch marks", "skin striations", "skin changes"], "text": "Now there are stretch-mark-like streaks on the skin over it.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f014", "item": "breast problems", "aliases": ["breast symptoms", "breast lump", "breast pain"], "text": "I haven't had any problems with my breasts.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f015", "item": "injury", "aliases": ["trauma", "injury to the arm or armpit"], "text": "I haven't had any injury.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "infection", "aliases": ["infections", "recent infection"], "text": "I haven't had any infection.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f017", "item": "other whole-body symptoms", "aliases": ["systemic symptoms", "feeling unwell"], "text": "I haven't had any general symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f018", "item": "other exposures", "aliases": ["exposures"], "text": "I haven't had any other exposures that I know of.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f019", "item": "contraceptive implant", "aliases": ["etonogestrel implant", "birth control implant", "contraception", "medications", "Nexplanon"], "text": "My only medication is a contraceptive implant, etonogestrel, in my left arm.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f020", "item": "contraceptive implant: replacement", "parent": "f019", "attribute": "other", "text": "The implant was replaced 2 months before the lump started growing quickly.", "polarity": "present", "category": "medication"},
+      {"id": "f021", "item": "pregnancies", "aliases": ["deliveries", "children", "obstetric history", "parity"], "text": "I've had three full-term pregnancies.", "value": 3, "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f022", "item": "country of origin", "aliases": ["where I'm from", "immigration", "ethnicity"], "text": "I'm African; I immigrated to the United States from East Africa.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06156",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Unremarkable."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Unremarkable."},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Unremarkable."},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "Unremarkable."},
+      {"id": "x005", "kind": "exam", "system": "skin", "name": "examination of the left axilla", "aliases": ["axillary examination", "armpit examination", "palpation of the mass", "left armpit"], "result": "Softball-sized, mobile, nonreducible mass in the left axillary fossa with overlying skin striations; mild discomfort with arm adduction."},
+      {"id": "x006", "kind": "exam", "system": "hematologic", "name": "regional lymph node examination", "aliases": ["lymph nodes", "lymphadenopathy", "axillary nodes"], "result": "No regional lymphadenopathy."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "neurovascular examination of the left arm", "aliases": ["arm pulses", "sensation", "motor strength", "neurovascular status"], "result": "Intact vascular, sensory, and motor function."},
+      {"id": "x008", "kind": "exam", "system": "general", "name": "rest of the physical examination", "aliases": ["physical examination", "general examination", "breast examination"], "result": "Unremarkable."},
+      {"id": "x009", "kind": "test", "name": "MRI of the left axilla", "aliases": ["MRI", "axillary MRI", "MRI with and without contrast"], "result": "16 × 11 × 11 cm multiloculated subcutaneous cystic lesion displacing but not invading adjacent structures, without intrathoracic communication or lymphadenopathy.", "time": "before presentation"},
+      {"id": "x010", "kind": "test", "name": "MR lymphangiogram", "aliases": ["MR lymphangiography", "lymphatic imaging", "lymphoscintigraphy"], "result": "After subcutaneous contrast injection into the interdigital web spaces: no lymphatic communication with the mass, although lymphatic drainage led to nodes over the lesion."},
+      {"id": "x011", "kind": "test", "name": "echinococcal IgG antibody", "aliases": ["Echinococcus serology", "hydatid serology", "echinococcal antibodies"], "result": "Equivocal."},
+      {"id": "x012", "kind": "test", "name": "initial laboratory studies", "aliases": ["blood tests", "complete blood count", "CBC", "metabolic panel", "inflammatory markers", "basic labs"], "result": "Unremarkable, without evidence of systemic infection."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06156",
+    "diagnosis": "Lymphangioma",
+    "aliases": ["cystic lymphangioma", "cystic hygroma", "lymphatic malformation", "cystic lymphatic malformation", "macrocystic lymphatic malformation"],
+    "reasoning": "1. Hydatid cyst remained a concern given patient’s origin, as “hydatid cyst could not definitively be ruled out” and serology was equivocal (“IgG testing was performed with equivocal results, indicating possible but not definitive presence of Echinococcus”). 2. Simple cyst was considered but excluded because “imaging was not consistent with typical appearance of … simple cyst.” 3. Abscess was on the initial differential but ruled out since “imaging was not consistent with typical appearance of abscess.” 4. Cavernous hemangioma was considered but excluded because “imaging was not consistent with typical appearance of … cavernous hemangioma.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06156",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001", "s004"],
+      "f003": ["s002"],
+      "f004": ["s002"],
+      "f005": ["s003"],
+      "f006": ["s004"],
+      "f007": ["s003"],
+      "f008": ["s003"],
+      "f009": ["s003"],
+      "f010": ["s003"],
+      "f011": ["s004"],
+      "f012": ["s007"],
+      "f013": ["s007"],
+      "f014": ["s006"],
+      "f015": ["s006"],
+      "f016": ["s006"],
+      "f017": ["s006"],
+      "f018": ["s006"],
+      "f019": ["s002", "s006"],
+      "f020": ["s005"],
+      "f021": ["s001"],
+      "f022": ["s001"]
+    },
+    "quotes": {
+      "f001": "a large, tender left axillary mass",
+      "f003": "She first noticed a small, nontender lump 3 years earlier",
+      "f004": "6 months after placement of a left-arm etonogestrel implant, 8 months after her most recent delivery, and 2 years after arriving in the United States",
+      "f005": "The mass grew slowly without pain",
+      "f006": "Six months before presentation, the mass enlarged rapidly and became tender",
+      "f007": "drainage",
+      "f008": "skin changes",
+      "f009": "neurologic symptoms",
+      "f010": "did not interfere with breastfeeding",
+      "f011": "limiting full adduction of the left arm",
+      "f012": "mild discomfort with arm adduction",
+      "f013": "overlying skin striations",
+      "f017": "systemic complaints",
+      "f018": "other exposures",
+      "f019": "her only medication was the implant device",
+      "f020": "Her implant had been replaced 2 months before this acceleration.",
+      "f021": "three prior full-term pregnancies",
+      "f022": "recent immigration from East Africa"
+    },
+    "flags": {
+      "f007": ["The denials of drainage, skin changes and neurologic symptoms describe the period of slow growth (s003), so they are written in the past with time 'historical'; the examination now shows skin striations (f013)."],
+      "f012": ["Taken from the examination ('mild discomfort with arm adduction'); a patient feels this."],
+      "f013": ["Taken from the examination ('overlying skin striations'); a patient can see them. 'Striations' rendered as stretch-mark-like streaks."],
+      "f022": ["The prompt calls the immigration 'recent' but s002 places her arrival 2 years before a lump first noticed 3 years ago (about 5 years before presentation); the text gives no arrival date (see source_issues)."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s008"], "source_text": "Vital signs and the remainder of the examination were unremarkable."},
+      "x002": {"sentences": ["s008"], "source_text": "Vital signs and the remainder of the examination were unremarkable."},
+      "x003": {"sentences": ["s008"], "source_text": "Vital signs and the remainder of the examination were unremarkable."},
+      "x004": {"sentences": ["s008"], "source_text": "Vital signs and the remainder of the examination were unremarkable."},
+      "x005": {"sentences": ["s007"], "source_text": "a softball-sized, mobile, nonreducible mass in the left axillary fossa with overlying skin striations / mild discomfort with arm adduction"},
+      "x006": {"sentences": ["s007"], "source_text": "no regional lymphadenopathy"},
+      "x007": {"sentences": ["s007"], "source_text": "intact vascular, sensory, and motor function"},
+      "x008": {"sentences": ["s008"], "source_text": "Vital signs and the remainder of the examination were unremarkable."},
+      "x009": {"sentences": ["s009"], "source_text": "Prior MRI of the left axilla (with and without contrast) demonstrated a 16 × 11 × 11 cm multiloculated subcutaneous cystic lesion displacing but not invading adjacent structures, without intrathoracic communication or lymphadenopathy."},
+      "x010": {"sentences": ["s010"], "source_text": "MR lymphangiogram—after subcutaneous contrast injection into the interdigital web spaces—showed no lymphatic communication with the mass, although lymphatic drainage led to nodes over the lesion."},
+      "x011": {"sentences": ["s011"], "source_text": "Echinococcal IgG antibody testing was equivocal."},
+      "x012": {"sentences": ["s011"], "source_text": "Initial laboratory studies were otherwise unremarkable, without evidence of systemic infection."}
+    },
+    "finding_flags": {
+      "x001": ["'Vital signs ... were unremarkable' gives no values; each standard vital sign is reported as 'Unremarkable.'."],
+      "x010": ["The prompt does not say when the MR lymphangiogram was done relative to the presentation."]
+    },
+    "leakage": [],
+    "source_issues": ["'Recent immigration from East Africa' (s001) conflicts with s002, which places her arrival in the United States about 5 years before presentation.", "The presenting mass is called tender (s001) while the examination reports only mild discomfort with arm adduction (s007)."],
+    "notes": ["Index visit: the outpatient presentation with the large, tender left axillary mass (s001–s008), with the imaging and serology of that evaluation (s009–s011).", "The prior MRI (s009) is a finding with time 'before presentation'; the patient is not said to have been told its result.", "Breastfeeding is not a separate fact: the source only says the lump did not interfere with it (f010).", "Earlier timeline in f004 is kept relative ('6 months after the implant ...') as in the source, without computing dates.", "Fixes: f008 alias 'skin changes' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

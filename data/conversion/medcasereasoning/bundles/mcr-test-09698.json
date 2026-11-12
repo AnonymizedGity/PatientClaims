@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "mcr-test-09698",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 35, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["headaches", "head pain"], "text": "I get headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: duration", "parent": "f001", "attribute": "duration", "text": "I've had them for a long time; they're chronic.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "vomiting", "aliases": ["throwing up", "being sick"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f004", "item": "changes in vision", "aliases": ["vision problems", "blurred vision", "visual changes", "loss of side vision"], "text": "I haven't noticed any changes in my vision.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f005", "item": "tiredness", "aliases": ["fatigue", "low energy", "exhaustion"], "text": "I've been tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "tiredness: duration", "parent": "f005", "attribute": "duration", "text": "It has been going on for a long time.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "feeling the cold", "aliases": ["cold intolerance", "always cold", "sensitive to cold"], "text": "I can't tolerate the cold.", "polarity": "present", "category": "symptom", "system": "endocrine", "time": "current"},
+      {"id": "f008", "item": "hoarse voice", "aliases": ["hoarseness", "voice changes", "raspy voice"], "text": "My voice is hoarse.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f009", "item": "constipation", "aliases": ["hard stools", "trouble opening my bowels"], "text": "I'm constipated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "weight gain", "aliases": ["putting on weight", "gaining weight"], "text": "I've gained weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f011", "item": "dry skin", "aliases": ["skin dryness", "rough skin"], "text": "My skin is dry.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f012", "item": "puffy face", "aliases": ["facial swelling", "puffy eyes", "swelling around the eyes"], "text": "My face looks puffy, including around my eyes.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f013", "item": "thinning eyebrows", "aliases": ["eyebrow hair loss", "losing eyebrows"], "text": "The outer parts of my eyebrows have thinned out.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f014", "item": "high cholesterol", "aliases": ["dyslipidemia", "high lipids", "cholesterol"], "text": "I have dyslipidemia — abnormal cholesterol and blood fats.", "polarity": "present", "category": "medical_history", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-09698",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "55/min"},
+      {"id": "x002", "kind": "vital", "name": "body mass index", "aliases": ["BMI", "weight"], "result": "30.5 kg/m2"},
+      {"id": "x003", "kind": "exam", "system": "skin", "name": "skin and face inspection", "aliases": ["skin", "face", "general appearance", "eyebrows", "periorbital edema"], "result": "Dry skin; pale, puffy face with periorbital edema; thinning of the lateral eyebrows."},
+      {"id": "x004", "kind": "exam", "system": "ent", "name": "mouth and tongue examination", "aliases": ["tongue", "oral examination", "mouth"], "result": "Macroglossia."},
+      {"id": "x005", "kind": "exam", "system": "endocrine", "name": "thyroid examination", "aliases": ["thyroid palpation", "neck examination", "goitre"], "result": "Thyroid gland not palpable."},
+      {"id": "x006", "kind": "test", "name": "CT head without contrast", "aliases": ["noncontrast CT head", "head CT", "CT brain"], "result": "Suprasellar mass measuring 12.5 mm."},
+      {"id": "x007", "kind": "test", "name": "MRI of the brain and sella", "aliases": ["brain MRI", "sellar MRI", "MRI head", "MRI with gadolinium"], "result": "15 × 17 × 12 mm pituitary lesion: T1-hyperintense, T2-hyperintense, intensely enhancing with gadolinium; elevates the optic chiasm and stalk; infiltrates both cavernous sinuses."},
+      {"id": "x008", "kind": "test", "name": "automated perimetry", "aliases": ["visual field testing", "visual fields", "perimetry", "Humphrey visual fields"], "result": "Bitemporal hemianopsia."},
+      {"id": "x009", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "free T4", "free T3", "thyroid hormones"], "result": "Free T4 0 ng/dL (NR 0.61–1.12); free T3 1.88 pg/mL (NR 2.50–3.90); TSH > 100 µUI/mL (NR 0.34–5.60)."},
+      {"id": "x010", "kind": "test", "name": "prolactin", "aliases": ["serum prolactin", "PRL"], "result": "22.5 ng/mL (NR 2.64–13.13)"},
+      {"id": "x011", "kind": "test", "name": "testosterone, LH and FSH", "aliases": ["testosterone", "LH", "luteinizing hormone", "FSH", "follicle-stimulating hormone", "gonadal hormones", "gonadotropins"], "result": "Testosterone 2.04 ng/mL (NR 2–10); LH 2.8 UI/L (NR 1.24–8.62); FSH 5.1 UI/L (NR 1.27–19.26)."},
+      {"id": "x012", "kind": "test", "name": "anti-thyroid peroxidase antibodies", "aliases": ["anti-TPO", "TPO antibodies", "thyroid antibodies"], "result": "Elevated at 56.9 UI/mL (NR 0.25–9)."},
+      {"id": "x013", "kind": "test", "name": "thyroid ultrasound", "aliases": ["ultrasound of the thyroid", "neck ultrasound"], "result": "Atrophic, hypoechoic gland consistent with autoimmune thyroiditis."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-09698",
+    "diagnosis": "Thyrotrophic pituitary hyperplasia",
+    "aliases": ["thyrotroph hyperplasia", "thyrotroph pituitary hyperplasia", "thyrotroph cell hyperplasia", "TSH cell hyperplasia", "pituitary hyperplasia due to primary hypothyroidism", "pituitary hyperplasia secondary to primary hypothyroidism"],
+    "reasoning": "1. Consideration of thyrotrophic pituitary hyperplasia due to primary hypothyroidism — “...reduced circulating levels of thyroid hormone result in overstimulation of thyrotrophs by thyrotropin releasing hormone.” 2. Consideration of hypophysitis — “...as well as in the rare entity of hypophysitis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-09698",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s005"], "f006": ["s005"],
+      "f007": ["s005"], "f008": ["s005"], "f009": ["s005"], "f010": ["s005"], "f011": ["s007"], "f012": ["s007"],
+      "f013": ["s007"], "f014": ["s001"]
+    },
+    "quotes": {
+      "f002": "chronic headaches", "f003": "without vomiting", "f004": "or perceived visual changes", "f006": "longstanding fatigue",
+      "f012": "a pale puffy face with periorbital edema", "f013": "thinning of the lateral eyebrows", "f014": "a history of dyslipidemia"
+    },
+    "flags": {
+      "f004": ["The patient perceives no visual change although perimetry shows a bitemporal hemianopsia (x008); the fact keeps the source's 'perceived'."],
+      "f006": ["'longstanding' is applied only to the fatigue, the noun it directly modifies; it may cover the whole list in s005."],
+      "f011": ["Patient-noticeable sign taken from the examination (dry skin)."],
+      "f012": ["Patient-noticeable sign taken from the examination (puffy face, periorbital edema); pallor is left to the examination."],
+      "f013": ["Patient-noticeable sign taken from the examination (thinning of the lateral eyebrows)."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "Vital signs showed a pulse of 55/min."},
+      "x002": {"sentences": ["s006"], "source_text": "BMI was 30.5 kg/m2."},
+      "x003": {"sentences": ["s007"], "source_text": "Examination revealed dry skin, a pale puffy face with periorbital edema, thinning of the lateral eyebrows"},
+      "x004": {"sentences": ["s007"], "source_text": "and macroglossia"},
+      "x005": {"sentences": ["s008"], "source_text": "The thyroid gland was not palpable."},
+      "x006": {"sentences": ["s002"], "source_text": "Noncontrast CT of the head showed a suprasellar mass measuring 12.5 mm."},
+      "x007": {"sentences": ["s003"], "source_text": "MRI revealed a 15 × 17 × 12 mm pituitary lesion that was T1-hyperintense, T2-hyperintense, intensely enhanced with gadolinium, elevated the optic chiasm and stalk, and infiltrated both cavernous sinuses."},
+      "x008": {"sentences": ["s004"], "source_text": "Automated perimetry demonstrated bitemporal hemianopsia."},
+      "x009": {"sentences": ["s009"], "source_text": "free T4 of 0 ng/dL (NR, 0.61–1.12), free T3 of 1.88 pg/mL (NR, 2.50–3.90), and TSH > 100 µUI/mL (NR, 0.34–5.60)"},
+      "x010": {"sentences": ["s010"], "source_text": "Prolactin was 22.5 ng/mL (NR, 2.64–13.13)"},
+      "x011": {"sentences": ["s010"], "source_text": "testosterone was 2.04 ng/mL (NR, 2–10), LH was 2.8 UI/L (NR, 1.24–8.62), and FSH was 5.1 UI/L (NR, 1.27–19.26)"},
+      "x012": {"sentences": ["s011"], "source_text": "Anti–thyroid peroxidase antibodies were elevated at 56.9 UI/mL (NR, 0.25–9)"},
+      "x013": {"sentences": ["s011"], "source_text": "thyroid ultrasound showed an atrophic, hypoechoic gland consistent with autoimmune thyroiditis"}
+    },
+    "finding_flags": {
+      "x009": ["Free T4 of 0 ng/dL is probably an undetectable value; kept as written."]
+    },
+    "leakage": [
+      {"id": "x007", "reason": "The MRI report names the organ ('pituitary lesion'), one word of the gold diagnosis; it does not name hyperplasia, and the report is kept as written."}
+    ],
+    "source_issues": [
+      "s009: free T4 '0 ng/dL' is not a measurable value (probably below detection).",
+      "s004: bitemporal hemianopsia on perimetry while the patient perceives no visual change (s001); consistent, but worth knowing."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with chronic headaches (s001-s011); the CT, MRI and perimetry (s002-s004) precede the review of systems in the narrative but belong to the same workup.",
+      "Signs the patient can notice (dry skin, puffy face, thinning outer eyebrows) are facts and also stay in the examination; pallor, macroglossia, bradycardia and the non-palpable thyroid are examiner findings only.",
+      "The MRI record avoids 'pituitary' in its name and aliases (gold word); a request for a pituitary MRI should match 'MRI of the brain and sella'."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

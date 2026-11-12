@@ -1,0 +1,104 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-166",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 75, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shortness of breath", "aliases": ["breathlessness", "dyspnea"], "text": "I've been getting short of breath.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f002", "item": "shortness of breath: course", "parent": "f001", "attribute": "course", "text": "It's been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "respiratory"},
+      {"id": "f003", "item": "fatigue", "aliases": ["tiredness"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "dizziness", "aliases": ["lightheadedness"], "text": "I've been getting dizzy.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f005", "item": "symptoms with exertion", "aliases": ["exercise tolerance", "climbing stairs"], "text": "I can't climb more than one flight of stairs without getting short of breath and dizzy.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "how long the symptoms have been going on", "text": "The shortness of breath and tiredness have been going on for a month.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "high cholesterol", "aliases": ["hyperlipidemia"], "text": "I have high cholesterol.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "blood pressure medication", "text": "I take medication for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "cholesterol medication", "text": "I take medication for my cholesterol.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "smoking", "aliases": ["cigarettes", "tobacco"], "text": "I smoke a pack of cigarettes a day, and have for the past 50 years.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "cough", "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f014", "item": "wheezing", "text": "I haven't been wheezing.", "polarity": "absent", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f015", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain"], "text": "I don't have any belly pain.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "changes in bowel habits", "aliases": ["bowel changes"], "text": "My bowel habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-166",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "100/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "70/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "heart auscultation", "aliases": ["cardiac examination", "heart sounds", "murmur"], "result": "Normal rate; possible systolic murmur, which could suggest valvular heart disease."},
+      {"id": "x006", "kind": "exam", "system": "cardiovascular", "name": "peripheral pulses", "aliases": ["pulses", "radial pulse", "pedal pulses"], "result": "Weak peripheral pulses."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "examination for peripheral edema", "aliases": ["edema", "pedal edema", "ankle swelling"], "result": "No significant pedal edema."},
+      {"id": "x008", "kind": "test", "name": "ECG", "aliases": ["EKG", "electrocardiogram"], "result": "Normal sinus rhythm; no significant ST changes."},
+      {"id": "x009", "kind": "test", "name": "chest X-ray", "aliases": ["CXR", "chest radiograph"], "result": "No pulmonary congestion or cardiomegaly."},
+      {"id": "x010", "kind": "test", "name": "echocardiogram", "aliases": ["echo", "transthoracic echocardiogram"], "result": "Decreased aortic valve area and increased gradient across the aortic valve, consistent with aortic valve stenosis."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-166",
+    "diagnosis": "Aortic valve stenosis",
+    "aliases": ["aortic stenosis", "AS", "valvular aortic stenosis", "calcific aortic stenosis", "degenerative aortic stenosis", "senile calcific aortic stenosis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-166",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-166-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-166-p001"],
+      "f003": ["agentclinic-medqa-ext-166-p001", "agentclinic-medqa-ext-166-p002"],
+      "f004": ["agentclinic-medqa-ext-166-p001", "agentclinic-medqa-ext-166-p003"],
+      "f005": ["agentclinic-medqa-ext-166-p001", "agentclinic-medqa-ext-166-p003"],
+      "f006": ["agentclinic-medqa-ext-166-p001"],
+      "f007": ["agentclinic-medqa-ext-166-p001", "agentclinic-medqa-ext-166-p004"],
+      "f008": ["agentclinic-medqa-ext-166-p001", "agentclinic-medqa-ext-166-p004"],
+      "f009": ["agentclinic-medqa-ext-166-p001"],
+      "f010": ["agentclinic-medqa-ext-166-p001"],
+      "f011": ["agentclinic-medqa-ext-166-p001", "agentclinic-medqa-ext-166-p005"],
+      "f012": ["agentclinic-medqa-ext-166-p005"],
+      "f013": ["agentclinic-medqa-ext-166-p006"],
+      "f014": ["agentclinic-medqa-ext-166-p006"],
+      "f015": ["agentclinic-medqa-ext-166-p006"],
+      "f016": ["agentclinic-medqa-ext-166-p006"]
+    },
+    "quotes": {
+      "f002": "Progressive shortness of breath",
+      "f005": "inability to climb more than one flight of stairs without experiencing shortness of breath and dizziness",
+      "f006": "a one-month history of progressive shortness of breath and fatigue",
+      "f009": "currently on medication for hypertension and hyperlipidemia",
+      "f010": "currently on medication for hypertension and hyperlipidemia",
+      "f011": "Smokes one pack of cigarettes daily for the past 50 years.",
+      "f012": "Does not drink alcohol.",
+      "f013": "No complaints of cough or wheezing",
+      "f016": "No complaints of abdominal pain or change in bowel habits"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-166-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "100/80 mm Hg", "exam_ids": ["agentclinic-medqa-ext-166-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "70/min", "exam_ids": ["agentclinic-medqa-ext-166-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18/min", "exam_ids": ["agentclinic-medqa-ext-166-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiac_Examination.Heart Sounds", "source_text": "Normal rate, Possible systolic murmur heard upon auscultation which could suggest valvular heart disease", "exam_ids": ["agentclinic-medqa-ext-166-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Peripheral_Examination.Pulses", "source_text": "Weak peripheral pulses", "exam_ids": ["agentclinic-medqa-ext-166-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Peripheral_Examination.Edema", "source_text": "No significant pedal edema", "exam_ids": ["agentclinic-medqa-ext-166-e007"]},
+      "x008": {"source": "Test_Results.ECG.Findings", "source_text": "Normal sinus rhythm with no significant ST changes", "exam_ids": ["agentclinic-medqa-ext-166-i001"]},
+      "x009": {"source": "Test_Results.Chest_X-ray.Findings", "source_text": "No pulmonary congestion or cardiomegaly", "exam_ids": ["agentclinic-medqa-ext-166-i002"]},
+      "x010": {"source": "Test_Results.Echocardiogram.Findings", "source_text": "Decreased aortic valve area, increased gradient across the aortic valve, consistent with aortic valve stenosis", "exam_ids": ["agentclinic-medqa-ext-166-i003"]}
+    },
+    "finding_flags": {
+      "x005": ["The source exam finding contains its own interpretation ('which could suggest valvular heart disease'); kept because it is what the source tells the doctor. It names a broader category, not the gold diagnosis."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The echocardiogram result names the diagnosis ('consistent with aortic valve stenosis'); kept because that is the study's answer, seen only when the doctor orders an echocardiogram."}
+    ],
+    "source_issues": ["The gold diagnosis is visible in the echocardiogram result (pool flag visible_gold_alias_partitions: test_results).", "The cardiac examination includes an interpretive hint ('could suggest valvular heart disease').", "ROS 'Cardiovascular: Weak peripheral pulses' is an examination sign, not a symptom."],
+    "notes": ["The stair-climbing limit with breathlessness and dizziness applies to both symptoms, so it is a standalone exertion fact (f005); 'Dizziness upon exertion' (p003) merges there and in the dizziness fact (f004). The 1-month duration covers breathlessness and fatigue (standalone f006); 'progressive' is a child of the breathlessness (f002).", "The unnamed medications are one fact per indication (f009 blood pressure, f010 cholesterol).", "'Long history of smoking' (p001) and '1 pack daily for 50 years' (p005) are one fact.", "'Weak peripheral pulses' in the ROS is observer-only and already in the exam leaf (x006); no patient fact.", "Fixes: f009 alias 'medications' removed; f010 alias 'medications' removed."],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with progressive shortness of breath and fatigue."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

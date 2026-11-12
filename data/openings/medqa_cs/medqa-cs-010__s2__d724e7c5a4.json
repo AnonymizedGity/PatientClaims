@@ -1,0 +1,69 @@
+{
+ "case_id": "medqa-cs-010",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have pain in my right calf muscle.",
+   "The pain started a few days ago.",
+   "I fell down and scratched my right leg.",
+   "It's 8 out of 10.",
+   "It feels like pressure and spasms.",
+   "There is redness.",
+   "My right leg seems to be warmer compared to my left.",
+   "I have felt warm recently, but I haven't measured my temperature.",
+   "A week ago, I had a 15-hour flight to see a crucial client.",
+   "I've been using oral contraceptives for the past 2 years.",
+   "My dad had a clot in his leg."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've got pain in my right calf that started a few days ago; it's an 8 out of 10 and feels like pressure and spasms. I noticed the leg is red and warmer than my left, and I've felt warm recently, though I haven't checked my temperature. I fell down and scratched my right leg, and I had a 15-hour flight a week ago. I've been on oral contraceptives for two years, and my dad had a clot in his leg.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f011",
+    "f005",
+    "f007",
+    "f012",
+    "f013",
+    "f017",
+    "f019",
+    "f034",
+    "f036"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "changed",
+      "quote": "not long ago",
+      "fix": "a few days ago"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I've got pain in my right calf that started a few days ago; it's an 8 out of 10 and feels like pressure and spasms. I noticed the leg is red and warmer than my left, and I've felt warm recently, though I haven't checked my temperature. I fell down and scratched my right leg not long ago, and I had a 15-hour flight a week ago. I've been on oral contraceptives for two years, and my dad had a clot in his leg.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 7608,
+   "tokens_out": 251,
+   "seconds": 24.8,
+   "redrafts": 0
+  }
+ }
+}

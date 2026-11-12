@@ -1,0 +1,41 @@
+{
+ "case_id": "ddxplus-v2-test-0001540",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "ce9a684fa350",
+  "opening": [
+   "My symptoms or pain get worse when I cough, lift something heavy or strain on the toilet."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here because my symptoms and pain get worse when I cough, lift something heavy or strain on the toilet.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 8537,
+   "tokens_out": 35,
+   "seconds": 8.01,
+   "redrafts": 0
+  }
+ }
+}

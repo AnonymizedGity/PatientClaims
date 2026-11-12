@@ -1,0 +1,1106 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-002",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 57,
+      "sex": "male"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "blood in urine",
+        "aliases": [
+          "bloody urine",
+          "hematuria"
+        ],
+        "text": "I've had blood in my urine.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "resolved"
+      },
+      {
+        "id": "f002",
+        "item": "blood in urine: what it looked like",
+        "parent": "f001",
+        "attribute": "appearance",
+        "text": "It was bright red, and later it had some clots.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "resolved"
+      },
+      {
+        "id": "f003",
+        "item": "blood in urine: when it started",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "I first noticed it yesterday morning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "resolved"
+      },
+      {
+        "id": "f004",
+        "item": "blood in urine: how many times",
+        "parent": "f001",
+        "attribute": "frequency",
+        "value": 1,
+        "text": "Only that one time. It hasn't happened again since.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "resolved"
+      },
+      {
+        "id": "f005",
+        "item": "blood in urine: still there now",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "My urine is back to normal now.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "pain or burning when urinating",
+        "aliases": [
+          "painful urination",
+          "burning urination",
+          "dysuria"
+        ],
+        "text": "I don't have any pain or burning when I pass urine.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "fever",
+        "text": "I haven't had any fever recently.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "abdominal pain",
+        "aliases": [
+          "stomach pain",
+          "belly pain"
+        ],
+        "text": "I don't have any pain in my abdomen.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "back pain",
+        "aliases": [
+          "flank pain"
+        ],
+        "text": "I don't have any pain in my back.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "frequent urination",
+        "aliases": [
+          "urinating often",
+          "going to the bathroom often",
+          "urinary frequency"
+        ],
+        "text": "I have to go to the bathroom every 2 to 3 hours now.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "frequent urination: compared with before",
+        "parent": "f010",
+        "attribute": "course",
+        "text": "Before, I used to go to the bathroom every 5 to 6 hours.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "historical"
+      },
+      {
+        "id": "f012",
+        "item": "straining to urinate",
+        "aliases": [
+          "straining"
+        ],
+        "text": "I have to strain when I pass urine.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "urinating at night",
+        "aliases": [
+          "getting up at night to urinate",
+          "nocturia"
+        ],
+        "text": "I have to use the bathroom at night.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "weak urine stream",
+        "aliases": [
+          "weak stream"
+        ],
+        "text": "My urine stream is weak.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "dribbling of urine",
+        "aliases": [
+          "dribbling"
+        ],
+        "text": "My urine dribbles.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "earlier episodes of blood in urine",
+        "aliases": [
+          "anything like this before",
+          "previous episodes"
+        ],
+        "text": "I've never had anything like this before. That was the only time it has ever happened.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "historical"
+      },
+      {
+        "id": "f017",
+        "item": "what others have said about the cause",
+        "text": "They mentioned that it's a part of aging.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "historical"
+      },
+      {
+        "id": "f018",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I don't have any nausea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't vomited.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "diarrhea",
+        "text": "I don't have diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "constipation",
+        "text": "I'm not constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "blood in stool",
+        "aliases": [
+          "bloody stools"
+        ],
+        "text": "I haven't had any blood in my stools.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "bleeding gums",
+        "text": "My gums haven't been bleeding.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "hematologic",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "nosebleeds",
+        "aliases": [
+          "bleeding from the nose"
+        ],
+        "text": "I haven't had any bleeding from my nose.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "hematologic",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "bruising",
+        "aliases": [
+          "bruising easily"
+        ],
+        "text": "I haven't had any bruising.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "hematologic",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed recently.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "change in eating habits",
+        "aliases": [
+          "diet changes"
+        ],
+        "text": "My eating habits haven't changed recently.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "night sweats",
+        "aliases": [
+          "sweating at night"
+        ],
+        "text": "I don't sweat a lot at night.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "kidney stones",
+        "text": "I've never been diagnosed with kidney stones.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "gout",
+        "text": "I have gout.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I had an appendectomy when I was 23.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "sexually transmitted diseases",
+        "aliases": [
+          "STDs",
+          "STIs"
+        ],
+        "text": "I've never had a sexually transmitted disease.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines"
+        ],
+        "text": "I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "allopurinol",
+        "text": "I take allopurinol.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f035",
+        "item": "father's health",
+        "text": "My father died at age 80 because of a kidney problem.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "mother's health",
+        "text": "My mother is alive and healthy.",
+        "polarity": "absent",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f037",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a painter.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f038",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink beer after work.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f039",
+        "item": "alcohol: how much",
+        "parent": "f038",
+        "attribute": "quantity",
+        "text": "A few beers.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "alcohol: how often",
+        "parent": "f038",
+        "attribute": "frequency",
+        "text": "About two to three times a week.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "drinking: feeling you should cut down",
+        "parent": "f038",
+        "attribute": "other",
+        "text": "I don't feel I need to cut down on my drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "drinking: annoyed by criticism of it",
+        "parent": "f038",
+        "attribute": "other",
+        "text": "Criticism of my drinking doesn't annoy me.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "drinking: feeling guilty about it",
+        "parent": "f038",
+        "attribute": "other",
+        "text": "I don't feel guilty about drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "drinking: as an eye-opener or for a hangover",
+        "parent": "f038",
+        "attribute": "other",
+        "text": "I don't drink in the morning as an eye-opener or to get rid of a hangover.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I don't use any illicit drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke cigarettes.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "smoking: how much",
+        "parent": "f046",
+        "attribute": "quantity",
+        "text": "A pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "smoking: for how long",
+        "parent": "f046",
+        "attribute": "duration",
+        "text": "For 30 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "sexual activity",
+        "text": "I'm sexually active.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "partner",
+        "aliases": [
+          "relationship",
+          "significant other"
+        ],
+        "text": "I have a girlfriend. I met her 2 years ago through a mutual friend.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "gender of sexual partners",
+        "aliases": [
+          "sexual orientation"
+        ],
+        "text": "Only women.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "condom use",
+        "aliases": [
+          "condoms"
+        ],
+        "text": "I use condoms regularly.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-002",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "130/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.6°F (37°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "13/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "72/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen"
+        ],
+        "result": "Soft, not distended, not tender; active bowel sounds in all four quadrants; no enlargement of the liver or spleen."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "genitourinary",
+        "name": "costovertebral angle tenderness",
+        "aliases": [
+          "CVA tenderness",
+          "flank tenderness",
+          "kidney percussion"
+        ],
+        "result": "Mild tenderness at the right costovertebral angle; the patient shows a pain response when it is checked."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "extremities examination",
+        "aliases": [
+          "leg swelling",
+          "edema"
+        ],
+        "result": "No edema."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-002",
+    "diagnosis": "Bladder cancer",
+    "aliases": [
+      "bladder carcinoma",
+      "carcinoma of the bladder",
+      "cancer of the bladder",
+      "bladder tumor",
+      "bladder neoplasm",
+      "urothelial carcinoma of the bladder",
+      "transitional cell carcinoma of the bladder"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Bladder cancer",
+        "evidence": [
+          "Hematuria",
+          "Straining on urination",
+          "Weak urinary stream and dribbling",
+          "Works as a painter",
+          "History of smoking 1 pack per day for 30 years"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Urolithiasis",
+        "aliases": [
+          "kidney stones",
+          "nephrolithiasis",
+          "urinary stones",
+          "renal calculi",
+          "ureterolithiasis",
+          "urinary tract calculi"
+        ],
+        "evidence": [
+          "Hematuria",
+          "Right costovertebral angle tenderness",
+          "Straining on urination"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Benign prostatic hypertrophy",
+        "aliases": [
+          "benign prostatic hyperplasia",
+          "BPH",
+          "enlarged prostate",
+          "benign prostatic enlargement",
+          "prostatic hyperplasia"
+        ],
+        "evidence": [
+          "Polyuria, nocturia",
+          "Weak urinary stream and dribbling",
+          "Straining on urination"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Prostate cancer",
+        "note": "Plausible, but hard to reconcile with CVA tenderness unless there is metastasis to a right posterior rib."
+      },
+      {
+        "diagnosis": "Renal cell carcinoma",
+        "note": "Classic triad is hematuria, flank pain and a palpable mass, often with constitutional symptoms; the other urinary symptoms could be from coexisting BPH."
+      },
+      {
+        "diagnosis": "Glomerulonephritis",
+        "note": "No hypertension or volume overload argues against it, but IgA nephropathy often presents with an episode of gross hematuria, usually with a URI, GI symptoms or a flu-like illness."
+      },
+      {
+        "diagnosis": "UTI",
+        "note": "Can cause hematuria but is uncommon in men, and there are no symptoms of acute infection."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-002",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-002-p001"
+      ],
+      "f003": [
+        "medqa-cs-002-p002"
+      ],
+      "f004": [
+        "medqa-cs-002-p003"
+      ],
+      "f005": [
+        "medqa-cs-002-p003"
+      ],
+      "f006": [
+        "medqa-cs-002-p004"
+      ],
+      "f007": [
+        "medqa-cs-002-p005"
+      ],
+      "f008": [
+        "medqa-cs-002-p006"
+      ],
+      "f009": [
+        "medqa-cs-002-p006"
+      ],
+      "f010": [
+        "medqa-cs-002-p007"
+      ],
+      "f011": [
+        "medqa-cs-002-p008"
+      ],
+      "f012": [
+        "medqa-cs-002-p009"
+      ],
+      "f013": [
+        "medqa-cs-002-p010"
+      ],
+      "f014": [
+        "medqa-cs-002-p011"
+      ],
+      "f015": [
+        "medqa-cs-002-p012"
+      ],
+      "f016": [
+        "medqa-cs-002-p003",
+        "medqa-cs-002-p013",
+        "medqa-cs-002-p018"
+      ],
+      "f017": [
+        "medqa-cs-002-p013"
+      ],
+      "f018": [
+        "medqa-cs-002-p015"
+      ],
+      "f019": [
+        "medqa-cs-002-p015"
+      ],
+      "f020": [
+        "medqa-cs-002-p015"
+      ],
+      "f021": [
+        "medqa-cs-002-p015"
+      ],
+      "f022": [
+        "medqa-cs-002-p015"
+      ],
+      "f023": [
+        "medqa-cs-002-p015"
+      ],
+      "f024": [
+        "medqa-cs-002-p015"
+      ],
+      "f025": [
+        "medqa-cs-002-p015"
+      ],
+      "f026": [
+        "medqa-cs-002-p016"
+      ],
+      "f027": [
+        "medqa-cs-002-p016"
+      ],
+      "f028": [
+        "medqa-cs-002-p017"
+      ],
+      "f029": [
+        "medqa-cs-002-p014"
+      ],
+      "f030": [
+        "medqa-cs-002-p020"
+      ],
+      "f031": [
+        "medqa-cs-002-p021"
+      ],
+      "f032": [
+        "medqa-cs-002-p034"
+      ],
+      "f033": [
+        "medqa-cs-002-p035"
+      ],
+      "f034": [
+        "medqa-cs-002-p019"
+      ],
+      "f035": [
+        "medqa-cs-002-p022"
+      ],
+      "f036": [
+        "medqa-cs-002-p022"
+      ],
+      "f037": [
+        "medqa-cs-002-p023"
+      ],
+      "f038": [
+        "medqa-cs-002-p024"
+      ],
+      "f039": [
+        "medqa-cs-002-p024"
+      ],
+      "f040": [
+        "medqa-cs-002-p024"
+      ],
+      "f041": [
+        "medqa-cs-002-p025"
+      ],
+      "f042": [
+        "medqa-cs-002-p026"
+      ],
+      "f043": [
+        "medqa-cs-002-p027"
+      ],
+      "f044": [
+        "medqa-cs-002-p028"
+      ],
+      "f045": [
+        "medqa-cs-002-p029"
+      ],
+      "f046": [
+        "medqa-cs-002-p030"
+      ],
+      "f047": [
+        "medqa-cs-002-p030"
+      ],
+      "f048": [
+        "medqa-cs-002-p030"
+      ],
+      "f049": [
+        "medqa-cs-002-p031"
+      ],
+      "f050": [
+        "medqa-cs-002-p031"
+      ],
+      "f051": [
+        "medqa-cs-002-p032"
+      ],
+      "f052": [
+        "medqa-cs-002-p033"
+      ]
+    },
+    "quotes": {
+      "f001": "I'm experiencing blood in my urine.",
+      "f002": "It was bright red and later had some clots.",
+      "f003": "Yesterday morning.",
+      "f004": "That was the only time it has ever happened",
+      "f005": "my urine is back to normal now.",
+      "f006": "No.",
+      "f007": "No.",
+      "f008": "No.",
+      "f009": "No.",
+      "f010": "I have to go to the bathroom every 2 to 3 hours now.",
+      "f011": "Before, I used to go to the bathroom every 5 to 6 hours.",
+      "f012": "Yes.",
+      "f013": "Yes.",
+      "f014": "Yes.",
+      "f015": "Yes.",
+      "f016": "That was the only time it has ever happened / No. / No.",
+      "f017": "They mentioned that it's a part of aging.",
+      "f018": "No.",
+      "f019": "No.",
+      "f020": "No.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "No.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "No.",
+      "f029": "No.",
+      "f030": "Gout.",
+      "f031": "I had an appendectomy when I was 23.",
+      "f032": "No.",
+      "f033": "No.",
+      "f034": "Allopurinol.",
+      "f035": "My father died at age 80 because of a kidney problem.",
+      "f036": "My mother is alive and healthy.",
+      "f037": "Painter.",
+      "f038": "I have a few beers after work, about two to three times a week.",
+      "f039": "I have a few beers after work",
+      "f040": "about two to three times a week.",
+      "f041": "No.",
+      "f042": "No.",
+      "f043": "No.",
+      "f044": "No.",
+      "f045": "No.",
+      "f046": "Yes, I have smoked a pack of cigarettes a day for 30 years.",
+      "f047": "a pack of cigarettes a day",
+      "f048": "for 30 years.",
+      "f049": "Yes",
+      "f050": "I have a girlfriend; I met her 2 years ago through a mutual friend.",
+      "f051": "Only women.",
+      "f052": "Regularly."
+    },
+    "flags": {
+      "f011": [
+        "When the change in urinary frequency began is not stated."
+      ],
+      "f016": [
+        "p013 ('Have you experienced anything like this before?') comes right after the urinary-symptom questions under the topic 'Onset of the previous symptoms'; its 'No' is read as no earlier similar episode, as in the note HPI."
+      ],
+      "f017": [
+        "Referent of 'it' is unclear in p013 (urinary symptoms or the blood in the urine); the challenging question says he was told the blood in the urine is due to his age."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "Blood Pressure (BP): 130/80 mmHg | Vital signs: within normal limits.",
+        "exam_ids": [
+          "medqa-cs-002-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temperature (Temp): 98.6°F (37°C) | Vital signs: within normal limits.",
+        "exam_ids": [
+          "medqa-cs-002-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "Respiratory Rate (RR): 13/minute | Vital signs: within normal limits.",
+        "exam_ids": [
+          "medqa-cs-002-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "Heart Rate (HR): 72/minute, regular | Vital signs: within normal limits.",
+        "exam_ids": [
+          "medqa-cs-002-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-002-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Chest: clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-002-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Heart: regular rhythm and rate; S1/S2 within normal limits; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-002-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Abdomen: soft, non-distended, non-tender, with active bowel sounds in all four quadrants; no hepatosplenomegaly.",
+        "exam_ids": [
+          "medqa-cs-002-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Mild tenderness at right costovertebral angle. | Show pain response when the examinee checks for CVA tenderness on the right.",
+        "exam_ids": [
+          "medqa-cs-002-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "Extremities: no edema.",
+        "exam_ids": [
+          "medqa-cs-002-e006"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x009": [
+        "Only the right side is documented; the left costovertebral angle is not described in the note or the SP notes."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "p024: the answer field also contains an examinee tip that belongs to the script, not the patient (\"Prior to the social history, you may say, 'Some of the following questions may seem a bit uncomfortable...'\"). Only the alcohol answer was annotated.",
+      "p013: topic is 'Onset of the previous symptoms' but the question asks whether he has experienced anything like this before; the onset of the urinary symptoms (frequency, straining, nocturia, weak stream, dribbling) is never given. The referent of 'it' in 'They mentioned that it's a part of aging' is unclear; the challenging question applies it to the blood in the urine.",
+      "p013 and p018 ask almost the same question (previous similar episodes); both are answered 'No'.",
+      "Alcohol amount: script says 'a few beers after work, about two to three times a week'; the note says '2 beers 2-3 times per week'.",
+      "Note PSH is written in the first person ('I had an appendectomy when I was 23'), copied from the script.",
+      "Note HPI says 'no changes in appetite'; the script asked about weight and dietary habits, not appetite.",
+      "Gold diagnosis #2 lists 'Right costovertebral angle tenderness', an exam finding, under History Finding(s); the Physical Finding(s) of all three diagnoses are N/A although the note exam records right CVA tenderness. Kept as given in the source.",
+      "Gold diagnosis #3 lists 'Polyuria'; the patient describes increased frequency (every 2-3 hours), not increased volume.",
+      "The patient denies abdominal and back pain (p006), while the SP is told to show pain on right CVA tenderness testing and the note exam records mild right CVA tenderness; not contradictory (spontaneous pain vs. elicited tenderness) but worth noting.",
+      "gold_additional_diagnosis: 'Aulike illness' is an OCR artifact for 'flu-like illness'; 'As mentioned above' under prostate cancer refers to text that is not in the source."
+    ],
+    "notes": [
+      "The single hematuria episode is marked 'resolved' (the patient says his urine is back to normal now); the current absence of blood in the urine is a separate absent fact (f005).",
+      "p003, p013 and p018 support one absent fact about earlier episodes (f016) to avoid paraphrase duplicates.",
+      "Mother 'alive and healthy' is coded as an absent family-history item (no significant conditions).",
+      "The SP's CVA instruction is kept both in acting_notes and in the exam record x009.",
+      "Conversion: the chief-complaint answer 'I'm experiencing blood in my urine' is worded 'I've had blood in my urine' (f001) because the only episode was yesterday and has resolved (p003); time 'resolved' as in v1 f001-f003.",
+      "Conversion: the note's 'Vital signs: within normal limits' (e002) agrees with the doorway values, so it is cited on the four doorway records instead of a separate 'vital signs' record.",
+      "Conversion: right CVA tenderness (inside the note's abdomen line e005) and the SP pain response (v1 x009 + x011) form one record x009; the rest of e005 is the abdominal record x008.",
+      "Conversion: alcohol (p024) and smoking (p030) are split into a parent plus quantity, frequency or duration children; the four CAGE answers are children of alcohol (attribute 'other').",
+      "Conversion: p031 gives sexual activity (habit_exposure, f049) and the girlfriend (relationship, social_background, f050).",
+      "Fixes: f005 answer word removed; f006 answer word removed; f012 answer word removed; f013 answer word removed; f014 answer word removed; f015 answer word removed; f016 answer word removed; f038 answer word removed; f041 answer word removed; f042 answer word removed; f043 answer word removed; f044 answer word removed; f046 answer word removed; f049 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Show pain response when the examinee checks for CVA tenderness on the right."
+      ],
+      "patient_questions": [
+        "They mentioned that the presence of blood in my urine is due to my age. Is that accurate?",
+        "If the examinee mentions prostate disease, ask: \"What's prostate disease?\""
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-140",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 28, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "flashbacks", "aliases": ["reliving memories", "intrusive memories"], "text": "I keep having disturbing flashbacks.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "fear of loud noises", "aliases": ["scared of loud noises", "noise sensitivity"], "text": "I'm intensely afraid of loud noises; they remind me of what I went through in Iraq.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "fear of loud noises: severity", "parent": "f002", "attribute": "severity", "aliases": ["time off work", "leave from work"], "text": "It got so bad that I took leave from my army instructor duties.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f004", "item": "upsetting dreams", "aliases": ["nightmares", "bad dreams"], "text": "I've been having upsetting dreams.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "anxiety", "aliases": ["feeling anxious", "nervousness"], "text": "I've been feeling very anxious.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f006", "item": "how long the symptoms have been going on", "text": "These problems started roughly 7 weeks ago, after I got back from Iraq.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "avoiding reminders of the war", "aliases": ["avoidance", "avoiding places", "shooting range"], "text": "I've been avoiding places that bring back memories of the conflict, like practice shooting ranges.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f008", "item": "refusing to leave the house", "aliases": ["staying home", "not going out"], "text": "Lately I've been refusing to leave the house unless my wife persuades me.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f009", "item": "feeling on edge", "aliases": ["always alert", "hypervigilance", "jumpy"], "text": "I feel constantly alert and on edge.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f010", "item": "guilt", "aliases": ["feeling guilty"], "text": "I feel guilty about things that happened during my deployment.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f011", "item": "trouble sleeping", "aliases": ["insomnia", "can't sleep"], "text": "I have difficulty sleeping.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "weight loss", "text": "I haven't lost weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f014", "item": "fatigue", "aliases": ["tiredness", "low energy"], "text": "I don't feel tired.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f016", "item": "military deployment", "aliases": ["active duty", "combat", "Iraq", "military service"], "text": "I came back from active duty in Iraq 3 months ago.", "polarity": "present", "category": "social_background", "time": "historical"},
+      {"id": "f017", "item": "occupation", "aliases": ["job", "work"], "text": "I'm an army instructor.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f018", "item": "difficulty adjusting to life at home", "aliases": ["readjusting", "coping at home"], "text": "I've had a hard time adjusting to life back home after my military service.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-140",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "88/min"},
+      {"id": "x003", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x004", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x005", "kind": "exam", "system": "psychiatric", "name": "mental status examination", "aliases": ["MSE", "psychiatric examination", "appearance", "mood", "affect", "thought process", "insight", "judgment"], "result": "Appearance: anxious, hypervigilant, avoids eye contact. Mood and affect: anxious mood; constricted affect. Thought process: coherent, goal-directed. Insight and judgment: fair insight; intact judgment."},
+      {"id": "x006", "kind": "test", "name": "psychological assessment questionnaires", "aliases": ["psychological assessment", "psychometric testing", "symptom rating scales", "screening questionnaire"], "result": "Scores suggestive of PTSD, with high scores on the avoidance, intrusion and hyperarousal subscales."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-140",
+    "diagnosis": "Posttraumatic stress disorder",
+    "aliases": ["PTSD", "post-traumatic stress disorder", "post traumatic stress disorder", "combat-related PTSD", "combat-related posttraumatic stress disorder"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-140",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-140-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-140-p001"],
+      "f003": ["agentclinic-medqa-ext-140-p001"],
+      "f004": ["agentclinic-medqa-ext-140-p001", "agentclinic-medqa-ext-140-p002"],
+      "f005": ["agentclinic-medqa-ext-140-p001", "agentclinic-medqa-ext-140-p003"],
+      "f006": ["agentclinic-medqa-ext-140-p001"],
+      "f007": ["agentclinic-medqa-ext-140-p001", "agentclinic-medqa-ext-140-p004"],
+      "f008": ["agentclinic-medqa-ext-140-p001", "agentclinic-medqa-ext-140-p005"],
+      "f009": ["agentclinic-medqa-ext-140-p008"],
+      "f010": ["agentclinic-medqa-ext-140-p008"],
+      "f011": ["agentclinic-medqa-ext-140-p008"],
+      "f012": ["agentclinic-medqa-ext-140-p008"],
+      "f013": ["agentclinic-medqa-ext-140-p008"],
+      "f014": ["agentclinic-medqa-ext-140-p008"],
+      "f015": ["agentclinic-medqa-ext-140-p006"],
+      "f016": ["agentclinic-medqa-ext-140-p001", "agentclinic-medqa-ext-140-p006"],
+      "f017": ["agentclinic-medqa-ext-140-p001", "agentclinic-medqa-ext-140-p007"],
+      "f018": ["agentclinic-medqa-ext-140-p007"]
+    },
+    "quotes": {
+      "f002": "an intense fear of loud noises reminiscent of his experiences in Iraq",
+      "f003": "to the point where he took a leave from his army instructor duties",
+      "f005": "marked anxiety",
+      "f006": "these symptoms began roughly 7 weeks ago, after returning from active duty in Iraq",
+      "f007": "avoiding settings that trigger memories of the conflict, such as practice shooting ranges",
+      "f008": "refusing to leave his house until persuaded by his wife",
+      "f009": "Reports constant alertness and being on the edge.",
+      "f010": "Experiences guilt about events happened during deployment.",
+      "f011": "Difficulty sleeping.",
+      "f014": "Denies weight loss, fever, or fatigue.",
+      "f015": "No significant past medical history.",
+      "f016": "Returned from active duty in Iraq 3 months ago.",
+      "f018": "difficulty adjusting to life back home after military service"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-140-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "88 bpm", "exam_ids": ["agentclinic-medqa-ext-140-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-140-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-140-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Mental_Status_Evaluation.Appearance + Physical_Examination_Findings.Mental_Status_Evaluation.Mood_and_Affect + Physical_Examination_Findings.Mental_Status_Evaluation.Thought_Process + Physical_Examination_Findings.Mental_Status_Evaluation.Insight_and_Judgment", "source_text": "Anxious, hypervigilant, avoids eye contact | Mood is anxious; affect constricted | Coherent, goal directed | Insight is fair; judgment is intact", "exam_ids": ["agentclinic-medqa-ext-140-e005", "agentclinic-medqa-ext-140-e006", "agentclinic-medqa-ext-140-e007", "agentclinic-medqa-ext-140-e008"]},
+      "x006": {"source": "Test_Results.Psychological_Assessment_Tools.Findings", "source_text": "Scores suggestive of PTSD, including high scores on avoidance, intrusion, and hyperarousal subscales.", "exam_ids": ["agentclinic-medqa-ext-140-i002"]}
+    },
+    "leakage": [
+      {"id": "x006", "reason": "Psychological assessment result names PTSD (the gold diagnosis); it is the test's answer."}
+    ],
+    "source_issues": ["objective_for_doctor mentions 'a mental health condition, following active duty service', which points to the trauma context."],
+    "notes": ["The chief complaint names two complaints (flashbacks, fear of loud noises); both are in the opening.", "The 7-week duration applies to the dreams, anxiety and flashbacks and is a standalone fact; the return from Iraq 3 months ago is a separate social_background fact.", "Psychological experiences are written as what the patient feels ('constantly alert and on edge'); the clinical labels (hypervigilance, avoidance) are aliases only.", "Anxious, hypervigilant appearance and poor eye contact are in the mental status exam (x005); no acting note needed.", "The four mental status leaves form one mental status examination record."],
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-140-i001", "reason": "'No specific lab tests: Non-applicable for this case': no information."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Identify and manage a patient presenting with symptoms indicative of a mental health condition, following active duty service."
+    }
+  }
+}

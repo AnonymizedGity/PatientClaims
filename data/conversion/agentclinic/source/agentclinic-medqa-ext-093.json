@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-093",
+  "source_row": 93,
+  "demographics_text": "68-year-old male",
+  "objective_for_doctor": "Assess and manage a patient presenting with chronic cough, weight loss, and generalized weakness.",
+  "chief_complaint": "Chronic cough and fever",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p001",
+      "field": "History",
+      "text": "The patient reports having a fever, cough, weakness, night sweats, and poor appetite persisting for 6 months. He has lost 7.5 kg (16.5 lb) over this period. No history of breathlessness, nasal discharge, nasal obstruction, palpitations, chest pain, or digestive symptoms. Released from prison 9 months ago after a 2-year sentence."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Weight loss"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Night sweats"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Generalized weakness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Poor appetite"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p006",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history reported."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p007",
+      "field": "Social_History",
+      "text": "History of incarceration. No other relevant social history provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-093-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies breathlessness, nasal discharge, nasal obstruction, palpitations, chest pain, or digestive symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "38.1°C (100.6°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "122/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "84 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e005",
+      "path": "Physical_Examination_Findings.General_Examination.Hepatomegaly",
+      "text": "Present"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e006",
+      "path": "Physical_Examination_Findings.General_Examination.Generalized_Lymphadenopathy",
+      "text": "Present"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e007",
+      "path": "Physical_Examination_Findings.Chest_Examination.Auscultation",
+      "text": "Diffuse crackles throughout the lung fields bilaterally"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-e008",
+      "path": "Physical_Examination_Findings.Ophthalmoscopy.Findings",
+      "text": "Three discrete, yellow-colored, 0.5 mm to 1.0 mm lesions with indistinct borders in the posterior pole"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-093-i001",
+      "path": "Test_Results.Chest_X-ray.Findings",
+      "text": "Image shows diffuse infiltrates"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-093-i002",
+      "path": "Test_Results.Tuberculin_Skin_Test.Result",
+      "text": "Negative"
+    }
+  ],
+  "correct_diagnosis": "Tuberculosis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

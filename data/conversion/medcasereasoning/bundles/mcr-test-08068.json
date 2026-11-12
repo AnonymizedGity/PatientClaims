@@ -1,0 +1,90 @@
+{
+  "patient": {
+    "case_id": "mcr-test-08068",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 49, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "neck pain", "aliases": ["pain in the neck", "sore neck"], "text": "I have pain in my neck.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "neck pain: location", "parent": "f001", "attribute": "location", "text": "It's on the right side of my neck, in the spot where you can feel the neck pulse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "neck pain: severity", "parent": "f001", "attribute": "severity", "text": "It's severe.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "neck pain: character", "parent": "f001", "attribute": "character", "text": "It's a dull ache.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "neck pain: radiation", "parent": "f001", "attribute": "radiation", "text": "It spreads to my right ear.", "value": ["right ear"], "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "neck pain: aggravating", "parent": "f001", "attribute": "aggravating", "text": "Moving my head and neck sets it off.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "neck pain: duration", "parent": "f001", "attribute": "duration", "text": "It started a week ago.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f008", "item": "fever", "aliases": ["high temperature", "feeling feverish"], "text": "I had a mild fever.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f009", "item": "tiredness", "aliases": ["fatigue", "low energy", "exhaustion"], "text": "I felt tired.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "muscle aches", "aliases": ["myalgia", "muscle pain", "body aches"], "text": "My muscles ached.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f011", "item": "when the fever, tiredness and muscle aches came", "text": "They came at the start, when the neck pain began.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f012", "item": "migraine", "aliases": ["history of migraine", "migraine headaches"], "text": "I don't have a history of migraine.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "other neurological symptoms", "aliases": ["neurological symptoms", "other nerve or brain symptoms"],"text": "I haven't had any other neurological symptoms.", "polarity": "absent", "category": "symptom", "system": "neurological"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-08068",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general condition", "general inspection"], "result": "Good general condition."},
+      {"id": "x003", "kind": "exam", "system": "cardiovascular", "name": "neck examination", "aliases": ["palpation of the neck", "carotid palpation", "neck swelling", "jugular vein"], "result": "Localized swelling and tenderness at the right carotid bifurcation, worsened by palpation; no induration along the jugular vein."},
+      {"id": "x004", "kind": "exam", "system": "cardiovascular", "name": "carotid auscultation", "aliases": ["carotid bruits", "auscultation of the neck"], "result": "No carotid bruits audible."},
+      {"id": "x005", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "cervical lymph nodes", "lymphadenopathy"], "result": "No cervical lymphadenopathy."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white cell count", "WBC"], "result": "White-cell count 9910/mm3; other values within normal limits."},
+      {"id": "x007", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "0.10 mg%"},
+      {"id": "x008", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "20 mm/h"},
+      {"id": "x009", "kind": "test", "name": "blood chemistry", "aliases": ["metabolic panel", "electrolytes", "kidney function", "creatinine", "liver function tests", "glucose", "biochemistry", "other laboratory tests"], "result": "Within normal limits."},
+      {"id": "x010", "kind": "test", "name": "neck ultrasound with carotid Doppler", "aliases": ["neck ultrasound", "carotid ultrasound", "carotid Doppler", "duplex ultrasound", "thyroid ultrasound", "ultrasonography of the neck"], "result": "Asymmetric hypoechoic thickening of the right distal common carotid artery extending into the proximal internal carotid artery; no intimal plaque or stenosis; Doppler: normal flow parameters. Thyroid, parathyroid and salivary glands normal; no neck mass or cervical lymphadenopathy."},
+      {"id": "x011", "kind": "test", "name": "MRI of the neck", "aliases": ["neck MRI", "MRI with contrast", "MR angiography"], "result": "Thin rim of hyperintense tissue surrounding the right carotid artery on STIR sequences, with diffusion restriction on DWI and marked enhancement after contrast; no significant luminal narrowing."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-08068",
+    "diagnosis": "TIPIC syndrome",
+    "aliases": ["transient perivascular inflammation of the carotid artery", "transient perivascular inflammation of the carotid artery syndrome", "idiopathic carotidynia"],
+    "reasoning": "1. Carotid dissection was excluded — “MRI is particularly useful in differentiating TIPIC syndrome from intramural hematoma or carotid dissection, that are the principal vascular differential diagnoses.” 2. Intramural hematoma was excluded — “MRI is particularly useful in differentiating TIPIC syndrome from intramural hematoma or carotid dissection, that are the principal vascular differential diagnoses.” 3. Carotid thrombosis was excluded — “On Doppler studies, the affected carotid artery on the right side demonstrated normal flow parameters.” 4. Neck abscess and lymphadenitis were excluded — “no neck mass or cervical lymphadenopathy was noted.” 5. Thyroiditis was excluded — “The thyroid gland, parathyroid glands and salivary glands were normal.” 6. Migraine was excluded — “Patient denied history of migraine or other neurological symptoms.” 7. Other vascular and non-vascular causes were systematically excluded by imaging — “The diagnosis of TIPIC syndrome requires imaging evidence of the exclusion of other vascular and non-vascular causes of neck pain.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-08068",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s001"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"]
+    },
+    "quotes": {
+      "f002": "pain in the right laterocervical region over the carotid bifurcation", "f003": "a severe dull discomfort", "f004": "dull discomfort",
+      "f005": "radiating to the ipsilateral ear", "f006": "triggered by head and neck movements", "f007": "a 1-week history",
+      "f008": "mild fever", "f011": "at the onset", "f012": "denied migraine", "f013": "or other neurological symptoms"
+    },
+    "flags": {
+      "f002": ["'over the carotid bifurcation' rendered in lay words as the spot where the neck pulse is felt."],
+      "f008": ["The source says the fever was mild and at the onset; whether fever, tiredness and aches persist is not stated, so no time is given."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "he was afebrile"},
+      "x002": {"sentences": ["s004"], "source_text": "in good general condition"},
+      "x003": {"sentences": ["s005", "s007"], "source_text": "There was localized swelling and tenderness at the right carotid bifurcation, worsened by palpation. / or induration along the jugular vein"},
+      "x004": {"sentences": ["s006"], "source_text": "No carotid bruits were audible."},
+      "x005": {"sentences": ["s007"], "source_text": "There was no cervical lymphadenopathy"},
+      "x006": {"sentences": ["s008", "s009"], "source_text": "a white-cell count of 9910/mm3 / All other laboratory parameters were within normal limits."},
+      "x007": {"sentences": ["s008"], "source_text": "C-reactive protein of 0.10 mg%"},
+      "x008": {"sentences": ["s008"], "source_text": "an erythrocyte sedimentation rate of 20 mm/h"},
+      "x009": {"sentences": ["s009"], "source_text": "All other laboratory parameters were within normal limits."},
+      "x010": {"sentences": ["s010", "s011", "s012"], "source_text": "Ultrasonography of the neck demonstrated an asymmetric hypoechoic thickening of the right distal common carotid artery extending into the proximal internal carotid artery. / No intimal plaque or stenosis was present, and Doppler studies showed normal flow parameters. / The thyroid, parathyroid, and salivary glands appeared normal; no neck mass or cervical lymphadenopathy was seen."},
+      "x011": {"sentences": ["s013", "s014"], "source_text": "MRI of the neck revealed a thin rim of hyperintense tissue surrounding the right carotid artery on STIR sequences, which showed diffusion restriction on DWI and marked enhancement after contrast administration. / There was no significant luminal narrowing."}
+    },
+    "finding_flags": {
+      "x001": ["No temperature value, only 'afebrile'."],
+      "x006": ["'other values within normal limits' comes from s009 'All other laboratory parameters were within normal limits'."],
+      "x011": ["s014 (no significant luminal narrowing) is placed with the MRI it follows; it could also refer to the ultrasound."]
+    },
+    "leakage": [],
+    "source_issues": [],
+    "notes": [
+      "Index visit: the outpatient presentation with 1 week of severe right-sided neck pain over the carotid bifurcation (s001-s007); laboratory, ultrasound and MRI results (s008-s014) are findings from the same workup.",
+      "s003: fever, tiredness and muscle aches at the start of the illness share one standalone timing fact (f011).",
+      "s009 'All other laboratory parameters were within normal limits' is a blood chemistry record (x009) and the remainder of the blood count (x006).",
+      "f013 'other neurological symptoms' is a blanket denial (s003 'denied ... other neurological symptoms'); it has no aliases naming specific symptoms, so questions about numbness, weakness or vision stay unknown."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

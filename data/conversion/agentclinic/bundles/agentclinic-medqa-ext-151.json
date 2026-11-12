@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-151", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 45, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "breast lump", "aliases": ["breast mass", "lump in the breast"], "text": "I've found a lump in my right breast.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "breast lump: onset", "parent": "f001", "attribute": "onset", "text": "I first noticed it 3 weeks ago.", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f003", "item": "breast lump: growth", "parent": "f001", "attribute": "course", "text": "It has been getting bigger quickly.", "polarity": "present", "category": "symptom", "system": "reproductive"},
+      {"id": "f004", "item": "breast lump: pain", "parent": "f001", "attribute": "character", "aliases": ["breast pain", "tender lump"], "text": "The lump isn't painful.", "polarity": "absent", "category": "symptom", "system": "reproductive"},
+      {"id": "f005", "item": "skin changes on the breast", "text": "I haven't noticed any changes in the skin of my breast.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f006", "item": "nipple changes", "text": "I haven't noticed any changes in how my nipple looks.", "polarity": "absent", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f007", "item": "swollen lymph nodes", "aliases": ["swollen glands", "lymphadenopathy", "lumps in the armpit"], "text": "I haven't noticed any swollen glands.", "polarity": "absent", "category": "symptom", "system": "hematologic", "time": "current"},
+      {"id": "f008", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "previous breast lumps", "text": "I've never had a breast lump before.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f010", "item": "previous cancer", "aliases": ["history of cancer"], "text": "I've never had cancer.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f011", "item": "family history of cancer", "aliases": ["family history of breast cancer", "family history of breast lumps"], "text": "No one in my family has had breast lumps or cancer.", "polarity": "absent", "category": "family_history", "time": "current"},
+      {"id": "f012", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol in moderation.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a teacher.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "weight loss", "text": "I haven't lost any weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "night sweats", "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f018", "item": "change in appetite", "aliases": ["appetite"], "text": "My appetite hasn't changed.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-151",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98.2°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "122/80 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "76/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "reproductive", "name": "breast examination", "aliases": ["breast exam", "clinical breast examination", "breast palpation", "nipple examination"], "result": "Inspection: no skin changes or nipple retraction. Right breast: a 5-cm, nontender, multinodular mass in the outer quadrant; no discharge. Left breast: no masses or tenderness."},
+      {"id": "x006", "kind": "exam", "system": "hematologic", "name": "lymph node examination", "aliases": ["lymph nodes", "axillary lymph nodes", "cervical lymph nodes"], "result": "No palpable cervical or axillary lymphadenopathy."},
+      {"id": "x007", "kind": "test", "name": "mammogram", "aliases": ["mammography", "breast imaging"], "result": "Smooth, polylobulated mass in the right breast."},
+      {"id": "x008", "kind": "test", "name": "biopsy of the right breast mass", "aliases": ["breast biopsy", "core needle biopsy", "histopathology"], "result": "Papillary projections of epithelial-lined stroma with hyperplasia and atypia."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-151",
+    "diagnosis": "Phyllodes tumor",
+    "aliases": ["phyllodes tumour", "phylloides tumor", "cystosarcoma phyllodes", "benign phyllodes tumor", "borderline phyllodes tumor", "malignant phyllodes tumor"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-151",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-151-p001"], "f002": ["agentclinic-medqa-ext-151-p001"],
+      "f003": ["cc", "agentclinic-medqa-ext-151-p001"],
+      "f004": ["agentclinic-medqa-ext-151-p001", "agentclinic-medqa-ext-151-p002"],
+      "f005": ["agentclinic-medqa-ext-151-p003"], "f006": ["agentclinic-medqa-ext-151-p003"], "f007": ["agentclinic-medqa-ext-151-p004"],
+      "f008": ["agentclinic-medqa-ext-151-p005"], "f009": ["agentclinic-medqa-ext-151-p005"], "f010": ["agentclinic-medqa-ext-151-p005"],
+      "f011": ["agentclinic-medqa-ext-151-p005"],
+      "f012": ["agentclinic-medqa-ext-151-p006"], "f013": ["agentclinic-medqa-ext-151-p006"], "f014": ["agentclinic-medqa-ext-151-p006"],
+      "f015": ["agentclinic-medqa-ext-151-p007"], "f016": ["agentclinic-medqa-ext-151-p007"], "f017": ["agentclinic-medqa-ext-151-p007"],
+      "f018": ["agentclinic-medqa-ext-151-p007"]
+    },
+    "quotes": {
+      "f002": "3 weeks ago", "f003": "rapidly increased in size", "f004": "denies experiencing any pain associated with the mass",
+      "f005": "No changes in skin or nipple appearance", "f006": "No changes in skin or nipple appearance",
+      "f007": "No noticeable lymphadenopathy", "f009": "No history of breast masses or cancer in herself or her family.",
+      "f010": "No history of breast masses or cancer in herself or her family.", "f011": "No history of breast masses or cancer in herself or her family.",
+      "f013": "moderate alcohol use", "f018": "changes in appetite"
+    },
+    "flags": {
+      "f010": ["'No history of breast masses or cancer in herself' is read as no cancer of any kind; the source could mean breast cancer only."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98.2°F)", "exam_ids": ["agentclinic-medqa-ext-151-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "122/80 mmHg", "exam_ids": ["agentclinic-medqa-ext-151-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "76 bpm", "exam_ids": ["agentclinic-medqa-ext-151-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-151-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Breast_Examination.Inspection + Physical_Examination_Findings.Breast_Examination.Palpation.Right_Breast + Physical_Examination_Findings.Breast_Examination.Palpation.Left_Breast", "source_text": "No skin changes or nipple retraction. | A 5-cm, nontender, multinodular mass palpated in the outer quadrant. No discharge. | No masses or tenderness.", "exam_ids": ["agentclinic-medqa-ext-151-e005", "agentclinic-medqa-ext-151-e006", "agentclinic-medqa-ext-151-e007"]},
+      "x006": {"source": "Physical_Examination_Findings.Breast_Examination.Palpation.Lymph_Nodes", "source_text": "No palpable cervical or axillary adenopathy.", "exam_ids": ["agentclinic-medqa-ext-151-e008"]},
+      "x007": {"source": "Test_Results.Mammography.Findings", "source_text": "Shows a smooth polylobulated mass in the right breast.", "exam_ids": ["agentclinic-medqa-ext-151-i001"]},
+      "x008": {"source": "Test_Results.Biopsy.Histopathology", "source_text": "Papillary projections of epithelial-lined stroma with hyperplasia and atypia.", "exam_ids": ["agentclinic-medqa-ext-151-i002"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The mass is located in 'the outer quadrant' without saying upper or lower."
+    ],
+    "notes": [
+      "The pain denial appears in the history and in Secondary_Symptoms ('No pain'); it is one child fact of the lump (f004).",
+      "p005 is split into four answerable statements: no significant medical history, no previous breast lumps, no previous cancer, and no family history of breast lumps or cancer.",
+      "The lymph-node leaf sits under breast palpation in the source but covers cervical as well as axillary nodes, so it is a separate lymph node examination record."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with a breast mass."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

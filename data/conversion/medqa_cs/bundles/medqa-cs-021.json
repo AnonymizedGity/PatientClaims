@@ -1,0 +1,1251 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-021",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 52,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "yellow eyes and skin",
+        "aliases": [
+          "jaundice",
+          "yellowing"
+        ],
+        "text": "I have jaundice in my eyes and skin.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "yellow eyes and skin: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "I first noticed it three weeks ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "stool color",
+        "aliases": [
+          "pale stools",
+          "color of bowel movements"
+        ],
+        "text": "My stools have been light.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "urine color",
+        "aliases": [
+          "dark urine"
+        ],
+        "text": "My urine has been darker than usual.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "itching",
+        "aliases": [
+          "itchy skin"
+        ],
+        "text": "I've been itching.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f006",
+        "item": "itching: onset",
+        "parent": "f005",
+        "attribute": "onset",
+        "text": "I started itching 2 months ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "itching: effect of medicines",
+        "parent": "f005",
+        "attribute": "treatment_response",
+        "aliases": [
+          "Benadryl"
+        ],
+        "text": "Benadryl used to help, but not anymore.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "itching: severity",
+        "parent": "f005",
+        "attribute": "severity",
+        "value": 7,
+        "text": "Sometimes it's a 7 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "skin",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f009",
+        "item": "stomach pain",
+        "aliases": [
+          "abdominal pain",
+          "belly pain"
+        ],
+        "text": "Sometimes I have pain in my stomach.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f010",
+        "item": "stomach pain: onset",
+        "parent": "f009",
+        "attribute": "onset",
+        "text": "It started around the same time that I noticed the change in the color of my eyes and skin.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "stomach pain: constant or comes and goes",
+        "parent": "f009",
+        "attribute": "timing",
+        "text": "Well, I don't have the pain all the time. It comes and goes.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f012",
+        "item": "stomach pain: how often",
+        "parent": "f009",
+        "attribute": "frequency",
+        "text": "At least once every day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f013",
+        "item": "stomach pain: change since it started",
+        "parent": "f009",
+        "attribute": "course",
+        "text": "It's the same.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "stomach pain: severity",
+        "parent": "f009",
+        "attribute": "severity",
+        "value": 3,
+        "text": "When I have the pain, it's a 3 out of 10, but it can go down to 0.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f015",
+        "item": "stomach pain: location",
+        "parent": "f009",
+        "attribute": "location",
+        "value": [
+          "upper right abdomen"
+        ],
+        "text": "It's here, in the upper right part of my stomach.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "stomach pain: spread",
+        "parent": "f009",
+        "attribute": "radiation",
+        "text": "It stays in one place.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "stomach pain: what it feels like",
+        "parent": "f009",
+        "attribute": "character",
+        "text": "It's dull.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "stomach pain: what makes it better",
+        "parent": "f009",
+        "attribute": "relieving",
+        "text": "Tylenol helps.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "stomach pain: what makes it worse",
+        "parent": "f009",
+        "attribute": "aggravating",
+        "text": "Nothing makes it worse.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "stomach pain: relation to meals",
+        "parent": "f009",
+        "attribute": "timing",
+        "text": "It isn't related to food.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "earlier episodes of stomach pain",
+        "aliases": [
+          "previous stomach pain"
+        ],
+        "text": "I've never had pain like this before.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "historical"
+      },
+      {
+        "id": "f022",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "Sometimes I feel nauseated when I'm in pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "recurrent"
+      },
+      {
+        "id": "f023",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I haven't vomited.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "diarrhea",
+        "aliases": [
+          "loose stools"
+        ],
+        "text": "I don't have diarrhea.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "constipation",
+        "text": "I'm not constipated.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "fever",
+        "text": "I haven't had a fever.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "night sweats",
+        "text": "I haven't had night sweats.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f028",
+        "item": "tiredness",
+        "aliases": [
+          "fatigue",
+          "low energy"
+        ],
+        "text": "I've been feeling tired recently.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "weight change",
+        "aliases": [
+          "weight loss",
+          "weight gain"
+        ],
+        "text": "My weight hasn't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f030",
+        "item": "appetite",
+        "aliases": [
+          "appetite change",
+          "loss of appetite"
+        ],
+        "text": "I have no appetite.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f031",
+        "item": "joint pain",
+        "text": "I don't have any joint pain.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "musculoskeletal",
+        "time": "current"
+      },
+      {
+        "id": "f032",
+        "item": "earlier similar symptoms",
+        "aliases": [
+          "previous jaundice"
+        ],
+        "text": "I've never had symptoms like this before.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "hypothyroidism",
+        "aliases": [
+          "underactive thyroid",
+          "thyroid problem"
+        ],
+        "text": "I have hypothyroidism.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f034",
+        "item": "blood transfusion",
+        "text": "When I had a C-section 20 years ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f035",
+        "item": "cesarean sections",
+        "aliases": [
+          "C-sections"
+        ],
+        "text": "I had two cesarean sections, at 25 and 30 years old.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "tubal ligation",
+        "aliases": [
+          "tubes tied"
+        ],
+        "text": "After that, I had a tubal ligation at age 35.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "colonoscopy",
+        "text": "I've never had a colonoscopy.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f038",
+        "item": "vaccinations before the trip",
+        "aliases": [
+          "travel vaccines",
+          "immunizations"
+        ],
+        "text": "I didn't get any immunizations before the trip.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "Tylenol",
+        "aliases": [
+          "acetaminophen",
+          "paracetamol"
+        ],
+        "text": "I take Tylenol.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "Tylenol: how much",
+        "parent": "f039",
+        "attribute": "quantity",
+        "text": "I take four tablets daily to make sure I don't have pain.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "Synthroid",
+        "aliases": [
+          "levothyroxine",
+          "thyroid pill"
+        ],
+        "text": "I take Synthroid.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies"
+        ],
+        "text": "I have an allergy to penicillin; it gives me a skin rash when I take it.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "father's health",
+        "text": "My father passed away at 55 from pancreatic cancer.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "historical"
+      },
+      {
+        "id": "f044",
+        "item": "mother's health",
+        "text": "My mother is currently healthy and alive.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "recent travel",
+        "aliases": [
+          "travel"
+        ],
+        "text": "I went to Mexico for a brief vacation about 2 months ago.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f046",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink wine.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "alcohol: how much",
+        "parent": "f046",
+        "attribute": "quantity",
+        "text": "One or two glasses of wine daily.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "alcohol: for how long",
+        "parent": "f046",
+        "attribute": "duration",
+        "text": "For the last 30 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "thought about cutting down on drinking",
+        "text": "I've never thought about cutting down.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f050",
+        "item": "others annoyed by drinking",
+        "text": "Nobody has been annoyed by my drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f051",
+        "item": "guilt about drinking",
+        "text": "I don't feel bad about drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f052",
+        "item": "morning drink (eye-opener)",
+        "aliases": [
+          "drinking first thing in the morning"
+        ],
+        "text": "I don't need a drink in the morning.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f053",
+        "item": "drinking affecting work",
+        "text": "Drinking hasn't affected my work.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f054",
+        "item": "drinking affecting relationships",
+        "text": "My drinking hasn't affected my relationships.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f055",
+        "item": "legal problems from drinking",
+        "text": "I haven't had any legal problems because of drinking.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "historical"
+      },
+      {
+        "id": "f056",
+        "item": "recreational drugs",
+        "aliases": [
+          "illegal drugs",
+          "street drugs"
+        ],
+        "text": "I don't use recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f057",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I don't smoke.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f058",
+        "item": "sexual activity",
+        "text": "I'm sexually active with my spouse.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f059",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I work in a travel agency.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      },
+      {
+        "id": "f060",
+        "item": "marital status",
+        "text": "I'm married.",
+        "polarity": "present",
+        "category": "social_background"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-021",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "130/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "result": "98.3°F (36.8°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "15/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "70/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "No acute distress."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "eye",
+        "name": "eye examination",
+        "aliases": [
+          "sclerae",
+          "eyes"
+        ],
+        "result": "Sclerae icteric."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; S1 and S2 within normal limits; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen",
+          "abdominal palpation",
+          "fluid wave"
+        ],
+        "result": "Soft, not distended; cesarean-section scar; mild right upper quadrant tenderness without rebound or guarding; normal bowel sounds in all four quadrants; no organ enlargement or masses; no fluid wave to suggest ascites."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "Murphy sign",
+        "aliases": [
+          "Murphy's sign"
+        ],
+        "result": "Positive."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "skin",
+        "name": "skin examination",
+        "aliases": [
+          "skin",
+          "jaundice",
+          "spider angiomas",
+          "palms"
+        ],
+        "result": "Jaundice; excoriations from scratching; no spider telangiectasias or palmar erythema."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "neurological",
+        "name": "extremities examination",
+        "aliases": [
+          "asterixis",
+          "edema"
+        ],
+        "result": "No asterixis; no edema."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-021",
+    "diagnosis": "Extrahepatic biliary obstruction (e.g., pancreatic cancer, cholangiocarcinoma, ampullary carcinoma, sphincter of Oddi dysfunction)",
+    "aliases": [
+      "extrahepatic biliary obstruction",
+      "extrahepatic cholestasis",
+      "obstructive jaundice",
+      "biliary obstruction",
+      "bile duct obstruction",
+      "pancreatic cancer",
+      "pancreatic head cancer",
+      "cholangiocarcinoma",
+      "ampullary carcinoma",
+      "sphincter of Oddi dysfunction"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Extrahepatic biliary obstruction (e.g., pancreatic cancer, cholangiocarcinoma, ampullary carcinoma, sphincter of Oddi dysfunction)",
+        "evidence": [
+          "Light stools, dark urine",
+          "Pruritus",
+          "Father with pancreatic cancer",
+          "Exam: Jaundice, scleral icterus",
+          "Exam: Right upper quadrant tenderness"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Viral hepatitis",
+        "aliases": [
+          "acute viral hepatitis",
+          "infectious hepatitis",
+          "hepatitis A",
+          "hepatitis B",
+          "hepatitis C"
+        ],
+        "evidence": [
+          "History of blood transfusion",
+          "Recent travel to Mexico",
+          "Exam: Jaundice, scleral icterus",
+          "Exam: Right upper quadrant tenderness"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Acetaminophen hepatotoxicity",
+        "aliases": [
+          "acetaminophen toxicity",
+          "acetaminophen-induced liver injury",
+          "paracetamol hepatotoxicity",
+          "Tylenol toxicity"
+        ],
+        "evidence": [
+          "Frequent acetaminophen use",
+          "Concomitant alcohol use",
+          "Exam: Jaundice, scleral icterus",
+          "Exam: Right upper quadrant tenderness"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Alcoholic hepatitis",
+        "note": "Her symptoms fit and hepatomegaly is often present; she reports only 1-2 glasses of wine daily, but alcohol intake is often underreported."
+      },
+      {
+        "diagnosis": "Primary biliary cirrhosis",
+        "note": "Typical in women aged 40-60 with pruritus and other autoimmune disease such as hypothyroidism, but jaundice is a late finding and RUQ pain is not typical."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-021",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-021-p001"
+      ],
+      "f003": [
+        "medqa-cs-021-p002"
+      ],
+      "f004": [
+        "medqa-cs-021-p003"
+      ],
+      "f005": [
+        "medqa-cs-021-p004"
+      ],
+      "f006": [
+        "medqa-cs-021-p004"
+      ],
+      "f007": [
+        "medqa-cs-021-p004"
+      ],
+      "f008": [
+        "medqa-cs-021-p005"
+      ],
+      "f009": [
+        "medqa-cs-021-p006"
+      ],
+      "f010": [
+        "medqa-cs-021-p007"
+      ],
+      "f011": [
+        "medqa-cs-021-p008"
+      ],
+      "f012": [
+        "medqa-cs-021-p009"
+      ],
+      "f013": [
+        "medqa-cs-021-p010"
+      ],
+      "f014": [
+        "medqa-cs-021-p011"
+      ],
+      "f015": [
+        "medqa-cs-021-p012"
+      ],
+      "f016": [
+        "medqa-cs-021-p013"
+      ],
+      "f017": [
+        "medqa-cs-021-p014"
+      ],
+      "f018": [
+        "medqa-cs-021-p015"
+      ],
+      "f019": [
+        "medqa-cs-021-p016"
+      ],
+      "f020": [
+        "medqa-cs-021-p017"
+      ],
+      "f021": [
+        "medqa-cs-021-p018"
+      ],
+      "f022": [
+        "medqa-cs-021-p019"
+      ],
+      "f023": [
+        "medqa-cs-021-p019"
+      ],
+      "f024": [
+        "medqa-cs-021-p020"
+      ],
+      "f025": [
+        "medqa-cs-021-p020"
+      ],
+      "f026": [
+        "medqa-cs-021-p023"
+      ],
+      "f027": [
+        "medqa-cs-021-p023"
+      ],
+      "f028": [
+        "medqa-cs-021-p024"
+      ],
+      "f029": [
+        "medqa-cs-021-p025"
+      ],
+      "f030": [
+        "medqa-cs-021-p026"
+      ],
+      "f031": [
+        "medqa-cs-021-p027"
+      ],
+      "f032": [
+        "medqa-cs-021-p031"
+      ],
+      "f033": [
+        "medqa-cs-021-p032"
+      ],
+      "f034": [
+        "medqa-cs-021-p022"
+      ],
+      "f035": [
+        "medqa-cs-021-p033"
+      ],
+      "f036": [
+        "medqa-cs-021-p033"
+      ],
+      "f037": [
+        "medqa-cs-021-p021"
+      ],
+      "f038": [
+        "medqa-cs-021-p029"
+      ],
+      "f039": [
+        "medqa-cs-021-p015",
+        "medqa-cs-021-p030"
+      ],
+      "f040": [
+        "medqa-cs-021-p015"
+      ],
+      "f041": [
+        "medqa-cs-021-p030"
+      ],
+      "f042": [
+        "medqa-cs-021-p039"
+      ],
+      "f043": [
+        "medqa-cs-021-p034"
+      ],
+      "f044": [
+        "medqa-cs-021-p034"
+      ],
+      "f045": [
+        "medqa-cs-021-p028"
+      ],
+      "f046": [
+        "medqa-cs-021-p040"
+      ],
+      "f047": [
+        "medqa-cs-021-p040"
+      ],
+      "f048": [
+        "medqa-cs-021-p040"
+      ],
+      "f049": [
+        "medqa-cs-021-p041"
+      ],
+      "f050": [
+        "medqa-cs-021-p041"
+      ],
+      "f051": [
+        "medqa-cs-021-p041"
+      ],
+      "f052": [
+        "medqa-cs-021-p041"
+      ],
+      "f053": [
+        "medqa-cs-021-p042"
+      ],
+      "f054": [
+        "medqa-cs-021-p042"
+      ],
+      "f055": [
+        "medqa-cs-021-p042"
+      ],
+      "f056": [
+        "medqa-cs-021-p036"
+      ],
+      "f057": [
+        "medqa-cs-021-p037"
+      ],
+      "f058": [
+        "medqa-cs-021-p038"
+      ],
+      "f059": [
+        "medqa-cs-021-p035"
+      ],
+      "f060": [
+        "medqa-cs-021-p038"
+      ]
+    },
+    "quotes": {
+      "f001": "Jaundice in my eyes and skin.",
+      "f002": "Three weeks ago.",
+      "f003": "Light.",
+      "f004": "Darker than usual.",
+      "f005": "I started itching 2 months ago",
+      "f006": "I started itching 2 months ago",
+      "f007": "Benadryl used to help, but not anymore.",
+      "f008": "Sometimes it's 7/10.",
+      "f009": "Sometimes.",
+      "f010": "It was around the same time that I noticed the change in the color of my eyes and skin.",
+      "f011": "Well, I don't have the pain all the time. It comes and goes.",
+      "f012": "At least once every day.",
+      "f013": "It is the same.",
+      "f014": "When I experience the pain, it rates at 3 out of 10, but it can decrease to 0.",
+      "f015": "It is located here (gestures to the RUQ).",
+      "f016": "It stays in one place.",
+      "f017": "Dull.",
+      "f018": "Tylenol.",
+      "f019": "No.",
+      "f020": "It is not related to food.",
+      "f021": "No.",
+      "f022": "Sometimes I feel nauseated when I am in pain",
+      "f023": "but no vomiting.",
+      "f024": "No.",
+      "f025": "No.",
+      "f026": "No.",
+      "f027": "No.",
+      "f028": "Yes, recently.",
+      "f029": "No.",
+      "f030": "I have no appetite.",
+      "f031": "No.",
+      "f032": "No.",
+      "f033": "Hypothyroidism.",
+      "f034": "Yes, when I had a C-section 20 years ago.",
+      "f035": "I had two cesarean sections at 25 and 30 years old",
+      "f036": "followed by a tubal ligation at age 35.",
+      "f037": "Never.",
+      "f038": "No.",
+      "f039": "Tylenol.",
+      "f040": "I take four tablets daily to ensure I don't experience pain.",
+      "f041": "Synthroid.",
+      "f042": "I have an allergy to penicillin; it makes my skin rash when I use it.",
+      "f043": "My father passed away at 55 from pancreatic cancer",
+      "f044": "my mother is currently healthy and alive.",
+      "f045": "I went to Mexico for a brief vacation about 2 months ago.",
+      "f046": "For the last 30 years, I have consumed one or two glasses of wine daily.",
+      "f047": "one or two glasses of wine daily.",
+      "f048": "For the last 30 years",
+      "f049": "No (to all four).",
+      "f050": "No (to all four).",
+      "f051": "No (to all four).",
+      "f052": "No (to all four).",
+      "f053": "No.",
+      "f054": "No.",
+      "f055": "No.",
+      "f056": "No.",
+      "f057": "No.",
+      "f058": "Yes, with my spouse.",
+      "f059": "I work in a travel agency."
+    },
+    "flags": {
+      "f034": [
+        "p022 dates the transfusion to a C-section '20 years ago', but p033 places her C-sections at ages 25 and 30 (22-27 years before age 52)."
+      ],
+      "f060": [
+        "Split off from f058, whose text was the only record of it (fix)."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 130/80 mmHg | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-021-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 98.3°F (36.8°C) | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-021-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 15 per minute | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-021-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 70 per minute, regular | VS: within normal limits (WNL)",
+        "exam_ids": [
+          "medqa-cs-021-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "Patient is in no acute distress.",
+        "exam_ids": [
+          "medqa-cs-021-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "HEENT: Sclerae icteric.",
+        "exam_ids": [
+          "medqa-cs-021-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Chest: Clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-021-e004"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Heart: regular rate and rhythm (RRR); S1/S2 within normal limits (WNL); no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-021-e005"
+        ]
+      },
+      "x009": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Abdomen: Soft, nondistended, C-section scar. Mild right upper quadrant tenderness without rebound or guarding, ... normal bowel sounds (BS) x 4 quadrants, no organomegaly or masses. No evidence of fluid wave suggestive of ascites. | Exhibit right upper quadrant tenderness on palpation.",
+        "exam_ids": [
+          "medqa-cs-021-e006",
+          "medqa-cs-021-e007"
+        ]
+      },
+      "x010": {
+        "source": "patient_note",
+        "source_text": "positive Murphy sign",
+        "exam_ids": [
+          "medqa-cs-021-e007"
+        ]
+      },
+      "x011": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Skin: Jaundice, excoriations due to scratching, no spider telangiectasias or palmar erythema. | Show signs of scratching.",
+        "exam_ids": [
+          "medqa-cs-021-e008"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "Extremities: No asterixis, no edema.",
+        "exam_ids": [
+          "medqa-cs-021-e009"
+        ]
+      }
+    },
+    "finding_flags": {},
+    "leakage": [
+      {
+        "fact_id": "f043",
+        "reason": "Family history names pancreatic cancer, one of the examples given in the rank-1 diagnosis (extrahepatic biliary obstruction); legitimate history that the gold itself cites."
+      }
+    ],
+    "source_issues": [
+      "The note's abdominal exam sentence is split across two exam lines: e006 ends with 'without rebound or' and e007 starts with 'guarding, ...'. The abdominal examination (x009) cites both ids.",
+      "p022 dates the transfusion to a C-section '20 years ago', but p033 places her C-sections at ages 25 and 30 (22-27 years before age 52).",
+      "The itching began 2 months ago (p004), before the jaundice (3 weeks, p001); the note HPI gives no itch onset. Not an error, but the gold's pruritus evidence predates the jaundice.",
+      "The raw 'Information Gathering' checklist section is empty."
+    ],
+    "notes": [
+      "p004 'Benadryl used to help, but not anymore' is a present fact (treatment no longer effective), per guide rule 2; p026 'I have no appetite' is present anorexia.",
+      "Tylenol from p015 and p030 is one medication fact (f039) with a dose child (f040); its pain relief is the relieving child of the stomach pain (f018).",
+      "The SP directions 'Show signs of scratching' and 'Exhibit right upper quadrant tenderness on palpation' are kept as acting notes and are part of the skin (x011) and abdominal (x009) examination results, consistent with the note.",
+      "Temporality: the episodic pattern of the abdominal pain (comes and goes, daily, per-episode severity, nausea with pain) is 'recurrent'; the rest of the current illness is 'current'.",
+      "'(gestures to the RUQ)' moved to extras.acting_notes; the location is kept in words in f015 ('the upper right part of my stomach').",
+      "Conversion: itching (p004-p005) and stomach pain (p006-p017) are parents with their attributes as children; alcohol (p040) is split into the habit (f046) with amount and duration children. The two surgeries in p033 stay separate facts (f035, f036), each with the alias 'past surgery'.",
+      "Conversion: the note's 'VS: within normal limits' (e002) agrees with the doorway values and is cited on each doorway vital record.",
+      "Conversion: the gold aliases include the specific causes the gold names as examples (pancreatic cancer, cholangiocarcinoma, ampullary carcinoma, sphincter of Oddi dysfunction); other causes such as choledocholithiasis are not added.",
+      "Harmonisation pass: scale [0, 10] added to f008, f014.",
+      "Fixes: f054 text rewritten; f058 text rewritten; f005 answer word removed; f019 answer word removed; f021 answer word removed; f024 answer word removed; f025 answer word removed; f026 answer word removed; f027 answer word removed; f028 answer word removed; f029 answer word removed; f031 answer word removed; f032 answer word removed; f034 answer word removed; f037 answer word removed; f038 answer word removed; f046 answer word removed; f049 answer word removed; f050 answer word removed; f051 answer word removed; f052 answer word removed; f053 answer word removed; f055 answer word removed; f056 answer word removed; f057 answer word removed; f060 new fact 'marital status' from f058; f035 alias 'past surgery' removed; f036 alias 'past surgery' removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Sit up on the bed.",
+        "Show signs of scratching.",
+        "Exhibit right upper quadrant tenderness on palpation.",
+        "Gesture to the right upper quadrant when asked where the pain is."
+      ],
+      "patient_questions": [
+        "My father was diagnosed with pancreatic cancer. Is it possible for me to develop it as well?",
+        "If ERCP, ultrasound, or MRI is mentioned, ask for an explanation."
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

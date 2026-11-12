@@ -1,0 +1,116 @@
+{
+  "patient": {
+    "case_id": "mcr-test-01556",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 20, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "thigh pain", "aliases": ["leg pain", "pain in the thigh", "femur pain"], "text": "I have pain in my thigh.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "thigh pain: location", "parent": "f001", "attribute": "location", "text": "It's in the upper part of my right thigh.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "thigh pain: timing", "parent": "f001", "attribute": "timing", "text": "It's there all the time.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "thigh pain: course", "parent": "f001", "attribute": "course", "text": "It has been getting worse over the past 8 years.", "value": "8 years", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "thigh pain: worse at night", "parent": "f001", "attribute": "aggravating", "text": "It's worse at night.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "thigh pain: relieving factors", "parent": "f001", "attribute": "relieving", "text": "Being active and taking cold baths ease it somewhat.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "thigh pain: context", "parent": "f001", "attribute": "context", "text": "It got worse after I was hit by a car six months ago.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f008", "item": "NSAIDs", "aliases": ["anti-inflammatories", "ibuprofen-type painkillers"], "text": "I take NSAID painkillers every day for the pain.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "paracetamol", "aliases": ["acetaminophen", "Tylenol"], "text": "I take paracetamol every day for the pain.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "weak opioids", "aliases": ["opioids", "codeine-type painkillers"], "text": "I also need weak opioid painkillers every day.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "unequal leg length", "aliases": ["leg-length discrepancy", "one leg shorter"], "text": "My legs are not the same length.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "unequal leg length: treatment", "parent": "f011", "attribute": "other", "text": "I wear shoe inserts for it.", "polarity": "present", "category": "medical_history"},
+      {"id": "f013", "item": "sick leave", "aliases": ["off work", "work", "time off work"], "text": "I'm on sick leave because of the pain.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f014", "item": "other medical problems", "aliases": ["past medical history", "other illnesses"], "text": "I don't have any other medical conditions.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "age at first period", "aliases": ["menarche", "when periods started"], "text": "My periods started when I was 13.", "value": 13, "polarity": "present", "category": "medical_history"},
+      {"id": "f016", "item": "bone disease in the family", "aliases": ["family history", "family history of bone disease"], "text": "No one in my family has bone disease.", "polarity": "absent", "category": "family_history"},
+      {"id": "f017", "item": "hip joint pain in childhood", "aliases": ["hip pain", "childhood hip problem"], "text": "When I was 11 I had pain in my hip joint; it went away.", "polarity": "present", "category": "medical_history", "time": "resolved"},
+      {"id": "f018", "item": "hip joint aspiration in childhood", "aliases": ["hip aspiration", "joint fluid drained", "needle in the hip"], "text": "At that time they drew fluid from my hip joint with a needle under ultrasound, and the fluid showed no infection.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f019", "item": "hit by a car", "aliases": ["car accident", "injury", "trauma", "road accident"], "text": "Six months ago I was hit by a car at the level of my knee; no fracture was found.", "polarity": "present", "category": "medical_history", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-01556",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "musculoskeletal", "name": "right thigh examination", "aliases": ["thigh", "leg examination", "skin over the thigh", "inspection of the thigh"], "result": "No skin lesions, café au lait spots, erythema, heat or swelling over the right thigh."},
+      {"id": "x002", "kind": "exam", "system": "musculoskeletal", "name": "leg length measurement", "aliases": ["leg lengths", "limb length"], "result": "Slightly unequal but within normal limits."},
+      {"id": "x003", "kind": "test", "name": "MRI of the right thigh", "aliases": ["MRI", "femur MRI", "magnetic resonance imaging"], "result": "Significantly increased cortical thickness of the right femoral diaphysis, with partial medullary obliteration and an uneven sclerotic surface."},
+      {"id": "x004", "kind": "test", "name": "PET-CT", "aliases": ["PET scan", "positron emission tomography"], "result": "Significantly increased cortical thickness of the right femoral diaphysis, with partial medullary obliteration and an uneven sclerotic surface."},
+      {"id": "x005", "kind": "test", "name": "Tc-99m bone scan", "aliases": ["bone scan", "bone scintigraphy", "technetium bone scan"], "result": "Increased uptake in most of the right femoral shaft."},
+      {"id": "x006", "kind": "test", "name": "biochemical bone markers", "aliases": ["bone markers", "alkaline phosphatase", "ALP", "bone turnover markers"], "result": "Normal, including alkaline phosphatase."},
+      {"id": "x007", "kind": "test", "name": "genetic testing in blood", "aliases": ["genetic screening", "GNAS1 mutation", "GNAS", "SQSTM1 mutation", "gene test"], "result": "GNAS1 R201 mutation negative; SQSTM1 mutations negative."},
+      {"id": "x008", "kind": "test", "name": "bone biopsy of the femoral lesion", "aliases": ["bone biopsy", "femur biopsy", "histology"], "result": "Thickened bone trabeculae with preserved lamellar structure and accentuated cement lines; no fibrosis, inflammation, alcian positivity, malignancy or neoplasia."},
+      {"id": "x009", "kind": "test", "name": "hip joint aspiration", "aliases": ["joint aspiration", "hip fluid", "synovial fluid"], "result": "Sterile fluid.", "time": "at age 11"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-01556",
+    "diagnosis": "Melorheostosis",
+    "aliases": ["Léri disease", "Leri disease", "flowing hyperostosis", "candle wax disease", "melorrheostosis"],
+    "reasoning": "1. Paget’s disease of bone was considered but was unlikely because of the patient’s young age, normal alkaline phosphatase, and metaphyseal sparing — “The young age of our patient, normal alkaline phosphatase, and sparing of the metaphysis of the affected bone made Paget’s disease of bone highly unlikely.” 2. Chronic non-infectious osteomyelitis was ruled out because, despite long-bone predilection, the radiological appearance and histology did not support it — “The long bones are a common location for chronic non-infectious osteomyelitis and this can present in childhood; however, the radiological appearance and bone histology did not provide support for this differential diagnosis.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-01556",
+    "fact_sources": {
+      "f001": ["s001"],
+      "f002": ["s001"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s003"],
+      "f006": ["s003"],
+      "f007": ["s006"],
+      "f008": ["s003"],
+      "f009": ["s003"],
+      "f010": ["s003"],
+      "f011": ["s004"],
+      "f012": ["s004"],
+      "f013": ["s004"],
+      "f014": ["s002"],
+      "f015": ["s002"],
+      "f016": ["s002"],
+      "f017": ["s005"],
+      "f018": ["s005"],
+      "f019": ["s006"]
+    },
+    "quotes": {
+      "f002": "right proximal thigh pain",
+      "f003": "constant",
+      "f004": "progressed over 8 years",
+      "f005": "The pain was worse at night",
+      "f006": "somewhat relieved by activity and cold baths",
+      "f007": "after which her thigh pain worsened",
+      "f008": "required daily NSAIDs, paracetamol, and weak opioids",
+      "f009": "required daily NSAIDs, paracetamol, and weak opioids",
+      "f010": "required daily NSAIDs, paracetamol, and weak opioids",
+      "f012": "managed with shoe inserts",
+      "f013": "was on sick leave due to her symptoms",
+      "f014": "She had no other medical conditions",
+      "f015": "menarche at age 13",
+      "f016": "no family history of bone disease",
+      "f017": "At age 11 she had hip joint pain / pain resolved",
+      "f018": "an ultrasound-guided aspiration revealing sterile fluid",
+      "f019": "Six months prior, she was hit by a car at knee level, with no fracture diagnosed"
+    },
+    "flags": {
+      "f004": ["'Progressed over 8 years' is read as an 8-year history of worsening pain."],
+      "f017": ["The side of the childhood hip pain is not stated."],
+      "f019": ["The source does not say which knee was struck."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "On examination, there were no skin lesions, café au lait spots, erythema, heat, or swelling over the right thigh."},
+      "x002": {"sentences": ["s008"], "source_text": "Leg lengths were slightly unequal but within normal limits."},
+      "x003": {"sentences": ["s009"], "source_text": "Magnetic resonance imaging and PET–CT showed significant increased cortical thickness of the right femoral diaphysis with partial medullary obliteration and an uneven sclerotic surface."},
+      "x004": {"sentences": ["s009"], "source_text": "Magnetic resonance imaging and PET–CT showed significant increased cortical thickness of the right femoral diaphysis with partial medullary obliteration and an uneven sclerotic surface."},
+      "x005": {"sentences": ["s010"], "source_text": "A Tc-99m bone scan demonstrated increased uptake in most of the right femoral shaft."},
+      "x006": {"sentences": ["s011"], "source_text": "Biochemical bone markers, including alkaline phosphatase, were normal."},
+      "x007": {"sentences": ["s011"], "source_text": "Genetic screening in blood for the GNAS1 R201 mutation and for SQSTM1 mutations was negative."},
+      "x008": {"sentences": ["s012"], "source_text": "Bone biopsy of the lesion revealed thickened bone trabeculae with preserved lamellar structure, accentuated cement lines, and no fibrosis, inflammation, alcian positivity, malignancy, or neoplasia."},
+      "x009": {"sentences": ["s005"], "source_text": "an ultrasound-guided aspiration revealing sterile fluid"}
+    },
+    "finding_flags": {
+      "x003": ["The source reports MRI and PET-CT together with one shared result; each study returns it."]
+    },
+    "leakage": [],
+    "source_issues": ["Leg-length discrepancy is reported as a managed problem (shoe inserts) but measured as within normal limits on examination."],
+    "notes": ["Index visit: the referral for 8 years of constant right proximal thigh pain (s001-s012); the hip pain at age 11 and the car accident six months earlier are history.", "The daily analgesics (NSAIDs, paracetamol, weak opioids) are three medication facts; the agents are not named further.", "The negative exam features (no skin lesions, café au lait spots, erythema, heat or swelling) stay in the examination finding.", "Fixes: f008 alias 'painkillers' removed; f009 alias 'painkillers' removed; f010 alias 'painkillers' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

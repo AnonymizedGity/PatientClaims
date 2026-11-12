@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03450",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 30, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "blurred vision", "aliases": ["blurry vision", "vision loss", "can't see properly", "poor vision"], "text": "My vision has gone blurred.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "blurred vision: which eye", "parent": "f001", "attribute": "location", "text": "It's my left eye.", "value": ["left eye"], "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f012", "item": "blurred vision: severity", "parent": "f001", "attribute": "severity", "text": "I can barely see out of my left eye.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "eye pain", "aliases": ["painful eye", "left eye pain", "sore eye"], "text": "I have pain in my left eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f004", "item": "how the blurred vision and eye pain started", "text": "Both the blurred vision and the eye pain came on suddenly a week ago.", "value": "sudden, 1 week ago", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f005", "item": "kidney failure", "aliases": ["chronic kidney disease", "chronic renal failure", "kidney problems", "CKD"], "text": "I have chronic kidney failure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "kidney inflammation in childhood", "aliases": ["glomerulonephritis", "childhood kidney disease", "nephritis"], "text": "I had glomerulonephritis, an inflammation of the kidneys, as a child; my kidney failure is put down to that.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "high blood pressure", "aliases": ["hypertension", "blood pressure problems"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "furosemide", "aliases": ["Lasix", "water pill", "diuretic"], "text": "I take furosemide.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "carvedilol", "aliases": ["beta blocker", "Coreg"], "text": "I take carvedilol.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "nifedipine", "aliases": ["calcium channel blocker", "Adalat"], "text": "I take nifedipine.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "short-sightedness", "aliases": ["myopia", "nearsightedness", "glasses", "high myopia"], "text": "I'm very short-sighted, about minus 8.5 in both eyes.", "value": "-8.50 D both eyes", "polarity": "present", "category": "medical_history", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03450",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["eye chart", "vision test", "Snellen"], "result": "20/20 in the right eye; counting fingers in the left eye."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "refraction", "aliases": ["glasses prescription", "refractive error"], "result": "−8.50 D in both eyes (high myopia)."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "color vision testing", "aliases": ["colour vision", "Ishihara plates", "color plates"], "result": "21/21 plates in the right eye; 0/21 plates in the left eye."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "pupil examination", "aliases": ["pupils", "swinging flashlight test", "RAPD", "relative afferent pupillary defect"], "result": "Strongly positive relative afferent pupillary defect in the left eye."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "Normal."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["slit lamp", "anterior segment examination"], "result": "Unremarkable in both eyes."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "fundus examination", "aliases": ["fundoscopy", "ophthalmoscopy", "dilated fundus examination", "retina examination"], "result": "Unremarkable in both eyes."},
+      {"id": "x008", "kind": "test", "name": "visual evoked potential", "aliases": ["VEP", "visual evoked response"], "result": "Normal response in the right eye; delayed response with small amplitude in the left eye."},
+      {"id": "x009", "kind": "test", "name": "Humphrey visual field testing", "aliases": ["visual fields", "perimetry", "Humphrey field"], "result": "General depression in the left eye."},
+      {"id": "x010", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Elevated, up to 190/127 mmHg, despite multiple antihypertensive agents.", "time": "during admission"},
+      {"id": "x011", "kind": "test", "name": "serum creatinine", "aliases": ["creatinine", "renal function", "kidney function"], "result": "3.27 mg/dL."},
+      {"id": "x012", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin"], "result": "Anemia."},
+      {"id": "x013", "kind": "test", "name": "lipid panel", "aliases": ["cholesterol", "LDL", "lipids", "lipid profile"], "result": "Total cholesterol 259 mg/dL; LDL 170 mg/dL (hyperlipidemia)."},
+      {"id": "x014", "kind": "test", "name": "MRI of the brain and orbits", "aliases": ["brain MRI", "orbital MRI", "MRI head", "MRI orbits"], "result": "Focal area of high signal intensity in the left optic nerve on diffusion-weighted imaging, with corresponding hypointensity on the apparent diffusion coefficient map. Multiple periventricular white-matter hyperintensities on T2/FLAIR and scattered hypointense foci on gradient-echo sequences consistent with old microhemorrhages."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03450",
+    "diagnosis": "Posterior ischemic optic neuropathy",
+    "aliases": ["PION", "posterior ischaemic optic neuropathy", "retrobulbar ischemic optic neuropathy"],
+    "reasoning": "1. Considered inflammatory demyelinating optic neuritis because of acute unilateral vision loss, pain, and positive RAPD — “Acute ON due to inflammatory demyelination process is the most common optic neuropathy affecting young adults. It is characterized by acute unilateral vision loss, positive RAPD and pain with eye movement.” 2. Distinguished from demyelinating ON by MRI diffusion patterns: ischemia shows increased DWI and decreased ADC, whereas inflammation shows increased ADC — “Conversely, inflammatory demyelinating ON, often shows an increased value in ADC and DWI sequence compared to PION due to axonal disruption, which may differentiate these two diseases at an acute stage.” 3. Anterior ischemic optic neuropathy was excluded because the optic disc was normal without edema — “Anterior ION involves optic nerve head and presents with disc edema while PION involves retrobulbar optic nerve and shows normal optic disc.” 4. Other causes of optic neuropathy such as toxic optic neuropathy, compressive optic neuropathy, and macular or retinal lesions were considered and excluded by normal fundus examination and imaging — “The differential diagnosis of PION includes retrobulbar type ON, toxic optic neuropathy, compressive optic neuropathy and macular or retinal lesions.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-03450",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001", "s003"], "f003": ["s001"], "f004": ["s001"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s003"], "f012": ["s003"]
+    },
+    "quotes": {
+      "f002": "counting-fingers OS", "f003": "left-eye pain", "f004": "sudden onset of blurred vision and left-eye pain for 1 week",
+      "f005": "chronic renal failure", "f006": "attributed to childhood glomerulonephritis", "f011": "highly myopic (–8.50 D OU)"
+    },
+    "flags": {
+      "f012": ["Taken from the examination (counting-fingers vision in the left eye)."],
+      "f002": ["The eye is not named for the blurred vision in s001; taken from the examination (counting fingers in the left eye, 20/20 in the right)."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s003"], "source_text": "visual acuity of 20/20 OD and counting-fingers OS"},
+      "x002": {"sentences": ["s003"], "source_text": "He was highly myopic (–8.50 D OU)"},
+      "x003": {"sentences": ["s004"], "source_text": "Color testing was 21/21 plates OD and 0/21 OS"},
+      "x004": {"sentences": ["s004"], "source_text": "there was a strongly positive relative afferent pupillary defect in the left eye"},
+      "x005": {"sentences": ["s005"], "source_text": "Intraocular pressures were normal"},
+      "x006": {"sentences": ["s005"], "source_text": "slit-lamp and fundus examinations were unremarkable bilaterally"},
+      "x007": {"sentences": ["s005"], "source_text": "slit-lamp and fundus examinations were unremarkable bilaterally"},
+      "x008": {"sentences": ["s006"], "source_text": "Visual evoked potential showed normal response OD and a delayed response with small amplitude OS."},
+      "x009": {"sentences": ["s007"], "source_text": "Humphrey visual field testing showed general depression OS."},
+      "x010": {"sentences": ["s009"], "source_text": "his blood pressure remained elevated (up to 190/127 mmHg) despite multiple antihypertensive agents"},
+      "x011": {"sentences": ["s010"], "source_text": "a serum creatinine of 3.27 mg/dL"},
+      "x012": {"sentences": ["s010"], "source_text": "anemia"},
+      "x013": {"sentences": ["s010"], "source_text": "hyperlipidemia (total cholesterol 259 mg/dL, LDL 170 mg/dL)"},
+      "x014": {"sentences": ["s012", "s013"], "source_text": "Brain and orbital MRI demonstrated a focal area of high signal intensity in the left optic nerve on diffusion-weighted imaging, with corresponding hypointensity on the apparent diffusion coefficient map. / Additional findings included multiple periventricular white-matter hyperintensities on T2/FLAIR and scattered hypointense foci on gradient-echo sequences consistent with old microhemorrhages."}
+    },
+    "finding_flags": {
+      "x010": ["Only the admission blood pressure range is given (on antihypertensive treatment); no blood pressure from the index examination is reported."],
+      "x012": ["No hemoglobin value is given."]
+    },
+    "leakage": [
+      {"id": "x014", "reason": "The MRI report names the left optic nerve with diffusion restriction (high DWI, low ADC), which points to optic nerve ischemia (selection leakage: test_result); it does not name the diagnosis."}
+    ],
+    "source_issues": [
+      "No vital signs are given at the index examination; the only blood pressure is the admission range (s009).",
+      "The eye affected by the blurred vision is not stated in s001 (inferred from the examination)."
+    ],
+    "notes": [
+      "Index visit: the presentation with one week of sudden blurred vision and left eye pain (s001), with the eye examination and tests of s003–s007; the admission laboratory tests and MRI (s010, s012–s013) belong to the same workup, and the admission blood pressure (s009) is given a time.",
+      "The refraction is both a fact (the patient knows he is highly short-sighted) and a finding.",
+      "f004 is a standalone onset fact because the sudden onset a week ago applies to both the blurred vision and the eye pain."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s008", "reason": "Admission and treatment with intravenous methylprednisolone for presumed demyelinating optic neuritis: treatment and clinician's working diagnosis."},
+      {"id": "s011", "reason": "Fluorescein angiography was deferred; no result."}
+    ]
+  }
+}

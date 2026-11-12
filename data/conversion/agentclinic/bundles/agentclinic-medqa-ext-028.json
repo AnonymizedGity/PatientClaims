@@ -1,0 +1,91 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-028", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 55, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "shoulder pain", "aliases": ["left shoulder pain"], "text": "I have pain in my left shoulder.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "shoulder pain: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for about 2 months.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f003", "item": "shoulder pain: onset", "parent": "f001", "attribute": "onset", "text": "It came on gradually.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "shoulder pain: worse at the extremes of movement", "parent": "f001", "attribute": "aggravating", "text": "It hurts more when I move my shoulder as far as it will go.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "shoulder pain: worse with activity", "parent": "f001", "attribute": "aggravating", "text": "It gets worse with activity.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f006", "item": "shoulder pain: disturbed sleep", "parent": "f001", "attribute": "other", "aliases": ["trouble sleeping", "sleeping on the affected side"], "text": "The pain disturbs my sleep, and I have trouble sleeping on my left side.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f007", "item": "difficulty with daily activities", "aliases": ["trouble brushing hair", "trouble getting dressed"], "text": "I have trouble with everyday things like brushing my hair and getting dressed.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "neck pain", "text": "I don't have any neck pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f009", "item": "arm or hand weakness", "aliases": ["weakness"], "text": "I don't have any weakness in my arm or hand.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f010", "item": "numbness", "text": "I haven't had any numbness.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f011", "item": "tingling", "aliases": ["pins and needles", "paresthesias"], "text": "I haven't had any tingling or pins and needles.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f012", "item": "shoulder injury", "aliases": ["shoulder trauma"], "text": "I've never injured my shoulder.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "type 2 diabetes", "aliases": ["diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "metformin", "text": "I take metformin for my diabetes.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "glipizide", "text": "I take glipizide for my diabetes.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-028",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "musculoskeletal", "name": "shoulder examination", "aliases": ["shoulder inspection", "shoulder palpation"], "result": "Inspection: no visible swelling or deformity; palpation: tenderness around the shoulder joint, no warmth or crepitus."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "shoulder range of motion", "aliases": ["ROM", "range of motion"], "result": "Forward flexion 75° with pain; abduction 75° with pain; external rotation 45° with pain; internal rotation 15° with significant pain."},
+      {"id": "x007", "kind": "exam", "system": "musculoskeletal", "name": "shoulder strength testing", "aliases": ["rotator cuff strength", "shoulder muscle strength"], "result": "Normal rotator cuff strength."},
+      {"id": "x008", "kind": "test", "name": "shoulder X-ray", "aliases": ["shoulder radiographs", "AP view", "scapular Y view", "axillary view"], "result": "AP, scapular Y and axillary views: normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-028",
+    "diagnosis": "Adhesive capsulitis",
+    "aliases": ["frozen shoulder", "adhesive capsulitis of the shoulder", "adhesive capsulitis of the left shoulder"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-028",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-028-p001"], "f002": ["agentclinic-medqa-ext-028-p001"], "f003": ["agentclinic-medqa-ext-028-p001"],
+      "f004": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p002"], "f005": ["agentclinic-medqa-ext-028-p001"],
+      "f006": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p003"],
+      "f007": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p004"],
+      "f008": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p008"],
+      "f009": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p005", "agentclinic-medqa-ext-028-p008"],
+      "f010": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p005", "agentclinic-medqa-ext-028-p008"],
+      "f011": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p008"],
+      "f012": ["agentclinic-medqa-ext-028-p001"],
+      "f013": ["agentclinic-medqa-ext-028-p001", "agentclinic-medqa-ext-028-p006"],
+      "f014": ["agentclinic-medqa-ext-028-p001"], "f015": ["agentclinic-medqa-ext-028-p001"]
+    },
+    "quotes": {
+      "f002": "a 2-month history", "f003": "insidious onset", "f004": "worsening with extreme ranges of motion / Pain at extremes of motion",
+      "f005": "and activity", "f006": "Pain disrupts sleep / Difficulty sleeping on the affected side",
+      "f007": "difficulty with activities of daily living like brushing hair and dressing",
+      "f009": "arm/hand weakness", "f011": "paresthesias", "f012": "No history of shoulder trauma"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-028-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-028-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-028-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-028-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Shoulder_Examination.Inspection + Physical_Examination_Findings.Shoulder_Examination.Palpation", "source_text": "No visible swelling or deformity. | Tenderness around the shoulder joint, no warmth or crepitus.", "exam_ids": ["agentclinic-medqa-ext-028-e005", "agentclinic-medqa-ext-028-e006"]},
+      "x006": {"source": "Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.Forward_Flexion + Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.Abduction + Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.External_Rotation + Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion.Internal_Rotation", "source_text": "75° with pain | 75° with pain | 45° with pain | 15° with significant pain", "exam_ids": ["agentclinic-medqa-ext-028-e007", "agentclinic-medqa-ext-028-e008", "agentclinic-medqa-ext-028-e009", "agentclinic-medqa-ext-028-e010"]},
+      "x007": {"source": "Physical_Examination_Findings.Shoulder_Examination.Strength_Testing", "source_text": "Normal rotator cuff strength", "exam_ids": ["agentclinic-medqa-ext-028-e011"]},
+      "x008": {"source": "Test_Results.Radiographs.AP + Test_Results.Radiographs.Scapular_Y + Test_Results.Radiographs.Axillary", "source_text": "Normal | Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-028-i001", "agentclinic-medqa-ext-028-i002", "agentclinic-medqa-ext-028-i003"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The shoulder exam does not state which side was examined, and the range-of-motion values do not say active or passive; kept as given."
+    ],
+    "notes": [
+      "'Worsening with extreme ranges of motion and activity' is read as aggravating factors (f004, f005), not as the course.",
+      "'Pain disrupts sleep' (History) and 'Difficulty sleeping on the affected side' (p003) are merged into one child fact (f006).",
+      "The denials of neck pain, weakness, numbness and paresthesias appear in History, p005 and the ROS; one fact each.",
+      "The three radiograph views are one study (x008). Shoulder range of motion and rotator cuff strength are kept as separate exam records from inspection/palpation, because a doctor requests them separately."
+    ],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-028-p007", "reason": "'No relevant social history provided' carries no patient information (it does not deny any specific habit)."}
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with chronic left shoulder pain without a history of trauma."
+    }
+  }
+}

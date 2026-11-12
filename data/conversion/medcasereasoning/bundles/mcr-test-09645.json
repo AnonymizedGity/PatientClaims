@@ -1,0 +1,98 @@
+{
+  "patient": {
+    "case_id": "mcr-test-09645",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 51, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "neck lump", "aliases": ["lump in the neck", "neck swelling", "swollen glands", "neck mass"], "text": "I have a lump on the right side of my neck.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "neck lump: pain", "parent": "f001", "attribute": "character", "aliases": ["painful lump", "tender lump"], "text": "It doesn't hurt.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f003", "item": "neck lump: duration", "parent": "f001", "attribute": "duration", "text": "I've had it for 2 weeks.", "value": "2 weeks", "polarity": "present", "category": "symptom", "system": "ent"},
+      {"id": "f004", "item": "difficulty swallowing", "aliases": ["dysphagia", "trouble swallowing"], "text": "I haven't had any trouble swallowing.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f005", "item": "voice changes", "aliases": ["hoarseness", "change in voice"], "text": "My voice hasn't changed.", "polarity": "absent", "category": "symptom", "system": "ent"},
+      {"id": "f006", "item": "tiredness", "aliases": ["fatigue", "lethargy", "low energy", "exhaustion"], "text": "I've been getting more and more tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "back pain", "aliases": ["backache", "sore back"], "text": "I have back pain.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f008", "item": "back pain: severity", "parent": "f007", "attribute": "severity", "text": "It's severe; it has stopped me from working.", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f009", "item": "how long the tiredness and back pain have lasted", "text": "Both have been going on over the past 3 months.", "value": "3 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f010", "item": "weight loss", "aliases": ["losing weight"], "text": "Five years ago I lost a lot of weight.", "polarity": "present", "category": "symptom", "system": "general", "time": "historical"},
+      {"id": "f011", "item": "heavy periods", "aliases": ["heavy menstrual bleeding", "menorrhagia", "heavy bleeding"], "text": "Five years ago I had very heavy periods.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "historical"},
+      {"id": "f012", "item": "blood transfusion", "aliases": ["transfusion", "needed blood"], "text": "Because of the heavy bleeding five years ago, I needed five units of blood.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "bowel cancer check", "aliases": ["colon cancer evaluation", "bowel investigations", "colon cancer"], "text": "Back then I was checked for bowel cancer, and it was negative.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f014", "item": "missed gynaecology follow-up", "aliases": ["menstrual disorders clinic", "gynaecology clinic", "follow-up appointments", "gynecologist"], "text": "I was supposed to have follow-up at a menstrual disorders clinic, but I didn't go.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f015", "item": "pregnancies and deliveries", "aliases": ["children", "births", "obstetric history", "pregnancies"], "text": "I've had four full-term vaginal deliveries.", "value": 4, "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f016", "item": "abnormal smear tests", "aliases": ["smear test", "Pap smear", "cervical screening"], "text": "My smear tests in the past were normal.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f017", "item": "bleeding between periods", "aliases": ["intermenstrual bleeding", "spotting"], "text": "I haven't had any bleeding between periods.", "polarity": "absent", "category": "symptom", "system": "reproductive"},
+      {"id": "f018", "item": "bleeding after sex", "aliases": ["postcoital bleeding"], "text": "I haven't had any bleeding after sex.", "polarity": "absent", "category": "symptom", "system": "reproductive"},
+      {"id": "f019", "item": "irregular periods", "aliases": ["menstrual cycle", "periods", "irregular cycles"], "text": "My periods are regular.", "polarity": "absent", "category": "symptom", "system": "reproductive"},
+      {"id": "f020", "item": "smoking", "aliases": ["cigarettes", "tobacco", "smoker"], "text": "I smoke 20 to 30 cigarettes a day.", "polarity": "present", "category": "habit_exposure", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-09645",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "hematologic", "name": "neck lymph node examination", "aliases": ["lymph nodes", "neck examination", "lymphadenopathy", "neck lump"], "result": "Multiple palpable lymph nodes in the neck on both sides."},
+      {"id": "x002", "kind": "test", "name": "neck ultrasound", "aliases": ["ultrasonography of the neck", "ultrasound of the neck lump"], "result": "Two large supraclavicular lymph nodes and several abnormal nodes in the right carotid chain."},
+      {"id": "x003", "kind": "test", "name": "chest X-ray", "aliases": ["chest radiograph", "CXR"], "result": "Normal."},
+      {"id": "x004", "kind": "test", "name": "fine-needle aspiration of a neck lymph node", "aliases": ["FNA", "lymph node aspiration", "lymph node cytology", "lymph node biopsy"], "result": "Squamous carcinoma cells."},
+      {"id": "x005", "kind": "test", "name": "examination and endoscopy of the nasopharynx, larynx and hypopharynx", "aliases": ["nasendoscopy", "nasopharyngoscopy", "laryngoscopy", "ENT endoscopy", "upper aerodigestive tract endoscopy", "throat examination"], "result": "No tumour."},
+      {"id": "x006", "kind": "test", "name": "contrast CT of the neck, chest and abdomen", "aliases": ["CT neck", "CT chest", "CT abdomen", "CT scan", "staging CT"], "result": "Marked mediastinal and para-aortic lymphadenopathy; bilateral dilation of the collecting systems with proximal ureteral dilatation, suggesting pelvic obstruction."},
+      {"id": "x007", "kind": "test", "name": "FDG PET-CT", "aliases": ["PET scan", "PET-CT", "18F-FDG PET-CT"], "result": "Intense uptake in the right-sided neck lymph nodes, right paratracheal and anterior mediastinal stations, and lower para-aortic and bilateral iliac chains, with a photopaenic centre in an obturator node; focal area of increased activity in the pelvis, suggesting a lesion within the rectal wall or vaginal vault."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-09645",
+    "diagnosis": "Cervical carcinoma",
+    "aliases": ["cervical cancer", "carcinoma of the cervix", "cancer of the cervix", "squamous cell carcinoma of the cervix", "cervical squamous cell carcinoma", "metastatic cervical carcinoma"],
+    "reasoning": "1. Primary head and neck squamous carcinoma considered — “Clinical examination and endoscopy of the upper digestive tract did not yield an obvious primary tumour in the nasopharynx, larynx and hypopharynx.” 2. Lymphoma considered because of widespread nodal involvement — “…with a differential diagnosis of lymphoma to be considered.” 3. Rectal carcinoma considered due to pelvic FDG uptake — “…focal area of increased uptake in the pelvis, suggesting a lesion within the rectal wall…” 4. Gynecological primary considered given squamous histology and pelvic PET-CT finding — “Given the histology of squamous carcinoma, the PET scan suggested that the uptake in the pelvis may represent a primary gynaecological problem rather than a second malignancy in the rectum.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-09645",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s002"], "f005": ["s002"], "f006": ["s005"],
+      "f007": ["s005"], "f008": ["s005"], "f009": ["s005"], "f010": ["s006"], "f011": ["s006"], "f012": ["s006"],
+      "f013": ["s006"], "f014": ["s006"], "f015": ["s003"], "f016": ["s003"], "f017": ["s003"], "f018": ["s003"],
+      "f019": ["s003"], "f020": ["s004"]
+    },
+    "quotes": {
+      "f002": "a painless lump", "f003": "a 2-week history", "f006": "increasing lethargy", "f008": "severe back pain that prevented her from working",
+      "f009": "Over the past 3 months", "f010": "Five years earlier she had significant weight loss", "f011": "heavy menstrual bleeding",
+      "f012": "requiring five units of blood", "f013": "an evaluation for colon cancer was negative",
+      "f014": "she failed to attend follow-up at a menstrual disorders clinic", "f015": "four full-term vaginal deliveries",
+      "f016": "previously normal cervical smears", "f017": "she denied intermenstrual or postcoital bleeding", "f019": "had regular cycles",
+      "f020": "She smoked 20–30 cigarettes per day."
+    },
+    "flags": {
+      "f010": ["Weight loss is only reported five years ago; current weight change is not stated."],
+      "f016": ["The fact text says 'smear tests' rather than 'cervical smears' to keep the gold word out of patient text; the alias keeps 'cervical screening' for matching."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s007"], "source_text": "On examination, there were multiple palpable cervical lymph nodes bilaterally."},
+      "x002": {"sentences": ["s008"], "source_text": "Neck ultrasonography showed two large supraclavicular lymph nodes and several abnormal nodes in the right carotid chain."},
+      "x003": {"sentences": ["s009"], "source_text": "A chest radiograph was normal."},
+      "x004": {"sentences": ["s009"], "source_text": "Fine-needle aspiration of a lymph node yielded squamous carcinoma cells."},
+      "x005": {"sentences": ["s010"], "source_text": "clinical examination and endoscopy of the nasopharynx, larynx, and hypopharynx showed no tumour"},
+      "x006": {"sentences": ["s011"], "source_text": "Contrast-enhanced CT of the neck, chest, and abdomen demonstrated marked mediastinal and para-aortic lymphadenopathy and bilateral dilation of the collecting systems with proximal ureteral dilatation, suggesting pelvic obstruction."},
+      "x007": {"sentences": ["s012"], "source_text": "^18F-FDG PET-CT showed intense uptake in the right cervical lymph nodes, right paratracheal and anterior mediastinal stations, lower para-aortic and bilateral iliac chains with a photopaenic centre in an obturator node, and a focal area of increased activity in the pelvis, suggesting a lesion within the rectal wall or vaginal vault."}
+    },
+    "finding_flags": {
+      "x001": ["Source 'cervical lymph nodes' (neck) is written 'lymph nodes in the neck' so the neck sense of 'cervical' is not confused with the gold diagnosis."],
+      "x007": ["Source 'right cervical lymph nodes' (neck) is written 'right-sided neck lymph nodes' for the same reason."],
+      "x005": ["The source combines clinical examination and endoscopy of the nasopharynx, larynx and hypopharynx in one result; kept as one record."]
+    },
+    "leakage": [
+      {"id": "x004", "reason": "The cytology result 'squamous carcinoma cells' shares the word 'carcinoma' with the gold diagnosis; it is the test's answer (metastatic squamous carcinoma of unknown primary), not the primary site."}
+    ],
+    "source_issues": [
+      "s012 suggests a lesion of the 'vaginal vault', a term usually used after hysterectomy, but no hysterectomy is reported.",
+      "No pelvic or speculum examination is reported."
+    ],
+    "notes": [
+      "Index visit: the ENT clinic referral visit for a 2-week painless right neck lump (s001-s007); the ultrasound, chest radiograph, aspiration, endoscopy, CT and PET-CT (s008-s012) are findings from the staged workup.",
+      "s006: the heavy bleeding with transfusion, weight loss, negative colon cancer evaluation and missed menstrual disorders clinic five years earlier are history before the index visit and are patient facts with time 'historical'.",
+      "s010: the clause 'To locate the primary' is clinician reasoning and is dropped; the result (no tumour) is finding x005.",
+      "A doctor requesting a pelvic or speculum examination, cervical smear or biopsy gets no result: none is reported."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

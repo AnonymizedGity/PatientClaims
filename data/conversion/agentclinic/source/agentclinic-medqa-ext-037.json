@@ -1,0 +1,118 @@
+{
+  "case_id": "agentclinic-medqa-ext-037",
+  "source_row": 37,
+  "demographics_text": "24-year-old male",
+  "objective_for_doctor": "Evaluate and diagnose the patient presenting with increasing pain and swelling of the left knee for the past 2 months.",
+  "chief_complaint": "Severe pain and swelling in the left knee",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-037-p001",
+      "field": "History",
+      "text": "The patient reports increasing pain and swelling of the left knee over 2 months. Describes the pain as severe enough to awaken him from sleep on several occasions. States he tried taking ibuprofen with no relief. No family or personal history of significant illnesses."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-037-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Pain intensifying over 2 months"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-037-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Painful awakenings during night"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-037-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No relief with ibuprofen"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-037-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-037-p006",
+      "field": "Social_History",
+      "text": "Non-smoker, drinks alcohol socially. Engineer by profession."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-037-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies recent fevers, weight loss, trauma to the knee, or previous similar episodes."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/80 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e005",
+      "path": "Physical_Examination_Findings.Knee_Examination.Inspection",
+      "text": "Mild swelling observed around the left knee."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e006",
+      "path": "Physical_Examination_Findings.Knee_Examination.Palpation",
+      "text": "Tenderness upon palpation, no warmth"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e007",
+      "path": "Physical_Examination_Findings.Knee_Examination.Range_of_Motion",
+      "text": "Limited by pain, particularly on extension and flexion"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-e008",
+      "path": "Physical_Examination_Findings.Knee_Examination.Special_Tests",
+      "text": "McMurray test negative; Lachman test negative; Anterior and posterior drawer tests negative"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-037-i001",
+      "path": "Test_Results.X-Ray_Left_Knee.Findings",
+      "text": "A lytic lesion in the distal femur near the knee joint with a thin rim of bone on the external surface and a 'soap bubble' appearance."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-i002",
+      "path": "Test_Results.MRI_Left_Knee.Findings",
+      "text": "A lesion in the distal femur with clear demarcation and non-invasive characteristics, suggestive of a benign process."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-i003",
+      "path": "Test_Results.Blood_Tests.Complete_Blood_Count",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-i004",
+      "path": "Test_Results.Blood_Tests.Erythrocyte_Sedimentation_Rate",
+      "text": "Slightly elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-037-i005",
+      "path": "Test_Results.Blood_Tests.C-Reactive_Protein",
+      "text": "Within normal limits"
+    }
+  ],
+  "correct_diagnosis": "Osteoclastoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

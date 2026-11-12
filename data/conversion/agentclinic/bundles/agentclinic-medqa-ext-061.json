@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-061", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 25, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "ear pain", "aliases": ["earache"], "text": "I've been getting pain in my ear.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f002", "item": "ear pain: location", "parent": "f001", "attribute": "location", "text": "It's in my right ear.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f003", "item": "ear pain: character", "parent": "f001", "attribute": "character", "text": "It's a shooting pain.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f004", "item": "ear pain: frequency", "parent": "f001", "attribute": "frequency", "text": "It only happens occasionally.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f005", "item": "ear pain: triggers", "parent": "f001", "attribute": "aggravating", "aliases": ["pain with eating"], "text": "It comes on when I'm eating.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f006", "item": "ear discomfort when wearing earrings", "aliases": ["trouble wearing earrings"], "text": "My right ear is uncomfortable when I wear earrings.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f007", "item": "work stress", "aliases": ["stress at work", "stress"], "text": "My job is stressful.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f008", "item": "poor sleep quality", "aliases": ["trouble sleeping", "sleeping badly"], "text": "I've been sleeping poorly.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "polycystic ovary syndrome", "aliases": ["PCOS"], "text": "I have polycystic ovary syndrome.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "depression", "text": "I have a history of depression.", "polarity": "present", "category": "medical_history"},
+      {"id": "f011", "item": "ear infections", "aliases": ["otitis", "chronic ear infections"], "text": "I've had chronic infections in both ears.", "polarity": "present", "category": "medical_history"},
+      {"id": "f012", "item": "ear surgery", "aliases": ["tympanoplasty", "eardrum repair", "surgery"], "text": "I had a tympanoplasty on my right ear 12 weeks ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f013", "item": "ear surgery: hearing result", "parent": "f012", "attribute": "treatment_response", "aliases": ["hearing test result"], "text": "A hearing test a week ago showed my hearing had improved by 20 decibels.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "occupation", "aliases": ["job", "work"], "text": "I work as a cashier at a local department store.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f015", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f016", "item": "weight loss", "aliases": ["losing weight"], "text": "I haven't lost any weight.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f017", "item": "neck pain", "text": "I don't have any neck pain.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f018", "item": "facial tenderness", "aliases": ["sore face"], "text": "My face isn't tender.", "polarity": "absent", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f019", "item": "dizziness", "text": "I haven't been dizzy.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f020", "item": "loss of consciousness", "aliases": ["fainting", "passing out", "blacking out"], "text": "I haven't passed out.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-061",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.7°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "115/75 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "72/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "ent", "name": "preauricular palpation", "aliases": ["preauricular area", "area in front of the ear", "parotid area"], "result": "No tenderness on palpation bilaterally."},
+      {"id": "x006", "kind": "exam", "system": "ent", "name": "jaw examination", "aliases": ["temporomandibular joint examination", "TMJ", "mandible"], "result": "No jaw clicking heard; no tenderness on palpation."},
+      {"id": "x007", "kind": "exam", "system": "ent", "name": "postauricular examination", "aliases": ["behind the ear", "mastoid area", "postauricular tapping"], "result": "Right postauricular tapping causes tenderness in the right tonsillar area."},
+      {"id": "x008", "kind": "exam", "system": "ent", "name": "oral examination", "aliases": ["mouth examination", "throat", "teeth", "uvula", "gag reflex"], "result": "Molar teeth even and symmetric bilaterally; uvula midline; gag reflex intact."},
+      {"id": "x009", "kind": "test", "name": "audiology report", "aliases": ["hearing test", "audiogram", "audiometry"], "result": "Hearing improved by 20 decibels after tympanoplasty.", "time": "one week before the visit"}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-061",
+    "diagnosis": "Glossopharyngeal neuralgia",
+    "aliases": ["GPN", "glossopharyngeal nerve neuralgia", "classical glossopharyngeal neuralgia", "secondary glossopharyngeal neuralgia"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-061",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p007"], "f002": ["agentclinic-medqa-ext-061-p007"],
+      "f003": ["cc", "agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p007"], "f004": ["cc", "agentclinic-medqa-ext-061-p001"],
+      "f005": ["cc", "agentclinic-medqa-ext-061-p001"], "f006": ["agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p002", "agentclinic-medqa-ext-061-p007"],
+      "f007": ["agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p003"], "f008": ["agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p004"],
+      "f009": ["agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p005"], "f010": ["agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p005"],
+      "f011": ["agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p005"], "f012": ["agentclinic-medqa-ext-061-p001", "agentclinic-medqa-ext-061-p005"],
+      "f013": ["agentclinic-medqa-ext-061-p001"], "f014": ["agentclinic-medqa-ext-061-p006"], "f015": ["agentclinic-medqa-ext-061-p007"],
+      "f016": ["agentclinic-medqa-ext-061-p007"], "f017": ["agentclinic-medqa-ext-061-p007"], "f018": ["agentclinic-medqa-ext-061-p007"],
+      "f019": ["agentclinic-medqa-ext-061-p007"], "f020": ["agentclinic-medqa-ext-061-p007"]
+    },
+    "quotes": {
+      "f002": "shooting pain and discomfort in the right ear", "f003": "shooting pain", "f004": "Occasional", "f005": "shooting pain when eating",
+      "f006": "discomfort when wearing earrings", "f007": "She describes her job as stressful", "f008": "poor sleep quality",
+      "f011": "chronic bilateral ear infections", "f012": "Underwent right ear tympanoplasty 12 weeks prior",
+      "f013": "audiology report from one week ago showed improved hearing by 20 decibels", "f018": "Denies neck pain or facial tenderness",
+      "f020": "loss of consciousness"
+    },
+    "flags": {
+      "f006": ["The source places the discomfort in the right ear only through the ROS ('shooting pain and discomfort in the right ear')."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.7°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-061-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "115/75 mmHg", "exam_ids": ["agentclinic-medqa-ext-061-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "72 bpm", "exam_ids": ["agentclinic-medqa-ext-061-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-061-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.ENT_Examination.Preauricular_Area", "source_text": "No tenderness with palpation bilaterally.", "exam_ids": ["agentclinic-medqa-ext-061-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.ENT_Examination.Mandibular_Area", "source_text": "No jaw clicking heard. No tenderness with palpation.", "exam_ids": ["agentclinic-medqa-ext-061-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.ENT_Examination.Postauricular_Area", "source_text": "Right postauricular tapping causes tenderness in right tonsillar area.", "exam_ids": ["agentclinic-medqa-ext-061-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.ENT_Examination.Oral_Exam", "source_text": "Even and symmetric molar teeth bilaterally. Uvula is midline. Gag reflex intact.", "exam_ids": ["agentclinic-medqa-ext-061-e008"]},
+      "x009": {"source": "Test_Results.Audiology_Report_One_Week_Ago.Findings", "source_text": "Improved hearing by 20 decibels post tympanoplasty.", "exam_ids": ["agentclinic-medqa-ext-061-i001"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Test_Results.Additional_Tests.Suggestion (i002) is a recommendation to consider an MRI of the brainstem and cerebellopontine angle, not a result; excluded.",
+      "No otoscopy is recorded, although the visit follows ear surgery."
+    ],
+    "notes": [
+      "The ear pain is split into a parent and children for side, character, frequency and trigger (eating).",
+      "The audiology result is both a patient fact (f013, what she was told about her hearing after surgery) and a test record (x009); they are in different layers.",
+      "Job stress (p003) is listed as a secondary symptom in the source but is a stressor, so it is social_background.",
+      "Depression and the ear infections carry no time: the source does not say whether they are ongoing."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with occasional shooting ear pain and difficulty wearing earrings post tympanoplasty."
+    },
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-061-i002", "reason": "A suggestion to consider MRI of the brainstem and cerebellopontine angle, not a test result."}
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "patient": {
+    "case_id": "mcr-test-07631",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 26, "sex": "female"},
+    "opening": ["f001", "f004"],
+    "facts": [
+      {"id": "f001", "item": "neck swelling", "aliases": ["lump in the neck", "neck lump", "swollen glands", "swollen lymph nodes", "painful neck lump", "neck pain"], "text": "I have a painful swelling on the right side of my neck.", "polarity": "present", "category": "symptom", "system": "hematologic", "time": "current"},
+      {"id": "f002", "item": "neck swelling: onset", "parent": "f001", "attribute": "onset", "text": "It began as a painful lump on the right side of my neck.", "polarity": "present", "category": "symptom", "system": "hematologic"},
+      {"id": "f003", "item": "how long the fever and neck swelling have lasted", "text": "This has been going on for 3 weeks.", "value": "3 weeks", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "fever", "aliases": ["high temperature", "feeling feverish"], "text": "I've been having fevers.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "fever: onset", "parent": "f004", "attribute": "onset", "text": "The fever came on after the lump in my neck.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "fever: severity", "parent": "f004", "attribute": "severity", "text": "It has gone up to 40 °C.", "value": "40 °C", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "nausea", "aliases": ["feeling sick to my stomach", "queasiness"], "text": "I've been feeling nauseous.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f008", "item": "tiredness", "aliases": ["fatigue", "low energy", "exhaustion"], "text": "I've been feeling tired.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "amoxicillin–clavulanate", "aliases": ["amoxicillin-clavulanate", "Augmentin", "co-amoxiclav"], "text": "I've had a course of amoxicillin–clavulanate.", "polarity": "present", "category": "medication"},
+      {"id": "f010", "item": "metronidazole", "aliases": ["Flagyl"], "text": "I've had a course of metronidazole.", "polarity": "present", "category": "medication"},
+      {"id": "f011", "item": "clindamycin", "text": "I've had a course of clindamycin.", "polarity": "present", "category": "medication"},
+      {"id": "f012", "item": "naproxen", "aliases": ["anti-inflammatory", "NSAID", "painkillers"], "text": "I've had a course of naproxen.", "polarity": "present", "category": "medication"},
+      {"id": "f013", "item": "response to the medicines taken so far", "aliases": ["did the antibiotics help", "treatment response"], "text": "Even with those medicines, I went on to get the fever, the nausea and the tiredness.", "polarity": "present", "category": "medication"},
+      {"id": "f014", "item": "chronic medical problems", "aliases": ["medical history", "other illnesses"], "text": "I don't have any long-term medical conditions.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f015", "item": "recent travel", "aliases": ["travel"], "text": "I haven't travelled recently.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f016", "item": "illnesses in the family", "aliases": ["family history", "family medical history"], "text": "There's nothing relevant in my family's medical history.", "polarity": "absent", "category": "family_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-07631",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Hemodynamically stable."},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Hemodynamically stable."},
+      {"id": "x003", "kind": "exam", "system": "hematologic", "name": "neck and lymph node examination", "aliases": ["neck examination", "lymph nodes", "cervical lymph nodes", "lymphadenopathy", "neck swelling"], "result": "Three tender, enlarged lymph nodes on the right side of the neck; the overlying skin is normal."},
+      {"id": "x004", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "white blood cell count", "WBC"], "result": "Hemoglobin 10.9 g/dL; white blood cell count 6.4 × 10^3/mL."},
+      {"id": "x005", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "77 mg/L"},
+      {"id": "x006", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "42 mm/hr"},
+      {"id": "x007", "kind": "test", "name": "lactate dehydrogenase", "aliases": ["LDH"], "result": "519 U/L"},
+      {"id": "x008", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "No growth."},
+      {"id": "x009", "kind": "test", "name": "urine culture", "aliases": ["urine cultures"], "result": "No growth."},
+      {"id": "x010", "kind": "test", "name": "tuberculin skin test", "aliases": ["TST", "PPD", "Mantoux test", "TB skin test"], "result": "Negative."},
+      {"id": "x011", "kind": "test", "name": "viral serology", "aliases": ["EBV serology", "Epstein–Barr virus serology", "HIV test", "hepatitis B serology", "hepatitis C serology", "hepatitis serology"], "result": "Epstein–Barr virus: evidence of past infection; HIV: negative; hepatitis B: negative; hepatitis C: negative."},
+      {"id": "x012", "kind": "test", "name": "toxoplasmosis serology", "aliases": ["toxoplasma serology", "toxoplasma antibodies"], "result": "Negative."},
+      {"id": "x013", "kind": "test", "name": "VDRL", "aliases": ["syphilis serology", "RPR"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibody", "rheumatoid factor", "RF"], "result": "Antinuclear antibody negative; rheumatoid factor negative."},
+      {"id": "x015", "kind": "test", "name": "chest X-ray", "aliases": ["chest radiograph", "CXR"], "result": "Unremarkable."},
+      {"id": "x016", "kind": "test", "name": "CT of the chest, abdomen and pelvis", "aliases": ["CT chest", "CT abdomen", "CT abdomen and pelvis", "body CT"], "result": "Unremarkable."},
+      {"id": "x017", "kind": "test", "name": "neck ultrasound and CT of the neck", "aliases": ["neck ultrasound", "ultrasound of the neck", "lymph node ultrasound", "CT neck", "neck imaging"], "result": "Multiple lymph nodes on both sides, extending to the base of the neck and the intraparotid region. Right: posterior-triangle nodes up to 18 × 14 mm with rim enhancement and central hypodensity. Left: nodes up to 12 × 5 mm with a reactive appearance."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-07631",
+    "diagnosis": "Kikuchi-Fujimoto disease",
+    "aliases": ["Kikuchi–Fujimoto disease", "Kikuchi disease", "Kikuchi's disease", "histiocytic necrotizing lymphadenitis", "necrotizing histiocytic lymphadenitis"],
+    "reasoning": "1. Tuberculosis — “tuberculin skin test was also negative.” 2. Viral and other infections (HIV, hepatitis B and C, toxoplasmosis) — “serologic tests for HIV, Hepatitis B and C, toxoplasmosis, venereal disease research laboratory (VDRL), ANA and RF were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-07631",
+    "fact_sources": {
+      "f001": ["s001", "s002"],
+      "f002": ["s002"],
+      "f003": ["s001"],
+      "f004": ["s001", "s002"],
+      "f005": ["s002"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s002"],
+      "f009": ["s002"],
+      "f010": ["s002"],
+      "f011": ["s002"],
+      "f012": ["s002"],
+      "f013": ["s002"],
+      "f014": ["s003"],
+      "f015": ["s003"],
+      "f016": ["s003"]
+    },
+    "quotes": {
+      "f001": "painful right-sided neck swelling",
+      "f002": "She first noted a painful right cervical node",
+      "f003": "a 3-week history of fever and painful right-sided neck swelling",
+      "f005": "then developed fever",
+      "f006": "fever up to 40 °C",
+      "f009": "courses of amoxicillin–clavulanate",
+      "f012": "naproxen",
+      "f013": "developed fever up to 40 °C, nausea, and fatigue despite courses of amoxicillin–clavulanate, metronidazole, clindamycin, and naproxen",
+      "f014": "She had no comorbidities",
+      "f016": "or relevant family history"
+    },
+    "flags": {
+      "f009": ["Who prescribed the courses and whether any is still being taken is not stated; no time given."],
+      "f016": ["'No relevant family history' is a blanket denial: it answers only a general family-history question."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "she was hemodynamically stable"},
+      "x002": {"sentences": ["s004"], "source_text": "she was hemodynamically stable"},
+      "x003": {"sentences": ["s004"], "source_text": "had three tender enlarged lymph nodes on the right side of her neck; the overlying skin was normal"},
+      "x004": {"sentences": ["s004"], "source_text": "hemoglobin 10.9 g/dL, white blood cell count 6.4 × 10^3/mL"},
+      "x005": {"sentences": ["s004"], "source_text": "C-reactive protein 77 mg/L"},
+      "x006": {"sentences": ["s004"], "source_text": "erythrocyte sedimentation rate 42 mm/hr"},
+      "x007": {"sentences": ["s004"], "source_text": "lactate dehydrogenase 519 U/L"},
+      "x008": {"sentences": ["s005"], "source_text": "Blood and urine cultures showed no growth"},
+      "x009": {"sentences": ["s005"], "source_text": "Blood and urine cultures showed no growth"},
+      "x010": {"sentences": ["s005"], "source_text": "a tuberculin skin test was negative"},
+      "x011": {"sentences": ["s006"], "source_text": "Serologic tests demonstrated evidence of past Epstein–Barr virus infection but were negative for HIV, hepatitis B and C"},
+      "x012": {"sentences": ["s006"], "source_text": "toxoplasmosis"},
+      "x013": {"sentences": ["s006"], "source_text": "VDRL"},
+      "x014": {"sentences": ["s006"], "source_text": "ANA, and rheumatoid factor"},
+      "x015": {"sentences": ["s007"], "source_text": "Chest radiography / were unremarkable"},
+      "x016": {"sentences": ["s007"], "source_text": "CT scan of the chest, abdomen, and pelvis were unremarkable"},
+      "x017": {"sentences": ["s008"], "source_text": "Ultrasound and CT of the neck revealed multiple lymph nodes bilaterally extending to the base of the neck and intraparotid region; on the right, posterior-triangle nodes measured up to 18 × 14 mm with rim enhancement and central hypodensity, and on the left, nodes up to 12 × 5 mm appeared reactive."}
+    },
+    "finding_flags": {
+      "x001": ["Only 'hemodynamically stable' is given; no blood pressure or heart rate values."],
+      "x002": ["Only 'hemodynamically stable' is given; no blood pressure or heart rate values."],
+      "x004": ["White cell count unit '× 10^3/mL' is probably × 10^3/µL; kept as written."]
+    },
+    "leakage": [],
+    "source_issues": ["s004: the white blood cell count unit '6.4 × 10^3/mL' is implausible as written (probably × 10^3/µL).", "The gold reasoning lists only excluded alternatives (tuberculosis, infections); the diagnosis rests on the unreported core needle biopsy (s009)."],
+    "notes": ["Index visit: the admission after 3 weeks of fever and a painful right-sided neck swelling (s001-s004); the cultures, serology and imaging (s005-s008) are findings from the same workup.", "s002: the earlier courses of amoxicillin–clavulanate, metronidazole, clindamycin and naproxen are one medication fact each, plus one fact for the failed response (f013).", "s008: the neck ultrasound and neck CT results are reported together and cannot be attributed to one study, so they share one record (x017).", "s009: an ultrasound-guided core needle biopsy was performed but no result is given, so there is no biopsy finding.", "Fixes: f009 alias 'antibiotics' removed; f010 alias 'antibiotics' removed; f011 alias 'antibiotics' removed."],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s009", "reason": "Core needle biopsy performed, but no result is given in the prompt."}
+    ]
+  }
+}

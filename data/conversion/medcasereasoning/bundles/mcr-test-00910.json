@@ -1,0 +1,159 @@
+{
+  "patient": {
+    "case_id": "mcr-test-00910",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 61, "sex": "male"},
+    "opening": ["f001", "f002", "f003"],
+    "facts": [
+      {"id": "f001", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "I feel nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f002", "item": "vomiting", "aliases": ["throwing up"], "text": "I've been vomiting.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f003", "item": "abdominal pain", "aliases": ["belly pain", "stomach pain", "tummy ache"], "text": "I have pain in my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "how long the nausea, vomiting and belly pain have lasted", "text": "The nausea, vomiting and belly pain have been going on for a week.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "how bad the nausea and vomiting are", "text": "The nausea and vomiting are relentless; they just won't settle.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f006", "item": "tiredness", "aliases": ["fatigue", "exhaustion", "low energy"], "text": "I feel tired and worn out.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "headache", "aliases": ["head pain"], "text": "I have a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "sensitivity to light", "aliases": ["photophobia", "light hurts my eyes"], "text": "Light bothers my eyes.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f009", "item": "not passing urine", "aliases": ["anuria", "no urine", "can't pee"], "text": "I haven't been passing any urine.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f010", "item": "muscle aches", "aliases": ["myalgia", "muscle pain", "body aches"], "text": "My muscles ache.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f011", "item": "yellow eyes", "aliases": ["jaundice", "yellowing", "icterus"], "text": "The whites of my eyes have turned yellow.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f012", "item": "red eyes", "aliases": ["bloodshot eyes", "eye redness", "conjunctival suffusion"], "text": "My eyes look red.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f013", "item": "cough", "aliases": ["coughing"], "text": "I don't have a cough.", "polarity": "absent", "category": "symptom", "system": "respiratory"},
+      {"id": "f014", "item": "fever", "aliases": ["fevers", "high temperature"], "text": "I haven't had fevers.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f015", "item": "chills", "aliases": ["shivering", "rigors"], "text": "I haven't had chills.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f016", "item": "night sweats", "aliases": ["sweating at night"], "text": "I haven't had night sweats.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f017", "item": "earlier hospital visit for these symptoms", "aliases": ["previous visit", "left against medical advice", "has this happened before"], "text": "Six days ago I came to the hospital with the same symptoms, but I left against medical advice.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f018", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f019", "item": "cocaine use", "aliases": ["cocaine", "drug use", "recreational drugs"], "text": "I use cocaine regularly.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f020", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f021", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f022", "item": "injection drug use", "aliases": ["intravenous drugs", "IV drugs", "shooting up"], "text": "I don't inject drugs.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f023", "item": "recent travel", "aliases": ["travel", "trips"], "text": "I haven't travelled recently.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f024", "item": "homelessness", "aliases": ["housing", "where I live", "living situation"], "text": "I'm homeless.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f025", "item": "ethnicity", "aliases": ["race", "background"], "text": "I'm African American.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-00910",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "Afebrile."},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "177/65 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "77/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "16/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "100% on room air"},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "eye examination", "aliases": ["eyes", "sclerae", "conjunctivae"], "result": "Scleral icterus; conjunctival suffusion."},
+      {"id": "x007", "kind": "exam", "system": "ent", "name": "oral examination", "aliases": ["mouth", "palate", "oral cavity"], "result": "Jaundice of the soft palate."},
+      {"id": "x008", "kind": "exam", "system": "neurological", "name": "neck stiffness", "aliases": ["meningeal signs", "neck examination", "nuchal rigidity"], "result": "Supple neck."},
+      {"id": "x009", "kind": "exam", "system": "cardiovascular", "name": "cardiac examination", "aliases": ["cardiopulmonary examination", "heart examination", "apex beat", "point of maximal impulse", "heart sounds"], "result": "Heaving, laterally displaced point of maximal impulse; regular rate and rhythm."},
+      {"id": "x010", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "bowel sounds"], "result": "Epigastric tenderness without guarding or rigidity; normal bowel sounds."},
+      {"id": "x011", "kind": "exam", "system": "gastrointestinal", "name": "Murphy's sign", "aliases": ["Murphy sign"], "result": "Negative."},
+      {"id": "x012", "kind": "test", "name": "lipase", "aliases": ["serum lipase", "pancreatic enzymes"], "result": ">3× upper limit of normal."},
+      {"id": "x013", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "bilirubin", "alkaline phosphatase", "AST", "ALT"], "result": "Elevated bilirubin, alkaline phosphatase, AST and ALT (mixed hepatocellular-cholestatic pattern)."},
+      {"id": "x014", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "platelets", "platelet count", "blood count"], "result": "Thrombocytopenia."},
+      {"id": "x015", "kind": "test", "name": "renal function", "aliases": ["kidney function", "creatinine", "metabolic panel"], "result": "Creatinine 10.4 mg/dL."},
+      {"id": "x016", "kind": "test", "name": "creatine kinase", "aliases": ["CK", "CPK", "muscle enzymes"], "result": "Elevated."},
+      {"id": "x017", "kind": "test", "name": "urinalysis", "aliases": ["urine test", "urine dipstick", "urine microscopy"], "result": "Hematuria, pyuria, leukocyte esterase and hyaline casts."},
+      {"id": "x018", "kind": "test", "name": "peripheral blood smear", "aliases": ["blood film", "smear", "schistocytes"], "result": "Thrombocytopenia without schistocytes."},
+      {"id": "x019", "kind": "test", "name": "ADAMTS13 activity", "aliases": ["ADAMTS13"], "result": "Normal."},
+      {"id": "x020", "kind": "test", "name": "stool cultures", "aliases": ["stool culture", "E. coli", "Shigella", "Salmonella"], "result": "Negative for Escherichia coli, Shigella and Salmonella."},
+      {"id": "x021", "kind": "test", "name": "anti-platelet factor 4 antibodies", "aliases": ["anti-PF4", "heparin-induced thrombocytopenia antibodies", "HIT antibodies", "PF4 antibody"], "result": "Negative."},
+      {"id": "x022", "kind": "test", "name": "viral serology and PCR", "aliases": ["CMV", "EBV", "HIV", "cytomegalovirus", "Epstein-Barr virus", "HIV test", "viral serology"], "result": "CMV, EBV and HIV serology and PCR negative."},
+      {"id": "x023", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "anti-dsDNA", "p-ANCA", "c-ANCA", "ANCA", "glomerulonephritis workup"], "result": "ANA, anti-dsDNA, p-ANCA and c-ANCA unremarkable."},
+      {"id": "x024", "kind": "test", "name": "complement levels", "aliases": ["complement", "C3", "C4"], "result": "Unremarkable."},
+      {"id": "x025", "kind": "test", "name": "viral hepatitis panel", "aliases": ["hepatitis panel", "hepatitis serology", "hepatitis B", "hepatitis C", "hepatitis A"], "result": "Negative."},
+      {"id": "x026", "kind": "test", "name": "QuantiFERON", "aliases": ["interferon-gamma release assay", "IGRA", "TB blood test"], "result": "Negative."},
+      {"id": "x027", "kind": "test", "name": "α1-antitrypsin", "aliases": ["alpha-1 antitrypsin", "A1AT"], "result": "Negative."},
+      {"id": "x028", "kind": "test", "name": "ceruloplasmin", "aliases": ["serum ceruloplasmin", "Wilson disease screen"], "result": "Negative."},
+      {"id": "x029", "kind": "test", "name": "autoimmune pancreatitis markers", "aliases": ["autoimmune markers", "autoimmune markers for pancreatitis"], "result": "Negative."},
+      {"id": "x030", "kind": "test", "name": "urine toxicology", "aliases": ["urine drug screen", "tox screen", "drug screen"], "result": "Negative."},
+      {"id": "x031", "kind": "test", "name": "blood ethanol level", "aliases": ["blood alcohol", "ethanol level", "alcohol level"], "result": "Undetectable."},
+      {"id": "x032", "kind": "test", "name": "abdominal CT", "aliases": ["CT abdomen", "CT scan of the abdomen"], "result": "Only subtle gallbladder sludge versus small stones."},
+      {"id": "x033", "kind": "test", "name": "MRCP", "aliases": ["magnetic resonance cholangiopancreatography"], "result": "Unremarkable."},
+      {"id": "x034", "kind": "test", "name": "right upper-quadrant ultrasound", "aliases": ["abdominal ultrasound", "liver ultrasound", "RUQ ultrasound", "Doppler ultrasound of the liver"], "result": "Isolated hepatofugal flow in the right portal vein, suspicious for portal vein thrombosis; the left portal vein has normal directional flow."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-00910",
+    "diagnosis": "Leptospirosis",
+    "aliases": ["Weil's disease", "Weil disease", "icterohemorrhagic leptospirosis", "severe leptospirosis", "Leptospira infection"],
+    "reasoning": "1. Heparin-induced thrombocytopenia was suspected due to recent hospitalization but was excluded when “testing for heparin-induced platelet antibody came back negative.” 2. Viral infections (CMV, EBV, HIV) were considered in light of multiorgan involvement but “laboratory studies for underlying infections such as Cytomegalovirus (CMV), Epstein-Barr virus (EBV), Human immunodeficiency virus (HIV) were negative.” 3. Autoimmune and other causes of glomerulonephritis were evaluated but autoantibodies (ANA, anti–dsDNA, p-ANCA, c-ANCA) and complement levels “did not show significant results.” 4. Autoimmune pancreatitis was excluded as testing was negative and no imaging abnormalities supported this diagnosis. 5. Alcohol-induced pancreatitis was ruled out by an “undetectable” blood ethanol level. 6. Gallstone pancreatitis was considered given gallbladder sludge but was unlikely since “computed tomography … was unremarkable except for subtle sludge vs gallstones” and “MRCP was unremarkable.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-00910",
+    "fact_sources": {
+      "f001": ["s001", "s003"], "f002": ["s001", "s003"], "f003": ["s001"], "f004": ["s001"], "f005": ["s003"], "f006": ["s003"],
+      "f007": ["s003"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"], "f011": ["s007"], "f012": ["s007"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s003"], "f016": ["s003"], "f017": ["s002"], "f018": ["s001"],
+      "f019": ["s004"], "f020": ["s004"], "f021": ["s004"], "f022": ["s004"], "f023": ["s005"], "f024": ["s001"],
+      "f025": ["s001"]
+    },
+    "quotes": {
+      "f004": "1 week of nausea, vomiting, and abdominal pain", "f005": "intractable nausea, vomiting", "f008": "photophobia", "f009": "anuria",
+      "f011": "scleral icterus", "f012": "conjunctival suffusion", "f017": "He had presented 6 days earlier with similar symptoms but left against medical advice.",
+      "f019": "He used cocaine regularly", "f022": "intravenous drugs", "f024": "homeless", "f025": "African American"
+    },
+    "flags": {
+      "f011": ["From the examination (scleral icterus, jaundice of the soft palate); the patient can see yellow eyes."],
+      "f012": ["From the examination (conjunctival suffusion); the patient can see red eyes."],
+      "f014": ["He denies fevers and is afebrile on arrival."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "afebrile"},
+      "x002": {"sentences": ["s006"], "source_text": "blood pressure 177/65 mm Hg"},
+      "x003": {"sentences": ["s006"], "source_text": "heart rate 77/min"},
+      "x004": {"sentences": ["s006"], "source_text": "respiratory rate 16/min"},
+      "x005": {"sentences": ["s006"], "source_text": "oxygen saturation 100% on room air"},
+      "x006": {"sentences": ["s007"], "source_text": "scleral icterus, conjunctival suffusion"},
+      "x007": {"sentences": ["s007"], "source_text": "jaundice of the soft palate"},
+      "x008": {"sentences": ["s007"], "source_text": "a supple neck"},
+      "x009": {"sentences": ["s008"], "source_text": "Cardiopulmonary exam showed a heaving, laterally displaced point of maximal impulse with regular rate and rhythm."},
+      "x010": {"sentences": ["s009"], "source_text": "Abdominal exam disclosed epigastric tenderness without guarding or rigidity, normal bowel sounds"},
+      "x011": {"sentences": ["s009"], "source_text": "a negative Murphy’s sign"},
+      "x012": {"sentences": ["s010", "s011"], "source_text": "Lipase >3× upper limit of normal"},
+      "x013": {"sentences": ["s010", "s012"], "source_text": "Mixed hepatocellular-cholestatic liver injury (elevated bilirubin, alkaline phosphatase, AST, ALT)"},
+      "x014": {"sentences": ["s010", "s013"], "source_text": "Thrombocytopenia"},
+      "x015": {"sentences": ["s010", "s014"], "source_text": "creatinine 10.4 mg/dL"},
+      "x016": {"sentences": ["s010", "s015"], "source_text": "Elevated creatine kinase"},
+      "x017": {"sentences": ["s016"], "source_text": "Urinalysis revealed hematuria, pyuria, leukocyte esterase, and hyaline casts."},
+      "x018": {"sentences": ["s018"], "source_text": "Peripheral-blood smear: thrombocytopenia without schistocytes."},
+      "x019": {"sentences": ["s019"], "source_text": "ADAMTS13 activity: normal."},
+      "x020": {"sentences": ["s020"], "source_text": "Stool cultures: negative for Escherichia coli, Shigella, and Salmonella."},
+      "x021": {"sentences": ["s021"], "source_text": "anti–platelet factor 4 antibodies were negative"},
+      "x022": {"sentences": ["s022", "s024"], "source_text": "Serologic and PCR testing for CMV, EBV, and HIV were negative."},
+      "x023": {"sentences": ["s023"], "source_text": "ANA, anti–dsDNA, p-ANCA, c-ANCA / was unremarkable"},
+      "x024": {"sentences": ["s023"], "source_text": "complement levels / was unremarkable"},
+      "x025": {"sentences": ["s024"], "source_text": "including hepatitis panel / was negative"},
+      "x026": {"sentences": ["s024"], "source_text": "QuantiFERON / was negative"},
+      "x027": {"sentences": ["s024"], "source_text": "α₁-antitrypsin / was negative"},
+      "x028": {"sentences": ["s024"], "source_text": "ceruloplasmin, was negative"},
+      "x029": {"sentences": ["s026"], "source_text": "autoimmune markers (negative)"},
+      "x030": {"sentences": ["s026"], "source_text": "urine toxicology (negative)"},
+      "x031": {"sentences": ["s026"], "source_text": "undetectable blood ethanol level"},
+      "x032": {"sentences": ["s026"], "source_text": "abdominal CT (only subtle gallbladder sludge vs small stones)"},
+      "x033": {"sentences": ["s026"], "source_text": "MRCP (unremarkable)"},
+      "x034": {"sentences": ["s027"], "source_text": "Right upper-quadrant ultrasound demonstrated isolated hepatofugal flow in the right portal vein suspicious for portal vein thrombosis, whereas the left portal vein had normal directional flow."}
+    },
+    "finding_flags": {
+      "x013": ["The source summarises the pattern ('mixed hepatocellular-cholestatic liver injury') without values; the pattern is kept with the listed elevated tests."],
+      "x015": ["The label 'acute renal failure' is dropped as an interpretation; the creatinine value is kept."],
+      "x027": ["'Negative' for α1-antitrypsin and ceruloplasmin is the source's wording (part of a negative chronic liver disease evaluation); no levels are given."],
+      "x028": ["As for x027."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Urine toxicology is negative although he reports regular cocaine use.",
+      "No Leptospira serology, PCR or culture is reported; the diagnosis rests on the clinical picture and the exclusion of alternatives.",
+      "CMV, EBV and HIV testing is reported twice (s022 and s024).",
+      "Most laboratory results are given as qualitative summaries (lipase >3x ULN, thrombocytopenia, elevated CK) without values."
+    ],
+    "notes": [
+      "Index visit: the second presentation, after 1 week of nausea, vomiting and abdominal pain (s001, s003-s027); the visit 6 days earlier, from which he left against medical advice, is history (f017).",
+      "s021: the clinicians' suspicion of heparin-induced thrombocytopenia is dropped; the negative anti-PF4 result is a finding.",
+      "s010 is the heading of the laboratory list; each bullet (s011-s015) is cited together with it."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s017", "reason": "Clinician's initial differential (HUS, TTP); not a finding."},
+      {"id": "s025", "reason": "Clinician's diagnosis of acute pancreatitis from the lipase and epigastric pain; interpretation, not a finding."}
+    ]
+  }
+}

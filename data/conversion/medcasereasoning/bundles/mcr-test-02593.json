@@ -1,0 +1,117 @@
+{
+  "patient": {
+    "case_id": "mcr-test-02593",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 86, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "worsening vision", "aliases": ["vision loss", "poor eyesight", "blurry vision", "decreased vision"], "text": "My vision has been getting worse.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "worsening vision: onset", "parent": "f001", "attribute": "onset", "text": "It has been slowly declining ever since my cataract surgery two years ago.", "value": "2 years ago, after cataract surgery", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f003", "item": "worsening vision: course", "parent": "f001", "attribute": "course", "text": "It has got worse over the past several months, most noticeably over the last three months.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f004", "item": "sensitivity to light", "aliases": ["photosensitivity", "photophobia", "light hurts my eyes", "glare"], "text": "Light bothers both of my eyes.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "cataract surgery", "aliases": ["cataract operation", "eye surgery"], "text": "I had cataract surgery two years ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "glaucoma", "aliases": ["open-angle glaucoma", "high eye pressure"], "text": "I've had open-angle glaucoma for 25 years.", "value": "25 years", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f007", "item": "brimonidine eye drops", "aliases": ["brimonidine", "glaucoma drops", "Alphagan"], "text": "For the last seven years my glaucoma has been treated with brimonidine 0.1% drops, twice a day in both eyes.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "artificial tears", "aliases": ["lubricating eye drops"], "text": "I also use artificial tears.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "contact lens use", "aliases": ["contact lenses", "contacts"], "text": "I don't wear contact lenses.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f010", "item": "eyelid problems", "aliases": ["lid disorders", "eyelid disease"], "text": "I haven't had any problems with my eyelids.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "disease of the cornea", "aliases": ["corneal disease", "corneal problems"], "text": "I've never had any disease of the cornea.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "high cholesterol", "aliases": ["hyperlipidemia", "high blood fats"], "text": "I don't have high cholesterol.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "other medical problems", "aliases": ["systemic disease", "other illnesses"], "text": "Apart from my eyes, I don't have any medical problems.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f014", "item": "other symptoms", "aliases": ["symptoms elsewhere in the body", "systemic symptoms"], "text": "Apart from my eyes, I don't have any other symptoms.", "polarity": "absent", "category": "symptom", "system": "general"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-02593",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["eye chart", "best-corrected visual acuity", "vision test"], "result": "Best-corrected distance visual acuity 20/60 in the right eye and 20/70 in the left eye."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "manifest refraction", "aliases": ["refraction", "glasses prescription"], "result": "Right eye (OD) +0.75 −1.00 × 160°; left eye (OS) +0.50 −1.25 × 165°."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "tonometry", "eye pressure"], "result": "Within normal limits."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["slit lamp", "cornea examination", "anterior segment examination", "eyelids"], "result": "Dermatochalasis; superficial punctate keratitis; bilateral peripheral corneal opacities from the 4- to 5-o'clock and 7- to 8-o'clock positions with overlying neovascularization; crocodile shagreen bilaterally; no guttata or lattice lines."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "dilated fundus examination", "aliases": ["fundoscopy", "ophthalmoscopy", "retina examination", "optic disc"], "result": "Blunted macular reflex in both eyes; cup-to-disc ratio 0.65 in the right eye and 0.75 in the left eye."},
+      {"id": "x006", "kind": "test", "name": "complete blood count with differential", "aliases": ["CBC", "full blood count", "white cell differential"], "result": "Within normal limits."},
+      {"id": "x007", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "Within normal limits."},
+      {"id": "x008", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP"], "result": "Within normal limits."},
+      {"id": "x009", "kind": "test", "name": "autoimmune serology", "aliases": ["ANA", "antinuclear antibody", "ANCA", "c-ANCA", "p-ANCA", "rheumatoid factor", "RF", "anti-SSA", "anti-Ro", "anti-SSB", "anti-La"], "result": "ANA negative; c-ANCA negative; p-ANCA negative; rheumatoid factor negative; anti-SSA/Ro negative; anti-SSB/La negative."},
+      {"id": "x010", "kind": "test", "name": "tuberculin skin test", "aliases": ["PPD", "Mantoux test"], "result": "Negative."},
+      {"id": "x011", "kind": "test", "name": "interferon-gamma release assay", "aliases": ["IGRA", "QuantiFERON", "TB blood test"], "result": "Negative."},
+      {"id": "x012", "kind": "test", "name": "chest X-ray", "aliases": ["chest radiography", "CXR"], "result": "Negative."},
+      {"id": "x013", "kind": "test", "name": "angiotensin-converting enzyme level", "aliases": ["ACE", "serum ACE"], "result": "Within normal limits."},
+      {"id": "x014", "kind": "test", "name": "lysozyme level", "aliases": ["serum lysozyme"], "result": "Within normal limits."},
+      {"id": "x015", "kind": "test", "name": "MRSA swabs", "aliases": ["MRSA screen", "nasal swab"], "result": "Negative."},
+      {"id": "x016", "kind": "test", "name": "stool ova and cysts", "aliases": ["stool ova and parasites", "stool parasites"], "result": "Negative."},
+      {"id": "x017", "kind": "test", "name": "Lyme titers", "aliases": ["Lyme serology", "Borrelia serology"], "result": "Negative."},
+      {"id": "x018", "kind": "test", "name": "syphilis testing", "aliases": ["syphilis serology", "RPR", "VDRL", "treponemal test"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-02593",
+    "diagnosis": "Lipid keratopathy",
+    "aliases": ["corneal lipid keratopathy", "secondary lipid keratopathy", "lipid degeneration of the cornea", "corneal lipid degeneration", "drug-induced lipid keratopathy", "brimonidine-associated lipid keratopathy"],
+    "reasoning": "1. Infectious keratitis — “All tests resulted as negative or within normal limits.” 2. Autoimmune-associated keratitis (e.g., RA, SLE, Sjögren) — “The patient's PCP reported no findings in the review of systems or on physical exam consistent with rheumatoid arthritis, systemic lupus erythematosus, Sjogren syndrome, or other similar systemic diseases.” 3. Corneal arcus — “Corneal arcus, unlike LK, does not typically affect visual acuity as the central cornea is spared.” 4. Schnyder corneal dystrophy — “Bilateral corneal opacification may also be seen with Schnyder corneal dystrophy (SCD), a rare inherited disorder of the stroma.” 5. Corneal xanthoma and systemic lipid disorders (e.g., Tangier disease, familial HDL disorders) — “Although these are less common and lack neovascularization.” 6. Drug-induced lipid keratopathy from brimonidine use — “We have concluded that the BT is the most likely cause of this patient's lipid keratopathy.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-02593",
+    "fact_sources": {
+      "f001": ["s001", "s004"],
+      "f002": ["s002", "s004"],
+      "f003": ["s001", "s004"],
+      "f004": ["s004"],
+      "f005": ["s002"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s002"],
+      "f009": ["s003"],
+      "f010": ["s003"],
+      "f011": ["s003"],
+      "f012": ["s005"],
+      "f013": ["s005"],
+      "f014": ["s012"]
+    },
+    "quotes": {
+      "f002": "gradual vision decline since her cataract surgery",
+      "f003": "most noticeable over the past three months",
+      "f004": "photosensitivity in both eyes",
+      "f005": "cataract surgery two years earlier",
+      "f006": "a 25-year history of open-angle glaucoma",
+      "f007": "treated for seven years with brimonidine tartrate 0.1% twice daily in both eyes",
+      "f008": "and artificial tears",
+      "f010": "lid disorders",
+      "f013": "no history of hyperlipidemia or systemic disease",
+      "f014": "there were no systemic symptoms"
+    },
+    "flags": {
+      "f008": ["The seven-year duration may also apply to the artificial tears; left out of the fact because the sentence is ambiguous."],
+      "f014": ["From s012 'no systemic symptoms to suggest autoimmune disease'; the interpretive clause is dropped and the denial kept as a blanket 'other symptoms'."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "best-corrected distance visual acuity was 20/60 in the right eye and 20/70 in the left"},
+      "x002": {"sentences": ["s007"], "source_text": "Manifest refraction was +0.75–1.00 × 160° OD and +0.50–1.25 × 165° OS"},
+      "x003": {"sentences": ["s007"], "source_text": "intraocular pressures were within normal limits"},
+      "x004": {"sentences": ["s008", "s009"], "source_text": "Slit-lamp examination revealed dermatochalasis, superficial punctate keratitis, and bilateral peripheral corneal opacities from the 4- to 5-o’clock and 7- to 8-o’clock positions with overlying neovascularization. / Crocodile shagreen was noted bilaterally, with no guttata or lattice lines."},
+      "x005": {"sentences": ["s010"], "source_text": "Dilated fundus examination showed a blunted macular reflex in both eyes and cup-to-disc ratios of 0.65 OD and 0.75 OS."},
+      "x006": {"sentences": ["s011", "s012"], "source_text": "CBC with differential / All test results were negative or within normal limits"},
+      "x007": {"sentences": ["s011", "s012"], "source_text": "ESR / All test results were negative or within normal limits"},
+      "x008": {"sentences": ["s011", "s012"], "source_text": "CRP / All test results were negative or within normal limits"},
+      "x009": {"sentences": ["s011", "s012"], "source_text": "ANA, c-ANCA, p-ANCA, rheumatoid factor, anti-SSA/Ro, anti-SSB/La / All test results were negative or within normal limits"},
+      "x010": {"sentences": ["s011", "s012"], "source_text": "PPD / All test results were negative or within normal limits"},
+      "x011": {"sentences": ["s011", "s012"], "source_text": "interferon-gamma release assay / All test results were negative or within normal limits"},
+      "x012": {"sentences": ["s011", "s012"], "source_text": "chest radiography / All test results were negative or within normal limits"},
+      "x013": {"sentences": ["s011", "s012"], "source_text": "ACE and lysozyme levels / All test results were negative or within normal limits"},
+      "x014": {"sentences": ["s011", "s012"], "source_text": "ACE and lysozyme levels / All test results were negative or within normal limits"},
+      "x015": {"sentences": ["s011", "s012"], "source_text": "MRSA swabs / All test results were negative or within normal limits"},
+      "x016": {"sentences": ["s011", "s012"], "source_text": "stool ova and cysts / All test results were negative or within normal limits"},
+      "x017": {"sentences": ["s011", "s012"], "source_text": "Lyme titers / All test results were negative or within normal limits"},
+      "x018": {"sentences": ["s011", "s012"], "source_text": "syphilis testing / All test results were negative or within normal limits"}
+    },
+    "finding_flags": {
+      "x002": ["The source writes the cylinders with an en dash (+0.75–1.00 × 160°); read as sphere +0.75, cylinder −1.00, axis 160 (and +0.50 −1.25 × 165°)."],
+      "x006": ["s012 reports the whole workup as 'negative or within normal limits'; quantitative tests are given 'Within normal limits' and qualitative ones 'Negative'. The same applies to x007–x018."]
+    },
+    "leakage": [],
+    "source_issues": ["The patient denied lid disorders (s003), but slit-lamp examination found dermatochalasis (s008).", "The refraction uses en dashes for minus cylinders.", "s011 lists the primary care physician's review for systemic rheumatologic disease alongside the tests; it is not an orderable test."],
+    "notes": ["Index visit: the referral visit for several months of worsening vision (s001); the infectious and autoimmune workup (s011–s012) belongs to the same evaluation.", "The primary care physician's review for systemic rheumatologic disease (s011) is not given its own finding; its negative result is reflected in f014 (no systemic symptoms) and f013 (no systemic disease).", "f013 is 'other medical problems' rather than 'chronic medical problems' because she has glaucoma and past cataract surgery.", "Corneal opacities, keratitis and fundus findings need a slit lamp or fundoscopy, so they are findings only; the patient-noticeable sign is the worsening vision (f001) and light sensitivity (f004).", "Fixes: f007 alias 'eye drops' removed; f008 alias 'eye drops' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

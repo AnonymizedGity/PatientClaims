@@ -1,0 +1,84 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-074", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 55, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "inappropriate behavior", "aliases": ["behavior changes", "socially inappropriate behavior"], "text": "I've been behaving inappropriately.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "inappropriate behavior: duration", "parent": "f001", "attribute": "duration", "text": "It's been going on for the past 6 months.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "making inappropriate comments", "aliases": ["saying inappropriate things", "rude comments"], "text": "I've been making comments that don't fit the situation.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f004", "item": "trying to kiss strangers", "aliases": ["inappropriate physical contact", "touching strangers"], "text": "I've tried to kiss strangers.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f005", "item": "loss of interest in family", "aliases": ["disinterest in family", "withdrawing from family"], "text": "I'm not interested in spending time with my family.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f006", "item": "food cravings", "aliases": ["change in eating habits", "craving sweets", "craving junk food"], "text": "I've developed a particular craving for chocolate pudding and potato chips.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f007", "item": "weight gain", "aliases": ["gaining weight"], "text": "I've gained a lot of weight from eating those.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "weight gain: amount", "parent": "f007", "attribute": "quantity", "text": "I've put on 10 kg.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-074",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "Within normal limits"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Within normal limits"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Within normal limits"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "Within normal limits"},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "mental status examination", "aliases": ["mental status", "MSE", "mood", "affect", "behavior"], "result": "Apathy and blunted affect; avoids answering questions."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "Mini-Mental State Examination", "aliases": ["MMSE", "cognitive testing", "cognitive screen"], "result": "28/30."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["physical neurological examination", "cranial nerves", "motor strength", "reflexes", "sensation", "coordination", "gait"], "result": "Unremarkable."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count"], "result": "Within reference range."},
+      {"id": "x009", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "chemistry panel", "glucose", "serum glucose", "blood sugar", "creatinine", "electrolytes", "kidney function"], "result": "Glucose within reference range; creatinine within reference range; electrolytes within reference range."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-074",
+    "diagnosis": "Frontotemporal dementia",
+    "aliases": ["FTD", "behavioral variant frontotemporal dementia", "bvFTD", "frontotemporal dementia, behavioral variant", "Pick disease", "Pick's disease"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-074",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-074-p001"], "f002": ["agentclinic-medqa-ext-074-p001"], "f003": ["agentclinic-medqa-ext-074-p001"],
+      "f004": ["agentclinic-medqa-ext-074-p001", "agentclinic-medqa-ext-074-p008"], "f005": ["agentclinic-medqa-ext-074-p001", "agentclinic-medqa-ext-074-p002"],
+      "f006": ["agentclinic-medqa-ext-074-p001", "agentclinic-medqa-ext-074-p003"], "f007": ["agentclinic-medqa-ext-074-p001", "agentclinic-medqa-ext-074-p004"],
+      "f008": ["agentclinic-medqa-ext-074-p001"], "f009": ["agentclinic-medqa-ext-074-p007"]
+    },
+    "quotes": {
+      "f002": "over the past 6 months", "f003": "making unfitting comments", "f004": "attempts to kiss strangers",
+      "f005": "disinterest in family interactions", "f006": "a particular craving for chocolate pudding and potato chips",
+      "f007": "Significant weight gain", "f008": "a 10 kg weight gain", "f009": "No significant medical history provided."
+    },
+    "flags": {
+      "f009": ["Meta phrase 'No significant medical history provided' turned into a plain denial, as CONVERSION.md directs."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-074-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-074-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-074-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "Within normal limits", "exam_ids": ["agentclinic-medqa-ext-074-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status_Examination", "source_text": "Apathy and blunted affect, avoids answering questions. Mini-Mental State Examination score is 28/30.", "exam_ids": ["agentclinic-medqa-ext-074-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurological_Examination.Mental_Status_Examination", "source_text": "Apathy and blunted affect, avoids answering questions. Mini-Mental State Examination score is 28/30.", "exam_ids": ["agentclinic-medqa-ext-074-e005"]},
+      "x007": {"source": "Physical_Examination_Findings.Neurological_Examination.Physical_Neurological_Examination", "source_text": "Unremarkable", "exam_ids": ["agentclinic-medqa-ext-074-e006"]},
+      "x008": {"source": "Test_Results.Lab_Work.Complete_Blood_Count", "source_text": "Within reference range", "exam_ids": ["agentclinic-medqa-ext-074-i001"]},
+      "x009": {"source": "Test_Results.Lab_Work.Serum_Glucose + Test_Results.Lab_Work.Creatinine + Test_Results.Lab_Work.Electrolytes", "source_text": "Within reference range | Within reference range | Within reference range", "exam_ids": ["agentclinic-medqa-ext-074-i002", "agentclinic-medqa-ext-074-i003", "agentclinic-medqa-ext-074-i004"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "The history does not say who reports the behaviour; the patient avoids questions, so it is presumably collateral. With no informant named, the facts are written in plain first person.",
+      "No brain imaging is given, so the environment cannot show frontotemporal atrophy."
+    ],
+    "notes": [
+      "Apathy (p005), blunted affect (p006) and avoiding questions while commenting on unrelated subjects (p009) are observer-only signs: apathy, blunted affect and question avoidance are in the mental status exam (x005); the rest and 'presents as unkempt' (p001) are in qc.extras.acting_notes.",
+      "The MMSE score is a separate record (x006) from the rest of the mental status leaf (x005), since a doctor requests it as a named test; both cite e005.",
+      "Gold aliases exclude 'frontotemporal lobar degeneration' (a broader pathological umbrella)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with inappropriate behavior, changes in eating habits, and weight gain.",
+      "acting_notes": ["Appears unkempt.", "Avoids questions and comments on unrelated subjects instead.", "Apathetic towards surroundings and interactions; blunted affect."]
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-074-p005", "reason": "Apathy as an observed sign; in the mental status exam (x005) and acting_notes."},
+      {"id": "agentclinic-medqa-ext-074-p006", "reason": "Blunted affect is observer-only; in the mental status exam (x005)."},
+      {"id": "agentclinic-medqa-ext-074-p009", "reason": "Observer-only behaviour during the interview (avoids questions, comments on unrelated subjects, apathy); in x005 and acting_notes."}
+    ]
+  }
+}

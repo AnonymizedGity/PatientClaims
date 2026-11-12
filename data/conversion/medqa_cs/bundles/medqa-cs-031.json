@@ -1,0 +1,1202 @@
+{
+  "patient": {
+    "case_id": "medqa-cs-031",
+    "dataset": "medqa_cs",
+    "demographics": {
+      "age": 21,
+      "sex": "female"
+    },
+    "opening": [
+      "f001"
+    ],
+    "facts": [
+      {
+        "id": "f001",
+        "item": "stomach pain",
+        "aliases": [
+          "abdominal pain",
+          "belly pain"
+        ],
+        "text": "I have stomach pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f002",
+        "item": "stomach pain: onset",
+        "parent": "f001",
+        "attribute": "onset",
+        "text": "It began this morning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f003",
+        "item": "stomach pain: constant or comes and goes",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It's an intense, constant pain.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f004",
+        "item": "stomach pain: change since it started",
+        "parent": "f001",
+        "attribute": "course",
+        "text": "It is getting worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f005",
+        "item": "stomach pain: severity",
+        "parent": "f001",
+        "attribute": "severity",
+        "value": 7,
+        "text": "It's 7 out of 10.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current",
+        "scale": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": "f006",
+        "item": "stomach pain: location",
+        "parent": "f001",
+        "attribute": "location",
+        "value": [
+          "right lower abdomen"
+        ],
+        "text": "It's here, in the lower right part of my belly.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f007",
+        "item": "stomach pain: spread",
+        "parent": "f001",
+        "attribute": "radiation",
+        "text": "It doesn't go anywhere else.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f008",
+        "item": "stomach pain: what it feels like",
+        "parent": "f001",
+        "attribute": "character",
+        "text": "It's cramping.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f009",
+        "item": "stomach pain: what makes it better",
+        "parent": "f001",
+        "attribute": "relieving",
+        "text": "Nothing makes it better.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f010",
+        "item": "stomach pain: what makes it worse",
+        "parent": "f001",
+        "attribute": "aggravating",
+        "value": [
+          "movement"
+        ],
+        "complete": true,
+        "text": "Movement makes it worse.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f011",
+        "item": "stomach pain: during the ride to the hospital",
+        "parent": "f001",
+        "attribute": "other",
+        "text": "I had pain on my way here.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f012",
+        "item": "stomach pain: what brought it on",
+        "parent": "f001",
+        "attribute": "context",
+        "text": "I wasn't doing anything specific that might have caused it.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f013",
+        "item": "fever",
+        "aliases": [
+          "feeling warm",
+          "temperature"
+        ],
+        "text": "I've felt slightly warm since this morning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f014",
+        "item": "chills",
+        "text": "I haven't had any chills.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "general",
+        "time": "current"
+      },
+      {
+        "id": "f015",
+        "item": "nausea",
+        "aliases": [
+          "feeling sick to the stomach"
+        ],
+        "text": "I am feeling nauseated.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f016",
+        "item": "vomiting",
+        "aliases": [
+          "throwing up"
+        ],
+        "text": "I vomited once, two hours ago.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f017",
+        "item": "vomiting: what it looked like",
+        "parent": "f016",
+        "attribute": "appearance",
+        "text": "It was a yellowish, sour liquid.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f018",
+        "item": "vomiting: blood in the vomit",
+        "parent": "f016",
+        "attribute": "appearance",
+        "text": "There was no blood in it.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f019",
+        "item": "diarrhea",
+        "aliases": [
+          "bowel changes",
+          "loose stools"
+        ],
+        "text": "I had diarrhea this morning.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f020",
+        "item": "diarrhea: stool color",
+        "parent": "f019",
+        "attribute": "appearance",
+        "text": "It was brown.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f021",
+        "item": "blood in stool",
+        "aliases": [
+          "bloody stools"
+        ],
+        "text": "There wasn't any blood in my stool.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "gastrointestinal",
+        "time": "current"
+      },
+      {
+        "id": "f022",
+        "item": "urinary changes",
+        "aliases": [
+          "burning on urination",
+          "urinary frequency"
+        ],
+        "text": "My urinary habits haven't changed.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "genitourinary",
+        "time": "current"
+      },
+      {
+        "id": "f023",
+        "item": "vaginal spotting",
+        "aliases": [
+          "vaginal bleeding",
+          "spotting"
+        ],
+        "text": "Today is the first day of my menstrual period.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f024",
+        "item": "vaginal spotting: color",
+        "parent": "f023",
+        "attribute": "appearance",
+        "text": "It's brownish.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f025",
+        "item": "vaginal spotting: pads or tampons used today",
+        "parent": "f023",
+        "attribute": "quantity",
+        "text": "One today, but usually I change two to three a day.",
+        "polarity": "present",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f026",
+        "item": "vaginal discharge",
+        "text": "I haven't had any other vaginal discharge.",
+        "polarity": "absent",
+        "category": "symptom",
+        "system": "reproductive",
+        "time": "current"
+      },
+      {
+        "id": "f027",
+        "item": "last menstrual period",
+        "aliases": [
+          "last period",
+          "LMP"
+        ],
+        "text": "My last period was five weeks ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f028",
+        "item": "menstrual cycle",
+        "aliases": [
+          "how often periods come",
+          "period length"
+        ],
+        "text": "My period comes every 4 weeks and lasts for 7 days.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f029",
+        "item": "first period",
+        "aliases": [
+          "age at first period",
+          "menarche"
+        ],
+        "text": "I got my first period at age 13.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f030",
+        "item": "pregnancies",
+        "aliases": [
+          "children",
+          "births"
+        ],
+        "text": "I gave birth 3 years ago.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f031",
+        "item": "complications in pregnancy or delivery",
+        "aliases": [
+          "problems with the delivery"
+        ],
+        "text": "The delivery went smoothly.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f032",
+        "item": "miscarriages or abortions",
+        "aliases": [
+          "miscarriages",
+          "pregnancy losses"
+        ],
+        "text": "I haven't had any miscarriages or abortions.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f033",
+        "item": "sexually transmitted infections",
+        "aliases": [
+          "STDs",
+          "STIs"
+        ],
+        "text": "I had some kind of infection 6 months ago, but I can't remember the name of it.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f034",
+        "item": "sexually transmitted infections: treatment",
+        "parent": "f033",
+        "attribute": "treatment_response",
+        "text": "The doctor gave me a shot and some pills for 1 week, and then it was over.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "resolved"
+      },
+      {
+        "id": "f035",
+        "item": "sexually transmitted infections: partner's treatment",
+        "parent": "f033",
+        "attribute": "other",
+        "text": "My boyfriend refused the treatment.",
+        "polarity": "present",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f036",
+        "item": "HIV test",
+        "aliases": [
+          "HIV testing"
+        ],
+        "text": "I've never been tested for HIV.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f037",
+        "item": "other medical problems",
+        "aliases": [
+          "medical conditions",
+          "past illnesses"
+        ],
+        "text": "None, except for what I've mentioned.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f038",
+        "item": "past surgery",
+        "aliases": [
+          "operations"
+        ],
+        "text": "I haven't had any surgery.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "historical"
+      },
+      {
+        "id": "f039",
+        "item": "drug allergies",
+        "aliases": [
+          "allergies to medicines",
+          "allergies"
+        ],
+        "text": "I'm not allergic to any medications.",
+        "polarity": "absent",
+        "category": "medical_history",
+        "time": "current"
+      },
+      {
+        "id": "f040",
+        "item": "ibuprofen",
+        "aliases": [
+          "Advil",
+          "Motrin",
+          "painkillers"
+        ],
+        "text": "I take ibuprofen.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f041",
+        "item": "oral contraceptive pills",
+        "aliases": [
+          "birth control pills",
+          "the pill",
+          "contraception"
+        ],
+        "text": "I use oral contraceptive pills.",
+        "polarity": "present",
+        "category": "medication",
+        "time": "current"
+      },
+      {
+        "id": "f042",
+        "item": "child's health",
+        "text": "My baby is in good health.",
+        "polarity": "present",
+        "category": "family_history",
+        "time": "current"
+      },
+      {
+        "id": "f043",
+        "item": "alcohol",
+        "aliases": [
+          "drinking"
+        ],
+        "text": "I drink beer.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f044",
+        "item": "alcohol: how much",
+        "parent": "f043",
+        "attribute": "quantity",
+        "text": "I have two to three beers a week.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f045",
+        "item": "recreational drugs",
+        "aliases": [
+          "illicit drugs",
+          "street drugs"
+        ],
+        "text": "I haven't used any recreational drugs.",
+        "polarity": "absent",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f046",
+        "item": "smoking",
+        "aliases": [
+          "cigarettes",
+          "tobacco"
+        ],
+        "text": "I smoke cigarettes.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f047",
+        "item": "smoking: how much",
+        "parent": "f046",
+        "attribute": "quantity",
+        "text": "One pack a day.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f048",
+        "item": "smoking: for how long",
+        "parent": "f046",
+        "attribute": "duration",
+        "text": "For the past 6 years.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f049",
+        "item": "sexual activity",
+        "text": "I'm sexually active.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f050",
+        "item": "condom use",
+        "aliases": [
+          "condoms",
+          "protection"
+        ],
+        "text": "My boyfriend refuses to use condoms.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f051",
+        "item": "current sexual partners",
+        "aliases": [
+          "partner"
+        ],
+        "text": "Only my boyfriend; we've been together for six months.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f052",
+        "item": "number of sexual partners in the past year",
+        "text": "I had three partners over the past year.",
+        "polarity": "present",
+        "category": "habit_exposure",
+        "time": "current"
+      },
+      {
+        "id": "f053",
+        "item": "occupation",
+        "aliases": [
+          "job",
+          "work"
+        ],
+        "text": "I'm a waitress.",
+        "polarity": "present",
+        "category": "social_background",
+        "time": "current"
+      }
+    ]
+  },
+  "environment": {
+    "case_id": "medqa-cs-031",
+    "findings": [
+      {
+        "id": "x001",
+        "kind": "vital",
+        "name": "blood pressure",
+        "aliases": [
+          "BP"
+        ],
+        "result": "120/80 mm Hg",
+        "initial": true
+      },
+      {
+        "id": "x002",
+        "kind": "vital",
+        "name": "temperature",
+        "aliases": [
+          "fever"
+        ],
+        "result": "100.5°F (38.1°C)",
+        "initial": true
+      },
+      {
+        "id": "x003",
+        "kind": "vital",
+        "name": "respiratory rate",
+        "aliases": [
+          "breathing rate"
+        ],
+        "result": "20/min",
+        "initial": true
+      },
+      {
+        "id": "x004",
+        "kind": "vital",
+        "name": "heart rate",
+        "aliases": [
+          "pulse",
+          "HR"
+        ],
+        "result": "88/min, regular",
+        "initial": true
+      },
+      {
+        "id": "x005",
+        "kind": "exam",
+        "system": "general",
+        "name": "general appearance",
+        "result": "In pain."
+      },
+      {
+        "id": "x006",
+        "kind": "exam",
+        "system": "musculoskeletal",
+        "name": "chest wall palpation",
+        "result": "No chest wall tenderness."
+      },
+      {
+        "id": "x007",
+        "kind": "exam",
+        "system": "respiratory",
+        "name": "lung auscultation",
+        "aliases": [
+          "listen to the lungs",
+          "chest auscultation"
+        ],
+        "result": "Clear breath sounds on both sides."
+      },
+      {
+        "id": "x008",
+        "kind": "exam",
+        "system": "cardiovascular",
+        "name": "heart examination",
+        "aliases": [
+          "heart auscultation",
+          "cardiac exam"
+        ],
+        "result": "Regular rate and rhythm; normal S1 and S2; no murmurs, rubs or gallops."
+      },
+      {
+        "id": "x009",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "abdominal examination",
+        "aliases": [
+          "abdomen",
+          "abdominal palpation",
+          "rebound tenderness"
+        ],
+        "result": "Soft, not distended; hypoactive bowel sounds; no enlargement of the liver or spleen; tenderness in the right lower quadrant on palpation, with rebound tenderness and guarding."
+      },
+      {
+        "id": "x010",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "Rovsing sign",
+        "result": "Positive: pain in the right lower quadrant."
+      },
+      {
+        "id": "x011",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "psoas sign",
+        "result": "Positive: pain when the right hip is extended."
+      },
+      {
+        "id": "x012",
+        "kind": "exam",
+        "system": "gastrointestinal",
+        "name": "obturator sign",
+        "result": "Result not documented"
+      },
+      {
+        "id": "x013",
+        "kind": "exam",
+        "system": "genitourinary",
+        "name": "costovertebral angle tenderness",
+        "aliases": [
+          "CVA tenderness",
+          "flank tenderness"
+        ],
+        "result": "No costovertebral angle tenderness."
+      }
+    ]
+  },
+  "gold": {
+    "case_id": "medqa-cs-031",
+    "diagnosis": "Appendicitis",
+    "aliases": [
+      "acute appendicitis",
+      "inflamed appendix"
+    ],
+    "differential": [
+      {
+        "rank": 1,
+        "diagnosis": "Appendicitis",
+        "evidence": [
+          "Right lower abdominal pain",
+          "Pain is exacerbated by movement",
+          "Nausea and vomiting",
+          "Exam: RLQ direct and rebound tenderness",
+          "Exam: RLQ guarding",
+          "Exam: Temperature 100.5°F",
+          "Exam: Positive Rovsing sign",
+          "Exam: Positive psoas sign"
+        ]
+      },
+      {
+        "rank": 2,
+        "diagnosis": "Pelvic inflammatory disease",
+        "aliases": [
+          "PID",
+          "acute pelvic inflammatory disease",
+          "salpingitis"
+        ],
+        "evidence": [
+          "STD 6 months ago with untreated partner",
+          "RLQ tenderness",
+          "Nausea and vomiting",
+          "Spotting",
+          "Unprotected sex with multiple partners",
+          "Low-grade fever",
+          "Exam: RLQ rebound tenderness",
+          "Exam: RLQ guarding",
+          "Exam: Temperature 100.5°F"
+        ]
+      },
+      {
+        "rank": 3,
+        "diagnosis": "Ruptured ectopic pregnancy",
+        "aliases": [
+          "ruptured tubal pregnancy",
+          "ruptured ectopic",
+          "ectopic pregnancy rupture"
+        ],
+        "evidence": [
+          "Last menstrual period 5 weeks ago and spotting",
+          "Crampy lower abdominal pain",
+          "Pain is exacerbated by movement",
+          "Nausea and vomiting",
+          "Pain is of recent onset",
+          "Exam: RLQ rebound tenderness",
+          "Exam: RLQ guarding"
+        ]
+      }
+    ],
+    "other_considerations": [
+      {
+        "diagnosis": "Ruptured ovarian cyst",
+        "note": "Sudden unilateral lower abdominal pain with rebound and guarding fits, but it is less common than appendicitis or PID and would not explain a late period."
+      },
+      {
+        "diagnosis": "Adnexal torsion",
+        "note": "An uncommon cause of this presentation, usually associated with ovarian enlargement from a benign mass."
+      },
+      {
+        "diagnosis": "Gastroenteritis",
+        "note": "Causes crampy pain, nausea, vomiting, low-grade fever, and diarrhea, but rebound tenderness makes it less likely."
+      },
+      {
+        "diagnosis": "Abortion",
+        "note": "Crampy pain and spotting with an LMP 5 weeks ago raise the possibility, and fever suggests septic abortion, though the short interval makes it less likely."
+      },
+      {
+        "diagnosis": "Endometriosis",
+        "note": "Unlikely without chronic pelvic pain, dysmenorrhea, dyspareunia, or infertility; acute severe pain could come from a ruptured endometrioma."
+      }
+    ]
+  },
+  "qc": {
+    "case_id": "medqa-cs-031",
+    "fact_sources": {
+      "f001": [
+        "cc"
+      ],
+      "f002": [
+        "medqa-cs-031-p001"
+      ],
+      "f003": [
+        "medqa-cs-031-p002"
+      ],
+      "f004": [
+        "medqa-cs-031-p003"
+      ],
+      "f005": [
+        "medqa-cs-031-p004"
+      ],
+      "f006": [
+        "medqa-cs-031-p005"
+      ],
+      "f007": [
+        "medqa-cs-031-p006"
+      ],
+      "f008": [
+        "medqa-cs-031-p007"
+      ],
+      "f009": [
+        "medqa-cs-031-p008"
+      ],
+      "f010": [
+        "medqa-cs-031-p009"
+      ],
+      "f011": [
+        "medqa-cs-031-p010"
+      ],
+      "f012": [
+        "medqa-cs-031-p011"
+      ],
+      "f013": [
+        "medqa-cs-031-p012"
+      ],
+      "f014": [
+        "medqa-cs-031-p012"
+      ],
+      "f015": [
+        "medqa-cs-031-p013"
+      ],
+      "f016": [
+        "medqa-cs-031-p013"
+      ],
+      "f017": [
+        "medqa-cs-031-p014"
+      ],
+      "f018": [
+        "medqa-cs-031-p015"
+      ],
+      "f019": [
+        "medqa-cs-031-p016"
+      ],
+      "f020": [
+        "medqa-cs-031-p017"
+      ],
+      "f021": [
+        "medqa-cs-031-p018"
+      ],
+      "f022": [
+        "medqa-cs-031-p019"
+      ],
+      "f023": [
+        "medqa-cs-031-p021"
+      ],
+      "f024": [
+        "medqa-cs-031-p022"
+      ],
+      "f025": [
+        "medqa-cs-031-p026"
+      ],
+      "f026": [
+        "medqa-cs-031-p023"
+      ],
+      "f027": [
+        "medqa-cs-031-p020"
+      ],
+      "f028": [
+        "medqa-cs-031-p024"
+      ],
+      "f029": [
+        "medqa-cs-031-p025"
+      ],
+      "f030": [
+        "medqa-cs-031-p027"
+      ],
+      "f031": [
+        "medqa-cs-031-p028"
+      ],
+      "f032": [
+        "medqa-cs-031-p029"
+      ],
+      "f033": [
+        "medqa-cs-031-p034"
+      ],
+      "f034": [
+        "medqa-cs-031-p034"
+      ],
+      "f035": [
+        "medqa-cs-031-p035"
+      ],
+      "f036": [
+        "medqa-cs-031-p036"
+      ],
+      "f037": [
+        "medqa-cs-031-p037"
+      ],
+      "f038": [
+        "medqa-cs-031-p038"
+      ],
+      "f039": [
+        "medqa-cs-031-p043"
+      ],
+      "f040": [
+        "medqa-cs-031-p030"
+      ],
+      "f041": [
+        "medqa-cs-031-p032"
+      ],
+      "f042": [
+        "medqa-cs-031-p028"
+      ],
+      "f043": [
+        "medqa-cs-031-p040"
+      ],
+      "f044": [
+        "medqa-cs-031-p040"
+      ],
+      "f045": [
+        "medqa-cs-031-p041"
+      ],
+      "f046": [
+        "medqa-cs-031-p042"
+      ],
+      "f047": [
+        "medqa-cs-031-p042"
+      ],
+      "f048": [
+        "medqa-cs-031-p042"
+      ],
+      "f049": [
+        "medqa-cs-031-p031"
+      ],
+      "f050": [
+        "medqa-cs-031-p032"
+      ],
+      "f051": [
+        "medqa-cs-031-p033"
+      ],
+      "f052": [
+        "medqa-cs-031-p033"
+      ],
+      "f053": [
+        "medqa-cs-031-p039"
+      ]
+    },
+    "quotes": {
+      "f001": "I have stomach pain.",
+      "f002": "It began this morning.",
+      "f003": "Intense, constant pain.",
+      "f004": "It is getting worse.",
+      "f005": "7/10.",
+      "f006": "It is here",
+      "f007": "No.",
+      "f008": "Cramping.",
+      "f009": "No.",
+      "f010": "Movement.",
+      "f011": "Yes.",
+      "f012": "No.",
+      "f013": "I've felt slightly warm since this morning",
+      "f014": "but I haven't had any chills.",
+      "f015": "I am experiencing nausea",
+      "f016": "I vomited once two hours ago.",
+      "f017": "It was a yellowish, sour liquid.",
+      "f018": "No.",
+      "f019": "Diarrhea this morning.",
+      "f020": "Brown.",
+      "f021": "No.",
+      "f022": "No.",
+      "f023": "Yes, today is the first day of my menstrual period.",
+      "f024": "Brownish.",
+      "f025": "One, but usually two to three a day.",
+      "f026": "No.",
+      "f027": "Five weeks ago.",
+      "f028": "Every 4 weeks; lasts for 7 days.",
+      "f029": "Age 13.",
+      "f030": "Yes, I gave birth 3 years ago.",
+      "f031": "No, the delivery went smoothly",
+      "f032": "No.",
+      "f033": "Yes, I had some kind of infection 6 months ago, but I can't remember the name of it.",
+      "f034": "The doctor gave me a shot and some pills for 1 week, and then it was over.",
+      "f035": "He refused the treatment.",
+      "f036": "No.",
+      "f037": "None except for what I've mentioned.",
+      "f038": "No.",
+      "f039": "No.",
+      "f040": "Ibuprofen.",
+      "f041": "Oral contraceptive pills.",
+      "f042": "and my baby is in good health.",
+      "f043": "I have two to three beers weekly.",
+      "f044": "I have two to three beers weekly.",
+      "f045": "No.",
+      "f046": "Cigarettes",
+      "f047": "one pack a day",
+      "f048": "for the past 6 years.",
+      "f049": "Yes.",
+      "f050": "My boyfriend refuses to use condoms.",
+      "f051": "Only my boyfriend; we've been together for six months.",
+      "f052": "I had three partners over the past year.",
+      "f053": "Waitress."
+    },
+    "flags": {
+      "f023": [
+        "Asked about spotting since the last period, she says today is the first day of her menstrual period; the note and gold call it brownish spotting. Kept in her words."
+      ]
+    },
+    "finding_sources": {
+      "x001": {
+        "source": "doorway + patient_note",
+        "source_text": "BP: 120/80 mm Hg | VS: WNL except for temperature of 100.5°F.",
+        "exam_ids": [
+          "medqa-cs-031-e002"
+        ]
+      },
+      "x002": {
+        "source": "doorway + patient_note",
+        "source_text": "Temp: 100.5°F (38.1°C) | VS: WNL except for temperature of 100.5°F.",
+        "exam_ids": [
+          "medqa-cs-031-e002"
+        ]
+      },
+      "x003": {
+        "source": "doorway + patient_note",
+        "source_text": "RR: 20/minute | VS: WNL except for temperature of 100.5°F.",
+        "exam_ids": [
+          "medqa-cs-031-e002"
+        ]
+      },
+      "x004": {
+        "source": "doorway + patient_note",
+        "source_text": "HR: 88/minute, regular | VS: WNL except for temperature of 100.5°F.",
+        "exam_ids": [
+          "medqa-cs-031-e002"
+        ]
+      },
+      "x005": {
+        "source": "patient_note",
+        "source_text": "The patient is in pain.",
+        "exam_ids": [
+          "medqa-cs-031-e001"
+        ]
+      },
+      "x006": {
+        "source": "patient_note",
+        "source_text": "Chest: No tenderness, clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-031-e003"
+        ]
+      },
+      "x007": {
+        "source": "patient_note",
+        "source_text": "Chest: No tenderness, clear breath sounds bilaterally.",
+        "exam_ids": [
+          "medqa-cs-031-e003"
+        ]
+      },
+      "x008": {
+        "source": "patient_note",
+        "source_text": "Heart: Regular rate and rhythm (RRR), 51152 WNL; no murmurs, rubs, or gallops.",
+        "exam_ids": [
+          "medqa-cs-031-e004"
+        ]
+      },
+      "x009": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Abdomen: Soft, nondistended, hypoactive bowel sounds (BS), no hepatosplenomegaly. Direct and rebound Right Lower Quadrant tenderness, RLQ guarding | Exhibit right lower abdominal tenderness on palpation. | Show rebound tenderness (pain when the examinee removes their palpating hand). | Demonstrate guarding (contraction of the abdominal muscles when palpating the RLQ).",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ]
+      },
+      "x010": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Ely's Rovsing sign | Experience pain in the RLQ when the examinee presses on the RLQ (Rovsing sign).",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ]
+      },
+      "x011": {
+        "source": "patient_note + sp_notes",
+        "source_text": "Ely's psoas sign | Manifest pain when the examinee extends their right hip (psoas sign).",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ]
+      },
+      "x012": {
+        "source": "patient_note",
+        "source_text": "6 obturator sign",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ]
+      },
+      "x013": {
+        "source": "patient_note",
+        "source_text": "no Costo-Vertebral Angle tenderness.",
+        "exam_ids": [
+          "medqa-cs-031-e005"
+        ]
+      }
+    },
+    "finding_flags": {
+      "x008": [
+        "Source reads '51152 WNL', an OCR artifact for 'S1/S2 WNL'; corrected."
+      ],
+      "x010": [
+        "The note's result is garbled ('Ely's Rovsing sign'); the result is the SP-simulated finding. The SP note describes Rovsing sign as RLQ pain on pressure over the RLQ, whereas the sign is RLQ pain on pressure over the left lower quadrant; the result gives only the positive sign and the RLQ pain."
+      ],
+      "x011": [
+        "The note's result is garbled ('Ely's psoas sign'); the result is the SP-simulated finding."
+      ],
+      "x012": [
+        "Source reads '6 obturator sign' - prefix garbled; the result cannot be recovered and no SP note covers it."
+      ]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Exam line e004 reads '51152 WNL', an OCR artifact for 'S1/S2 WNL'.",
+      "Exam line e005 has garbled sign results: 'Ely's psoas sign', 'Ely's Rovsing sign', '6 obturator sign'. The direction of each sign is not legible. The SP notes and gold rank 1 treat psoas and Rovsing as positive, so the v2 records give the SP-simulated positive results (x010, x011); the obturator result is unknown (x012, 'Result not documented').",
+      "The SP note describes Rovsing sign as RLQ pain 'when the examinee presses on the RLQ'; Rovsing sign is RLQ pain on pressure over the left lower quadrant.",
+      "p021: asked about spotting since the last period, the patient says today is the first day of her menstrual period; the note and gold call it brownish spotting. Kept in her words (f023).",
+      "The note medication list gives only ibuprofen, although she uses oral contraceptive pills (p032).",
+      "The sample closure mentions 'a positive result on your pregnancy test', but no test result exists in the case; not added as a test finding.",
+      "Gold rank 2 lists 'RLQ tenderness' (an exam finding) under history findings.",
+      "The note PMH 'possibly treated with ceftriaxone and doxycycline' is a clinician interpretation of 'a shot and some pills for a week'; patient facts keep her wording.",
+      "The raw Patient Description ('single with one child') is not in the parsed source fields; added to extras.acting_notes."
+    ],
+    "notes": [
+      "The stage direction '(points to the right lower abdomen)' in p005 is moved to extras.acting_notes; the location child f006 says it in lay words.",
+      "Spotting, its color, and today's pad count are symptom facts (v1 hpi, part of the presenting picture); LMP, cycle pattern, menarche, and obstetric history are medical_history (v1 ob_gyn).",
+      "Vomiting two hours ago and diarrhea this morning are part of the current illness, so they are marked current.",
+      "Conversion (v1 change): v1 kept the note's psoas and Rovsing results as 'Result not documented' next to separate positive SP records. Per CONVERSION.md the SP-simulated finding wins and named special tests get one record each, so the psoas and Rovsing records are positive. The SP tenderness, rebound and guarding are in the abdominal exam record (x009). Chest wall palpation and lung auscultation are separate records, as in the worked example.",
+      "Conversion: v1 subtype 'sexual' for the STI history, its treatment and the partner's refusal maps to medical_history (sexual-health history); sexual activity, condoms and partners map to habit_exposure. The baby's health (v1 family) is family_history (f042).",
+      "Conversion: vomiting (p013) is parent f016 with appearance and no-blood children; diarrhea (p016) has a stool-color child; spotting (p021) has color and pad-count children; smoking (p042) has quantity and duration children; alcohol (p040) has a quantity child.",
+      "Vitals: doorway values agree with the note ('VS: WNL except for temperature of 100.5°F', e002); one record per parameter citing both, marked initial.",
+      "Harmonisation pass: scale [0, 10] added to f005.",
+      "Fixes: f007 answer word removed; f009 answer word removed; f011 answer word removed; f012 answer word removed; f018 answer word removed; f021 answer word removed; f022 answer word removed; f023 answer word removed; f026 answer word removed; f030 answer word removed; f031 answer word removed; f032 answer word removed; f033 answer word removed; f036 answer word removed; f038 answer word removed; f039 answer word removed; f043 answer word removed; f045 answer word removed; f046 answer word removed; f049 answer word removed."
+    ],
+    "extras": {
+      "acting_notes": [
+        "Patient description: single, with one child.",
+        "When asked where the pain is, point to the right lower abdomen.",
+        "Exhibit right lower abdominal tenderness on palpation.",
+        "Show rebound tenderness (pain when the examinee removes their palpating hand).",
+        "Demonstrate guarding (contraction of the abdominal muscles when palpating the RLQ).",
+        "Experience pain in the RLQ when the examinee presses on the RLQ (Rovsing sign).",
+        "Manifest pain when the examinee extends their right hip (psoas sign)."
+      ],
+      "patient_questions": [
+        "My child is home alone. I need to go now.",
+        "I can't bear the hospital costs. Please provide a prescription for antibiotics so I can discharge myself."
+      ]
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

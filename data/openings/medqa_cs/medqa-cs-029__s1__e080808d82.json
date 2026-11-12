@@ -1,0 +1,63 @@
+{
+ "case_id": "medqa-cs-029",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have difficulty falling asleep.",
+   "It has been going on for more than 6 months now.",
+   "I feel very sleepy during class and while driving to school at 7 AM.",
+   "I can't concentrate during classes or while driving.",
+   "I get annoyed or irritated at things more easily.",
+   "I drink coffee or energy drinks.",
+   "My final exams are coming up soon, and I need to study.",
+   "This semester, I've taken on a heavier course load to graduate on schedule."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having trouble falling asleep for over six months now. It's making me really sleepy during class and while driving to school at 7 AM, and I just can't concentrate. I find myself getting irritated at things more easily lately. I drink coffee or energy drinks to try and keep going, especially since my final exams are coming up soon and I need to study. I've taken on a heavier course load this semester to graduate on schedule.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f014",
+    "f015",
+    "f022",
+    "f050",
+    "f062",
+    "f065"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "unsupported",
+      "quote": "which is adding to the stress",
+      "fix": "remove the phrase or replace with a neutral connector, as the record does not state the course load is adding to stress"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I've been having trouble falling asleep for over six months now. It's making me really sleepy during class and while driving to school at 7 AM, and I just can't concentrate. I find myself getting irritated at things more easily lately. I drink coffee or energy drinks to try and keep going, especially since my final exams are coming up soon and I need to study. I've taken on a heavier course load this semester to graduate on schedule, which is adding to the stress.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 8789,
+   "tokens_out": 251,
+   "seconds": 19.01,
+   "redrafts": 0
+  }
+ }
+}

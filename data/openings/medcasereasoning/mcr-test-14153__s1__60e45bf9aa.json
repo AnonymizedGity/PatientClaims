@@ -1,0 +1,49 @@
+{
+ "case_id": "mcr-test-14153",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've been having twitches that I can't control.",
+   "I've been making sounds that I can't control.",
+   "The whistling came after the face twitches started.",
+   "It all started suddenly, 3 days ago.",
+   "They're whistling sounds."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having twitches that I can't control, and I've been making sounds that I can't control. They're whistling sounds. It all started suddenly, 3 days ago, and the whistling came after the face twitches started.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f007",
+    "f003",
+    "f006"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3452,
+   "tokens_out": 66,
+   "seconds": 11.87,
+   "redrafts": 0
+  }
+ }
+}

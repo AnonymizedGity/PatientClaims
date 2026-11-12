@@ -1,0 +1,129 @@
+{
+  "patient": {
+    "case_id": "mcr-test-02749",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 37, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "numbness in the right leg", "aliases": ["numb leg", "loss of feeling", "leg numbness", "pins and needles"], "text": "My right leg has gone numb.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "numbness in the right leg: onset", "parent": "f001", "attribute": "onset", "text": "It came on suddenly, about three months after I started my HIV medicines.", "value": "3 months after starting antiretroviral therapy", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "numbness in the right leg: course", "parent": "f001", "attribute": "course", "text": "It has spread over about a month.", "value": "1 month", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "numbness in the right leg: location", "parent": "f001", "attribute": "location", "text": "Now my whole right leg and the right side of my belly are numb.", "value": ["entire right leg", "right side of the abdomen"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "fever", "aliases": ["temperature", "feeling feverish"], "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "other whole-body symptoms", "aliases": ["systemic symptoms", "constitutional symptoms"], "text": "I haven't had any other whole-body symptoms.", "polarity": "absent", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "weakness of the left side", "aliases": ["left-sided weakness", "hemiparesis", "weak left arm and leg"], "text": "I've had weakness on my left side since I first fell ill a few months ago.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "headache when first ill", "aliases": ["headache", "headaches"], "text": "When I first fell ill a few months ago, I had a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "historical"},
+      {"id": "f009", "item": "HIV infection", "aliases": ["HIV", "AIDS"], "text": "I have HIV; it was diagnosed when I first fell ill, about four months before this numbness began.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "toxoplasmosis", "aliases": ["toxoplasma infection", "brain infection", "toxo"], "text": "At the same time I was diagnosed with toxoplasmosis with lesions in my brain.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "toxoplasmosis: response to treatment", "parent": "f010", "attribute": "treatment_response", "text": "With the toxoplasmosis treatment my symptoms got better, and I was told the brain scans improved too.", "polarity": "present", "category": "medical_history"},
+      {"id": "f012", "item": "toxoplasmosis medicine", "aliases": ["anti-toxoplasma therapy", "toxoplasmosis treatment", "suppressive therapy"], "text": "I've stayed on my toxoplasmosis medicine; it was later switched to a lower, suppressive dose.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f013", "item": "steroids", "aliases": ["corticosteroids", "prednisone", "dexamethasone"], "text": "I wasn't given any steroids with the toxoplasmosis treatment.", "polarity": "absent", "category": "medication"},
+      {"id": "f014", "item": "HIV medicines", "aliases": ["antiretroviral therapy", "HAART", "ART", "antiretrovirals"], "text": "I started HIV medicines one month after I was diagnosed, so about three months before the numbness began.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "preventive antibiotics against MAC", "aliases": ["MAC prophylaxis", "Mycobacterium avium prophylaxis"], "text": "I also take preventive medicine against MAC (Mycobacterium avium complex).", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f016", "item": "missed medication doses", "aliases": ["adherence", "skipping medicines", "compliance"], "text": "I take all my treatments exactly as prescribed; I haven't missed any.", "polarity": "absent", "category": "medication"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-02749",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "neurological", "name": "mental status examination", "aliases": ["mental status", "cognition", "orientation"], "result": "Normal."},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["cranial nerves"], "result": "Normal."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "motor examination"], "result": "Prior left hemiparesis; strength preserved in the affected right-sided areas."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "sensory examination", "aliases": ["sensation", "sensory level", "proprioception", "pinprick", "light touch"], "result": "Sensory level at T9 on the right, with loss of touch and pain sensation below this level; proprioception preserved in the affected areas."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "reflexes", "aliases": ["deep tendon reflexes", "tendon reflexes"], "result": "Preserved in the affected areas."},
+      {"id": "x006", "kind": "test", "name": "follow-up brain CT", "aliases": ["CT head", "brain CT", "head CT"], "result": "Some prior lesions improved, others slightly worsened with ring enhancement and edema, and several new lesions appeared."},
+      {"id": "x007", "kind": "test", "name": "MRI of the dorsal spinal cord", "aliases": ["thoracic spine MRI", "spinal cord MRI", "MRI spine"], "result": "T2-weighted hyperintense lesions extending from T3 to T9, with a probable posterolateral lesion at T7–T8."},
+      {"id": "x008", "kind": "test", "name": "CD4+ T-cell count", "aliases": ["CD4 count", "CD4", "T-cell count"], "result": "128 cells/μL."},
+      {"id": "x009", "kind": "test", "name": "plasma HIV RNA", "aliases": ["HIV viral load", "viral load", "HIV RNA"], "result": "121 copies/mL."},
+      {"id": "x010", "kind": "test", "name": "CSF analysis", "aliases": ["lumbar puncture", "spinal tap", "CSF cell count", "CSF protein", "CSF glucose", "cerebrospinal fluid"], "result": "5 cells/μL; protein 58 mg/dL; glucose 51 mg/dL."},
+      {"id": "x011", "kind": "test", "name": "CSF Gram and acid-fast stains", "aliases": ["CSF Gram stain", "CSF AFB stain", "CSF Ziehl-Neelsen"], "result": "Negative."},
+      {"id": "x012", "kind": "test", "name": "CSF cultures", "aliases": ["CSF culture", "cerebrospinal fluid culture"], "result": "Negative."},
+      {"id": "x013", "kind": "test", "name": "CSF cryptococcal antigen", "aliases": ["cryptococcal antigen", "CrAg"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "CSF VDRL", "aliases": ["VDRL", "syphilis test on CSF"], "result": "Negative."},
+      {"id": "x015", "kind": "test", "name": "CSF viral PCR", "aliases": ["CSF PCR", "JC virus PCR", "BK virus PCR", "CMV PCR", "HSV PCR", "HHV-6 PCR", "VZV PCR", "enterovirus PCR", "EBV PCR"], "result": "EBV positive; JC virus, BK virus, cytomegalovirus, herpes simplex virus, human herpesvirus 6, varicella-zoster virus and enterovirus negative."},
+      {"id": "x016", "kind": "test", "name": "CSF lymphocyte phenotype", "aliases": ["CSF flow cytometry", "CSF immunophenotyping"], "result": "Normal."},
+      {"id": "x017", "kind": "test", "name": "whole-body PET scan", "aliases": ["PET", "PET-CT", "positron emission tomography"], "result": "No hypermetabolic cerebral or medullary lesions."},
+      {"id": "x018", "kind": "test", "name": "HTLV-I/II serology", "aliases": ["HTLV serology", "HTLV antibodies"], "result": "Negative."},
+      {"id": "x019", "kind": "exam", "system": "neurological", "name": "neurological examination at the initial presentation", "aliases": ["earlier neurological examination"], "result": "Psychomotor retardation and left hemiparesis.", "time": "initial presentation, about 4 months before the numbness began"},
+      {"id": "x020", "kind": "test", "name": "HIV test", "aliases": ["HIV serology", "HIV antibody test"], "result": "Positive.", "time": "initial presentation, about 4 months before the numbness began"},
+      {"id": "x021", "kind": "test", "name": "CD4+ T-cell count at the initial presentation", "aliases": ["baseline CD4 count", "earlier CD4"], "result": "20 cells/μL.", "time": "initial presentation, about 4 months before the numbness began"},
+      {"id": "x022", "kind": "test", "name": "plasma HIV RNA at the initial presentation", "aliases": ["baseline viral load", "earlier viral load"], "result": "301,000 copies/mL.", "time": "initial presentation, about 4 months before the numbness began"},
+      {"id": "x023", "kind": "test", "name": "Toxoplasma gondii serology", "aliases": ["toxoplasma serology", "toxoplasma antibodies", "toxoplasma IgG"], "result": "Positive.", "time": "initial presentation, about 4 months before the numbness began"},
+      {"id": "x024", "kind": "test", "name": "brain CT at the initial presentation", "aliases": ["earlier brain CT", "first CT head"], "result": "Multiple scattered parenchymal lesions with perilesional edema, mass effect, and ring contrast enhancement.", "time": "initial presentation, about 4 months before the numbness began"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-02749",
+    "diagnosis": "Immune reconstitution inflammatory syndrome",
+    "aliases": ["IRIS", "paradoxical IRIS", "CNS IRIS", "central nervous system immune reconstitution inflammatory syndrome", "paradoxical toxoplasmosis-associated IRIS", "immune reconstitution syndrome"],
+    "reasoning": "1. Progression of toxoplasmosis infection — “The differential diagnosis between IRIS and a progression of toxoplasmosis infection is difficult, but if the last hypothesis was true, most probably a marked worsening of all the previous lesions would be present in the brain CT scan.” 2. Central nervous system lymphoma — “a normal CSF lymphocyte phenotype assay and a whole-body positron emission tomography (PET) scan revealed neither hyper-metabolic cerebral nor medullar lesions, which ruled out CNS lymphoma.” 3. HTLV-I/II infection — “Serological HTLV-I/II antibody assay was negative.” 4. Paradoxical immune reconstitution inflammatory syndrome — “The clinical and laboratory information suggested a potential case of CNS-IRIS.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-02749",
+    "fact_sources": {
+      "f001": ["s006"], "f002": ["s006"], "f003": ["s006"], "f004": ["s006"], "f005": ["s007"], "f006": ["s007"],
+      "f007": ["s001", "s008"], "f008": ["s001"], "f009": ["s002", "s004"], "f010": ["s002", "s003", "s004"], "f011": ["s004"],
+      "f012": ["s004", "s005"], "f013": ["s004"], "f014": ["s004", "s006"], "f015": ["s005"], "f016": ["s007"]
+    },
+    "quotes": {
+      "f002": "Three months after HAART initiation, he reported abrupt onset of right lower-limb numbness",
+      "f003": "progressed over one month", "f004": "his entire right lower limb and right hemi-abdomen",
+      "f006": "other systemic symptoms", "f007": "Apart from his prior left hemiparesis",
+      "f011": "with clinical and radiologic improvement", "f012": "Toxoplasmosis therapy continued (followed by suppressive dosing)",
+      "f013": "anti-toxoplasma therapy without corticosteroids", "f014": "initiated HAART one month after diagnosis",
+      "f015": "MAC prophylaxis was maintained", "f016": "affirmed full adherence to all therapies"
+    },
+    "flags": {
+      "f009": ["'About four months before this numbness began' is computed: HAART started one month after diagnosis and the numbness three months after HAART."],
+      "f010": ["Toxoplasmosis is taken as a diagnosis the patient was told: positive serology, ring-enhancing brain lesions and continued toxoplasmosis therapy."],
+      "f011": ["The patient is assumed to have been told of the radiologic improvement."],
+      "f012": ["The source does not say when the suppressive dosing started; 'later' is the sentence order."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s008"], "source_text": "mental status and cranial nerves were normal"},
+      "x002": {"sentences": ["s008"], "source_text": "mental status and cranial nerves were normal"},
+      "x003": {"sentences": ["s008"], "source_text": "Apart from his prior left hemiparesis / strength, proprioception, and reflexes in the affected areas were preserved"},
+      "x004": {"sentences": ["s008"], "source_text": "there was a distinct sensory level at T9 on the right, with loss of touch and pain sensation below this level / strength, proprioception, and reflexes in the affected areas were preserved"},
+      "x005": {"sentences": ["s008"], "source_text": "strength, proprioception, and reflexes in the affected areas were preserved"},
+      "x006": {"sentences": ["s009"], "source_text": "A follow-up brain CT scan revealed that some prior lesions had improved, others had slightly worsened with ring enhancement and edema, and several new lesions had appeared."},
+      "x007": {"sentences": ["s010"], "source_text": "MRI of the dorsal spinal cord demonstrated T2-weighted hyperintense lesions extending from T3 to T9, with a probable posterolateral lesion at T7–T8."},
+      "x008": {"sentences": ["s011"], "source_text": "CD4+ T-cell count had risen to 128 cells/μL"},
+      "x009": {"sentences": ["s011"], "source_text": "plasma HIV RNA had fallen to 121 copies/mL"},
+      "x010": {"sentences": ["s012"], "source_text": "CSF analysis showed 5 cells/μL, protein 58 mg/dL, glucose 51 mg/dL"},
+      "x011": {"sentences": ["s012"], "source_text": "Gram and acid-fast stains / were negative"},
+      "x012": {"sentences": ["s012"], "source_text": "microbiological cultures / were negative"},
+      "x013": {"sentences": ["s012"], "source_text": "cryptococcal antigen / were negative"},
+      "x014": {"sentences": ["s012"], "source_text": "VDRL / were negative"},
+      "x015": {"sentences": ["s012", "s014"], "source_text": "PCR assays for JC virus, BK virus, cytomegalovirus, herpes simplex virus, human herpesvirus 6, varicella-zoster virus, and enterovirus were negative / EBV PCR was positive"},
+      "x016": {"sentences": ["s014"], "source_text": "a normal CSF lymphocyte phenotype"},
+      "x017": {"sentences": ["s014"], "source_text": "a whole-body PET scan showed no hypermetabolic cerebral or medullary lesions"},
+      "x018": {"sentences": ["s015"], "source_text": "HTLV-I/II serology was negative."},
+      "x019": {"sentences": ["s001"], "source_text": "presented with headache, psychomotor retardation, and left hemiparesis"},
+      "x020": {"sentences": ["s002"], "source_text": "Laboratory evaluation revealed HIV infection"},
+      "x021": {"sentences": ["s002"], "source_text": "CD4+ T-cell count 20 cells/μL"},
+      "x022": {"sentences": ["s002"], "source_text": "plasma HIV RNA 301,000 copies/mL"},
+      "x023": {"sentences": ["s002"], "source_text": "positive serology for Toxoplasma gondii"},
+      "x024": {"sentences": ["s003"], "source_text": "A brain CT scan showed multiple scattered parenchymal lesions with perilesional edema, mass effect, and ring contrast enhancement."}
+    },
+    "finding_flags": {
+      "x015": ["s014 does not name the specimen for the EBV PCR; grouped with the CSF PCR assays of s012."],
+      "x003": ["The source reports strength only as 'preserved in the affected areas' plus the prior left hemiparesis."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s014 is garbled: 'EBV PCR was positive, but a normal CSF lymphocyte phenotype and a whole-body PET scan showed no ... lesions' (no verb for the phenotype; the specimen of the EBV PCR is not named).",
+      "The HAART regimen is not given ('as per institutional protocol')."
+    ],
+    "notes": [
+      "Index visit: the later visit for right-leg numbness, about four months after starting HAART (s006–s012, s014–s015). The case opens with the initial presentation (s001–s005: headache, left hemiparesis, new HIV with cerebral toxoplasmosis), but the gold diagnosis can only be made at the later visit (selection note: the treatment timeline is the key clue), so that visit is the index and s001–s005 are history (patient facts) and earlier findings with a time.",
+      "Treatment before the index visit (anti-toxoplasma therapy without steroids, HAART, MAC prophylaxis) is medication history; its earlier response (f011) is part of the patient's history, not a workup outcome.",
+      "Psychomotor retardation at the initial presentation is an observer sign; it is kept only in the earlier examination finding (x019).",
+      "f006 is a blanket denial of systemic symptoms; it answers only a general question, not a specific symptom such as weight loss or night sweats.",
+      "s013: CSF PCR for Toxoplasma gondii was not performed, so there is no finding; a request for it is answered as unavailable."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s013", "reason": "States that CSF PCR for Toxoplasma gondii was not performed; no result to report."}
+    ]
+  }
+}

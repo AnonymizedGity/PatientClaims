@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "mcr-test-06180",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 44, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "fever", "aliases": ["high temperature", "febrile"], "text": "I have a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "fever: duration", "parent": "f001", "attribute": "duration", "text": "It started a day ago.", "value": "1 day", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "kidney failure", "aliases": ["end-stage kidney disease", "ESKD", "ESRD", "oligomeganephronia", "congenital kidney disease"], "text": "My own kidneys failed completely because of a congenital kidney condition called oligomeganephronia.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f004", "item": "kidney transplant", "aliases": ["transplant", "living-donor transplant", "transplanted kidney"], "text": "I had a kidney transplant from a living donor 20 years ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f005", "item": "cancer in the transplanted kidney", "aliases": ["kidney cancer", "clear cell carcinoma", "tumor", "cancer"], "text": "An 8-cm clear cell carcinoma, a kidney cancer, was recently found in my transplanted kidney.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f006", "item": "cyclosporine", "aliases": ["immunosuppressants"], "text": "I used to take cyclosporine for the transplant, but it was stopped 29 days ago after the cancer was found.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f007", "item": "prednisone", "aliases": ["steroids"], "text": "I also took prednisone for the transplant; it was stopped at the same time, 29 days ago.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f008", "item": "nivolumab", "aliases": ["Opdivo"], "text": "Six days ago I had my first dose of nivolumab.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "ipilimumab", "aliases": ["Yervoy"], "text": "I had my first dose of ipilimumab at the same time, six days ago.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-06180",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "146/min"},
+      {"id": "x002", "kind": "exam", "system": "genitourinary", "name": "examination of the transplant site", "aliases": ["abdominal examination", "graft palpation", "transplant kidney", "palpation of the graft"], "result": "Tenderness over the transplant site."},
+      {"id": "x003", "kind": "exam", "system": "general", "name": "rest of the physical examination", "aliases": ["physical examination", "general examination", "heart and lungs"], "result": "Unremarkable."},
+      {"id": "x004", "kind": "test", "name": "serum creatinine", "aliases": ["creatinine", "kidney function"], "result": "275 μmol/L (baseline 150–180 μmol/L)."},
+      {"id": "x005", "kind": "test", "name": "urinalysis", "aliases": ["urine dipstick", "urine protein", "proteinuria", "hematuria"], "result": "Protein 3.0 g/L; small amount of blood."},
+      {"id": "x006", "kind": "test", "name": "urine culture", "aliases": ["urine cultures"], "result": "Negative."},
+      {"id": "x007", "kind": "test", "name": "blood cultures", "aliases": ["blood culture"], "result": "Negative."},
+      {"id": "x008", "kind": "test", "name": "tumor lysis laboratory tests", "aliases": ["tumor lysis labs", "uric acid", "potassium", "phosphate", "calcium", "LDH"], "result": "No laboratory evidence of tumor lysis syndrome."},
+      {"id": "x009", "kind": "test", "name": "chest radiograph", "aliases": ["chest X-ray", "CXR"], "result": "Unremarkable."},
+      {"id": "x010", "kind": "test", "name": "contrast-enhanced CT of the abdomen and pelvis", "aliases": ["CT abdomen", "CT pelvis", "abdominal CT"], "result": "Minimal interval increase in the size of the transplant mass; transplant renal vein findings consistent with tumor thrombus."},
+      {"id": "x011", "kind": "test", "name": "Doppler ultrasound of the transplant kidney", "aliases": ["Doppler ultrasound", "transplant ultrasound", "graft ultrasound"], "result": "Near-occlusive thrombus in the transplant renal vein."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-06180",
+    "diagnosis": "Acute renal allograft rejection",
+    "aliases": ["acute kidney allograft rejection", "acute kidney transplant rejection", "acute renal transplant rejection", "acute rejection of the kidney transplant", "immune checkpoint inhibitor-associated acute kidney allograft rejection"],
+    "reasoning": "1. Considered acute allograft rejection — “Given the sudden decrease in kidney function in the context of recently discontinuing immunosuppression, starting immunotherapy, and the presence of graft-site tenderness, his presentation was felt to be most suspicious for acute allograft rejection…” 2. Considered renal vein thrombosis — “CT of the abdomen and pelvis … showed … transplant renal vein findings consistent with tumor thrombus, and a subsequent ultrasound confirmed a near occlusive thrombus in the transplant renal vein.” 3. Considered tumor lysis syndrome — “There was no laboratory evidence of tumor lysis syndrome.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-06180",
+    "fact_sources": {
+      "f001": ["s004"],
+      "f002": ["s004"],
+      "f003": ["s001"],
+      "f004": ["s001"],
+      "f005": ["s002"],
+      "f006": ["s002"],
+      "f007": ["s002"],
+      "f008": ["s003"],
+      "f009": ["s003"]
+    },
+    "quotes": {
+      "f002": "a 1-day history of fever",
+      "f003": "end-stage kidney disease secondary to congenital oligomeganephronia",
+      "f004": "underwent a living-donor kidney transplant 20 years earlier",
+      "f005": "an 8-cm clear cell carcinoma was diagnosed in the transplant",
+      "f006": "Twenty-nine days before presentation, his maintenance immunosuppression (cyclosporine and prednisone) was stopped",
+      "f007": "Twenty-nine days before presentation, his maintenance immunosuppression (cyclosporine and prednisone) was stopped",
+      "f008": "Six days before presentation, he received his first doses of nivolumab and ipilimumab.",
+      "f009": "Six days before presentation, he received his first doses of nivolumab and ipilimumab."
+    },
+    "flags": {
+      "f005": ["The date of the cancer diagnosis is not given; it was before immunosuppression was stopped 29 days ago, so the text says 'recently'."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "Vital signs showed a heart rate of 146 beats per minute"},
+      "x002": {"sentences": ["s005"], "source_text": "examination revealed tenderness over the transplant site"},
+      "x003": {"sentences": ["s005"], "source_text": "otherwise unremarkable"},
+      "x004": {"sentences": ["s006"], "source_text": "a serum creatinine concentration of 275 μmol/L (baseline 150–180 μmol/L)"},
+      "x005": {"sentences": ["s006"], "source_text": "urinalysis with 3.0 g/L protein and a small amount of blood"},
+      "x006": {"sentences": ["s006"], "source_text": "negative urine and blood cultures"},
+      "x007": {"sentences": ["s006"], "source_text": "negative urine and blood cultures"},
+      "x008": {"sentences": ["s006"], "source_text": "no laboratory evidence of tumor lysis syndrome"},
+      "x009": {"sentences": ["s007"], "source_text": "Chest radiograph was unremarkable."},
+      "x010": {"sentences": ["s008"], "source_text": "Contrast-enhanced CT of the abdomen and pelvis showed minimal interval increase in the size of the transplant mass and transplant renal vein findings consistent with tumor thrombus."},
+      "x011": {"sentences": ["s009"], "source_text": "Doppler ultrasound confirmed a near-occlusive thrombus in the transplant renal vein."}
+    },
+    "finding_flags": {
+      "x001": ["Only the heart rate is given among the vital signs; no temperature value is reported despite the fever."],
+      "x008": ["The individual tumor lysis tests are not named; the result is the source's summary."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "Result says 'transplant renal vein': 'renal' is a gold word used anatomically; the CT report does not name rejection."},
+      {"id": "x011", "reason": "Result says 'transplant renal vein': 'renal' is a gold word used anatomically; the ultrasound report does not name rejection."}
+    ],
+    "source_issues": ["No temperature is reported at presentation, although the complaint is fever."],
+    "notes": ["Index visit: the emergency department presentation with a 1-day fever, 6 days after the first nivolumab and ipilimumab doses (s004–s009).", "Tenderness over the transplant site is kept as an examination finding only: the prompt reports it from the examination, not as a complaint.", "Patient facts avoid the word 'renal' (gold word): kidney failure, kidney transplant and kidney cancer are written with 'kidney'.", "Fixes: f006 alias 'immunosuppression' removed; f007 alias 'immunosuppression' removed; f006 alias 'anti-rejection medicines' removed; f007 alias 'anti-rejection medicines' removed; f008 alias 'immunotherapy' removed; f009 alias 'immunotherapy' removed; f008 alias 'checkpoint inhibitor' removed; f009 alias 'checkpoint inhibitor' removed; f008 alias 'cancer treatment' removed; f009 alias 'cancer treatment' removed."],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

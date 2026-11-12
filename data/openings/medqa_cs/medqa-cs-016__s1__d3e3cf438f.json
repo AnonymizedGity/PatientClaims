@@ -1,0 +1,53 @@
+{
+ "case_id": "medqa-cs-016",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have pain during sex.",
+   "I first noticed it three months ago.",
+   "It's aching and burning."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I'm here because I've been having pain during sex. I first noticed it three months ago, and it feels like aching and burning.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f003"
+   ],
+   "check": {
+    "problems": [
+     {
+      "kind": "changed",
+      "quote": "about three months ago",
+      "fix": "three months ago"
+     }
+    ],
+    "check_problems": [],
+    "draft": "I'm here because I've been having pain during sex. I first noticed it about three months ago, and it feels like aching and burning.",
+    "redraft_problems": []
+   }
+  },
+  "stats": {
+   "calls": 3,
+   "tokens_in": 7511,
+   "tokens_out": 99,
+   "seconds": 12.32,
+   "redrafts": 0
+  }
+ }
+}

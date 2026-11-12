@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "mcr-test-00635",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 63, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "episodes of confusion", "aliases": ["confusion", "feeling muddled", "spells"], "text": "I've been having episodes where I get confused.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f002", "item": "shakiness", "aliases": ["tremulousness", "trembling", "shaky spells"], "text": "During these episodes I get shaky.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "recurrent"},
+      {"id": "f003", "item": "how often the episodes have happened", "text": "I've had several of these episodes over the past week.", "value": "several in 1 week", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f004", "item": "when the episodes happen", "text": "They come in the morning and in the evening, after I've gone several hours without eating.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "what relieves the episodes", "text": "They go away when I eat something with sugar in it.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f006", "item": "finger-stick sugar readings during the episodes", "aliases": ["glucometer readings", "blood sugar checks", "home glucose"], "text": "When the sugar was checked with a finger-stick meter during the episodes, the readings were in the 30s.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f007", "item": "cancer of the parotid gland", "aliases": ["cancer", "salivary gland cancer", "myoepithelial carcinoma", "metastatic cancer", "malignancy"], "text": "I have a myoepithelial carcinoma of my left parotid (salivary) gland, and it has spread.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f008", "item": "chemotherapy", "aliases": ["chemo", "cancer treatment", "infusions"], "text": "I'm having chemotherapy infusions; I came in today for a routine one.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "type 2 diabetes", "aliases": ["diabetes", "high blood sugar"], "text": "I have type 2 diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "metformin", "aliases": ["diabetes medicine", "Glucophage"], "text": "I took metformin for my diabetes until recently; it was stopped after the low sugars began.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f011", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "atrial fibrillation", "aliases": ["AFib", "irregular heartbeat"], "text": "I have atrial fibrillation.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f013", "item": "underactive thyroid", "aliases": ["hypothyroidism", "thyroid problem"], "text": "I have an underactive thyroid.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "levothyroxine", "aliases": ["thyroid medicine", "thyroxine", "Synthroid"], "text": "I take levothyroxine for my thyroid.", "polarity": "present", "category": "medication", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-00635",
+    "findings": [
+      {"id": "x001", "kind": "test", "name": "serum glucose", "aliases": ["blood glucose", "blood sugar", "glucose"], "result": "30 mg/dL before the chemotherapy infusion; 33 mg/dL during a later episode in hospital."},
+      {"id": "x002", "kind": "test", "name": "finger-stick glucose readings at home", "aliases": ["glucometer readings", "capillary glucose", "home glucose readings"], "result": "Values in the 30s during the episodes.", "time": "the week before presentation"},
+      {"id": "x003", "kind": "test", "name": "renal function", "aliases": ["kidney function", "creatinine", "BUN", "metabolic panel"], "result": "Normal.", "time": "on admission"},
+      {"id": "x004", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "AST", "ALT", "bilirubin", "albumin"], "result": "Liver enzymes stably elevated; bilirubin normal; albumin mildly decreased.", "time": "on admission"},
+      {"id": "x005", "kind": "test", "name": "INR", "aliases": ["coagulation", "prothrombin time", "PT"], "result": "Normal.", "time": "on admission"},
+      {"id": "x006", "kind": "test", "name": "serum insulin", "aliases": ["insulin level", "insulin"], "result": "<1 μU/mL (reference 3–25), drawn while glucose was 33 mg/dL.", "time": "during an episode in hospital"},
+      {"id": "x007", "kind": "test", "name": "C-peptide", "aliases": ["C peptide"], "result": "<0.5 ng/mL (reference 1.1–4.3), drawn while glucose was 33 mg/dL.", "time": "during an episode in hospital"},
+      {"id": "x008", "kind": "test", "name": "β-hydroxybutyrate", "aliases": ["beta-hydroxybutyrate", "ketones", "serum ketones"], "result": "<1.0 mmol/L (reference <3), drawn while glucose was 33 mg/dL.", "time": "during an episode in hospital"},
+      {"id": "x009", "kind": "test", "name": "serum cortisol", "aliases": ["cortisol", "random cortisol"], "result": "Random cortisol 23 μg/dL (reference morning 8–25), drawn while glucose was 33 mg/dL.", "time": "during an episode in hospital"},
+      {"id": "x010", "kind": "test", "name": "thyroid function tests", "aliases": ["TSH", "free T4", "thyroid studies"], "result": "TSH 8.3 mIU/L (reference 0.3–4.7); free T4 0.80 ng/dL (reference 0.80–1.70)."},
+      {"id": "x011", "kind": "test", "name": "insulin-like growth factors", "aliases": ["IGF-1", "IGF-2", "IGF-2:IGF-1 ratio", "insulin-like growth factor 1", "insulin-like growth factor 2"], "result": "IGF-1 15 ng/mL (reference 41–279); IGF-2 147 ng/mL (reference 180–580); IGF-2:IGF-1 molar ratio 10."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-00635",
+    "diagnosis": "Nonislet cell tumor hypoglycemia",
+    "aliases": ["non-islet cell tumor hypoglycemia", "NICTH", "non-islet cell tumour hypoglycaemia", "IGF-2-mediated hypoglycemia", "IGF-2-mediated tumor hypoglycemia", "big IGF-2 hypoglycemia"],
+    "reasoning": "1. Medication‐induced hypoglycemia was considered and ruled out — “after medication-induced hypoglycemia and insulinoma have been excluded.” 2. Insulinoma was considered unlikely given suppressed insulin and C-peptide — “the patient’s low insulin, C-peptide, and β-hydroxybutyrate levels during an episode of hypoglycemia indicated a noninsulin mediated process.” 3. Impaired gluconeogenesis from liver metastases was considered but deemed unlikely because synthetic liver function remained intact — “this was felt to be unlikely as the patient’s liver synthetic function was intact.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-00635",
+    "fact_sources": {
+      "f001": ["s002"], "f002": ["s002"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s001"], "f010": ["s001", "s003"], "f011": ["s001"], "f012": ["s001"],
+      "f013": ["s001"], "f014": ["s005"]
+    },
+    "quotes": {
+      "f003": "several episodes over the past week", "f004": "morning and evening confusion and tremulousness after fasting several hours",
+      "f005": "symptoms resolved with sugar-containing foods", "f006": "finger-stick glucometers confirmed values in the 30s",
+      "f007": "metastatic myoepithelial carcinoma of the left parotid gland", "f008": "presented for routine chemotherapy infusion",
+      "f010": "managed with metformin until recently / Metformin had been discontinued after hypoglycemia began", "f014": "her levothyroxine dose"
+    },
+    "flags": {
+      "f006": ["The source does not say who checked the finger-stick glucose; written so the patient reports readings taken during the episodes."],
+      "f008": ["The chemotherapy agents are not named."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s001", "s004"], "source_text": "a preinfusion serum glucose level of 30 mg/dL / During a hypoglycemic episode (glucose 33 mg/dL)"},
+      "x002": {"sentences": ["s002"], "source_text": "finger-stick glucometers confirmed values in the 30s"},
+      "x003": {"sentences": ["s004"], "source_text": "On admission, renal function was normal."},
+      "x004": {"sentences": ["s004"], "source_text": "Liver enzymes were stably elevated, with normal bilirubin / and a mildly decreased albumin"},
+      "x005": {"sentences": ["s004"], "source_text": "normal bilirubin, INR"},
+      "x006": {"sentences": ["s004"], "source_text": "During a hypoglycemic episode (glucose 33 mg/dL), laboratory evaluation showed insulin <1 μU/mL (reference 3–25)"},
+      "x007": {"sentences": ["s004"], "source_text": "During a hypoglycemic episode (glucose 33 mg/dL) / C-peptide <0.5 ng/mL (reference 1.1–4.3)"},
+      "x008": {"sentences": ["s004"], "source_text": "During a hypoglycemic episode (glucose 33 mg/dL) / β-hydroxybutyrate <1.0 mmol/L (reference <3)"},
+      "x009": {"sentences": ["s004"], "source_text": "During a hypoglycemic episode (glucose 33 mg/dL) / random cortisol 23 μg/dL (reference morning 8–25)"},
+      "x010": {"sentences": ["s005"], "source_text": "Thyroid studies showed TSH 8.3 mIU/L (reference 0.3–4.7) and free T4 0.80 ng/dL (reference 0.80–1.70)"},
+      "x011": {"sentences": ["s006"], "source_text": "Insulin-like growth factor 1 (IGF-1) was 15 ng/mL (reference 41–279), and IGF-2 was 147 ng/mL (reference 180–580), yielding an IGF-2:IGF-1 molar ratio of 10."}
+    },
+    "finding_flags": {
+      "x002": ["Home or outpatient readings before the index visit; the meter values are approximate ('in the 30s')."],
+      "x011": ["IGF-1 and IGF-2 are kept together because the reported molar ratio needs both values."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "The INR is described only as normal, and the liver enzymes only as 'stably elevated', without values."
+    ],
+    "notes": [
+      "Index visit: the routine chemotherapy visit at which the pre-infusion glucose was 30 mg/dL, leading to admission (s001-s006); the episodes of the preceding week are history.",
+      "'Fulfilling Whipple's triad' (s002) is the clinician's interpretation and is not part of any fact.",
+      "s005: the levothyroxine dose increase is treatment during the admission and is not used; the patient's levothyroxine use (implied by the dose change and her hypothyroidism) is a medication fact."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

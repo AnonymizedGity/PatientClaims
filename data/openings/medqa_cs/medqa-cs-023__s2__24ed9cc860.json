@@ -1,0 +1,55 @@
+{
+ "case_id": "medqa-cs-023",
+ "seed": 2,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have pain in my left knee.",
+   "It started two days ago.",
+   "I can't move my knee.",
+   "There's redness around my knee.",
+   "My knee is swollen.",
+   "I was diagnosed with gonorrhea a year ago.",
+   "I'm sexually active with my new boyfriend. I met him 2 months ago.",
+   "I've had four partners in the last year."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I have pain in my left knee that started two days ago. I can't move my knee, and it's swollen with redness around it. I'm sexually active with my new boyfriend, whom I met two months ago, and I've had four partners in the last year. I was also diagnosed with gonorrhea a year ago.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f007",
+    "f008",
+    "f043",
+    "f068",
+    "f070"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4864,
+   "tokens_out": 81,
+   "seconds": 9.88,
+   "redrafts": 0
+  }
+ }
+}

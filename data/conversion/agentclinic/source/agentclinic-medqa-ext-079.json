@@ -1,0 +1,108 @@
+{
+  "case_id": "agentclinic-medqa-ext-079",
+  "source_row": 79,
+  "demographics_text": "59-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with sudden-onset symptoms of vertigo.",
+  "chief_complaint": "Sudden-onset sensation of the room spinning",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-079-p001",
+      "field": "History",
+      "text": "The patient presents to the emergency department with a sudden-onset sensation that the room is spinning, leading to several episodes of nausea and vomiting. The symptoms started as he was going to bed and lasted for approximately 3 minutes. He mentions that he has never experienced anything like this before and currently feels at his baseline."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-079-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Nausea"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-079-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Vomiting"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-079-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Dizziness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-079-p005",
+      "field": "Past_Medical_History",
+      "text": "The patient is otherwise healthy with only a history of eczema. No prior episodes of similar nature."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-079-p006",
+      "field": "Social_History",
+      "text": "No significant social history provided."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-079-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies headaches, hearing loss, tinnitus, loss of consciousness or neurological deficits."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "97.7°F (36.5°C)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "134/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "85 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "13 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e005",
+      "path": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation",
+      "text": "98% on room air"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e006",
+      "path": "Physical_Examination_Findings.General_Examination.Appearance",
+      "text": "Healthy man with a normal gait"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e007",
+      "path": "Physical_Examination_Findings.General_Examination.Neurological.Nystagmus",
+      "text": "Physiologic nystagmus observed, with severe symptoms and notable nystagmus when head is turned to the left and laid back"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-e008",
+      "path": "Physical_Examination_Findings.General_Examination.Neurological.Cranial_Nerve_Exam",
+      "text": "Unremarkable"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-079-i001",
+      "path": "Test_Results.Head_Imaging.Findings",
+      "text": "Normal, with no evidence of stroke or masses."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-i002",
+      "path": "Test_Results.Audiometry.Findings",
+      "text": "Within normal limits for age."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-079-i003",
+      "path": "Test_Results.Dix-Hallpike_Manoeuvre.Findings",
+      "text": "Positive, inducing nystagmus and reproducing patient’s symptoms of vertigo when head is turned to the left and laid back."
+    }
+  ],
+  "correct_diagnosis": "Benign paroxysmal positional vertigo",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

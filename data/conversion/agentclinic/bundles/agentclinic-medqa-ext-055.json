@@ -1,0 +1,80 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-055", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 25, "sex": "male"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "telepathic communication with animals", "aliases": ["talking to animals with the mind", "special abilities", "unusual beliefs"], "text": "I used to be able to communicate with animals telepathically.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f002", "item": "failing health", "aliases": ["losing my abilities", "can't communicate with animals anymore"], "text": "My health is failing: I can't communicate with animals telepathically anymore.", "polarity": "present", "category": "symptom", "system": "psychiatric", "time": "current"},
+      {"id": "f003", "item": "failing health: what I think causes it", "parent": "f002", "attribute": "other", "aliases": ["weather"], "text": "I believe the current weather conditions are affecting it.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f004", "item": "failing health: duration", "parent": "f002", "attribute": "duration", "text": "This has been going on for the past eight months.", "polarity": "present", "category": "symptom", "system": "psychiatric"},
+      {"id": "f005", "item": "other physical symptoms", "aliases": ["other complaints", "any other problems"], "text": "I don't have any other physical complaints or symptoms.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "Peruvian herbs", "aliases": ["herbal remedies", "herbs", "supplements"], "text": "I've started taking assorted Peruvian herbs.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f007", "item": "Peruvian herbs: treatment response", "parent": "f006", "attribute": "treatment_response", "text": "They haven't brought any improvement.", "polarity": "present", "category": "medication"},
+      {"id": "f008", "item": "current medications", "aliases": ["medicines", "prescription drugs"], "text": "Other than the herbs, I don't take any medications.", "polarity": "absent", "category": "medication", "time": "current"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical history.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f010", "item": "living situation", "aliases": ["lives alone", "who I live with"], "text": "I live alone.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f011", "item": "occupation", "aliases": ["job", "work"], "text": "I work at a health food store.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-055",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "orientation"], "result": "Healthy-appearing young man, fully oriented, dressed in burlap clothes."},
+      {"id": "x002", "kind": "exam", "system": "psychiatric", "name": "mental status examination", "aliases": ["MSE", "mental state examination", "mood and affect", "thought process", "thought content", "insight and judgment", "behavior"], "result": "Appearance: bizarre dress. Behavior: attempts to communicate telepathically during the interview. Mood euthymic, affect congruent. Thought process: linear. Thought content: odd beliefs and magical thinking. Insight poor; judgment questionable (self-treatment with herbs for his condition)."},
+      {"id": "x003", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "white blood cell count", "WBC", "hemoglobin", "platelet count"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x004", "kind": "test", "name": "thyroid function tests", "aliases": ["TFTs", "TSH", "free T4", "thyroid panel"], "result": "TSH normal; free T4 normal."},
+      {"id": "x005", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine white cells", "urine red cells", "nitrites", "leukocyte esterase"], "result": "Appearance clear; WBC normal; RBC normal; nitrites negative; leukocyte esterase negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-055",
+    "diagnosis": "Schizotypal personality disorder",
+    "aliases": ["STPD", "schizotypal disorder"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-055",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-055-p001"], "f002": ["agentclinic-medqa-ext-055-p001"],
+      "f003": ["agentclinic-medqa-ext-055-p001"], "f004": ["agentclinic-medqa-ext-055-p001"],
+      "f005": ["agentclinic-medqa-ext-055-p006"],
+      "f006": ["agentclinic-medqa-ext-055-p001", "agentclinic-medqa-ext-055-p002"],
+      "f007": ["agentclinic-medqa-ext-055-p001", "agentclinic-medqa-ext-055-p003"],
+      "f008": ["agentclinic-medqa-ext-055-p001", "agentclinic-medqa-ext-055-p004"],
+      "f009": ["agentclinic-medqa-ext-055-p004"],
+      "f010": ["agentclinic-medqa-ext-055-p005"], "f011": ["agentclinic-medqa-ext-055-p005"]
+    },
+    "quotes": {
+      "f001": "which he believes he could previously do", "f002": "'failing health.' / an inability to communicate telepathically with animals",
+      "f003": "affected by the current weather conditions", "f004": "ongoing for the past eight months",
+      "f005": "Denies any other physical complaints or symptoms.", "f006": "started taking assorted Peruvian herbs",
+      "f007": "without any improvement", "f008": "He denies taking any medications.", "f009": "has no significant past medical history",
+      "f011": "works at a health food store"
+    },
+    "flags": {
+      "f008": ["The patient denies medications but takes herbs; the text says 'other than the herbs' so the two facts do not contradict each other."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.General_Appearance", "source_text": "Healthy appearing young man, fully oriented, dressed in burlap clothes.", "exam_ids": ["agentclinic-medqa-ext-055-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Mental_Status_Exam.Appearance + Physical_Examination_Findings.Mental_Status_Exam.Behavior + Physical_Examination_Findings.Mental_Status_Exam.Mood_and_Affect + Physical_Examination_Findings.Mental_Status_Exam.Thought_Process + Physical_Examination_Findings.Mental_Status_Exam.Thought_Content + Physical_Examination_Findings.Mental_Status_Exam.Insight_and_Judgment", "source_text": "Bizarre dress | Attempts to communicate telepathically during interview | Mood is euthymic, affect is congruent. | Linear | Presence of odd beliefs and magical thinking | Insight is poor, judgment is questionable due to self-treatment with herbs for his condition.", "exam_ids": ["agentclinic-medqa-ext-055-e002", "agentclinic-medqa-ext-055-e003", "agentclinic-medqa-ext-055-e004", "agentclinic-medqa-ext-055-e005", "agentclinic-medqa-ext-055-e006", "agentclinic-medqa-ext-055-e007"]},
+      "x003": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Normal | Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-055-i001", "agentclinic-medqa-ext-055-i002", "agentclinic-medqa-ext-055-i003"]},
+      "x004": {"source": "Test_Results.Thyroid_Function_Tests.TSH + Test_Results.Thyroid_Function_Tests.Free_T4", "source_text": "Normal | Normal", "exam_ids": ["agentclinic-medqa-ext-055-i004", "agentclinic-medqa-ext-055-i005"]},
+      "x005": {"source": "Test_Results.Urinalysis.Appearance + Test_Results.Urinalysis.WBC + Test_Results.Urinalysis.RBC + Test_Results.Urinalysis.Nitrites + Test_Results.Urinalysis.Leukocyte_Esterase", "source_text": "Clear | Normal | Normal | Negative | Negative", "exam_ids": ["agentclinic-medqa-ext-055-i006", "agentclinic-medqa-ext-055-i007", "agentclinic-medqa-ext-055-i008", "agentclinic-medqa-ext-055-i009", "agentclinic-medqa-ext-055-i010"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "No vital signs are recorded.",
+      "Social_History mixes observer findings (burlap clothing, attempts at telepathy during history taking) with social facts."
+    ],
+    "notes": [
+      "Psychiatric case: facts give what the patient believes (he used to communicate telepathically with animals; his health is failing because he no longer can; the weather is affecting it), not labels such as 'magical thinking'.",
+      "The chief complaint (the belief) and the History's 'failing health' are both opening facts (f001, f002); the eight-month duration and the weather attribution are children of the failing health.",
+      "Burlap clothing and attempts at telepathic communication during the interview are observer-only signs already in the exam (x001, x002), so they are not patient facts and no acting note is added.",
+      "The mental status exam subsections are one record (x002), as a doctor requests a mental status examination as one step.",
+      "The gold word 'personality' is kept out of patient texts and items."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate and diagnose the patient presenting with unusual behavior and beliefs regarding telepathic communication with animals."
+    }
+  }
+}

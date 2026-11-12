@@ -1,0 +1,51 @@
+{
+ "case_id": "agentclinic-medqa-ext-185",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "0669657c4f05",
+  "opening": [
+   "I have itching around my vulva.",
+   "The itching is severe.",
+   "I get pain during vaginal intercourse.",
+   "I have type 2 diabetes, which I control with diet.",
+   "I went through menopause at 52.",
+   "I take hydrochlorothiazide for my blood pressure."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having severe itching around my vulva, and I get pain during sex. I have type 2 diabetes, which I control with diet, and I take hydrochlorothiazide for my blood pressure. I went through menopause at 52.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f004",
+    "f009",
+    "f012",
+    "f011"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3386,
+   "tokens_out": 66,
+   "seconds": 5.79,
+   "redrafts": 0
+  }
+ }
+}

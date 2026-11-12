@@ -1,0 +1,151 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03752",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 64, "sex": "male"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "seizures", "aliases": ["fits", "convulsions", "shaking episodes", "jerking"], "text": "I've had several seizures, and other people saw them.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "seizures: location", "parent": "f001", "attribute": "location", "text": "They are jerking movements of my left arm and leg.", "value": ["left arm", "left leg"], "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "seizures: awareness during them", "parent": "f001", "attribute": "character", "text": "I stay aware the whole time; I don't black out.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f004", "item": "seizures: how long each lasts", "parent": "f001", "attribute": "duration", "text": "Each one lasts less than a minute.", "value": "less than 1 minute", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f005", "item": "seizures: how often", "parent": "f001", "attribute": "frequency", "text": "They come every few minutes.", "value": "every few minutes", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "seizures: onset", "parent": "f001", "attribute": "onset", "text": "It began when I woke up with a headache, and then the seizures started.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f007", "item": "headache", "aliases": ["head pain", "headaches"], "text": "I woke up with a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f008", "item": "loss of bladder or bowel control during the seizures", "aliases": ["incontinence", "wetting myself"], "text": "I didn't lose control of my bladder or bowels.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f009", "item": "tongue biting", "aliases": ["bitten tongue"], "text": "I didn't bite my tongue.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f010", "item": "confusion after the seizures", "aliases": ["postictal confusion", "confused afterwards", "drowsy after"], "text": "I wasn't confused afterwards.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f011", "item": "tingling and numbness on the left side", "aliases": ["numbness", "tingling", "pins and needles", "paresthesia"], "text": "I have tingling and numbness on my left side.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f012", "item": "changes in vision", "aliases": ["visual problems", "blurred vision", "vision changes"], "text": "My vision hasn't changed.", "polarity": "absent", "category": "symptom", "system": "eye"},
+      {"id": "f013", "item": "changes in speech", "aliases": ["slurred speech", "trouble speaking", "speech problems"], "text": "My speech hasn't changed.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f014", "item": "changes in thinking or memory", "aliases": ["cognitive changes", "memory problems", "confusion"], "text": "I haven't noticed any problems with my thinking or memory.", "polarity": "absent", "category": "symptom", "system": "neurological"},
+      {"id": "f015", "item": "rheumatoid arthritis", "aliases": ["RA", "arthritis", "seropositive rheumatoid arthritis"], "text": "I have rheumatoid arthritis; I was told it's the seropositive type.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f016", "item": "methotrexate", "aliases": ["MTX", "arthritis medicine"], "text": "I take methotrexate for my arthritis.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f017", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f018", "item": "lung nodules", "aliases": ["spots on the lungs", "pulmonary nodules"], "text": "I have small nodules in my lungs that have stayed stable.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f019", "item": "previous stroke", "aliases": ["stroke", "thalamic stroke", "brain infarct"], "text": "I had a stroke before, in the right thalamus of the brain, and was treated with clot-busting medicine.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f020", "item": "previous seizure", "aliases": ["earlier seizure", "epilepsy", "past seizures"], "text": "I had a single seizure during a previous hospital admission.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f021", "item": "previous seizure: course", "parent": "f020", "attribute": "course", "text": "I didn't have any more seizures after that until now.", "polarity": "present", "category": "medical_history"},
+      {"id": "f022", "item": "levetiracetam", "aliases": ["Keppra", "seizure medicine", "anti-seizure medication"], "text": "I've been taking levetiracetam since that seizure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f023", "item": "missed medication doses", "aliases": ["adherence", "compliance", "skipping doses"], "text": "I take my levetiracetam as prescribed; I haven't missed doses.", "polarity": "absent", "category": "medication"},
+      {"id": "f024", "item": "weakness of the left leg", "aliases": ["weak leg", "leg weakness", "left-sided weakness"], "text": "My left leg is weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03752",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "Hemodynamically stable"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "Hemodynamically stable"},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "observation of the episodes", "aliases": ["seizure observation", "level of consciousness", "inspection"], "result": "Repeated left-sided shaking involving the neck and extremities, with preserved consciousness."},
+      {"id": "x004", "kind": "exam", "system": "neurological", "name": "pronator drift test", "aliases": ["pronator drift", "arm drift"], "result": "Left upper-extremity pronator drift."},
+      {"id": "x005", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "motor examination"], "result": "3/5 strength in the left lower extremity."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "rest of the neurological examination", "aliases": ["cranial nerves", "reflexes", "sensory examination", "coordination", "gait", "mental status"], "result": "Normal."},
+      {"id": "x007", "kind": "exam", "system": "general", "name": "general physical examination", "aliases": ["heart examination", "lung examination", "abdominal examination", "skin examination"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "noncontrast head CT", "aliases": ["CT head", "brain CT", "head CT"], "result": "Sulcal effacement with isodense material suggestive of a leptomeningeal process."},
+      {"id": "x009", "kind": "test", "name": "EEG", "aliases": ["electroencephalogram", "electroencephalography"], "result": "Cortical hyperexcitability with focal seizure activity over the right frontocentral and parasagittal regions."},
+      {"id": "x010", "kind": "test", "name": "MRI of the brain", "aliases": ["brain MRI", "MRI head"], "result": "No acute infarction; focal right frontal pachymeningeal and leptomeningeal enhancement."},
+      {"id": "x011", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "blood count"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "electrolytes", "aliases": ["sodium", "potassium", "chloride", "serum electrolytes"], "result": "Normal."},
+      {"id": "x013", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "AST", "ALT", "bilirubin", "alkaline phosphatase"], "result": "Normal."},
+      {"id": "x014", "kind": "test", "name": "viral serology", "aliases": ["hepatitis B panel", "hepatitis C panel", "hepatitis serology", "HIV test", "HIV serology"], "result": "Hepatitis B panel negative; hepatitis C panel negative; HIV negative."},
+      {"id": "x015", "kind": "test", "name": "vitamin D level", "aliases": ["vitamin D", "25-hydroxyvitamin D"], "result": "Normal."},
+      {"id": "x016", "kind": "test", "name": "serum angiotensin-converting enzyme", "aliases": ["ACE level", "serum ACE"], "result": "Negative."},
+      {"id": "x017", "kind": "test", "name": "autoimmune serology", "aliases": ["rheumatoid factor", "RF", "anti-CCP", "anti-cyclic citrullinated peptide antibody", "proteinase 3", "PR3-ANCA", "myeloperoxidase", "MPO-ANCA", "ANCA", "C3", "C4", "complement", "extractable nuclear antigens", "ENA", "anti-dsDNA"], "result": "Rheumatoid factor mildly elevated; anti-cyclic citrullinated peptide antibody >250 U/mL; proteinase 3, myeloperoxidase, extractable nuclear antigens and anti-dsDNA negative; C3 and C4 negative."},
+      {"id": "x018", "kind": "test", "name": "immunoglobulin G4", "aliases": ["IgG4", "IgG4 level"], "result": "Negative."},
+      {"id": "x019", "kind": "test", "name": "rapid plasma reagin", "aliases": ["RPR", "syphilis serology", "syphilis test"], "result": "Negative."},
+      {"id": "x020", "kind": "test", "name": "CSF analysis", "aliases": ["lumbar puncture", "spinal tap", "CSF cell count", "CSF protein", "CSF glucose", "cerebrospinal fluid"], "result": "Normal cell counts, protein, and glucose."},
+      {"id": "x021", "kind": "test", "name": "CSF cytology", "aliases": ["cerebrospinal fluid cytology"], "result": "Negative."},
+      {"id": "x022", "kind": "test", "name": "CSF flow cytometry", "aliases": ["cerebrospinal fluid flow cytometry", "CSF immunophenotyping"], "result": "Negative."},
+      {"id": "x023", "kind": "test", "name": "CSF Mycobacterium tuberculosis PCR", "aliases": ["CSF TB PCR", "tuberculosis PCR"], "result": "Negative."},
+      {"id": "x024", "kind": "test", "name": "CSF adenosine deaminase", "aliases": ["CSF ADA", "ADA"], "result": "Negative."},
+      {"id": "x025", "kind": "test", "name": "CSF rheumatoid factor", "aliases": ["CSF RF"], "result": "Negative."},
+      {"id": "x026", "kind": "test", "name": "CSF angiotensin-converting enzyme", "aliases": ["CSF ACE"], "result": "Negative."},
+      {"id": "x027", "kind": "test", "name": "CSF Lyme serology", "aliases": ["Lyme test", "CSF Borrelia serology"], "result": "Negative."},
+      {"id": "x028", "kind": "test", "name": "CSF syphilis testing", "aliases": ["CSF VDRL", "CSF syphilis serology"], "result": "Negative."},
+      {"id": "x029", "kind": "test", "name": "CSF cultures", "aliases": ["CSF culture", "bacterial culture", "fungal culture", "mycobacterial culture"], "result": "No growth on bacterial, fungal, and mycobacterial cultures."},
+      {"id": "x030", "kind": "test", "name": "CT of the chest, abdomen and pelvis", "aliases": ["CT chest", "CT abdomen", "CT pelvis", "body CT", "CT CAP"], "result": "Only small stable pulmonary nodules."},
+      {"id": "x031", "kind": "test", "name": "MRI of the spine", "aliases": ["spine MRI", "spinal MRI"], "result": "Unremarkable."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03752",
+    "diagnosis": "Rheumatoid meningitis",
+    "aliases": ["rheumatoid pachyleptomeningitis", "rheumatoid leptomeningitis", "rheumatoid pachymeningitis", "rheumatoid arthritis-associated meningitis", "rheumatoid arthritis meningitis"],
+    "reasoning": "1. Ischemic stroke was considered but excluded because “MRI of the brain ruled out ischemic stroke but indicated focal right frontal pachymeningeal and leptomeningeal enhancement with concerns for possible malignancy.” 2. Malignancy was considered due to the MRI findings but excluded by negative CSF cytology and flow cytometry — “...cytology, and flow cytometry, yielded negative results.” 3. Infectious meningitis was excluded because “CSF bacterial, fungal, and mycobacterial cultures also showed no growth.” 4. Tuberculous meningitis was less likely since on MRI the “basal cisterns are typically unaffected, in contrast with TB meningitis.” 5. Neurosarcoidosis was excluded because “angiotensin-converting enzyme ... were all negative.” 6. Neurosyphilis was excluded because “rapid plasma reagin ... [was] negative.” 7. Carcinomatous meningitis was excluded by the negative “cytology, and flow cytometry, yielded negative results.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-03752",
+    "fact_sources": {
+      "f001": ["s001", "s002"], "f002": ["s002"], "f003": ["s002"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s002"], "f011": ["s003"], "f012": ["s003"],
+      "f013": ["s003"], "f014": ["s003"], "f015": ["s001"], "f016": ["s001"], "f017": ["s001"], "f018": ["s001"],
+      "f019": ["s001"], "f020": ["s004"], "f021": ["s004"], "f022": ["s004"], "f023": ["s004"], "f024": ["s006"]
+    },
+    "quotes": {
+      "f001": "presented after multiple witnessed seizures", "f002": "focal motor seizures of the left arm and leg",
+      "f003": "with preserved awareness", "f004": "brief (<1 min)", "f005": "occurring every few minutes",
+      "f006": "The events began on awakening with headache", "f011": "left-sided tingling and numbness",
+      "f015": "seropositive rheumatoid arthritis on methotrexate", "f018": "stable lung nodules",
+      "f019": "a prior right thalamic ischemic stroke (treated with thrombolysis)", "f020": "a single seizure at the prior admission",
+      "f021": "had no further events until this presentation", "f023": "He had been compliant with levetiracetam"
+    },
+    "flags": {
+      "f024": ["Taken from the examination (3/5 strength in the left lower extremity, s006); weakness of that degree is noticeable to the patient."],
+      "f020": ["'The prior admission' is not dated; it may be the stroke admission."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s005"], "source_text": "In the emergency department, he was hemodynamically stable."},
+      "x002": {"sentences": ["s005"], "source_text": "In the emergency department, he was hemodynamically stable."},
+      "x003": {"sentences": ["s006"], "source_text": "repeated left-sided shaking involving the neck and extremities with preserved consciousness"},
+      "x004": {"sentences": ["s006"], "source_text": "a left upper-extremity pronator drift"},
+      "x005": {"sentences": ["s006"], "source_text": "3/5 strength in the left lower extremity"},
+      "x006": {"sentences": ["s006"], "source_text": "the rest of the neurologic and general exam was normal"},
+      "x007": {"sentences": ["s006"], "source_text": "the rest of the neurologic and general exam was normal"},
+      "x008": {"sentences": ["s007"], "source_text": "Noncontrast head CT showed sulcal effacement with isodense material suggestive of a leptomeningeal process."},
+      "x009": {"sentences": ["s008"], "source_text": "EEG demonstrated cortical hyperexcitability with focal seizure activity over the right frontocentral and parasagittal regions."},
+      "x010": {"sentences": ["s009"], "source_text": "MRI of the brain ruled out acute infarction but revealed focal right frontal pachymeningeal and leptomeningeal enhancement."},
+      "x011": {"sentences": ["s010"], "source_text": "CBC / were all negative"},
+      "x012": {"sentences": ["s010"], "source_text": "electrolytes / were all negative"},
+      "x013": {"sentences": ["s010"], "source_text": "liver function / were all negative"},
+      "x014": {"sentences": ["s010"], "source_text": "hepatitis B and C panels / HIV / were all negative"},
+      "x015": {"sentences": ["s010"], "source_text": "vitamin D / were all negative"},
+      "x016": {"sentences": ["s010"], "source_text": "angiotensin-converting enzyme / were all negative"},
+      "x017": {"sentences": ["s010", "s011"], "source_text": "proteinase 3, C3, C4, extractable nuclear antigens / myeloperoxidase / anti-dsDNA, were all negative / Rheumatoid factor was mildly elevated; anti-cyclic citrullinated peptide antibody was >250 U/mL."},
+      "x018": {"sentences": ["s010"], "source_text": "immunoglobulin G4 / were all negative"},
+      "x019": {"sentences": ["s010"], "source_text": "rapid plasma reagin / were all negative"},
+      "x020": {"sentences": ["s012"], "source_text": "Lumbar puncture showed normal cell counts, protein, and glucose."},
+      "x021": {"sentences": ["s013"], "source_text": "cytology / were negative"},
+      "x022": {"sentences": ["s013"], "source_text": "flow cytometry—were negative"},
+      "x023": {"sentences": ["s013"], "source_text": "Mycobacterium tuberculosis PCR / were negative"},
+      "x024": {"sentences": ["s013"], "source_text": "adenosine deaminase / were negative"},
+      "x025": {"sentences": ["s013"], "source_text": "CSF studies—including rheumatoid factor / were negative"},
+      "x026": {"sentences": ["s013"], "source_text": "angiotensin-converting enzyme / were negative"},
+      "x027": {"sentences": ["s013"], "source_text": "Lyme serology / were negative"},
+      "x028": {"sentences": ["s013"], "source_text": "syphilis testing / were negative"},
+      "x029": {"sentences": ["s013"], "source_text": "bacterial, fungal, and mycobacterial cultures showed no growth"},
+      "x030": {"sentences": ["s014"], "source_text": "CT of the chest, abdomen, and pelvis revealed only small stable pulmonary nodules"},
+      "x031": {"sentences": ["s014"], "source_text": "MRI of the spine was unremarkable"}
+    },
+    "finding_flags": {
+      "x011": ["s010 reports every listed test as 'negative'; quantitative tests (CBC, electrolytes, liver function, vitamin D) are given 'Normal', the others keep 'Negative'."],
+      "x017": ["C3 and C4 are 'negative' in the source; presumably normal complement levels."]
+    },
+    "leakage": [
+      {"fact_id": "f015", "reason": "Rheumatoid arthritis is a prior diagnosis the patient was told (s001); the word 'rheumatoid' is shared with the gold diagnosis."},
+      {"id": "x017", "reason": "Result names rheumatoid factor (test name); anti-CCP >250 U/mL supports active rheumatoid disease without naming the meningitis."}
+    ],
+    "source_issues": [
+      "s010 reports quantitative tests (CBC, electrolytes, liver function, vitamin D, C3, C4) as 'negative'.",
+      "s006 contains the examination and, in a second sentence, the treatment (lorazepam, levetiracetam load).",
+      "Only 'hemodynamically stable' is given for vital signs."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation after multiple witnessed focal seizures (s001–s006); the imaging, EEG and laboratory workup (s007–s014) belong to the same admission.",
+      "s006 second sentence (lorazepam and a levetiracetam load controlled the seizures) is treatment during the workup and is not used.",
+      "x017 and x025 keep 'rheumatoid factor' in their aliases or names because the tests are named that way clinically.",
+      "Preserved awareness is a patient fact (f003) and stays in the observation finding (x003). The 3/5 left leg weakness is noticeable, so it is also a fact (f024); the pronator drift is an examiner finding only."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

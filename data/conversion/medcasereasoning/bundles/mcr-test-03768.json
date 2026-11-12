@@ -1,0 +1,92 @@
+{
+  "patient": {
+    "case_id": "mcr-test-03768",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 33, "sex": "male"},
+    "opening": ["f001", "f003"],
+    "facts": [
+      {"id": "f001", "item": "weakness", "aliases": ["feeling weak", "loss of strength"], "text": "I've been feeling weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "weakness: course", "parent": "f001", "attribute": "course", "text": "It has been getting steadily worse.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "difficulty swallowing", "aliases": ["dysphagia", "trouble swallowing"], "text": "I have trouble swallowing.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "how long the weakness and swallowing trouble have lasted", "text": "Both started about a week ago.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f005", "item": "weakness: location", "parent": "f001", "attribute": "location", "text": "It's mostly in my upper arms, on both sides.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f006", "item": "drooping eyelids", "aliases": ["ptosis", "droopy eyelids", "can't open my eyes"], "text": "My eyelids droop so much I can barely open my eyes.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f007", "item": "double vision", "aliases": ["diplopia", "seeing double"], "text": "I'm seeing double.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f008", "item": "slurred speech", "aliases": ["dysarthria", "trouble speaking"], "text": "My speech is slurred.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f009", "item": "trouble handling saliva", "aliases": ["drooling", "pooling of secretions"], "text": "Saliva builds up in my mouth after just a word or two.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f010", "item": "trouble holding the head up", "aliases": ["neck weakness", "head drop"], "text": "I have trouble holding my head up.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f011", "item": "abscesses on the hips and thighs", "aliases": ["abscesses", "boils", "skin infections"], "text": "I have several deep abscesses on my hips and thighs.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f012", "item": "heroin use", "aliases": ["injection drug use", "skin popping", "drug use"], "text": "I use heroin every day; I inject it under the skin (skin popping).", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "hepatitis C", "aliases": ["HCV", "liver infection"], "text": "I have hepatitis C, and it has never been treated.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "food from bulging cans", "aliases": ["home-canned food", "canned food", "spoiled food"], "text": "I haven't eaten anything from bulging cans.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f015", "item": "recent travel", "aliases": ["travel"], "text": "I haven't travelled recently.", "polarity": "absent", "category": "habit_exposure"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-03768",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "36.5 °C"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "136/80 mmHg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "106/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "19/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "cranial nerve examination", "aliases": ["eyelids", "ptosis", "eye movements", "bulbar function", "speech", "swallowing"], "result": "Marked ptosis: can open the eyelids only 2–3 mm; diplopia; pooling of secretions after 1–2 words; dysarthria."},
+      {"id": "x007", "kind": "exam", "system": "neurological", "name": "motor strength", "aliases": ["muscle strength", "power", "neck strength", "neuromuscular examination"], "result": "Difficulty holding up the head; proximal upper-extremity weakness, 4/5 bilaterally."},
+      {"id": "x008", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "injection sites", "hips and thighs"], "result": "Five deep-cavity abscesses over the hips and thighs."},
+      {"id": "x009", "kind": "test", "name": "urine drug screen", "aliases": ["urine toxicology", "drug screen", "tox screen"], "result": "Positive for amphetamines, opiates, and acetone."},
+      {"id": "x010", "kind": "exam", "system": "neurological", "name": "repeat neuromuscular examination", "aliases": ["repeat examination", "breathing", "respiratory effort", "neck strength"], "time": "over the next few hours", "result": "Neck and extremity weakness worsened; breathing became very shallow."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-03768",
+    "diagnosis": "Wound botulism",
+    "aliases": ["injection-related wound botulism", "wound botulism from injection drug use", "Clostridium botulinum wound infection"],
+    "reasoning": "1. Guillain–Barré syndrome considered — “Guillain-Barré syndrome is an autoimmune disease that demyelinates neurons and causes an ascending paralysis.” 2. Miller Fisher variant of Guillain–Barré syndrome considered — “However, the Miller Fischer variant of Guillain-Barré syndrome presents with a descending paralysis, closer mimicking that of botulism.” 3. Myasthenia gravis considered — “Myasthenia gravis is an autoimmune neuromuscular disease that results in weakness of certain muscle groups, sometimes including facial and respiratory muscles.” 4. Brainstem stroke considered — “Bilateral or brainstem strokes can also cause similar symptoms such as facial drooping, limb weakness, and breathing difficulties.” 5. Wound botulism favored — “Therefore, the suspicion was for possible wound botulism.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-03768",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s003"], "f006": ["s003"],
+      "f007": ["s003"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"], "f011": ["s005"], "f012": ["s002"],
+      "f013": ["s002"], "f014": ["s009"], "f015": ["s009"]
+    },
+    "quotes": {
+      "f002": "progressive weakness", "f004": "a 1-week history of progressive weakness and difficulty swallowing",
+      "f005": "proximal upper-extremity weakness (4/5 bilaterally)", "f006": "could open his eyelids only 2–3 mm with marked ptosis",
+      "f009": "pooling of secretions after 1–2 words", "f011": "Five deep-cavity abscesses over his hips and thighs",
+      "f012": "daily heroin use administered by skin popping", "f013": "untreated hepatitis C",
+      "f014": "denied ingestion of bulging canned food"
+    },
+    "flags": {
+      "f005": ["Location taken from the examination (proximal upper-extremity weakness); a patient would notice weak upper arms."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "temperature 36.5°C"},
+      "x002": {"sentences": ["s004"], "source_text": "blood pressure 136/80 mmHg"},
+      "x003": {"sentences": ["s004"], "source_text": "pulse 106 beats/min"},
+      "x004": {"sentences": ["s004"], "source_text": "respiratory rate 19 breaths/min"},
+      "x005": {"sentences": ["s004"], "source_text": "oxygen saturation 98% on room air"},
+      "x006": {"sentences": ["s003"], "source_text": "he could open his eyelids only 2–3 mm with marked ptosis, had diplopia, pooling of secretions after 1–2 words, dysarthria"},
+      "x007": {"sentences": ["s003"], "source_text": "difficulty holding up his head, and proximal upper-extremity weakness (4/5 bilaterally)"},
+      "x008": {"sentences": ["s005"], "source_text": "Five deep-cavity abscesses over his hips and thighs"},
+      "x009": {"sentences": ["s007"], "source_text": "A urine drug screen was positive for amphetamines, opiates, and acetone."},
+      "x010": {"sentences": ["s006"], "source_text": "Over the next few hours, his neck and extremity weakness worsened and breathing became very shallow"}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": [
+      "The urine drug screen lists acetone among the drugs; probably ketonuria reported with the screen.",
+      "Amphetamines on the drug screen are not mentioned in the history."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation after a week of progressive weakness and difficulty swallowing (s001–s005, s007, s009).",
+      "s005: the abscesses were incised and drained (treatment) and wound cultures were obtained, but no culture result is given, so there is no culture finding.",
+      "s006: the worsening over the next few hours is a later examination finding (x010); the intubation is treatment and is left out.",
+      "Signs the patient can notice (drooping eyelids, double vision, slurred speech, saliva pooling, head drop, arm weakness, abscesses) are facts in lay words and also stay in the examination findings."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s008", "reason": "Clinician's conclusion naming the diagnosis and the differential (narrative_conclusion); not a finding."}
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "agentclinic-medqa-ext-210",
+  "source_row": 210,
+  "demographics_text": "19-year-old Caucasian male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with hypopigmented skin patches.",
+  "chief_complaint": "Hypopigmented skin patches",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-210-p001",
+      "field": "History",
+      "text": "The patient reports noticing gradually developing patches of lighter skin on his hands and face over the past few months. These patches seem to be expanding in size. He denies any pain, itching, or other discomfort in the areas. No recent illnesses, medication changes, or significant sunburns."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-210-p002",
+      "field": "Secondary_Symptoms",
+      "text": "No discomfort in the affected areas"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-210-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Gradual increase in size of the patches"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-210-p004",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical history. The patient is otherwise healthy with no chronic conditions."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-210-p005",
+      "field": "Social_History",
+      "text": "Full-time university student, non-smoker, and occasional alcohol use."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-210-p006",
+      "field": "Review_of_Systems",
+      "text": "Denies recent flu-like symptoms, fever, weight loss, changes in vision, hair loss, or history of skin cancer in the family."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-210-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-210-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "115/70 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-210-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-210-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-210-e005",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "Multiple well-demarcated hypopigmented patches on the backs of the hands, face, and neck. No erythema, scaling, or atrophy noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-210-e006",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "Skin texture feels normal, with no palpable masses or induration. No tenderness."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-210-i001",
+      "path": "Test_Results.Skin_Biopsy.Histopathology.Findings",
+      "text": "Absence of melanocytes in the epidermis."
+    }
+  ],
+  "correct_diagnosis": "Vitiligo",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

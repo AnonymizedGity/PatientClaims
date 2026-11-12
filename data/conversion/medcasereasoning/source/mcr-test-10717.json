@@ -1,0 +1,72 @@
+{
+ "case_id": "mcr-test-10717",
+ "pmcid": "PMC6930746",
+ "test_row": 652,
+ "test_index": 10717,
+ "case_prompt": "A 25-year-old previously healthy man was brought to the emergency department after becoming unconscious at home; a capillary glucose measurement was <2 mmol/L. He recovered with intravenous dextrose infusion and was admitted for further evaluation. Over the preceding 2 months, he had recurrent episodes of palpitations, dizziness, light-headedness, and sweating, often late after meals or after prolonged fasting; capillary glucose values had reached as low as 3.5 mmol/L and improved with dextrose. He denied seizures. Symptoms transiently improved with daily high-dose oral dexamethasone but recurred after discontinuation. He also reported unquantified weight gain and 1 month of erectile dysfunction. He had no family history of insulinoma or diabetes and denied exogenous insulin use. He admitted to using injectable anabolic steroids, growth hormone, oral amino acids, and fat-burner supplements for bodybuilding over the previous 2 months. \n\nOn admission, weight was 66 kg, height 170 cm, BMI 22.8 kg/m2, blood pressure 125/75 mm Hg, pulse 65 beats/min. Examination was unremarkable.\n\nAfter 24 hours of a supervised 72-hour fast, he developed neuroglycopenic symptoms with a capillary glucose of 2.5 mmol/L. Laboratory evaluation during hypoglycaemia showed: serum insulin >301 µIU/mL, C-peptide 681 pmol/L, proinsulin 2.7 pmol/L, beta-hydroxybutyrate 27.8 µmol/L, and anti-insulin antibody titer >100 IU/mL. Full blood count, liver, renal, and thyroid function tests were normal. ACTH and random morning cortisol levels were normal. MRI of the abdomen (including the pancreas) and the sella turcica showed no abnormalities.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 25-year-old previously healthy man was brought to the emergency department after becoming unconscious at home; a capillary glucose measurement was <2 mmol/L."
+  },
+  {
+   "id": "s002",
+   "text": "He recovered with intravenous dextrose infusion and was admitted for further evaluation."
+  },
+  {
+   "id": "s003",
+   "text": "Over the preceding 2 months, he had recurrent episodes of palpitations, dizziness, light-headedness, and sweating, often late after meals or after prolonged fasting; capillary glucose values had reached as low as 3.5 mmol/L and improved with dextrose."
+  },
+  {
+   "id": "s004",
+   "text": "He denied seizures."
+  },
+  {
+   "id": "s005",
+   "text": "Symptoms transiently improved with daily high-dose oral dexamethasone but recurred after discontinuation."
+  },
+  {
+   "id": "s006",
+   "text": "He also reported unquantified weight gain and 1 month of erectile dysfunction."
+  },
+  {
+   "id": "s007",
+   "text": "He had no family history of insulinoma or diabetes and denied exogenous insulin use."
+  },
+  {
+   "id": "s008",
+   "text": "He admitted to using injectable anabolic steroids, growth hormone, oral amino acids, and fat-burner supplements for bodybuilding over the previous 2 months."
+  },
+  {
+   "id": "s009",
+   "text": "On admission, weight was 66 kg, height 170 cm, BMI 22.8 kg/m2, blood pressure 125/75 mm Hg, pulse 65 beats/min. Examination was unremarkable."
+  },
+  {
+   "id": "s010",
+   "text": "After 24 hours of a supervised 72-hour fast, he developed neuroglycopenic symptoms with a capillary glucose of 2.5 mmol/L."
+  },
+  {
+   "id": "s011",
+   "text": "Laboratory evaluation during hypoglycaemia showed: serum insulin >301 µIU/mL, C-peptide 681 pmol/L, proinsulin 2.7 pmol/L, beta-hydroxybutyrate 27.8 µmol/L, and anti-insulin antibody titer >100 IU/mL."
+  },
+  {
+   "id": "s012",
+   "text": "Full blood count, liver, renal, and thyroid function tests were normal. ACTH and random morning cortisol levels were normal. MRI of the abdomen (including the pancreas) and the sella turcica showed no abnormalities."
+  }
+ ],
+ "final_diagnosis": "InsulinAutoimmuneSyndrome",
+ "diagnostic_reasoning": "1. Adrenal insufficiency — “ACTH and nonstimulated morning cortisol levels were normal.” 2. Insulinoma — “MRI of the abdomen, including the pancreas, ... showed no abnormalities.” 3. Exogenous insulin administration — “the patient denied using exogenous insulin while proinsulin was below the reference range and the C-peptide level was normal.”",
+ "selection": {
+  "age": 25,
+  "sex": "male",
+  "specialty": "endocrinology",
+  "dx_key": "insulin autoimmune syndrome",
+  "setting": "emergency",
+  "time_structure": "staged_workup",
+  "leakage": "test_result",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Recurrent postprandial and fasting hypoglycemia with very high insulin and high anti-insulin antibodies gives insulin autoimmune syndrome.",
+  "second_look_note": "Timeline of postprandial and fasting hypoglycemia, steroid response and bodybuilding supplements frames the workup; the supervised fast with very high insulin and anti-insulin antibodies decides."
+ }
+}

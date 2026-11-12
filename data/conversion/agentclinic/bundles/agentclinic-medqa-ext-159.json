@@ -1,0 +1,101 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-159", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 40, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "weakness", "aliases": ["generalized weakness", "feeling weak"], "text": "I've been feeling weak all over.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "weakness: course", "parent": "f001", "attribute": "course", "text": "I've been getting weaker over the past few months.", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f003", "item": "weight loss", "text": "I've lost weight without trying.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f004", "item": "recent infections", "text": "I haven't had any infections recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "bleeding", "text": "I haven't had any bleeding.", "polarity": "absent", "category": "symptom", "system": "hematologic", "time": "current"},
+      {"id": "f006", "item": "urinary symptoms", "aliases": ["changes in urination", "urinary problems"], "text": "I haven't had any problems or changes with my urination.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f007", "item": "previous abnormal blood tests", "aliases": ["previous blood work", "previous lab results"], "text": "A previous blood test showed that my BUN and creatinine were high.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f008", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I have high blood pressure.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "blood pressure medication", "aliases": ["medications"], "text": "I take medication for my blood pressure.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f010", "item": "father's health", "aliases": ["family history"], "text": "My father had kidney stones.", "polarity": "present", "category": "family_history", "time": "historical"},
+      {"id": "f011", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f012", "item": "alcohol", "aliases": ["drinking"], "text": "I drink alcohol occasionally.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f013", "item": "occupation", "aliases": ["job", "work"], "text": "I work as an accountant.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f014", "item": "fever", "text": "I haven't had any fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f015", "item": "nausea", "text": "I haven't felt nauseated.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f016", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't been vomiting.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f017", "item": "diarrhea", "text": "I haven't had diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f018", "item": "burning when urinating", "aliases": ["dysuria", "painful urination"], "text": "It doesn't burn or hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f019", "item": "changes in bowel habits", "aliases": ["bowel changes"], "text": "My bowel habits haven't changed.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-159",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "36.8°C (98°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "130/85 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "14/min"},
+      {"id": "x005", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general examination", "pallor"], "result": "No acute distress; appears pale."},
+      {"id": "x006", "kind": "exam", "system": "skin", "name": "skin examination", "aliases": ["skin", "rash", "bruising"], "result": "No rashes or bruises."},
+      {"id": "x007", "kind": "exam", "system": "cardiovascular", "name": "examination for peripheral edema", "aliases": ["edema", "leg swelling", "ankle swelling"], "result": "No peripheral edema."},
+      {"id": "x008", "kind": "exam", "system": "genitourinary", "name": "flank examination", "aliases": ["renal examination", "costovertebral angle tenderness", "CVA tenderness", "flank palpation"], "result": "Inspection: no flank masses. Palpation: no flank tenderness. Percussion: no costovertebral angle tenderness."},
+      {"id": "x009", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "hemoglobin", "hematocrit", "white blood cell count", "WBC", "leukocyte count", "differential", "platelet count", "platelets"], "result": "Hemoglobin 8 g/dL (low); hematocrit 29% (low); leukocyte count 9,500/mm³ with normal differential; platelet count 197,000/mm³."},
+      {"id": "x010", "kind": "test", "name": "basic metabolic panel", "aliases": ["BMP", "electrolytes", "serum electrolytes", "renal function tests", "sodium", "potassium", "chloride", "bicarbonate", "BUN", "blood urea nitrogen", "urea", "creatinine"], "result": "Sodium 139 mEq/L; chloride 100 mEq/L; potassium 5.9 mEq/L (high); bicarbonate 17 mEq/L (low); blood urea nitrogen 59 mg/dL (elevated); creatinine 2.3 mg/dL (elevated)."},
+      {"id": "x011", "kind": "test", "name": "renal ultrasound", "aliases": ["renal ultrasonography", "ultrasound of the renal tract", "abdominal ultrasound"], "result": "Bilaterally reduced kidney size with increased echogenicity; no obstructive pathology."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-159",
+    "diagnosis": "Chronic kidney failure",
+    "aliases": ["chronic kidney disease", "CKD", "chronic renal failure", "CRF", "chronic renal insufficiency"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-159",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-159-p001"], "f002": ["agentclinic-medqa-ext-159-p001"],
+      "f003": ["agentclinic-medqa-ext-159-p001", "agentclinic-medqa-ext-159-p002"],
+      "f004": ["agentclinic-medqa-ext-159-p001"],
+      "f005": ["agentclinic-medqa-ext-159-p001", "agentclinic-medqa-ext-159-p004"],
+      "f006": ["agentclinic-medqa-ext-159-p001", "agentclinic-medqa-ext-159-p003"],
+      "f007": ["agentclinic-medqa-ext-159-p001"],
+      "f008": ["agentclinic-medqa-ext-159-p005"], "f009": ["agentclinic-medqa-ext-159-p005"], "f010": ["agentclinic-medqa-ext-159-p005"],
+      "f011": ["agentclinic-medqa-ext-159-p006"], "f012": ["agentclinic-medqa-ext-159-p006"], "f013": ["agentclinic-medqa-ext-159-p006"],
+      "f014": ["agentclinic-medqa-ext-159-p007"], "f015": ["agentclinic-medqa-ext-159-p007"], "f016": ["agentclinic-medqa-ext-159-p007"],
+      "f017": ["agentclinic-medqa-ext-159-p007"], "f018": ["agentclinic-medqa-ext-159-p007"], "f019": ["agentclinic-medqa-ext-159-p007"]
+    },
+    "quotes": {
+      "f001": "Generalized weakness", "f002": "feeling weaker over the past few months", "f003": "Unintentional weight loss",
+      "f006": "No urinary symptoms / changes in urination", "f007": "a previous blood workup indicating elevated BUN and creatinine levels",
+      "f009": "Hypertension treated with medication.", "f010": "Father had kidney stones.", "f012": "occasional alcohol use"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "36.8°C (98°F)", "exam_ids": ["agentclinic-medqa-ext-159-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "130/85 mmHg", "exam_ids": ["agentclinic-medqa-ext-159-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-159-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "14 breaths/min", "exam_ids": ["agentclinic-medqa-ext-159-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.General_Examination.Appearance", "source_text": "No acute distress, appears pale", "exam_ids": ["agentclinic-medqa-ext-159-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.General_Examination.Skin", "source_text": "No rashes or bruises", "exam_ids": ["agentclinic-medqa-ext-159-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.General_Examination.Edema", "source_text": "No peripheral edema", "exam_ids": ["agentclinic-medqa-ext-159-e007"]},
+      "x008": {"source": "Physical_Examination_Findings.Renal_Examination.Inspection + Physical_Examination_Findings.Renal_Examination.Palpation + Physical_Examination_Findings.Renal_Examination.Percussion", "source_text": "No flank masses | No flank tenderness | No costovertebral angle tenderness", "exam_ids": ["agentclinic-medqa-ext-159-e008", "agentclinic-medqa-ext-159-e009", "agentclinic-medqa-ext-159-e010"]},
+      "x009": {"source": "Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Hematocrit + Test_Results.Complete_Blood_Count.Leukocyte_Count + Test_Results.Complete_Blood_Count.Platelet_Count", "source_text": "8 g/dL (low) | 29% (low) | 9,500/mm^3 with normal differential | 197,000/mm^3", "exam_ids": ["agentclinic-medqa-ext-159-i001", "agentclinic-medqa-ext-159-i002", "agentclinic-medqa-ext-159-i003", "agentclinic-medqa-ext-159-i004"]},
+      "x010": {"source": "Test_Results.Serum_Electrolytes.Na+ + Test_Results.Serum_Electrolytes.Cl- + Test_Results.Serum_Electrolytes.K+ + Test_Results.Serum_Electrolytes.HCO3- + Test_Results.Renal_Function_Tests.BUN + Test_Results.Renal_Function_Tests.Creatinine", "source_text": "139 mEq/L | 100 mEq/L | 5.9 mEq/L (high) | 17 mEq/L (low) | 59 mg/dL (elevated) | 2.3 mg/dL (elevated)", "exam_ids": ["agentclinic-medqa-ext-159-i005", "agentclinic-medqa-ext-159-i006", "agentclinic-medqa-ext-159-i007", "agentclinic-medqa-ext-159-i008", "agentclinic-medqa-ext-159-i009", "agentclinic-medqa-ext-159-i010"]},
+      "x011": {"source": "Test_Results.Imaging.Ultrasound_Kidneys.Findings", "source_text": "Bilateral reduced kidney size with increased echogenicity, no obstructive pathology", "exam_ids": ["agentclinic-medqa-ext-159-i011"]}
+    },
+    "leakage": [
+      {"fact_id": "f010", "reason": "'kidney' (gold word) appears in the father's history of kidney stones. It is a relative's different condition, stated in the source, and 'kidney stones' is the lay term; it does not name the patient's diagnosis."}
+    ],
+    "source_issues": [
+      "The father's kidney stones are recorded under Past_Medical_History rather than family history."
+    ],
+    "notes": [
+      "'No urinary symptoms' (p003) and 'no changes in urination' (p001) are one fact (f006). Dysuria (p007) is kept as its own, more specific denial (f018).",
+      "Serum electrolytes and BUN/creatinine are all basic-metabolic-panel members, so they form one panel record (x010) with 'electrolytes' and 'renal function tests' as aliases.",
+      "The word 'kidney' is kept out of finding names and aliases (gold term); the ultrasound is named 'renal ultrasound'. In the patient record the previous blood work is described by its analytes (BUN, creatinine) as the source does.",
+      "If validate_cases.py flags x009's result as review commentary, that is a false positive: an unanchored 'OCR' pattern matches inside 'hematocrit'. The result is the plain lab values.",
+      "Gold alias 'chronic kidney disease'/'CKD' is treated as a synonym of chronic kidney failure (common clinical usage). End-stage renal disease is not listed: it is a more specific stage that this case's values do not establish."
+    ],
+    "extras": {
+      "objective_for_doctor": "Evaluate the patient for the cause of anemia, weight loss, and deteriorating renal function."
+    },
+    "excluded_sources": [],
+    "excluded_exam_lines": []
+  }
+}

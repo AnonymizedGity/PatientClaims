@@ -1,0 +1,103 @@
+{
+  "case_id": "agentclinic-medqa-ext-147",
+  "source_row": 147,
+  "demographics_text": "75-year-old male",
+  "objective_for_doctor": "Assess and diagnose the elderly patient presenting for an annual blood pressure visit with incidental lab findings.",
+  "chief_complaint": "No new complaints",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-147-p001",
+      "field": "History",
+      "text": "The patient presents for his annual blood pressure visit with no complaints other than occasional knee pain. He has a past medical history of hypertension and knee osteoarthritis, for which he takes occasional acetaminophen."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-147-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Occasional knee pain"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-147-p003",
+      "field": "Past_Medical_History",
+      "text": "Hypertension, knee osteoarthritis"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-147-p004",
+      "field": "Social_History",
+      "text": "Diet rich in vegetables, daily exercise, no history of smoking. A brother died at 84 due to hematologic malignancy."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-147-p005",
+      "field": "Review_of_Systems",
+      "text": "Denies headache, dizziness, chest pain, palpitations, dyspnea, fever, weight loss, or night sweats."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8℃ (98.2℉)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "125/85 mm Hg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e005",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Inspection",
+      "text": "No visible joint deformities."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e006",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Range_of_Motion",
+      "text": "Reduced range of motion in both knees."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e007",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Palpation",
+      "text": "Crepitus noted in both knees, no swelling or warmth."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-e008",
+      "path": "Physical_Examination_Findings.Musculoskeletal_Examination.Special_Tests",
+      "text": "No additional tests performed."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-147-i001",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "15 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-i002",
+      "path": "Test_Results.Complete_Blood_Count.Leukocyte_Count",
+      "text": "58,000/mm3 (elevated)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelet_Count",
+      "text": "250,000/mm3"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-147-i004",
+      "path": "Test_Results.Flow_Cytometry.Absolute_Lymphocyte_Count",
+      "text": "50,000/mm3, suggestive of a lymphoproliferative disorder"
+    }
+  ],
+  "correct_diagnosis": "Chronic lymphocytic leukemia (CLL)",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

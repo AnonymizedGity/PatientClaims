@@ -1,0 +1,88 @@
+{
+  "case_id": "agentclinic-medqa-ext-200",
+  "source_row": 200,
+  "demographics_text": "81-year-old male",
+  "objective_for_doctor": "Evaluate and manage a patient presenting with itchy blisters in the axilla.",
+  "chief_complaint": "Itchy blisters in the axilla",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-200-p001",
+      "field": "History",
+      "text": "The patient, who recently moved to an assisted living facility, complains of itchy blisters that have developed in his axilla. He believes these blisters are due to a poor diet. Additionally, he mentions that since arriving at the facility, a nurse practitioner has started him on four new medications, adding to his already existing prescription regimen."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-200-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Belief that condition is due to poor diet"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-200-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Concerns about new medications"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-200-p004",
+      "field": "Past_Medical_History",
+      "text": "Details on specific past medical history are not provided, but patient has been on multiple medications prior to the new additions at the facility."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-200-p005",
+      "field": "Social_History",
+      "text": "No details provided. Focus on patient's current living situation in an assisted living facility and recent medication changes."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-200-p006",
+      "field": "Review_of_Systems",
+      "text": "Focused on skin symptoms; negative for fever, recent illnesses, or other systemic symptoms."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-200-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-200-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-200-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-200-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-200-e005",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Inspection",
+      "text": "Tense axillary bullae noted on the affected area."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-200-e006",
+      "path": "Physical_Examination_Findings.Dermatological_Examination.Palpation",
+      "text": "The bullae do not rupture with light, gloved touch. Surrounding skin is warm and appears inflamed."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-200-i001",
+      "path": "Test_Results.Blood_Work.CBC_Normal_Range",
+      "text": "No significant abnormalities noted"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-200-i002",
+      "path": "Test_Results.Direct_Immunofluorescence.Findings",
+      "text": "Linear C3 and IgG deposits along the basement membrane."
+    }
+  ],
+  "correct_diagnosis": "Bullous pemphigoid",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

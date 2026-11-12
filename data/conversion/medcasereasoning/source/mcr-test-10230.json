@@ -1,0 +1,88 @@
+{
+ "case_id": "mcr-test-10230",
+ "pmcid": "PMC9759948",
+ "test_row": 623,
+ "test_index": 10230,
+ "case_prompt": "A 46-year-old woman was referred for evaluation of possible systemic sclerosis. Over the past month, she noted worsening acrocyanosis and Raynaud phenomenon, exertional dyspnea, nausea, and burning paresthesias of the lower limbs. She also reported a 7–8 kg weight loss, recurrent lower back pain, and polymenorrhea over 6 months. Her history included multiple lumbar disk hernias treated surgically and a 2-year history of “triple-negative” essential thrombocythemia managed with aspirin, anagrelide and periodic phlebotomy.\n\nOn examination, she was afebrile, normopneic, hypertensive, and tachycardic. Skin findings included hyperpigmentation of the upper trunk and limbs, erythroderma, acrocyanosis, Raynaud phenomenon, leukonychia, livedo reticularis on the thighs and legs, sclerodermoid changes and digital clubbing. Other findings were jugular venous distention, anasarca of the lumbar region, and a positive right Lasegue sign. Neurologic exam showed diminished tendon reflexes; nerve conduction studies revealed a symmetric sensorimotor demyelinating polyneuropathy of the lower extremities. Fundoscopy disclosed bilateral papilledema.\n\nLaboratory studies showed marked thrombocythemia (platelets 847 × 10^9/L); other routine labs were unremarkable. Serum and urine immunofixation were repeatedly negative for monoclonal protein. Capillaroscopy demonstrated well-conserved capillaries with some giant loops and minor hemorrhages, consistent with early scleroderma. Echocardiography revealed pulmonary hypertension and moderate tricuspid regurgitation. Chest CT showed bilateral lower-lobe ground-glass opacities; abdominal CT revealed enlarged lymph nodes. Lumbar spine CT demonstrated degenerative changes and osteosclerotic lesions at L4–S1. MRI of the lumbar spine showed lesions in L5–S1 vertebrae with abnormal enhancement of paraspinal muscles and subcutaneous tissue.",
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "A 46-year-old woman was referred for evaluation of possible systemic sclerosis."
+  },
+  {
+   "id": "s002",
+   "text": "Over the past month, she noted worsening acrocyanosis and Raynaud phenomenon, exertional dyspnea, nausea, and burning paresthesias of the lower limbs."
+  },
+  {
+   "id": "s003",
+   "text": "She also reported a 7–8 kg weight loss, recurrent lower back pain, and polymenorrhea over 6 months."
+  },
+  {
+   "id": "s004",
+   "text": "Her history included multiple lumbar disk hernias treated surgically and a 2-year history of “triple-negative” essential thrombocythemia managed with aspirin, anagrelide and periodic phlebotomy."
+  },
+  {
+   "id": "s005",
+   "text": "On examination, she was afebrile, normopneic, hypertensive, and tachycardic."
+  },
+  {
+   "id": "s006",
+   "text": "Skin findings included hyperpigmentation of the upper trunk and limbs, erythroderma, acrocyanosis, Raynaud phenomenon, leukonychia, livedo reticularis on the thighs and legs, sclerodermoid changes and digital clubbing."
+  },
+  {
+   "id": "s007",
+   "text": "Other findings were jugular venous distention, anasarca of the lumbar region, and a positive right Lasegue sign."
+  },
+  {
+   "id": "s008",
+   "text": "Neurologic exam showed diminished tendon reflexes; nerve conduction studies revealed a symmetric sensorimotor demyelinating polyneuropathy of the lower extremities."
+  },
+  {
+   "id": "s009",
+   "text": "Fundoscopy disclosed bilateral papilledema."
+  },
+  {
+   "id": "s010",
+   "text": "Laboratory studies showed marked thrombocythemia (platelets 847 × 10^9/L); other routine labs were unremarkable."
+  },
+  {
+   "id": "s011",
+   "text": "Serum and urine immunofixation were repeatedly negative for monoclonal protein."
+  },
+  {
+   "id": "s012",
+   "text": "Capillaroscopy demonstrated well-conserved capillaries with some giant loops and minor hemorrhages, consistent with early scleroderma."
+  },
+  {
+   "id": "s013",
+   "text": "Echocardiography revealed pulmonary hypertension and moderate tricuspid regurgitation."
+  },
+  {
+   "id": "s014",
+   "text": "Chest CT showed bilateral lower-lobe ground-glass opacities; abdominal CT revealed enlarged lymph nodes."
+  },
+  {
+   "id": "s015",
+   "text": "Lumbar spine CT demonstrated degenerative changes and osteosclerotic lesions at L4–S1."
+  },
+  {
+   "id": "s016",
+   "text": "MRI of the lumbar spine showed lesions in L5–S1 vertebrae with abnormal enhancement of paraspinal muscles and subcutaneous tissue."
+  }
+ ],
+ "final_diagnosis": "POEMSSyndrome",
+ "diagnostic_reasoning": "1. Chronic inflammatory demyelinating polyneuropathy was considered given the demyelinating neuropathy — “diagnosis is often delayed with intervening incorrect diagnoses of chronic inflammatory demyelinating polyneuropathy…” 2. A myeloproliferative disorder (essential thrombocythemia) was considered due to striking thrombocythemia — “…‘triple negative’ essential thrombocythemia (based on bone marrow findings and absence of typical genetic features)…” and “myeloproliferative disorders are included in the differential diagnosis of POEMS syndrome.”",
+ "selection": {
+  "age": 46,
+  "sex": "female",
+  "specialty": "hematology_oncology",
+  "dx_key": "poems syndrome",
+  "setting": "referral",
+  "time_structure": "staged_workup",
+  "leakage": "none",
+  "narrative_conclusion": false,
+  "interview_value": "medium",
+  "screen_reason": "Demyelinating polyneuropathy, papilledema, skin changes, lymphadenopathy, thrombocytosis and sclerotic bone lesions lead an expert to POEMS syndrome despite negative immunofixation.",
+  "second_look_note": "Paresthesias, Raynaud phenomenon, weight loss and skin changes with demyelinating polyneuropathy, papilledema, thrombocytosis, adenopathy and sclerotic bone lesions lead to POEMS despite negative immunofixation."
+ }
+}

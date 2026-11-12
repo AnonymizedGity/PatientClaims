@@ -1,0 +1,143 @@
+{
+  "case_id": "agentclinic-medqa-ext-131",
+  "source_row": 131,
+  "demographics_text": "34-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with changes in mood, energy, and interest in activities.",
+  "chief_complaint": "Difficulty concentrating, fatigue, and decreased interest in activities",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-131-p001",
+      "field": "History",
+      "text": "The patient reports a 2-month history of difficulty concentrating at work, fearing job loss due to poor performance. Expresses feeling constantly tired despite getting up early and being unable to fall back to sleep. The patient's spouse has observed him speaking more slowly than usual and noticed a decreased appetite. Additionally, the patient has lost interest in previously enjoyed activities such as dance classes. He is a veteran who returned from a deployment to Afghanistan 2 years ago."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-131-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Changes in sleep patterns"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-131-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Decreased appetite"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-131-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Slowed speech"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-131-p005",
+      "field": "Past_Medical_History",
+      "text": "Veteran with a history of deployment to Afghanistan 2 years prior."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-131-p006",
+      "field": "Social_History",
+      "text": "Unknown substance use. No provided information on alcohol or tobacco use. Married."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-131-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies recent fever, weight loss, or increases in stress outside of concern for work performance."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "118/76 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "72 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e005",
+      "path": "Physical_Examination_Findings.General_Examination.Appearance",
+      "text": "Patient appears withdrawn and speaks with decreased speed."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e006",
+      "path": "Physical_Examination_Findings.General_Examination.HEENT",
+      "text": "No abnormalities noted."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e007",
+      "path": "Physical_Examination_Findings.General_Examination.Cardiovascular",
+      "text": "Normal rate and rhythm, no murmurs."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e008",
+      "path": "Physical_Examination_Findings.General_Examination.Respiratory",
+      "text": "Clear to auscultation bilaterally."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e009",
+      "path": "Physical_Examination_Findings.General_Examination.Neurological",
+      "text": "Alert and oriented, no focal deficits."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-e010",
+      "path": "Physical_Examination_Findings.General_Examination.Psychiatric",
+      "text": "Mood appears depressed, exhibits low affect."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i001",
+      "path": "Test_Results.CBC.WBC",
+      "text": "6,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i002",
+      "path": "Test_Results.CBC.Hemoglobin",
+      "text": "14 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i003",
+      "path": "Test_Results.CBC.Platelets",
+      "text": "250,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i004",
+      "path": "Test_Results.Thyroid_Function_Tests.TSH",
+      "text": "2.5 mIU/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i005",
+      "path": "Test_Results.Thyroid_Function_Tests.Free_T4",
+      "text": "1.2 ng/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i006",
+      "path": "Test_Results.Routine_Chemistry.Sodium",
+      "text": "140 mmol/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i007",
+      "path": "Test_Results.Routine_Chemistry.Potassium",
+      "text": "4.2 mmol/L"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-131-i008",
+      "path": "Test_Results.Routine_Chemistry.Creatinine",
+      "text": "0.9 mg/dL"
+    }
+  ],
+  "correct_diagnosis": "Major depressive disorder",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

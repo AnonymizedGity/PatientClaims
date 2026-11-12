@@ -1,0 +1,95 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-116",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 21, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "right arm pain", "aliases": ["arm pain", "pain in the arm"], "text": "My right arm hurts.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "difficulty moving the right arm", "aliases": ["limited range of motion", "stiff arm", "can't move the arm"], "text": "I can't move my right arm as far as I normally can.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "recent injury to the arm", "aliases": ["arm trauma", "hurt your arm"], "text": "I haven't injured my arm recently.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f004", "item": "diarrhea", "aliases": ["loose stools"], "text": "I've had diarrhea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f005", "item": "nausea", "aliases": ["feeling sick"], "text": "I've been feeling nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "pain during sex", "aliases": ["painful intercourse", "dyspareunia"], "text": "I also have pain during sex.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f007", "item": "repeated emergency room visits", "aliases": ["ER visits", "previous episodes", "hospital visits"], "text": "I've been to the ER many times in the past year with similar symptoms.", "polarity": "present", "category": "medical_history", "time": "recurrent"},
+      {"id": "f008", "item": "previous surgery", "aliases": ["operations", "surgical history"], "text": "I haven't had any significant surgery.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f009", "item": "chronic medical problems", "aliases": ["chronic medical problems", "long-term conditions"], "text": "I don't have any chronic illnesses.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "sexual activity", "aliases": ["sexually active", "sexual partners"], "text": "I'm sexually active with one male partner.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f011", "item": "recent illness", "aliases": ["been sick recently"], "text": "I haven't been ill recently.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f013", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f014", "item": "weight change", "aliases": ["weight loss", "weight gain"], "text": "My weight hasn't changed significantly.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-116",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37.0°C (98.6°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "115/75 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "82/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "18/min"},
+      {"id": "x005", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "bowel sounds", "abdominal palpation"], "result": "Inspection: no visible abnormalities. Auscultation: normal bowel sounds. Percussion: diffuse tenderness, but no peritoneal signs. Palpation: diffuse abdominal tenderness in all four quadrants without rebound or guarding."},
+      {"id": "x006", "kind": "exam", "system": "musculoskeletal", "name": "right arm examination", "aliases": ["arm examination", "musculoskeletal examination", "range of motion"], "result": "Inspection: no erythema or edema. Palpation: tenderness without specific localization. Range of motion: limited due to pain."},
+      {"id": "x007", "kind": "test", "name": "fecal occult blood test", "aliases": ["FOBT", "stool occult blood", "stool test for blood"], "result": "Negative."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "WBC", "white blood cell count", "hemoglobin", "platelets", "platelet count"], "result": "WBC normal; hemoglobin normal; platelets normal."},
+      {"id": "x009", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP", "inflammatory markers"], "result": "Normal."},
+      {"id": "x010", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate", "inflammatory markers"], "result": "Normal."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-116",
+    "diagnosis": "Somatization disorder",
+    "aliases": ["Briquet syndrome", "Briquet's syndrome", "somatic symptom disorder"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-116",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-116-p001"],
+      "f002": ["cc", "agentclinic-medqa-ext-116-p001"],
+      "f003": ["agentclinic-medqa-ext-116-p001"],
+      "f004": ["agentclinic-medqa-ext-116-p001", "agentclinic-medqa-ext-116-p002"],
+      "f005": ["agentclinic-medqa-ext-116-p001", "agentclinic-medqa-ext-116-p003"],
+      "f006": ["agentclinic-medqa-ext-116-p001", "agentclinic-medqa-ext-116-p004"],
+      "f007": ["agentclinic-medqa-ext-116-p001", "agentclinic-medqa-ext-116-p006"],
+      "f008": ["agentclinic-medqa-ext-116-p006"],
+      "f009": ["agentclinic-medqa-ext-116-p008"],
+      "f010": ["agentclinic-medqa-ext-116-p007"],
+      "f011": ["agentclinic-medqa-ext-116-p008"],
+      "f012": ["agentclinic-medqa-ext-116-p008"],
+      "f013": ["agentclinic-medqa-ext-116-p008"],
+      "f014": ["agentclinic-medqa-ext-116-p008"]
+    },
+    "quotes": {
+      "f002": "limited range of motion",
+      "f003": "She reports no recent trauma to the arm",
+      "f007": "being in the ER multiple times in the past year with similar symptoms",
+      "f008": "No significant past surgical history.",
+      "f009": "No significant weight changes or chronic illnesses.",
+      "f010": "Sexually active with one male partner.",
+      "f014": "No significant weight changes"
+    },
+    "flags": {},
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37.0°C (98.6°F)", "exam_ids": ["agentclinic-medqa-ext-116-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "115/75 mmHg", "exam_ids": ["agentclinic-medqa-ext-116-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "82 bpm", "exam_ids": ["agentclinic-medqa-ext-116-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "18 breaths/min", "exam_ids": ["agentclinic-medqa-ext-116-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Inspection: No visible abnormalities.; Auscultation: Normal bowel sounds.; Percussion: Diffuse tenderness, but no peritoneal signs.; Palpation: Diffuse abdominal tenderness in all four quadrants without rebound or guarding.", "exam_ids": ["agentclinic-medqa-ext-116-e005", "agentclinic-medqa-ext-116-e006", "agentclinic-medqa-ext-116-e007", "agentclinic-medqa-ext-116-e008"]},
+      "x006": {"source": "Physical_Examination_Findings.Musculoskeletal_Examination.Right_Arm.Inspection + Physical_Examination_Findings.Musculoskeletal_Examination.Right_Arm.Palpation + Physical_Examination_Findings.Musculoskeletal_Examination.Right_Arm.Range_of_Motion", "source_text": "Inspection: No erythema or edema.; Palpation: Tenderness without specific localization.; Range_of_Motion: Limited due to pain.", "exam_ids": ["agentclinic-medqa-ext-116-e009", "agentclinic-medqa-ext-116-e010", "agentclinic-medqa-ext-116-e011"]},
+      "x007": {"source": "Test_Results.Fecal_Occult_Blood_Test.Result", "source_text": "Negative", "exam_ids": ["agentclinic-medqa-ext-116-i001"]},
+      "x008": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "WBC: Normal; Hemoglobin: Normal; Platelets: Normal", "exam_ids": ["agentclinic-medqa-ext-116-i002", "agentclinic-medqa-ext-116-i003", "agentclinic-medqa-ext-116-i004"]},
+      "x009": {"source": "Test_Results.Inflammatory_Markers.CRP", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-116-i005"]},
+      "x010": {"source": "Test_Results.Inflammatory_Markers.ESR", "source_text": "Normal", "exam_ids": ["agentclinic-medqa-ext-116-i006"]}
+    },
+    "finding_flags": {},
+    "leakage": [],
+    "source_issues": ["A secondary symptom (p005) is an examination finding: 'Vague and diffuse abdominal tenderness without signs of inflammation on the arm'.", "Percussion is reported as 'diffuse tenderness', which is a palpation-type finding."],
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-116-p005", "reason": "Observer-only examination finding (abdominal tenderness; no signs of inflammation on the arm); already in the abdominal examination (x005) and right arm examination (x006)."}
+    ],
+    "notes": ["The chief complaint names arm pain and limited range of motion, so both open (f001, f002).", "'No recent trauma to the arm' is a past-history denial (f003), as for injuries elsewhere in this batch.", "CRP and ESR are separate tests (inflammatory markers are not one of the standard panels in CONVERSION.md); 'inflammatory markers' is an alias of both.", "Gold aliases exclude 'somatic symptom disorder' (the broader DSM-5 category that replaced it) and 'somatoform disorder' (broader).", "Gold aliases added in harmonisation (somatic symptom disorder): 'Somatic symptom disorder' is the DSM-5 successor of somatization disorder."],
+    "extras": {
+      "objective_for_doctor": "Assess and manage a patient presenting with right arm pain, gastrointestinal symptoms, and a history of similar presentations."
+    }
+  }
+}

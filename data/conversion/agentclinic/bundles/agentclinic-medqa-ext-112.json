@@ -1,0 +1,99 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-112", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 24, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "loss of consciousness", "aliases": ["passing out", "fainting", "blacking out"], "text": "I passed out.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f002", "item": "loss of consciousness: onset", "parent": "f001", "attribute": "onset", "text": "It happened about 2 hours ago.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f003", "item": "loss of consciousness: context", "parent": "f001", "attribute": "context", "aliases": ["what you were doing"], "text": "I was sitting down, getting a tattoo on my right upper flank, when it happened.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f004", "item": "loss of consciousness: duration", "parent": "f001", "attribute": "duration", "text": "I came round within 30 seconds.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f005", "item": "sweating", "aliases": ["sweaty", "clammy"], "text": "Just before I passed out, I started sweating.", "polarity": "present", "category": "symptom", "system": "general", "time": "resolved"},
+      {"id": "f006", "item": "going pale", "aliases": ["pallor", "looking pale"], "text": "Just before I passed out, I felt myself go pale.", "polarity": "present", "category": "symptom", "system": "general", "time": "resolved"},
+      {"id": "f007", "item": "falling to the floor", "aliases": ["fall"], "text": "My boyfriend, who's here with me, says I fell to the floor.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f008", "item": "jerky movements of the arms and legs", "aliases": ["shaking", "twitching", "convulsing"], "text": "My boyfriend says my arms and legs made jerky movements.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f009", "item": "jerky movements of the arms and legs: duration", "parent": "f008", "attribute": "duration", "text": "He says it lasted a few seconds.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f010", "item": "confusion after the episode", "aliases": ["disorientation afterwards", "feeling confused"], "text": "As soon as I came round, I was alert and knew exactly where I was.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "resolved"},
+      {"id": "f011", "item": "serious medical problems", "aliases": ["past medical history"], "text": "As far as I know, I don't have any history of serious illness.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f012", "item": "occupation", "aliases": ["job", "work"], "text": "I work as an event manager.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f013", "item": "stress", "aliases": ["work stress", "pressure at work"], "text": "I've been under a lot more stress lately because of a recent concert tour at work.", "polarity": "present", "category": "social_background", "time": "current"},
+      {"id": "f014", "item": "smoking", "aliases": ["tobacco"], "text": "I don't use tobacco.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f015", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "illicit drug use", "aliases": ["drugs", "recreational drugs"], "text": "I don't use illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "headache", "aliases": ["headaches"], "text": "I don't have a headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f018", "item": "chest pain", "text": "I haven't had any chest pain.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f019", "item": "palpitations", "aliases": ["racing heart", "heart pounding"], "text": "I haven't had palpitations.", "polarity": "absent", "category": "symptom", "system": "cardiovascular", "time": "current"},
+      {"id": "f020", "item": "fever", "aliases": ["fevers"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f021", "item": "seizures", "aliases": ["fits", "epilepsy"], "text": "I've never had seizures.", "polarity": "absent", "category": "medical_history"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-112",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "37°C (98.4°F)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "120/72 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "68/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "16/min"},
+      {"id": "x005", "kind": "exam", "system": "cardiovascular", "name": "cardiopulmonary examination", "aliases": ["heart examination", "cardiac examination", "lung examination", "heart and lung auscultation"], "result": "No abnormalities detected."},
+      {"id": "x006", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "focal deficits"], "result": "No focal neurological deficits."},
+      {"id": "x007", "kind": "test", "name": "ECG", "aliases": ["EKG", "electrocardiogram"], "result": "Incomplete right bundle branch block without evidence of acute ischemic changes."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-112",
+    "diagnosis": "Vasovagal syncope",
+    "aliases": ["neurocardiogenic syncope", "vasovagal faint", "vasovagal attack", "common faint", "convulsive vasovagal syncope"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-112",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-112-p001"], "f002": ["agentclinic-medqa-ext-112-p001"], "f003": ["agentclinic-medqa-ext-112-p001"],
+      "f004": ["agentclinic-medqa-ext-112-p001"], "f005": ["agentclinic-medqa-ext-112-p001", "agentclinic-medqa-ext-112-p002"],
+      "f006": ["agentclinic-medqa-ext-112-p001", "agentclinic-medqa-ext-112-p003"], "f007": ["agentclinic-medqa-ext-112-p001"],
+      "f008": ["agentclinic-medqa-ext-112-p001", "agentclinic-medqa-ext-112-p004"], "f009": ["agentclinic-medqa-ext-112-p001"],
+      "f010": ["agentclinic-medqa-ext-112-p001"], "f011": ["agentclinic-medqa-ext-112-p001", "agentclinic-medqa-ext-112-p005"],
+      "f012": ["agentclinic-medqa-ext-112-p001", "agentclinic-medqa-ext-112-p006"], "f013": ["agentclinic-medqa-ext-112-p001", "agentclinic-medqa-ext-112-p006"],
+      "f014": ["agentclinic-medqa-ext-112-p006"], "f015": ["agentclinic-medqa-ext-112-p006"], "f016": ["agentclinic-medqa-ext-112-p006"],
+      "f017": ["agentclinic-medqa-ext-112-p007"], "f018": ["agentclinic-medqa-ext-112-p007"], "f019": ["agentclinic-medqa-ext-112-p007"],
+      "f020": ["agentclinic-medqa-ext-112-p007"], "f021": ["agentclinic-medqa-ext-112-p007"]
+    },
+    "quotes": {
+      "f002": "2 hours after experiencing an episode of loss of consciousness",
+      "f003": "She reports being seated and receiving a tattoo on her right upper flank",
+      "f004": "She regained consciousness within 30 seconds", "f005": "she began feeling diaphoretic", "f006": "feeling diaphoretic and pale",
+      "f007": "she fell to the floor", "f008": "exhibited jerky movements of her arms and legs", "f009": "for a few seconds",
+      "f010": "alert and fully oriented immediately after the episode", "f011": "No known history of serious illness.",
+      "f013": "reports experiencing higher levels of stress due to a recent concert tour", "f014": "No reported use of tobacco, alcohol, or illicit drugs."
+    },
+    "flags": {
+      "f006": ["The history says she began 'feeling ... pale' and the secondary symptoms list 'Pale appearance'; pallor is mostly an observer sign, but the source frames it as felt, so it is kept as her experience."],
+      "f021": ["'Denies ... seizures' is read as no seizure history; the jerky movements during the faint (f008) are the boyfriend's account and are kept separate."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "37°C (98.4°F)", "exam_ids": ["agentclinic-medqa-ext-112-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "120/72 mm Hg", "exam_ids": ["agentclinic-medqa-ext-112-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "68/min", "exam_ids": ["agentclinic-medqa-ext-112-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "16/min", "exam_ids": ["agentclinic-medqa-ext-112-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Cardiopulmonary_Examination", "source_text": "No abnormalities detected", "exam_ids": ["agentclinic-medqa-ext-112-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Neurologic_Examination", "source_text": "No focal neurological deficits identified", "exam_ids": ["agentclinic-medqa-ext-112-e006"]},
+      "x007": {"source": "Test_Results.ECG.Findings", "source_text": "Incomplete right bundle branch block without evidence of acute ischemic changes.", "exam_ids": ["agentclinic-medqa-ext-112-i001"]}
+    },
+    "finding_flags": {
+      "x001": ["Source gives 37°C as 98.4°F (37°C is 98.6°F); kept as given."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "Temperature 37°C is converted as 98.4°F (should be 98.6°F)."
+    ],
+    "notes": [
+      "The boyfriend's account (fall, jerky limb movements for a few seconds) is worded as what she was told (f007-f009).",
+      "Sweating and going pale are separate symptoms of the moments before she passed out (f005, f006); the 30-second recovery is the duration of the loss of consciousness (f004); the immediate full orientation is the absence of post-episode confusion (f010).",
+      "Events of the episode carry time 'resolved'; the review-of-systems denials are 'current'.",
+      "The source gives one neurological examination line and one cardiopulmonary line, so each is one record.",
+      "Gold aliases exclude 'reflex syncope', 'neurally mediated syncope' and 'fainting' (broader)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with a recent episode of loss of consciousness."
+    }
+  }
+}

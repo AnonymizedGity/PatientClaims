@@ -1,0 +1,93 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-006", "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 23, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "knee pain", "aliases": ["sore knee"], "text": "I have pain in my knee.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "knee pain: location", "parent": "f001", "attribute": "location", "text": "It's on the inner side of my shin bone, just below the kneecap.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "knee pain: onset", "parent": "f001", "attribute": "onset", "text": "It started yesterday.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f004", "item": "knee pain: course", "parent": "f001", "attribute": "course", "text": "It has been steadily getting worse.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f005", "item": "knee pain: possible cause", "parent": "f001", "attribute": "context", "text": "I think it might be from volleyball. I've been playing recently, and it involves a lot of repetitive pivoting and twisting.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f006", "item": "recent increase in physical activity", "aliases": ["exercise", "sports", "volleyball"], "text": "I recently joined a volleyball team, so I've been more physically active.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f007", "item": "trying to lose weight", "aliases": ["dieting", "weight loss attempt"], "text": "I've been trying to lose weight.", "polarity": "present", "category": "habit_exposure", "time": "current"},
+      {"id": "f008", "item": "trying to lose weight: medical advice", "parent": "f007", "attribute": "context", "text": "At my last physical exam, I was told that losing weight could be good for my health.", "polarity": "present", "category": "habit_exposure", "time": "historical"},
+      {"id": "f009", "item": "polycystic ovary syndrome", "aliases": ["PCOS", "polycystic ovarian syndrome"], "text": "I have polycystic ovary syndrome (PCOS).", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f010", "item": "birth control pill", "aliases": ["oral contraceptive pill", "the pill"], "text": "I take birth control pills to manage my PCOS.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f011", "item": "fever", "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f012", "item": "recent injury", "aliases": ["trauma"], "text": "I haven't had any recent injuries.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f013", "item": "knee swelling", "aliases": ["swollen knee"], "text": "My knee isn't swollen.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f014", "item": "knee discoloration", "aliases": ["bruising", "redness of the knee"], "text": "My knee isn't discolored.", "polarity": "absent", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f015", "item": "previous episodes of similar pain", "aliases": ["similar problems before"], "text": "I've never had anything like this before.", "polarity": "absent", "category": "medical_history", "time": "historical"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-006",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "98.5°F (36.9°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "137/88 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "90/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "12/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "O2 sat", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "general", "name": "general appearance", "aliases": ["general inspection", "appearance", "body habitus"], "result": "Obese, with facial hirsutism."},
+      {"id": "x007", "kind": "exam", "system": "musculoskeletal", "name": "knee examination", "aliases": ["lower extremity examination", "leg examination", "knee palpation", "knee range of motion"], "result": "Inspection: no visible abnormality, erythema or swelling; palpation: tenderness over the medial aspect of the tibia just below the patella; range of motion: full, without significant pain or limitation."},
+      {"id": "x008", "kind": "exam", "system": "musculoskeletal", "name": "knee ligament stability tests", "aliases": ["ligamentous instability tests", "Lachman test", "anterior drawer test", "posterior drawer test", "valgus stress test", "varus stress test"], "result": "Negative for ligamentous instability."},
+      {"id": "x009", "kind": "test", "name": "knee X-ray", "aliases": ["X-ray of the knee", "knee radiograph"], "result": "No fracture, dislocation or appreciable joint effusion."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-006",
+    "diagnosis": "Pes anserine bursitis",
+    "aliases": ["pes anserinus bursitis", "anserine bursitis", "goosefoot bursitis"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-006",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-006-p001"], "f002": ["cc"], "f003": ["agentclinic-medqa-ext-006-p001"],
+      "f004": ["agentclinic-medqa-ext-006-p001"], "f005": ["agentclinic-medqa-ext-006-p001"],
+      "f006": ["agentclinic-medqa-ext-006-p003", "agentclinic-medqa-ext-006-p005"], "f007": ["agentclinic-medqa-ext-006-p002"],
+      "f008": ["agentclinic-medqa-ext-006-p001"], "f009": ["agentclinic-medqa-ext-006-p004"], "f010": ["agentclinic-medqa-ext-006-p004"],
+      "f011": ["agentclinic-medqa-ext-006-p006"], "f012": ["agentclinic-medqa-ext-006-p006"], "f013": ["agentclinic-medqa-ext-006-p006"],
+      "f014": ["agentclinic-medqa-ext-006-p006"], "f015": ["agentclinic-medqa-ext-006-p006"]
+    },
+    "quotes": {
+      "f002": "over the medial aspect of the tibia just inferior to the patella", "f003": "started yesterday",
+      "f004": "has been steadily worsening", "f005": "recent participation in volleyball involving repetitive pivoting and twisting movements as a possible cause",
+      "f006": "Increased physical activity / Has recently joined a volleyball team", "f007": "Recent weight loss attempt",
+      "f008": "She was advised at her last physical exam that weight loss could be beneficial for her health",
+      "f010": "currently managed with oral contraceptive pills", "f012": "recent injuries",
+      "f013": "swelling or discoloration of the knee", "f014": "swelling or discoloration of the knee", "f015": "previous similar complaints"
+    },
+    "flags": {
+      "f012": ["The patient denies recent injuries but attributes the pain to repetitive pivoting and twisting in volleyball (f005); read as no discrete trauma, not a contradiction."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature", "source_text": "98.5°F (36.9°C)", "exam_ids": ["agentclinic-medqa-ext-006-e001"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure", "source_text": "137/88 mmHg", "exam_ids": ["agentclinic-medqa-ext-006-e002"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate", "source_text": "90/min", "exam_ids": ["agentclinic-medqa-ext-006-e003"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate", "source_text": "12/min", "exam_ids": ["agentclinic-medqa-ext-006-e004"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation", "source_text": "98% on room air", "exam_ids": ["agentclinic-medqa-ext-006-e005"]},
+      "x006": {"source": "Physical_Examination_Findings.Appearance", "source_text": "Obese, with facial hirsutism noted", "exam_ids": ["agentclinic-medqa-ext-006-e006"]},
+      "x007": {"source": "Physical_Examination_Findings.Lower_Extremity_Examination.Inspection + Physical_Examination_Findings.Lower_Extremity_Examination.Palpation + Physical_Examination_Findings.Lower_Extremity_Examination.Range_of_Motion", "source_text": "No visible abnormalities, erythema, or swelling. + Tenderness over the medial aspect of the tibia just inferior to the patella. + Full range of motion without significant pain or limitation.", "exam_ids": ["agentclinic-medqa-ext-006-e007", "agentclinic-medqa-ext-006-e008", "agentclinic-medqa-ext-006-e009"]},
+      "x008": {"source": "Physical_Examination_Findings.Lower_Extremity_Examination.Special_Tests", "source_text": "Negative for ligamentous instability tests.", "exam_ids": ["agentclinic-medqa-ext-006-e010"]},
+      "x009": {"source": "Test_Results.X-Ray_Knee.Findings", "source_text": "No fracture, dislocation, or appreciable joint effusion.", "exam_ids": ["agentclinic-medqa-ext-006-i001"]}
+    },
+    "leakage": [],
+    "source_issues": [
+      "Test_Results.MRI_Knee.Optional is commentary ('Can be considered if clinical suspicion persists ... not mandatory for diagnosis in this simulated case'), not a result.",
+      "The source does not say which knee is affected."
+    ],
+    "notes": [
+      "Volleyball appears three times (History as the suspected cause, 'Increased physical activity', 'Has recently joined a volleyball team'): the patient's attribution is a context child of the knee pain (f005); the activity itself is one habit fact (f006).",
+      "'Recent weight loss attempt' (f007) and the advice at her last physical (f008, child) are kept apart: one is what she does, the other why.",
+      "The knee inspection, palpation and range of motion form one knee-examination record; the unnamed ligamentous instability tests are one special-test record. Obesity and hirsutism stay in the general-appearance exam record and are not patient facts.",
+      "The MRI leaf is excluded (no result; the source calls the MRI optional)."
+    ],
+    "extras": {
+      "objective_for_doctor": "Assess and diagnose the patient presenting with knee pain following recent increased physical activity."
+    },
+    "excluded_exam_lines": [
+      {"id": "agentclinic-medqa-ext-006-i002", "reason": "MRI_Knee.Optional holds commentary that an MRI could be considered and is not mandatory; no MRI result exists, so the MRI is treated as not performed."}
+    ]
+  }
+}

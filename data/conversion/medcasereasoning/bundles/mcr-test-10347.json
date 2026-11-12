@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "mcr-test-10347",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 52, "sex": "female"},
+    "opening": ["f001", "f002"],
+    "facts": [
+      {"id": "f001", "item": "head feels swollen", "aliases": ["swollen head", "facial swelling", "swelling of the face", "puffy face"], "text": "My head feels swollen.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f002", "item": "throat swelling", "aliases": ["swollen throat", "throat tightness", "throat closing up"], "text": "My throat is beginning to swell.", "polarity": "present", "category": "symptom", "system": "ent", "time": "current"},
+      {"id": "f003", "item": "loss of vision in the right eye", "aliases": ["vision loss", "can't see", "blindness in one eye", "sudden vision loss", "blurred vision"], "text": "I've suddenly lost the vision in my right eye.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f004", "item": "recent urgent care visit for an eye problem", "aliases": ["conjunctivitis", "pink eye", "eye infection", "urgent care visit", "recent doctor visit"], "text": "Two days ago I went to an urgent care center, and they thought I had conjunctivitis.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f005", "item": "polymyxin", "aliases": ["antibiotic", "eye drops", "Polytrim", "polymyxin B"], "text": "They prescribed me polymyxin.", "polarity": "present", "category": "medication"},
+      {"id": "f006", "item": "EpiPen", "aliases": ["epinephrine", "adrenaline", "epinephrine auto-injector"], "text": "I used my EpiPen, but it didn't help.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f007", "item": "prednisone", "aliases": ["steroids", "steroid tablets", "corticosteroids"], "text": "I've been taking prednisone long-term.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f008", "item": "pulmonary fibrosis", "aliases": ["lung scarring", "lung disease", "interstitial lung disease"], "text": "I've been told I probably have pulmonary fibrosis (scarring of the lungs); that's why I take prednisone.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f009", "item": "obesity", "aliases": ["overweight", "weight problem"], "text": "I have obesity.", "polarity": "present", "category": "medical_history", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-10347",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "160/90 mmHg"},
+      {"id": "x002", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "120/min"},
+      {"id": "x003", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "36.8 °C"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate", "RR"], "result": "22/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "pulse oximetry"], "result": "100% on room air"},
+      {"id": "x006", "kind": "exam", "system": "ent", "name": "throat examination", "aliases": ["oropharynx", "mouth and throat", "airway examination", "oral examination"], "result": "Posterior oropharyngeal edema."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "extraocular movements", "aliases": ["eye movements", "ocular motility", "cranial nerves III, IV and VI"], "result": "Right-sided ophthalmoplegia."},
+      {"id": "x008", "kind": "exam", "system": "eye", "name": "pupillary examination", "aliases": ["pupils", "swinging flashlight test", "pupillary reflexes"], "result": "Relative afferent pupillary defects."},
+      {"id": "x009", "kind": "exam", "system": "eye", "name": "fundoscopy", "aliases": ["funduscopic examination", "fundus examination", "ophthalmoscopy", "retina"], "result": "Retinal pattern consistent with right central retinal artery occlusion."},
+      {"id": "x010", "kind": "exam", "system": "eye", "name": "eyelid and conjunctival examination", "aliases": ["periorbital examination", "eyelids", "conjunctiva", "chemosis", "periorbital swelling"], "result": "Severe bilateral periorbital swelling and chemosis.", "time": "over the next few hours"},
+      {"id": "x011", "kind": "exam", "system": "eye", "name": "repeat extraocular movements", "aliases": ["follow-up eye movements"], "result": "Bilateral cranial nerve III, IV and VI palsies.", "time": "over the next few hours"},
+      {"id": "x012", "kind": "test", "name": "blood gas, glucose and ketones", "aliases": ["blood glucose", "blood sugar", "ketones", "arterial blood gas", "venous blood gas", "pH", "bicarbonate", "anion gap"], "result": "Diabetic ketoacidosis."},
+      {"id": "x013", "kind": "test", "name": "kidney function", "aliases": ["creatinine", "BUN", "renal function", "metabolic panel"], "result": "Acute kidney injury."},
+      {"id": "x014", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "neutrophils"], "result": "White blood cell count 18,400 cells/μL with 96% neutrophils."},
+      {"id": "x015", "kind": "test", "name": "noncontrast CT of the orbits and sinuses", "aliases": ["CT orbits", "CT sinuses", "CT face", "orbital CT"], "result": "Right proptosis, right periorbital soft-tissue swelling, and mucosal thickening of all paranasal sinuses."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-10347",
+    "diagnosis": "Mucormycosis",
+    "aliases": ["rhino-orbital mucormycosis", "rhino-orbito-cerebral mucormycosis", "rhinocerebral mucormycosis", "Mucorales infection", "black fungus"],
+    "reasoning": "1. Conjunctivitis was initially considered — “was prescribed polymyxin for presumed conjunctivitis.” 2. Anaphylaxis was considered given the oropharyngeal edema and patient’s self‐report — “she believed she was having an allergic reaction; after using her EpiPen® without resolution, she came to the ED to be treated.” 3. Bacterial or viral sinusitis or orbital cellulitis would explain early periorbital swelling — “the initial symptoms of rhinocerebral mucormycosis are usually mistaken for bacterial or viral sinusitis or orbital cellulitis.” 4. Upper respiratory and maxillary odontogenic infections were in the early differential — “infections such as sinusitis, and facial or orbital cellulitis, as well as upper respiratory and maxillary odontogenic infections, would be included in the differential.” 5. Intracranial infections, mass lesions, and cavernous sinus thrombosis were considered with cranial neuropathies — “If neurologic findings are present, then one must consider intracranial infections, mass lesions and cavernous sinus thrombosis.” 6. Rhinocerebral mucormycosis emerged as most consistent with the rapid progression in an immunosuppressed, acidotic patient — “The diagnosis of invasive fungal rhino-orbito cerebral mucormycosis became only suspected with development of proptosis, chemosis, vision loss and bilateral ophthalmoplegia.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-10347",
+    "fact_sources": {
+      "f001": ["s002"], "f002": ["s002"], "f003": ["s006"], "f004": ["s001"], "f005": ["s001"], "f006": ["s003"],
+      "f007": ["s001"], "f008": ["s001"], "f009": ["s001"]
+    },
+    "quotes": {
+      "f001": "her head felt swollen", "f002": "her throat was beginning to swell", "f003": "acute vision loss in the right eye",
+      "f004": "initially presented to an urgent care center two days earlier for a presumed conjunctivitis", "f005": "was prescribed polymyxin",
+      "f006": "She self-administered her EpiPen® without improvement", "f007": "chronic prednisone use", "f008": "presumed pulmonary fibrosis"
+    },
+    "flags": {
+      "f003": ["Reported during the emergency evaluation (s006), i.e. within the index visit, so it is a fact."],
+      "f004": ["The eye symptoms that took her to urgent care are not described, so none are stated."],
+      "f005": ["The route of polymyxin (drops or ointment) and whether she is still using it are not stated."],
+      "f006": ["Why she has an EpiPen is not stated; no allergy fact is made."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "her blood pressure was 160/90 mm Hg"},
+      "x002": {"sentences": ["s004"], "source_text": "pulse 120 beats/min"},
+      "x003": {"sentences": ["s004"], "source_text": "temperature 36.8 °C"},
+      "x004": {"sentences": ["s004"], "source_text": "respiratory rate 22 breaths/min"},
+      "x005": {"sentences": ["s004"], "source_text": "oxygen saturation 100% on room air"},
+      "x006": {"sentences": ["s005"], "source_text": "Posterior oropharyngeal edema was noted."},
+      "x007": {"sentences": ["s008"], "source_text": "Extraocular motor testing initially showed right-sided ophthalmoplegia"},
+      "x008": {"sentences": ["s009"], "source_text": "Pupillary examination revealed relative afferent pupillary defects."},
+      "x009": {"sentences": ["s012"], "source_text": "Funduscopic examination revealed a retinal pattern consistent with right central retinal artery occlusion."},
+      "x010": {"sentences": ["s007"], "source_text": "Over the next few hours, she developed severe bilateral periorbital swelling and chemosis."},
+      "x011": {"sentences": ["s008"], "source_text": "progressed to bilateral cranial nerves III, IV, and VI palsies"},
+      "x012": {"sentences": ["s010"], "source_text": "diabetic ketoacidosis"},
+      "x013": {"sentences": ["s010"], "source_text": "acute kidney injury"},
+      "x014": {"sentences": ["s010"], "source_text": "a white blood cell count of 18,400 cells/μL with 96% neutrophils"},
+      "x015": {"sentences": ["s011"], "source_text": "Noncontrast CT of the orbits and sinuses demonstrated right proptosis, right periorbital soft-tissue swelling, and mucosal thickening of all paranasal sinuses."}
+    },
+    "finding_flags": {
+      "x009": ["The source gives only the interpretation ('a retinal pattern consistent with right central retinal artery occlusion'), with no description to fall back on, so it is kept."],
+      "x012": ["Diabetic ketoacidosis is reported without glucose, pH, bicarbonate or ketone values; the source's attribution to chronic steroid use is dropped as interpretation."],
+      "x013": ["Acute kidney injury is reported without creatinine values."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "s010: diabetic ketoacidosis is 'attributed to chronic steroid use' with no prior diabetes reported and no laboratory values.",
+      "s009: 'relative afferent pupillary defects' (plural) does not say which eye or both.",
+      "s001: the polymyxin route is not given."
+    ],
+    "notes": [
+      "Index visit: the emergency department presentation with a swollen-feeling head and throat (s002-s006), two days after an urgent care visit for presumed conjunctivitis (s001), which is history.",
+      "s003: her own EpiPen use before arrival is a fact (f006); 'was treated for possible anaphylaxis without benefit' is treatment during the visit and is not used.",
+      "s006: the transfer for ophthalmologic assessment is process; the vision loss she reported is fact f003.",
+      "s007 and s008: the periorbital swelling, chemosis and the spread of ophthalmoplegia to bilateral cranial nerve III, IV and VI palsies over the next hours are kept as examination findings with time (x010, x011), not as patient facts.",
+      "s010: 'attributed to chronic steroid use' is clinician interpretation and is dropped from x012."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

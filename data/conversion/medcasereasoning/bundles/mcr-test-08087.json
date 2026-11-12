@@ -1,0 +1,130 @@
+{
+  "patient": {
+    "case_id": "mcr-test-08087",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 46, "sex": "female"},
+    "opening": ["f001", "f002", "f004"],
+    "facts": [
+      {"id": "f001", "item": "eye pain", "aliases": ["sore eye", "painful eye", "ocular pain"], "text": "My left eye hurts.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f002", "item": "sensitivity to light", "aliases": ["photophobia", "light hurts my eyes"], "text": "My left eye is extremely sensitive to light.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f003", "item": "red eye", "aliases": ["eye redness", "bloodshot eye", "hyperemia"], "text": "My left eye is a little red.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f004", "item": "decreased vision", "aliases": ["blurred vision", "vision loss", "poor vision", "can't see well"], "text": "The vision in my left eye has got worse.", "polarity": "present", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f005", "item": "when the current eye symptoms began", "text": "They started three weeks after I finished the week of eye drops for the infection.", "polarity": "present", "category": "symptom", "system": "eye"},
+      {"id": "f006", "item": "previous eye infection", "aliases": ["conjunctivitis", "pink eye", "bacterial conjunctivitis", "eye discharge", "pus from the eyes"], "text": "A month ago my left eye suddenly became red and uncomfortable with pus coming out, and four days later my right eye did the same. I was told it was bacterial conjunctivitis in both eyes.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f007", "item": "moxifloxacin–dexamethasone eye drops", "aliases": ["antibiotic eye drops", "moxifloxacin", "dexamethasone eye drops", "eye drops for the infection"], "text": "For that infection I used moxifloxacin 0.5%/dexamethasone 0.1% eye drops every 2 hours for one week.", "polarity": "present", "category": "medication", "time": "historical"},
+      {"id": "f008", "item": "previous diagnosis of uveitis", "aliases": ["uveitis", "eye inflammation", "high eye pressure", "raised intraocular pressure"], "text": "When the pain and vision problems started, I was told my eye pressure was high and that I probably had autoimmune uveitis with high pressure in both eyes.", "polarity": "present", "category": "medical_history"},
+      {"id": "f009", "item": "prednisolone eye drops", "aliases": ["prednisolone acetate", "steroid eye drops", "Pred Forte"], "text": "I was given prednisolone acetate 1% eye drops every 2 hours.", "polarity": "present", "category": "medication"},
+      {"id": "f010", "item": "atropine eye drops", "aliases": ["atropine", "dilating drops"], "text": "I was given atropine 1% eye drops twice a day.", "polarity": "present", "category": "medication"},
+      {"id": "f011", "item": "eye-pressure drops", "aliases": ["carbonic anhydrase inhibitor drops", "beta-blocker eye drops", "dorzolamide–timolol", "glaucoma drops"], "text": "I was given eye drops to lower the pressure, a carbonic anhydrase inhibitor with a beta-blocker.", "polarity": "present", "category": "medication"},
+      {"id": "f012", "item": "oral steroids", "aliases": ["steroid tablets", "prednisone", "prednisolone tablets"], "text": "I was given steroid tablets, 1 mg/kg a day, tapered over 3 weeks.", "polarity": "present", "category": "medication"},
+      {"id": "f013", "item": "response to the uveitis treatment", "aliases": ["did the treatment help", "treatment response"], "text": "None of that treatment made it any better.", "polarity": "present", "category": "medication"},
+      {"id": "f014", "item": "current glaucoma treatment", "aliases": ["eye pressure treatment", "glaucoma medicines", "pressure-lowering tablets"], "text": "I'm still on eye drops and tablets to bring the eye pressure down.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f015", "item": "chronic medical problems", "aliases": ["medical history", "general health"], "text": "Apart from my eyes, I'm healthy.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f016", "item": "ethnic background", "aliases": ["ethnicity", "ancestry", "where my family is from"], "text": "I'm of Turkish ancestry.", "polarity": "present", "category": "social_background"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-08087",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "eye", "name": "visual acuity", "aliases": ["vision test", "eye chart", "best-corrected visual acuity"], "result": "Best-corrected: 20/25 right eye, 20/200 left eye."},
+      {"id": "x002", "kind": "exam", "system": "eye", "name": "color vision", "aliases": ["colour vision", "Ishihara plates"], "result": "Intact."},
+      {"id": "x003", "kind": "exam", "system": "eye", "name": "slit-lamp examination", "aliases": ["slit lamp", "anterior segment examination", "anterior chamber", "cornea"], "result": "Both eyes: severe pigment dispersion in the anterior chamber; diffuse iris transillumination defects; no keratic precipitates; no anterior chamber cells."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "pupil examination", "aliases": ["pupils", "pupillary reflexes", "light reflex"], "result": "Mydriatic, atonic pupils in both eyes."},
+      {"id": "x005", "kind": "exam", "system": "eye", "name": "corneal sensation", "aliases": ["corneal reflex", "corneal sensitivity"], "result": "Normal."},
+      {"id": "x006", "kind": "exam", "system": "eye", "name": "gonioscopy", "aliases": ["angle examination", "anterior chamber angle"], "result": "Wide-open angles with heavy trabecular meshwork pigmentation; no peripheral anterior synechiae."},
+      {"id": "x007", "kind": "exam", "system": "eye", "name": "intraocular pressure", "aliases": ["IOP", "eye pressure", "tonometry"], "result": "30 mm Hg right eye, 45 mm Hg left eye, despite ongoing topical and oral antiglaucoma therapy."},
+      {"id": "x008", "kind": "exam", "system": "eye", "name": "intraocular pressure at the earlier visit", "aliases": ["previous IOP", "earlier eye pressure"], "result": "Elevated.", "time": "before referral, when the eye pain and vision loss began"},
+      {"id": "x009", "kind": "exam", "system": "eye", "name": "fundus examination", "aliases": ["fundoscopy", "ophthalmoscopy", "optic disc", "retina", "dilated fundus exam"], "result": "Tilted discs with increased cup-to-disc ratios in both eyes; left eye: optic disc edema and peripapillary retinal hemorrhages."},
+      {"id": "x010", "kind": "test", "name": "optical coherence tomography", "aliases": ["OCT", "OCT of the optic nerve"], "result": "Confirms the left optic disc edema and peripapillary retinal hemorrhages, suggestive of nonarteritic anterior ischemic optic neuropathy."},
+      {"id": "x011", "kind": "test", "name": "B-scan ultrasonography of the eye", "aliases": ["B-scan", "ocular ultrasound", "high-frequency B-scan ultrasonography"], "result": "Confirms the left optic disc edema and peripapillary retinal hemorrhages, suggestive of nonarteritic anterior ischemic optic neuropathy."},
+      {"id": "x012", "kind": "test", "name": "fluorescein angiography", "aliases": ["FA", "fundus fluorescein angiography"], "result": "No signs of inflammation."},
+      {"id": "x013", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "11 mm/h"},
+      {"id": "x015", "kind": "test", "name": "syphilis serology", "aliases": ["VDRL", "FTA-ABS", "RPR", "treponemal test"], "result": "VDRL negative; FTA-ABS negative."},
+      {"id": "x016", "kind": "test", "name": "viral serology", "aliases": ["herpes simplex virus serology", "HSV serology", "cytomegalovirus serology", "CMV serology"], "result": "Herpes simplex virus negative; cytomegalovirus negative."},
+      {"id": "x017", "kind": "test", "name": "QuantiFERON-TB Gold", "aliases": ["interferon-gamma release assay", "IGRA", "TB test", "tuberculosis test"], "result": "Negative."},
+      {"id": "x018", "kind": "test", "name": "homocysteine", "aliases": ["serum homocysteine"], "result": "Negative."},
+      {"id": "x019", "kind": "test", "name": "autoimmune and antiphospholipid serology", "aliases": ["ANA", "antinuclear antibody", "anticardiolipin antibody", "lupus anticoagulant", "antiphospholipid antibodies", "autoimmune serology"], "result": "Antinuclear antibody negative; anticardiolipin antibody negative; lupus anticoagulant negative."},
+      {"id": "x020", "kind": "test", "name": "HLA-B27", "aliases": ["HLA-B27 typing"], "result": "Negative."},
+      {"id": "x021", "kind": "test", "name": "MRI of the brain and orbits", "aliases": ["brain MRI", "orbital MRI", "MRI head", "MRI orbits"], "result": "Unremarkable."},
+      {"id": "x022", "kind": "test", "name": "chest MRI", "aliases": ["MRI chest"], "result": "Unremarkable."},
+      {"id": "x023", "kind": "test", "name": "magnetic resonance angiography", "aliases": ["MRA", "MR angiography"], "result": "Unremarkable."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-08087",
+    "diagnosis": "Bilateral acute iris transillumination syndrome",
+    "aliases": ["BAIT", "BAIT syndrome", "bilateral acute iris transillumination", "moxifloxacin-associated bilateral acute iris transillumination"],
+    "reasoning": "1. Pigment dispersion syndrome — “pigment dispersion syndrome, in which iris depigmentation is less diffuse, and usually has a radial shape on iris midi periphery” 2. Pseudoexfoliation syndrome — “pseudoexfoliation syndrome, in which the depigmentation is usually peri-pupillary, and associated with microfibrillar deposits” 3. Viral iridocyclitis — “viral iridocyclitis, which usually does not show bilateral involvement, and is also associated with inflammatory signs – absent in BAIT – although some physicians may confuse the dispersed pigment in the anterior chamber as Tyndall effect, and treat patients with BAIT syndrome as anterior uveitis” 4. Vogt–Koyanagi–Harada disease — “The absence of various ocular and systemic signs and symptoms also helps exclude other diseases like Vogt-Koyanagi-Harada.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-08087",
+    "fact_sources": {
+      "f001": ["s001", "s004"], "f002": ["s004"], "f003": ["s004"], "f004": ["s001", "s004"], "f005": ["s004"], "f006": ["s002", "s003"],
+      "f007": ["s003"], "f008": ["s004", "s005"], "f009": ["s005"], "f010": ["s005"], "f011": ["s005"], "f012": ["s005"],
+      "f013": ["s005"], "f014": ["s009"], "f015": ["s001"], "f016": ["s001"]
+    },
+    "quotes": {
+      "f002": "severe photophobia", "f003": "mild hyperemia", "f004": "decreased vision in OS",
+      "f005": "Three weeks after completing that course", "f006": "acute redness, purulent discharge, and discomfort in the left eye (OS), with the right eye (OD) affected four days later",
+      "f007": "topical moxifloxacin 0.5%/dexamethasone 0.1% every 2 hours for one week", "f008": "presumed autoimmune hypertensive uveitis in both eyes",
+      "f009": "topical prednisolone acetate 1% every 2 hours", "f010": "atropine 1% twice daily", "f011": "a topical carbonic anhydrase inhibitor/β-blocker",
+      "f012": "oral steroids (1 mg/kg/day, tapered over 3 weeks)", "f013": "with no improvement", "f014": "ongoing topical and oral antiglaucomatous therapy",
+      "f015": "healthy woman", "f016": "Turkish ancestry"
+    },
+    "flags": {
+      "f001": ["s004 'ocular pain, severe photophobia, mild hyperemia, and decreased vision in OS': 'in OS' is read as applying to the whole list; the source may mean only the vision loss is left-sided."],
+      "f008": ["The uveitis was a presumed diagnosis given to the patient; the elevated pressure at that visit is also finding x008."],
+      "f009": ["Whether the uveitis drugs (f009-f012) are still being taken is not stated; no time given."],
+      "f014": ["The oral antiglaucoma drug is not named."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s006"], "source_text": "best-corrected visual acuity was 20/25 OD and 20/200 OS"},
+      "x002": {"sentences": ["s006"], "source_text": "with intact color vision"},
+      "x003": {"sentences": ["s007", "s008"], "source_text": "Slit-lamp examination revealed severe pigment dispersion in the anterior chamber, diffuse iris transillumination defects / There were no keratic precipitates or anterior chamber cells"},
+      "x004": {"sentences": ["s007"], "source_text": "mydriatic atonic pupils in both eyes"},
+      "x005": {"sentences": ["s008"], "source_text": "corneal sensation was normal"},
+      "x006": {"sentences": ["s008"], "source_text": "Gonioscopy showed wide-open angles with heavy trabecular meshwork pigmentation and no peripheral anterior synechiae."},
+      "x007": {"sentences": ["s009"], "source_text": "Despite ongoing topical and oral antiglaucomatous therapy, IOP was 30 mm Hg OD and 45 mm Hg OS."},
+      "x008": {"sentences": ["s004"], "source_text": "intraocular pressure (IOP) was elevated"},
+      "x009": {"sentences": ["s010", "s011"], "source_text": "Fundus examination showed tilted discs with increased cup-to-disc ratios in both eyes. / In OS, there was optic disc edema and peripapillary retinal hemorrhages"},
+      "x010": {"sentences": ["s011"], "source_text": "optic disc edema and peripapillary retinal hemorrhages suggestive of nonarteritic anterior ischemic optic neuropathy, findings confirmed by optical coherence tomography"},
+      "x011": {"sentences": ["s011"], "source_text": "optic disc edema and peripapillary retinal hemorrhages suggestive of nonarteritic anterior ischemic optic neuropathy / high-frequency B-scan ultrasonography"},
+      "x012": {"sentences": ["s012"], "source_text": "Fluorescein angiography showed no signs of inflammation."},
+      "x013": {"sentences": ["s013"], "source_text": "complete blood count / were all negative"},
+      "x014": {"sentences": ["s013"], "source_text": "erythrocyte sedimentation rate (11 mm/h)"},
+      "x015": {"sentences": ["s013"], "source_text": "VDRL, FTA-ABS / were all negative"},
+      "x016": {"sentences": ["s013"], "source_text": "herpes simplex virus and cytomegalovirus serologies / were all negative"},
+      "x017": {"sentences": ["s013"], "source_text": "QuantiFERON-TB Gold / were all negative"},
+      "x018": {"sentences": ["s013"], "source_text": "homocysteine / were all negative"},
+      "x019": {"sentences": ["s013"], "source_text": "anticardiolipin antibody, lupus anticoagulant, antinuclear antibody / were all negative"},
+      "x020": {"sentences": ["s013"], "source_text": "HLA-B27 testing were all negative"},
+      "x021": {"sentences": ["s014"], "source_text": "Chest, orbital, and brain MRI and magnetic resonance angiography were unremarkable."},
+      "x022": {"sentences": ["s014"], "source_text": "Chest, orbital, and brain MRI and magnetic resonance angiography were unremarkable."},
+      "x023": {"sentences": ["s014"], "source_text": "Chest, orbital, and brain MRI and magnetic resonance angiography were unremarkable."}
+    },
+    "finding_flags": {
+      "x008": ["No value; only 'elevated'."],
+      "x009": ["The examiner's interpretation 'suggestive of nonarteritic anterior ischemic optic neuropathy' is dropped from the bedside fundus examination and kept in the OCT and B-scan reports that confirmed it."],
+      "x013": ["The source lists the complete blood count among tests that 'were all negative'; probably means normal."],
+      "x018": ["The source lists homocysteine among tests that 'were all negative'; probably means not elevated."],
+      "x014": ["The ESR (11 mm/h) is also listed among tests that 'were all negative'."]
+    },
+    "leakage": [
+      {"id": "x003", "reason": "The slit-lamp result names the sign 'iris transillumination defects' that gives the gold diagnosis its name; it is the examination finding itself, so it is kept."}
+    ],
+    "source_issues": [
+      "Timeline: the conjunctivitis was 'one month earlier', yet a one-week drop course, three weeks until new symptoms and a 3-week oral steroid taper all followed before the referral.",
+      "s004: it is unclear whether 'in OS' applies to the pain, photophobia and redness or only to the decreased vision.",
+      "s013: the complete blood count, ESR and homocysteine are reported as 'negative'."
+    ],
+    "notes": [
+      "Index visit: the referral visit at the eye clinic for persistent ocular symptoms (s001, s006-s014). The conjunctivitis, its moxifloxacin/dexamethasone treatment, the later symptoms, the presumed uveitis and its failed treatment (s002-s005) are history before the index visit and are patient facts.",
+      "s005: the treatments for the presumed uveitis were given before the referral, so they are medication facts (f009-f012) with a failed response (f013), not excluded treatment.",
+      "s009: the ongoing antiglaucoma therapy is a medication fact (f014); the pressures are finding x007.",
+      "s013: the laboratory panel is split into one record per orderable test or standard group."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

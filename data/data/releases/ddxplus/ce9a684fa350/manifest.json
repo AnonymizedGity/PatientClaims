@@ -1,0 +1,21 @@
+{
+  "dataset": "ddxplus",
+  "schema": "case_schema v1 (data/conversion/case_schema.md)",
+  "world": "closed",
+  "catalogue": "ddxplus_catalogue.json",
+  "open_world_items": [
+    "E_209",
+    "E_150"
+  ],
+  "cases": 3875,
+  "source": "DDXPlus v2 English test split (CC-BY 4.0): the frozen pool of 3,875 adult, deduplicated rows (data/conversion/pools/ddxplus/manifest.json). case_id = the pool's id.",
+  "notes": "Patient facts are the recorded positives (and explicit negatives of a present symptom's attributes); every other catalogue item resolves through the catalogue (default 'No' with absent_text, answered_by, open-world items, or not applicable when its parent is absent or, for items with `applies_to`, for the other sex). No objective findings: environment findings are empty.",
+  "stats": {
+    "cases": 3875,
+    "facts": 56749,
+    "child_facts": 25821,
+    "absent_facts": 3781,
+    "cases_with_answered_by": 2141,
+    "answered_by_entries": 3953
+  }
+}

@@ -1,0 +1,53 @@
+{
+ "case_id": "medqa-cs-020",
+ "seed": 1,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "216669d727b9",
+  "opening": [
+   "I have a cough.",
+   "It started a week ago.",
+   "I have chest pain.",
+   "I believe I've had a slight fever, although I didn't check my temperature.",
+   "I smoke.",
+   "I drink quite a bit on weekends.",
+   "Every Saturday night, I pick up a new girl from the nightclub."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've had a cough for about a week, and I've been getting some chest pain. I think I've had a slight fever, though I didn't actually check my temperature. I do smoke, and I drink quite a bit on weekends. Also, every Saturday night I pick up a new girl from the nightclub.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f005",
+    "f013",
+    "f043",
+    "f036",
+    "f046"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 4223,
+   "tokens_out": 77,
+   "seconds": 9.51,
+   "redrafts": 0
+  }
+ }
+}

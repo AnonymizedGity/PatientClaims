@@ -1,0 +1,108 @@
+{
+  "patient": {
+    "case_id": "mcr-test-10995",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 63, "sex": "female"},
+    "opening": ["f004", "f005", "f006", "f007"],
+    "facts": [
+      {"id": "f001", "item": "knee replacement", "aliases": ["knee surgery", "knee operation", "total knee arthroplasty", "recent surgery"], "text": "I had my left knee replaced and went home from hospital about 15 days ago.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f002", "item": "enoxaparin", "aliases": ["Lovenox", "Clexane", "blood thinner injections", "low-molecular-weight heparin"], "text": "When I went home after the knee operation I was put on enoxaparin injections, 40 mg under the skin once a day, to prevent blood clots.", "polarity": "present", "category": "medication", "time": "current"},
+      {"id": "f003", "item": "planned platelet checks", "aliases": ["platelet monitoring", "blood count checks", "blood tests after surgery"], "text": "No blood tests to check my platelets were planned after I went home.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f004", "item": "fever", "aliases": ["temperature", "high temperature"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f005", "item": "headache", "aliases": ["head pain"], "text": "I've had a headache.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f006", "item": "weakness on the right side", "aliases": ["right-sided weakness", "one-sided weakness", "hemiparesis"], "text": "My right side suddenly became weak.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f007", "item": "episode of altered consciousness", "aliases": ["blackout", "spell", "altered awareness", "passing out"], "text": "I had one episode, lasting about 2 minutes, when I wasn't fully conscious.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f008", "item": "shaking of the right leg and belly", "aliases": ["tremors", "twitching", "jerking"], "text": "During that episode my right leg and my belly were shaking.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f009", "item": "pain in the upper right abdomen", "aliases": ["right upper quadrant pain", "abdominal pain", "belly pain", "liver pain"], "text": "I have pain in the upper right part of my belly.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f010", "item": "high blood pressure", "aliases": ["hypertension"], "text": "I don't have high blood pressure.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f011", "item": "diabetes", "aliases": ["high blood sugar"], "text": "I don't have diabetes.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f012", "item": "high cholesterol", "aliases": ["hyperlipidemia", "raised lipids"], "text": "I don't have high cholesterol.", "polarity": "absent", "category": "medical_history"},
+      {"id": "f013", "item": "smoking", "aliases": ["tobacco", "cigarettes"], "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure"},
+      {"id": "f014", "item": "estrogen use", "aliases": ["hormone replacement therapy", "HRT", "hormone pills", "oestrogen"], "text": "I don't take any estrogen.", "polarity": "absent", "category": "medication"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-10995",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "39.5 °C"},
+      {"id": "x002", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "liver", "spleen"], "result": "Right upper quadrant pain, without hepatosplenomegaly."},
+      {"id": "x003", "kind": "exam", "system": "skin", "name": "skin and mucosal examination", "aliases": ["skin", "mucous membranes", "bleeding signs", "bruising"], "result": "No mucocutaneous bleeding."},
+      {"id": "x004", "kind": "test", "name": "noncontrast head CT", "aliases": ["head CT", "CT brain", "CT head"], "result": "Unremarkable."},
+      {"id": "x005", "kind": "test", "name": "brain MRI", "aliases": ["MRI brain", "MRI head"], "result": "Acute infarct in the left precentral and postcentral gyri; subacute infarct in the right parietal lobe."},
+      {"id": "x006", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "hemoglobin", "platelet count", "platelets"], "result": "Hemoglobin 10.6 g/dL; platelet count 43 000 × 10^9/L."},
+      {"id": "x007", "kind": "test", "name": "D-dimer", "aliases": ["D dimer"], "result": "34 800 ng/L"},
+      {"id": "x008", "kind": "test", "name": "other laboratory studies", "aliases": ["routine blood tests", "other blood tests", "routine labs"], "result": "Within normal limits."},
+      {"id": "x009", "kind": "test", "name": "electrocardiogram", "aliases": ["ECG", "EKG"], "result": "Sinus rhythm."},
+      {"id": "x010", "kind": "test", "name": "echocardiography", "aliases": ["echocardiogram", "echo", "cardiac ultrasound"], "result": "Nondilated left atrium; normal ejection fraction (65%); no intracardiac thrombus."},
+      {"id": "x011", "kind": "test", "name": "carotid duplex ultrasound", "aliases": ["carotid ultrasound", "carotid Doppler", "supra-aortic trunk ultrasound"], "result": "Normal."},
+      {"id": "x012", "kind": "test", "name": "CT pulmonary angiography", "aliases": ["CTPA", "CT chest angiogram", "CT pulmonary angiogram"], "result": "Pulmonary emboli in the left main and segmental arteries."},
+      {"id": "x013", "kind": "test", "name": "abdominal CT", "aliases": ["CT abdomen", "CT of the abdomen"], "result": "Filling defects in branches of the right suprahepatic vein."},
+      {"id": "x014", "kind": "test", "name": "venous ultrasound of the left leg", "aliases": ["leg Doppler", "lower limb venous Doppler", "DVT ultrasound", "venous duplex"], "result": "Nonacute thrombosis of the superficial femoral and popliteal veins."},
+      {"id": "x015", "kind": "test", "name": "repeat platelet count in citrated blood", "aliases": ["citrate platelet count", "repeat platelet count", "platelet count in citrate tube"], "result": "Confirmed thrombocytopenia.", "time": "repeat count after the initial result"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-10995",
+    "diagnosis": "Heparin-induced thrombocytopenia",
+    "aliases": ["HIT", "HIT type II", "type II heparin-induced thrombocytopenia", "heparin-induced thrombocytopenia with thrombosis", "HITT", "heparin-induced thrombocytopenia and thrombosis", "enoxaparin-induced thrombocytopenia", "low-molecular-weight heparin-induced thrombocytopenia"],
+    "reasoning": "1. Carotid atherosclerotic disease was ruled out because “the ultrasound of the supra-aortic trunks was also normal.” 2. Pseudothrombocytopenia, splenomegaly, and autoimmune thrombocytopenia were excluded, as supported by “the clinical suspicion of a HIT diagnosis was supported by… the exclusion of a thrombocytopenia due to splenomegaly, pseudothrombocytopenia, and autoimmune thrombocytopenia.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-10995",
+    "fact_sources": {
+      "f001": ["s001", "s002"], "f002": ["s001"], "f003": ["s001"], "f004": ["s002"], "f005": ["s002"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s007"], "f010": ["s006"], "f011": ["s006"], "f012": ["s006"],
+      "f013": ["s006"], "f014": ["s006"]
+    },
+    "quotes": {
+      "f001": "Fifteen days later she presented", "f002": "discharged on enoxaparin 40 mg subcutaneously once daily for thromboprophylaxis",
+      "f003": "without planned platelet monitoring", "f006": "acute right-sided weakness",
+      "f007": "a 2-minute episode of altered consciousness", "f008": "focal tremors in her right leg and abdomen",
+      "f009": "Physical examination noted right upper quadrant pain"
+    },
+    "flags": {
+      "f001": ["'Fifteen days later' may count from the operation or from discharge; the text keeps both events together without fixing which."],
+      "f002":["The source says she was discharged on enoxaparin; that she was still taking it 15 days later is assumed (time current)."],
+      "f007": ["A patient may not remember an episode of altered consciousness herself; written as what she knows about the episode."],
+      "f009": ["Taken from the physical examination (s007); pain is something the patient feels."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s002"], "source_text": "fever (39.5 °C)"},
+      "x002": {"sentences": ["s007"], "source_text": "Physical examination noted right upper quadrant pain without hepatosplenomegaly"},
+      "x003": {"sentences": ["s007"], "source_text": "without hepatosplenomegaly or mucocutaneous bleeding"},
+      "x004": {"sentences": ["s003"], "source_text": "Noncontrast head CT was unremarkable."},
+      "x005": {"sentences": ["s004"], "source_text": "Brain MRI showed an acute infarct in the left precentral and postcentral gyri and a subacute infarct in the right parietal lobe."},
+      "x006": {"sentences": ["s005"], "source_text": "hemoglobin 10.6 g/dL, platelet count 43 000 × 10^9/L"},
+      "x007": {"sentences": ["s005"], "source_text": "D-dimer 34 800 ηg/L"},
+      "x008": {"sentences": ["s005"], "source_text": "other values were within normal limits"},
+      "x009": {"sentences": ["s008"], "source_text": "ECG demonstrated sinus rhythm"},
+      "x010": {"sentences": ["s008"], "source_text": "echocardiography showed a nondilated left atrium with a normal ejection fraction (65%), excluding atrial fibrillation or intracardiac thrombus"},
+      "x011": {"sentences": ["s009"], "source_text": "Carotid duplex ultrasound was normal."},
+      "x012": {"sentences": ["s009"], "source_text": "CT pulmonary angiography revealed pulmonary emboli in the left main and segmental arteries."},
+      "x013": {"sentences": ["s010"], "source_text": "Abdominal CT identified filling defects in branches of the right suprahepatic vein."},
+      "x014": {"sentences": ["s011"], "source_text": "Venous ultrasound of the left leg showed nonacute thrombosis of the superficial femoral and popliteal veins."},
+      "x015": {"sentences": ["s012"], "source_text": "A repeat platelet count using citrate-anticoagulated blood confirmed thrombocytopenia."}
+    },
+    "finding_flags": {
+      "x007": ["Unit corrected from the source's 'ηg/L' (typo) to ng/L."],
+      "x008": ["The source says only 'other values were within normal limits' without naming the tests; kept as one generic record."],
+      "x010": ["The source's 'excluding atrial fibrillation' is the clinician's inference from ECG and echo together; the echo result keeps the report findings (no intracardiac thrombus) and the rhythm is in the ECG record."]
+    },
+    "leakage": [
+      {"fact_id": "f002", "reason": "Only the alias 'low-molecular-weight heparin' contains 'heparin'; it names the drug class the patient takes, so the controller can match questions about heparin."},
+      {"id": "x015", "reason": "The repeat citrate platelet count reports 'thrombocytopenia', part of the gold name; this is the test's answer."}
+    ],
+    "source_issues": [
+      "Platelet count '43 000 × 10^9/L' mixes units (43 × 10^9/L or 43 000/µL intended); kept as written.",
+      "D-dimer unit written 'ηg/L' (Greek eta), an obvious typo for ng/L.",
+      "Focal tremors 'in her right leg and abdomen' is unusual wording; kept."
+    ],
+    "notes": [
+      "Index visit: the emergency presentation 15 days after left knee replacement with fever, headache, acute right-sided weakness and a 2-minute episode of altered consciousness (s002); the imaging, laboratory tests and ultrasounds (s003-s012) are the workup of this presentation.",
+      "The knee replacement and enoxaparin prophylaxis (s001) are history before the index visit.",
+      "Mucocutaneous bleeding and hepatosplenomegaly are examination negatives and stay in the findings only."
+    ],
+    "extras": {},
+    "excluded_sentences": []
+  }
+}

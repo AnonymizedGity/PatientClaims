@@ -1,0 +1,105 @@
+{
+  "patient": {
+    "case_id": "agentclinic-medqa-ext-010",
+    "dataset": "agentclinic_medqa_extended",
+    "demographics": {"age": 24, "sex": "female"},
+    "opening": ["f001"],
+    "facts": [
+      {"id": "f001", "item": "lower belly tenderness", "aliases": ["uterine tenderness", "tender womb", "sore uterus"], "text": "My lower belly feels tender.", "polarity": "present", "category": "symptom", "system": "reproductive", "time": "current"},
+      {"id": "f002", "item": "recent childbirth", "aliases": ["delivery", "having a baby", "postpartum"], "text": "I recently gave birth vaginally, at 40 weeks.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f003", "item": "recent childbirth: baby's size", "parent": "f002", "attribute": "other", "text": "My baby boy weighed 11 pounds.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f004", "item": "recent childbirth: long labor", "parent": "f002", "attribute": "duration", "aliases": ["prolonged labor"], "text": "My labor went on for a long time.", "polarity": "present", "category": "medical_history", "time": "historical"},
+      {"id": "f005", "item": "complications during pregnancy", "aliases": ["pregnancy problems"], "text": "My pregnancy was uncomplicated.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f006", "item": "frequent urination", "aliases": ["urinary frequency", "peeing more often"], "text": "I've been peeing more often than usual.", "polarity": "present", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f007", "item": "fever", "aliases": ["high temperature"], "text": "I've had a fever.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "difficulty breathing", "aliases": ["shortness of breath", "breathlessness"], "text": "I'm having a little difficulty breathing.", "polarity": "present", "category": "symptom", "system": "respiratory", "time": "current"},
+      {"id": "f009", "item": "pain when urinating", "aliases": ["dysuria", "burning when peeing"], "text": "It doesn't hurt when I pee.", "polarity": "absent", "category": "symptom", "system": "genitourinary", "time": "current"},
+      {"id": "f010", "item": "headache", "text": "I don't have a headache.", "polarity": "absent", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f011", "item": "vomiting", "aliases": ["throwing up"], "text": "I haven't vomited.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f012", "item": "diarrhea", "aliases": ["loose stools"], "text": "I don't have diarrhea.", "polarity": "absent", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f013", "item": "chronic medical problems", "aliases": ["past medical history"], "text": "I don't have any significant medical problems.", "polarity": "absent", "category": "medical_history", "time": "current"},
+      {"id": "f014", "item": "previous surgeries", "aliases": ["operations"], "text": "I haven't had any significant surgeries.", "polarity": "absent", "category": "medical_history", "time": "historical"},
+      {"id": "f015", "item": "smoking", "text": "I don't smoke.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f016", "item": "alcohol", "aliases": ["drinking"], "text": "I don't drink alcohol.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f017", "item": "recreational drug use", "aliases": ["illicit drugs", "street drugs"], "text": "I don't use any illicit drugs.", "polarity": "absent", "category": "habit_exposure", "time": "current"},
+      {"id": "f018", "item": "living situation", "aliases": ["who I live with", "partner"], "text": "I live with my partner.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "agentclinic-medqa-ext-010",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "result": "102°F (38.9°C)"},
+      {"id": "x002", "kind": "vital", "name": "blood pressure", "aliases": ["BP"], "result": "118/78 mm Hg"},
+      {"id": "x003", "kind": "vital", "name": "heart rate", "aliases": ["pulse", "HR"], "result": "111/min"},
+      {"id": "x004", "kind": "vital", "name": "respiratory rate", "aliases": ["breathing rate"], "result": "17/min"},
+      {"id": "x005", "kind": "vital", "name": "oxygen saturation", "aliases": ["SpO2", "O2 sat", "pulse oximetry"], "result": "98% on room air"},
+      {"id": "x006", "kind": "exam", "system": "gastrointestinal", "name": "abdominal examination", "aliases": ["abdomen", "abdominal palpation", "uterine palpation", "fundal tenderness"], "result": "Inspection: non-distended; auscultation: decreased bowel sounds; percussion: tympanic throughout; palpation: tender uterus."},
+      {"id": "x007", "kind": "exam", "system": "respiratory", "name": "lung examination", "aliases": ["chest auscultation", "lung auscultation", "pulmonary examination", "respiratory examination"], "result": "Minor bibasilar crackles; no signs of respiratory distress."},
+      {"id": "x008", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "hemoglobin", "platelets"], "result": "WBC pending; hemoglobin pending; platelets pending."},
+      {"id": "x009", "kind": "test", "name": "urinalysis", "aliases": ["UA", "urine test", "urine dipstick", "urine microscopy", "nitrites", "leukocyte esterase"], "result": "Appearance pending; WBC pending; RBC pending; nitrites pending; leukocyte esterase pending."}
+    ]
+  },
+  "gold": {
+    "case_id": "agentclinic-medqa-ext-010",
+    "diagnosis": "Endometritis",
+    "aliases": ["postpartum endometritis", "puerperal endometritis", "postpartum endomyometritis", "infection of the uterine lining"]
+  },
+  "qc": {
+    "case_id": "agentclinic-medqa-ext-010",
+    "fact_sources": {
+      "f001": ["cc", "agentclinic-medqa-ext-010-p001"],
+      "f002": ["agentclinic-medqa-ext-010-p001", "agentclinic-medqa-ext-010-p005"],
+      "f003": ["agentclinic-medqa-ext-010-p001"],
+      "f004": ["agentclinic-medqa-ext-010-p001"],
+      "f005": ["agentclinic-medqa-ext-010-p005"],
+      "f006": ["agentclinic-medqa-ext-010-p001", "agentclinic-medqa-ext-010-p003"],
+      "f007": ["agentclinic-medqa-ext-010-p004"],
+      "f008": ["agentclinic-medqa-ext-010-p007"],
+      "f009": ["agentclinic-medqa-ext-010-p007"],
+      "f010": ["agentclinic-medqa-ext-010-p007"],
+      "f011": ["agentclinic-medqa-ext-010-p007"],
+      "f012": ["agentclinic-medqa-ext-010-p007"],
+      "f013": ["agentclinic-medqa-ext-010-p005"],
+      "f014": ["agentclinic-medqa-ext-010-p005"],
+      "f015": ["agentclinic-medqa-ext-010-p006"],
+      "f016": ["agentclinic-medqa-ext-010-p006"],
+      "f017": ["agentclinic-medqa-ext-010-p006"],
+      "f018": ["agentclinic-medqa-ext-010-p006"]
+    },
+    "quotes": {
+      "f002": "delivering an 11 pound boy vaginally at 40 weeks gestation",
+      "f003": "an 11 pound boy",
+      "f004": "She experienced a prolonged course during labor",
+      "f005": "Uncomplicated pregnancy",
+      "f006": "increased frequency of urination",
+      "f008": "Complains of minor difficulty in breathing",
+      "f009": "denies any urinary pain",
+      "f013": "No significant past medical or surgical history",
+      "f017": "illicit drugs",
+      "f018": "Lives with her partner"
+    },
+    "flags": {
+      "f002": ["The source says only that she is 'in the postpartum period'; how many days ago she delivered is not stated."]
+    },
+    "finding_sources": {
+      "x001": {"source": "Physical_Examination_Findings.Vital_Signs.Temperature + Test_Results.Vital_Signs_at_Presentation.Temperature", "source_text": "102°F (38.9°C) + 102°F (38.9°C)", "exam_ids": ["agentclinic-medqa-ext-010-e001", "agentclinic-medqa-ext-010-i009"]},
+      "x002": {"source": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure + Test_Results.Vital_Signs_at_Presentation.Blood_Pressure", "source_text": "118/78 mmHg + 118/78 mmHg", "exam_ids": ["agentclinic-medqa-ext-010-e002", "agentclinic-medqa-ext-010-i010"]},
+      "x003": {"source": "Physical_Examination_Findings.Vital_Signs.Heart_Rate + Test_Results.Vital_Signs_at_Presentation.Heart_Rate", "source_text": "111/min + 111/min", "exam_ids": ["agentclinic-medqa-ext-010-e003", "agentclinic-medqa-ext-010-i011"]},
+      "x004": {"source": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate + Test_Results.Vital_Signs_at_Presentation.Respiratory_Rate", "source_text": "17/min + 17/min", "exam_ids": ["agentclinic-medqa-ext-010-e004", "agentclinic-medqa-ext-010-i012"]},
+      "x005": {"source": "Physical_Examination_Findings.Vital_Signs.Oxygen_Saturation + Test_Results.Vital_Signs_at_Presentation.Oxygen_Saturation", "source_text": "98% on room air + 98% on room air", "exam_ids": ["agentclinic-medqa-ext-010-e005", "agentclinic-medqa-ext-010-i013"]},
+      "x006": {"source": "Physical_Examination_Findings.Abdominal_Examination.Inspection + Physical_Examination_Findings.Abdominal_Examination.Auscultation + Physical_Examination_Findings.Abdominal_Examination.Percussion + Physical_Examination_Findings.Abdominal_Examination.Palpation", "source_text": "Non-distended abdomen + Decreased bowel sounds + Tympanic throughout + Tender uterus", "exam_ids": ["agentclinic-medqa-ext-010-e006", "agentclinic-medqa-ext-010-e007", "agentclinic-medqa-ext-010-e008", "agentclinic-medqa-ext-010-e009"]},
+      "x007": {"source": "Physical_Examination_Findings.Pulmonary_Examination.Findings", "source_text": "Minor bibasilar crackles, no signs of respiratory distress", "exam_ids": ["agentclinic-medqa-ext-010-e010"]},
+      "x008": {"source": "Test_Results.Complete_Blood_Count.WBC + Test_Results.Complete_Blood_Count.Hemoglobin + Test_Results.Complete_Blood_Count.Platelets", "source_text": "Pending + Pending + Pending", "exam_ids": ["agentclinic-medqa-ext-010-i001", "agentclinic-medqa-ext-010-i002", "agentclinic-medqa-ext-010-i003"]},
+      "x009": {"source": "Test_Results.Urinalysis.Appearance + Test_Results.Urinalysis.WBC + Test_Results.Urinalysis.RBC + Test_Results.Urinalysis.Nitrites + Test_Results.Urinalysis.Leukocyte_Esterase", "source_text": "Pending + Pending + Pending + Pending + Pending", "exam_ids": ["agentclinic-medqa-ext-010-i004", "agentclinic-medqa-ext-010-i005", "agentclinic-medqa-ext-010-i006", "agentclinic-medqa-ext-010-i007", "agentclinic-medqa-ext-010-i008"]}
+    },
+    "leakage": [],
+    "source_issues": ["Test_Results.Vital_Signs_at_Presentation repeats the examination vital signs exactly; each vital record cites both leaves.", "The History says the patient 'mentions a decrease in bowel sounds', and 'Decreased bowel sounds' is listed as a secondary symptom: bowel sounds are an auscultation finding a patient cannot report.", "Every laboratory result (CBC, urinalysis) is 'Pending'; no pelvic examination is given."],
+    "notes": ["Decreased bowel sounds is an observer-only sign already in the abdominal exam (x006); it is not a patient fact, and p002 is excluded.", "The delivery (History and Past_Medical_History) is one medical-history fact with children for the baby's weight and the prolonged labor; 'Uncomplicated pregnancy' is a separate denial (f005).", "'Complains of minor difficulty in breathing' is a present symptom (f008), kept with its qualifier.", "Duplicated vital signs are merged; pending CBC and urinalysis members are grouped into one record each with result 'pending'."],
+    "extras": {
+      "objective_for_doctor": "Evaluate and manage a patient presenting with postpartum fever and abdominal tenderness."
+    },
+    "excluded_sources": [
+      {"id": "agentclinic-medqa-ext-010-p002", "reason": "'Decreased bowel sounds' is an observer-only auscultation sign; it is already in the abdominal examination (e007, x006)."}
+    ]
+  }
+}

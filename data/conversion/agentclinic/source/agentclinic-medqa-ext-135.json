@@ -1,0 +1,68 @@
+{
+  "case_id": "agentclinic-medqa-ext-135",
+  "source_row": 135,
+  "demographics_text": "67-year-old white man",
+  "objective_for_doctor": "Evaluate and diagnose the dermatological lesion observed on the patient's forehead.",
+  "chief_complaint": "Pink bump on the forehead",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-135-p001",
+      "field": "History",
+      "text": "The patient presents for an annual examination and mentions noticing a pink bump on his forehead that has developed over the last month. He reports significant sun exposure throughout his life, including episodes of blistering sunburns."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-135-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Rapid development over the last month"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-135-p003",
+      "field": "Past_Medical_History",
+      "text": "History of extensive sun exposure and multiple blistering sunburns. No significant past dermatological diagnoses."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-135-p004",
+      "field": "Social_History",
+      "text": "Retired, spends a lot of time outdoors. Non-smoker and drinks alcohol socially."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-135-p005",
+      "field": "Review_of_Systems",
+      "text": "Denies fever, weight loss, night sweats, or changes in appetite. No other skin lesions noted."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-135-e001",
+      "path": "Physical_Examination_Findings.Skin_Examination.Inspection",
+      "text": "A 2 cm dome-shaped plaque with a central keratin plug located on the forehead."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-135-e002",
+      "path": "Physical_Examination_Findings.Skin_Examination.Palpation",
+      "text": "The lesion is firm to touch, non-tender, and well-demarcated."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-135-e003",
+      "path": "Physical_Examination_Findings.Skin_Examination.Dermatoscopic_Examination",
+      "text": "Not provided in the patient brief but recommended for assessment."
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-135-i001",
+      "path": "Test_Results.Skin_Biopsy.Macroscopic_Findings",
+      "text": "Exophytic nodule with central invagination filled with keratin."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-135-i002",
+      "path": "Test_Results.Skin_Biopsy.Microscopic_Findings",
+      "text": "Presence of keratinocyte atypia, minimal."
+    }
+  ],
+  "correct_diagnosis": "Keratoacanthoma",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

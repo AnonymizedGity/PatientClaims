@@ -1,0 +1,57 @@
+{
+ "case_id": "mcr-test-05730",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've been having fevers that come and go.",
+   "They've been going on for about a month.",
+   "I've lost 7 kg over the past two months.",
+   "At the highest it reached 39.6 °C.",
+   "I've been having night sweats.",
+   "I have a mild cough.",
+   "Recently I did farm work in my home region along the Yangtze River, so I was in contact with soil.",
+   "I donate plasma frequently.",
+   "I work in a blood bank."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having fevers that come and go for about a month, reaching up to 39.6 °C. I've also been having night sweats, a mild cough, and I've lost 7 kg over the past two months. I work in a blood bank and donate plasma frequently. Recently I did farm work in my home region along the Yangtze River, so I was in contact with soil.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f002",
+    "f006",
+    "f003",
+    "f004",
+    "f005",
+    "f013",
+    "f012",
+    "f011"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3478,
+   "tokens_out": 99,
+   "seconds": 8.6,
+   "redrafts": 0
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+  "patient": {
+    "case_id": "mcr-test-12811",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 21, "sex": "male"},
+    "opening": ["f001", "f002", "f005"],
+    "facts": [
+      {"id": "f001", "item": "joint pain", "aliases": ["arthralgia", "sore joints", "painful joints", "aching joints"], "text": "My joints hurt.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f002", "item": "joint swelling", "aliases": ["swollen joints", "puffy joints"], "text": "My joints are swollen.", "polarity": "present", "category": "symptom", "system": "musculoskeletal", "time": "current"},
+      {"id": "f003", "item": "joint pain and swelling: which joints", "text": "It's both knees, both ankles, my right shoulder and my right wrist.", "value": ["both knees", "both ankles", "right shoulder", "right wrist"], "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f004", "item": "joint pain and swelling: duration", "text": "It's been going on for a week.", "value": "1 week", "polarity": "present", "category": "symptom", "system": "musculoskeletal"},
+      {"id": "f005", "item": "fever", "aliases": ["temperature", "high temperature", "feeling hot"], "text": "I've had a fever with it.", "polarity": "present", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f006", "item": "red skin over the right ankle", "aliases": ["redness", "red ankle"], "text": "The skin over my right ankle is red.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f007", "item": "bruise over the right ankle", "aliases": ["hematoma", "haematoma", "bleeding under the skin", "bruising"], "text": "There's a bruise-like swelling under the skin over my right ankle.", "polarity": "present", "category": "symptom", "system": "skin", "time": "current"},
+      {"id": "f008", "item": "recent cold", "aliases": ["cold", "upper respiratory infection", "viral illness", "recent infection"], "text": "I had a cold before this started.", "polarity": "present", "category": "medical_history", "time": "resolved"},
+      {"id": "f009", "item": "diarrhoea", "aliases": ["diarrhea", "loose stools", "watery stools"], "text": "I had watery diarrhoea.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "resolved"},
+      {"id": "f010", "item": "diarrhoea: timing", "parent": "f009", "attribute": "timing", "text": "That was 3 days before the joint problems started.", "value": "3 days before the joint symptoms", "polarity": "present", "category": "symptom", "system": "gastrointestinal"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-12811",
+    "findings": [
+      {"id": "x001", "kind": "exam", "system": "musculoskeletal", "name": "right ankle examination", "aliases": ["ankle examination", "joint examination", "ankle", "joints"], "result": "Redness, swelling and a subcutaneous hematoma over the right ankle, with increased local skin temperature."},
+      {"id": "x002", "kind": "test", "name": "complete blood count", "aliases": ["CBC", "full blood count", "white blood cell count", "WBC", "leukocyte count", "neutrophils", "platelets", "platelet count"], "result": "Leukocytes 11.78 × 10^9/L (neutrophils 82.9%); platelets 384 × 10^9/L."},
+      {"id": "x003", "kind": "test", "name": "erythrocyte sedimentation rate", "aliases": ["ESR", "sed rate"], "result": "77 mm/h"},
+      {"id": "x004", "kind": "test", "name": "C-reactive protein", "aliases": ["CRP", "hs-CRP", "high-sensitivity C-reactive protein"], "result": "High-sensitivity CRP 176.49 mg/L"},
+      {"id": "x005", "kind": "test", "name": "uric acid", "aliases": ["serum urate", "urate"], "result": "250.5 µmol/L"},
+      {"id": "x006", "kind": "test", "name": "coagulation studies", "aliases": ["coagulation", "clotting tests", "APTT", "activated partial thromboplastin time", "fibrinogen", "D-dimer", "factor VIII", "factor VIII activity"], "result": "APTT 44.60 s; fibrinogen 6.74 g/L; D-dimer 10.67 µg/mL; factor VIII activity 203.7%."},
+      {"id": "x007", "kind": "test", "name": "right ankle joint aspiration", "aliases": ["arthrocentesis", "joint aspiration", "joint fluid analysis", "synovial fluid analysis", "joint tap"], "result": "Bloody fluid with numerous leukocytes and red blood cells."},
+      {"id": "x008", "kind": "test", "name": "joint fluid culture", "aliases": ["synovial fluid culture", "joint culture"], "result": "Negative."},
+      {"id": "x009", "kind": "test", "name": "wound secretion culture", "aliases": ["wound culture", "culture of the ankle wound"], "result": "Negative.", "time": "after debridement of the right ankle hematoma, during the admission"},
+      {"id": "x010", "kind": "test", "name": "MRI of the right ankle", "aliases": ["ankle MRI", "MRI", "magnetic resonance imaging"], "result": "Suggested inflammatory arthritis."},
+      {"id": "x011", "kind": "test", "name": "autoimmune serology", "aliases": ["rheumatoid factor", "RF", "antinuclear antibodies", "ANA", "rheumatology tests"], "result": "Rheumatoid factor negative; antinuclear antibodies negative."},
+      {"id": "x012", "kind": "test", "name": "HLA-B27", "aliases": ["HLA B27", "HLA typing"], "result": "Negative."},
+      {"id": "x013", "kind": "test", "name": "stool culture", "aliases": ["stool cultures", "stool test"], "result": "Negative."},
+      {"id": "x014", "kind": "test", "name": "tests for other infectious agents", "aliases": ["infection screen", "infectious disease tests", "other infection tests"], "result": "Negative."}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-12811",
+    "diagnosis": "Reactive arthritis",
+    "aliases": ["ReA", "post-enteric reactive arthritis", "postdysenteric reactive arthritis", "Reiter's syndrome", "Reiter syndrome"],
+    "reasoning": "1. Exclusion of septic or tuberculous arthritis — “patients with joint pain accompanied by fever are easily misdiagnosed as septic arthritis or tuberculous arthritis, which can be excluded according to the history, signs, and results of joint fluid culture.” 2. Support for reactive arthritis — “we considered ReA.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-12811",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s002"],
+      "f007": ["s002"], "f008": ["s003"], "f009": ["s003"], "f010": ["s003"]
+    },
+    "quotes": {
+      "f003": "both knees, both ankles, the right shoulder, and the right wrist", "f004": "a 1-week history of swelling and pain",
+      "f005": "accompanied by fever", "f007": "a subcutaneous hematoma over the right ankle", "f008": "an antecedent “cold”",
+      "f009": "watery diarrhea", "f010": "3 days before the onset of joint symptoms"
+    },
+    "flags": {
+      "f003": ["The joint list is not marked complete: the source names these joints but does not say no others are involved."],
+      "f006": ["Redness over the right ankle is an examination finding (s002); kept as a fact because the patient can see it."],
+      "f007": ["The subcutaneous hematoma is an examination finding (s002); kept as a fact in lay words because the patient can see a bruise-like swelling."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s002"], "source_text": "Physical examination revealed redness, swelling, and a subcutaneous hematoma over the right ankle with increased local skin temperature."},
+      "x002": {"sentences": ["s004"], "source_text": "a leukocyte count of 11.78 × 10^9/L (neutrophils 82.9%), platelet count of 384 × 10^9/L"},
+      "x003": {"sentences": ["s004"], "source_text": "erythrocyte sedimentation rate of 77 mm/h"},
+      "x004": {"sentences": ["s004"], "source_text": "high-sensitivity C-reactive protein of 176.49 mg/L"},
+      "x005": {"sentences": ["s004"], "source_text": "uric acid of 250.5 µmol/L"},
+      "x006": {"sentences": ["s004"], "source_text": "activated partial thromboplastin time of 44.60 s, fibrinogen of 6.74 g/L, D-dimer of 10.67 µg/mL, and factor VIII activity of 203.7%"},
+      "x007": {"sentences": ["s005"], "source_text": "Aspiration of the right ankle yielded bloody fluid with numerous leukocytes and red blood cells."},
+      "x008": {"sentences": ["s006"], "source_text": "cultures of joint fluid and wound secretions were negative"},
+      "x009": {"sentences": ["s006"], "source_text": "Debridement of an ulcerated, necrotic subcutaneous hematoma was performed / cultures of joint fluid and wound secretions were negative"},
+      "x010": {"sentences": ["s007"], "source_text": "Magnetic resonance imaging of the right ankle suggested inflammatory arthritis."},
+      "x011": {"sentences": ["s008"], "source_text": "Tests for rheumatic factor, antinuclear antibodies / were negative"},
+      "x012": {"sentences": ["s008"], "source_text": "HLA-B27 / were negative"},
+      "x013": {"sentences": ["s008"], "source_text": "stool cultures / were negative"},
+      "x014": {"sentences": ["s008"], "source_text": "other infectious agents were negative"}
+    },
+    "finding_flags": {
+      "x009": ["The wound secretions come from the debrided hematoma, which by then was ulcerated and necrotic (s006); the debridement itself is treatment and is not a finding."],
+      "x014": ["The other infectious agents tested are not named; the record answers only a general request."]
+    },
+    "leakage": [
+      {"id": "x010", "reason": "The MRI report's conclusion 'inflammatory arthritis' contains the gold word 'arthritis'; it is the radiology impression and does not name reactive arthritis."}
+    ],
+    "source_issues": [
+      "s008 writes 'rheumatic factor' for rheumatoid factor.",
+      "D-dimer is given in µg/mL without saying FEU or DDU."
+    ],
+    "notes": [
+      "Index visit: the admission after a week of polyarticular pain and swelling with fever (s001-s008).",
+      "s006: the debridement is treatment (excluded); the negative joint-fluid and wound-secretion cultures are findings.",
+      "The gold-term warning on x004 is kept: 'C-reactive protein' is the test's clinical name and unrelated to reactive arthritis.",
+      "s009 is excluded: the perianal pain and abscess began on hospital day 3, after the index visit.",
+      "The pain and swelling share one joint list and one duration, given as standalone facts; ankle redness and the hematoma are signs the patient can see, kept as facts and in the ankle examination; warmth stays in the examination only."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s009", "reason": "Perianal pain, redness and swelling beginning on hospital day 3 and the perianal abscess diagnosis: a new problem after the index visit."}
+    ]
+  }
+}

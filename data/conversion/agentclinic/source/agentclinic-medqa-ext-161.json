@@ -1,0 +1,125 @@
+{
+  "case_id": "agentclinic-medqa-ext-161",
+  "source_row": 161,
+  "demographics_text": "53-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with cough, difficulty walking up stairs, and muscle strength changes.",
+  "chief_complaint": "Difficulty climbing stairs",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-161-p001",
+      "field": "History",
+      "text": "The patient reports a 3-month history of cough and progressively worsening difficulty walking up stairs. He mentions that it becomes easier to climb stairs after he has been active. He has also experienced a significant weight loss."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-161-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Cough"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-161-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Weight loss of 4.6 kg over the past 6 months"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-161-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Muscle weakness improving with activity"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-161-p005",
+      "field": "Past_Medical_History",
+      "text": "The patient has been smoking one pack of cigarettes daily for 35 years."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-161-p006",
+      "field": "Social_History",
+      "text": "Works in construction, lives in a two-story apartment without an elevator."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-161-p007",
+      "field": "Review_of_Systems",
+      "text": "{\"General\": \"Weight loss\", \"Respiratory\": \"Cough\", \"Neurological\": \"Muscle weakness, improvement in muscle strength with activity, slow pupil reaction\"}"
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "135/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "82 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "18 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Muscle_Strength",
+      "text": "Proximal lower extremity strength initially 3/5, increasing to 5/5 after repeated muscle tapping"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Reflexes",
+      "text": "Achilles reflex 1+"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Pupillary_Reflex",
+      "text": "Pupils equal but react sluggishly to light"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-e008",
+      "path": "Physical_Examination_Findings.General_Examination.Hydration_Status",
+      "text": "Dry mucous membranes"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-161-i001",
+      "path": "Test_Results.Complete_Blood_Count.WBC",
+      "text": "7,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-i002",
+      "path": "Test_Results.Complete_Blood_Count.Hemoglobin",
+      "text": "14.1 g/dL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-i003",
+      "path": "Test_Results.Complete_Blood_Count.Platelets",
+      "text": "230,000 /μL"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-i004",
+      "path": "Test_Results.Chest_X-Ray.Findings",
+      "text": "No acute findings"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-i005",
+      "path": "Test_Results.Electromyography.Findings",
+      "text": "Decreased compound muscle action potentials that increase in amplitude with repetitive stimulation"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-161-i006",
+      "path": "Test_Results.Voltage_Gated_Calcium_Channel_Antibodies.Findings",
+      "text": "Elevated levels, supportive of Lambert-Eaton syndrome diagnosis"
+    }
+  ],
+  "correct_diagnosis": "Lambert-Eaton syndrome",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

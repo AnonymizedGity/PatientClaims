@@ -1,0 +1,128 @@
+{
+  "case_id": "agentclinic-medqa-ext-143",
+  "source_row": 143,
+  "demographics_text": "65-year-old male",
+  "objective_for_doctor": "Assess and diagnose the patient presenting with stiffness in his arm impacting daily activities.",
+  "chief_complaint": "Stiffness in the arm",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p001",
+      "field": "History",
+      "text": "The patient reports difficulty in combing hair and reaching objects on high shelves for the past few months. Admits to a sedentary lifestyle."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Difficulty combing hair"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p003",
+      "field": "Secondary_Symptoms",
+      "text": "Trouble reaching high objects"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p004",
+      "field": "Secondary_Symptoms",
+      "text": "Decreased range of motion in shoulder"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p005",
+      "field": "Secondary_Symptoms",
+      "text": "Arm strength 4/5"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p006",
+      "field": "Past_Medical_History",
+      "text": "Diabetes mellitus type II, obesity, hypertension. On metformin, insulin, lisinopril, and hydrochlorothiazide."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p007",
+      "field": "Social_History",
+      "text": "Sedentary lifestyle, predominately staying indoors and watching television."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-143-p008",
+      "field": "Review_of_Systems",
+      "text": "Denies recent injuries or trauma to the arm or shoulder. No fever, weight loss, or other joint involvement."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "142/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "78 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "16 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.6°C (97.9°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e005",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Inspection",
+      "text": "No visible swelling or deformity"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e006",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Auscultation",
+      "text": "N/A"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e007",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Percussion",
+      "text": "N/A"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e008",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Palpation",
+      "text": "Tenderness around the shoulder joint"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e009",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Range_of_Motion",
+      "text": "Decreased passive and active range of motion"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-e010",
+      "path": "Physical_Examination_Findings.Shoulder_Examination.Strength_Testing",
+      "text": "Upper extremity strength 4/5"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-143-i001",
+      "path": "Test_Results.Blood_Tests.CBC",
+      "text": "Within normal limits"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-i002",
+      "path": "Test_Results.Blood_Tests.CRP",
+      "text": "Slightly elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-i003",
+      "path": "Test_Results.Blood_Tests.Glucose",
+      "text": "Elevated"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-143-i004",
+      "path": "Test_Results.Imaging.X-ray_Shoulder.Findings",
+      "text": "No acute bony abnormality. Signs consistent with reduced joint space but no significant osteoarthritic changes."
+    }
+  ],
+  "correct_diagnosis": "Adhesive capsulitis",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [],
+    "requires_diagnosis_text_cleanup": false
+  }
+}

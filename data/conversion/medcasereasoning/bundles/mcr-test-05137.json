@@ -1,0 +1,96 @@
+{
+  "patient": {
+    "case_id": "mcr-test-05137",
+    "dataset": "medcasereasoning",
+    "demographics": {"age": 26, "sex": "male"},
+    "opening": ["f001", "f003", "f005"],
+    "facts": [
+      {"id": "f001", "item": "headache", "aliases": ["head pain", "headaches"], "text": "I've been having headaches.", "polarity": "present", "category": "symptom", "system": "neurological", "time": "current"},
+      {"id": "f002", "item": "headache: location", "parent": "f001", "attribute": "location", "text": "It's all over my head, not in one spot.", "polarity": "present", "category": "symptom", "system": "neurological"},
+      {"id": "f003", "item": "nausea", "aliases": ["feeling sick", "queasy"], "text": "I've been feeling nauseated.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f004", "item": "nausea: course", "parent": "f003", "attribute": "course", "text": "The nausea has been getting worse and worse.", "polarity": "present", "category": "symptom", "system": "gastrointestinal"},
+      {"id": "f005", "item": "vomiting", "aliases": ["throwing up"], "text": "I've been vomiting.", "polarity": "present", "category": "symptom", "system": "gastrointestinal", "time": "current"},
+      {"id": "f006", "item": "how long the headache, nausea and vomiting have lasted", "text": "All of this has been going on for two months.", "value": "2 months", "polarity": "present", "category": "symptom", "system": "general"},
+      {"id": "f007", "item": "fever", "aliases": ["temperature"], "text": "I haven't had a fever.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f008", "item": "chills", "aliases": ["shivering"], "text": "I haven't had chills.", "polarity": "absent", "category": "symptom", "system": "general", "time": "current"},
+      {"id": "f009", "item": "sensitivity to light", "aliases": ["photophobia", "light hurting my eyes"], "text": "Light doesn't bother my eyes.", "polarity": "absent", "category": "symptom", "system": "eye", "time": "current"},
+      {"id": "f010", "item": "diabetes", "aliases": ["diabetes mellitus", "high blood sugar", "sugar diabetes"], "text": "I have diabetes.", "polarity": "present", "category": "medical_history", "time": "current"},
+      {"id": "f011", "item": "ethnicity", "aliases": ["race", "ethnic background"], "text": "I'm Caucasian.", "polarity": "present", "category": "social_background"},
+      {"id": "f012", "item": "country of birth", "aliases": ["where I was born", "country of origin", "immigration"], "text": "I was born in Mexico.", "polarity": "present", "category": "social_background"},
+      {"id": "f013", "item": "place of residence", "aliases": ["where I live", "how long I've lived here"], "text": "I've lived in California for eight years.", "polarity": "present", "category": "social_background", "time": "current"}
+    ]
+  },
+  "environment": {
+    "case_id": "mcr-test-05137",
+    "findings": [
+      {"id": "x001", "kind": "vital", "name": "temperature", "aliases": ["temp"], "result": "37 °C"},
+      {"id": "x002", "kind": "exam", "system": "neurological", "name": "neck stiffness", "aliases": ["meningeal signs", "meningism", "nuchal rigidity", "neck flexion"], "result": "Mild neck stiffness."},
+      {"id": "x003", "kind": "exam", "system": "neurological", "name": "neurological examination", "aliases": ["neuro exam", "cranial nerves", "motor strength", "reflexes", "sensation", "coordination", "gait", "mental status"], "result": "Normal apart from the mild neck stiffness."},
+      {"id": "x004", "kind": "exam", "system": "eye", "name": "ophthalmologic examination", "aliases": ["eye examination", "fundoscopy", "fundus examination", "papilledema"], "result": "Normal."},
+      {"id": "x005", "kind": "test", "name": "white blood cell count with differential", "aliases": ["complete blood count", "CBC", "WBC", "differential"], "result": "White blood cell count 6500/mm3 (75% neutrophils, 15% lymphocytes, 8% monocytes)."},
+      {"id": "x006", "kind": "test", "name": "metabolic panel", "aliases": ["electrolytes", "serum glucose", "blood sugar", "renal function", "kidney function", "creatinine", "BUN", "sodium", "potassium", "BMP"], "result": "Serum glucose 90 mg/dL; electrolytes normal; renal function normal."},
+      {"id": "x007", "kind": "test", "name": "liver function tests", "aliases": ["LFTs", "liver enzymes", "AST", "ALT", "bilirubin"], "result": "Normal."},
+      {"id": "x008", "kind": "test", "name": "noncontrast head CT", "aliases": ["head CT", "CT brain", "CT head"], "result": "Dilated lateral and third ventricles consistent with hydrocephalus."},
+      {"id": "x009", "kind": "test", "name": "lumbar puncture with CSF analysis", "aliases": ["LP", "spinal tap", "CSF analysis", "opening pressure", "CSF cell count", "CSF protein", "CSF glucose"], "result": "Opening pressure 400 mmHg; 330 white blood cells/mm3 (14% neutrophils, 45% lymphocytes, 38% monocytes, 3% eosinophils); protein 84 mg/dL; glucose 43 mg/dL; 3 red blood cells/mm3."},
+      {"id": "x010", "kind": "test", "name": "CSF Gram stain", "aliases": ["Gram stain"], "result": "Negative."},
+      {"id": "x011", "kind": "test", "name": "CSF India ink stain", "aliases": ["India ink", "cryptococcal stain"], "result": "Negative."},
+      {"id": "x012", "kind": "test", "name": "CSF cultures", "aliases": ["CSF culture", "bacterial culture", "viral culture", "fungal culture", "mycobacterial culture", "AFB culture", "TB culture"], "result": "Bacterial, viral, fungal, and mycobacterial cultures negative."},
+      {"id": "x013", "kind": "test", "name": "MRI of the brain", "aliases": ["brain MRI", "MRI head"], "result": "Hydrocephalus with dilation of the lateral and third ventricles, stenosis of the cerebral aqueduct, absence of meningeal enhancement, and a subtle cystic area in the region of the aqueduct.", "time": "later in the workup"}
+    ]
+  },
+  "gold": {
+    "case_id": "mcr-test-05137",
+    "diagnosis": "Neurocysticercosis",
+    "aliases": ["NCC", "cerebral cysticercosis", "cysticercosis of the brain", "intraventricular neurocysticercosis", "Taenia solium neurocysticercosis"],
+    "reasoning": "1. Bacterial meningitis was excluded — “A Gram stain … of CSF were negative and final … bacterial … cultures were negative.” 2. Viral meningitis was excluded — “final … viral … cultures were negative.” 3. Fungal meningitis was excluded — “final … fungal … cultures were negative.” 4. Mycobacterial meningitis was excluded — “final … mycobacterial cultures were negative.”"
+  },
+  "qc": {
+    "case_id": "mcr-test-05137",
+    "fact_sources": {
+      "f001": ["s001"], "f002": ["s001"], "f003": ["s001"], "f004": ["s001"], "f005": ["s001"], "f006": ["s001"],
+      "f007": ["s002"], "f008": ["s002"], "f009": ["s002"], "f010": ["s001"], "f011": ["s001"], "f012": ["s003"],
+      "f013": ["s003"]
+    },
+    "quotes": {
+      "f002": "diffuse headache", "f004": "progressive nausea", "f006": "a two-month history of diffuse headache, progressive nausea, and vomiting",
+      "f009": "photophobia", "f010": "a history of diabetes mellitus", "f011": "Caucasian", "f012": "He was born in Mexico",
+      "f013": "had lived in California for eight years"
+    },
+    "flags": {
+      "f004": ["'Progressive nausea, and vomiting': 'progressive' is read as qualifying the nausea only; it may also apply to the vomiting."]
+    },
+    "finding_sources": {
+      "x001": {"sentences": ["s004"], "source_text": "his temperature was 37 °C"},
+      "x002": {"sentences": ["s004"], "source_text": "he had mild neck stiffness"},
+      "x003": {"sentences": ["s004"], "source_text": "neurologic and ophthalmologic examinations were otherwise normal"},
+      "x004": {"sentences": ["s004"], "source_text": "neurologic and ophthalmologic examinations were otherwise normal"},
+      "x005": {"sentences": ["s004"], "source_text": "a white blood cell count of 6500/mm3 (75% neutrophils, 15% lymphocytes, 8% monocytes)"},
+      "x006": {"sentences": ["s004"], "source_text": "serum glucose of 90 mg/dL, and normal electrolytes and liver–renal function tests"},
+      "x007": {"sentences": ["s004"], "source_text": "normal electrolytes and liver–renal function tests"},
+      "x008": {"sentences": ["s005"], "source_text": "Noncontrast head CT revealed dilated lateral and third ventricles consistent with hydrocephalus."},
+      "x009": {"sentences": ["s006"], "source_text": "Lumbar puncture showed an opening pressure of 400 mmHg, 330 white blood cells/mm3 (14% neutrophils, 45% lymphocytes, 38% monocytes, 3% eosinophils), protein 84 mg/dL, glucose 43 mg/dL, and 3 red blood cells/mm3."},
+      "x010": {"sentences": ["s007"], "source_text": "Gram stain and India ink of cerebrospinal fluid were negative"},
+      "x011": {"sentences": ["s007"], "source_text": "Gram stain and India ink of cerebrospinal fluid were negative"},
+      "x012": {"sentences": ["s007"], "source_text": "bacterial, viral, fungal, and mycobacterial cultures were negative"},
+      "x013": {"sentences": ["s009"], "source_text": "MRI of the brain demonstrated hydrocephalus with dilation of the lateral and third ventricles, stenosis of the cerebral aqueduct, absence of meningeal enhancement, and a subtle cystic area in the region of the aqueduct."}
+    },
+    "finding_flags": {
+      "x009": ["Opening pressure is given as 400 mmHg in the source, which is implausible; probably 400 mmH2O. Kept as written."],
+      "x012": ["The sentence does not say 'CSF' for the cultures; they follow the CSF stains and are read as CSF cultures."],
+      "x013": ["The MRI is reported after the start of empiric therapy; the exact day is not given, so time is 'later in the workup'."]
+    },
+    "leakage": [],
+    "source_issues": [
+      "CSF opening pressure 400 mmHg is implausible as written (probably mmH2O)."
+    ],
+    "notes": [
+      "Index visit: the outpatient presentation with two months of diffuse headache, progressive nausea and vomiting (s001–s004), with the workup that followed (s005–s007, s009).",
+      "Neck stiffness is kept as an examination finding only: the prompt reports it from the examination ('mild'), not as a complaint, so no patient fact claims the patient noticed it.",
+      "The general statement 'neurologic examination otherwise normal' is one record with the usual neurological components as aliases, because the prompt gives no component separately."
+    ],
+    "extras": {},
+    "excluded_sentences": [
+      {"id": "s008", "reason": "Treatment (empiric antimycobacterial therapy) for a presumed diagnosis: clinician reasoning and treatment, not a finding."}
+    ]
+  }
+}

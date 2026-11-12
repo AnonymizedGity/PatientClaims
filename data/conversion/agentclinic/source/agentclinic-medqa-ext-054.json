@@ -1,0 +1,111 @@
+{
+  "case_id": "agentclinic-medqa-ext-054",
+  "source_row": 54,
+  "demographics_text": "70-year-old woman",
+  "objective_for_doctor": "Assess and manage a patient presenting with episodes of dizziness and vertigo.",
+  "chief_complaint": "Episodes of dizziness and spinning sensation",
+  "fragments": [
+    {
+      "fact_id": "agentclinic-medqa-ext-054-p001",
+      "field": "History",
+      "text": "The patient presents with sudden episodes of dizziness that are position dependent. She describes experiencing a false sensation of motion and occasional spinning, indicative of vertigo. She denies any recent illnesses, injuries, or significant changes in health status, apart from age-related hearing loss (presbycusis)."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-054-p002",
+      "field": "Secondary_Symptoms",
+      "text": "Position dependent vertigo"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-054-p003",
+      "field": "Secondary_Symptoms",
+      "text": "No recent illness"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-054-p004",
+      "field": "Secondary_Symptoms",
+      "text": "No hearing loss besides presbycusis"
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-054-p005",
+      "field": "Past_Medical_History",
+      "text": "No significant past medical or surgical history. No history of Meniere's disease, vestibular neuritis, or labyrinthitis."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-054-p006",
+      "field": "Social_History",
+      "text": "Retired school teacher. Lives alone. Non-smoker, occasional wine. Enjoys light gardening."
+    },
+    {
+      "fact_id": "agentclinic-medqa-ext-054-p007",
+      "field": "Review_of_Systems",
+      "text": "Denies headache, tinnitus, hearing loss, nausea, vomiting, or recent respiratory infections."
+    }
+  ],
+  "exam_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e001",
+      "path": "Physical_Examination_Findings.Vital_Signs.Temperature",
+      "text": "36.8°C (98.2°F)"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e002",
+      "path": "Physical_Examination_Findings.Vital_Signs.Blood_Pressure",
+      "text": "130/85 mmHg"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e003",
+      "path": "Physical_Examination_Findings.Vital_Signs.Heart_Rate",
+      "text": "77 bpm"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e004",
+      "path": "Physical_Examination_Findings.Vital_Signs.Respiratory_Rate",
+      "text": "14 breaths/min"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e005",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Cranial_Nerves",
+      "text": "Normal"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e006",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Coordination",
+      "text": "No ataxia or dysmetria"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e007",
+      "path": "Physical_Examination_Findings.Neurological_Examination.Gait",
+      "text": "Steady, no signs of imbalance when not experiencing vertigo"
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-e008",
+      "path": "Physical_Examination_Findings.Positional_Testing.Dix-Hallpike_Manoeuvre",
+      "text": "Positive for right-sided horizontal nystagmus when moving from sitting to supine position, suggestive of BPPV"
+    }
+  ],
+  "test_leaves": [
+    {
+      "exam_id": "agentclinic-medqa-ext-054-i001",
+      "path": "Test_Results.Audiometry.Findings",
+      "text": "Bilateral high-frequency sensorineural hearing loss, consistent with presbycusis. No sudden drops in hearing indicative of Meniere’s disease or labyrinthitis."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-i002",
+      "path": "Test_Results.Vestibular_Function_Tests.Videonystagmography",
+      "text": "Normal vestibular response with the exception of response elicited during Dix-Hallpike maneuver, consistent with BPPV."
+    },
+    {
+      "exam_id": "agentclinic-medqa-ext-054-i003",
+      "path": "Test_Results.Imaging.MRI_Brain.Findings",
+      "text": "No evidence of central lesions or infarcts that would suggest central causes of vertigo."
+    }
+  ],
+  "correct_diagnosis": "Benign Paroxysmal Positional Vertigo (BPPV)",
+  "pool_flags": {
+    "visible_gold_alias_partitions": [
+      "physical_examination",
+      "test_results"
+    ],
+    "requires_diagnosis_text_cleanup": true
+  }
+}

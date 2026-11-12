@@ -1,0 +1,47 @@
+{
+ "case_id": "mcr-test-05137",
+ "seed": 3,
+ "key": {
+  "model": "Qwen/Qwen3.8-27B",
+  "prompts": {
+   "task.md": "eb4a10307967",
+   "arm_control.md": "8a4a50d28373",
+   "opening_blocks.md": "d2ef9d9c8346",
+   "opening_check.md": "ca6621514c88",
+   "checker_record.md": "7942893e0707",
+   "redraft.md": "eae2aa6fcc54",
+   "reply_rules.md": "562908f5eb0c"
+  },
+  "release": "3172e8076188",
+  "opening": [
+   "I've been having headaches.",
+   "I've been feeling nauseated.",
+   "I've been vomiting.",
+   "All of this has been going on for two months."
+  ],
+  "kind": "blocks"
+ },
+ "opening": {
+  "text": "I've been having headaches, feeling nauseated, and vomiting. All of this has been going on for two months.",
+  "internal": {
+   "problems": [],
+   "blocks": [
+    "f001",
+    "f003",
+    "f005",
+    "f006"
+   ],
+   "check": {
+    "problems": [],
+    "check_problems": []
+   }
+  },
+  "stats": {
+   "calls": 2,
+   "tokens_in": 3132,
+   "tokens_out": 36,
+   "seconds": 4.52,
+   "redrafts": 0
+  }
+ }
+}
